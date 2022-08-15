@@ -1,0 +1,130 @@
+{
+  "main": {
+    "id": "ac892cc912605614",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ed81fb3a0458c7a",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "52503df592b59803",
+    "type": "split",
+    "children": [
+      {
+        "id": "f4b0bf18046f2e17",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d95cf7e5886b462",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "dc2164f2d3f04496",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f3a23b811eb8ab8a",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b4692449453cc2fd",
+    "type": "split",
+    "children": [
+      {
+        "id": "38d58c92745d3d60",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "659f27a401d45d96",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3ade0cef77700115",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f1f7ce6b64a72d47",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "13e4a1931808b3ee",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "8ed81fb3a0458c7a",
+  "lastOpenFiles": [
+    "test.md",
+    "python.md",
+    "programming.md",
+    "data science.md"
+  ]
+}
