@@ -122,9 +122,10 @@
   },
   "active": "8ed81fb3a0458c7a",
   "lastOpenFiles": [
-    "test.md",
-    "python.md",
-    "programming.md",
-    "data science.md"
+    "test folder/programming.md",
+    "test folder/dummynote.md",
+    "test folder/data science.md",
+    "test folder/python.md",
+    "test.md"
   ]
 }
