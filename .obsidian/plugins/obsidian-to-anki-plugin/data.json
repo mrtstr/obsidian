@@ -53,7 +53,11 @@
   "File Hashes": {
     "python.md": "5e53ed997a2ad8172d0e61017b450b6c",
     "programming.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "data science.md": "ccc207dd052fa5276afb27084b457e1a"
+    "data science.md": "ccc207dd052fa5276afb27084b457e1a",
+    "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
+    "test folder/python.md": "9ce16e1d0bc30cd49dc789131917ea95",
+    "test folder/programming.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "test folder/dummynote.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [

@@ -7,12 +7,8 @@
         "id": "8ed81fb3a0458c7a",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "test folder/data science.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "test folder/data science.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "test folder/data science.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "test folder/data science.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -128,12 +120,44 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8ed81fb3a0458c7a",
+  "floating": {
+    "id": "1e90f661f31c805c",
+    "type": "floating",
+    "children": [
+      {
+        "id": "149d74042cc0600f",
+        "type": "window",
+        "children": [
+          {
+            "id": "aca3ea4e531411e2",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ],
+        "direction": "vertical",
+        "x": 1920,
+        "y": 25,
+        "width": 960,
+        "height": 1055,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "8d95cf7e5886b462",
   "lastOpenFiles": [
-    "test folder/dummynote.md",
-    "test folder/programming.md",
-    "test folder/python.md",
-    "test folder/data science.md",
-    "test.md"
+    "generalized linear models.md",
+    "linear models.md",
+    "generalized additive models.md",
+    "ger.md",
+    "statistical estimator.md",
+    "boosted trees.md",
+    "tree models.md",
+    "bagging.md",
+    "boosting.md",
+    "bootsrap.md"
   ]
 }

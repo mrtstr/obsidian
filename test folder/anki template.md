@@ -5,8 +5,8 @@ $a_2$
 craete anki card:
 START
 Basic
-This is a test.
-Back: Test successful!  $a_2$
+This is a question.
+Back: this is an answer!  $a_2$
 Tags: anki
 <div style="display:none">
 TARGET DECK:
