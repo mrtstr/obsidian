@@ -7,7 +7,7 @@
         "id": "8ed81fb3a0458c7a",
         "type": "leaf",
         "state": {
-          "type": "empty",
+          "type": "graph",
           "state": {}
         }
       }
@@ -121,15 +121,15 @@
     "collapsed": true
   },
   "floating": {
-    "id": "1e90f661f31c805c",
+    "id": "5c3cf9a81d6178e1",
     "type": "floating",
     "children": [
       {
-        "id": "149d74042cc0600f",
+        "id": "041e87365342a08b",
         "type": "window",
         "children": [
           {
-            "id": "aca3ea4e531411e2",
+            "id": "a5936ee63ba4d84e",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -138,26 +138,26 @@
           }
         ],
         "direction": "vertical",
-        "x": 1920,
-        "y": 25,
-        "width": 960,
-        "height": 1055,
+        "x": 1170,
+        "y": 0,
+        "width": 1171,
+        "height": 1280,
         "maximize": false,
         "zoom": 0
       }
     ]
   },
-  "active": "8d95cf7e5886b462",
+  "active": "8ed81fb3a0458c7a",
   "lastOpenFiles": [
-    "generalized linear models.md",
-    "linear models.md",
-    "generalized additive models.md",
-    "ger.md",
-    "statistical estimator.md",
-    "boosted trees.md",
-    "tree models.md",
-    "bagging.md",
-    "boosting.md",
-    "bootsrap.md"
+    "statistical learning/bagging.md",
+    "2022-08-22.md",
+    "statistical learning/statistical estimator.md",
+    "test folder/anki template.md",
+    "statistical learning/boosted trees.md",
+    "statistical learning/random forrest.md",
+    "statistical learning/k nearest neighbour.md",
+    "statistical learning/generalized additive models.md",
+    "statistical learning/boosting.md",
+    "statistical learning/tree models.md"
   ]
 }
