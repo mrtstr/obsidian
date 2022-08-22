@@ -1,0 +1,4 @@
+- Goal: find connect between input/features $x$ and output/labels $y$
+- because the [[joint distribution]] $f_{XY}(x,y)$ is hard to find the goal is to approximate [[conditional distribution]]  $f_{X|Y}(x|y)$
+- every point in the feature space $x$ is a distribution of outputs $y$
+- goal: approimate estimator $f(x)$ 
