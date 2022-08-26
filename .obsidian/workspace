@@ -7,12 +7,8 @@
         "id": "8ed81fb3a0458c7a",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "statistical learning/statistical estimator.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "statistical learning/statistical estimator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "statistical learning/statistical estimator.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "statistical learning/statistical estimator.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -128,17 +120,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8ed81fb3a0458c7a",
+  "active": "8d95cf7e5886b462",
   "lastOpenFiles": [
-    "statistical learning/models/k nearest neighbours.md",
+    "test folder/anki template.md",
+    "math/optimization/optimization.md",
+    "math/optimization/convex optimization.md",
     "statistical learning/statistical estimator.md",
+    "statistical learning/models/k nearest neighbours.md",
     "statistical learning/maximum likelihood.md",
     "statistical learning/mean absolut error.md",
     "statistical learning/loss functions.md",
     "statistical learning/models/kernel methods.md",
-    "statistical learning/mean square error.md",
-    "statistical learning/regression.md",
-    "statistical learning/variance bias tradeoff.md",
-    "mathematics/statistics/conditional distribution.md"
+    "statistical learning/mean square error.md"
   ]
 }
