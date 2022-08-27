@@ -7,8 +7,12 @@
         "id": "8ed81fb3a0458c7a",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "algorithms/binary search.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "algorithms/binary search.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "algorithms/binary search.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "algorithms/binary search.md"
+              }
             }
           }
         ]
@@ -120,9 +128,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8d95cf7e5886b462",
+  "active": "8ed81fb3a0458c7a",
   "lastOpenFiles": [
     "test folder/anki template.md",
+    "algorithms/binary search.md",
     "math/optimization/optimization.md",
     "math/optimization/convex optimization.md",
     "statistical learning/statistical estimator.md",
@@ -130,7 +139,6 @@
     "statistical learning/maximum likelihood.md",
     "statistical learning/mean absolut error.md",
     "statistical learning/loss functions.md",
-    "statistical learning/models/kernel methods.md",
-    "statistical learning/mean square error.md"
+    "statistical learning/models/kernel methods.md"
   ]
 }
