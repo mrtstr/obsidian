@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "algorithms/binary search.md",
+            "file": "algorithms/heap.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/binary search.md",
+                "file": "algorithms/heap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/binary search.md",
+                "file": "algorithms/heap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/binary search.md"
+                "file": "algorithms/heap.md"
               }
             }
           }
@@ -130,8 +130,8 @@
   },
   "active": "8ed81fb3a0458c7a",
   "lastOpenFiles": [
-    "test folder/anki template.md",
     "algorithms/binary search.md",
+    "test folder/anki template.md",
     "math/optimization/optimization.md",
     "math/optimization/convex optimization.md",
     "statistical learning/statistical estimator.md",
