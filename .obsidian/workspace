@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "algorithms/heap.md",
+            "file": "statistical learning/models/k nearest neighbors.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/heap.md",
+                "file": "statistical learning/models/k nearest neighbors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/heap.md",
+                "file": "statistical learning/models/k nearest neighbors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/heap.md"
+                "file": "statistical learning/models/k nearest neighbors.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "8ed81fb3a0458c7a",
   "lastOpenFiles": [
-    "algorithms/binary search.md",
-    "test folder/anki template.md",
-    "math/optimization/optimization.md",
-    "math/optimization/convex optimization.md",
+    "statistical learning/variance bias tradeoff.md",
+    "statistical learning/model variance.md",
+    "statistical learning/models/k nearest neighbors.md",
     "statistical learning/statistical estimator.md",
-    "statistical learning/models/k nearest neighbours.md",
-    "statistical learning/maximum likelihood.md",
-    "statistical learning/mean absolut error.md",
-    "statistical learning/loss functions.md",
-    "statistical learning/models/kernel methods.md"
+    "statistical learning/regression.md",
+    "statistical learning/curse of dimensionality.md",
+    "statistical learning/model bias.md",
+    "mathematics/statistics/expectation.md",
+    "statistical learning/models/kernel methods.md",
+    "statistical learning/mean square error.md"
   ]
 }

@@ -1,0 +1,5 @@
+- [[mean square error]]
+- [[mean absolute error]]
+- [[maximum likelihood]]
+- [[cross entropy]]
+- 
