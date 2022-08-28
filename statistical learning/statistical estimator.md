@@ -40,6 +40,7 @@ Back:
 - every point in the feature space $x$ is a distribution of outputs $y$
 - approximate estimator $f(x)$  by minimizing the loss functions
 Tags: statistical estimator, statistical learning
+<!--ID: 1661678999092-->
 END
 
 START
@@ -50,6 +51,7 @@ having an approximation for every point in the feature space not possible becaus
 → assumptions needed to estimate in those regions of the feature space
 Effect: assumptions induce a bias but can reduce the estimator's variance
 Tags: statistical estimator, statistical learning
+<!--ID: 1661678999122-->
 END
 
 START
@@ -59,6 +61,7 @@ Back:
 1) can be model constraints like assuming a certain kind of relationship between feature $x$ and label $y$ (linear models)
 2) can be local smoothing in the feature space (e.g. kernel methods, k nearest neighbors) assuming similar characteristics within an area in the feature space
 Tags: statistical estimator, statistical learning
+<!--ID: 1661678999127-->
 END
 
 START
@@ -69,6 +72,7 @@ Back:
 - direct approximation of the mean around the sample's location: $\widehat{f}(x)=MEAN[y_i|x_i \in N_k(x)]$
 → problems in spare feature spaces
 Tags: statistical estimator, statistical learning
+<!--ID: 1661678999131-->
 END
 
 START
@@ -80,5 +84,6 @@ Back:
 - mean absolute error estimated the conditional median:  
 	-> $L(Y, f(x))=E[|Y-f(x)|]$  ⟶ $f(x)=median[Y|X=x]$ 
 Tags: statistical estimator, statistical learning
+<!--ID: 1661678999134-->
 END
 

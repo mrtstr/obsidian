@@ -38,4 +38,5 @@ Problem
 - bad performance in sparse feature spaces
 - high dimensional spaces are sparse (curse of dimensionality) → not good for high dimensional problems
 Tags: model, statistical learning
+<!--ID: 1661678999137-->
 END

@@ -1,5 +1,5 @@
-## searching for element in a range in $\mathcal{O}(log(n))$ if its possibe to check if any element is too high or too low in $\mathcal{O}(1)$ 
-### pseudocode example:
+## searching for element in a range in $\mathcal{O}(log(n))$ if its possible to check if any element is too high or too low in $\mathcal{O}(1)$ 
+### pseudo code example:
 ```python
 def bianry_search(x):
 	minimum = 0
@@ -33,14 +33,14 @@ def bianry_search(x, sorted_list):
 START
 Basic
 binary search: complexity and when to use.
-Back: searching for element in a range in $\mathcal{O}(log(n))$ if its possibe to check if any element is too high or too low in $\mathcal{O}(1)$
+Back: searching for element in a range in $\mathcal{O}(log(n))$ if its possible to check if any element is too high or too low in $\mathcal{O}(1)$
 Tags: algorithms, leetcode
 <!--ID: 1661591876811-->
 END
 
 START
 Basic
-binary search: pseudocode example
+binary search: pseudo code example
 Back: 
 ```python
 def bianry_search(x):

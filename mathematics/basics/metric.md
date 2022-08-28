@@ -23,4 +23,5 @@ Properties
  can be induced by a [[norm]]: $d(x, y)= \|x-y\|$
  
 Tags: math, basics
+<!--ID: 1661678999143-->
 END
