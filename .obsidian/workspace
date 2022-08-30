@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "mathematics/statistics/expected value.md",
+            "file": "algorithms/sliding window.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/statistics/expected value.md",
+                "file": "algorithms/sliding window.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/statistics/expected value.md",
+                "file": "algorithms/sliding window.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/statistics/expected value.md"
+                "file": "algorithms/sliding window.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "8ed81fb3a0458c7a",
   "lastOpenFiles": [
-    "statistical learning/statistical estimator.md",
+    "algorithms/forward linked list.md",
+    "algorithms/sliding window.md",
+    "algorithms/binary search.md",
     "mathematics/statistics/expected value.md",
+    "statistical learning/statistical estimator.md",
     "mathematics/statistics/discrete random variable.md",
     "mathematics/statistics/continuous random variable.md",
     "mathematics/statistics/conditional expectation.md",
     "mathematics/statistics/conditional distribution.md",
-    "mathematics/statistics/joint distribution.md",
-    "mathematics/statistics/independence.md",
-    "mathematics/statistics/variance.md",
-    "mathematics/statistics/random variable.md"
+    "mathematics/statistics/joint distribution.md"
   ]
 }
