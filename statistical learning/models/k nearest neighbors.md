@@ -8,7 +8,7 @@ $\widehat{f}(x)=MEAN[y_i|x_i \in N_k(x)]$
 ## Properties
 - unconstrained approach 
 	→ no assumption about the relationship between features $x$ and labels $y$ 
-	→ direct approximation of local [[expectation]] 
+	→ direct approximation of local [[expected value]] 
 - assumptions: similar characteristics in areas in the feature space 
 	→ high $k$ → bigger area  $N_k(x)$ → more smoothing → more [[model bias]], less [[model variance]]
 

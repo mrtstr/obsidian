@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "algorithms/forward linked list.md",
+            "file": "mathematics/statistics/expected value.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/forward linked list.md",
+                "file": "mathematics/statistics/expected value.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/forward linked list.md",
+                "file": "mathematics/statistics/expected value.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/forward linked list.md"
+                "file": "mathematics/statistics/expected value.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "8ed81fb3a0458c7a",
   "lastOpenFiles": [
-    "algorithms/binary search.md",
-    "algorithms/forward linked list.md",
-    "mathematics/statistics/probability density function (PDF).md",
-    "mathematics/statistics/expectation.md",
-    "mathematics/statistics/variance.md",
-    "statistical learning/model variance.md",
-    "statistical learning/models/k nearest neighbors.md",
-    "statistical learning/variance bias tradeoff.md",
     "statistical learning/statistical estimator.md",
-    "statistical learning/regression.md"
+    "mathematics/statistics/expected value.md",
+    "mathematics/statistics/discrete random variable.md",
+    "mathematics/statistics/continuous random variable.md",
+    "mathematics/statistics/conditional expectation.md",
+    "mathematics/statistics/conditional distribution.md",
+    "mathematics/statistics/joint distribution.md",
+    "mathematics/statistics/independence.md",
+    "mathematics/statistics/variance.md",
+    "mathematics/statistics/random variable.md"
   ]
 }

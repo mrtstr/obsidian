@@ -91,14 +91,21 @@
     "statistical learning/model bias.md": "d41d8cd98f00b204e9800998ecf8427e",
     "statistical learning/cross entropy.md": "d41d8cd98f00b204e9800998ecf8427e",
     "statistical learning/mean absolute error.md": "1804db18a99cbfa13afb25493b07585a",
-    "statistical learning/models/k nearest neighbors.md": "8c982e4f2c218cbedaae996d3cc52424",
+    "statistical learning/models/k nearest neighbors.md": "0e78d0293f8d2e083e8edab95fb6c6ea",
     "mathematics/statistics/probability density function (PDF).md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/statistics/variance.md": "7a794706e5d5668b78b9f188e1c662c7",
     "mathematics/statistics/expectation.md": "d56f8944267dd7662426e6a42d741694",
     "mathematics/basics/norm.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/metric.md": "d0692c96836efe6690216b170c7332f9",
-    "algorithms/forward linked list.md": "a043c9c5d23951d93d39854dd5b809ad",
-    "algorithms/heap.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "algorithms/forward linked list.md": "8b9eca00da902b55a5b788f2a3cca4fc",
+    "algorithms/heap.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/conditional expectation.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/discrete random variable.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/continuous random variable.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/probability density function.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/independence.md": "a028708b354abdc96492cd1c902dd93d",
+    "mathematics/statistics/random variable.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/expected value.md": "46de8d7dbc0f7ece71080b7f6ec40968"
   },
   "fields_dict": {
     "Basic": [
