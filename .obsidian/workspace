@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "algorithms/sliding window.md",
+            "file": "mathematics/statistics/conditional expectation.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/sliding window.md",
+                "file": "mathematics/statistics/conditional expectation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/sliding window.md",
+                "file": "mathematics/statistics/conditional expectation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/sliding window.md"
+                "file": "mathematics/statistics/conditional expectation.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "8ed81fb3a0458c7a",
   "lastOpenFiles": [
-    "algorithms/forward linked list.md",
-    "algorithms/sliding window.md",
-    "algorithms/binary search.md",
     "mathematics/statistics/expected value.md",
-    "statistical learning/statistical estimator.md",
-    "mathematics/statistics/discrete random variable.md",
-    "mathematics/statistics/continuous random variable.md",
     "mathematics/statistics/conditional expectation.md",
     "mathematics/statistics/conditional distribution.md",
-    "mathematics/statistics/joint distribution.md"
+    "statistical learning/statistical estimator.md",
+    "statistical learning/estimator bias.md",
+    "mathematics/statistics/variance.md",
+    "mathematics/statistics/observations.md",
+    "mathematics/statistics/sample variance.md",
+    "mathematics/statistics/covariance.md",
+    "statistical learning/models/k nearest neighbours.md"
   ]
 }

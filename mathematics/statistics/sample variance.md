@@ -1,0 +1,1 @@
+[[variance]] of a set of [[observations]]
