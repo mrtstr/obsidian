@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "mathematics/statistics/conditional expectation.md",
+            "file": "algorithms/two sum problem.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/statistics/conditional expectation.md",
+                "file": "algorithms/two sum problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/statistics/conditional expectation.md",
+                "file": "algorithms/two sum problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/statistics/conditional expectation.md"
+                "file": "algorithms/two sum problem.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "8ed81fb3a0458c7a",
   "lastOpenFiles": [
-    "mathematics/statistics/expected value.md",
+    "algorithms/sliding window.md",
+    "algorithms/two sum problem.md",
     "mathematics/statistics/conditional expectation.md",
+    "mathematics/statistics/expected value.md",
     "mathematics/statistics/conditional distribution.md",
     "statistical learning/statistical estimator.md",
     "statistical learning/estimator bias.md",
     "mathematics/statistics/variance.md",
     "mathematics/statistics/observations.md",
-    "mathematics/statistics/sample variance.md",
-    "mathematics/statistics/covariance.md",
-    "statistical learning/models/k nearest neighbours.md"
+    "mathematics/statistics/sample variance.md"
   ]
 }
