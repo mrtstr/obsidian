@@ -1,10 +1,8 @@
-### solve the two sum problem ([[arithmetic sum problems]]) with a [[sliding window]]
-
-#### problem
+### problem
+- [[arithmetic sum problems]]
 - given a list of integers: 
 - find the indices of the two numbers that are equal to a given target when summed up. 
 - the list is sorted
--
 
 #### [[sliding window]] solution
 (in $O(nlog(n))$ time and  $O(1)$ space)

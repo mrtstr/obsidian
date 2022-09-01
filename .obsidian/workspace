@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "algorithms/data structure/forward linked list.md",
+            "file": "algorithms/approach/brute force no repeat, no order.md",
             "mode": "source",
             "source": false
           }
@@ -61,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 328.5
   },
   "right": {
     "id": "b4692449453cc2fd",
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/data structure/forward linked list.md",
+                "file": "algorithms/approach/brute force no repeat, no order.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/data structure/forward linked list.md",
+                "file": "algorithms/approach/brute force no repeat, no order.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/data structure/forward linked list.md"
+                "file": "algorithms/approach/brute force no repeat, no order.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "8ed81fb3a0458c7a",
   "lastOpenFiles": [
-    "algorithms/data structure/hash map.md",
-    "algorithms/data structure/heap.md",
-    "algorithms/problems/arithmetic sum problems.md",
-    "algorithms/problems/tree sum.md",
-    "algorithms/problems/two sum.md",
-    "algorithms/data structure/forward linked list.md",
-    "algorithms/problems/two sum hash-map.md",
     "algorithms/approach/binary search.md",
     "algorithms/approach/brute force no repeat, no order.md",
-    "algorithms/approach/sliding window.md"
+    "algorithms/problems/searching elements in sorted list.md",
+    "algorithms/problems/longest substring.md",
+    "algorithms/problems/arithmetic sum problems.md",
+    "mathematics/basics/set.md",
+    "mathematics/basics/union.md",
+    "mathematics/basics/intersection.md",
+    "mathematics/basics/difference.md",
+    "algorithms/data structure/heap.md"
   ]
 }
