@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "algorithms/two sum problem.md",
+            "file": "algorithms/data structure/forward linked list.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/two sum problem.md",
+                "file": "algorithms/data structure/forward linked list.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/two sum problem.md",
+                "file": "algorithms/data structure/forward linked list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/two sum problem.md"
+                "file": "algorithms/data structure/forward linked list.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "8ed81fb3a0458c7a",
   "lastOpenFiles": [
-    "algorithms/sliding window.md",
-    "algorithms/two sum problem.md",
-    "mathematics/statistics/conditional expectation.md",
-    "mathematics/statistics/expected value.md",
-    "mathematics/statistics/conditional distribution.md",
-    "statistical learning/statistical estimator.md",
-    "statistical learning/estimator bias.md",
-    "mathematics/statistics/variance.md",
-    "mathematics/statistics/observations.md",
-    "mathematics/statistics/sample variance.md"
+    "algorithms/data structure/hash map.md",
+    "algorithms/data structure/heap.md",
+    "algorithms/problems/arithmetic sum problems.md",
+    "algorithms/problems/tree sum.md",
+    "algorithms/problems/two sum.md",
+    "algorithms/data structure/forward linked list.md",
+    "algorithms/problems/two sum hash-map.md",
+    "algorithms/approach/binary search.md",
+    "algorithms/approach/brute force no repeat, no order.md",
+    "algorithms/approach/sliding window.md"
   ]
 }
