@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "statistical learning/statistical estimator.md",
+            "file": "code/numpy/add.md",
             "mode": "source",
             "source": false
           }
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/combinatorics/combinations - repeat, no order.md",
+                "file": "code/numpy/add.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/combinatorics/combinations - repeat, no order.md",
+                "file": "code/numpy/add.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/combinatorics/combinations - repeat, no order.md"
+                "file": "code/numpy/add.md"
               }
             }
           }
@@ -140,17 +140,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "055914eb43a11ed0",
+  "active": "8ed81fb3a0458c7a",
   "lastOpenFiles": [
+    "code/python/variable visibility.md",
+    "code/numpy/add.md",
+    "code/numpy/sum.md",
+    "code/numpy.md",
+    "code/python.md",
     "statistical learning/statistical estimator.md",
-    "mathematics/statistics/joint distribution.md",
     "mathematics/combinatorics/combinations - repeat, no order.md",
+    "mathematics/statistics/joint distribution.md",
     "mathematics/combinatorics/combinations - repeat, order.md",
-    "mathematics/statistics/factoring of joint densities.md",
-    "statistical learning/bagging.md",
-    "mathematics/statistics/conditional expectation.md",
-    "statistical learning/variance bias tradeoff.md",
-    "mathematics/statistics/conditional distribution.md",
-    "mathematics/statistics/expected value.md"
+    "mathematics/statistics/factoring of joint densities.md"
   ]
 }

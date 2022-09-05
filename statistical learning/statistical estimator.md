@@ -8,8 +8,8 @@
 #### [[mean square error]] 
 - $L(Y, f(x))=\mathbb{E}[(Y-f(X))^2]$
 - $=\int\limits_\infty^\infty \int\limits_\infty^\infty(y-f(x))^2f_{XY}(x,y)dxdy$
-- $=\mathbb{E}_{X} \mathbb{E}_{Y|X}[Y-f(x)\:|\:X]$ ([[factoring of joint densities]])
-- $\rightarrow f(x)=argmin_c \:\mathbb{E}_{Y|X}[Y-c\:|\:X]=E[Y|X=x]$  ([[conditional expectation]])
+- $=\mathbb{E}_{X} \mathbb{E}_{Y|X}[(Y-f(x))^2\:|\:X]$ ([[factoring of joint densities]])
+- $\rightarrow f(x)=argmin_c \:\mathbb{E}_{Y|X}[(Y-c)^2\:|\:X]=\mathbb{E}[Y\:|\:X=x]$  ([[conditional expectation]])
 #### [[mean absolute error]] 
 - $L(Y, f(x))=\mathbb{E}[|Y-f(X)|] \rightarrow f(x)=median[Y|X=x]$ 
 #### [[maximum likelihood]] 
@@ -19,9 +19,16 @@
 ### Approximation
 having an approximation for every point in the feature space often not possible because there might not be enough/any samples in every area of the feature space.
 → assumptions needed
-#### Assumptions 
-- can be model constraints like assuming a certain kind of relationship between feature $x$ and label $y$ 
-- can be local smoothing in the feature space (e.g. [[kernel methods]], [[k nearest neighbours]]) assuming similar characteristics within an area in the feature space
+### Assumptions 
+1) assumptions are needed for generalisation
+	- we need an approximation for every point in the feature space (even without any training samples in the area)
+		→ assumptions needed to estimate in those regions of the feature space
+2) assumptions needed for variance reduction
+	- in sparse regions of the feature space the approximation will have a high variance because of the randomness of the training samples ($f_X(x)$ and $f_{Y|X=x}(y, x)$)
+		→ assumptions can reduce the estimator's variance but induce a bias
+#### two kinds of Assumptions
+1) can be model constraints like assuming a certain kind of relationship between feature $x$ and label $y$ 
+2) can be local smoothing in the feature space (e.g. [[kernel methods]], [[k nearest neighbours]]) assuming similar characteristics within an area in the feature space
 
 ##### Constraint estimator
 → assuming a certain relationship between $x$ and $y$ 
@@ -50,9 +57,13 @@ START
 Basic
 Why put assumptions needed for statistical estimators, and what are the effects?
 Back: 
-having an approximation for every point in the feature space not possible because there might not be enough/any samples in every point in the feature space.
-→ assumptions needed to estimate in those regions of the feature space
-Effect: assumptions induce a bias but can reduce the estimator's variance
+1) assumptions are needed for generalisation
+	- we need an approximation for every point in the feature space (even without any training samples in the area)
+		→ assumptions needed to estimate in those regions of the feature space
+2) assumptions needed for variance reduction
+	- in sparse regions of the feature space the approximation will have a high variance because of the randomness of the training samples ($f_X(x)$ and $f_{Y|X=x}(y, x)$)
+		→ assumptions can reduce the estimator's variance but induce a bias
+
 Tags: statistical estimator, statistical learning
 <!--ID: 1661678999122-->
 END
@@ -85,8 +96,8 @@ Back:
 - mean square error estimates the conditional mean: 
 - $L(Y, f(x))=\mathbb{E}[(Y-f(X))^2]$
 - $=\int\limits_\infty^\infty \int\limits_\infty^\infty(y-f(x))^2f_{XY}(x,y)dxdy$
-- $=\mathbb{E}_{X} \mathbb{E}_{Y|X}[Y-f(x)\:|\:X]$  ([[factoring of joint densities]])
-- $\rightarrow f(x)=argmin_c \:\mathbb{E}_{Y|X}[Y-c\:|\:X]=E[Y|X=x]$ ([[conditional expectation]])
+- $=\mathbb{E}_{X} \mathbb{E}_{Y|X}[(Y-f(x))^2\:|\:X]$ ([[factoring of joint densities]])
+- $\rightarrow f(x)=argmin_c \:\mathbb{E}_{Y|X}[(Y-c)^2\:|\:X]=\mathbb{E}[Y\:|\:X=x]$  ([[conditional expectation]])
 
 - mean absolute error estimated the conditional median:  
 	→ $L(Y, f(x))=\mathbb{E}[|Y-f(X)|]$ ⟶ $f(x)=median[Y|X=x]$ 
