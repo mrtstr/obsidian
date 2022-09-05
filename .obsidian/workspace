@@ -9,7 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "algorithms/approach/brute force no repeat, no order.md",
+            "file": "statistical learning/statistical estimator.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "055914eb43a11ed0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "mathematics/combinatorics/combinations - repeat, no order.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/approach/brute force no repeat, no order.md",
+                "file": "mathematics/combinatorics/combinations - repeat, no order.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/approach/brute force no repeat, no order.md",
+                "file": "mathematics/combinatorics/combinations - repeat, no order.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/approach/brute force no repeat, no order.md"
+                "file": "mathematics/combinatorics/combinations - repeat, no order.md"
               }
             }
           }
@@ -128,17 +140,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8ed81fb3a0458c7a",
+  "active": "055914eb43a11ed0",
   "lastOpenFiles": [
-    "algorithms/approach/binary search.md",
-    "algorithms/approach/brute force no repeat, no order.md",
-    "algorithms/problems/searching elements in sorted list.md",
-    "algorithms/problems/longest substring.md",
-    "algorithms/problems/arithmetic sum problems.md",
-    "mathematics/basics/set.md",
-    "mathematics/basics/union.md",
-    "mathematics/basics/intersection.md",
-    "mathematics/basics/difference.md",
-    "algorithms/data structure/heap.md"
+    "statistical learning/statistical estimator.md",
+    "mathematics/statistics/joint distribution.md",
+    "mathematics/combinatorics/combinations - repeat, no order.md",
+    "mathematics/combinatorics/combinations - repeat, order.md",
+    "mathematics/statistics/factoring of joint densities.md",
+    "statistical learning/bagging.md",
+    "mathematics/statistics/conditional expectation.md",
+    "statistical learning/variance bias tradeoff.md",
+    "mathematics/statistics/conditional distribution.md",
+    "mathematics/statistics/expected value.md"
   ]
 }

@@ -60,7 +60,7 @@
     "test folder/dummynote.md": "d41d8cd98f00b204e9800998ecf8427e",
     "algorithms/binary search.md": "d16ef4bf0286c7279e337f32c5d28236",
     "statistical learning/variance bias tradeoff.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "statistical learning/statistical estimator.md": "1f816425fe0e1743453bb7013f067ac8",
+    "statistical learning/statistical estimator.md": "88e759a20855ce1f45aed41f470c1d42",
     "statistical learning/regression.md": "d41d8cd98f00b204e9800998ecf8427e",
     "statistical learning/models/tree models.md": "709d771e4401e40fba50b6619e0965a5",
     "statistical learning/models/random forrest.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -132,7 +132,9 @@
     "mathematics/basics/set.md": "d41d8cd98f00b204e9800998ecf8427e",
     "algorithms/problems/searching elements in sorted list.md": "47540c64a77b5f4c6e4b21ca3dab3f39",
     "algorithms/problems/longest substring.md": "ea439b961d05f4b32a826bf566dc603b",
-    "algorithms/approach/sort.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "algorithms/approach/sort.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "2022-09-05.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/factoring of joint densities.md": "7022bdd24b246537b1418303a82e0479"
   },
   "fields_dict": {
     "Basic": [

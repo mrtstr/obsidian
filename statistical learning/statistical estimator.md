@@ -6,9 +6,12 @@
 
 ### connection to [[loss functions]] 
 #### [[mean square error]] 
-- $L(Y, f(x))=E[(Y-f(x))^2] \rightarrow f(x)=E[Y|X=x]$  
+- $L(Y, f(x))=\mathbb{E}[(Y-f(X))^2]$
+- $=\int\limits_\infty^\infty \int\limits_\infty^\infty(y-f(x))^2f_{XY}(x,y)dxdy$
+- $=\mathbb{E}_{X} \mathbb{E}_{Y|X}[Y-f(x)\:|\:X]$ ([[factoring of joint densities]])
+- $\rightarrow f(x)=argmin_c \:\mathbb{E}_{Y|X}[Y-c\:|\:X]=E[Y|X=x]$  ([[conditional expectation]])
 #### [[mean absolute error]] 
-- $L(Y, f(x))=E[|Y-f(x)|] \rightarrow f(x)=median[Y|X=x]$ 
+- $L(Y, f(x))=\mathbb{E}[|Y-f(X)|] \rightarrow f(x)=median[Y|X=x]$ 
 #### [[maximum likelihood]] 
 - $L(\Theta)=\sum_{(x_i,y_i) \in \mathcal{T}_{train}} log [f_{Y|X, \Theta}(y_i,x_i)] \rightarrow f_\Theta(x)$
 - equal to [[mean square error]] when $f_{Y|X}(y|x) \sim \mathcal{N}$ 
@@ -38,7 +41,7 @@ Back:
 - Goal: find connect between input/features $x$ and output/labels $y$
 - because the joint distribution $f_{XY}(x,y)$ is hard to find the goal is to approximate conditional distribution  $f_{X|Y}(x|y)$
 - every point in the feature space $x$ is a distribution of outputs $y$
-- approximate estimator $f(x)$  by minimizing the loss functions
+- approximate estimator $f(x)$ by minimizing the loss functions
 Tags: statistical estimator, statistical learning
 <!--ID: 1661678999092-->
 END
@@ -77,12 +80,16 @@ END
 
 START
 Basic
-Effect of using MSE and MAE criterion for a statistical estimator?
+Effect of using MSE (with proof) and MAE criterion for a statistical estimator?
 Back: 
 - mean square error estimates the conditional mean: 
-	-> $L(Y, f(x))=E[(Y-f(x))^2]$  ⟶ $f(x)=E[Y|X=x]$  
+- $L(Y, f(x))=\mathbb{E}[(Y-f(X))^2]$
+- $=\int\limits_\infty^\infty \int\limits_\infty^\infty(y-f(x))^2f_{XY}(x,y)dxdy$
+- $=\mathbb{E}_{X} \mathbb{E}_{Y|X}[Y-f(x)\:|\:X]$  ([[factoring of joint densities]])
+- $\rightarrow f(x)=argmin_c \:\mathbb{E}_{Y|X}[Y-c\:|\:X]=E[Y|X=x]$ ([[conditional expectation]])
+
 - mean absolute error estimated the conditional median:  
-	-> $L(Y, f(x))=E[|Y-f(x)|]$  ⟶ $f(x)=median[Y|X=x]$ 
+	→ $L(Y, f(x))=\mathbb{E}[|Y-f(X)|]$ ⟶ $f(x)=median[Y|X=x]$ 
 Tags: statistical estimator, statistical learning
 <!--ID: 1661678999134-->
 END
