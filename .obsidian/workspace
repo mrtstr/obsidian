@@ -142,15 +142,15 @@
   },
   "active": "8ed81fb3a0458c7a",
   "lastOpenFiles": [
+    "code/numpy/jagged array.md",
+    "code/numpy/dimensions with different sizes.md",
     "code/numpy/add.accumulate.md",
     "code/numpy/add.reduce.md",
     "statistical learning/statistical estimator.md",
     "code/numpy/sum.md",
-    "code/numpy/dimensions with different sizes.md",
     "code/python/variable visibility.md",
     "code/numpy.md",
     "code/python.md",
-    "mathematics/combinatorics/combinations - repeat, no order.md",
-    "mathematics/statistics/joint distribution.md"
+    "mathematics/combinatorics/combinations - repeat, no order.md"
   ]
 }

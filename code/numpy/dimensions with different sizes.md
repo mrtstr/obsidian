@@ -1,2 +1,2 @@
-1) jagged array
+1) use a [[jagged array]]
 2) save them in single dimension and save indexes in list
