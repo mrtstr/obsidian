@@ -137,7 +137,10 @@
     "mathematics/statistics/factoring of joint densities.md": "7022bdd24b246537b1418303a82e0479",
     "code/python/variable visibility.md": "4c70cbd9c0c847ce0cf92c44fad60f56",
     "code/numpy/add.md": "31683bbd17a3e9b53e7d844c97c37baf",
-    "code/numpy/sum.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "code/numpy/sum.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/numpy/dimensions with different sizes.md": "fe634f981816a728ba0feb4cfc95aba0",
+    "code/numpy/add.accumulate.md": "a2d683969f12ecd660329d6915cbecd6",
+    "code/numpy/add.reduce.md": "c19be7b4e72acfeb4e7a83ad482c4feb"
   },
   "fields_dict": {
     "Basic": [
