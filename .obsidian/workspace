@@ -4,24 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "8ed81fb3a0458c7a",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "code/numpy/dimensions with different sizes.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
         "id": "055914eb43a11ed0",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "mathematics/combinatorics/combinations - repeat, no order.md",
+            "file": "statistical learning/models/tree based models/regression tree.md",
             "mode": "source",
             "source": false
           }
@@ -89,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "code/numpy/dimensions with different sizes.md",
+                "file": "statistical learning/models/tree based models/regression tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "code/numpy/dimensions with different sizes.md",
+                "file": "statistical learning/models/tree based models/regression tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "code/numpy/dimensions with different sizes.md"
+                "file": "statistical learning/models/tree based models/regression tree.md"
               }
             }
           }
@@ -140,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8ed81fb3a0458c7a",
+  "active": "055914eb43a11ed0",
   "lastOpenFiles": [
-    "code/numpy/jagged array.md",
-    "code/numpy/dimensions with different sizes.md",
-    "code/numpy/add.accumulate.md",
-    "code/numpy/add.reduce.md",
-    "statistical learning/statistical estimator.md",
-    "code/numpy/sum.md",
-    "code/python/variable visibility.md",
-    "code/numpy.md",
-    "code/python.md",
-    "mathematics/combinatorics/combinations - repeat, no order.md"
+    "statistical learning/models/tree based models/pruning.md",
+    "statistical learning/models/tree based models/regression tree.md",
+    "statistical learning/models/tree based models/classification tree.md",
+    "mathematics/statistics/variance.md",
+    "mathematics/statistics/continuous random variable.md",
+    "mathematics/optimization/greedy.md",
+    "statistical learning/models/tree based models/tree models.md",
+    "statistical learning/model complexity.md",
+    "2022-09-05.md",
+    "[kernel methods.md"
   ]
 }

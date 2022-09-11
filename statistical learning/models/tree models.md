@@ -1,2 +1,0 @@
-[[random forrest]]
-[[statistical estimator]]

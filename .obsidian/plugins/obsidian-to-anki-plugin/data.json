@@ -138,9 +138,26 @@
     "code/python/variable visibility.md": "4c70cbd9c0c847ce0cf92c44fad60f56",
     "code/numpy/add.md": "31683bbd17a3e9b53e7d844c97c37baf",
     "code/numpy/sum.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/numpy/dimensions with different sizes.md": "fe634f981816a728ba0feb4cfc95aba0",
+    "code/numpy/dimensions with different sizes.md": "3b1d2d7c3424c51c36697bca9c239908",
     "code/numpy/add.accumulate.md": "a2d683969f12ecd660329d6915cbecd6",
-    "code/numpy/add.reduce.md": "c19be7b4e72acfeb4e7a83ad482c4feb"
+    "code/numpy/add.reduce.md": "c19be7b4e72acfeb4e7a83ad482c4feb",
+    "code/numpy/jagged array.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "statistical learning/model complexity.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "statistical learning/training error.md": "130af63ada9661956a0d11fcc59018c1",
+    "statistical learning/generalization.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "statistical learning/gradient boosting.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "statistical learning/ensemble methods.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "statistical learning/quantile regression.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "statistical learning/models/neural networks/neural networks.md": "03189d83494b7d5a964bd6e9cb03f634",
+    "statistical learning/models/tree based models/classification tree.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "statistical learning/models/tree based models/regression tree.md": "e356894a70a2feb5036e08557170242f",
+    "statistical learning/models/tree based models/pruning.md": "6ff30c500c41b1861b7efb27a1994a5d",
+    "statistical learning/models/tree based models/gradient boosted trees.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "statistical learning/models/tree based models/boosted trees.md": "09b108734fb85484c49dcab50e29c369",
+    "statistical learning/models/tree based models/random forrest.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "statistical learning/models/tree based models/tree models.md": "47a42e8ee51de1f793d3ca00ce2688c4",
+    "mathematics/optimization/greedy.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/optimization/brute force.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [
