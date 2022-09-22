@@ -9,6 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
+            "file": "statistical learning/models/tree based models/boosted trees.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "43c8e2c3468f4958",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
             "file": "statistical learning/boosting.md",
             "mode": "source",
             "source": false
@@ -77,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "statistical learning/boosting.md",
+                "file": "statistical learning/models/tree based models/boosted trees.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "statistical learning/boosting.md",
+                "file": "statistical learning/models/tree based models/boosted trees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "statistical learning/boosting.md"
+                "file": "statistical learning/models/tree based models/boosted trees.md"
               }
             }
           }
@@ -130,15 +142,15 @@
   },
   "active": "7607aeb3493e28b5",
   "lastOpenFiles": [
-    "mathematics/statistics/covariance.md",
     "statistical learning/boosting.md",
     "statistical learning/models/tree based models/boosted trees.md",
+    "statistical learning/models/tree based models/regression tree.md",
+    "statistical learning/models/tree based models/tree models.md",
+    "statistical learning/statistical estimator.md",
+    "mathematics/statistics/covariance.md",
     "mathematics/statistics/expected value.md",
     "mathematics/statistics/conditional expectation.md",
     "mathematics/statistics/variance.md",
-    "mathematics/statistics/conditional distribution.md",
-    "statistical learning/models/generalized linear models.md",
-    "statistical learning/models/generalized additive models.md",
-    "statistical learning/classification.md"
+    "mathematics/statistics/conditional distribution.md"
   ]
 }
