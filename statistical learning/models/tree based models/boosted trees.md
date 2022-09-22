@@ -71,6 +71,7 @@ $$
 - leafs $R_{j, m}$ 
 - mean values  $\gamma_{j, m}=mean[y_i \:|\: x_i \in R_{j, m}]$ 
 Tags: statistical learning, models
+<!--ID: 1663854449556-->
 END
 
 
@@ -113,4 +114,5 @@ T(x_i, \Theta_m)
 $$
 - can be generalised for different losses: [[gradient boosted trees]]
 Tags: statistical learning, models
+<!--ID: 1663854449559-->
 END
