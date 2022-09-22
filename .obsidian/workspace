@@ -144,13 +144,13 @@
   "lastOpenFiles": [
     "statistical learning/boosting.md",
     "statistical learning/models/tree based models/boosted trees.md",
-    "statistical learning/models/tree based models/regression tree.md",
     "statistical learning/models/tree based models/tree models.md",
+    "statistical learning/models/tree based models/regression tree.md",
+    "statistical learning/models/tree based models/random forrest.md",
+    "statistical learning/models/tree based models/pruning.md",
+    "statistical learning/models/tree based models/gradient boosted trees.md",
+    "statistical learning/models/tree based models/classification tree.md",
     "statistical learning/statistical estimator.md",
-    "mathematics/statistics/covariance.md",
-    "mathematics/statistics/expected value.md",
-    "mathematics/statistics/conditional expectation.md",
-    "mathematics/statistics/variance.md",
-    "mathematics/statistics/conditional distribution.md"
+    "mathematics/statistics/covariance.md"
   ]
 }

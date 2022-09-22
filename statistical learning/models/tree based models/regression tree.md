@@ -10,13 +10,11 @@
 1) build a complex tree until stop criterion is fulfilled
 2) use pruning to reduce model complexity (tree size)
 
-
 ### build a complex tree until stop criterion is fulfilled
 - start with complete feature space in one leaf
 - separate feature space in rectangles by [[greedy]] splitting up existing rectangles 
 	- choose the split that maximizes the [[mean square error]] criterion
 - stop when e.g. minimal samples per leaf is reached or improvement of split too small
-
 
 #### next split
 - find the splitting variable $j$ and the splitting value $s$ that will improve the mean square error the most
