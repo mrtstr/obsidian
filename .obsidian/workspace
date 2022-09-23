@@ -16,12 +16,12 @@
         }
       },
       {
-        "id": "43c8e2c3468f4958",
+        "id": "f2c88e4b0d3c39f3",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "statistical learning/boosting.md",
+            "file": "statistical learning/models/tree based models/regression tree.md",
             "mode": "source",
             "source": false
           }
@@ -142,14 +142,14 @@
   },
   "active": "7607aeb3493e28b5",
   "lastOpenFiles": [
-    "statistical learning/models/tree based models/boosted trees.md",
+    "statistical learning/models/tree based models/regression tree.md",
     "statistical learning/models/tree based models/gradient boosted trees.md",
-    "statistical learning/Untitled.md",
     "statistical learning/models/tree based models/tree models.md",
+    "statistical learning/boosting.md",
+    "statistical learning/models/tree based models/boosted trees.md",
+    "statistical learning/Untitled.md",
     "statistical learning/bagging.md",
     "algorithms/problems/three sum.md",
-    "statistical learning/boosting.md",
-    "statistical learning/models/tree based models/regression tree.md",
     "statistical learning/models/tree based models/random forrest.md",
     "statistical learning/models/tree based models/pruning.md"
   ]

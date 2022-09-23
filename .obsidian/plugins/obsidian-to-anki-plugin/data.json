@@ -120,7 +120,7 @@
     "algorithms/approach/binary search.md": "5b6c5c5f90f0381612bdc0f37995dec9",
     "algorithms/problems/two sum.md": "202cca9218c0e614281f863be4779b5d",
     "algorithms/problems/tree sum.md": "c9fd9e50e67a450677e7c879f2baa1df",
-    "algorithms/problems/arithmetic sum problems.md": "cd35bc07cc369f74fb44a8a35e9a3cc7",
+    "algorithms/problems/arithmetic sum problems.md": "d7f18a35021e31d63359bbddd53a03dd",
     "mathematics/combinatorics/combinations - no repeat, order.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/combinatorics/combinations - repeat, order.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/combinatorics/combinations - repeat, no order.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -152,12 +152,13 @@
     "statistical learning/models/tree based models/classification tree.md": "d41d8cd98f00b204e9800998ecf8427e",
     "statistical learning/models/tree based models/regression tree.md": "dc658494dfc68139ee1f1f9d3416a131",
     "statistical learning/models/tree based models/pruning.md": "6ff30c500c41b1861b7efb27a1994a5d",
-    "statistical learning/models/tree based models/gradient boosted trees.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "statistical learning/models/tree based models/boosted trees.md": "d2c0ecc58f6a6415922844f9ca946aef",
+    "statistical learning/models/tree based models/gradient boosted trees.md": "f2f521ee6415fdffc7238c4aa6fd55ff",
+    "statistical learning/models/tree based models/boosted trees.md": "bc3d3768b9ccbb30f0afb7ae768d2a60",
     "statistical learning/models/tree based models/random forrest.md": "d41d8cd98f00b204e9800998ecf8427e",
     "statistical learning/models/tree based models/tree models.md": "48076efb22b5c115101dae6887fcd471",
     "mathematics/optimization/greedy.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/optimization/brute force.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "mathematics/optimization/brute force.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "algorithms/problems/three sum.md": "c9fd9e50e67a450677e7c879f2baa1df"
   },
   "fields_dict": {
     "Basic": [
