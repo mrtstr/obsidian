@@ -1,2 +1,2 @@
 [[two sum]]
-[[tree sum]]
+[[three sum]]

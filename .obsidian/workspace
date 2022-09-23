@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "statistical learning/models/tree based models/boosted trees.md",
+            "file": "statistical learning/models/tree based models/gradient boosted trees.md",
             "mode": "source",
             "source": false
           }
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "statistical learning/models/tree based models/boosted trees.md",
+                "file": "statistical learning/models/tree based models/gradient boosted trees.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "statistical learning/models/tree based models/boosted trees.md",
+                "file": "statistical learning/models/tree based models/gradient boosted trees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "statistical learning/models/tree based models/boosted trees.md"
+                "file": "statistical learning/models/tree based models/gradient boosted trees.md"
               }
             }
           }
@@ -142,15 +142,15 @@
   },
   "active": "7607aeb3493e28b5",
   "lastOpenFiles": [
-    "statistical learning/boosting.md",
     "statistical learning/models/tree based models/boosted trees.md",
+    "statistical learning/models/tree based models/gradient boosted trees.md",
+    "statistical learning/Untitled.md",
     "statistical learning/models/tree based models/tree models.md",
+    "statistical learning/bagging.md",
+    "algorithms/problems/three sum.md",
+    "statistical learning/boosting.md",
     "statistical learning/models/tree based models/regression tree.md",
     "statistical learning/models/tree based models/random forrest.md",
-    "statistical learning/models/tree based models/pruning.md",
-    "statistical learning/models/tree based models/gradient boosted trees.md",
-    "statistical learning/models/tree based models/classification tree.md",
-    "statistical learning/statistical estimator.md",
-    "mathematics/statistics/covariance.md"
+    "statistical learning/models/tree based models/pruning.md"
   ]
 }

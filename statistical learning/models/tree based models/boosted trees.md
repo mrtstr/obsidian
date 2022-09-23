@@ -26,7 +26,7 @@ $$
 $$
 \widehat{\Theta}_m= argmin 
 \underbrace{
-\sum\limits_{x_i, y_i \in R_{j,m}}^N 
+\sum\limits_{i=1}^N 
 }_\text{sum over samples}
 \underbrace{
 L
@@ -50,7 +50,7 @@ $$
 $$
 \widehat{\Theta}_m= argmin 
 \underbrace{
-\sum\limits_{x_i, y_i \in R_{j,m}}^N 
+\sum\limits_{i=1}^N 
 }_\text{sum over samples}
 \underbrace{
 L
@@ -70,7 +70,7 @@ $$
 
 START
 Basic
-gradient boosted trees: model definition
+boosted trees: model definition
 Back: 
 model
 - sum of $M$ [[tree models]] (submodels/weak learners)
@@ -101,13 +101,13 @@ END
 
 START
 Basic
-gradient boosted trees: training
+boosted trees: training
 Back: 
 ## in general
 $$
 \widehat{\Theta}_m= argmin 
 \underbrace{
-\sum\limits_{x_i, y_i \in R_{j,m}}^N 
+\sum\limits_{i=1}^N 
 }_\text{sum over samples}
 \underbrace{
 L
@@ -131,7 +131,7 @@ $$
 $$
 \widehat{\Theta}_m= argmin 
 \underbrace{
-\sum\limits_{x_i, y_i \in R_{j,m}}^N 
+\sum\limits_{i=1}^N 
 }_\text{sum over samples}
 \underbrace{
 L
