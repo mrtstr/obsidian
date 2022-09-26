@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "statistical learning/models/tree based models/regression tree.md",
+            "file": "statistical learning/models/tree based models/gradient boosted trees.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "expecte",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,15 +142,15 @@
   },
   "active": "7607aeb3493e28b5",
   "lastOpenFiles": [
-    "statistical learning/models/tree based models/regression tree.md",
+    "mathematics/statistics/expected value.md",
     "statistical learning/models/tree based models/gradient boosted trees.md",
+    "statistical learning/models/tree based models/regression tree.md",
+    "statistical learning/models/tree based models/random forrest.md",
+    "statistical learning/models/tree based models/boosted trees.md",
     "statistical learning/models/tree based models/tree models.md",
     "statistical learning/boosting.md",
-    "statistical learning/models/tree based models/boosted trees.md",
     "statistical learning/Untitled.md",
     "statistical learning/bagging.md",
-    "algorithms/problems/three sum.md",
-    "statistical learning/models/tree based models/random forrest.md",
-    "statistical learning/models/tree based models/pruning.md"
+    "algorithms/problems/three sum.md"
   ]
 }
