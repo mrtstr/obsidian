@@ -1,0 +1,32 @@
+# probability density function
+probability density function $f_X]$ of a [[random variable]] $X$ maps each point in the [[sample space]] to the relative likelihood that the [[random variable]] will be in an infinitesimal small window around the value
+
+## properties
+1) $f_X:\Omega \mapsto [0,\infty]$
+2) the $\forall z \in \Omega:P(X = z) = f_X(z) = 0$ 
+3) $\int\limits_{-\infty}^{\infty}f_X(x)\:dx = 1$ 
+4) $P(X \in [a,b]) =\int\limits_{b}^{a}  f_X(x)\:dx$ 
+## relationship to [[CDF]] $F_X(x)$
+$F_X(x)=P(X \leq x) =\int\limits_{-\infty}^{x}  f_X(x)\:dx$ 
+
+START
+Basic
+probability density function (PDF)
+- definition
+- properties (4)
+- relationship to [[CDF]]
+Back: 
+## definitions
+probability density function $f_X]$ of a [[random variable]] $X$ maps each point in the [[sample space]] to the relative likelihood that the [[random variable]] will be in an infinitesimal small window around the value
+
+## properties
+1) $f_X:\Omega \mapsto [0,\infty]$
+2) the $\forall z \in \Omega:P(X = z) = f_X(z) = 0$ 
+3) $\int\limits_{-\infty}^{\infty}f_X(x)\:dx = 1$ 
+4) $P(X \in [a,b]) =\int\limits_{b}^{a}  f_X(x)\:dx$ 
+
+## relationship to [[CDF]] $F_X(x)$
+$F_X(x)=P(X \leq x) =\int\limits_{-\infty}^{x}  f_X(x)\:dx$ 
+Tags: mathematics, statistics
+<!--ID: 1664291691108-->
+END

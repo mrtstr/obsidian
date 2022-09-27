@@ -105,7 +105,7 @@
     "mathematics/statistics/probability density function.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/statistics/independence.md": "a028708b354abdc96492cd1c902dd93d",
     "mathematics/statistics/random variable.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/statistics/expected value.md": "8d3db6fccd7f11e1ca86205a00f5d958",
+    "mathematics/statistics/expected value.md": "94be0d27f204d38f4ff1d27c2b5132ae",
     "algorithms/sliding window.md": "93f12dc4f8583ce24c1d5e6e9fc7682b",
     "statistical learning/estimator bias.md": "064dd96d4ce683666a26ed2241e893bc",
     "mathematics/statistics/observations.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -158,7 +158,13 @@
     "statistical learning/models/tree based models/tree models.md": "48076efb22b5c115101dae6887fcd471",
     "mathematics/optimization/greedy.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/optimization/brute force.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "algorithms/problems/three sum.md": "c9fd9e50e67a450677e7c879f2baa1df"
+    "algorithms/problems/three sum.md": "c9fd9e50e67a450677e7c879f2baa1df",
+    "mathematics/statistics/sample space.md": "aefa760dfdab74eec4a6a82b9ec6feb3",
+    "mathematics/statistics/event space.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/random process.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/probability space.md": "ab679df7ff41257b0af2c499e70a1391",
+    "mathematics/statistics/CDF.md": "958eec84650c82cab3effa7eda93bdac",
+    "mathematics/statistics/PDF.md": "f4c9ebb4e887d42baca3cd4ab339d2c6"
   },
   "fields_dict": {
     "Basic": [
