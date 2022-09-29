@@ -4,36 +4,36 @@
     "type": "split",
     "children": [
       {
-        "id": "5c15ead81ca72dfa",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "mathematics/statistics/sample space.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "7c03c539046dcb8c",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "mathematics/statistics/random process.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
         "id": "f2c88e4b0d3c39f3",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "statistical learning/models/tree based models/gradient boosted trees.md",
+            "file": "mathematics/statistics/PDF.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "61948aaefc08f693",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "mathematics/statistics/joint distribution.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "dd59d276159fe6a9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "mathematics/statistics/probability space.md",
             "mode": "source",
             "source": false
           }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "statistical learning/models/tree based models/gradient boosted trees.md",
+                "file": "mathematics/statistics/PDF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "statistical learning/models/tree based models/gradient boosted trees.md",
+                "file": "mathematics/statistics/PDF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "statistical learning/models/tree based models/gradient boosted trees.md"
+                "file": "mathematics/statistics/PDF.md"
               }
             }
           }
@@ -154,15 +154,15 @@
   },
   "active": "f2c88e4b0d3c39f3",
   "lastOpenFiles": [
-    "mathematics/statistics/random process.md",
-    "mathematics/statistics/sample space.md",
-    "mathematics/statistics/event space.md",
+    "mathematics/statistics/joint distribution.md",
     "mathematics/statistics/probability space.md",
-    "mathematics/statistics/random variable.md",
     "mathematics/statistics/PDF.md",
-    "statistical learning/models/generalized additive models.md",
-    "mathematics/statistics/CDF.md",
-    "statistical learning/models/tree based models/gradient boosted trees.md",
-    "mathematics/statistics/expected value.md"
+    "mathematics/statistics/random variable.md",
+    "mathematics/statistics/measurable space.md",
+    "mathematics/statistics/random process.md",
+    "mathematics/statistics/probability function.md",
+    "mathematics/statistics/event space.md",
+    "mathematics/statistics/sample space.md",
+    "statistical learning/models/tree based models/regression tree.md"
   ]
 }

@@ -18,7 +18,7 @@
 
 #### next split
 - find the splitting variable $j$ and the splitting value $s$ that will improve the mean square error the most
-- by solving ([[brute force]]) the following optimization problem will split one leaf $R_i$ in two leafs $R_{i,1}(j,s) = \left\{x \mid x_j \leq s \right\}$ and $R_{i,2}(j,s) = \left\{x \mid x_j > s \right\}$
+- by solving ([[brute force]]) the following optimization problem will split one leaf $R_i$ in two leafs $R_{i,1}(j,s) = \left\{x \mid x \in R_i \land (x)_j \leq s \right\}$ and $R_{i,2}(j,s) = \left\{x \mid x \in R_i \land (x)_j > s \right\}$ 
 $$
 \underset{j,i, s}{min} 
 \left[
@@ -89,7 +89,7 @@ Back:
 - stop when e.g. minimal samples per leaf is reached or improvement of split too small
 #### next split
 - find the splitting variable $j$ and the splitting value $s$ that will improve the mean square error the most
-- by solving ([[brute force]]) the following optimization problem will split one leaf $R_i$ in two leafs $R_{i,1}(j,s) = \left\{x \mid x_j \leq s \right\}$ and $R_{i,2}(j,s) = \left\{x \mid x_j > s \right\}$
+- by solving ([[brute force]]) the following optimization problem will split one leaf $R_i$ in two leafs $R_{i,1}(j,s) = \left\{x \mid x \in R_i \land (x)_j \leq s \right\}$ and $R_{i,2}(j,s) = \left\{x \mid x \in R_i \land (x)_j > s \right\}$ 
 $$
 \underset{j,i, s}{min} 
 \left[
