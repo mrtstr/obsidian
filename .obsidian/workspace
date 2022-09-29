@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "mathematics/statistics/PDF.md",
+            "file": "statistical learning/models/neural networks/embedding of categorical features.md",
             "mode": "source",
             "source": false
           }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/statistics/PDF.md",
+                "file": "statistical learning/models/neural networks/embedding of categorical features.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/statistics/PDF.md",
+                "file": "statistical learning/models/neural networks/embedding of categorical features.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/statistics/PDF.md"
+                "file": "statistical learning/models/neural networks/embedding of categorical features.md"
               }
             }
           }
@@ -154,15 +154,15 @@
   },
   "active": "f2c88e4b0d3c39f3",
   "lastOpenFiles": [
+    "statistical learning/models/neural networks/embedding layers.md",
+    "statistical learning/models/neural networks/neural networks.md",
+    "mathematics/statistics/PDF.md",
     "mathematics/statistics/joint distribution.md",
     "mathematics/statistics/probability space.md",
-    "mathematics/statistics/PDF.md",
     "mathematics/statistics/random variable.md",
     "mathematics/statistics/measurable space.md",
     "mathematics/statistics/random process.md",
     "mathematics/statistics/probability function.md",
-    "mathematics/statistics/event space.md",
-    "mathematics/statistics/sample space.md",
-    "statistical learning/models/tree based models/regression tree.md"
+    "mathematics/statistics/event space.md"
   ]
 }
