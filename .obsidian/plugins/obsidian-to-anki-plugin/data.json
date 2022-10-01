@@ -79,8 +79,8 @@
     "statistical learning/bootsrap.md": "d41d8cd98f00b204e9800998ecf8427e",
     "statistical learning/boosting.md": "120df6731faf138829f8d58c20929cfe",
     "statistical learning/bagging.md": "e42b7d18ca0ecb2bd6478681014deadf",
-    "mathematics/statistics/joint distribution.md": "c7946b59ee0844f345b481ceede1f4a4",
-    "mathematics/statistics/conditional distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/joint distribution.md": "530f5b4f88113a9084ec8614f956029a",
+    "mathematics/statistics/conditional distribution.md": "4a937945aa6f581e5dc4c9f27ce5bf90",
     "code/spark.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/pytorch.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/python.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -163,10 +163,16 @@
     "mathematics/statistics/event space.md": "0965ae3c0c80fc8972026cb2360ee65b",
     "mathematics/statistics/random process.md": "6858d1e552de512cc7449ea608bbefa9",
     "mathematics/statistics/probability space.md": "ffc034a75d18bee0fa0e41f01e9e700d",
-    "mathematics/statistics/CDF.md": "958eec84650c82cab3effa7eda93bdac",
-    "mathematics/statistics/PDF.md": "cd0cad551342e676c1fd8d254376edfe",
+    "mathematics/statistics/CDF.md": "9d626cb6baab6e3a75a153b10b8188a6",
+    "mathematics/statistics/PDF.md": "d4910ae25cfb4639573013127b1ea899",
     "mathematics/statistics/measurable space.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/statistics/probability function.md": "d6b03db8a9e9bf5836c65ea90573da8e"
+    "mathematics/statistics/probability function.md": "d6b03db8a9e9bf5836c65ea90573da8e",
+    "statistical learning/models/neural networks/embedding of categorical features.md": "b2f5ff47436671b6e533d8dc3614845d",
+    "statistical learning/models/neural networks/embedding layers.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/bayes theorem.md": "b0c503c9c2457e2b9c910660419ca26c",
+    "mathematics/statistics/statistical sample.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/quantile function.md": "45a7bee57d13f5fac28c3b2d8e27db62",
+    "mathematics/basics/monotonic function.md": "aa887bcb8cd6542c26944058463a8336"
   },
   "fields_dict": {
     "Basic": [

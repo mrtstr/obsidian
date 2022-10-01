@@ -4,36 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "f2c88e4b0d3c39f3",
+        "id": "b3d8c6babf739371",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "statistical learning/models/neural networks/embedding of categorical features.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "61948aaefc08f693",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "mathematics/statistics/joint distribution.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "dd59d276159fe6a9",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "mathematics/statistics/probability space.md",
+            "file": "mathematics/statistics/quantile function.md",
             "mode": "source",
             "source": false
           }
@@ -101,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "statistical learning/models/neural networks/embedding of categorical features.md",
+                "file": "mathematics/statistics/quantile function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "statistical learning/models/neural networks/embedding of categorical features.md",
+                "file": "mathematics/statistics/quantile function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "statistical learning/models/neural networks/embedding of categorical features.md"
+                "file": "mathematics/statistics/quantile function.md"
               }
             }
           }
@@ -152,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f2c88e4b0d3c39f3",
+  "active": "b3d8c6babf739371",
   "lastOpenFiles": [
-    "statistical learning/models/neural networks/embedding layers.md",
-    "statistical learning/models/neural networks/neural networks.md",
+    "mathematics/statistics/CDF.md",
+    "mathematics/statistics/bayes theorem.md",
     "mathematics/statistics/PDF.md",
     "mathematics/statistics/joint distribution.md",
-    "mathematics/statistics/probability space.md",
-    "mathematics/statistics/random variable.md",
-    "mathematics/statistics/measurable space.md",
-    "mathematics/statistics/random process.md",
-    "mathematics/statistics/probability function.md",
-    "mathematics/statistics/event space.md"
+    "mathematics/statistics/conditional distribution.md",
+    "joint PDF.md",
+    "mathematics/statistics/event space.md",
+    "mathematics/statistics/discrete random variable.md",
+    "mathematics/statistics/covariance.md",
+    "mathematics/statistics/conditional expectation.md"
   ]
 }
