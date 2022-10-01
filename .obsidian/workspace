@@ -19,12 +19,8 @@
         "id": "c6e69ba5e84676a5",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "statistical learning/estimator variance.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       },
       {
@@ -101,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "statistical learning/estimator variance.md",
+                "file": "statistical learning/statistical estimator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "statistical learning/estimator variance.md",
+                "file": "statistical learning/statistical estimator.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "statistical learning/estimator variance.md"
+                "file": "statistical learning/statistical estimator.md"
               }
             }
           }
@@ -154,8 +150,8 @@
   },
   "active": "c6e69ba5e84676a5",
   "lastOpenFiles": [
-    "statistical learning/estimator bias.md",
     "statistical learning/estimator variance.md",
+    "statistical learning/estimator bias.md",
     "statistical learning/variance bias tradeoff.md",
     "statistical learning/statistical estimator.md",
     "mathematics/statistics/quantile function.md",
