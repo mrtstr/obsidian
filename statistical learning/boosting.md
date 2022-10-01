@@ -1,7 +1,7 @@
 ## Concept
 - combine weak (simple model with high [[estimator bias|bias]]) [[statistical estimator|learners]] to a more powerful model
 - increase [[model complexity]] → lower [[estimator bias]]
-- can increase [[model variance]]
+- can increase [[estimator variance]]
 - each [[statistical estimator|estimator]] focuses on the weakness of the previous
 
 ## Definition

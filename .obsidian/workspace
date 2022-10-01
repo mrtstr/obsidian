@@ -9,7 +9,31 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "mathematics/statistics/quantile function.md",
+            "file": "statistical learning/estimator bias.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "c6e69ba5e84676a5",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "statistical learning/estimator variance.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "e6425fc49631497b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "statistical learning/statistical estimator.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/statistics/quantile function.md",
+                "file": "statistical learning/estimator variance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/statistics/quantile function.md",
+                "file": "statistical learning/estimator variance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/statistics/quantile function.md"
+                "file": "statistical learning/estimator variance.md"
               }
             }
           }
@@ -128,17 +152,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b3d8c6babf739371",
+  "active": "c6e69ba5e84676a5",
   "lastOpenFiles": [
+    "statistical learning/estimator bias.md",
+    "statistical learning/estimator variance.md",
+    "statistical learning/variance bias tradeoff.md",
+    "statistical learning/statistical estimator.md",
+    "mathematics/statistics/quantile function.md",
     "mathematics/statistics/CDF.md",
     "mathematics/statistics/bayes theorem.md",
     "mathematics/statistics/PDF.md",
     "mathematics/statistics/joint distribution.md",
-    "mathematics/statistics/conditional distribution.md",
-    "joint PDF.md",
-    "mathematics/statistics/event space.md",
-    "mathematics/statistics/discrete random variable.md",
-    "mathematics/statistics/covariance.md",
-    "mathematics/statistics/conditional expectation.md"
+    "mathematics/statistics/conditional distribution.md"
   ]
 }

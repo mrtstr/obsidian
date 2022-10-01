@@ -1,7 +1,7 @@
 ## concept
 - reducing [[model complexity]] of [[tree models]]
 - finding a subtree $T \subset T_0$ that is maximizing a cost complexity criterion by removing internal nodes of the initial tree $T_0$
-- low complexity → better [[generalization]], less [[model variance]]
+- low complexity → better [[generalization]], less [[estimator variance]]
 - high complexity → better [[training error]] less [[estimator bias|model bias]] 
 - helps against over fitting
 ## cost complexity criterion
@@ -36,7 +36,7 @@ pruning: context: concept and trade-off
 Back: 
 - reducing [[model complexity]] of [[tree models]]
 - finding a subtree $T \subset T_0$ that is maximizing a cost complexity criterion by removing internal nodes of the initial tree $T_0$
-- low complexity → better [[generalization]], less [[model variance]]
+- low complexity → better [[generalization]], less [[estimator variance]]
 - high complexity → better [[training error]] less [[estimator bias|model bias]] 
 - helps against over fitting
 Tags: statistical learning, tree based models

@@ -20,7 +20,7 @@
 having an approximation for every point in the feature space often not possible because there might not be enough/any samples in every area of the feature space.
 → assumptions needed
 ### Assumptions 
-1) assumptions are needed for generalisation
+1) assumptions are needed for generalization
 	- we need an approximation for every point in the feature space (even without any training samples in the area)
 		→ assumptions needed to estimate in those regions of the feature space
 2) assumptions needed for variance reduction
@@ -57,7 +57,7 @@ START
 Basic
 Why put assumptions needed for statistical estimators, and what are the effects?
 Back: 
-1) assumptions are needed for generalisation
+1) assumptions are needed for generalization
 	- we need an approximation for every point in the feature space (even without any training samples in the area)
 		→ assumptions needed to estimate in those regions of the feature space
 2) assumptions needed for variance reduction
