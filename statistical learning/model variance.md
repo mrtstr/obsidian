@@ -1,4 +1,4 @@
-## Model Variance
+# Model Variance
 - [[variance]] of a model ([[statistical estimator]] or [[statistical predictor]]) due to the randomness of an infinite training set / [[statistical sample|set of samples]]
 - model [[model bias|bias]] and [[model variance|variance]] are two [[error]] sources of [[statistical predictor|statistical estimators]]: see [[variance bias tradeoff]]
 - for [[statistical predictor]] there is also a part of the [[error]] that is based on the randomness of $f_{Y|X}(y|x)$ and thus is unavoidable 

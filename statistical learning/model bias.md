@@ -1,9 +1,9 @@
-
+# Model Bias
 ## Definition
 - Systematic [[error]] of a model that is left when the training set is infinite. 
 - model [[model bias|bias]] and [[model variance|variance]] are [[error]] sources of [[statistical estimator]] and [[statistical predictor]]: see [[variance bias tradeoff]]
 - for [[statistical predictor]] there is also a part of the [[error]] that is based on the randomness of $f_{Y|X}(y|x)$ and thus is unavoidable and has nothing to do with the model
-
+#
 ### [[statistical estimator]]
 - given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[PDF|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
 - then the bias is the difference between the [[expected value|expected]] parameter estimation and the true parameters 
