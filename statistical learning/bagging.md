@@ -1,4 +1,4 @@
 [[boosting]]
 [[random forrest]]
-[[statistical estimator]]
+[[statistical predictor]]
 [[variance bias tradeoff]]

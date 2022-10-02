@@ -10,7 +10,7 @@ $\widehat{f}(x)=MEAN[y_i|x_i \in N_k(x)]$
 	→ no assumption about the relationship between features $x$ and labels $y$ 
 	→ direct approximation of local [[expected value]] 
 - assumptions: similar characteristics in areas in the feature space 
-	→ high $k$ → bigger area  $N_k(x)$ → more smoothing → more [[estimator bias]], less [[estimator variance]]
+	→ high $k$ → bigger area  $N_k(x)$ → more smoothing → more [[model bias]], less [[model variance]]
 
 ## Problem
 - bad performance in sparse feature spaces

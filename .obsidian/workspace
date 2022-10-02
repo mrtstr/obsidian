@@ -4,32 +4,36 @@
     "type": "split",
     "children": [
       {
-        "id": "b3d8c6babf739371",
+        "id": "fa2f96c4a35f8f93",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "statistical learning/estimator bias.md",
+            "file": "statistical learning/model variance.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "c6e69ba5e84676a5",
-        "type": "leaf",
-        "state": {
-          "type": "graph",
-          "state": {}
-        }
-      },
-      {
-        "id": "e6425fc49631497b",
+        "id": "e7f7d2421acfe86e",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "statistical learning/statistical estimator.md",
+            "file": "statistical learning/model bias.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "78f6afba7e2c2a58",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "statistical learning/variance bias tradeoff.md",
             "mode": "source",
             "source": false
           }
@@ -97,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "statistical learning/statistical estimator.md",
+                "file": "statistical learning/model variance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "statistical learning/statistical estimator.md",
+                "file": "statistical learning/model variance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "statistical learning/statistical estimator.md"
+                "file": "statistical learning/model variance.md"
               }
             }
           }
@@ -148,17 +152,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c6e69ba5e84676a5",
+  "active": "fa2f96c4a35f8f93",
   "lastOpenFiles": [
-    "statistical learning/estimator variance.md",
-    "statistical learning/estimator bias.md",
     "statistical learning/variance bias tradeoff.md",
+    "statistical learning/model bias.md",
+    "statistical learning/model variance.md",
     "statistical learning/statistical estimator.md",
+    "statistical learning/statistical predictor.md",
+    "mathematics/statistics/variance.md",
+    "statistical learning/models/linear models.md",
     "mathematics/statistics/quantile function.md",
     "mathematics/statistics/CDF.md",
-    "mathematics/statistics/bayes theorem.md",
-    "mathematics/statistics/PDF.md",
-    "mathematics/statistics/joint distribution.md",
-    "mathematics/statistics/conditional distribution.md"
+    "mathematics/statistics/bayes theorem.md"
   ]
 }

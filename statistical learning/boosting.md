@@ -1,8 +1,8 @@
 ## Concept
-- combine weak (simple model with high [[estimator bias|bias]]) [[statistical estimator|learners]] to a more powerful model
-- increase [[model complexity]] → lower [[estimator bias]]
-- can increase [[estimator variance]]
-- each [[statistical estimator|estimator]] focuses on the weakness of the previous
+- combine weak (simple model with high [[model bias|bias]]) [[statistical predictor|learners]] to a more powerful model
+- increase [[model complexity]] → lower [[model bias]]
+- can increase [[model variance]]
+- each [[statistical predictor|estimator]] focuses on the weakness of the previous
 
 ## Definition
 $$
@@ -80,7 +80,7 @@ START
 Basic
 boosting: model definition
 Back: 
--combine weak (simple model with high [[estimator bias|bias]]) [[statistical estimator|learners]] to a more powerful model
+-combine weak (simple model with high [[model bias|bias]]) [[statistical predictor|learners]] to a more powerful model
 $$
 f(x)=
 \underbrace{
@@ -109,11 +109,11 @@ boosting:
 Back: 
 
 concept:
-- combine weak (simple model with high [[estimator bias|bias]]) [[statistical estimator|learners]] to a more powerful model
-- each [[statistical estimator|estimator]] focuses on the weakness of the previous
+- combine weak (simple model with high [[model bias|bias]]) [[statistical predictor|learners]] to a more powerful model
+- each [[statistical predictor|estimator]] focuses on the weakness of the previous
 
 effect:
-- increase [[model complexity]] → lower [[estimator bias]]
+- increase [[model complexity]] → lower [[model bias]]
 → use on high bias (weak) learners
 
 Tags: statistical learning

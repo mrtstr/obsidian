@@ -2,7 +2,7 @@
 - [[expected value|expectation]] of the squared deviation of a [[random variable]] from its mean
 - measure of how for a [[random variable]] spreads out
 
-$\mathbb{VAR}=\mathbb{E}[(X-\mathbb{E}[X])^2]=\mathbb{E}[X^2]-\mathbb{E}[X]^2$
+$\mathbb{VAR}[X]=\mathbb{E}[(X-\mathbb{E}[X])^2]=\mathbb{E}[X^2]-\mathbb{E}[X]^2$
 
 (variance of a set of [[observations]] see [[sample variance]])
 
@@ -19,7 +19,7 @@ Back:
 - expectation of the squared deviation of a random variable from its mean
 - measure of how for a random variable spreads out
 
-$\mathbb{VAR}=\mathbb{E}[(X-\mathbb{E}[X])^2]=\mathbb{E}[X^2]-\mathbb{E}[X]^2$
+$\mathbb{VAR}[X]=\mathbb{E}[(X-\mathbb{E}[X])^2]=\mathbb{E}[X^2]-\mathbb{E}[X]^2$
 
 Tags: mathematics, statistics
 <!--ID: 1661928261918-->
@@ -30,7 +30,7 @@ Basic
 properties of the variance (3)
 Back: 
 definition:
-$\mathbb{VAR}=\mathbb{E}[(X-\mathbb{E}[X])^2]=\mathbb{E}[X^2]-\mathbb{E}[X]^2$
+$\mathbb{VAR}[X]=\mathbb{E}[(X-\mathbb{E}[X])^2]=\mathbb{E}[X^2]-\mathbb{E}[X]^2$
 
 properties:
 - $\mathbb{VAR}[a]=0$ and $\mathbb{V}[X+a]=\mathbb{VAR}[X]$ 
