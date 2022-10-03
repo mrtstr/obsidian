@@ -1,6 +1,6 @@
 #### Concept
 - Defined for [[random variable]]
-- Generalisation of the weighted mean: mean of possible outcomes weighted by its probability
+- Generalization of the weighted mean: mean of possible outcomes weighted by its probability
 - defined for [[conditional distribution|conditional distributions]]: [[conditional expectation]] 
 
 #### expected values of a [[continuous random variable]] $X$ with a [[PDF|PDF]] $f_X(x)$:

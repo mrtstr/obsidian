@@ -1,6 +1,6 @@
-## Statistical predictor
+# Statistical predictor
 - Goal: find connect between input/features $x$ and output/labels $y$
-- because the [[joint distribution]] $f_{XY}(x,y)$ is hard to find the goal is to approximate properties (e.g. mean, median, or quantiles) of the [[conditional distribution]]  $f_{Y|X}(y|x)$
+- because the [[joint distribution]] $f_{XY}(x,y)$ is hard to find the goal is to approximate properties (e.g. mean, median, or [[quantile function|quantiles]]) of the [[conditional distribution]]  $f_{Y|X}(y|x)$
 - every point in the feature space $x$ is a distribution of outputs $y$
 - approximate predictor $f(x)$ by minimizing the [[loss functions]]
 
@@ -11,7 +11,7 @@
 - $L(Y, f(x))=\mathbb{E}[(Y-f(X))^2]$
 - $=\int\limits_\infty^\infty \int\limits_\infty^\infty(y-f(x))^2f_{XY}(x,y)dxdy$
 - $=\mathbb{E}_{X} \mathbb{E}_{Y|X}[(Y-f(x))^2\:|\:X]$ ([[factoring of joint densities]])
-- $\rightarrow f(x)=argmin_c \:\mathbb{E}_{Y|X}[(Y-c)^2\:|\:X]=\mathbb{E}[Y\:|\:X=x]$  ([[conditional expectation]])
+- $\rightarrow f(x)=argmin_c \:\mathbb{E}_{Y|X}[(Y-c)^2\:|\:X]=\mathbb{E}[Y\:|\:X=x]$ ([[conditional expectation]])
 #### [[mean absolute error]] 
 - $L(Y, f(x))=\mathbb{E}[|Y-f(X)|] \rightarrow f(x)=median[Y|X=x]$ 
 #### [[maximum likelihood]] 
@@ -40,7 +40,7 @@ having an approximation for every point in the feature space often not possible 
 → assuming no relationship between $x$ and $y$ 
 - [[k nearest neighbours]] $\widehat{f}(x)=MEAN[y_i|x_i \in N_k(x)]$
 
-### [[variance bias tradeoff]]
+### [[variance bias trade-off]]
 - Constrains induce a bias but can reduce the estimator's variance
 
 START

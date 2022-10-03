@@ -78,7 +78,7 @@
     "statistical learning/classification.md": "d41d8cd98f00b204e9800998ecf8427e",
     "statistical learning/bootsrap.md": "d41d8cd98f00b204e9800998ecf8427e",
     "statistical learning/boosting.md": "9cef975126bc9094390fc5614883b81d",
-    "statistical learning/bagging.md": "e76fce39048401d20a08c4361f041e22",
+    "statistical learning/bagging.md": "2729dfcef226fdeb240c63ead6df4e01",
     "mathematics/statistics/joint distribution.md": "530f5b4f88113a9084ec8614f956029a",
     "mathematics/statistics/conditional distribution.md": "4a937945aa6f581e5dc4c9f27ce5bf90",
     "code/spark.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -86,9 +86,9 @@
     "code/python.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/numpy.md": "d41d8cd98f00b204e9800998ecf8427e",
     "[kernel methods.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "statistical learning/model variance.md": "e954191184dfeba86398302f063ca366",
+    "statistical learning/model variance.md": "a261e605c736791a7492f5f58f72182c",
     "statistical learning/curse of dimensionality.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "statistical learning/model bias.md": "966875ee9bdfafaa91b1168ec3b2f1e5",
+    "statistical learning/model bias.md": "e770eb6adc43e0d14af1636c869b17ec",
     "statistical learning/cross entropy.md": "d41d8cd98f00b204e9800998ecf8427e",
     "statistical learning/mean absolute error.md": "1804db18a99cbfa13afb25493b07585a",
     "statistical learning/models/k nearest neighbors.md": "0e78d0293f8d2e083e8edab95fb6c6ea",
@@ -105,7 +105,7 @@
     "mathematics/statistics/probability density function.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/statistics/independence.md": "a028708b354abdc96492cd1c902dd93d",
     "mathematics/statistics/random variable.md": "dd6a454cee5cc1b99e9f4d2b52358424",
-    "mathematics/statistics/expected value.md": "94be0d27f204d38f4ff1d27c2b5132ae",
+    "mathematics/statistics/expected value.md": "ac1e52cdff6230f23e21505ef074d28f",
     "algorithms/sliding window.md": "93f12dc4f8583ce24c1d5e6e9fc7682b",
     "statistical learning/estimator bias.md": "28366a4cfc18bdd18684362fb85b173a",
     "mathematics/statistics/observations.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -174,7 +174,9 @@
     "mathematics/statistics/quantile function.md": "d7b4642ce6527f86626811c52cc5d65c",
     "mathematics/basics/monotonic function.md": "aa887bcb8cd6542c26944058463a8336",
     "statistical learning/estimator variance.md": "0ecaeba98a3ec4760a50a4901263588b",
-    "statistical learning/statistical predictor.md": "6a717bb40f5cf3c499206586ec5c5e0c"
+    "statistical learning/statistical predictor.md": "c169c9464301b92ff9cbaac50cd84ed8",
+    "statistical learning/variance bias trade-off.md": "2ca645e8bbdabcd6d3dbc26b9a05a456",
+    "mathematics/statistics/stochastic independence.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [

@@ -4,11 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "dee7503f7a374d26",
+        "id": "7d7e42ca2a34f90b",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "statistical learning/variance bias trade-off.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "3284b9b07a1ae5f6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "statistical learning/model variance.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "c453425afaf29a50",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "statistical learning/model bias.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -73,6 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "statistical learning/variance bias trade-off.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "statistical learning/variance bias trade-off.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "statistical learning/variance bias trade-off.md"
+              }
             }
           }
         ]
@@ -120,17 +152,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "dee7503f7a374d26",
+  "active": "7d7e42ca2a34f90b",
   "lastOpenFiles": [
-    "statistical learning/variance bias tradeoff.md",
-    "statistical learning/model bias.md",
-    "statistical learning/statistical estimator.md",
-    "statistical learning/statistical predictor.md",
     "statistical learning/model variance.md",
-    "mathematics/statistics/variance.md",
-    "statistical learning/models/linear models.md",
-    "mathematics/statistics/quantile function.md",
-    "mathematics/statistics/CDF.md",
-    "mathematics/statistics/bayes theorem.md"
+    "statistical learning/variance bias trade-off.md",
+    "statistical learning/model bias.md",
+    "mathematics/statistics/independence.md",
+    "mathematics/statistics/stochastic independence.md",
+    "statistical learning/statistical predictor.md",
+    "statistical learning/models/generalized additive models.md",
+    "statistical learning/models/generalized linear models.md",
+    "mathematics/statistics/expected value.md",
+    "mathematics/statistics/variance.md"
   ]
 }
