@@ -14,30 +14,6 @@
             "source": false
           }
         }
-      },
-      {
-        "id": "3284b9b07a1ae5f6",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "statistical learning/model variance.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "c453425afaf29a50",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "statistical learning/model bias.md",
-            "mode": "source",
-            "source": false
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -154,15 +130,15 @@
   },
   "active": "7d7e42ca2a34f90b",
   "lastOpenFiles": [
+    "Untitled.md",
+    "statistical learning/model bias.md",
     "statistical learning/model variance.md",
     "statistical learning/variance bias trade-off.md",
-    "statistical learning/model bias.md",
     "mathematics/statistics/independence.md",
     "mathematics/statistics/stochastic independence.md",
     "statistical learning/statistical predictor.md",
     "statistical learning/models/generalized additive models.md",
     "statistical learning/models/generalized linear models.md",
-    "mathematics/statistics/expected value.md",
-    "mathematics/statistics/variance.md"
+    "mathematics/statistics/expected value.md"
   ]
 }

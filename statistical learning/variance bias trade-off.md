@@ -379,7 +379,7 @@ $$
 \mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[
 \widehat{\theta}_\mathcal{T}
 \right]^2
-}_\text{$=0$}
+}_\text{=0}
 \end{split}
 $$
 $$
@@ -397,7 +397,7 @@ $$
 \right]^2
 \right)
 
-}_\text{$variance$}
+}_\text{variance}
 \\
 +
 \underbrace{
@@ -414,7 +414,7 @@ $$
 \right]
 \theta
 \right)
-}_\text{$bias^2$}
+}_\text{bias2}
 \end{split}
 $$
 $$
@@ -429,7 +429,7 @@ $$
 \widehat{\theta}_\mathcal{T}
 \right]
 \right)^2
-}_\text{$bias^2$}
+}_\text{bias2}
 $$
 $$
 =
@@ -515,7 +515,7 @@ f(x) + \epsilon
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]^2
-}_\text{$=0$}
+}_\text{=0}
 \end{split}
 $$
 $$
@@ -533,7 +533,7 @@ $$
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]^2
-}_\text{$variance$}
+}_\text{variance}
 
 \\
 -
@@ -550,7 +550,7 @@ $$
 }\left[
 \epsilon
 \right]
-}_\text{$=0$}
+}_\text{=0}
 +
 f(x)
 \right)
@@ -563,7 +563,7 @@ f(x)
 }\left[
 \epsilon
 ^2\right]
-}_\text{$\mathbb{VAR}[\epsilon]$}
+}_\text{VAR[epsilon]}
 + f(x)^2
 + 2f(x)
 \underbrace{
@@ -572,7 +572,7 @@ f(x)
 }\left[
 \epsilon
 \right]
-}_\text{$=0$}
+}_\text{=0}
 \\
 +
 
@@ -607,7 +607,7 @@ $$
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]
 f(x)
-}_\text{$bias^2$}
+}_\text{bias2}
 \end{split}
 $$
 $$
