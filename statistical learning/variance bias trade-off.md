@@ -111,7 +111,7 @@ $$
 
 $$
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}\left(x \mid \theta \right)
 , \: \epsilon \sim f_\epsilon(x_0)
 }\left[\left(
 Y-
@@ -120,7 +120,7 @@ Y-
 $$
 $$
 =\mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 , \: \epsilon \sim f_\epsilon(x_0)
 }\left[\left(
 f(x) + \epsilon
@@ -137,7 +137,7 @@ f(x) + \epsilon
 \right)^2\right]
 +
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 ^2\right]
@@ -145,26 +145,26 @@ f(x) + \epsilon
 -
 2
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]
 \mathbb{E}_{
 \epsilon \sim f_\epsilon(x_0)
 }\left[
-f(x) + \epsilon
+f(x_0) + \epsilon
 \right]
 \\
 +
 \underbrace{
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]^2
 -
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]^2
@@ -176,13 +176,13 @@ $$
 =
 \underbrace{
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 ^2\right]
 -
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]^2
@@ -192,7 +192,7 @@ $$
 -
 2
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]
@@ -230,7 +230,7 @@ f(x)
 +
 
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]^2
@@ -248,14 +248,14 @@ $$
 +f(x)^2
 +
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]^2
 -
 2
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]
@@ -458,7 +458,7 @@ Back:
 
 $$
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \mathcal{D}
 , \: \epsilon \sim f_\epsilon(x_0)
 }\left[\left(
 Y-
@@ -467,7 +467,7 @@ Y-
 $$
 $$
 =\mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 , \: \epsilon \sim f_\epsilon(x_0)
 }\left[\left(
 f(x) + \epsilon
@@ -480,11 +480,11 @@ $$
 =\mathbb{E}_{
 \epsilon \sim f_\epsilon(x_0)
 }\left[\left(
-f(x) + \epsilon
+f(x_0) + \epsilon
 \right)^2\right]
 +
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 ^2\right]
@@ -492,26 +492,26 @@ f(x) + \epsilon
 -
 2
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]
 \mathbb{E}_{
 \epsilon \sim f_\epsilon(x_0)
 }\left[
-f(x) + \epsilon
+f(x_0) + \epsilon
 \right]
 \\
 +
 \underbrace{
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]^2
 -
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]^2
@@ -523,13 +523,13 @@ $$
 =
 \underbrace{
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 ^2\right]
 -
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]^2
@@ -539,7 +539,7 @@ $$
 -
 2
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]
@@ -577,7 +577,7 @@ f(x)
 +
 
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]^2
@@ -595,14 +595,14 @@ $$
 +f(x)^2
 +
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]^2
 -
 2
 \mathbb{E}_{
-\mathcal{T} \sim f_{X \mid \theta}\left(x \mid \theta \right)
+\mathcal{T} \sim \mathcal{D}
 }\left[
 \widehat{f}_{\mathcal{T}}(x_0)
 \right]

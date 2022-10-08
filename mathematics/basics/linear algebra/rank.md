@@ -1,0 +1,1 @@
+The **column rank** of A is the dimension of the [[column space|column space]] of A, while the **row rank** of A is the dimension of the [[row space]] of A
