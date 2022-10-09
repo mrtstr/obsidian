@@ -1,0 +1,1 @@
+row space of a [[matrix]]

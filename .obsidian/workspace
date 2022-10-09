@@ -4,19 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "f2c88e4b0d3c39f3",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "mathematics/basics/linear algebra/column space.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "b21e2029639e9eff",
+        "id": "9c82a8cb1db013c1",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -85,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/basics/linear algebra/column space.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/basics/linear algebra/column space.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "mathematics/basics/linear algebra/column space.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -136,17 +120,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f2c88e4b0d3c39f3",
+  "active": "9c82a8cb1db013c1",
   "lastOpenFiles": [
-    "mathematics/basics/distributive.md",
-    "mathematics/basics/symetry.md",
-    "mathematics/basics/associative.md",
-    "mathematics/basics/linear algebra/Untitled.md",
-    "mathematics/basics/linear algebra/normalized vektor space.md",
-    "mathematics/basics/linear algebra/vecor space.md",
+    "mathematics/basics/linear algebra/determinant.md",
+    "mathematics/basics/linear algebra/column space.md",
+    "mathematics/basics/linear algebra/row space.md",
+    "mathematics/basics/linear algebra/nullspace.md",
+    "mathematics/basics/linear algebra/rank.md",
+    "mathematics/basics/linear algebra/basis.md",
+    "mathematics/basics/linear algebra/corank.md",
+    "mathematics/basics/linear algebra/dot product.md",
     "mathematics/basics/linear algebra/hilbert space.md",
-    "mathematics/basics/linear algebra/matrix norm.md",
-    "mathematics/basics/linear algebra/vector norm.md",
-    "mathematics/basics/linear algebra/matrix.md"
+    "mathematics/basics/linear algebra/matrix product.md"
   ]
 }
