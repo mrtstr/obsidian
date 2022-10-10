@@ -9,15 +9,15 @@ $$
 \begin{split}
 A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}} 
 &= \left(a_{i,j} \right)_{i \in \mathcal{I}, j \in \mathcal{J}} \\
-&= \left(A^{(i)} \right)_{i \in \mathcal{I}}
+&= \left(A^{(j)} \right)_{j \in \mathcal{J}}
 = 
-\begin{pmatrix}   A^{(1)} &   ... & A^{(\left| \mathcal{I} \right|)}  \end{pmatrix}\\
-&= \left(A_{(j)} \right)_{j \in \mathcal{J}}
+\begin{pmatrix}   A^{(1)} &   ... & A^{(\left| \mathcal{J} \right|)}  \end{pmatrix}\\
+&= \left(A_{(i)} \right)_{i \in \mathcal{I}}
 =  
-\begin{pmatrix}   A_{(1)} \\   ... \\ A_{(\left| \mathcal{J} \right|)}   \end{pmatrix}
+\begin{pmatrix}   A_{(1)} \\   ... \\ A_{(\left| \mathcal{I} \right|)}   \end{pmatrix}
 \end{split}
 $$
-## Operations\left(A^\top\right)^{-1}
+## Operations
 ### [[matrix product|Product]]
 $$
 AB=\left(\sum\limits_{j \in \mathcal{J}} a_{ij}b_{jk}\right)_{i \in \mathcal{I},\: k \in \mathcal{K}}
@@ -50,43 +50,23 @@ matrix transpose
 - properties (6)
  
 Back: 
-​￼# Transpose of a [[matrix]]
-​￼## Definition
+# Transpose of a [[matrix]]
+## Definition
 The [[transpose]] of [[matrix]] A is defined as follows 
 $$
 \begin{split}
 A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}} 
 &= \left(a_{i,j} \right)_{i \in \mathcal{I}, j \in \mathcal{J}} \\
-&= \left(A^{(i)} \right)_{i \in \mathcal{I}}
+&= \left(A^{(j)} \right)_{j \in \mathcal{J}}
 = 
-\begin{pmatrix}   A^{(1)} &   ... & A^{(\left| \mathcal{I} \right|)}  \end{pmatrix}\\
-&= \left(A_{(j)} \right)_{j \in \mathcal{J}}
+\begin{pmatrix}   A^{(1)} &   ... & A^{(\left| \mathcal{J} \right|)}  \end{pmatrix}\\
+&= \left(A_{(i)} \right)_{i \in \mathcal{I}}
 =  
-\begin{pmatrix}   A_{(1)} \\   ... \\ A_{(\left| \mathcal{J} \right|)}   \end{pmatrix}
+\begin{pmatrix}   A_{(1)} \\   ... \\ A_{(\left| \mathcal{I} \right|)}   \end{pmatrix}
 \end{split}
 $$
  
- 
- 
-A∈R|I|×|J|=(ai,j)i∈I,j∈J=(A(i))i∈I=(A(1)...A(|I|))=(A(j))j∈J=(A(1)...A(|J|))
-
-$$
-\begin{split}
-A^\top  \in \mathbb{R^{\left| \mathcal{J} \right| \times \left| \mathcal{I} \right|}} 
-&= \left(a_{i,j} \right)_{j \in \mathcal{J}, i \in \mathcal{I}} \\
-&= \left(A_{(j)} \right)_{j \in \mathcal{J}}
-= 
-\begin{pmatrix}   A_{(1)} &   ... & A_{(\left| \mathcal{J} \right|)}  \end{pmatrix}\\
-&= \left(A^{(i)} \right)_{i \in \mathcal{I}}
-=  
-\begin{pmatrix}   A^{(1)} \\   ... \\ A^{(\left| \mathcal{I} \right|)}   \end{pmatrix}
-\end{split}
-$$
- 
- 
- 
-A⊤∈R|J|×|I|=(ai,j)j∈J,i∈I=(A(j))j∈J=(A(1)...A(|J|))=(A(i))i∈I=(A(1)...A(|I|))
-​￼## Properties
+## Properties
 1) $\left(A_1A_2 \: .. \:A_k\right)^\top=A_k^\top  \: .. \: A_2^\top A_1^\top$ 
 2) $\left(A+B\right)^\top=A^\top + B^\top$
 3) $(cA)^\top =cA^\top$
@@ -107,12 +87,12 @@ $$
 \begin{split}
 A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}} 
 &= \left(a_{i,j} \right)_{i \in \mathcal{I}, j \in \mathcal{J}} \\
-&= \left(A^{(i)} \right)_{i \in \mathcal{I}}
+&= \left(A^{(j)} \right)_{j \in \mathcal{J}}
 = 
-\begin{pmatrix}   A^{(1)} &   ... & A^{(\left| \mathcal{I} \right|)}  \end{pmatrix}\\
-&= \left(A_{(j)} \right)_{j \in \mathcal{J}}
+\begin{pmatrix}   A^{(1)} &   ... & A^{(\left| \mathcal{J} \right|)}  \end{pmatrix}\\
+&= \left(A_{(i)} \right)_{i \in \mathcal{I}}
 =  
-\begin{pmatrix}   A_{(1)} \\   ... \\ A_{(\left| \mathcal{J} \right|)}   \end{pmatrix}
+\begin{pmatrix}   A_{(1)} \\   ... \\ A_{(\left| \mathcal{I} \right|)}   \end{pmatrix}
 \end{split}
 $$
 
