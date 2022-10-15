@@ -4,27 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "980b9fd3abe2de64",
+        "id": "8ad80ecb0e878913",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "mathematics/basics/linear algebra/matrix.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "f8e9b52c0e06d5db",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "mathematics/basics/linear algebra/inverse matrix.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -52,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "orth",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,8 +53,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -90,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/basics/linear algebra/inverse matrix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/basics/linear algebra/inverse matrix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "mathematics/basics/linear algebra/inverse matrix.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -141,17 +120,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f8e9b52c0e06d5db",
+  "active": "8ad80ecb0e878913",
   "lastOpenFiles": [
-    "mathematics/basics/linear algebra/matrix.md",
-    "mathematics/basics/linear algebra/transpose.md",
-    "mathematics/basics/linear algebra/matrix product.md",
+    "mathematics/basics/linear algebra/rank.md",
+    "mathematics/basics/linear algebra/orthogonal.md",
+    "mathematics/basics/linear algebra/normalized.md",
+    "mathematics/basics/linear algebra/orthonormal.md",
     "mathematics/basics/linear algebra/column space.md",
-    "statistical learning/variance bias trade-off.md",
-    "mathematics/statistics/conditional expectation.md",
-    "statistical learning/gradient boosting.md",
-    "statistical learning/models/generalized additive models.md",
-    "mathematics/statistics/expected value.md",
-    "mathematics/statistics/PDF.md"
+    "mathematics/basics/linear algebra/nullity.md",
+    "mathematics/basics/linear algebra/matrix.md",
+    "mathematics/basics/linear algebra/rank nullity theorem.md",
+    "mathematics/basics/linear algebra/nullspace.md",
+    "statistical learning/models/generalized additive models.md"
   ]
 }

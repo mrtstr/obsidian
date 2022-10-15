@@ -50,7 +50,8 @@
     }
   },
   "Added Media": [
-    "Pasted image 20221009111212.png"
+    "Pasted image 20221009111212.png",
+    "Pasted image 20221015081452.png"
   ],
   "File Hashes": {
     "python.md": "5e53ed997a2ad8172d0e61017b450b6c",
@@ -198,15 +199,15 @@
     "mathematics/basics/linear algebra/row space.md": "910b9bbfab762ff824f35d28368c1e35",
     "mathematics/basics/linear algebra/regular matrix.md": "63409d7cbbbdef8459a0633be716792b",
     "mathematics/basics/linear algebra/rectangular matrix.md": "e0f31fd77c3e16c10ff03932f48078d2",
-    "mathematics/basics/linear algebra/rank.md": "fdc1d553291b2521c5146d8452a37891",
+    "mathematics/basics/linear algebra/rank.md": "1714d1781d36366371f557d9bc25bf44",
     "mathematics/basics/linear algebra/pseudo inverse matrix.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linear algebra/projection.md": "cb00df4b1da46cacd79fc6d95e832900",
     "mathematics/basics/linear algebra/projection matrix.md": "631c6f4a941bdcb0d04c41b4658c4c4d",
-    "mathematics/basics/linear algebra/orthogonal.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/linear algebra/orthogonal.md": "c3cea6c9b0872481a3b8672b5121249e",
     "mathematics/basics/linear algebra/orthogonal matrix.md": "e0f31fd77c3e16c10ff03932f48078d2",
-    "mathematics/basics/linear algebra/nullspace.md": "063353b143bb942f5d86404a62545890",
+    "mathematics/basics/linear algebra/nullspace.md": "b2d20c8a7b91f48f28f0fbc0e357cdaa",
     "mathematics/basics/linear algebra/normalized vektor space.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/linear algebra/matrix.md": "814367618b9d9656d72fad5b6c163bc9",
+    "mathematics/basics/linear algebra/matrix.md": "1e79a7f8b8e4c4b35b96321800dc0b58",
     "mathematics/basics/linear algebra/matrix product.md": "76a99365c7e8d489cf697c77842a354b",
     "mathematics/basics/linear algebra/matrix norm.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linear algebra/matrix calculus.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -221,7 +222,7 @@
     "mathematics/basics/linear algebra/determinant.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linear algebra/definite.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linear algebra/corank.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/linear algebra/column space.md": "486a5e4cf81b5023b30c9b713c8b1ed6",
+    "mathematics/basics/linear algebra/column space.md": "f86eb87c1e07613a7734c45506fe0f72",
     "mathematics/basics/linear algebra/basis.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linear algebra/QR decomposition.md": "e0f31fd77c3e16c10ff03932f48078d2",
     "mathematics/basics/linear algebra/LU decomposition.md": "e0f31fd77c3e16c10ff03932f48078d2",
@@ -229,7 +230,11 @@
     "mathematics/basics/commutative.md": "690ad4443772f1f315e1c306d93952be",
     "mathematics/basics/associative.md": "d41d8cd98f00b204e9800998ecf8427e",
     "algorithms/data structure/list.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "algorithms/data structure/array.md": "77c2588aa614f85845f30a378dff4744"
+    "algorithms/data structure/array.md": "77c2588aa614f85845f30a378dff4744",
+    "mathematics/basics/linear algebra/normalized.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/linear algebra/orthonormal.md": "4c80e6196aee5227752a4c93bcb61d4c",
+    "mathematics/basics/linear algebra/nullity.md": "7bc12a9170e6dc0bc06d13da9ff504d1",
+    "mathematics/basics/linear algebra/rank nullity theorem.md": "e7e2f3d858a9e61da0c8012b61459b89"
   },
   "fields_dict": {
     "Basic": [

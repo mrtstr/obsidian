@@ -1,9 +1,7 @@
 # Matrix
 - can be represented by a two-dimensional [[array]]
 - is a 2. Order [[tensor]] 
-- A matrix $A\in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}} \left(\in \mathbb{R}^{m \times n}\right)$ represents a [[unique]] [[linear map]] $F(x)$ that maps the $\mathbb{R}^n$ to its [[column space]] $Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{m}$
-$$F(x) = Ax\in \mathbb{R}^{m \times n}: \mathbb{R}^{n} \mapsto Im(A) \in \mathbb{R}^{m}$$
-- [[matrix calculus]]
+- - [[matrix calculus]]
 ## Definition
 $$
 \begin{split}
@@ -17,6 +15,12 @@ A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}}
 \begin{pmatrix}   A_{(1)} \\   ... \\ A_{(\left| \mathcal{I} \right|)}   \end{pmatrix}
 \end{split}
 $$
+## Represented linear map
+A matrix $A\in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}}$ represents a [[unique]] [[linear map]] $F(x)$ that maps the $\mathbb{R}^{\left| \mathcal{J} \right|}$ to its [[column space]] $Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$
+
+$$F(x) = Ax: \mathbb{R}^{\left| \mathcal{J} \right|} \mapsto Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$$
+![[Pasted image 20221015082805.png]]
+
 ## Operations
 ### [[matrix product|Product]]
 $$
@@ -76,6 +80,8 @@ $$
 
 Tags: mathematics, linear algebra
 END
+
+
 START
 Basic
 matrix
@@ -97,7 +103,10 @@ A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}}
 $$
 
 ## induced linear map
-A matrix $A\in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}} \left(\in \mathbb{R}^{m \times n}\right)$ represents a [[unique]] [[linear map]] $F(x)$ that maps the $\mathbb{R}^n$ to its [[column space]] $Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{m}$
+A matrix $A\in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}}$ represents a [[unique]] [[linear map]] $F(x)$ that maps the $\mathbb{R}^{\left| \mathcal{J} \right|}$ to its [[column space]] $Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$
+
+$$F(x) = Ax: \mathbb{R}^{\left| \mathcal{J} \right|} \mapsto Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$$
+
 Tags: mathematics, linear algebra
 <!--ID: 1665308790802-->
 END
