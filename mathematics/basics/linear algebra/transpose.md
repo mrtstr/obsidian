@@ -31,7 +31,7 @@ $$
 2) $\left(A+B\right)^\top=A^\top + B^\top$
 3) $(cA)^\top =cA^\top$
 4) $det(A)=det(A^\top)$ with its [[determinant]] $A^\top$
-5) $A^\top A$ is [[definite|positive-semidefinite]]
+5) $A^\top A$ is [[definite quadratic form|positive-semidefinite]]
 6) $\left(A^\top\right)^{-1}=\left(A^{-1}\right)^{\top}$ 
 
 
@@ -75,7 +75,7 @@ $$
 2) $\left(A+B\right)^\top=A^\top + B^\top$
 3) $(cA)^\top =cA^\top$
 4) $det(A)=det(A^\top)$ with its [[determinant]] $A^\top$
-5) $A^\top A$ is [[definite|positive-semidefinite]]
+5) $A^\top A$ is [[definite quadratic form|positive-semidefinite]]
 6) $\left(A^\top\right)^{-1}=\left(A^{-1}\right)^{\top}$ 
 
 Tags: mathematics, linear algebra

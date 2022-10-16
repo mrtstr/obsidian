@@ -1,5 +1,5 @@
 # Orthogonal
-- [[squared matrix]] with [[orthogonal]] and [[normalized]] column and row [[vector|vectors]]: see [[orthogonal matrix]]
+- [[square matrix]] with [[orthogonal]] and [[normalized]] column and row [[vector|vectors]]: see [[orthogonal matrix]]
 
 ## Definition
 - two [[vector|vectors]] are [[orthogonal]] when their [[dot product]] is $=0$
