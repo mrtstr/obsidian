@@ -57,7 +57,7 @@ $$
 4) when A [[regular matrix]]: $A^\top = A \Leftrightarrow (A^{-1}) = (A^{-1})^\top$ ($A$ is [[symmetric matrix|symmetric]] iff it's [[inverse matrix]] is [[symmetric matrix|symmetric]])
 5) every [[symmetric matrix]] is a [[normal matrix]]
 6) $A$ [[symmetric matrix|symmetric]] then $XAX^\top$ is [[symmetric matrix|symmetric]] 
-<!--ID: 1665918408899-->
+
 Tags: mathematics, linear algebra
 <!--ID: 1666105989005-->
 END

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "symmetric matrix.md",
+                "file": "statistical learning/statistical predictor.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "eea037d06f23532f",
@@ -91,7 +90,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "symmetric matrix",
+                "query": "MSE (with proof",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -183,17 +182,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "afaee572603baa36",
+  "active": "01e2c8266375b6fd",
   "lastOpenFiles": [
-    "mathematics/basics/linear algebra/matrix.md",
+    "statistical learning/statistical predictor.md",
     "symmetric matrix.md",
+    "mathematics/basics/linear algebra/matrix.md",
     "mathematics/basics/linear algebra/diagonal matrix.md",
     "mathematics/basics/linear algebra/triangular matrix.md",
     "mathematics/basics/linear algebra/spectral theorem.md",
     "mathematics/basics/linear algebra/identity matrix.md",
     "mathematics/basics/linear algebra/zero matrix.md",
     "mathematics/basics/linear algebra/normal matrix.md",
-    "mathematics/basics/linear algebra/square matrix.md",
-    "mathematics/basics/linear algebra/sylvesters criterion.md"
+    "mathematics/basics/linear algebra/square matrix.md"
   ]
 }
