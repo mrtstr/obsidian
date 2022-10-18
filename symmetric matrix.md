@@ -30,7 +30,8 @@ Basic
 symmetric matrix
 - definition (3)
 - properties (6)
-Tags: mathematics, linear algebra
+
+Back:
 ## Definition
 A [[square matrix]] $A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{I} \right|}}$ is symmetric when:
 $$
@@ -57,4 +58,6 @@ $$
 5) every [[symmetric matrix]] is a [[normal matrix]]
 6) $A$ [[symmetric matrix|symmetric]] then $XAX^\top$ is [[symmetric matrix|symmetric]] 
 <!--ID: 1665918408899-->
+Tags: mathematics, linear algebra
+<!--ID: 1666105989005-->
 END

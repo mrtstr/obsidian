@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "afaee572603baa36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "symmetric matrix.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "ca4439b22b0f33a9",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "eea037d06f23532f",
@@ -78,7 +91,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "orth",
+                "query": "symmetric matrix",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,7 +108,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -169,7 +183,7 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "01e2c8266375b6fd",
+  "active": "afaee572603baa36",
   "lastOpenFiles": [
     "mathematics/basics/linear algebra/matrix.md",
     "symmetric matrix.md",
