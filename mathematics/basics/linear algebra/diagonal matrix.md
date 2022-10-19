@@ -12,9 +12,8 @@ $$
 1) $det(D) = \prod\limits_{i=1}^{min\left( \left| \mathcal{I} \right| \times \left| \mathcal{J} \right| \right)} d_i$ $D \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{I} \right|}}$ is [[square matrix]]
 2) $D = D^\top$ ($D$ is a [[symmetric matrix]])
 3) $D^{-1} = diag\left(\left(d_{i}^{-1}\right)_{i \in \mathcal{I}} \right)$ (its [[inverse matrix|inverse]] is a [[diagonal matrix]] with all entry's inverted)
-4) $D$ is a [[diagonal matrix]] iff $D$ is a [[normal matrix]] and a [[triangular matrix]]
-5) $D$ is a [[diagonal matrix]] iff $D$ is an upper and lower [[triangular matrix]]
-6) the [[identity matrix]] and [[zero matrix]] are [[diagonal matrix|diagonal matrices]]
+4) $D$ is [[regular matrix]] iff $a_i \neq 0$ 
+
 
 ## Applications
 - Used in the [[singular value decomposition]]
@@ -41,9 +40,7 @@ $$
 1) $det(D) = \prod\limits_{i=1}^{min\left( \left| \mathcal{I} \right| \times \left| \mathcal{J} \right| \right)} d_i$ $D \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{I} \right|}}$ is [[square matrix]]
 2) $D = D^\top$ ($D$ is a [[symmetric matrix]])
 3) $D^{-1} = diag\left(\left(d_{i}^{-1}\right)_{i \in \mathcal{I}} \right)$ (its [[inverse matrix|inverse]] is a [[diagonal matrix]] with all entry's inverted)
-4) $D$ is a [[diagonal matrix]] iff $D$ is a [[normal matrix]] and a [[triangular matrix]]
-5) $D$ is a [[diagonal matrix]] iff $D$ is an upper and lower [[triangular matrix]]
-6) the [[identity matrix]] and [[zero matrix]] are [[diagonal matrix|diagonal matrices]]
+4) $D$ is [[regular matrix]] iff $a_i \neq 0$ 
 
 ## Applications
 - Used in the [[singular value decomposition]]

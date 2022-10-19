@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "symmetric matrix.md",
+                "file": "mathematics/basics/linear algebra/diagonal matrix.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "MSE (with proof",
+                "query": "dia",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "symmetric matrix.md",
+                "file": "mathematics/basics/linear algebra/diagonal matrix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "symmetric matrix.md",
+                "file": "mathematics/basics/linear algebra/diagonal matrix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "symmetric matrix.md"
+                "file": "mathematics/basics/linear algebra/diagonal matrix.md"
               }
             }
           }
@@ -184,8 +184,8 @@
   },
   "active": "01e2c8266375b6fd",
   "lastOpenFiles": [
-    "statistical learning/statistical predictor.md",
     "symmetric matrix.md",
+    "statistical learning/statistical predictor.md",
     "mathematics/basics/linear algebra/matrix.md",
     "mathematics/basics/linear algebra/diagonal matrix.md",
     "mathematics/basics/linear algebra/triangular matrix.md",
