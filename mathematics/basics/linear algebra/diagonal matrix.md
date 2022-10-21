@@ -13,6 +13,7 @@ $$
 2) $D = D^\top$ ($D$ is a [[symmetric matrix]])
 3) $D^{-1} = diag\left(\left(d_{i}^{-1}\right)_{i \in \mathcal{I}} \right)$ (its [[inverse matrix|inverse]] is a [[diagonal matrix]] with all entry's inverted)
 4) $D$ is [[regular matrix]] iff $a_i \neq 0$ 
+5) $rank(D)=\sum\limits_{i \in \mathcal{I}}\mathbb{I}\left[a_i \neq 0\right]$
 
 
 ## Applications
