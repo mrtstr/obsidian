@@ -20,7 +20,7 @@ Back:
 probability density function $f_X]$ of a [[random variable]] $X$ maps each point in the [[sample space]] to the relative likelihood that the [[random variable]] will be in an infinitesimal small window around the value
 
 ## properties
-1) $f_X:\Omega \mapsto [0,1]$
+$f_X:\Omega \mapsto [0,\infty]$
 2) the $\forall z \in \Omega:P(X = z) = f_X(z) = 0$ 
 3) $\int\limits_{-\infty}^{\infty}f_X(x)\:dx = 1$ 
 4) $P(X \in [a,b]) =\int\limits_{b}^{a}  f_X(x)\:dx$ 

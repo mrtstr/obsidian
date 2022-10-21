@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/basics/linear algebra/diagonal matrix.md",
+                "file": "mathematics/statistics/PDF.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "diagona",
+                "query": "probability density function",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/basics/linear algebra/diagonal matrix.md",
+                "file": "mathematics/statistics/PDF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/basics/linear algebra/diagonal matrix.md",
+                "file": "mathematics/statistics/PDF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/basics/linear algebra/diagonal matrix.md"
+                "file": "mathematics/statistics/PDF.md"
               }
             }
           }
@@ -184,9 +184,9 @@
   },
   "active": "01e2c8266375b6fd",
   "lastOpenFiles": [
+    "mathematics/basics/linear algebra/diagonal matrix.md",
     "statistical learning/statistical predictor.md",
     "statistical learning/bagging.md",
-    "mathematics/basics/linear algebra/diagonal matrix.md",
     "symmetric matrix.md",
     "mathematics/basics/linear algebra/matrix.md",
     "mathematics/basics/linear algebra/triangular matrix.md",
