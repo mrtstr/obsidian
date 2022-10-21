@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/basics/linear algebra/diagonal matrix.md",
+                "file": "statistical learning/statistical predictor.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dia",
+                "query": "statistical pre",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/basics/linear algebra/diagonal matrix.md",
+                "file": "statistical learning/statistical predictor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/basics/linear algebra/diagonal matrix.md",
+                "file": "statistical learning/statistical predictor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/basics/linear algebra/diagonal matrix.md"
+                "file": "statistical learning/statistical predictor.md"
               }
             }
           }
@@ -184,15 +184,15 @@
   },
   "active": "01e2c8266375b6fd",
   "lastOpenFiles": [
+    "statistical learning/bagging.md",
+    "mathematics/basics/linear algebra/diagonal matrix.md",
     "symmetric matrix.md",
     "statistical learning/statistical predictor.md",
     "mathematics/basics/linear algebra/matrix.md",
-    "mathematics/basics/linear algebra/diagonal matrix.md",
     "mathematics/basics/linear algebra/triangular matrix.md",
     "mathematics/basics/linear algebra/spectral theorem.md",
     "mathematics/basics/linear algebra/identity matrix.md",
     "mathematics/basics/linear algebra/zero matrix.md",
-    "mathematics/basics/linear algebra/normal matrix.md",
-    "mathematics/basics/linear algebra/square matrix.md"
+    "mathematics/basics/linear algebra/normal matrix.md"
   ]
 }

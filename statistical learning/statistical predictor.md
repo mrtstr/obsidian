@@ -46,7 +46,7 @@ having an approximation for every point in the feature space often not possible 
 
 START
 Basic
-statistical estimators: goals and process
+[[statistical predictor]]: goals and process
 Back: 
 - Goal: find connect between input/features $x$ and output/labels $y$
 - because the [[joint distribution]] $f_{XY}(x,y)$ is hard to find the goal is to approximate properties (e.g. mean, median, or quantiles) of the [[conditional distribution]]  $f_{Y|X}(y|x)$
@@ -58,7 +58,7 @@ END
 
 START
 Basic
-Why put assumptions needed for statistical estimators, and what are the effects?
+Why put assumptions needed for [[statistical predictor]], and what are the effects?
 Back: 
 1) assumptions are needed for generalization
 	- we need an approximation for every point in the feature space (even without any training samples in the area)
@@ -73,7 +73,7 @@ END
 
 START
 Basic
-Two kinds of assumptions for statistical estimators, with examples
+Two kinds of assumptions for [[statistical predictor]], with examples
 Back: 
 1) can be model constraints like assuming a certain kind of relationship between feature $x$ and label $y$ (linear models)
 2) can be local smoothing in the feature space (e.g. kernel methods, k nearest neighbours) assuming similar characteristics within an area in the feature space
@@ -83,7 +83,7 @@ END
 
 START
 Basic
-Statistical estimator that comes close to being bias less?
+[[statistical predictor]] that comes close to being bias less?
 Back: 
 - K nearest neighbour with k=1
 - direct approximation of the mean around the sample's location: $\widehat{f}(x)=MEAN[y_i|x_i \in N_k(x)]$
@@ -94,7 +94,7 @@ END
 
 START
 Basic
-Effect of using MSE (with proof) and MAE criterion for a statistical estimator?
+Effect of using MSE (with proof) and MAE criterion for a [[statistical predictor]]?
 Back: 
 - mean square error estimates the conditional mean: 
 - $L(Y, f(x))=\mathbb{E}[(Y-f(X))^2]$
