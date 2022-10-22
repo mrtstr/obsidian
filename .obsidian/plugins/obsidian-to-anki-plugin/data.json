@@ -51,7 +51,9 @@
   },
   "Added Media": [
     "Pasted image 20221009111212.png",
-    "Pasted image 20221015081452.png"
+    "Pasted image 20221015081452.png",
+    "Selection_001.png",
+    "Selection_002.png"
   ],
   "File Hashes": {
     "python.md": "5e53ed997a2ad8172d0e61017b450b6c",
@@ -103,8 +105,8 @@
     "algorithms/forward linked list.md": "8b9eca00da902b55a5b788f2a3cca4fc",
     "algorithms/heap.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/statistics/conditional expectation.md": "d9d30f4019fbc4371cd80058af47168c",
-    "mathematics/statistics/discrete random variable.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/statistics/continuous random variable.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/discrete random variable.md": "f77094de9252680a223cfa3c4ab025ce",
+    "mathematics/statistics/continuous random variable.md": "0634adb5e988348657c6983e1807491b",
     "mathematics/statistics/probability density function.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/statistics/independence.md": "a028708b354abdc96492cd1c902dd93d",
     "mathematics/statistics/random variable.md": "dd6a454cee5cc1b99e9f4d2b52358424",
@@ -162,12 +164,12 @@
     "mathematics/optimization/greedy.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/optimization/brute force.md": "d41d8cd98f00b204e9800998ecf8427e",
     "algorithms/problems/three sum.md": "c9fd9e50e67a450677e7c879f2baa1df",
-    "mathematics/statistics/sample space.md": "d25fab6b408a6464961312345b6a5f67",
-    "mathematics/statistics/event space.md": "0965ae3c0c80fc8972026cb2360ee65b",
+    "mathematics/statistics/sample space.md": "fa10bdfb913c25e32e786bc5a89db290",
+    "mathematics/statistics/event space.md": "cc048c36fb6a9331e039d70460a6b5ca",
     "mathematics/statistics/random process.md": "6858d1e552de512cc7449ea608bbefa9",
-    "mathematics/statistics/probability space.md": "ffc034a75d18bee0fa0e41f01e9e700d",
+    "mathematics/statistics/probability space.md": "4722c51918af6630d2faac221237c3ea",
     "mathematics/statistics/CDF.md": "9d626cb6baab6e3a75a153b10b8188a6",
-    "mathematics/statistics/PDF.md": "d4910ae25cfb4639573013127b1ea899",
+    "mathematics/statistics/PDF.md": "9bd24d0099a0ffc1b67b86f09cd6fff0",
     "mathematics/statistics/measurable space.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/statistics/probability function.md": "d6b03db8a9e9bf5836c65ea90573da8e",
     "statistical learning/models/neural networks/embedding of categorical features.md": "b2f5ff47436671b6e533d8dc3614845d",
@@ -179,7 +181,7 @@
     "statistical learning/estimator variance.md": "0ecaeba98a3ec4760a50a4901263588b",
     "statistical learning/statistical predictor.md": "5361d06b2eb82932b0265f732e66951e",
     "statistical learning/variance bias trade-off.md": "21f0ece2a695237e3ae36acf674d4de7",
-    "mathematics/statistics/stochastic independence.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/statistics/stochastic independence.md": "169e7e515573f29eaed9d9f5740b6542",
     "symetric matrix.md": "e0f31fd77c3e16c10ff03932f48078d2",
     "mathematics/basics/unique.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/symetry.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -246,7 +248,15 @@
     "mathematics/basics/linear algebra/hessian matrix.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linear algebra/cholesky decomposition.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linear algebra/sylvesters criterion.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/linear algebra/definite quadratic form.md": "d1ae86672ff131241c75ac9c2aa64124"
+    "mathematics/basics/linear algebra/definite quadratic form.md": "d1ae86672ff131241c75ac9c2aa64124",
+    "mathematics/statistics/partition of a sample space.md": "7600ffaf6a23b689c78b425457e20c18",
+    "mathematics/statistics/conditional probability.md": "ef87e48e98eed24bc1d4bd7acdf717f0",
+    "mathematics/statistics/probability measure.md": "a198704b7ea361b96fb215028bc557e2",
+    "mathematics/statistics/probability theory.md": "3c9374b473f272761d41173a2cab32df",
+    "mathematics/basics/cardinality.md": "17452fd66f23ae6adaedb9757e122fea",
+    "mathematics/basics/countable.md": "3ec212ec508c7e1d3bac28f4732ce945",
+    "mathematics/basics/disjunct.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/power set.md": "fd602150bf6314c274842aa0e4a63842"
   },
   "fields_dict": {
     "Basic": [

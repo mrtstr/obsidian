@@ -63,6 +63,7 @@ probability in a [[probability space]] with a [[countable|non-countable]] [[samp
 discrete probability: 
 probability in a [[probability space]] with a [[countable]] [[sample space]]
 Tags: mathematics, statistics
+<!--ID: 1666457499357-->
 END
 
 
@@ -74,6 +75,7 @@ Back:
 - $P(A \cup B)=P(A) + P(B)$
 - $P(A \cap B) = P(A) \cdot P(B)$
 Tags: mathematics, statistics
+<!--ID: 1666457499359-->
 END
 
 
@@ -91,6 +93,7 @@ B \cup (A \cap \overline{B})
 =(B \cup A) \cap (B \cup \overline{B}) = A \cup B
 $$
 Tags: mathematics, statistics
+<!--ID: 1666457499361-->
 END
 
 
@@ -110,7 +113,7 @@ P(A \cap \overline{B}) = P(A) - P(A \cap B)
 $$
 
 Tags: mathematics, statistics
-
+<!--ID: 1666457499364-->
 END
 
 
@@ -130,7 +133,7 @@ P(A \cup B)
 $$
 
 Tags: mathematics, statistics
-
+<!--ID: 1666457499366-->
 END
 
 
@@ -150,4 +153,5 @@ Back:
 - $P(\overline{A}) = 1- P(A)$
 - $A \subseteq B \Leftrightarrow P(A) \leq P(B)$
 Tags: mathematics, statistics
+<!--ID: 1666457499369-->
 END

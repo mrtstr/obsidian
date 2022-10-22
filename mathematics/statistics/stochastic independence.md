@@ -22,4 +22,5 @@ Properties
 3) $P(A \cap B) = P(A)P(B)$
 4) $f_{AB} = f_A(a)f_B(b)$
 Tags: mathematics, statistics
+<!--ID: 1666457499372-->
 END

@@ -13,4 +13,5 @@ The partition of a [[sample space]] is a [[set]] of [[event space|events]] $B = 
 2) $\bigcup_{i=1}^{k} B_i=\Omega$ (the [[union]] over all $B_i$ is equal to the [[sample space]] $\Omega$)
 
 Tags: mathematics, statistics
+<!--ID: 1666457499343-->
 END

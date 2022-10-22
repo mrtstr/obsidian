@@ -21,6 +21,11 @@ P\left(A_n \mid A_1 \cap A_2 \cap \:... \: A_{n-1} \right)
 $$
 
 ## law of total probability
+for a [[partition of a sample space]] $B = \{B_i \mid i=1,2,...,k\}$ the following is true:
+$$
+P(A)=\sum\limits_{i=1}^{k}P(B_i)\cdot P(A \mid B_i)
+$$
+![[Selection_002.png]]
 
 
 START
@@ -49,4 +54,21 @@ P\left(A_n \mid A_1 \cap A_2 \cap \:... \: A_{n-1} \right)
 $$
 
 Tags: mathematics, statistics
+<!--ID: 1666457499349-->
+END
+
+
+START
+Basic
+law of total probability
+Back: 
+## Definition
+for a [[partition of a sample space]] $B = \{B_i \mid i=1,2,...,k\}$ the following is true:
+$$
+P(A)=\sum\limits_{i=1}^{k}P(B_i)\cdot P(A \mid B_i)
+$$
+![[Selection_002.png]]
+
+Tags: mathematics, statistics
+<!--ID: 1666457499354-->
 END

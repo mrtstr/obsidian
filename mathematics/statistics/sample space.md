@@ -42,4 +42,5 @@ Back:
 finite [[sample space]] with $\forall s_i, s_j \in \Omega: P(s_i) = P(s_j)$
 
 Tags: mathematics, statistics
+<!--ID: 1666457499375-->
 END
