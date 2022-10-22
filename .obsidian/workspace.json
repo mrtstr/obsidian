@@ -32,19 +32,19 @@
             }
           },
           {
-            "id": "eebb72de414f4f38",
+            "id": "11a7036b5119f8f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/statistics/partition of a sample space.md",
+                "file": "mathematics/statistics/stochastic independence.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "conditional",
+                "query": "stochastic independence",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -110,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/statistics/conditional probability.md",
+                "file": "mathematics/statistics/stochastic independence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/statistics/conditional probability.md",
+                "file": "mathematics/statistics/stochastic independence.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/statistics/conditional probability.md"
+                "file": "mathematics/statistics/stochastic independence.md"
               }
             }
           }
@@ -164,17 +165,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "b37c2fa61c0a587e",
+  "active": "11a7036b5119f8f4",
   "lastOpenFiles": [
-    "mathematics/statistics/partition of a sample space.md",
+    "mathematics/statistics/probability theory.md",
     "mathematics/statistics/conditional probability.md",
+    "statistical learning/variance bias trade-off.md",
+    "mathematics/statistics/PDF.md",
+    "mathematics/statistics/partition of a sample space.md",
     "mathematics/statistics/conditional distribution.md",
     "mathematics/statistics/probability space.md",
     "mathematics/statistics/sample space.md",
     "statistical learning/statistical predictor.md",
-    "mathematics/statistics/sample variance.md",
-    "mathematics/statistics/continuous random variable.md",
-    "mathematics/statistics/discrete random variable.md",
-    "mathematics/statistics/decrete random variable.md"
+    "mathematics/statistics/sample variance.md"
   ]
 }

@@ -34,13 +34,13 @@ P(A)=P(A\cap B) + P(A\cap \overline{B})
 \Leftrightarrow 
 P(A \cap \overline{B}) = P(A) - P(A \cap B)
 $$
-#### Theorem $P(A \cup B) = P(A) + P(B) - P(A \cup B)$
-The probability of A or B is equal the probability of A plus the probability of B minus the probability of A and B.
+#### Theorem $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+The probability of A or B is equal to the probability of A plus the probability of B minus the probability of A and B.
 Proof
 $$
 P(A \cup B) 
-= P(A \cap (A \cup \overline{B})) 
-= P(A) + P(A \cup \overline{B})
+= P(A \cup (A \cap \overline{B})) 
+= P(A) + P(A \cap \overline{B})
 = P(B) + P(A) - P(A \cap B)
 $$
 
@@ -69,7 +69,7 @@ END
 
 START
 Basic
-probability of [[disjunct]] [[set|sets]]
+probability of [[disjunct]] [[set|sets]] (with proof)
 Back: 
 [[disjunct]] sets $A,B \in \mathcal{F}$ in a [[event space]]  
 - $P(A \cup B)=P(A) + P(B)$
@@ -82,7 +82,7 @@ END
 START
 Basic
 probability:
-decomposition of the [[union]] of two [[set|sets]] two in [[disjunct]] [[set|sets]]
+decomposition of the [[union]] of two [[set|sets]] two in [[disjunct]] [[set|sets]] (with proof)
 
 Back: 
 The [[union]] of two [[set|sets]] can be decomposed in tow [[disjunct]] [[set|sets]] 
@@ -100,7 +100,7 @@ END
 START
 Basic
 probability:
-Theorem $P(A \cap \overline{B})=$ ?
+Theorem $P(A \cap \overline{B})=$ ?  (with proof)
 Back: 
 Theorem $P(A \cap \overline{B}) = P(A) - P(A \cap B)$
 Probability of A and not B is equal to the probability of A minus the probability of A and B.
@@ -120,7 +120,7 @@ END
 START
 Basic
 probability:
-Theorem: $P(A \cup B) =$ ?
+Theorem: $P(A \cup B) =$ ?   (with proof)
 Back: 
 Theorem $P(A \cup B) = P(A) + P(B) - P(A \cup B)$
 The probability of A or B is equal to the probability of A plus the probability of B minus the probability of A and B.

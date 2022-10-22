@@ -13,11 +13,15 @@ $$
 P(A \cap B) = P(B) P(A \mid B) = P(A) P(B \mid A)
 $$
 $$
-P\left(\bigcap_{i=1}^{n} A_i \right)=
+\begin{split}
+P\left(\bigcap_{i=1}^{n} A_i \right)= &
 P\left(A_1\right) \cdot 
 P\left(A_2 \mid A_1\right) \cdot
 P\left(A_3 \mid A_1 \cap A_2 \right) \cdot \:... \: \cdot
-P\left(A_n \mid A_1 \cap A_2 \cap \:... \: A_{n-1} \right)
+P\left(A_n \mid A_1 \cap A_2 \cap \:... \: A_{n-1} \right) \\
+=&\prod\limits_{i=1}^{k}P \left( A_i \Bigm\vert
+\bigcap_{j=1}^{i-1} A_j \right)
+\end{split}
 $$
 
 ## law of total probability
@@ -46,11 +50,15 @@ $$
 P(A \cap B) = P(B) P(A \mid B) = P(A) P(B \mid A)
 $$
 $$
-P\left(\bigcap_{i=1}^{n} A_i \right)=
+\begin{split}
+P\left(\bigcap_{i=1}^{n} A_i \right)= &
 P\left(A_1\right) \cdot 
 P\left(A_2 \mid A_1\right) \cdot
 P\left(A_3 \mid A_1 \cap A_2 \right) \cdot \:... \: \cdot
-P\left(A_n \mid A_1 \cap A_2 \cap \:... \: A_{n-1} \right)
+P\left(A_n \mid A_1 \cap A_2 \cap \:... \: A_{n-1} \right) \\
+=&\prod\limits_{i=1}^{k}P \left( A_i \Bigm\vert
+\bigcap_{j=1}^{i-1} A_j \right)
+\end{split}
 $$
 
 Tags: mathematics, statistics
