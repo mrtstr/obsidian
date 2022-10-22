@@ -1,4 +1,4 @@
-## probability function $P$
+## probability measure $P$
 - part of a [[random process]]
 - assigns each event in the event space a probability $\in [1, 0]$ 
 - $P: \mathcal{F} \mapsto [0,1]$ 

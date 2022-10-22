@@ -1,0 +1,52 @@
+[[probability space]]
+[[conditional distribution]]
+
+## Definition
+Probability of [[event space|event]] $A$ happened given that we know [[event space|event]] $B$ happened
+$$
+P(A \mid B) = \frac{P\left(A \cap B\right)}{P\left(B\right)}
+$$
+![[Selection_001.png]]
+
+### decomposition on the [[intersection]] of [[event space|events]] 
+$$
+P(A \cap B) = P(B) P(A \mid B) = P(A) P(B \mid A)
+$$
+$$
+P\left(\bigcap_{i=1}^{n} A_i \right)=
+P\left(A_1\right) \cdot 
+P\left(A_2 \mid A_1\right) \cdot
+P\left(A_3 \mid A_1 \cap A_2 \right) \cdot \:... \: \cdot
+P\left(A_n \mid A_1 \cap A_2 \cap \:... \: A_{n-1} \right)
+$$
+
+## law of total probability
+
+
+START
+Basic
+conditional probability
+- definition
+- decomposition on the [[intersection]] of [[event space|events]] 
+Back: 
+## Definition
+Probability of [[event space|event]] $A$ happened given that we know [[event space|event]] $B$ happened
+$$
+P(A \mid B) = \frac{P\left(A \cap B\right)}{P\left(B\right)}
+$$
+![[Selection_001.png]]
+
+## decomposition on the [[intersection]] of [[event space|events]] 
+$$
+P(A \cap B) = P(B) P(A \mid B) = P(A) P(B \mid A)
+$$
+$$
+P\left(\bigcap_{i=1}^{n} A_i \right)=
+P\left(A_1\right) \cdot 
+P\left(A_2 \mid A_1\right) \cdot
+P\left(A_3 \mid A_1 \cap A_2 \right) \cdot \:... \: \cdot
+P\left(A_n \mid A_1 \cap A_2 \cap \:... \: A_{n-1} \right)
+$$
+
+Tags: mathematics, statistics
+END
