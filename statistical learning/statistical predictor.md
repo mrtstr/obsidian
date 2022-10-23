@@ -1,5 +1,5 @@
 # Statistical predictor
-- Goal: find connect between input/features $x$ and output/labels $y$
+- Goal: find connect between input/features $x$ and a [[stochastic independent|stochastic dependent]] $y$
 - because the [[joint distribution]] $f_{XY}(x,y)$ is hard to find the goal is to approximate properties (e.g. mean, median, or [[quantile function|quantiles]]) of the [[conditional distribution]]  $f_{Y|X}(y|x)$
 - every point in the feature space $x$ is a distribution of outputs $y$
 - approximate predictor $f(x)$ by minimizing the [[loss functions]]
@@ -48,7 +48,7 @@ START
 Basic
 [[statistical predictor]]: goals and process
 Back: 
-- Goal: find connect between input/features $x$ and output/labels $y$
+- Goal: find connect between input/features $x$ and a [[stochastic independent|stochastic dependent]] $y$
 - because the [[joint distribution]] $f_{XY}(x,y)$ is hard to find the goal is to approximate properties (e.g. mean, median, or quantiles) of the [[conditional distribution]]  $f_{Y|X}(y|x)$
 - every point in the feature space $x$ is a distribution of outputs $y$
 - approximate estimator $f(x)$ by minimizing the loss functions

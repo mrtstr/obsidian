@@ -2,20 +2,23 @@
 - Formalities probability in a [[probability space]]
 - provides a [[probability measure]] for [[set|sets]] of outcomes out of the [[sample space]]
 
-#### basic axioms
+## basic axioms
+### General [[event space|events]] $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
 - $0 \leq P(A) \leq 1$
 - $P(\Omega) = 1$
 - $P(\emptyset) = 0$
 - $P(\overline{A}) = 1- P(A)$
 - $A \subseteq B \Leftrightarrow P(A) \leq P(B)$
 
-#### Probability of [[disjunct]] [[set|sets]]
-[[disjunct]] sets $A,B \in \mathcal{F}$ in a [[event space]]  
+### [[stochastic exclusive]] [[event space|events]] ([[disjunct]] [[set|sets]])  $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
 - $P(A \cup B)=P(A) + P(B)$
-- $P(A \cap B) = P(A) \cdot P(B)$
+- $P(A \cap B) = 0$
+### [[stochastic independent]] [[event space|events]] $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
+- $P(A \cap B) = P(A)P(B)$
 
 
-#### decomposition in [[disjunct]] [[set|sets]]
+## Theorems
+### decomposition in [[disjunct]] [[set|sets]]
 The [[union]] of two [[set|sets]] can be decomposed in tow [[disjunct]] [[set|sets]] 
 $$A \cup B = B \cup (A \cap \overline{B}) = A \cup (B \cap \overline{A})$$
 
@@ -25,16 +28,18 @@ B \cup (A \cap \overline{B})
 =(B \cup A) \cap (B \cup \overline{B}) = A \cup B
 $$
 
-#### Theorem $P(A \cap \overline{B}) = P(A) - P(A \cap B)$
+### Theorem $P(A \cap \overline{B}) = P(A) - P(A \cap B)$
 Probability of A and not B is equal to the probability of A minus the probability of A and B.
 Proof
 
 $$
-P(A)=P(A\cap B) + P(A\cap \overline{B})
+P(A)=
+P(A \cap (B \cup \overline{B}))
+=P(A\cap B) + P(A\cap \overline{B})
 \Leftrightarrow 
 P(A \cap \overline{B}) = P(A) - P(A \cap B)
 $$
-#### Theorem $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+### Theorem $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 The probability of A or B is equal to the probability of A plus the probability of B minus the probability of A and B.
 Proof
 $$
@@ -67,16 +72,7 @@ Tags: mathematics, statistics
 END
 
 
-START
-Basic
-probability of [[disjunct]] [[set|sets]] (with proof)
-Back: 
-[[disjunct]] sets $A,B \in \mathcal{F}$ in a [[event space]]  
-- $P(A \cup B)=P(A) + P(B)$
-- $P(A \cap B) = P(A) \cdot P(B)$
-Tags: mathematics, statistics
-<!--ID: 1666457499359-->
-END
+
 
 
 START
@@ -107,7 +103,9 @@ Probability of A and not B is equal to the probability of A minus the probabilit
 Proof
 
 $$
-P(A)=P(A\cap B) + P(A\cap \overline{B})
+P(A)=
+P(A \cap (B \cup \overline{B}))
+=P(A\cap B) + P(A\cap \overline{B})
 \Leftrightarrow 
 P(A \cap \overline{B}) = P(A) - P(A \cap B)
 $$
@@ -120,7 +118,7 @@ END
 START
 Basic
 probability:
-Theorem: $P(A \cup B) =$ ?   (with proof)
+Theorem: $P(A \cup B) =$ ?  (with proof)
 Back: 
 Theorem $P(A \cup B) = P(A) + P(B) - P(A \cup B)$
 The probability of A or B is equal to the probability of A plus the probability of B minus the probability of A and B.
@@ -139,19 +137,46 @@ END
 
 START
 Basic
-probability:
-basic axioms
+probability: basic axioms
+General [[event space|events]] $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$:
 - $P(A) \in$ ?
 - $P(\Omega) =$ ?
 - $P(\emptyset) =$ ?
 - $P(\overline{A}) =$ ?
 - $A \subseteq B \Leftrightarrow$ ?
+
+[[stochastic exclusive]] [[event space|events]] ([[disjunct]] [[set|sets]])  $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
+- $P(A \cup B)=$ ?
+- $P(A \cap B) =$ ?
+[[stochastic independent]] [[event space|events]] $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
+- $P(A \cap B) =$ ?
 Back: 
+
+### General [[event space|events]] $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
 - $0 \leq P(A) \leq 1$
 - $P(\Omega) = 1$
 - $P(\emptyset) = 0$
 - $P(\overline{A}) = 1- P(A)$
 - $A \subseteq B \Leftrightarrow P(A) \leq P(B)$
+
+### [[stochastic exclusive]] [[event space|events]] ([[disjunct]] [[set|sets]])  $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
+- $P(A \cup B)=P(A) + P(B)$
+- $P(A \cap B) = 0$
+### [[stochastic independent]] [[event space|events]] $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
+- $P(A \cap B) = P(A)P(B)$
+
 Tags: mathematics, statistics
 <!--ID: 1666457499369-->
+END
+
+
+
+START
+Basic
+probability:
+can [[stochastic exclusive]] [[event space|events]] be [[stochastic independent]]?
+Back: 
+only if $P(A)=0$
+Tags: mathematics, statistics
+<!--ID: 1666517556858-->
 END

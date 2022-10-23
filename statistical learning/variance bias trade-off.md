@@ -106,7 +106,7 @@ $$
 - because of the randomness of $f_{Y|X}(y|x)$ there will be a component of the [[error]] which is unavoidable
 - the label $Y=f(x) + \epsilon$ can be described as the sum of the optimal [[statistical predictor]] $f(x)$ and the unavoidable [[error]] $\epsilon \sim f_\epsilon(x)$ with the property $\mathbb{E}[\epsilon] = 0$ and $\mathbb{VAR}[\epsilon] =\mathbb{VAR}[Y \:|\:X=x_0]$
 - for a given point in the feature space $x_0$ the [[mean square error]] can be decomposed as follows
-- the randomness is caused by the randomness of the training set $\mathcal{T}$ and $\epsilon$ which are assumed to be [[stochastic independence|independent]] $\mathcal{T} \perp \epsilon$
+- the randomness is caused by the randomness of the training set $\mathcal{T}$ and $\epsilon$ which are assumed to be [[stochastic independent|independent]] $\mathcal{T} \perp \epsilon$
 - $f(x)=\mathbb{E}[Y \:|\:X=x]$ is not depending on either of them and can be treated as non-stochastic
 
 $$
@@ -453,7 +453,7 @@ Back:
 - because of the randomness of $f_{Y|X}(y|x)$ there will be a component of the [[error]] which is unavoidable
 - the label $Y=f(x) + \epsilon$ can be described as the sum of the optimal [[statistical predictor]] $f(x)$ and the unavoidable [[error]] $\epsilon \sim f_\epsilon(x)$ with the property $\mathbb{E}[\epsilon] = 0$ and $\mathbb{VAR}[\epsilon] =\mathbb{VAR}[Y \:|\:X=x_0]$
 - for a given point in the feature space $x_0$ the [[mean square error]] can be decomposed as follows
-- the randomness is caused by the randomness of the training set $\mathcal{T}$ and $\epsilon$ which are assumed to be [[stochastic independence|independent]] $\mathcal{T} \perp \epsilon$
+- the randomness is caused by the randomness of the training set $\mathcal{T}$ and $\epsilon$ which are assumed to be [[stochastic independent|independent]] $\mathcal{T} \perp \epsilon$
 - $f(x)=\mathbb{E}[Y \:|\:X=x]$ is not depending on either of them and can be treated as non-stochastic
 
 $$

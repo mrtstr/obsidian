@@ -179,8 +179,8 @@
     "mathematics/statistics/quantile function.md": "d7b4642ce6527f86626811c52cc5d65c",
     "mathematics/basics/monotonic function.md": "aa887bcb8cd6542c26944058463a8336",
     "statistical learning/estimator variance.md": "0ecaeba98a3ec4760a50a4901263588b",
-    "statistical learning/statistical predictor.md": "5361d06b2eb82932b0265f732e66951e",
-    "statistical learning/variance bias trade-off.md": "21f0ece2a695237e3ae36acf674d4de7",
+    "statistical learning/statistical predictor.md": "643068b69b8ba88a9caa9bc1ab8e9211",
+    "statistical learning/variance bias trade-off.md": "029e5f4da0072c634ea53c63cd0963dd",
     "mathematics/statistics/stochastic independence.md": "87bbf8f10d950aa209a827a463d8adef",
     "symetric matrix.md": "e0f31fd77c3e16c10ff03932f48078d2",
     "mathematics/basics/unique.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -256,7 +256,12 @@
     "mathematics/basics/cardinality.md": "17452fd66f23ae6adaedb9757e122fea",
     "mathematics/basics/countable.md": "3ec212ec508c7e1d3bac28f4732ce945",
     "mathematics/basics/disjunct.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/power set.md": "fd602150bf6314c274842aa0e4a63842"
+    "mathematics/basics/power set.md": "fd602150bf6314c274842aa0e4a63842",
+    "mathematics/statistics/conditional stochastic independent.md": "099247a2e30513299b83906ec7fbdce6",
+    "mathematics/statistics/stochastic independent.md": "80357cf9bed0a782920acd83c9a9b1b9",
+    "mathematics/statistics/stochastic exclusive.md": "b5d0d63deb835acdc0fee5efdebaed9d",
+    "mathematics/statistics/probability.md": "2a1308c9574d24d25f40eb1ca9aac94e",
+    "mathematics/statistics/symmetric matrix.md": "a973f4657da25d9f1cc370570aeba705"
   },
   "fields_dict": {
     "Basic": [

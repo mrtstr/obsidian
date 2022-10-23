@@ -25,19 +25,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/statistics/conditional probability.md",
+                "file": "mathematics/statistics/stochastic independent.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "11a7036b5119f8f4",
+            "id": "a246bc3fc05eac93",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/statistics/stochastic independence.md",
+                "file": "mathematics/statistics/conditional stochastic independent.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cd579e2c2ed196b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/statistics/stochastic exclusive.md",
                 "mode": "source",
                 "source": false
               }
@@ -45,6 +57,24 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "b3ab0b027b0d3d17",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a968d62b69abae47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/statistics/probability.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,8 +120,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -111,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/statistics/stochastic independence.md",
+                "file": "mathematics/statistics/conditional stochastic independent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/statistics/stochastic independence.md",
+                "file": "mathematics/statistics/conditional stochastic independent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/statistics/stochastic independence.md"
+                "file": "mathematics/statistics/conditional stochastic independent.md"
               }
             }
           }
@@ -165,17 +194,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "11a7036b5119f8f4",
+  "active": "a246bc3fc05eac93",
   "lastOpenFiles": [
-    "mathematics/statistics/probability theory.md",
-    "mathematics/statistics/conditional probability.md",
+    "mathematics/statistics/probability.md",
+    "mathematics/statistics/conditional stochastic independent.md",
+    "mathematics/statistics/stochastic independent.md",
+    "statistical learning/statistical predictor.md",
+    "mathematics/statistics/stochastic exclusive.md",
     "statistical learning/variance bias trade-off.md",
-    "mathematics/statistics/PDF.md",
-    "mathematics/statistics/partition of a sample space.md",
     "mathematics/statistics/conditional distribution.md",
     "mathematics/statistics/probability space.md",
-    "mathematics/statistics/sample space.md",
-    "statistical learning/statistical predictor.md",
-    "mathematics/statistics/sample variance.md"
+    "mathematics/statistics/symmetric matrix.md",
+    "mathematics/statistics/conditional probability.md"
   ]
 }
