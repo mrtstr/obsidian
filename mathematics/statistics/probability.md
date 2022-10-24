@@ -120,13 +120,13 @@ Basic
 probability:
 Theorem: $P(A \cup B) =$ ?  (with proof)
 Back: 
-Theorem $P(A \cup B) = P(A) + P(B) - P(A \cup B)$
+Theorem $P(A \cup B) = P(B) + P(A) - P(A \cap B)$
 The probability of A or B is equal to the probability of A plus the probability of B minus the probability of A and B.
 Proof
 $$
 P(A \cup B) 
-= P(A \cap (A \cup \overline{B})) 
-= P(A) + P(A \cup \overline{B})
+= P(A \cup (A \cap \overline{B})) 
+= P(A) + P(A \cap \overline{B})
 = P(B) + P(A) - P(A \cap B)
 $$
 

@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/statistics/conditional stochastic independent.md",
+                "file": "mathematics/statistics/probability.md",
                 "mode": "source",
                 "source": false
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/statistics/conditional stochastic independent.md",
+                "file": "mathematics/statistics/probability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/statistics/conditional stochastic independent.md",
+                "file": "mathematics/statistics/probability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/statistics/conditional stochastic independent.md"
+                "file": "mathematics/statistics/probability.md"
               }
             }
           }
@@ -196,8 +196,8 @@
   },
   "active": "a246bc3fc05eac93",
   "lastOpenFiles": [
-    "mathematics/statistics/probability.md",
     "mathematics/statistics/conditional stochastic independent.md",
+    "mathematics/statistics/probability.md",
     "mathematics/statistics/stochastic independent.md",
     "statistical learning/statistical predictor.md",
     "mathematics/statistics/stochastic exclusive.md",
