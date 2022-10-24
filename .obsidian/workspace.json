@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "62ea5a776c49b6e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/statistics/stochastic independent.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "cd579e2c2ed196b1",
             "type": "leaf",
             "state": {
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "b3ab0b027b0d3d17",
@@ -140,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/statistics/probability.md",
+                "file": "mathematics/statistics/stochastic independent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/statistics/probability.md",
+                "file": "mathematics/statistics/stochastic independent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/statistics/probability.md"
+                "file": "mathematics/statistics/stochastic independent.md"
               }
             }
           }
@@ -194,10 +206,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "a246bc3fc05eac93",
+  "active": "62ea5a776c49b6e8",
   "lastOpenFiles": [
-    "mathematics/statistics/conditional stochastic independent.md",
     "mathematics/statistics/probability.md",
+    "mathematics/statistics/conditional stochastic independent.md",
     "mathematics/statistics/stochastic independent.md",
     "statistical learning/statistical predictor.md",
     "mathematics/statistics/stochastic exclusive.md",

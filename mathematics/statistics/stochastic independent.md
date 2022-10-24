@@ -23,7 +23,7 @@ stochastic independence
 - definition (2 and multiple [[event space|events]])
 - properties
 1) $P(A \mid B) =$ ?
-2) $A \perp B \Leftrightarrow$ ?
+2) $A \perp B \Leftrightarrow A \perp \overline{B}$ (proof)
 
 Back: 
 Two [[random variable|random variables]] are [[stochastic independent|independent]] if the occurrence of [[event space|event]] $B$ does not change the [[probability]] that [[event space|event]] also happened
