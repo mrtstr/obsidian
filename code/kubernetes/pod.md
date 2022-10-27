@@ -1,0 +1,2 @@
+- Smallest deployable unit in a [[kubernetes cluster]]
+- created from a [[docker image]]

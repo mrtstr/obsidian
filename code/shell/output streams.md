@@ -1,0 +1,2 @@
+-   `stdout`: _Standard output_; for normal, expected output text from a command.
+-   `stderr`: _Standard error_; for exceptional messages indicating that the command has failed (either completely or just partly).

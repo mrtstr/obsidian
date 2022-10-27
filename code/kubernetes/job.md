@@ -1,0 +1,2 @@
+- creates [[pod|pods]] to complete a task
+- successful when a defined number of [[pod|pods]] [[terminating|terminated]] successfully

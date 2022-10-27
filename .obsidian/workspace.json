@@ -4,83 +4,100 @@
     "type": "split",
     "children": [
       {
-        "id": "d394d032ef6089e6",
+        "id": "3aa9f213776e0d45",
         "type": "tabs",
         "children": [
           {
-            "id": "7284cbfa0e3b3a94",
+            "id": "1e6e8f92b3f19c28",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/statistics/conditional distribution.md",
+                "file": "code/docker/image repository.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b37c2fa61c0a587e",
+            "id": "71d912c09227dfe3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/statistics/stochastic independent.md",
+                "file": "code/shell/ssh.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a246bc3fc05eac93",
+            "id": "7c7c6776354f90f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/statistics/probability.md",
+                "file": "code/shell/shell command.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "62ea5a776c49b6e8",
+            "id": "65429830110ab7f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/statistics/stochastic independent.md",
+                "file": "code/shell/shell.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "cd579e2c2ed196b1",
+            "id": "48fa98c1bf3a4927",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/statistics/stochastic exclusive.md",
+                "file": "code/shell/output streams.md",
                 "mode": "source",
                 "source": false
               }
             }
-          }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "b3ab0b027b0d3d17",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "a968d62b69abae47",
+            "id": "34a6ad9649383670",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/statistics/probability.md",
+                "file": "code/shell/stdout.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d6f805b71c37b348",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/shell/stderr.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96e534b7aacd94c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/kubernetes/kubectl apply.md",
                 "mode": "source",
                 "source": false
               }
@@ -152,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/statistics/stochastic independent.md",
+                "file": "code/docker/image repository.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +186,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/statistics/stochastic independent.md",
+                "file": "code/docker/image repository.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +209,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/statistics/stochastic independent.md"
+                "file": "code/docker/image repository.md"
               }
             }
           }
@@ -206,17 +223,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "62ea5a776c49b6e8",
+  "active": "1e6e8f92b3f19c28",
   "lastOpenFiles": [
-    "mathematics/statistics/probability.md",
-    "mathematics/statistics/conditional stochastic independent.md",
-    "mathematics/statistics/stochastic independent.md",
-    "statistical learning/statistical predictor.md",
-    "mathematics/statistics/stochastic exclusive.md",
-    "statistical learning/variance bias trade-off.md",
-    "mathematics/statistics/conditional distribution.md",
-    "mathematics/statistics/probability space.md",
-    "mathematics/statistics/symmetric matrix.md",
-    "mathematics/statistics/conditional probability.md"
+    "code/kubernetes/kubectl exec.md",
+    "code/kubernetes/kubectl apply.md",
+    "code/numpy/add.reduce.md",
+    "code/kubernetes/copy to pod.md",
+    "code/kubernetes/container.md",
+    "code/docker/dockerfile.md",
+    "code/shell/stdout.md",
+    "code/shell/output streams.md",
+    "code/shell/shell command.md",
+    "code/shell/ssh.md"
   ]
 }
