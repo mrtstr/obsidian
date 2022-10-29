@@ -8,96 +8,78 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1e6e8f92b3f19c28",
+            "id": "05b93439ac035540",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/docker/image repository.md",
+                "file": "statistical learning/bayesian inference.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "71d912c09227dfe3",
+            "id": "fca6600f63b7d429",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/shell/ssh.md",
+                "file": "mathematics/Untitled.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7c7c6776354f90f5",
+            "id": "c6626c17edd72f68",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/shell/shell command.md",
+                "file": "mathematics/statistics/event.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "3073f771dfb70297",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "64be84fbff2f9d74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/statistics/conditional probability.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "65429830110ab7f5",
+            "id": "205eb7b417e969d8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/shell/shell.md",
+                "file": "mathematics/statistics/probability.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "48fa98c1bf3a4927",
+            "id": "bbf19084686aab78",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/shell/output streams.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "34a6ad9649383670",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/shell/stdout.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d6f805b71c37b348",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/shell/stderr.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "96e534b7aacd94c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/kubernetes/kubectl apply.md",
+                "file": "mathematics/statistics/bayes theorem.md",
                 "mode": "source",
                 "source": false
               }
@@ -132,7 +114,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "stochastic independence",
+                "query": "total proba",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -153,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 328.5
+    "width": 312.5
   },
   "right": {
     "id": "b4692449453cc2fd",
@@ -169,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "code/docker/image repository.md",
+                "file": "statistical learning/bayesian inference.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "code/docker/image repository.md",
+                "file": "statistical learning/bayesian inference.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "code/docker/image repository.md"
+                "file": "statistical learning/bayesian inference.md"
               }
             }
           }
@@ -220,20 +202,17 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "1e6e8f92b3f19c28",
+  "active": "05b93439ac035540",
   "lastOpenFiles": [
-    "code/kubernetes/kubectl exec.md",
-    "code/kubernetes/kubectl apply.md",
-    "code/numpy/add.reduce.md",
-    "code/kubernetes/copy to pod.md",
-    "code/kubernetes/container.md",
-    "code/docker/dockerfile.md",
-    "code/shell/stdout.md",
-    "code/shell/output streams.md",
-    "code/shell/shell command.md",
-    "code/shell/ssh.md"
+    "mathematics/statistics/conditional probability.md",
+    "statistical learning/bayesian inference.md",
+    "mathematics/Untitled.md",
+    "mathematics/statistics/event.md",
+    "mathematics/statistics/bayes theorem.md",
+    "mathematics/statistics/probability.md",
+    "mathematics/statistics/likelihood.md",
+    "independence.md",
+    "statistical learning/statistical inference.md",
+    "statistical learning/Untitled.md"
   ]
 }

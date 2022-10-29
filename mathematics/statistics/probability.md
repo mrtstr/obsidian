@@ -180,3 +180,16 @@ only if $P(A)=0$
 Tags: mathematics, statistics
 <!--ID: 1666517556858-->
 END
+
+
+START
+Basic
+Suppose that 10,000 tickets are sold in one lottery and
+5000 tickets are sold in another lottery. If a person owns
+100 tickets in each lottery, what is the probability that she
+will win at least one first prize?
+Back: 
+$P(A \cup B) = P(B) + P(A) - P(A \cap B)=0.01 + 0.02 − (0.01)(0.02) = 0.0298$
+Tags: mathematics, statistics
+<!--ID: 1667051814880-->
+END
