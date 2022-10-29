@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "05b93439ac035540",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "statistical learning/bayesian inference.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "fca6600f63b7d429",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/Untitled.md",
+                "file": "statistical learning/bayesian inference.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +73,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -151,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "statistical learning/bayesian inference.md",
+                "file": "mathematics/statistics/bayes theorem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "statistical learning/bayesian inference.md",
+                "file": "mathematics/statistics/bayes theorem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "statistical learning/bayesian inference.md"
+                "file": "mathematics/statistics/bayes theorem.md"
               }
             }
           }
@@ -202,17 +191,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "05b93439ac035540",
+  "active": "bbf19084686aab78",
   "lastOpenFiles": [
-    "mathematics/statistics/conditional probability.md",
+    "mathematics/statistics/collectors problem.md",
+    "mathematics/statistics/bayes theorem.md",
     "statistical learning/bayesian inference.md",
     "mathematics/Untitled.md",
+    "mathematics/statistics/conditional probability.md",
     "mathematics/statistics/event.md",
-    "mathematics/statistics/bayes theorem.md",
     "mathematics/statistics/probability.md",
     "mathematics/statistics/likelihood.md",
     "independence.md",
-    "statistical learning/statistical inference.md",
-    "statistical learning/Untitled.md"
+    "statistical learning/statistical inference.md"
   ]
 }

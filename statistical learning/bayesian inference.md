@@ -44,8 +44,10 @@ $$
 = \frac{P\left(B_k\right) \prod\limits_{n=1}^{N}P \left(  A_n \Bigm\vert B_k \cap 
 \bigcap\limits_{j=1}^{n-1} A_j \right)}
 {
-\sum\limits_{j=1}^{k} P(B_j) P\left(\bigcap\limits_{n=1}^{N} A_n \mid B_j\right)
-} \\
+\sum\limits_{j=1}^{k} P(B_j) 
+\prod\limits_{n=1}^{N}P \left(  A_n \Bigm\vert B_k \cap 
+\bigcap\limits_{j=1}^{n-1} A_j \right)
+} 
 $$
 Here we can see that it is possible to define the posterior in a recursive way. This version is easy to calculate because we can just reuse the posterior of the previous step a prior and do another single Bayesian update.
 $$
@@ -161,8 +163,10 @@ $$
 = \frac{P\left(B_k\right) \prod\limits_{n=1}^{N}P \left(  A_n \Bigm\vert B_k \cap 
 \bigcap\limits_{j=1}^{n-1} A_j \right)}
 {
-\sum\limits_{j=1}^{k} P(B_j) P\left(\bigcap\limits_{n=1}^{N} A_n \mid B_j\right)
-} \\
+\sum\limits_{j=1}^{k} P(B_j) 
+\prod\limits_{n=1}^{N}P \left(  A_n \Bigm\vert B_k \cap 
+\bigcap\limits_{j=1}^{n-1} A_j \right)
+} 
 $$
 Here we can see that it is possible to define the posterior in a recursive way. This version is easy to calculate because we can just reuse the posterior of the previous step a prior and do another single Bayesian update.
 $$

@@ -1,0 +1,1 @@
+Given $r$ different cards with basketball player. 

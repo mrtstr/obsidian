@@ -289,12 +289,13 @@
     "independence.md": "d41d8cd98f00b204e9800998ecf8427e",
     "statistical learning/classicfication.md": "d41d8cd98f00b204e9800998ecf8427e",
     "statistical learning/statistical inference.md": "c824802cae1f58aa4e9d587f56669916",
-    "statistical learning/bayesian inference.md": "495403449f975e7d05047f68ec1a9411",
+    "statistical learning/bayesian inference.md": "0f4e0fd9dd3cb52429f818de77647a88",
     "mathematics/Untitled.md": "aae7b3e8724adc4a8a422886cfb9e93c",
     "mathematics/statistics/likelihood.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/statistics/event.md": "ef94f078e81f4d14eac36d0fc494be1f",
     "mathematics/statistics/hypothesis.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/statistics/partitioned sample space.md": "7600ffaf6a23b689c78b425457e20c18"
+    "mathematics/statistics/partitioned sample space.md": "7600ffaf6a23b689c78b425457e20c18",
+    "mathematics/statistics/collectors problem.md": "983d9a3ff53328d108ae9938fc38d04f"
   },
   "fields_dict": {
     "Basic": [
