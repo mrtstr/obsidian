@@ -1,6 +1,6 @@
 ### Definition
-- [[expected value|expectation]] of the squared deviation of a [[random variable]] from its mean
-- measure of how for a [[random variable]] spreads out
+- [[expected value|expectation]] of the squared deviation of a [[discrete random variable]] from its mean
+- measure of how for a [[discrete random variable]] spreads out
 
 $\mathbb{VAR}[X]=\mathbb{E}[(X-\mathbb{E}[X])^2]=\mathbb{E}[X^2]-\mathbb{E}[X]^2$
 

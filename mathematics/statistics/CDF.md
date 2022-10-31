@@ -1,5 +1,5 @@
 ## Cumulative distribution function
-Probability that a [[random variable]] will take a greater or equal value to the given value.
+Probability that a [[discrete random variable]] will take a greater or equal value to the given value.
 ## Properties 
 1) $F_X:\Omega \mapsto [0,1]$
 2) $F_X(x)=P(X \leq x)$
@@ -29,7 +29,7 @@ Basic
 Cumulative Distribution Function (CDF)
 - definition
 Back: 
-Probability that a [[random variable]] will take a greater or equal value to the given value.
+Probability that a [[discrete random variable]] will take a greater or equal value to the given value.
 - $F_X:\Omega \mapsto [0,1]$
 - $F_X(x)=P(X \leq x)$
 Tags: mathematics, statistics

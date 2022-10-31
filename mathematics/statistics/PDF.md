@@ -1,5 +1,5 @@
 # Probability density function
-the Probability density function $f_X]$ of a [[random variable]] $X$ maps each point in the [[sample space]] to the relative likelihood that the [[random variable]] will be in an infinitesimal small window around the value. (See for the [[joint distribution|joint PDF]] of for the PFD of a joint distribution)
+the Probability density function $f_X]$ of a [[discrete random variable]] $X$ maps each point in the [[sample space]] to the relative likelihood that the [[discrete random variable]] will be in an infinitesimal small window around the value. (See for the [[joint distribution|joint PDF]] of for the PFD of a joint distribution)
 ## properties
 1) $f_X:\Omega \mapsto [0,\infty]$
 2) the $\forall z \in \Omega:P(X = z) = f_X(z) = 0$ the case of real-valued random variables, the joint distribution, as a particular multivariate distribution, may be
@@ -17,7 +17,7 @@ probability density function (PDF)
 - relationship to [[CDF]]
 Back: 
 ## definitions
-probability density function $f_X]$ of a [[random variable]] $X$ maps each point in the [[sample space]] to the relative likelihood that the [[random variable]] will be in an infinitesimal small window around the value
+probability density function $f_X]$ of a [[discrete random variable]] $X$ maps each point in the [[sample space]] to the relative likelihood that the [[discrete random variable]] will be in an infinitesimal small window around the value
 
 ## properties
 $f_X:\Omega \mapsto [0,\infty]$

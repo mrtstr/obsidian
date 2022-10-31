@@ -1,4 +1,4 @@
-Two [[random variable|random variables]] are [[stochastic independent|independent]] if the occurrence of [[event space|event]] $B$ does not change the [[probability]] that [[event space|event]] also happened
+Two [[discrete random variable|random variables]] are [[stochastic independent|independent]] if the occurrence of [[event space|event]] $B$ does not change the [[probability]] that [[event space|event]] also happened
 
 ## Definition $A \perp B$
 $$P(A \cap B) = P(A)P(B)$$
@@ -26,7 +26,7 @@ stochastic independence
 2) $A \perp B \Leftrightarrow A \perp \overline{B}$ (proof)
 
 Back: 
-Two [[random variable|random variables]] are [[stochastic independent|independent]] if the occurrence of [[event space|event]] $B$ does not change the [[probability]] that [[event space|event]] also happened
+Two [[discrete random variable|random variables]] are [[stochastic independent|independent]] if the occurrence of [[event space|event]] $B$ does not change the [[probability]] that [[event space|event]] also happened
 
 ## Definition $A \perp B$
 $$P(A \cap B) = P(A)P(B)$$

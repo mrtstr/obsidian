@@ -4,77 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "3aa9f213776e0d45",
+        "id": "9c67d180ceeecff9",
         "type": "tabs",
         "children": [
           {
-            "id": "fca6600f63b7d429",
+            "id": "c05d15df44341a03",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "statistical learning/bayesian inference.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c6626c17edd72f68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/statistics/event.md",
+                "file": "mathematics/statistics/discrete random variable.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ]
-      },
-      {
-        "id": "3073f771dfb70297",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "64be84fbff2f9d74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/statistics/conditional probability.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "205eb7b417e969d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/statistics/probability.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bbf19084686aab78",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/statistics/bayes theorem.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -140,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/statistics/bayes theorem.md",
+                "file": "mathematics/statistics/discrete random variable.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/statistics/bayes theorem.md",
+                "file": "mathematics/statistics/discrete random variable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/statistics/bayes theorem.md"
+                "file": "mathematics/statistics/discrete random variable.md"
               }
             }
           }
@@ -191,17 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bbf19084686aab78",
+  "active": "c05d15df44341a03",
   "lastOpenFiles": [
-    "mathematics/statistics/collectors problem.md",
-    "mathematics/statistics/bayes theorem.md",
+    "mathematics/statistics/bernoulli random variable.md",
+    "mathematics/statistics/discrete random variable.md",
+    "mathematics/statistics/discrete distribution.md",
+    "mathematics/statistics/random variable.md",
+    "mathematics/statistics/continuous random variable.md",
+    "mathematics/statistics/discrete distribution_.md",
+    "mathematics/statistics/Untitled.md",
+    "mathematics/statistics/probability space.md",
     "statistical learning/bayesian inference.md",
-    "mathematics/Untitled.md",
-    "mathematics/statistics/conditional probability.md",
-    "mathematics/statistics/event.md",
-    "mathematics/statistics/probability.md",
-    "mathematics/statistics/likelihood.md",
-    "independence.md",
-    "statistical learning/statistical inference.md"
+    "mathematics/statistics/bayes theorem.md"
   ]
 }

@@ -2,7 +2,7 @@
 - consists of three elements:
 1) [[sample space]] $\Omega$
 	- all possible outcomes
-	- all values a [[random variable]] can take
+	- all values a [[discrete random variable]] can take
 	- e.g. for a dice throw $\Omega = \left\{1,2,3,4,5,6\right\}$
 	- can be [[countable]] (in a discrete [[probability space]]) or [[countable|non-countable]] (in a continuous [[probability space]])
 2) [[event space]] $\mathcal{F}$ 
@@ -26,7 +26,7 @@ Back:
 - consists of three elements:
 1) [[sample space]] $\Omega$
 	- all possible outcomes
-	- all values a [[random variable]] can take
+	- all values a [[discrete random variable]] can take
 	- e.g. for a dice throw $\Omega = \left\{1,2,3,4,5,6\right\}$
 	- can be [[countable]] (in a discrete [[probability space]]) or [[countable|non-countable]] (in a continuous [[probability space]])
 2) [[event space]] $\mathcal{F}$ 

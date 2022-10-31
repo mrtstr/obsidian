@@ -33,21 +33,35 @@ P\left(B_i \mid \bigcap_\limits{i=1}^{N} A_n \right)
 {
 \sum\limits_{l=1}^{k} P(B_l) P\left( A_1 \cap A_2 \: \cap \: ... \: \cap \:A_n \mid B_l\right)
 } \\
-\end{split}
-$$
-This term can be decomposed even further to the following.
-$$
-\frac{P\left(B_l\right) P\left( \bigcap\limits_{n=1}^{N} A_n \mid B_l \right)}
-{
-\sum\limits_{j=1}^{k} P(B_j) P\left(\bigcap\limits_{n=1}^{N} A_n \mid B_j\right)
-} \\
-= \frac{P\left(B_k\right) \prod\limits_{n=1}^{N}P \left(  A_n \Bigm\vert B_k \cap 
+&= \frac{P\left(B_k\right) \prod\limits_{n=1}^{N}P \left(  A_n \Bigm\vert B_k \cap 
 \bigcap\limits_{j=1}^{n-1} A_j \right)}
 {
 \sum\limits_{j=1}^{k} P(B_j) 
 \prod\limits_{n=1}^{N}P \left(  A_n \Bigm\vert B_k \cap 
 \bigcap\limits_{j=1}^{n-1} A_j \right)
 } 
+\end{split}
+$$
+With the [[bayes theorem|conditional version of the bayes theorem]] we know that we can compose the term in the following way.
+$$
+\begin{split}
+P\left(B_i \mid \bigcap_\limits{j=1}^{n} A_j \right) 
+
+&= \frac{
+P\left(B_i \cap \bigcap\limits_{j=1}^{n-1} A_j \right)
+P\left(A_n \mid B_i \cap \bigcap\limits_{j=1}^{n-1} A_j \right)
+}
+{
+
+\underbrace{
+\sum\limits_{k=1}^{K}
+P\left(B_k \cap \bigcap\limits_{j=1}^{n-1} A_j \right)
+P\left(A_n \mid B_k \cap \bigcap\limits_{j=1}^{n-1} A_j \right)
+}_{P\left(A_n \mid \bigcap\limits_{i=1}^{n-1} A_i\right)}
+} 
+
+
+\end{split}
 $$
 Here we can see that it is possible to define the posterior in a recursive way. This version is easy to calculate because we can just reuse the posterior of the previous step a prior and do another single Bayesian update.
 $$
@@ -57,15 +71,16 @@ P\left(B_i^{(n)}  \right) &:= P\left(B_i\right)P\left(B_i \mid \bigcap_\limits{i
 &= \frac{
 \overbrace{
 P\left(B_i^{(n-1)}\right)
-}^{P\left(B_i \mid \bigcap_\limits{c=1}^{n-1} A_c \right) }
+}^{P\left(B_i \mid \bigcap_\limits{j=1}^{n-1} A_j \right) }
+\overbrace{
 P\left(A_n \mid B_i^{(n-1)}\right)
+}^{P\left(A_n \mid B_i \cap \bigcap\limits_{j=1}^{n-1} A_j \right)}
 }
 {
 \underbrace{
 \sum\limits_{l=1}^{k} P(B_l^{(n-1)}) P\left( A_n \mid B_l^{(n-1)}\right)
 }_{P\left(A_n \mid \bigcap\limits_{i=1}^{n-1} A_i\right)}
 }
-
 \end{split}
 $$
 ## Example
@@ -137,6 +152,7 @@ bayesian inference: Multiple Bayesian Updates
 Back: 
 We have multiple [[observations]] $\{A_i \mid i = 1,2...,N\}$ and a [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ . From the conditional version of the [[bayes theorem]] we know the following:
 
+
 $$
 \begin{split}
 P\left(B_i \mid \bigcap_\limits{i=1}^{N} A_n \right) 
@@ -152,21 +168,35 @@ P\left(B_i \mid \bigcap_\limits{i=1}^{N} A_n \right)
 {
 \sum\limits_{l=1}^{k} P(B_l) P\left( A_1 \cap A_2 \: \cap \: ... \: \cap \:A_n \mid B_l\right)
 } \\
-\end{split}
-$$
-This term can be decomposed even further to the following.
-$$
-\frac{P\left(B_l\right) P\left( \bigcap\limits_{n=1}^{N} A_n \mid B_l \right)}
-{
-\sum\limits_{j=1}^{k} P(B_j) P\left(\bigcap\limits_{n=1}^{N} A_n \mid B_j\right)
-} \\
-= \frac{P\left(B_k\right) \prod\limits_{n=1}^{N}P \left(  A_n \Bigm\vert B_k \cap 
+&= \frac{P\left(B_k\right) \prod\limits_{n=1}^{N}P \left(  A_n \Bigm\vert B_k \cap 
 \bigcap\limits_{j=1}^{n-1} A_j \right)}
 {
 \sum\limits_{j=1}^{k} P(B_j) 
 \prod\limits_{n=1}^{N}P \left(  A_n \Bigm\vert B_k \cap 
 \bigcap\limits_{j=1}^{n-1} A_j \right)
 } 
+\end{split}
+$$
+With the [[bayes theorem|conditional version of the bayes theorem]] we know that we can compose the term in the following way.
+$$
+\begin{split}
+P\left(B_i \mid \bigcap_\limits{j=1}^{n} A_j \right) 
+
+&= \frac{
+P\left(B_i \cap \bigcap\limits_{j=1}^{n-1} A_j \right)
+P\left(A_n \mid B_i \cap \bigcap\limits_{j=1}^{n-1} A_j \right)
+}
+{
+
+\underbrace{
+\sum\limits_{k=1}^{K}
+P\left(B_k \cap \bigcap\limits_{j=1}^{n-1} A_j \right)
+P\left(A_n \mid B_k \cap \bigcap\limits_{j=1}^{n-1} A_j \right)
+}_{P\left(A_n \mid \bigcap\limits_{i=1}^{n-1} A_i\right)}
+} 
+
+
+\end{split}
 $$
 Here we can see that it is possible to define the posterior in a recursive way. This version is easy to calculate because we can just reuse the posterior of the previous step a prior and do another single Bayesian update.
 $$
@@ -176,15 +206,16 @@ P\left(B_i^{(n)}  \right) &:= P\left(B_i\right)P\left(B_i \mid \bigcap_\limits{i
 &= \frac{
 \overbrace{
 P\left(B_i^{(n-1)}\right)
-}^{P\left(B_i \mid \bigcap_\limits{c=1}^{n-1} A_c \right) }
+}^{P\left(B_i \mid \bigcap_\limits{j=1}^{n-1} A_j \right) }
+\overbrace{
 P\left(A_n \mid B_i^{(n-1)}\right)
+}^{P\left(A_n \mid B_i \cap \bigcap\limits_{j=1}^{n-1} A_j \right)}
 }
 {
 \underbrace{
 \sum\limits_{l=1}^{k} P(B_l^{(n-1)}) P\left( A_n \mid B_l^{(n-1)}\right)
 }_{P\left(A_n \mid \bigcap\limits_{i=1}^{n-1} A_i\right)}
 }
-
 \end{split}
 $$
 Tags: mathematics, statistics

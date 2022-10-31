@@ -1,10 +1,17 @@
-- Mapping from [[sample space]] to a [[measurable space]] (often real numbers)
+[[discrete random variable]] that can take only a finite number of values or at most infinite but [[countable]] number of values
+
+[[continuous random variable]]: a [[random variable]] that can take infinite [[countable|non-countable]] number of values
+
 
 START
 Basic
-random variable: formal definition
+[[discrete random variable]] vs [[continuous random variable]]:
+
 Back: 
-- Mapping from [[sample space]] to a [[measurable space]] (often real numbers)
+[[discrete random variable]] that can take only a finite number of values or at most infinite but [[countable]] number of values
+
+[[continuous random variable]]: a [[random variable]] that can take infinite [[countable|non-countable]] number of values
+a [[random variable]] has a [[discrete distribution]]
 Tags: mathematics, statistics
-<!--ID: 1664442661951-->
+<!--ID: 1667211139251-->
 END

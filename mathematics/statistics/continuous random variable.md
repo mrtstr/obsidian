@@ -1,1 +1,1 @@
-[[random variable]]
+[[discrete random variable]]

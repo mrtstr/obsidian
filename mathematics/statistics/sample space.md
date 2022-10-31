@@ -1,14 +1,14 @@
 ## sample space $\Omega$
 - part of a [[random process]]
 - all possible outcomes
-- all values a [[random variable]] can take
+- all values a [[discrete random variable]] can take
 - e.g. for a dice throw $\Omega = \left\{1,2,3,4,5,6\right\}$
 
 
 ## [[countable|non-countable]] [[sample space]] 
 [[continuous random variable]]
 ## [[countable]] [[sample space]]
-[[discrete random variable]]
+[[random variable]]
 
 ## finite [[sample space]]
 [[countable]] [[sample space]] with finite [[cardinality]]
@@ -26,14 +26,14 @@ Back:
 ## sample space $\Omega$
 - part of a [[random process]]
 - all possible outcomes
-- all values a [[random variable]] can take
+- all values a [[discrete random variable]] can take
 - e.g. for a dice throw $\Omega = \left\{1,2,3,4,5,6\right\}$
 
 
 ## [[countable|non-countable]] [[sample space]] 
 [[continuous random variable]]
 ## [[countable]] [[sample space]]
-[[discrete random variable]]
+[[random variable]]
 
 ## finite [[sample space]]
 [[countable]] [[sample space]] with finite [[cardinality]]

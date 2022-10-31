@@ -1,12 +1,12 @@
 #### Concept
-- Defined for [[random variable]]
+- Defined for [[discrete random variable]]
 - Generalization of the weighted mean: mean of possible outcomes weighted by its probability
 - defined for [[conditional distribution|conditional distributions]]: [[conditional expectation]] 
 
 #### expected values of a [[continuous random variable]] $X$ with a [[PDF|PDF]] $f_X(x)$:
 $\mathbb{E}[X]=\int\limits_\infty^\infty x f_X(x)dx$  
 
-#### expected value of a [[discrete random variable]] $X$:
+#### expected value of a [[random variable]] $X$:
 $\mathbb{E}[X]=\sum\limits_{i=0}^\infty x_i p(x_i)$  
 
 #### expected value of the product of two random variables $X$ and $Y$ with a [[joint distribution]] $f_{XY}(x,y)$
