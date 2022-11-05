@@ -1,0 +1,2 @@
+[[permutations]]
+[[multiplication rule]]
