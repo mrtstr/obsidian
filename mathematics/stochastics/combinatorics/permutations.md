@@ -9,6 +9,7 @@ P_{n, k}
 &= 
 
 \overbrace{(n)}^\text{first pick} \cdot \overbrace{(n-1)}^\text{second pick}  \cdot...\cdot  \overbrace{\left(n-(k-1)\right)}^\text{kth pick} \\
+&= \prod\limits_{i=n-k+1}^{n} i \\
 &= \prod\limits_{i=0}^{k-1} (n-i) \\
 &= \frac{n!}{(n-k)!} \\
 \end{split}
@@ -52,6 +53,7 @@ P_{n, k}
 &= 
 
 \overbrace{(n)}^\text{first pick} \cdot \overbrace{(n-1)}^\text{second pick}  \cdot...\cdot  \overbrace{\left(n-(k-1)\right)}^\text{kth pick} \\
+&= \prod\limits_{i=n-k+1}^{n} i \\
 &= \prod\limits_{i=0}^{k-1} (n-i) \\
 &= \frac{n!}{(n-k)!} \\
 \end{split}

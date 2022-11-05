@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/combinatorics/binomial coefficient.md",
+                "file": "mathematics/stochastics/combinatorics/permutations.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/combinatorics/binomial coefficient.md",
+                "file": "mathematics/stochastics/combinatorics/permutations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/combinatorics/binomial coefficient.md",
+                "file": "mathematics/stochastics/combinatorics/permutations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/combinatorics/binomial coefficient.md"
+                "file": "mathematics/stochastics/combinatorics/permutations.md"
               }
             }
           }
@@ -150,8 +150,8 @@
   },
   "active": "ca4b33d2da0e8e1d",
   "lastOpenFiles": [
-    "mathematics/stochastics/discrete random variable.md",
     "mathematics/stochastics/combinatorics/binomial coefficient.md",
+    "mathematics/stochastics/discrete random variable.md",
     "mathematics/stochastics/simple sample space.md",
     "mathematics/stochastics/combinatorics/combinatorial methods.md",
     "mathematics/stochastics/combinatorics/permutations.md",
