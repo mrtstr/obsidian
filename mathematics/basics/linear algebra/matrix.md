@@ -2,7 +2,7 @@
 - can be represented by a two-dimensional [[array]]
 - is a 2. Order [[tensor]] 
 - [[matrix calculus]]
-## Definition
+## Matrix Definition
 $$
 \begin{split}
 A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}} 

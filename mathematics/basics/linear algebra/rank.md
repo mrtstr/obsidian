@@ -1,17 +1,6 @@
 # Rank
+![[matrix#Matrix#Matrix Definition]]
 For a [[matrix]] $A$ with the column vectors $A^{(j)}$ and the represented linear function $F$.
-$$
-\begin{split}
-A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}} 
-&= \left(a_{i,j} \right)_{i \in \mathcal{I}, j \in \mathcal{J}} \\
-&= \left(A^{(j)} \right)_{j \in \mathcal{J}}
-= 
-\begin{pmatrix}   A^{(1)} &   ... & A^{(\left| \mathcal{J} \right|)}  \end{pmatrix}\\
-&= \left(A_{(i)} \right)_{i \in \mathcal{I}}
-=  
-\begin{pmatrix}   A_{(1)} \\   ... \\ A_{(\left| \mathcal{I} \right|)}   \end{pmatrix}
-\end{split}
-$$
 $$F(x) = Ax: \mathbb{R}^{\left| \mathcal{J} \right|} \mapsto Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$$
 ## Definition
 

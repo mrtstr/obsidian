@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9c67d180ceeecff9",
+        "id": "9594307b99bb8b0b",
         "type": "tabs",
         "children": [
           {
-            "id": "ca4b33d2da0e8e1d",
+            "id": "f3810850ad6a7dec",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/combinatorics/permutations.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "25c504be6f86f8f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/combinatorics/combinatorial methods.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -97,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/combinatorics/permutations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/combinatorics/permutations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "mathematics/stochastics/combinatorics/permutations.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ca4b33d2da0e8e1d",
+  "active": "f3810850ad6a7dec",
   "lastOpenFiles": [
-    "mathematics/stochastics/combinatorics/binomial coefficient.md",
-    "mathematics/stochastics/discrete random variable.md",
-    "mathematics/stochastics/simple sample space.md",
-    "mathematics/stochastics/combinatorics/combinatorial methods.md",
-    "mathematics/stochastics/combinatorics/permutations.md",
-    "mathematics/stochastics/combinatorics/factorial.md",
-    "mathematics/stochastics/combinatorics/multiplication rule.md",
-    "mathematics/stochastics/random experiment.md",
-    "mathematics/stochastics/combinatorics/sterling number.md",
-    "code/shell/chain commands.md"
+    "mathematics/stochastics/discrete distribution.md",
+    "mathematics/stochastics/covariance.md",
+    "mathematics/stochastics/continuous random variable.md",
+    "mathematics/stochastics/conditional stochastic independent.md",
+    "mathematics/stochastics/conditional probability.md",
+    "mathematics/stochastics/conditional expectation.md",
+    "mathematics/stochastics/conditional distribution.md",
+    "mathematics/stochastics/collectors problem.md",
+    "mathematics/stochastics/CDF.md",
+    "mathematics/stochastics/bernoulli random variable.md"
   ]
 }

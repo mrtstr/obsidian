@@ -1,2 +1,3 @@
 [[permutations]]
 [[multiplication rule]]
+[[combinations]]

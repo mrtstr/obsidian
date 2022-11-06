@@ -1,0 +1,1 @@
+can be used for approximation of large [[factorial|factorials]] when the numbers are too big to calculate.

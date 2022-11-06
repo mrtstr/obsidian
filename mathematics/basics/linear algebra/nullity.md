@@ -1,12 +1,7 @@
 # Nullity
 ## Definition
+![[matrix#Matrix#Matrix Definition]]
 For a [[matrix]] $A$ with the column vectors $A^{(j)}$ and the represented linear function $F$.
-$$
-A =\left(A^{(j)} \right)_{j \in \mathcal{J}}
-= 
-\begin{pmatrix}   A^{(1)}    ... & A^{(\left| \mathcal{J} \right|)}  \end{pmatrix}
-\in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}}
-$$
 $$F(x) = Ax: \mathbb{R}^{\left| \mathcal{J} \right|} \mapsto Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$$
 
 - The nullity is equal to the dimensions of the [[nullspace]]
