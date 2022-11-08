@@ -1,0 +1,1 @@
+Universal function (ufunc) [[numpy]] functions are element wise [[numpy]] operations

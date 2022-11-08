@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9594307b99bb8b0b",
+        "id": "9c67d180ceeecff9",
         "type": "tabs",
         "children": [
           {
-            "id": "f3810850ad6a7dec",
+            "id": "335c542717775a17",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd df indexing and selecting.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "code/pandas/operations/pd df indexing and selecting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "code/pandas/operations/pd df indexing and selecting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "code/pandas/operations/pd df indexing and selecting.md"
+              }
             }
           }
         ]
@@ -128,17 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f3810850ad6a7dec",
+  "active": "335c542717775a17",
   "lastOpenFiles": [
-    "mathematics/stochastics/discrete distribution.md",
-    "mathematics/stochastics/covariance.md",
-    "mathematics/stochastics/continuous random variable.md",
-    "mathematics/stochastics/conditional stochastic independent.md",
-    "mathematics/stochastics/conditional probability.md",
-    "mathematics/stochastics/conditional expectation.md",
-    "mathematics/stochastics/conditional distribution.md",
-    "mathematics/stochastics/collectors problem.md",
-    "mathematics/stochastics/CDF.md",
-    "mathematics/stochastics/bernoulli random variable.md"
+    "code/pandas/operations/pd df column management.md",
+    "code/pandas/pd column.md",
+    "code/pandas/pd index.md",
+    "code/pandas/pd dataframe.md",
+    "code/pandas/pd dtype.md",
+    "code/pandas/io and data conversions/displaying pd dataframe.md",
+    "code/pandas/operations/pd series x numpy operations.md",
+    "code/pandas/operations/pd df indexing and selecting.md",
+    "code/pandas/io and data conversions/creating pd series.md",
+    "code/pandas/io and data conversions/summarizing pd dataframe.md"
   ]
 }
