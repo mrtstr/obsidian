@@ -1,3 +1,15 @@
+# example series
+```python
+pd_df1 = pd.DataFrame(
+	{"a": 1, "b":2, "c":3, "d":4},
+)
+  
+# a   1 
+# b   2  
+# c   3 
+# d   4 
+```
+# Series
 - one dimensional labeled array
 - labels of the axis is called index
 - has a single dtype and often uses [[np dtypes]] 

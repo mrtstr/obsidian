@@ -8,18 +8,146 @@
         "type": "tabs",
         "children": [
           {
-            "id": "335c542717775a17",
+            "id": "03c5e283c9044055",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/operations/pd df indexing and selecting.md",
+                "file": "code/pandas/usecase/summarizing pd dataframe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e6b9a5b610018d51",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/pd calegorical data.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "63dea44f75487249",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/pd dtype.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "53e413f983ecb35d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/pd dataframe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c892aaaa814554f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/pd series.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "052923147add3d55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/pd dataframe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e14675e1e71fa42f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/usecase/pd df column management.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fe8079bdfc1ed78b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/usecase/pd boolean indexing.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "d046ba9c1d09d175",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e2ab52e738a357b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/pd dataframe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e5a78eecc24a69c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/pd dataframe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8f05a85703a9b655",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/pd values.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +213,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "code/pandas/operations/pd df indexing and selecting.md",
+                "file": "code/pandas/pd values.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +230,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "code/pandas/operations/pd df indexing and selecting.md",
+                "file": "code/pandas/pd values.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +253,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "code/pandas/operations/pd df indexing and selecting.md"
+                "file": "code/pandas/pd values.md"
               }
             }
           }
@@ -136,17 +264,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "335c542717775a17",
+  "active": "8f05a85703a9b655",
   "lastOpenFiles": [
-    "code/pandas/operations/pd df column management.md",
-    "code/pandas/pd column.md",
-    "code/pandas/pd index.md",
     "code/pandas/pd dataframe.md",
+    "code/pandas/pd values.md",
+    "code/pandas/pd column.md",
     "code/pandas/pd dtype.md",
-    "code/pandas/io and data conversions/displaying pd dataframe.md",
-    "code/pandas/operations/pd series x numpy operations.md",
-    "code/pandas/operations/pd df indexing and selecting.md",
-    "code/pandas/io and data conversions/creating pd series.md",
-    "code/pandas/io and data conversions/summarizing pd dataframe.md"
+    "code/pandas/usecase/pd slicing.md",
+    "code/pandas/pd index.md",
+    "code/pandas/usecase/pd sorting.md",
+    "code/pandas/pd calegorical data.md",
+    "code/pandas/usecase/summarizing pd dataframe.md",
+    "code/pandas/pd series.md"
   ]
 }

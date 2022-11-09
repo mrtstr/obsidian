@@ -1,0 +1,1 @@
+memory efficient saving of high [[cardinality]] categorical data in [[pandas]] [[pd dataframe]]
