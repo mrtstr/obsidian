@@ -20,6 +20,7 @@ pd_df.col_name == pd_series["col_name"]
 - selecting rows and [[pd column]] and [[pd index]] by name using [[pd loc]]
 - selecting rows and [[pd column]] and [[pd index]] by position using [[pd iloc]]
 - selecting rows and [[pd column]] using [[pd boolean indexing]] and [[pd loc]]
+- selecting [[pd index]] and [[pd column]] using [[py lambda functions]]: [[pd indexing by callable]]
 
 
 
@@ -147,4 +148,20 @@ pd_df.col_name == pd_series["col_name"]
 ```
 Tags: code, pandas
 <!--ID: 1667921722429-->
+END
+
+
+START
+Basic
+pandas indexing: selecting [[pd column]] and/or [[pd index]] (6 without example)
+Back: 
+1) Selecting columns using the dict syntax
+2) dot notation: rows and columns of [[pd dataframe]] and [[pd series]] can be selected using the dot notation instead of the dict notation
+3) selecting rows and [[pd column]] and [[pd index]] by name using [[pd loc]]
+4) selecting rows and [[pd column]] and [[pd index]] by position using [[pd iloc]]
+5) selecting rows and [[pd column]] using [[pd boolean indexing]] and [[pd loc]]
+6) selecting [[pd index]] and [[pd column]] using [[py lambda functions]]: [[pd indexing by callable]]
+
+Tags: code, pandas
+<!--ID: 1668090818842-->
 END

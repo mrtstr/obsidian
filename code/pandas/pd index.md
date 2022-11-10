@@ -2,6 +2,7 @@
 - can be interpreted as labels of rows (axis 0)
 - equivalent to the [[pd column]] but on the other axis
 - is saved inside a wrapped [[np ndarray]] (like [[pd column]])
+- can have multiple levels: [[pd multiindex]]
 - can be accessed and manipulated:
 ```python
 # wrapper read only:
