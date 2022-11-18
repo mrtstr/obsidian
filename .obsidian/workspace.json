@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/pd multiindex.md",
+                "file": "statistical learning/models/tree based models/gradient boosted trees.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "total proba",
+                "query": "gradie",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,7 +83,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "code/pandas/pd multiindex.md",
+                "file": "statistical learning/models/tree based models/gradient boosted trees.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "code/pandas/pd multiindex.md",
+                "file": "statistical learning/models/tree based models/gradient boosted trees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "code/pandas/pd multiindex.md"
+                "file": "statistical learning/models/tree based models/gradient boosted trees.md"
               }
             }
           }
@@ -156,15 +157,15 @@
   },
   "active": "00e9bba255646ea2",
   "lastOpenFiles": [
+    "code/pandas/usecase/pd element wise manipulations.md",
+    "code/pandas/operations/pd apply.md",
+    "mathematics/stochastics/expected value.md",
+    "code/pandas/pd multiindex.md",
     "code/pandas/pd calegorical data.md",
     "code/pandas/pd index.md",
     "code/pandas/usecase/pd.md",
     "code/pandas/usecase/pd sorting.md",
     "code/pandas/operations/pd reindex.md",
-    "code/pandas/operations/pd allign.md",
-    "code/pandas/pd dataframe.md",
-    "code/pandas/usecase/pd broadcasting as multiindex.md",
-    "code/pandas/usecase/pd indexing on multiindexed.md",
-    "code/pandas/pd multiindex.md"
+    "code/pandas/operations/pd allign.md"
   ]
 }

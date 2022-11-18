@@ -194,38 +194,26 @@ Basic
 [[pandas]] [[pd map]]/[[pd applymap]]:
 - concept and examples
 Back: 
-## [[pd apply]]
-- get a [[pd series]] and performs a transformation on the [[pd series]]
-- can de a reduction but does not have to
-- can be performed on [[pd column]] or [[pd index]]
+## [[pd map]]/[[pd applymap]]
+- gets single element and transforms it
 ```python
-pd_df1.apply(np.add.accumulate, axis=0) # with reduction on rows
-
+def double(x):
+	if x > 2:
+		return x * 2
+	return 0
+display(pd_df1["col1"].map(lambda x: x *2 if x > 2 else 0))
+display(pd_df1["col1"].map(double))
+# a   0
+# b   0
+# c   9
+# d   16
+display(pd_df1.applymap(lambda x: x *2 if x > 2 else 0))
+display(pd_df1.applymap(double))
 #  col1 col2 col3
-# a 1   5    9
-# b 3   11   19
-# c 6   18   30
-# d 10  26   42
-
-pd_df1.apply(np.add.accumulate, axis=1) # with reduction on columns
-
-#  col1 col2 col3
-# a 1   6    15
-# b 2   8    18
-# c 3   10   21
-# d 4   12   24
-
-
-pd_df1.apply(np.sum, axis=0) # without reduction on rows
-# col1 10
-# col2 26
-# col3 42
-
-pd_df1.apply(np.sum, axis=1) # without reduction on columns
-# a 15
-# b 18
-# c 21
-# d 24
+# a 0   10   18 
+# b 0   12   20 
+# c 6   14   22 
+# d 8   16   24
 ```
 Tags: code, pandas
 <!--ID: 1668090818837-->
