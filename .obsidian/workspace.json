@@ -18,26 +18,33 @@
                 "source": false
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "d046ba9c1d09d175",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "7e2ab52e738a357b",
+            "id": "ca9b4956ccf6e81e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/pd index.md",
+                "file": "mathematics/stochastics/combinatorics/multinomial coefficient.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3bb875ba6eb49de7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/combinatorics/birthday problem.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -66,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gradie",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,8 +90,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -104,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "statistical learning/models/tree based models/gradient boosted trees.md",
+                "file": "mathematics/stochastics/combinatorics/birthday problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "statistical learning/models/tree based models/gradient boosted trees.md",
+                "file": "mathematics/stochastics/combinatorics/birthday problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "statistical learning/models/tree based models/gradient boosted trees.md"
+                "file": "mathematics/stochastics/combinatorics/birthday problem.md"
               }
             }
           }
@@ -155,17 +161,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "00e9bba255646ea2",
+  "active": "3bb875ba6eb49de7",
   "lastOpenFiles": [
+    "mathematics/stochastics/combinatorics/multinomial coefficient.md",
+    "mathematics/stochastics/combinatorics/birthday problem.md",
+    "mathematics/stochastics/combinatorics/binomial coefficient.md",
+    "statistical learning/models/tree based models/gradient boosted trees.md",
     "code/pandas/usecase/pd element wise manipulations.md",
     "code/pandas/operations/pd apply.md",
     "mathematics/stochastics/expected value.md",
     "code/pandas/pd multiindex.md",
     "code/pandas/pd calegorical data.md",
-    "code/pandas/pd index.md",
-    "code/pandas/usecase/pd.md",
-    "code/pandas/usecase/pd sorting.md",
-    "code/pandas/operations/pd reindex.md",
-    "code/pandas/operations/pd allign.md"
+    "code/pandas/pd index.md"
   ]
 }

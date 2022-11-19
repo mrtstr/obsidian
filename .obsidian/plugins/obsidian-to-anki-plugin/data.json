@@ -413,7 +413,9 @@
     "code/pandas/operations/pd applymap.md": "01a053f5b74497bd869bf15cca057f45",
     "code/pandas/operations/pd insert.md": "16c885cccd233046c4606b506fccd7c8",
     "code/pandas/operations/pd map.md": "7fc44dbd7e6088dff36632884d17901e",
-    "mathematics/basics/cartesian product.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "mathematics/basics/cartesian product.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/combinatorics/birthday problem.md": "1f14cfefb226553ca2506e467056fbbc",
+    "mathematics/stochastics/combinatorics/multinomial coefficient.md": "75a08b06e4923bcf41e5094564d21755"
   },
   "fields_dict": {
     "Basic": [
