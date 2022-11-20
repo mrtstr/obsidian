@@ -1,3 +1,4 @@
+## bernoulli random variable
 - [[discrete random variable]] $Z$ that can only take $0$ and $1$
 	→support of $Z = \{0,1\}$ 
 - parameter $p$ defines the probability of $Z$ being 0 or 1
@@ -11,9 +12,9 @@ f_Z(z) =
     1-p,& \text{if } z= 0\\
     0,              & \text{otherwise}
 \end{cases}
-
 $$
 
+# anki
 
 START
 Basic

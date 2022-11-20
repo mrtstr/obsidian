@@ -13,31 +13,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "statistical learning/models/tree based models/gradient boosted trees.md",
+                "file": "mathematics/stochastics/discrete uniform distribution.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ca9b4956ccf6e81e",
+            "id": "4a8bfbe8264faaf4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/combinatorics/multinomial coefficient.md",
+                "file": "mathematics/stochastics/binomial distribution.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3bb875ba6eb49de7",
+            "id": "9f379369e57b2156",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/combinatorics/birthday problem.md",
+                "file": "mathematics/stochastics/conditional distribution.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8e0422add2869e43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/bernoulli random variable.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/combinatorics/birthday problem.md",
+                "file": "mathematics/stochastics/conditional distribution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/combinatorics/birthday problem.md",
+                "file": "mathematics/stochastics/conditional distribution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/combinatorics/birthday problem.md"
+                "file": "mathematics/stochastics/conditional distribution.md"
               }
             }
           }
@@ -161,17 +173,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3bb875ba6eb49de7",
+  "active": "9f379369e57b2156",
   "lastOpenFiles": [
-    "mathematics/stochastics/combinatorics/multinomial coefficient.md",
-    "mathematics/stochastics/combinatorics/birthday problem.md",
-    "mathematics/stochastics/combinatorics/binomial coefficient.md",
+    "mathematics/stochastics/collectors problem.md",
+    "mathematics/stochastics/continous uniform distribution.md",
+    "mathematics/stochastics/bernoulli random variable.md",
+    "mathematics/stochastics/discrete uniform distribution.md",
+    "mathematics/stochastics/binomial distribution.md",
+    "mathematics/stochastics/discrete distribution.md",
+    "mathematics/stochastics/random variable.md",
+    "mathematics/stochastics/discrete random variable.md",
     "statistical learning/models/tree based models/gradient boosted trees.md",
-    "code/pandas/usecase/pd element wise manipulations.md",
-    "code/pandas/operations/pd apply.md",
-    "mathematics/stochastics/expected value.md",
-    "code/pandas/pd multiindex.md",
-    "code/pandas/pd calegorical data.md",
-    "code/pandas/pd index.md"
+    "mathematics/stochastics/combinatorics/multinomial coefficient.md"
   ]
 }

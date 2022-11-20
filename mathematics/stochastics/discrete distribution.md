@@ -1,4 +1,4 @@
-
+random variable
 Given a [[random variable|discrete]] [[random variable]] (can take only finite or at least [[countable]] values)  $X: \Omega \mapsto \mathbb{R}$ on a [[sample space]] $\Omega$ we can derive [[event|events]] for all [[set|sets]] of real values $C \subseteq \mathbb{R}$ on the original [[probability space]]. The [[discrete distribution]] of a [[discrete random variable]] is the collection of the [[probability|probabilities]] of these [[event|events]] $X \in C$.
 $$
 \left\{P(X \in C) \mid C \subseteq \mathbb{R} \right\} = \left\{P\left(\left\{\omega \mid X(\omega) \in C\right\} \right) \mid C \subseteq \mathbb{R}\right\}
@@ -18,6 +18,15 @@ $$
 &\Rightarrow P\left(\left\{ X \in \Omega \right\}\right) = \frac{1 + 10}{2^{10}}
 \end{split}
 $$ 
+
+## important [[discrete distribution]]
+
+### [[bernoulli random variable|bernoulli distribution]]
+
+### [[discrete uniform distribution]]
+
+### [[binomial distribution]]
+
 START
 Basic
 [[discrete distribution]] of a [[discrete random variable]]:

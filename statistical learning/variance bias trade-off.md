@@ -5,7 +5,7 @@
 relationship of the [[error]] components [[model bias]] and [[model variance]]
 ## Decomposition
 ### [[statistical estimator]]
-- given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[PDF|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
+- given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[continuous PDF|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
 - in theory it is possible to predict the $\theta$ because it's a constant
 - in this case the [[error]] is only depending on the [[model bias]] and [[model variance]]
 - the [[mean square error]] of the [[statistical estimator]] can be decomposed as follows
@@ -284,7 +284,7 @@ variance bias trade-off for [[statistical estimator]]
 - relationship to [[mean square error]] (equation)
 - verbal explanation
 Back: 
-- given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[PDF|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
+- given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[continuous PDF|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
 - in theory it is possible to predict the $\theta$ because it's a constant
 - in this case the [[error]] is only depending on the [[model bias]] and [[model variance]]
 $$
@@ -344,7 +344,7 @@ Basic
 variance bias trade-off for [[statistical estimator]]
 - relationship to [[mean square error]] (equation with proof)
 Back: 
-- given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[PDF|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
+- given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[continuous PDF|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
 - in theory it is possible to predict the $\theta$ because it's a constant
 - in this case the [[error]] is only depending on the [[model bias]] and [[model variance]]
 - the [[mean square error]] of the [[statistical estimator]] can be decomposed as follows

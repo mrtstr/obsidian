@@ -5,7 +5,7 @@
 
 ![[1920px-Multivariate_normal_sample.svg-1.png]]
 
-## Joint [[PDF]] $f_{XY}(x,y)$
+## Joint [[continuous PDF]] $f_{XY}(x,y)$
 - Joint PDFs encode the marginal distributions of each [[discrete random variable]]
 	→ $f_X(x) = \int\limits_{-\infty}^{-\infty} F_{XY}(x,y) \: dy$ 
 - $X \perp Y \Leftrightarrow f_{XY}(x, y) = f_X(x)f_Y(y)$
