@@ -12,6 +12,20 @@ Probability that a [[discrete random variable]] will take a greater or equal val
 - $F_X(x)=P(X \leq x) =\int\limits_{-\infty}^{x}  f_X(x)\:dx$
 - $f_X(x)=\frac{dF_X(x)}{dx}$ 
 
+## limits
+$$
+F_X(x^-) = \lim_{y \rightarrow x, y < x} F_X(y)
+$$
+$$
+F_X(x^+) = \lim_{y \rightarrow x, y > x} F_X(y)
+$$
+#### Properties
+1) $P(X \leq x)=F_X(x)$
+2) $P(X=x) = F_X(x) - F_X(x^+)$
+3) $P(X<x)=F_X(x^-)$
+4) $F_X(x)=F_X(x^+)$ continuity from the right ([[discrete distribution|discrete]] and [[continuous random variable|continuous]])
+5) $F_X(x)=F_X(x^+)=F_X(x^-)$ continuity from the both sides ([[continuous random variable|continuous]])
+	- proof: its because $f_X(x)=0$
 ## empirical CDF 
 Approximated CDF from [[statistical sample|samples]] 
 $\widehat{F}_X(x)=\frac{1}{n} \sum\limits_{i=1}^n\mathbb{I}[x_i \leq x]$ 
@@ -74,15 +88,29 @@ $$Q_X(q)=F_X^{-1}(q)\quad with \: q = F_X(x)=P(X \leq x)$$
 
 Tags: mathematics, statistics
 <!--ID: 1664619948170-->
-ENDSTART
-​￼Basic
- Relationship CDF ￼FX(q)￼ and ￼￼quantile function￼￼ ￼QX(q)￼
+END
+
+
+START
+Basic
+- Definition of $F_X(x^+)$ and $F_X(x^-)$
+- continuity of ([[discrete distribution|discrete]] and [[continuous random variable|continuous]]) [[CDF]]
+- $P(X<x)$ and $P(X=x)$ in relationship to the limits of the [[CDF]]
 Back: 
-
- ￼QX(q)￼ is the smallest values with a ￼￼CDF￼￼ less or equal than ￼q￼  
-QX(q)=inf{x∣q≤FX(x)}
- ￼QX(q)￼ is the inverse of the ￼￼CDF￼￼
-QX(q)=FX−1(q)withq=FX(x)=P(X≤x)
-
+## limits
+$$
+F_X(x^-) = \lim_{y \rightarrow x, y < x} F_X(y)
+$$
+$$
+F_X(x^+) = \lim_{y \rightarrow x, y > x} F_X(y)
+$$
+#### Properties
+1) $P(X \leq x)=F_X(x)$
+2) $P(X=x) = F_X(x) - F_X(x^+)$
+3) $P(X<x)=F_X(x^-)$
+4) $F_X(x)=F_X(x^+)$ continuity from the right ([[discrete distribution|discrete]] and [[continuous random variable|continuous]])
+5) $F_X(x)=F_X(x^+)=F_X(x^-)$ continuity from the both sides ([[continuous random variable|continuous]])
+	- proof: its because $f_X(x)=0$
 Tags: mathematics, statistics
+<!--ID: 1668957370731-->
 END

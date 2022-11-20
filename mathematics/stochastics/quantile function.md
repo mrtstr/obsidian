@@ -1,3 +1,4 @@
+
 ## Quantile or percentile function
 - $Q_X:[0,1] \mapsto \mathbb{R}$ 
 - For a given probability $q$: $Q_X(q)$ gives the value that a [[discrete random variable]] $X$ will not exceed with a probability of $q$.
