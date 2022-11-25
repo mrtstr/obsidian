@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/quantile function.md",
+                "file": "mathematics/stochastics/discrete uniform distribution.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "binomial distribution",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -110,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/quantile function.md",
+                "file": "mathematics/stochastics/discrete uniform distribution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/quantile function.md",
+                "file": "mathematics/stochastics/discrete uniform distribution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/quantile function.md"
+                "file": "mathematics/stochastics/discrete uniform distribution.md"
               }
             }
           }
@@ -163,15 +164,15 @@
   },
   "active": "4a8bfbe8264faaf4",
   "lastOpenFiles": [
-    "mathematics/stochastics/continous uniform distribution.md",
-    "mathematics/stochastics/binomial distribution.md",
-    "mathematics/stochastics/CDF.md",
     "mathematics/stochastics/discrete distribution.md",
+    "mathematics/stochastics/binomial distribution.md",
+    "mathematics/stochastics/quantile function.md",
+    "mathematics/stochastics/continous uniform distribution.md",
+    "mathematics/stochastics/CDF.md",
     "mathematics/stochastics/conditional distribution.md",
     "mathematics/stochastics/collectors problem.md",
     "mathematics/stochastics/bernoulli random variable.md",
     "mathematics/stochastics/discrete uniform distribution.md",
-    "mathematics/stochastics/random variable.md",
-    "mathematics/stochastics/discrete random variable.md"
+    "mathematics/stochastics/random variable.md"
   ]
 }

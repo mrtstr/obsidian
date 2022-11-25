@@ -15,7 +15,7 @@ $$
 
 START
 Basic
-[[binomial distribution]]
+[[discrete uniform distribution]]
 - verbal definition
 - probability function
 
