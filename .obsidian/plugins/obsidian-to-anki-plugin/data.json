@@ -54,7 +54,8 @@
     "Pasted image 20221015081452.png",
     "Selection_001.png",
     "Selection_002.png",
-    "IZys3.png"
+    "IZys3.png",
+    "Screenshot from 2022-12-11 11-08-42.png"
   ],
   "File Hashes": {
     "python.md": "5e53ed997a2ad8172d0e61017b450b6c",
@@ -316,7 +317,7 @@
     "mathematics/stochastics/combinatorics/binomial coefficient.md": "6c93fefb68f4839aeb7812c02f8f504d",
     "mathematics/stochastics/variance.md": "c0db763f49406a4a679b9a2db3a85fb9",
     "mathematics/stochastics/symmetric matrix.md": "a973f4657da25d9f1cc370570aeba705",
-    "mathematics/stochastics/stochastic independent.md": "14e8c5dd7a251fb7f7727fc46f8063a9",
+    "mathematics/stochastics/stochastic independent.md": "a361bd567c544ceed10b15521b7a2536",
     "mathematics/stochastics/stochastic exclusive.md": "b5d0d63deb835acdc0fee5efdebaed9d",
     "mathematics/stochastics/statistical sample.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/sample variance.md": "98ffebf25c6146dcd51b6edd7866fd7e",
@@ -331,7 +332,7 @@
     "mathematics/stochastics/observations.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/measurable space.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/likelihood.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/joint distribution.md": "ae3e51a8092c74521243c4d554bd1a02",
+    "mathematics/stochastics/joint distribution.md": "ab1db9229cbb15794f283d0388c7d84d",
     "mathematics/stochastics/hypothesis.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/factoring of joint densities.md": "7022bdd24b246537b1418303a82e0479",
     "mathematics/stochastics/expected value.md": "c107bbc537997a79f207b3e46da42848",
@@ -419,7 +420,9 @@
     "mathematics/stochastics/continous uniform distribution.md": "1fadadda5ad16a15f25e2b8e3999e283",
     "mathematics/stochastics/binomial distribution.md": "a3a38f56fd9c054efaeaec882eff6ef6",
     "mathematics/stochastics/discrete uniform distribution.md": "51681d0f1146134b8cfd06ad6d1639f0",
-    "mathematics/stochastics/continuous PDF.md": "442661f4b7de9b7b7cd052c1575b337c"
+    "mathematics/stochastics/continuous PDF.md": "442661f4b7de9b7b7cd052c1575b337c",
+    "mathematics/stochastics/marginal distribution.md": "3e2ec772245f972001d93cf18b295eec",
+    "mathematics/stochastics/discrete joint distribution.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [

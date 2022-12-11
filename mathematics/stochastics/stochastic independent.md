@@ -1,3 +1,4 @@
+# stochastic independent [[event|events]]
 Two [[discrete random variable|random variables]] are [[stochastic independent|independent]] if the occurrence of [[event space|event]] $B$ does not change the [[probability]] that [[event space|event]] also happened
 
 ## Definition $A \perp B$
@@ -16,7 +17,13 @@ P(A \cup \overline{B})
 &=P(A)P(\overline{B}) 
 \end{split}
 $$
+# stochastic independent [[random variable|random variables]]
+Two [[random variable]] $X$ and $Y$ an [[stochastic independent]] iff the following statements are true
+1) $F_{XY}(x, y) = F_X(x)F_Y(y)$
+2) $f_{XY}(x, y) = f_X(x)f_Y(y)$
 
+
+# Anki
 START
 Basic
 stochastic independence
@@ -65,4 +72,17 @@ $$
 $$
 Tags: mathematics, statistics
 <!--ID: 1666517556853-->
+END
+
+START
+Basic
+[[stochastic independent]] [[random variable]]
+- proprieties of the PDF and CDF
+
+Back: 
+Two [[random variable]] $X$ and $Y$ an [[stochastic independent]] iff the following statements are true
+1) $F_{XY}(x, y) = F_X(x)F_Y(y)$
+2) $f_{XY}(x, y) = f_X(x)f_Y(y)$
+Tags: mathematics, statistics
+<!--ID: 1670766688733-->
 END
