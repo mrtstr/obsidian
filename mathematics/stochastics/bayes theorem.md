@@ -49,7 +49,24 @@ P\left(B_i \mid A_1 \cap A_2\right)
 \end{split}
 $$
 
+## [[bayes theorem]] for [[random variable|random variables]] 
 
+$$
+f_{X \mid Y}(x \mid y) = \frac{f_{Y \mid X}(y \mid x) \cdot f_X(x)}{f_Y(y)}
+$$
+proof:
+$$
+\begin{split}
+f_{X \mid Y}(x \mid y) \cdot f_Y(y) 
+=& f_{Y \mid X}(y \mid x) \cdot f_X(x) \\
+\frac{f_{XY}(x,y) \cdot f_Y(y)}{f_Y(y)}
+=& \frac{f_{XY}(x,y) \cdot f_X(x)}{f_X(x)} \\ 
+f_{XY}(x,y)
+=& f_{XY}(x,y) 
+\end{split}
+$$
+
+# Anki
 START
 Basic
 [[bayes theorem]]
@@ -117,4 +134,28 @@ P\left(B_i \mid A_1 \cap A_2\right)
 $$
 Tags: mathematics, statistics
 <!--ID: 1667051814884-->
+END
+
+
+START
+Basic
+[[bayes theorem]] for [[random variable|random variables]] (with proof)
+Back: 
+
+$$
+f_{X \mid Y}(x \mid y) = \frac{f_{Y \mid X}(y \mid x) \cdot f_X(x)}{f_Y(y)}
+$$
+proof:
+$$
+\begin{split}
+f_{X \mid Y}(x \mid y) \cdot f_Y(y) 
+=& f_{Y \mid X}(y \mid x) \cdot f_X(x) \\
+\frac{f_{XY}(x,y) \cdot f_Y(y)}{f_Y(y)}
+=& \frac{f_{XY}(x,y) \cdot f_X(x)}{f_X(x)} \\ 
+f_{XY}(x,y)
+=& f_{XY}(x,y) 
+\end{split}
+$$
+Tags: mathematics, statistics
+<!--ID: 1671186732897-->
 END

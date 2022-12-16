@@ -29,14 +29,8 @@ P\left(A_n \mid A_1 \cap A_2 \cap \:... \: A_{n-1} \right) \\
 \end{split}
 $$
 
-## law of total probability
-for a [[partitioned sample space]] $B = \{B_i \mid i=1,2,...,k\}$ the following is true:
-$$
-P(A)=\sum\limits_{i=1}^{k}P(B_i)\cdot P(A \mid B_i)
-$$
-![[Selection_002.png]]
 
-
+# Anki
 START
 Basic
 conditional probability
@@ -76,17 +70,3 @@ Tags: mathematics, statistics
 END
 
 
-START
-Basic
-law of total probability
-Back: 
-## Definition
-for a [[partitioned sample space]] $B = \{B_i \mid i=1,2,...,k\}$ the following is true:
-$$
-P(A)=\sum\limits_{i=1}^{k}P(B_i)\cdot P(A \mid B_i)
-$$
-![[Selection_002.png]]
-
-Tags: mathematics, statistics
-<!--ID: 1666457499354-->
-END

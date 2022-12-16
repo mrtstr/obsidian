@@ -22,6 +22,17 @@ Two [[random variable]] $X$ and $Y$ an [[stochastic independent]] iff the follow
 1) $F_{XY}(x, y) = F_X(x)F_Y(y)$
 2) $f_{XY}(x, y) = f_X(x)f_Y(y)$
 
+## [[conditional distribution]] of independent [[random variable|random variables]]
+$$
+f_{X\mid Y}(x \mid y) = f_X(x)
+$$
+proof:
+$$
+f_{X\mid Y}(x \mid y) 
+= \frac{f_{X, Y}(x, y)}{f_Y(y)}
+= \frac{f_Y(y)f_X(x)}{f_Y(y)}
+= f_X(x)
+$$
 
 # Anki
 START
@@ -85,4 +96,23 @@ Two [[random variable]] $X$ and $Y$ an [[stochastic independent]] iff the follow
 2) $f_{XY}(x, y) = f_X(x)f_Y(y)$
 Tags: mathematics, statistics
 <!--ID: 1670766688733-->
+END
+
+
+START
+Basic
+[[conditional distribution]] of independent [[random variable|random variables]] (with proof)
+Back: 
+$$
+f_{X\mid Y}(x \mid y) = f_X(x)
+$$
+proof:
+$$
+f_{X\mid Y}(x \mid y) 
+= \frac{f_{X, Y}(x, y)}{f_Y(y)}
+= \frac{f_Y(y)f_X(x)}{f_Y(y)}
+= f_X(x)
+$$
+Tags: mathematics, statistics
+<!--ID: 1671186732887-->
 END

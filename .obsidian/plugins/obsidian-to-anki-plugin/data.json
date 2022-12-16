@@ -306,7 +306,7 @@
     "mathematics/stochastics/simple sample space.md": "f359d099786bece875e7d7cc0fe52a44",
     "mathematics/stochastics/random experiment.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/combinatorics/combinatorial methods.md": "8693f41ccbd9a53c3a55adf337e870bc",
-    "mathematics/stochastics/combinatorics/multiplication rule.md": "149f962c8cf2b6a7d27171ec46a79ae7",
+    "mathematics/stochastics/combinatorics/multiplication rule.md": "41a01d34a9f965cf4248f313db9ff446",
     "mathematics/stochastics/combinatorics/sterling number.md": "608e4eca2d6aa47b4550ee3aa3cc4434",
     "mathematics/stochastics/combinatorics/permutations.md": "f19f8024c36f32901da68acc20619b3e",
     "mathematics/stochastics/combinatorics/factorial.md": "aef6d6b90c3dc449d454ecade0a83308",
@@ -317,7 +317,7 @@
     "mathematics/stochastics/combinatorics/binomial coefficient.md": "6c93fefb68f4839aeb7812c02f8f504d",
     "mathematics/stochastics/variance.md": "c0db763f49406a4a679b9a2db3a85fb9",
     "mathematics/stochastics/symmetric matrix.md": "a973f4657da25d9f1cc370570aeba705",
-    "mathematics/stochastics/stochastic independent.md": "a361bd567c544ceed10b15521b7a2536",
+    "mathematics/stochastics/stochastic independent.md": "c4b93754880147d8ca4e340fd726fea2",
     "mathematics/stochastics/stochastic exclusive.md": "b5d0d63deb835acdc0fee5efdebaed9d",
     "mathematics/stochastics/statistical sample.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/sample variance.md": "98ffebf25c6146dcd51b6edd7866fd7e",
@@ -343,12 +343,12 @@
     "mathematics/stochastics/covariance.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/continuous random variable.md": "f50418a19146aaecc027dae2919e6b6d",
     "mathematics/stochastics/conditional stochastic independent.md": "099247a2e30513299b83906ec7fbdce6",
-    "mathematics/stochastics/conditional probability.md": "f1cd560f7ccd12e77c6629ee112d37d7",
+    "mathematics/stochastics/conditional probability.md": "9559adb6692c7caecefa2344f0394f66",
     "mathematics/stochastics/conditional expectation.md": "d9d30f4019fbc4371cd80058af47168c",
-    "mathematics/stochastics/conditional distribution.md": "4a937945aa6f581e5dc4c9f27ce5bf90",
+    "mathematics/stochastics/conditional distribution.md": "33297638842f6d75d3c6060a253d9e54",
     "mathematics/stochastics/collectors problem.md": "983d9a3ff53328d108ae9938fc38d04f",
     "mathematics/stochastics/bernoulli random variable.md": "f040d6a93a7584a13e96adfe377d27b7",
-    "mathematics/stochastics/bayes theorem.md": "979ddc068c40f26114c0dfe135f31831",
+    "mathematics/stochastics/bayes theorem.md": "c91366bbc4859a6e1e78b00698cecb71",
     "mathematics/stochastics/Untitled.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/PDF.md": "547de6c750de1f88d9e5aa0e3ccd2122",
     "mathematics/stochastics/CDF.md": "879003fc551be193d0e8c9d8f720f362",
@@ -422,7 +422,8 @@
     "mathematics/stochastics/discrete uniform distribution.md": "51681d0f1146134b8cfd06ad6d1639f0",
     "mathematics/stochastics/continuous PDF.md": "442661f4b7de9b7b7cd052c1575b337c",
     "mathematics/stochastics/marginal distribution.md": "3e2ec772245f972001d93cf18b295eec",
-    "mathematics/stochastics/discrete joint distribution.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "mathematics/stochastics/discrete joint distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/law of total probability.md": "2539320b5d61f0de8f8de97e21253dca"
   },
   "fields_dict": {
     "Basic": [
