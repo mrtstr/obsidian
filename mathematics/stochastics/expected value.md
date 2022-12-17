@@ -3,7 +3,7 @@
 - Generalization of the weighted mean: mean of possible outcomes weighted by its probability
 - defined for [[conditional distribution|conditional distributions]]: [[conditional expectation]] 
 
-#### expected values of a [[continuous random variable]] $X$ with a [[continuous PDF|PDF]] $f_X(x)$:
+#### expected values of a [[continuous random variable]] $X$ with a [[PDF|PDF]] $f_X(x)$:
 $\mathbb{E}[X]=\int\limits_\infty^\infty x f_X(x)dx$  
 
 #### expected value of a [[random variable]] $X$:

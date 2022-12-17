@@ -1,5 +1,5 @@
-[[continuous PDF]] of a [[discrete random variable]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
-## [[continuous PDF]]
+[[PDF]] of a [[discrete random variable]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
+## [[PDF]]
 $$
 f_X(X = x)=
 \begin{cases}
@@ -43,12 +43,12 @@ START
 Basic
 [[continous uniform distribution]]
 - verbal definition
-- [[continuous PDF]]
+- [[PDF]]
 - [[CDF]]
 - [[quantile function]]
 
 Back: 
-[[continuous PDF]] of a [[discrete random variable]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
+[[PDF]] of a [[discrete random variable]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
 
 ## probability function
 $$

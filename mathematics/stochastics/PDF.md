@@ -1,4 +1,4 @@
-# Continuous Probability density function
+# Probability density function
 - equivalent to the [[discrete random variable|discrete probability function]]
 The Probability density function $f_X]$ of a [[discrete random variable]] $X$ maps each point in the [[sample space]] to the relative likelihood that the [[discrete random variable]] will be in an infinitesimal small window around the value. (See for the [[joint distribution|joint PDF]] of for the PDF of a joint distribution)
 ## properties

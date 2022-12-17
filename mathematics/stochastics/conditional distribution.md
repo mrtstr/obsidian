@@ -1,6 +1,6 @@
 ## Definition
 - derived from 
-- the [[conditional distribution]] can be interpreted as a [[joint distribution]] with one value fixed that is normalized to be a [[continuous PDF|PDF]] again
+- the [[conditional distribution]] can be interpreted as a [[joint distribution]] with one value fixed that is normalized to be a [[PDF|PDF]] again
 $$
 f_{X\mid Y}(x \mid y)=\frac{f_{XY}(x,y)}{f_Y(y)}
 $$
@@ -14,7 +14,7 @@ $$
 
 ![[stochastic independent#conditional distribution of independent random variable random variables]]
 
-## $f_{X\mid Y}(x \mid y)$ is a [[continuous PDF|PDF]]
+## $f_{X\mid Y}(x \mid y)$ is a [[PDF|PDF]]
 Proof:
 $$
 \int\limits^{\infty}_{-\infty} f_{X\mid Y}(x \mid y) dx
@@ -29,7 +29,7 @@ Basic
 - definition
 - interpretation
 Back: 
-- the [[conditional distribution]] can be interpreted as a [[joint distribution]] with one value fixed that is normalized to be a [[continuous PDF|PDF]] again
+- the [[conditional distribution]] can be interpreted as a [[joint distribution]] with one value fixed that is normalized to be a [[PDF|PDF]] again
 $$
 f_{X\mid Y}(x \mid y)=\frac{f_{XY}(x,y)}{f_Y(y)}
 $$
@@ -47,7 +47,7 @@ END
 
 START
 Basic
-proof that $f_{X\mid Y}(x \mid y)$ is a [[continuous PDF|PDF]]
+proof that $f_{X\mid Y}(x \mid y)$ is a [[PDF|PDF]]
 Back: 
 $$
 \int\limits^{\infty}_{-\infty} f_{X\mid Y}(x \mid y) dx

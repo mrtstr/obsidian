@@ -37,18 +37,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/conditional distribution.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e054fb07fc0bc717",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "mathematics/stochastics/stochastic independent.md",
                 "mode": "source",
                 "source": false
@@ -56,43 +44,31 @@
             }
           },
           {
-            "id": "038b6cf45f0aec87",
+            "id": "94a93abf3d899ec9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/law of total probability.md",
+                "file": "mathematics/stochastics/functions of random variables.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "99a6daa21d1c4e1f",
+            "id": "0a4d83827ba31b2f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/discrete distribution.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "890d329df8b70f69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/discrete joint distribution.md",
+                "file": "mathematics/stochastics/PDF.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -158,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/conditional distribution.md",
+                "file": "mathematics/stochastics/functions of random variables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/conditional distribution.md",
+                "file": "mathematics/stochastics/functions of random variables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/conditional distribution.md"
+                "file": "mathematics/stochastics/functions of random variables.md"
               }
             }
           }
@@ -209,17 +185,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b071b1e8532c49a4",
+  "active": "94a93abf3d899ec9",
   "lastOpenFiles": [
-    "mathematics/stochastics/conditional probability.md",
     "mathematics/stochastics/stochastic independent.md",
-    "mathematics/stochastics/law of total probability.md",
-    "mathematics/stochastics/conditional distribution.md",
-    "mathematics/stochastics/combinatorics/multiplication rule.md",
-    "mathematics/stochastics/bayes theorem.md",
-    "mathematics/basics/linear algebra/matrix.md",
-    "mathematics/stochastics/probability space.md",
-    "mathematics/stochastics/joint distribution.md",
-    "mathematics/stochastics/combinatorics/combinatorial methods.md"
+    "mathematics/stochastics/functions of random variables.md",
+    "mathematics/stochastics/PDF.md",
+    "mathematics/stochastics/probability function.md",
+    "mathematics/stochastics/continuous random variable.md",
+    "mathematics/stochastics/random variable.md",
+    "mathematics/stochastics/discrete random variable.md",
+    "mathematics/basics/function.md",
+    "mathematics/basics/linear algebra/linear function.md",
+    "mathematics/stochastics/joint distribution.md"
   ]
 }

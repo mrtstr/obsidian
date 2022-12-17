@@ -1,7 +1,7 @@
 The [[bayes theorem]] describes the probability of an [[event space|event]] based on prior knowledge. Used for [[bayesian inference]].
 
 ## [[bayes theorem]]
-With [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ and general [[event space|event]] $A$ follows after [[conditional probability|law of total probability]] and the definition of [[conditional probability]]:
+With [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ and general [[event space|event]] $A$ follows after [[conditional probability|law of total probability]] and the  [[multiplication rule]]:
 $$
 P\left(B_i \mid A\right) 
 = \frac{P\left(A \mid B_i\right)P\left(B_i\right)}
@@ -14,7 +14,7 @@ P\left(B_i \mid A\right)
 &= \frac{P\left(A \cap B_i\right)}
 {P\left(A \right)} \\
 
-&= \frac{\overbrace{P\left(A \mid B_i\right)P\left(B_i\right)}^\text{conditional probability}}
+&= \frac{\overbrace{P\left(A \mid B_i\right)P\left(B_i\right)}^\text{multiplication rule}}
 {\underbrace{\sum\limits_{j=1}^k P\left(A \mid B_j\right)P\left(B_j\right)}_\text{law of total probability}}
 \end{split}
 $$
@@ -77,7 +77,7 @@ Back:
 ## Explanation
 The [[bayes theorem]] describes the probability of an [[event space|event]] based on prior knowledge. Used for [[bayesian inference]].
 ## Definition
-With [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ and general [[event space|event]] $A$ follows after [[conditional probability|law of total probability]] and the definition of [[conditional probability]]:
+With [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ and general [[event space|event]] $A$ follows after [[conditional probability|law of total probability]] and the definition of [[multiplication rule]]:
 
 $$
 P\left(B_i \mid A\right) 
@@ -91,7 +91,7 @@ P\left(B_i \mid A\right)
 &= \frac{P\left(A \cap B_i\right)}
 {P\left(A \right)} \\
 
-&= \frac{\overbrace{P\left(A \mid B_i\right)P\left(B_i\right)}^\text{conditional probability}}
+&= \frac{\overbrace{P\left(A \mid B_i\right)P\left(B_i\right)}^\text{multiplication rule}}
 {\underbrace{\sum\limits_{j=1}^k P\left(A \mid B_j\right)P\left(B_j\right)}_\text{law of total probability}}
 \end{split}
 $$
