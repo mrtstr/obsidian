@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/PDF.md",
+                "file": "mathematics/stochastics/bernoulli random variable.md",
                 "mode": "source",
                 "source": false
               }
@@ -187,15 +187,15 @@
   },
   "active": "94a93abf3d899ec9",
   "lastOpenFiles": [
-    "mathematics/stochastics/stochastic independent.md",
-    "mathematics/stochastics/functions of random variables.md",
+    "mathematics/stochastics/bernoulli random variable.md",
     "mathematics/stochastics/PDF.md",
+    "mathematics/stochastics/functions of random variables.md",
+    "mathematics/stochastics/stochastic independent.md",
     "mathematics/stochastics/probability function.md",
     "mathematics/stochastics/continuous random variable.md",
     "mathematics/stochastics/random variable.md",
     "mathematics/stochastics/discrete random variable.md",
     "mathematics/basics/function.md",
-    "mathematics/basics/linear algebra/linear function.md",
-    "mathematics/stochastics/joint distribution.md"
+    "mathematics/basics/linear algebra/linear function.md"
   ]
 }
