@@ -18,13 +18,16 @@ $$
 # convolutions of [[continuous random variable|continuous distributions]]
 $$
 \begin{split}
+F_Y(y) 
+=& P(Y \leq y) \\
+=& \int\limits_{\Omega_{X_1}} P(X_1 + X_2 \leq y) f_{X_1}(x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_1}} P(X_2 \leq  y - X_1 \mid  X_1 = x_1) f_{X_1}(x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_1}} P(X_2 \leq  y - x_1 ) f_{X_1}(x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_1}} F_{X_2}(y - x_1 ) f_{X_1}(x_1) dx_1 \\
 f_Y(y) 
-=& P(Y = y) \\
-=& P(X_1 + X_2 = y) 
-= \sum\limits_{\{ (x_1, x_2) \mid y = x_1 + x_2 \}} f_{X_1X_2}(x_1, x_2) 
-= \sum\limits_{\{ (x_1, x_2) \mid y = x_1 + x_2 \}} f_{X_1}(x_1)  f_{X_2}(x_2)\\
-=& \sum\limits_{x_1 \in \Omega_{X_1}} f_{X_1}(x_1)  f_{X_2}(y -x_1)
-= \sum\limits_{x_2 \in \Omega_{X_2}} f_{X_1}(y -x_2) f_{X_2}(x_2)  \\
+&= \frac{dF_Y(y)}{dy} \\
+=& \int\limits_{\Omega_{X_1}} f_{X_1}(x_1)  f_{X_2}(y -x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_2}} f_{X_1}(y -x_2) f_{X_2}(x_2)  dx_2\\
 \end{split}
 $$
 
@@ -53,4 +56,33 @@ $$
 
 Tags: mathematics, statistics
 <!--ID: 1671642994788-->
+END
+
+
+START
+Basic
+convolutions of [[continuous random variable|continuous distributions]]
+- definition
+- proof
+Back: 
+- given the two [[stochastic independent]] [[continuous random variable]] $X_1 \perp X_2$ with the [[probability density function|probability density functions]] $f_{X_1}(x_1)$ and $f_{X_2}(x_2)$
+- the [[convolution of distributions|convolution of the distributions]] the [[probability density function]] of the sum $Y = X_1 + X_2$ $f_Y(y)$
+
+$$
+\begin{split}
+F_Y(y) 
+=& P(Y \leq y) \\
+=& \int\limits_{\Omega_{X_1}} P(X_1 + X_2 \leq y) f_{X_1}(x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_1}} P(X_2 \leq  y - X_1 \mid  X_1 = x_1) f_{X_1}(x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_1}} P(X_2 \leq  y - x_1 ) f_{X_1}(x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_1}} F_{X_2}(y - x_1 ) f_{X_1}(x_1) dx_1 \\
+f_Y(y) 
+&= \frac{dF_Y(y)}{dy} \\
+=& \int\limits_{\Omega_{X_1}} f_{X_1}(x_1)  f_{X_2}(y -x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_2}} f_{X_1}(y -x_2) f_{X_2}(x_2)  dx_2\\
+\end{split}
+$$
+
+Tags: mathematics, statistics
+<!--ID: 1671650835737-->
 END

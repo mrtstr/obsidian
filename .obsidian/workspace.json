@@ -44,18 +44,6 @@
             }
           },
           {
-            "id": "9190dc8aba3e5de3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/functions of multiple random variables.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b644748d8e53f40d",
             "type": "leaf",
             "state": {
@@ -80,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -146,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/convolution of distributions.md",
+                "file": "mathematics/stochastics/sampling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/convolution of distributions.md",
+                "file": "mathematics/stochastics/sampling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/convolution of distributions.md"
+                "file": "mathematics/stochastics/sampling.md"
               }
             }
           }
@@ -208,17 +196,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b644748d8e53f40d",
+  "active": "b071b1e8532c49a4",
   "lastOpenFiles": [
-    "mathematics/stochastics/probability density function.md",
-    "mathematics/stochastics/convolution of distributions.md",
     "mathematics/stochastics/functions of multiple random variables.md",
+    "mathematics/stochastics/convolution of distributions.md",
+    "mathematics/stochastics/probability function.md",
+    "mathematics/stochastics/probability density function.md",
     "mathematics/stochastics/functions of random variables.md",
     "mathematics/stochastics/joint distribution.md",
     "mathematics/stochastics/joint probability function.md",
     "mathematics/stochastics/combinatorics/multiplication rule.md",
     "mathematics/stochastics/binomial distribution.md",
-    "mathematics/stochastics/probability integral transformation.md",
-    "mathematics/stochastics/sampling.md"
+    "mathematics/stochastics/probability integral transformation.md"
   ]
 }

@@ -54,3 +54,46 @@ $$
 Tags: mathematics, statistics
 <!--ID: 1671642994794-->
 END
+
+
+START
+Basic
+[[functions of multiple random variables]]
+- $\boldsymbol{X} = (X_1, ..., X_n)$ is a [[continuous random variable|continuous]] [[vector notation|multidimensional]] [[random variable]] with a [[joint distribution]]  $f_{\boldsymbol{X}}(\boldsymbol{x})$
+- $Y = g(\boldsymbol{X})$ is a (one dimensional) [[continuous random variable]]
+$$
+\begin{split}
+&Y = g(X_1,...,X_n) \\
+&g: \mathbb{R}^n  \mapsto \mathbb{R}: g(\boldsymbol{X}) = Y
+\end{split}
+$$
+$f_Y(y)$?
+Back: 
+$$
+f_{Y}(y) = \int...\int\limits_{\{\boldsymbol{x} \mid g(\boldsymbol{x}) = y\}} f_{\boldsymbol{X}}(\boldsymbol{x}) dx
+$$
+Tags: mathematics, statistics
+<!--ID: 1671650835742-->
+END
+
+START
+Basic
+[[functions of multiple random variables]]
+- $\boldsymbol{X} = (X_1, ..., X_n)$ is a [[discrete random variable|discrete]] [[vector notation|multidimensional]] [[random variable]] with a [[joint probability function]]  $f_{\boldsymbol{X}}(\boldsymbol{x})$
+- $\boldsymbol{Y} = (Y_1, ..., Y_n) = \boldsymbol{g}(\boldsymbol{X})$
+$$
+\begin{split}
+&Y_1 = g_1(X_1,...,X_n) \\
+&\qquad ... \\
+&Y_m = g_m(X_1,...,X_n) \\
+&\boldsymbol{g}: \mathbb{R}^n  \mapsto \mathbb{R}^m: \boldsymbol{g}(\boldsymbol{X}) = \boldsymbol{Y}
+\end{split}
+$$
+
+Back: 
+$$
+f_{\boldsymbol{Y}}(\boldsymbol{y}) = \sum\limits_{\{\boldsymbol{x} \mid \boldsymbol{g}(\boldsymbol{x}) = \boldsymbol{y}\}} f_{\boldsymbol{X}}(\boldsymbol{x})
+$$
+Tags: mathematics, statistics
+<!--ID: 1671650835745-->
+END
