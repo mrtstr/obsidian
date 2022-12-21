@@ -1,3 +1,3 @@
 [[discrete random variable]]
 [[discrete distribution]]
-[[PDF]]
+[[probability density function]]

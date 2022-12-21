@@ -42,40 +42,45 @@
                 "source": false
               }
             }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "0998a4ff1d6a28ac",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "f8a9d04164178be4",
+            "id": "9190dc8aba3e5de3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/functions of random variables.md",
+                "file": "mathematics/stochastics/functions of multiple random variables.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "870408d76c510afc",
+            "id": "b644748d8e53f40d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/probability integral transformation.md",
+                "file": "mathematics/stochastics/convolution of distributions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c3ac935e7ed36b8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/probability density function.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -141,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/sampling.md",
+                "file": "mathematics/stochastics/convolution of distributions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/sampling.md",
+                "file": "mathematics/stochastics/convolution of distributions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/sampling.md"
+                "file": "mathematics/stochastics/convolution of distributions.md"
               }
             }
           }
@@ -203,17 +208,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b071b1e8532c49a4",
+  "active": "b644748d8e53f40d",
   "lastOpenFiles": [
-    "mathematics/stochastics/probability integral transformation.md",
-    "mathematics/stochastics/sampling.md",
-    "mathematics/stochastics/stochastic independent.md",
+    "mathematics/stochastics/probability density function.md",
+    "mathematics/stochastics/convolution of distributions.md",
+    "mathematics/stochastics/functions of multiple random variables.md",
     "mathematics/stochastics/functions of random variables.md",
-    "mathematics/stochastics/bernoulli random variable.md",
-    "mathematics/stochastics/PDF.md",
-    "mathematics/stochastics/probability function.md",
-    "mathematics/stochastics/continuous random variable.md",
-    "mathematics/stochastics/random variable.md",
-    "mathematics/stochastics/discrete random variable.md"
+    "mathematics/stochastics/joint distribution.md",
+    "mathematics/stochastics/joint probability function.md",
+    "mathematics/stochastics/combinatorics/multiplication rule.md",
+    "mathematics/stochastics/binomial distribution.md",
+    "mathematics/stochastics/probability integral transformation.md",
+    "mathematics/stochastics/sampling.md"
   ]
 }

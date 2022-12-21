@@ -8,7 +8,7 @@ Probability that a [[discrete random variable]] will take a greater or equal val
 5) is [[monotonic function|monotonic increasing]] $x_1 \leq x_2 \Leftrightarrow F_X(x_1) \leq F_X(x_2)$
 6) $P(X \in [a,b]) = F_X(b)-F_X(a) = \int\limits_{b}^{a}  f_X(x)\:dx$  
 
-## Relationship to [[PDF]]
+## Relationship to [[probability density function]]
 - $F_X(x)=P(X \leq x) =\int\limits_{-\infty}^{x}  f_X(x)\:dx$
 - $f_X(x)=\frac{dF_X(x)}{dx}$ 
 

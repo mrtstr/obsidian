@@ -1,5 +1,5 @@
-[[PDF]] of a [[discrete random variable]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
-## [[PDF]]
+[[probability density function]] of a [[discrete random variable]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
+## [[probability density function]]
 $$
 f_X(X = x)=
 \begin{cases}
@@ -43,12 +43,12 @@ START
 Basic
 [[continous uniform distribution]]
 - verbal definition
-- [[PDF]]
+- [[probability density function]]
 - [[CDF]]
 - [[quantile function]]
 
 Back: 
-[[PDF]] of a [[discrete random variable]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
+[[probability density function]] of a [[discrete random variable]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
 
 ## probability function
 $$

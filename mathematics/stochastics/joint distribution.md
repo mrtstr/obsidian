@@ -54,9 +54,9 @@ $$
 
 ![[1920px-Multivariate_normal_sample.svg-1.png]]
 
-## Joint [[PDF]] 
+## Joint [[probability density function]] 
 
-For the bivariante [[random variable]] $X,Y$ with the [[PDF]] $f_{XY}(x,y)$ and the multivariate [[random variable]] $\boldsymbol{X} =X_1,...,X_n$ with the [[PDF]] $f_{\boldsymbol{X}}(\boldsymbol{x})$.
+For the bivariante [[random variable]] $X,Y$ with the [[probability density function]] $f_{XY}(x,y)$ and the multivariate [[random variable]] $\boldsymbol{X} =X_1,...,X_n$ with the [[probability density function]] $f_{\boldsymbol{X}}(\boldsymbol{x})$.
 
 - Joint PDFs encode the marginal distributions of each [[discrete random variable]]
 $$f_X(x) = \int\limits_{-\infty}^{\infty} f_{XY}(x,y) \: dy$$
@@ -68,7 +68,7 @@ f_{X_1}(x_1) =
 f_{\boldsymbol{X}}(\boldsymbol{x}) 
 \: dx_{2} ... dx_n
 $$
-- for [[stochastic independent]] [[random variable]] the [[joint distribution]] is the product of the [[PDF|PDFs]]
+- for [[stochastic independent]] [[random variable]] the [[joint distribution]] is the product of the [[probability density function|PDFs]]
 $$
 X \perp Y \Leftrightarrow f_{XY}(x, y) = f_X(x)f_Y(y)
 $$
@@ -202,7 +202,7 @@ END
 
 START
 Basic
-properties (5) of the [[PDF|continuous joint PDF]] or the bivariante [[random variable]] $X,Y$ with the [[PDF]] $f_{XY}(x,y)$ and the multivariate [[random variable]] $\boldsymbol{X} =X_1,...,X_n$ with the [[PDF]] $f_{\boldsymbol{X}}(\boldsymbol{x})$.
+properties (5) of the [[probability density function|continuous joint PDF]] or the bivariante [[random variable]] $X,Y$ with the [[probability density function]] $f_{XY}(x,y)$ and the multivariate [[random variable]] $\boldsymbol{X} =X_1,...,X_n$ with the [[probability density function]] $f_{\boldsymbol{X}}(\boldsymbol{x})$.
 - [[marginal distribution]]
 - [[stochastic independent]] case
 - normalization
@@ -222,7 +222,7 @@ f_{X_1}(x_1) =
 f_{\boldsymbol{X}}(\boldsymbol{x}) 
 \: dx_{2} ... dx_n
 $$
-- for [[stochastic independent]] [[random variable]] the [[joint distribution]] is the product of the [[PDF|PDFs]]
+- for [[stochastic independent]] [[random variable]] the [[joint distribution]] is the product of the [[probability density function|PDFs]]
 $$
 X \perp Y \Leftrightarrow f_{XY}(x, y) = f_X(x)f_Y(y)
 $$

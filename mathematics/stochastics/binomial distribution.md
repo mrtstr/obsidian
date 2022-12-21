@@ -23,6 +23,10 @@ $$
 - for each of the possible splits the probability of all [[ random variable|bernoulli experiments]] in the positive group being positive and all [[ random variable|bernoulli experiments]] in the negative group being negative is $p^{x}(1-p)^{n-x}$
 
 
+## as a [[functions of multiple random variables]]
+- $X_1, ..., X_n \sim Ber(p)$
+- $Y= g(\boldsymbol{X}) = X_1 + ... + X_n \sim Bin(n, p)$
+
 # anki
 
 START

@@ -5,7 +5,7 @@ Given [[random experiment]] with $k$ different parts with $n_1, ..., n_k$ outcom
 $$
 |\Omega| = \prod\limits_{i=1}^k n_i
 $$
-## [[multiplication rule]] for [[PDF]]
+## [[multiplication rule]] for [[probability density function]]
 
 $$
 f_{XY}(x,y) =f_{X\mid Y}(x \mid y) \cdot f_Y(y)
@@ -33,7 +33,7 @@ END
 
 START
 Basic
-[[multiplication rule]] for [[PDF]]
+[[multiplication rule]] for [[probability density function]]
 Back: 
 $$
 f_{XY}(x,y) =f_{X\mid Y}(x \mid y) \cdot f_Y(y)

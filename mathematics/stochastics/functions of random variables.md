@@ -12,7 +12,7 @@ F_{Y}(y)=P(Y \leq y)=P(g(X) \leq y)=\sum\limits_{x_i \in \{x \mid g(x) \leq y \}
 $$
 
 ## [[continuous random variable]]
-- $X$ is a [[continuous random variable]] with a [[PDF]] $f_X(x)$
+- $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
 - $Y=g(X)$ with an arbitrary [[function]] $g$
 $$
 \begin{split}
@@ -24,7 +24,7 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{y}
 \end{split}
 $$
 #### example
-- $X \sim U(-1,1)$ is from a [[continous uniform distribution]] with a [[PDF]] 
+- $X \sim U(-1,1)$ is from a [[continous uniform distribution]] with a [[probability density function]] 
 $$f_X(x)=\begin{cases}
     \frac{1}{2},& \text{if } x \in [-1,1] \\
     0,              & \text{otherwise}
@@ -45,7 +45,7 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{y} = \frac{1}{2} y^{-\frac{1}{2}}
 \end{split}
 $$
 ### [[continuous random variable]] with a [[linear function]]
-- $X$ is a [[continuous random variable]] with a [[PDF]] $f_X(x)$
+- $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
 - $Y=g(X)=aX=b$ with an [[linear function]] $g$
 $$
 f_Y(y)=\underbrace{\frac{1}{|a|}}_\text{normalization} f_{X}
@@ -96,9 +96,9 @@ START
 Basic
 [[functions of random variables]]: 
 - [[continuous random variable]] with a [[linear function]]
-- $X$ is a [[continuous random variable]] with a [[PDF]] $f_X(x)$
+- $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
 - $Y=g(X)=aX=b$ with an [[linear function]] $g$
-- [[PDF]] of the transformed [[random variable]] $f_Y(y)$
+- [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
 Back: 
 
 $$
@@ -116,12 +116,12 @@ START
 Basic
 [[functions of random variables]]: 
 - [[continuous random variable]] with an arbitrary [[function]]
-- $X$ is a [[continuous random variable]] with a [[PDF]] $f_X(x)$
+- $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
 - $Y=g(X)$ with an arbitrary [[function]] $g$
 
 general equations:
 - [[CDF]] of the transformed [[random variable]] $F_Y(y)$
-- [[PDF]] of the transformed [[random variable]] $f_Y(y)$
+- [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
 Back: 
 $$
 \begin{split}
@@ -141,7 +141,7 @@ END
 START
 Basic
 [[functions of random variables]] example:  
-- $X \sim U(-1,1)$ is from a [[continous uniform distribution]] with a [[PDF]] 
+- $X \sim U(-1,1)$ is from a [[continous uniform distribution]] with a [[probability density function]] 
 $$f_X(x)=\begin{cases}
     \frac{1}{2},& \text{if } x \in [-1,1] \\
     0,              & \text{otherwise}
@@ -151,7 +151,7 @@ $$
 
 
 - [[CDF]] of the transformed [[random variable]] $F_Y(y)$
-- [[PDF]] of the transformed [[random variable]] $f_Y(y)$
+- [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
 Back: 
 $$
 \begin{split}
