@@ -37,14 +37,21 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/stochastic independent.md",
+                "file": "mathematics/stochastics/sampling.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "0998a4ff1d6a28ac",
+        "type": "tabs",
+        "children": [
           {
-            "id": "94a93abf3d899ec9",
+            "id": "f8a9d04164178be4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,19 +63,19 @@
             }
           },
           {
-            "id": "0a4d83827ba31b2f",
+            "id": "870408d76c510afc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/bernoulli random variable.md",
+                "file": "mathematics/stochastics/probability integral transformation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/functions of random variables.md",
+                "file": "mathematics/stochastics/sampling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/functions of random variables.md",
+                "file": "mathematics/stochastics/sampling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/functions of random variables.md"
+                "file": "mathematics/stochastics/sampling.md"
               }
             }
           }
@@ -185,17 +192,28 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "94a93abf3d899ec9",
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b071b1e8532c49a4",
   "lastOpenFiles": [
+    "mathematics/stochastics/probability integral transformation.md",
+    "mathematics/stochastics/sampling.md",
+    "mathematics/stochastics/stochastic independent.md",
+    "mathematics/stochastics/functions of random variables.md",
     "mathematics/stochastics/bernoulli random variable.md",
     "mathematics/stochastics/PDF.md",
-    "mathematics/stochastics/functions of random variables.md",
-    "mathematics/stochastics/stochastic independent.md",
     "mathematics/stochastics/probability function.md",
     "mathematics/stochastics/continuous random variable.md",
     "mathematics/stochastics/random variable.md",
-    "mathematics/stochastics/discrete random variable.md",
-    "mathematics/basics/function.md",
-    "mathematics/basics/linear algebra/linear function.md"
+    "mathematics/stochastics/discrete random variable.md"
   ]
 }

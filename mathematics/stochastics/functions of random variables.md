@@ -53,6 +53,22 @@ f_Y(y)=\underbrace{\frac{1}{|a|}}_\text{normalization} f_{X}
 \left(\frac{y-b}{a}\right)
 }_{g^{-1}(y)}
 $$
+### [[continuous random variable]] with $g(X)=F_X(X)$
+- $X$ is a [[continuous random variable]] with a [[CDF]] $F_X(x)$
+- $Y$ is a [[functions of random variables|function of]] $X$ with the function being the [[CDF]] of $X$ $Y=F_X(X)$
+Then $Y \sim U(0,1)$ has [[continous uniform distribution|uniform distribution]] and its [[CDF]] is $F_Y(y) = y$.
+
+#### Proof
+$$
+\begin{split}
+F_{Y}(y)&=P(Y \leq y) \\
+&=P(F_X(X) \leq y) \\
+&=P(X \leq F_X^{-1}(y)) \\
+&=P(X \leq F_X^{-1}(F_X(y))) \\
+&=P(X \leq y) \\
+&= F_{X}(y) = y \\
+\end{split}
+$$
 
 # Anki
 
@@ -153,4 +169,28 @@ $$
 
 Tags: mathematics, statistics
 <!--ID: 1671360434136-->
+END
+
+
+START
+Basic
+[[functions of random variables|function]] of [[continuous random variable]] with $g(X)=F_X(X)$
+- $X$ is a [[continuous random variable]] with a [[CDF]] $F_X(x)$
+- $Y$ is a [[functions of random variables|function of]] $X$ with the function being the [[CDF]] of $X$ $Y=F_X(X)$
+how is $Y$ distributed? (with proof)
+Back: 
+$Y \sim U(0,1)$ has [[continous uniform distribution|uniform distribution]] and its [[CDF]] is $F_Y(y) = y$.
+Proof
+$$
+\begin{split}
+F_{Y}(y)&=P(Y \leq y) \\
+&=P(F_X(X) \leq y) \\
+&=P(X \leq F_X^{-1}(y)) \\
+&=P(X \leq F_X^{-1}(F_X(y))) \\
+&=P(X \leq y) \\
+&= F_{X}(y) = y \\
+\end{split}
+$$
+Tags: mathematics, statistics
+<!--ID: 1671614666445-->
 END

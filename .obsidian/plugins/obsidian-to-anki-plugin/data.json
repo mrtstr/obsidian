@@ -355,7 +355,7 @@
     "mathematics/stochastics/unordered sampling with replacement.md": "48ab759293db02df9b92ccff72adb7a5",
     "mathematics/stochastics/ordered sampling without replacement.md": "aad20dc4edafd2e16c8bb04684cb2b9f",
     "mathematics/stochastics/unordered sampling without replacement.md": "de5e7aa47ec294bf69261219393ef5fc",
-    "mathematics/stochastics/sampling.md": "440ab173202bad946cf58ef4c438c3d1",
+    "mathematics/stochastics/sampling.md": "46239c10594371eee3703117a1f2a048",
     "mathematics/stochastics/combinatorics/combinations.md": "5e46de3c7ea68d7e8232872cb82dbd77",
     "code/pandas/io and data conversions/displaying pd dataframe.md": "7a0281bff055e28f267830b869205886",
     "code/pandas/io and data conversions/summarizing pd dataframe.md": "3cbc42b5042f6b3d00a7bf7f9c98251d",
@@ -426,9 +426,10 @@
     "mathematics/stochastics/law of total probability.md": "2539320b5d61f0de8f8de97e21253dca",
     "mathematics/stochastics/vector notation.md": "b909909181fe1c8d46e86f0299fa424f",
     "mathematics/stochastics/probability function.md": "5be86dde6fca523b629ceb6d6bdd4512",
-    "mathematics/stochastics/functions of random variables.md": "37d70f22084d9566745ef49c1e7727b4",
+    "mathematics/stochastics/functions of random variables.md": "31f456ca7ff1b404f82c78b87385b985",
     "mathematics/basics/function.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/linear algebra/linear function.md": "62c4b9622db139ab608fbd00188506ed"
+    "mathematics/basics/linear algebra/linear function.md": "62c4b9622db139ab608fbd00188506ed",
+    "mathematics/stochastics/probability integral transformation.md": "1d0284399da46a8bd82c2e8ddb2cfead"
   },
   "fields_dict": {
     "Basic": [
