@@ -20,7 +20,7 @@ $$
 - $Y = g(\boldsymbol{X})$ is a (one dimensional) [[continuous random variable]]
 
 $$
-f_{Y}(y) = \int...\int\limits_{\{\boldsymbol{x} \mid g(\boldsymbol{x}) = y\}} f_{\boldsymbol{X}}(\boldsymbol{x}) dx
+F_{Y}(y) = \int\limits_{\{\boldsymbol{x} \mid g(\boldsymbol{x}) = y\}} f_{\boldsymbol{X}}(\boldsymbol{x}) d\boldsymbol{x}
 $$
 
 
@@ -67,10 +67,10 @@ $$
 &g: \mathbb{R}^n  \mapsto \mathbb{R}: g(\boldsymbol{X}) = Y
 \end{split}
 $$
-$f_Y(y)$?
+$F_Y(y)$?
 Back: 
 $$
-f_{Y}(y) = \int...\int\limits_{\{\boldsymbol{x} \mid g(\boldsymbol{x}) = y\}} f_{\boldsymbol{X}}(\boldsymbol{x}) dx
+F_{Y}(y) = \int\limits_{\{\boldsymbol{x} \mid g(\boldsymbol{x}) = y\}} f_{\boldsymbol{X}}(\boldsymbol{x}) d\boldsymbol{x}
 $$
 Tags: mathematics, statistics
 <!--ID: 1671650835742-->

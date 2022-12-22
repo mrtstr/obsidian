@@ -1,7 +1,7 @@
 [[function|functions]] of [[random variable|random variables]]
 
 
-## [[discrete random variable|discrete case]] with an arbitrary [[function]]
+# [[discrete random variable|discrete case]] with an arbitrary [[function]]
 - $X$ is a [[discrete random variable]] with a [[probability function]] $f_X(x)$
 - $Y=g(X)$ with an arbitrary [[function]] $g$
 $$
@@ -11,16 +11,32 @@ $$
 F_{Y}(y)=P(Y \leq y)=P(g(X) \leq y)=\sum\limits_{x_i \in \{x \mid g(x) \leq y \}} f_X(x_i)
 $$
 
-## [[continuous random variable]]
+# [[continuous random variable]]
 - $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
 - $Y=g(X)$ with an arbitrary [[function]] $g$
+## [[inverse function]] $g^{-1}(X)$ unknown
 $$
 \begin{split}
 F_{Y}(y)
 &=P(Y \leq y) \\
 &=P(g(X) \leq y) \\
 &=\int\limits_{\{x \mid g(x) \leq y \}} f_X(x) \: dx \\
-f_{Y}(y) &= \frac{dF_{Y}(y)}{y}
+f_{Y}(y) &= \frac{dF_{Y}(y)}{dy}
+\end{split}
+$$
+
+## [[inverse function]] $g^{-1}(X)$ known
+$$
+\begin{split}
+F_{Y}(y)
+&=P(Y \leq y) \\
+&=P(g(X) \leq y) \\
+&=P\left(X \leq g^{-1}(y)\right) \\
+&=F_{X}\left(g^{-1}(y)\right) \\
+
+f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} \\
+&= \frac{dF_{X}\left(g^{-1}(y)\right)}{dy} \\
+&= \frac{dg^{-1}(y)}{dy} f_{X}\left(g^{-1}(y)\right) \\
 \end{split}
 $$
 #### example
@@ -46,12 +62,28 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{y} = \frac{1}{2} y^{-\frac{1}{2}}
 $$
 ### [[continuous random variable]] with a [[linear function]]
 - $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
-- $Y=g(X)=aX=b$ with an [[linear function]] $g$
+- $Y=g(X)=aX+b$ with an [[linear function]] $g$
 $$
 f_Y(y)=\underbrace{\frac{1}{|a|}}_\text{normalization} f_{X}
 \underbrace{
 \left(\frac{y-b}{a}\right)
 }_{g^{-1}(y)}
+$$
+proof:
+$$
+\begin{split}
+F_{Y}(y)
+&=P(Y \leq y) \\
+&=P(g(X) \leq y) = P(aX=b \leq y) \\
+&=P\left(X \leq g^{-1}(y)\right) = P(aX+b \leq y) \\
+&=P\left(X \leq g^{-1}(y)\right) = P\left( X \leq \frac{y-b}{a} \right) \\
+&= F_X\left(g^{-1}(y)\right) = F_X\left(\frac{y-b}{a}\right) \\
+
+
+f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} = \frac{dF_{Y}(y)}{dy} f_{X}\left(\frac{y-b}{a}\right) \\
+&= \frac{dg^{-1}(y)}{dy} f_{X}\left(\frac{y-b}{a}\right)
+= \frac{1}{|a|} f_{X}\left(\frac{y-b}{a}\right)
+\end{split}
 $$
 ### [[continuous random variable]] with $g(X)=F_X(X)$
 - $X$ is a [[continuous random variable]] with a [[CDF]] $F_X(x)$
@@ -97,8 +129,8 @@ Basic
 [[functions of random variables]]: 
 - [[continuous random variable]] with a [[linear function]]
 - $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
-- $Y=g(X)=aX=b$ with an [[linear function]] $g$
-- [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
+- $Y=g(X)=aX+b$ with an [[linear function]] $g$
+- [[probability density function]] of the transformed [[random variable]] $f_Y(y)$ (with proof)
 Back: 
 
 $$
@@ -107,6 +139,23 @@ f_Y(y)=\underbrace{\frac{1}{|a|}}_\text{normalization} f_{X}
 \left(\frac{y-b}{a}\right)
 }_{g^{-1}(y)}
 $$
+proof:
+$$
+\begin{split}
+F_{Y}(y)
+&=P(Y \leq y) \\
+&=P(g(X) \leq y) = P(aX=b \leq y) \\
+&=P\left(X \leq g^{-1}(y)\right) = P(aX+b \leq y) \\
+&=P\left(X \leq g^{-1}(y)\right) = P\left( X \leq \frac{y-b}{a} \right) \\
+&= F_X\left(g^{-1}(y)\right) = F_X\left(\frac{y-b}{a}\right) \\
+
+
+f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} = \frac{dF_{Y}(y)}{dy} f_{X}\left(\frac{y-b}{a}\right) \\
+&= \frac{dg^{-1}(y)}{dy} f_{X}\left(\frac{y-b}{a}\right)
+= \frac{1}{|a|} f_{X}\left(\frac{y-b}{a}\right)
+\end{split}
+$$
+
 Tags: mathematics, statistics
 <!--ID: 1671275212205-->
 END
@@ -118,23 +167,63 @@ Basic
 - [[continuous random variable]] with an arbitrary [[function]]
 - $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
 - $Y=g(X)$ with an arbitrary [[function]] $g$
+- - general case: [[inverse function]] $g^{-1}(X)$ unknown
 
-general equations:
+
 - [[CDF]] of the transformed [[random variable]] $F_Y(y)$
 - [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
+
 Back: 
+#### [[inverse function]] $g^{-1}(X)$ unknown
 $$
 \begin{split}
 F_{Y}(y)
 &=P(Y \leq y) \\
 &=P(g(X) \leq y) \\
 &=\int\limits_{\{x \mid g(x) \leq y \}} f_X(x) \: dx \\
-f_{Y}(y) &= \frac{dF_{Y}(y)}{y}
+f_{Y}(y) &= \frac{dF_{Y}(y)}{dy}
+\end{split}
+$$
+
+
+
+Tags: mathematics, statistics
+<!--ID: 1671360434130-->
+END
+
+
+
+
+START
+Basic
+[[functions of random variables]]: 
+- [[continuous random variable]] with an arbitrary [[function]]
+- $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
+- $Y=g(X)$ with an arbitrary [[function]] $g$
+- [[inverse function]] $g^{-1}(X)$ known
+
+- [[CDF]] of the transformed [[random variable]] $F_Y(y)$
+- [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
+
+Back: 
+
+#### [[inverse function]] $g^{-1}(X)$ known
+$$
+\begin{split}
+F_{Y}(y)
+&=P(Y \leq y) \\
+&=P(g(X) \leq y) \\
+&=P\left(X \leq g^{-1}(y)\right) \\
+&=F_{X}\left(g^{-1}(y)\right) \\
+
+f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} \\
+&= \frac{dF_{X}\left(g^{-1}(y)\right)}{dy} \\
+&= \frac{dg^{-1}(y)}{dy} f_{X}\left(g^{-1}(y)\right) \\
 \end{split}
 $$
 
 Tags: mathematics, statistics
-<!--ID: 1671360434130-->
+<!--ID: 1671702302816-->
 END
 
 
