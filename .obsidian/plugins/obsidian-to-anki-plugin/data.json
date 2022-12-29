@@ -434,7 +434,9 @@
     "mathematics/stochastics/convolution of distributions.md": "0950860ce39fe85a442daa4a5bd5102b",
     "mathematics/stochastics/joint probability function.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/functions of multiple random variables.md": "cd49937e9b205c30086c848a8d1126c0",
-    "mathematics/basics/inverse function.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "mathematics/basics/inverse function.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/random vector.md": "7409e418238eb0ce16ba94cf7968d79a",
+    "mathematics/stochastics/stochastic process.md": "256a9fd22ca9ec99e662969c53e9a233"
   },
   "fields_dict": {
     "Basic": [
