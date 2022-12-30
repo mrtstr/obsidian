@@ -246,7 +246,7 @@
     "mathematics/basics/linear algebra/zero matrix.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linear algebra/triangular matrix.md": "e0f31fd77c3e16c10ff03932f48078d2",
     "mathematics/basics/linear algebra/normal matrix.md": "e0f31fd77c3e16c10ff03932f48078d2",
-    "mathematics/basics/linear algebra/square matrix.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/linear algebra/square matrix.md": "68be180f3da8254155e235d2e138c33e",
     "mathematics/basics/linear algebra/hessian matrix.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linear algebra/cholesky decomposition.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linear algebra/sylvesters criterion.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -436,7 +436,9 @@
     "mathematics/stochastics/functions of multiple random variables.md": "cd49937e9b205c30086c848a8d1126c0",
     "mathematics/basics/inverse function.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/random vector.md": "7409e418238eb0ce16ba94cf7968d79a",
-    "mathematics/stochastics/stochastic process.md": "256a9fd22ca9ec99e662969c53e9a233"
+    "mathematics/stochastics/stochastic process.md": "b5f107a43d15caccc9bab6704e60c0fd",
+    "mathematics/stochastics/stochastic matrix.md": "5611ba315e842b69ebd1c3a695c7089e",
+    "mathematics/stochastics/markov chains.md": "2536dc98d05b35d676fdab5ca3f5eee9"
   },
   "fields_dict": {
     "Basic": [

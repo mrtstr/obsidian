@@ -20,6 +20,30 @@
             }
           },
           {
+            "id": "1732f84789277792",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/stochastic matrix.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c067596e2215d97c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/basics/linear algebra/square matrix.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "8c8ea2eede703ebd",
             "type": "leaf",
             "state": {
@@ -30,9 +54,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9e313832e6259183",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/basics/linear algebra/matrix.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b5feea81517974df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/markov chains.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -98,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/stochastic process.md",
+                "file": "mathematics/stochastics/markov chains.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/stochastic process.md",
+                "file": "mathematics/stochastics/markov chains.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/stochastic process.md"
+                "file": "mathematics/stochastics/markov chains.md"
               }
             }
           }
@@ -149,17 +197,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8c8ea2eede703ebd",
+  "active": "b5feea81517974df",
   "lastOpenFiles": [
+    "mathematics/stochastics/stochastic process.md",
+    "mathematics/stochastics/markov chains.md",
+    "mathematics/stochastics/stochastic matrix.md",
+    "mathematics/basics/linear algebra/matrix.md",
+    "mathematics/basics/linear algebra/square matrix.md",
     "mathematics/stochastics/probability density function.md",
     "mathematics/stochastics/random vector.md",
-    "mathematics/stochastics/stochastic process.md",
     "mathematics/stochastics/functions of random variables.md",
     "mathematics/stochastics/functions of multiple random variables.md",
-    "mathematics/basics/inverse function.md",
-    "mathematics/stochastics/probability integral transformation.md",
-    "mathematics/stochastics/convolution of distributions.md",
-    "mathematics/stochastics/combinatorics/multiplication rule.md",
-    "mathematics/stochastics/law of total probability.md"
+    "mathematics/basics/inverse function.md"
   ]
 }

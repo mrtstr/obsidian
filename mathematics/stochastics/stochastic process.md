@@ -5,7 +5,6 @@
 
 ## stochastic process
 - a stochastic process is a collection of [[random variable|random variables]] from a common [[probability space]] 
-
 $$
 \{X_n \mid  n \in T\}
 $$
@@ -23,13 +22,13 @@ $$
 $$
 - the transition from $X_n$ to $X_{n+1}$ can be described with the following [[conditional probability]] 
  $$
- P(X_{n=1} \leq b \mid X_1=x_1,...X_n=x_n)
- $$ 
+ P(X_{n+1} \leq b \mid X_1=x_1,...X_n=x_n)
+ $$
 - for a given outcome $\omega \in \Omega$ the sample function is mapping the index set $T$ to the state space $S$
 $$
 X(\cdot \:, \omega ): T \mapsto S 
 $$
-## examples
+# examples
 - a stochastic process with $|T| = 1$ is a [[random variable]]
 - a stochastic process with a finite and [[countable]] index set $|T| < \infty$ is a [[random vector]]
 
