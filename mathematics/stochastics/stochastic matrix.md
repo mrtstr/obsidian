@@ -1,4 +1,4 @@
-# definition [[stochastic matrix]]
+## definition [[stochastic matrix]]
 1) a [[stochastic matrix]] is a [[square matrix]] 
 ![[square matrix#square matrix definition]]
 2) for which all elements are nonnegative

@@ -4,7 +4,7 @@
 2) every transition is only depending on the current state
 
 
-![[stochastic process#stochastic process: definition]]
+![[stochastic process##stochastic process: definition]]
 
 # Transition
 Each transition can be described with the [[conditional probability]]
@@ -125,6 +125,20 @@ $$
 We can define a [[stochastic matrix]] containing the [[conditional probability|conditional probabilities]]
 $$
 a_{i,j} = P(X_{n+1} = x_j \mid X_n = x_i)
+$$
+## single transitions
+Given a state $X_n= \left(P(X_n=s_1), P(X_n=s_2), .., P(X_n=s_k)\right)^{\top}$  
+$$
+X_n= \begin{pmatrix}   P(X_n=x_1) \\   ... \\ P(X_n=x_k)   \end{pmatrix} \in \mathbb{R}^{|S|}
+$$
+$$
+\begin{split}
+X_{n+1} &= X_{n}^\top A  \\
+&= \sum\limits_{x_i \in S} P(X_n=x_i) a_{i,j}  \\
+&= \sum\limits_{x_i \in S} P(X_n=x_i) P(X_{n+1} = x_j \mid X_n = x_i)  \\
+&= \sum\limits_{x_i \in S} P(X_{n+1} = x_j ,X_n=x_i) \\
+&= \begin{pmatrix}   P(X_{n+1}=x_1) \\   ... \\ P(X_{n+1}=x_k)   \end{pmatrix} \in \mathbb{R}^{|S|}
+\end{split} 
 $$
 Tags: mathematics, statistics
 <!--ID: 1672403411256-->

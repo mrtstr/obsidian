@@ -1,5 +1,5 @@
 ### Problem
-- Finding the longest repeat free sequence in string
+- Finding the longest repeat free sequence in string without repeating characters.
 -  in $O(n)$
 
 ### Solution
@@ -23,7 +23,7 @@
 
 START
 Basic
-Finding the longest sequence in string in $O(n)$.
+Finding the longest repeat free sequence in string without repeating characters in $O(n)$.
 Back: 
 use a sliding window:
 ```python

@@ -73,7 +73,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/markov chains.md",
+                "file": "algorithms/problems/longest substring.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b070fc3ec322a7e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/stochastic matrix.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/markov chains.md",
+                "file": "algorithms/problems/longest substring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/markov chains.md",
+                "file": "algorithms/problems/longest substring.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/markov chains.md"
+                "file": "algorithms/problems/longest substring.md"
               }
             }
           }
@@ -197,11 +209,22 @@
     "width": 300,
     "collapsed": true
   },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
   "active": "b5feea81517974df",
   "lastOpenFiles": [
-    "mathematics/stochastics/stochastic process.md",
     "mathematics/stochastics/markov chains.md",
     "mathematics/stochastics/stochastic matrix.md",
+    "mathematics/stochastics/stochastic process.md",
     "mathematics/basics/linear algebra/matrix.md",
     "mathematics/basics/linear algebra/square matrix.md",
     "mathematics/stochastics/probability density function.md",

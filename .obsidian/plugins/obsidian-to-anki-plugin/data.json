@@ -138,7 +138,7 @@
     "mathematics/basics/union.md": "79e9ca28561cc1db97d76fd9a7ea06f1",
     "mathematics/basics/set.md": "d41d8cd98f00b204e9800998ecf8427e",
     "algorithms/problems/searching elements in sorted list.md": "47540c64a77b5f4c6e4b21ca3dab3f39",
-    "algorithms/problems/longest substring.md": "ea439b961d05f4b32a826bf566dc603b",
+    "algorithms/problems/longest substring.md": "6268a3aa93b7de49c07cf0cfdf69226f",
     "algorithms/approach/sort.md": "d41d8cd98f00b204e9800998ecf8427e",
     "2022-09-05.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/statistics/factoring of joint densities.md": "7022bdd24b246537b1418303a82e0479",
@@ -437,8 +437,8 @@
     "mathematics/basics/inverse function.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/random vector.md": "7409e418238eb0ce16ba94cf7968d79a",
     "mathematics/stochastics/stochastic process.md": "b5f107a43d15caccc9bab6704e60c0fd",
-    "mathematics/stochastics/stochastic matrix.md": "5611ba315e842b69ebd1c3a695c7089e",
-    "mathematics/stochastics/markov chains.md": "2536dc98d05b35d676fdab5ca3f5eee9"
+    "mathematics/stochastics/stochastic matrix.md": "43a6e0b0d39b05e27466e539618e1442",
+    "mathematics/stochastics/markov chains.md": "fe65a666c382ccb3fd9dd1a5502967cf"
   },
   "fields_dict": {
     "Basic": [
