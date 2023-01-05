@@ -20,9 +20,9 @@ $$
 \begin{split}
 F_Y(y) 
 =& P(Y \leq y) \\
-=& \int\limits_{\Omega_{X_1}} P(X_1 + X_2 \leq y) f_{X_1}(x_1) dx_1 \\
-=& \int\limits_{\Omega_{X_1}} P(X_2 \leq  y - X_1 \mid  X_1 = x_1) f_{X_1}(x_1) dx_1 \\
-=& \int\limits_{\Omega_{X_1}} P(X_2 \leq  y - x_1 ) f_{X_1}(x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_1}} P(X_1 + X_2 \leq y \cap X_1 = x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_1}} P(X_1 + X_2 \leq y) P(X_1 = x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_1}} P(X_2 \leq y - x_1) P(X_1 = x_1) dx_1 \\
 =& \int\limits_{\Omega_{X_1}} F_{X_2}(y - x_1 ) f_{X_1}(x_1) dx_1 \\
 f_Y(y) 
 &= \frac{dF_Y(y)}{dy} \\
@@ -72,9 +72,9 @@ $$
 \begin{split}
 F_Y(y) 
 =& P(Y \leq y) \\
-=& \int\limits_{\Omega_{X_1}} P(X_1 + X_2 \leq y) f_{X_1}(x_1) dx_1 \\
-=& \int\limits_{\Omega_{X_1}} P(X_2 \leq  y - X_1 \mid  X_1 = x_1) f_{X_1}(x_1) dx_1 \\
-=& \int\limits_{\Omega_{X_1}} P(X_2 \leq  y - x_1 ) f_{X_1}(x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_1}} P(X_1 + X_2 \leq y \cap X_1 = x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_1}} P(X_1 + X_2 \leq y) P(X_1 = x_1) dx_1 \\
+=& \int\limits_{\Omega_{X_1}} P(X_2 \leq y - x_1) P(X_1 = x_1) dx_1 \\
 =& \int\limits_{\Omega_{X_1}} F_{X_2}(y - x_1 ) f_{X_1}(x_1) dx_1 \\
 f_Y(y) 
 &= \frac{dF_Y(y)}{dy} \\
