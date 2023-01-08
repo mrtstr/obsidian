@@ -96,9 +96,7 @@ $$
 F_{Y}(y)&=P(Y \leq y) \\
 &=P(F_X(X) \leq y) \\
 &=P(X \leq F_X^{-1}(y)) \\
-&=P(X \leq F_X^{-1}(F_X(y))) \\
-&=P(X \leq y) \\
-&= F_{X}(y) = y \\
+&= F_{X}(F_X^{-1}(y)) = y \\
 \end{split}
 $$
 
@@ -275,9 +273,7 @@ $$
 F_{Y}(y)&=P(Y \leq y) \\
 &=P(F_X(X) \leq y) \\
 &=P(X \leq F_X^{-1}(y)) \\
-&=P(X \leq F_X^{-1}(F_X(y))) \\
-&=P(X \leq y) \\
-&= F_{X}(y) = y \\
+&= F_{X}(F_X^{-1}(y)) = y \\
 \end{split}
 $$
 Tags: mathematics, statistics
