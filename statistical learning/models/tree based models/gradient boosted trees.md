@@ -95,20 +95,19 @@ Back:
 For each iteration $m$ we build a new [[tree models|tree]] as base model by performing the following two steps:
 details: [[boosting]], [[boosted trees]]
 1) approximate the optimal output change with a [[tree models|tree model]] using [[mean square error|MSE]].
-	
-	$$
-	\widehat{\Theta}_m= argmin 
-	\underbrace{
-	\sum\limits_{i=1}^N 
-	}_\text{sum over samples}
-	\left(
-	\frac{\partial L(y_i,f_{m-1}(x_i))}{\partial f_{m-1}(x_i)} 
-	-
-	\underbrace{
-	T(x_i, \Theta_m)
-	}_\text{new base model}
-	\right)^2
-	$$
+$$
+\widehat{\Theta}_m= argmin 
+\underbrace{
+\sum\limits_{i=1}^N 
+}_\text{sum over samples}
+\left(
+\frac{\partial L(y_i,f_{m-1}(x_i))}{\partial f_{m-1}(x_i)} 
+-
+\underbrace{
+T(x_i, \Theta_m)
+}_\text{new base model}
+\right)^2
+$$
 	
 - $\widehat{\Theta}_m=(\{R_{m,j}, c_{m, j}\}_{1\leq j \leq J_m})$ containing the parameters of the [[tree models|tree model]] of iteration $m$
 - calculate the gradient $\frac{\partial L(y_i,f_{m-1}(x_i))}{\partial f_{m-1}(x_i)}$

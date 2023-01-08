@@ -1,0 +1,1 @@
+A [[vector]] consisting of nonnegative numbers that add to 1 is called a [[probability vector]]

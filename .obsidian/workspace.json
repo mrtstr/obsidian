@@ -8,36 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c3ac935e7ed36b8b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/probability density function.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1732f84789277792",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/stochastic matrix.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c067596e2215d97c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/basics/linear algebra/square matrix.md",
+                "file": "mathematics/stochastics/markov chain.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "31ee1d2c4b367c99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/stationary distribution.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,43 +44,18 @@
             }
           },
           {
-            "id": "9e313832e6259183",
+            "id": "2d3ee3bec0d45cb4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/basics/linear algebra/matrix.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b5feea81517974df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/convolution of distributions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b070fc3ec322a7e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/stochastic matrix.md",
+                "file": "mathematics/stochastics/probability vector.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "conv",
+                "query": "random ector",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,8 +101,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -159,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/convolution of distributions.md",
+                "file": "mathematics/stochastics/markov chain.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/convolution of distributions.md",
+                "file": "mathematics/stochastics/markov chain.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/convolution of distributions.md"
+                "file": "mathematics/stochastics/markov chain.md"
               }
             }
           }
@@ -221,17 +183,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b5feea81517974df",
+  "active": "c067596e2215d97c",
   "lastOpenFiles": [
-    "mathematics/stochastics/markov chains.md",
-    "algorithms/problems/longest substring.md",
-    "mathematics/stochastics/stochastic matrix.md",
+    "mathematics/stochastics/stationary distribution.md",
+    "mathematics/stochastics/markov chain.md",
     "mathematics/stochastics/stochastic process.md",
-    "mathematics/basics/linear algebra/matrix.md",
+    "mathematics/stochastics/probability vector.md",
+    "mathematics/basics/countable.md",
     "mathematics/basics/linear algebra/square matrix.md",
-    "mathematics/stochastics/probability density function.md",
-    "mathematics/stochastics/random vector.md",
-    "mathematics/stochastics/functions of random variables.md",
-    "mathematics/stochastics/functions of multiple random variables.md"
+    "mathematics/stochastics/stochastic matrix.md",
+    "mathematics/basics/linear algebra/matrix.md",
+    "statistical learning/models/tree based models/gradient boosted trees.md",
+    "statistical learning/models/tree based models/boosted trees.md"
   ]
 }
