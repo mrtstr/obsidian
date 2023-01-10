@@ -65,3 +65,27 @@ $$
 Tags: mathematics, statistics
 <!--ID: 1667724226677-->
 END
+
+
+
+START
+Basic
+Probability of a full house in a deck of 13 number times 4 colors.
+Back: 
+$$
+\frac{13 \cdot 12 \cdot {4 \choose 3}{4 \choose 2}}{{52 \choose 5}}
+$$
+Tags: mathematics, statistics
+<!--ID: 1673374513139-->
+END
+
+START
+Basic
+Probability of a flush in a deck of 13 number times 4 colors.
+Back: 
+$$
+\frac{4 \cdot {13 \choose 5}}{{52 \choose 5}}
+$$
+Tags: mathematics, statistics
+<!--ID: 1673374513146-->
+END
