@@ -6,8 +6,8 @@
 
 ### [[statistical estimator]]
 - given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[probability density function|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
-- then the bias is the difference between the [[expected value|expected]] parameter estimation and the true parameters 
-- the randomness of $\widehat{\theta}_\mathcal{T}$ does not matter because the bias is based on the [[expected value]] over all possible samples $\widehat{\theta}_\mathcal{T}$ and $\theta$ is a constant property and thus is non-stochastic 
+- then the bias is the difference between the [[expectation|expected]] parameter estimation and the true parameters 
+- the randomness of $\widehat{\theta}_\mathcal{T}$ does not matter because the bias is based on the [[expectation]] over all possible samples $\widehat{\theta}_\mathcal{T}$ and $\theta$ is a constant property and thus is non-stochastic 
  $$
  Bias(\widehat{\theta}_\mathcal{T}) = \mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[\widehat{\theta}_\mathcal{T}\right]-\theta
  =\mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[\widehat{\theta}_\mathcal{T}-\theta\right]
@@ -50,8 +50,8 @@ Basic
 - property of an unbiased estimator
 Back: 
 - given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[probability density function|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
-- then the bias is the difference between the [[expected value|expected]] parameter estimation and the true parameters 
-- the randomness of $\widehat{\theta}_\mathcal{T}$ does not matter because the bias is based on the [[expected value]] over all possible samples $\widehat{\theta}_\mathcal{T}$ and $\theta$ is a constant property and thus is non-stochastic 
+- then the bias is the difference between the [[expectation|expected]] parameter estimation and the true parameters 
+- the randomness of $\widehat{\theta}_\mathcal{T}$ does not matter because the bias is based on the [[expectation]] over all possible samples $\widehat{\theta}_\mathcal{T}$ and $\theta$ is a constant property and thus is non-stochastic 
  $$
  Bias(\widehat{\theta}_\mathcal{T}) = \mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[\widehat{\theta}_\mathcal{T}\right]-\theta=\mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[\widehat{\theta}_\mathcal{T}-\theta\right]
 $$

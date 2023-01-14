@@ -1,4 +1,4 @@
-[[expected value]] for [[conditional distribution|conditional distributions]]
+[[expectation]] for [[conditional distribution|conditional distributions]]
 $\mathbb{E}[Y|X=x]=\int\limits_\infty^\infty y f_{Y|X=x}(x)dy$
 
 proof for $\mathbb{E}[Y]  = \mathbb{E}\left[\mathbb{E}[Y|X]\right]$ 

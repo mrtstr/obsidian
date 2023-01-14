@@ -13,7 +13,10 @@ f_Z(z) =
     0,              & \text{otherwise}
 \end{cases}
 $$
-
+- [[expectation]]
+$$
+\mathbb{E}[B] = p
+$$
 # anki
 
 START
