@@ -315,7 +315,7 @@
     "mathematics/stochastics/combinatorics/combinations - no repeat, order.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/combinatorics/combinations - no repeat, no order.md": "1c7a5de6065d6894c5fe1b360ca928b2",
     "mathematics/stochastics/combinatorics/binomial coefficient.md": "dbba823844835c2099256157d4975fb4",
-    "mathematics/stochastics/variance.md": "018cf2f3555fa6bb0286926f61b8d135",
+    "mathematics/stochastics/variance.md": "02fa946159e6bdaa5a03e7e5c887fd3b",
     "mathematics/stochastics/symmetric matrix.md": "a973f4657da25d9f1cc370570aeba705",
     "mathematics/stochastics/stochastic independent.md": "c4b93754880147d8ca4e340fd726fea2",
     "mathematics/stochastics/stochastic exclusive.md": "b5d0d63deb835acdc0fee5efdebaed9d",
@@ -442,8 +442,13 @@
     "mathematics/stochastics/markov chain.md": "7eac97409a59cb29335f59ebf58dce57",
     "mathematics/stochastics/stationary distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/probability vector.md": "5904e7adf1874fda637fa4cd8658575d",
-    "mathematics/stochastics/expectation.md": "119f8b4371adfad7f3400aef0eb6ca9a",
-    "mathematics/basics/linearity.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "mathematics/stochastics/expectation.md": "0b1b60ed690a255d8a6c258ade661b92",
+    "mathematics/basics/linearity.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/convex set.md": "5129460916f232e4216d26f17e1b32dc",
+    "mathematics/basics/convex.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/convex function.md": "c249d7d2ea3bfebf9a9a9cfa6bb008c1",
+    "mathematics/stochastics/expectation for non negative distributions.md": "8f926c3a6b88a67bff38a0c3d82b5df6",
+    "mathematics/stochastics/standard deviation.md": "d0f36b966c205b058e069f82a108724e"
   },
   "fields_dict": {
     "Basic": [

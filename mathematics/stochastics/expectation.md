@@ -25,14 +25,33 @@ $$
 \mathbb{E}[g(X)]=\int\limits_{-\infty}^\infty g(x) \cdot f_X(x)dx
 $$
 $$
-\mathbb{E}[g(X, Y)]=\int\limits_\infty^\infty \int\limits_\infty^\infty g(x,y) \cdot f_{XY}(x,y)dx dY
+\mathbb{E}[g(X, Y)]=\int\limits_\infty^\infty \int\limits_\infty^\infty g(x,y) \cdot f_{XY}(x,y)dx dy
 $$
-### linear functions $g(X)$
+### [[linear function]] $g(X)$
 If $g(X)$ is a [[linear function]] $\mathbb{E}\left[g(X)\right] = g\left(\mathbb{E}[X]\right)$
 proof: see linearity of the [[expectation]]
 
+### [[convex function]] $g(X)$
+If $g(X)$ is a [[convex function]] $\mathbb{E}\left[g(X)\right] \geq g\left(\mathbb{E}[X]\right)$
+
+
 ## Properties
-### linearity
+### [[expectation]] of the sum of [[random variable|random variables]]
+$$
+\mathbb{E}\left[\sum_{i=1}^n X_i\right]=\sum_{i=1}^n\mathbb{E}\left[ X_i\right]
+$$
+proof for $n=2$
+$$
+\begin{split}
+\mathbb{E}\left[X_1 + X_2 \right] &= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty (x_1+x_2) \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty x_1 \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 + \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty x_2 \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty x_1 \int\limits_{-\infty}^\infty  f_{X_1X_2}(x_1,x_2)dx_2 dx_1 + \int\limits_{-\infty}^\infty x_2\int\limits_{-\infty}^\infty f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty x_1   f_{X_1}(x_1)dx_1 + 
+\int\limits_{-\infty}^\infty x_2 f_{X_2}(x_2) dx_2 \\
+&= \mathbb{E}\left[X_1  \right] + \mathbb{E}\left[ X_2 \right]
+\end{split}
+$$
+### [[linearity]]
 $$\mathbb{E}[aX+b]=a\mathbb{E}[X]+b$$
 $$
 \begin{split}
@@ -41,9 +60,31 @@ $$
 &= a\mathbb{E}[X] + b \\
 \end{split}
 $$
-- 
-- $X\geq Y \Leftrightarrow \mathbb{E}[X] \geq \mathbb{E}[Y]$ (monoton)
-- $\mathbb{E}[\mathbb{E}[X]]=\mathbb{E}[X]$ because $\mathbb{E}[a]=a$
+Togather with the sum rule it follows
+$$
+\mathbb{E}\left[b +\sum_{i=1}^n a_iX_i\right]= b + \sum_{i=1}^n a_i \mathbb{E}\left[ X_i\right]
+
+$$
+### [[expectation]] of the product of [[stochastic independent]] [[random variable|random variables]]
+$$
+\mathbb{E}\left[\prod_{i=1}^n X_i\right]=\prod_{i=1}^n\mathbb{E}\left[ X_i\right]
+$$
+proof for $n=2$
+$$
+\begin{split}
+\mathbb{E}\left[X_1 X_2 \right] &= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty x_1x_2 \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty x_1x_2 \cdot f_{X_1}(x_1)  f_{X_2}(x_2) dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty x_1\cdot f_{X_1}(x_1) (x_2) dx_1 
+\int\limits_{-\infty}^\infty x_2 \cdot   f_{X_2}(x_2) dx_1 \\
+&= \mathbb{E}\left[X_1  \right] \cdot \mathbb{E}\left[ X_2 \right]
+\end{split}
+$$
+
+### upper and lower bound
+- If $\exists a$ with $P(X \leq a) = 1$ than $\mathbb{E}\left[X  \right] \leq a$
+- If $\exists a$ with $P(X \geq a) = 1$ than $\mathbb{E}\left[X  \right] \geq a$
+
+
 
 ## examples
 #### expected value of the product of two random variables $X$ and $Y$ with a [[joint distribution]] $f_{XY}(x,y)$
@@ -86,6 +127,11 @@ $$
 &= a\mathbb{E}[X] + b \\
 \end{split}
 $$
+Togather with the sum rule it follows
+$$
+\mathbb{E}\left[b +\sum_{i=1}^n a_iX_i\right]= b + \sum_{i=1}^n a_i \mathbb{E}\left[ X_i\right]
+
+$$
 Tags: mathematics, statistics
 <!--ID: 1673686885277-->
 END
@@ -108,10 +154,23 @@ END
 
 START
 Basic
-expected value of the product of two random variables $X$ and $Y$ with a joint distribution $f_{XY}(x,y)$
+[[expectation]] of the sum of [[random variable|random variables]] (with proof)
 Back: 
-$\mathbb{E}[XY]=\int\limits_\infty^\infty \int\limits_\infty^\infty xyf_{XY}(x,y)dx dy = \mathbb{E}[X] \cdot\mathbb{E}[Y]-\mathbb{COV}[X,Y]$  
-(with $\mathbb{COV}[X,Y]=0$ when $X$ and $Y$ independent)
+
+$$
+\mathbb{E}\left[\sum_{i=1}^n X_i\right]=\sum_{i=1}^n\mathbb{E}\left[ X_i\right]
+$$
+proof for $n=2$
+$$
+\begin{split}
+\mathbb{E}\left[X_1 + X_2 \right] &= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty (x_1+x_2) \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty x_1 \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 + \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty x_2 \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty x_1 \int\limits_{-\infty}^\infty  f_{X_1X_2}(x_1,x_2)dx_2 dx_1 + \int\limits_{-\infty}^\infty x_2\int\limits_{-\infty}^\infty f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty x_1   f_{X_1}(x_1)dx_1 + 
+\int\limits_{-\infty}^\infty x_2 f_{X_2}(x_2) dx_2 \\
+&= \mathbb{E}\left[X_1  \right] + \mathbb{E}\left[ X_2 \right]
+\end{split}
+$$
 Tags: mathematics, statistics
 <!--ID: 1661882015633-->
 END
@@ -121,7 +180,8 @@ Basic
 [[expectation]] of [[functions of random variables]] $\mathbb{E}[g(X)]$
 - of a single [[random variable]]
 - of a multiple [[random variable]]
-- spectial case: linear function $g(.)$
+- [[linear function]] $g(.)$
+- [[convex function]] $g(.)$
 Back: 
 ## [[expectation]] of [[functions of random variables]]
 ### definition
@@ -131,7 +191,7 @@ $$
 $$
 \mathbb{E}[g(X, Y)]=\int\limits_\infty^\infty \int\limits_\infty^\infty g(x,y) \cdot f_{XY}(x,y)dx dY
 $$
-### linear functions $g(X)$
+### [[linear function]] $g(X)$
 If $g(X)$ is a [[linear function]] $\mathbb{E}[g(X)] = g(\mathbb{E}[X])$
 
 proof:
@@ -145,15 +205,32 @@ g(X) &= aX+b \\ \\
 
 \end{split}
 $$
+
+### [[convex function]] $g(X)$
+If $g(X)$ is a [[convex function]] $\mathbb{E}\left[g(X)\right] \geq g\left(\mathbb{E}[X]\right)$
+
+
 Tags: mathematics, statistics
 <!--ID: 1661882015635-->
 END
 
 START
 Basic
-expected value of the sum of two random variables
+[[expectation]] of the product of [[stochastic independent]] [[random variable|random variables]] (with proof)
 Back: 
-$\mathbb{E}[aX+bY]=a\mathbb{E}[X]+b\mathbb{E}[Y]$  
+$$
+\mathbb{E}\left[\prod_{i=1}^n X_i\right]=\prod_{i=1}^n\mathbb{E}\left[ X_i\right]
+$$
+proof for $n=2$
+$$
+\begin{split}
+\mathbb{E}\left[X_1 X_2 \right] &= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty x_1x_2 \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty x_1x_2 \cdot f_{X_1}(x_1)  f_{X_2}(x_2) dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty x_1\cdot f_{X_1}(x_1) (x_2) dx_1 
+\int\limits_{-\infty}^\infty x_2 \cdot   f_{X_2}(x_2) dx_1 \\
+&= \mathbb{E}\left[X_1  \right] \cdot \mathbb{E}\left[ X_2 \right]
+\end{split}
+$$
 Tags: mathematics, statistics
 <!--ID: 1661882015637-->
 END
@@ -215,3 +292,65 @@ Tags: mathematics, statistics
 <!--ID: 1673686885291-->
 END
 
+
+START
+Basic
+properties of the [[expectation]]
+- sum of [[random variable]] $\mathbb{E}\left[\sum_{i=1}^n X_i\right]$
+- [[linearity]] $\mathbb{E}\left[X_1 + X_2 \right]$
+- $\mathbb{E}\left[\prod_{i=1}^n X_i\right]$
+- [[expectation]] of the product of [[stochastic independent]] [[random variable|random variables]]
+- upper and lower bound
+(proofs given but not required)
+Back: 
+### [[expectation]] of the sum of [[random variable|random variables]]
+$$
+\mathbb{E}\left[\sum_{i=1}^n X_i\right]=\sum_{i=1}^n\mathbb{E}\left[ X_i\right]
+$$
+proof for $n=2$
+$$
+\begin{split}
+\mathbb{E}\left[X_1 + X_2 \right] &= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty (x_1+x_2) \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty x_1 \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 + \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty x_2 \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty x_1 \int\limits_{-\infty}^\infty  f_{X_1X_2}(x_1,x_2)dx_2 dx_1 + \int\limits_{-\infty}^\infty x_2\int\limits_{-\infty}^\infty f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty x_1   f_{X_1}(x_1)dx_1 + 
+\int\limits_{-\infty}^\infty x_2 f_{X_2}(x_2) dx_2 \\
+&= \mathbb{E}\left[X_1  \right] + \mathbb{E}\left[ X_2 \right]
+\end{split}
+$$
+### [[linearity]]
+$$\mathbb{E}[aX+b]=a\mathbb{E}[X]+b$$
+$$
+\begin{split}
+\mathbb{E}[aX+b] &=\int\limits_{-\infty}^\infty (aX+b) \cdot f_X(x)dx \\
+&=a\int\limits_{-\infty}^\infty X \cdot f_X(x)  + b \int\limits_{-\infty}^\infty f_X(x) dx \\
+&= a\mathbb{E}[X] + b \\
+\end{split}
+$$
+Togather with the sum rule it follows
+$$
+\mathbb{E}\left[b +\sum_{i=1}^n a_iX_i\right]= b + \sum_{i=1}^n a_i \mathbb{E}\left[ X_i\right]
+
+$$
+### [[expectation]] of the product of [[stochastic independent]] [[random variable|random variables]]
+$$
+\mathbb{E}\left[\prod_{i=1}^n X_i\right]=\prod_{i=1}^n\mathbb{E}\left[ X_i\right]
+$$
+proof for $n=2$
+$$
+\begin{split}
+\mathbb{E}\left[X_1 X_2 \right] &= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty x_1x_2 \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty x_1x_2 \cdot f_{X_1}(x_1)  f_{X_2}(x_2) dx_1 dx_2 \\
+&= \int\limits_{-\infty}^\infty x_1\cdot f_{X_1}(x_1) (x_2) dx_1 
+\int\limits_{-\infty}^\infty x_2 \cdot   f_{X_2}(x_2) dx_1 \\
+&= \mathbb{E}\left[X_1  \right] \cdot \mathbb{E}\left[ X_2 \right]
+\end{split}
+$$
+
+### upper and lower bound
+- If $\exists a$ with $P(X \leq a) = 1$ than $\mathbb{E}\left[X  \right] \leq a$
+- If $\exists a$ with $P(X \geq a) = 1$ than $\mathbb{E}\left[X  \right] \geq a$
+
+Tags: mathematics, statistics
+<!--ID: 1673767182027-->
+END

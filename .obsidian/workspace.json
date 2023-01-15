@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "01ff4073343baaf9",
+            "id": "f4229cece522e0ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/bernoulli random variable.md",
+                "file": "mathematics/stochastics/standard deviation.md",
                 "mode": "source",
                 "source": false
               }
@@ -161,15 +161,15 @@
   },
   "active": "1aa158ca3786d115",
   "lastOpenFiles": [
-    "mathematics/stochastics/bernoulli random variable.md",
-    "mathematics/basics/linearity.md",
+    "mathematics/stochastics/variance.md",
     "mathematics/stochastics/expectation.md",
-    "mathematics/stochastics/probability vector.md",
-    "mathematics/stochastics/stochastic process.md",
-    "mathematics/stochastics/stationary distribution.md",
-    "mathematics/stochastics/discrete distribution.md",
-    "mathematics/stochastics/combinatorics/binomial coefficient.md",
-    "mathematics/stochastics/combinatorics/combinations.md",
-    "mathematics/stochastics/combinatorics/combinatorial methods.md"
+    "mathematics/stochastics/standard deviation.md",
+    "mathematics/stochastics/expectation for non negative distributions.md",
+    "mathematics/stochastics/bernoulli random variable.md",
+    "mathematics/basics/convex function.md",
+    "mathematics/basics/convex set.md",
+    "mathematics/basics/convex.md",
+    "mathematics/basics/linearity.md",
+    "mathematics/stochastics/probability vector.md"
   ]
 }
