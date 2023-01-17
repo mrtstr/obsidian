@@ -354,3 +354,18 @@ $$
 Tags: mathematics, statistics
 <!--ID: 1673767182027-->
 END
+
+
+START
+Suppose that the variables X1, . . . , Xn form a random sample of size n from a given  continuous distribution on the real line for which the p.d.f. is f . Find the expectation of the number of observations in the sample that fall within a specified interval a ≤ x ≤ b.
+Basic
+$$
+\begin{split}
+&Y=\mathbb{I}\left[X_i \in [a,b]\right] \\
+&\mathbb{E}\left[Y_1 + ... + Y_n\right] = \mathbb{E}\left[Y_1\right] + ... + \mathbb{E}\left[Y_n\right] = n\mathbb{E}\left[Y_1\right] \\
+&n \int\limits_a^b f_X(x)dx
+\end{split}
+$$
+
+Tags: mathematics, statistics
+END
