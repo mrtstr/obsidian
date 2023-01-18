@@ -1,0 +1,5 @@
+[[explanatory algorithms]]
+[[pattern mining algorithms]]
+[[clustering]]
+[[time series algorithms]]
+[[similarity algorithms]]

@@ -20,6 +20,78 @@
             }
           },
           {
+            "id": "00a49f028b0aea13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "statistical learning/explanatory algorithms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9785fe1d339c0338",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "statistical learning/pattern mining algorithms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c6767b93e3d8312e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "statistical learning/clustering.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0a2634822eb06ead",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "statistical learning/time series algorithms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "253ae36591541a74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "statistical learning/similarity algorithms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "386c82d349c7bcb4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "statistical learning/data science algorithms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "f4229cece522e0ed",
             "type": "leaf",
             "state": {
@@ -31,7 +103,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -97,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/expectation.md",
+                "file": "statistical learning/data science algorithms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/expectation.md",
+                "file": "statistical learning/data science algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/expectation.md"
+                "file": "statistical learning/data science algorithms.md"
               }
             }
           }
@@ -159,17 +232,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1aa158ca3786d115",
+  "active": "386c82d349c7bcb4",
   "lastOpenFiles": [
-    "mathematics/stochastics/variance.md",
+    "statistical learning/similarity algorithms.md",
+    "statistical learning/data science algorithms.md",
+    "statistical learning/time series algorithms.md",
+    "statistical learning/clustering.md",
+    "statistical learning/pattern mining algorithms.md",
+    "statistical learning/explanatory algorithms.md",
     "mathematics/stochastics/expectation.md",
+    "mathematics/stochastics/variance.md",
     "mathematics/stochastics/standard deviation.md",
-    "mathematics/stochastics/expectation for non negative distributions.md",
-    "mathematics/stochastics/bernoulli random variable.md",
-    "mathematics/basics/convex function.md",
-    "mathematics/basics/convex set.md",
-    "mathematics/basics/convex.md",
-    "mathematics/basics/linearity.md",
-    "mathematics/stochastics/probability vector.md"
+    "mathematics/stochastics/expectation for non negative distributions.md"
   ]
 }

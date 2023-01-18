@@ -1,0 +1,3 @@
+-   **K-mode clustering**: a clustering algorithm that is specifically designed for categorical data. It is able to handle high-dimensional categorical data well and is relatively simple to implement.
+-   **DBSCAN**: A density-based clustering algorithm that is able to identify clusters of arbitrary shape. It is relatively robust to noise and can identify outliers in the data.
+-   **Spectral clustering**: A clustering algorithm that uses the eigenvectors of a similarity matrix to group data points into clusters. It is able to handle non-linearly separable data and is relatively efficient.
