@@ -6,18 +6,6 @@
 
 (in contrast, a [[statistical estimator]] is estimating a property of the true [[probability density function|distribution]] based on [[statistical estimator|observed data]])
 
-### connection to [[loss functions]] 
-#### [[mean square error]] 
-- $L(Y, f(x))=\mathbb{E}[(Y-f(X))^2]$
-- $=\int\limits_\infty^\infty \int\limits_\infty^\infty(y-f(x))^2f_{XY}(x,y)dxdy$
-$$=\int\limits_\infty^\infty \underbrace{ \int\limits_\infty^\infty(y-f(x))^2f_{Y \mid X}(y) \: dy }_\text{$\mathbb{E}_{Y|X}[(Y-f(x))^2\:|\:X]$} \: f_{X}(x)dx$$
-- $=\mathbb{E}_{x_0 \sim f_{X}(x)} \left[ \mathbb{E}_{Y|X = x_0}[(Y-f(x_0))^2\:|\:X=x_0]\right]$ ([[factoring of joint densities]])
-- $\rightarrow f(x)=argmin_c \:\mathbb{E}_{Y|X=x}[(Y-c)^2\:|\:X=x]=\mathbb{E}[Y\:|\:X=x]$ ([[conditional expectation]])
-#### [[mean absolute error]] 
-- $L(Y, f(x))=\mathbb{E}[|Y-f(X)|] \rightarrow f(x)=median[Y|X=x]$ 
-#### [[maximum likelihood]] 
-- $L(\Theta)=\sum_{(x_i,y_i) \in \mathcal{T}_{train}} log [f_{Y|X, \Theta}(y_i,x_i)] \rightarrow f_\Theta(x)$
-- equal to [[mean square error]] when $f_{Y|X}(y|x) \sim \mathcal{N}$ 
 
 ### Approximation
 having an approximation for every point in the feature space often not possible because there might not be enough/any samples in every area of the feature space.
@@ -92,19 +80,5 @@ Tags: statistical estimator, statistical learning
 <!--ID: 1661678999131-->
 END
 
-START
-Basic
-Effect of using MSE (with proof) and MAE criterion for a [[statistical predictor]]?
-Back: 
-- mean square error estimates the conditional mean: 
-- $L(Y, f(x))=\mathbb{E}[(Y-f(X))^2]$
-- $=\int\limits_\infty^\infty \int\limits_\infty^\infty(y-f(x))^2f_{XY}(x,y)dxdy$
-- $=\int\limits_\infty^\infty \underbrace{ \int\limits_\infty^\infty(y-f(x))^2f_{Y \mid X}(y) \: dy }_\text{conditional expectation} \: f_{X}(x)dx$
-- $=\mathbb{E}_{x_0 \sim f_{X}(x)} \left[ \mathbb{E}_{Y|X = x_0}[(Y-f(x_0))^2\:|\:X=x_0]\right]$ ([[factoring of joint densities]])
-- $\rightarrow f(x)=argmin_c \:\mathbb{E}_{Y|X=x}[(Y-c)^2\:|\:X=x]=\mathbb{E}[Y\:|\:X=x]$ ([[conditional expectation]])
-- mean absolute error estimated the conditional median:  
-	→ $L(Y, f(x))=\mathbb{E}[|Y-f(X)|]$ ⟶ $f(x)=median[Y|X=x]$ 
-Tags: statistical estimator, statistical learning
-<!--ID: 1661678999134-->
-END
+
 

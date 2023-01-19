@@ -68,6 +68,8 @@ $$
 (no proof)
 
 
+# anki
+
 START
 Basic
 definition of variance 
