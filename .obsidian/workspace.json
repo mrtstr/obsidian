@@ -4,107 +4,65 @@
     "type": "split",
     "children": [
       {
-        "id": "ac158c8ae01691dd",
+        "id": "daf02226589e4c76",
         "type": "tabs",
         "children": [
           {
-            "id": "f4229cece522e0ed",
+            "id": "1748e5b89e1782f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/expectation.md",
+                "file": "mathematics/stochastics/covariance.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7ea9e9d641d322b9",
+            "id": "ee64c083a8808af6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/skewness.md",
+                "file": "mathematics/stochastics/variance.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0b9fe6d35b33db5b",
+            "id": "6fc50981f190b8ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/median.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cd0ce76809731983",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/mean.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c7a5ac7c9cd1bf59",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/mode.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8989d62cb38b5640",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "statistical learning/mean absolute error.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0b76f1f864ebe70f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "statistical learning/mean square error.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d5e0b0d8ac606dc0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "statistical learning/maximum likelihood.md",
+                "file": "mathematics/stochastics/correlation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
+      },
+      {
+        "id": "1452f58d13c6a327",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8abfbbc43cf6a9c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/covariance.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "statistical learning/mean absolute error.md",
+                "file": "mathematics/stochastics/variance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "statistical learning/mean absolute error.md",
+                "file": "mathematics/stochastics/variance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "statistical learning/mean absolute error.md"
+                "file": "mathematics/stochastics/variance.md"
               }
             }
           }
@@ -232,17 +190,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8989d62cb38b5640",
+  "active": "ee64c083a8808af6",
   "lastOpenFiles": [
+    "mathematics/stochastics/correlation.md",
+    "mathematics/stochastics/covariance.md",
+    "mathematics/stochastics/variance.md",
+    "mathematics/basics/cauchy schwarz inequality.md",
+    "statistical learning/maximum likelihood.md",
     "statistical learning/mean square error.md",
     "statistical learning/mean absolute error.md",
     "mathematics/stochastics/conditional distribution.md",
     "mathematics/stochastics/mode.md",
-    "mathematics/stochastics/mean.md",
-    "mathematics/stochastics/median.md",
-    "mathematics/stochastics/skewness.md",
-    "mathematics/stochastics/distribution.md",
-    "statistical learning/statistical predictor.md",
-    "statistical learning/maximum likelihood.md"
+    "mathematics/stochastics/mean.md"
   ]
 }

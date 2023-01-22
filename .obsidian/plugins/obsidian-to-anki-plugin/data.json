@@ -316,7 +316,7 @@
     "mathematics/stochastics/combinatorics/combinations - no repeat, order.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/combinatorics/combinations - no repeat, no order.md": "1c7a5de6065d6894c5fe1b360ca928b2",
     "mathematics/stochastics/combinatorics/binomial coefficient.md": "dbba823844835c2099256157d4975fb4",
-    "mathematics/stochastics/variance.md": "cbc765fcd9955e860afab70157126239",
+    "mathematics/stochastics/variance.md": "5f5d78dc09b38c3ed23c261cb4775a59",
     "mathematics/stochastics/symmetric matrix.md": "a973f4657da25d9f1cc370570aeba705",
     "mathematics/stochastics/stochastic independent.md": "c4b93754880147d8ca4e340fd726fea2",
     "mathematics/stochastics/stochastic exclusive.md": "b5d0d63deb835acdc0fee5efdebaed9d",
@@ -341,7 +341,7 @@
     "mathematics/stochastics/event space.md": "cc048c36fb6a9331e039d70460a6b5ca",
     "mathematics/stochastics/discrete random variable.md": "75fe8ee7c5d5c077d2d2a4e84613b08d",
     "mathematics/stochastics/discrete distribution.md": "0433d4b6f13ee449f5283a8d9562e5db",
-    "mathematics/stochastics/covariance.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/covariance.md": "62c8c3d5cc93959ba2b43b331071bbb7",
     "mathematics/stochastics/continuous random variable.md": "f50418a19146aaecc027dae2919e6b6d",
     "mathematics/stochastics/conditional stochastic independent.md": "099247a2e30513299b83906ec7fbdce6",
     "mathematics/stochastics/conditional probability.md": "9559adb6692c7caecefa2344f0394f66",
@@ -462,7 +462,9 @@
     "mathematics/stochastics/median.md": "8643c2f5f12ec21c665b81fe9f40ab75",
     "mathematics/stochastics/skewness.md": "db68a6f4284c22a7067e88ff8a9e2909",
     "mathematics/stochastics/moments.md": "68a554506318b0361434d544194bf2eb",
-    "mathematics/stochastics/interquartile range.md": "614e9efbabedcb75a7adeac9501253b8"
+    "mathematics/stochastics/interquartile range.md": "614e9efbabedcb75a7adeac9501253b8",
+    "mathematics/stochastics/correlation.md": "349c631ca32af8c6ce8a363ddb3642d4",
+    "mathematics/basics/cauchy schwarz inequality.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [
