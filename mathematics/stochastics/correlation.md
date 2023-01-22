@@ -13,8 +13,8 @@ $$
 \frac{\mathbb{COVAR}[aX,bY]}{\sqrt{\mathbb{VAR}[aX]\mathbb{VAR}[bY]}} \\
 &= 
 \frac{ab \cdot\mathbb{COVAR}[X,Y]}{\sqrt{a^2b^2\mathbb{VAR}[X]\mathbb{VAR}[Y]}} \\
-&= \frac{\mathbb{COVAR}[X,Y]}{\sqrt{\mathbb{VAR}[X]\mathbb{VAR}[Y]}} \\
-&= \rho\left[X,Y\right]
+&= \frac{ab}{\sqrt{a^2b^2}} \cdot \frac{\mathbb{COVAR}[X,Y]}{\sqrt{\mathbb{VAR}[X]\mathbb{VAR}[Y]}} \\
+&= sign(ab) \cdot \rho\left[X,Y\right]
 \end{split}
 $$
 ## boundarys
@@ -24,12 +24,24 @@ $$
 proof: [[cauchy schwarz inequality]]
 
 ## [[correlation]] of [[stochastic independent]] [[random variable|random variables]]
+From [[stochastic independent|stochastic independence]] follows zero [[correlation]] and [[covariance]] but not the other way.
+$$
+\begin{split}
+X \perp Y &\Rightarrow \rho[X,Y] = \mathbb{COVAR}[X,y] = 0 \\
+\rho[X,Y] = 0 &\nRightarrow X \perp Y    
+\end{split}
+$$
+proof:
 $$
 \rho[X,Y] = \frac{\mathbb{COVAR}[X,Y]}{\sigma_X\sigma_Y}=\frac{0}{\sigma_X\sigma_Y} = 0
 $$
 ![[covariance#covariance of stochastic independent random variable random variables]]
 
 ## [[correlation]] of linear dependent [[random variable|random variables]]
+from $\left|\rho\left[X,Y\right]\right|= 1$ that the [[random variable|random variables]] $X$ and $Y$  are linearly related thus $X=g(Y)$ and $Y=g(X)$ with $g(.)$ being a [[linear function]] and vice versa
+$$
+\left|\rho\left[X,Y\right]\right|= 1 \Leftrightarrow X=g(Y)
+$$
 - if $Y$ is a [[linear function]] of $X$ $\rho\left[X,Y\right]$ is either $1$ or $-1$ depending on the sign of $a$
 proof
 $$
@@ -50,7 +62,6 @@ $$
 sign(a)\\
 \end{split}
 $$
-- if $\left|\rho\left[X,Y\right]\right|= 1$ $X$ and $Y$ the [[random variable|random variables]] are linearly related thus $X=g(Y)$ and $Y=g(X)$ with $g(.)$ being a [[linear function]]
 ## interpretation of a small [[correlation]]
 - a small $\left|\rho\left[X,Y\right]\right|$ does not mean that $X$ and $Y$ are not related - it only says that there is no linear relationship between them
 
@@ -79,8 +90,8 @@ $$
 \frac{\mathbb{COVAR}[aX,bY]}{\sqrt{\mathbb{VAR}[aX]\mathbb{VAR}[bY]}} \\
 &= 
 \frac{ab \cdot\mathbb{COVAR}[X,Y]}{\sqrt{a^2b^2\mathbb{VAR}[X]\mathbb{VAR}[Y]}} \\
-&= \frac{\mathbb{COVAR}[X,Y]}{\sqrt{\mathbb{VAR}[X]\mathbb{VAR}[Y]}} \\
-&= \rho\left[X,Y\right]
+&= \frac{ab}{\sqrt{a^2b^2}} \cdot \frac{\mathbb{COVAR}[X,Y]}{\sqrt{\mathbb{VAR}[X]\mathbb{VAR}[Y]}} \\
+&= sign(ab) \cdot \rho\left[X,Y\right]
 \end{split}
 $$
 ## boundarys
@@ -89,7 +100,16 @@ $$
 $$
 proof: [[cauchy schwarz inequality]]
 
+
 ## [[correlation]] of [[stochastic independent]] [[random variable|random variables]]
+From [[stochastic independent|stochastic independence]] follows zero [[correlation]] and [[covariance]] but not the other way.
+$$
+\begin{split}
+X \perp Y &\Rightarrow \rho[X,Y] = \mathbb{COVAR}[X,y] = 0 \\
+\rho[X,Y] = 0 &\nRightarrow X \perp Y    
+\end{split}
+$$
+proof:
 $$
 \rho[X,Y] = \frac{\mathbb{COVAR}[X,Y]}{\sigma_X\sigma_Y}=\frac{0}{\sigma_X\sigma_Y} = 0
 $$
@@ -120,6 +140,10 @@ Y&=X^2 \\
 $$
 
 ## [[correlation]] of linear dependent [[random variable|random variables]]
+from $\left|\rho\left[X,Y\right]\right|= 1$ that the [[random variable|random variables]] $X$ and $Y$  are linearly related thus $X=g(Y)$ and $Y=g(X)$ with $g(.)$ being a [[linear function]] and vice versa
+$$
+\left|\rho\left[X,Y\right]\right|= 1 \Leftrightarrow X=g(Y)
+$$
 - if $Y$ is a [[linear function]] of $X$ $\rho\left[X,Y\right]$ is either $1$ or $-1$ depending on the sign of $a$
 proof
 $$
@@ -140,9 +164,9 @@ $$
 sign(a)\\
 \end{split}
 $$
-- if $\left|\rho\left[X,Y\right]\right|= 1$ $X$ and $Y$ the [[random variable|random variables]] are linearly related thus $X=g(Y)$ and $Y=g(X)$ with $g(.)$ being a [[linear function]]
 ## interpretation of a small [[correlation]]
 - a small $\left|\rho\left[X,Y\right]\right|$ does not mean that $X$ and $Y$ are not related - it only says that there is no linear relationship between them
+
 Tags: mathematics, statistics
 <!--ID: 1674378389849-->
 END
@@ -162,8 +186,8 @@ $$
 \frac{\mathbb{COVAR}[aX,bY]}{\sqrt{\mathbb{VAR}[aX]\mathbb{VAR}[bY]}} \\
 &= 
 \frac{ab \cdot\mathbb{COVAR}[X,Y]}{\sqrt{a^2b^2\mathbb{VAR}[X]\mathbb{VAR}[Y]}} \\
-&= \frac{\mathbb{COVAR}[X,Y]}{\sqrt{\mathbb{VAR}[X]\mathbb{VAR}[Y]}} \\
-&= \rho\left[X,Y\right]
+&= \frac{ab}{\sqrt{a^2b^2}} \cdot \frac{\mathbb{COVAR}[X,Y]}{\sqrt{\mathbb{VAR}[X]\mathbb{VAR}[Y]}} \\
+&= sign(ab) \cdot \rho\left[X,Y\right]
 \end{split}
 $$
 Tags: mathematics, statistics
@@ -187,6 +211,14 @@ $$
 \rho[X,Y] = \frac{\mathbb{COVAR}[X,Y]}{\sigma_X\sigma_Y}=\frac{\mathbb{COVAR}[X,Y]}{\sqrt{\mathbb{VAR}[X]\mathbb{VAR}[Y]}}
 $$
 ## [[correlation]] of [[stochastic independent]] [[random variable|random variables]]
+From [[stochastic independent|stochastic independence]] follows zero [[correlation]] and [[covariance]] but not the other way.
+$$
+\begin{split}
+X \perp Y &\Rightarrow \rho[X,Y] = \mathbb{COVAR}[X,y] = 0 \\
+\rho[X,Y] = 0 &\nRightarrow X \perp Y    
+\end{split}
+$$
+proof:
 $$
 \rho[X,Y] = \frac{\mathbb{COVAR}[X,Y]}{\sigma_X\sigma_Y}=\frac{0}{\sigma_X\sigma_Y} = 0
 $$
@@ -217,6 +249,10 @@ Y&=X^2 \\
 $$
 
 ## [[correlation]] of linear dependent [[random variable|random variables]]
+from $\left|\rho\left[X,Y\right]\right|= 1$ that the [[random variable|random variables]] $X$ and $Y$  are linearly related thus $X=g(Y)$ and $Y=g(X)$ with $g(.)$ being a [[linear function]] and vice versa
+$$
+\left|\rho\left[X,Y\right]\right|= 1 \Leftrightarrow X=g(Y)
+$$
 - if $Y$ is a [[linear function]] of $X$ $\rho\left[X,Y\right]$ is either $1$ or $-1$ depending on the sign of $a$
 proof
 $$
@@ -237,9 +273,9 @@ $$
 sign(a)\\
 \end{split}
 $$
-- if $\left|\rho\left[X,Y\right]\right|= 1$ $X$ and $Y$ the [[random variable|random variables]] are linearly related thus $X=g(Y)$ and $Y=g(X)$ with $g(.)$ being a [[linear function]]
 ## interpretation of a small [[correlation]]
 - a small $\left|\rho\left[X,Y\right]\right|$ does not mean that $X$ and $Y$ are not related - it only says that there is no linear relationship between them
+
 Tags: mathematics, statistics
 <!--ID: 1674378389859-->
 END

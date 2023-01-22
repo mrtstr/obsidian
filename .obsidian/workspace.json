@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "988825d179ed9163",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/stochastic independent.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "1452f58d13c6a327",
@@ -128,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/variance.md",
+                "file": "mathematics/stochastics/correlation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/variance.md",
+                "file": "mathematics/stochastics/correlation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/variance.md"
+                "file": "mathematics/stochastics/correlation.md"
               }
             }
           }
@@ -190,17 +202,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ee64c083a8808af6",
+  "active": "6fc50981f190b8ad",
   "lastOpenFiles": [
+    "mathematics/stochastics/stochastic independent.md",
     "mathematics/stochastics/correlation.md",
-    "mathematics/stochastics/covariance.md",
     "mathematics/stochastics/variance.md",
+    "mathematics/stochastics/covariance.md",
     "mathematics/basics/cauchy schwarz inequality.md",
     "statistical learning/maximum likelihood.md",
     "statistical learning/mean square error.md",
     "statistical learning/mean absolute error.md",
     "mathematics/stochastics/conditional distribution.md",
-    "mathematics/stochastics/mode.md",
-    "mathematics/stochastics/mean.md"
+    "mathematics/stochastics/mode.md"
   ]
 }
