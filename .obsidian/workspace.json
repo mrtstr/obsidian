@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/correlation.md",
+                "file": "mathematics/stochastics/conditional expectation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1dcf515a706bd1c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/conditional distribution.md",
                 "mode": "source",
                 "source": false
               }
@@ -57,24 +69,6 @@
           }
         ],
         "currentTab": 2
-      },
-      {
-        "id": "1452f58d13c6a327",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8abfbbc43cf6a9c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/covariance.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -140,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/correlation.md",
+                "file": "mathematics/stochastics/conditional expectation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/correlation.md",
+                "file": "mathematics/stochastics/conditional expectation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/correlation.md"
+                "file": "mathematics/stochastics/conditional expectation.md"
               }
             }
           }
@@ -204,15 +198,15 @@
   },
   "active": "6fc50981f190b8ad",
   "lastOpenFiles": [
+    "mathematics/stochastics/conditional distribution.md",
     "mathematics/stochastics/stochastic independent.md",
+    "mathematics/stochastics/conditional probability.md",
+    "mathematics/stochastics/probability density function.md",
+    "mathematics/stochastics/conditional expectation.md",
     "mathematics/stochastics/correlation.md",
     "mathematics/stochastics/variance.md",
     "mathematics/stochastics/covariance.md",
     "mathematics/basics/cauchy schwarz inequality.md",
-    "statistical learning/maximum likelihood.md",
-    "statistical learning/mean square error.md",
-    "statistical learning/mean absolute error.md",
-    "mathematics/stochastics/conditional distribution.md",
-    "mathematics/stochastics/mode.md"
+    "statistical learning/maximum likelihood.md"
   ]
 }
