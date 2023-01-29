@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "92e1079b8bf18ee9",
@@ -98,8 +98,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -165,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/conditional variance.md",
+                "file": "mathematics/stochastics/conditional expectation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/conditional variance.md",
+                "file": "mathematics/stochastics/conditional expectation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/conditional variance.md"
+                "file": "mathematics/stochastics/conditional expectation.md"
               }
             }
           }
@@ -227,11 +226,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7c6d7fcd7b9f3059",
+  "active": "6fc50981f190b8ad",
   "lastOpenFiles": [
+    "statistical learning/mean square error.md",
     "mathematics/stochastics/conditional variance.md",
     "mathematics/stochastics/variance.md",
-    "statistical learning/mean square error.md",
     "statistical learning/variance bias trade-off.md",
     "mathematics/stochastics/conditional expectation.md",
     "mathematics/stochastics/conditional distribution.md",
