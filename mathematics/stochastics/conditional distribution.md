@@ -33,7 +33,39 @@ f_{YX\mid X}(y, x \mid x)
 &=f_{Y\mid X}(y \mid x)
 \end{split}
 $$
+
+## $f_{Y\mid X, g(X)}(y \mid x, g(x)) = f_{Y\mid X}(y \mid x)$
+### Proof:
+$$
+\begin{split}
+f_{Y\mid X, g(X)}(y \mid x, g(x))
+&=P\left(Y=y  | X=x \cap g(X)=g(x)\right) \\
+&=\frac{P(Y=y \cap X=x \cap g(X)=g(x))}{P(X=x\cap g(X)=g(x))} \\
+&=\frac{P(Y=y \cap X=x)}{P(X=x)} \\
+&=f_{Y\mid X}(y \mid x)
+\end{split}
+$$
+
 # Anki
+
+START
+Basic
+proof for $f_{Y\mid X, g(X)}(y \mid x, g(x)) = f_{Y\mid X}(y \mid x)$
+Back: 
+$$
+\begin{split}
+f_{Y\mid X, g(X)}(y \mid x, g(x))
+&=P\left(Y=y  | X=x \cap g(X)=g(x)\right) \\
+&=\frac{P(Y=y \cap X=x \cap g(X)=g(x))}{P(X=x\cap g(X)=g(x))} \\
+&=\frac{P(Y=y \cap X=x)}{P(X=x)} \\
+&=f_{Y\mid X}(y \mid x)
+\end{split}
+$$
+Tags: mathematics, statistics
+<!--ID: 1674983478650-->
+END
+
+
 START
 Basic
 [[conditional distribution|conditional PDF]] $f_{X\mid Y=y}(x)$
