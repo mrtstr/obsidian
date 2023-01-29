@@ -69,6 +69,36 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "92e1079b8bf18ee9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c46dac99aa6864ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "statistical learning/mean square error.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7c6d7fcd7b9f3059",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/conditional variance.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/conditional expectation.md",
+                "file": "statistical learning/mean square error.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/conditional expectation.md",
+                "file": "statistical learning/mean square error.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/conditional expectation.md"
+                "file": "statistical learning/mean square error.md"
               }
             }
           }
@@ -196,17 +226,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6fc50981f190b8ad",
+  "active": "c46dac99aa6864ef",
   "lastOpenFiles": [
-    "mathematics/stochastics/conditional distribution.md",
+    "mathematics/stochastics/conditional variance.md",
+    "statistical learning/mean square error.md",
     "mathematics/stochastics/conditional expectation.md",
+    "mathematics/stochastics/conditional distribution.md",
     "mathematics/stochastics/stochastic independent.md",
     "mathematics/stochastics/conditional probability.md",
     "mathematics/stochastics/probability density function.md",
     "mathematics/stochastics/correlation.md",
     "mathematics/stochastics/variance.md",
-    "mathematics/stochastics/covariance.md",
-    "mathematics/basics/cauchy schwarz inequality.md",
-    "statistical learning/maximum likelihood.md"
+    "mathematics/stochastics/covariance.md"
   ]
 }

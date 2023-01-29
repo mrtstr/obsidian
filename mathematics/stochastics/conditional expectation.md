@@ -56,21 +56,19 @@ $$
 \end{split}
 $$
 ## [[conditional expectation]] of a [[function]] of a given [[random variable]] 
+$$
+\mathbb{E}\left[g(X, Y) | X = x\right]  = \mathbb{E}\left[g(x, Y) | X = x\right] = \int\limits_{-\infty}^{\infty} g(x,y) f_{Y|x}(y|x)dy = r(x)
+$$
 
-$$
-\mathbb{E}\left[Y g(X) | X\right]  = g(X) \mathbb{E}\left[Y | X\right]
-$$
-#### proof
+### implications
+#### $\mathbb{E}\left[Y g(X) | X\right]  = g(X) \mathbb{E}\left[Y | X\right]$
+
 - concider the [[function]] $r(x) = \mathbb{E}\left[Y g(X) | X = x\right] = \mathbb{E}\left[Y g(x) | X = x\right]  = g(x) \mathbb{E}\left[Y | X = x\right]$
 - given $X=x$ $g(x)$ is a constant and thus can be taken out of the [[expectation]]
 - now lets concider the function $r(.)$ of a [[random variable]] $X$ 
 - $r(X)= \mathbb{E}\left[Y g(X) | X\right] = g(X) \mathbb{E}\left[Y | X\right]$
 
-### simplified case
-$$
-\mathbb{E}\left[g(X) | X\right]  = g(X)
-$$
-#### proof
+#### $\mathbb{E}\left[g(X) | X\right]  = g(X)$
 - concider the function $r(x)=\mathbb{E}\left[g(X) | X=x\right] = \mathbb{E}\left[g(x)\right]=g(x)$
 - given $X=x$ $g(x)$ is a constant
 - now lets concider the function $r(.)$ of a [[random variable]] $X$ 
@@ -82,6 +80,25 @@ $$
 $$
 
 ## [[law of total probability]] for [[expectation|expectations]]
+### [[law of total probability]] for [[expectation|expectations]] general case
+$$
+\mathbb{E}\left[g(X,Y)\right]  = \mathbb{E}\left[\mathbb{E}\left[g(X,Y)|X\right]\right]
+$$
+#### proof
+
+$$
+\begin{split}
+\mathbb{E}\left[\mathbb{E}\left[g(X,Y)|X\right]\right] 
+& = \int\limits_{-\infty}^\infty f_{X}(x)  \int\limits_{-\infty}^\infty 
+ g(X,Y) \cdot f_{YX|X}(y,x \mid x)dy \:dx \\
+& = \int\limits_{-\infty}^\infty f_{X}(x) \int\limits_{-\infty}^\infty 
+g(X,Y) \cdot f_{Y|X}(y \mid x)dy \:dx \\
+& = \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty \frac{f_{X}(x)}{f_{X}(x)}  
+g(X,Y) \cdot f_{YX}(y, x)dy \:dx \\
+&=  \mathbb{E}\left[g(X,Y)\right]
+\end{split}
+$$
+
 ### simple case
 $$
 \mathbb{E}[Y]  = \mathbb{E}\left[\mathbb{E}[Y|X]\right]
@@ -100,24 +117,6 @@ $$
 \end{split}
 $$
 
-### with a [[functions of random variables]]
-$$
-\mathbb{E}\left[g(X,Y)\right]  = \mathbb{E}\left[\mathbb{E}\left[g(X,Y)|X\right]\right]
-$$
-#### proof
-
-$$
-\begin{split}
-\mathbb{E}\left[\mathbb{E}\left[g(X,Y)|X\right]\right] 
-& = \int\limits_{-\infty}^\infty f_{X}(x)  \int\limits_{-\infty}^\infty 
- g(X,Y) \cdot f_{YX|X}(y,x \mid x)dy \:dx \\
-& = \int\limits_{-\infty}^\infty f_{X}(x) \int\limits_{-\infty}^\infty 
-g(X,Y) \cdot f_{Y|X}(y \mid x)dy \:dx \\
-& = \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty \frac{f_{X}(x)}{f_{X}(x)}  
-g(X,Y) \cdot f_{YX}(y, x)dy \:dx \\
-&=  \mathbb{E}\left[g(X,Y)\right]
-\end{split}
-$$
 
 # anki
 
@@ -225,6 +224,10 @@ $$
 \end{split}
 $$
 ## [[conditional expectation]] of a [[function]] of a given [[random variable]] 
+$$
+\mathbb{E}\left[g(X, Y) | X = x\right]  = \mathbb{E}\left[g(x, Y) | X = x\right] = \int\limits_{-\infty}^{\infty} g(x,y) f_{Y|x}(y|x)dy = r(x)
+$$
+### implications
 
 $$
 \mathbb{E}\left[Y g(X) | X\right]  = g(X) \mathbb{E}\left[Y | X\right]
@@ -357,4 +360,36 @@ c \\
 $$
 Tags: mathematics, statistics
 <!--ID: 1674983478647-->
+END
+
+
+
+START
+Basic
+[[conditional expectation]] of a [[function]] of a given [[random variable]] (proof): 
+$$
+\mathbb{E}\left[g(X, Y) | X = x\right]
+$$
+
+Back: 
+$$
+\mathbb{E}\left[g(X, Y) | X = x\right]  = \mathbb{E}\left[g(x, Y) | X = x\right] = \int\limits_{-\infty}^{\infty} g(x,y) f_{Y|x}(y|x)dy = r(x)
+$$
+
+### implications
+#### $\mathbb{E}\left[Y g(X) | X\right]  = g(X) \mathbb{E}\left[Y | X\right]$
+
+- concider the [[function]] $r(x) = \mathbb{E}\left[Y g(X) | X = x\right] = \mathbb{E}\left[Y g(x) | X = x\right]  = g(x) \mathbb{E}\left[Y | X = x\right]$
+- given $X=x$ $g(x)$ is a constant and thus can be taken out of the [[expectation]]
+- now lets concider the function $r(.)$ of a [[random variable]] $X$ 
+- $r(X)= \mathbb{E}\left[Y g(X) | X\right] = g(X) \mathbb{E}\left[Y | X\right]$
+
+#### $\mathbb{E}\left[g(X) | X\right]  = g(X)$
+- concider the function $r(x)=\mathbb{E}\left[g(X) | X=x\right] = \mathbb{E}\left[g(x)\right]=g(x)$
+- given $X=x$ $g(x)$ is a constant
+- now lets concider the function $r(.)$ of a [[random variable]] $X$ 
+- $r(X)=g(X)=\mathbb{E}\left[g(X) | X\right]$
+
+Tags: mathematics, statistics
+<!--ID: 1674984828829-->
 END
