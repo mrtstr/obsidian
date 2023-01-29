@@ -1,7 +1,7 @@
 # [[mean square error]]
 [[loss functions]]
 
-## Definition
+# Definition
 For a [[statistical estimator|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ the [[mean square error]] is defined as the following
 $$
 L_{MSE}(X, \widehat{x})=\mathbb{E}\left[(X-\widehat{x})^2\right]
@@ -13,9 +13,9 @@ L_{MSE}(X, f(x))=\mathbb{E}\left[(X-f(x))^2\right]
 $$
 $L(Y, f(x))=E[(Y-f(x))^2] \rightarrow f(x)=E[Y|X=x]$  
 
-## minimum 
 
-### [[statistical estimator|statistical estimaton]] $\widehat{x}$
+# [[mean square error|mse]] optimizing [[statistical estimator|statistical estimaton]] $\widehat{x}$
+
 The [[statistical estimator|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ that is minimizing the [[mean square error]] is the [[expectation]] $\widehat{x}_{MSE}=\mathbb{E}[X]$.
 Proof
 $$
@@ -31,12 +31,14 @@ The [[mean square error]] of $\widehat{x}_{MSE}$ the [[variance]] $L_{MSE}(X, \w
 $$
 L_{MSE}(X, \widehat{x}_{MSE})=\mathbb{E}\left[(X-\widehat{x}_{MSE})^2\right] = \mathbb{E}\left[(X-\mathbb{E}[X])^2\right] = \mathbb{VAR}\left[X\right]
 $$
-### [[statistical predictor]] $f(x)$
+# [[mean square error|mse]] optimizing [[statistical predictor]] $f(x)$
+## optimal [[statistical predictor]] $f(x)$
 The [[statistical predictor]] $f(x)$ that is minimizing the [[mean square error]] is the [[conditional expectation]] $f_{MSE}(x)=\mathbb{E}[Y\:|\:X=x]$
 
-#### proof
+### proof
 - from the [[law of total probability]] we know that $\mathbb{E}[(Y-f(X))^2] =\mathbb{E}\left[\mathbb{E}\left[(Y-f(X))^2 | X \right] \right]$
 ![[conditional expectation#law of total probability for expectation expectations general case]]
+
 - for an observed $x_0$ $\mathbb{E}\left[\mathbb{E}\left[(Y-f(x_0))^2 | X=x_0 \right] \right] = \mathbb{E}\left[(Y-f(x_0))^2 | X=x_0 \right]$ since its a constant
 - if we can prove for every $x$ that $f(x)=argmin_c \:\mathbb{E}_{Y|X=x}[(Y-c)^2\:|\:X=x]=\mathbb{E}[Y\:|\:X=x]$ its clear that $f(X)=\mathbb{E}[Y\:|\:X]$ is also true
 $$
@@ -47,10 +49,29 @@ $$
 \rightarrow c&=\mathbb{E}_{Y|X=x}[Y\:|\:X=x] = f(x) 
 \end{split}
 $$
+# error of optimal [[statistical predictor]] $f(x) = \mathbb{E}_{Y|X=x}[Y\:|\:X=x]$
+
 - for every constant $X=x_0$ the [[mean square error]] for an optimal [[statistical predictor]] $f(x) = \mathbb{E}_{Y|X=x}[Y\:|\:X=x]$ is equal to the [[conditional variance]] of $Y$ given $X=x$
 $$
 \mathbb{E}\left[(Y-\mathbb{E}_{Y|X=x_0}[Y\:|\:X])^2 | X=x_0 \right] = \mathbb{VAR}_{Y|X=x_0}\left[Y\:|\:X=x_0 \right]
 $$
+- the expected [[mean square error]] for an optimal [[statistical predictor]] $f(x) = \mathbb{E}_{Y|X}[Y\:|\:X]$ is equal to the [[expectation]] of the  [[conditional variance]] of $Y$ over all possiple $X$ values 
+- (remember $\mathbb{E}\left[(Y-\mathbb{E}_{Y|X}[Y\:|\:X])^2 | X \right]$ is a [[function]] of the [[random variable]] $X$)
+$$
+\mathbb{E}\left[\mathbb{E}\left[(Y-\mathbb{E}_{Y|X}[Y\:|\:X])^2 | X \right]\right] = \mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
+$$
+- for an optimal [[statistical predictor]] without any observation for $X$ the [[mean square error]] would be $\mathbb{VAR}\left[Y\right]$
+- thus the [[mean square error]] improvemnt because of the observation $X=x_0$ would be
+$$
+\mathbb{VAR}\left[Y\right] -\mathbb{VAR}_{Y|X=x_0}\left[Y\:|\:X=x_0 \right] 
+$$
+- the [[mean square error]] improvemnt because of a general observation of the [[random variable]] $X$ would be the following
+$$
+\mathbb{VAR}\left[Y\right] - \mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
+= \mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]
+= \mathbb{VAR}\left[f(X)\right]
+$$
+- according to the [[law of total probability]] for the [[variance]] the improvement of the [[mean square error]] due to an observation of the [[random variable]] $X$ is equal to the [[variance]] of the optimal [[statistical predictor]] $\mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]$ (see [[variance bias trade-off]])
 
 # Anki
 START
@@ -77,8 +98,7 @@ END
 
 START
 Basic
-minumum of the [[mean square error]] with proof
-- [[statistical estimator]]
+[[mean square error|mse]] optimizing [[statistical estimator|statistical estimaton]] $\widehat{x}$ and its error (with proof)
 Back: 
 ### [[statistical estimator|statistical estimaton]] $\widehat{x}$
 The [[statistical estimator|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ that is minimizing the [[mean square error]] is the [[expectation]] $\widehat{x}_{MSE}=\mathbb{E}[X]$.
@@ -105,7 +125,9 @@ END
 
 START
 Basic
-[[statistical predictor]] that minimizes the [[mean square error]] and its [[mean square error]] with proof
+- [[statistical predictor]] that minimizes the [[mean square error]] 
+- [[mean square error]] of optimal [[statistical predictor]]
+- [[mean square error]] improvment due to an observation of $X$
 
 Back: 
 
@@ -139,11 +161,70 @@ $$
 \rightarrow c&=\mathbb{E}_{Y|X=x}[Y\:|\:X=x] = f(x) 
 \end{split}
 $$
+### error of optimal [[statistical predictor]] $f(x) = \mathbb{E}_{Y|X=x}[Y\:|\:X=x]$
+
 - for every constant $X=x_0$ the [[mean square error]] for an optimal [[statistical predictor]] $f(x) = \mathbb{E}_{Y|X=x}[Y\:|\:X=x]$ is equal to the [[conditional variance]] of $Y$ given $X=x$
 $$
 \mathbb{E}\left[(Y-\mathbb{E}_{Y|X=x_0}[Y\:|\:X])^2 | X=x_0 \right] = \mathbb{VAR}_{Y|X=x_0}\left[Y\:|\:X=x_0 \right]
 $$
-
+- the expected [[mean square error]] for an optimal [[statistical predictor]] $f(x) = \mathbb{E}_{Y|X}[Y\:|\:X]$ is equal to the [[expectation]] of the [[conditional variance]] of $Y$ over all possiple $X$ values 
+- (remember $\mathbb{E}\left[(Y-\mathbb{E}_{Y|X}[Y\:|\:X])^2 | X \right]$ is a [[function]] of the [[random variable]] $X$)
+$$
+\mathbb{E}\left[\mathbb{E}\left[(Y-\mathbb{E}_{Y|X}[Y\:|\:X])^2 | X \right]\right] = \mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
+$$
+- for an optimal [[statistical predictor]] without any observation for $X$ the [[mean square error]] would be $\mathbb{VAR}\left[Y\right]$
+- thus the [[mean square error]] improvemnt because of the observation $X=x_0$ would be
+$$
+\mathbb{VAR}\left[Y\right] -\mathbb{VAR}_{Y|X=x_0}\left[Y\:|\:X=x_0 \right] 
+$$
+- the [[mean square error]] improvemnt because of a general observation of the [[random variable]] $X$ would be the following
+$$
+\mathbb{VAR}\left[Y\right] - \mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
+= \mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]
+= \mathbb{VAR}\left[f(X)\right]
+$$
+- according to the [[law of total probability]] for the [[variance]] the improvement of the [[mean square error]] due to an observation of the [[random variable]] $X$ is equal to the [[variance]] of the optimal [[statistical predictor]] $\mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]$ (see [[variance bias trade-off]])
 Tags: statistical estimator, statistical learning
 <!--ID: 1674988747232-->
+END
+
+
+
+
+START
+Basic
+interpretation of the [[variance]] of a [[mean square error]] optimizing [[statistical predictor]]
+
+Back: 
+according to the [[law of total probability]] for the [[variance]] the improvement of the [[mean square error]] due to an observation of the [[random variable]] $X$ is equal to the [[variance]] of the optimal [[statistical predictor]] ($f(X) = \mathbb{E}_{Y|X}[Y\:|\:X=x]$) $\mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]$ (see [[variance bias trade-off]])
+$$
+\mathbb{VAR}\left[Y\right] - \mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
+= \mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]
+= \mathbb{VAR}\left[f(X)\right]
+$$
+
+### error of optimal [[statistical predictor]] $f(x) = \mathbb{E}_{Y|X=x}[Y\:|\:X=x]$
+
+- for every constant $X=x_0$ the [[mean square error]] for an optimal [[statistical predictor]] $f(x) = \mathbb{E}_{Y|X=x}[Y\:|\:X=x]$ is equal to the [[conditional variance]] of $Y$ given $X=x$
+$$
+\mathbb{E}\left[(Y-\mathbb{E}_{Y|X=x_0}[Y\:|\:X])^2 | X=x_0 \right] = \mathbb{VAR}_{Y|X=x_0}\left[Y\:|\:X=x_0 \right]
+$$
+- the expected [[mean square error]] for an optimal [[statistical predictor]] $f(x) = \mathbb{E}_{Y|X}[Y\:|\:X]$ is equal to the [[expectation]] of the [[conditional variance]] of $Y$ over all possiple $X$ values 
+- (remember $\mathbb{E}\left[(Y-\mathbb{E}_{Y|X}[Y\:|\:X])^2 | X \right]$ is a [[function]] of the [[random variable]] $X$)
+$$
+\mathbb{E}\left[\mathbb{E}\left[(Y-\mathbb{E}_{Y|X}[Y\:|\:X])^2 | X \right]\right] = \mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
+$$
+- for an optimal [[statistical predictor]] without any observation for $X$ the [[mean square error]] would be $\mathbb{VAR}\left[Y\right]$
+- thus the [[mean square error]] improvemnt because of the observation $X=x_0$ would be
+$$
+\mathbb{VAR}\left[Y\right] -\mathbb{VAR}_{Y|X=x_0}\left[Y\:|\:X=x_0 \right] 
+$$
+- the [[mean square error]] improvemnt because of a general observation of the [[random variable]] $X$ would be the following
+$$
+\mathbb{VAR}\left[Y\right] - \mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
+= \mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]
+$$
+- according to the [[law of total probability]] for the [[variance]] the improvement of the [[mean square error]] due to an observation of the [[random variable]] $X$ is equal to the [[variance]] of the optimal [[statistical predictor]] $\mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]$ (see [[variance bias trade-off]])
+Tags: statistical estimator, statistical learning
+<!--ID: 1674997183132-->
 END

@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "92e1079b8bf18ee9",
@@ -98,7 +98,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -127,7 +128,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bern",
+                "query": "tag:#Definition",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "statistical learning/mean square error.md",
+                "file": "mathematics/stochastics/conditional variance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "statistical learning/mean square error.md",
+                "file": "mathematics/stochastics/conditional variance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "statistical learning/mean square error.md"
+                "file": "mathematics/stochastics/conditional variance.md"
               }
             }
           }
@@ -226,17 +227,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c46dac99aa6864ef",
+  "active": "7c6d7fcd7b9f3059",
   "lastOpenFiles": [
     "mathematics/stochastics/conditional variance.md",
+    "mathematics/stochastics/variance.md",
     "statistical learning/mean square error.md",
+    "statistical learning/variance bias trade-off.md",
     "mathematics/stochastics/conditional expectation.md",
     "mathematics/stochastics/conditional distribution.md",
     "mathematics/stochastics/stochastic independent.md",
     "mathematics/stochastics/conditional probability.md",
     "mathematics/stochastics/probability density function.md",
-    "mathematics/stochastics/correlation.md",
-    "mathematics/stochastics/variance.md",
-    "mathematics/stochastics/covariance.md"
+    "mathematics/stochastics/correlation.md"
   ]
 }
