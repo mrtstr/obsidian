@@ -116,9 +116,219 @@ $$
 & = \mathbb{E}\left[Y\right]
 \end{split}
 $$
+# Examples
+## proof for $\mathbb{E}\left[Y|X\right]=c \Rightarrow \mathbb{COV}\left[X,Y\right]=0$
+$$
+\begin{split}
+\mathbb{E}\left[YX\right] 
+& = \mathbb{E}\left[\mathbb{E}[XY|X]\right] \\
+& = \mathbb{E}\left[X\mathbb{E}[Y|X]\right] \\
+& = \mathbb{E}\left[X\right]\mathbb{E}\left[Y\right] \\
+ \\
+\mathbb{COV}\left[X,Y\right]
+& = \mathbb{E}\left[YX\right]-\mathbb{E}\left[X\right]\mathbb{E}\left[Y\right] \\
+& = \mathbb{E}\left[YX\right]-\mathbb{E}\left[YX\right] =0 \\
+\end{split}
+$$
+## [[joint distribution]] to [[conditional expectation]] and [[conditional variance]]
+$$
+f_{XY}(x,y)=
+\begin{cases}
+x+y
+,& \text{if } x, y \in [a,b]\\
+0
+,& \text{otherwise}
+\end{cases}
+$$
+$$
+f_{X}(x)=
+\begin{cases}
+x+\frac{1}{2}
+,& \text{if } x \in [0,1]\\
+0
+,& \text{otherwise}
+\end{cases}
+$$
+$$ f_{Y|X=x}(y,x)=\frac{f_{XY}(x,y)}{f_{X}(x)}  $$
+$$
+\begin{split}
+\mathbb{E}\left[Y|X=x\right] 
+& = \frac{3x+2}{3(2x+1)} \\
+ \\
+\mathbb{E}\left[Y^2|X=x\right] 
+& = \frac{4x+3}{6(2x+1)} \\
+ \\
+\mathbb{VAR}\left[Y^2|X=x\right] 
+& = \frac{4x+3}{6(2x+1)} - \frac{3x+2}{3(2x+1)}^2 \\
+\end{split}
+$$
 
+### [[mean square error]] optimization given $X=\frac{1}{2}$
+$$
+\begin{split}
+\mathbb{E}\left[Y|X=\frac{1}{2}\right] 
+& = \frac{3x+2}{3(2x+1)} = \frac{7}{12} \\
+ \\
+\mathbb{VAR}\left[Y|X=\frac{1}{2}\right] 
+& = \frac{4x+3}{6(2x+1)} - \frac{3x+2}{3(2x+1)}^2 = \frac{11}{144} \\
+\end{split}
+$$
+### general [[mean square error]] if $X$ is observed
+$$
+\begin{split}
+\mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
+&= \int\limits_0^1 f_{X}(x) \mathbb{VAR}\left[Y|X=x\right] dx \\
+&= \int\limits_0^1 \left(x+\frac{1}{2}\right) \left(\frac{4x+3}{6(2x+1)} - \frac{3x+2}{3(2x+1)}^2 \right) dx
+\end{split}
+$$
+## simple [[generalized linear models]]
+$$\mathbb{E}\left[Y|X\right] = aX+b$$
 
+$$
+\begin{split}
+\mathbb{E}\left[Y\right] 
+& = \mathbb{E}\left[\mathbb{E}[Y|X]\right] \\
+& = \mathbb{E}\left[\mathbb{E}[aX+b|X]\right] \\
+& = \mathbb{E}\left[aX + b\right] \\
+& = a\mathbb{E}\left[X\right] + b \\
+\rightarrow b &= \mathbb{E}\left[Y\right] - a\mathbb{E}\left[X\right] \\
+ \\
+\mathbb{E}\left[XY\right] 
+& = \mathbb{E}\left[X(aX+b)\right] \\
+& = a\mathbb{E}\left[X^2\right] + b \mathbb{E}\left[X\right] \\
+& = a\mathbb{E}\left[X^2\right] + \left(\mathbb{E}\left[Y\right] - a\mathbb{E}\left[X\right]\right) \mathbb{E}\left[X\right] \\
+& = a\mathbb{E}\left[X^2\right] - a\mathbb{E}\left[X\right]^2  + \mathbb{E}\left[Y\right]\mathbb{E}\left[X\right]  \\
+& = a\mathbb{VAR}\left[X\right]   + \mathbb{E}\left[Y\right]\mathbb{E}\left[X\right]  \\
+\rightarrow a &= \frac{\mathbb{E}\left[XY\right]-\mathbb{E}\left[X\right]\mathbb{E}\left[Y\right]}{\mathbb{VAR}\left[X\right]} \\
+&= \frac{\mathbb{COV}\left[X,Y\right]}{\mathbb{VAR}\left[X\right]} \\
+\rightarrow b &= \mathbb{E}\left[Y\right] - \frac{\mathbb{COV}\left[X,Y\right]}{\mathbb{VAR}\left[X\right]}\mathbb{E}\left[X\right] \\
+\end{split}
+$$
 # anki
+
+START
+Basic
+describe $a$ and $b$ depending on $\mathbb{E}\left[X\right]$, $\mathbb{E}\left[Y\right]$,  $\mathbb{VAR}\left[X\right]$, $\mathbb{VAR}\left[Y\right]$ and $\mathbb{COVAR}\left[X, Y\right]$
+$$\mathbb{E}\left[Y|X\right] = aX+b$$
+Back: 
+$$
+\begin{split}
+\mathbb{E}\left[Y\right] 
+& = \mathbb{E}\left[\mathbb{E}[Y|X]\right] \\
+& = \mathbb{E}\left[\mathbb{E}[aX+b|X]\right] \\
+& = \mathbb{E}\left[aX + b\right] \\
+& = a\mathbb{E}\left[X\right] + b \\
+\rightarrow b &= \mathbb{E}\left[Y\right] - a\mathbb{E}\left[X\right] \\
+ \\
+\mathbb{E}\left[XY\right] 
+& = \mathbb{E}\left[X(aX+b)\right] \\
+& = a\mathbb{E}\left[X^2\right] + b \mathbb{E}\left[X\right] \\
+& = a\mathbb{E}\left[X^2\right] + \left(\mathbb{E}\left[Y\right] - a\mathbb{E}\left[X\right]\right) \mathbb{E}\left[X\right] \\
+& = a\mathbb{E}\left[X^2\right] - a\mathbb{E}\left[X\right]^2  + \mathbb{E}\left[Y\right]\mathbb{E}\left[X\right]  \\
+& = a\mathbb{VAR}\left[X\right]   + \mathbb{E}\left[Y\right]\mathbb{E}\left[X\right]  \\
+\rightarrow a &= \frac{\mathbb{E}\left[XY\right]-\mathbb{E}\left[X\right]\mathbb{E}\left[Y\right]}{\mathbb{VAR}\left[X\right]} \\
+&= \frac{\mathbb{COV}\left[X,Y\right]}{\mathbb{VAR}\left[X\right]} \\
+\rightarrow b &= \mathbb{E}\left[Y\right] - \frac{\mathbb{COV}\left[X,Y\right]}{\mathbb{VAR}\left[X\right]}\mathbb{E}\left[X\right] \\
+\end{split}
+$$
+Tags: mathematics, statistics
+<!--ID: 1675329130225-->
+END
+
+
+START
+Basic
+[[joint distribution]] to [[conditional expectation]] and [[conditional variance]]
+
+$$
+f_{XY}(x,y)=
+\begin{cases}
+x+y
+,& \text{if } x, y \in [0,1]\\
+0
+,& \text{otherwise}
+\end{cases}
+$$
+
+- $\mathbb{E}\left[Y|X=x\right]$
+- $\mathbb{VAR}\left[Y|X=x\right]$
+If it is observed that $X = \frac{1}{2}$
+- what predicted value of Y will have the smallest [[mean square error]]?
+- What will be the value of this [[mean square error]]?
+- General [[mean square error]] if $X$ is observed (integral only)
+- how much is the observation of $X$ worth for predicting $Y$ (equation only)
+Back: 
+$$
+f_{X}(x)=
+\begin{cases}
+x+\frac{1}{2}
+,& \text{if } x \in [0,1]\\
+0
+,& \text{otherwise}
+\end{cases}
+$$
+$$ f_{Y|X=x}(y,x)=\frac{f_{XY}(x,y)}{f_{X}(x)}  $$
+$$
+\begin{split}
+\mathbb{E}\left[Y|X=x\right] 
+& = \frac{3x+2}{3(2x+1)} \\
+ \\
+\mathbb{E}\left[Y^2|X=x\right] 
+& = \frac{4x+3}{6(2x+1)} \\
+ \\
+\mathbb{VAR}\left[Y^2|X=x\right] 
+& = \frac{4x+3}{6(2x+1)} - \frac{3x+2}{3(2x+1)}^2 \\
+\end{split}
+$$
+### [[mean square error]] optimization given $X=\frac{1}{2}$
+$$
+\begin{split}
+\mathbb{E}\left[Y|X=\frac{1}{2}\right] 
+& = \frac{3x+2}{3(2x+1)} = \frac{7}{12} \\
+ \\
+\mathbb{VAR}\left[Y|X=\frac{1}{2}\right] 
+& = \frac{4x+3}{6(2x+1)} - \frac{3x+2}{3(2x+1)}^2 = \frac{11}{144} \\
+\end{split}
+$$
+### general [[mean square error]] if $X$ is observed
+$$
+\begin{split}
+\mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
+&= \int\limits_0^1 f_{X}(x) \mathbb{VAR}\left[Y|X=x\right] dx \\
+&= \int\limits_0^1 \left(x+\frac{1}{2}\right) \left(\frac{4x+3}{6(2x+1)} - \frac{3x+2}{3(2x+1)}^2 \right) dx
+\end{split}
+$$
+### [[mean square error]] improvement because of the obseration of $X$
+$$
+
+\mathbb{VAR}_{Y}\left[Y \right] - \mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
+
+$$
+Tags: mathematics, statistics
+<!--ID: 1675329130228-->
+END
+
+START
+Basic
+proof for $\mathbb{E}\left[Y|X\right]=c \Rightarrow \mathbb{COV}\left[X,Y\right]=0$
+Back: 
+$$
+\begin{split}
+\mathbb{E}\left[YX\right] 
+& = \mathbb{E}\left[\mathbb{E}[XY|X]\right] \\
+& = \mathbb{E}\left[X\mathbb{E}[Y|X]\right] \\
+& = \mathbb{E}\left[X\right]\mathbb{E}\left[Y\right] \\
+ \\
+\mathbb{COV}\left[X,Y\right]
+& = \mathbb{E}\left[YX\right]-\mathbb{E}\left[X\right]\mathbb{E}\left[Y\right] \\
+& = \mathbb{E}\left[YX\right]-\mathbb{E}\left[YX\right] =0 \\
+\end{split}
+$$
+Tags: mathematics, statistics
+<!--ID: 1675329130232-->
+END
+
+
 
 START
 Basic

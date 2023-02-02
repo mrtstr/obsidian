@@ -76,7 +76,9 @@ Y&=X^2 \\
 0 \\
 \end{split}
 $$
-# anki
+
+
+# Anki
 
 START
 Basic

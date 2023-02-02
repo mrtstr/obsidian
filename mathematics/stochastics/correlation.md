@@ -32,6 +32,7 @@ X \perp Y &\Rightarrow \rho[X,Y] = \mathbb{COVAR}[X,y] = 0 \\
 \end{split}
 $$
 proof:
+$X$ is symetric around $0$ and thus $\mathbb{E}\left[X^n\right]=0$ for every odd $n$
 $$
 \rho[X,Y] = \frac{\mathbb{COVAR}[X,Y]}{\sigma_X\sigma_Y}=\frac{0}{\sigma_X\sigma_Y} = 0
 $$
@@ -65,7 +66,30 @@ $$
 ## interpretation of a small [[correlation]]
 - a small $\left|\rho\left[X,Y\right]\right|$ does not mean that $X$ and $Y$ are not related - it only says that there is no linear relationship between them
 
+# examples
+Suppose that X has the [[continous uniform distribution]] on the interval $[−2, 2]$ and $Y = X^6$. Show that $X$ and $Y$ are uncorrelated. 
+
+ $X$ is symetric around $0$ and thus $\mathbb{E}\left[X^n\right]=0$ for every odd $n$
+$$
+\rho[X,Y] = \frac{\mathbb{COVAR}[X,Y]}{\sigma_X\sigma_Y}=\frac{\mathbb{E}\left[X^7\right]-\mathbb{E}\left[X\right]\mathbb{E}\left[X^6\right]}{\sigma_X\sigma_Y} = \frac{0-0\mathbb{E}\left[X^6\right]}{\sigma_X\sigma_Y} = 0
+$$
+
 # Anki
+
+START
+Basic
+Suppose that X has the [[continous uniform distribution]] on the interval $[−2, 2]$ and $Y = X^6$. Show that $X$ and $Y$ are uncorrelated. 
+Back: 
+$X$ is symetric around $0$ and thus $\mathbb{E}\left[X^n\right]=0$ for every odd $n$
+$$
+\rho[X,Y] = \frac{\mathbb{COVAR}[X,Y]}{\sigma_X\sigma_Y}=\frac{\mathbb{E}\left[X^7\right]-\mathbb{E}\left[X\right]\mathbb{E}\left[X^6\right]}{\sigma_X\sigma_Y} = \frac{0-0\mathbb{E}\left[X^6\right]}{\sigma_X\sigma_Y} = 0
+$$
+
+Tags: mathematics, statistics
+<!--ID: 1675329130217-->
+END
+
+
 START
 Basic
 [[correlation]]
