@@ -91,8 +91,7 @@
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -158,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/correlation.md",
+                "file": "mathematics/stochastics/conditional expectation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/correlation.md",
+                "file": "mathematics/stochastics/conditional expectation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/correlation.md"
+                "file": "mathematics/stochastics/conditional expectation.md"
               }
             }
           }
@@ -220,10 +219,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d55b02383b971a2",
+  "active": "6fc50981f190b8ad",
   "lastOpenFiles": [
-    "mathematics/stochastics/covariance.md",
     "mathematics/stochastics/correlation.md",
+    "mathematics/stochastics/covariance.md",
     "statistical learning/loss functions.md",
     "mathematics/stochastics/stochastic independent.md",
     "statistical learning/models/generalized linear models.md",

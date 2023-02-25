@@ -116,6 +116,25 @@ $$
 & = \mathbb{E}\left[Y\right]
 \end{split}
 $$
+
+
+### example
+$$
+\mathbb{E}[XY]  = \mathbb{E}\left[X\mathbb{E}[Y|X]\right]
+$$
+#### proof
+$$
+\begin{split}
+\mathbb{E}\left[X\mathbb{E}[Y|X]\right] 
+& =\int\limits_{-\infty}^\infty x f_{X}(x) 
+\int\limits_{-\infty}^\infty  f_{Y|X}(y|x)dy 
+\:dx \\
+& = \int\limits_{-\infty}^\infty   \int\limits_{-\infty}^\infty    xyf_{YX}(y, x)dx \:dy \\
+& = \mathbb{E}\left[XY\right]
+\end{split}
+$$
+
+
 # Examples
 ## proof for $\mathbb{E}\left[Y|X\right]=c \Rightarrow \mathbb{COV}\left[X,Y\right]=0$
 $$
@@ -602,4 +621,27 @@ $$
 
 Tags: mathematics, statistics
 <!--ID: 1674984828829-->
+END
+
+
+START
+Basic
+proof for:
+$$
+\mathbb{E}[XY]  = \mathbb{E}\left[X\mathbb{E}[Y|X]\right]
+$$
+Back: 
+$$
+\begin{split}
+\mathbb{E}\left[X\mathbb{E}[Y|X]\right] 
+& =\int\limits_{-\infty}^\infty x f_{X}(x) 
+\int\limits_{-\infty}^\infty  f_{Y|X}(y|x)dy 
+\:dx \\
+& = \int\limits_{-\infty}^\infty   \int\limits_{-\infty}^\infty    xyf_{YX}(y, x)dx \:dy \\
+& = \mathbb{E}\left[XY\right]
+\end{split}
+$$
+
+Tags: mathematics, statistics
+<!--ID: 1677320005316-->
 END
