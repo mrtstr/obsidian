@@ -51,6 +51,8 @@ Tags: mathematics, statistics
 <!--ID: 1674999785357-->
 END
 
+
+
 START
 Basic
 [[conditional variance]]: [[law of total probability]] with proof
