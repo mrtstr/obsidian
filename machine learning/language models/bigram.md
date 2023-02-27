@@ -24,5 +24,5 @@ process
 2) calculate a $n \times n$ [[matrix]] containing the [[conditional probability]] $A = \left(P(c_{n+1} = char_i \: | \: c_{n} = char_j)\right)_{i \in \mathcal{I}, j \in \mathcal{J}}$ by counting the cases it occures
 3) sample from the distributions
 Tags: ml
-
+<!--ID: 1677481134904-->
 END
