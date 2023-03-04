@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f82997b47226d639",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/sprecial distributions/discrete/bernoulli distribution.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -136,9 +148,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8d95cf7e5886b462",
+  "active": "d182ce1103a9234d",
   "lastOpenFiles": [
     "mathematics/stochastics/sprecial distributions/discrete/bernoulli distribution.md",
+    "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md",
     "mathematics/stochastics/covariance.md",
     "mathematics/stochastics/correlation.md",
     "mathematics/stochastics/stochastic independent.md",
@@ -146,7 +159,6 @@
     "statistical learning/mean square error.md",
     "mathematics/stochastics/conditional variance.md",
     "machine learning/language models/bigram.md",
-    "machine learning/language models/language model.md",
-    "Untitled 1.canvas"
+    "machine learning/language models/language model.md"
   ]
 }
