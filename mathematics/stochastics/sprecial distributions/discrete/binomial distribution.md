@@ -1,6 +1,6 @@
 - [[discrete distribution]] of a [[discrete random variable]] that describes the number of positive  [[ random variable|bernoulli experiments]] with a parameter $p$ after $n$ 
 
-![[bernoulli random variable#bernoulli random variable]]
+![[bernoulli distribution#bernoulli random variable]]
 
 
 ![[Pasted image 20221120114927.png]]

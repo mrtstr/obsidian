@@ -21,7 +21,7 @@ $$
 
 ## important [[discrete distribution]]
 
-### [[bernoulli random variable|bernoulli distribution]]
+### [[bernoulli distribution|bernoulli distribution]]
 
 ### [[discrete uniform distribution]]
 
