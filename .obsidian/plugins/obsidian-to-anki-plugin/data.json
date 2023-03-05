@@ -166,7 +166,7 @@
     "statistical learning/bagging.md": "2729dfcef226fdeb240c63ead6df4e01",
     "mathematics/stochastics/vector notation.md": "b909909181fe1c8d46e86f0299fa424f",
     "mathematics/stochastics/variance.md": "5f5d78dc09b38c3ed23c261cb4775a59",
-    "mathematics/stochastics/unordered sampling without replacement.md": "de5e7aa47ec294bf69261219393ef5fc",
+    "mathematics/stochastics/unordered sampling without replacement.md": "3c57a6fecf52e3eb977a5a7f8d0da034",
     "mathematics/stochastics/unordered sampling with replacement.md": "48ab759293db02df9b92ccff72adb7a5",
     "mathematics/stochastics/symmetric matrix.md": "a973f4657da25d9f1cc370570aeba705",
     "mathematics/stochastics/stochastic process.md": "506d73380daeb25215b008aaeb7c1ca1",
@@ -420,7 +420,8 @@
     "algorithms/approach/binary search.md": "5b6c5c5f90f0381612bdc0f37995dec9",
     "2022-09-05.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/sprecial distributions/discrete/bernoulli distribution.md": "942c0b5c136217f7859d976bf5ca65af",
-    "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md": "26004aa51a557d7498cb7a90699b2fcc"
+    "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md": "26004aa51a557d7498cb7a90699b2fcc",
+    "mathematics/stochastics/sprecial distributions/discrete/hypergeometric distribution.md": "f141cd102cabf41f7cee320d6dc32825"
   },
   "fields_dict": {
     "Basic": [
