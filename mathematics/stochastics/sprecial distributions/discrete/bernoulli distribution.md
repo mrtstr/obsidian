@@ -1,4 +1,4 @@
-## bernoulli random variable
+# bernoulli random variable
 - [[discrete random variable]] $Z$ that can only take $0$ and $1$
 	→support of $Z = \{0,1\}$ 
 - parameter $p$ defines the probability of $Z$ being 0 or 1
@@ -20,7 +20,7 @@ f_Z(z) &=
 \end{cases}
 \end{split}
 $$
-# [[expectation]]
+## [[expectation]]
 $$
 \mathbb{E}[B] = \sum_{\{0,1\}} b_i \cdot P(B=b_i) = 1 \cdot p + 0 \cdot (1-p) = p
 $$
