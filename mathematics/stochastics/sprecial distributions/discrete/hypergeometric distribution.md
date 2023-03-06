@@ -30,10 +30,40 @@ $$
 &= \sum_{i=1}^n \mathbb{VAR}[X_i] + \sum_{i=1}^n \sum_{i=1, i\neq j}^n \mathbb{COVAR}[X_i,X_i] \\
 &= n \mathbb{VAR}[X_1] + n(n-1) \mathbb{COVAR}[X_2,X_1] \\
 &= n p(1-p) + n(n-1) \frac{ab}{(a+b)^2(a+b-1)} \\
-
+&= n p(1-p)  \left(1- \frac{n-1}{T-1}\right) \quad with \: T=a+b \\
+&= n p(1-p)  \frac{T-n}{T-1} \\
 \end{split}
 $$
+## Comparison with the [[binomial distribution]]
+- let $X \sim Bin\left(p=\frac{a}{a+b}, n\right)$ and $Y \sim HypG\left(a,b, n\right)$
+- The [[expectation]] of the [[binomial distribution]] and [[hypergeometric distribution]] is equal
+$$
+\mathbb{E}[Y] = \mathbb{E}[X] = np
+$$
+- the [[variance]] of the [[hypergeometric distribution]] is equal to the [[variance]] of the [[binomial distribution]] multiplyed with the finite population correction factor $\alpha(T,n) \in [0,1]$
+- if the number of balls in much greater than the sample size the finite population correction factor is almost one because the non replacement does not matter and the [[binomial distribution]] is almost equal to the [[hypergeometric distribution]]
+- if all of the balls are sampled without replacement there is no randomness at all and the [[variance]] of the [[hypergeometric distribution]] is zero
 
+$$
+\begin{split}
+\mathbb{VAR}[x] &= n p (1-p) \\
+\mathbb{VAR}[Y] &= n p(1-p) \cdot  \frac{T-n}{T-1} \quad with \: T=a+b \\
+\mathbb{VAR}[Y] &= \mathbb{VAR}[X] \cdot \frac{T-n}{T-1}    \\
+ &= \mathbb{VAR}[X] \cdot \alpha(T,n)  \\
+\end{split}
+$$
+$$
+\begin{split}
+\lim_{\frac{T}{n}\rightarrow \infty} \alpha(T,n) &= 0   \\
+\lim_{\frac{T}{n}\rightarrow 0} \alpha(T,n) &= 1   \\
+\end{split}
+$$
+$$
+\begin{split}
+a+b \gg n \Rightarrow \alpha(T,n) \approx 1 \Rightarrow \mathbb{E}[Y] \approx \mathbb{E}[X]   \\
+a+b = n \Rightarrow \alpha(T,n) = 0 \Rightarrow \mathbb{E}[Y] = 0  \\
+\end{split}
+$$
 
 # Anki
 
@@ -98,9 +128,50 @@ $$
 &= \sum_{i=1}^n \mathbb{VAR}[X_i] + \sum_{i=1}^n \sum_{i=1, i\neq j}^n \mathbb{COVAR}[X_i,X_i] \\
 &= n \mathbb{VAR}[X_1] + n(n-1) \mathbb{COVAR}[X_2,X_1] \\
 &= n p(1-p) + n(n-1) \frac{ab}{(a+b)^2(a+b-1)} \\
+&= n p(1-p)  \left(1- \frac{n-1}{T-1}\right) \quad with \: T=a+b \\
+&= n p(1-p)  \frac{T-n}{T-1} \\
 
 \end{split}
 $$
 Tags: mathematics, statistics
 <!--ID: 1678001380982-->
+END
+
+
+START
+Basic
+difference: [[binomial distribution]] and [[hypergeometric distribution]]
+Back: 
+- let $X \sim Bin\left(p=\frac{a}{a+b}, n\right)$ and $Y \sim HypG\left(a,b, n\right)$
+- The [[expectation]] of the [[binomial distribution]] and [[hypergeometric distribution]] is equal
+$$
+\mathbb{E}[Y] = \mathbb{E}[X] = np
+$$
+- the [[variance]] of the [[hypergeometric distribution]] is equal to the [[variance]] of the [[binomial distribution]] multiplyed with the finite population correction factor $\alpha(T,n) \in [0,1]$
+- if the number of balls in much greater than the sample size the finite population correction factor is almost one because the non replacement does not matter and the [[binomial distribution]] is almost equal to the [[hypergeometric distribution]]
+- if all of the balls are sampled without replacement there is no randomness at all and the [[variance]] of the [[hypergeometric distribution]] is zero
+
+$$
+\begin{split}
+\mathbb{VAR}[x] &= n p (1-p) \\
+\mathbb{VAR}[Y] &= n p(1-p) \cdot  \frac{T-n}{T-1} \quad with \: T=a+b \\
+\mathbb{VAR}[Y] &= \mathbb{VAR}[X] \cdot \frac{T-n}{T-1}    \\
+ &= \mathbb{VAR}[X] \cdot \alpha(T,n)  \\
+\end{split}
+$$
+$$
+\begin{split}
+\lim_{\frac{T}{n}\rightarrow \infty} \alpha(T,n) &= 0   \\
+\lim_{\frac{T}{n}\rightarrow 0} \alpha(T,n) &= 1   \\
+\end{split}
+$$
+$$
+\begin{split}
+a+b \gg n \Rightarrow \alpha(T,n) \approx 1 \Rightarrow \mathbb{E}[Y] \approx \mathbb{E}[X]   \\
+a+b = n \Rightarrow \alpha(T,n) = 0 \Rightarrow \mathbb{E}[Y] = 0  \\
+\end{split}
+$$
+
+Tags: mathematics, statistics
+<!--ID: 1678075855083-->
 END
