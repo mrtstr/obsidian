@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md",
+                "file": "mathematics/stochastics/discrete distribution.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/unordered sampling without replacement.md",
+                "file": "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,14 +85,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/basics/eulers number.md",
+                "file": "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -158,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/sprecial distributions/discrete/poisson distribution.md",
+                "file": "mathematics/stochastics/discrete distribution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/sprecial distributions/discrete/poisson distribution.md",
+                "file": "mathematics/stochastics/discrete distribution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/sprecial distributions/discrete/poisson distribution.md"
+                "file": "mathematics/stochastics/discrete distribution.md"
               }
             }
           }
@@ -209,17 +208,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d8fc78d8468d701a",
+  "active": "d182ce1103a9234d",
   "lastOpenFiles": [
-    "mathematics/stochastics/sprecial distributions/discrete/bernoulli distribution.md",
-    "mathematics/stochastics/sprecial distributions/discrete/poisson distribution.md",
-    "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md",
-    "mathematics/basics/eulers number.md",
+    "mathematics/stochastics/discrete uniform distribution.md",
+    "mathematics/stochastics/discrete distribution.md",
     "mathematics/stochastics/sprecial distributions/discrete/hypergeometric distribution.md",
+    "mathematics/stochastics/sprecial distributions/discrete/poisson distribution.md",
+    "mathematics/stochastics/sprecial distributions/discrete/bernoulli distribution.md",
+    "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md",
+    "mathematics/stochastics/probability function.md",
     "mathematics/stochastics/unordered sampling without replacement.md",
-    "mathematics/stochastics/covariance.md",
-    "mathematics/stochastics/correlation.md",
-    "mathematics/stochastics/stochastic independent.md",
-    "statistical learning/models/generalized linear models.md"
+    "mathematics/basics/eulers number.md",
+    "mathematics/stochastics/covariance.md"
   ]
 }

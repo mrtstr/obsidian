@@ -3,14 +3,18 @@
 - given a [[set]] with $a$ ones and $b$ zeros each is a random [[sampling|random sample]] is a [[bernoulli distribution| bernoulli experiment]]
 - the sum of $n$ [[unordered sampling without replacement|unordered samples without replacement]] has a [[hypergeometric distribution]]
 - let $p=\frac{a}{a+b}$ be the proportion of ones
-The [[probability function]] of x is given by the following:
+### [[probability function]]
+- $n =$ number of [[unordered sampling without replacement|unordered samples without replacement]] 
+- $a=$ number of positive balls
+- $b=$ number of negative balls
+- $x=$ number of positive outcomes
 $$
 f_X({x|a,b,n}) = \frac{
 {a \choose x}{b \choose n-x}
 }{{a+b \choose n}}
 \quad for \: max\{0, n-b\}<x<min\{n, a\}
 $$
-# [[expectation]]
+### [[expectation]]
 ![[unordered sampling without replacement#expectation of unordered sampling without replacement]]
 # [[variance]]
 $$

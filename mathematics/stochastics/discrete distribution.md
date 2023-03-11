@@ -21,11 +21,16 @@ $$
 
 ## important [[discrete distribution]]
 
-### [[bernoulli distribution|bernoulli distribution]]
-
-### [[discrete uniform distribution]]
-
-### [[binomial distribution]]
+## [[bernoulli distribution|bernoulli distribution]]
+![[bernoulli distribution#probability function]]
+## [[discrete uniform distribution]]
+![[discrete uniform distribution#probability function]]
+## [[binomial distribution]]
+![[binomial distribution#probability function]]
+### [[poisson distribution]]
+![[poisson distribution#probability function]]
+### [[hypergeometric distribution]]
+![[hypergeometric distribution#probability function]]
 
 START
 Basic
@@ -58,3 +63,91 @@ $$
 Tags: mathematics, statistics
 <!--ID: 1667204899520-->
 END
+
+
+START
+Basic
+## important [[discrete distribution]] summary
+- [[probability function]]
+- explainaition
+Back: 
+
+
+
+### [[bernoulli distribution]]
+- binary [[random experiment]] 
+- $p=$ probability of positive outcome
+$$
+\begin{split}
+f_X(x | p) &= 
+\begin{cases}
+    p,& \text{if } x= 1\\
+    1-p,& \text{if } x= 0\\
+    0,              & \text{otherwise}
+\end{cases} \\
+&= 
+\begin{cases}
+    p^x (1-p)^{1-x},& \text{if } x= 0,1\\
+    0,              & \text{otherwise}
+\end{cases}
+\end{split}
+$$
+### [[binomial distribution]]
+- $n =$ number of [[bernoulli distribution|bernoulli experiments]] 
+- $p=$ probability of positive outcome
+- $x=$ number of positive outcomes
+
+$$
+f_X(X = x | n, p)= 
+\begin{cases}
+\overbrace{{n \choose x}}^\text{number of valid splits }
+\overbrace{p^{x}(1-p)^{n-x}}^\text{ probability per split}
+ 
+,& \text{if } x \in \{0,1,2,..., n\}\\
+0
+,& \text{otherwise}
+\end{cases}
+$$
+
+### [[poisson distribution]]
+- $\lambda = np$ with $n =$ number of [[bernoulli distribution|bernoulli experiments]] and $p=$ probability of positive outcome
+- assumtions: $p \ll 1 \Leftrightarrow x \ll n$
+- $x=$ number of positive outcomes
+$$
+f_X(x | \lambda) =
+\begin{cases}
+\frac{\lambda^xe^{-\lambda}}{x!}
+& \text{if } x \in \{0,1,2,..., n\}\\
+0
+& \text{otherwise}
+\end{cases}
+$$
+
+### [[hypergeometric distribution]]
+- $n =$ number of [[unordered sampling without replacement|unordered samples without replacement]] 
+- $a=$ number of positive balls
+- $b=$ number of negative balls
+- $x=$ number of positive outcomes
+$$
+f_X({x|a,b,n}) = \frac{
+{a \choose x}{b \choose n-x}
+}{{a+b \choose n}}
+\quad for \: max\{0, n-b\}<x<min\{n, a\}
+$$
+### [[discrete uniform distribution]]
+- has the same probability of taking all integers inside a range $\{a,...,b\}$ and 0 for all other values
+
+$$
+f_X(X = x | a, b)= 
+\begin{cases}
+\frac{1}{b-a+1}
+,& \text{if } x \in \{a,a+1,...,b-1, b\}\\
+0
+,& \text{otherwise}
+\end{cases}
+$$
+
+Tags: mathematics, statistics
+<!--ID: 1678520971208-->
+END
+

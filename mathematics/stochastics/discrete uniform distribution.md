@@ -1,7 +1,9 @@
 [[discrete distribution]] of a [[discrete random variable]] with the same probability of taking all integers inside a range $\{a,...,b\}$ and 0 for all other values.
-## probability function
+### [[probability function]]
+- has the same probability of taking all integers inside a range $\{a,...,b\}$ and 0 for all other values
+
 $$
-f_X(X = x)= P(X = x)
+f_X(X = x | a, b)= 
 \begin{cases}
 \frac{1}{b-a+1}
 ,& \text{if } x \in \{a,a+1,...,b-1, b\}\\

@@ -1,3 +1,4 @@
+# definition
 - [[discrete distribution]] of a [[discrete random variable]] that describes the number of positive  [[ random variable|bernoulli experiments]] with a parameter $p$ after $n$ 
 - $X_1, ..., X_n \sim Ber(p)$
 - $Y= g(\boldsymbol{X}) = X_1 + ... + X_n \sim Bin(n, p)$
@@ -7,9 +8,13 @@
 
 ![[Pasted image 20221120114927.png]]
 
-## probability function
+### [[probability function]]
+- $n =$ number of [[bernoulli distribution|bernoulli experiments]] 
+- $p=$ probability of positive outcome
+- $x=$ number of positive outcomes
+
 $$
-f_X(X = x)= P(X = x)
+f_X(X = x | n, p)= 
 \begin{cases}
 \overbrace{{n \choose x}}^\text{number of valid splits }
 \overbrace{p^{x}(1-p)^{n-x}}^\text{ probability per split}
@@ -19,18 +24,19 @@ f_X(X = x)= P(X = x)
 ,& \text{otherwise}
 \end{cases}
 $$
-## interpretation 
+
+### interpretation 
 - The can interpret the chain of [[ random variable|bernoulli experiments]] as a [[set]] $\{B_1,...,B_n\}$.
 - The number of ways to split up the [[ random variable|bernoulli experiments]] in a positive group and a negative group with $x$ of them being in the positive group is $n \choose x$
 - for each of the possible splits the probability of all [[ random variable|bernoulli experiments]] in the positive group being positive and all [[ random variable|bernoulli experiments]] in the negative group being negative is $p^{x}(1-p)^{n-x}$
 
 
-## [[expectation]]
+### [[expectation]]
 $Y= X_1 + ... + X_n$ with $X_1, ..., X_n \sim Ber(p)$ i.i.d.
 $$
 \mathbb{E}[Y] =\mathbb{E}[X_1 + ... + X_n] = n \mathbb{E}[X_i] = np
 $$
-## [[variance]]
+### [[variance]]
 
 $Y= X_1 + ... + X_n$ with $X_1, ..., X_n \sim Ber(p)$ i.i.d.
 $$
