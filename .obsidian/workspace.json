@@ -210,15 +210,15 @@
   },
   "active": "d182ce1103a9234d",
   "lastOpenFiles": [
-    "mathematics/stochastics/discrete uniform distribution.md",
+    "mathematics/stochastics/sprecial distributions/discrete/negative binomial distibution.md",
+    "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md",
     "mathematics/stochastics/discrete distribution.md",
+    "mathematics/stochastics/discrete uniform distribution.md",
     "mathematics/stochastics/sprecial distributions/discrete/hypergeometric distribution.md",
     "mathematics/stochastics/sprecial distributions/discrete/poisson distribution.md",
     "mathematics/stochastics/sprecial distributions/discrete/bernoulli distribution.md",
-    "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md",
     "mathematics/stochastics/probability function.md",
     "mathematics/stochastics/unordered sampling without replacement.md",
-    "mathematics/basics/eulers number.md",
-    "mathematics/stochastics/covariance.md"
+    "mathematics/basics/eulers number.md"
   ]
 }
