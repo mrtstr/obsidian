@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "b4697004e1fa38c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "audi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "95740a2425ca7980",
             "type": "leaf",
             "state": {
@@ -91,7 +103,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -157,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/discrete distribution.md",
+                "file": "audi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/discrete distribution.md",
+                "file": "audi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/discrete distribution.md"
+                "file": "audi.md"
               }
             }
           }
@@ -208,11 +221,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d182ce1103a9234d",
+  "active": "b4697004e1fa38c0",
   "lastOpenFiles": [
+    "mathematics/stochastics/discrete distribution.md",
     "mathematics/stochastics/sprecial distributions/discrete/negative binomial distibution.md",
     "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md",
-    "mathematics/stochastics/discrete distribution.md",
     "mathematics/stochastics/discrete uniform distribution.md",
     "mathematics/stochastics/sprecial distributions/discrete/hypergeometric distribution.md",
     "mathematics/stochastics/sprecial distributions/discrete/poisson distribution.md",
