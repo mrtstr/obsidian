@@ -363,7 +363,7 @@
     "code/pandas/pd multiindex.md": "dd7dd589594ed8acc5bdb8e8a8f56dd4",
     "code/pandas/pd index.md": "e56f82a57880da60c7a0cf6e0f97a12f",
     "code/pandas/pd dtype.md": "c98019e1a0438dced44ca8389aa47a0d",
-    "code/pandas/pd dataframe.md": "b519ce38daa25267145a3a9ea89b16e8",
+    "code/pandas/pd dataframe.md": "250c8888e48314b84726d77cd4cf6139",
     "code/pandas/pd column.md": "a4e23116e94063f19293f6014822596d",
     "code/pandas/pd calegorical data.md": "ff322925affb89fe9d919203e77c1248",
     "code/pandas/pandas.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -427,8 +427,17 @@
     "mathematics/stochastics/sprecial distributions/discrete/negative binomial distibution.md": "c29a071557412dfb88f28d234c12884e",
     "audi.md": "66d02c8bf6f0bfe6cdf5447a2695ebcc",
     "code/pandas/pd nan.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/pandas/operations/pd concat.md": "9f119c49f018d31229e8baf437687ef0",
-    "code/numpy/np concat.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "code/pandas/operations/pd concat.md": "513be5c62b49af83e7e08d15e3dffa7b",
+    "code/numpy/np concat.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/pandas/usecase/pd appending row to dataframe.md": "603421398ea1eaad76f003faf3002494",
+    "code/pandas/operations/pd merge.md": "53b2d90e1eb0fd80f43c64d3f8fc0740",
+    "code/pandas/operations/pd join.md": "f180d1fdb9e014149381102b98b1ce84",
+    "code/pandas/usecase/pd joining with two multiindexes.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/pandas/usecase/pd join single index to multiindex.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/pandas/operations/pd compare.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/pandas/operations/pd merge_asof.md": "d3c5472c8a97e88134f0a0dd1cc3bd80",
+    "code/pandas/operations/pd merge_ordered.md": "705fa93225c0b93777bce25003fe329e",
+    "code/pandas/operations/pd joining on combination of columns and index levels.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [

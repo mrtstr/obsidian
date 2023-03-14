@@ -3,22 +3,26 @@
 ```python
 pd.concat(
     objs,
+    # df or series that will be concatinated
     axis=0,
+    # {0->index (rows), 1->columns}
+    # The axis to concatenate along
     join="outer",
+    # How to handle indexes on other axis(es)
+    # Outer for union and inner for intersection.
+    # in {‘inner’, ‘outer’}
     ignore_index=False,
+    # replace the other index with a sequence 0, 1, ...
     keys=None,
+    # in set create multiindex 
+	# first level being the name of origin dataframe 
+	# keys containing the names of the dataframes.
     levels=None,
     names=None,
     verify_integrity=False,
-    copy=True,
+    # Check whether the new concatenated axis contains duplicates
 )
 ```
-
-- `objs`: [[pd dataframe|pd dataframes]] or [[pd series]] that will be concatinated
-- `axis`: {0- [[pd index]] (rows), 1- [[pd column]]}, default 0 - [[pd index]] (rows). The axis to concatenate along.
-- `join`: {‘inner’, ‘outer’}, default ‘outer’. How to handle indexes on other axis(es). Outer for union and inner for intersection.
-- `ignore_index`: replace the other index with a sequence 0, 1, ...
-- `keys`: sequence, default None. Chreate a [[pd multiindex]] with the first level being the original dataframe it belongs to and the keys containing the names of the dataframes.
 
 # examples
 
@@ -148,19 +152,26 @@ Back:
 ```python
 pd.concat(
     objs,
+    # df or series that will be concatinated
     axis=0,
+    # {0->index (rows), 1->columns}
+    # The axis to concatenate along
     join="outer",
+    # How to handle indexes on other axis(es)
+    # Outer for union and inner for intersection.
+    # in {‘inner’, ‘outer’}
     ignore_index=False,
+    # replace the other index with a sequence 0, 1, ...
     keys=None,
+    # in set create multiindex 
+	# first level being the name of origin dataframe 
+	# keys containing the names of the dataframes.
+    levels=None,
+    names=None,
+    verify_integrity=False,
+    # Check whether the new concatenated axis contains duplicates
 )
 ```
-
-- `objs`: [[pd dataframe|pd dataframes]] or [[pd series]] that will be concatinated
-- `axis`: {0- [[pd index]] (rows), 1- [[pd column]]}, default 0 - [[pd index]] (rows). The axis to concatenate along.
-- `join`: {‘inner’, ‘outer’}, default ‘outer’. How to handle indexes on other axis(es). Outer for union and inner for intersection.
-- `ignore_index`: replace the other index with a sequence 0, 1, ...
-- `keys`: sequence, default None. Chreate a [[pd multiindex]] with the first level being the original dataframe it belongs to and the keys containing the names of the dataframes.
-
 Tags: code, pandas
 <!--ID: 1678791381056-->
 END

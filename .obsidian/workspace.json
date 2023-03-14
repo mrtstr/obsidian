@@ -20,12 +20,120 @@
             }
           },
           {
+            "id": "18718245f7e1411f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/usecase/pd appending row to dataframe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d8617ed9ea9f7da9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/usecase/pd join single index to multiindex.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "27f8a53c139b7ad3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/usecase/pd joining with two multiindexes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5cef91ca8f24be7d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd joining on combination of columns and index levels.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b722be6922e2621e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd merge_ordered.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d5a9aa22bbabddc1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd merge_asof.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "561211d41412ffcb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd compare.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7a59fa2323fe242b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd merge.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a37f4afec0ad24df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd join.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "35397db9d5141078",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/pd nan.md",
+                "file": "code/pandas/pd dataframe.md",
                 "mode": "source",
                 "source": false
               }
@@ -115,7 +223,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -181,7 +290,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "code/pandas/operations/pd concat.md",
+                "file": "code/pandas/operations/pd compare.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +307,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "code/pandas/operations/pd concat.md",
+                "file": "code/pandas/operations/pd compare.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -221,7 +330,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "code/pandas/operations/pd concat.md"
+                "file": "code/pandas/operations/pd compare.md"
               }
             }
           }
@@ -243,17 +352,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fa27b631cafadfbf",
+  "active": "561211d41412ffcb",
   "lastOpenFiles": [
-    "code/pandas/operations/pd iloc.md",
+    "code/pandas/operations/pd merge_asof.md",
+    "code/pandas/operations/pd merge_ordered.md",
+    "code/pandas/operations/pd joining on combination of columns and index levels.md",
+    "code/pandas/usecase/pd joining with two multiindexes.md",
+    "code/pandas/usecase/pd join single index to multiindex.md",
+    "code/pandas/usecase/pd appending row to dataframe.md",
+    "code/pandas/operations/pd merge.md",
+    "code/pandas/operations/pd join.md",
     "code/pandas/operations/pd concat.md",
-    "code/pandas/pd nan.md",
-    "code/numpy/jagged array.md",
-    "code/numpy/np concat.md",
-    "code/pandas/operations/pd assign.md",
-    "mathematics/stochastics/sprecial distributions/discrete/bernoulli distribution.md",
-    "mean_median_mode.png",
-    "audi.md",
-    "mathematics/stochastics/discrete distribution.md"
+    "code/pandas/pd dataframe.md"
   ]
 }
