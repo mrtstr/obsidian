@@ -17,7 +17,11 @@
 	- regen
 	- anderes land
 - fokus der arbeit: methoden zur kompensation der domainverschiebung ohne dass neues trainingsdaten erforderlich sind
-- selftraining, adversarial attacks, entropie minimierung, gewichtsregularisierung (verbessern)
+- methoden
+	- selftraining: klassifizierungen des models mit hoher konfidenz als trainingsdaten nutzen 
+	- adversarial attacks: 
+	- entropie minimierung: entropy der model vorhersage minimieren
+	- gewichtsregularisierung: parameter aenderungen vom urspurngszustand bestrafen
 ## 2021 einstieg New Yorker als Data Scientist
 - arbeit im distibutionprojekt: zustendig optimierung der gesamten warenfluesse vom zentrallager in die filiallen
 - Datenpipeline in production die jeder Nacht vollautomatisiert ueber die gesammte zuteilung der ware entscheidet
@@ -36,7 +40,11 @@
 		- image embeddings (vektor der die vosuellen eigenschaft der produktbilder beschreibt)
 	- bei einer pipeline zur datenvorbereitung (hauptarbeit)
 	- training von deep lerning model zur vorhersage von demand quantieles (verbessern)
-		- quantile regression: statt point estimate (wie beispielsweise vorhersage des erwartungswert) vorhersage von verschieden quantielen der Nachfrage verteilung
+		- quantile regression: statt point estimate 
+		- normalerweise vorhersage von erwartungswert 
+		- hier vorhersage von quantielen der Nachfrage verteilung
+			- 25% quantiel: wahscheinlichkeit dass wahrer wert kleiner ist: 25% und 75% dass er groesser ist
+			→ aussage ueber unsicherheit der vorhersage 
 
 # Warum Audi
 - vereint viele Themen die mich sehr interessieren:
