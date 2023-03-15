@@ -32,12 +32,12 @@
             }
           },
           {
-            "id": "152af72d4045c938",
+            "id": "d0831e0544bb7785",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/operations/pd pivot_table.md",
+                "file": "code/pandas/usecase/pd reshape df.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,6 +69,48 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "0bdc5ca3f4e8e868",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72c9937c078c40c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd melt.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d069e9ea224d59c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd pivot_table.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "93961c7635b14c8f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd stack.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +176,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "code/pandas/operations/pd pivot_table.md",
+                "file": "code/pandas/usecase/pd reshape df.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +193,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "code/pandas/operations/pd pivot_table.md",
+                "file": "code/pandas/usecase/pd reshape df.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +216,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "code/pandas/operations/pd pivot_table.md"
+                "file": "code/pandas/usecase/pd reshape df.md"
               }
             }
           }
@@ -196,17 +238,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "152af72d4045c938",
+  "active": "d0831e0544bb7785",
   "lastOpenFiles": [
+    "code/pandas/operations/pd melt.md",
+    "code/pandas/usecase/pd reshape df.md",
+    "code/pandas/operations/pd stack.md",
     "code/pandas/operations/pd pivot.md",
     "code/pandas/operations/pd pivot_table.md",
-    "code/pandas/operations/pd melt.md",
     "code/pandas/pd dataframe.md",
     "code/pandas/operations/pd iloc.md",
     "code/pandas/operations/pd insert.md",
     "code/pandas/operations/pd merge.md",
-    "code/pandas/operations/pd combining dataframes.md",
-    "audi.md",
-    "code/pandas/operations/pd join.md"
+    "code/pandas/operations/pd combining dataframes.md"
   ]
 }
