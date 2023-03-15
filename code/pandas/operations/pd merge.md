@@ -101,7 +101,7 @@ START
 Basic
 [[pandas]] [[pd merge]]
 - general concept
-- parameters
+- parameters (12)
 Back: 
 - joining two [[pd dataframe|pd dataframe]] with [[pd column|pd columns]] or [[pd index]] as keys like in SQL
 ```python
@@ -172,9 +172,13 @@ END
 START
 Basic
 [[pandas]]: [[pd merge]] examples
-- join on [[pd column]] with the same name
--  merge on [[pd column]] with a different name
-Back: 
+```python
+pd.merge(df1, df2, on=["A"], how="outer")
+
+pd.merge(df1, df2, on=["A"], how="inner")
+
+pd.merge(df1, df2, left_on=["A"], right_on=["B"], how="inner")
+```
 
 ```python
 df1 = pd.DataFrame(
@@ -210,6 +214,9 @@ df2 = pd.DataFrame(
 | 2 | N | A2 | N | N | 
 | 3 | N | N | A3 | N | 
 | 4 | N | N | N | A4 |
+
+
+Back: 
 
 ## merge on [[pd column]] with the same name
 ```python

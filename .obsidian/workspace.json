@@ -56,36 +56,12 @@
             }
           },
           {
-            "id": "5cef91ca8f24be7d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/operations/pd joining on combination of columns and index levels.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b722be6922e2621e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/operations/pd merge_ordered.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d5a9aa22bbabddc1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/operations/pd merge_asof.md",
+                "file": "code/pandas/operations/pd concat.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/operations/pd compare.md",
+                "file": "code/pandas/operations/pd concat.md",
                 "mode": "source",
                 "source": false
               }
@@ -290,7 +266,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "code/pandas/operations/pd compare.md",
+                "file": "code/pandas/operations/pd join.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -307,7 +283,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "code/pandas/operations/pd compare.md",
+                "file": "code/pandas/operations/pd join.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -330,7 +306,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "code/pandas/operations/pd compare.md"
+                "file": "code/pandas/operations/pd join.md"
               }
             }
           }
@@ -341,28 +317,17 @@
     "width": 300,
     "collapsed": true
   },
-  "left-ribbon": {
-    "hiddenItems": {
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
-    }
-  },
-  "active": "561211d41412ffcb",
+  "active": "a37f4afec0ad24df",
   "lastOpenFiles": [
-    "code/pandas/operations/pd merge_asof.md",
-    "code/pandas/operations/pd merge_ordered.md",
-    "code/pandas/operations/pd joining on combination of columns and index levels.md",
     "code/pandas/usecase/pd joining with two multiindexes.md",
-    "code/pandas/usecase/pd join single index to multiindex.md",
-    "code/pandas/usecase/pd appending row to dataframe.md",
+    "code/pandas/operations/pd joining on combination of columns and index levels.md",
     "code/pandas/operations/pd merge.md",
-    "code/pandas/operations/pd join.md",
+    "code/pandas/operations/pd merge_ordered.md",
     "code/pandas/operations/pd concat.md",
-    "code/pandas/pd dataframe.md"
+    "code/pandas/operations/pd merge_asof.md",
+    "audi.md",
+    "code/pandas/operations/pd compare.md",
+    "code/pandas/usecase/pd join single index to multiindex.md",
+    "code/pandas/usecase/pd appending row to dataframe.md"
   ]
 }

@@ -47,7 +47,7 @@ Basic
 [[pd join]]
 - usage
 - diffence to [[pd merge]]
-- parameters
+- parameters (7)
 Back: 
 - join [[pd dataframe|pd dataframes]] or [[pd series]] on [[pd column]] or [[pd index]]
 - less prowerful but more convenient version of [[pd merge]]
