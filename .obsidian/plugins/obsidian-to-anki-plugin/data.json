@@ -425,7 +425,7 @@
     "mathematics/stochastics/sprecial distributions/discrete/poisson distribution.md": "6e158c6074183ea53ce9e967bd9fdce8",
     "mathematics/basics/eulers number.md": "3b26b3584fcef0b15851f0d38ef1fdba",
     "mathematics/stochastics/sprecial distributions/discrete/negative binomial distibution.md": "c29a071557412dfb88f28d234c12884e",
-    "audi.md": "e74a402a30e45aa01e4658a0890bb371",
+    "audi.md": "716ad73b591cdea9fa52e5c4e10e1477",
     "code/pandas/pd nan.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/pandas/operations/pd concat.md": "0053dc7ff1652f8f3e09794df1468eee",
     "code/numpy/np concat.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -437,7 +437,11 @@
     "code/pandas/operations/pd compare.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/pandas/operations/pd merge_asof.md": "d3c5472c8a97e88134f0a0dd1cc3bd80",
     "code/pandas/operations/pd merge_ordered.md": "705fa93225c0b93777bce25003fe329e",
-    "code/pandas/operations/pd joining on combination of columns and index levels.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "code/pandas/operations/pd joining on combination of columns and index levels.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/pandas/operations/pd pivot_table.md": "f6099119617b7ae37e71bc872ec59b66",
+    "code/pandas/operations/pd melt.md": "08690ffdf000c70c873e7d8c34ebb686",
+    "code/pandas/operations/pd pivot.md": "95df3ebc7625cf6f44aaa6d7b679e7e6",
+    "code/pandas/operations/pd combining dataframes.md": "8ee4a3def77398fe8057b3004311532e"
   },
   "fields_dict": {
     "Basic": [

@@ -8,96 +8,48 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fa27b631cafadfbf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/operations/pd concat.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "18718245f7e1411f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/usecase/pd appending row to dataframe.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d8617ed9ea9f7da9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/usecase/pd join single index to multiindex.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "27f8a53c139b7ad3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/usecase/pd joining with two multiindexes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d5a9aa22bbabddc1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/operations/pd concat.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "561211d41412ffcb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/operations/pd concat.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "7a59fa2323fe242b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/operations/pd merge.md",
+                "file": "code/pandas/operations/pd iloc.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a37f4afec0ad24df",
+            "id": "14e1093eab807d0f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "audi.md",
+                "file": "code/pandas/operations/pd melt.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "152af72d4045c938",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd pivot_table.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e7bd089fbe054b61",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd pivot.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,93 +66,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "484e5b9a727f9392",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/operations/pd iloc.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "95740a2425ca7980",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/sprecial distributions/discrete/bernoulli distribution.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "148a2c00c0515a90",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1d538e098029c0c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/sprecial distributions/discrete/hypergeometric distribution.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d8fc78d8468d701a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/sprecial distributions/discrete/poisson distribution.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f82997b47226d639",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/sprecial distributions/discrete/bernoulli distribution.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b0328c2433880899",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -266,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "audi.md",
+                "file": "code/pandas/operations/pd pivot_table.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -283,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "audi.md",
+                "file": "code/pandas/operations/pd pivot_table.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -306,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "audi.md"
+                "file": "code/pandas/operations/pd pivot_table.md"
               }
             }
           }
@@ -328,17 +196,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a37f4afec0ad24df",
+  "active": "152af72d4045c938",
   "lastOpenFiles": [
-    "code/pandas/operations/pd join.md",
-    "code/pandas/usecase/pd joining with two multiindexes.md",
-    "code/pandas/operations/pd joining on combination of columns and index levels.md",
+    "code/pandas/operations/pd pivot.md",
+    "code/pandas/operations/pd pivot_table.md",
+    "code/pandas/operations/pd melt.md",
+    "code/pandas/pd dataframe.md",
+    "code/pandas/operations/pd iloc.md",
+    "code/pandas/operations/pd insert.md",
     "code/pandas/operations/pd merge.md",
-    "code/pandas/operations/pd merge_ordered.md",
-    "code/pandas/operations/pd concat.md",
-    "code/pandas/operations/pd merge_asof.md",
+    "code/pandas/operations/pd combining dataframes.md",
     "audi.md",
-    "code/pandas/operations/pd compare.md",
-    "code/pandas/usecase/pd join single index to multiindex.md"
+    "code/pandas/operations/pd join.md"
   ]
 }
