@@ -44,6 +44,30 @@
             }
           },
           {
+            "id": "ebc6fb24d656139c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd crosstab.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aa80724dfeaf8070",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd pivot_table.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "e7bd089fbe054b61",
             "type": "leaf",
             "state": {
@@ -69,48 +93,6 @@
           }
         ],
         "currentTab": 2
-      },
-      {
-        "id": "0bdc5ca3f4e8e868",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "72c9937c078c40c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/operations/pd melt.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d069e9ea224d59c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/operations/pd pivot_table.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "93961c7635b14c8f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/operations/pd stack.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -240,15 +222,15 @@
   },
   "active": "d0831e0544bb7785",
   "lastOpenFiles": [
-    "code/pandas/operations/pd melt.md",
-    "code/pandas/usecase/pd reshape df.md",
-    "code/pandas/operations/pd stack.md",
+    "code/pandas/operations/pd crosstab.md",
     "code/pandas/operations/pd pivot.md",
+    "code/pandas/usecase/pd reshape df.md",
     "code/pandas/operations/pd pivot_table.md",
+    "code/python/py interatable.md",
+    "code/pandas/operations/pd melt.md",
+    "code/pandas/operations/pd stack.md",
     "code/pandas/pd dataframe.md",
     "code/pandas/operations/pd iloc.md",
-    "code/pandas/operations/pd insert.md",
-    "code/pandas/operations/pd merge.md",
-    "code/pandas/operations/pd combining dataframes.md"
+    "code/pandas/operations/pd insert.md"
   ]
 }

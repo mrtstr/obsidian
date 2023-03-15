@@ -442,8 +442,10 @@
     "code/pandas/operations/pd melt.md": "08690ffdf000c70c873e7d8c34ebb686",
     "code/pandas/operations/pd pivot.md": "95df3ebc7625cf6f44aaa6d7b679e7e6",
     "code/pandas/operations/pd combining dataframes.md": "8ee4a3def77398fe8057b3004311532e",
-    "code/pandas/usecase/pd reshape df.md": "aab9e0a96901bfb425dbe36fecea1808",
-    "code/pandas/operations/pd stack.md": "8acf03d81f45627de7ddcdea23ad9f4d"
+    "code/pandas/usecase/pd reshape df.md": "3a27bcaad59dbb6ba79eb5ee589f521b",
+    "code/pandas/operations/pd stack.md": "8acf03d81f45627de7ddcdea23ad9f4d",
+    "code/python/py interatable.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/pandas/operations/pd crosstab.md": "8782f7e0b988328f83a38639ba67b99e"
   },
   "fields_dict": {
     "Basic": [
