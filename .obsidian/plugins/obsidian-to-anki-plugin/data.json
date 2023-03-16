@@ -347,7 +347,7 @@
     "code/pandas/usecase/pd series x numpy operations.md": "42b4a63a9be350b92f2a190506e3219d",
     "code/pandas/usecase/pd indexing on multiindexed.md": "494ba1fb882214319c4c52391ba808fc",
     "code/pandas/usecase/pd indexing by callable.md": "6c55d94a3b5f19436fa0d656a9eb816c",
-    "code/pandas/usecase/pd element wise manipulations.md": "e4cec4d94e09fe7eadc8e421887501fb",
+    "code/pandas/usecase/pd element wise manipulations.md": "9f45d2837851f5cc84ffa3038307a371",
     "code/pandas/usecase/pd df x series operations.md": "189846485738ad731cf68e05b7839159",
     "code/pandas/usecase/pd df x numpy array operations.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/pandas/usecase/pd df x df operations.md": "7e33f4faece11c0add07adcdd82f1b73",
@@ -376,7 +376,7 @@
     "code/pandas/operations/pd iloc.md": "017e42759627e65bb67bf128770b4af5",
     "code/pandas/operations/pd assign.md": "3a5a300e3d6e72eaedb660ce3bf581f8",
     "code/pandas/operations/pd applymap.md": "ee0d0d1c60cd792775328601ab3b185c",
-    "code/pandas/operations/pd apply.md": "a127353f804f47b2cd5b908f8c634a2a",
+    "code/pandas/operations/pd apply.md": "33e0f8f860abaddc70f37efd9021184a",
     "code/pandas/operations/pd allign.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/numpy/sum.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/numpy/numpy.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -455,11 +455,13 @@
     "code/pandas/pd Column.md": "97d99e6cbb0597f9fb751b3aab55b76a",
     "code/pandas/pd Calegorical Data.md": "cf44d922a8562ca5f3a3a0308dbb4d96",
     "code/pandas/pd DataFrameGroupBy.md": "555d3fe94ab77dfe258322ed11975dba",
-    "code/pandas/operations/pd transform.md": "265b6af8030ba7fcf16ec0cd9b5b805b",
-    "code/pandas/operations/pd agg.md": "66b2537979e43e0ed591baa7c110506c",
+    "code/pandas/operations/pd transform.md": "0fff4924d424c875c5dd04c8966ee249",
+    "code/pandas/operations/pd agg.md": "ec4ff87c72299296167cfeccb3cdc7e3",
     "code/pandas/operations/pd groupby.md": "69259bd254fb6418536789374d0c0052",
     "code/pandas/usecase/pd aggregate grouped dfs.md": "f5072c568b8004a497df4a2852446d3d",
-    "code/pandas/usecase/pd summary of grouped df.md": "c4f1ea743ee52489354f8b4ca83f82ae"
+    "code/pandas/usecase/pd summary of grouped df.md": "c4f1ea743ee52489354f8b4ca83f82ae",
+    "code/numpy/np cumsum.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/pandas/usecase/pd group transform aggragate.md": "9426b749a8c5bc835d0281e294750b70"
   },
   "fields_dict": {
     "Basic": [

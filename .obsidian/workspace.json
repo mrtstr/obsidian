@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/operations/pd groupby.md",
+                "file": "code/pandas/usecase/pd element wise manipulations.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,6 +38,18 @@
               "type": "markdown",
               "state": {
                 "file": "code/pandas/operations/pd apply.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1c21f56fc38d2ddb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/usecase/pd element wise manipulations.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,19 +92,42 @@
             }
           },
           {
-            "id": "8991df5325f1cb15",
+            "id": "cb874cc15607368f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/operations/pd stack.md",
+                "file": "code/pandas/usecase/pd group transform aggragate.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0743c76651728ed7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/pd DataFrameGroupBy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c7137e6816140ddc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/numpy/np cumsum.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -158,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "code/pandas/pd DataFrameGroupBy.md",
+                "file": "code/pandas/usecase/pd element wise manipulations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +210,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "code/pandas/pd DataFrameGroupBy.md",
+                "file": "code/pandas/usecase/pd element wise manipulations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +233,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "code/pandas/pd DataFrameGroupBy.md"
+                "file": "code/pandas/usecase/pd element wise manipulations.md"
               }
             }
           }
@@ -220,17 +255,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d507f71f63b8d37d",
+  "active": "1e05a57c72f620a6",
   "lastOpenFiles": [
     "code/pandas/operations/pd agg.md",
     "code/pandas/operations/pd groupby.md",
-    "code/pandas/operations/pd apply.md",
     "code/pandas/usecase/pd aggregate grouped dfs.md",
+    "code/pandas/operations/pd apply.md",
     "code/pandas/pd DataFrameGroupBy.md",
+    "code/pandas/usecase/pd group transform aggragate.md",
     "code/pandas/operations/pd transform.md",
-    "code/pandas/usecase/pd summary of grouped df.md",
-    "code/pandas/operations/pd stack.md",
-    "code/pandas/pd Values.md",
-    "code/pandas/pd NaN.md"
+    "code/numpy/np cumsum.md",
+    "code/pandas/usecase/pd element wise manipulations.md",
+    "code/pandas/operations/pd applymap.md"
   ]
 }

@@ -218,3 +218,29 @@ display(pd_df1.applymap(double))
 Tags: code, pandas
 <!--ID: 1668090818837-->
 END
+
+
+START
+Basic
+[[pandas]] difference between following operations:
+- [[pd apply]]
+- [[pd applymap]]
+- [[pd transform]]
+- [[pd agg]]
+Back: 
+- all can be applied on [[pd Series]], [[pd DataFrame]], [[pd DataFrameGroupBy]]
+- [[pd apply]] $\supset$ [[pd transform]] $\supset$ [[pd applymap]]
+- [[pd applymap]] 
+	- is elemt wise (scalar → scalar)
+	- thus operations that need context (like [[np cumsum]]) do not work  
+- [[pd transform]] 
+	- vector → vector mapping with input shape == output shape
+	 → thus aggragations are not possible
+- [[pd apply]] can include context and has no output shape restructions
+	- vector → vector mapping with input shape == arbitray
+- [[pd agg]] 
+	- vector → scalar mapping
+	- can apply multiple functions at once
+Tags: code, pandas
+<!--ID: 1678976350273-->
+END
