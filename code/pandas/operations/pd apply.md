@@ -1,3 +1,14 @@
-[[pd element wise manipulations]] on [[pd dataframe]] and [[pd series]]
+[[pd element wise manipulations]] on [[pd DataFrame]] and [[pd Series]]
 
-![[pd dataframe#example df]]
+![[pd DataFrame#example df]]
+
+
+# anki
+
+START
+Basic
+
+Back: 
+
+Tags: code, pandas
+END

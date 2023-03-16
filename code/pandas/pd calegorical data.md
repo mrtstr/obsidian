@@ -1,4 +1,4 @@
-memory efficient saving of high [[cardinality]] categorical data in [[pandas]] [[pd dataframe]]
+memory efficient saving of high [[cardinality]] categorical data in [[pandas]] [[pd DataFrame]]
 
 ```python
 pd_df1 = pd.DataFrame(
@@ -51,7 +51,7 @@ START
 Basic
 pandas: how to save categorical data efficient (with example)
 Back: 
-memory efficient saving of high [[cardinality]] categorical data in [[pandas]] [[pd dataframe]]
+memory efficient saving of high [[cardinality]] categorical data in [[pandas]] [[pd DataFrame]]
 
 ```python
 pd_df1 = pd.DataFrame(

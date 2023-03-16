@@ -1,1 +1,1 @@
-![[pd dataframe#example df]]
+![[pd DataFrame#example df]]

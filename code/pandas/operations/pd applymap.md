@@ -1,1 +1,1 @@
-[[pd element wise manipulations]] of [[pd dataframe]]
+[[pd element wise manipulations]] of [[pd DataFrame]]

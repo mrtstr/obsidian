@@ -1,6 +1,6 @@
-# Operations between [[pd dataframe]]
+# Operations between [[pd DataFrame]]
 
-aligns the [[pd column|columns]] and [[pd index|index]]:
-- the columns and index of the resulting [[pd dataframe|dataframe]] is the [[union]] of the [[pd column|columns]]/[[pd index|index]] of the operands
-- only the [[intersection]] of the [[pd column|columns]]/[[pd index|index]] contain values and the rest ist Nan
+aligns the [[pd Column|columns]] and [[pd Index|index]]:
+- the columns and index of the resulting [[pd DataFrame|dataframe]] is the [[union]] of the [[pd Column|columns]]/[[pd Index|index]] of the operands
+- only the [[intersection]] of the [[pd Column|columns]]/[[pd Index|index]] contain values and the rest ist Nan
 

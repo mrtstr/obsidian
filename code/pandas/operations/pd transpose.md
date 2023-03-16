@@ -1,6 +1,6 @@
-Performs a [[transpose]] operation on a [[pd dataframe]]
-The [[pd column]] become [[pd index]] and [[pd index]] becomes [[pd column]]
-![[pd dataframe#example df]]
+Performs a [[transpose]] operation on a [[pd DataFrame]]
+The [[pd Column]] become [[pd Index]] and [[pd Index]] becomes [[pd Column]]
+![[pd DataFrame#example df]]
 ```python
 pd_df1.T
 #      a b c d 
@@ -16,8 +16,8 @@ pandas transpose
 - example
 - explaination
 Back: 
-Performs a [[transpose]] operation on a [[pd dataframe]]
-The [[pd column]] become [[pd index]] and [[pd index]] becomes [[pd column]]
+Performs a [[transpose]] operation on a [[pd DataFrame]]
+The [[pd Column]] become [[pd Index]] and [[pd Index]] becomes [[pd Column]]
 ```python
 pd_df1 = pd.DataFrame({
 	"col1": {"a": 1, "b":2, "c":3, "d":4},

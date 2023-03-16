@@ -1,6 +1,6 @@
 # pd stack
-- move level of column [[pd multiindex]] to the row [[pd multiindex]]
-- transforms [[pd dataframe]] to [[pd dataframe]] (if column and row index length > 0) or [[pd series]] if one axis has a zero length index
+- move level of column [[pd MultiIndex]] to the row [[pd MultiIndex]]
+- transforms [[pd DataFrame]] to [[pd DataFrame]] (if column and row index length > 0) or [[pd Series]] if one axis has a zero length index
 ```python
 df.stack(
    level=- 1, 
@@ -10,7 +10,7 @@ df.stack(
 )
 ```
 # pd unstack
-- move level of row [[pd multiindex]] to the column [[pd multiindex]]
+- move level of row [[pd MultiIndex]] to the column [[pd MultiIndex]]
 ```python
 df.unstack(
    level=- 1, 
@@ -94,8 +94,8 @@ df1.stack()
 
 Back: 
 # pd stack
-- move level of column [[pd multiindex]] to the row [[pd multiindex]]
-- transforms [[pd dataframe]] to [[pd dataframe]] (if column and row index length > 0) or [[pd series]] if one axis has a zero length index
+- move level of column [[pd MultiIndex]] to the row [[pd MultiIndex]]
+- transforms [[pd DataFrame]] to [[pd DataFrame]] (if column and row index length > 0) or [[pd Series]] if one axis has a zero length index
 ```python
 df.stack(
    level=- 1, 
@@ -105,7 +105,7 @@ df.stack(
 )
 ```
 # pd unstack
-- move level of row [[pd multiindex]] to the column [[pd multiindex]]
+- move level of row [[pd MultiIndex]] to the column [[pd MultiIndex]]
 
 ```python
 df1.unstack(0)
@@ -216,7 +216,7 @@ END
 
 START
 Basic
-do a [[transpose]] operation on the following [[pd dataframe]] without using `df.T` or [[pd transpose]]
+do a [[transpose]] operation on the following [[pd DataFrame]] without using `df.T` or [[pd transpose]]
 | | col1 | col2 | col3 | 
 |:---|-------:|-------:|-------:| 
 | a | 1 | 5 | 9 | 

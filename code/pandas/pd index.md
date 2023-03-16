@@ -1,8 +1,8 @@
-- Attribute of [[pandas]] [[pd dataframe|dataframes]] and [[pd series|series]]
+- Attribute of [[pandas]] [[pd DataFrame|dataframes]] and [[pd Series|series]]
 - can be interpreted as labels of rows (axis 0)
-- equivalent to the [[pd column]] but on the other axis
-- is saved inside a wrapped [[np ndarray]] (like [[pd column]])
-- can have multiple levels: [[pd multiindex]]
+- equivalent to the [[pd Column]] but on the other axis
+- is saved inside a wrapped [[np ndarray]] (like [[pd Column]])
+- can have multiple levels: [[pd MultiIndex]]
 - can be accessed and manipulated:
 ```python
 # wrapper read only:
@@ -21,7 +21,7 @@ print(type(pd_df1.index.values))
 ```python
 pd_df1.index = ["e", "b", "d", "f"]
 ```
-- [[pd index]] can be reset: reset_index will replace the index with counting
+- [[pd Index]] can be reset: reset_index will replace the index with counting
 ```python
 pd_df1.reset_index(drop=False)  # default: convert the index to a row
 pd_df1.reset_index(drop=True)  # completly remove the index
@@ -36,7 +36,7 @@ pandas index:
 - how to manipulate it
 - how to reset it
 Back: 
-- Attribute of [[pandas]] [[pd dataframe|dataframes]] and [[pd series|series]]
+- Attribute of [[pandas]] [[pd DataFrame|dataframes]] and [[pd Series|series]]
 - can be interpreted as labels of rows
 - is saved inside a wrapped [[np ndarray]]
 - can be accessed and manipulated:
@@ -57,7 +57,7 @@ print(type(pd_df1.index.values))
 ```python
 pd_df1.index = ["e", "b", "d", "f"]
 ```
-- [[pd index]] can be reset: reset_index will replace the index with counting
+- [[pd Index]] can be reset: reset_index will replace the index with counting
 ```python
 pd_df1.reset_index(drop=False)  # default: convert the index to a row
 pd_df1.reset_index(drop=True)  # completly remove the index

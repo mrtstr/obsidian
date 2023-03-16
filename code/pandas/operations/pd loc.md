@@ -1,6 +1,6 @@
 selecting columns and rows by name
 
-![[pd dataframe#example df]]
+![[pd DataFrame#example df]]
 
 
 ```python

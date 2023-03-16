@@ -1,4 +1,4 @@
-![[pd dataframe#example df]]
+![[pd DataFrame#example df]]
 selecting columns and rows by position
 ```python
 pd_df1.iloc["<row selection position>", "<column selection by position>"]

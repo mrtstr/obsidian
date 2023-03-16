@@ -1,4 +1,4 @@
-- like [[pd pivot_table]] but takes [[py interatable]] or [[pd series]] as input instead of a [[pd dataframe]]
+- like [[pd pivot_table]] but takes [[py interatable]] or [[pd Series]] as input instead of a [[pd DataFrame]]
 ```python
 pd.crosstab(
 	index, 
@@ -79,7 +79,7 @@ Basic
 - usage
 - parameter
 Back: 
-- like [[pd pivot_table]] but takes [[py interatable]] or [[pd series]] as input instead of a [[pd dataframe]]
+- like [[pd pivot_table]] but takes [[py interatable]] or [[pd Series]] as input instead of a [[pd DataFrame]]
 ```python
 pd.crosstab(
 	index, 

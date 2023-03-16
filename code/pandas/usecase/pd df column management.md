@@ -1,8 +1,8 @@
-![[pd dataframe#example df]]
+![[pd DataFrame#example df]]
 # creating/inserting Columns
 - can be created and removed like in a [[py dict]] 
-- can be inserted using [[pd dataframe|DataFrame]].insert() using dot chaining and specifying the position
-- can be inserted using [[pd dataframe|DataFrame]].[[pd assign|assign]]() which created a copy and keeps the original [[pd dataframe]] unchanged
+- can be inserted using [[pd DataFrame|DataFrame]].insert() using dot chaining and specifying the position
+- can be inserted using [[pd DataFrame|DataFrame]].[[pd assign|assign]]() which created a copy and keeps the original [[pd DataFrame]] unchanged
 ```python
 # create new column
 df["three"] = df["one"] * df["two"]
@@ -14,7 +14,7 @@ df.insert(loc=0, value=df["one"] * df["two"], column="three")
 df.assign(three=lambda x: (df["one"] * df["two"]))
 ```
 
-## deleting one or multiple [[pd column]]
+## deleting one or multiple [[pd Column]]
 ```python
 # delete column
 del df["two"]
@@ -22,7 +22,7 @@ del df["two"]
 # delete multiple columns
 pd_df1.drop(["one", "two"], axis=1)
 ```
-## filtering on [[pd column]] level using [[pd boolean indexing]]
+## filtering on [[pd Column]] level using [[pd boolean indexing]]
 ```python
 pd_df1.loc[:, pd_df1.loc["c"] > 4]
 #   col2 col3 
@@ -41,8 +41,8 @@ pandas
 Back: 
 # creating/inserting Columns
 - can be created and removed like in a [[py dict]] 
-- can be inserted using [[pd dataframe|DataFrame]].insert() using dot chaining and specifying the position
-- can be inserted using [[pd dataframe|DataFrame]].assign() which created a copy and lates the orifinal [[pd dataframe]] unchanged
+- can be inserted using [[pd DataFrame|DataFrame]].insert() using dot chaining and specifying the position
+- can be inserted using [[pd DataFrame|DataFrame]].assign() which created a copy and lates the orifinal [[pd DataFrame]] unchanged
 ```python
 # create new column
 df["three"] = df["one"] * df["two"]
@@ -55,7 +55,7 @@ df.assign(three=lambda x: (df["one"] * df["two"]))
 ```
 
 # deleting/removing columns
-## deleting one or multiple [[pd column]]
+## deleting one or multiple [[pd Column]]
 ```python
 # delete column
 del df["two"]
@@ -63,7 +63,7 @@ del df["two"]
 # delete multiple columns
 pd_df1.drop(["one", "two"], axis=1)
 ```
-## filtering on [[pd column]] level using [[pd boolean indexing]]
+## filtering on [[pd Column]] level using [[pd boolean indexing]]
 ```python
 pd_df1.loc[:, pd_df1.loc["c"] > 4]
 #   col2 col3 

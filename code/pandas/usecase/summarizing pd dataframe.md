@@ -1,11 +1,11 @@
-## Metadata: [[pd dataframe|DataFrame]].info()
-Showing info about the [[pd dataframe|dataframes]]:
-- [[pd index]] properties
-- [[pd column]] properties
+## Metadata: [[pd DataFrame|DataFrame]].info()
+Showing info about the [[pd DataFrame|dataframes]]:
+- [[pd Index]] properties
+- [[pd Column]] properties
 - [[pd dtype]]
 - memory usage
-## Data Summary: [[pd dataframe|DataFrame]].describe()
-showing statistical information about the data inside the [[pd dataframe]]
+## Data Summary: [[pd DataFrame|DataFrame]].describe()
+showing statistical information about the data inside the [[pd DataFrame]]
 - number of rows
 - mean
 - minimum/maximum
@@ -22,7 +22,7 @@ pd_df1.describe()
 # 75% 3.250000 7.250000 11.250000 
 # max 4.000000 8.000000 12.000000
 ```
-### memory usage summary: [[pd dataframe|DataFrame]].memory_usage(deep=True)
+### memory usage summary: [[pd DataFrame|DataFrame]].memory_usage(deep=True)
 memory usage for each column in byte
 ```python
 pd_df1.memory_usage(deep=True)
@@ -36,16 +36,16 @@ pd_df1.memory_usage(deep=True)
 START
 Basic
 [[pandas]]: 
-- summarize [[pd dataframe]] (3)
+- summarize [[pd DataFrame]] (3)
 Back: 
-## Metadata: [[pd dataframe|DataFrame]].info()
-Showing info about the [[pd dataframe|dataframes]]:
-- [[pd index]] properties
-- [[pd column]] properties
+## Metadata: [[pd DataFrame|DataFrame]].info()
+Showing info about the [[pd DataFrame|dataframes]]:
+- [[pd Index]] properties
+- [[pd Column]] properties
 - [[pd dtype]]
 - memory usage
-## Data Summary: [[pd dataframe|DataFrame]].describe()
-showing statistical information about the data inside the [[pd dataframe]]
+## Data Summary: [[pd DataFrame|DataFrame]].describe()
+showing statistical information about the data inside the [[pd DataFrame]]
 - number of rows
 - mean
 - minimum/maximum
@@ -62,7 +62,7 @@ pd_df1.describe()
 # 75% 3.250000 7.250000 11.250000 
 # max 4.000000 8.000000 12.000000
 ```
-### memory usage summary: [[pd dataframe|DataFrame]].memory_usage(deep=True)
+### memory usage summary: [[pd DataFrame|DataFrame]].memory_usage(deep=True)
 memory usage for each column in byte
 ```python
 pd_df1.memory_usage(deep=True)

@@ -1,6 +1,6 @@
-# Operations between [[pd dataframe]] and [[pd series]]
-![[pd dataframe#example df]]
-### aligning [[pd series|series]] [[pd index|index]] with [[pd dataframe|dataframe]] [[pd column|columns]] and broadcast over the [[pd column|column]] [[pd index|index]](default)
+# Operations between [[pd DataFrame]] and [[pd Series]]
+![[pd DataFrame#example df]]
+### aligning [[pd Series|series]] [[pd Index|index]] with [[pd DataFrame|dataframe]] [[pd Column|columns]] and broadcast over the [[pd Column|column]] [[pd Index|index]](default)
 
 ```python
 pd_series = pd.Series({

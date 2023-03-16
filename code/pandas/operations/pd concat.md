@@ -1,4 +1,4 @@
-- Concatinate (do a [[union]]) [[pd dataframe|pd dataframes]] along the [[pd index]] or the [[pd column|pd columns]]
+- Concatinate (do a [[union]]) [[pd DataFrame|pd dataframes]] along the [[pd Index]] or the [[pd Column|pd columns]]
 - on the other axis do a [[intersection]] (inner) or a [[union]] (outer)
 - equivalent to [[np concat]]
 ```python
@@ -64,9 +64,9 @@ df2 = pd.DataFrame(
 
 ## outer join 
 
-### along [[pd index]]
+### along [[pd Index]]
 - concatinate the rows (do a union)
-- combines the matching [[pd column|pd columns]] and creates matching partner with [[pd nan]] values for the remaining [[pd column|pd columns]] 
+- combines the matching [[pd Column|pd columns]] and creates matching partner with [[pd NaN]] values for the remaining [[pd Column|pd columns]] 
 ```python
 pd.concat([df1, df2], axis=0, join="outer")
 ```
@@ -81,9 +81,9 @@ pd.concat([df1, df2], axis=0, join="outer")
 | 5 | nan | B5 | C5 | D5 | E5 | 
 | 6 | nan | B6 | C6 | D6 | E6 |
 
-### along [[pd column|pd columns]]
+### along [[pd Column|pd columns]]
 - concatinate the columns (do a union)
-- combines the matching [[pd index]] and creates matching partner with [[pd nan]] values for the remaining [[pd index]] 
+- combines the matching [[pd Index]] and creates matching partner with [[pd NaN]] values for the remaining [[pd Index]] 
 ```python
 pd.concat([df1, df2], axis=1, join="outer")
 ```
@@ -97,9 +97,9 @@ pd.concat([df1, df2], axis=1, join="outer")
 | 6 | nan | nan | nan | nan | B6 | C6 | D6 | E6 |
 
 ## innter join
-### along [[pd index]]
+### along [[pd Index]]
 - concatinate the rows (do a union)
-- combines the matching [[pd column|pd columns]] and remove the rest of the [[pd column|pd columns]] 
+- combines the matching [[pd Column|pd columns]] and remove the rest of the [[pd Column|pd columns]] 
 ```python
 pd.concat([df1, df2], axis=0, join="inner")
 ```
@@ -114,9 +114,9 @@ pd.concat([df1, df2], axis=0, join="inner")
 | 5 | B5 | C5 | D5 | 
 | 6 | B6 | C6 | D6 |
 
-### along [[pd column|pd columns]]
-- concatinate the [[pd column|pd columns]] (do a union)
-- combines the matching [[pd index]] and removes the rest of the rows
+### along [[pd Column|pd columns]]
+- concatinate the [[pd Column|pd columns]] (do a union)
+- combines the matching [[pd Index]] and removes the rest of the rows
 ```python
 pd.concat([df1, df2], axis=1, join="inner")
 ```
@@ -125,8 +125,8 @@ pd.concat([df1, df2], axis=1, join="inner")
 | 3 | A3 | B3 | C3 | D3 | B3 | C3 | D3 | E3 | 
 | 4 | A4 | B4 | C4 | D4 | B4 | C4 | D4 | E4 | 
 
-## create [[pd multiindex]] unsing keys
-- create a [[pd multiindex]] with the first level being the original [[pd dataframe]] it belongs to and the keys containing the names of the dataframes
+## create [[pd MultiIndex]] unsing keys
+- create a [[pd MultiIndex]] with the first level being the original [[pd DataFrame]] it belongs to and the keys containing the names of the dataframes
 ```python
 pd.concat([df1, df2], axis=1, join="outer", keys=["df1", "df2"])
 ```
@@ -148,7 +148,7 @@ Basic
 - definition
 - parameters
 Back: 
-- Concatinate [[pd dataframe|pd dataframes]] (do a union) along the [[pd index]] or the [[pd column|pd columns]]
+- Concatinate [[pd DataFrame|pd dataframes]] (do a union) along the [[pd Index]] or the [[pd Column|pd columns]]
 - on the other axis do a [[intersection]] (inner) or a union (outer)
 - equivalent to [[np concat]]
 ```python
@@ -234,7 +234,7 @@ df2 = pd.DataFrame(
 
 Back: 
 ## [[pd concat]]
-- Concatinate [[pd dataframe|pd dataframes]] (do a union) along the [[pd index]] or the [[pd column|pd columns]]
+- Concatinate [[pd DataFrame|pd dataframes]] (do a union) along the [[pd Index]] or the [[pd Column|pd columns]]
 - on the other axis do a [[intersection]] (inner) or a union (outer)
 - equivalent to [[np concat]]
 ```python
@@ -254,9 +254,9 @@ pd.concat(
 
 ## outer join 
 
-### along [[pd index]]
+### along [[pd Index]]
 - concatinate the rows (do a union)
-- combines the matching [[pd column|pd columns]] and creates matching partner with [[pd nan]] values for the remaining [[pd column|pd columns]] 
+- combines the matching [[pd Column|pd columns]] and creates matching partner with [[pd NaN]] values for the remaining [[pd Column|pd columns]] 
 ```python
 pd.concat([df1, df2], axis=0, join="outer")
 ```
@@ -271,9 +271,9 @@ pd.concat([df1, df2], axis=0, join="outer")
 | 5 | nan | B5 | C5 | D5 | E5 | 
 | 6 | nan | B6 | C6 | D6 | E6 |
 
-### along [[pd column|pd columns]]
+### along [[pd Column|pd columns]]
 - concatinate the columns (do a union)
-- combines the matching [[pd index]] and creates matching partner with [[pd nan]] values for the remaining [[pd index]] 
+- combines the matching [[pd Index]] and creates matching partner with [[pd NaN]] values for the remaining [[pd Index]] 
 ```python
 pd.concat([df1, df2], axis=1, join="outer")
 ```
@@ -287,9 +287,9 @@ pd.concat([df1, df2], axis=1, join="outer")
 | 6 | nan | nan | nan | nan | B6 | C6 | D6 | E6 |
 
 ## innter join
-### along [[pd index]]
+### along [[pd Index]]
 - concatinate the rows (do a union)
-- combines the matching [[pd column|pd columns]] and remove the rest of the [[pd column|pd columns]] 
+- combines the matching [[pd Column|pd columns]] and remove the rest of the [[pd Column|pd columns]] 
 ```python
 pd.concat([df1, df2], axis=0, join="inner")
 ```
@@ -304,9 +304,9 @@ pd.concat([df1, df2], axis=0, join="inner")
 | 5 | B5 | C5 | D5 | 
 | 6 | B6 | C6 | D6 |
 
-### along [[pd column|pd columns]]
-- concatinate the [[pd column|pd columns]] (do a union)
-- combines the matching [[pd index]] and removes the rest of the rows
+### along [[pd Column|pd columns]]
+- concatinate the [[pd Column|pd columns]] (do a union)
+- combines the matching [[pd Index]] and removes the rest of the rows
 ```python
 pd.concat([df1, df2], axis=1, join="inner")
 ```
@@ -315,8 +315,8 @@ pd.concat([df1, df2], axis=1, join="inner")
 | 3 | A3 | B3 | C3 | D3 | B3 | C3 | D3 | E3 | 
 | 4 | A4 | B4 | C4 | D4 | B4 | C4 | D4 | E4 | 
 
-## create [[pd multiindex]] unsing keys
-- create a [[pd multiindex]] with the first level being the original [[pd dataframe]] it belongs to and the keys containing the names of the dataframes
+## create [[pd MultiIndex]] unsing keys
+- create a [[pd MultiIndex]] with the first level being the original [[pd DataFrame]] it belongs to and the keys containing the names of the dataframes
 ```python
 pd.concat([df1, df2], axis=1, join="outer", keys=["df1", "df2"])
 ```

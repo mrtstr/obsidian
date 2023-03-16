@@ -1,8 +1,8 @@
-![[pd dataframe#example df]]
-![[pd series#example series]]
+![[pd DataFrame#example df]]
+![[pd Series#example series]]
 ## creating a boolean mask 
-### using a [[pd series]]
-1) a boolean mask on the [[pd index]] dimension using a [[pd series]] or a [[pd column]]
+### using a [[pd Series]]
+1) a boolean mask on the [[pd Index]] dimension using a [[pd Series]] or a [[pd Column]]
 ```python
 series1 > 2
 # a False 
@@ -17,7 +17,7 @@ pd_df1["col1"] > 2
 # d True
 ```
 
-2) a boolean mask on the [[pd column]] dimension of a [[pd dataframe]]
+2) a boolean mask on the [[pd Column]] dimension of a [[pd DataFrame]]
 ```python
 pd_df1.loc["c"] > 4
 # col1 False 
@@ -25,7 +25,7 @@ pd_df1.loc["c"] > 4
 # col3 True
 ```
 
-3) a boolean mask in the shape of the complete [[pd dataframe]]
+3) a boolean mask in the shape of the complete [[pd DataFrame]]
 ```python
 pd_df1 > 6
 #   col1 col2 col3 
@@ -37,14 +37,14 @@ pd_df1 > 6
 
 
 ## Filtering based on a boolean mask
-### filtering a [[pd series]]
+### filtering a [[pd Series]]
 ```python
 series1[series1 > 2]
 # c 3 
 # d 4
 ```
-### filtering a [[pd dataframe]]
-→ when a boolean masks with the same shape as the [[pd dataframe]] is used every value with False on its position will become NaN
+### filtering a [[pd DataFrame]]
+→ when a boolean masks with the same shape as the [[pd DataFrame]] is used every value with False on its position will become NaN
 ```python
 pd_df1[pd_df1 > 6]
 #   col1 col2 col3 
@@ -53,14 +53,14 @@ pd_df1[pd_df1 > 6]
 # c NaN 7   11 
 # d NaN 8   12
 ```
-→ using a [[pd series]]  on the [[pd index]] dimension: every row with False on its [[pd index]] will be removed completely
+→ using a [[pd Series]]  on the [[pd Index]] dimension: every row with False on its [[pd Index]] will be removed completely
 ```python
 pd_df1[series1 > 2]
 #    col1 col2 col3 
 # c   3   7   11 
 # d   4   8   12
 ```
-→ using a [[pd series]]  on the [[pd column]] dimension: every [[pd column]] with False will be removed completely
+→ using a [[pd Series]]  on the [[pd Column]] dimension: every [[pd Column]] with False will be removed completely
 ```python
 pd_df1.loc[:, pd_df1.loc["c"] > 4]
 #   col2 col3 
@@ -94,8 +94,8 @@ pd_df1 = pd.DataFrame({
 ```
 
 ## creating a boolean mask 
-### using a [[pd series]]
-1) a boolean mask on the [[pd index]] dimension using a [[pd series]] or a [[pd column]]
+### using a [[pd Series]]
+1) a boolean mask on the [[pd Index]] dimension using a [[pd Series]] or a [[pd Column]]
 ```python
 series1 > 2
 # a False 
@@ -110,7 +110,7 @@ pd_df1["col1"] > 2
 # d True
 ```
 
-2) a boolean mask on the [[pd column]] dimension of a [[pd dataframe]]
+2) a boolean mask on the [[pd Column]] dimension of a [[pd DataFrame]]
 ```python
 pd_df1.loc["c"] > 4
 # col1 False 
@@ -118,7 +118,7 @@ pd_df1.loc["c"] > 4
 # col3 True
 ```
 
-3) a boolean mask in the shape of the complete [[pd dataframe]]
+3) a boolean mask in the shape of the complete [[pd DataFrame]]
 ```python
 pd_df1 > 6
 #   col1 col2 col3 
@@ -130,14 +130,14 @@ pd_df1 > 6
 
 
 ## Filtering based on a boolean mask
-### filtering a [[pd series]]
+### filtering a [[pd Series]]
 ```python
 series1[series1 > 2]
 # c 3 
 # d 4
 ```
-### filtering a [[pd dataframe]]
-→ when a boolean masks with the same shape as the [[pd dataframe]] is used every value with False on its position will become NaN
+### filtering a [[pd DataFrame]]
+→ when a boolean masks with the same shape as the [[pd DataFrame]] is used every value with False on its position will become NaN
 ```python
 pd_df1[pd_df1 > 6]
 #   col1 col2 col3 
@@ -146,14 +146,14 @@ pd_df1[pd_df1 > 6]
 # c NaN 7   11 
 # d NaN 8   12
 ```
-→ using a [[pd series]]  on the [[pd index]] dimension: every row with False on its [[pd index]] will be removed completely
+→ using a [[pd Series]]  on the [[pd Index]] dimension: every row with False on its [[pd Index]] will be removed completely
 ```python
 pd_df1[series1 > 2]
 #    col1 col2 col3 
 # c   3   7   11 
 # d   4   8   12
 ```
-→ using a [[pd series]]  on the [[pd column]] dimension: every [[pd column]] with False will be removed completely
+→ using a [[pd Series]]  on the [[pd Column]] dimension: every [[pd Column]] with False will be removed completely
 ```python
 pd_df1.loc[:, pd_df1.loc["c"] > 4]
 #   col2 col3 

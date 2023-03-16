@@ -1,10 +1,10 @@
-- Attribute of [[pd dataframe]] or a [[pd series]]
+- Attribute of [[pd DataFrame]] or a [[pd Series]]
 - containing the data as a [[np ndarray]]
-- [[pd index]] and [[pd column]] is mapping the labels to the dimensions of the values [[np ndarray]]
-- can be accessed and manipulated using [[pd dataframe|dataframe]].values / [[pd series]].values
+- [[pd Index]] and [[pd Column]] is mapping the labels to the dimensions of the values [[np ndarray]]
+- can be accessed and manipulated using [[pd DataFrame|dataframe]].values / [[pd Series]].values
 
 ## example
-![[pd dataframe#example df]]
+![[pd DataFrame#example df]]
 
 ```python
 display(pd_df1)
@@ -29,10 +29,10 @@ Basic
 pandas dataframe underlaying data storage (with example):
 
 Back: 
-- Attribute of [[pd dataframe]] or a [[pd series]]
+- Attribute of [[pd DataFrame]] or a [[pd Series]]
 - containing the data as a [[np ndarray]]
-- [[pd index]] and [[pd column]] is mapping the labels to the dimensions of the values [[np ndarray]]
-- can be accessed and manipulated using [[pd dataframe|dataframe]].values / [[pd series]].values
+- [[pd Index]] and [[pd Column]] is mapping the labels to the dimensions of the values [[np ndarray]]
+- can be accessed and manipulated using [[pd DataFrame|dataframe]].values / [[pd Series]].values
 ```python
 display(pd_df1)
 #  col1 col2 col3

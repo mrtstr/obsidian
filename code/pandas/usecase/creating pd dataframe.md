@@ -1,9 +1,9 @@
-## creating a [[pd dataframe]]
+## creating a [[pd DataFrame]]
 ### from 2D [[np array]]
-- takes the data from the array but column names and [[pd index]] have to be provided
+- takes the data from the array but column names and [[pd Index]] have to be provided
 ### from nested structures 
 - (1D arrays, lists, dicts, series) of 1D arrays, lists, dicts, series
-- in case of unlabelled structures (arrays, lists) a column name and [[pd index]] can be provided
+- in case of unlabelled structures (arrays, lists) a column name and [[pd Index]] can be provided
 ```python
 d = {
     "one": pd.Series([1.0, 2.0, 3.0], index=["a", "b", "c"]),
@@ -16,11 +16,11 @@ df = pd.DataFrame(d)
 # c  3.0  3.0
 # d  NaN  4.0
 ```
-### from another [[pd dataframe]]
-creating a changed version of another [[pd dataframe]]
-- as a subset of a [[pd dataframe]] ([[pd index]], columns)
+### from another [[pd DataFrame]]
+creating a changed version of another [[pd DataFrame]]
+- as a subset of a [[pd DataFrame]] ([[pd Index]], columns)
 - as a filled up version
-- rearranging [[pd index]] and columns
+- rearranging [[pd Index]] and columns
 ```python
 pd.DataFrame(d, index=["d", "b", "a"], columns=["one", "two", "three"])
 #    one  two  three
@@ -36,12 +36,12 @@ START
 Basic
 pandas dataframe: how to create it (3 with code examples)
 Back: 
-## creating a [[pd dataframe]]
+## creating a [[pd DataFrame]]
 ### from 2D [[np array]]
-- takes the data from the array but column names and [[pd index]] have to be provided
+- takes the data from the array but column names and [[pd Index]] have to be provided
 ### from nested structures 
 - (1D arrays, lists, dicts, series) of 1D arrays, lists, dicts, series
-- in case of unlabelled structures (arrays, lists) a column name and [[pd index]] can be provided
+- in case of unlabelled structures (arrays, lists) a column name and [[pd Index]] can be provided
 ```python
 d = {
     "one": pd.Series([1.0, 2.0, 3.0], index=["a", "b", "c"]),
@@ -54,11 +54,11 @@ df = pd.DataFrame(d)
 # c  3.0  3.0
 # d  NaN  4.0
 ```
-### from another [[pd dataframe]]
-creating a changed version of another [[pd dataframe]]
-- as a subset of a [[pd dataframe]] ([[pd index]], columns)
+### from another [[pd DataFrame]]
+creating a changed version of another [[pd DataFrame]]
+- as a subset of a [[pd DataFrame]] ([[pd Index]], columns)
 - as a filled up version
-- rearranging [[pd index]] and columns
+- rearranging [[pd Index]] and columns
 ```python
 pd.DataFrame(d, index=["d", "b", "a"], columns=["one", "two", "three"])
 #    one  two  three

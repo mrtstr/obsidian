@@ -1,6 +1,6 @@
 ## [[pd pivot]]: create pivot table
-- unique value's column of [[pd dataframe]] will become the new [[pd index]]
-- unique value's column of [[pd dataframe]] will become the new [[pd column|pd columns]]
+- unique value's column of [[pd DataFrame]] will become the new [[pd Index]]
+- unique value's column of [[pd DataFrame]] will become the new [[pd Column|pd columns]]
 - `df[index, columns]` have to be unique
 
 ### example
@@ -63,11 +63,11 @@ df1_pivot.melt(id_vars=["A"])
 | 4 | A2 | B1 | 4 |
 
 ## [[pd stack]]
-- move level of column [[pd multiindex]] to the row [[pd multiindex]]
-- transforms [[pd dataframe]] to [[pd dataframe]] (if column and row index length > 0) or [[pd series]] if one axis has a zero length index
+- move level of column [[pd MultiIndex]] to the row [[pd MultiIndex]]
+- transforms [[pd DataFrame]] to [[pd DataFrame]] (if column and row index length > 0) or [[pd Series]] if one axis has a zero length index
 
 ## pd unstack
-- move level of row [[pd multiindex]] to the column [[pd multiindex]]
+- move level of row [[pd MultiIndex]] to the column [[pd MultiIndex]]
 ### example
 |  | A | B | C | 
 |:-----------|----:|----:|----:| 
@@ -89,13 +89,13 @@ df1.unstack(0)
 
 START
 Basic
-[[pandas]] methods to rearrange [[pd dataframe]] (5)
+[[pandas]] methods to rearrange [[pd DataFrame]] (5)
 - short explaining
 - simple example
 Back: 
 ## [[pd pivot]]: create pivot table
-- unique value's column of [[pd dataframe]] will become the new [[pd index]]
-- unique value's column of [[pd dataframe]] will become the new [[pd column|pd columns]]
+- unique value's column of [[pd DataFrame]] will become the new [[pd Index]]
+- unique value's column of [[pd DataFrame]] will become the new [[pd Column|pd columns]]
 - `df[index, columns]` have to be unique
 
 ### example
@@ -158,11 +158,11 @@ df1_pivot.melt(id_vars=["A"])
 | 4 | A2 | B1 | 4 |
 
 ## [[pd stack]]
-- move level of column [[pd multiindex]] to the row [[pd multiindex]]
-- transforms [[pd dataframe]] to [[pd dataframe]] (if column and row index length > 0) or [[pd series]] if one axis has a zero length index
+- move level of column [[pd MultiIndex]] to the row [[pd MultiIndex]]
+- transforms [[pd DataFrame]] to [[pd DataFrame]] (if column and row index length > 0) or [[pd Series]] if one axis has a zero length index
 
 ## pd unstack
-- move level of row [[pd multiindex]] to the column [[pd multiindex]]
+- move level of row [[pd MultiIndex]] to the column [[pd MultiIndex]]
 ### example
 |  | A | B | C | 
 |:-----------|----:|----:|----:| 

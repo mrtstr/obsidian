@@ -1,11 +1,11 @@
-- two dimensional labeled data structure [[pd index]] on axis 0 and [[pd column]] on axis 1
-- [[pd index]] and [[pd column]] are stored as wrapped [[np ndarray]]
-- columns can have different [[pd dtype|dtypes]] but need to have the same [[pd index]]
-- is like a [[py dict|dict]] of [[pd series|series]]
+- two dimensional labeled data structure [[pd Index]] on axis 0 and [[pd Column]] on axis 1
+- [[pd Index]] and [[pd Column]] are stored as wrapped [[np ndarray]]
+- columns can have different [[pd dtype|dtypes]] but need to have the same [[pd Index]]
+- is like a [[py dict|dict]] of [[pd Series|series]]
 ```python
 pd_df["colname"]["indexname"]
 ```
-- the underlaying data structure of the [[pd dataframe]] is the [[np ndarray]] and can be accessed and manipulated using [[pd dataframe|dataframe]].values
+- the underlaying data structure of the [[pd DataFrame]] is the [[np ndarray]] and can be accessed and manipulated using [[pd DataFrame|dataframe]].values
 
 
 | pd_df1 | col1 | col2 | col3 | 
@@ -52,14 +52,14 @@ pandas dataframe:
 - labeled axis
 - underlaying data manipulation (example)
 Back: 
-- two dimensional labeled data structure [[pd index]] on axis 0 and [[pd column]] on axis 1
-- [[pd index]] and [[pd column]] are stored as wrapped [[np ndarray]]
-- columns can have different [[pd dtype|dtypes]] but need to have the same [[pd index]]
-- is like a [[py dict|dict]] of [[pd series|series]]
+- two dimensional labeled data structure [[pd Index]] on axis 0 and [[pd Column]] on axis 1
+- [[pd Index]] and [[pd Column]] are stored as wrapped [[np ndarray]]
+- columns can have different [[pd dtype|dtypes]] but need to have the same [[pd Index]]
+- is like a [[py dict|dict]] of [[pd Series|series]]
 ```python
 pd_df["colname"]["indexname"]
 ```
-- the underlaying data structure of the [[pd dataframe]] is the [[np ndarray]] and can be accessed and manipulated using [[pd dataframe|dataframe]].values
+- the underlaying data structure of the [[pd DataFrame]] is the [[np ndarray]] and can be accessed and manipulated using [[pd DataFrame|dataframe]].values
 
 | pd_df1 | col1 | col2 | col3 | 
 |:---|-------:|-------:|-------:| 

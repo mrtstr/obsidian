@@ -14,16 +14,16 @@ pd_df1 = pd.DataFrame(
 - labels of the axis is called index
 - has a single dtype and often uses [[np dtypes]] 
 - has a name attribute
-- similar to a column of a [[pd dataframe]]
+- similar to a column of a [[pd DataFrame]]
 
 ## array like properties
 - behaves similar to [[np array]] (most [[numpy]] functions can use it)
-- [[pd series|Series]].array containing the array like data as ExtensionArray
+- [[pd Series|Series]].array containing the array like data as ExtensionArray
 - ExtensionArray is a wrapper round a 1d array
-- [[pd series|Series]].to_numpy() return the actual [[np array]]
+- [[pd Series|Series]].to_numpy() return the actual [[np array]]
 
 ## dict like properties
-- a [[pd series|Series]] behaves like a [[py dict]]
+- a [[pd Series|Series]] behaves like a [[py dict]]
 ```python
 s.get("f", None)
 # returns object or None if the key is not in the index
@@ -32,8 +32,8 @@ s["f"]
 ```
 ## Vectorised operations
 - behaves like [[np array]] with the difference that it aligns the elements by the index when doing operations between series 
-- the result is NaN when one element has not matching [[pd index]] in the other [[pd series|Series]].
-- The [[pd index|index]] of the results of an operation between [[pd series|Series]] is the [[pd index|index]] [[union]] of the [[pd index|indices]] of the operands but only elements with an [[pd index|index]] inside the [[pd index|index]] [[intersection]] of have values (the rest is Nan)
+- the result is NaN when one element has not matching [[pd Index]] in the other [[pd Series|Series]].
+- The [[pd Index|index]] of the results of an operation between [[pd Series|Series]] is the [[pd Index|index]] [[union]] of the [[pd Index|indices]] of the operands but only elements with an [[pd Index|index]] inside the [[pd Index|index]] [[intersection]] of have values (the rest is Nan)
 ```python
 # operation between series
 s + s
@@ -50,8 +50,8 @@ pandas series: behaviour in a vectorised operation
 Back: 
 ## Vectorised operations
 - behaves like [[np array]] with the difference that it aligns the elements by the index when doing operations between series 
-- the result is NaN when one element has not matching [[pd index]] in the other [[pd series|Series]].
-- The [[pd index|index]] of the results of an operation between [[pd series|Series]] is the [[pd index|index]] [[union]] of the [[pd index|indices]] of the operands but only elements with an [[pd index|index]] inside the [[pd index|index]] [[intersection]] of have values (the rest is Nan)
+- the result is NaN when one element has not matching [[pd Index]] in the other [[pd Series|Series]].
+- The [[pd Index|index]] of the results of an operation between [[pd Series|Series]] is the [[pd Index|index]] [[union]] of the [[pd Index|indices]] of the operands but only elements with an [[pd Index|index]] inside the [[pd Index|index]] [[intersection]] of have values (the rest is Nan)
 ```python
 # operation between series
 s + s
@@ -71,12 +71,12 @@ pandas series conceptual similarities: array, dict
 Back: 
 ## array like properties
 - behaves similar to [[np array]] (most [[numpy]] functions can use it)
-- [[pd series|Series]].array containing the array like data as ExtensionArray
+- [[pd Series|Series]].array containing the array like data as ExtensionArray
 - ExtensionArray is a wrapper round a 1d array
-- [[pd series|Series]].to_numpy() return the actual [[np array]]
+- [[pd Series|Series]].to_numpy() return the actual [[np array]]
 
 ## dict like properties
-- a [[pd series|Series]] behaves like a [[py dict]]
+- a [[pd Series|Series]] behaves like a [[py dict]]
 ```python
 s.get("f", None)
 # returns object or None if the key is not in the index

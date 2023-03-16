@@ -1,3 +1,3 @@
 - Similar to a `left` [[pd merge]] or [[pd join]] except that we match on nearest key rather than equal keys. 
-- For each row in the `left` [[pd dataframe]], we select the last row in the `right` [[pd dataframe]], whose `on` key is less than the left’s key. 
+- For each row in the `left` [[pd DataFrame]], we select the last row in the `right` [[pd DataFrame]], whose `on` key is less than the left’s key. 
 - Both DataFrames must be sorted by the key.

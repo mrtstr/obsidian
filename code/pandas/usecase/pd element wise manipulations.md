@@ -1,15 +1,15 @@
-- Element wise operations can be performed con [[pd dataframe]] and [[pd series]]
+- Element wise operations can be performed con [[pd DataFrame]] and [[pd Series]]
 - element wise operations are slower than vectorised operations and should be avoided when possible
 - usually done using [[py lambda functions]] or a defined function
-- the functions [[pd map]] ([[pd series]] only), [[pd applymap]] ([[pd dataframe]] only) and [[pd apply]] (both) can be used
-- [[pd map]] and [[pd applymap]] are for simple transformations whole [[pd apply]] is for more complex operations along an axis ([[pd index]]: 0 or [[pd column]]: 1) and reviel
+- the functions [[pd map]] ([[pd Series]] only), [[pd applymap]] ([[pd DataFrame]] only) and [[pd apply]] (both) can be used
+- [[pd map]] and [[pd applymap]] are for simple transformations whole [[pd apply]] is for more complex operations along an axis ([[pd Index]]: 0 or [[pd Column]]: 1) and reviel
 
 ## summary
 
 ![[IZys3.png]]
 
 # example
-![[pd dataframe#example df]]
+![[pd DataFrame#example df]]
 
 ## [[pd map]]/[[pd applymap]]
 - gets single element and transforms it
@@ -33,9 +33,9 @@ display(pd_df1.applymap(double))
 # d 8   16   24
 ```
 ## [[pd apply]]
-- get a [[pd series]] and performs a transformation on the [[pd series]]
+- get a [[pd Series]] and performs a transformation on the [[pd Series]]
 - can de a reduction but does not have to
-- can be performed on [[pd column]] or [[pd index]]
+- can be performed on [[pd Column]] or [[pd Index]]
 ```python
 pd_df1.apply(np.add.accumulate, axis=0) # with reduction on rows
 
@@ -69,16 +69,16 @@ pd_df1.apply(np.sum, axis=1) # without reduction on columns
 START
 Basic
 pandas applying functions element wise:
-- simple mapping on [[pd series]]
-- simple mapping on [[pd dataframe]]
-- transformations with reduction ([[pd column]] and [[pd index]])
-- transformations without reduction ([[pd column]] and [[pd index]])
+- simple mapping on [[pd Series]]
+- simple mapping on [[pd DataFrame]]
+- transformations with reduction ([[pd Column]] and [[pd Index]])
+- transformations without reduction ([[pd Column]] and [[pd Index]])
 Back: 
-- Element wise operations can be performed con [[pd dataframe]] and [[pd series]]
+- Element wise operations can be performed con [[pd DataFrame]] and [[pd Series]]
 - element wise operations are slower than vectorised operations and should be avoided when possible
 - usually done using [[py lambda functions]] or a defined function
-- the functions [[pd map]] ([[pd series]] only), [[pd applymap]] ([[pd dataframe]] only) and [[pd apply]] (both) can be used
-- [[pd map]] and [[pd applymap]] are for simple transformations whole [[pd apply]] is for more complex operations along an axis ([[pd index]]: 0 or [[pd column]]: 1) and reviel
+- the functions [[pd map]] ([[pd Series]] only), [[pd applymap]] ([[pd DataFrame]] only) and [[pd apply]] (both) can be used
+- [[pd map]] and [[pd applymap]] are for simple transformations whole [[pd apply]] is for more complex operations along an axis ([[pd Index]]: 0 or [[pd Column]]: 1) and reviel
 
 ## summary
 
@@ -107,9 +107,9 @@ display(pd_df1.applymap(double))
 # d 8   16   24
 ```
 ## [[pd apply]]
-- get a [[pd series]] and performs a transformation on the [[pd series]]
+- get a [[pd Series]] and performs a transformation on the [[pd Series]]
 - can de a reduction but does not have to
-- can be performed on [[pd column]] or [[pd index]]
+- can be performed on [[pd Column]] or [[pd Index]]
 ```python
 pd_df1.apply(np.add.accumulate, axis=0) # with reduction on rows
 
@@ -151,9 +151,9 @@ Basic
 - concept and examples
 Back: 
 ## [[pd apply]]
-- get a [[pd series]] and performs a transformation on the [[pd series]]
+- get a [[pd Series]] and performs a transformation on the [[pd Series]]
 - can de a reduction but does not have to
-- can be performed on [[pd column]] or [[pd index]]
+- can be performed on [[pd Column]] or [[pd Index]]
 ```python
 pd_df1.apply(np.add.accumulate, axis=0) # with reduction on rows
 

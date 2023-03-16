@@ -1,4 +1,4 @@
-- joining two [[pd dataframe|pd dataframe]] with [[pd column|pd columns]] or [[pd index]] as keys like in SQL
+- joining two [[pd DataFrame|pd dataframe]] with [[pd Column|pd columns]] or [[pd Index]] as keys like in SQL
 ```python
 pd.merge(
     left,
@@ -66,7 +66,7 @@ df2 = pd.DataFrame(
 | 3 | N | N | A3 | N | 
 | 4 | N | N | N | A4 |
 
-## merge on [[pd column]] with the same name
+## merge on [[pd Column]] with the same name
 ```python
 pd.merge(df1, df2, on=["A"], how="outer")
 ```
@@ -87,7 +87,7 @@ pd.merge(df1, df2, on=["A"], how="inner")
 |---:|:----|:------|:------|:------|:------|:------|:------| 
 | 0 | A1 | B1 | C1 | D1 | N | N | N | 
 
-## merge on [[pd column]] with a different name
+## merge on [[pd Column]] with a different name
 ```python
 pd.merge(df1, df2, left_on=["A"], right_on=["B"], how="inner")
 ```
@@ -103,7 +103,7 @@ Basic
 - general concept
 - parameters (12)
 Back: 
-- joining two [[pd dataframe|pd dataframe]] with [[pd column|pd columns]] or [[pd index]] as keys like in SQL
+- joining two [[pd DataFrame|pd dataframe]] with [[pd Column|pd columns]] or [[pd Index]] as keys like in SQL
 ```python
 pd.merge(
     left,
@@ -218,7 +218,7 @@ df2 = pd.DataFrame(
 
 Back: 
 
-## merge on [[pd column]] with the same name
+## merge on [[pd Column]] with the same name
 ```python
 pd.merge(df1, df2, on=["A"], how="outer")
 ```
@@ -239,7 +239,7 @@ pd.merge(df1, df2, on=["A"], how="inner")
 |---:|:----|:------|:------|:------|:------|:------|:------| 
 | 0 | A1 | B1 | C1 | D1 | N | N | N | 
 
-## merge on [[pd column]] with a different name
+## merge on [[pd Column]] with a different name
 ```python
 pd.merge(df1, df2, left_on=["A"], right_on=["B"], how="inner")
 ```

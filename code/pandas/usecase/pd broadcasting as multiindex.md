@@ -1,4 +1,4 @@
-[[pandas]] [[pd dataframe]] can be broadcasted to a multiindex with [[pd dataframe|DataFrame]].reindex([[pd multiindex|MultiIndex]])
+[[pandas]] [[pd DataFrame]] can be broadcasted to a multiindex with [[pd DataFrame|DataFrame]].reindex([[pd MultiIndex|MultiIndex]])
 
 ```python
 df0

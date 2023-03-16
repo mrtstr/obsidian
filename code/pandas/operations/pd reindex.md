@@ -1,17 +1,17 @@
-[[pd dataframe|DataFrame]].reindex_like()
-[[pd dataframe|DataFrame]].reindex()
+[[pd DataFrame|DataFrame]].reindex_like()
+[[pd DataFrame|DataFrame]].reindex()
 
-Set a new [[pd index]] to a [[pd dataframe]] and fill up after given rule
+Set a new [[pd Index]] to a [[pd DataFrame]] and fill up after given rule
 
 # anki
 
 START
 Basic
 pandas dataframe:
-how to broadcast a [[pandas]] [[pd dataframe]] to a new [[pd index]]
+how to broadcast a [[pandas]] [[pd DataFrame]] to a new [[pd Index]]
 Back: 
-[[pd dataframe|DataFrame]].reindex_like()
-[[pd dataframe|DataFrame]].reindex()
+[[pd DataFrame|DataFrame]].reindex_like()
+[[pd DataFrame|DataFrame]].reindex()
 Tags: code, pandas
 <!--ID: 1668090818847-->
 END
@@ -20,8 +20,8 @@ END
 START
 Basic
 pandas dataframe:
-[[pd dataframe|DataFrame]].reindex_like()
-[[pd dataframe|DataFrame]].reindex()
+[[pd DataFrame|DataFrame]].reindex_like()
+[[pd DataFrame|DataFrame]].reindex()
 - concept and modes
 Back: 
 Conform the object to the same index on all axes. Optional filling logic, placing NaN in locations having no value in the previous index

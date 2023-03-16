@@ -1,4 +1,4 @@
-- join [[pd dataframe|pd dataframes]] or [[pd series]] on [[pd column]] or [[pd index]]
+- join [[pd DataFrame|pd dataframes]] or [[pd Series]] on [[pd Column]] or [[pd Index]]
 - less prowerful but more convenient version of [[pd merge]]
 
 ```python
@@ -25,7 +25,7 @@ DataFrame.join(
 - no suffix per default ([[pd merge]]: default ("x_", "y_"))
 - default is "left" ([[pd merge]]: default "inner")
 - no sorting per default ([[pd merge]]: sorting per default true)
-- joining only on [[pd column|pd columns]] with the same name possible ([[pd merge]]: different names possible)
+- joining only on [[pd Column|pd columns]] with the same name possible ([[pd merge]]: different names possible)
 
 the following functions are doing exactly the same:
 ```python
@@ -49,7 +49,7 @@ Basic
 - diffence to [[pd merge]]
 - parameters (7)
 Back: 
-- join [[pd dataframe|pd dataframes]] or [[pd series]] on [[pd column]] or [[pd index]]
+- join [[pd DataFrame|pd dataframes]] or [[pd Series]] on [[pd Column]] or [[pd Index]]
 - less prowerful but more convenient version of [[pd merge]]
 
 ```python
@@ -88,7 +88,7 @@ Back:
 - no suffix per default ([[pd merge]]: default ("x_", "y_"))
 - default is "left" ([[pd merge]]: default "inner")
 - no sorting per default ([[pd merge]]: sorting per default true)
-- joining only on [[pd column|pd columns]] with the same name possible ([[pd merge]]: different names possible)
+- joining only on [[pd Column|pd columns]] with the same name possible ([[pd merge]]: different names possible)
 
 #### identical example
 the following functions are doing exactly the same:

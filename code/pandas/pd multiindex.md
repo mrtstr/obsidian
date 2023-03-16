@@ -1,5 +1,5 @@
-- [[pandas]] [[pd dataframe]] and [[pd series]] can have an [[pd index]] with a higher multiple values for each row
-- a [[pd dataframe]] [[pd column]] can have a [[pd multiindex]]
+- [[pandas]] [[pd DataFrame]] and [[pd Series]] can have an [[pd Index]] with a higher multiple values for each row
+- a [[pd DataFrame]] [[pd Column]] can have a [[pd MultiIndex]]
 - the names of each index level is saved under pd_df.index.names
 - the number of index dimensions (levels) are saved under pd_df.index.nlevels
 ## example multiindex df
@@ -22,7 +22,7 @@ mi_df
 # 1 red  0.279638 0.321357
 ```
 ## data storage and access
-- the data is stored as a list of the unique elements on each level ([[pd multiindex|MultiIndex]].levels) plus mapping to the rows ([[pd multiindex|MultiIndex]].codes) -> [[pd calegorical data]] encoding (memory efficient)
+- the data is stored as a list of the unique elements on each level ([[pd MultiIndex|MultiIndex]].levels) plus mapping to the rows ([[pd MultiIndex|MultiIndex]].codes) -> [[pd Calegorical Data]] encoding (memory efficient)
 ```python
 mi = pd.MultiIndex(
 	levels = [[1, 2], ['red', 'blue']],
@@ -34,19 +34,19 @@ print(mi.codes)
 print(mi.levels)
 # [[1, 2], ['red', 'blue']]
 ```
-- for a single level the complete index can be accessed using [[pd multiindex|MultiIndex]].get_level_values as a wrapped [[np ndarray]] with a single dimension (generated on the fly)
+- for a single level the complete index can be accessed using [[pd MultiIndex|MultiIndex]].get_level_values as a wrapped [[np ndarray]] with a single dimension (generated on the fly)
 ```python
 print(mi.get_level_values(level=0))
 # Int64Index([2, 1, 2, 1], dtype='int64')
 print(mi.get_level_values(level=0).values)
 # [2 1 2 1]
 ```
-- data can also be returned as [[np ndarray]] containing [[py tuple]] ([[pd multiindex|MultiIndex]].values) (generated on the fly)
+- data can also be returned as [[np ndarray]] containing [[py tuple]] ([[pd MultiIndex|MultiIndex]].values) (generated on the fly)
 ```python
 print(mi.values)
 # [(2, 'red') (1, 'blue') (2, 'red') (1, 'blue')]
 ```
-## creating a [[pd multiindex]]
+## creating a [[pd MultiIndex]]
 - standard constructor: taking a nested list like object and a code defining the positions
 ```python
 mi = pd.MultiIndex(
@@ -69,7 +69,7 @@ pd.MultiIndex.from_arrays()
 ```python
 pd.MultiIndex.from_product()
 ```
-- from a [[pd dataframe]]
+- from a [[pd DataFrame]]
 ```python
 pd.MultiIndex.from_frame()
 ```
@@ -87,12 +87,12 @@ pd_df.index.get_locs()
 
 START
 Basic
-pandas [[pd multiindex]]: general concept
+pandas [[pd MultiIndex]]: general concept
 - what are they used for?
 - basic attributes
 Back: 
-- [[pandas]] [[pd dataframe]] and [[pd series]] can have an [[pd index]] with a higher multiple values for each row
-- a [[pd dataframe]] [[pd column]] can have a [[pd multiindex]]
+- [[pandas]] [[pd DataFrame]] and [[pd Series]] can have an [[pd Index]] with a higher multiple values for each row
+- a [[pd DataFrame]] [[pd Column]] can have a [[pd MultiIndex]]
 - the names of each index level is saved under pd_df.index.names
 - the number of index dimensions (levels) are saved under pd_df.index.nlevels
 
@@ -103,12 +103,12 @@ END
 
 START
 Basic
-pandas [[pd multiindex]]: data storage and access:
-- how are [[pd multiindex]] stored?
+pandas [[pd MultiIndex]]: data storage and access:
+- how are [[pd MultiIndex]] stored?
 - how can the data be accessed?
 Back: 
 ## data storage and access
-- the data is stored as a list of the unique elements on each level ([[pd multiindex|MultiIndex]].levels) plus mapping to the rows ([[pd multiindex|MultiIndex]].codes) -> [[pd calegorical data]] encoding (memory efficient)
+- the data is stored as a list of the unique elements on each level ([[pd MultiIndex|MultiIndex]].levels) plus mapping to the rows ([[pd MultiIndex|MultiIndex]].codes) -> [[pd Calegorical Data]] encoding (memory efficient)
 ```python
 mi = pd.MultiIndex(
 	levels = [[1, 2], ['red', 'blue']],
@@ -120,14 +120,14 @@ print(mi.codes)
 print(mi.levels)
 # [[1, 2], ['red', 'blue']]
 ```
-- for a single level the complete index can be accessed using [[pd multiindex|MultiIndex]].get_level_values as a wrapped [[np ndarray]] with a single dimension (generated on the fly)
+- for a single level the complete index can be accessed using [[pd MultiIndex|MultiIndex]].get_level_values as a wrapped [[np ndarray]] with a single dimension (generated on the fly)
 ```python
 print(mi.get_level_values(level=0))
 # Int64Index([2, 1, 2, 1], dtype='int64')
 print(mi.get_level_values(level=0).values)
 # [2 1 2 1]
 ```
-- data can also be returned as [[np ndarray]] containing [[py tuple]] ([[pd multiindex|MultiIndex]].values) (generated on the fly)
+- data can also be returned as [[np ndarray]] containing [[py tuple]] ([[pd MultiIndex|MultiIndex]].values) (generated on the fly)
 ```python
 print(mi.values)
 # [(2, 'red') (1, 'blue') (2, 'red') (1, 'blue')]
@@ -139,9 +139,9 @@ END
 
 START
 Basic
-pandas [[pd multiindex]]: methods for creating a [[pd multiindex]] (4)
+pandas [[pd MultiIndex]]: methods for creating a [[pd MultiIndex]] (4)
 Back: 
-## creating a [[pd multiindex]]
+## creating a [[pd MultiIndex]]
 - standard constructor: taking a nested list like object and a code defining the positions
 ```python
 mi = pd.MultiIndex(
@@ -164,7 +164,7 @@ pd.MultiIndex.from_arrays()
 ```python
 pd.MultiIndex.from_product()
 ```
-- from a [[pd dataframe]]
+- from a [[pd DataFrame]]
 ```python
 pd.MultiIndex.from_frame()
 ```

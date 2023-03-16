@@ -1,7 +1,7 @@
-- [[pd series]] and [[pd index]] and [[pd column]] of [[pd dataframe]] can be filtered with a [[py lambda functions]] and the [[pd loc]] function
-- the [[py lambda functions]] gets the [[pd dataframe]] as input and has to return a [[pd series]] like object containing the selected [[pd column]] (when axis 1) or the [[pd index]] when (axis 0)
+- [[pd Series]] and [[pd Index]] and [[pd Column]] of [[pd DataFrame]] can be filtered with a [[py lambda functions]] and the [[pd loc]] function
+- the [[py lambda functions]] gets the [[pd DataFrame]] as input and has to return a [[pd Series]] like object containing the selected [[pd Column]] (when axis 1) or the [[pd Index]] when (axis 0)
 
-![[pd dataframe#example df]]
+![[pd DataFrame#example df]]
 
 ```python
 pd_df1.loc[lambda pd_df1: pd_df1["col1"] > 2]
@@ -37,10 +37,10 @@ pd_df1.loc[lambda pd_df1: list("bcd")]
 
 START
 Basic
-pandas [[pd column]] and [[pd index]] selection by callable
+pandas [[pd Column]] and [[pd Index]] selection by callable
 Back: 
-- [[pd series]] and [[pd index]] and [[pd column]] of [[pd dataframe]] can be filtered with a [[py lambda functions]] and the [[pd loc]] function
-- the [[py lambda functions]] gets the [[pd dataframe]] as input and has to return a [[pd series]] like object containing the selected [[pd column]] (when axis 1) or the [[pd index]] when (axis 0)
+- [[pd Series]] and [[pd Index]] and [[pd Column]] of [[pd DataFrame]] can be filtered with a [[py lambda functions]] and the [[pd loc]] function
+- the [[py lambda functions]] gets the [[pd DataFrame]] as input and has to return a [[pd Series]] like object containing the selected [[pd Column]] (when axis 1) or the [[pd Index]] when (axis 0)
 
 ```python
 pd_df1.loc[lambda pd_df1: pd_df1["col1"] > 2]

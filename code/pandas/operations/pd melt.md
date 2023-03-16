@@ -53,7 +53,7 @@ df1_pivot.melt(id_vars=["A"], value_vars=["B0"])
 
 START
 Basic
-how to undo a [[pd melt]] operation with example
+how to undo a [[pd pivot]] operation with example
 
 | df_pivot | B0 | B1 | 
 |:----|-----:|-----:| 

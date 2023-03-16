@@ -1,4 +1,4 @@
-![[pd dataframe#example df]]
+![[pd DataFrame#example df]]
 
 
 Append a row with ones to pd_df1
@@ -24,7 +24,7 @@ appended_df = pd.concat([pd_df1, append_row])
 
 START
 Basic
-[[pandas]]: append a row with ones to the following [[pd dataframe]]
+[[pandas]]: append a row with ones to the following [[pd DataFrame]]
 ```python
 pd_df1 = pd.DataFrame({
 	"col1": {"a": 1, "b":2, "c":3, "d":4},

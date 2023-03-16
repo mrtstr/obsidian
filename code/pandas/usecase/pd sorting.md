@@ -1,7 +1,7 @@
-![[pd dataframe#example df]]
+![[pd DataFrame#example df]]
 
 ## sort after values
-### sort [[pd index]]
+### sort [[pd Index]]
 - sort: sort_values command on axis 1 (rows)
 ```python
 pd_df1.sort_values(["col1", "col2"],ascending=False, axis=0)
@@ -11,7 +11,7 @@ pd_df1.sort_values(["col1", "col2"],ascending=False, axis=0)
 # b  2    6   10 
 # a  1    5   9
 ```
-### sort [[pd column]]
+### sort [[pd Column]]
 - sort: sort_values command on axis 0 (columns)
 ```python
 pd_df1.sort_values(["a", "b"],ascending=False, axis=1)
@@ -22,8 +22,8 @@ pd_df1.sort_values(["a", "b"],ascending=False, axis=1)
 # d   12  8   4
 ```
 
-## sort after [[pd index]]/[[pd column]] names
-### sort [[pd index]]
+## sort after [[pd Index]]/[[pd Column]] names
+### sort [[pd Index]]
 - sort: sort_index command on axis 1 (rows)
 ```python
 pd_df1.sort_values(ascending=False, axis=0)
@@ -33,7 +33,7 @@ pd_df1.sort_values(ascending=False, axis=0)
 # b  2    6   10 
 # a  1    5   9
 ```
-### sort [[pd column]]
+### sort [[pd Column]]
 - sort: sort_index command on axis 0 (columns)
 ```python
 pd_df1.sort_index(ascending=False, axis=1)
@@ -43,7 +43,7 @@ pd_df1.sort_index(ascending=False, axis=1)
 # c   11  7   3 
 # d   12  8   4
 ```
-### sort after [[pd multiindex]]
+### sort after [[pd MultiIndex]]
 ```python
 print(mi_df.sort_index(axis=0, level=["X", "Y"]))
 #        A        B 
@@ -66,11 +66,11 @@ START
 Basic
 [[pandas]]: sorting
 - after values
-- [[pd column]] / [[pd index]] (with example)
-- after [[pd multiindex]]
+- [[pd Column]] / [[pd Index]] (with example)
+- after [[pd MultiIndex]]
 Back: 
 ## sort after values
-### sort [[pd index]]
+### sort [[pd Index]]
 - sort: sort_values command on axis 1 (rows)
 ```python
 pd_df1.sort_values(["col1", "col2"],ascending=False, axis=0)
@@ -80,7 +80,7 @@ pd_df1.sort_values(["col1", "col2"],ascending=False, axis=0)
 # b  2    6   10 
 # a  1    5   9
 ```
-### sort [[pd column]]
+### sort [[pd Column]]
 - sort: sort_values command on axis 0 (columns)
 ```python
 pd_df1.sort_values(["a", "b"],ascending=False, axis=1)
@@ -91,8 +91,8 @@ pd_df1.sort_values(["a", "b"],ascending=False, axis=1)
 # d   12  8   4
 ```
 
-## sort after [[pd index]]/[[pd column]] names
-### sort [[pd index]]
+## sort after [[pd Index]]/[[pd Column]] names
+### sort [[pd Index]]
 - sort: sort_index command on axis 1 (rows)
 ```python
 pd_df1.sort_values(ascending=False, axis=0)
@@ -102,7 +102,7 @@ pd_df1.sort_values(ascending=False, axis=0)
 # b  2    6   10 
 # a  1    5   9
 ```
-### sort [[pd column]]
+### sort [[pd Column]]
 - sort: sort_index command on axis 0 (columns)
 ```python
 pd_df1.sort_index(ascending=False, axis=1)
@@ -112,7 +112,7 @@ pd_df1.sort_index(ascending=False, axis=1)
 # c   11  7   3 
 # d   12  8   4
 ```
-### sort after [[pd multiindex]]
+### sort after [[pd MultiIndex]]
 ```python
 print(mi_df.sort_index(axis=0, level=["X", "Y"]))
 #        A        B 

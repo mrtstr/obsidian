@@ -1,4 +1,4 @@
-![[pd dataframe#example df]]
+![[pd DataFrame#example df]]
 
 - Selecting columns using the dict syntax
 ```python
@@ -11,16 +11,16 @@ pd_df1[["col1"]]
 pd_df1[["col1", "col2"]]
 # return Dataframe with a subset of columns (col1, col2)
 ```
-- dot notation: rows and columns of [[pd dataframe]] and [[pd series]] can be selected using the dot notation instead of the dict notation
+- dot notation: rows and columns of [[pd DataFrame]] and [[pd Series]] can be selected using the dot notation instead of the dict notation
 ```python
 pd_series.row_name == pd_series["row_name"]
 
 pd_df.col_name == pd_series["col_name"]
 ```
-- selecting rows and [[pd column]] and [[pd index]] by name using [[pd loc]]
-- selecting rows and [[pd column]] and [[pd index]] by position using [[pd iloc]]
-- selecting rows and [[pd column]] using [[pd boolean indexing]] and [[pd loc]]
-- selecting [[pd index]] and [[pd column]] using [[py lambda functions]]: [[pd indexing by callable]]
+- selecting rows and [[pd Column]] and [[pd Index]] by name using [[pd loc]]
+- selecting rows and [[pd Column]] and [[pd Index]] by position using [[pd iloc]]
+- selecting rows and [[pd Column]] using [[pd boolean indexing]] and [[pd loc]]
+- selecting [[pd Index]] and [[pd Column]] using [[py lambda functions]]: [[pd indexing by callable]]
 
 
 
@@ -34,9 +34,9 @@ pandas DataFrames:
 Back: 
 ### column
 1) by name using the dict like syntax of DataFrames
-2) by name using the second dimension of [[pd dataframe|DataFrame]].loc
-3) by position using the second dimension of [[pd dataframe|DataFrame]].iloc
-4) using a condition and a boolean mask [[pd series]] with an index on the column dimension in the second position of [[pd iloc]]
+2) by name using the second dimension of [[pd DataFrame|DataFrame]].loc
+3) by position using the second dimension of [[pd DataFrame|DataFrame]].iloc
+4) using a condition and a boolean mask [[pd Series]] with an index on the column dimension in the second position of [[pd iloc]]
 ```python
 pd_df1.loc[:, pd_df1.loc["c"] > 4]
 #   col2 col3 
@@ -46,9 +46,9 @@ pd_df1.loc[:, pd_df1.loc["c"] > 4]
 # d   8   12
 ```
 ### row
-1) by name using the first dimension of [[pd dataframe|DataFrame]].loc
-2) by position using the first dimension of [[pd dataframe|DataFrame]].iloc
-3) using a condition and a boolean mask [[pd series]] with an index on the index dimension of the dataframe in the first position
+1) by name using the first dimension of [[pd DataFrame|DataFrame]].loc
+2) by position using the first dimension of [[pd DataFrame|DataFrame]].iloc
+3) using a condition and a boolean mask [[pd Series]] with an index on the index dimension of the dataframe in the first position
 ```python
 pd_df1[pd_df1["col1"] > 2]
 #    col1 col2 col3 
@@ -137,10 +137,10 @@ END
 
 START
 Basic
-pandas syntactic sugar for the dict syntax of [[pd dataframe]] and [[pd series]]
+pandas syntactic sugar for the dict syntax of [[pd DataFrame]] and [[pd Series]]
 Back: 
 ## dot notation
-rows and columns of [[pd dataframe]] and [[pd series]] can be selected using the dot notation instead of the dict notation
+rows and columns of [[pd DataFrame]] and [[pd Series]] can be selected using the dot notation instead of the dict notation
 ```python
 pd_series.row_name == pd_series["row_name"]
 
@@ -153,14 +153,14 @@ END
 
 START
 Basic
-pandas indexing: selecting [[pd column]] and/or [[pd index]] (6 without example)
+pandas indexing: selecting [[pd Column]] and/or [[pd Index]] (6 without example)
 Back: 
 1) Selecting columns using the dict syntax
-2) dot notation: rows and columns of [[pd dataframe]] and [[pd series]] can be selected using the dot notation instead of the dict notation
-3) selecting rows and [[pd column]] and [[pd index]] by name using [[pd loc]]
-4) selecting rows and [[pd column]] and [[pd index]] by position using [[pd iloc]]
-5) selecting rows and [[pd column]] using [[pd boolean indexing]] and [[pd loc]]
-6) selecting [[pd index]] and [[pd column]] using [[py lambda functions]]: [[pd indexing by callable]]
+2) dot notation: rows and columns of [[pd DataFrame]] and [[pd Series]] can be selected using the dot notation instead of the dict notation
+3) selecting rows and [[pd Column]] and [[pd Index]] by name using [[pd loc]]
+4) selecting rows and [[pd Column]] and [[pd Index]] by position using [[pd iloc]]
+5) selecting rows and [[pd Column]] using [[pd boolean indexing]] and [[pd loc]]
+6) selecting [[pd Index]] and [[pd Column]] using [[py lambda functions]]: [[pd indexing by callable]]
 
 Tags: code, pandas
 <!--ID: 1668090818842-->

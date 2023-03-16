@@ -1,7 +1,7 @@
-Indexing on [[pd dataframe]] with [[pd multiindex]]
+Indexing on [[pd DataFrame]] with [[pd MultiIndex]]
 
-![[pd multiindex#example multiindex df]]
-- [[pd multiindex]] as accessed using [[py tuple]] and slices
+![[pd MultiIndex#example multiindex df]]
+- [[pd MultiIndex]] as accessed using [[py tuple]] and slices
 - or using a [[pandas|pd]].IndexSlice
 ```python
 idx = pd.IndexSlice
@@ -27,9 +27,9 @@ mi_df.loc[(2, slice(None)), "A"]  # filter only by the first level of the index
 
 START
 Basic
-[[pandas]] [[pd multiindex]]: how to select data? (2)
+[[pandas]] [[pd MultiIndex]]: how to select data? (2)
 Back: 
-- [[pd multiindex]] as accessed using [[py tuple]] and slices
+- [[pd MultiIndex]] as accessed using [[py tuple]] and slices
 - or using a [[pandas|pd]].IndexSlice
 ```python
 idx = pd.IndexSlice
