@@ -21,7 +21,8 @@ df.groupby("class").describe()
 
 START
 Basic
-get a summary of a [[pd DataFrameGroupBy]] object
+- get a summary of a [[pd DataFrameGroupBy]] object
+- how does the summary look like?
 Back: 
 given the following [[pd DataFrame]]
 

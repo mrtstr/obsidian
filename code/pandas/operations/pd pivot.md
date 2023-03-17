@@ -51,9 +51,17 @@ START
 Basic
 [[pd pivot]]
 - explaination
-- parameters
+- parameters (3)
 - condition
 - how to revert
+- example
+
+| df1 | A | B | value | 
+|---:|:----|:----|--------:| 
+| 1 | A1 | B0 | 1 | 
+| 2 | A1 | B1 | 2 | 
+| 3 | A2 | B0 | 3 | 
+| 4 | A2 | B1 | 4 |
 
 Back: 
 - Reshape data (produce a “pivot” table) based on column values

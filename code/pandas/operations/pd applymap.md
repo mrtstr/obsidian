@@ -1,1 +1,1 @@
-[[pd element wise manipulations]] of [[pd DataFrame]]
+[[pd manipulations alsong axis]] of [[pd DataFrame]]

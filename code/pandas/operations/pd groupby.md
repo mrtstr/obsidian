@@ -85,6 +85,7 @@ df.groupby({
 ## make [[pd Index]] unique
 - use [[pd Index]] as mapping for the split with [[pd groupby]]
 - take the first value if there are duplicates
+
 | | class | order | max_speed | 
 |:--------|:--------|:---------------|------------:| 
 | falcon | bird | Falconiformes | 389 | 
@@ -93,9 +94,11 @@ df.groupby({
 | monkey | mammal | Primates | nan | 
 | leopard | mammal | Carnivora | 58 | 
 | monkey | mammal | Primates | nan |
+
 ```python
 df2.groupby(df2.index).agg("first")
 ```
+
 | | class | order | max_speed | 
 |:--------|:--------|:---------------|------------:| 
 | falcon | bird | Falconiformes | 389 | 
@@ -103,13 +106,15 @@ df2.groupby(df2.index).agg("first")
 | lion | mammal | Carnivora | 80.2 | 
 | monkey | mammal | Primates | nan | 
 | parrot | bird | Psittaciformes | 24 |
+
 # anki
 
 START
 Basic
 [[pd groupby]]
-- discribtion
-- parameters
+- Discription
+- What does it create?
+- Parameters (2)
 Back: 
 - Creates a [[pd DataFrameGroupBy]] object
 - splitting a [[pd DataFrame]] based on mapping ([[py dict]], [[pd Series]], [[pd Column]])
@@ -119,10 +124,11 @@ Back:
 - Created by [[pd groupby]]
 - [[py dict]] like data structure mapping group name to the [[pd Index]] of group members applied on the [[pd DataFrame]]
 
-## attributes
+#### attributes
 - `.groups`: [[py dict]] containing the group names mapping to a [[py list]] of the [[pd Index]] of its group members
 - `.ngroups`: number of groups
 
+### parameters
 ```python
 df.groupby(
    by=None, 
@@ -201,6 +207,7 @@ Basic
 Back: 
 - use [[pd Index]] as mapping for the split with [[pd groupby]]
 - take the first value if there are duplicates
+
 | | class | order | max_speed | 
 |:--------|:--------|:---------------|------------:| 
 | falcon | bird | Falconiformes | 389 | 
@@ -209,9 +216,11 @@ Back:
 | monkey | mammal | Primates | nan | 
 | leopard | mammal | Carnivora | 58 | 
 | monkey | mammal | Primates | nan |
+
 ```python
 df2.groupby(df2.index).agg("first")
 ```
+
 | | class | order | max_speed | 
 |:--------|:--------|:---------------|------------:| 
 | falcon | bird | Falconiformes | 389 | 

@@ -1,7 +1,9 @@
 - Takes a row or a column as a [[py interatable]]
 - performs an operation and return an [[py interatable]] of the same length
-- similar to [[pd apply]] but less powerfull because aggragation is not allowed (→ output same length as input)
-- similar to [[pd applymap]] but more powerful because the column context can be concidered (like needed for [[np cumsum]])
+	- mapping: `vector -> vector`
+	- `len(input) = len(output)`
+- Similar to [[pd apply]] but less powerfull because aggragation is not allowed (→ output same length as input)
+- Similar to [[pd applymap]] but more powerful because the column context can be concidered (like needed for [[np cumsum]])
 
 # example
 # anki
@@ -15,8 +17,11 @@ Basic
 Back: 
 - Takes a row or a column as a [[py interatable]]
 - performs an operation and return an [[py interatable]] of the same length
-- similar to [[pd apply]] but less powerfull because aggragation is not allowed (→ output same length as input)
-- similar to [[pd applymap]] but more powerful because the column context can be concidered (like needed for [[np cumsum]])
+	- mapping: `vector -> vector`
+	- `len(input) = len(output)`
+- Similar to [[pd apply]] but less powerfull because aggragation is not allowed (→ output same length as input)
+- Similar to [[pd applymap]] but more powerful because the column context can be concidered (like needed for [[np cumsum]])
+
 Tags: code, pandas
 <!--ID: 1678974652758-->
 END
@@ -24,6 +29,7 @@ END
 
 START
 Basic
+
 | | class | order | max_speed | 
 |:--------|:--------|:---------------|------------:| 
 | falcon | bird | Falconiformes | 389 | 
@@ -32,6 +38,7 @@ Basic
 | monkey | mammal | Primates | nan | 
 | leopard | mammal | Carnivora | 58 |
 
+- output of the following functions:
 ```python
 df.transform(np.cumsum)
 df.apply(np.cumsum)

@@ -1,6 +1,7 @@
 - performes operations on columns or rows of [[pd DataFrame]] or a [[pd DataFrameGroupBy]] objects 
 - operations take a row or a column and return a single value
-- can perform multiple functions at once ([[pd apply]] can not)
+	-> mapping (vector -> scalar)
+- can perform multiple functions at once
 
 ```python
 df.agg(
@@ -103,11 +104,24 @@ Basic
 - parameters
 - simple example
 
+| | class | order | max_speed | 
+|:--------|:--------|:---------------|------------:| 
+| falcon | bird | Falconiformes | 389 | 
+| parrot | bird | Psittaciformes | 24 | 
+| lion | mammal | Carnivora | 80.2 | 
+| monkey | mammal | Primates | nan | 
+| leopard | mammal | Carnivora | 58 |
+
+```python
+df.groupby("class").agg(["max", "min"])
+df.agg(["sum", "count", "nunique"], axis=0)
+```
 
 Back: 
 - performes operations on columns or rows of [[pd DataFrame]] or a [[pd DataFrameGroupBy]] objects 
 - operations take a row or a column and return a single value
-- can perform multiple functions at once ([[pd apply]] can not)
+	-> mapping (vector -> scalar)
+- can perform multiple functions at once
 
 ```python
 df.agg(
@@ -159,6 +173,7 @@ example:
 - given the following [[pd DataFrame]]
 - create a [[pd DataFrame]] that contains
 - for every class: lengh of the longest strings and a list of entrys
+
 | | class | order | max_speed | 
 |:--------|:--------|:---------------|------------:| 
 | falcon | bird | Falconiformes | 389 | 
@@ -196,7 +211,6 @@ START
 Basic
 ```python
 
-
 def max_len(group):
 	l = [
 		len(i) if isinstance(i, str) else 1 
@@ -211,6 +225,7 @@ df.groupby("class").agg([get_list, max_len])
 df.agg(["sum", "count", "nunique"], axis=0)
 df.agg(["count", "nunique"], axis=1)
 ```
+
 | | class | order | max_speed | 
 |:--------|:--------|:---------------|------------:| 
 | falcon | bird | Falconiformes | 389 | 
@@ -234,6 +249,7 @@ def get_list(group):
 
 df.groupby("class").agg([get_list, max_len])
 ```
+
 | class | ('order', 'get_list') | ('order', 'max_len') | ('max_speed', 'get_list') | ('max_speed', 'max_len') | 
 |:--------|:---------------------------------------|-----------------------:|:----------------------------|---------------------------:| 
 | bird | ['Falconiformes', 'Psittaciformes'] | 14 | [389.0, 24.0] | 1 | 
@@ -269,6 +285,7 @@ START
 Basic
 - [[pandas]] names aggegation of the following [[pd DataFrame]]
 - two ways of getting a [[pd DataFrame]] containing the maximum and numimim of max_speed per class
+
 | | class | order | max_speed | 
 |:--------|:--------|:---------------|------------:| 
 | falcon | bird | Falconiformes | 389 | 

@@ -227,20 +227,27 @@ Basic
 - [[pd applymap]]
 - [[pd transform]]
 - [[pd agg]]
+
+How to use them in a [[pd split transform combine]]?
 Back: 
 - all can be applied on [[pd Series]], [[pd DataFrame]], [[pd DataFrameGroupBy]]
+- all perform a [[pd manipulations alsong axis]]
 - [[pd apply]] $\supset$ [[pd transform]] $\supset$ [[pd applymap]]
 - [[pd applymap]] 
 	- is elemt wise (scalar → scalar)
 	- thus operations that need context (like [[np cumsum]]) do not work  
+	- [[pd split transform combine]]: can be used to transform when transformation is element wise (e.g. square)
 - [[pd transform]] 
 	- vector → vector mapping with input shape == output shape
 	 → thus aggragations are not possible
+	 - [[pd split transform combine]]: can be used to transform 
 - [[pd apply]] can include context and has no output shape restructions
 	- vector → vector mapping with input shape == arbitray
+	- [[pd split transform combine]]: can be used to transform and/or combine because the output shape is arbitrary
 - [[pd agg]] 
 	- vector → scalar mapping
 	- can apply multiple functions at once
+	- [[pd split transform combine]]: can be used to combine because the output has to be scalar
 Tags: code, pandas
 <!--ID: 1678976350273-->
 END

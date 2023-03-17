@@ -5,7 +5,7 @@
 - [[pd pivot]] in comparison can not deal with duplicates in `df[index, columns]`
 
 ```python
-pd.pivot(
+pd.pivot_table(
 	df,
 	# dataframe to transform
 	index=None, 
@@ -96,7 +96,7 @@ START
 Basic
 [[pd pivot_table]]
 - explaination
-- parameters
+- parameters (6)
 - difference to [[pd pivot]]
 Back: 
 - Reshape data (produce a “pivot” table) based on column values
@@ -104,7 +104,7 @@ Back:
 - `df[index, columns]` can have duplicates and will be aggregated
 - [[pd pivot]] in comparison can not deal with duplicates in `df[index, columns]`
 ```python
-pd.pivot(
+pd.pivot_table(
 	df,
 	# dataframe to transform
 	index=None, 

@@ -99,7 +99,7 @@ Back:
 - `df[index, columns]` have to be unique
 
 ### example
-```
+
 | | A | B | value | 
 |---:|:----|:----|--------:| 
 | 1 | A1 | B0 | 1 | 
