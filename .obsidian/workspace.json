@@ -80,6 +80,30 @@
             }
           },
           {
+            "id": "810b1601623c711e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/usecase/pd filter a df.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "12acb7be4986a65b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/pandas/operations/pd filter.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "d507f71f63b8d37d",
             "type": "leaf",
             "state": {
@@ -256,34 +280,17 @@
     "width": 300,
     "collapsed": true
   },
-  "left-ribbon": {
-    "hiddenItems": {
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
-    }
-  },
   "active": "1e05a57c72f620a6",
   "lastOpenFiles": [
-    "code/pandas/operations/pd shift.md",
     "code/pandas/operations/pd pipe.md",
-    "code/pandas/operations/pd query.md",
-    "code/pandas/usecase/pd dot chaining.md",
     "code/pandas/operations/pd rolling.md",
+    "code/pandas/usecase/pd dot chaining.md",
+    "code/pandas/pd DataFrameGroupBy.md",
+    "code/pandas/operations/pd filter.md",
+    "code/pandas/usecase/pd filter a df.md",
     "code/pandas/usecase/pd reshape df.md",
-    "code/pandas/usecase/pd split transform combine.md",
-    "code/pandas/operations/pd pivot_table.md",
-    "code/pandas/operations/pd pivot.md",
-    "code/pandas/usecase/pd manipulations alsong axis.md",
-    "code/pandas/operations/pd agg.md",
-    "code/pandas/operations/pd apply.md",
-    "code/pandas/usecase/pd summary of grouped df.md",
-    "code/pandas/operations/pd transform.md",
-    "code/pandas/operations/pd groupby.md",
-    "code/pandas/operations/pd exanding.md"
+    "code/pandas/operations/pd shift.md",
+    "code/pandas/operations/pd query.md",
+    "code/pandas/usecase/pd split transform combine.md"
   ]
 }

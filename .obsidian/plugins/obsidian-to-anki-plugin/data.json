@@ -464,9 +464,15 @@
     "code/pandas/usecase/pd group transform aggragate.md": "9426b749a8c5bc835d0281e294750b70",
     "code/pandas/usecase/pd manipulations alsong axis.md": "527762796d18b531efedd6d60f552fb5",
     "code/pandas/usecase/pd split transform combine.md": "d6a035e58981bac032783d88c2f345c4",
-    "code/pandas/operations/pd rolling.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/pandas/operations/pd rolling.md": "0310bbda042857f39d61c5cc6e2524e5",
     "code/pandas/operations/pd resample.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/pandas/operations/pd exanding.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "code/pandas/operations/pd exanding.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/pandas/usecase/pd dot chaining.md": "8ecb80897acb7b3a1ddc6156daeeaadd",
+    "code/pandas/operations/pd shift.md": "cc2d1308768356cc20b5228c92147540",
+    "code/pandas/operations/pd query.md": "0ec5e33de9adb4ff21f5295c999152b7",
+    "code/pandas/operations/pd pipe.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/pandas/usecase/pd filter a df.md": "7011ba36c49828a713891d3391cdeea4",
+    "code/pandas/operations/pd filter.md": "c97169e12d44722f0afe4244c114c17d"
   },
   "fields_dict": {
     "Basic": [
