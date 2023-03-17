@@ -1,0 +1,1 @@
+- [[pd dot chaining|dot chainable]] filter operation in [[pandas]]

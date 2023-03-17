@@ -13,79 +13,55 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/usecase/pd split transform combine.md",
+                "file": "code/pandas/operations/pd rolling.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "47dd26403cd514e2",
+            "id": "816c1837ec1306f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/operations/pd resample.md",
+                "file": "code/pandas/usecase/pd dot chaining.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ceaef88ff650c734",
+            "id": "5ec0d3f647cc55db",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/operations/pd exanding.md",
+                "file": "code/pandas/operations/pd query.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6a5ec4586f91e009",
+            "id": "1130780237ea280f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/usecase/pd summary of grouped df.md",
+                "file": "code/pandas/operations/pd pipe.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "422ba4caa5d5eef2",
+            "id": "8aab6ca7db7c11ff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/pandas/usecase/pd aggregate grouped dfs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d46edd4dc7eb027b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/operations/pd apply.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1c21f56fc38d2ddb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/pandas/usecase/pd manipulations alsong axis.md",
+                "file": "code/pandas/operations/pd shift.md",
                 "mode": "source",
                 "source": false
               }
@@ -163,8 +139,7 @@
               }
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -210,8 +185,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -231,7 +205,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "code/pandas/usecase/pd reshape df.md",
+                "file": "code/pandas/operations/pd rolling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -248,7 +222,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "code/pandas/usecase/pd reshape df.md",
+                "file": "code/pandas/operations/pd rolling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -271,7 +245,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "code/pandas/usecase/pd reshape df.md"
+                "file": "code/pandas/operations/pd rolling.md"
               }
             }
           }
@@ -282,8 +256,26 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9d0d8c9005b064fb",
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "1e05a57c72f620a6",
   "lastOpenFiles": [
+    "code/pandas/operations/pd shift.md",
+    "code/pandas/operations/pd pipe.md",
+    "code/pandas/operations/pd query.md",
+    "code/pandas/usecase/pd dot chaining.md",
+    "code/pandas/operations/pd rolling.md",
+    "code/pandas/usecase/pd reshape df.md",
+    "code/pandas/usecase/pd split transform combine.md",
     "code/pandas/operations/pd pivot_table.md",
     "code/pandas/operations/pd pivot.md",
     "code/pandas/usecase/pd manipulations alsong axis.md",
@@ -292,7 +284,6 @@
     "code/pandas/usecase/pd summary of grouped df.md",
     "code/pandas/operations/pd transform.md",
     "code/pandas/operations/pd groupby.md",
-    "code/pandas/operations/pd rolling.md",
     "code/pandas/operations/pd exanding.md"
   ]
 }
