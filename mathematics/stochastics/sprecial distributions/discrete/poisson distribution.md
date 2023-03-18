@@ -267,18 +267,16 @@ Basic
 relationship of [[binomial distribution]], [[poisson distribution]] and [[hypergeometric distribution]]
 
 Back: 
-for very large number of [[bernoulli distribution| bernoulli experiments]] (n for [[binomial distribution]] and [[poisson distribution]] or $T$ for [[hypergeometric distribution]]) they are equal
 
-[[poisson distribution]]:
+[[hypergeometric distribution]]
 $$
-f_X(x | \lambda) =
-\begin{cases}
-\frac{\lambda^xe^{-\lambda}}{x!}
-& \text{if } x \in \{0,1,2,..., n\}\\
-0
-& \text{otherwise}
-\end{cases}
+f_X({x|a,b,n}) = \frac{
+{a \choose x}{b \choose n-x}
+}{{a+b \choose n}}
+\quad for \: max\{0, n-b\}<x<min\{n, a\}
 $$
+- $p=\frac{a}{a+b}$, $a+b \gg n$ → [[binomial distribution]]
+
 [[binomial distribution]]
 $$
 f_X(x | n, p)= 
@@ -291,13 +289,19 @@ p^{x}(1-p)^{n-x}
 ,& \text{otherwise}
 \end{cases}
 $$
-[[hypergeometric distribution]]
+- $\lambda = np$, $p \ll 1$ →  [[poisson distribution]]
+
+[[poisson distribution]]:
 $$
-f_X({x|a,b,n}) = \frac{
-{a \choose x}{b \choose n-x}
-}{{a+b \choose n}}
-\quad for \: max\{0, n-b\}<x<min\{n, a\}
+f_X(x | \lambda) =
+\begin{cases}
+\frac{\lambda^xe^{-\lambda}}{x!}
+& \text{if } x \in \{0,1,2,..., n\}\\
+0
+& \text{otherwise}
+\end{cases}
 $$
+
 Tags: mathematics, statistics
 <!--ID: 1678520971204-->
 END

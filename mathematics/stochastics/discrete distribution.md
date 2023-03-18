@@ -72,8 +72,6 @@ Basic
 - explainaition
 Back: 
 
-
-
 ### [[bernoulli distribution]]
 - binary [[random experiment]] 
 - $p=$ probability of positive outcome

@@ -1,8 +1,9 @@
 
 START
 Basic
-- create a now column containing the values of [[pd Column]] `A` but shifted forward by 2 with 0 insted of [[pd NaN]]
-- create a now column containing the values of [[pd Column]] `A` but shifted forward by 2 circular
+- Create a new column containing the values of [[pd Column]] `A` but shifted forward by 2 with 0 insted of [[pd NaN]]
+- Create a new column containing the values of [[pd Column]] `A` but shifted forward by 2 circular
+
 | | A | B | 
 |---:|----:|----:| 
 | 0 | 0 | 6 | 

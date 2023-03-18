@@ -85,7 +85,7 @@ Back:
 [[simple sample space]]:
 $6!$ total arrangements and $3!\cdot3!$ satisfy the condition.
 $$
-\frac{6!}{3!3!}=\frac{1}{20}
+\frac{3!3!}{6!}=\frac{1}{20}
 $$
 Tags: mathematics, statistics
 <!--ID: 1667725085221-->
