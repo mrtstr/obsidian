@@ -1,6 +1,6 @@
 # Lebenslauf
 ## WiIng
-- interesse automatische datenverarbeitung und regelungstechnik
+- interesse automatische datenverarbeitung
 - nebenbei noch weiter et module aus dem bereich signalverarbeitung gehoert
 - Abschlussarbeit: automatische verarbeitung von Messdaten
 	- zeitreihen von kraft und verschiebungssensoren
@@ -19,9 +19,9 @@
 - fokus der arbeit: methoden zur kompensation der domainverschiebung ohne dass neues trainingsdaten erforderlich sind
 - methoden
 	- selftraining: klassifizierungen des models mit hoher konfidenz als trainingsdaten nutzen 
-	- adversarial attacks: 
+		(- adversarial attacks: )
 	- entropie minimierung: entropy der model vorhersage minimieren
-	- gewichtsregularisierung: parameter aenderungen vom urspurngszustand bestrafen
+		(- gewichtsregularisierung: parameter aenderungen vom urspurngszustand bestrafen)
 ## 2021 einstieg New Yorker als Data Scientist
 - arbeit im distibutionprojekt: zustendig optimierung der gesamten warenfluesse vom zentrallager in die filiallen
 - Datenpipeline in production die jeder Nacht vollautomatisiert ueber die gesammte zuteilung der ware entscheidet
