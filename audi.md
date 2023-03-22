@@ -5,9 +5,11 @@
 - Abschlussarbeit: automatische verarbeitung von Messdaten
 	- zeitreihen von kraft und verschiebungssensoren
 	- software um aus den Zeitreihen materialeigenschaften abzuleiten
+→ anschiessend werkstudenten job 
 ## Informatik min Mathe Nebenfach
 - ich wussete schon dass ich in den data science bereich will
 - daher moeglichst viele Mathe grundlagen aus Statistik, Optimierung und Numerik
+	(- numerik: ausgleichsproblem, nicht lineare gleichungssysteme, interpolation, kondition von problemen / numerische stabilitaet, numerische inegration)
 - und Infiormatik module aus Bereich Machine learning und data mining
 ## Abschlussarbeit: domain adapation im autonomen Fahren
 - erster schritt: training von deep learning modell das objekte auf bildern von Verkehrssituationen erkennt
@@ -32,19 +34,21 @@
 - proof of concept fuer demand vorhersage
 	- testen weche daten eigenen sich zur demand und wie muessen die daten vorbereitet werden vorhersage
 	- welche models funktionieren gut (random forrest, gradient boosted trees, deep learning)
-	- simulation der ergebnisse (3 % mehr umsatz und mehr marge)
-- bau des vorhersage systems
 	- daten:
 		- produkteigeschaften wie warengruppe und farbe (tabular data)
 		- verkaeufe der vergangenheit als Zeitreihe
-		- image embeddings (vektor der die vosuellen eigenschaft der produktbilder beschreibt)
+		- image embeddings (vektor der die visuellen eigenschaft der produktbilder beschreibt)
+	- simulation der ergebnisse (3 % mehr umsatz und mehr marge)
+- bau des vorhersage systems
 	- bei einer pipeline zur datenvorbereitung (hauptarbeit)
+	- dl model da bessere performance auf unstrukturierten features
 	- training von deep lerning model zur vorhersage von demand quantieles (verbessern)
 		- quantile regression: statt point estimate 
 		- normalerweise vorhersage von erwartungswert 
 		- hier vorhersage von quantielen der Nachfrage verteilung
 			- 25% quantiel: wahscheinlichkeit dass wahrer wert kleiner ist: 25% und 75% dass er groesser ist
 			→ aussage ueber unsicherheit der vorhersage 
+		- parametrisches model vs quantile regression
 
 # Warum Audi
 - vereint viele Themen die mich sehr interessieren:
@@ -64,3 +68,12 @@
 - guter Zeitpunkt fuer wechsel in projekt da abschlossene projekt phase
 - keine remote arbeit
 - Auto pefekte Stelle (will in automobies indulstrie)
+
+
+# Fragen
+- technology: spark cluster...?
+- Art der daten (visuel, lidar...)
+- projekt management
+- team groesse und organisation
+- zeitplan production
+- 
