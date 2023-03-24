@@ -11,18 +11,27 @@
 	- adaption auf wechselnde bedingungen
 
 ## New Yorker als data scientist ab 2021
-- Arbeit mit python data science stack
+- Arbeit mit python samt data science stack
 	- numpy, pandas, sklearn
 	- pytorch fuer deep learning
-	- gradient boosted trees
-- Bau von ETL Pipelines 
-	- spark (distributed data processing)
+	- matplotlib zur datan visualtisierung
+- ETL Pipelines 
+	- Bau, deploment und betrieb
+	- spark - framework zur verteilten verarbeitung von big data 
+	- production 
+		→ anforderungen an ausfall sicherheit
+		→ unit tests
 - Nachfrage Prognose mit machine learning 
-	- data cleaning
-	- preprocessing
-- unterschiedliche Daten arten: 
-	- sowohl structured (Tabellen mit Kategorischen Featu) 
-	- unstrukturierte Daten (Bild Vektoren)
+	- Schwerpunkt: Datanvorbereitung
+		- data cleaning
+		- preprocessing
+	-  Unterschiedliche Daten arten: 
+		- sowohl structured 
+			→ Tabellen mit Kategorischen Features
+		- unstrukturierte Daten 
+			→ (Bild Vektoren)
+	- deep learning model aber auch andere modelle getestet
+
 
 ## Warum Audi
 - Autonomes Fahren
@@ -30,9 +39,13 @@
 - Interessante Fragestellungen im autonomen Fahren
 
 ## Warum Wechsel
-- Autonomes Fahren: schluesseltechnologie mit vielen interessanten Fragestellungen
+- Autonomes Fahren: 
+	- schluesseltechnologie 
+	- vielen interessanten Fragestellungen
 	→ Weiterentwickeln
 - Arbeit mit technischen systemen instbesondere Automobilumfeld
+- Aktuell: Wechsel von Arbeilungsleiter zu Meta und seit dem Mehrmals management wechsel → nicht mehr 100% zufrieden
+	→ Gespraech Juan: perfekt gepasst weil genau das was ich machen will
 
 # Fragen
 - technology: spark cloud...?
