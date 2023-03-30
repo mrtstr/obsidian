@@ -196,7 +196,7 @@
     "mathematics/stochastics/partitioned sample space.md": "7600ffaf6a23b689c78b425457e20c18",
     "mathematics/stochastics/ordered sampling without replacement.md": "aad20dc4edafd2e16c8bb04684cb2b9f",
     "mathematics/stochastics/observations.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/moments.md": "68a554506318b0361434d544194bf2eb",
+    "mathematics/stochastics/moments.md": "7f6315b5a403a71dfafab926ff69a0d3",
     "mathematics/stochastics/mode.md": "590b42c9d21646a76ea6a2a44b9c20f7",
     "mathematics/stochastics/median.md": "8643c2f5f12ec21c665b81fe9f40ab75",
     "mathematics/stochastics/measurable space.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -423,7 +423,7 @@
     "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md": "0963b63abf77be6dc2f6a36522ea12f5",
     "mathematics/stochastics/sprecial distributions/discrete/hypergeometric distribution.md": "b80622be37153e227348fa15689e07b5",
     "mathematics/stochastics/sprecial distributions/discrete/poisson distribution.md": "6d2c3de0c4e2df451a58103467174662",
-    "mathematics/basics/eulers number.md": "3b26b3584fcef0b15851f0d38ef1fdba",
+    "mathematics/basics/eulers number.md": "7d98b3af24e49bc99cda63c9acef5c91",
     "mathematics/stochastics/sprecial distributions/discrete/negative binomial distibution.md": "c29a071557412dfb88f28d234c12884e",
     "audi.md": "716ad73b591cdea9fa52e5c4e10e1477",
     "code/pandas/pd nan.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -460,7 +460,7 @@
     "code/pandas/operations/pd groupby.md": "c2862a09754984c02a137c0b7e1ea95e",
     "code/pandas/usecase/pd aggregate grouped dfs.md": "f5072c568b8004a497df4a2852446d3d",
     "code/pandas/usecase/pd summary of grouped df.md": "c8fa519784fe60ffcd9ae18ffa4f119f",
-    "code/numpy/np cumsum.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/numpy/np cumsum.md": "bf69afa1985ff28d93f8626ea6bb2c88",
     "code/pandas/usecase/pd group transform aggragate.md": "9426b749a8c5bc835d0281e294750b70",
     "code/pandas/usecase/pd manipulations alsong axis.md": "527762796d18b531efedd6d60f552fb5",
     "code/pandas/usecase/pd split transform combine.md": "d6a035e58981bac032783d88c2f345c4",
@@ -472,7 +472,10 @@
     "code/pandas/operations/pd query.md": "0ec5e33de9adb4ff21f5295c999152b7",
     "code/pandas/operations/pd pipe.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/pandas/usecase/pd filter a df.md": "7011ba36c49828a713891d3391cdeea4",
-    "code/pandas/operations/pd filter.md": "c97169e12d44722f0afe4244c114c17d"
+    "code/pandas/operations/pd filter.md": "c97169e12d44722f0afe4244c114c17d",
+    "mathematics/stochastics/kurtosis.md": "d183c4579d7299637934847a1711296a",
+    "mathematics/stochastics/symmetric distribution.md": "0826b8456acc265220fb42887351aecc",
+    "mathematics/stochastics/moment generating function.md": "c8b5e59b8d6a65b63fbb89ccf5eaec1a"
   },
   "fields_dict": {
     "Basic": [
