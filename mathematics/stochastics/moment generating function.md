@@ -1,6 +1,8 @@
+# moment generating function
 - The [[moment generating function]] $\psi_X(t)$ provides a method for calculating the [[moments|raw moments]] $\mathbb{E}\left[X^k\right]$ of [[distribution|distributions]] 
 - for some [[distribution|distributions]] is easies than solving the integral 
 
+## definition
 $$
 \psi_X(t) = \mathbb{E}\left[e^{tx}\right] = \int\limits_{-\infty}^\infty e^{tx} f_X(x) dx
 $$
