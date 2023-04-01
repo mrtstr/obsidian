@@ -8,7 +8,7 @@ $$
 ![[moment generating function#definition]]
 
 $$
-\psi_X(t) = \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]}
+\psi_X(t) = \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]}
 $$
 (no proof)
 ## [[expectation]] / mean
@@ -18,8 +18,8 @@ $$
 \mathbb{E}[X] &= \mu \\ 
 
  &= \left.\frac{d\psi_X(t)}{dt} \right|_{t=0} \\
- &= \left.\frac{d}{dt} \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} \right|_{t=0} \\
- &= \left. \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} (\mu+t \sigma^2) \right|_{t=0} \\
+ &= \left.\frac{d}{dt} \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} \right|_{t=0} \\
+ &= \left. \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} (\mu+t \sigma^2) \right|_{t=0} \\
 \end{split}
 $$
 ## [[variance]]
@@ -33,9 +33,9 @@ $$
 
 \mathbb{E}\left[X^2\right] 
  &= \left.\frac{d^2\psi_X(t)}{dt^2} \right|_{t=0} \\
- &= \left.\frac{d^2}{dt^2} \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} \right|_{t=0} \\
- &= \left. \frac{d}{dt} \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} \left(\mu+t \sigma^2\right) \right|_{t=0} \\
- &= \left. \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} \left(\left(\mu+t \sigma^2\right)^2 + \sigma^2\right) \right|_{t=0} \\
+ &= \left.\frac{d^2}{dt^2} \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} \right|_{t=0} \\
+ &= \left. \frac{d}{dt} \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} \left(\mu+t \sigma^2\right) \right|_{t=0} \\
+ &= \left. \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} \left(\left(\mu+t \sigma^2\right)^2 + \sigma^2\right) \right|_{t=0} \\
  &= \mu^2 + \sigma^2 \\
  
 \end{split}
@@ -86,7 +86,7 @@ $$
 \psi_X(t) = \mathbb{E}\left[e^{tx}\right] = \int\limits_{-\infty}^\infty e^{tx} f_X(x) dx
 $$
 $$
-\psi_X(t) = \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]}
+\psi_X(t) = \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]}
 $$
 (no proof)
 Tags: mathematics, statistics
@@ -111,7 +111,7 @@ $$
 \psi_X(t) = \mathbb{E}\left[e^{tx}\right] = \int\limits_{-\infty}^\infty e^{tx} f_X(x) dx
 $$
 $$
-\psi_X(t) = \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]}
+\psi_X(t) = \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]}
 $$
 (no proof)
 ## [[expectation]] / mean
@@ -121,8 +121,8 @@ $$
 \mathbb{E}[X] &= \mu \\ 
 
  &= \left.\frac{d\psi_X(t)}{dt} \right|_{t=0} \\
- &= \left.\frac{d}{dt} \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} \right|_{t=0} \\
- &= \left. \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} (\mu+t \sigma^2) \right|_{t=0} \\
+ &= \left.\frac{d}{dt} \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} \right|_{t=0} \\
+ &= \left. \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} (\mu+t \sigma^2) \right|_{t=0} \\
 \end{split}
 $$
 ## [[variance]]
@@ -136,9 +136,9 @@ $$
 
 \mathbb{E}\left[X^2\right] 
  &= \left.\frac{d^2\psi_X(t)}{dt^2} \right|_{t=0} \\
- &= \left.\frac{d^2}{dt^2} \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} \right|_{t=0} \\
- &= \left. \frac{d}{dt} \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} \left(\mu+t \sigma^2\right) \right|_{t=0} \\
- &= \left. \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} \left(\left(\mu+t \sigma^2\right)^2 + \sigma^2\right) \right|_{t=0} \\
+ &= \left.\frac{d^2}{dt^2} \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} \right|_{t=0} \\
+ &= \left. \frac{d}{dt} \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} \left(\mu+t \sigma^2\right) \right|_{t=0} \\
+ &= \left. \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} \left(\left(\mu+t \sigma^2\right)^2 + \sigma^2\right) \right|_{t=0} \\
  &= \mu^2 + \sigma^2 \\
  
 \end{split}
@@ -167,7 +167,7 @@ $$
 \psi_X(t) = \mathbb{E}\left[e^{tx}\right] = \int\limits_{-\infty}^\infty e^{tx} f_X(x) dx
 $$
 $$
-\psi_X(t) = \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]}
+\psi_X(t) = \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]}
 $$
 (no proof)
 ## properties
@@ -216,7 +216,7 @@ $$
 \psi_X(t) = \mathbb{E}\left[e^{tx}\right] = \int\limits_{-\infty}^\infty e^{tx} f_X(x) dx
 $$
 $$
-\psi_X(t) = \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]}
+\psi_X(t) = \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]}
 $$
 (no proof)
 ## [[expectation]] / mean
@@ -226,8 +226,8 @@ $$
 \mathbb{E}[X] &= \mu \\ 
 
  &= \left.\frac{d\psi_X(t)}{dt} \right|_{t=0} \\
- &= \left.\frac{d}{dt} \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} \right|_{t=0} \\
- &= \left. \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} (\mu+t \sigma^2) \right|_{t=0} \\
+ &= \left.\frac{d}{dt} \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} \right|_{t=0} \\
+ &= \left. \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} (\mu+t \sigma^2) \right|_{t=0} \\
 \end{split}
 $$
 ## [[variance]]
@@ -241,9 +241,9 @@ $$
 
 \mathbb{E}\left[X^2\right] 
  &= \left.\frac{d^2\psi_X(t)}{dt^2} \right|_{t=0} \\
- &= \left.\frac{d^2}{dt^2} \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} \right|_{t=0} \\
- &= \left. \frac{d}{dt} \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} \left(\mu+t \sigma^2\right) \right|_{t=0} \\
- &= \left. \exp{\left[\mu t-\frac{1}{2}\sigma^2 t^2\right]} \left(\left(\mu+t \sigma^2\right)^2 + \sigma^2\right) \right|_{t=0} \\
+ &= \left.\frac{d^2}{dt^2} \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} \right|_{t=0} \\
+ &= \left. \frac{d}{dt} \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} \left(\mu+t \sigma^2\right) \right|_{t=0} \\
+ &= \left. \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} \left(\left(\mu+t \sigma^2\right)^2 + \sigma^2\right) \right|_{t=0} \\
  &= \mu^2 + \sigma^2 \\
  
 \end{split}

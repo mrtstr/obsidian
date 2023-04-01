@@ -68,6 +68,18 @@
             }
           },
           {
+            "id": "858be6a235639a1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "f68265340058ec84",
             "type": "leaf",
             "state": {
@@ -92,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -209,7 +221,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "817546525353071f",
+  "active": "858be6a235639a1e",
   "lastOpenFiles": [
     "mathematics/stochastics/moment generating function.md",
     "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
