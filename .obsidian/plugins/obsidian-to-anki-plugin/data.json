@@ -146,7 +146,7 @@
     "statistical learning/model variance.md": "b29de83f123f7c9c2acaf88fe12991b5",
     "statistical learning/model complexity.md": "d41d8cd98f00b204e9800998ecf8427e",
     "statistical learning/model bias.md": "8289cf77f432a60d1d33b64e9210013a",
-    "statistical learning/mean square error.md": "d176e037ae19e5e6b96fe50d9c060042",
+    "statistical learning/mean square error.md": "a5bfde72c846b2cb549552f9696311cb",
     "statistical learning/mean absolute error.md": "ca38d11f9959d23a1ab7831bf971cc72",
     "statistical learning/maximum likelihood.md": "31eb45faf106e6dcd8aaa40f61f9ee39",
     "statistical learning/loss functions.md": "7738da874641d872eb54a464efc53e39",
@@ -474,9 +474,9 @@
     "code/pandas/usecase/pd filter a df.md": "7011ba36c49828a713891d3391cdeea4",
     "code/pandas/operations/pd filter.md": "c97169e12d44722f0afe4244c114c17d",
     "mathematics/stochastics/kurtosis.md": "d183c4579d7299637934847a1711296a",
-    "mathematics/stochastics/symmetric distribution.md": "0826b8456acc265220fb42887351aecc",
+    "mathematics/stochastics/symmetric distribution.md": "f180e3fde4d1be19b2dea4da732c4e25",
     "mathematics/stochastics/moment generating function.md": "ed63c4c2d657582956f1c58dbfa57ca4",
-    "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md": "884794dbb1ba91c5ae31986635b7405f"
+    "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md": "da67e1660ba689002ce8ea1dff87a5a2"
   },
   "fields_dict": {
     "Basic": [

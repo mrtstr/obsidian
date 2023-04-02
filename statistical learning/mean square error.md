@@ -72,7 +72,20 @@ $$
 = \mathbb{VAR}\left[f(X)\right]
 $$
 - according to the [[law of total probability]] for the [[variance]] the improvement of the [[mean square error]] due to an observation of the [[random variable]] $X$ is equal to the [[variance]] of the optimal [[statistical predictor]] $\mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]$ (see [[variance bias trade-off]])
+$$
 
+\underbrace{
+\mathbb{VAR}\left[Y\right]
+}_\text{$=0$}
+
+= \underbrace{
+\mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]
+}_\text{$=0$}
+
++ \underbrace{
+\mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
+}_\text{$=0$}
+$$
 # Anki
 START
 Basic
