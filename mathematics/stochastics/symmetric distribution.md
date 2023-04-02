@@ -1,4 +1,3 @@
-[[distribution]]
 
 ## symmetric around its mean
 ### Definition

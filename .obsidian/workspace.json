@@ -128,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
+                "file": "mathematics/stochastics/symmetric distribution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
+                "file": "mathematics/stochastics/symmetric distribution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md"
+                "file": "mathematics/stochastics/symmetric distribution.md"
               }
             }
           }
@@ -245,10 +245,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "817546525353071f",
+  "active": "ceefbaaaf9532465",
   "lastOpenFiles": [
-    "mathematics/stochastics/probability integral transformation.md",
     "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
+    "mathematics/stochastics/probability integral transformation.md",
     "mathematics/stochastics/symmetric distribution.md",
     "mathematics/stochastics/skewness.md",
     "statistical learning/mean square error.md",
