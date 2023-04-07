@@ -60,16 +60,19 @@ F_{Y}(y)
 f_{Y}(y) &= \frac{dF_{Y}(y)}{y} = \frac{1}{2} y^{-\frac{1}{2}}
 \end{split}
 $$
-### [[continuous random variable]] with a [[linear function]]
+
+## [[linear function]] of a [[probability density function]]
 - $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
 - $Y=g(X)=aX+b$ with an [[linear function]] $g$
+
 $$
-f_Y(y)=\underbrace{\frac{1}{|a|}}_\text{normalization} f_{X}
+f_Y(y)=\underbrace{\frac{1}{|a|}}_{\frac{dg^{-1}(y)}{dy}} f_{X}
 \underbrace{
 \left(\frac{y-b}{a}\right)
 }_{g^{-1}(y)}
 $$
 proof:
+
 $$
 \begin{split}
 F_{Y}(y)
@@ -85,7 +88,8 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} = \frac{dF_{Y}(y)}{dy} f_{X}\left(\frac{y-b}{a}
 = \frac{1}{|a|} f_{X}\left(\frac{y-b}{a}\right)
 \end{split}
 $$
-### [[continuous random variable]] with $g(X)=F_X(X)$
+
+## [[continuous random variable]] with $g(X)=F_X(X)$
 - $X$ is a [[continuous random variable]] with a [[CDF]] $F_X(x)$
 - $Y$ is a [[functions of random variables|function of]] $X$ with the function being the [[CDF]] of $X$ $Y=F_X(X)$
 Then $Y \sim U(0,1)$ has [[continous uniform distribution|uniform distribution]] and its [[CDF]] is $F_Y(y) = y$.
@@ -132,7 +136,7 @@ Basic
 Back: 
 
 $$
-f_Y(y)=\underbrace{\frac{1}{|a|}}_\text{normalization} f_{X}
+f_Y(y)=\underbrace{\frac{1}{|a|}}_{\frac{dg^{-1}(y)}{dy}} f_{X}
 \underbrace{
 \left(\frac{y-b}{a}\right)
 }_{g^{-1}(y)}

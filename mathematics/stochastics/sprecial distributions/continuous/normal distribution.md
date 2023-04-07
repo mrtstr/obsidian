@@ -1,3 +1,4 @@
+# normal distribution
 ## [[probability density function]]
 
 $$
@@ -44,6 +45,18 @@ $$
 ## properties
 ### [[symmetric distribution]] around its mean $\mu$
 ![[symmetric distribution#symmetric around its mean]]
+### proof
+
+$$
+\begin{split}
+f_X\left(x =\mu -x|\mu, \sigma^2\right) 
+& = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{\left((\mu -x)- \mu \right)^2}{\sigma^2}\right]} \\
+& = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(-x)^2}{\sigma^2}\right]} \\
+& = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{x^2}{\sigma^2}\right]} \\
+& = f_X\left(x =\mu +x|\mu, \sigma^2\right) \\
+\end{split}
+$$
+
 
 ### [[mode]] equal to [[expectation|mean]] and [[median]] at $\mu$
 $$
@@ -66,15 +79,15 @@ $$
 &= \frac{1}{\sqrt{2 \pi \sigma^2}} \\
 \end{split}
 $$
-### [[linear function|Linear Transformation]]
-$$
-\begin{split}
-x &\sim f_x\left(x|\mu, \sigma^2 \right) \\
-Y &= aX+b \sim f_Y\left(y | a\mu + b, a^2 \sigma^2\right) \\ 
-\end{split}
+## [[linear transformation of random variables|linear transformation]] of a [[normal distribution|normal distributed]] [[random variable]]
 
 $$
-proof
+\begin{split}
+X &\sim f_x\left(x|\mu, \sigma^2 \right) \\
+Y &= aX+b \sim f_Y\left(y | a\mu + b, a^2 \sigma^2\right) =\frac{1}{\sqrt{2 \pi a^2 \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-a\mu + b)^2}{a^2 \sigma^2}\right]} \\ 
+\end{split}
+$$
+### proof1: [[moment generating function]]
 $$
 \begin{split}
 \psi_X(t) &= \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} = \mathbb{E}\left[e^{Xt}\right] \\
@@ -85,45 +98,49 @@ $$
 \psi_Y(t) &= \exp{\left[(\mu a + b)t+\frac{1}{2}\sigma^2 a^2 t^2\right]}  \\
 \end{split}
 $$
-# standard [[normal distribution]]
-$$
-\phi(x) = f_X\left(x|\mu = 1, \sigma^2 = 0\right) = \frac{1}{\sqrt{2 \pi }}\exp{\left[-\frac{x}{2}\right]}
-$$
-Sice the [[normal distribution]] is symmetric around its mean and the mean of the standard [[normal distribution]] is zero
-![[symmetric distribution#symmetric around zero]]
+### proof1: [[functions of random variables]]
+![[functions of random variables#linear function of a probability density function]]
 
-## [[probability integral transformation|transformation]] of a [[normal distribution]] to a standard [[normal distribution]]
 $$
 \begin{split}
-&X \sim f_X(x | \mu, \sigma^2) \: with \: F_X(x | \mu, \sigma^2) \\
-& \Rightarrow F_X(x | \mu, \sigma^2) = \Phi\left( \frac{x - \mu}{\sigma}\right) \\
-& \Rightarrow F^{-1}_X(q | \mu, \sigma^2) = \mu + \sigma \Phi^{-1}\left(q\right) \\
+f_Y(y)
+&=\underbrace{\frac{1}{|a|}}_{\frac{dg^{-1}(y)}{dy}} f_{X}
+\underbrace{
+\left(\frac{y-b}{a}\right)
+}_{g^{-1}(y)} \\
+&=\frac{1}{|a|} \frac{1}{\sqrt{2 \pi \sigma^2 }} \exp{\left(-\frac{1}{2}\frac{\left(\mu - \frac{y-b}{a}\right)^2}{\sigma^2}\right)} \\
+&=\frac{1}{|a|} \frac{1}{\sqrt{2 \pi \sigma^2 }} \exp{\left(-\frac{1}{2}\frac{\left(\frac{a\mu - y-b}{a}\right)^2}{\sigma^2}\right)} \\
+&=\frac{1}{\sqrt{2 \pi a^2 \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(y-a\mu + b)^2}{a^2 \sigma^2}\right]} \\ 
 \end{split}
 $$
+
 # anki
 
 
 START
 Basic
-- [[linear function|Linear Transformation]] of a [[normal distribution]] (with proof)
+- [[linear function|Linear Transformation]] of a [[normal distribution]]
+- proof with the [[moment generating function]]
 Back: 
-## [[moment generating function]]
-
+### [[probability density function]]
+$$
+f_X\left(x|\mu, \sigma^2\right) = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}\right]}
+$$
+### [[moment generating function]]
 $$
 \psi_X(t) = \mathbb{E}\left[e^{tx}\right] = \int\limits_{-\infty}^\infty e^{tx} f_X(x) dx
 $$
 $$
 \psi_X(t) = \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]}
 $$
-### [[linear function|Linear Transformation]]
+### [[linear function|Linear Transformation]] of a [[normal distribution]] 
 $$
 \begin{split}
-x &\sim f_x\left(x|\mu, \sigma^2 \right) \\
-Y &= aX+b \sim f_Y\left(y | a\mu + b, a^2 \sigma^2\right) \\ 
+X &\sim f_x\left(x|\mu, \sigma^2 \right) \\
+Y &= aX+b \sim f_Y\left(y | a\mu + b, a^2 \sigma^2\right) =\frac{1}{\sqrt{2 \pi a^2 \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-a\mu + b)^2}{a^2 \sigma^2}\right]} \\ 
 \end{split}
-
 $$
-proof
+### proof1: [[moment generating function]]
 $$
 \begin{split}
 \psi_X(t) &= \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} = \mathbb{E}\left[e^{Xt}\right] \\
@@ -137,6 +154,69 @@ $$
 
 Tags: mathematics, statistics
 <!--ID: 1680425858043-->
+END
+
+
+START
+Basic
+- [[linear function|Linear Transformation]] of a [[normal distribution]]
+- proof with the [[moment generating function]]
+Back: 
+### [[probability density function]]
+$$
+f_X\left(x|\mu, \sigma^2\right) = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}\right]}
+$$
+
+### [[linear function]] of a [[probability density function]]
+- $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
+- $Y=g(X)=aX+b$ with an [[linear function]] $g$
+
+$$
+f_Y(y)=\underbrace{\frac{1}{|a|}}_{\frac{dg^{-1}(y)}{dy}} f_{X}
+\underbrace{
+\left(\frac{y-b}{a}\right)
+}_{g^{-1}(y)}
+$$
+#### proof
+
+$$
+\begin{split}
+F_{Y}(y)
+&=P(Y \leq y) \\
+&=P(g(X) \leq y) = P(aX=b \leq y) \\
+&=P\left(X \leq g^{-1}(y)\right) = P(aX+b \leq y) \\
+&=P\left(X \leq g^{-1}(y)\right) = P\left( X \leq \frac{y-b}{a} \right) \\
+&= F_X\left(g^{-1}(y)\right) = F_X\left(\frac{y-b}{a}\right) \\
+
+
+f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} = \frac{dF_{Y}(y)}{dy} f_{X}\left(\frac{y-b}{a}\right) \\
+&= \frac{dg^{-1}(y)}{dy} f_{X}\left(\frac{y-b}{a}\right)
+= \frac{1}{|a|} f_{X}\left(\frac{y-b}{a}\right)
+\end{split}
+$$
+
+### [[linear function|Linear Transformation]] of a [[normal distribution]] 
+$$
+\begin{split}
+X &\sim f_x\left(x|\mu, \sigma^2 \right) \\
+Y &= aX+b \sim f_Y\left(y | a\mu + b, a^2 \sigma^2\right) =\frac{1}{\sqrt{2 \pi a^2 \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-a\mu + b)^2}{a^2 \sigma^2}\right]} \\ 
+\end{split}
+$$
+#### proof
+$$
+\begin{split}
+f_Y(y)
+&=\underbrace{\frac{1}{|a|}}_{\frac{dg^{-1}(y)}{dy}} f_{X}
+\underbrace{
+\left(\frac{y-b}{a}\right)
+}_{g^{-1}(y)} \\
+&=\frac{1}{|a|} \frac{1}{\sqrt{2 \pi \sigma^2 }} \exp{\left(-\frac{1}{2}\frac{\left(\mu - \frac{y-b}{a}\right)^2}{\sigma^2}\right)} \\
+&=\frac{1}{|a|} \frac{1}{\sqrt{2 \pi \sigma^2 }} \exp{\left(-\frac{1}{2}\frac{\left(\frac{a\mu - y-b}{a}\right)^2}{\sigma^2}\right)} \\
+&=\frac{1}{\sqrt{2 \pi a^2 \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(y-a\mu + b)^2}{a^2 \sigma^2}\right]} \\ 
+\end{split}
+$$
+Tags: mathematics, statistics
+<!--ID: 1680849735939-->
 END
 
 
@@ -245,26 +325,18 @@ $$
 ### [[symmetric distribution]] around its mean $\mu$
 
 A [[distribution]] is symmetric around its mean iff $f_X(\mu + x) = f_X(\mu - x)$
-
-$$
-\begin{split}
-f_X(\mu + x) = f_X(\mu - x) 
-&\Rightarrow F_X(\mu + x) = 1- F_X(\mu - x) \\
-&\Rightarrow F_X(\mu - x) = 1- F_X(\mu + x) \\
-\end{split}
-$$
 proof
 $$
 \begin{split}
-f_X(\mu + x) = f_X(\mu - x) 
-&\Rightarrow P\left(X \leq \mu - x\right) = P\left(X \geq \mu + x\right) \\ 
-&\Rightarrow P\left(X \leq \mu - x\right) = 1 - P\left(X \leq \mu + x\right) \\ 
-&\Rightarrow F_X\left( \mu - x\right) = 1 - F_X\left( \mu + x\right) \\ 
-&\Rightarrow F_X\left( \mu + x\right) = 1 - F_X\left( \mu - x\right) \\ 
-
-
+f_X\left(x =\mu -x|\mu, \sigma^2\right) 
+& = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{\left((\mu -x)- \mu \right)^2}{\sigma^2}\right]} \\
+& = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(-x)^2}{\sigma^2}\right]} \\
+& = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{x^2}{\sigma^2}\right]} \\
+& = f_X\left(x =\mu +x|\mu, \sigma^2\right) \\
 \end{split}
 $$
+
+
 ### [[mode]] equal to [[expectation|mean]] and [[median]] at $\mu$
 $$
 \mu = \mathrm{argmax}_x \: f_X\left(x|\mu, \sigma^2\right)
