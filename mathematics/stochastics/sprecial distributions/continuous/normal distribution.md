@@ -84,7 +84,8 @@ $$
 $$
 \begin{split}
 X &\sim f_x\left(x|\mu, \sigma^2 \right) \\
-Y &= aX+b \sim f_Y\left(y | a\mu + b, a^2 \sigma^2\right) =\frac{1}{\sqrt{2 \pi a^2 \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-a\mu + b)^2}{a^2 \sigma^2}\right]} \\ 
+\Rightarrow Y &= aX+b \\
+&\sim f_Y\left(y | a\mu + b, a^2 \sigma^2\right) =\frac{1}{\sqrt{2 \pi a^2 \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-a\mu + b)^2}{a^2 \sigma^2}\right]} \\ 
 \end{split}
 $$
 ### proof1: [[moment generating function]]
@@ -137,7 +138,8 @@ $$
 $$
 \begin{split}
 X &\sim f_x\left(x|\mu, \sigma^2 \right) \\
-Y &= aX+b \sim f_Y\left(y | a\mu + b, a^2 \sigma^2\right) =\frac{1}{\sqrt{2 \pi a^2 \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-a\mu + b)^2}{a^2 \sigma^2}\right]} \\ 
+\Rightarrow Y &= aX+b \\
+&\sim f_Y\left(y | a\mu + b, a^2 \sigma^2\right) =\frac{1}{\sqrt{2 \pi a^2 \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-a\mu + b)^2}{a^2 \sigma^2}\right]} \\ 
 \end{split}
 $$
 ### proof1: [[moment generating function]]
@@ -199,7 +201,8 @@ $$
 $$
 \begin{split}
 X &\sim f_x\left(x|\mu, \sigma^2 \right) \\
-Y &= aX+b \sim f_Y\left(y | a\mu + b, a^2 \sigma^2\right) =\frac{1}{\sqrt{2 \pi a^2 \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-a\mu + b)^2}{a^2 \sigma^2}\right]} \\ 
+\Rightarrow Y &= aX+b \\
+&\sim f_Y\left(y | a\mu + b, a^2 \sigma^2\right) =\frac{1}{\sqrt{2 \pi a^2 \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-a\mu + b)^2}{a^2 \sigma^2}\right]} \\ 
 \end{split}
 $$
 #### proof

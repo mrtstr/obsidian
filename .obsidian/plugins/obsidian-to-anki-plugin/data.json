@@ -210,7 +210,7 @@
     "mathematics/stochastics/joint distribution.md": "a5f07b85a90c74c6a4ef6f7085f5d3eb",
     "mathematics/stochastics/interquartile range.md": "614e9efbabedcb75a7adeac9501253b8",
     "mathematics/stochastics/hypothesis.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/functions of random variables.md": "097ecc07ab291ae9b911cb5eb3695899",
+    "mathematics/stochastics/functions of random variables.md": "f503cb35403482d6f36801b7d089ca47",
     "mathematics/stochastics/functions of multiple random variables.md": "cd49937e9b205c30086c848a8d1126c0",
     "mathematics/stochastics/factoring of joint densities.md": "7022bdd24b246537b1418303a82e0479",
     "mathematics/stochastics/expectation.md": "98869a1a7d354a8042e207f282d261eb",
@@ -477,9 +477,9 @@
     "mathematics/stochastics/kurtosis.md": "d183c4579d7299637934847a1711296a",
     "mathematics/stochastics/symmetric distribution.md": "28c5984e5c0da4cf8ac18c3b7ab4d770",
     "mathematics/stochastics/moment generating function.md": "ed63c4c2d657582956f1c58dbfa57ca4",
-    "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md": "bc7ba141db3f50899b53c4d8be6c1a75",
-    "mathematics/stochastics/linear transformation of random variables.md": "756fe2fddfa510923c8b756f62b7131a",
-    "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md": "ab4eaa26a62ba856e040c4855ee5a9f1"
+    "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md": "b9e89f1adb43fd2d05912392b3cd25e4",
+    "mathematics/stochastics/linear transformation of random variables.md": "25e90c5f3b2b54b683237c6aebcf0d09",
+    "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md": "3cb39c9a47f7c1e4a27f801de1350871"
   },
   "fields_dict": {
     "Basic": [

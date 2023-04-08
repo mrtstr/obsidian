@@ -83,7 +83,7 @@ F_{Y}(y)
 &= F_X\left(g^{-1}(y)\right) = F_X\left(\frac{y-b}{a}\right) \\
 
 
-f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} = \frac{dF_{Y}(y)}{dy} f_{X}\left(\frac{y-b}{a}\right) \\
+f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} = \frac{dF_X\left(\frac{y-b}{a}\right)}{dy} f_{X}\left(\frac{y-b}{a}\right) \\
 &= \frac{dg^{-1}(y)}{dy} f_{X}\left(\frac{y-b}{a}\right)
 = \frac{1}{|a|} f_{X}\left(\frac{y-b}{a}\right)
 \end{split}
@@ -152,7 +152,7 @@ F_{Y}(y)
 &= F_X\left(g^{-1}(y)\right) = F_X\left(\frac{y-b}{a}\right) \\
 
 
-f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} = \frac{dF_{Y}(y)}{dy} f_{X}\left(\frac{y-b}{a}\right) \\
+f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} = \frac{dF_X\left(\frac{y-b}{a}\right)}{dy} f_{X}\left(\frac{y-b}{a}\right) \\
 &= \frac{dg^{-1}(y)}{dy} f_{X}\left(\frac{y-b}{a}\right)
 = \frac{1}{|a|} f_{X}\left(\frac{y-b}{a}\right)
 \end{split}
