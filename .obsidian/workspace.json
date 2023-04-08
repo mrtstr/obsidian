@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "5a34357c48ef279d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/random sample.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6526a2e306a86c83",
             "type": "leaf",
             "state": {
@@ -128,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -247,15 +259,15 @@
   },
   "active": "817546525353071f",
   "lastOpenFiles": [
-    "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md",
+    "mathematics/stochastics/random sample.md",
+    "mathematics/stochastics/kurtosis.md",
     "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
+    "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md",
     "mathematics/stochastics/symmetric distribution.md",
     "mathematics/stochastics/functions of random variables.md",
     "mathematics/basics/linear algebra/linear function.md",
     "mathematics/stochastics/linear transformation of random variables.md",
     "mathematics/stochastics/probability density function.md",
-    "mathematics/stochastics/random vector.md",
-    "mathematics/stochastics/probability integral transformation.md",
-    "mathematics/stochastics/skewness.md"
+    "mathematics/stochastics/random vector.md"
   ]
 }
