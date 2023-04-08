@@ -295,7 +295,7 @@ END
 START
 Basic
 - [[linear function|Linear Transformation]] of a [[normal distribution]]
-- proof with the [[moment generating function]]
+- proof with the equation for linear transformed [[random variable]]
 Back: 
 ### [[probability density function]]
 $$

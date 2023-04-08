@@ -1,0 +1,1 @@
+mean from a [[random sample]]

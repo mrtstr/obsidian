@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "aa77dce8d4a1f77a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/sample mean.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6526a2e306a86c83",
             "type": "leaf",
             "state": {
@@ -140,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -206,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
+                "file": "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
+                "file": "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +258,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md"
+                "file": "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md"
               }
             }
           }
@@ -257,17 +269,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "817546525353071f",
+  "active": "0f1c666dc4dcef36",
   "lastOpenFiles": [
-    "mathematics/stochastics/random sample.md",
-    "mathematics/stochastics/kurtosis.md",
     "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
     "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md",
     "mathematics/stochastics/symmetric distribution.md",
+    "mathematics/stochastics/skewness.md",
+    "mathematics/stochastics/sample mean.md",
+    "mathematics/stochastics/random sample.md",
+    "mathematics/stochastics/kurtosis.md",
     "mathematics/stochastics/functions of random variables.md",
     "mathematics/basics/linear algebra/linear function.md",
-    "mathematics/stochastics/linear transformation of random variables.md",
-    "mathematics/stochastics/probability density function.md",
-    "mathematics/stochastics/random vector.md"
+    "mathematics/stochastics/linear transformation of random variables.md"
   ]
 }
