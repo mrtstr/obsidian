@@ -11,11 +11,40 @@
             "id": "4b3c98659aeea16a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "code/df processing/pandas/usecase/pd creating dataframe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "36b5402531b029e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/df processing/operations/df display.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "92074d1ae3dddc78",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -44,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "create a now column containing",
+                "query": "Linear Combinations of",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,6 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +150,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md"
+              }
             }
           }
         ]
@@ -128,17 +162,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4b3c98659aeea16a",
+  "active": "dc2164f2d3f04496",
   "lastOpenFiles": [
-    "mathematics/basics/eulers number.md",
-    "mathematics/stochastics/moment generating function.md",
-    "statistical learning/mean square error.md",
-    "statistical learning/variance bias trade-off.md",
-    "code/df processing/operations/crossjoin.md",
-    "code/df processing/operations/rename columns.md",
-    "code/df processing/operations/create columns.md",
-    "code/df processing/operations/df union.md",
-    "code/df processing/operations/transform udf.md",
-    "code/df processing/operations/aggregate.md"
+    "code/df processing/operations/df summarize.md",
+    "code/df processing/operations/df display.md",
+    "code/df processing/pandas/usecase/pd creating dataframe.md",
+    "code/df processing/pandas/usecase/df displaying dataframe.md",
+    "code/df processing/pandas/usecase/pd creating series.md",
+    "code/df processing/pandas/usecase/pd summary of grouped df.md",
+    "code/df processing/pandas/usecase/pd summarizing dataframe.md",
+    "code/df processing/pandas/pandas.md",
+    "code/df processing/operations/df window function.md",
+    "code/df processing/operations/df union.md"
   ]
 }

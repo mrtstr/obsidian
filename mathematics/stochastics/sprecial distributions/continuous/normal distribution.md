@@ -134,7 +134,7 @@ $$
 $$
 \begin{split}
 X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
-\Rightarrow Y&=\sum_{i=1}^n a_i +b \sim f_{Y}\left(y \mid \sum_{i=1}^n a_i \mu_i + b, \sum_{i=1}^n a_i^2 \sigma_i^2\right) \\ \\
+\Rightarrow Y&=\sum_{i=1}^n a_i X_i +b \sim f_{Y}\left(y \mid \sum_{i=1}^n a_i \mu_i + b, \sum_{i=1}^n a_i^2 \sigma_i^2\right) \\ \\
 
 \psi_Y(t)&=\mathbb{E}\left[e^{tY}\right] = \mathbb{E}\left[\exp{\left(t\left(\sum_{i=1}^n a_i X_i + b\right)\right)}\right] \\
 &= \mathbb{E}\left[e^{tb}\right] \cdot \prod_{i=1}^n \mathbb{E}\left[\exp{\left(t a_i X_i\right)}\right] = \mathbb{E}\left[e^{tb}\right] \cdot  \prod_{i=1}^n \psi_{X_i}(a_it) \\
@@ -172,7 +172,7 @@ $$
 
 START
 Basic
-[[distribution]] of a [[random sample]] from a [[normal distribution]] (with proof)
+[[distribution]] of the mean of a [[random sample]] from a [[normal distribution]] (with proof)
 Back: 
 The mean from a [[random sample]] of the sixe $n$ from a [[normal distribution]] is again [[normal distribution|normal distributed]] with a mean $\mu$ and a [[variance]] $\frac{\sigma^2}{n}$. 
 $$
@@ -186,7 +186,7 @@ Since the folowing is true
 $$
 \begin{split}
 X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
-\Rightarrow Y&=\sum_{i=1}^n a_i +b \sim f_{Y}\left(y \mid \sum_{i=1}^n a_i \mu_i + b, \sum_{i=1}^n a_i^2 \sigma_i^2\right) \\ \\
+\Rightarrow Y&=\sum_{i=1}^n a_i X_i +b \sim f_{Y}\left(y \mid \sum_{i=1}^n a_i \mu_i + b, \sum_{i=1}^n a_i^2 \sigma_i^2\right) \\ \\
 
 \psi_Y(t)&=\mathbb{E}\left[e^{tY}\right] = \mathbb{E}\left[\exp{\left(t\left(\sum_{i=1}^n a_i X_i + b\right)\right)}\right] \\
 &= \mathbb{E}\left[e^{tb}\right] \cdot \prod_{i=1}^n \mathbb{E}\left[\exp{\left(t a_i X_i\right)}\right] = \mathbb{E}\left[e^{tb}\right] \cdot  \prod_{i=1}^n \psi_{X_i}(a_it) \\
@@ -216,7 +216,7 @@ Linear Combinations of [[normal distribution|normal distributed]] [[random varia
 $$
 \begin{split}
 X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
-Y&=\sum_{i=1}^n a_i +b 
+Y&=\sum_{i=1}^n a_i X_i +b 
 \end{split}
 $$
 
@@ -237,7 +237,7 @@ Linear Combinations of [[normal distribution|normal distributed]] [[random varia
 $$
 \begin{split}
 X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
-\Rightarrow Y&=\sum_{i=1}^n a_i +b \sim f_{Y}\left(y \mid \sum_{i=1}^n a_i \mu_i + b, \sum_{i=1}^n a_i^2 \sigma_i^2\right) \\ \\
+\Rightarrow Y&=\sum_{i=1}^n a_i X_i +b \sim f_{Y}\left(y \mid \sum_{i=1}^n a_i \mu_i + b, \sum_{i=1}^n a_i^2 \sigma_i^2\right) \\ \\
 
 \psi_Y(t)&=\mathbb{E}\left[e^{tY}\right] = \mathbb{E}\left[\exp{\left(t\left(\sum_{i=1}^n a_i X_i + b\right)\right)}\right] \\
 &= \mathbb{E}\left[e^{tb}\right] \cdot \prod_{i=1}^n \mathbb{E}\left[\exp{\left(t a_i X_i\right)}\right] = \mathbb{E}\left[e^{tb}\right] \cdot  \prod_{i=1}^n \psi_{X_i}(a_it) \\
