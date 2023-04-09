@@ -33,6 +33,6 @@ f_X(X = x)= P(X = x)
 ,& \text{otherwise}
 \end{cases}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1668943285994-->
 END

@@ -60,7 +60,7 @@ $$
 &\Rightarrow P\left(\left\{ X \in \Omega \right\}\right) = \frac{1 + 10}{2^{10}}
 \end{split}
 $$ 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667204899520-->
 END
 
@@ -145,7 +145,7 @@ f_X(X = x | a, b)=
 \end{cases}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1678520971208-->
 END
 

@@ -71,7 +71,7 @@ DataFrame.join(
     # in {"1:1", "1:m", "m:1", "m:m"}
 )
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678804499731-->
 END
 
@@ -104,6 +104,6 @@ pd.merge(
     sort=False
 )
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678804499735-->
 END

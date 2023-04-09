@@ -101,7 +101,7 @@ f_X(\mu + x) = f_X(\mu - x)
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680425858038-->
 END
 
@@ -158,6 +158,6 @@ $$
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680839060975-->
 END

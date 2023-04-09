@@ -174,7 +174,7 @@ pd.concat(
     # Check whether the new concatenated axis contains duplicates
 )
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678791381056-->
 END
 
@@ -329,6 +329,6 @@ pd.concat([df1, df2], axis=1, join="outer", keys=["df1", "df2"])
 | 5 | nan | nan | nan | nan | B5 | C5 | D5 | E5 | 
 | 6 | nan | nan | nan | nan | B6 | C6 | D6 | E6 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678791381064-->
 END

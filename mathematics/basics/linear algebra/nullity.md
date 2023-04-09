@@ -66,6 +66,6 @@ In the [[nullspace]] are the vectors in the domain of $F(x)$ that map to zero. T
 
 ![[Pasted image 20221015081452.png]]
 
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 <!--ID: 1665824261692-->
 END

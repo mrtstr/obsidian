@@ -150,7 +150,7 @@ pd.crosstab(
 | Y | nan | 4 | 4 | 
 | All | 3 | 12 | 15 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678893330023-->
 END
 
@@ -229,6 +229,6 @@ pd.crosstab(
 | Y | nan | 4 | 4 | 
 | All | 3 | 12 | 15 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678893330026-->
 END

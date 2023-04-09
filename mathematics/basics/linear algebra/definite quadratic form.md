@@ -59,6 +59,6 @@ A [[square matrix]] $A \in \mathbb{R}^{\left| \mathcal{I} \right| \times \left| 
 2) $A$ is positive definite iff $\left< x,y\right> = x^\top A y$ defines a [[dot product]]  
 3) if a [[hessian matrix]] is [[definite quadratic form|definite]] helps to determine [[stationary point]] is a [[maxima and minima|minimum or maximum]]
 
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 <!--ID: 1665918408911-->
 END

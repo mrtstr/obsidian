@@ -25,6 +25,6 @@ for index1 in range(len(my_list)):
 			...
 				check({my_list[index1], my_list[index2], my_list[index3], ...})
 ```
-Tags: algorithms, approach
+Tags: algorithm approach
 <!--ID: 1662064277858-->
 END

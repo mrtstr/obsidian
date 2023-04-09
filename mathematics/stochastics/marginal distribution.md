@@ -36,6 +36,6 @@ f_X(x) = \int\limits_{-\infty}^{\infty} f_{XY}(x,y) dy \\
 F_X(x) = \int\limits_{-\infty}^{x}\int\limits_{-\infty}^{\infty} f_{XY}(x,y) dy dx \\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1670766688726-->
 END

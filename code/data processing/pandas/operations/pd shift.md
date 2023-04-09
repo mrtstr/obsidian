@@ -33,6 +33,6 @@ Back:
 | 4 | 4 | 10 | 2 | 2 | 
 | 5 | 5 | 11 | 3 | 3 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1679071317487-->
 END

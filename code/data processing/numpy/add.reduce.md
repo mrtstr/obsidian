@@ -53,7 +53,7 @@ print(np.add.reduceat(a, b))
 # [ 3 7 11]  1+2 3+4 5+6 
 ```
 (useful when working with [[dimensions with different sizes]])
-Tags: code, numpy
+Tags: code numpy
 <!--ID: 1662453192724-->
 END
 
@@ -78,6 +78,6 @@ print(np.add.reduceat(array = a, indices = np.array([2,3], axis=0)))
 # np.add.reduce(a[2:3]) np.add.reduce(a[3:])
 # [3 9]
 ```
-Tags: code, numpy
+Tags: code numpy
 <!--ID: 1662453192728-->
 END

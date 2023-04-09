@@ -50,6 +50,6 @@ mi_df.loc[(2, slice(None)), "A"]  # filter only by the first level of the index
 # 2 red 0.154805
 ```
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668090818831-->
 END

@@ -65,6 +65,6 @@ kubectl exec -it nowa-demand-forecast -- script.sh
 kubectl exec <pod name> -- bash -c "python /root/hello.py &> output.log &"
 ```
 
-Tags: code, kubernetes
+Tags: code kubernetes
 <!--ID: 1666875324166-->
 END

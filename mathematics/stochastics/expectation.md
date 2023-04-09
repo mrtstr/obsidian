@@ -132,7 +132,7 @@ $$
 \mathbb{E}\left[b +\sum_{i=1}^n a_iX_i\right]= b + \sum_{i=1}^n a_i \mathbb{E}\left[ X_i\right]
 
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673686885277-->
 END
 
@@ -148,7 +148,7 @@ continuous:
 $\mathbb{E}[X]=\int\limits_\infty^\infty x f_X(x)dx$ 
 discrete:
 $\mathbb{E}[X]=\sum\limits_{i=0}^\infty x_i p(x_i)$  
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1661882015629-->
 END
 
@@ -171,7 +171,7 @@ $$
 &= \mathbb{E}\left[X_1  \right] + \mathbb{E}\left[ X_2 \right]
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1661882015633-->
 END
 
@@ -210,7 +210,7 @@ $$
 If $g(X)$ is a [[convex function]] $\mathbb{E}\left[g(X)\right] \geq g\left(\mathbb{E}[X]\right)$
 
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1661882015635-->
 END
 
@@ -231,7 +231,7 @@ $$
 &= \mathbb{E}\left[X_1  \right] \cdot \mathbb{E}\left[ X_2 \right]
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1661882015637-->
 END
 
@@ -250,7 +250,7 @@ The [[expectation]] of a [[discrete random variable]] $\mathbb{E}[X]$ exists if 
 ### [[continuous random variable]]
 The [[expectation]] of a [[continuous random variable]] $\mathbb{E}[X]$ exists if $\int\limits_0^\infty x f_X(x)dx < \infty$ or $\int\limits_\infty^0 x f_X(x)dx < \infty$. 
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673686885283-->
 END
 
@@ -270,7 +270,7 @@ X &\sim U(a,b) \\ \\
 &= \frac{(b+a)}{2} 
 \end{split} 
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673686885286-->
 END
 
@@ -288,7 +288,7 @@ X &\sim U(0,1) \\ \\
 \end{split} 
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673686885291-->
 END
 
@@ -351,7 +351,7 @@ $$
 - If $\exists a$ with $P(X \leq a) = 1$ than $\mathbb{E}\left[X  \right] \leq a$
 - If $\exists a$ with $P(X \geq a) = 1$ than $\mathbb{E}\left[X  \right] \geq a$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673767182027-->
 END
 
@@ -367,5 +367,5 @@ $$
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 END

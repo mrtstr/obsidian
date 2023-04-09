@@ -35,7 +35,7 @@ class ListNode:
 		self.val = val
 		self.next = next
 ```
-Tags: algorithms, problem
+Tags: algorithm problem
 <!--ID: 1661678999146-->
 END
 
@@ -52,6 +52,6 @@ for list_element in my_list:
 	list_pointer = list_pointer.next
 	list_start = list_start.next
 ```
-Tags: algorithms, problem
+Tags: algorithm problem
 <!--ID: 1661678999149-->
 END

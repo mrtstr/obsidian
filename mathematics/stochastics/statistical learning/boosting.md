@@ -96,7 +96,7 @@ h(x, \overbrace{
 }^\text{parameters of base model})
 }_\text{base model}
 $$
-Tags: statistical learning
+Tags: statistical_learning
 <!--ID: 1663839912719-->
 END
 
@@ -116,7 +116,7 @@ effect:
 - increase [[model complexity]] → lower [[model bias]]
 → use on high bias (weak) learners
 
-Tags: statistical learning
+Tags: statistical_learning
 <!--ID: 1663839912721-->
 END
 
@@ -199,6 +199,6 @@ f_{m-1}(x_i)
 - \beta \cdot h(x_i, \gamma)
 ]^2
 $$
-Tags: statistical learning
+Tags: statistical_learning
 <!--ID: 1663854449562-->
 END

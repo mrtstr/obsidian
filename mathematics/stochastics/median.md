@@ -39,6 +39,6 @@ Back:
 - while the [[median]] is the center of the total probability the [[mean]] is the center of 
 ![[mean_median_mode.png]]
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674122984701-->
 END

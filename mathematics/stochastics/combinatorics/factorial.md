@@ -54,7 +54,7 @@ n! &=  \prod\limits^{n}_{k=1} k \\
 &= n \cdot (n-1)!
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667662694128-->
 END
 
@@ -73,7 +73,7 @@ n! &=  \prod\limits^{n}_{k=1} k \\
 &= n \cdot (n-1)!
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667725085217-->
 END
 
@@ -87,7 +87,7 @@ $6!$ total arrangements and $3!\cdot3!$ satisfy the condition.
 $$
 \frac{3!3!}{6!}=\frac{1}{20}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667725085221-->
 END
 

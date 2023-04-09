@@ -129,6 +129,6 @@ print(mi_df.sort_index(axis=0, level=["Y", "X"]))
 # 1 red  0.888439 0.589792 
 # 2 red  0.154805 0.841461
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668010184528-->
 END

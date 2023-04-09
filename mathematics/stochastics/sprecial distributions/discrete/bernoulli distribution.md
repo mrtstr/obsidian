@@ -78,6 +78,6 @@ $$
 \mathbb{VAR}\left[B\right] = \mathbb{E}\left[B^2\right] - \mathbb{E}\left[B\right]^2 = p - p^2 =p(1-p)
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667211139246-->
 END

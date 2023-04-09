@@ -32,6 +32,6 @@ def bianry_search(x):
 		if check_too_low(guess):
 		maximum = guess - 1
 ```
-Tags: algorithms, problem
+Tags: algorithm problem
 <!--ID: 1661591876816-->
 END

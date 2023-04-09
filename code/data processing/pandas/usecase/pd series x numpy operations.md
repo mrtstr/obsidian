@@ -19,6 +19,6 @@ Back:
 - some [[numpy]] functions with multiple operands and also supported
 - before performing the operation the [[pd index]] with be automatically aligned 
 - As usual, the union of the two indices is taken, and non-overlapping values are filled with missing values.
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1667921722421-->
 END

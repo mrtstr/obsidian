@@ -40,7 +40,7 @@ $\widehat{f}(x)=MEAN[y_i|x_i \in N_k(x)]$
 	→ direct approximation of local expectation 
 - assumption: similar characteristics in areas in the feature space 
 	→ high $k$ → bigger area  $N_k(x)$ → more smoothing → more model bias, less model variance
-Tags: model, statistical learning
+Tags: model statistical_learning
 <!--ID: 1661928261911-->
 END
 
@@ -52,6 +52,6 @@ $\widehat{f}(x)=MEAN[y_i|x_i \in N_k(x)]$
 
 - bad performance in sparse feature spaces
 - high dimensional spaces are sparse (curse of dimensionality) → not good for high dimensional problems
-Tags: model, statistical learning
+Tags: model statistical_learning
 <!--ID: 1661928261914-->
 END

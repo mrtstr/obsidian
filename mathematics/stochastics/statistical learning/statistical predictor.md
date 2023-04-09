@@ -40,7 +40,7 @@ Back:
 - because the [[joint distribution]] $f_{XY}(x,y)$ is hard to find the goal is to approximate properties (e.g. mean, median, or quantiles) of the [[conditional distribution]]  $f_{Y|X}(y|x)$
 - every point in the feature space $x$ is a distribution of outputs $y$
 - approximate estimator $f(x)$ by minimizing the loss functions
-Tags: statistical estimator, statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1661678999092-->
 END
 
@@ -55,7 +55,7 @@ Back:
 	- in sparse regions of the feature space the approximation will have a high variance because of the randomness of the training samples ($f_X(x)$ and $f_{Y|X=x}(y, x)$)
 		→ assumptions can reduce the estimator's variance but induce a bias
 
-Tags: statistical estimator, statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1661678999122-->
 END
 
@@ -65,7 +65,7 @@ Two kinds of assumptions for [[statistical predictor]], with examples
 Back: 
 1) can be model constraints like assuming a certain kind of relationship between feature $x$ and label $y$ (linear models)
 2) can be local smoothing in the feature space (e.g. kernel methods, k nearest neighbours) assuming similar characteristics within an area in the feature space
-Tags: statistical estimator, statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1661678999127-->
 END
 
@@ -76,7 +76,7 @@ Back:
 - K nearest neighbour with k=1
 - direct approximation of the mean around the sample's location: $\widehat{f}(x)=MEAN[y_i|x_i \in N_k(x)]$
 → problems in spare feature spaces
-Tags: statistical estimator, statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1661678999131-->
 END
 

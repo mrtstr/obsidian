@@ -77,6 +77,6 @@ pd_df1.values[1,1] = 99
 | c | 3 | 7 | 11 | 
 | d | 4 | 8 | 12 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668010184541-->
 END

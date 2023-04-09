@@ -26,7 +26,7 @@ $$
 |\Omega| = \prod\limits_{i=1}^k n_i
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667662694119-->
 END
 
@@ -43,6 +43,6 @@ $$
 f_{XY}(x,y) =f_{X}(x) \cdot f_Y(y)
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671186732894-->
 END

@@ -12,6 +12,6 @@ Back:
 ```
 kubectl apply -f kubernetes/pod.yaml
 ```
-Tags: code, kubernetes
+Tags: code kubernetes
 <!--ID: 1666875324168-->
 END

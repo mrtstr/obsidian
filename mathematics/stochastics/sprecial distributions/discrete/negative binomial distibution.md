@@ -112,7 +112,7 @@ $$
 $$
 \mathbb{VAR}[X] = \frac{r(1-p)}{p^2}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1678609876580-->
 END
 
@@ -172,6 +172,6 @@ P(X = k+t | X \geq k)
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1678609876586-->
 END

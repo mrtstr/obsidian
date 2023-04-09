@@ -78,7 +78,7 @@ $$
 5) $A^\top A$ is [[definite quadratic form|positive-semidefinite]]
 6) $\left(A^\top\right)^{-1}=\left(A^{-1}\right)^{\top}$ 
 
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 END
 
 
@@ -107,6 +107,6 @@ A matrix $A\in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \
 
 $$F(x) = Ax: \mathbb{R}^{\left| \mathcal{J} \right|} \mapsto Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$$
 
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 <!--ID: 1665308790802-->
 END

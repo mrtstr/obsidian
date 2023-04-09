@@ -63,7 +63,7 @@ P(A \cup \overline{B})
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1666457499372-->
 END
 
@@ -81,7 +81,7 @@ $$
 $$
 \lim\limits_{n \rightarrow \infty} p_n = 1
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1666517556853-->
 END
 
@@ -94,7 +94,7 @@ Back:
 Two [[random variable]] $X$ and $Y$ an [[stochastic independent]] iff the following statements are true
 1) $F_{XY}(x, y) = F_X(x)F_Y(y)$
 2) $f_{XY}(x, y) = f_X(x)f_Y(y)$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1670766688733-->
 END
 
@@ -113,6 +113,6 @@ f_{X\mid Y}(x \mid y)
 = \frac{f_Y(y)f_X(x)}{f_Y(y)}
 = f_X(x)
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671186732887-->
 END

@@ -16,6 +16,6 @@ Back:
 [[pd query]] - to filter
 [[pd filter]] - to select [[pd column]]
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1679071317482-->
 END

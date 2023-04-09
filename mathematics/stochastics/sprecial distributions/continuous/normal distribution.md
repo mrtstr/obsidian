@@ -180,7 +180,7 @@ $$
 \psi_X(t) = \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]}
 $$
 2) $\mu =0$ and $\sigma^2=2$ → $\psi_X(t) = e^{t^2}$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1681024062134-->
 END
 
@@ -202,7 +202,7 @@ $$
 &=1-\Phi\left(-1\right)^3 \\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1681024062140-->
 END
 
@@ -240,7 +240,7 @@ $$
 &\sim f_{\bar{X_n}}\left(\bar{x} \mid  \mu, \frac{\sigma^2}{n} \right) \\ \\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680958035453-->
 END
 
@@ -283,7 +283,7 @@ X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
 
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680958035459-->
 END
 
@@ -324,7 +324,7 @@ $$
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680425858043-->
 END
 
@@ -388,7 +388,7 @@ f_Y(y)
 &=\frac{1}{\sqrt{2 \pi a^2 \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(y-a\mu + b)^2}{a^2 \sigma^2}\right]} \\ 
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680849735939-->
 END
 
@@ -413,7 +413,7 @@ $$
 \psi_X(t) = \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]}
 $$
 (no proof)
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680336763978-->
 END
 
@@ -468,7 +468,7 @@ $$
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680336763984-->
 END
 
@@ -532,7 +532,7 @@ $$
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680336763988-->
 END
 
@@ -586,6 +586,6 @@ $$
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680336763991-->
 END

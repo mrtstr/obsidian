@@ -12,6 +12,6 @@ Back:
 
 [[continuous random variable]]: a [[random variable]] that can take infinite [[countable|non-countable]] number of values
 a [[random variable]] has a [[discrete distribution]]
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667211139251-->
 END

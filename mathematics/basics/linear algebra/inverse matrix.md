@@ -1,4 +1,4 @@
-# Inverse Matrix $A^{-1}$
+ Inverse Matrix $A^{-1}$
 - exist for [[regular matrix]]
 - for a general [[matrix]] see [[pseudo inverse matrix]]
 
@@ -41,6 +41,6 @@ $$
 6) $det(A^{-1}) = det(A)^{-1}$ ([[associative]] with the [[determinant]])
 
 
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 <!--ID: 1665328452050-->
 END

@@ -31,15 +31,14 @@ Back:
 - [[variance]] of a model ([[statistical estimator]] or [[statistical predictor]]) due to the randomness of an infinite training set / [[statistical sample|set of samples]]
 - model [[model bias|bias]] and [[model variance|variance]] are two [[error]] sources of [[statistical predictor|statistical estimators]]: see [[variance bias trade-off]]
 - for [[statistical predictor]] there is also a part of the [[error]] that is based on the randomness of $f_{Y|X}(y|x)$ and thus is unavoidable 
-Tags: statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1664642588627-->
 END
 
 
 START
 Basic
-model variance of a [[statistical estimator]]
-Back: 
+model variance of a [[statiststatistical_learningk: 
 - given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[probability density function|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
 - the variance of the [[statistical estimator]] is defined as follows
 $$
@@ -47,7 +46,7 @@ $$
 \mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[\left(\widehat{\theta}_\mathcal{T}-\mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[\widehat{\theta}_\mathcal{T}\right]\right)^2\right]=\mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[\widehat{\theta}_\mathcal{T}^2\right]-\mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[\widehat{\theta}_\mathcal{T}\right]^2
 $$
 - the randomness is induced by the random [[statistical sample|sample]]
-Tags: statistical learning
+Tags: statistical_learning
 <!--ID: 1664723232171-->
 END
 
@@ -63,6 +62,6 @@ $$
 \mathbb{E}_{\mathcal{T} \sim \mathcal{D}}\left[\left(\widehat{f}_{\mathcal{T}}(x_0)-\mathbb{E}_{\mathcal{T} \sim \mathcal{D}}\left[\widehat{f}_{\mathcal{T}}(x_0)\right]\right)^2\right]=\mathbb{E}_{\mathcal{T} \sim \mathcal{D}}\left[\widehat{f}_{\mathcal{T}}(x_0)^2\right]-\mathbb{E}_{\mathcal{T} \sim \mathcal{D}}\left[\widehat{f}_{\mathcal{T}}(x_0)\right]^2
 $$
 
-Tags: statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1664723232175-->
 END

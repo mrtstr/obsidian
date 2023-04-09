@@ -21,6 +21,6 @@ Back:
 5) $Ax=0 \Rightarrow x=0$
 6) $\left\{ A^{(i)}\right\}_{i \in \mathcal{I}}$ are [[linear independent]]  
 7) $\left\{ A_{(j)}\right\}_{j \in \mathcal{J}}$ are [[linear independent]] 
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 <!--ID: 1665308790796-->
 END

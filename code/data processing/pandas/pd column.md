@@ -46,6 +46,6 @@ print(pd_df1.columns.values)
 print(type(pd_df1.columns.values))
 # <class 'numpy.ndarray'>
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668010184543-->
 END

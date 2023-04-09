@@ -26,7 +26,7 @@ Back:
 - searching for element in ordered list 
 - if it's possible to check if any element is too high or too low in $\mathcal{O}(1)$ 
 - in $\mathcal{O}(log(n))$ 
-Tags: algorithms, approach
+Tags: algorithm approach
 <!--ID: 1661591876811-->
 END
 

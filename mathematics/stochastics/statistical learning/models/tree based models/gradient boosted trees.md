@@ -118,7 +118,7 @@ $$
 	$$
 	c_{m,j} = argmin \sum\limits_{x_i \in R_{m, j}} L(y_i, f_{m-1}(x_i)+c)
 	$$
-Tags: statistical learning, tree based models
+Tags: statistical_learning model
 <!--ID: 1663933113777-->
 END
 
@@ -181,6 +181,6 @@ T(x_i, \Theta_m)
 }_\text{new base model}
 )
 $$
-Tags: statistical learning, tree based models
+Tags: statistical_learning model
 <!--ID: 1663933113781-->
 END

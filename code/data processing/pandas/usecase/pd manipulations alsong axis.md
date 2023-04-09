@@ -140,7 +140,7 @@ pd_df1.apply(np.sum, axis=1) # without reduction on columns
 # d 24
 ```
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668090818833-->
 END
 
@@ -184,7 +184,7 @@ pd_df1.apply(np.sum, axis=1) # without reduction on columns
 # d 24
 ```
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668090818835-->
 END
 
@@ -215,7 +215,7 @@ display(pd_df1.applymap(double))
 # c 6   14   22 
 # d 8   16   24
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668090818837-->
 END
 
@@ -248,6 +248,6 @@ Back:
 	- vector → scalar mapping
 	- can apply multiple functions at once
 	- [[pd split transform combine]]: can be used to combine because the output has to be scalar
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678976350273-->
 END

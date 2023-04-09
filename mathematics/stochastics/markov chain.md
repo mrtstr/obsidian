@@ -110,7 +110,7 @@ If there exists $m$ such that every element of $A^m$ is strictly positive, then
 2) 
 $$\boldsymbol{s} = \sum\limits_{i \in \mathcal{I}}\left(\lim\limits_{n \rightarrow \infty} A_n \right)_{i,j} = \sum\limits_{i \in \mathcal{I}} P(X_{n+1} = x_j \mid X_n = x_i)$$
 3) for every initial state the [[markov chain]] will allways converge to the stationary distribution $\boldsymbol{s}$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673172329093-->
 END
 
@@ -167,7 +167,7 @@ $$
 # examples
 - a stochastic process with $|T| = 1$ is a [[random variable]]
 - a stochastic process with a finite and [[countable]] index set $|T| < \infty$ is a [[random vector]]
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1672403411254-->
 END
 
@@ -207,7 +207,7 @@ X_{n+1} &= X_{n} A  \\
 &= \begin{pmatrix}   P(X_{n+1}=s_1) \\   ... \\ P(X_{n+1}=s_k)   \end{pmatrix} \in \mathbb{R}^{1 \times |S|}
 \end{split} 
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1672403411256-->
 END
 
@@ -238,6 +238,6 @@ X_{n+m} &= X_{n} A^m  \\
 &= \begin{pmatrix}   P(X_{n+m}=s_1) \\   ... \\ P(X_{n+m}=s_k)   \end{pmatrix} \in \mathbb{R}^{1 \times |S|}
 \end{split} 
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1672403411259-->
 END

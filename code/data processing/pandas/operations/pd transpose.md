@@ -39,6 +39,6 @@ pd_df1.T
 # col2 5 6 7 8 
 # col3 9 10 11 12
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1667921722432-->
 END

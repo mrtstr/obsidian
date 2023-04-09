@@ -299,7 +299,7 @@ $$
 Bias\left[\widehat{\theta}_\mathcal{T}\right]^2
 
 $$
-Tags: statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1664782921024-->
 END
 
@@ -334,7 +334,7 @@ Y-
 Bias\left[\widehat{f}_{\mathcal{T}_{train}}(x_0)\right]^2
 \end{split}
 $$
-Tags: statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1664782921031-->
 END
 
@@ -438,7 +438,7 @@ $$
 Bias\left[\widehat{\theta}_\mathcal{T}\right]^2
 $$
 - the [[error]] is the sum of the [[model variance]] and squared [[model bias]] 
-Tags: statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1664782921035-->
 END
 
@@ -622,7 +622,7 @@ Bias\left[\widehat{f}_{\mathcal{T}_{train}}(x_0)\right]^2
 $$
 - the [[error]] is the sum of the [[model variance]] and squared [[model bias]] and an unavoidable part that is depending on the variance of the data $\mathbb{VAR}[\epsilon] =\mathbb{VAR}[Y \:|\:X=x_0]$
 
-Tags: statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1664782921038-->
 END
 
@@ -637,6 +637,6 @@ Back:
 - for a [[statistical predictor]] we don't want to predict a parameter but a target value
 - because of the randomness of $f_{Y|X}(y|x)$ there will be a component of the [[error]] which is unavoidable
 - the unavoidable [[error]] $\epsilon \sim f_\epsilon(x_0)$ has the property $\mathbb{E}[\epsilon] = 0$ and $\mathbb{VAR}[\epsilon] =\mathbb{VAR}[Y \:|\:X=x_0]$
-Tags: statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1664782921041-->
 END

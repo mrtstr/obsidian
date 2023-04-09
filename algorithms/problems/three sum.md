@@ -53,6 +53,6 @@ Back:
 - search last two numbers with a sliding window
 - skip indices to prevent duplicates
 
-Tags: algorithms, problem
+Tags: algorithm problem
 <!--ID: 1662064277852-->
 END

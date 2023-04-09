@@ -7,6 +7,6 @@ Basic
 interquartile range
 Back: 
 $IQR = F^{-1}(0.75)-F^{-1}(0.25)$ 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674122984714-->
 END

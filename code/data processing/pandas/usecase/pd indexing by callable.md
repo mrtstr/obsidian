@@ -72,6 +72,6 @@ pd_df1.loc[lambda pd_df1: list("bcd")]
 # c   7   11
 # d   8   12
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668090818840-->
 END

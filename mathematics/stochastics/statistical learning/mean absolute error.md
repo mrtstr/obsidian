@@ -46,6 +46,6 @@ The [[statistical estimator|statistical estimaton]] $\widehat{x}$ of the [[rando
 ### [[statistical predictor]] $f(x)$
 The [[statistical predictor]] $f(x)$ that is minimizing the [[mean absolute error]] is the [[conditional distribution|conditional]] [[median]] of the [[conditional distribution]] $f_{Y\mid X = x}(y)$ $f_{MAE}(x)=median[Y\:|\:X=x]$
 
-Tags: statistical estimator, statistical learning
+Tags: statistical_learning
 <!--ID: 1674124469387-->
 END

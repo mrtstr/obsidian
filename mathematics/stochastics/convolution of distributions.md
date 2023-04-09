@@ -54,7 +54,7 @@ f_Y(y)
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671642994788-->
 END
 
@@ -83,6 +83,6 @@ f_Y(y)
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671650835737-->
 END

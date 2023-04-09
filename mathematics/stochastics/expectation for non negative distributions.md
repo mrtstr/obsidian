@@ -12,6 +12,6 @@ Back:
 $$
 \mathbb{E}[X]=\int\limits_{0}^\infty 1 - F_X(x)dx
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673770061501-->
 END

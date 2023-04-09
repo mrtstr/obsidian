@@ -65,7 +65,7 @@ P\left(A_n \mid A_1 \cap A_2 \cap \:... \: A_{n-1} \right) \\
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1666457499349-->
 END
 

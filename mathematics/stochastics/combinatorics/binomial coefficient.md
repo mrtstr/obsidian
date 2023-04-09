@@ -62,7 +62,7 @@ $$
 = {n \choose k}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667724226677-->
 END
 
@@ -75,7 +75,7 @@ Back:
 $$
 \frac{13 \cdot 12 \cdot {4 \choose 3}{4 \choose 2}}{{52 \choose 5}}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673374513139-->
 END
 
@@ -86,6 +86,6 @@ Back:
 $$
 \frac{4 \cdot {13 \choose 5}}{{52 \choose 5}}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673374513146-->
 END

@@ -62,7 +62,7 @@ def twoSum( numbers: List[int], target: int) -> List[int]:
 			min_pointer = min_pointer + 1
 
 ```
-Tags: algorithms, problem
+Tags: algorithm problem
 <!--ID: 1661978397120-->
 END
 
@@ -85,6 +85,6 @@ Back:
                     return [rest[num], index]
 ```
 
-Tags: algorithms, problem
+Tags: algorithm problem
 <!--ID: 1661978397116-->
 END

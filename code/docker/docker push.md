@@ -18,6 +18,6 @@ docker push <tag>
 docker push <url>/<namespace>:<version>
 docker registry-ds.newyorker.de:8443/nowa-demand-forecast:1.21
 ```
-Tags: code, docker
+Tags: code docker
 <!--ID: 1666875324151-->
 END

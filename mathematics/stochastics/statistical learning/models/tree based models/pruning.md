@@ -39,7 +39,7 @@ Back:
 - low complexity → better [[generalization]], less [[model variance]]
 - high complexity → better [[training error]] less [[model bias|model bias]] 
 - helps against over fitting
-Tags: statistical learning, tree based models
+Tags: statistical_learning model
 <!--ID: 1662888972084-->
 END
 
@@ -69,7 +69,7 @@ $$
 Q_m(T) = \frac{1}{N_m} \cdot \sum\limits_{\left\{y_i | x_i \in R_{m} \right\}}
 \left(y_i - c_m\right)^2
 $$
-Tags: statistical learning, tree based models
+Tags: statistical_learning model
 <!--ID: 1662888972086-->
 END
 
@@ -78,6 +78,6 @@ Basic
 pruning: how to find the optimal subtree $T_\alpha \subset T$ dependent on the pruning parameter $\alpha$
 Back: 
  $T_\alpha \subset T$ will always be found by [[greedy]] removing internal nodes until no improvement is possible 
-Tags: statistical learning, tree based models
+Tags: statistical_learning model
 <!--ID: 1662888972090-->
 END

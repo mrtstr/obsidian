@@ -104,7 +104,7 @@ L_{MSE}(X, f(x))=\mathbb{E}\left[(X-f(x))^2\right]
 $$
 $L(Y, f(x))=E[(Y-f(x))^2] \rightarrow f(x)=E[Y|X=x]$  
 
-Tags: statistical estimator, statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1661678999134-->
 END
 
@@ -130,7 +130,7 @@ $$
 L_{MSE}(X, \widehat{x}_{MSE})=\mathbb{E}\left[(X-\widehat{x}_{MSE})^2\right] = \mathbb{E}\left[(X-\mathbb{E}[X])^2\right] = \mathbb{VAR}\left[X\right]
 $$
 
-Tags: statistical estimator, statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1674122984694-->
 END
 
@@ -197,7 +197,7 @@ $$
 = \mathbb{VAR}\left[f(X)\right]
 $$
 - according to the [[law of total probability]] for the [[variance]] the improvement of the [[mean square error]] due to an observation of the [[random variable]] $X$ is equal to the [[variance]] of the optimal [[statistical predictor]] $\mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]$ (see [[variance bias trade-off]])
-Tags: statistical estimator, statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1674988747232-->
 END
 
@@ -238,6 +238,6 @@ $$
 = \mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]
 $$
 - according to the [[law of total probability]] for the [[variance]] the improvement of the [[mean square error]] due to an observation of the [[random variable]] $X$ is equal to the [[variance]] of the optimal [[statistical predictor]] $\mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]$ (see [[variance bias trade-off]])
-Tags: statistical estimator, statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1674997183132-->
 END

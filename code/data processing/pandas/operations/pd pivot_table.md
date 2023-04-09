@@ -124,7 +124,7 @@ pd.pivot_table(
 	# Do not include columns whose entries are all NaN
 )
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678873985238-->
 END
 
@@ -190,6 +190,6 @@ df1.pivot_table(index="A", columns="B", values="value")
 | A2 | 3 | 4 |
 
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678873985241-->
 END

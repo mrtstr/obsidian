@@ -25,6 +25,6 @@ The [[probability]] of an [[event]] $A$ can be calculated by defining the [[card
 $$
 P(A) = \frac{\left| A \right|}{\left| \Omega \right|}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667662694111-->
 END

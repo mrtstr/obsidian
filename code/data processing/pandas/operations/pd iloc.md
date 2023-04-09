@@ -69,6 +69,6 @@ pd_df1.iloc[[0, 1], [0, 1]]
 pd_df1.iloc[0:1, 0:1]
 # returns a DataFrame that has only the columns col1 and col2 and the rows a and b
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1667921722427-->
 END

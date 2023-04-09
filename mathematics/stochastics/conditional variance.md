@@ -47,7 +47,7 @@ Similar to the [[conditional expectation]] the [[conditional variance]] can be u
 $$
 g(X)=\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]  = \mathbb{E}[(Y-\mathbb{E}[Y\:|\:X ])^2\:|\:X ] = \mathbb{E}[Y^2\:|\:X ]-\mathbb{E}[Y\:|\:X ]^2
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674999785357-->
 END
 
@@ -88,6 +88,6 @@ $$
 &=\mathbb{VAR}[Y]
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674999785362-->
 END

@@ -88,6 +88,6 @@ Because [[CDF]] is continuous we can calculate $Q_X(p) = F^{-1}_X(p)$ by rearran
 $$
 Q_X(p): [0,1] \mapsto \mathbb{R} = a+p(b-a)
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1668943285985-->
 END

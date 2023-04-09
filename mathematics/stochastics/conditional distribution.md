@@ -61,7 +61,7 @@ f_{Y\mid X, g(X)}(y \mid x, g(x))
 &=f_{Y\mid X}(y \mid x)
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674983478650-->
 END
 
@@ -80,7 +80,7 @@ $$
 f_{X\mid Y}(x \mid y) \cdot f_Y(y)=f_{XY}(x,y)
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1664619948156-->
 END
 
@@ -98,7 +98,7 @@ $$
 =\frac{f_{Y}(y)}{f_Y(y)}
 = 1
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671186732891-->
 END
 
@@ -116,6 +116,6 @@ f_{YX\mid X}(y, x \mid x)
 &=f_{Y\mid X}(y \mid x)
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674905789945-->
 END

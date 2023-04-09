@@ -96,7 +96,7 @@ Back:
 - the names of each index level is saved under pd_df.index.names
 - the number of index dimensions (levels) are saved under pd_df.index.nlevels
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668090818822-->
 END
 
@@ -132,7 +132,7 @@ print(mi.get_level_values(level=0).values)
 print(mi.values)
 # [(2, 'red') (1, 'blue') (2, 'red') (1, 'blue')]
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668090818826-->
 END
 
@@ -168,6 +168,6 @@ pd.MultiIndex.from_product()
 ```python
 pd.MultiIndex.from_frame()
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668090818828-->
 END

@@ -146,7 +146,7 @@ Y&=X^2 \\
 0 \\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674378389867-->
 END
 
@@ -170,7 +170,7 @@ ab\left(\mathbb{COV}\left[X,Y\right]\right) \\
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674378389870-->
 END
 
@@ -202,7 +202,7 @@ $$
 2\mathbb{COVAR}[X_1,X_2] \\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674378389872-->
 END
 
@@ -238,7 +238,7 @@ Y&=X^2 \\
 0 \\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674378389875-->
 END
 

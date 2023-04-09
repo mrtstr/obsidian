@@ -97,6 +97,6 @@ print(df.memory_usage(deep=True))
 #col4 236 
 #col5 236 
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668090818845-->
 END

@@ -44,7 +44,7 @@ Back:
 $$
 C_{n,k} = {n \choose k} = \frac{n!}{k!(n-k)!}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667724693419-->
 END
 
@@ -78,6 +78,6 @@ $$
 &=  p \\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1678001380988-->
 END

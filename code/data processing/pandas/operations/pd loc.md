@@ -71,6 +71,6 @@ pd_df1.loc[["a", "b"], ["col1", "col2"]]
 pd_df1.loc["a":"b", "col1":"col2"]
 # returns a DataFrame that has only the columns col1 and col2 and the rows a and b
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1667921722425-->
 END

@@ -195,7 +195,7 @@ $$
 $$
 
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1670766688737-->
 END
 
@@ -277,7 +277,7 @@ $$
 ![[Screenshot from 2022-12-11 11-08-42.png]]
 
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1670766688739-->
 END
 
@@ -301,6 +301,6 @@ f_{XY}(x, y) dy dx
 $$
 
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1670766688742-->
 END

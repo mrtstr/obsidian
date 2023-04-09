@@ -90,6 +90,6 @@ $$
 - a stochastic process with a finite and [[countable]] index set $|T| < \infty$ is a [[random vector]]
 
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1672328634263-->
 END

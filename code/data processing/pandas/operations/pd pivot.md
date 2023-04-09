@@ -100,7 +100,7 @@ df1.pivot(index="A", columns="B", values="value")
 | A1 | 1 | 2 | 
 | A2 | 3 | 4 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678872572562-->
 END
 
@@ -153,6 +153,6 @@ df1.pivot(index="A", columns="B", values="value")
 | A1 | 1 | 2 | 
 | A2 | 3 | 4 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678872572565-->
 END

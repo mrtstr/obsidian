@@ -85,7 +85,7 @@ $$
 \rho[X,Y] = \frac{\mathbb{COVAR}[X,Y]}{\sigma_X\sigma_Y}=\frac{\mathbb{E}\left[X^7\right]-\mathbb{E}\left[X\right]\mathbb{E}\left[X^6\right]}{\sigma_X\sigma_Y} = \frac{0-0\mathbb{E}\left[X^6\right]}{\sigma_X\sigma_Y} = 0
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1675329130217-->
 END
 
@@ -191,7 +191,7 @@ $$
 ## interpretation of a small [[correlation]]
 - a small $\left|\rho\left[X,Y\right]\right|$ does not mean that $X$ and $Y$ are not related - it only says that there is no linear relationship between them
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674378389849-->
 END
 
@@ -214,7 +214,7 @@ $$
 &= sign(ab) \cdot \rho\left[X,Y\right]
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674378389855-->
 END
 
@@ -300,6 +300,6 @@ $$
 ## interpretation of a small [[correlation]]
 - a small $\left|\rho\left[X,Y\right]\right|$ does not mean that $X$ and $Y$ are not related - it only says that there is no linear relationship between them
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674378389859-->
 END

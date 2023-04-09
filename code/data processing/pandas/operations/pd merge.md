@@ -134,7 +134,7 @@ pd.merge(
 )
 ```
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678802210303-->
 END
 
@@ -146,7 +146,7 @@ Back:
 - set sort=False (default is True)
 - disables sorting after merged keys
 - will improve speed
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678802210306-->
 END
 
@@ -164,7 +164,7 @@ use parameter `validate`:
 - “many_to_one” or “m:1”: checks if merge keys are unique in right dataset.
 - “many_to_many” or “m:m”: allowed, but does not result in checks.
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678802210308-->
 END
 
@@ -247,6 +247,6 @@ pd.merge(df1, df2, left_on=["A"], right_on=["B"], how="inner")
 |---:|:------|:------|:------|:------|:------|:------|:------|:------| 
 | 0 | A2 | B2 | C2 | D2 | N | A2 | N | N |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678802210309-->
 END

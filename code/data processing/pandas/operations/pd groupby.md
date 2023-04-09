@@ -151,7 +151,7 @@ df.groupby(
    dropna=True
 )
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678964011875-->
 END
 
@@ -196,7 +196,7 @@ df.groupby({
 | cat | 80.2 | 58 | 
 | non cat | 389 | 24 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678964011878-->
 END
 
@@ -229,6 +229,6 @@ df2.groupby(df2.index).agg("first")
 | monkey | mammal | Primates | nan | 
 | parrot | bird | Psittaciformes | 24 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678964011881-->
 END

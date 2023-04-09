@@ -4,127 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "59a4baca44c4fc95",
+        "id": "9388fbff1b4a7bea",
         "type": "tabs",
         "children": [
           {
-            "id": "1abee9523726c352",
+            "id": "c50e32705b7112f1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/data processing/pyarrow/pa table.md",
+                "file": "mathematics/stochastics/symmetric matrix.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "02b66edc2425fcbf",
+            "id": "5e3aba3b38770876",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/data processing/pyarrow/pyarrow.md",
+                "file": "mathematics/basics/linear algebra/inverse matrix.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3d2350896fb37a32",
+            "id": "6ff016f84970565a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/data processing/pyarrow/pa ChunkedArray.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cf9afa4e628a04a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/data processing/pyspark/pyspark.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e3586fc5ddb03ec5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/data processing/df processing/parquet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d64e5be3bbf761bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/data processing/pyarrow/pa compute.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dc315d5a9307dc78",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/data processing/pyarrow/pa dataset.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7d4e3823bee9c826",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/data processing/pyarrow/pa dataset.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "abdaf49c0ef73c93",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "1a1b8d192325ebcb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "code/data processing/pandas/pd column.md",
+                "file": "mathematics/basics/linear algebra/rank nullity theorem.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -153,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Linear Combinations of",
+                "query": "is symmetric when:",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -190,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "mathematics/basics/linear algebra/rank nullity theorem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -206,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "mathematics/basics/linear algebra/rank nullity theorem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -227,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "mathematics/basics/linear algebra/rank nullity theorem.md"
+              }
             }
           }
         ]
@@ -237,17 +161,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "abdaf49c0ef73c93",
+  "active": "6ff016f84970565a",
   "lastOpenFiles": [
-    "code/data processing/pyarrow/pa RecordBatch.md",
-    "code/data processing/pyarrow/pa ChunkedArray.md",
-    "code/data processing/pyarrow/pa table.md",
-    "code/data processing/pyarrow/pa dataset.md",
-    "code/data processing/pyarrow/pa datatype.md",
-    "code/data processing/polars/pl dataframe.md",
-    "code/data processing/pyarrow/pyarrow.md",
-    "code/data processing/pyarrow/pa array.md",
-    "code/data processing/df processing/parquet.md",
-    "code/data processing/pyarrow/pa compute.md"
+    "mathematics/basics/linear algebra/inverse matrix.md",
+    "mathematics/stochastics/symmetric matrix.md",
+    "mathematics/basics/linear algebra/rank nullity theorem.md",
+    "mathematics/basics/linear algebra/diagonal matrix.md",
+    "mathematics/stochastics/statistical learning/models/generalized linear models.md",
+    "mathematics/stochastics/statistical learning/models/generalized additive models.md",
+    "mathematics/stochastics/statistical learning/models/tree based models/boosted trees.md",
+    "code/data processing/pandas/pd column.md",
+    "code/data processing/pandas/pd DataFrameGroupBy.md",
+    "code/data processing/pandas/usecase/pd dot chaining.md"
   ]
 }

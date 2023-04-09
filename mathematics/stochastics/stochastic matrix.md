@@ -28,6 +28,6 @@ $$
 $$
 \forall i \in \mathcal{I}: \sum\limits_{j \in \mathcal{I}} a_{i,j} = 1
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1672403411249-->
 END

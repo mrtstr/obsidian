@@ -116,7 +116,7 @@ Back:
 | 5 | 5 | 11 | nan | 9 | 9 | [4, 5] |
 
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1679071317491-->
 END
 
@@ -174,6 +174,6 @@ Back:
 | 4 | 4 | 10 | 5 | 12 | 12 | [3, 4, 5] | 
 | 5 | 5 | 11 | nan | 9 | 9 | [4, 5] |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1679071317494-->
 END

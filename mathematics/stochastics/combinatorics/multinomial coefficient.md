@@ -34,7 +34,7 @@ $$
 $$
 - for the first split of the [[set]] with have $n \choose n_1$ different possibilities for the following split we have ${n - n_1 \choose n_2}$ options and so on. This is equal to $\frac{n!}{n_1! n_2! ... n_k!}$. This is defined as the [[multinomial coefficient]].
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1668855069553-->
 END
 
@@ -60,7 +60,7 @@ $$
 $$
 - for the first split of the [[set]] with have $n \choose n_1$ different possibilities for the following split we have ${n - n_1 \choose n_2}$ options and so on. This is equal to $\frac{n!}{n_1! n_2! ... n_k!}$. This is defined as the [[multinomial coefficient]].
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1668855069559-->
 END
 
@@ -80,7 +80,7 @@ $$
 \frac{50}{{18}! {12}! {12}! {8}!}
 $$
 - the 50 positions on the row can be interpreted as elements of a [[set]] and we have to split them up in 4 groups...
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1668855069562-->
 END
 
@@ -102,6 +102,6 @@ $$
 \frac{300}{{8}! {5}! {287}!}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1668855069565-->
 END

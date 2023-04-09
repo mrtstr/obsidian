@@ -46,6 +46,6 @@ C_{n,k}
 $$
 For each subset of [[cardinality]] $k$ we can build $k!$ different [[permutations]] but only one [[combinations|combination]] thus the number of [[combinations]] is $k!$ times smaller than the number of [[permutations]]. This definition is equal to the [[binomial coefficient]] $n \choose k$. 
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667724226671-->
 END

@@ -250,7 +250,7 @@ $$
 \rightarrow b &= \mathbb{E}\left[Y\right] - \frac{\mathbb{COV}\left[X,Y\right]}{\mathbb{VAR}\left[X\right]}\mathbb{E}\left[X\right] \\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1675329130225-->
 END
 
@@ -323,7 +323,7 @@ $$
 \mathbb{VAR}_{Y}\left[Y \right] - \mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
 
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1675329130228-->
 END
 
@@ -343,7 +343,7 @@ $$
 & = \mathbb{E}\left[YX\right]-\mathbb{E}\left[YX\right] =0 \\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1675329130232-->
 END
 
@@ -371,7 +371,7 @@ $$
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1661928261922-->
 END
 
@@ -399,7 +399,7 @@ $$
 - the [[function]] $g(x) =\mathbb{E}[Y|x]$ can be interpreted as a [[statistical predictor]] that predicts a [[random variable]] $Y$ given an observed depandent [[random variable]] $X$
 - the [[conditional expectation]] $\mathbb{E}[Y|x]$ optimizes the [[mean square error]] loss 
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674983478630-->
 END
 
@@ -489,7 +489,7 @@ g(X,Y) \cdot f_{YX}(y, x)dy \:dx \\
 \end{split}
 $$
 (simple calse: $\mathbb{E}[Y]  = \mathbb{E}\left[\mathbb{E}[Y|X]\right]$)
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674983478636-->
 END
 
@@ -515,7 +515,7 @@ g(X,Y) \cdot f_{YX}(y, x)dy \:dx \\
 \end{split}
 $$
 (simple calse: $\mathbb{E}[Y]  = \mathbb{E}\left[\mathbb{E}[Y|X]\right]$)
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674983478639-->
 END
 
@@ -534,7 +534,7 @@ Back:
 - $r(X)= \mathbb{E}\left[Y g(X) | X\right] = g(X) \mathbb{E}\left[Y | X\right]$
 
 (simplified case: $\mathbb{E}\left[g(X) | X\right]  = g(X)$)
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674983478641-->
 END
 
@@ -555,7 +555,7 @@ $$
 & = \mathbb{E}\left[Y\right]
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674983478644-->
 END
 
@@ -587,7 +587,7 @@ c \\
 &= a \mathbb{E}\left[Y_1 \: | \: X\right] + b \mathbb{E}\left[Y_2  \: | \: X\right] + c
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674983478647-->
 END
 
@@ -619,7 +619,7 @@ $$
 - now lets concider the function $r(.)$ of a [[random variable]] $X$ 
 - $r(X)=g(X)=\mathbb{E}\left[g(X) | X\right]$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674984828829-->
 END
 
@@ -642,6 +642,6 @@ $$
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1677320005316-->
 END

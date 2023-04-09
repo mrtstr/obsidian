@@ -29,6 +29,6 @@ $$
 ## interpretation 2
 - given 365 days a [[permutations]] are the number of ordered subgroups and ordering implies that no two persons can have birthday at the same day
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1668855069547-->
 END

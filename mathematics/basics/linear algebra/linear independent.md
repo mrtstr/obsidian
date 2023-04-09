@@ -12,6 +12,6 @@ $$
 \forall x \in \mathbb{R}^{\left| \mathcal{I} \right|}:\sum\limits_{v_i \in V} x_iv_i = 0 \Rightarrow x = \boldsymbol{0}
 $$
 
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 <!--ID: 1665918408914-->
 END

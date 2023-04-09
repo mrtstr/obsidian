@@ -27,6 +27,6 @@ Back:
 - more restricted than [[pd merge]] but more convinient syntax
 - keys [[pd column|pd columns]] need to have the same name
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678872572568-->
 END

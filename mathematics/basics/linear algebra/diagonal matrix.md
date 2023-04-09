@@ -46,6 +46,6 @@ $$
 ## Applications
 - Used in the [[singular value decomposition]]
 - [[spectral theorem]]
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 <!--ID: 1665918408923-->
 END

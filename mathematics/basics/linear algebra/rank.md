@@ -74,6 +74,6 @@ nullity(A)
 }_\text{\# linear dependent column vectors Aj}
 $$
 ![[Pasted image 20221015081452.png]]
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 <!--ID: 1665824261699-->
 END

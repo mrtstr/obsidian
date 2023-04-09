@@ -39,6 +39,6 @@ Back:
 	- $P: \mathcal{F} \mapsto [0,1]$ 
 	- e.g. for a dice throw: $P(\Omega = \left\{2,4,6\right\}) = \frac{1}{2}$ 
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1664442661959-->
 END

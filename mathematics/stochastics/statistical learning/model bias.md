@@ -38,7 +38,7 @@ Back:
 - Systematic [[error]] of a model that is left when the training set is infinite. 
 - model [[model bias|bias]] and [[model variance|variance]] are [[error]] sources of [[statistical estimator]] and [[statistical predictor]]: see [[variance bias trade-off]]
 - for [[statistical predictor]] there is also a part of the [[error]] that is based on the randomness of $f_{Y|X}(y|x)$ and thus is unavoidable and has nothing to do with the model
-Tags: statistical estimator, statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1664642588633-->
 END
 
@@ -56,7 +56,7 @@ Back:
  Bias(\widehat{\theta}_\mathcal{T}) = \mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[\widehat{\theta}_\mathcal{T}\right]-\theta=\mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[\widehat{\theta}_\mathcal{T}-\theta\right]
 $$
 - let $\widehat{\theta}_n$ be an estimator trained on $n$ samples than the following is true: $\widehat{\theta}_n ~ is ~ unbiased \Leftrightarrow \lim\limits_{n\leftarrow \infty} \widehat{\theta}_n = \theta$  
-Tags: statistical estimator, statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1664642588638-->
 END
 
@@ -81,6 +81,6 @@ Bias\left[\widehat{f}_{\mathcal{T}_{train}}(x_0)\right]
 - f(x_0)
 $$
 
-Tags: statistical estimator, statistical learning
+Tags: mathematics statistical_learning
 <!--ID: 1664642588641-->
 END

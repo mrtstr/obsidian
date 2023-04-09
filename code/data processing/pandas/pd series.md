@@ -60,7 +60,7 @@ s * 2
 # as input for np operations
 np.exp(s)
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1667921722436-->
 END
 
@@ -83,7 +83,7 @@ s.get("f", None)
 s["f"]
 # returns object or raises error key not in the index
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1667921722438-->
 END
 
@@ -99,7 +99,7 @@ Back:
 - has array and dict like properties
 - supports vector operations that align the index
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1667921722440-->
 END
 
@@ -131,6 +131,6 @@ print(series[1:] * series[:-1])
 # c 9.0 
 # d NaN
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1667921722442-->
 END

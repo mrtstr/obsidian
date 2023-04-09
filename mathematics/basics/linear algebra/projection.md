@@ -17,6 +17,6 @@ Back:
 → $x  = \left(A^\top A \right)^{-1}A^\top b$
 
 ![[Pasted image 20221009111212.png]]
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 <!--ID: 1665308790789-->
 END

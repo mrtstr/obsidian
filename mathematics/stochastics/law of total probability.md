@@ -32,7 +32,7 @@ P(A)=\sum\limits_{i=1}^{k}P(B_i)\cdot P(A \mid B_i)
 $$
 ![[Selection_002.png]]
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1666457499354-->
 END
 
@@ -57,6 +57,6 @@ f_{X}(x) =
 \sum\limits_{all \:y} f_{X\mid Y}(x \mid y) f_Y(y)
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671186732883-->
 END

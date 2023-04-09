@@ -14,6 +14,6 @@ method to [[sampling|sample]] from an arbitrary distribution with a known [[CDF]
 Back: 
 - for every [[continuous random variable]] $X$ with a [[CDF]] $F_X(x)$, $Y=F_X(X) \sim U(0,1)$
 - Therefore we can [[sampling|sample]] from the distribution of $X$ by generating random samples from the [[continous uniform distribution]] $U(0,1)$ and transforming them with $F^{-1}_X(u)$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671614666438-->
 END

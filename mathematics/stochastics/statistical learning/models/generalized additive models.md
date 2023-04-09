@@ -54,6 +54,6 @@ X_i
 $$
 - link function $g$ often logit or identity
 training: with backfitting algorithm
-Tags: statistical learning, models
+Tags: statistical_learning model
 <!--ID: 1663839912717-->
 END

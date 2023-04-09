@@ -70,6 +70,6 @@ pd.Series(5.0, index = ["a", "b", "c", "d"])
 # c 5.0 
 # d 5.0 
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1667921722413-->
 END

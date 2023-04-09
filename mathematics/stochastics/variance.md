@@ -102,7 +102,7 @@ $$
 $$
 
 (variance of a set of [[observations]] see [[sample variance]])
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1661928261918-->
 END
 
@@ -190,7 +190,7 @@ $$
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1661928261919-->
 END
 
@@ -208,7 +208,7 @@ $$
 
 ### [[variance]] of a constant
 $\mathbb{VAR}[X] = 0$ $\Leftrightarrow$ $X$ is a constant with $P(X=c)=1$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673776307106-->
 END
 
@@ -232,7 +232,7 @@ $$
 $$
 
 it follows that $\mathbb{VAR}[-X]=(-1)^2\mathbb{VAR}[X] = \mathbb{VAR}[X]$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673776307109-->
 END
 
@@ -267,7 +267,7 @@ $$
 &= \mathbb{VAR}[X_1] + \mathbb{VAR}[X_2] \\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673776307111-->
 END
 
@@ -282,7 +282,7 @@ $$
 \mathbb{VAR}\left[b +\sum_{i=1}^n a_iX_i\right]=\sum_{i=1}^n a_i^2 \mathbb{VAR}\left[ X_i\right]
 $$
 (no proof but proof idea)
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673776307114-->
 END
 
@@ -301,7 +301,7 @@ $$
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674378389862-->
 END
 
@@ -320,6 +320,6 @@ $$
 &=\sum_{i=1}^n \mathbb{VAR}\left[\sum_{i=1}^n X_i\right] + 2\sum_{i=1}^n\sum_{j=i + 1}^n  \mathbb{COVAR}\left[ X_i, X_j\right] \\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674378389865-->
 END

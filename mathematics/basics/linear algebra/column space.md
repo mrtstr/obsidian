@@ -35,6 +35,6 @@ $$
 - $range(A) \subseteq\mathbb{R^{\left| \mathcal{I} \right| }}$ 
 - $dim(range(A)) + dim(kern(A)) = \left| \mathcal{J} \right|$ [[rank nullity theorem]]
 - $dim(range(A)) = dim(rowspace(A)) = rank(A)$ (the [[column space]] and the [[row space]] have the same number of dimensions) and they are equal to the [[rank]]
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 <!--ID: 1665328452058-->
 END

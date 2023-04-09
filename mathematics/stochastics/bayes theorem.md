@@ -95,7 +95,7 @@ P\left(B_i \mid A\right)
 {\underbrace{\sum\limits_{j=1}^k P\left(A \mid B_j\right)P\left(B_j\right)}_\text{law of total probability}}
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1664619948140-->
 END
 
@@ -132,7 +132,7 @@ P\left(B_i \mid A_1 \cap A_2\right)
 
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667051814884-->
 END
 
@@ -156,6 +156,6 @@ f_{XY}(x,y)
 =& f_{XY}(x,y) 
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671186732897-->
 END

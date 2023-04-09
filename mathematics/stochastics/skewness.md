@@ -15,6 +15,6 @@ The [[skewness]] of a distribution is a measure of the lack of symetry of the [[
 $$
 \frac{\mathbb{E}\left[(X-\mu)^3\right]}{\sigma^3}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674122984707-->
 END

@@ -24,6 +24,7 @@ $$
 5) every [[symmetric matrix]] is a [[normal matrix]]
 6) $A$ [[symmetric matrix|symmetric]] then $XAX^\top$ is [[symmetric matrix|symmetric]] 
 
+# Anki
 
 START
 Basic
@@ -58,6 +59,6 @@ $$
 5) every [[symmetric matrix]] is a [[normal matrix]]
 6) $A$ [[symmetric matrix|symmetric]] then $XAX^\top$ is [[symmetric matrix|symmetric]] 
 
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 <!--ID: 1666105989005-->
 END

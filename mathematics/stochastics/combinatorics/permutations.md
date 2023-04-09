@@ -78,7 +78,7 @@ $$
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667662694123-->
 END
 
@@ -93,6 +93,6 @@ $20^{12}$ total arrangements ([[multiplication rule]]) and $\frac{20!}{(20-12)!}
 $$
 \frac{\frac{20!}{8!}}{20^{12}}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667725085212-->
 END

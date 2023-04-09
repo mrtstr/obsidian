@@ -57,6 +57,6 @@ appended_df = pd.concat([pd_df1, append_row])
 | d | 4 | 8 | 12 | 
 | e | 1 | 1 | 1 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678802210291-->
 END

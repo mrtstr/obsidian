@@ -171,7 +171,7 @@ f_X(x) =
 & \text{otherwise}
 \end{cases}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1678167394158-->
 END
 
@@ -227,7 +227,7 @@ p \ll 1 & \Rightarrow \mathbb{VAR}[Y] = np(1-p) \approx np \cdot 1 = \mathbb{E}[
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1678520971197-->
 END
 
@@ -257,7 +257,7 @@ P(Y \geq 4) &= 1 - P(Y \leq 3) = \\
 &= 0.1428 \\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1678520971201-->
 END
 
@@ -302,6 +302,6 @@ f_X(x | \lambda) =
 \end{cases}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1678520971204-->
 END

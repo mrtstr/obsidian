@@ -94,7 +94,7 @@ $$
 $$
 \psi_X(t) = \exp{\left[\frac{t^2}{2}\right]}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680933861852-->
 END
 
@@ -135,7 +135,7 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} = \frac{dF_X\left(y \sigma - \mu \right)}{dy}  
 $$
 
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680933861858-->
 END
 
@@ -203,6 +203,6 @@ $$
 $$
 
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680933861861-->
 END

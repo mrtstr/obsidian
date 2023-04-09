@@ -14,6 +14,6 @@ Back:
 $$
 P_{n,k} = \frac{n!}{(n-k)!} = \prod\limits_{i=0}^{k-1} (n-i)
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667724693413-->
 END

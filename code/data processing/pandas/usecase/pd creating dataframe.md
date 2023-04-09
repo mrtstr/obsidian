@@ -66,6 +66,6 @@ pd.DataFrame(d, index=["d", "b", "a"], columns=["one", "two", "three"])
 # b  2.0  2.0  NaN
 # a  1.0  1.0  NaN
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1667921722411-->
 END

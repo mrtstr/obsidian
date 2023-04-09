@@ -51,7 +51,7 @@ f_\boldsymbol{Y}(\boldsymbol{y})=\underbrace{\frac{1}{|det(A)|}}_\text{normaliza
 \left(A^{-1} \boldsymbol{y}\right)
 }_{g^{-1}(y)}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671642994794-->
 END
 
@@ -72,7 +72,7 @@ Back:
 $$
 F_{Y}(y) = \int\limits_{\{\boldsymbol{x} \mid g(\boldsymbol{x}) = y\}} f_{\boldsymbol{X}}(\boldsymbol{x}) d\boldsymbol{x}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671650835742-->
 END
 
@@ -94,6 +94,6 @@ Back:
 $$
 f_{\boldsymbol{Y}}(\boldsymbol{y}) = \sum\limits_{\{\boldsymbol{x} \mid \boldsymbol{g}(\boldsymbol{x}) = \boldsymbol{y}\}} f_{\boldsymbol{X}}(\boldsymbol{x})
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671650835745-->
 END

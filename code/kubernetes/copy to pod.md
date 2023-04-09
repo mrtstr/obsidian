@@ -28,6 +28,6 @@ copy from pod to local:
 kubectl cp <pod name>:<pod path> <local path>
 ```
 
-Tags: code, kubernetes
+Tags: code kubernetes
 <!--ID: 1666875324170-->
 END

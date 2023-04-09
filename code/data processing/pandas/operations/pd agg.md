@@ -163,7 +163,7 @@ df.agg(["sum", "count", "nunique"], axis=0)
 | nunique | 2 | 4 | 4 |
 
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678969456505-->
 END
 
@@ -202,7 +202,7 @@ df.groupby("class").agg([get_list, max_len])
 | bird | ['Falconiformes', 'Psittaciformes'] | 14 | [389.0, 24.0] | 1 | 
 | mammal | ['Carnivora', 'Primates', 'Carnivora'] | 9 | [80.2, nan, 58.0] | 1 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678969456507-->
 END
 
@@ -276,7 +276,7 @@ df.agg(["count", "nunique"], axis=1)
 | monkey | 2 | 2 | 
 | leopard | 3 | 3 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678969456509-->
 END
 
@@ -311,6 +311,6 @@ df.groupby("class").agg(
 | bird | 389 | 24 | 
 | mammal | 80.2 | 58 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678974652763-->
 END

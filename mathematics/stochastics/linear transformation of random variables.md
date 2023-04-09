@@ -97,7 +97,7 @@ $$
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680849735924-->
 END
 
@@ -119,7 +119,7 @@ $$
 \Rightarrow\mathbb{COVAR}\left[\boldsymbol{Y}\right] &=  A\mathbb{COVAR}\left[\boldsymbol{X}\right] A^T\\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680849735929-->
 END
 
@@ -143,6 +143,6 @@ $$
  = A A^T \begin{pmatrix}\mathbb{VAR}\left[X_1\right]\\ ... \\ \mathbb{VAR}\left[X_n\right]\end{pmatrix}\\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680849735935-->
 END

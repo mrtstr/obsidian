@@ -94,7 +94,7 @@ $$
 - submodel $m$ and leaf $j$
 - leafs $R_{j, m}$ 
 - mean values  $\gamma_{j, m}=mean[y_i \:|\: x_i \in R_{j, m}]$ 
-Tags: statistical learning, models
+Tags: statistical_learning  model
 <!--ID: 1663854449556-->
 END
 
@@ -149,7 +149,7 @@ T(x_i, \Theta_m)
 $$
 
 
-Tags: statistical learning, models
+Tags: statistical_learning  model
 <!--ID: 1663854449559-->
 END
 

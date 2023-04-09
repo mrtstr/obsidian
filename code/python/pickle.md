@@ -40,6 +40,6 @@ print(p1)           #  b'\x80\x04\x95\r\....'
 p2 = pickle.loads(p1)
 print(p2)           #  [1, 2, 3, 4]
 ```
-Tags: code, python
+Tags: code python
 <!--ID: 1666875324177-->
 END

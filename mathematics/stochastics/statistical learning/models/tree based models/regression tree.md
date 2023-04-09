@@ -57,7 +57,7 @@ Back:
 - $R_m$ (leaf of the tree model which represents a rectangle in the feature space)
 - $\gamma_m=mean[y_i \:|\: x_i \in R_m]$ (value for each leaf)
 - $J_m$ (number of leafs)
-Tags: statistical learning, tree based models
+Tags: statistical_learning model
 <!--ID: 1662888972068-->
 END
 
@@ -74,7 +74,7 @@ Back:
 	- choose a pruning parameter $\alpha$
 	- use [[pruning]] with [[mean square error]] until the optimal subtree $T_\alpha \subset T$ is found  
 		- (remove internal nodes until no improvement of cost-complexity criterion is possible)
-Tags: statistical learning, tree based models
+Tags: statistical_learning model
 <!--ID: 1662888972076-->
 END
 
@@ -107,6 +107,6 @@ $$
 \right]
 $$
 (with $c_{1}=mean[y_i \:|\: x_i \in R_{i,1}]$ and $c_2=mean[y_i \:|\: x_i \in R_{i,2}]$)
-Tags: statistical learning, tree based models
+Tags: statistical_learning model
 <!--ID: 1662888972080-->
 END

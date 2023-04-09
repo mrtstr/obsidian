@@ -71,6 +71,6 @@ pd_df1.memory_usage(deep=True)
 # col2 32 
 # col3 32 
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1667921722406-->
 END

@@ -66,6 +66,6 @@ $$
 5) $A^\top A$ is [[definite quadratic form|positive-semidefinite]]
 6) $\left(A^\top\right)^{-1}=\left(A^{-1}\right)^{\top}$ 
 
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 <!--ID: 1665328452046-->
 END

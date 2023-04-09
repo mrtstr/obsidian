@@ -122,7 +122,7 @@ $$
 F_{Y}(y)=P(Y \leq y)=P(g(X) \leq y)=\sum\limits_{x_i \in \{x \mid g(x) \leq y \}} f_X(x_i)
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671275212198-->
 END
 
@@ -158,7 +158,7 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} = \frac{dF_X\left(\frac{y-b}{a}\right)}{dy} f_{
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671275212205-->
 END
 
@@ -189,7 +189,7 @@ $$
 
 
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671360434130-->
 END
 
@@ -224,7 +224,7 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} \\
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671702302816-->
 END
 
@@ -258,7 +258,7 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{y} = \frac{1}{2} y^{-\frac{1}{2}}
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671360434136-->
 END
 
@@ -280,6 +280,6 @@ F_{Y}(y)&=P(Y \leq y) \\
 &= F_{X}(F_X^{-1}(y)) = y \\
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1671614666445-->
 END

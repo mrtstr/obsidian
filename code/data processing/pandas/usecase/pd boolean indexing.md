@@ -162,6 +162,6 @@ pd_df1.loc[:, pd_df1.loc["c"] > 4]
 # c   7   11 
 # d   8   12
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668010184532-->
 END

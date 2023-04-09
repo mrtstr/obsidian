@@ -13,6 +13,6 @@ The [[standard deviation]] of a [[random variable]] $X$ is the nonnegative squar
 $$
 \sigma = \sqrt{\mathbb{VAR}[X]}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1673776307099-->
 END

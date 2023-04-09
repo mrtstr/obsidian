@@ -41,6 +41,6 @@ def lengthOfLongestSubstring(self, s: str) -> int:
 	return max_substring_len
 
 ```
-Tags: algorithms, problem
+Tags: algorithm problem
 <!--ID: 1661890306173-->
 END

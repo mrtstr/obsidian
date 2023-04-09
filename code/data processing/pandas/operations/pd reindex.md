@@ -12,7 +12,7 @@ how to broadcast a [[pandas]] [[pd dataframe]] to a new [[pd index]]
 Back: 
 [[pd dataframe|DataFrame]].reindex_like()
 [[pd dataframe|DataFrame]].reindex()
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668090818847-->
 END
 
@@ -30,6 +30,6 @@ fill methods:
 -   pad / ffill: propagate last valid observation forward to next val
 -   backfill / bfill: use next valid observation to fill gap
 -   nearest: use nearest valid observations to fill gap.
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668090818849-->
 END

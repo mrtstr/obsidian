@@ -99,6 +99,6 @@ Y= X_1 + ... + X_n \: with \: X_i \sim Bin(n_i, p) \Rightarrow X_n \sim Bin\left
 $$
 
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1668943285990-->
 END

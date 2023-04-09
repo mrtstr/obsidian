@@ -62,7 +62,7 @@ pd_df1.index = ["e", "b", "d", "f"]
 pd_df1.reset_index(drop=False)  # default: convert the index to a row
 pd_df1.reset_index(drop=True)  # completly remove the index
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668010184538-->
 END
 

@@ -129,7 +129,7 @@ pd_df1 = pd.DataFrame({
 # c   3   7   11
 # d   4   8   12
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1667921722423-->
 END
 
@@ -146,7 +146,7 @@ pd_series.row_name == pd_series["row_name"]
 
 pd_df.col_name == pd_series["col_name"]
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1667921722429-->
 END
 
@@ -162,6 +162,6 @@ Back:
 5) selecting rows and [[pd column]] using [[pd boolean indexing]] and [[pd loc]]
 6) selecting [[pd index]] and [[pd column]] using [[py lambda functions]]: [[pd indexing by callable]]
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668090818842-->
 END

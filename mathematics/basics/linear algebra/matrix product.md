@@ -43,6 +43,6 @@ $$
 3) $\left(AB\right)C = A\left(BC\right)$ [[associative]]
 4) $c\left(AB\right)=(cA)B= (AB)c = A(Bc)$ [[commutative]] with a [[scalar]] 
 
-Tags: mathematics, linear algebra
+Tags: mathematics linear_algebra
 <!--ID: 1665328452040-->
 END

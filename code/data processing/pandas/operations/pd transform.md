@@ -22,7 +22,7 @@ Back:
 - Similar to [[pd apply]] but less powerfull because aggragation is not allowed (→ output same length as input)
 - Similar to [[pd applymap]] but more powerful because the column context can be concidered (like needed for [[np cumsum]])
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678974652758-->
 END
 
@@ -61,6 +61,6 @@ result:
 | monkey | birdbirdmammalmammal | FalconiformesPsittaciformesCarnivoraPrimates | nan | 
 | leopard | birdbirdmammalmammalmammal | FalconiformesPsittaciformesCarnivoraPrimatesCarnivora | 551.2 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678974652761-->
 END

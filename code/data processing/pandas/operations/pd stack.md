@@ -133,7 +133,7 @@ df1.stack()
 | ('b', 'y', 'B') | 7 | 
 | ('b', 'y', 'C') | 11 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678885894648-->
 END
 
@@ -209,7 +209,7 @@ df1.stack()
 | ('C', 'y', 'a') | 9 | 
 | ('C', 'y', 'b') | 11 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678885894650-->
 END
 
@@ -234,6 +234,6 @@ df.stack().unstack(0)
 | col2 | 5 | 6 | 7 | 8 | 
 | col3 | 9 | 10 | 11 | 12 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678885894653-->
 END

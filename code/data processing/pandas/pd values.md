@@ -48,6 +48,6 @@ display(pd_df1)
 # c   3   7   11
 # d   4   8   12
 ```
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1668010184520-->
 END

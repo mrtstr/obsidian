@@ -101,7 +101,7 @@ $$
 - If $\mathbb{E}\left[X\right]=0$ and $f_X(x)$ is [[symmetric distribution|symmetric around its mean]] → $\mathbb{E}\left[X^{2k+1}\right] = 0 \: \forall k \in \mathbb{N}_0$ 
 - $\mu_k[cX]=c^k\mu_k[X]$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680157250276-->
 END
 
@@ -138,7 +138,7 @@ $$
 $$
 X \perp Y, k \in \{1,2,3\} \Rightarrow \mu'_k[X+Y]=\mu'_k[X]+\mu'_k[Y]
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680157250280-->
 END
 
@@ -170,7 +170,7 @@ $$
 	- ...
 -  Isolated Infiormation about the [[symmetric distribution|symmetry]] of $f_X(x)$: [[skewness]] $\mu''_3[X]=\frac{\mathbb{E}\left[(X-\mu)^3\right]}{\sigma^3}$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1680157250284-->
 END
 
@@ -231,6 +231,6 @@ $$
 	- ...
 -  Isolated Infiormation about the [[symmetric distribution|symmetry]] of $f_X(x)$: [[skewness]] $\mu''_3[X]=\frac{\mathbb{E}\left[(X-\mu)^3\right]}{\sigma^3}$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1674122984711-->
 END

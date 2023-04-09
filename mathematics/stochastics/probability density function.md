@@ -29,6 +29,6 @@ $f_X:\Omega \mapsto [0,\infty]$
 ## relationship to [[CDF]] $F_X(x)$
 - $F_X(x)=P(X \leq x) =\int\limits_{-\infty}^{x}  f_X(x)\:dx$ 
 - $f_X(x)=\frac{dF_X(x)}{dx}$ 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1664291691108-->
 END

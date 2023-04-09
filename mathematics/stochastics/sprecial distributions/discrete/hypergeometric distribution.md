@@ -137,7 +137,7 @@ $$
 
 \end{split}
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1678001380982-->
 END
 
@@ -176,6 +176,6 @@ a+b = n \Rightarrow \alpha(T,n) = 0 \Rightarrow \mathbb{E}[Y] = 0  \\
 \end{split}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1678075855083-->
 END

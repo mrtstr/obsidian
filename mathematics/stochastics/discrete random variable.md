@@ -51,7 +51,7 @@ $$
 ## Example: tossing a coin 10 times
 The [[sample space]] is containing all possible outcomes $\Omega = \left\{H, T\right\}^{10}$ with $\left|\Omega\right|=2^{10}$. We can define a [[discrete random variable]] on $\Omega$ that is counting the number of heads $X: \Omega \mapsto \left\{1,..,10\right\}$.
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1664442661951-->
 END
 
@@ -84,6 +84,6 @@ $$
 \left\{ x \mid f_X(x) > 0\right\}
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667211139255-->
 END

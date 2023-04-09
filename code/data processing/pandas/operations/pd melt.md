@@ -100,7 +100,7 @@ df1_pivot.melt(id_vars=["A"], value_vars=["B0", "B1"])
 | 3 | A2 | B0 | 3 | 
 | 4 | A2 | B1 | 4 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678872572555-->
 END
 
@@ -164,6 +164,6 @@ df1_pivot.melt(id_vars=["A"], value_vars=["B0"])
 | 0 | A1 | B0 | 1 | 
 | 1 | A2 | B0 | 3 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678872572560-->
 END

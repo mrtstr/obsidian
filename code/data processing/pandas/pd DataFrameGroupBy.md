@@ -143,6 +143,6 @@ df.groupby("class").get_group("mammal")
 | monkey | mammal | Primates | nan | 
 | leopard | mammal | Carnivora | 58 |
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678964011867-->
 END

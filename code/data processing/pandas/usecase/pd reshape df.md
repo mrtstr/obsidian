@@ -179,6 +179,6 @@ df1.unstack(0)
 | y | 1 | 3 | 5 | 7 | 9 | 11 |
 
 
-Tags: code, pandas
+Tags: code pandas
 <!--ID: 1678885894641-->
 END

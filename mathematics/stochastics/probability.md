@@ -67,7 +67,7 @@ probability in a [[probability space]] with a [[countable|non-countable]] [[samp
 
 discrete probability: 
 probability in a [[probability space]] with a [[countable]] [[sample space]]
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1666457499357-->
 END
 
@@ -88,7 +88,7 @@ $$
 B \cup (A \cap \overline{B}) 
 =(B \cup A) \cap (B \cup \overline{B}) = A \cup B
 $$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1666457499361-->
 END
 
@@ -110,7 +110,7 @@ P(A \cap (B \cup \overline{B}))
 P(A \cap \overline{B}) = P(A) - P(A \cap B)
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1666457499364-->
 END
 
@@ -130,7 +130,7 @@ P(A \cup B)
 = P(B) + P(A) - P(A \cap B)
 $$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1666457499366-->
 END
 
@@ -165,7 +165,7 @@ Back:
 ### [[stochastic independent]] [[event space|events]] $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
 - $P(A \cap B) = P(A)P(B)$
 
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1666457499369-->
 END
 
@@ -177,7 +177,7 @@ probability:
 can [[stochastic exclusive]] [[event space|events]] be [[stochastic independent]]?
 Back: 
 only if $P(A)=0$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1666517556858-->
 END
 
@@ -190,6 +190,6 @@ Suppose that 10,000 tickets are sold in one lottery and
 will win at least one first prize?
 Back: 
 $P(A \cup B) = P(B) + P(A) - P(A \cap B)=0.01 + 0.02 − (0.01)(0.02) = 0.0298$
-Tags: mathematics, statistics
+Tags: mathematics statistics
 <!--ID: 1667051814880-->
 END
