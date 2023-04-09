@@ -13,7 +13,55 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/data processing/pyarrow/pa array.md",
+                "file": "code/data processing/pyarrow/pa table.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "02b66edc2425fcbf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/pyarrow.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3d2350896fb37a32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/pa ChunkedArray.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cf9afa4e628a04a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyspark/pyspark.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e3586fc5ddb03ec5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/df processing/parquet.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +73,58 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code/data processing/pyarrow/pa table.md",
+                "file": "code/data processing/pyarrow/pa compute.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dc315d5a9307dc78",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/pa dataset.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7d4e3823bee9c826",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/pa dataset.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "abdaf49c0ef73c93",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "1a1b8d192325ebcb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pandas/pd column.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -97,7 +190,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "code/data processing/pyarrow/pa array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +206,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "code/data processing/pyarrow/pa array.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +227,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "code/data processing/pyarrow/pa array.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,17 +237,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1abee9523726c352",
+  "active": "abdaf49c0ef73c93",
   "lastOpenFiles": [
+    "code/data processing/pyarrow/pa RecordBatch.md",
+    "code/data processing/pyarrow/pa ChunkedArray.md",
     "code/data processing/pyarrow/pa table.md",
-    "code/data processing/pyarrow/pa array.md",
-    "code/data processing/array processing/datatype.md",
-    "code/data processing/pyarrow/pa scalar.md",
-    "code/data processing/array processing/scalar.md",
-    "code/data processing/array processing/array.md",
+    "code/data processing/pyarrow/pa dataset.md",
     "code/data processing/pyarrow/pa datatype.md",
+    "code/data processing/polars/pl dataframe.md",
     "code/data processing/pyarrow/pyarrow.md",
-    "code/data processing/df processing/operations/df transpose.md",
-    "code/data processing/pandas/operations/pd exanding.md"
+    "code/data processing/pyarrow/pa array.md",
+    "code/data processing/df processing/parquet.md",
+    "code/data processing/pyarrow/pa compute.md"
   ]
 }
