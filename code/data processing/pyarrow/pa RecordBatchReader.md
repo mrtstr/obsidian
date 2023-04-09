@@ -1,0 +1,2 @@
+- Base class for reading stream of record batches.
+- [[pa RecordBatch]]

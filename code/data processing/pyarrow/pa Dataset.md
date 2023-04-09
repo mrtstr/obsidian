@@ -1,9 +1,9 @@
-- [[pyarrow]] [[pa dataset|dataset]] is a collection of data fragments and potentially child datasets.
+- [[pyarrow]] [[pa Dataset|dataset]] is a collection of data fragments and potentially child datasets.
 - Allows to works with datasets that do not fit in the memory
 - data chunks ca be loaded and maipulated one by one
 
 ## example: creating a partitioned dataset
-![[pa table#example: creating a pa table from pa array pa arrays]]
+![[pa Table#example: creating a pa table from pa array pa arrays]]
 
 1) partition the data and save it on the disc
 ```python
@@ -20,7 +20,7 @@ ds.write_dataset( # create a
 	# here: group by column "years"
 )
 ```
-2) load the [[pa dataset]]
+2) load the [[pa Dataset]]
 ```python
 dataset = ds.dataset(
 	"savedir",
@@ -73,7 +73,7 @@ dataset.to_table().to_pandas()
 | 23 | 7 | 2000 |
 
 
-## example: convert [[pa dataset]] to [[pl dataframe]]
+## example: convert [[pa Dataset]] to [[pl dataframe]]
 
 ### chunk for chunk
 ```python
@@ -112,7 +112,7 @@ pl.from_arrow(list(dataset.to_batches()))
 
 START
 Basic
-[[pa dataset]]
+[[pa Dataset]]
 - concept
 - example
 	- create dataset from the following table
@@ -128,12 +128,12 @@ Basic
 | 28 | 1 | 1995 |
 
 Back: 
-- [[pyarrow]] [[pa dataset|dataset]] is a collection of data fragments and potentially child datasets.
+- [[pyarrow]] [[pa Dataset|dataset]] is a collection of data fragments and potentially child datasets.
 - Allows to works with datasets that do not fit in the memory
 - data chunks ca be loaded and maipulated one by one
 
 ### concept
-- [[pyarrow]] [[pa dataset|dataset]] is for partitioned handeling of large datasets
+- [[pyarrow]] [[pa Dataset|dataset]] is for partitioned handeling of large datasets
 - save partitioned dataset on the disc
 - load the data one by one
 
@@ -153,7 +153,7 @@ ds.write_dataset( # create a
 	# here: group by column "years"
 )
 ```
-2) load the [[pa dataset]]
+2) load the [[pa Dataset]]
 ```python
 dataset = ds.dataset(
 	"savedir",
@@ -180,7 +180,7 @@ END
 START
 Basic
 
-- example [[pa dataset]]
+- example [[pa Dataset]]
 	- create dataset from the following table
 	- load dataset
 	- convert dataset chunks in [[pd dataframe]]
@@ -197,7 +197,7 @@ Basic
 | 28 | 1 | 1995 |
 
 Back: 
-# create and load [[pa dataset]]
+# create and load [[pa Dataset]]
 1) partition the data and save it on the disc
 ```python
 import pyarrow.dataset as ds
@@ -213,7 +213,7 @@ ds.write_dataset( # create a
 	# here: group by column "years"
 )
 ```
-2) load the [[pa dataset]]
+2) load the [[pa Dataset]]
 ```python
 dataset = ds.dataset(
 	"savedir",
@@ -256,7 +256,7 @@ dataset.to_table().to_pandas()
 | 23 | 7 | 2000 |
 
 
-## example: convert [[pa dataset]] to [[pl dataframe]]
+## example: convert [[pa Dataset]] to [[pl dataframe]]
 
 ### chunk for chunk
 ```python

@@ -1,8 +1,8 @@
-[[pyarrow]] manipulates [[pa array|pa arrays]] with the functions of `pa.compute`
+[[pyarrow]] manipulates [[pa Array|pa arrays]] with the functions of `pa.compute`
 
 
-## example sum of an [[pa array]]
-![[pa array#example arrays]]
+## example sum of an [[pa Array]]
+![[pa Array#example arrays]]
 
 ```python
 import pyarrow.compute as pc

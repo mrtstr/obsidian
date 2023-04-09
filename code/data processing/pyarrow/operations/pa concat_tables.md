@@ -1,0 +1,1 @@
+Concatenate [[pa Table]] objects.

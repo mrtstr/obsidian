@@ -1,0 +1,1 @@
+Concatenate the given [[pa Array|pa Arrays]].

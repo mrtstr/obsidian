@@ -1,0 +1,1 @@
+A grouping of columns in a table on which to perform aggregations.

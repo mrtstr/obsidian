@@ -4,40 +4,160 @@
     "type": "split",
     "children": [
       {
-        "id": "9388fbff1b4a7bea",
+        "id": "d6e93b858136c406",
         "type": "tabs",
         "children": [
           {
-            "id": "c50e32705b7112f1",
+            "id": "f32b15806ec98fc6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/stochastics/symmetric matrix.md",
+                "file": "code/data processing/pyarrow/data types/pa datatype.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5e3aba3b38770876",
+            "id": "6c204f0840e7e965",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/basics/linear algebra/inverse matrix.md",
+                "file": "code/data processing/pyarrow/pa Array.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6ff016f84970565a",
+            "id": "1f28414f0fba79ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mathematics/basics/linear algebra/rank nullity theorem.md",
+                "file": "code/data processing/pyarrow/pa Array.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "abe014db78b4da53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/data types/pa Map.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "65111b6541456cf7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/data types/pa Struct.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b390b24829870d8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/operations/pa concat_tables.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8f93d50cc2df8580",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/operations/pa concat_arrays.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "51dd29d5714128f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/pa Table.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4ed34be9238fb026",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/pa MemoryMappedFile.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "99603e7c077720da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/pa RecordBatch.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cbc47750c88725a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/pa Field.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aa531091d0df8340",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/pyarrow.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7e68f90b7b8ff663",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "code/data processing/pyarrow/TableGroupBy.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +214,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 236.5
+    "width": 312.5
   },
   "right": {
     "id": "b4692449453cc2fd",
@@ -110,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/basics/linear algebra/rank nullity theorem.md",
+                "file": "code/data processing/pyarrow/pa Array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/basics/linear algebra/rank nullity theorem.md",
+                "file": "code/data processing/pyarrow/pa Array.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +270,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mathematics/basics/linear algebra/rank nullity theorem.md"
+                "file": "code/data processing/pyarrow/pa Array.md"
               }
             }
           }
@@ -161,17 +281,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6ff016f84970565a",
+  "active": "1f28414f0fba79ec",
   "lastOpenFiles": [
-    "mathematics/basics/linear algebra/inverse matrix.md",
-    "mathematics/stochastics/symmetric matrix.md",
-    "mathematics/basics/linear algebra/rank nullity theorem.md",
-    "mathematics/basics/linear algebra/diagonal matrix.md",
-    "mathematics/stochastics/statistical learning/models/generalized linear models.md",
-    "mathematics/stochastics/statistical learning/models/generalized additive models.md",
-    "mathematics/stochastics/statistical learning/models/tree based models/boosted trees.md",
-    "code/data processing/pandas/pd column.md",
-    "code/data processing/pandas/pd DataFrameGroupBy.md",
-    "code/data processing/pandas/usecase/pd dot chaining.md"
+    "code/data processing/pyarrow/data types/pa List.md",
+    "code/data processing/pyarrow/data types/pa Map.md",
+    "code/data processing/pyarrow/pa Array.md",
+    "code/data processing/pyarrow/pa Schema.md",
+    "code/data processing/pyarrow/data types/pa Struct.md",
+    "code/data processing/pyarrow/pa Field.md",
+    "code/data processing/pyarrow/data types/pa datatype.md",
+    "code/data processing/pyarrow/Untitled.md",
+    "code/data processing/pyarrow/operations/pa concat_tables.md",
+    "code/data processing/pyarrow/operations/pa concat_arrays.md"
   ]
 }
