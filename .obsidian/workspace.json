@@ -4,155 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "8d5652a1235300f7",
+        "id": "59a4baca44c4fc95",
         "type": "tabs",
         "children": [
           {
-            "id": "a32b4eded57f339e",
+            "id": "4b3c98659aeea16a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/moments.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "46420da7c70e546c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/kurtosis.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5a34357c48ef279d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/random sample.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aa77dce8d4a1f77a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/sample mean.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6526a2e306a86c83",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/skewness.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ceefbaaaf9532465",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/symmetric distribution.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "817546525353071f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0f1c666dc4dcef36",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "58a1d8cfbf9debb7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "statistical learning/variance bias trade-off.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b3e17a069f2410c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "statistical learning/mean square error.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f68265340058ec84",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/stochastics/moment generating function.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "68d1f15b0c58561d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mathematics/basics/eulers number.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -218,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -257,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -269,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0f1c666dc4dcef36",
+  "active": "4b3c98659aeea16a",
   "lastOpenFiles": [
-    "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md",
-    "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md",
-    "mathematics/stochastics/symmetric distribution.md",
-    "mathematics/stochastics/skewness.md",
-    "mathematics/stochastics/sample mean.md",
-    "mathematics/stochastics/random sample.md",
-    "mathematics/stochastics/kurtosis.md",
-    "mathematics/stochastics/functions of random variables.md",
-    "mathematics/basics/linear algebra/linear function.md",
-    "mathematics/stochastics/linear transformation of random variables.md"
+    "mathematics/basics/eulers number.md",
+    "mathematics/stochastics/moment generating function.md",
+    "statistical learning/mean square error.md",
+    "statistical learning/variance bias trade-off.md",
+    "code/df processing/operations/crossjoin.md",
+    "code/df processing/operations/rename columns.md",
+    "code/df processing/operations/create columns.md",
+    "code/df processing/operations/df union.md",
+    "code/df processing/operations/transform udf.md",
+    "code/df processing/operations/aggregate.md"
   ]
 }

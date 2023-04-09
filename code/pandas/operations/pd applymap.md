@@ -1,1 +1,0 @@
-[[pd manipulations alsong axis]] of [[pd DataFrame]]

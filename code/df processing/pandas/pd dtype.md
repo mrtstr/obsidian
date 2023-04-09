@@ -1,0 +1,2 @@
+- [[pd dataframe]] and [[pd series]] always of a unique [[pd dtype]]
+- often the [[np dtypes]] of [[numpy]] are used
