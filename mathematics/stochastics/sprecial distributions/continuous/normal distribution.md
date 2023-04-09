@@ -170,6 +170,43 @@ $$
 $$
 # anki
 
+
+START
+Basic
+If the [[moment generating function]] of a [[random variable]] $X$ is $\psi_X(t) = e^{t^2}$, what is the distribution of $X$?
+Back: 
+1) $X$ has to be normal distributed
+$$
+\psi_X(t) = \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]}
+$$
+2) $\mu =0$ and $\sigma^2=2$ → $\psi_X(t) = e^{t^2}$
+Tags: mathematics, statistics
+<!--ID: 1681024062134-->
+END
+
+START
+Basic
+Let $X_1,X_2,X_3$ be independent lifetimes of memory chips. Suppose that each $X_i$ has the normal distribution with mean 300 hours and standard deviation 10 hours. Compute the probability that at least one of the three chips lasts at least 290 hours.
+- give result based on the [[standard normal distribution]] [[CDF]] $\Phi(x)$
+Back: 
+$$
+\begin{split}
+&X_i \sim  f_X(x | \mu = 300, \sigma =10)  \\
+
+&\Rightarrow F_X(x) =  \Phi\left(\frac{x-\mu}{\sigma}\right) = \Phi\left(\frac{x-300}{10}\right) \\   
+&P(X_1 \geq 290 \:\cup\: X_2 \geq 290 \:\cup\: X_3 \geq 290) \\
+&=1-P(X_1 \leq 290 \:\cap\: X_2 \leq 290 \:\cap\: X_3 \leq 290)
+&=1-P(X_i \leq 290 )^3 \\
+&=1-F_X(290)^3 \\
+&=1-\Phi\left(\frac{290-300}{10}\right)^3 \\
+&=1-\Phi\left(-1\right)^3 \\
+\end{split}
+$$
+Tags: mathematics, statistics
+<!--ID: 1681024062140-->
+END
+
+
 START
 Basic
 [[distribution]] of the mean of a [[random sample]] from a [[normal distribution]] (with proof)
