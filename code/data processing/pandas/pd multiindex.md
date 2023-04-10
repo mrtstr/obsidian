@@ -22,7 +22,7 @@ mi_df
 # 1 red  0.279638 0.321357
 ```
 ## data storage and access
-- the data is stored as a list of the unique elements on each level ([[pd multiindex|MultiIndex]].levels) plus mapping to the rows ([[pd multiindex|MultiIndex]].codes) -> [[pd calegorical data]] encoding (memory efficient)
+- the data is stored as a list of the unique elements on each level ([[pd multiindex|MultiIndex]].levels) plus mapping to the rows ([[pd multiindex|MultiIndex]].codes) -> [[pd categorical data]] encoding (memory efficient)
 ```python
 mi = pd.MultiIndex(
 	levels = [[1, 2], ['red', 'blue']],
@@ -108,7 +108,7 @@ pandas [[pd multiindex]]: data storage and access:
 - how can the data be accessed?
 Back: 
 ## data storage and access
-- the data is stored as a list of the unique elements on each level ([[pd multiindex|MultiIndex]].levels) plus mapping to the rows ([[pd multiindex|MultiIndex]].codes) -> [[pd calegorical data]] encoding (memory efficient)
+- the data is stored as a list of the unique elements on each level ([[pd multiindex|MultiIndex]].levels) plus mapping to the rows ([[pd multiindex|MultiIndex]].codes) -> [[pd categorical data]] encoding (memory efficient)
 ```python
 mi = pd.MultiIndex(
 	levels = [[1, 2], ['red', 'blue']],

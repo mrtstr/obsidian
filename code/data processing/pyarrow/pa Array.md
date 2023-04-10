@@ -1,8 +1,13 @@
 ## concept
 - [[pyarrow]] [[array]] are one dimensional collections of data of the same [[pa datatype]]
-- the data in a [[pa Array]] is immutable
-- Each in-memory array has a known length
-- can be sliced without copying
+- the data in a [[pa Array]] is in-memory and immutable
+- can be sliced without copying (→ creates reference to memory)
+- can hold values or nested structures 
+	-  [[pa Scalar]] values
+	- [[pa ListArray]] holding [[pa ListType]] elements
+	- [[pa MapArray]] holding [[pa MapType]] elements
+	- [[pa StructArray]] holding [[pa StructType]] elements
+	- [[pa DictionaryArray]] holding [[pa DictionaryType]] elements ([[categorical data]])
 
 ## example
 ```python
@@ -17,50 +22,43 @@ nbytes # Total number of bytes consumed by the elements of the array.
 type   # logical datatype
 null_count # number of null values in array
 ```
-## methods
 
-## example
 
-### [[pa Array]] containing [[pa Struct]] (and infer its schema)
 
-```python
-struct_array = pa.array([{'x': 1, 'y': True}, {'z': 3.4, 'x': 4}])
-# -- child 0 type: int64
-#  [    1,    4  ]
-# -- child 1 type: bool
-#  [    true,    null  ]
-# -- child 2 type: double
-#  [    null,    3.4  ]
-```
-### [[pa Array]] containing [[pa List]]
-```python
-list_array = pa.array([[1,2,3], [4,5,6], None])
-list_array.type
-# ListType(list<item: int64>)
-```
+# Anki
 
 START
 Basic
 [[pa Array]]
-- conect
-- how to manupulate
-- example:
-	- create [[pa Array]]
-	- sum up [[pa Array]]
+- concept and properties (1 + 3)
+- what data structures it can hold (5)
+- attributes (3)
+- example: create [[pa Array]]
+]
 Back: 
+## concept
 - [[pyarrow]] [[array]] are one dimensional collections of data of the same [[pa datatype]]
-- can be manupulated with functions from [[pa compute]]
+- the data in a [[pa Array]] is in-memory and immutable
+- can be sliced without copying (→ creates reference to memory)
+- can hold values or nested structures 
+	-  [[pa Scalar]] values
+	- [[pa ListArray]] holding [[pa ListType]] elements
+	- [[pa MapArray]] holding [[pa MapType]] elements
+	- [[pa StructArray]] holding [[pa StructType]] elements
+	- [[pa DictionaryArray]] holding [[pa DictionaryType]] elements ([[categorical data]])
 
-### example arrays: creating a [[pa Array]] from a [[py list]]
+## example
 ```python
 days = pa.array([1, 12, 17, 23, 28], type=pa.int8())
 months = pa.array([1, 3, 5, 7, 1], type=pa.int8())
 years = pa.array([1990, 2000, 1995, 2000, 1995], type=pa.int16())
 ```
-### example sum up [[pa Array]]
+
+## attributes
 ```python
-import pyarrow.compute as pc
-pc.sum(days)
+nbytes # Total number of bytes consumed by the elements of the array.
+type   # logical datatype
+null_count # number of null values in array
 ```
 Tags: code pyarrow
 <!--ID: 1681037725711-->

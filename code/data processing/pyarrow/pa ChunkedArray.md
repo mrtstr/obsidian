@@ -1,0 +1,2 @@
+- container for one or more [[pa Array|pa Arrays]] of the same [[pa datatype]]
+- used to store the columns of a [[pa Table]] that consist of multiple [[pa RecordBatch|pa RecordBatchs]]

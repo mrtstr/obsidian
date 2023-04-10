@@ -1,8 +1,8 @@
-[[pa Field]] holds additional properties of a [[pa Array]] in a [[pa Table]] or [[pa Struct]]
-additional properties:
-
+## Field
+- defines a placeholder for data
+- [[pa Field]] holds [[pa datatype]] and additional properties of values
+- in addtion to a [[pa datatype]]
 ```python
-metadata  # 
 name      # name of column
 nullable  # nullable or not
 type      # datatype

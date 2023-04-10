@@ -43,8 +43,9 @@ $$
 \boldsymbol{Y} &= A\boldsymbol{X} + b \\ \\
 
 \Rightarrow \mathbb{E}\left[\boldsymbol{Y}\right] &=  A\mathbb{E}\left[\boldsymbol{X}\right] + b\\
-\Rightarrow\mathbb{COVAR}\left[\boldsymbol{Y}\right] &=  A\mathbb{COVAR}\left[\boldsymbol{X}\right] A^T
- = A A^T \begin{pmatrix}\mathbb{VAR}\left[X_1\right]\\ ... \\ \mathbb{VAR}\left[X_n\right]\end{pmatrix}\\
+\Rightarrow\mathbb{COVAR}\left[\boldsymbol{Y}\right] &=  A\mathbb{COVAR}\left[\boldsymbol{X}\right] A^T \\
+ &= A diag(\mathbb{VAR}\left[X_i\right])_{i \in \{1,..,n\}} A^T \\
+  &= A A^T \mathbb{VAR}\left[X_1\right] \\
 \end{split}
 $$
 
@@ -139,8 +140,9 @@ $$
 \boldsymbol{Y} &= A\boldsymbol{X} + b \\ \\
 
 \Rightarrow \mathbb{E}\left[\boldsymbol{Y}\right] &=  A\mathbb{E}\left[\boldsymbol{X}\right] + b\\
-\Rightarrow\mathbb{COVAR}\left[\boldsymbol{Y}\right] &=  A\mathbb{COVAR}\left[\boldsymbol{X}\right] A^T
- = A A^T \begin{pmatrix}\mathbb{VAR}\left[X_1\right]\\ ... \\ \mathbb{VAR}\left[X_n\right]\end{pmatrix}\\
+\Rightarrow\mathbb{COVAR}\left[\boldsymbol{Y}\right] &=  A\mathbb{COVAR}\left[\boldsymbol{X}\right] A^T \\
+ &= A diag(\mathbb{VAR}\left[X_i\right])_{i \in \{1,..,n\}} A^T \\
+  &= A A^T \mathbb{VAR}\left[X_1\right] \\
 \end{split}
 $$
 Tags: mathematics statistics

@@ -3,7 +3,6 @@
 - data chunks ca be loaded and maipulated one by one
 
 ## example: creating a partitioned dataset
-![[pa Table#example: creating a pa table from pa array pa arrays]]
 
 1) partition the data and save it on the disc
 ```python
@@ -172,125 +171,8 @@ for table_chunk in dataset.to_batches():
 # AGES [ 23, 23 ]
 ```
 Tags: code pyarrow
-<!--ID: 1681037725695-->
+<!--ID: 1681116839430-->
 END
 
 
 
-START
-Basic
-
-- example [[pa Dataset]]
-	- create dataset from the following table
-	- load dataset
-	- convert dataset chunks in [[pd dataframe]]
-	- convert dataset in single [[pd dataframe]]
-	- convert dataset chunks in [[pl dataframe]]
-	- convert dataset in single [[pl dataframe]]
-
-| days | months | years | 
-|-------:|---------:|--------:| 
-| 1 | 1 | 1990 | 
-| 12 | 3 | 2000 | 
-| 17 | 5 | 1995 | 
-| 23 | 7 | 2000 | 
-| 28 | 1 | 1995 |
-
-Back: 
-# create and load [[pa Dataset]]
-1) partition the data and save it on the disc
-```python
-import pyarrow.dataset as ds
-
-ds.write_dataset( # create a
-	data = df, # The data to write
-	# This can be a Dataset instance or in-memory Arrow data
-	base_dir = "savedir", 
-	# The root directory where to write the dataset.
-	format="parquet", # The format in which to write the dataset
-	# {e.g. “parquet” or “csv”.}
-	partitioning=["years"] # how to partition the dataframe
-	# here: group by column "years"
-)
-```
-2) load the [[pa Dataset]]
-```python
-dataset = ds.dataset(
-	"savedir",
-	format="parquet",
-	partitioning=["years"]
-)
-```
-## example: convert chunks to [[pd dataframe]]
-### chunk for chunk
-```python
-for table_chunk in dataset.to_batches():
-	display(table_chunk.to_pandas())
-```
-
-| days | months | years | 
-|-------:|---------:|--------:| 
-| 1 | 1 | 1990 | 
-
-| days | months | years | 
-|-------:|---------:|--------:| 
-| 17 | 5 | 1995 | 
-| 28 | 1 | 1995 | 
-
-| days | months | years | 
-|-------:|---------:|--------:| 
-| 12 | 3 | 2000 | 
-| 23 | 7 | 2000 |
-
-### complete dataset
-```python
-dataset.to_table().to_pandas()
-```
-
-| days | months | years | 
-|-------:|---------:|--------:| 
-| 1 | 1 | 1990 | 
-| 17 | 5 | 1995 | 
-| 28 | 1 | 1995 | 
-| 12 | 3 | 2000 | 
-| 23 | 7 | 2000 |
-
-
-## example: convert [[pa Dataset]] to [[pl dataframe]]
-
-### chunk for chunk
-```python
-for table_chunk in dataset.to_batches():
-	print(pl.from_arrow(table_chunk))
-```
-
-| days | months | years | 
-|-------:|---------:|--------:| 
-| 1 | 1 | 1990 | 
-
-| days | months | years | 
-|-------:|---------:|--------:| 
-| 17 | 5 | 1995 | 
-| 28 | 1 | 1995 | 
-
-| days | months | years | 
-|-------:|---------:|--------:| 
-| 12 | 3 | 2000 | 
-| 23 | 7 | 2000 |
-
-### complete dataset
-```python
-pl.from_arrow(list(dataset.to_batches()))
-```
-
-| days | months | years | 
-|-------:|---------:|--------:| 
-| 1 | 1 | 1990 | 
-| 17 | 5 | 1995 | 
-| 28 | 1 | 1995 | 
-| 12 | 3 | 2000 | 
-| 23 | 7 | 2000 |
-
-Tags: code pyarrow
-<!--ID: 1681042076975-->
-END
