@@ -9,6 +9,8 @@
 ```python
 item_field # The field for items in the map entries.
 item_type # The data type of items in the map entries.
+key_field # The field for items in the map keys.
+key_type # The data type of items in the map keys.
 ```
 
 ## example
