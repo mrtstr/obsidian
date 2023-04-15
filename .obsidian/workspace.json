@@ -11,9 +11,19 @@
             "id": "f01789701cf7bfc9",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20221120114927.png"
+              }
+            }
+          },
+          {
+            "id": "b717cbe85c58623b",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "code/data processing/pyarrow/pa MapArray.md",
+                "file": "gym/plan.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +113,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -169,7 +180,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "code/data processing/pyarrow/pa MapArray.md",
+                "file": "gym/plan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +197,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "code/data processing/pyarrow/pa MapArray.md",
+                "file": "gym/plan.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,7 +220,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "code/data processing/pyarrow/pa MapArray.md"
+                "file": "gym/plan.md"
               }
             }
           }
@@ -220,17 +231,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f01789701cf7bfc9",
+  "active": "b717cbe85c58623b",
   "lastOpenFiles": [
-    "code/data processing/pyarrow/data types/pa MapType.md",
+    "Pasted image 20221120114927.png",
+    "Pasted image 20221015082824.png",
+    "Pasted image 20221015082805.png",
+    "Pasted image 20221015081452.png",
+    "Pasted image 20221009111212.png",
     "code/data processing/pyarrow/pa MapArray.md",
+    "code/data processing/pyarrow/data types/pa MapType.md",
     "code/data processing/pyarrow/pa StructArray.md",
     "code/data processing/pyarrow/pa Dataset.md",
-    "test folder/anki template.md",
-    "code/data processing/pyarrow/pa Array.md",
-    "code/data processing/pyarrow/pa ChunkedArray.md",
-    "code/data processing/pyarrow/pa DictionaryArray.md",
-    "code/data processing/pyarrow/pa Field.md",
-    "code/data processing/pyarrow/pa ListArray.md"
+    "test folder/anki template.md"
   ]
 }
