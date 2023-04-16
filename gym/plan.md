@@ -1,56 +1,30 @@
 
-## Lower Body
-| exercise            | done |
-| ------------------- | ---- |
-| Deadlifts           |      |
-| deadlists wide grip |   X   |
-| overhead squat      |  X    |
-| hacksquat           |      |
+| exercise                       | type   | done | next+1 | next+2 |
+| ------------------------------ | ------ | ---- | ------ | ------ |
+| Deadlifts                      | lower  |      |        | X      |
+| deadlists wide grip            | lower  | X    |        |        |
+| overhead squat                 | lower  | X    |        |        |
+| hacksquat                      | lower  |      | X      |        |
+| push press                     | upper  |      | X      |        |
+| DB flat bench                  | upper  |      | X      |        |
+| DB shoulder press              | upper  |      | X      |        |
+| DB rows                        | upper  |      |        | X      |
+| lateral raises                 | upper  |      | X      |        |
+| roll (front lief to back lief) | rings  | X    |        |        |
+| dips                           | rings  | X    |        |        |
+| flys chest                     | rings  | X    |        |        |
+| flys back                      | rings  | X    |        |        |
+| forward lean                   | rings  | X    |        |        |
+| dips                           | bars   |      |        | X      |
+| L-hold                         | bars   |      |        | X      |
+| pullups                        | bar    |      |        | X      |
+| pullups-L                      | bar    |      |        | X      |
+| chinups                        | bar    |      |        | X      |
+| sprint8                        | cardio | X    |        |        |
+| jogging                        | cardio |      | X      |        |
+| robe jump                      | cardio |      |        | X      |
+| crunch machine                 | core   |      | X      |        |
+| crunch free                    | core   |      |        | X      |
+| back extensions                | core   |      |        | X      |
 
 
-
-## Upper Body
-| exercise          | done |
-| ----------------- | ---- |
-| push press        |      |
-| DB flat bench     |      |
-| DB shoulder press |      |
-| DB rows           |      |
-| lateral raises    |      |
-
-## Rings
-| exercise                       | done |
-| ------------------------------ | ---- |
-| roll (front lief to back lief) |  X    |
-| dips                           |  X    |
-| flys chest                     |  X    |
-| flys back                      |  X    |
-| forward lean                   |  X    |
-
-## Bars
-| exercise                       | done |
-| ------------------------------ | ---- |
-| dips                           |      |
-| L-hold                     |      |
-
-## Bar
-| exercise  | done |
-| --------- | ---- |
-| pullups   |      |
-| pullups-L |      |
-| chinups   |      |
-
-## Rest
-| exercise  | done |
-| --------- | ---- |
-| sprint8   |   X   |
-| jogging |      |
-| robe jump   |      |
-
-
-## core
-| exercise  | done |
-| --------- | ---- |
-| crunch machine   |      |
-| crunch free |      |
-| back extensions   |      |

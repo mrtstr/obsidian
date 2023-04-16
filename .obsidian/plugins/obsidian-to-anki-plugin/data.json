@@ -764,7 +764,7 @@
     "code/data processing/pyarrow/pa RecordBatchReader.md": "218bef1f3dd502393b1dc3876dceae3c",
     "code/data processing/pyarrow/pa MemoryMappedFile.md": "00b9d1ce858eb3b2a3fcab40a9e046f4",
     "code/data processing/pyarrow/pa Field.md": "c279d2d2d669658769948943915cb050",
-    "code/data processing/pyarrow/pa Dataset.md": "b8226d6118463e6558f588df951bfb7a",
+    "code/data processing/pyarrow/pa Dataset.md": "86ae5aa39e165a97336329e44ac00bc0",
     "code/data processing/pyarrow/pa Array.md": "cd47b0582a17c127ac59276f9c133a44",
     "code/data processing/pyarrow/operations/pa concat_tables.md": "a5fc5cb29f656c00d51dba4e45d427b5",
     "code/data processing/pyarrow/operations/pa concat_arrays.md": "ba35aa2a757a674ac428d4bd6cabf511",
@@ -798,7 +798,8 @@
     "code/data processing/concepts/datatype.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/dataframe.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/categorical data.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/data processing/concepts/array.md": "77c2588aa614f85845f30a378dff4744"
+    "code/data processing/concepts/array.md": "77c2588aa614f85845f30a378dff4744",
+    "gym/plan.md": "9649fca4a7b5dd1df415a8938ff4fe92"
   },
   "fields_dict": {
     "Basic": [

@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "gym/plan.md",
+                "file": "code/data processing/pyarrow/pa Dataset.md",
                 "mode": "source",
                 "source": false
               }
@@ -180,7 +180,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "gym/plan.md",
+                "file": "code/data processing/pyarrow/pa Dataset.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +197,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "gym/plan.md",
+                "file": "code/data processing/pyarrow/pa Dataset.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,19 +220,28 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "gym/plan.md"
+                "file": "code/data processing/pyarrow/pa Dataset.md"
               }
             }
+          },
+          {
+            "id": "ee0ba491d6dbca83",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "b717cbe85c58623b",
   "lastOpenFiles": [
+    "gym/plan.md",
     "Pasted image 20221120114927.png",
     "Pasted image 20221015082824.png",
     "Pasted image 20221015082805.png",
@@ -241,7 +250,6 @@
     "code/data processing/pyarrow/pa MapArray.md",
     "code/data processing/pyarrow/data types/pa MapType.md",
     "code/data processing/pyarrow/pa StructArray.md",
-    "code/data processing/pyarrow/pa Dataset.md",
-    "test folder/anki template.md"
+    "code/data processing/pyarrow/pa Dataset.md"
   ]
 }

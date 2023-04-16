@@ -1,4 +1,5 @@
-- [[pyarrow]] [[pa Dataset|dataset]] is a collection of data fragments and potentially child datasets.
+- [[pyarrow]] [[pa Dataset|dataset]] tool for saving data paritioned on disc in order to load it chunk wise
+- collection of data fragments and potentially child datasets.
 - Allows to works with datasets that do not fit in the memory
 - data chunks ca be loaded and maipulated one by one
 
@@ -127,7 +128,8 @@ Basic
 | 28 | 1 | 1995 |
 
 Back: 
-- [[pyarrow]] [[pa Dataset|dataset]] is a collection of data fragments and potentially child datasets.
+- [[pyarrow]] [[pa Dataset|dataset]] tool for saving data paritioned on disc in order to load it chunk wise
+- collection of data fragments and potentially child datasets.
 - Allows to works with datasets that do not fit in the memory
 - data chunks ca be loaded and maipulated one by one
 
