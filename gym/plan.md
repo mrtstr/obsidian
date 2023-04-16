@@ -7,10 +7,10 @@
 | hacksquat                      | lower  |      | X      |        |
 | push press                     | upper  |      | X      |        |
 | DB flat bench                  | upper  |      | X      |        |
-| DB shoulder press              | upper  |      | X      |        |
-| DB rows                        | upper  |      |        | X      |
-| lateral raises                 | upper  |      | X      |        |
-| reverse fly                    | upper  |      | X      |        |
+| DB shoulder press              | upper  |      |        | X      |
+| DB rows                        | upper  |      | X      |        |
+| lateral raises                 | upper  |      |        | X      |
+| reverse fly                    | upper  |      |        | X      |
 | roll (front lief to back lief) | rings  | X    |        |        |
 | dips                           | rings  | X    |        |        |
 | flys chest                     | rings  | X    |        |        |
@@ -18,14 +18,25 @@
 | forward lean                   | rings  | X    |        |        |
 | dips                           | bars   |      |        | X      |
 | L-hold                         | bars   |      |        | X      |
-| pullups                        | bar    |      |        | X      |
-| pullups-L                      | bar    |      |        | X      |
-| chinups                        | bar    |      |        | X      |
+| pullups                        | bar    |      | X      |        |
+| pullups-L                      | bar    |      |        |        |
+| rows                           | bar    |      |        | X      |
 | sprint8                        | cardio | X    |        |        |
-| jogging                        | cardio |      | X      |        |
-| robe jump                      | cardio |      |        | X      |
+| jogging                        | cardio |      |        | X      |
+| robe jump                      | cardio |      |        |        |
 | crunch machine                 | core   |      | X      |        |
 | crunch free                    | core   |      |        | X      |
 | back extensions                | core   |      |        | X      |
 
 
+
+
+| exercise         | type  |
+| ---------------- | ----- |
+| roll legs        | lower |
+| ball legs        | lower |
+| quad strech      | lower |
+| hamstring strech | lower |
+| ball back        | upper |
+| split            | upper |
+| bridgs           | upper |
