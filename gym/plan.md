@@ -10,6 +10,7 @@
 | DB shoulder press              | upper  |      | X      |        |
 | DB rows                        | upper  |      |        | X      |
 | lateral raises                 | upper  |      | X      |        |
+| reverse fly                    | upper  |      | X      |        |
 | roll (front lief to back lief) | rings  | X    |        |        |
 | dips                           | rings  | X    |        |        |
 | flys chest                     | rings  | X    |        |        |
