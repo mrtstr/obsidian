@@ -1,6 +1,5 @@
 ## RecordBatch
-- A [[pa RecordBatch]] is a collection of equal-length [[pa Array]] instances
-- has a [[pa Schema]] contraining additional information for each [[pa Array]]
+- collection of [[pa Array]] of the same length with a [[pa Schema]] (contraining additional information for each [[pa Array]])
 - column based data organisizion makes operations more efficient
 - can be loaded from either the disk (memory mapped) or in memory
 ![[pa Schema#Schema]]
@@ -50,8 +49,7 @@ Basic
 - example: create a [[pa RecordBatch]] from [[pa Array|pa Arrays]]
 Back: 
 # RecordBatch
-- A [[pa RecordBatch]] is a collection of equal-length [[pa Array]] instances
-- has a [[pa Schema]] contraining additional information for each [[pa Array]]
+- collection of [[pa Array]] of the same length with a [[pa Schema]] (contraining additional information for each [[pa Array]])
 - column based data organisizion makes operations more efficient
 - can be loaded from either the disk (memory mapped) or in memory
 

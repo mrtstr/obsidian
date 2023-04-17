@@ -1,5 +1,5 @@
 ## Table
-- [[pyarrow]] [[dataframe]] is a collection of named [[pa Array|pa arrays]] of the same length
+- same properties as a [[pa RecordBatch]] but can contrain one or multiple [[pa RecordBatch|pa RecordBatchs]] of the same [[pa Schema]] that are logicly treated as one
 - tool for wrangling multiple [[pa RecordBatch|pa RecordBatchs]] and [[pa Array]] pieces as a single logical dataset
 - can contrain one or multiple [[pa RecordBatch|pa RecordBatchs]] 
 	→ in case of multiple [[pa RecordBatch|pa RecordBatchs]] the data is saved in [[pa ChunkedArray|pa ChunkedArrays]]
@@ -46,7 +46,7 @@ Basic
 Back: 
 
 ## concept
-- [[pyarrow]] [[dataframe]] is a collection of named [[pa Array|pa arrays]] of the same length
+- same properties as a [[pa RecordBatch]] but can contrain one or multiple [[pa RecordBatch|pa RecordBatchs]] of the same [[pa Schema]] that are logicly treated as one
 - tool for wrangling multiple [[pa RecordBatch|pa RecordBatchs]] and [[pa Array]] pieces as a single logical dataset
 - can contrain one or multiple [[pa RecordBatch|pa RecordBatchs]] 
 	→ in case of multiple [[pa RecordBatch|pa RecordBatchs]] the data is saved in [[pa ChunkedArray|pa ChunkedArrays]]

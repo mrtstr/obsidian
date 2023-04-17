@@ -1,5 +1,6 @@
 ## Schema
-- A [[pa Schema]] is a collection of named [[pa Field|pa Fields]]
+- collection of named [[pa Field|pa Fields]]
+- defines structure of a [[pa RecordBatch]], [[pa Table]], [[pa RecordBatchReader]]
 ![[pa Field]]
 - each [[pa Field]] holding additional information of a [[pa Array]] and both togather are a column
 - similar to a [[pa StructType]]
@@ -28,7 +29,8 @@ Basic
 - example: create a [[pa Schema]] for a [[pa RecordBatch]] containing the id, the first and last name of persons
 Back: 
 # Schema
-- A [[pa Schema]] is a collection of named [[pa Field|pa Fields]]
+- collection of named [[pa Field|pa Fields]]
+- defines structure of a [[pa RecordBatch]], [[pa Table]], [[pa RecordBatchReader]]
 
 ## Field
 - defines a placeholder for data
