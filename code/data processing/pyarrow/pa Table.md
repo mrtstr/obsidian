@@ -34,7 +34,6 @@
 	  safe=True,      # check for conversion errors such as overflow
 )
 .flatten(memory_pool) # Each column with a struct type is flattened into one column per struct field.
-.drop(columns) # drop one or more columns
 ```
 ### select data
 ```python
@@ -43,6 +42,7 @@
 .select(columns) # select the culumns given in this list
 .take(indices) # select rows with the given indices
 .filter(mask) # filter dataframe rows using a mask
+.drop(columns) # drop one or more columns
 ```
 ### chunk ([[pa RecordBatch]] management)
 ```python
@@ -116,7 +116,7 @@ END
 
 START
 Basic
-[[pa Table]]: methods for changing it (9)
+[[pa Table]]: methods for changing it (8)
 Back: 
 ### change table
 ```python
@@ -131,7 +131,6 @@ Back:
 	  safe=True,      # check for conversion errors such as overflow
 )
 .flatten(memory_pool) # Each column with a struct type is flattened into one column per struct field.
-.drop(columns) # drop one or more columns
 ```
 
 Tags: code pyarrow
@@ -140,7 +139,7 @@ END
 
 START
 Basic
-[[pa Table]]: how to select data
+[[pa Table]]: how to select data (6)
 Back: 
 ### select data
 ```python
@@ -149,6 +148,7 @@ Back:
 .select(columns) # select the culumns given in this list
 .take(indices) # select rows with the given indices
 .filter(mask) # filter dataframe rows using a mask
+.drop(columns) # drop one or more columns
 ```
 Tags: code pyarrow
 END

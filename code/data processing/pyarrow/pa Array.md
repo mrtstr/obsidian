@@ -55,9 +55,9 @@ null_count # number of null values in array
 	  target_type,  # type to last to
 	  safe=True,    # check for conversion errors such as overflow
 	  options=None. # Additional checks pass by CastOptions
-  )
-  .index(value)  # Find the first index of a value.
-.dictionary_encode(). # Compute dictionary-encoded (categorical data) representation of array
+)
+.index(value)  # Find the first index of a value.
+.dictionary_encode()  # Compute dictionary-encoded (categorical data) representation of array
 .length() # return length of array
 .diff(). # compare to other array
 .filter(mask) # filter array using a mask
