@@ -128,32 +128,53 @@ END
 START
 Basic
 [[pa Array]]: methods (20)
+- pointer to phzsical memory (1)
+- convert to other data type (2)
+- change encoding (1)
+- conversions (3)
+- length of array (1)
+- select data (2)
+- cort sum count (3)
+- create mask and use mask (3)
+- compare arrays (1)
+- fill null
 Back: 
 ```python
 .buffers() # list of Buffer objects pointing to this array’s physical storage
+## data conversion
 .cast(              # Cast array values to another data type
 	  target_type,  # type to last to
 	  safe=True,    # check for conversion errors such as overflow
 	  options=None. # Additional checks pass by CastOptions
-  )
-  .index(value)  # Find the first index of a value.
-.dictionary_encode(). # Compute dictionary-encoded (categorical data) representation of array
-.length() # return length of array
-.diff(). # compare to other array
-.filter(mask) # filter array using a mask
-.fill_null(fill_value) # fill null values will the fill vaue
-.is_null(). # Return BooleanArray indicating the null values.
-.is_valid() # Return BooleanArray indicating the non-null values.
-.silce(sice) # Compute zero-copy slice of this array.
-.sort() # sort this array
-.value_counts() # Compute counts of unique elements in array.
-.sum()  # calulate a sum over the array
-.take(indices)  #  Select values from an array
+)
+.view()     # Return zero-copy "view" of array as another data type.
+
+## conversion of object itself
 .to_numpy() #. return a numpy array
 .to_pylist()  # return a python list
 .to_string() # printable string represtantion
+
 .unique()   # Compute distinct elements in array.
-.view()     # Return zero-copy "view" of array as another data type.
+
+.take(indices)  #  Select values from an array
+.silce(sice) # Compute zero-copy slice of this array.
+
+.index(value)  # Find the first index of a value.
+.dictionary_encode(). # Compute dictionary-encoded (categorical data) representation of array
+
+.length() # return length of array
+.diff() # compare to other array
+.filter(mask) # filter array using a mask
+.fill_null(fill_value) # fill null values will the fill vaue
+
+.is_null(). # Return BooleanArray indicating the null values.
+.is_valid() # Return BooleanArray indicating the non-null values.
+
+.sort() # sort this array
+.value_counts() # Compute counts of unique elements in array.
+.sum()  # calulate a sum over the array
+
+
 .validate() # Perform validation checks.
 ```
 Tags: code pyarrow
