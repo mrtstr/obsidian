@@ -122,6 +122,7 @@ type   # logical datatype
 null_count # number of null values in array
 ```
 Tags: code pyarrow
+<!--ID: 1681744599046-->
 END
 
 
@@ -177,6 +178,7 @@ Back:
 .validate() # Perform validation checks.
 ```
 Tags: code pyarrow
+<!--ID: 1681744599049-->
 END
 
 START

@@ -99,6 +99,7 @@ Back:
 - `pa.array.from_pydict()`
 - `pa.array.from_pylist()`
 Tags: code pyarrow
+<!--ID: 1681744599025-->
 END
 
 START
@@ -111,6 +112,7 @@ Back:
 - `.to_pylist()`: convert to nested [[py list]]
 - `.to_string()`: printable string representation
 Tags: code pyarrow
+<!--ID: 1681744599032-->
 END
 
 
@@ -134,6 +136,7 @@ Back:
 ```
 
 Tags: code pyarrow
+<!--ID: 1681744599036-->
 END
 
 
@@ -151,6 +154,7 @@ Back:
 .drop(columns) # drop one or more columns
 ```
 Tags: code pyarrow
+<!--ID: 1681744599038-->
 END
 
 
@@ -181,6 +185,7 @@ Back:
 .groupby()
 ```
 Tags: code pyarrow
+<!--ID: 1681744599042-->
 END
 
 START
