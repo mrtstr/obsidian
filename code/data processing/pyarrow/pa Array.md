@@ -110,7 +110,7 @@ pa.array.from_buffers(
 ### from [[pd series]]
 ```python
 pa.array.from_pandas(
-	_obj_, # pandas series
+	obj, # pandas series
 	type, # datatype
 	length, # lenth of resulting array
 )
@@ -173,7 +173,6 @@ Back:
 .sort() # sort this array
 .value_counts() # Compute counts of unique elements in array.
 .sum()  # calulate a sum over the array
-
 
 .validate() # Perform validation checks.
 ```

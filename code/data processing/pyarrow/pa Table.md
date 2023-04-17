@@ -91,6 +91,18 @@ table.column("col1")
 
 START
 Basic
+[[pa Table]]: how to create it from other data structures (5)
+Back: 
+- `pa.array.from_arrays()`
+- `pa.array.from_batches()`
+- `pa.array.from_pandas()`
+- `pa.array.from_pydict()`
+- `pa.array.from_pylist()`
+Tags: code pyarrow
+END
+
+START
+Basic
 [[pa Table]]: how to convert it to other data structures (5)
 Back: 
 - `.to_batchen()`: convert to [[py list]] of [[pa RecordBatch]]
