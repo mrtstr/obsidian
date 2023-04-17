@@ -24,7 +24,7 @@
 | sprint8                        | cardio | X    |        |        |
 | jogging                        | cardio |      |        | X      |
 | robe jump                      | cardio |      |        |        |
-| crunch machine                 | core   |      | X      |        |
+| crunch machine                 | core   |      |       |  X      |
 | crunch free                    | core   |      |        | X      |
 | back extensions                | core   |      |        | X      |
 
