@@ -80,7 +80,9 @@ null_count # number of null values in array
 # Anki
 START
 Basic
-[[pa Array]]: how to create it (3 data sources)
+[[pa Array]]: how to create it 
+- 3 data sources
+- arguments (5)
 Back: 
 ## How to create it
 ### from [[pa Array]], [[np array]], [[py interatable]]
@@ -115,12 +117,7 @@ pa.array.from_pandas(
 	length, # lenth of resulting array
 )
 ```
-## attributes
-```python
-nbytes # Total number of bytes consumed by the elements of the array.
-type   # logical datatype
-null_count # number of null values in array
-```
+
 Tags: code pyarrow
 <!--ID: 1681744599046-->
 END
