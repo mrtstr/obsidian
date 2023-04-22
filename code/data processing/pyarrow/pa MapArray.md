@@ -28,7 +28,7 @@ START
 Basic
 [[pa MapArray]]
 - properties auf [[pa MapType]]
-	- attributes (2)
+	- attributes (4)
 	- how to create it
 - example: create a [[pa MapArray]] containing the following two dicts
 ```python

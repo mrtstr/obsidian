@@ -29,20 +29,9 @@ Basic
 - example: create a [[pa Schema]] for a [[pa RecordBatch]] containing the id, the first and last name of persons
 Back: 
 # Schema
-- collection of named [[pa Field|pa Fields]]
+- collection of named [[pa Field|pa Fields]] (placeholder for data with `name`, `type`, and if its ``nullable)
 - defines structure of a [[pa RecordBatch]], [[pa Table]], [[pa RecordBatchReader]]
 
-## Field
-- defines a placeholder for data
-- [[pa Field]] holds [[pa datatype]] and additional properties of values
-- in addtion to a [[pa datatype]]
-```python
-name      # name of column
-nullable  # nullable or not
-type      # datatype
-```
-- each [[pa Field]] holding additional information of a [[pa Array]] and both togather are a column
-- similar to a [[pa StructType]]
 
 ## example
 ```python

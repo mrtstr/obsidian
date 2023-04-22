@@ -1,15 +1,12 @@
-## concept
+## Concept
 - immutable collection of in-memory data of the same [[pa datatype]]
+- contains multiple [[pa Buffer]] and imposes some sort of semantics into them (data type)
+- Arrays are "contiguous" in the sense that each [[pa Buffer]] is contiguous
 - can be sliced without copying (→ creates reference to memory)
-- can hold values or nested structures 
-	-  [[pa Scalar]] values
-	- [[pa ListArray]] holding [[pa ListType]] elements
-	- [[pa MapArray]] holding [[pa MapType]] elements
-	- [[pa StructArray]] holding [[pa StructType]] elements
-	- [[pa DictionaryArray]] holding [[pa DictionaryType]] elements ([[categorical data]])
+- can hold [[pa Scalar]] or [[pa nested structure]]
 
 
-## How to create it
+## factory functions
 ### from [[pa Array]], [[np array]], [[py interatable]]
 ```python
 pa.array(
@@ -26,7 +23,7 @@ days = pa.array([1, 12, 17, 23, 28], type=pa.int8())
 months = pa.array([1, 3, 5, 7, 1], type=pa.int8())
 years = pa.array([1990, 2000, 1995, 2000, 1995], type=pa.int16())
 ```
-### from [[pa buffer]]
+### from [[pa Buffer]]
 ```python
 pa.array.from_buffers(
 	buffers, # list of buffers
@@ -101,7 +98,7 @@ days = pa.array([1, 12, 17, 23, 28], type=pa.int8())
 months = pa.array([1, 3, 5, 7, 1], type=pa.int8())
 years = pa.array([1990, 2000, 1995, 2000, 1995], type=pa.int16())
 ```
-### from [[pa buffer]]
+### from [[pa Buffer]]
 ```python
 pa.array.from_buffers(
 	buffers, # list of buffers
@@ -125,17 +122,18 @@ END
 
 START
 Basic
-[[pa Array]]: methods (20)
+[[pa Array]]: methods
 - pointer to phzsical memory (1)
 - convert to other data type (2)
 - change encoding (1)
 - conversions (3)
 - length of array (1)
 - select data (2)
-- cort sum count (3)
+- sort sum count (3)
 - create mask and use mask (3)
 - compare arrays (1)
 - fill null
+- get unique elements
 Back: 
 ```python
 .buffers() # list of Buffer objects pointing to this array’s physical storage
@@ -181,22 +179,17 @@ END
 START
 Basic
 [[pa Array]]
-- concept and properties (3)
-- what data structures it can hold (5)
+- concept and properties (2)
+- memory organisation
 - attributes (3)
 
 Back: 
 ## concept
 - immutable collection of in-memory data of the same [[pa datatype]]
+- contains multiple [[pa Buffer]] and imposes some sort of semantics into them (data type)
+- Arrays are "contiguous" in the sense that each [[pa Buffer]] is contiguous
 - can be sliced without copying (→ creates reference to memory)
-- can hold values or nested structures 
-	-  [[pa Scalar]] values
-	- [[pa ListArray]] holding [[pa ListType]] elements
-	- [[pa MapArray]] holding [[pa MapType]] elements
-	- [[pa StructArray]] holding [[pa StructType]] elements
-	- [[pa DictionaryArray]] holding [[pa DictionaryType]] elements ([[categorical data]])
-
-
+- can hold values or [[pa nested structure]]
 ## attributes
 ```python
 nbytes # Total number of bytes consumed by the elements of the array.

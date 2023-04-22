@@ -1,4 +1,5 @@
 ## StructArray
+- like a table within a column
 - [[pa Array]] containing [[pa StructType]] 
 
 ![[pa StructType#StructType]]
@@ -41,21 +42,9 @@ Basic
 	2) ID: 2 first_name: lisa, last_name: maier
 Back: 
 # StructArray
-- [[pa Array]] containing [[pa StructType]] 
+- like a table within a column
+- [[pa Array]] containing [[pa StructType]] (similar to [[pa Schema]])
 
-### StructType
-- [[pa datatype]] of a StructArray
-- A [[pa StructType]] is a collection of named [[pa Field|pa Fields]]
-- similar to the [[pa Schema]] of a [[pa Table]]
-
-#### Attributes
-```python
-num_fields # The field for items in the map entries.
-```
-#### Methods
-```python
-field(i) # Select a field by its column name or numeric index.
-```
 
 ## example
 ```python

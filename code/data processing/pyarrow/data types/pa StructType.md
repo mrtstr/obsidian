@@ -1,21 +1,8 @@
 ![[pa Field#Field]]
 
 ## StructType
-- [[pa datatype]] of a StructArray
-- A [[pa StructType]] is a collection of named [[pa Field|pa Fields]]
-- similar to the [[pa Schema]] of a [[pa Table]]
-
-### Attributes
-```python
-num_fields # The field for items in the map entries.
-```
-### Methods
-
-```python
-field(i) # Select a field by its column name or numeric index.
-```
-
-
+- [[pa datatype]] of a [[pa StructArray]]
+- A [[pa StructType]] is a collection of named [[pa Field|pa Fields]] a [[pa Schema]] 
 
 ## Example
 

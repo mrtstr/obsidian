@@ -1,1 +1,1 @@
-Concatenate [[pa Table]] objects.
+Concatenate [[pa Table]] objects  [[zero copy]] (just copying pointers)

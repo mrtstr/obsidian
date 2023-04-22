@@ -1,1 +1,1 @@
-Concatenate the given [[pa Array|pa Arrays]].
+Concatenate the given [[pa Array|pa Arrays]] by copying the data in a new [[pa Array]]

@@ -1,8 +1,9 @@
 ## Table
-- same properties as a [[pa RecordBatch]] but can contrain one or multiple [[pa RecordBatch|pa RecordBatchs]] of the same [[pa Schema]] that are logicly treated as one
+- can contrain one or multiple [[pa RecordBatch|pa RecordBatchs]] of the same [[pa Schema]] that are logicly treated as one
 - tool for wrangling multiple [[pa RecordBatch|pa RecordBatchs]] and [[pa Array]] pieces as a single logical dataset
-- can contrain one or multiple [[pa RecordBatch|pa RecordBatchs]] 
-	→ in case of multiple [[pa RecordBatch|pa RecordBatchs]] the data is saved in [[pa ChunkedArray|pa ChunkedArrays]]
+- data is saved in [[pa ChunkedArray|pa ChunkedArrays]]
+- [[pa Table]] can be [[pa concat_tables|concatinated]] [[zero copy]] while [[pa RecordBatch]] can not 
+
 
 ![[pa RecordBatch#RecordBatch]]
 

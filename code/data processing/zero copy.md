@@ -1,0 +1,1 @@
+dont copy any data in the memory and just copying pointers
