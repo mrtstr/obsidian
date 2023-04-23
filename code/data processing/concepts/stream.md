@@ -1,0 +1,2 @@
+- Byte stream that can be in memory or on disc
+- streams are readable, writeable or both

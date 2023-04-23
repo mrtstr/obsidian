@@ -1,2 +1,0 @@
-- on-disk format for columnar data
-- supports partitioning
