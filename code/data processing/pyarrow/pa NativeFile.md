@@ -6,8 +6,8 @@
 ## extensions
 - `OSFile`
 	- a native file that uses your operating system’s file descriptors
-- `MemoryMappedFile`
-	- for reading ([[zero copy]]) and writing with memory maps
+- [[pa MemoryMappedFile]]
+	- for ([[zero copy]]) reading and writing with memory maps
 - `BufferReader`
 	- for reading [[pa Buffer]] objects as a file
 - `BufferOutputStream`
@@ -105,7 +105,7 @@ Back:
 	- for writing data in-memory, producing a [[pa Buffer]] at the end
 - `FixedSizeBufferWriter` 
 	- for writing data into an already allocated Buffer
-- `HdfsFile`
+- `hdfs stream`
 	- for reading and writing data to the [[HDFS]]
 -  `PythonFile`
 	- for interfacing with [[python]] file objects in C++
@@ -195,4 +195,53 @@ with pa.output_stream('example4.dat') as f:
 
 Tags: code pyarrow
 <!--ID: 1682248340848-->
+END
+
+
+START
+Basic
+Example using [[pyarrow]] `OSFile`
+- read on disc file chunk wise
+- jump inside the byte stream
+- read the first 5 bytes
+- read 5 bytes at position 5
+- read from position 3 to the end
+- read file into a buffer
+
+Back: 
+```python
+with pa.OSFile('example3.dat', 'wb') as f:
+	f.write(b'some example data')
+
+file_obj = pa.OSFile('example3.dat')
+
+for _ in range(3):
+	print(file_obj.read(3))
+# b'som' 
+# b'e e' 
+# b'xam'
+
+file_obj.seek(1) # reset iterator to position 2
+print(file_obj.read(5)) # read the next 5 bytes
+# b'ome e'
+print(file_obj.read1(5))
+# b'xampl'
+print(file_obj.read_at(5, 5))
+# b'examp'
+
+file_obj.seek(3) # reset iterator to position 2
+print(file_obj.readall()) # read the rest
+# b'e example data'\
+
+
+file_obj.seek(0)
+buffer = file_obj.read_buffer()
+print(buffer)
+# <pyarrow.Buffer address=0x7f32cc011080 size=17 is_cpu=True
+print(buffer.to_pybytes())
+# is_mutable=True> b'some example data'
+```
+
+Tags: code pyarrow
+<!--ID: 1682756007915-->
 END

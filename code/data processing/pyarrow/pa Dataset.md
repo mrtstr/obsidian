@@ -1,7 +1,7 @@
-- [[pyarrow]] [[pa Dataset|dataset]] tool for saving data paritioned on disc in order to load it chunk wise
-- collection of data fragments and potentially child datasets.
-- Allows to works with datasets that do not fit in the memory
-- data chunks ca be loaded and maipulated one by one
+- [[pyarrow]] [[pa Dataset|dataset]] tool for working with lager than memory data
+- saving data paritioned on disc (e.g. as [[parquet]]) 
+- can be loaded chunk wise
+- [[pa Table]] like [[API]]
 
 ## example: creating a partitioned dataset
 
@@ -113,11 +113,24 @@ pl.from_arrow(list(dataset.to_batches()))
 START
 Basic
 [[pa Dataset]]
-- concept
-- example
-	- create dataset from the following table
-	- load dataset
-	- lazy load the chunks and calculate the age for each chunk
+- concept (4)
+Back: 
+- [[pyarrow]] [[pa Dataset|dataset]] tool for working with lager than memory data
+- saving data paritioned on disc (e.g. as [[parquet]]) 
+- can be loaded chunk wise
+- [[pa Table]] like [[API]]
+
+Tags: code pyarrow
+<!--ID: 1681116839430-->
+END
+
+
+
+START
+Basic
+
+- save the following table as a partitoned (by year) [[parquet]] file
+- lazy load the chunks and calculate the age for each chunk
 
 | days | months | years | 
 |-------:|---------:|--------:| 
@@ -128,16 +141,10 @@ Basic
 | 28 | 1 | 1995 |
 
 Back: 
-- [[pyarrow]] [[pa Dataset|dataset]] tool for saving data paritioned on disc in order to load it chunk wise
-- collection of data fragments and potentially child datasets.
-- Allows to works with datasets that do not fit in the memory
-- data chunks ca be loaded and maipulated one by one
-
-### concept
-- [[pyarrow]] [[pa Dataset|dataset]] is for partitioned handeling of large datasets
-- save partitioned dataset on the disc
-- load the data one by one
-
+- [[pyarrow]] [[pa Dataset|dataset]] tool for working with lager than memory data
+- saving data paritioned on disc (e.g. as [[parquet]]) 
+- can be loaded chunk wise
+- [[pa Table]] like [[API]]
 ### example
 1) partition the data and save it on the disc
 ```python
@@ -173,8 +180,5 @@ for table_chunk in dataset.to_batches():
 # AGES [ 23, 23 ]
 ```
 Tags: code pyarrow
-<!--ID: 1681116839430-->
+<!--ID: 1682756007910-->
 END
-
-
-

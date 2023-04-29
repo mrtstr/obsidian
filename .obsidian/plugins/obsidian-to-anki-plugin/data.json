@@ -117,7 +117,8 @@
     "IZys3.png",
     "1680838682257.jpg",
     "Screenshot from 2023-04-09 20-11-37.png",
-    "Screenshot from 2023-04-23 10-43-21.png"
+    "Screenshot from 2023-04-23 10-43-21.png",
+    "Screenshot from 2023-04-29 10-06-28.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -763,9 +764,9 @@
     "code/data processing/pyarrow/pa Table.md": "f9393500f41bcee58e41671e2db60ea4",
     "code/data processing/pyarrow/pa Schema.md": "983fb88b7b382769bbd9db7c60784bc9",
     "code/data processing/pyarrow/pa RecordBatchReader.md": "c7ad98f2a705d785d6fbb57aafb8aa7d",
-    "code/data processing/pyarrow/pa MemoryMappedFile.md": "00b9d1ce858eb3b2a3fcab40a9e046f4",
+    "code/data processing/pyarrow/pa MemoryMappedFile.md": "78709f56660a6f466ec1544141747b99",
     "code/data processing/pyarrow/pa Field.md": "c4bca08c8a333073673711fafb2fb82e",
-    "code/data processing/pyarrow/pa Dataset.md": "86ae5aa39e165a97336329e44ac00bc0",
+    "code/data processing/pyarrow/pa Dataset.md": "fdfde6d9f59a76c9bd82e9d5286723a0",
     "code/data processing/pyarrow/pa Array.md": "a6538a27ed5cf32e69f622beee0429f9",
     "code/data processing/pyarrow/operations/pa concat_tables.md": "6ba9f5bcb0e95e6f57b3657fb3766871",
     "code/data processing/pyarrow/operations/pa concat_arrays.md": "ec2893a1949eb87a6d287a3ec285464e",
@@ -816,10 +817,12 @@
     "code/data processing/pyspark/HDFS.md": "148934ae3a7795e2ddcd16b62cf359b1",
     "code/data processing/pyspark/spark.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/pyarrow/pa filesystem.md": "bf4f6d4aed8e5c6fc1ec6e70e74fd049",
-    "code/data processing/pyarrow/pa NativeFile.md": "b046702cf7bd752a14cf15e394f1658a",
+    "code/data processing/pyarrow/pa NativeFile.md": "4dd626a4f8c72cbd27bcb5f6ad50b395",
     "code/data processing/concepts/file system.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/string.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/data processing/concepts/stream.md": "c550a0533a4b308e44e350667b91d62d"
+    "code/data processing/concepts/stream.md": "c550a0533a4b308e44e350667b91d62d",
+    "code/data processing/concepts/serializing.md": "ce2a4df65472e32b94a754c42118130d",
+    "code/python/py generator.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [
