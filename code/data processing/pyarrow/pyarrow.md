@@ -1,6 +1,6 @@
 ## concept
 - library providing columnar data structures for in-memory computing
-- can handle large datasets by partitioning of data in smaller chunks
+- optimizes for [[memory mapped data]] and [[zero copy]] operations
 - base data representation of [[polars]] and [[pandas]] 2.0
 - Arrow can be used with [[parquet]], [[pandas]], [[polars]], [[pyspark]]
 ![[Screenshot from 2023-04-09 20-11-37.png]]
@@ -38,7 +38,7 @@ Basic
 Back: 
 ## concept
 - library providing columnar data structures for in-memory computing
-- can handle large datasets by partitioning of data in smaller chunks
+- optimizes for [[memory mapped data]] and [[zero copy]] operations
 - base data representation of [[polars]] and [[pandas]] 2.0
 - Arrow can be used with [[parquet]], [[pandas]], [[polars]], [[pyspark]]
 

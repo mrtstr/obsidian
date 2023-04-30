@@ -1,6 +1,6 @@
 - format for saving tables on dics
 - schema is included
-- compressed
+- compressed → [[memory mapped data]] access not possible
 - column based and partitioned in row groups
 	→ columns and partitions can be loaded serperatly
 
@@ -19,7 +19,7 @@ Basic
 Back: 
 - format for saving tables on dics
 - schema is included
-- compressed
+- compressed → [[memory mapped data]] access not possible
 - column based and partitioned in row groups
 	→ columns and partitions can be loaded serperatly
 
