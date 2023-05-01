@@ -1,4 +1,4 @@
-The [[factorial|factorials]] of large numbers can be approximated using the [[sterling number]] 
+The [[factorial|factorials]] of large numbers can be approximated using the [[mathematics/stochastics/combinatorics/sterling number]] 
 ## Definition
 $$
 \begin{split}
@@ -15,7 +15,7 @@ $$
 ## Applications
 1) [[binomial coefficient]]
 2) number of [[permutations]]
-3) [[sterling number]]
+3) [[mathematics/stochastics/combinatorics/sterling number]]
 
 ## Number of arrangements in a [[set]]
 Given a [[set]] with a [[cardinality]] of $n$. There are $n!$ different orders possible.
@@ -46,7 +46,7 @@ $$
 2) number of [[permutations]]
 
 ## Approximation
-The [[factorial|factorials]] of large numbers can be approximated using the [[sterling number]] 
+The [[factorial|factorials]] of large numbers can be approximated using the [[mathematics/stochastics/combinatorics/sterling number]] 
 $$
 \begin{split}
 0! & =  1 \\

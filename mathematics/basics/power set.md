@@ -21,6 +21,6 @@ carnality of a [[power set]]:
 $$
 \left|\mathcal{P}(S) \right| = 2^{\left|S\right|} 
 $$
-Tags: mathematics statistics
+Tags: mathematics
 <!--ID: 1666457499382-->
 END

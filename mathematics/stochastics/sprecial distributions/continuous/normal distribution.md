@@ -4,6 +4,19 @@
 $$
 f_X\left(x|\mu, \sigma^2\right) = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}\right]}
 $$
+
+```functionplot
+---
+title: 
+xLabel: 
+yLabel: 
+bounds: [-3,3,0,0.42]
+disableZoom: true
+grid: true
+---
+f(x) = 1/sqrt(2*PI) exp(-x^2 / 2)
+```
+
 ## [[moment generating function]]
 
 ![[moment generating function#definition]]
