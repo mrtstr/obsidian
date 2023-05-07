@@ -801,7 +801,7 @@
     "code/data processing/concepts/dataframe.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/categorical data.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/array.md": "77c2588aa614f85845f30a378dff4744",
-    "gym/plan.md": "0adfd147b68eb132ee27af861fa6f965",
+    "gym/plan.md": "328a650f486785687d1cce709c0fbf8c",
     "code/data processing/pyarrow/pa buffer.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/zero copy.md": "8638cfed10ae4687d83fcd3892374870",
     "code/data processing/pyarrow/pa nested structure.md": "b715559cd6eafcb2cfc783505283cd10",
@@ -843,7 +843,9 @@
     "mathematics/basics/addition.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/root.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/exponential.md": "c6625c4a95696ea9214f05a8d8b75806",
-    "mathematics/basics/logarithm.md": "c061b11171c475afdd63bf02d2db9976"
+    "mathematics/basics/logarithm.md": "c061b11171c475afdd63bf02d2db9976",
+    "mathematics/stochastics/examples/substraction of binomial random variables.md": "e145572a84530d5e70fa869189eda9a2",
+    "mathematics/stochastics/sprecial distributions/discrete/poission binomial distribution.md": "b078d5c4ec431184e5efd4df66626a46"
   },
   "fields_dict": {
     "Basic": [
