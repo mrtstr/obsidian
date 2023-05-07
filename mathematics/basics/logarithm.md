@@ -29,7 +29,7 @@ f(x) = log(x)
 ## [[addition]] inside a [[logarithm]]
 $$
 \begin{split}
-log_b(x+y) = log_b(x) \cdot log_b(y)
+log_b(x \cdot y) = log_b(x) + log_b(y)
 \end{split}
 $$
 ### Proof
@@ -44,7 +44,7 @@ $$
 ## [[substraction]] inside a [[logarithm]]
 $$
 \begin{split}
-log_b\left(x-y\right) = \frac{log_b(x)}{log_b(y)}
+log_b\left(\frac{x}{y}\right) = log_b(x) - log_b(y)
 \end{split}
 $$
 ### Proof
@@ -126,7 +126,7 @@ $$
 ## [[addition]] inside a [[logarithm]]
 $$
 \begin{split}
-log_b(x+y) = log_b(x) \cdot log_b(y)
+log_b(x \cdot y) = log_b(x) + log_b(y)
 \end{split}
 $$
 ### Proof
@@ -141,7 +141,7 @@ $$
 ## [[substraction]] inside a [[logarithm]]
 $$
 \begin{split}
-log_b\left(x-y\right) = \frac{log_b(x)}{log_b(y)}
+log_b\left(\frac{x}{y}\right) = log_b(x) - log_b(y)
 \end{split}
 $$
 ### Proof
