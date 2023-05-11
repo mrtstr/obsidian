@@ -15,6 +15,20 @@ f_Y(y)
 \end{split}
 $$
 
+$$
+\begin{split}
+F_Y(y) 
+=& P(Y \leq y) \\
+=& \sum\limits_{x_1  \in \Omega_{X_1}} P(x_1 + X_2 \leq y \cap X_1 = x_1)  \\
+=& \sum\limits_{x_1  \in \Omega_{X_1}} P(x_1 + X_2 \leq y) P(X_1 = x_1)  \\
+=& \sum\limits_{x_1  \in \Omega_{X_1}} P(X_2 \leq y - x_1) P(X_1 = x_1)  \\
+=& \sum\limits_{x_1  \in \Omega_{X_1}} F_{X_2}(y - x_1 ) f_{X_1}(x_1)  \\
+f_Y(y) 
+&= \frac{dF_Y(y)}{dy} \\
+=& \sum\limits_{x_1  \in \Omega_{X_1}} f_{X_1}(x_1)  f_{X_2}(y -x_1)  \\
+\end{split}
+$$
+
 # convolutions of [[continuous random variable|continuous distributions]]
 $$
 \begin{split}

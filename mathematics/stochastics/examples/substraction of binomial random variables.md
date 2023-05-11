@@ -19,14 +19,19 @@ p^{x}(1-p)^{n-x}
 \end{cases}
 $$
 ## [[probability function]]
+[[convolution of distributions]]
 $$
-f_Y(y)= 
-\begin{cases}
-\sum\limits_{i=0}^{n_1} f(y + i | n_1, p_1)f(i | n_2, p_2)
-,& \text{if } x \geq 0\\
-\sum\limits_{i=0}^{n_2} f(i | n_1, p_1)f(i + y | n_2, p_2)
-,& \text{otherwise}
-\end{cases}
+\begin{split}
+F_Y(y)
+=& P(Y \leq y) \\
+=& \sum\limits_{X_2 \in \Omega_{X_2}} P(m + X_1  - x_2 \leq y \cap X_2 = x_2) \\
+=& \sum\limits_{x_2 \in \Omega_{X_2}} P(m + X_1 - x_2 \leq y) P(X_2 = x_2) \\
+=& \sum\limits_{x_2 \in \Omega_{X_2}} P(m + X_1 \leq y + x_2) P(X_2 = x_2) \\
+=& \sum\limits_{x_2 \in \Omega_{X_2}} F_{X_1}(m + y + x_2 ) f_{X_2}(x_2) \\
+f_Y(y)
+&= \frac{dF_Y(y)}{dy} \\
+=& \sum\limits_{x_2 \in \Omega_{X_2}} f_{X_2}(X_2) f_{X_1}(m + y +x_2) \\
+\end{split}
 $$
 
 ## [[expectation]]
@@ -69,15 +74,21 @@ $$
 
 Back: 
 ## [[probability function]]
+[[convolution of distributions]]
 $$
-f_Y(y)= 
-\begin{cases}
-\sum\limits_{i=0}^{n_1} f(y + i | n_1, p_1)f(i | n_2, p_2)
-,& \text{if } x \geq 0\\
-\sum\limits_{i=0}^{n_2} f(i | n_1, p_1)f(i + y | n_2, p_2)
-,& \text{otherwise}
-\end{cases}
+\begin{split}
+F_Y(y)
+=& P(Y \leq y) \\
+=& \sum\limits_{X_2 \in \Omega_{X_2}} P(m + X_1  - x_2 \leq y \cap X_2 = x_2) \\
+=& \sum\limits_{x_2 \in \Omega_{X_2}} P(m + X_1 - x_2 \leq y) P(X_2 = x_2) \\
+=& \sum\limits_{x_2 \in \Omega_{X_2}} P(m + X_1 \leq y + x_2) P(X_2 = x_2) \\
+=& \sum\limits_{x_2 \in \Omega_{X_2}} F_{X_1}(m + y + x_2 ) f_{X_2}(x_2) \\
+f_Y(y)
+&= \frac{dF_Y(y)}{dy} \\
+=& \sum\limits_{x_2 \in \Omega_{X_2}} f_{X_2}(X_2) f_{X_1}(m + y +x_2) \\
+\end{split}
 $$
+
 
 ## [[expectation]]
 $$
