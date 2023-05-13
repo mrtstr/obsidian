@@ -1,10 +1,11 @@
 
-[[substraction]] of two [[binomial distribution|binomial distributed]] [[random variable|random variables]]
+[[substraction]] of two [[binomial distribution|binomial distributed]] [[random variable|random variables]] plus a constant
 $$
 \begin{split}
-Y = X_1 - X_2 \\
-X_1 \sim Ber(n_1, p_1) \\ 
-X_2 \sim Ber(n_2, p_2) \\ \\
+Y = X_1 - X_2 + m \\
+m =const \\ 
+X_1 \sim Bin(n_1, p_1) \\ 
+X_2 \sim Bin(n_2, p_2) \\ \\
 \end{split}
 $$
 
@@ -60,12 +61,13 @@ $$
 
 START
 Basic
-[[substraction]] of two [[binomial distribution|binomial distributed]] [[random variable|random variables]]
+[[substraction]] of two [[binomial distribution|binomial distributed]] [[random variable|random variables]] plus a constant
 $$
 \begin{split}
-Y = X_1 - X_2 \\
-X_1 \sim Ber(n_1, p_1) \\ 
-X_2 \sim Ber(n_2, p_2) \\ \\
+Y = X_1 - X_2 + m \\
+m =const \\ 
+X_1 \sim Bin(n_1, p_1) \\ 
+X_2 \sim Bin(n_2, p_2) \\ \\
 \end{split}
 $$
 - [[probability function]]

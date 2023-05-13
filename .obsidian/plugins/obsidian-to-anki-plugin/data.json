@@ -226,7 +226,7 @@
     "mathematics/stochastics/discrete distribution.md": "0ae9ce23bae47a9d45da42c867e44727",
     "mathematics/stochastics/covariance.md": "b56eb71b2afcd97f5cbac3d1e8f081e0",
     "mathematics/stochastics/correlation.md": "ee4c4c5dd1967229b0d00224ccfca599",
-    "mathematics/stochastics/convolution of distributions.md": "7c9c18fe695a3f6daedce6f0d0dfccbb",
+    "mathematics/stochastics/convolution of distributions.md": "fbe22e65b489ec200afe9a7e13d30b24",
     "mathematics/stochastics/continuous random variable.md": "f50418a19146aaecc027dae2919e6b6d",
     "mathematics/stochastics/continous uniform distribution.md": "20b03fb1365080c141193b0c7d99559a",
     "mathematics/stochastics/conditional variance.md": "5874b7ed4f7cbb84d7e2daf4b4f1b406",
@@ -844,7 +844,7 @@
     "mathematics/basics/root.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/exponential.md": "c6625c4a95696ea9214f05a8d8b75806",
     "mathematics/basics/logarithm.md": "c061b11171c475afdd63bf02d2db9976",
-    "mathematics/stochastics/examples/substraction of binomial random variables.md": "e145572a84530d5e70fa869189eda9a2",
+    "mathematics/stochastics/examples/substraction of binomial random variables.md": "3b3109edc9184c78bc203093e36b98d3",
     "mathematics/stochastics/sprecial distributions/discrete/poission binomial distribution.md": "b078d5c4ec431184e5efd4df66626a46"
   },
   "fields_dict": {
