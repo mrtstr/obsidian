@@ -1,3 +1,4 @@
+Rational Numbers: Quotients of [[integer|integers]]
 $$
-\mathbb{Q}
-$$![[Screenshot from 2023-05-01 11-45-24.png]]
+\mathbb{Q} = \left\{\frac{m}{n} | m,n \in \mathbb{Z}, n \neq0 \right\}
+$$
