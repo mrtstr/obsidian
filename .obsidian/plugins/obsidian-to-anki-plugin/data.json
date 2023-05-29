@@ -899,9 +899,11 @@
     "mathematics/basics/inverse elements.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/operation.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/neutral element.md": "febab43f208562ff86636eb3fa854e6e",
-    "mathematics/basics/properties of real numbers.md": "c0230cc29d93e0dd2c63c9ee344a8744",
+    "mathematics/basics/properties of real numbers.md": "b0cf332180d927040d1338650909b3cc",
     "mathematics/basics/numbers.md": "6b2e91123bc0bf5d57049938bb3849bf",
-    "mathematics/basics/natural numbers.md": "5b55dfb5873722b8d854f959e034b955"
+    "mathematics/basics/natural numbers.md": "5b55dfb5873722b8d854f959e034b955",
+    "mathematics/basics/bounded set.md": "bbabc7f43800651b705cd05a4efc4d14",
+    "mathematics/basics/basic algebraic properties.md": "302330634f142517896923e8540c8260"
   },
   "fields_dict": {
     "Basic": [
