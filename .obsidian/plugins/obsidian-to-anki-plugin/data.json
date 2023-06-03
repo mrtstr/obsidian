@@ -903,7 +903,13 @@
     "mathematics/basics/numbers.md": "6b2e91123bc0bf5d57049938bb3849bf",
     "mathematics/basics/natural numbers.md": "5b55dfb5873722b8d854f959e034b955",
     "mathematics/basics/bounded set.md": "bbabc7f43800651b705cd05a4efc4d14",
-    "mathematics/basics/basic algebraic properties.md": "302330634f142517896923e8540c8260"
+    "mathematics/basics/basic algebraic properties.md": "302330634f142517896923e8540c8260",
+    "mathematics/basics/basic algebraic properties of real numbers.md": "e18fce4335fc2ad318d7c6f5f2f2645d",
+    "machine learning/softmax.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "machine learning/self attention.md": "a94fd08269f7edb22921e7d6cb338ea9",
+    "machine learning/linear layer.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "machine learning/embeddings.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "machine learning/consine similariy.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [
