@@ -41,3 +41,46 @@
 | ball back        | upper |
 | split            | upper |
 | bridgs           | upper |
+
+## Day1
+
+| exercise           | type   |
+| ------------------ | ------ | 
+| Deadlift           | lower  |
+| hacksquat          | lower  |
+| DB incline bench   | upper  |
+| Ring Dips          | rings  |
+| Ring Dips + L-hold | rings  |
+| L-Sit              | rings  |
+| legraises          | rings  | 
+| jogging            | cardio | 
+
+## Day2
+
+| exercise                       | type   | A   | B   | C   |     |
+| ------------------------------ | ------ | --- | --- | --- | --- |
+| squat                          | lower  |     |     | X   |     |
+| leg press (single leg)         | upper  | X   |     |     |     |
+| T rows                         | upper  |     | X   |     |     |
+| ring L pullups                 | upper  |     |     | X   |     |
+| ring pullups                   | upper  |     |     | X   |     |
+| ring rows                      | upper  |     |     | X   |     |
+| roll (front lief to back lief) | rings  |     | X   |     |     |
+| legraises                      | rings  | X   |     |     |     | 
+| jogging                        | cardio |     | X   |     |     |
+
+## Day2
+
+
+| exercise                       | type   | A   | B   | C   | 
+| ------------------------------ | ------ | --- | --- | --- |
+| Deadlift stiff                 | lower  | X   |     |     |
+| hacksquat                      | lower  |     | X   |     |
+| push press                     | upper  | X   |     |     |
+| DB shoulder press              | upper  |     |     | X   |
+| lateral raises                 | upper  |     |     | X   |
+| reverse fly                    | upper  |     |     | X   |
+| jogging                        | cardio |     | X   |     |
+| crunch free                    | core   |     |     | X   |
+| back extensions                | core   |     | X   |     |
+
