@@ -3,7 +3,7 @@
 ### chain rule
 
 $$
-\frac{df\left(g(x)\right)}{dx} = \frac{df\left(g(x)\right)}{dg(x} \cdot \frac{dg(x)}{dx} 
+\frac{df\left(g(x)\right)}{dx} = \frac{df\left(g(x)\right)}{dg(x)} \cdot \frac{dg(x)}{dx} 
 $$
 #### intuition:
 - the rate of change of $f$ to $x$ is equal to the rate of change of $f$ to $g$ times the rate of change of $g$ to $x$
@@ -30,7 +30,7 @@ $$
 ### chain rule
 
 $$
-\frac{df\left(g(x)\right)}{dx} = \frac{df\left(g(x)\right)}{dg(x} \cdot \frac{dg(x)}{dx} 
+\frac{df\left(g(x)\right)}{dx} = \frac{df\left(g(x)\right)}{dg(x)} \cdot \frac{dg(x)}{dx} 
 $$
 #### intuition:
 - the rate of change of $f$ to $x$ is equal to the rate of change of $f$ to $g$ times the rate of change of $g$ to $x$

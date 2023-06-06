@@ -2,7 +2,7 @@
 
 ![[inverse function#Definition Inverse Function]]
 
-### [[inverse function|inverse]] rule
+## [[inverse function|inverse]] rule
 
 $$
 \frac{df^{-1(y)}}{dy} = \frac{1}{\frac{df\left(f^{-1}(y)\right)}{df^{-1}(y)}}

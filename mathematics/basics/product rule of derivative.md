@@ -1,6 +1,6 @@
 ![[derivative#definition derivative]]
 
-### product rule
+## product rule
 $$
 \frac{d\left(f(x) \cdot g(x)\right)}{dx} 
 = f(x)\frac{dg(x)}{dx} + g(x) \frac{df(x)}{dx}

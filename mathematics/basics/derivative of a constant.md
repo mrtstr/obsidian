@@ -1,6 +1,6 @@
 ![[derivative#definition derivative]]
 
-### derivative of a constant
+## derivative of a constant
 $$
 \begin{split}
 f(x) &= c \\

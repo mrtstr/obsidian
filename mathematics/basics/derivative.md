@@ -1,3 +1,26 @@
+
+linearity of the derivative
+ 
+ 
+ 
+d(af(x)+bg(x))dx=adf(x)dx+bdg(x)dx
+proof
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+d(af(x)+bg(x))dx=limh→0af(x+h)+bg(x+h)−(af(x)+bg(x))h=limh→0a(f(x+h)−f(x))+b(g(x+h)−g(x))h=limh→0af(x+h)−f(x)h+bg(x+h)−g(x)h=alimh→0f(x+h)−f(x)h+blimh→0g(x+h)−g(x)h=adf(x)dx+bdg(x)dx
 # definition derivative
 $$
 \frac{df(x)}{dx} = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
@@ -5,7 +28,6 @@ $$
 
 # elementary rules of differentiation
 
-derivative
 
 ![[linearity of the derivative#linearity of the derivative]]
 
@@ -65,7 +87,7 @@ $$
 \end{split}
 $$
 
-### product rule
+### [[product rule of derivative]]
 $$
 \frac{d\left(f(x) \cdot g(x)\right)}{dx} 
 = f(x)\frac{dg(x)}{dx} + g(x) \frac{df(x)}{dx}
@@ -86,10 +108,10 @@ f(x+h) \left(g(x+h) - g(x)\right) + g(x) \left(f(x+h) - g(x)\right)
 \end{split}
 $$
 
-### chain rule
+### [[chain rule of derivative]]
 
 $$
-\frac{df\left(g(x)\right)}{dx} = \frac{df\left(g(x)\right)}{dg(x} \cdot \frac{dg(x)}{dx} 
+\frac{df\left(g(x)\right)}{dx} = \frac{df\left(g(x)\right)}{dg(x)} \cdot \frac{dg(x)}{dx} 
 $$
 intuition:
 - the rate of change of $f$ to $x$ is equal to the rate of change of $f$ to $g$ times the rate of change of $g$ to $x$
@@ -98,7 +120,7 @@ intuition:
 $$
 \frac{\Delta \text{car distance}}{\Delta \text{time}} = \frac{\Delta \text{car distance}}{\Delta \text{bike distance}} \times \frac{\Delta \text{bike distance}}{\Delta \text{time}}
 $$
-### [[inverse function|inverse]] rule
+### [[inverse rule of derivative]]
 
 $$
 \frac{df^{-1(y)}}{dy} = \frac{1}{\frac{df\left(f^{-1}(y)\right)}{df^{-1}(y)}}

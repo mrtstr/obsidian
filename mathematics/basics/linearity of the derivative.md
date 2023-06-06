@@ -1,6 +1,6 @@
 ![[derivative#definition derivative]]
 
-### linearity of the derivative
+## linearity of the derivative
 $$
 \frac{d\left(af(x) + bg(x)\right)}{dx} = a \frac{df(x)}{dx} + b \frac{dg(x)}{dx}
 $$

@@ -910,12 +910,14 @@
     "machine learning/linear layer.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/embeddings.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/consine similariy.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/derivative of a constant.md": "ccca2503a54e6d4a4ba4d0466fdd41b5",
-    "mathematics/basics/linearity of the derivative.md": "129a8055c1247b54a96926a5e9c7db78",
-    "mathematics/basics/inverse rule of derivative.md": "cda6de542e2b2f3481ea2b9e10e54f57",
-    "mathematics/basics/chain rule of derivative.md": "91c7b23b48dbaf3c25b0d0cf1ee56ee0",
-    "mathematics/basics/product rule of derivative.md": "1999ab37a4ce031e684feba4dbf064a8",
-    "mathematics/basics/derivative.md": "796a0918f83474d89b54de8998c16b07"
+    "mathematics/basics/derivative of a constant.md": "d0beb32652cb088851d09a117c0e764a",
+    "mathematics/basics/linearity of the derivative.md": "d3915f02e6efcebda7a2fdc515fae039",
+    "mathematics/basics/inverse rule of derivative.md": "20e00e109abeba18868bb33ab4574499",
+    "mathematics/basics/chain rule of derivative.md": "f8d524c267b07fffc1e4eac6cde858db",
+    "mathematics/basics/product rule of derivative.md": "75e8e98746b0cd63209e48149029d5ff",
+    "mathematics/basics/derivative.md": "0e60b4271e688055484fcbb2a512d5b1",
+    "mathematics/basics/induction proof.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/power rule for derivative.md": "1d20f756ea0ac119ff92d127eeb447ff"
   },
   "fields_dict": {
     "Basic": [
