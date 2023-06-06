@@ -1,26 +1,3 @@
-
-linearity of the derivative
- 
- 
- 
-d(af(x)+bg(x))dx=adf(x)dx+bdg(x)dx
-proof
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-d(af(x)+bg(x))dx=limh→0af(x+h)+bg(x+h)−(af(x)+bg(x))h=limh→0a(f(x+h)−f(x))+b(g(x+h)−g(x))h=limh→0af(x+h)−f(x)h+bg(x+h)−g(x)h=alimh→0f(x+h)−f(x)h+blimh→0g(x+h)−g(x)h=adf(x)dx+bdg(x)dx
 # definition derivative
 $$
 \frac{df(x)}{dx} = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
