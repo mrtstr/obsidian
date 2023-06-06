@@ -5,7 +5,7 @@ $$
 
 # elementary rules of differentiation
 
-![[derivative of a constant#derivative of a constant]]
+derivative
 
 ![[linearity of the derivative#linearity of the derivative]]
 
@@ -15,6 +15,9 @@ $$
 
 ![[inverse rule of derivative#inverse function inverse rule]]
 
+# [[derivative]] laws
+
+![[power rule for derivative#elementary power rule]]
 # anki
 START
 Basic
@@ -24,13 +27,13 @@ Basic
 
 Back: 
 
-# Definition
+## Definition
 $$
 \frac{df(x)}{dx} = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
 $$
 
-# elementary rules of differentiation
-## derivative of a constant
+## elementary rules of differentiation
+### derivative of a constant
 $$
 \begin{split}
 f(x) &= c \\
@@ -46,7 +49,7 @@ $$
 &= 0 \\
 \end{split}
 $$
-## linearity of the derivative
+### linearity of the derivative
 $$
 \frac{d\left(af(x) + bg(x)\right)}{dx} = a \frac{df(x)}{dx} + b \frac{dg(x)}{dx}
 $$
@@ -62,7 +65,7 @@ $$
 \end{split}
 $$
 
-## product rule
+### product rule
 $$
 \frac{d\left(f(x) \cdot g(x)\right)}{dx} 
 = f(x)\frac{dg(x)}{dx} + g(x) \frac{df(x)}{dx}
@@ -83,7 +86,7 @@ f(x+h) \left(g(x+h) - g(x)\right) + g(x) \left(f(x+h) - g(x)\right)
 \end{split}
 $$
 
-## chain rule
+### chain rule
 
 $$
 \frac{df\left(g(x)\right)}{dx} = \frac{df\left(g(x)\right)}{dg(x} \cdot \frac{dg(x)}{dx} 
@@ -95,7 +98,7 @@ intuition:
 $$
 \frac{\Delta \text{car distance}}{\Delta \text{time}} = \frac{\Delta \text{car distance}}{\Delta \text{bike distance}} \times \frac{\Delta \text{bike distance}}{\Delta \text{time}}
 $$
-## [[inverse function|inverse]] rule
+### [[inverse function|inverse]] rule
 
 $$
 \frac{df^{-1(y)}}{dy} = \frac{1}{\frac{df\left(f^{-1}(y)\right)}{df^{-1}(y)}}
