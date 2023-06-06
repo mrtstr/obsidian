@@ -75,7 +75,7 @@
 | exercise                       | type   | A   | B   | C   | 
 | ------------------------------ | ------ | --- | --- | --- |
 | Deadlift stiff                 | lower  | X   |     |     |
-| hacksquat                      | lower  |     | X   |     |
+| frontsquat                      | lower  |     | X   |     |
 | push press                     | upper  | X   |     |     |
 | DB shoulder press              | upper  |     |     | X   |
 | lateral raises                 | upper  |     |     | X   |

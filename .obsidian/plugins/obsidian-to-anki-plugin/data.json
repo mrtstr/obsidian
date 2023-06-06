@@ -313,7 +313,7 @@
     "mathematics/basics/linear algebra/basis.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linear algebra/QR decomposition.md": "e0f31fd77c3e16c10ff03932f48078d2",
     "mathematics/basics/linear algebra/LU decomposition.md": "e0f31fd77c3e16c10ff03932f48078d2",
-    "mathematics/basics/inverse function.md": "41c3de6f67bd4df7e9afec26b68664f6",
+    "mathematics/basics/inverse function.md": "c9942c4fe409ac5e1610628fa90ea353",
     "mathematics/basics/intersection.md": "79e9ca28561cc1db97d76fd9a7ea06f1",
     "mathematics/basics/function.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/distributive.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -801,7 +801,7 @@
     "code/data processing/concepts/dataframe.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/categorical data.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/array.md": "77c2588aa614f85845f30a378dff4744",
-    "gym/plan.md": "328a650f486785687d1cce709c0fbf8c",
+    "gym/plan.md": "cdb5b770119021280cd2fe31c9865233",
     "code/data processing/pyarrow/pa buffer.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/zero copy.md": "8638cfed10ae4687d83fcd3892374870",
     "code/data processing/pyarrow/pa nested structure.md": "b715559cd6eafcb2cfc783505283cd10",
@@ -909,7 +909,13 @@
     "machine learning/self attention.md": "a94fd08269f7edb22921e7d6cb338ea9",
     "machine learning/linear layer.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/embeddings.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "machine learning/consine similariy.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "machine learning/consine similariy.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/derivative of a constant.md": "ccca2503a54e6d4a4ba4d0466fdd41b5",
+    "mathematics/basics/linearity of the derivative.md": "129a8055c1247b54a96926a5e9c7db78",
+    "mathematics/basics/inverse rule of derivative.md": "cda6de542e2b2f3481ea2b9e10e54f57",
+    "mathematics/basics/chain rule of derivative.md": "91c7b23b48dbaf3c25b0d0cf1ee56ee0",
+    "mathematics/basics/product rule of derivative.md": "1999ab37a4ce031e684feba4dbf064a8",
+    "mathematics/basics/derivative.md": "796a0918f83474d89b54de8998c16b07"
   },
   "fields_dict": {
     "Basic": [
