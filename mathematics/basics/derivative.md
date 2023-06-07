@@ -8,11 +8,11 @@ $$
 
 ![[linearity of the derivative#linearity of the derivative]]
 
-![[product rule of derivative#product rule]]
+![[product rule of derivative#product rule for derivative]]
 
 ![[chain rule of derivative#chain rule]]
 
-![[inverse rule of derivative#inverse function inverse rule]]
+![[inverse rule of derivative#inverse function inverse rule for derivative]]
 
 # [[derivative]] laws
 

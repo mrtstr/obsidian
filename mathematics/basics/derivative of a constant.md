@@ -7,7 +7,7 @@ f(x) &= c \\
 \frac{df(x)}{dx} &= 0
 \end{split}
 $$
-#### proof
+## proof for derivative of a constant
 
 $$
 \begin{split}

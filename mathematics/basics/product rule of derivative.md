@@ -1,11 +1,12 @@
 ![[derivative#definition derivative]]
 
-## product rule
+## [[multiplication|product]] rule for [[derivative]]
+- [[derivative]] of the [[multiplication]] of two [[function|functions]]
 $$
 \frac{d\left(f(x) \cdot g(x)\right)}{dx} 
 = f(x)\frac{dg(x)}{dx} + g(x) \frac{df(x)}{dx}
 $$
-#### proof
+## proof for [[multiplication|product]] rule for [[derivative]]
 $$
 \begin{split}
 \frac{d\left(f(x) \cdot g(x)\right)}{dx} 

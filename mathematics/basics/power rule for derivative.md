@@ -1,9 +1,13 @@
 ![[derivative#definition derivative]]
 
-## elementary power rule
+## elementary power rulelinearity of the [[derivative]]
+- [[derivative]] of a [[polynomial]] with respect to the base
 $$
 \frac{dx^n}{dx} = n x^{n-1}
 $$
+
+## proof for elementary power rule
+
 ### proof for [[exponential|exponents]] from the [[natural numbers]] ([[induction proof]])
 $$
 \begin{split}
