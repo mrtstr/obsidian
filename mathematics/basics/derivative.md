@@ -6,17 +6,22 @@ $$
 # elementary rules of differentiation
 
 
-![[linearity of the derivative#linearity of the derivative]]
+![[linearity of the derivative#linear function linearity of the derivative]]
 
-![[product rule of derivative#product rule for derivative]]
+![[product rule of derivative#multiplication product rule for derivative]]
 
-![[chain rule of derivative#chain rule]]
+![[chain rule of derivative#composition chain rule for derivative]]
 
 ![[inverse rule of derivative#inverse function inverse rule for derivative]]
 
 # [[derivative]] laws
 
-![[power rule for derivative#elementary power rule]]
+![[power rule for derivative#elementary power rulelinearity of the derivative]]
+
+![[qutient rule for derivative#qutient rule for derivative]]
+
+![[reciprocal rule for the derivative#reciprocal rule for derivative]]
+
 # anki
 START
 Basic
