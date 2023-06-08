@@ -38,7 +38,8 @@ END
 
 START
 Basic
-model variance of a [[statiststatistical_learningk: 
+model variance of a [[statistical estimator]]
+Back: 
 - given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[probability density function|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
 - the variance of the [[statistical estimator]] is defined as follows
 $$
