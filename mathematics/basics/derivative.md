@@ -22,6 +22,7 @@ $$
 
 ![[reciprocal rule for the derivative#reciprocal rule for derivative]]
 
+![[derivative of exponential function#exponential rule for derivative]]
 # anki
 START
 Basic
@@ -117,6 +118,36 @@ $$
 \Rightarrow \frac{df^{-1(y)}}{dy} &= \frac{1}{\frac{df\left(f^{-1}(y)\right)}{df^{-1}(y)}}
 \end{split}
 $$
+
+### [[derivative of exponential function]]
+$$
+\frac{dc^{ax}}{dx} = c^{ax} a \ln(c)
+$$
+
+
+$$
+\frac{df(x)}{dx} = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
+$$
+proof
+$$
+\begin{split}
+\frac{dc^{x}}{dx} 
+&= \lim_{h \rightarrow 0} \frac{c^{x + h} - c^x}{h} \\
+&= \lim_{h \rightarrow 0} \frac{c^{x}c^{h} - c^x}{h} \\
+&= \lim_{h \rightarrow 0} \frac{c^{x}\left(c^{h} - 1\right)}{h} \\
+&= c^x \lim_{h \rightarrow 0} \frac{c^{h} - 1}{h} \\
+&= c^x \ln(c)  \quad \quad \text{ln limit identity} \\ 
+\\ \\
+\frac{dc^{ax}}{dx} 
+&= \frac{d(c^{x})^a}{dx} \\
+&= \frac{d(c^{x})^a}{dc^{x}} \cdot \frac{dc^{x}}{dx} \quad \quad \text{chain rule} \\
+&= a c^{x(a-1)}  \cdot  \frac{dc^{x}}{dx} \quad \quad \text{exponent rule} \\ 
+&= a c^{x(a-1)}  \cdot  c^x \ln(c)  \\ 
+&= a c^{xa} \ln(c)  \\ 
+
+\end{split}
+$$
+
 
 Tags: mathematics
 <!--ID: 1686036924132-->

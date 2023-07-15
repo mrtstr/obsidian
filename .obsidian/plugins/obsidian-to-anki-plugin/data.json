@@ -427,7 +427,7 @@
     "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md": "f27a1b65b293aefb3d587418e3050524",
     "mathematics/stochastics/sprecial distributions/discrete/hypergeometric distribution.md": "32142a75a4c5cf28307d003ca7a96131",
     "mathematics/stochastics/sprecial distributions/discrete/poisson distribution.md": "16f454c5a8e2bd42738f16f1dba1feca",
-    "mathematics/basics/eulers number.md": "7d98b3af24e49bc99cda63c9acef5c91",
+    "mathematics/basics/eulers number.md": "7162d0a12eba900c96a2ac5ffeaf0766",
     "mathematics/stochastics/sprecial distributions/discrete/negative binomial distibution.md": "120033eef054c598b127f6691acc4bf2",
     "audi.md": "716ad73b591cdea9fa52e5c4e10e1477",
     "code/pandas/pd nan.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -915,12 +915,22 @@
     "mathematics/basics/inverse rule of derivative.md": "7dbb4994af0c0c9f18472d107470b7a2",
     "mathematics/basics/chain rule of derivative.md": "fc3d434394882e8bc5d38cde94be16f6",
     "mathematics/basics/product rule of derivative.md": "6a5fab4d1f020caab00a1a91ff4ebb88",
-    "mathematics/basics/derivative.md": "d2da122a123abcf74841b5fcfa03e6f1",
+    "mathematics/basics/derivative.md": "e6658b33b5b63089cab78f18c679cdc9",
     "mathematics/basics/induction proof.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/power rule for derivative.md": "8d2ee3aa1c22d99c4369df84b5c283bf",
     "mathematics/basics/polynomial.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/qutient rule for derivative.md": "151d3a3d4d5c497a5f43d76bccaae65f",
-    "mathematics/basics/reciprocal rule for the derivative.md": "4601b2d0debf48650cd67d1f7ab88e56"
+    "mathematics/basics/reciprocal rule for the derivative.md": "4601b2d0debf48650cd67d1f7ab88e56",
+    "mathematics/basics/derivative of exponential function.md": "8ffd2e107255923442cca5ac40814f34",
+    "mathematics/basics/tangent.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/trigonometric functions.md": "20826f28a49e5ab250b6d58d67d72ada",
+    "mathematics/basics/sine.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/cosine.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/limit.md": "90479b69861b4ade1a2dcbe07ebd1df4",
+    "mathematics/basics/geometric series.md": "5037e7a9d3d38ecd70c1a1c7eca236fd",
+    "mathematics/basics/series.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/natural logarithm.md": "a35192f92d62b1213b65208db0e77087",
+    "gym/gym plan2.md": "82a4095fd780da6651e9f4ee60e724ae"
   },
   "fields_dict": {
     "Basic": [
