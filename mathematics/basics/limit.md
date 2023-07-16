@@ -1,3 +1,5 @@
+https://proofwiki.org/wiki/Combination_Theorem_for_Sequences
+
 - Behavour of a [[function]] near a paticular input
 
 $$

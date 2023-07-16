@@ -1,7 +1,7 @@
 ## Definition
 [[logarithm]] with [[eulers number]] as the basis $\ln(x) = \log_e(x)$
 
-
+## properties
 $$
 \lim_{h \rightarrow 0} \frac{\ln(1 + h)}{h} = 1
 $$
