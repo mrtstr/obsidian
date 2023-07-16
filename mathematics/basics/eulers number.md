@@ -33,9 +33,19 @@ $$
 &= \sum_{k=0}^n \frac{1}{k!} \frac{(n-k)!}{(n-k)!} \frac{n \cdot (n-1) \cdot \: ... \: (n-k-1) \cdot }{n^k} \\
 &= \sum_{k=0}^n \frac{1}{k!}  \prod_{j=0}^{k-1} \left(\frac{n-j}{n}\right) \\
 &= \sum_{k=0}^n \frac{1}{k!}  \prod_{j=0}^{k-1} \left(1-\frac{j}{n}\right) \\
-
 \end{split}
 $$
+
+
+$$
+\begin{split}
+\lim_{n \rightarrow \infty} \frac{1}{k!}  \prod_{j=0}^{k-1} \left(1-\frac{j}{n}\right) 
+=& \frac{1}{k!} \lim_{n \rightarrow \infty} \prod_{j=0}^{k-1} \left(1-\frac{j}{n}\right) \\
+=& \frac{1}{k!}
+\end{split}
+$$
+
+https://proofwiki.org/wiki/Euler%27s_Number:_Limit_of_Sequence_implies_Limit_of_Series
 
 ## [[proof]] for $e = \lim_{n \rightarrow \infty} \left(1 + \frac{1}{n}\right)^n$ given $\lim_{h \rightarrow 0} \frac{\ln(1 + h)}{h} = 1$
 
@@ -77,3 +87,31 @@ Tags: mathematics
 <!--ID: 1689407672482-->
 END
 
+START
+Basic
+[[proof]] for $e =\sum\limits_{k=0}^\infty \frac{1}{k!} = \lim_{n \rightarrow \infty} \left(1 + \frac{1}{n}\right)^n$
+
+Back:
+$$
+\begin{split}
+\left(1 + \frac{1}{n}\right)^n 
+&= \sum_{k=0}^n {n \choose k} \frac{1}{n^k} \cdot 1^{n-k} \\
+&= \sum_{k=0}^n \frac{n!}{(n-k)!k!} \frac{1}{n^k} \\
+&= \sum_{k=0}^n \frac{1}{k!} \frac{n!}{(n-k)!n^k} \\
+&= \sum_{k=0}^n \frac{1}{k!} \frac{(n-k)!}{(n-k)!} \frac{n \cdot (n-1) \cdot \: ... \: (n-k-1) \cdot }{n^k} \\
+&= \sum_{k=0}^n \frac{1}{k!}  \prod_{j=0}^{k-1} \left(\frac{n-j}{n}\right) \\
+&= \sum_{k=0}^n \frac{1}{k!}  \prod_{j=0}^{k-1} \left(1-\frac{j}{n}\right) \\
+
+\end{split}
+$$
+$$
+\begin{split}
+\lim_{n \rightarrow \infty} \frac{1}{k!}  \prod_{j=0}^{k-1} \left(1-\frac{j}{n}\right) 
+=& \frac{1}{k!} \lim_{n \rightarrow \infty} \prod_{j=0}^{k-1} \left(1-\frac{j}{n}\right) \\
+=& \frac{1}{k!}
+\end{split}
+$$
+
+Tags: mathematics
+<!--ID: 1689498258684-->
+END
