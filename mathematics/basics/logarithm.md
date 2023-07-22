@@ -1,4 +1,4 @@
-# Definition Logarithm
+## Definition Logarithm
 - the [[logarithm]] is the [[inverse function]] of the [[exponential]]
 
 $$
@@ -11,8 +11,9 @@ x &= f^{-1}\left(f(x)\right) \\
 y &= f\left(f^{-1}(y)\right) \\
 &= b^{log_b(y)}  \\
 \end{split}
+\tag{definition logarithm}
 $$
-
+## plot
 ```functionplot
 ---
 title: 

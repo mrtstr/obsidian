@@ -1,6 +1,7 @@
 ## binomial theorem
 $$
 (x+y)^n = \sum_{k=0}^n {n \choose k} x^{n-k} y^k
+\tag{binomial theorem}
 $$
 
 ## proof

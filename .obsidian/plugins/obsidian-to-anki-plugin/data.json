@@ -427,7 +427,7 @@
     "mathematics/stochastics/sprecial distributions/discrete/binomial distribution.md": "f27a1b65b293aefb3d587418e3050524",
     "mathematics/stochastics/sprecial distributions/discrete/hypergeometric distribution.md": "32142a75a4c5cf28307d003ca7a96131",
     "mathematics/stochastics/sprecial distributions/discrete/poisson distribution.md": "16f454c5a8e2bd42738f16f1dba1feca",
-    "mathematics/basics/eulers number.md": "6462f5667f2473ce6b9f26e604727046",
+    "mathematics/basics/eulers number.md": "15d1edbc93f8248ae3ff1687d312b310",
     "mathematics/stochastics/sprecial distributions/discrete/negative binomial distibution.md": "120033eef054c598b127f6691acc4bf2",
     "audi.md": "716ad73b591cdea9fa52e5c4e10e1477",
     "code/pandas/pd nan.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -843,7 +843,7 @@
     "mathematics/basics/addition.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/root.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/exponential.md": "c6625c4a95696ea9214f05a8d8b75806",
-    "mathematics/basics/logarithm.md": "93bbbe0441c8248ad4db6d5b24a44166",
+    "mathematics/basics/logarithm.md": "d32e4c1598dce723a3d97e19e23c12df",
     "mathematics/stochastics/examples/substraction of binomial random variables.md": "3b3109edc9184c78bc203093e36b98d3",
     "mathematics/stochastics/sprecial distributions/discrete/poission binomial distribution.md": "b078d5c4ec431184e5efd4df66626a46",
     "mathematics/linear algebra/zero matrix.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -929,11 +929,14 @@
     "mathematics/basics/limit.md": "c4faa340b430bcc965aa3d946a881b1f",
     "mathematics/basics/geometric series.md": "5037e7a9d3d38ecd70c1a1c7eca236fd",
     "mathematics/basics/series.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/natural logarithm.md": "111a96cc4f88bbb84830f38b0acde4c8",
+    "mathematics/basics/natural logarithm.md": "48edf0b3fa42fea825fd1b5d40306acd",
     "gym/gym plan2.md": "82a4095fd780da6651e9f4ee60e724ae",
     "mathematics/basics/proof.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/proof by induction.md": "838907aa5eab3c36739ae4aa3afbe7f1",
-    "mathematics/basics/binomial theorem.md": "02bbb2183fe3c935a29275cc113c5276"
+    "mathematics/basics/binomial theorem.md": "bc109e93d225a198e0463243155eda17",
+    "mathematics/basics/identity function.md": "369793b89b172be50457fb8b8a71d39f",
+    "mathematics/basics/power series.md": "1d429c104b86317719dbc2ea0f265c57",
+    "mathematics/basics/taylor series.md": "5037e7a9d3d38ecd70c1a1c7eca236fd"
   },
   "fields_dict": {
     "Basic": [
