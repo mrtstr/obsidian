@@ -2,7 +2,7 @@
 [[logarithm]] with [[eulers number]] as the basis $\ln(x) = \log_e(x)$
 
 ## properties
-https://www.mathdoubts.com/natural-log-limit-rule-proof/
+proof later with [[derivative]] of [[logarithm]]
 $$
 \lim_{h \rightarrow 0} \frac{\ln(1 + h)}{h} = 1
 $$

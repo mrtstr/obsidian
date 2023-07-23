@@ -1,11 +1,3 @@
-$$
-f=f
-
-
-
-
-
-$$
 
 ## [[series]] definition of [[eulers number]]
 $$
@@ -13,8 +5,25 @@ e = \sum\limits_{k=0}^\infty \frac{1}{k!}
 \tag{definition eulers number}
 $$
 ## [[series]] identity of exponential [[function]]
+### theorem
 $$
 e^\lambda = \sum\limits_{k=0}^\infty \frac{\lambda^k}{k!}
+$$
+### given
+![[taylor series#taylor series]]
+
+### proof
+$$
+\begin{split}
+f(\lambda) &= e^\lambda \\
+\widehat{f}(\lambda, x_0 = 0) 
+&= \sum_{n=0}^\infty 
+\frac{1}{n!}
+\left. \frac{d^n e^\lambda}{d^n \lambda} \right|_{\lambda=0}
+ \left(\lambda-0\right)^n \\
+ &= \sum_{n=0}^\infty \frac{\lambda^n}{n!} \cdot e_0  \\
+ &= \sum_{n=0}^\infty \frac{\lambda^n}{n!}   \\
+\end{split}
 $$
 
 ## [[limit]] identity of [[eulers number]]
@@ -27,7 +36,9 @@ e &= \lim_{n \rightarrow \infty} \left(1 + \frac{1}{n}\right)^n \\
 &\Leftrightarrow_{h=\frac{1}{n}}
 \\
 e &= \lim_{h \rightarrow 0} \left(1 + h\right)^{\frac{1}{h}}
+
 \end{split}
+\tag{limit identity of e}
 $$
 
 ### given
@@ -98,6 +109,37 @@ $$
 
 
 # anki
+
+START
+Basic
+[[eulers number]] summary
+- definition of [[eulers number]] $e$ as a [[series]]
+- definition of [[eulers number]] $e$ as a [[series]]
+- definition of [[eulers number]] $e$ as a [[limit]]
+Back: 
+definition of [[eulers number]] $e$ as a [[series]]
+$$
+e = \sum\limits_{k=0}^\infty \frac{1}{k!}
+$$
+[[series]] identity of exponential [[function]] with proof
+$$
+e^\lambda = \sum\limits_{k=0}^\infty \frac{\lambda^k}{k!}
+$$
+definition of [[eulers number]] $e$ as a [[limit]]
+$$
+\begin{split}
+e &= \lim_{n \rightarrow \infty} \left(1 + \frac{1}{n}\right)^n \\
+&\Leftrightarrow_{h=\frac{1}{n}}
+\\
+e &= \lim_{h \rightarrow 0} \left(1 + h\right)^{\frac{1}{h}}
+
+\end{split}
+\tag{limit identity of e}
+$$
+Tags: mathematics
+<!--ID: 1690103676776-->
+END
+
 START
 Basic
 definition of [[eulers number]] $e$ as a [[series]]
@@ -108,6 +150,49 @@ $$
 
 Tags: mathematics
 <!--ID: 1689407672478-->
+END
+
+START
+Basic
+[[series]] identity of exponential [[function]] with proof
+Back: 
+
+### theorem
+$$
+e^\lambda = \sum\limits_{k=0}^\infty \frac{\lambda^k}{k!}
+$$
+### given
+$$
+\begin{split}
+\widehat{f}(x, x_0) 
+&= \sum_{n=0}^\infty 
+\frac{1}{n!}
+\left. \frac{d^n f(x)}{d^n x} \right|_{x=x_0}
+ \left(x-x_0\right)^n \\
+&= \sum_{n=0}^\infty a_n (x-x_0)^n \text{ with }a_n=\frac{1}{n!}
+\left. \frac{d^n f(x)}{d^n x} \right|_{x=x_0}
+\end{split}
+\tag{taylor series}
+$$
+
+### proof
+$$
+\begin{split}
+f(\lambda) &= e^\lambda \\
+\widehat{f}(\lambda, x_0 = 0) 
+&= \sum_{n=0}^\infty 
+\frac{1}{n!}
+\left. \frac{d^n e^\lambda}{d^n \lambda} \right|_{\lambda=0}
+ \left(\lambda-0\right)^n \\
+ &= \sum_{n=0}^\infty \frac{\lambda^n}{n!} \cdot e_0  \\
+ &= \sum_{n=0}^\infty \frac{\lambda^n}{n!}   \\
+\end{split}
+$$
+
+
+
+Tags: mathematics
+<!--ID: 1690103676779-->
 END
 
 

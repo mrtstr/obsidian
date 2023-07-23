@@ -8,7 +8,7 @@ $$
 $$
 
 ## Calculating the [[moments|raw moments]] $\mathbb{E}\left[X^k\right]$
-![[eulers number]]
+![[eulers number#series identity of exponential function]]
 
 $$
 \begin{split}

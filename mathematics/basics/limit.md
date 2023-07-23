@@ -1,30 +1,55 @@
-https://proofwiki.org/wiki/Combination_Theorem_for_Sequences
-
-- Behavour of a [[function]] near a paticular input
+Behavour of a [[function]] near a paticular input
 
 $$
 \lim_{x \rightarrow \infty} f(x)
 $$
 ## properties
-Law of Addition: limx→a[f(x)+g(x)]=limx→af(x)+limx→ag(x)
+### [[addition]]
+$$
+\lim_{x \rightarrow a} \left[f(x) + g(x)\right] = \lim_{x \rightarrow a} f(x) + \lim_{x \rightarrow a} g(x)
+$$
 
--   Law of Subtraction: limx→a[f(x)−g(x)]=limx→af(x)−limx→ag(x)
+### [[substraction]]
+$$
+\lim_{x \rightarrow a} \left[f(x) - g(x)\right] = \lim_{x \rightarrow a} f(x) - \lim_{x \rightarrow a} g(x)
+$$
 
--   Law of Multiplication: limx→a[f(x)⋅g(x)]=limx→af(x)⋅limx→ag(x)
+### [[multiplication]]
+$$
+\lim_{x \rightarrow a} \left[f(x) \cdot g(x)\right] = \lim_{x \rightarrow a} f(x) \cdot \lim_{x \rightarrow a} g(x)
+$$
+### [[division]]
+$$
+\lim_{x \rightarrow a} \left[ \frac{f(x)}{g(x)} \right] = \frac{\lim_{x \rightarrow a} f(x)}{\lim_{x \rightarrow a} g(x)} 
+$$
 
--   Law of Division: limx→a[f(x)g(x)]=limx→af(x)limx→ag(x), where limx→ag(x)≠0
+# anki
+START
+Basic
+[[limit]] definition plus basic properties(4)
+Back: 
+Behavour of a [[function]] near a paticular input
 
--   Law of Power: limx→ac=c
+$$
+\lim_{x \rightarrow \infty} f(x)
+$$
+## properties
+### [[addition]]
+$$
+\lim_{x \rightarrow a} \left[f(x) + g(x)\right] = \lim_{x \rightarrow a} f(x) + \lim_{x \rightarrow a} g(x)
+$$
 
-### Special Rules:
+### [[substraction]]
+$$
+\lim_{x \rightarrow a} \left[f(x) - g(x)\right] = \lim_{x \rightarrow a} f(x) - \lim_{x \rightarrow a} g(x)
+$$
 
-1. limx→axn−anx−a=na(n−1)
+### [[multiplication]]
+$$
+\lim_{x \rightarrow a} \left[f(x) \cdot g(x)\right] = \lim_{x \rightarrow a} f(x) \cdot \lim_{x \rightarrow a} g(x)
+$$
+### [[division]]
 
-, for all real values of n.  
-2. limθ→0sinθθ=1  
-3. limθ→0tanθθ=1  
-4. limθ→01−cosθθ=0  
-5. limθ→0cosθ=1  [[sine]]
-6. limx→0ex=1  
-7. limx→0ex−1x=1  
-8. limx→∞(1+1x)x=e ￼￼eulers number￼
+Tags: mathematics
+<!--ID: 1690103676771-->
+END
