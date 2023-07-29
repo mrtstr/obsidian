@@ -28,6 +28,7 @@ f(x) = log(x)
 
 # Properties
 ## [[addition]] inside a [[logarithm]]
+### theorem
 $$
 \begin{split}
 log_b(x \cdot y) = log_b(x) + log_b(y)
@@ -43,6 +44,7 @@ log_b(nm) &= log_b\left(b^{x + y}\right) = x+y = log_n(n)+log_n(m) \\
 \end{split}
 $$
 ## [[substraction]] inside a [[logarithm]]
+### theorem
 $$
 \begin{split}
 log_b\left(\frac{x}{y}\right) = log_b(x) - log_b(y)
@@ -58,6 +60,7 @@ log_b\left(\frac{n}{m}\right) &= log_b\left(b^{x - y}\right) = x-y = log_n(n)-lo
 \end{split}
 $$
 ## [[exponential]] inside a [[logarithm]]
+### theorem
 
 $$
 \begin{split}
@@ -73,6 +76,7 @@ log_b\left(x^y\right) &= log_b\left(\left(b^k\right)^y\right) =  log_b\left(b^{k
 \end{split}
 $$
 ## basis transformation
+### theorem
 $$
 \begin{split}
 log_b(x) = \frac{log_a(x)}{log_a(b)}
