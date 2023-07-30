@@ -914,7 +914,7 @@
     "mathematics/basics/linearity of the derivative.md": "328b3d095fa73def8aaedf1bba539726",
     "mathematics/basics/inverse rule of derivative.md": "7dbb4994af0c0c9f18472d107470b7a2",
     "mathematics/basics/chain rule of derivative.md": "fc3d434394882e8bc5d38cde94be16f6",
-    "mathematics/basics/product rule of derivative.md": "6a5fab4d1f020caab00a1a91ff4ebb88",
+    "mathematics/basics/product rule of derivative.md": "58ad4558b9cf604eaf32a4dc71141f17",
     "mathematics/basics/derivative.md": "e6658b33b5b63089cab78f18c679cdc9",
     "mathematics/basics/induction proof.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/power rule for derivative.md": "8d2ee3aa1c22d99c4369df84b5c283bf",
@@ -938,7 +938,8 @@
     "mathematics/basics/power series.md": "1d429c104b86317719dbc2ea0f265c57",
     "mathematics/basics/taylor series.md": "b9b3f2c53970660435c1e0574f962346",
     "mathematics/basics/analytic function.md": "bf20bbf4bca19f1d85b579f0dbfd3e4b",
-    "mathematics/basics/derivative logarithms.md": "6e900cda516adca156bbc410f03c1486"
+    "mathematics/basics/derivative logarithms.md": "727af8fc296fd051d7ed0f56c0cc94df",
+    "mathematics/basics/lhospital rule.md": "e398f8efe08d5e24b0c9da05c1a1465e"
   },
   "fields_dict": {
     "Basic": [

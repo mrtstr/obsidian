@@ -21,7 +21,17 @@ f(x+h) \left(g(x+h) - g(x)\right) + g(x) \left(f(x+h) - g(x)\right)
 &=  \frac{df(x)}{dx} g(x) + \frac{dg(x)}{dx}f(x) 
 \end{split}
 $$
+##  Leibniz rule
+generalizing the [[product rule of derivative]] for [[derivative]] of higher order
 
+### theorem
+$$
+\begin{split}
+\frac{d^n\left(f(x) \cdot g(x)\right)}{d^nx} 
+&= \sum_{k=0}^n {n \choose k} \frac{d^{n-k}f(x)}{d^{n-k}x} \frac{d^{k}f(x)}{d^{k}x} \\
+
+\end{split}
+$$
 # anki
 START
 Basic
@@ -55,4 +65,20 @@ $$
 
 Tags: mathematics
 <!--ID: 1686036924127-->
+END
+
+
+START
+Basic
+[[product rule of derivative]] for [[derivative]] of higher order $\frac{d^n\left(f(x) \cdot g(x)\right)}{d^nx}$ 
+
+Back: 
+$$
+\begin{split}
+\frac{d^n\left(f(x) \cdot g(x)\right)}{d^nx} 
+&= \sum_{k=0}^n {n \choose k} \frac{d^{n-k}f(x)}{d^{n-k}x} \frac{d^{k}f(x)}{d^{k}x} \\
+\end{split}
+$$
+Tags: mathematics
+<!--ID: 1690697790749-->
 END
