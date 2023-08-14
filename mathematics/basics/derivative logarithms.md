@@ -117,7 +117,7 @@ $$
 \frac{d\log_b(ax)}{dx} 
 &= \frac{d\frac{\ln(ax)}{\ln(b)}}{dx}  \\
 &= \frac{1}{\ln(b)} \frac{d\ln(ax)}{dx}  \\
-&= \frac{1}{\ln(b)} \frac{1}{ax}  \\
+&= \frac{1}{\ln(b)} \frac{1}{x}  \\
 
 \end{split}
 $$
@@ -125,12 +125,13 @@ $$
 $$
 \begin{split}
 \frac{d\ln(ax)}{dx} 
-&= \lim_{h \rightarrow 0} \frac{\ln(ax+h) - \ln(ax)}{h} \\
-&= \lim_{h \rightarrow 0} \frac{\ln\left(\frac{ax+h}{ax}\right)}{h} \\
-&= \lim_{h \rightarrow 0} \frac{\ln\left(1 + \frac{h}{ax}\right)}{h} \\
-&= \lim_{t \rightarrow 0} \frac{\ln\left(1 + t\right)}{t \cdot ax} \quad with \quad t=\frac{h}{ax} \\
-&= \frac{1}{ax} \lim_{t \rightarrow 0} \frac{\ln\left(1 + t\right)}{t \cdot ax}  \\
-&= \frac{1}{ax}  \\
+&= \lim_{h \rightarrow 0} \frac{\ln\left(a(x+h)\right) - \ln(ax)}{h} \\
+&= \lim_{h \rightarrow 0} \frac{\ln\left(\frac{a(x+h)}{ax}\right)}{h} \\
+&= \lim_{h \rightarrow 0} \frac{\ln\left(\frac{x+h}{x}\right)}{h} \\
+&= \lim_{h \rightarrow 0} \frac{\ln\left(1 + \frac{h}{x}\right)}{h} \\
+&= \lim_{t \rightarrow 0} \frac{\ln\left(1 + t\right)}{t \cdot ax} \quad with \quad t=\frac{h}{x} \\
+&= \frac{1}{x} \lim_{t \rightarrow 0} \frac{\ln\left(1 + t\right)}{t \cdot x}  \\
+&= \frac{1}{x}  \\
 \end{split}
 $$
 Tags: mathematics
@@ -176,12 +177,13 @@ $$
 $$
 \begin{split}
 \frac{d\ln(ax)}{dx} 
-&= \lim_{h \rightarrow 0} \frac{\ln(ax+h) - \ln(ax)}{h} \\
-&= \lim_{h \rightarrow 0} \frac{\ln\left(\frac{ax+h}{ax}\right)}{h} \\
-&= \lim_{h \rightarrow 0} \frac{\ln\left(1 + \frac{h}{ax}\right)}{h} \\
-&= \lim_{t \rightarrow 0} \frac{\ln\left(1 + t\right)}{t \cdot ax} \quad with \quad t=\frac{h}{ax} \\
-&= \frac{1}{ax} \lim_{t \rightarrow 0} \frac{\ln\left(1 + t\right)}{t \cdot ax}  \\
-&= \frac{1}{ax}  \\
+&= \lim_{h \rightarrow 0} \frac{\ln\left(a(x+h)\right) - \ln(ax)}{h} \\
+&= \lim_{h \rightarrow 0} \frac{\ln\left(\frac{a(x+h)}{ax}\right)}{h} \\
+&= \lim_{h \rightarrow 0} \frac{\ln\left(\frac{x+h}{x}\right)}{h} \\
+&= \lim_{h \rightarrow 0} \frac{\ln\left(1 + \frac{h}{x}\right)}{h} \\
+&= \lim_{t \rightarrow 0} \frac{\ln\left(1 + t\right)}{t \cdot ax} \quad with \quad t=\frac{h}{x} \\
+&= \frac{1}{x} \lim_{t \rightarrow 0} \frac{\ln\left(1 + t\right)}{t \cdot x}  \\
+&= \frac{1}{x}  \\
 \end{split}
 $$
 
@@ -212,12 +214,13 @@ $$
 $$
 \begin{split}
 \frac{d\ln(ax)}{dx} 
-&= \lim_{h \rightarrow 0} \frac{\ln(ax+h) - \ln(ax)}{h} \\
-&= \lim_{h \rightarrow 0} \frac{\ln\left(\frac{ax+h}{ax}\right)}{h} \\
-&= \lim_{h \rightarrow 0} \frac{\ln\left(1 + \frac{h}{ax}\right)}{h} \\
-&= \lim_{t \rightarrow 0} \frac{\ln\left(1 + t\right)}{t \cdot ax} \quad with \quad t=\frac{h}{ax} \\
-&= \frac{1}{ax} \lim_{t \rightarrow 0} \frac{\ln\left(1 + t\right)}{t \cdot ax}  \\
-&= \frac{1}{ax}  \\
+&= \lim_{h \rightarrow 0} \frac{\ln\left(a(x+h)\right) - \ln(ax)}{h} \\
+&= \lim_{h \rightarrow 0} \frac{\ln\left(\frac{a(x+h)}{ax}\right)}{h} \\
+&= \lim_{h \rightarrow 0} \frac{\ln\left(\frac{x+h}{x}\right)}{h} \\
+&= \lim_{h \rightarrow 0} \frac{\ln\left(1 + \frac{h}{x}\right)}{h} \\
+&= \lim_{t \rightarrow 0} \frac{\ln\left(1 + t\right)}{t \cdot ax} \quad with \quad t=\frac{h}{x} \\
+&= \frac{1}{x} \lim_{t \rightarrow 0} \frac{\ln\left(1 + t\right)}{t \cdot x}  \\
+&= \frac{1}{x}  \\
 \end{split}
 $$
 Tags: mathematics
