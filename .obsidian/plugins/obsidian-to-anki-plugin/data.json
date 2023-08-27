@@ -939,7 +939,10 @@
     "mathematics/basics/taylor series.md": "b9b3f2c53970660435c1e0574f962346",
     "mathematics/basics/analytic function.md": "bf20bbf4bca19f1d85b579f0dbfd3e4b",
     "mathematics/basics/derivative logarithms.md": "f230b23f850d98ba9789f1df5cefb54b",
-    "mathematics/basics/lhospital rule.md": "e398f8efe08d5e24b0c9da05c1a1465e"
+    "mathematics/basics/lhospital rule.md": "e398f8efe08d5e24b0c9da05c1a1465e",
+    "mathematics/basics/function domain.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/continouse function.md": "7758017402bd31e584a9df089584081a",
+    "mathematics/basics/integral.md": "760793549fd15e4081497c6ce046b125"
   },
   "fields_dict": {
     "Basic": [
