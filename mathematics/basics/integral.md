@@ -6,27 +6,17 @@ The **infinit [[integral]]** is defined as the [[inverse function|inverse]] of t
 
 ![[derivative#definition derivative]]
 
-### infinite [[integral]] is an [[inverse function|inverse]] [[derivative]]
-let $f$ be a [[continouse function]] defined for a [[function domain|domain]] $[a,b]$ then the following is true for every value $x \in [a,b]$. Let the [[function]] $F$ be defined as follows. 
+## Infinite [[integral]] is an [[inverse function|inverse]] [[derivative]]
+Let $f(x)=\frac{dF(x)}{dx}$ be a [[continouse function]] defined for a [[function domain|domain]] $[a,b]$ that is the [[derivative]] of a [[function]] $F$. Since the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]] it is defined as follows:
+
 $$
 \begin{split}
 F(x) &= \int_a^x f(t) dt \\
 \end{split}
 $$
-Then the following is true for every value $x \in [a,b]$. Thus, the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]].
-$$
-\begin{split}
-\frac{dF(x)}{dx} = f(x)  
-\end{split}
-$$
 
-### definit [[integral]]
-Let $f$ be the [[derivative]] of a [[continouse function]] $F$ on the interval $[a,b]$.
-$$
-\begin{split}
-f(x) =&  \frac{dF(x)}{dx} \\
-\end{split}
-$$
+
+## definit [[integral]]
  For $a_1,b_1$ with $a < a_1 < b_1 < b$ the **definit [[integral]]** is defined as follows.
 $$
 \begin{split}
@@ -53,7 +43,7 @@ $$
 $$
 
 
-
+[[integration by parts]]
 # anki
 START
 Basic
@@ -68,6 +58,23 @@ The [[integral]] can be interpreted as
 
 The **infinit [[integral]]** is defined as the [[inverse function|inverse]] of the [[derivative]] while the **definit [[integral]]** is defined as a signed area under a [[continouse function]]
 
+## Infinite [[integral]] is an [[inverse function|inverse]] [[derivative]]
+Let $f(x)=\frac{dF(x)}{dx}$ be a [[continouse function]] defined for a [[function domain|domain]] $[a,b]$ that is the [[derivative]] of a [[function]] $F$. Since the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]] it is defined as follows:
+
+$$
+\begin{split}
+F(x) &= \int_a^x f(t) dt \\
+\end{split}
+$$
+
+
+## definit [[integral]]
+ For $a_1,b_1$ with $a < a_1 < b_1 < b$ the **definit [[integral]]** is defined as follows.
+$$
+\begin{split}
+\int_{a_1}^{b_1} f(x) dx &= F(b_1) - F(a_1)
+\end{split}
+$$
 Tags: mathematics
 <!--ID: 1693125425154-->
 END
@@ -75,7 +82,8 @@ END
 START
 Basic
 Definition **infinit [[integral]]** and **definit [[integral]]**
-
+- definition
+- proof for **definit [[integral]]**
 Back: 
 The [[integral]] can be interpreted as 
 - a continuous [[sum]] of a [[function]]
@@ -85,27 +93,17 @@ The **infinit [[integral]]** is defined as the [[inverse function|inverse]] of t
 
 
 
-### infinite [[integral]] is an [[inverse function|inverse]] [[derivative]]
-let $f$ be a [[continouse function]] defined for a [[function domain|domain]] $[a,b]$ then the following is true for every value $x \in [a,b]$. Let the [[function]] $F$ be defined as follows. 
+## Infinite [[integral]] is an [[inverse function|inverse]] [[derivative]]
+Let $f(x)=\frac{dF(x)}{dx}$ be a [[continouse function]] defined for a [[function domain|domain]] $[a,b]$ that is the [[derivative]] of a [[function]] $F$. Since the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]] it is defined as follows:
+
 $$
 \begin{split}
 F(x) &= \int_a^x f(t) dt \\
 \end{split}
 $$
-Then the following is true for every value $x \in [a,b]$. Thus, the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]].
-$$
-\begin{split}
-\frac{dF(x)}{dx} = f(x)  
-\end{split}
-$$
 
-### definit [[integral]]
-Let $f$ be the [[derivative]] of a [[continouse function]] $F$ on the interval $[a,b]$.
-$$
-\begin{split}
-f(x) =&  \frac{dF(x)}{dx} \\
-\end{split}
-$$
+
+## definit [[integral]]
  For $a_1,b_1$ with $a < a_1 < b_1 < b$ the **definit [[integral]]** is defined as follows.
 $$
 \begin{split}
