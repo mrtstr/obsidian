@@ -943,7 +943,8 @@
     "mathematics/basics/function domain.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/continouse function.md": "7758017402bd31e584a9df089584081a",
     "mathematics/basics/integral.md": "3fba4c17c1b9b7c519ce83320e6074b1",
-    "mathematics/basics/integration by parts.md": "d4d261e75b5d5f47945f6484417f9114"
+    "mathematics/basics/integration by parts.md": "d4d261e75b5d5f47945f6484417f9114",
+    "mathematics/basics/integration by substitution.md": "206a51e0535bb7486f94f33b5c32366b"
   },
   "fields_dict": {
     "Basic": [
