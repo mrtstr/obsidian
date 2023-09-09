@@ -3,8 +3,7 @@
 - the [[integration by parts]] rule for the [[integral]] is the equivalent of the [[product rule of derivative]]
 - used to calculate the [[integral]] of [[function]] that is a [[sum]] of two [[function|functions]]
 
-
-### theorem
+### theorem [[integration by parts]]
 
 $$
 \begin{split}
