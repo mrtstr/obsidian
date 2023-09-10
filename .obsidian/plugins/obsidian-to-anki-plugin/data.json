@@ -118,7 +118,8 @@
     "1680838682257.jpg",
     "Screenshot from 2023-04-09 20-11-37.png",
     "Screenshot from 2023-04-23 10-43-21.png",
-    "Screenshot from 2023-04-29 10-06-28.png"
+    "Screenshot from 2023-04-29 10-06-28.png",
+    "mean_value_theorem.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -942,9 +943,10 @@
     "mathematics/basics/lhospital rule.md": "e398f8efe08d5e24b0c9da05c1a1465e",
     "mathematics/basics/function domain.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/continouse function.md": "7758017402bd31e584a9df089584081a",
-    "mathematics/basics/integral.md": "d2df83a2f96fa09767ff93a1d28fd479",
+    "mathematics/basics/integral.md": "e8b02a74fd1fdbf3388ff3c60058ec74",
     "mathematics/basics/integration by parts.md": "acb1e1627b3897c5453050967f97a2f6",
-    "mathematics/basics/integration by substitution.md": "a36116b591b6fb0ea3375742c6e857e8"
+    "mathematics/basics/integration by substitution.md": "a36116b591b6fb0ea3375742c6e857e8",
+    "mathematics/basics/mean value theorem.md": "a2cf77464cae0b87128c7505e283e066"
   },
   "fields_dict": {
     "Basic": [

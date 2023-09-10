@@ -48,11 +48,82 @@ $$
 &= F(b_1) - F(a_1)
 \end{split}
 $$
-
+## theorems
 
 ![[integration by parts#theorem integration by parts]]
 
 ![[integration by substitution#theorem integration by substitution]]
+
+## examples
+$$
+\begin{split}
+\int x^n dx = \frac{x^{n+1}}{n+1}+C
+\end{split}
+$$
+$$
+\begin{split}
+\int \left(ax + b\right)^n dx 
+&= \int \overbrace{1}^{\frac{dg(x)}{dx}} \cdot \overbrace{\left(ax + b\right)^n}^{f\left(g(x)\right)} dx  \\
+&= \left. \int t^n dx \right|_{t=ax + b}   \\
+&= \left. \frac{t^{n+1}}{n+1}\right|_{t=ax + b}  +C   \\
+&= \frac{\left(ax + b\right)^{n+1}}{n+1}+C \\
+\end{split}
+$$
+$$
+\begin{split}
+\int \frac{1}{x} dx = \ln(|x|)+C
+\end{split}
+$$
+TODO add calculcation
+$$
+\begin{split}
+\int a^x dx = \frac{a^{|x|}}{\ln(|x|)}+C
+\end{split}
+$$
+TODO add calculcation
+$$
+\begin{split}
+\int e^{ax} dx 
+&= \frac{1}{a} \int \overbrace{a}^{\frac{dg(x)}{dx}} \cdot \overbrace{e^{ax}}^{f\left(g(x)\right)} dx  \\
+&= \frac{1}{a} \left.\int e^{t} dt \right|_{t=ax} \\
+&= \frac{1}{a} \left.e^{t}  \right|_{t=ax} +C \\
+&= \frac{1}{a} \left.e^{t}  \right|_{t=} +C \\
+&= \frac{e^{ax}}{a} +C  \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\int \frac{dg(x)}{dx} e^{g(x)} dx 
+&= \left.\int e^{t} dt \right|_{t=g(x)} \\
+&= \left.e^{t}  \right|_{t=g(x)} +C \\
+&= e^{g(x)} +C  \\
+\end{split}
+$$
+$$
+\begin{split}
+\int \ln(x) dx 
+&= \int \overbrace{1}^{\frac{dg(x)}{dx}} \cdot \overbrace{\ln(x)}^{f(x)} dx  \\
+&= f(x)g(x) - \int g(x) \cdot \frac{df(x)}{dx} dx  \\
+&= x \ln(x) - \int x \cdot \frac{1}{x} dx  \\
+&= x \ln(x) - x \\
+&= x \left(\ln(x) - 1\right) \\
+\end{split}
+$$
+$$
+\begin{split}
+\int \log_a(x) dx 
+&= \int \frac{\ln(x)}{\ln(a)} dx   \\
+&= \frac{1}{\ln(a)} \int \ln(x) dx   \\
+&= \frac{1}{\ln(a)} \int \overbrace{1}^{\frac{dg(x)}{dx}} \cdot \overbrace{\ln(x)}^{f(x)} dx  \\
+
+&= \frac{1}{\ln(a)} \left(f(x)g(x) - \int g(x) \cdot \frac{df(x)}{dx} dx \right)  \\
+&= \frac{1}{\ln(a)} \left( x \ln(x) - \int x \cdot \frac{1}{x} dx \right)  \\
+&=\frac{1}{\ln(a)} \left( x \ln(x) - x \right) \\
+&= \frac{x}{\ln(a)} \left(\ln(x) - 1\right) \\
+\end{split}
+$$
+
 
 # anki
 START
@@ -229,4 +300,156 @@ $$
 
 Tags: mathematics
 <!--ID: 1693125425158-->
+END
+
+
+START
+Basic
+
+$$
+\begin{split}
+\int x^n dx
+\end{split}
+$$
+$$
+\begin{split}
+\int \left(ax + b\right)^n dx 
+\end{split}
+$$
+
+Back: 
+
+$$
+\begin{split}
+\int x^n dx = \frac{x^{n+1}}{n+1}+C
+\end{split}
+$$
+$$
+\begin{split}
+\int \left(ax + b\right)^n dx 
+&= \int \overbrace{1}^{\frac{dg(x)}{dx}} \cdot \overbrace{\left(ax + b\right)^n}^{f\left(g(x)\right)} dx  \\
+&= \left. \int t^n dx \right|_{t=ax + b}   \\
+&= \left. \frac{t^{n+1}}{n+1}\right|_{t=ax + b}  +C   \\
+&= \frac{\left(ax + b\right)^{n+1}}{n+1}+C \\
+\end{split}
+$$
+
+Tags: mathematics
+<!--ID: 1694332221729-->
+END
+
+
+START
+Basic
+$$
+\begin{split}
+\int \frac{1}{x} dx
+\end{split}
+$$
+
+$$
+\begin{split}
+\int a^x dx 
+\end{split}
+$$
+Back: 
+
+$$
+\begin{split}
+\int \frac{1}{x} dx = \ln(|x|)+C
+\end{split}
+$$
+
+$$
+\begin{split}
+\int a^x dx = \frac{a^{|x|}}{\ln(|x|)}+C
+\end{split}
+$$
+
+Tags: mathematics
+<!--ID: 1694332221733-->
+END
+
+
+START
+Basic
+$$
+\begin{split}
+\int e^{ax} dx 
+\end{split}
+$$
+$$
+\begin{split}
+\int \frac{dg(x)}{dx} e^{g(x)} dx 
+\end{split}
+$$
+
+Back: 
+
+$$
+\begin{split}
+\int e^{ax} dx 
+&= \frac{1}{a} \int \overbrace{a}^{\frac{dg(x)}{dx}} \cdot \overbrace{e^{ax}}^{f\left(g(x)\right)} dx  \\
+&= \frac{1}{a} \left.\int e^{t} dt \right|_{t=ax} \\
+&= \frac{1}{a} \left.e^{t}  \right|_{t=ax} +C \\
+&= \frac{1}{a} \left.e^{t}  \right|_{t=} +C \\
+&= \frac{e^{ax}}{a} +C  \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\int \frac{dg(x)}{dx} e^{g(x)} dx 
+&= \left.\int e^{t} dt \right|_{t=g(x)} \\
+&= \left.e^{t}  \right|_{t=g(x)} +C \\
+&= e^{g(x)} +C  \\
+\end{split}
+$$
+
+Tags: mathematics
+<!--ID: 1694332221736-->
+END
+
+
+START
+Basic
+
+$$
+\begin{split}
+\int \ln(x) dx 
+\end{split}
+$$
+$$
+\begin{split}
+\int \log_a(x) dx 
+\end{split}
+$$
+
+Back: 
+$$
+\begin{split}
+\int \ln(x) dx 
+&= \int \overbrace{1}^{\frac{dg(x)}{dx}} \cdot \overbrace{\ln(x)}^{f(x)} dx  \\
+&= f(x)g(x) - \int g(x) \cdot \frac{df(x)}{dx} dx  \\
+&= x \ln(x) - \int x \cdot \frac{1}{x} dx  \\
+&= x \ln(x) - x \\
+&= x \left(\ln(x) - 1\right) \\
+\end{split}
+$$
+$$
+\begin{split}
+\int \log_a(x) dx 
+&= \int \frac{\ln(x)}{\ln(a)} dx   \\
+&= \frac{1}{\ln(a)} \int \ln(x) dx   \\
+&= \frac{1}{\ln(a)} \int \overbrace{1}^{\frac{dg(x)}{dx}} \cdot \overbrace{\ln(x)}^{f(x)} dx  \\
+
+&= \frac{1}{\ln(a)} \left(f(x)g(x) - \int g(x) \cdot \frac{df(x)}{dx} dx \right)  \\
+&= \frac{1}{\ln(a)} \left( x \ln(x) - \int x \cdot \frac{1}{x} dx \right)  \\
+&=\frac{1}{\ln(a)} \left( x \ln(x) - x \right) \\
+&= \frac{x}{\ln(a)} \left(\ln(x) - 1\right) \\
+\end{split}
+$$
+
+Tags: mathematics
+<!--ID: 1694332221740-->
 END
