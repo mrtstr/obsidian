@@ -848,7 +848,7 @@
     "mathematics/stochastics/examples/substraction of binomial random variables.md": "3b3109edc9184c78bc203093e36b98d3",
     "mathematics/stochastics/sprecial distributions/discrete/poission binomial distribution.md": "b078d5c4ec431184e5efd4df66626a46",
     "mathematics/linear algebra/zero matrix.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/linear algebra/vector.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/linear algebra/vector.md": "2788c902a8e4aa3bb2d2f4c73c78ba83",
     "mathematics/linear algebra/vector norm.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/vecor space.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/triangular matrix.md": "e0f31fd77c3e16c10ff03932f48078d2",
@@ -946,7 +946,9 @@
     "mathematics/basics/integral.md": "e8b02a74fd1fdbf3388ff3c60058ec74",
     "mathematics/basics/integration by parts.md": "acb1e1627b3897c5453050967f97a2f6",
     "mathematics/basics/integration by substitution.md": "a36116b591b6fb0ea3375742c6e857e8",
-    "mathematics/basics/mean value theorem.md": "a2cf77464cae0b87128c7505e283e066"
+    "mathematics/basics/mean value theorem.md": "a2cf77464cae0b87128c7505e283e066",
+    "mathematics/linear algebra/linear equation.md": "6c9e1bbce31bbfd118b54d109b6913e0",
+    "mathematics/basics/closure.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [
