@@ -4,13 +4,14 @@ For a [[matrix]] $A$ with the column vectors $A^{(j)}$ and the represented linea
 $$F(x) = Ax: \mathbb{R}^{\left| \mathcal{J} \right|} \mapsto Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$$
 ## Definition
 
-- The [[rank]] is equal to the number of [[linear independent]] columns vectors $A^{(j)}$
-- The [[rank]] is equal to the number of [[linear independent]] row vectors $A_{(i)}$
+- The [[rank]] is equal to the number of [[linear independent]] columns vectors $A_{(*,j)}$
+- The [[rank]] is equal to the number of [[linear independent]] row vectors $A_{(i,*)}$
 - The [[rank]] is equal to the dimensions of the [[column space]]
 $$
 rank(A) = dim(range(A))
 $$
 - the [[rank]] is equal to the total number of column vectors $\left| \mathcal{J} \right|$ minus the [[nullity]]
+
 $$
 \underbrace{
 rank(A)
@@ -26,7 +27,7 @@ nullity(A)
 $$
 
 
-
+# Anki
 
 
 
