@@ -871,7 +871,7 @@
     "mathematics/linear algebra/projection matrix.md": "631c6f4a941bdcb0d04c41b4658c4c4d",
     "mathematics/linear algebra/orthonormal.md": "4c80e6196aee5227752a4c93bcb61d4c",
     "mathematics/linear algebra/orthogonal.md": "4ebd6f3f7c4bc1917c15efddf302662c",
-    "mathematics/linear algebra/orthogonal matrix.md": "e0f31fd77c3e16c10ff03932f48078d2",
+    "mathematics/linear algebra/orthogonal matrix.md": "0afecbe36f872507b6203be16e79391a",
     "mathematics/linear algebra/nullspace.md": "5d3c3965f79a668bb23a83e29d7fc1c8",
     "mathematics/linear algebra/nullity.md": "fac51e65d649c61be25e2eb00e83d6f1",
     "mathematics/linear algebra/normalized.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -949,7 +949,8 @@
     "mathematics/basics/mean value theorem.md": "a2cf77464cae0b87128c7505e283e066",
     "mathematics/linear algebra/linear equation.md": "6c9e1bbce31bbfd118b54d109b6913e0",
     "mathematics/basics/closure.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/linear algebra/linear equation system.md": "665f9d273af00a4fa5358fe86be95e64"
+    "mathematics/linear algebra/linear equation system.md": "665f9d273af00a4fa5358fe86be95e64",
+    "mathematics/linear algebra/permutation matrix.md": "6e550528c4e05edcfdf8920e05f438a4"
   },
   "fields_dict": {
     "Basic": [

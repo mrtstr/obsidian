@@ -1,1 +1,1 @@
-[[matrix]]
+[[matrix]] $Q \in \mathbb{R}^{n \times n}$ with a [[transpose]] is equal to its [[inverse matrix]]  $Q^{-1}=Q^{T}$ 
