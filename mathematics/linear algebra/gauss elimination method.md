@@ -1,0 +1,1 @@
+method for transforming a [[matrix]] in its [[row echelon form]]

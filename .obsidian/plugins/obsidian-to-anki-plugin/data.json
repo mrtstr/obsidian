@@ -119,7 +119,8 @@
     "Screenshot from 2023-04-09 20-11-37.png",
     "Screenshot from 2023-04-23 10-43-21.png",
     "Screenshot from 2023-04-29 10-06-28.png",
-    "mean_value_theorem.png"
+    "mean_value_theorem.png",
+    "orthogonal matrix"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -851,7 +852,7 @@
     "mathematics/linear algebra/vector.md": "2788c902a8e4aa3bb2d2f4c73c78ba83",
     "mathematics/linear algebra/vector norm.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/vecor space.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/linear algebra/triangular matrix.md": "e0f31fd77c3e16c10ff03932f48078d2",
+    "mathematics/linear algebra/triangular matrix.md": "66a5c6d1090ad1ba72003e921ce8da62",
     "mathematics/linear algebra/transpose.md": "38d0bc1fb7a97c30ed137e89990999e2",
     "mathematics/linear algebra/trace.md": "efdc8b09e3e155643cca8ecdb0d08a74",
     "mathematics/linear algebra/tensor.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -889,14 +890,14 @@
     "mathematics/linear algebra/hessian matrix.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/eigenvectors.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/dot product.md": "c219119e9879fc5039880663f67e30c3",
-    "mathematics/linear algebra/diagonal matrix.md": "8c8623893a009d727f171b4ddc019367",
+    "mathematics/linear algebra/diagonal matrix.md": "a82687889b5ddc5ea6be4073c33a7345",
     "mathematics/linear algebra/determinant.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/definite quadratic form.md": "6515b3ae02abcc7480abedc6bcde5e5c",
     "mathematics/linear algebra/column space.md": "21197ff17501f62deffc10e1008ed983",
     "mathematics/linear algebra/cholesky decomposition.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/basis.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/QR decomposition.md": "e0f31fd77c3e16c10ff03932f48078d2",
-    "mathematics/linear algebra/LU decomposition.md": "e0f31fd77c3e16c10ff03932f48078d2",
+    "mathematics/linear algebra/LU decomposition.md": "281c902d61789cbc3b8b77064623f714",
     "mathematics/basics/inverse elements.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/operation.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/neutral element.md": "febab43f208562ff86636eb3fa854e6e",
@@ -949,8 +950,11 @@
     "mathematics/basics/mean value theorem.md": "a2cf77464cae0b87128c7505e283e066",
     "mathematics/linear algebra/linear equation.md": "6c9e1bbce31bbfd118b54d109b6913e0",
     "mathematics/basics/closure.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/linear algebra/linear equation system.md": "665f9d273af00a4fa5358fe86be95e64",
-    "mathematics/linear algebra/permutation matrix.md": "6e550528c4e05edcfdf8920e05f438a4"
+    "mathematics/linear algebra/linear equation system.md": "8bad67f9ff3ed0b497a693e577b9d581",
+    "mathematics/linear algebra/permutation matrix.md": "c355a3efd3a42aaf4628a8a277d43694",
+    "mathematics/linear algebra/pivot.md": "684500bbcc88c9700bc204580a1fd49b",
+    "mathematics/linear algebra/row echelon form.md": "4146a0b3220f64f63bab4e79b9a56fad",
+    "mathematics/linear algebra/gauss elimination method.md": "3c5e85dd93f99055204b8f87e05bad82"
   },
   "fields_dict": {
     "Basic": [
