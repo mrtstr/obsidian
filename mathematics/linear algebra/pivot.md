@@ -2,7 +2,15 @@
 An elelemt $a_{ij}$ if m [[matrix]] $A$ is a [[pivot]] element if the following conditions are true
 1) $a_{ij} \neq 0$
 2) all elements below $a_{ij}$ are zero and all elements on the right of  $a_{ij}$ are zero $\forall k \geq i, l \leq j,(kl) \neq (ij) :a_{kl} = 0$
-
+$$
+\begin{split}
+A = \begin{pmatrix}
+a_{(1:1)} &\    a_{(1:2)}     &\ a_{(1:3)} \\
+zero         &\ p             &\ a_{(2:3)} \\
+zero		&\   zero         &\ a_{(3:3)} \\  
+\end{pmatrix}
+\end{split}
+$$
 
 ## examples
 
@@ -41,7 +49,15 @@ Back:
 An elelemt $a_{ij}$ if m [[matrix]] $A$ is a [[pivot]] element if the following conditions are true
 1) $a_{ij} \neq 0$
 2) all elements below $a_{ij}$ are zero and all elements on the right of  $a_{ij}$ are zero $\forall k \geq i, l \leq j,(kl) \neq (ij) :a_{kl} = 0$
-
+$$
+\begin{split}
+A = \begin{pmatrix}
+a_{(1:1)} &\    a_{(1:2)}     &\ a_{(1:3)} \\
+zero         &\ p             &\ a_{(2:3)} \\
+zero		&\   zero         &\ a_{(3:3)} \\  
+\end{pmatrix}
+\end{split}
+$$
 
 #### examples
 
@@ -102,7 +118,15 @@ Back:
 An elelemt $a_{ij}$ if m [[matrix]] $A$ is a [[pivot]] element if the following conditions are true
 1) $a_{ij} \neq 0$
 2) all elements below $a_{ij}$ are zero and all elements on the right of  $a_{ij}$ are zero $\forall k \geq i, l \leq j,(kl) \neq (ij) :a_{kl} = 0$
-
+$$
+\begin{split}
+A = \begin{pmatrix}
+a_{(1:1)} &\    a_{(1:2)}     &\ a_{(1:3)} \\
+zero         &\ p             &\ a_{(2:3)} \\
+zero		&\   zero         &\ a_{(3:3)} \\  
+\end{pmatrix}
+\end{split}
+$$
 
 #### examples
 
