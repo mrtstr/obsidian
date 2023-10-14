@@ -1,4 +1,5 @@
-## Definition [[pivot]]
+We row reduce A to row  
+echelon form U and,## Definition [[pivot]]
 An elelemt $a_{ij}$ if m [[matrix]] $A$ is a [[pivot]] element if the following conditions are true
 1) $a_{ij} \neq 0$
 2) all elements below $a_{ij}$ are zero and all elements on the right of  $a_{ij}$ are zero $\forall k \geq i, l \leq j,(kl) \neq (ij) :a_{kl} = 0$
