@@ -951,10 +951,13 @@
     "mathematics/linear algebra/linear equation.md": "6c9e1bbce31bbfd118b54d109b6913e0",
     "mathematics/basics/closure.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/linear equation system.md": "8bad67f9ff3ed0b497a693e577b9d581",
-    "mathematics/linear algebra/permutation matrix.md": "c355a3efd3a42aaf4628a8a277d43694",
+    "mathematics/linear algebra/permutation matrix.md": "f181e4bc39aad82209016ad38c21ea0f",
     "mathematics/linear algebra/pivot.md": "a07502b52494a34c2f4d4af55a42f314",
     "mathematics/linear algebra/row echelon form.md": "4146a0b3220f64f63bab4e79b9a56fad",
-    "mathematics/linear algebra/gauss elimination method.md": "3c5e85dd93f99055204b8f87e05bad82"
+    "mathematics/linear algebra/gauss elimination method.md": "3c5e85dd93f99055204b8f87e05bad82",
+    "PLU decomposition with permutations.md": "bc07872d105cfe59ab87bf72b56aea7c",
+    "mathematics/linear algebra/LU decomposition without permutations.md": "2c09470b8fb5aeaab58cc6c05359e660",
+    "mathematics/linear algebra/frobenius matrix.md": "4f62841fc5c66b02a6c7395bebeda676"
   },
   "fields_dict": {
     "Basic": [
