@@ -23,11 +23,11 @@ $$
 
 ![[permutation matrix#permutation matrix swaping rows and columns]]
 
-- $P_{ij} F P_{ij}$ with $i < j$ is again a [[frobenius matrix]] with the potentially non-zero elements $i$ and $j$ swiched
+- $P_{ij} F P^T_{ij}$ with $i < j$ is again a [[frobenius matrix]] with the potentially non-zero elements $i$ and $j$ swiched
 ### example
 $$
 \begin{split}
-P_{xy} F P_{xy} 
+P_{xy} F P^T_{xy} 
 &= 
 \begin{pmatrix}
 1 &\ 0 &\ 0 \\
@@ -121,7 +121,7 @@ f_{(3:1)} &\ 0 &\ 1 \\
 $$
 Back: 
 
-- $P_{ij} F P_{ij}$ with $i < j$ is again a [[frobenius matrix]] with the potentially non-zero elements $i$ and $j$ swiched
+- $P_{ij} F P^T_{ij}$ with $i < j$ is again a [[frobenius matrix]] with the potentially non-zero elements $i$ and $j$ swiched
 ### example
 $$
 \begin{split}

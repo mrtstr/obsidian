@@ -955,9 +955,9 @@
     "mathematics/linear algebra/pivot.md": "a07502b52494a34c2f4d4af55a42f314",
     "mathematics/linear algebra/row echelon form.md": "4146a0b3220f64f63bab4e79b9a56fad",
     "mathematics/linear algebra/gauss elimination method.md": "3c5e85dd93f99055204b8f87e05bad82",
-    "PLU decomposition with permutations.md": "bc07872d105cfe59ab87bf72b56aea7c",
-    "mathematics/linear algebra/LU decomposition without permutations.md": "2c09470b8fb5aeaab58cc6c05359e660",
-    "mathematics/linear algebra/frobenius matrix.md": "4f62841fc5c66b02a6c7395bebeda676"
+    "PLU decomposition with permutations.md": "b9931d97e22128f924d6a8c47115fc18",
+    "mathematics/linear algebra/LU decomposition without permutations.md": "db34589a6a0f30b8a2974080fa09fb56",
+    "mathematics/linear algebra/frobenius matrix.md": "4d2c0fd774011467cba477de48ee868c"
   },
   "fields_dict": {
     "Basic": [

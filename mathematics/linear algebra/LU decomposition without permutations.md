@@ -27,7 +27,7 @@ note: when $A \in \mathbb{R}^{n \times m}$ has a [[LU decomposition without perm
 
 ![[frobenius matrix#Definition frobenius matrix]]
 
-### reducing $A$ in a [[row echelon form]]
+###  reducing $A$ in a [[row echelon form]] by multiplying with [[frobenius matrix|frobenius matrices]]
 
 1) For reach column  $j \in [1, ..., n]$ select the [[pivot]] element $a_{i,i}$ and construct a [[frobenius matrix]] $L_i$ that makes $a_{i,i}$ to a [[pivot]] element by making all values below $a_{i,i}$ to zero. This is possible when $a_{i,i} \neq 0$, otherwise the [[LU decomposition without permutations]] is not possible (see [[PLU decomposition with permutations]]). The result of this process will be the upper [[triangular matrix]] $U = L^{(n)}L^{(n-1)}...L^{(1)}A$
 2) [[matrix product|multiply]] and [[inverse matrix|invert]] the [[frobenius matrix|frobenius matrices]] to calculcate the lower normalized [[triangular matrix]] $L = \left(L^{(n)}L^{(n-1)}...L^{(1)}\right)^{-1}$. This is easy because of the properties of normalized [[triangular matrix]]
@@ -441,7 +441,7 @@ START
 Basic
 [[LU decomposition without permutations]] without [[permutations]]: process with proofs
 Back: 
-### reducing $A$ in a [[row echelon form]]
+### reducing $A$ in a [[row echelon form]] by multiplying with [[frobenius matrix|frobenius matrices]]
 
 1) For reach column  $j \in [1, ..., n]$ select the [[pivot]] element $a_{i,i}$ and construct a [[frobenius matrix]] $L_i$ that makes $a_{i,i}$ to a [[pivot]] element by making all values below $a_{i,i}$ to zero. This is possible when $a_{i,i} \neq 0$, otherwise the [[LU decomposition without permutations]] is not possible (see [[PLU decomposition with permutations]]). The result of this process will be the upper [[triangular matrix]] $U = L^{(n)}L^{(n-1)}...L^{(1)}A$
 2) [[matrix product|multiply]] and [[inverse matrix|invert]] the [[frobenius matrix|frobenius matrices]] to calculcate the lower normalized [[triangular matrix]] $L = \left(L^{(n)}L^{(n-1)}...L^{(1)}\right)^{-1}$. This is easy because of the properties of normalized [[triangular matrix]]

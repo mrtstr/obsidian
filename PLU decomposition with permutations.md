@@ -14,6 +14,7 @@ $$
 ### existence and uniqueness
 every [[square matrix]] $A \in \mathbb{R}^{n \times n}$ has a [[LU decomposition without permutations]] with [[permutations]] but it's not unique
 
+### process [[PLU decomposition with permutations]]
 #### given
 
 ![[triangular matrix#inverse matrix inverse of a normalized triangular matrix]]
@@ -24,10 +25,23 @@ every [[square matrix]] $A \in \mathbb{R}^{n \times n}$ has a [[LU decomposition
 
 ![[frobenius matrix#Definition frobenius matrix]]
 
-### reducing $A$ in a [[row echelon form]]
+![[permutation matrix#Definition permutation matrix]]
 
-1) For reach column  $j \in [1, ..., n]$ select the [[pivot]] element $a_{i,i}$ and construct a [[frobenius matrix]] $L_i$ that makes $a_{i,i}$ to a [[pivot]] element by making all values below $a_{i,i}$ to zero. This is possible when $a_{i,i} \neq 0$, otherwise the [[LU decomposition without permutations]] without [[permutation matrix|permutations]] is not possible. The result of this process will be the upper [[triangular matrix]] $U = L^{(n)}L^{(n-1)}...L^{(1)}A$
-2) [[matrix product|multiply]] and [[inverse matrix|invert]] the [[frobenius matrix|frobenius matrices]] to calculcate the lower normalized [[triangular matrix]] $L = \left(L^{(n)}L^{(n-1)}...L^{(1)}\right)^{-1}$. This is easy because of the properties of  normalized [[triangular matrix]]
+
+
+
+#### reducing $A$ in a [[row echelon form]] by multiplying with [[permutation matrix|permutation matrices]] and [[frobenius matrix|frobenius matrices]]
+
+1) For reach column  $j \in [1, ..., n]$ we want to create a [[pivot]] element $a_{j,j}$ by construct a [[frobenius matrix]] $L_i$ that makes all values below $a_{j,j}$ to zero. In case $a_{j,j}$ is zero we construct a [[permutation matrix]] $P_i$ that is swiching $a_{j,j}$ with a non-zero element in $a_{i,j} \in \{a_{i,j} | i < j\}$.
+$$
+U = L^{(n)}P^{(n)}L^{(n-1)}P^{(n-1)}...L^{(2)}P^{(2)}L^{(1)}P^{(1)}A
+$$
+2) separate the [[frobenius matrix|frobenius matrices]] $L_i$ from the [[permutation matrix|permutation matrices]] $P_i$
+![[frobenius matrix#swiching elements with permutation matrix permutation matrices]]
+2) 
+3) 
+4) and  $a_{i,i}$ to a [[pivot]] element by making all values below $a_{i,i}$ to zero. This is possible when $a_{i,i} \neq 0$, otherwise the [[LU decomposition without permutations]] without [[permutation matrix|permutations]] is not possible. The result of this process will be the upper [[triangular matrix]] $U = L^{(n)}L^{(n-1)}...L^{(1)}A$
+5) [[matrix product|multiply]] and [[inverse matrix|invert]] the [[frobenius matrix|frobenius matrices]] to calculcate the lower normalized [[triangular matrix]] $L = \left(L^{(n)}L^{(n-1)}...L^{(1)}\right)^{-1}$. This is easy because of the properties of  normalized [[triangular matrix]]
 
 $$
 \begin{split}
@@ -81,99 +95,3 @@ U &= A^{(n)} = A^{(3)} = L^{(3)}L^{(2)}L^{(1)}A \\
 \end{split}
 $$
 
-### example [[LU decomposition without permutations]]
-
-$$
-\begin{split}
-A &= A^{(1)} = \begin{pmatrix}
-1  &\ 3 &\ -1 \\
-2  &\ 8 &\ 4 \\
--1 &\ 3 &\ 4 \\  
-\end{pmatrix} \\
-A^{(2)} = L^{(1)} A^{(1)} &= 
-\begin{pmatrix}
-1                              &\ 0         &\ 0 \\
--\frac{a^{(1)}_{(2:1)}}{a^{(1)}_{(1:1)}}   &\ 1         &\ 0 \\
--\frac{a^{(1)}_{(3:1)}}{a^{(1)}_{(1:1)}}   &\ 0         &\ 1  \\  
-\end{pmatrix} 
-\begin{pmatrix}
-1  &\ 3 &\ -1 \\
-2  &\ 8 &\ 4 \\
--1 &\ 3 &\ 4 \\  
-\end{pmatrix} \\
-&= 
-\begin{pmatrix}
-1    &\ 0     &\ 0 \\
--2   &\ 1    &\ 0 \\
-1    &\ 0     &\ 1  \\  
-\end{pmatrix} 
-\begin{pmatrix}
-1  &\ 3 &\ -1 \\
-2  &\ 8 &\ 4 \\
--1 &\ 3 &\ 4 \\  
-\end{pmatrix} \\
-&=
-\begin{pmatrix}
-1  &\ 3 &\ -1 \\
-0  &\ 2 &\ 6 \\
-0 &\ 6 &\ 3 \\  
-\end{pmatrix} \\
-
-
-
-A^{(3)} = L^{(2)} A^{(2)} &= 
-\begin{pmatrix}
-1  &\ 0        &\ 0 \\
-0  &\ 1         &\ 0 \\
-0  &\ -\frac{a^{(2)}_{(3:2)}}{a^{(2)}_{(2:2)}}        &\ 1  \\  
-\end{pmatrix} 
-\begin{pmatrix}
-1  &\ 3 &\ -1 \\
-0  &\ 2 &\ 6 \\
-0 &\ 6 &\ 3 \\  
-\end{pmatrix} \\
-&= 
-\begin{pmatrix}
-1   &\ 0     &\ 0 \\
-0   &\ 1     &\ 0 \\
-0   &\ -3    &\ 1  \\  
-\end{pmatrix} 
-\begin{pmatrix}
-1  &\ 3 &\ -1 \\
-2  &\ 8 &\ 4 \\
--1 &\ 3 &\ 4 \\  
-\end{pmatrix} \\
-&=
-\begin{pmatrix}
-1  &\ 3 &\ -1 \\
-0  &\ 2 &\ 6 \\
-0 &\ 0 &\ -15 \\  
-\end{pmatrix} \\
-U = A^{(n)} = A^{(3)} &= L^{(3)}L^{(2)}L^{(1)}A
-=
-\begin{pmatrix}
-1  &\ 3 &\ -1 \\
-0  &\ 2 &\ 6 \\
-0 &\ 0 &\ -15 \\  
-\end{pmatrix} \\
-\\
-
-
-
-\Rightarrow L = \left(L^{(3)}L^{(2)}L^{(1)}\right)^{-1} 
-&= 
-\begin{pmatrix}
-1         &\ 0&\ 0\\
--l^{(1)}_{(2:1)}         &1 &\ 0 \\
--l^{(1)}_{(3:1)}         &\ -l^{(2)}_{(3:1)}  &\ 1 \\  
-\end{pmatrix}
-= 
-\begin{pmatrix}
-1    &\ 0     &\ 0 \\
-2   &\ 1    &\ 0 \\
--1    &\ 3     &\ 1  \\ 
-\end{pmatrix} \\
-\\
-\Rightarrow A &= LU  
-\end{split}
-$$
