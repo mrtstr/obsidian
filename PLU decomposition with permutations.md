@@ -27,7 +27,7 @@ every [[square matrix]] $A \in \mathbb{R}^{n \times n}$ has a [[LU decomposition
 
 ![[permutation matrix#Definition permutation matrix]]
 
-
+![[frobenius matrix#swiching elements of frobenius matrix with permutation matrix permutation matrices]]
 
 
 #### reducing $A$ in a [[row echelon form]] by multiplying with [[permutation matrix|permutation matrices]] and [[frobenius matrix|frobenius matrices]]
@@ -37,8 +37,6 @@ $$
 U = L^{(n)}P^{(n)}L^{(n-1)}P^{(n-1)}...L^{(2)}P^{(2)}L^{(1)}P^{(1)}A
 $$
 2) separate the [[frobenius matrix|frobenius matrices]] $L_i$ from the [[permutation matrix|permutation matrices]] $P_i$
-![[frobenius matrix#swiching elements with permutation matrix permutation matrices]]
-2) 
 3) 
 4) and  $a_{i,i}$ to a [[pivot]] element by making all values below $a_{i,i}$ to zero. This is possible when $a_{i,i} \neq 0$, otherwise the [[LU decomposition without permutations]] without [[permutation matrix|permutations]] is not possible. The result of this process will be the upper [[triangular matrix]] $U = L^{(n)}L^{(n-1)}...L^{(1)}A$
 5) [[matrix product|multiply]] and [[inverse matrix|invert]] the [[frobenius matrix|frobenius matrices]] to calculcate the lower normalized [[triangular matrix]] $L = \left(L^{(n)}L^{(n-1)}...L^{(1)}\right)^{-1}$. This is easy because of the properties of  normalized [[triangular matrix]]

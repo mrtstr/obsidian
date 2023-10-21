@@ -49,6 +49,8 @@ $$
 \begin{split}
 \int_a^b f\left(g(x)\right) \frac{dg(x)}{x}dx 
 &= \int_a^b \frac{dF\left(g(x)\right)}{dx}dx \\
+&= \int_{a_0}^b \frac{dF\left(g(x)\right)}{dx}dx -\int_{a_0}^{a} \frac{dF\left(g(x)\right)}{dx}dx \\
+&= F\left(g(b)\right) - F\left(g(a_0)\right) - F\left(g(a)\right) + F\left(g(a_0)\right) \\
 &= F\left(g(b)\right) - F\left(g(a)\right) \\
 &= \int_{g(a)}^{g(b)} f\left(t\right) dt \quad \text{with} \quad t=g(x) \\
 \end{split}
@@ -165,6 +167,8 @@ $$
 \begin{split}
 \int_a^b f\left(g(x)\right) \frac{dg(x)}{x}dx 
 &= \int_a^b \frac{dF\left(g(x)\right)}{dx}dx \\
+&= \int_{a_0}^b \frac{dF\left(g(x)\right)}{dx}dx -\int_{a_0}^{a} \frac{dF\left(g(x)\right)}{dx}dx \\
+&= F\left(g(b)\right) - F\left(g(a_0)\right) - F\left(g(a)\right) + F\left(g(a_0)\right) \\
 &= F\left(g(b)\right) - F\left(g(a)\right) \\
 &= \int_{g(a)}^{g(b)} f\left(t\right) dt \quad \text{with} \quad t=g(x) \\
 \end{split}

@@ -1,4 +1,4 @@
-ank
+
 ## [[series]] definition of [[eulers number]]
 $$
 e = \sum\limits_{k=0}^\infty \frac{1}{k!}

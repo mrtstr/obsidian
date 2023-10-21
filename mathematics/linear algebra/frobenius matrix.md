@@ -19,7 +19,7 @@ F_2 = \begin{pmatrix}
 \end{split}
 $$
 
-## swiching elements with [[permutation matrix|permutation matrices]]
+## swiching elements of [[frobenius matrix]] with [[permutation matrix|permutation matrices]]
 
 ![[permutation matrix#permutation matrix swaping rows and columns]]
 

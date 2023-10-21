@@ -2,14 +2,16 @@
 
 ## [[derivative]] of the [[natural logarithm]]
 ### given
-![[natural logarithm#properties]]
+![[natural logarithm#theorem one identitiy]]
+
 ![[logarithm#theorem]]
 
 
-### theorem
+### theorem [[derivative logarithms]]
 $$
 \frac{d\ln(ax)}{dx} = \frac{1}{x}
 $$
+
 ### proof
 $$
 \begin{split}
@@ -29,7 +31,7 @@ $$
 
 ![[derivative logarithms#theorem]]
 
-### theorem
+### theorem [[derivative]] of the [[natural logarithm]] of a [[function]]
 
 $$
 \begin{split}

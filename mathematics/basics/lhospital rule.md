@@ -1,4 +1,5 @@
 [[limit]] [[derivative]]
+## [[lhospital rule]]
 
 $$
 \begin{split}

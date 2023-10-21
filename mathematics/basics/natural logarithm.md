@@ -1,11 +1,29 @@
 ## Definition
 [[logarithm]] with [[eulers number]] as the basis $\ln(x) = \log_e(x)$
 
-## properties
-proof later with [[derivative]] of [[logarithm]]
+
+## one identitiy [[natural logarithm]]
+### theorem one identitiy
 $$
 \lim_{h \rightarrow 0} \frac{\ln(1 + h)}{h} = 1
 $$
+### given
+![[lhospital rule#lhospital rule]]
+
+![[derivative logarithms#theorem]]
+
+
+### proof
+
+$$
+\begin{split}
+\lim_{h \rightarrow 0} \frac{\ln(1 + h)}{h} 
+&=  \lim_{h \rightarrow 0} \frac{\frac{d\ln(1 + h)}{dh}}{\frac{dh}{dh}} \\
+&=  \lim_{h \rightarrow 0} \frac{d\ln(1 + h)}{dh} \\
+&=  \lim_{h \rightarrow 0} \frac{1}{1 + h} = 1 \\
+\end{split}
+$$
+
 ## [[limit]] identity of the [[natural logarithm]]
 ### theorem
 $$
@@ -103,4 +121,52 @@ $$
 
 Tags: mathematics
 <!--ID: 1690016269203-->
+END
+
+
+START
+Basic
+$$
+\lim_{h \rightarrow 0} \frac{\ln(1 + h)}{h} = 
+$$
+with proof
+
+Back: 
+
+### theorem
+
+
+$$
+\lim_{h \rightarrow 0} \frac{\ln(1 + h)}{h} = 1
+$$
+### given
+[[lhospital rule]]
+$$
+\begin{split}
+\lim_{x \rightarrow c} \frac{f(x)}{g(x)} = \lim_{x \rightarrow c} \frac{\frac{df(x)}{dx}}{\frac{dg(x)}{dx}}
+\end{split}
+$$
+theorem [[derivative]] of the [[natural logarithm]] of a [[function]]
+
+$$
+\begin{split}
+\frac{d\ln\left(f(x)\right)}{dx} 
+&= \frac{1}{f(x)} \frac{df(x)}{dx}  \\
+\end{split}
+$$
+
+### proof
+
+$$
+\begin{split}
+\lim_{h \rightarrow 0} \frac{\ln(1 + h)}{h} 
+&=  \lim_{h \rightarrow 0} \frac{\frac{d\ln(1 + h)}{dh}}{\frac{dh}{dh}} \\
+&=  \lim_{h \rightarrow 0} \frac{d\ln(1 + h)}{dh} \\
+&=  \lim_{h \rightarrow 0} \frac{1}{1 + h} = 1 \\
+\end{split}
+$$
+
+
+Tags: mathematics
+<!--ID: 1697875981298-->
 END
