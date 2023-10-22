@@ -10,11 +10,47 @@ $$
 ![[triangular matrix#upper triangular matrix]]
 
 
-### existence and uniqueness
+### uniqueness
 
-- when $A \in \mathbb{R}^{n \times n}$ has a LU decomposition it is unique but not all [[square matrix|square matrices]] do have a [[LU decomposition without permutations]] without [[permutation matrix|permutations]] because the [[pivot]] element can be zero. In the case only the [[PLU decomposition with permutations]] is possible.
+- when $A \in \mathbb{R}^{n \times n}$ has a LU decomposition it is unique
+- when $A \in \mathbb{R}^{n \times m}$ has a [[LU decomposition without permutations]] it does not have to be unique but its LUD decomposition is unique
 
-note: when $A \in \mathbb{R}^{n \times m}$ has a [[LU decomposition without permutations]] it does not have to be unique but its LUD decomposition is unique
+### existence
+- not all [[square matrix|square matrices]] do have a [[LU decomposition without permutations]] without [[permutation matrix|permutations]] 
+- In the case of the [[pivot]] element being zero only the [[PLU decomposition with permutations]] is possible
+proof
+$$
+\begin{split}
+A = \begin{pmatrix}
+0         &\ 1 \\
+1        &\ 0 \\
+\end{pmatrix} 
+&=
+\begin{pmatrix}
+1         &\ 0 \\
+l        &\ 1 \\
+\end{pmatrix} 
+
+\begin{pmatrix}
+u_1      &\ u_2 \\
+0        &\ u_3 \\
+\end{pmatrix}  \\
+&=
+\begin{pmatrix}
+u_1          &\ u_2  \\
+u_1 l        &\ u_3  \\
+\end{pmatrix} \\
+\Rightarrow& u_1 = 0 \\
+\Rightarrow& u_1l = 1 \\
+\Rightarrow& 0 = 1 \\
+\end{split} 
+
+$$
+
+
+
+### [[time complexity]] of the [[LU decomposition without permutations]]
+- its $\in \mathcal{O}(n^3)$  
 
 ### process [[LU decomposition without permutations]]
 #### given
@@ -229,7 +265,12 @@ $$
 
 START
 Basic
-definition [[LU decomposition without permutations]]
+ [[LU decomposition without permutations]]
+ - definition
+ - [[time complexity]]
+ - existence
+ - uniqueness
+
 Back: 
 ## definition [[LU decomposition without permutations]]
 A [[LU decomposition without permutations]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ such that the following is true
@@ -262,7 +303,45 @@ u_{(1:1)} &\ u_{(1:2)} &\ u_{(1:3)} \\
 \end{pmatrix}
 \end{split}
 $$
+### [[time complexity]] of the [[LU decomposition without permutations]]
+- its $\in \mathcal{O}(n^3)$  
+- 
+### existence
+- not all [[square matrix|square matrices]] do have a [[LU decomposition without permutations]] without [[permutation matrix|permutations]] 
+- In the case of the [[pivot]] element being zero only the [[PLU decomposition with permutations]] is possible
+proof
+$$
+\begin{split}
+A = \begin{pmatrix}
+0         &\ 1 \\
+1        &\ 0 \\
+\end{pmatrix} 
+&=
+\begin{pmatrix}
+1         &\ 0 \\
+l        &\ 1 \\
+\end{pmatrix} 
 
+\begin{pmatrix}
+u_1      &\ u_2 \\
+0        &\ u_3 \\
+\end{pmatrix}  \\
+&=
+\begin{pmatrix}
+u_1          &\ u_2  \\
+u_1 l        &\ u_3  \\
+\end{pmatrix} \\
+\Rightarrow& u_1 = 0 \\
+\Rightarrow& u_1l = 1 \\
+\Rightarrow& 0 = 1 \\
+\end{split} 
+
+$$
+
+
+### uniqueness
+- when $A \in \mathbb{R}^{n \times n}$ has a LU decomposition it is unique
+- when $A \in \mathbb{R}^{n \times m}$ has a [[LU decomposition without permutations]] it does not have to be unique but its LUD decomposition is unique
 
 Tags: mathematics linear_algebra
 <!--ID: 1696752218858-->
@@ -278,6 +357,7 @@ A LUD decomposition of $A \in \mathbb{R}^{n \times n}$ if a factorization in a n
 $$
 A = LDU
 $$
+
 
 
 #### normalized lower triangular matrix 
