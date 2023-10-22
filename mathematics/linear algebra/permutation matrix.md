@@ -23,17 +23,11 @@ $$
 \end{split}
 $$
 
-## [[permutation matrix]] swaping rows and columns
-$$
-\begin{split}
-&P_{xy} \text{ with} \\ 
-&p_{xy}=p_{yx}=1 \\
-&\forall i \neq x, y: p_{ii}=1  \\
-&\forall i  \neq j, x, y: p_{ij}=0  \\
-\end{split}
-$$
-- $P_{xy}A$ will swap the rows $x$ and $y$ of $A$ 
-- $AP_{xy}$ will swap the column $x$ and $y$ of $A$ 
+￼￼￼￼￼permutation matrix￼￼ swaping rows and columns
+ 
+Pxy withpxy=pyx=1∀i≠x,y:pii=1∀i≠j,x,y:pij=0
+ ￼PxyA￼ will swap the rows ￼x￼ and ￼y￼ of ￼A￼ 
+ ￼APxy￼ will swap the column ￼x￼ and ￼y￼ of ￼A￼ 
 
 ## example swich rows 1 and 2 and columns 1 and 3
 

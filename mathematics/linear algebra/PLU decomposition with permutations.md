@@ -1,6 +1,6 @@
-## [[LU decomposition without permutations]] with [[permutations]]
+## [[LU decomposition]] with [[permutations]]
 
-### Definition PLU decomposition ([[LU decomposition without permutations]] with [[permutations]])
+### Definition PLU decomposition ([[LU decomposition]] with [[permutations]])
 A [[PLU decomposition with permutations]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ and a [[permutation matrix]] $P$ such that the following is true
 $$
 PA = LU
@@ -13,7 +13,7 @@ $$
 ![[permutation matrix#Definition permutation matrix]]
 
 ### existence and uniqueness
-every [[square matrix]] $A \in \mathbb{R}^{n \times n}$ has a [[LU decomposition without permutations]] with [[permutations]] but it's not unique
+every [[square matrix]] $A \in \mathbb{R}^{n \times n}$ has a [[LU decomposition]] with [[permutations]] but it's not unique
 
 ### [[time complexity]] of the [[PLU decomposition with permutations]]
 - its $\in \mathcal{O}(n^3)$  
@@ -36,7 +36,7 @@ every [[square matrix]] $A \in \mathbb{R}^{n \times n}$ has a [[LU decomposition
 
 #### 1) reducing $A$ in a [[row echelon form]] by multiplying with [[permutation matrix|permutation matrices]] and [[frobenius matrix|frobenius matrices]]
 
-For reach column  $j \in [1, ..., n]$ we want to create a [[pivot]] element $a_{j,j}$ by construct a [[frobenius matrix]] $L_i$ that makes all values below $a_{j,j}$ to zero. In case $a_{j,j}$ is zero we construct a [[permutation matrix]] $P_i$ that is swiching $a_{j,j}$ with a non-zero element in $a_{i,j} \in \{a_{i,j} | i < j\}$. Now the [[pivot]] element  $a_{j,j}$ is used to construct a [[frobenius matrix]] $L^{(i)}$ that is making all values below $a_{j,j}$ to zero (see [[LU decomposition without permutations]]).  The result of this process will be the upper [[triangular matrix]] $U$. 
+For reach column  $j \in [1, ..., n]$ we want to create a [[pivot]] element $a_{j,j}$ by construct a [[frobenius matrix]] $L_i$ that makes all values below $a_{j,j}$ to zero. In case $a_{j,j}$ is zero we construct a [[permutation matrix]] $P_i$ that is swiching $a_{j,j}$ with a non-zero element in $a_{i,j} \in \{a_{i,j} | i < j\}$. Now the [[pivot]] element  $a_{j,j}$ is used to construct a [[frobenius matrix]] $L^{(i)}$ that is making all values below $a_{j,j}$ to zero (see [[LU decomposition]]).  The result of this process will be the upper [[triangular matrix]] $U$. 
 $$
 U = L^{(n)}P^{(n)}L^{(n-1)}P^{(n-1)}...L^{(2)}P^{(2)}L^{(1)}P^{(1)}A
 $$
@@ -85,7 +85,7 @@ Basic
  - uniqueness
 
 Back: 
-### Definition PLU decomposition ([[LU decomposition without permutations]] with [[permutations]])
+### Definition PLU decomposition ([[LU decomposition]] with [[permutations]])
 A [[PLU decomposition with permutations]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ and a [[permutation matrix]] $P$ such that the following is true
 $$
 PA = LU
@@ -130,7 +130,7 @@ P &= \begin{pmatrix}
 \end{split}
 $$
 ### existence and uniqueness
-every [[square matrix]] $A \in \mathbb{R}^{n \times n}$ has a [[LU decomposition without permutations]] with [[permutations]] but it's not unique
+every [[square matrix]] $A \in \mathbb{R}^{n \times n}$ has a [[LU decomposition]] with [[permutations]] but it's not unique
 
 Tags: mathematics linear_algebra
 <!--ID: 1697960588096-->
@@ -145,7 +145,7 @@ Back:
 
 #### 1) reducing $A$ in a [[row echelon form]] by multiplying with [[permutation matrix|permutation matrices]] and [[frobenius matrix|frobenius matrices]]
 
-For reach column  $j \in [1, ..., n]$ we want to create a [[pivot]] element $a_{j,j}$ by construct a [[frobenius matrix]] $L_i$ that makes all values below $a_{j,j}$ to zero. In case $a_{j,j}$ is zero we construct a [[permutation matrix]] $P_i$ that is swiching $a_{j,j}$ with a non-zero element in $a_{i,j} \in \{a_{i,j} | i < j\}$. Now the [[pivot]] element  $a_{j,j}$ is used to construct a [[frobenius matrix]] $L^{(i)}$ that is making all values below $a_{j,j}$ to zero (see [[LU decomposition without permutations]]).  The result of this process will be the upper [[triangular matrix]] $U$. 
+For reach column  $j \in [1, ..., n]$ we want to create a [[pivot]] element $a_{j,j}$ by construct a [[frobenius matrix]] $L_i$ that makes all values below $a_{j,j}$ to zero. In case $a_{j,j}$ is zero we construct a [[permutation matrix]] $P_i$ that is swiching $a_{j,j}$ with a non-zero element in $a_{i,j} \in \{a_{i,j} | i < j\}$. Now the [[pivot]] element  $a_{j,j}$ is used to construct a [[frobenius matrix]] $L^{(i)}$ that is making all values below $a_{j,j}$ to zero (see [[LU decomposition]]).  The result of this process will be the upper [[triangular matrix]] $U$. 
 $$
 U = L^{(n)}P^{(n)}L^{(n-1)}P^{(n-1)}...L^{(2)}P^{(2)}L^{(1)}P^{(1)}A
 $$
@@ -183,14 +183,14 @@ L&= \left(\widehat{\dddot{\widehat{L}}}^{(n)}\widehat{\dddot{\widehat{L}}}^{(n-1
 $$
 
 
-## Definition PLU decomposition ([[LU decomposition without permutations]] with [[permutations]])
+## Definition PLU decomposition ([[LU decomposition]] with [[permutations]])
 A [[PLU decomposition with permutations]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ and a [[permutation matrix]] $P$ such that the following is true
 $$
 PA = LU
 $$
 
 ## existence and uniqueness
-every [[square matrix]] $A \in \mathbb{R}^{n \times n}$ has a [[LU decomposition without permutations]] with [[permutations]] but it's not unique
+every [[square matrix]] $A \in \mathbb{R}^{n \times n}$ has a [[LU decomposition]] with [[permutations]] but it's not unique
 Tags: mathematics linear_algebra
 
 ## given
