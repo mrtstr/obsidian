@@ -1,0 +1,5 @@
+1) [[single responsiblity principle]]
+2) [[open–closed principle]]
+3) [[liskov substitution principle]]
+4) [[interface segregation principle]]
+5) [[dependency inversion principle]]

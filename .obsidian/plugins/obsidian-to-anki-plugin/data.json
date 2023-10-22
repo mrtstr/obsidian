@@ -347,7 +347,7 @@
     "code/python/py list.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/python/py lambda functions.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/python/py dict.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/python/pickle.md": "ccdcb6c2ffa96c81e4049aacbb660c0c",
+    "code/python/pickle.md": "37147488b84752d1893e48853e56f1f3",
     "code/pandas/usecase/summarizing pd dataframe.md": "5811cd78ba2d40004ddf07e8493ef631",
     "code/pandas/usecase/pd sorting.md": "7ade656c8c708442c2744c73c0d2de2e",
     "code/pandas/usecase/pd slicing.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -825,7 +825,7 @@
     "code/data processing/concepts/string.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/stream.md": "c550a0533a4b308e44e350667b91d62d",
     "code/data processing/concepts/serializing.md": "ce2a4df65472e32b94a754c42118130d",
-    "code/python/py generator.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/python/py generator.md": "196b6a31d5a48c82ec318a478098f81b",
     "code/data processing/pyarrow/pa LocalFileSystem.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/pyarrow/pa RecordBatchFileWriter.md": "799b3782c9360d2399463a1856372855",
     "code/data processing/pyarrow/pa RecordBatchStreamWriter.md": "a3ff2f944831503011a0c5b12fa88eb3",
@@ -962,7 +962,19 @@
     "mathematics/linear algebra/PLU decomposition with permutations.md": "687e377de517227e91213f87fec1714f",
     "algorithms/time complexity.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/LDU decomposition.md": "bb923fa77e672b69dcee31a17b6c00d1",
-    "mathematics/linear algebra/Untitled.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "mathematics/linear algebra/Untitled.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "software/SOLDIG design principles.md": "868561a534fa166285e8839df736d4a1",
+    "software/dependency inversion principle.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "software/liskov substitution principle.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "software/open–closed principle.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "software/interface segregation principle.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "software/single responsiblity principle.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/python/py filter.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/python/py reduce.md": "52cb2c0a30e2759099e6aa0d6da1bb2f",
+    "code/python/py list comprehension.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/python/py function.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/python/py map.md": "95ce182cf601c527eac2b67284ceb0b2",
+    "code/python/py lazy iterator.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [
