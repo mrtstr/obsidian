@@ -145,7 +145,6 @@ Basic
 [[probability integral transformation|transformation]] from [[standard normal distribution]] to a [[normal distribution]]
 - [[probability density function]]
 - [[CDF]]
-- [[quantile function]]
 Back: 
 
 ### [[probability density function]] and [[CDF]]
@@ -183,6 +182,17 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} = \frac{dF_{Y}(y)}{dy} f_{X}\left(\frac{y-b}{a}
 \end{split}
 $$
 
+Tags: mathematics statistics
+<!--ID: 1680933861861-->
+END
+
+
+START
+Basic
+- [[quantile function]] of a linear [[probability integral transformation|transformed]] [[standard normal distribution]] depending on the quantile of the [[standard normal distribution]] with proof
+
+Back: 
+
 ### [[quantile function]]
 
 $$
@@ -202,7 +212,27 @@ $$
 \end{split}
 $$
 
+### given the [[CDF]]
+$$
+\begin{split}
+X &\sim \phi(x) = f_X(x | \mu = 0, \sigma^2 =1)  \\
+Y &= aX + b  \\
 
+ \Rightarrow F_Y(y) &=   \Phi\left(\frac{y-b}{a}\right) \\
+\end{split}
+$$
+
+proof
+$$
+\begin{split}
+F_{Y}(y)
+&=P(Y \leq y) \\
+&=P(g(X) \leq y) = P(aX+b \leq y) \\
+&=P\left(X \leq g^{-1}(y)\right) = P(aX+b \leq y) \\
+&=P\left(X \leq g^{-1}(y)\right) = P\left( X \leq \frac{y-b}{a} \right) \\
+&= F_X\left(g^{-1}(y)\right) = F_X\left(\frac{y-b}{a}\right) \\
+\end{split}
+$$
 Tags: mathematics statistics
-<!--ID: 1680933861861-->
+<!--ID: 1698471532949-->
 END
