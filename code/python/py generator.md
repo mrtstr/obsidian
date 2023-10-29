@@ -1,7 +1,6 @@
 ## [[py generator]] definition
 - [[py generator|generators]] are a blueprint for creating a [[py iterator]]
-- the [[py generator]] defines a sequeny and when `next(myiterator)` is called the next element is returned
-- only one element at a time is loaded, and thus it's useful for greater than memory data
+- the [[py generator]] defines a sequeny and when `next(myiterator)` or the unserlaying [[py magic method]] `__next__` is called the next element is calculcated returned
 - can be defined by a special function with the keywork `yield` or by a class the implements the iterator protocol
 
 ## protocol
@@ -60,15 +59,16 @@ Basic
  - how to create/use
 Back: 
 ### [[py generator]] definition
-- [[py generator|generators]] are a blueprint for creating a [[py iterator]]
-- the [[py generator]] defines a sequeny and when `next(myiterator)` is called the next element is returned
-- only one element at a time is loaded, and thus it's useful for greater than memory data
+ [[py generator|generators]] are a blueprint for creating a [[py iterator]]
+- the [[py generator]] defines a sequeny and when `next(myiterator)` or the unserlaying [[py magic method]] `__next__` is called the next element is calculcated returned
 - can be defined by a special function with the keywork `yield` or by a class the implements the iterator protocol
 
 #### [[py iterator]] protocol
-- is an [[py object]] that has the following two methods impemented
-1) `__iter__()`: Usualy called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. If the object is already an [[py iterator]] it returns itself.
-2) `__next__()`: computes and returns the next value in the squence
+is an [[py object]] that has the following two methods impemented
+#### `__iter__()`
+- Usualy called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. If the object is already an [[py iterator]] it returns itself.
+#### `__next__()`
+computes and returns the next value in the squence
 
 ### how to define a [[py generator]]
 
@@ -153,15 +153,16 @@ class pow_two:
 
 
 ### [[py generator]] definition
-- [[py generator|generators]] are a blueprint for creating a [[py iterator]]
-- the [[py generator]] defines a sequeny and when `next(myiterator)` is called the next element is returned
-- only one element at a time is loaded, and thus it's useful for greater than memory data
+ [[py generator|generators]] are a blueprint for creating a [[py iterator]]
+- the [[py generator]] defines a sequeny and when `next(myiterator)` or the unserlaying [[py magic method]] `__next__` is called the next element is calculcated returned
 - can be defined by a special function with the keywork `yield` or by a class the implements the iterator protocol
 
 #### [[py iterator]] protocol
-- is an [[py object]] that has the following two methods impemented
-1) `__iter__()`: Usualy called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. If the object is already an [[py iterator]] it returns itself.
-2) `__next__()`: computes and returns the next value in the squence
+is an [[py object]] that has the following two methods impemented
+#### `__iter__()`
+- Usualy called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. If the object is already an [[py iterator]] it returns itself.
+#### `__next__()`
+computes and returns the next value in the squence
 
 
 Tags: code python

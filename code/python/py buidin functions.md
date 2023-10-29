@@ -1,1 +1,1 @@
-Higher-order [[py function]] and operations on [[py callable object]]
+Higher-order [[py callable object]] and operations on [[py callable object]]

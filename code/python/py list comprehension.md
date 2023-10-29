@@ -1,2 +1,2 @@
-[[py function]]
+[[py callable object]]
 [[py list]]

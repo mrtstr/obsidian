@@ -10,7 +10,7 @@ print(f"{a=} {bcd=} {e=}")
 ```
 
 
-### to pass a not fixed number of named and unnamed parameters to a [[py function]] that will be collected as a [[py list]] and [[py dict]]
+### to pass a not fixed number of named and unnamed parameters to a [[py callable object]] that will be collected as a [[py list]] and [[py dict]]
 
 ```python
 def func(
@@ -84,7 +84,7 @@ print(f"{a=} {bcd=} {e=}")
 ```
 
 
-### to pass a not fixed number of named and unnamed parameters to a [[py function]] that will be collected as a [[py list]] and [[py dict]]
+### to pass a not fixed number of named and unnamed parameters to a [[py callable object]] that will be collected as a [[py list]] and [[py dict]]
 
 ```python
 def func(

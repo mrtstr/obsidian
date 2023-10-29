@@ -1,1 +1,1 @@
-[[python]] [[py function]] for creating [[py iterator]] for efficient looping
+[[python]] [[py callable object]] for creating [[py iterator]] for efficient looping

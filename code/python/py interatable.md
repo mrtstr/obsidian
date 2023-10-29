@@ -1,6 +1,6 @@
 ## [[py interatable]] protocol
- is an [[py object]] that has the following method impemented
- `__iter__()`: Usualy called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. 
+#### `__iter__()`
+- usually called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. 
 
 # anki
 

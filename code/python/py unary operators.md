@@ -1,0 +1,4 @@
+- `__neg__()`: Implements behavior for negation (e.g. `-some_object`)
+- `__abs__()`: Implements behavior for the built in `abs()` function.
+- `__invert__()`: Implements behavior for inversion using the `~` operator. 
+- `__round__(self, n)`: Implements behavior for the built in `round()` function

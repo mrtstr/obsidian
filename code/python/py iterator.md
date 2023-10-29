@@ -1,7 +1,9 @@
 ## [[py iterator]] protocol
-- is an [[py object]] that has the following two methods impemented
-1) `__iter__()`: Usualy called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. If the object is already an [[py iterator]] it returns itself.
-2) `__next__()`: computes and returns the next value in the squence
+is an [[py object]] that has the following two methods impemented
+#### `__iter__()`
+- Usualy called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. If the object is already an [[py iterator]] it returns itself.
+#### `__next__()`
+computes and returns the next value in the squence
 
 ## how to create a [[py iterator]]
 
@@ -31,9 +33,11 @@ Basic
 Back: 
 
 ## [[py iterator]] protocol
-- is an [[py object]] that has the following two methods impemented
-1) `__iter__()`: Usualy called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. If the object is already an [[py iterator]] it returns itself.
-2) `__next__()`: computes and returns the next value in the squence
+is an [[py object]] that has the following two methods impemented
+#### `__iter__()`
+- Usualy called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. If the object is already an [[py iterator]] it returns itself.
+#### `__next__()`
+computes and returns the next value in the squence
 
 ## how to create a [[py iterator]]
 

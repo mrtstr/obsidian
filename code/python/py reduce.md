@@ -1,4 +1,4 @@
-[[py reduce]] applies [[py function]] of two arguments cumulatively to the items of iterable, from left to right, so as to reduce the iterable to a single value.
+[[py reduce]] applies [[py callable object]] of two arguments cumulatively to the items of iterable, from left to right, so as to reduce the iterable to a single value.
 
 ```python
 from functools import reduce
@@ -18,7 +18,7 @@ START
 Basic
 what does [[py reduce]] do?
 Back: 
-Applies [[py function]] of two arguments cumulatively to the items of iterable, from left to right, so as to reduce the iterable to a single value.
+Applies [[py callable object]] of two arguments cumulatively to the items of iterable, from left to right, so as to reduce the iterable to a single value.
 
 ```python
 from functools import reduce
@@ -46,7 +46,7 @@ reduce(
 )
 ```
 Back: 
-Applies [[py function]] of two arguments cumulatively to the items of iterable, from left to right, so as to reduce the iterable to a single value.
+Applies [[py callable object]] of two arguments cumulatively to the items of iterable, from left to right, so as to reduce the iterable to a single value.
 
 ```python
 from functools import reduce

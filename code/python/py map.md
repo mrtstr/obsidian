@@ -1,4 +1,4 @@
-[[py map]] applys a [[py function]] to each element in an [[py interatable]]
+[[py map]] applys a [[py callable object]] to each element in an [[py interatable]]
 
 ```python
 map(
@@ -12,11 +12,11 @@ map(
 # anki
 START
 Basic
-apply a [[py function]] to all elements in an [[py iterator]]
+apply a [[py callable object]] to all elements in an [[py iterator]]
 - two methods
 Back: 
 
-1) [[py map]] applys a [[py function]] to each element in an [[py interatable]]
+1) [[py map]] applys a [[py callable object]] to each element in an [[py interatable]]
 
 ```python
 map(
