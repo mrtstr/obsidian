@@ -83,7 +83,6 @@ print(f"{a=} {bcd=} {e=}")
 # a='a' bcd=['b', 'c', 'd'] e='e'
 ```
 
-
 ### to pass a not fixed number of named and unnamed parameters to a [[py callable object]] that will be collected as a [[py list]] and [[py dict]]
 
 ```python
@@ -120,6 +119,7 @@ func(**dict_input)
 ```
 
 ### to expand a [[py list]] or a [[py dict]] to pass values to a function 
+
 ```python
 func("bob", "fu", "bar", arg1= "baz")
 func(*list_input)
