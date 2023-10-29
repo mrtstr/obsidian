@@ -137,7 +137,7 @@ Basic
 - difference to [[py dict]].update
 - why is it unsave and how to make it save
 - examples
-
+ 
 ```python
 series1.update(series2)
 series1
@@ -153,22 +153,22 @@ df1.update(series2)
 df1
 ```
 
-
 ```python
 series1 = pd.Series({
 	"A": 1,
 	"B": 2,
 	"C": 3,
 	"D": 4,
+	"E": 5,
 })
 
 series2 = pd.Series({
-	"B": 12,
-	"C": 13,
-	"E": 14,
+	"A": 11,
+	"C": None,
+	"D": 13,
+	"F": 14,
 }, name="col1")
 ```
-
 
 ```python
 df1 = pd.DataFrame({
@@ -195,13 +195,10 @@ df1 = pd.DataFrame({
 | D   |    nan |    8 |
 
 
-
-
 Back: 
 - Replace the values of a [[pd series]] or a [[pd dataframe]] with the values of another but only then [[pd index]] (and [[pd column]]) are matching 
 - if `overwrite=False` is set only null values are overwritting
 - different behavour than the update in a [[py dict]] which is even adding new keys if not present in dict1
-
 
 ```python
 series1.update(series2)
@@ -224,7 +221,6 @@ df1
 | B | 2 | 6 | 
 | C | nan | 7 | 
 | D | 13 | 8 |
-
 
 ```python
 df1.update(series2) # overwrite=True is default
@@ -269,6 +265,7 @@ Back:
 - to force a copy use [[pd dataframe]]`.copy()`
 
 ## example
+
 ```python
 series1 = pd.Series({
 	"A": 1,
@@ -279,6 +276,7 @@ series1 = pd.Series({
 ```
 
 #### on a slice with an update that is changing the data type [[pd update]] has no effect
+
 ```python
 series1["A":"C"].update({"A": 77.7})
 # A 1 
@@ -289,6 +287,7 @@ series1["A":"C"].update({"A": 77.7})
 ```
 
 #### on a slice with an updatewithout data type change [[pd update]] works
+
 ```python
 series1["A":"C"].update({"A": 77})
 # A 77 
@@ -300,6 +299,7 @@ series1["A":"C"].update({"A": 77})
 
 
 #### on a non sliced object up, update allways works
+
 ```python
 series1.update({"A": 77})
 # A 77.7 
@@ -310,6 +310,7 @@ series1.update({"A": 77})
 ```
 
 #### how to make it save
+
 ```python
 series1_splice = series1["A":"C"].copy()
 series1_splice.update({"A": 77.7})
