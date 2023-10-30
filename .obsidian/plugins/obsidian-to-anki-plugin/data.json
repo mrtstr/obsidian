@@ -1012,7 +1012,19 @@
     "code/python/py type conversion.md": "bada6c3944dc27492583834570544b15",
     "code/python/py representing your classes.md": "b7a9bf6e302d91eeb4de585288919e4f",
     "code/python/py comparison operations.md": "3e83e8ad6624901c7b81c39bd8c9f3de",
-    "code/python/py object creation.md": "053ce8a68e957300b1e811bf32c32952"
+    "code/python/py object creation.md": "779383dc1c9e47a0e980a24fe878ebe6",
+    "code/python/py setuptools.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/python/py setup.py.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/python/py sys.path.md": "c57b7b80e7e864c8ccc7bb51113e08b4",
+    "code/python/py buildin moduls.md": "88a8e9258383ec55f9d065972cc0ef39",
+    "code/python/py pycache.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/python/py package.md": "00922fec6ede5c3415f1d37a4827400c",
+    "code/python/py class attributes.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/python/py import.md": "4698ec871ea53414bfceb127dade02d3",
+    "code/python/py interpreter.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/python/py module.md": "61043bc71239d1a89d60e0a13fe3210a",
+    "code/python/py access atributes.md": "c8a8582fcc8787e46af44e34d73a5f57",
+    "code/python/py special valiables.md": "065e0960f71bd1bb99689579e048a887"
   },
   "fields_dict": {
     "Basic": [

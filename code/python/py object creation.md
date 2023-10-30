@@ -1,11 +1,12 @@
 ## object creation
-`__new__(cls, [...)`: 
+#### `__new__(cls, [...)`
 - first method called in [[py object creation]]
-- - recives a reference to the [[py class]] (`cls`) plus all the arguments passed during the object creation call
-`__init__(self, [...)`: 
+- recives a reference to the [[py class]] (`cls`) plus all the arguments passed during the object creation call
+#### `__init__(self, [...)`
 - first method that is called after the [[py object]] is instanciated 
 - recives a reference to the instance itself (`self`) plus all the arguments passed during the object creation call
-`__del__(self)`: destructor that is called when object is deleted 
+#### `__del__(self)`
+- destructor that is called when object is deleted 
 
 
 
