@@ -162,7 +162,9 @@ Defines behavior for when an item is deleted (e.g. `del self[key]`). This is onl
 
 ## [[py interatable]] containers
 
-![[py interatable#py interatable protocol]]
+#### [[py interatable]] protocol
+#### `__iter__()`
+- usually called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. 
 
 
 ## additional [[py magic method]]

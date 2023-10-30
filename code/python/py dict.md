@@ -3,7 +3,7 @@
 ```python
 dict1 = {
 	"A": 1,
-	"B": 2,
+	"B": None,
 	"C": 3,
 	"D": 4,
 }
@@ -13,12 +13,13 @@ dict2 = {
 	"C": 13,
 	"E": 14,
 }
-
 ```
 
 ## dict.update
 - overwrite all values with the values of the other dict
 - only values not present in the other dict remain unchained
+- `None` is treated like any other value
+
 ```python
 dict1.update(dict2)
 dict1
@@ -28,7 +29,7 @@ dict1
 ```python
 dict2.update(dict1)
 dict2
-# {'B': 2, 'C': 3, 'E': 14, 'A': 1, 'D': 4}
+# {'B': None, 'C': 3, 'E': 14, 'A': 1, 'D': 4}
 ```
 
 # Anki
@@ -39,7 +40,7 @@ what is the output, and what does the function do?
 ```python
 dict1 = {
 	"A": 1,
-	"B": 2,
+	"B": None,
 	"C": 3,
 	"D": 4,
 }
@@ -60,11 +61,14 @@ dict1
 dict2.update(dict1)
 dict2
 ```
+
 Back: 
 
 ## dict.update
 - overwrite all values with the values of the other dict
 - only values not present in the other dict remain unchained
+- `None` is treated like any other value
+
 ```python
 dict1.update(dict2)
 dict1
@@ -74,7 +78,7 @@ dict1
 ```python
 dict2.update(dict1)
 dict2
-# {'B': 2, 'C': 3, 'E': 14, 'A': 1, 'D': 4}
+# {'B': None, 'C': 3, 'E': 14, 'A': 1, 'D': 4}
 ```
 
 Tags: code python
