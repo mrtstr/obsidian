@@ -25,18 +25,18 @@ test_package/
 ```
 
 ```python
-from test_package.test_subpackage.module_sub import say_hi
-say_hi()
-
 from test_package.module_parent import say_by
 say_by()
 
+from test_package.test_subpackage.module_sub import say_hi
+say_hi()
+
 # test package has been executed
+# module2 has been executed
+# By!
 # test sub package has been executed
 # module1 has been executed#
 # Hi!
-# module2 has been executed
-# By!
 ```
 
 
@@ -78,18 +78,18 @@ test_package/
 ```
 
 ```python
-from test_package.test_subpackage.module_sub import say_hi
-say_hi()
-
 from test_package.module_parent import say_by
 say_by()
 
+from test_package.test_subpackage.module_sub import say_hi
+say_hi()
+
 # test package has been executed
+# module2 has been executed
+# By!
 # test sub package has been executed
 # module1 has been executed#
 # Hi!
-# module2 has been executed
-# By!
 ```
 
 Tags: code python
@@ -143,18 +143,18 @@ test_package/
 ```
 
 ```python
-from test_package.test_subpackage.module_sub import say_hi
-say_hi()
-
 from test_package.module_parent import say_by
 say_by()
 
+from test_package.test_subpackage.module_sub import say_hi
+say_hi()
+
 # test package has been executed
+# module2 has been executed
+# By!
 # test sub package has been executed
 # module1 has been executed#
 # Hi!
-# module2 has been executed
-# By!
 ```
 
 Tags: code python
@@ -177,28 +177,28 @@ test_package/
 ```
 
 ```python
-from test_package.test_subpackage.module_sub import say_hi
-say_hi()
-
 from test_package.module_parent import say_by
 say_by()
+
+from test_package.test_subpackage.module_sub import say_hi
+say_hi()
 ```
 
 Back: 
 
 ```python
-from test_package.test_subpackage.module_sub import say_hi
-say_hi()
-
 from test_package.module_parent import say_by
 say_by()
 
+from test_package.test_subpackage.module_sub import say_hi
+say_hi()
+
 # test package has been executed
+# module2 has been executed
+# By!
 # test sub package has been executed
 # module1 has been executed#
 # Hi!
-# module2 has been executed
-# By!
 ```
 
 
