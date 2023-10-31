@@ -1,6 +1,6 @@
 ## [[py generator]] definition
 - [[py generator|generators]] are a blueprint for creating a [[py iterator]]
-- the [[py generator]] defines a sequeny and when `next(myiterator)` or the unserlaying [[py magic method]] `__next__` is called the next element is calculcated returned
+- the [[py generator]] defines a sequeny and when `next(myiterator)` or the unserlaying [[py dunder method]] `__next__` is called the next element is calculcated returned
 - can be defined by a special function with the keywork `yield` or by a class the implements the iterator protocol
 
 ## protocol
@@ -60,7 +60,7 @@ Basic
 Back: 
 ### [[py generator]] definition
  [[py generator|generators]] are a blueprint for creating a [[py iterator]]
-- the [[py generator]] defines a sequeny and when `next(myiterator)` or the unserlaying [[py magic method]] `__next__` is called the next element is calculcated returned
+- the [[py generator]] defines a sequeny and when `next(myiterator)` or the unserlaying [[py dunder method]] `__next__` is called the next element is calculcated returned
 - can be defined by a special function with the keywork `yield` or by a class the implements the iterator protocol
 
 #### [[py iterator]] protocol
@@ -154,7 +154,7 @@ class pow_two:
 
 ### [[py generator]] definition
  [[py generator|generators]] are a blueprint for creating a [[py iterator]]
-- the [[py generator]] defines a sequeny and when `next(myiterator)` or the unserlaying [[py magic method]] `__next__` is called the next element is calculcated returned
+- the [[py generator]] defines a sequeny and when `next(myiterator)` or the unserlaying [[py dunder method]] `__next__` is called the next element is calculcated returned
 - can be defined by a special function with the keywork `yield` or by a class the implements the iterator protocol
 
 #### [[py iterator]] protocol

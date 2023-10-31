@@ -1,6 +1,5 @@
-## [[py callable object]]
-[[python]] [[py object]] that has the [[py magic method]] `_call__(self, [args...])` implemented
-
+### [[py callable object]]
+[[python]] [[py object]] that has the [[py dunder method]] `_call__(self, [args...])` implemented
 
 ```python
 class CallableObject(object):
@@ -22,7 +21,7 @@ Basic
 - definition
 - how to make an object callable
 Back: 
-[[python]] [[py object]] that has the [[py magic method]] `_call__(self, [args...])` implemented
+[[python]] [[py object]] that has the [[py dunder method]] `_call__(self, [args...])` implemented
 
 ```python
 class CallableObject(object):

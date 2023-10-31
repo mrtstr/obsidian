@@ -18,10 +18,10 @@ after a [[py module]] is [[py import|imported]] in [[python]] the [[py interpret
 ```
 test_package/
     __init__.py
-    module.py
+    module_parent.py
     test_subpackage/
         __init__.py
-        module2.py
+        module_sub.py
 ```
 
 ```python
@@ -39,6 +39,21 @@ say_hi()
 # Hi!
 ```
 
+
+```python
+from test_package.test_subpackage.module_sub import say_hi
+say_hi()
+
+from test_package.module_parent import say_by
+say_by()
+
+# test package has been executed
+# test sub package has been executed
+# module1 has been executed#
+# Hi!
+# module2 has been executed
+# By!
+```
 
 # anki
 
@@ -71,10 +86,10 @@ After initialization, Python programs can modify `sys.path`. The directory conta
 ```
 test_package/
     __init__.py
-    module.py
+    module_parent.py
     test_subpackage/
         __init__.py
-        module2.py
+        module_sub.py
 ```
 
 ```python
@@ -90,6 +105,22 @@ say_hi()
 # test sub package has been executed
 # module1 has been executed#
 # Hi!
+```
+
+
+```python
+from test_package.test_subpackage.module_sub import say_hi
+say_hi()
+
+from test_package.module_parent import say_by
+say_by()
+
+# test package has been executed
+# test sub package has been executed
+# module1 has been executed#
+# Hi!
+# module2 has been executed
+# By!
 ```
 
 Tags: code python
@@ -133,14 +164,7 @@ Back:
 
 #### example
 
-```
-test_package/
-    __init__.py
-    module.py
-    test_subpackage/
-        __init__.py
-        module2.py
-```
+![[py package#example py package]]
 
 ```python
 from test_package.module_parent import say_by
@@ -157,6 +181,22 @@ say_hi()
 # Hi!
 ```
 
+
+```python
+from test_package.test_subpackage.module_sub import say_hi
+say_hi()
+
+from test_package.module_parent import say_by
+say_by()
+
+# test package has been executed
+# test sub package has been executed
+# module1 has been executed#
+# Hi!
+# module2 has been executed
+# By!
+```
+
 Tags: code python
 <!--ID: 1698674406747-->
 END
@@ -170,10 +210,10 @@ given the following example: in which order are the files executed and why?
 ```
 test_package/
     __init__.py
-    module.py
+    module_parent.py
     test_subpackage/
         __init__.py
-        module2.py
+        module_sub.py
 ```
 
 ```python
@@ -182,6 +222,15 @@ say_by()
 
 from test_package.test_subpackage.module_sub import say_hi
 say_hi()
+```
+
+
+```python
+from test_package.test_subpackage.module_sub import say_hi
+say_hi()
+
+from test_package.module_parent import say_by
+say_by()
 ```
 
 Back: 
@@ -199,6 +248,22 @@ say_hi()
 # test sub package has been executed
 # module1 has been executed#
 # Hi!
+```
+
+
+```python
+from test_package.test_subpackage.module_sub import say_hi
+say_hi()
+
+from test_package.module_parent import say_by
+say_by()
+
+# test package has been executed
+# test sub package has been executed
+# module1 has been executed#
+# Hi!
+# module2 has been executed
+# By!
 ```
 
 

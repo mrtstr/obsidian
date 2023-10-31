@@ -10,7 +10,7 @@ difference [[py generator]], [[py iterator]], [[py interatable]]
 Back: 
 
 ### [[py interatable]] protocol
- is an [[py object]] that can be transformed to an [[py iterator]] with the [[py magic method]]  `__iter__()` which is usualy called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. 
+ is an [[py object]] that can be transformed to an [[py iterator]] with the [[py dunder method]]  `__iter__()` which is usualy called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. 
 
 ### [[py generator]] definition
 - [[py generator|generators]] are a blueprint for creating a [[py iterator]]

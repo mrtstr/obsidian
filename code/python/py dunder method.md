@@ -1,11 +1,11 @@
-## [[python]] [[py magic method]] 
+## [[python]] [[py dunder method]] 
 - define how a [[py object]] reacts when certain functions or operands are applied 
 
 #### [[py callable object]]: 
 - how an [[py object]] reacts when `object()` is called is defined in the `__call__` method of the object
 
 #### [[py comparison operations]]: 
-- how the [[py object]] reacts when comparision operators are used. E.g.  `object1 >= object2` behavour is impelemented in the `__geq__` [[py magic method]]
+- how the [[py object]] reacts when comparision operators are used. E.g.  `object1 >= object2` behavour is impelemented in the `__geq__` [[py dunder method]]
 
 #### how the [[py object]] reacts when [[py unary operators]] are used
 ![[py unary operators]]
@@ -29,7 +29,7 @@
 # Anki
 START
 Basic
-[[python]] [[py magic method]] summary
+[[python]] [[py dunder method]] summary
 - definition
 - object creation (3)
 - function call (1)
@@ -64,7 +64,7 @@ mutuable
 
 
 ####  [[py comparison operations]]: 
-- how the [[py object]] reacts when comparision operators are used. E.g.  `object1 >= object2` behavour is impelemented in the `__geq__` [[py magic method]]
+- how the [[py object]] reacts when comparision operators are used. E.g.  `object1 >= object2` behavour is impelemented in the `__geq__` [[py dunder method]]
 
 #### how the [[py object]] reacts when [[py unary operators]] are used
 - `__neg__()`: Implements behavior for negation (e.g. `-some_object`)

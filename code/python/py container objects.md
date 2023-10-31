@@ -15,6 +15,7 @@ Making [[py class]] to act like built in sequences like
 #### `__getitem__`  
 Defines behavior for when an item is accessed, using the notation `self[key]`. It should also raise appropriate exceptions: `TypeError` if the type of the key is wrong and `KeyError` if there is no corresponding value for the key.
 
+### example base (immutable) [[py container objects]]
 ```python
 class BaseContainer():
 	def __init__(self, *args):
@@ -56,7 +57,7 @@ Defines behavior for when an item is assigned to, using the notation `self[nkey]
 #### `__delitem__`. 
 Defines behavior for when an item is deleted (e.g. `del self[key]`). This is only part of the mutable container protocol. You must raise the appropriate exceptions when an invalid key is used.
 
-### example for mutable containers
+### example mutable [[py container objects]]
 ```python
 class MutableContainer(BaseContainer):
 	def __init__(self, *args):
@@ -121,7 +122,7 @@ for i in my_iterable_container:
 # 33
 ```
 
-## additional [[py magic method]]
+## additional [[py dunder method]]
 #### `__reversed__(self)`
 Called to implement behavior for the `reversed()` built in function. Should return a reversed version of the sequence. 
 
@@ -167,7 +168,7 @@ Defines behavior for when an item is deleted (e.g. `del self[key]`). This is onl
 - usually called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. 
 
 
-## additional [[py magic method]]
+## additional [[py dunder method]]
 #### `__reversed__(self)`
 Called to implement behavior for the `reversed()` built in function. Should return a reversed version of the sequence. 
 
