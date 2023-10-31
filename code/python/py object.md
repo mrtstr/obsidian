@@ -1,8 +1,8 @@
 ### [[py object]] definition
 - in [[python]] all [[py function]], [[py module]], [[py class]]... are [[py object|objects]]
-
+- all [[py object]] inherent from a [[py base object]] called `object`
 ### [[py dunder valiables]] [[py object]]
--   `__class__`: stores the [[py class]] of the [[py object]] 
+-   `__class__`: stores the [[py class]] of the [[py object]] (metaclass [[py type]] if it's a [[py class]] itself)
 -   `__dict__`: stores the attributes of the [[py object]]
 
 ### [[py dunder valiables]] [[py object]] example
@@ -23,16 +23,13 @@ START
 Basic
 [[py object]]
 - definition
-- [[py dunder valiables]]
-
-
+- [[py dunder valiables]] (2)
 Back: 
-
 ### [[py object]] definition
 - in [[python]] all [[py function]], [[py module]], [[py class]]... are [[py object|objects]]
-
+- all [[py object]] inherent from a [[py base object]] called `object`
 ### [[py dunder valiables]] [[py object]]
--   `__class__`: stores the [[py class]] of the [[py object]] 
+-   `__class__`: stores the [[py class]] of the [[py object]] (metaclass [[py type]] if it's a [[py class]] itself)
 -   `__dict__`: stores the attributes of the [[py object]]
 
 Tags: code python

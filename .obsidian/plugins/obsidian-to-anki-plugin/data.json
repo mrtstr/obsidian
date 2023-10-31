@@ -999,12 +999,12 @@
     "code/python/py set.md": "890c60cf5cba8aa9979503e3b8086ec8",
     "code/python/py data structures.md": "89b759da14bbf69a6c780d54639a42a4",
     "code/python/py itertools.md": "a01488419b8acd4a5f761b00b2c42a38",
-    "code/python/py object.md": "d2184540bb2ebcb043a677696b796053",
+    "code/python/py object.md": "567171fe659a857aefa11074e7ed1380",
     "code/python/py callable object.md": "c64f15d1237f9de6e118a3d6134ad209",
     "code/python/py buidin functions.md": "4f98065288221c168c23adda8cb08244",
     "code/python/py sum.md": "61dd60f09707a85ea6503b82ffec6cf1",
     "code/python/py magic method.md": "854a7dea767ae6d2439a52f9d9d74761",
-    "code/python/py class.md": "7f4159a1f1624ff66d9dbc8905e30c92",
+    "code/python/py class.md": "d38a88dde92a93039952d03712efb43a",
     "code/python/py asterisks.md": "06f777a49f7b5a9f1ebddbc06cce0930",
     "code/python/py unary operators.md": "484396abe6a83413af4c781d5408f0dc",
     "code/python/py container objects.md": "d397a581224c011b90308137dc77bf8d",
@@ -1014,7 +1014,7 @@
     "code/python/py type conversion.md": "bada6c3944dc27492583834570544b15",
     "code/python/py representing your classes.md": "b7a9bf6e302d91eeb4de585288919e4f",
     "code/python/py comparison operations.md": "3e83e8ad6624901c7b81c39bd8c9f3de",
-    "code/python/py object creation.md": "bd9c5f4188e464b250859385a2a4246b",
+    "code/python/py object creation.md": "0fed98f309660ae414832463748076b6",
     "code/python/py setuptools.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/python/py setup.py.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/python/py sys.path.md": "c57b7b80e7e864c8ccc7bb51113e08b4",
@@ -1027,10 +1027,11 @@
     "code/python/py module.md": "294c6787a5898cdb6d45aa1508ebc05f",
     "code/python/py access atributes.md": "42ceae704042458961a6c1e66765444b",
     "code/python/py special valiables.md": "065e0960f71bd1bb99689579e048a887",
-    "code/python/py type.md": "444708228e47bcd72ad3abd466d56455",
-    "code/python/py inheritance.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/python/py type.md": "e7f2e51dc33bef01dd3646fe1ae2fc5e",
+    "code/python/py inheritance.md": "a8ca33a5d599609b7e7dca154d8a3025",
     "code/python/py dunder method.md": "a63599dc044570dce08f442f71d2befd",
-    "code/python/py dunder valiables.md": "b482a5f860e022c6672b0e6273ccbd1e"
+    "code/python/py dunder valiables.md": "d3ed6dceaf65d88f62639055c6f74988",
+    "code/python/py base object.md": "e0bb07e01fac09b139de5da13b006067"
   },
   "fields_dict": {
     "Basic": [

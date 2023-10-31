@@ -22,15 +22,15 @@ Basic
 - 3 examples and what they do
 Back: 
 ### [[py dunder valiables]] [[py object]]
--   `__class__`: stores the [[py class]] of the [[py object]] 
+-   `__class__`: stores the [[py class]] of the [[py object]] (metaclass [[py type]] if it's a [[py class]] itself)
 -   `__dict__`: stores the attributes of the [[py object]]
 - plus [[py dunder valiables]] [[py object]]
 
 ## [[py dunder valiables]] [[py class]]
 - `__name__`: stores the name of the [[py class]]
 -   `__module__`: stores the name of the [[py module]] they were defined in within
--   `__bases__`: stores their base classes
-- -   `__mro__`: stores their method resolution order (see [[py inheritance]])
+-   `__bases__`: stores their (direct) parent classes ([[py base object]] of no other parent)
+- -   `__mro__`: stores their method resolution order (see [[py inheritance]]) from the class to the [[py base object]] `(<class itself>, <optional parent classes ...>, <object>)`
 - plus [[py dunder valiables]] [[py object]]
 
 ### [[py dunder valiables]] [[py function]]

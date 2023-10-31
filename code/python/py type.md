@@ -1,6 +1,5 @@
 # [[py type]]
-`type()` is a [[py buidin functions]] that is 
-1) the base [[py class]] of every [[py class]] and is used for the creation of [[py object]] and can be used for creating meta [[py class]]
+1) `type()` is a metaclass that [[py object creation|instantiated]] all [[py class|classes]]
 2) return the [[py class]] a pased [[py object]] was created from (`type(obj) == obj.__class__`)
 
 ![[class-chain 1.webp]]
@@ -8,9 +7,10 @@
 ## [[py type]] for creating meta [[py class]]
 - `type` can be used for ceating classes by providing 
 	1) the `__name__` of the new [[py class]]
-	2) the `__base__` (parent [[py class]])
+	2) the `__bases__` (parents [[py class]] in [[py tuple]])
 	3) the `__dict__` containing all attributes (functions and data)
 - `type` will return the [[py class]]
+
 ```python
 def __init__(self, val):
 	self.atr2 = val
@@ -18,7 +18,7 @@ def __init__(self, val):
 
 Foo = type(
 	'Foo', # __name__ of class
-	(), # __base__ of class (in this case its type)
+	(), # __bases__ of class (in this case its type)
 	{
 		"atr":99,
 		"say_hi": lambda x: print("Hi!"),
@@ -43,18 +43,18 @@ Basic
 - two ways `type()` can be used
 Back: 
 # [[py type]]
-`type()` is a [[py buidin functions]] that is 
-1) the base [[py class]] of every [[py class]] and is used for the creation of [[py object]] and can be used for creating meta [[py class]]
+1) `type()` is a metaclass that [[py instantiation|instantiated]] all [[py class|classes]]
 2) return the [[py class]] a pased [[py object]] was created from (`type(obj) == obj.__class__`)
 
 ![[class-chain 1.webp]]
 
-## [[py type]] for creating meta [[py class]]
+## [[py type]] for creating [[py class]]
 - `type` can be used for ceating classes by providing 
 	1) the `__name__` of the new [[py class]]
-	2) the `__base__` (parent [[py class]])
+	2) the `__bases__` (parents [[py class]] in [[py tuple]])
 	3) the `__dict__` containing all attributes (functions and data)
 - `type` will return the [[py class]]
+
 ```python
 def __init__(self, val):
 	self.atr2 = val
@@ -62,7 +62,7 @@ def __init__(self, val):
 
 Foo = type(
 	'Foo', # __name__ of class
-	(), # __base__ of class (in this case its type)
+	(), # __bases__ of class (in this case its type)
 	{
 		"atr":99,
 		"say_hi": lambda x: print("Hi!"),
@@ -78,7 +78,6 @@ print(foo.atr2)
 
 ## [[py type]] for returning the [[py class]] of an [[py object]]
 - when a [[py object]] is passed to `type(obj)` it will return [[py object]] [[py dunder valiables]] `obj.__class__` containing the [[py class]] if was created from
-
 Tags: code python
 <!--ID: 1698748522682-->
 END
@@ -94,9 +93,10 @@ Back:
 ## [[py type]] for creating meta [[py class]]
 - `type` can be used for ceating classes by providing 
 	1) the `__name__` of the new [[py class]]
-	2) the `__base__` (parent [[py class]])
+	2) the `__bases__` (parents [[py class]] in [[py tuple]])
 	3) the `__dict__` containing all attributes (functions and data)
 - `type` will return the [[py class]]
+
 ```python
 def __init__(self, val):
 	self.atr2 = val
@@ -104,7 +104,7 @@ def __init__(self, val):
 
 Foo = type(
 	'Foo', # __name__ of class
-	(), # __base__ of class (in this case its type)
+	(), # __bases__ of class (in this case its type)
 	{
 		"atr":99,
 		"say_hi": lambda x: print("Hi!"),

@@ -1,21 +1,10 @@
-## [[py type]] for object creation
-- when a [[py class]] is instanciated the [[py interpreter]] will call the `__call__` [[py dunder method]] of the [[py class]] parent
-- 
-
-
-
-
-
-The expression `Foo()` creates a new instance of class `Foo`. When the interpreter encounters `Foo()`, the following occurs:
-
--   The `__call__()` method of `Foo`’s parent class is called. Since `Foo` is a standard new-style class, its parent class is the `type` metaclass, so `type`’s `__call__()` method is invoked.
-    
--   That `__call__()` method in turn invokes the following:
-    
-    -   `__new__()`
-    -   `__init__()`
-
 ## [[py object creation]]
+### [[py object creation]] process
+When a [[py class]] is instanciated, the [[py interpreter]] will call 
+1) the antsertery for the first `__new__` [[py dunder method]] defined and will pass the [[py class]] itself togather with the arguments to it `__new__(cls, <args>)`
+2) the antsertery for the first `__int__` [[py dunder method]] defined and will pass the new created [[py object]] togather with the arguments to it `__new__(self, <args>)`
+- if no `__new__` or `__init__` method is defined, it will call the `__new__` or `__new__` method of the [[py base object]] 
+
 ### [[py object creation]] [[py dunder method]]
 #### `__new__(cls, ...)`
 - first method called in [[py object creation]]
@@ -26,17 +15,144 @@ The expression `Foo()` creates a new instance of class `Foo`. When the interpret
 #### `__del__(self)`
 - destructor that is called when object is deleted 
 
+### [[py object creation]] example
+- in the given example the `__new__` method of `Foo` is called because `Bar` [[py inheritance|inherented]] its `__new__` method from `Fo` since it doesn't have its ows
+- since `Bar` has its ows `__init__` method it does not inherent it
+
+![[py inheritance#py inheritance example]]
 
 
-# rest
-`__new__(cls, [...)` is the first method to get called in an object's instantiation. It takes the class, then any other arguments that it will pass along to `__init__`. `__new__` is used fairly rarely, but it does have its purposes, particularly when subclassing an immutable type like a tuple or a string. I don't want to go in to too much detail on `__new__` because it's not too useful, but it is covered in great detail [in the Python docs](http://www.python.org/download/releases/2.2/descrintro/#__new__).
+```python
+bar1 = Bar(44)
+# __new__Foooooo 44 
+# __init__Barrrrrr 44
+
+##  equivalent to
+
+bar_raw = Foo.__new__(Bar, 44) # Bar inherited __new__ from Fo
+# __new__Foooooo 44 
+bar2 = Bar.__init__(bar_raw, 44) # Bar inherited nothing from Fo
+# __init__Barrrrrr 44
+```
+
+# Anki
+START
+Basic
+[[py object creation]]
+- process and involved methods
+
+Back: 
+## [[py object creation]]
+### [[py object creation]] process
+When a [[py class]] is instanciated, the [[py interpreter]] will call 
+1) the antsertery for the first `__new__` [[py dunder method]] defined and will pass the [[py class]] itself togather with the arguments to it `__new__(cls, <args>)`
+2) the antsertery for the first `__int__` [[py dunder method]] defined and will pass the new created [[py object]] togather with the arguments to it `__new__(self, <args>)`
+- if no `__new__` or `__init__` method is defined, it will call the `__new__` or `__new__` method of the [[py base object]] 
+
+### [[py object creation]] [[py dunder method]]
+#### `__new__(cls, ...)`
+- first method called in [[py object creation]]
+- recives a reference to the [[py class]] (`cls`) plus all the arguments passed during the object creation call
+#### `__init__(self, ...)`
+- first method that is called after the [[py object]] is instanciated 
+- recives a reference to the instance ([[py object]]) itself (`self`) plus all the arguments passed during the object creation call
+#### `__del__(self)`
+- destructor that is called when object is deleted 
+
+### [[py object creation]] example
+- in the given example the `__new__` method of `Foo` is called because `Bar` [[py inheritance|inherented]] its `__new__` method from `Fo` since it doesn't have its ows
+- since `Bar` has its ows `__init__` method it does not inherent it
+
+```python
+class Foo:
+	def __new__(cls, val):
+		print(f"__new__Foooooo {val}")
+		x = object.__new__(cls)
+		return x
+	
+	def __init__(self, val) -> None:
+		print(f"__init__Foooooo {val}")
+
+class Bar(Foo):
+	def __init__(self, val) -> None:
+		print(f"__init__Barrrrrr {val}")
+```
 
 
+```python
+bar1 = Bar(44)
+# __new__Foooooo 44 
+# __init__Barrrrrr 44
 
-`__init__(self, [...)`
+##  equivalent to
 
-The initializer for the class. It gets passed whatever the primary constructor was called with (so, for example, if we called `x = SomeClass(10, 'foo')`, `__init__` would get passed `10` and `'foo'` as arguments. `__init__` is almost universally used in Python class definitions.
+bar_raw = Foo.__new__(Bar, 44) # Bar inherited __new__ from Fo
+# __new__Foooooo 44 
+bar2 = Bar.__init__(bar_raw, 44) # Bar inherited nothing from Fo
+# __init__Barrrrrr 44
+```
 
-`__del__(self)`
+Tags: code python
+<!--ID: 1698764482210-->
+END
 
-If `__new__` and `__init__` formed the constructor of the object, `__del__` is the destructor. It doesn't implement behavior for the statement `del x` (so that code would not translate to `x.__del__()`). Rather, it defines behavior for when an object is garbage collected. It can be quite useful for objects that might require extra cleanup upon deletion, like sockets or file objects. Be careful, however, as there is no guarantee that `__del__` will be executed if the object is still alive when the interpreter exits, so `__del__` can't serve as a replacement for good coding practices (like always closing a connection when you're done with it. In fact, `__del__` should almost never be used because of the precarious circumstances under which it is called; use it with caution!
+START
+Basic
+[[py object creation]]
+- what happens in the given example and why
+
+```python
+class Foo:
+	def __new__(cls, val):
+		print(f"__new__Foooooo {val}")
+		x = object.__new__(cls)
+		return x
+	
+	def __init__(self, val) -> None:
+		print(f"__init__Foooooo {val}")
+
+class Bar(Foo):
+	def __init__(self, val) -> None:
+		print(f"__init__Barrrrrr {val}")
+
+bar1 = Bar(44)
+```
+
+Back: 
+
+### [[py object creation]] example
+- in the given example the `__new__` method of `Foo` is called because `Bar` [[py inheritance|inherented]] its `__new__` method from `Fo` since it doesn't have its ows
+- since `Bar` has its ows `__init__` method it does not inherent it
+```python
+bar1 = Bar(44)
+# __new__Foooooo 44 
+# __init__Barrrrrr 44
+
+##  equivalent to
+
+bar_raw = Foo.__new__(Bar, 44) # Bar inherited __new__ from Fo
+# __new__Foooooo 44 
+bar2 = Bar.__init__(bar_raw, 44) # Bar inherited nothing from Fo
+# __init__Barrrrrr 44
+```
+
+## [[py object creation]]
+### [[py object creation]] process
+When a [[py class]] is instanciated, the [[py interpreter]] will call 
+1) the antsertery for the first `__new__` [[py dunder method]] defined and will pass the [[py class]] itself togather with the arguments to it `__new__(cls, <args>)`
+2) the antsertery for the first `__int__` [[py dunder method]] defined and will pass the new created [[py object]] togather with the arguments to it `__new__(self, <args>)`
+- if no `__new__` or `__init__` method is defined, it will call the `__new__` or `__new__` method of the [[py base object]] 
+
+### [[py object creation]] [[py dunder method]]
+#### `__new__(cls, ...)`
+- first method called in [[py object creation]]
+- recives a reference to the [[py class]] (`cls`) plus all the arguments passed during the object creation call
+#### `__init__(self, ...)`
+- first method that is called after the [[py object]] is instanciated 
+- recives a reference to the instance ([[py object]]) itself (`self`) plus all the arguments passed during the object creation call
+#### `__del__(self)`
+- destructor that is called when object is deleted 
+
+Tags: code python
+<!--ID: 1698764482213-->
+END
