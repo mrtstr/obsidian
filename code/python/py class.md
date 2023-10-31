@@ -6,7 +6,7 @@
 	3) its attributes: methods and data (`__dict__`)
  - [[py class|classes]] are [[py object]] themselves instancianted from the metaclass [[py type]] based on its 3 properties
 
-![[py object creation#py object creation]]
+![[py object creation#py object creation py dunder method]]
 
 
 ## [[py dunder valiables]] [[py class]]
@@ -73,8 +73,8 @@ Back:
 	3) its attributes: methods and data (`__dict__`)
  - [[py class|classes]] are [[py object]] themselves instancianted from the metaclass [[py type]] based on its 3 properties
 
-### [[py object creation]]
-#### [[py object creation]] [[py dunder method]]
+
+#### [[py dunder method]]
 #### `__new__(cls, ...)`
 - first method called in [[py object creation]]
 - recives a reference to the [[py class]] (`cls`) plus all the arguments passed during the object creation call
