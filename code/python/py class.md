@@ -89,7 +89,7 @@ Back:
 - [[py class]] and [[py type]] are the same concept
 - `type` is the name of the base [[py class]] every [[py class]] [[py inheritance]] from even itself
 
-![[class-chain 2.webp]]
+![[class-chain 4.webp]]
 
 ## [[py dunder valiables]] [[py class]]
 - `__name__`: stores the name of the [[py class]]
@@ -141,15 +141,15 @@ class MutableContainer(BaseContainer):
 
 ```python
 print(my_container.__class__.__class__)
-# <class 'type'>
+
 print(my_container.__class__)
-# <class 'test_package.test_subpackage.module_sub.MutableContainer'>
+
 print(MutableContainer.__bases__)
-# (<class 'test_package.test_subpackage.module_sub.BaseContainer'>,)
+
 print(MutableContainer.__bases__(0).__bases__)
-# <class 'object'>
+
 print(MutableContainer.__bases__(0).__bases__(0).__bases__(0))
-# None
+
 ```
 
 Back: 
@@ -177,6 +177,19 @@ MutableContainer.__mro__=(
 	<class 'test_package.test_subpackage.module_sub.BaseContainer'>, 
 	<class 'object'>
 )
+```
+
+```python
+print(my_container.__class__.__class__)
+# <class 'type'>
+print(my_container.__class__)
+# <class 'test_package.test_subpackage.module_sub.MutableContainer'>
+print(MutableContainer.__bases__)
+# (<class 'test_package.test_subpackage.module_sub.BaseContainer'>,)
+print(MutableContainer.__bases__(0).__bases__)
+# <class 'object'>
+print(MutableContainer.__bases__(0).__bases__(0).__bases__(0))
+# None
 ```
 
 ## [[py dunder valiables]] [[py class]]

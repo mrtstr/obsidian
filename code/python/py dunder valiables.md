@@ -19,7 +19,7 @@ START
 Basic
 [[py dunder valiables]]
 - definition
-- 3 examples and what they do
+- 2 + 4 + 3 + 2
 Back: 
 ### [[py dunder valiables]] [[py object]]
 -   `__class__`: stores the [[py class]] of the [[py object]] (metaclass [[py type]] if it's a [[py class]] itself)

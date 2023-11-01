@@ -46,7 +46,7 @@ Back:
 1) `type()` is a metaclass that [[py instantiation|instantiated]] all [[py class|classes]]
 2) return the [[py class]] a pased [[py object]] was created from (`type(obj) == obj.__class__`)
 
-![[class-chain 1.webp]]
+![[class-chain 3.webp]]
 
 ## [[py type]] for creating [[py class]]
 - `type` can be used for ceating classes by providing 

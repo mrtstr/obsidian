@@ -1,9 +1,17 @@
 ## [[py object creation]]
 ### [[py object creation]] process
 When a [[py class]] is instanciated, the [[py interpreter]] will call 
-1) the antsertery for the first `__new__` [[py dunder method]] defined and will pass the [[py class]] itself togather with the arguments to it `__new__(cls, <args>)`
-2) the antsertery for the first `__int__` [[py dunder method]] defined and will pass the new created [[py object]] togather with the arguments to it `__new__(self, <args>)`
-- if no `__new__` or `__init__` method is defined, it will call the `__new__` or `__new__` method of the [[py base object]] 
+1) calls the `__new__(cls, <args>)` [[py dunder method]] of the [[py class]] recives the class itsetf and the arguments that returns a raw (uninitilized) object
+2) calls the `__int__` [[py dunder method]] of the aw (uninitilized) object with the new created [[py object]] togather with the arguments to it `__new__(self, <args>)`
+- (`__new__` and `__int__` might be inherented from the ancerstery)
+
+![[py inheritance#py inheritance process]]
+
+```python
+raw_obj = cls.__new__(cls, <args>) 
+obj = raw_obj.__init__(raw_obj, <args>) 
+
+```
 
 ### [[py object creation]] [[py dunder method]]
 #### `__new__(cls, ...)`
@@ -45,9 +53,21 @@ Back:
 ## [[py object creation]]
 ### [[py object creation]] process
 When a [[py class]] is instanciated, the [[py interpreter]] will call 
-1) the antsertery for the first `__new__` [[py dunder method]] defined and will pass the [[py class]] itself togather with the arguments to it `__new__(cls, <args>)`
-2) the antsertery for the first `__int__` [[py dunder method]] defined and will pass the new created [[py object]] togather with the arguments to it `__new__(self, <args>)`
-- if no `__new__` or `__init__` method is defined, it will call the `__new__` or `__new__` method of the [[py base object]] 
+1) calls the `__new__(cls, <args>)` [[py dunder method]] of the [[py class]] recives the class itsetf and the arguments that returns a raw (uninitilized) object
+2) calls the `__int__` [[py dunder method]] of the aw (uninitilized) object with the new created [[py object]] togather with the arguments to it `__new__(self, <args>)`
+- (`__new__` and `__int__` might be inherented from the ancerstery)
+
+#### [[py inheritance]] process
+- When a [[py object]] is [[py object creation|instantiated]] its inherentence tree is searched, and the **method resolution order** is determined
+-  inherentence tree is genereated by interating threw the base [[py class|classes]] ([[py dunder valiables]] `__bases__`)
+- the [[py object]] inherents all attributes (what is in `__dict__`) from all ancestors but the nearest [[py class]] in the `mro` overwrites
+
+```python
+raw_obj = cls.__new__(cls, <args>) 
+obj = raw_obj.__init__(raw_obj, <args>) 
+
+```
+
 
 ### [[py object creation]] [[py dunder method]]
 #### `__new__(cls, ...)`
@@ -139,9 +159,21 @@ bar2 = Bar.__init__(bar_raw, 44) # Bar inherited nothing from Fo
 ## [[py object creation]]
 ### [[py object creation]] process
 When a [[py class]] is instanciated, the [[py interpreter]] will call 
-1) the antsertery for the first `__new__` [[py dunder method]] defined and will pass the [[py class]] itself togather with the arguments to it `__new__(cls, <args>)`
-2) the antsertery for the first `__int__` [[py dunder method]] defined and will pass the new created [[py object]] togather with the arguments to it `__new__(self, <args>)`
-- if no `__new__` or `__init__` method is defined, it will call the `__new__` or `__new__` method of the [[py base object]] 
+1) calls the `__new__(cls, <args>)` [[py dunder method]] of the [[py class]] recives the class itsetf and the arguments that returns a raw (uninitilized) object
+2) calls the `__int__` [[py dunder method]] of the aw (uninitilized) object with the new created [[py object]] togather with the arguments to it `__new__(self, <args>)`
+- (`__new__` and `__int__` might be inherented from the ancerstery)
+
+#### [[py inheritance]] process
+- When a [[py object]] is [[py object creation|instantiated]] its inherentence tree is searched, and the **method resolution order** is determined
+-  inherentence tree is genereated by interating threw the base [[py class|classes]] ([[py dunder valiables]] `__bases__`)
+- the [[py object]] inherents all attributes (what is in `__dict__`) from all ancestors but the nearest [[py class]] in the `mro` overwrites
+
+```python
+raw_obj = cls.__new__(cls, <args>) 
+obj = raw_obj.__init__(raw_obj, <args>) 
+
+```
+
 
 ### [[py object creation]] [[py dunder method]]
 #### `__new__(cls, ...)`

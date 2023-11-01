@@ -55,6 +55,7 @@ START
 Basic
 - what is the diffeence between a [[py package]] and a [[py module]]?
 - two different types of [[py package]]
+- [[py dunder valiables]]
 
 Back: 
 
@@ -62,6 +63,13 @@ Back:
 - hirachical name space with [[py function]], [[py class]] or [[py object]] in it that can be accessed by `module_name.object_name`
 - has a name saved in the [[py dunder valiables]] `__name__` containing the [[py module]] name as a [[py string]]
 - file with the suffix `py.` containing [[python]] code or a directory
+
+### [[py dunder valiables]] [[py module]]
+- `__name__`: stores the name of the [[py module]]
+-   `__file__`: the file this module was loaded from (though some modules are missing this)
+#### [[py dunder valiables]] [[py object]]
+-   `__class__`: stores the [[py class]] of the [[py object]] (metaclass [[py type]] if it's a [[py class]] itself)
+-   `__dict__`: stores the attributes of the [[py object]]
 
 ### packages
 - packages are a special kind of [[py module]]
