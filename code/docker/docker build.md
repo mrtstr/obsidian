@@ -1,4 +1,4 @@
-[[docker commands]] to create a [[docker image]]
+[[docker commands]] to create a [[d image]]
 
 example:
 ```
@@ -16,7 +16,7 @@ docker build
 
 START
 Basic
-create a [[docker image]] from a [[dockerfile]] (example)
+create a [[d image]] from a [[dockerfile]] (example)
 Back: 
 ```
 docker build 

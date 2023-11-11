@@ -401,7 +401,7 @@
     "code/numpy/add.reduce.md": "7990a2d0e50c0008a3f3ea8b5b54690f",
     "code/numpy/add.accumulate.md": "a2d683969f12ecd660329d6915cbecd6",
     "code/kubernetes/terminating.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/kubernetes/pod.md": "47cb9f1eb86c9073c37d495d0a882a59",
+    "code/kubernetes/pod.md": "bc96626d77a9d800a8c0883f1deaa97a",
     "code/kubernetes/kubernetes cluster.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/kubernetes/kubectl.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/kubernetes/kubectl exec.md": "e082cc5a422d8841c3861fe327a92a99",
@@ -412,10 +412,10 @@
     "code/kubernetes/container.md": "c0f72f2ddcbb75437fdcfaf3b9971dde",
     "code/docker/image repository.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/docker/dockerfile.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/docker/docker push.md": "ce2bc04e3ed658acb83cb888e6d6d713",
+    "code/docker/docker push.md": "feefd2f925b8dedf6f188ac33bad17fb",
     "code/docker/docker image.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/docker/docker commands.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/docker/docker build.md": "c0bd7f33501cca5b717b447e674b599e",
+    "code/docker/docker commands.md": "65c456ccedc650160f595722491e0b05",
+    "code/docker/docker build.md": "c3a086c566ac0f60e7c51e5e78b94565",
     "algorithms/problems/two sum.md": "b0d339cc22b428cae4403982bc46a4d8",
     "algorithms/problems/three sum.md": "b7d545c80c27fb062c65cb030fe43d44",
     "algorithms/problems/searching elements in sorted list.md": "628d8023eff5050ee5d6affcb55b5ea3",
@@ -1047,7 +1047,10 @@
     "code/linux/li kill.md": "42a19913d044d80e4beefc8fa8e96001",
     "code/linux/li ps.md": "062331b41f377ecfef0f4f4955ba0acd",
     "code/linux/li top and htop.md": "33c09e3e98d9a32bdf94d2d98bdcc0c9",
-    "code/linux/li process.md": "db743e7ca6ce870a405ce7bc0ee30f99"
+    "code/linux/li process.md": "416fcde63a38a86a730f3a4654c8e657",
+    "code/docker/d container.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/docker/docker.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/docker/d image.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [

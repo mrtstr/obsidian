@@ -1,5 +1,5 @@
-- [[docker commands]] to push a [[docker image]] to a [[image repository]]
-- while [[docker build|building]] a [[docker image]] use the tag containing url namespace and version
+- [[docker commands]] to push a [[d image]] to a [[image repository]]
+- while [[docker build|building]] a [[d image]] use the tag containing url namespace and version
 
 ```
 docker push <tag>
@@ -8,10 +8,10 @@ docker registry-ds.newyorker.de:8443/nowa-demand-forecast:1.21
 ```
 START
 Basic
-push a [[docker image]] to a [[image repository]]
+push a [[d image]] to a [[image repository]]
 Back: 
-- [[docker commands]] to push a [[docker image]] to a [[image repository]]
-- while [[docker build|building]] a [[docker image]] use the tag containing url namespace and version
+- [[docker commands]] to push a [[d image]] to a [[image repository]]
+- while [[docker build|building]] a [[d image]] use the tag containing url namespace and version
 
 ```
 docker push <tag>
