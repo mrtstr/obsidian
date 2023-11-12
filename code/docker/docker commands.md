@@ -72,6 +72,7 @@ START
 Basic
 [[docker]]: 
 difference `docker start <container id>` vs `docker run <image id>`
+Back: 
 - start an existing [[d container]]: `docker start <container id>`
 - create a [[d container]]:  `docker create <container id>`
 - create and start and [[d container]] form a [[d image]]: `docker run <image id>` 
