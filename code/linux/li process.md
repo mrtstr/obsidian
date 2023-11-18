@@ -5,6 +5,8 @@
 - **S**: state of the process
 - **Command**: Command used to activate the process.
 
+## types [[li user process]] and [[li kernel process]]
+
 ## commands
 
 ![[li ps#`ps`]]

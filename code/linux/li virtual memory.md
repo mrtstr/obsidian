@@ -1,0 +1,2 @@
+- processes adress space
+- e.g. process memory-maps a large file, the file is actually stored on disk, but it still takes up [[li memory adress|adress]] space in the [[li process]].
