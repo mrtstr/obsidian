@@ -126,7 +126,9 @@
     "class-chain 2.webp",
     "class-chain 3.webp",
     "class-chain 4.webp",
-    "ProcessState 1.png"
+    "ProcessState 1.png",
+    "layers 2.png",
+    "layers 3.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -411,10 +413,10 @@
     "code/kubernetes/copy to pod.md": "5b69a70c57e7ebaf32cb3b9c627c5b2e",
     "code/kubernetes/container.md": "c0f72f2ddcbb75437fdcfaf3b9971dde",
     "code/docker/image repository.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/docker/dockerfile.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/docker/dockerfile.md": "a9d0fd28dae9ed43194ab81b24227b21",
     "code/docker/docker push.md": "feefd2f925b8dedf6f188ac33bad17fb",
     "code/docker/docker image.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/docker/docker commands.md": "c7811ad4c7223682c869f1b04ece68a5",
+    "code/docker/docker commands.md": "33f4f15a16a9843faf6a25d4f387b6fd",
     "code/docker/docker build.md": "c3a086c566ac0f60e7c51e5e78b94565",
     "algorithms/problems/two sum.md": "b0d339cc22b428cae4403982bc46a4d8",
     "algorithms/problems/three sum.md": "b7d545c80c27fb062c65cb030fe43d44",
@@ -1048,9 +1050,16 @@
     "code/linux/li ps.md": "062331b41f377ecfef0f4f4955ba0acd",
     "code/linux/li top and htop.md": "33c09e3e98d9a32bdf94d2d98bdcc0c9",
     "code/linux/li process.md": "416fcde63a38a86a730f3a4654c8e657",
-    "code/docker/d container.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/docker/docker.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/docker/d image.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "code/docker/d container.md": "c41897dab0df723c8c87c0b66b7e8ba9",
+    "code/docker/docker.md": "6d90750a6dcc4dfbcb50c35edc05234f",
+    "code/docker/d image.md": "f8c043b08c19d4efd4f7c2d4afbb9d51",
+    "code/docker/d image reference.md": "ee719fc4c9bfa08a5c0637c58cd14300",
+    "code/docker/d layer.md": "3eca62c82e5a66f37ff359479c8c1d1e",
+    "code/docker/d image repository.md": "4bc9a581c4cd4b4ffca83faa08ee8bd7",
+    "code/docker/d execute commands.md": "57c2f60d443398079ec45d77845910d2",
+    "code/docker/d runnig containers.md": "992cb07d32aeba2f98e0ea0e3f41b950",
+    "code/docker/d image creation.md": "82c923ac3bd0c96773790485669ba22b",
+    "code/docker/d engine.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [
