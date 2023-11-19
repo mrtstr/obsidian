@@ -1,0 +1,1 @@
+https://www.putorius.net/introduction-to-dev-null.html

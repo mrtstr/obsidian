@@ -1,0 +1,1 @@
+[[li syscall]] for duplicating an open [[li file descriptor]]
