@@ -1,5 +1,7 @@
 terminals are ways to provide input to and get output from a system
 
+terminal session initializes and controls interactive processes
+
 Software terminal, i.e., virtual TeleTYpe ([TTY](https://www.baeldung.com/linux/monitor-keyboard-drivers)), which is the main interface of a Linux operating system
 Software pseudo-terminal, i.e., PseudoTeletYpe (PTY), which allows emulating a TTY
 

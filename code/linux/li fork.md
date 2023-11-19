@@ -1,17 +1,24 @@
 ## [[li fork|fork]]
-- [[li fork]] creates a new [[li process]] by duplicating the calling [[li process]]
-	→ child process and the parent [[li process]] run in separate [[li memory]] spaces but  both [[li memory]] spaces have the same content
-- returns the `PID` if the child [[li process]]
+- [[linux]] [[li syscall]] for creating a new [[li process]] from a [[li parent process]] by duplicating the calling [[li parent process]]
+- the newly created [[li child process]] has its own [[li process id]] and a separate [[li memory]] spaces but with the same conent
+- `fork()` will return the [[li process id]] of the [[li child process]]
+- every [[li process]] knows its [[li parent process]] [[li process id]] `PPID`
+- often used as [[li fork–exec]] combination where the [[li process]] clones itself and overwrites the [[li process image]] with other instructions
 
+# Anki
 
+START
+Basic
+### [[li fork|fork]]
+- concept
+- how its often used
+Back: 
 
-the stack, the heap, but also the file descriptors meaning **the standard input, the standard output and the standard error.**
+- [[linux]] [[li syscall]] for creating a new [[li process]] from a [[li parent process]] by duplicating the calling [[li parent process]]
+- the newly created [[li child process]] has its own [[li process id]] and a separate [[li memory]] spaces but with the same conent
+- `fork()` will return the [[li process id]] of the [[li child process]]
+- every [[li process]] knows its [[li parent process]] [[li process id]] `PPID`
 
-It means that if my parent process was writing to the current shell console, the child process will also write to the shell console.
-
-The execution of the cloned process will also start **at the same instruction as the parent process.**
-
-
-
-Nicht kopiert wird hingegen das Textsegment, das von beiden Prozessen gleichermaßen benutzt wird. 
-Beide Prozesse arbeiten mit unterschiedlichen Befehlszeigern.
+Tags: code linux
+<!--ID: 1700385886834-->
+END

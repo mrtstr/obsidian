@@ -3,7 +3,16 @@
 - **PID**: Unique Process ID given to each process.
 - **User**: Username of the process owner.
 - **S**: state of the process
-- **Command**: Command used to activate the process.
+- **Command**: [[li shell command]] used to activate the process.
+- [[li standard streams]]: 
+	- [[li stdin]] (e.g. keyboard, [[li pipeline|piped]] from another [[li process]] ...)
+	- [[li stdout]] ([[li terminal]], [[li pipeline|piped]] to another [[li process]], a [[li file]] ...)
+	- [[li stderr]] ([[li terminal]], [[li pipeline|piped]] to another [[li process]], a [[li file]] ...)
+- return a [[li return code]] back to their [[li parent process]] on termination
+- have a [[li working directory]]
+
+environment variables: key-values which get inherited across processes.
+
 
 ## types [[li user process]] and [[li kernel process]]
 

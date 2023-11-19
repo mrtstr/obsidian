@@ -1,0 +1,6 @@
+In [multitasking](https://en.wikipedia.org/wiki/Computer_multitasking "Computer multitasking") computer [operating systems](https://en.wikipedia.org/wiki/Operating_system "Operating system"), a **daemon** ([/ˈdiːmən/](https://en.wikipedia.org/wiki/Help:IPA/English "Help:IPA/English") or [/ˈdeɪmən/](https://en.wikipedia.org/wiki/Help:IPA/English "Help:IPA/English"))[[1]](https://en.wikipedia.org/wiki/Daemon_(computing)#cite_note-jargon-1) is a [computer program](https://en.wikipedia.org/wiki/Computer_program "Computer program") that runs as a [background process](https://en.wikipedia.org/wiki/Background_process "Background process"), rather than being under the direct control of an interactive user. Traditionally, the process names of a daemon end with the letter _d_
+
+
+[syslogd](https://en.wikipedia.org/wiki/Syslogd "Syslogd") is a daemon that implements system logging facility, and sshd is a daemon that serves incoming [SSH](https://en.wikipedia.org/wiki/Secure_Shell "Secure Shell") connections
+
+In a [Unix](https://en.wikipedia.org/wiki/Unix "Unix") environment, the [parent process](https://en.wikipedia.org/wiki/Parent_process "Parent process") of a daemon is often, but not always, the [init](https://en.wikipedia.org/wiki/Init "Init") process.
