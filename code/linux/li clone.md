@@ -1,0 +1,3 @@
+- The [[li clone]] [[li syscall]] is an upgraded version of the [[li fork]] call.
+- more precise control over the data shared between the parent and child [[li process|processes]]
+- The caller of this [li syscall] can control the table of [[li file descriptor]], the table of signal handlers, and whether the two processes share the same address space.

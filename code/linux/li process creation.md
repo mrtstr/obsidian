@@ -8,3 +8,6 @@ own programs with the system calls **fork()**, **exec()**, and **wait()**.
 As we already stated, processes are **managed by the Kernel** on Linux.
 
 when you boot a Linux system, your Linux kernel is loaded into memory, it is given a virtual filesystem in the RAM (also called **initramfs**) and the initial commands are executed.
+
+
+![[Process.png]]

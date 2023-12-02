@@ -1,3 +1,6 @@
+## [[li process]] concept
+- container of isolation which can hold system resources 
+- multiple [[li thread|threads]] can run inside a [[li process]]
 
 ## basic [[li process]] properties
 - **PID**: Unique Process ID given to each process.
@@ -16,6 +19,43 @@ environment variables: key-values which get inherited across processes.
 
 ## types [[li user process]] and [[li kernel process]]
 
+
+## [[li process]] states
+-   `D` = **uninterruptible sleep**: waiting for a resource to be available (will wakeup to handle signals)
+-   `R` = **running**: running or it’s ready to run
+-   `S` = **sleeping**: waiting for a resource to be available (will not wakeup to handle signals)
+-   `T` = **traced or stopped**
+-   `Z` = **zombie**: terminated child process that remains in the system's process table while waiting for its parent process to collect its exit status
+
+![[ProcessState.png]]
+
+
+## memory layout
+- a [[li process]] has its own [[li virtual memory]] space
+- the [[li virtual memory]] space consists of 4 parts
+	1) [[li stack]]
+	2) [[li heap]]
+	3) [[li data segment]]
+	4) [[li code segment]]
+- on 
+
+![[li virtual memory#li virtual memory]]
+
+![[li stack#li stack]]
+
+![[li heap#li heap]]
+
+![[li data segment#li data segment data segment]]
+
+
+![[li code segment#li code segment instruction segment]]
+
+![[Program_memory_layout.pdf.jpg]]
+
+## process execution
+
+![[li thread#li thread]]
+
 ## commands
 
 ![[li ps#`ps`]]
@@ -26,18 +66,105 @@ environment variables: key-values which get inherited across processes.
 
 ![[li renice#`renice`]]
 
-![[li process states#li process states]]
-
-
-
-
-
-### example: creating a [[li process]] by running code from the disc
-
-![[Process.png]]
-
 
 # Anki
+
+ART
+Basic
+## memory layout of a [[li process]]
+- relationship between the memory of a process and the [[li physical memory (RAM)]]
+- segments of the memory of a [[li process]] (4 + 1)
+Back: 
+
+- a [[li process]] has its own [[li virtual memory]] space
+- the [[li virtual memory]] space consists of 4 parts
+	1) [[li stack]]
+	2) [[li heap]]
+	3) [[li data segment]]
+	4) [[li code segment]]
+
+
+## [[li virtual memory]]
+- abstraction layer between the [[li process]] and the [[li physical memory (RAM)]] and [[li disc]]
+- from the [[li process]] perspective it is like having its own very lage private contious [[li memory]] space 
+- in the [[li memory management unit]] of the [[li kernel]] a mapping of [[li physical memory (RAM)]] and [[li disc]] [[li memory paging|pages]] to [[li virtual memory]] [[li memory paging|pages]] is done (see [[li memory paging]])
+
+## [[li stack]]
+- segment inside the [[li virtual memory]] space of a [[li process]]
+- execution memory of a [[li thread]] → a [[li process]] can have multiple [[li stack|stacks]]
+- **Fixed size:**(set when the [[li thread]] is created)
+- contains local variables, function arguments, and control information (e.g. adress pointers), including return addresses
+- manages by the [[li memory management unit]] of the [[li kernel]]
+- LIFO (Last-In-First-Out) data structure
+- lifetime of data is limited to the end of the scope
+- when a function is called the stack grows and when the function is exited everything is removed except the reurn values
+
+## [[li heap]]
+- segment inside the [[li virtual memory]] space of a [[li process]]
+- [[li memory]] for dynamic memory storage for large data structures and objects with dynamic lifetimes'
+- memory can be allocated or deallocated manuelly during the program execution during the processes liefetime
+
+## [[li data segment|data segment]]
+- segment inside the [[li virtual memory]] space of a [[li process]]
+- contains gloabal / static variables
+- remains in memory throughout the life of the [[li process]] 
+- read/write
+
+### initializes data
+The **data segment** contains initialized static variables
+
+```C
+int i = 3;
+char a[] = "Hello World";
+static int b = 2023;    // Initialized static global variable
+void foo (void) {
+  static int c = 2023; // Initialized static local variable
+}
+```
+
+
+### bss segment (uninitializes data)
+- contains uninitialized static data, both variables and constants,
+```C
+static int i;
+static char a[12];
+```
+
+
+
+
+## [[li code segment|instruction segment]]
+- segment inside the [[li virtual memory]] space of a [[li process]]
+- contains executable binary code (mapped from the [[li disc]] to the [[li virtual memory]] of the [[li process]])
+- read only 
+
+![[Program_memory_layout.pdf 1.jpg]]
+
+
+Tags: code linux
+
+END
+
+START
+Basic
+[[linux]] process states
+- 5 short name, full name explaination
+- overview diagramm
+
+Back: 
+
+## [[li process]] states
+-   `D` = **uninterruptible sleep**: waiting for a resource to be available (will wakeup to handle signals)
+-   `R` = **running**: running or it’s ready to run
+-   `S` = **sleeping**: waiting for a resource to be available (will not wakeup to handle signals)
+-   `T` = **traced or stopped**
+-   `Z` = **zombie**: terminated child process that remains in the system's process table while waiting for its parent process to collect its exit status
+
+![[ProcessState 1.png]]
+
+Tags: code linux
+<!--ID: 1699690123163-->
+END
 
 START
 Basic
