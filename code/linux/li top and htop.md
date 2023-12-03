@@ -5,13 +5,13 @@
 ## information
 ![[li process#basic li process properties]]
 
-![[li scheduling and CPU time#(overall) priority level (PR)]]
-![[li scheduling and CPU time#niceness (NI)]]
+![[li scheduling#(overall) priority level (PR)]]
+![[li scheduling#niceness (NI)]]
 
 
-![[li process memory#memory]]
+![[li process memory layout#memory]]
 
-![[li scheduling and CPU time#CPU time]]
+![[li scheduling#CPU time]]
 
 # Anki
 
@@ -55,9 +55,8 @@ Tags: code linux
 - **%MEM**; Percentage of RAM used by the process.
 
 ### CPU time
-- on the [[li scheduling and CPU time|scheduling]] of the [[li kernel]]
+- on the [[li scheduling|scheduling]] of the [[li kernel]]
 	- **TIME+:** Total CPU time consumed by the process.
 	- **%CPU**: Percentage of CPU used by the process.
-
 <!--ID: 1699690123174-->
 END

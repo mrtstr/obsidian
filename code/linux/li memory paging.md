@@ -10,7 +10,10 @@
 - when the [[li physical memory (RAM)]] is full data can be copied from the [[li physical memory (RAM)]] to the [[li disc]] and adapt the page table accordingly without impact the [[li virtual memory]]
 
 ![[pageswaping.png]]
-
+-   System libraries can be shared by mapping them into the virtual address space of more than one process.
+-   Processes can also share virtual memory by mapping the same block of memory to more than one process.
+-   Process pages can be shared during a fork( ) system call, eliminating the need to copy all of the pages of the original ( parent ) process.
+- different page replacement strategies Basic Page Replacement,  FIFO Page Replacement,  Optimal Page Replacement, _**Least Recently Used**_, #### Second-Chance Algorithm
 ### page
 - fixed-length contiguous block of [[li virtual memory]]
 - size is determined by the architatue of the [[li cpu]]
