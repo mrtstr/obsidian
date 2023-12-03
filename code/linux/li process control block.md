@@ -1,7 +1,7 @@
 ## [[li process control block|process control block]]
 - data structure used by the [[li kernel]] to store all the information about a [[li process]]
 ###  contains
-- [[li process state]]
+- [[li state]]
 - [[li process id]]
 - [[li parent process]]
 - [[li child process]] (their [[li process id]])
@@ -25,10 +25,9 @@ Basic
 - concept (1)
 - contains (7)
 Back: 
-
 - data structure used by the [[li kernel]] to store all the information about a [[li process]]
 ###  contains
-- [[li process state]]
+- [[li state]]
 - [[li process id]]
 - [[li parent process]]
 - [[li child process]] (their [[li process id]])

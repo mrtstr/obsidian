@@ -1,4 +1,4 @@
-## [[li process]] states
+## [[li state|state]] of a [[li thread|thread]] (of a [[li process|process]])
 -   `D` = **uninterruptible sleep**: waiting for a resource to be available (will wakeup to handle signals)
 -   `R` = **running**: running or it’s ready to run
 -   `S` = **sleeping**: waiting for a resource to be available (will not wakeup to handle signals)
@@ -12,13 +12,13 @@
 
 START
 Basic
-[[linux]] process states
+[[linux]] [[li thread]] states
 - 5 short name, full name explaination
 - overview diagramm
 
 Back: 
 
-## [[li process]] states
+#### [[li state|state]] of a [[li thread|thread]] (of a [[li process|process]])
 -   `D` = **uninterruptible sleep**: waiting for a resource to be available (will wakeup to handle signals)
 -   `R` = **running**: running or it’s ready to run
 -   `S` = **sleeping**: waiting for a resource to be available (will not wakeup to handle signals)

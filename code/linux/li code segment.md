@@ -1,4 +1,4 @@
-## [[li code segment|instruction segment]]
+## [[li code segment|code segment]]
 - segment inside the [[li virtual memory]] space of a [[li process]]
 - contains executable binary code (mapped from the [[li disc]] to the [[li virtual memory]] of the [[li process]])
 - read only 

@@ -6,6 +6,7 @@
 - often used as [[li fork–exec]] combination where the [[li process]] clones itself and overwrites the [[li process image]] with other instructions
 - unesseary memory writen is prevented by [[li memory paging|copy on write]] performed by the [[li virtual memory]] management
 
+## copy on write
 ![[li memory paging#copy on write]]]
 
 

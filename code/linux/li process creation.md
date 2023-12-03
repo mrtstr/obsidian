@@ -23,4 +23,3 @@ when you boot a Linux system, your Linux kernel is loaded into memory, it is giv
 
 ![[Process.png]]
 
-![[3_08_ProcessTree.jpg]]

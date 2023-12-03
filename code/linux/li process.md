@@ -1,14 +1,22 @@
 ## [[li process]] concept
 - A [[li process]] is an instance of a computer program in execution
-- has a private [[li virtual memory]] space
-- can have multiple flows of execution ([[li thread|threads]]) that are scheduled independently but share the [[li process]] resources
+- has a private [[li virtual memory]] space that is shared by its [[li thread|threads]] containing
+	- [[li stack]]: for local (in scope) variables 
+	- [[li heap]]: for manuel dynamicly allocated and deleted data
+	- [[li data segment]]: for static/global variables that are 
+	- [[li code segment]]: for the binary code that is executed ([[li program counter]] of each [[li thread]] keeping track of the location)
+- can have multiple flows of execution ([[li thread|threads]]) that are [[li scheduling|scheduled]] independently by the [[li kernel]] but share the [[li process]] resources
+- is created by a another [[li process]] ([[li parent process]]) 
+- is managed by the [[li kernel]] in a data structure called [[li process control block]]
+
+![[3_08_ProcessTree.jpg]]
 
 ![[li process control block#li process control block process control block]]
 
-![[li process state#li process states]]
 
 
-![[li process memory layout#process memory layout]]
+
+![[li process memory layout#li process memory layout process memory layout]]
 
 ## process execution
 
@@ -28,6 +36,31 @@
 
 
 # Anki
+
+START
+Basic
+[[li process]] summary (5)
+
+Back: 
+## [[li process]] concept
+- A [[li process]] is an instance of a computer program in execution
+- has a private [[li virtual memory]] space that is shared by its [[li thread|threads]] containing
+	- [[li stack]]: for local (in scope) variables 
+	- [[li heap]]: for manuel dynamicly allocated and deleted data
+	- [[li data segment]]: for static/global variables that are 
+	- [[li code segment]]: for the binary code that is executed ([[li program counter]] of each [[li thread]] keeping track of the location)
+- can have multiple flows of execution ([[li thread|threads]]) that are [[li scheduling|scheduled]] independently by the [[li kernel]] but share the [[li process]] resources
+- is created by a another [[li process]] ([[li parent process]]) 
+- is managed by the [[li kernel]] in a data structure called [[li process control block]]
+
+![[3_08_ProcessTree 1.jpg]]
+
+![[Program_memory_layout.pdf 6.jpg]]
+
+Tags: code linux
+<!--ID: 1701613701258-->
+END
+
 
 START
 Basic

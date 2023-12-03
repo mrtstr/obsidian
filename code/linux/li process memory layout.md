@@ -1,12 +1,12 @@
 
-## process memory layout
+## [[li process memory layout|process memory layout]]
 - a [[li process]] has its own [[li virtual memory]] space
 - the [[li virtual memory]] space consists of 4 parts
-	1) [[li stack]]
-	2) [[li heap]]
-	3) [[li data segment]]
-	4) [[li code segment]]
-- on 
+	- [[li stack]]: for local (in scope) variables 
+	- [[li heap]]: for manuel dynamicly allocated and deleted data
+	- [[li data segment]]: for static/global variables that are 
+	- [[li code segment]]: for the binary code that is executed ([[li program counter]] of each [[li thread]] keeping track of the location)
+
 
 ![[li virtual memory#li virtual memory]]
 
@@ -17,7 +17,7 @@
 ![[li data segment#li data segment data segment]]
 
 
-![[li code segment#li code segment instruction segment]]
+![[li code segment#li code segment code segment]]
 
 ![[Program_memory_layout.pdf.jpg]]
 
@@ -85,16 +85,12 @@ static int i;
 static char a[12];
 ```
 
-
-
-
 ## [[li code segment|instruction segment]]
 - segment inside the [[li virtual memory]] space of a [[li process]]
 - contains executable binary code (mapped from the [[li disc]] to the [[li virtual memory]] of the [[li process]])
 - read only 
 
 ![[Program_memory_layout.pdf 1.jpg]]
-
 
 Tags: code linux
 <!--ID: 1701586495626-->

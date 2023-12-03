@@ -1,4 +1,4 @@
--   **Independent Processes** operating concurrently on a systems are those that can neither affect other processes or be affected by other processes.
+af-   **Independent Processes** operating concurrently on a systems are those that can neither affect other processes or be affected by other processes.
 -   **Cooperating Processes** are those that can affect or be affected by other processes. There are several reasons why cooperating processes are allowed:
     -   Information Sharing - There may be several processes which need access to the same file for example. ( e.g. pipelines. )
     -   Computation speedup - Often a solution to a problem can be solved faster if the problem can be broken down into sub-tasks to be solved simultaneously ( particularly when multiple processors are involved. )
