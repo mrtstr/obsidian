@@ -33,13 +33,9 @@ Back:
 
 
 ## [[li fork|fork]]
-- [[linux]] [[li syscall]] for creating a new [[li process]] from a [[li parent process]] by duplicating the calling [[li parent process]]
-- the newly created [[li child process]] has its own [[li process id]] and a separate [[li virtual memory]] spaces but with the same conent
-- `fork()` will return the [[li process id]] of the [[li child process]]
-- every [[li process]] knows its [[li parent process]] [[li process id]] `PPID`
-- often used as [[li fork–exec]] combination where the [[li process]] clones itself and overwrites the [[li process image]] with other instructions
-- unesseary memory writen is prevented by [[li memory paging|copy on write]] performed by the [[li virtual memory]] management
-
+- [[li syscall]] for creating a new [[li child process]] from a [[li parent process]] with the same [[li process image]] as the [[li parent process]] 
+- the newly created [[li child process]] has its own [[li process id]] and a separate [[li virtual memory]] spaces but with the same conent ([[li process image]])
+- the `fork()` function will return the [[li process id]] of the newly created [[li child process]]
 
 Tags: code linux
 <!--ID: 1701613701250-->

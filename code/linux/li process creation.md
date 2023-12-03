@@ -1,3 +1,16 @@
+- unesseary memory writen is prevented by [[li memory paging|copy on write]] performed by the [[li virtual memory]] management
+![[li memory paging#copy on write]]
+
+![[li fork#li fork fork]]
+
+![[li exec#li exec exec]]
+
+combination of [[li fork]] and [[li exec]] is often used creating and child [[li process]] that is executing something
+
+In the kernel, fork is actually implemented by a `clone` system call. This `clone` interfaces effectively provides a level of abstraction in how the Linux kernel can create processes.
+
+`clone` allows you to explicitly specify which parts of the new process are copied into the new process, and which parts are shared between the two processes. This may seem a bit strange at first, but allows us to easily implement _threads_ with one very simple interface.
+
 - child process** is started by parent process
 - Processes may create other processes through appropriate system calls, such as **fork** or **spawn**
 - When linux starts, it runs a single program, **init** with PID 1 (prime ancestor of all processes)
@@ -19,7 +32,7 @@ As we already stated, processes are **managed by the Kernel** on Linux.
 
 when you boot a Linux system, your Linux kernel is loaded into memory, it is given a virtual filesystem in the RAM (also called **initramfs**) and the initial commands are executed.
 
-![[li fork–exec]]
+
 
 ![[Process.png]]
 

@@ -8,15 +8,15 @@
 - can have multiple flows of execution ([[li thread|threads]]) that are [[li scheduling|scheduled]] independently by the [[li kernel]] but share the [[li process]] resources
 - is created by a another [[li process]] ([[li parent process]]) 
 - is managed by the [[li kernel]] in a data structure called [[li process control block]]
+- every [[li process]] knows its [[li parent process]] [[li process id]] `PPID`
+
 
 ![[3_08_ProcessTree.jpg]]
 
 ![[li process control block#li process control block process control block]]
 
 
-
-
-![[li process memory layout#li process memory layout process memory layout]]
+![[li process image#li process image process image]]
 
 ## process execution
 

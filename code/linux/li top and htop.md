@@ -9,7 +9,7 @@
 ![[li scheduling#niceness (NI)]]
 
 
-![[li process memory layout#memory]]
+![[li process image#memory]]
 
 ![[li scheduling#CPU time]]
 
