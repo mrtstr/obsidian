@@ -29,6 +29,10 @@ Back:
 - often used in combination with [[li fork]] (or [[li clone]]) for [[li process creation]]
 	→ first create a new [[li process]] with the same [[li process image]] but then replace it with something else 
 
+### example `exec ls`
+execute `exec ls` command in your [[li bash]] [[li terminal]]
+->  [[li shell]] will terminate as soon as the command is completed because the [[li process image]] ([[li bash]] interpreter) is repalced
+
 ### [[li process image|process image summary]]
 - a [[li process]] has its own [[li virtual memory]] space
 - the [[li virtual memory]] space consists of 4 parts

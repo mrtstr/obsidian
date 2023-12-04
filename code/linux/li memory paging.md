@@ -98,7 +98,7 @@ if [[li virtual memory]] is accesses that is mapped to a page that is not in the
 3) updates the page table accordingly.
 
 
-![[1 yt13_erSJUJJuavgm_Wsnw 2.webp]]
+![[1 yt13_erSJUJJuavgm_Wsnw 3.webp]]
 
 ### copy on write
 - [[li memory management]] concept for sharing [[li physical memory (RAM)]] between [[li process|processes]] untill one of the involved [[li process]] performs a wirte operation
@@ -107,8 +107,8 @@ if [[li virtual memory]] is accesses that is mapped to a page that is not in the
 - from the process perspective its looks like each process has its own memory
 - make [[li fork]] [[li syscall]] much more efficient
 
-![[1 B3jzse_G1dIwL5US0LlStg 4.webp]]
 
+![[1 B3jzse_G1dIwL5US0LlStg 5.webp]]
 
 Tags: code linux
 <!--ID: 1701507903137-->
