@@ -30,7 +30,7 @@
 
 ![[li top and htop#top]]
 
-![[li kill#kill]]
+![[li kill syscall#kill]]
 
 ![[li renice#`renice`]]
 

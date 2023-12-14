@@ -20,3 +20,7 @@
 An OS is responsible for the following tasks with regards to memory management: 
 -   Keeping track of which blocks of memory are currently in use, and by which processes. -   Determining which blocks of code and data to move into and out of memory, and when.
 -   Allocating and deallocating memory as needed. ( E.g. new, malloc )
+
+![[li process control block#li process control block process control block]]
+
+![[li process table#li process table process table]]

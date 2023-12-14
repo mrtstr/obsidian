@@ -1,5 +1,5 @@
-## `kill`
-- kill a [[li process]] by sending a kill [[li signal]]
+## [[li kill syscall|kill syscall]] 
+- [[li syscall]] for sending a kill [[li signal]] to another process [[li process]] 
 - there are different types of kill signals (most commong SIGKILL `-9`)
 - usage `kill -9 [pid]`
 
