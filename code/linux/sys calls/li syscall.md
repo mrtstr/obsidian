@@ -1,3 +1,5 @@
+![[1_10_UserToKernelMode.jpg]]
+
 syscalls - Linux system calls
 The system call is the fundamental interface between an application and the Linux kernel.
 System calls are generally not invoked directly, but rather via wrapper functions in [[li glibc]]

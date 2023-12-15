@@ -1,8 +1,8 @@
 
 # [[li process termination|process termination]]
 - When a [[li process]] terminates, all of its resources ([[li memory]], [[li file descriptor]]...) are released by the [[li kernel]]
-- open files are flushed and closed
-- the [[li return code]] is returned to the [[li parent process]] (reaping)
+- open files are flushed and closed etc
+- the terminated [[li process]] stays in the [[li process table]] untill the [[li return code]] is requested by the [[li parent process]] (reaping)
 - li processes can terminate on their own, can be killed or asked to terminate by a [[li signal]]
 
 ## reaping of the [[li return code]]
@@ -53,7 +53,7 @@ Back:
 ## [[li process termination|process termination]]
 - When a [[li process]] terminates, all of its resources ([[li memory]], [[li file descriptor]]...) are released by the [[li kernel]]
 - open files are flushed and closed
-- the [[li return code]] is returned to the [[li parent process]] (reaping)
+- the terminated [[li process]] stays in the [[li process table]] untill the [[li return code]] is requested by the [[li parent process]] (reaping)
 - li processes can terminate on their own, can be killed or asked to terminate by a [[li signal]]
 
 
@@ -102,7 +102,7 @@ Back:
 ## [[li process termination|process termination]]
 - When a [[li process]] terminates, all of its resources ([[li memory]], [[li file descriptor]]...) are released by the [[li kernel]]
 - open files are flushed and closed
-- the [[li return code]] is returned to the [[li parent process]] (reaping)
+- the terminated [[li process]] stays in the [[li process table]] untill the [[li return code]] is requested by the [[li parent process]] (reaping)
 - li processes can terminate on their own, can be killed or asked to terminate by a [[li signal]]
 
 ## reaping of the [[li return code]]

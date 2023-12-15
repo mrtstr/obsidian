@@ -146,7 +146,9 @@
     "Program_memory_layout.pdf 6.jpg",
     "pagetabe 2.png",
     "1 yt13_erSJUJJuavgm_Wsnw 3.webp",
-    "1 B3jzse_G1dIwL5US0LlStg 5.webp"
+    "1 B3jzse_G1dIwL5US0LlStg 5.webp",
+    "kernel 1.png",
+    "Linux_kernel_map 1.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1060,7 +1062,7 @@
     "code/linux/li scheduling and CPU time.md": "3380d63ece465e4005878c4785d66b17",
     "code/linux/li renice.md": "52ec8e1089bc379bda6143df1be3c36e",
     "code/linux/linux.md": "03bfd4ef0c0bb92751c2e2013f8222c3",
-    "code/linux/li kernel.md": "9942fd3d497b25a9830caafd651cba4c",
+    "code/linux/li kernel.md": "bca35835f2183170987cc8af7d426cca",
     "code/linux/li root.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/linux/li process states.md": "734f376c1b353048f347c83e448521ec",
     "code/linux/li signal.md": "31751dcc4fe7b6df3d297fbc19ea7b7f",
@@ -1144,8 +1146,8 @@
     "code/linux/li process messaging.md": "473025694d10f0b2a2e9d42b4ed25716",
     "code/linux/li memory sharing.md": "9ee84b9ce3a979ae499cdc48f5206638",
     "code/linux/li orphan process.md": "3ded7d2fe1a3c6a331b5a41928c1f18d",
-    "code/linux/li process termination.md": "3ecb0ef199d12ee1a524603ca8018703",
-    "code/linux/sys calls/li syscall.md": "cbd86f9bd1b9ae0a53516b9006bd741f",
+    "code/linux/li process termination.md": "629d4040b25b5e8e858cf7752aee91f0",
+    "code/linux/sys calls/li syscall.md": "db2e0d6dbb264dafe50f96687baba427",
     "code/linux/sys calls/li open.md": "01861a36a8c9369fb74b1057f6717650",
     "code/linux/sys calls/li fork.md": "727975f6db3880ad1c22a2f82a59bf6b",
     "code/linux/sys calls/li dup.md": "f1ce5a46bca0ae0314443a070550ca0c",
