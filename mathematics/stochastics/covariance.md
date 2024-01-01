@@ -1,4 +1,4 @@
-## Definition
+## definition [[covariance]]
 The [[covariance]] is the [[variance]] of a [[joint distribution]]
 
 $$
@@ -14,7 +14,7 @@ $$
 ### negative [[covariance]]:
 - the [[covariance]] is negative when $X$ or $Y$ is bigger that its [[mean]] while the other is smaller than its [[mean]] and vice versa
 
-## properties
+## properties  [[covariance]]
 ### dependency on the absolute size of the [[random variable|random variables]]
 - the [[covariance]] is a measure for the linear dependency of [[random variable|random variables]] but it also depends on the absolute size of the [[random variable|random variables]] $X$ and $Y$
 $$

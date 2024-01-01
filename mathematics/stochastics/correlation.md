@@ -1,11 +1,11 @@
-# Definition
+## definition [[correlation]]
 - The [[correlation]] is a measure for the linear dependency of [[random variable|random variables]] 
 - in contrast to the [[covariance]] the [[correlation]] is not depending on the absolut size of the [[random variable|random variables]]
 $$
 \rho[X,Y] = \frac{\mathbb{COVAR}[X,Y]}{\sigma_X\sigma_Y}=\frac{\mathbb{COVAR}[X,Y]}{\sqrt{\mathbb{VAR}[X]\mathbb{VAR}[Y]}}
 $$
-# Properties
-## the [[correlation]] is independent of [[random variable]] size
+## properties [[correlation]]
+### the [[correlation]] is independent of [[random variable]] size
 $$
 \begin{split}
 \rho\left[aX,bY\right] 
@@ -17,13 +17,13 @@ $$
 &= sign(ab) \cdot \rho\left[X,Y\right]
 \end{split}
 $$
-## boundarys
+### boundarys
 $$
 -1 \leq \rho[X,Y] \leq 1
 $$
 proof: [[cauchy schwarz inequality]]
 
-## [[correlation]] of [[stochastic independent]] [[random variable|random variables]]
+### [[correlation]] of [[stochastic independent]] [[random variable|random variables]]
 From [[stochastic independent|stochastic independence]] follows zero [[correlation]] and [[covariance]] but not the other way.
 $$
 \begin{split}
@@ -38,7 +38,7 @@ $$
 $$
 ![[covariance#covariance of stochastic independent random variable random variables]]
 
-## [[correlation]] of linear dependent [[random variable|random variables]]
+### [[correlation]] of linear dependent [[random variable|random variables]]
 from $\left|\rho\left[X,Y\right]\right|= 1$ that the [[random variable|random variables]] $X$ and $Y$  are linearly related thus $X=g(Y)$ and $Y=g(X)$ with $g(.)$ being a [[linear function]] and vice versa
 $$
 \left|\rho\left[X,Y\right]\right|= 1 \Leftrightarrow X=g(Y)
@@ -63,10 +63,10 @@ $$
 sign(a)\\
 \end{split}
 $$
-## interpretation of a small [[correlation]]
+### interpretation of a small [[correlation]]
 - a small $\left|\rho\left[X,Y\right]\right|$ does not mean that $X$ and $Y$ are not related - it only says that there is no linear relationship between them
 
-# examples
+## examples
 Suppose that X has the [[continous uniform distribution]] on the interval $[−2, 2]$ and $Y = X^6$. Show that $X$ and $Y$ are uncorrelated. 
 
  $X$ is symetric around $0$ and thus $\mathbb{E}\left[X^n\right]=0$ for every odd $n$
