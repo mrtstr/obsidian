@@ -254,8 +254,8 @@
     "mathematics/stochastics/discrete uniform distribution.md": "5706370e2e69f785327e0a52cf58bfdb",
     "mathematics/stochastics/discrete random variable.md": "640b7e0f0e63d009b860bd5139a7ffd4",
     "mathematics/stochastics/discrete distribution.md": "0ae9ce23bae47a9d45da42c867e44727",
-    "mathematics/stochastics/covariance.md": "b56eb71b2afcd97f5cbac3d1e8f081e0",
-    "mathematics/stochastics/correlation.md": "ee4c4c5dd1967229b0d00224ccfca599",
+    "mathematics/stochastics/covariance.md": "1bdac6bf927136a453a516bbc94c9472",
+    "mathematics/stochastics/correlation.md": "3516bbb7c241d20e558d58f8478bc79a",
     "mathematics/stochastics/convolution of distributions.md": "fbe22e65b489ec200afe9a7e13d30b24",
     "mathematics/stochastics/continuous random variable.md": "f50418a19146aaecc027dae2919e6b6d",
     "mathematics/stochastics/continous uniform distribution.md": "20b03fb1365080c141193b0c7d99559a",
@@ -1173,7 +1173,13 @@
     "code/linux/li zombie process.md": "8e62f03230ae0b37e84d9281c890f469",
     "code/linux/li init process.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/linux/sys calls/li wait.md": "12193e313bb9c49650642e0cb935cfac",
-    "code/linux/sys calls/li kill syscall.md": "56583b86c039833797f7d66db2e9dc32"
+    "code/linux/sys calls/li kill syscall.md": "56583b86c039833797f7d66db2e9dc32",
+    "mathematics/stochastics/time series/autocorrelation (pearson).md": "8342328e446a21ab72019f5dff67d18d",
+    "mathematics/stochastics/time series/stationary process.md": "a3a04004bb9a89b7d0cd8c7733d6bff0",
+    "mathematics/stochastics/time series/stochastic process.md": "54a018ed36e547674c57d11f9c41b8da",
+    "mathematics/stochastics/time series/time series.md": "f92d0e87021b962d79d7d11d0466561a",
+    "mathematics/stochastics/time series/partial autocorrelation.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/time series/autocovariance.md": "57138299792a841c383bc32cf820f72e"
   },
   "fields_dict": {
     "Basic": [
