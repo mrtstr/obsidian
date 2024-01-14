@@ -1,4 +1,4 @@
-## Definition
+## definition [[variance]]
 - [[expectation|expectation]] of the squared deviation of a [[discrete random variable]] from its mean
 - measure of how for a [[random variable]] spreads out
 - the square root of the [[variance]] is the [[standard deviation]] $\sigma$

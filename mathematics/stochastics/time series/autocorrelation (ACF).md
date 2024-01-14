@@ -1,8 +1,8 @@
 
-## definition [[autocorrelation (pearson)]]
-- [[correlation]] between two points of a [[time series]] / [[stochastic process]] is called [[autocorrelation (pearson)]]
-- the [[autocorrelation (pearson)]] is a normalized [[autocovariance]]
-- given a [[stochastic process]] $\{X_t\}$ the [[autocorrelation (pearson)]] $\rho_{XX}(t_1, t_2)$ for the time instances $t_1$ and $t_2$ is given as follows
+## definition [[autocorrelation (ACF)]]
+- [[correlation]] between two points of a [[time series]] / [[stochastic process]] is called [[autocorrelation (ACF)]]
+- the [[autocorrelation (ACF)]] is a normalized [[autocovariance]]
+- given a [[stochastic process]] $\{X_t\}$ the [[autocorrelation (ACF)]] $\rho_{XX}(t_1, t_2)$ for the time instances $t_1$ and $t_2$ is given as follows
 
 $$
 \begin{split}
@@ -16,15 +16,15 @@ $$
 \end{split}
 $$
 
-![[correlation#definition correlation]]
-
-![[autocovariance#definition autocovariance]]
-
-## definition [[autocorrelation (pearson)]] for [[stationary process]]
+## definition [[autocorrelation (ACF)]] for [[stationary process]]
 
 $$
 \begin{split}
-\rho_{XX}(t_1, t_2) = \rho_{XX}(\tau, \tau + t_2 - t_1)
+\rho_{XX}(t_1, t_2) 
+&= \rho_{XX}(t, t + h) \qquad \text{with } h = t_2-t_1\\
+&= \rho_{XX}(h) \\
+&= \frac{ \mathbb{COV}\left[X_{t}, X_{t - h}\right]}{\mathbb{VAR}\left[X_{t}\right]} 
+\qquad \text{with arbitray } \tau, h
 \end{split}
 $$
 #### proof
@@ -34,9 +34,15 @@ $$
 &= 
 \frac{ K_{XX}(t_1, t_2)}{\sqrt{ \mathbb{VAR}\left[X_{t_1}\right]\mathbb{VAR}\left[X_{t_2}\right]}}\\ 
 &= 
-\frac{ K_{XX}(\tau , t_2 - t_1 + \tau)}{\mathbb{VAR}\left[X_{\tau_2}\right]}\\ 
+\frac{ K_{XX}(t , t-h)}{\mathbb{VAR}\left[X_{t}\right]}\\ 
 \end{split}
 $$
+
+## relevant
+![[correlation#definition correlation]]
+
+![[autocovariance#definition autocovariance]]
+
 
 ![[stationary process#Definition (strongly) stationary process]]
 
@@ -47,18 +53,18 @@ $$
 
 START
 Basic
-[[autocorrelation (pearson)]]
+[[autocorrelation (ACF)]]
 - defintion
 - relationship to the [[autocovariance]]
-[[autocorrelation (pearson)]] of a [[stationary process]]
+[[autocorrelation (ACF)]] of a [[stationary process]]
 - propertie with proof
 
 Back: 
 
-## definition [[autocorrelation (pearson)]]
-- [[correlation]] between two points of a [[time series]] / [[stochastic process]] is called [[autocorrelation (pearson)]]
-- the [[autocorrelation (pearson)]] is a normalized [[autocovariance]]
-- given a [[stochastic process]] $\{X_t\}$ the [[autocorrelation (pearson)]] $\rho_{XX}(t_1, t_2)$ for the time instances $t_1$ and $t_2$ is given as follows
+## definition [[autocorrelation (ACF)]]
+- [[correlation]] between two points of a [[time series]] / [[stochastic process]] is called [[autocorrelation (ACF)]]
+- the [[autocorrelation (ACF)]] is a normalized [[autocovariance]]
+- given a [[stochastic process]] $\{X_t\}$ the [[autocorrelation (ACF)]] $\rho_{XX}(t_1, t_2)$ for the time instances $t_1$ and $t_2$ is given as follows
 
 $$
 \begin{split}
@@ -101,11 +107,14 @@ $$
 
 
 
-## definition [[autocorrelation (pearson)]] for [[stationary process]]
+## definition [[autocorrelation (ACF)]] for [[stationary process]]
 
 $$
 \begin{split}
-\rho_{XX}(t_1, t_2) = \rho_{XX}(\tau, \tau + t_2 - t_1)
+\rho_{XX}(t_1, t_2) 
+&= \rho_{XX}(t, t + h) \qquad \text{with } h = t_2-t_1\\
+&= \rho_{XX}(h) \\
+&= \frac{ \mathbb{COV}\left[X_{t}, X_{t - h}\right]}{\mathbb{VAR}\left[X_{t}\right]} \qquad \text{with arbitray } \tau, h
 \end{split}
 $$
 #### proof
@@ -115,7 +124,7 @@ $$
 &= 
 \frac{ K_{XX}(t_1, t_2)}{\sqrt{ \mathbb{VAR}\left[X_{t_1}\right]\mathbb{VAR}\left[X_{t_2}\right]}}\\ 
 &= 
-\frac{ K_{XX}(\tau , t_2 - t_1 + \tau)}{\mathbb{VAR}\left[X_{\tau_2}\right]}\\ 
+\frac{ K_{XX}(t , t-h)}{\mathbb{VAR}\left[X_{t}\right]}\\ 
 \end{split}
 $$
 

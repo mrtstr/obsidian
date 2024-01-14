@@ -199,7 +199,7 @@
     "statistical learning/bayesian inference.md": "2a29294757ad7bec517485171ce4eec2",
     "statistical learning/bagging.md": "2729dfcef226fdeb240c63ead6df4e01",
     "mathematics/stochastics/vector notation.md": "b909909181fe1c8d46e86f0299fa424f",
-    "mathematics/stochastics/variance.md": "97442af9b2a9852298662bcdbdaa7d61",
+    "mathematics/stochastics/variance.md": "6f969d21916a91be3661638bc6f98d0c",
     "mathematics/stochastics/unordered sampling without replacement.md": "5181e6b68fc08bfa323c1cb57ad240d2",
     "mathematics/stochastics/unordered sampling with replacement.md": "48ab759293db02df9b92ccff72adb7a5",
     "mathematics/stochastics/symmetric matrix.md": "ae5a44207cb907428891468780a90e45",
@@ -1175,11 +1175,14 @@
     "code/linux/sys calls/li wait.md": "12193e313bb9c49650642e0cb935cfac",
     "code/linux/sys calls/li kill syscall.md": "56583b86c039833797f7d66db2e9dc32",
     "mathematics/stochastics/time series/autocorrelation (pearson).md": "8342328e446a21ab72019f5dff67d18d",
-    "mathematics/stochastics/time series/stationary process.md": "a3a04004bb9a89b7d0cd8c7733d6bff0",
+    "mathematics/stochastics/time series/stationary process.md": "2dcaf92466e1830cac1691560823cac2",
     "mathematics/stochastics/time series/stochastic process.md": "54a018ed36e547674c57d11f9c41b8da",
     "mathematics/stochastics/time series/time series.md": "f92d0e87021b962d79d7d11d0466561a",
     "mathematics/stochastics/time series/partial autocorrelation.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/autocovariance.md": "57138299792a841c383bc32cf820f72e"
+    "mathematics/stochastics/time series/autocovariance.md": "57138299792a841c383bc32cf820f72e",
+    "mathematics/stochastics/time series/autoregresive model.md": "615cbdf8bd1977d20efb94d57349d78a",
+    "mathematics/stochastics/time series/partial autocorrelation (PACF).md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/time series/autocorrelation (ACF).md": "ed1c8e556c2333d53621482b45daf0a2"
   },
   "fields_dict": {
     "Basic": [
