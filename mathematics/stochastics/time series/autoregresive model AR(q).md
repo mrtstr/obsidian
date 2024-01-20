@@ -1,6 +1,6 @@
-## definition [[autoregresive model]]
+## definition [[autoregresive model AR(q)]]
 
-the [[autoregresive model]] of order $p$ $AP(p)$ assumes the output valiable depends linearly on its preivious $p$ values
+the [[autoregresive model AR(q)]] of order $p$ $AP(p)$ assumes the output valiable depends linearly on its preivious $p$ values
 makes only sense for at least [[stationary process|weakly stationary]]
 
 ![[stationary process#Definition (weakly) stationary process]]
@@ -12,10 +12,11 @@ $$
 X_t = \sum_{i=1}^p \phi_i X_{t-i} + \beta + \epsilon
 $$
 
-## [[autoregresive model]] of order 1 $AR(1)$
+# [[autoregresive model AR(q)]] of order 1 $AR(1)$
 $$
-X_t = \phi_1 X_{t-1} + \beta + \epsilon
+X_t = \phi_1 X_{t-1} + \beta + \epsilon_t
 $$
+
 ### [[expectation]]
 $$
 \begin{split}
@@ -51,28 +52,37 @@ $$
 $$
 ![[variance#Definition]]
 
-### $\mathbb{E}\left[X_t X_{t-h}\right]$
+### [[autocovariance]]
 $$
 \begin{split}
-\mathbb{E}\left[X_t X_{t-h}\right] 
-&= \phi_1^h \mathbb{E}\left[X_t^2\right] 
+\mathbb{COV}\left[X_t X_{t-h}\right] 
+&= \phi_1^h \mathbb{COV}\left[X_t X_{t-0}\right] \\ 
+&= \phi_1^h \mathbb{VAR}\left[X_t\right] \\ 
 \end{split}
 $$
 #### proof
 $$
 \begin{split}
-\mathbb{E}\left[X_t X_{t-1}\right] 
-&= \mathbb{E}\left[X_t X_{t+1}\right] \\
-&= \mathbb{E}\left[\left(\phi_1 X_{t} + \epsilon\right) X_{t}\right]  \\
-&= \phi_1 \mathbb{E}\left[X_{t}^2\right] + \mathbb{E}\left[\epsilon\right]\mathbb{E}\left[X_{t}\right]  \\
-&= \phi_1 \mathbb{E}\left[X_{t}^2\right]  \\
+\mathbb{COV}\left[X_t X_{t-1}\right] 
+&= \mathbb{COV}\left[X_t X_{t+1}\right] \\
+&= \mathbb{E}\left[X_t X_{t+1}\right] - \mathbb{E}\left[X_t X_{t+1}\right] \\
+&= \mathbb{E}\left[X_t \left(\phi_1 X_{t} + \beta + \epsilon_t \right)\right] - \mathbb{E}\left[X_t \left(\phi_1 X_{t} + \beta + \epsilon_t \right)\right] \\
+&= \phi_1 \mathbb{E}\left[X_t^2\right] + \mathbb{E}\left[X_t\right] \beta 
+- \phi_1 \mathbb{E}\left[X_t\right]^2  -\mathbb{E}\left[X_t\right] \beta  \\
+
+&= \phi_1 \mathbb{E}\left[X_t^2\right] + 
+- \phi_1 \mathbb{E}\left[X_t\right]^2   \\
+
+&= \phi_1 \mathbb{COV}\left[X_t X_{t-0}\right]    \\
+
 \Rightarrow \mathbb{E}\left[X_t X_{t-h}\right]
-&= \phi_1^h \mathbb{E}\left[X_{t}^2\right] 
+&= \phi_1^h \mathbb{COV}\left[X_t X_{t-0}\right]  \\
+&= \phi_1^h \mathbb{VAR}\left[X_t\right]  
 \end{split}
 $$
 
 ### [[autocorrelation (ACF)]]
-- assuming $\mathbb{E}[X_t]=0$
+
 
 $$
 \begin{split}
@@ -85,9 +95,7 @@ $$
 \begin{split}
 \rho(h) 
 &= \frac{ \mathbb{COV}\left[X_{t}, X_{t - h}\right]}{\mathbb{VAR}\left[X_{t}\right]} \\
-&= \frac{ \mathbb{E}\left[X_t X_{t-h}\right] - \mathbb{E}\left[X_t\right]^2  }{\mathbb{E}\left[X_t^2\right]  -\mathbb{E}\left[X_t\right]^2  } \\
-&= \frac{ \mathbb{E}\left[X_t X_{t-h}\right] }{\mathbb{E}\left[X_t^2\right]  } \\
-&= \frac{  \phi_1^h \mathbb{E}\left[X_{t}^2\right]  }{\mathbb{E}\left[X_t^2\right]  } \\
+&= \frac{\phi_1^h \mathbb{VAR}\left[X_t\right]}{\mathbb{VAR}\left[X_{t}\right]} \\
 &=  \phi_1^h \\
 \end{split}
 $$
@@ -101,7 +109,7 @@ $$
 
 START
 Basic
-#### [[autoregresive model]] of order 1 $AR(1)$
+#### [[autoregresive model AR(q)]] of order 1 $AR(1)$
 - definition
 - [[expectation]] with proof
 
@@ -144,7 +152,7 @@ END
 
 START
 Basic
-#### [[autoregresive model]] of order 1 $AR(1)$
+#### [[autoregresive model AR(q)]] of order 1 $AR(1)$
 - definition
 - [[variance]] with proof
 
@@ -185,9 +193,9 @@ END
 
 START
 Basic
-#### [[autoregresive model]] of order 1 $AR(1)$
+#### [[autoregresive model AR(q)]] of order 1 $AR(1)$
 - definition
-- [[autocorrelation (ACF)]] with proof
+- [[autocovariance]] with proof
 
 Back: 
 ### definition
@@ -196,6 +204,35 @@ Back:
 - constant $\beta$
 $$
 X_t = \phi_1 X_{t-1} + \beta + \epsilon
+$$
+
+### [[autocovariance]]
+$$
+\begin{split}
+\mathbb{COV}\left[X_t X_{t-h}\right] 
+&= \phi_1^h \mathbb{COV}\left[X_t X_{t-0}\right] \\ 
+&= \phi_1^h \mathbb{VAR}\left[X_t\right] \\ 
+\end{split}
+$$
+#### proof
+$$
+\begin{split}
+\mathbb{COV}\left[X_t X_{t-1}\right] 
+&= \mathbb{COV}\left[X_t X_{t+1}\right] \\
+&= \mathbb{E}\left[X_t X_{t+1}\right] - \mathbb{E}\left[X_t X_{t+1}\right] \\
+&= \mathbb{E}\left[X_t \left(\phi_1 X_{t} + \beta + \epsilon_t \right)\right] - \mathbb{E}\left[X_t \left(\phi_1 X_{t} + \beta + \epsilon_t \right)\right] \\
+&= \phi_1 \mathbb{E}\left[X_t^2\right] + \mathbb{E}\left[X_t\right] \beta 
+- \phi_1 \mathbb{E}\left[X_t\right]^2  -\mathbb{E}\left[X_t\right] \beta  \\
+
+&= \phi_1 \mathbb{E}\left[X_t^2\right] + 
+- \phi_1 \mathbb{E}\left[X_t\right]^2   \\
+
+&= \phi_1 \mathbb{COV}\left[X_t X_{t-0}\right]    \\
+
+\Rightarrow \mathbb{E}\left[X_t X_{t-h}\right]
+&= \phi_1^h \mathbb{COV}\left[X_t X_{t-0}\right]  \\
+&= \phi_1^h \mathbb{VAR}\left[X_t\right]  
+\end{split}
 $$
 
 
@@ -212,7 +249,7 @@ END
 
 START
 Basic
-#### [[autoregresive model]] of order 1 $AR(1)$
+#### [[autoregresive model AR(q)]] of order 1 $AR(1)$
 - definition
 - [[autocorrelation (ACF)]] (assuming $\mathbb{E}[X_t]=0$) with proof
 
@@ -225,28 +262,36 @@ $$
 X_t = \phi_1 X_{t-1} + \beta + \epsilon
 $$
 
-### $\mathbb{E}\left[X_t X_{t-h}\right]$
+### [[autocovariance]]
 $$
 \begin{split}
-\mathbb{E}\left[X_t X_{t-h}\right] 
-&= \phi_1^h \mathbb{E}\left[X_t^2\right] 
+\mathbb{COV}\left[X_t X_{t-h}\right] 
+&= \phi_1^h \mathbb{COV}\left[X_t X_{t-0}\right] \\ 
+&= \phi_1^h \mathbb{VAR}\left[X_t\right] \\ 
 \end{split}
 $$
 #### proof
 $$
 \begin{split}
-\mathbb{E}\left[X_t X_{t-1}\right] 
-&= \mathbb{E}\left[X_t X_{t+1}\right] \\
-&= \mathbb{E}\left[\left(\phi_1 X_{t} + \epsilon\right) X_{t}\right]  \\
-&= \phi_1 \mathbb{E}\left[X_{t}^2\right] + \mathbb{E}\left[\epsilon\right]\mathbb{E}\left[X_{t}\right]  \\
-&= \phi_1 \mathbb{E}\left[X_{t}^2\right]  \\
+\mathbb{COV}\left[X_t X_{t-1}\right] 
+&= \mathbb{COV}\left[X_t X_{t+1}\right] \\
+&= \mathbb{E}\left[X_t X_{t+1}\right] - \mathbb{E}\left[X_t X_{t+1}\right] \\
+&= \mathbb{E}\left[X_t \left(\phi_1 X_{t} + \beta + \epsilon_t \right)\right] - \mathbb{E}\left[X_t \left(\phi_1 X_{t} + \beta + \epsilon_t \right)\right] \\
+&= \phi_1 \mathbb{E}\left[X_t^2\right] + \mathbb{E}\left[X_t\right] \beta 
+- \phi_1 \mathbb{E}\left[X_t\right]^2  -\mathbb{E}\left[X_t\right] \beta  \\
+
+&= \phi_1 \mathbb{E}\left[X_t^2\right] + 
+- \phi_1 \mathbb{E}\left[X_t\right]^2   \\
+
+&= \phi_1 \mathbb{COV}\left[X_t X_{t-0}\right]    \\
+
 \Rightarrow \mathbb{E}\left[X_t X_{t-h}\right]
-&= \phi_1^h \mathbb{E}\left[X_{t}^2\right] 
+&= \phi_1^h \mathbb{COV}\left[X_t X_{t-0}\right]  \\
+&= \phi_1^h \mathbb{VAR}\left[X_t\right]  
 \end{split}
 $$
 
 ### [[autocorrelation (ACF)]]
-- assuming $\mathbb{E}[X_t]=0$
 
 $$
 \begin{split}
@@ -259,9 +304,7 @@ $$
 \begin{split}
 \rho(h) 
 &= \frac{ \mathbb{COV}\left[X_{t}, X_{t - h}\right]}{\mathbb{VAR}\left[X_{t}\right]} \\
-&= \frac{ \mathbb{E}\left[X_t X_{t-h}\right] - \mathbb{E}\left[X_t\right]^2  }{\mathbb{E}\left[X_t^2\right]  -\mathbb{E}\left[X_t\right]^2  } \\
-&= \frac{ \mathbb{E}\left[X_t X_{t-h}\right] }{\mathbb{E}\left[X_t^2\right]  } \\
-&= \frac{  \phi_1^h \mathbb{E}\left[X_{t}^2\right]  }{\mathbb{E}\left[X_t^2\right]  } \\
+&= \frac{\phi_1^h \mathbb{VAR}\left[X_t\right]}{\mathbb{VAR}\left[X_{t}\right]} \\
 &=  \phi_1^h \\
 \end{split}
 $$
@@ -301,10 +344,11 @@ END
 
 START
 Basic
-#### [[autoregresive model]] of order 1 $AR(1)$
+#### [[autoregresive model AR(q)]] of order 1 $AR(1)$
 - definition
 - [[expectation]] without proof
 - [[variance]] without proof
+- [[autocovariance]] without proof
 - [[autocorrelation (ACF)]] without proof
 
 Back: 
@@ -349,28 +393,36 @@ $$
 \end{split}
 $$
 
-### $\mathbb{E}\left[X_t X_{t-h}\right]$
+### [[autocovariance]]
 $$
 \begin{split}
-\mathbb{E}\left[X_t X_{t-h}\right] 
-&= \phi_1^h \mathbb{E}\left[X_t^2\right] 
+\mathbb{COV}\left[X_t X_{t-h}\right] 
+&= \phi_1^h \mathbb{COV}\left[X_t X_{t-0}\right] \\ 
+&= \phi_1^h \mathbb{VAR}\left[X_t\right] \\ 
 \end{split}
 $$
 #### proof
 $$
 \begin{split}
-\mathbb{E}\left[X_t X_{t-1}\right] 
-&= \mathbb{E}\left[X_t X_{t+1}\right] \\
-&= \mathbb{E}\left[\left(\phi_1 X_{t} + \epsilon\right) X_{t}\right]  \\
-&= \phi_1 \mathbb{E}\left[X_{t}^2\right] + \mathbb{E}\left[\epsilon\right]\mathbb{E}\left[X_{t}\right]  \\
-&= \phi_1 \mathbb{E}\left[X_{t}^2\right]  \\
+\mathbb{COV}\left[X_t X_{t-1}\right] 
+&= \mathbb{COV}\left[X_t X_{t+1}\right] \\
+&= \mathbb{E}\left[X_t X_{t+1}\right] - \mathbb{E}\left[X_t X_{t+1}\right] \\
+&= \mathbb{E}\left[X_t \left(\phi_1 X_{t} + \beta + \epsilon_t \right)\right] - \mathbb{E}\left[X_t \left(\phi_1 X_{t} + \beta + \epsilon_t \right)\right] \\
+&= \phi_1 \mathbb{E}\left[X_t^2\right] + \mathbb{E}\left[X_t\right] \beta 
+- \phi_1 \mathbb{E}\left[X_t\right]^2  -\mathbb{E}\left[X_t\right] \beta  \\
+
+&= \phi_1 \mathbb{E}\left[X_t^2\right] + 
+- \phi_1 \mathbb{E}\left[X_t\right]^2   \\
+
+&= \phi_1 \mathbb{COV}\left[X_t X_{t-0}\right]    \\
+
 \Rightarrow \mathbb{E}\left[X_t X_{t-h}\right]
-&= \phi_1^h \mathbb{E}\left[X_{t}^2\right] 
+&= \phi_1^h \mathbb{COV}\left[X_t X_{t-0}\right]  \\
+&= \phi_1^h \mathbb{VAR}\left[X_t\right]  
 \end{split}
 $$
 
 ### [[autocorrelation (ACF)]]
-- assuming $\mathbb{E}[X_t]=0$
 
 $$
 \begin{split}
@@ -383,9 +435,7 @@ $$
 \begin{split}
 \rho(h) 
 &= \frac{ \mathbb{COV}\left[X_{t}, X_{t - h}\right]}{\mathbb{VAR}\left[X_{t}\right]} \\
-&= \frac{ \mathbb{E}\left[X_t X_{t-h}\right] - \mathbb{E}\left[X_t\right]^2  }{\mathbb{E}\left[X_t^2\right]  -\mathbb{E}\left[X_t\right]^2  } \\
-&= \frac{ \mathbb{E}\left[X_t X_{t-h}\right] }{\mathbb{E}\left[X_t^2\right]  } \\
-&= \frac{  \phi_1^h \mathbb{E}\left[X_{t}^2\right]  }{\mathbb{E}\left[X_t^2\right]  } \\
+&= \frac{\phi_1^h \mathbb{VAR}\left[X_t\right]}{\mathbb{VAR}\left[X_{t}\right]} \\
 &=  \phi_1^h \\
 \end{split}
 $$
