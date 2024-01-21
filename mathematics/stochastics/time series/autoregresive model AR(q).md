@@ -1,21 +1,54 @@
 ## definition [[autoregresive model AR(q)]]
-
-the [[autoregresive model AR(q)]] of order $p$ $AP(p)$ assumes the output valiable depends linearly on its preivious $p$ values
-makes only sense for at least [[stationary process|weakly stationary]]
+- The [[autoregresive model AR(q)]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+- assumes an at least [[stationary process]]
 
 ![[stationary process#Definition (weakly) stationary process]]
 
 - [[stochastic process]] $\{X_t\}$  
-- white noise $\epsilon$ with $\mathbb{E}[\epsilon] =0$ and [[stochastic independent]] of $X_t$
-- constant $\beta$
+- white noise $\epsilon$ with $\mathbb{E}[\epsilon] =0$ and $\mathbb{VAR}[\epsilon] =const$ and [[stochastic independent]] of $X_t$
+- constant $\beta$ (sometimes assumed to be zero)
 $$
 X_t = \sum_{i=1}^p \phi_i X_{t-i} + \beta + \epsilon
 $$
 
 # [[autoregresive model AR(q)]] of order 1 $AR(1)$
+## Definition [[autoregresive model AR(q)|AR(1) model]]
 $$
 X_t = \phi_1 X_{t-1} + \beta + \epsilon_t
 $$
+## examples
+For an AR(1) model:
+
+-   when ϕ1=0
+
+, yt-   is equivalent to white noise;
+-   when ϕ1=1
+and c=0, yt-   is equivalent to a random walk;
+-   when ϕ1=1
+and c≠0, yt-   is equivalent to a random walk with drift;
+-   when ϕ1<0
+, yt
+
+-   tends to oscillate around the mean.
+
+We normally restrict autoregressive models to stationary data, in which case some constraints on the values of the parameters are required.
+
+-   For an AR(1) model: −1<ϕ1<1
+
+-   .
+-   For an AR(2) model: −1<ϕ2<1
+, ϕ1+ϕ2<1, ϕ2−ϕ1<1
+
+-   .
+
+When p≥3
+
+, the restrictions are much more complicated. R takes care of these restrictions when estimating a model.
+
+As with autoregressive models, the variance of the error term εt will only change the scale of the series, not the patterns.
+
+## properties
+
 
 ### [[expectation]]
 $$
@@ -115,11 +148,14 @@ Basic
 
 Back: 
 ### definition
-- [[stationary process|weakly stationary]] [[stochastic process]] $\{X_t\}$  
-- white noise $\epsilon$ with $\mathbb{E}[\epsilon] =0$ and [[stochastic independent]] of $X_t$
-- constant $\beta$
+- The [[autoregresive model AR(q)]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+- assumes an at least [[stationary process]]
+
+- [[stochastic process]] $\{X_t\}$  
+- white noise $\epsilon$ with $\mathbb{E}[\epsilon] =0$ and $\mathbb{VAR}[\epsilon] =const$ and [[stochastic independent]] of $X_t$
+- constant $\beta$ (sometimes assumed to be zero)
 $$
-X_t = \phi_1 X_{t-1} + \beta + \epsilon
+X_t = \sum_{i=1}^p \phi_i X_{t-i} + \beta + \epsilon
 $$
 
 ### [[expectation]]
@@ -158,11 +194,14 @@ Basic
 
 Back: 
 ### definition
-- [[stationary process|weakly stationary]] [[stochastic process]] $\{X_t\}$  
-- white noise $\epsilon$ with $\mathbb{E}[\epsilon] =0$ and [[stochastic independent]] of $X_t$
-- constant $\beta$
+- The [[autoregresive model AR(q)]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+- assumes an at least [[stationary process]]
+
+- [[stochastic process]] $\{X_t\}$  
+- white noise $\epsilon$ with $\mathbb{E}[\epsilon] =0$ and $\mathbb{VAR}[\epsilon] =const$ and [[stochastic independent]] of $X_t$
+- constant $\beta$ (sometimes assumed to be zero)
 $$
-X_t = \phi_1 X_{t-1} + \beta + \epsilon
+X_t = \sum_{i=1}^p \phi_i X_{t-i} + \beta + \epsilon
 $$
 
 ### [[variance]]
@@ -199,11 +238,14 @@ Basic
 
 Back: 
 ### definition
-- [[stationary process|weakly stationary]] [[stochastic process]] $\{X_t\}$  
-- white noise $\epsilon$ with $\mathbb{E}[\epsilon] =0$ and [[stochastic independent]] of $X_t$
-- constant $\beta$
+- The [[autoregresive model AR(q)]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+- assumes an at least [[stationary process]]
+
+- [[stochastic process]] $\{X_t\}$  
+- white noise $\epsilon$ with $\mathbb{E}[\epsilon] =0$ and $\mathbb{VAR}[\epsilon] =const$ and [[stochastic independent]] of $X_t$
+- constant $\beta$ (sometimes assumed to be zero)
 $$
-X_t = \phi_1 X_{t-1} + \beta + \epsilon
+X_t = \sum_{i=1}^p \phi_i X_{t-i} + \beta + \epsilon
 $$
 
 ### [[autocovariance]]
@@ -251,15 +293,18 @@ START
 Basic
 #### [[autoregresive model AR(q)]] of order 1 $AR(1)$
 - definition
-- [[autocorrelation (ACF)]] (assuming $\mathbb{E}[X_t]=0$) with proof
+- [[autocorrelation (ACF)]]  with proof
 
 Back: 
 ### definition
-- [[stationary process|weakly stationary]] [[stochastic process]] $\{X_t\}$  
-- white noise $\epsilon$ with $\mathbb{E}[\epsilon] =0$ and [[stochastic independent]] of $X_t$
-- constant $\beta$
+- The [[autoregresive model AR(q)]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+- assumes an at least [[stationary process]]
+
+- [[stochastic process]] $\{X_t\}$  
+- white noise $\epsilon$ with $\mathbb{E}[\epsilon] =0$ and $\mathbb{VAR}[\epsilon] =const$ and [[stochastic independent]] of $X_t$
+- constant $\beta$ (sometimes assumed to be zero)
 $$
-X_t = \phi_1 X_{t-1} + \beta + \epsilon
+X_t = \sum_{i=1}^p \phi_i X_{t-i} + \beta + \epsilon
 $$
 
 ### [[autocovariance]]
@@ -353,12 +398,16 @@ Basic
 
 Back: 
 ### definition
-- [[stationary process|weakly stationary]] [[stochastic process]] $\{X_t\}$  
-- white noise $\epsilon$ with $\mathbb{E}[\epsilon] =0$ and [[stochastic independent]] of $X_t$
-- constant $\beta$
+- The [[autoregresive model AR(q)]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+- assumes an at least [[stationary process]]
+
+- [[stochastic process]] $\{X_t\}$  
+- white noise $\epsilon$ with $\mathbb{E}[\epsilon] =0$ and $\mathbb{VAR}[\epsilon] =const$ and [[stochastic independent]] of $X_t$
+- constant $\beta$ (sometimes assumed to be zero)
 $$
-X_t = \phi_1 X_{t-1} + \beta + \epsilon
+X_t = \sum_{i=1}^p \phi_i X_{t-i} + \beta + \epsilon
 $$
+
 ### [[expectation]]
 $$
 \begin{split}

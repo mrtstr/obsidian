@@ -1182,7 +1182,14 @@
     "mathematics/stochastics/time series/autocovariance.md": "57138299792a841c383bc32cf820f72e",
     "mathematics/stochastics/time series/autoregresive model.md": "8931045506569ff2a8f0a79584d23eaa",
     "mathematics/stochastics/time series/partial autocorrelation (PACF).md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/autocorrelation (ACF).md": "ed1c8e556c2333d53621482b45daf0a2"
+    "mathematics/stochastics/time series/autocorrelation (ACF).md": "ed1c8e556c2333d53621482b45daf0a2",
+    "mathematics/stochastics/time series/random walk.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/time series/white noise.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/time series/GARCH.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/time series/ARCH.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/time series/conditionally heteroskedastic.md": "277de84ecb15982e9c5a31f88f5a105d",
+    "mathematics/stochastics/time series/moving average model MA(q).md": "a88899f64691411d86ab9e90a5504d3b",
+    "mathematics/stochastics/time series/autoregresive model AR(q).md": "578c59e7e5dfc11ea165edaf0e5ed001"
   },
   "fields_dict": {
     "Basic": [

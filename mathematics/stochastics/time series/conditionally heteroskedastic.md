@@ -1,0 +1,1 @@
+which means that they are non-stationary and have periods of "varying variance" or volatility clustering,
