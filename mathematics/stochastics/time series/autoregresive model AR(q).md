@@ -108,6 +108,19 @@ $$
 
 &= \phi_1 \mathbb{COV}\left[X_t X_{t-0}\right]    \\
 
+
+\mathbb{COV}\left[X_t X_{t-2}\right] 
+&= \mathbb{COV}\left[X_t X_{t+2}\right] \\
+&= \mathbb{E}\left[X_t X_{t+2}\right] - \mathbb{E}\left[X_t X_{t+2}\right] \\
+&= \mathbb{E}\left[X_t \left(\phi_1 X_{t+1} + \beta + \epsilon_{t+1} \right)\right] - \mathbb{E}\left[X_t \left(\phi_1 X_{t+1} + \beta + \epsilon_{t+1} \right)\right] \\
+&= \phi_1 \mathbb{E}\left[X_t X_{t+1}\right] + \mathbb{E}\left[X_t\right] \beta 
+- \phi_1 \mathbb{E}\left[X_t\right] \mathbb{E}\left[X_{t+1}\right] -\mathbb{E}\left[X_t\right] \beta  \\
+
+
+
+&= \phi_1 \mathbb{COV}\left[X_t X_{t-1}\right]    \\
+&= \phi_1^2 \mathbb{COV}\left[X_t X_{t-0}\right]    \\
+&= \phi_1^2 \mathbb{VAR}\left[X_t\right]      \\
 \Rightarrow \mathbb{E}\left[X_t X_{t-h}\right]
 &= \phi_1^h \mathbb{COV}\left[X_t X_{t-0}\right]  \\
 &= \phi_1^h \mathbb{VAR}\left[X_t\right]  
@@ -271,6 +284,19 @@ $$
 
 &= \phi_1 \mathbb{COV}\left[X_t X_{t-0}\right]    \\
 
+
+\mathbb{COV}\left[X_t X_{t-2}\right] 
+&= \mathbb{COV}\left[X_t X_{t+2}\right] \\
+&= \mathbb{E}\left[X_t X_{t+2}\right] - \mathbb{E}\left[X_t X_{t+2}\right] \\
+&= \mathbb{E}\left[X_t \left(\phi_1 X_{t+1} + \beta + \epsilon_{t+1} \right)\right] - \mathbb{E}\left[X_t \left(\phi_1 X_{t+1} + \beta + \epsilon_{t+1} \right)\right] \\
+&= \phi_1 \mathbb{E}\left[X_t X_{t+1}\right] + \mathbb{E}\left[X_t\right] \beta 
+- \phi_1 \mathbb{E}\left[X_t\right] \mathbb{E}\left[X_{t+1}\right] -\mathbb{E}\left[X_t\right] \beta  \\
+
+
+
+&= \phi_1 \mathbb{COV}\left[X_t X_{t-1}\right]    \\
+&= \phi_1^2 \mathbb{COV}\left[X_t X_{t-0}\right]    \\
+&= \phi_1^2 \mathbb{VAR}\left[X_t\right]      \\
 \Rightarrow \mathbb{E}\left[X_t X_{t-h}\right]
 &= \phi_1^h \mathbb{COV}\left[X_t X_{t-0}\right]  \\
 &= \phi_1^h \mathbb{VAR}\left[X_t\right]  
@@ -330,6 +356,19 @@ $$
 
 &= \phi_1 \mathbb{COV}\left[X_t X_{t-0}\right]    \\
 
+
+\mathbb{COV}\left[X_t X_{t-2}\right] 
+&= \mathbb{COV}\left[X_t X_{t+2}\right] \\
+&= \mathbb{E}\left[X_t X_{t+2}\right] - \mathbb{E}\left[X_t X_{t+2}\right] \\
+&= \mathbb{E}\left[X_t \left(\phi_1 X_{t+1} + \beta + \epsilon_{t+1} \right)\right] - \mathbb{E}\left[X_t \left(\phi_1 X_{t+1} + \beta + \epsilon_{t+1} \right)\right] \\
+&= \phi_1 \mathbb{E}\left[X_t X_{t+1}\right] + \mathbb{E}\left[X_t\right] \beta 
+- \phi_1 \mathbb{E}\left[X_t\right] \mathbb{E}\left[X_{t+1}\right] -\mathbb{E}\left[X_t\right] \beta  \\
+
+
+
+&= \phi_1 \mathbb{COV}\left[X_t X_{t-1}\right]    \\
+&= \phi_1^2 \mathbb{COV}\left[X_t X_{t-0}\right]    \\
+&= \phi_1^2 \mathbb{VAR}\left[X_t\right]      \\
 \Rightarrow \mathbb{E}\left[X_t X_{t-h}\right]
 &= \phi_1^h \mathbb{COV}\left[X_t X_{t-0}\right]  \\
 &= \phi_1^h \mathbb{VAR}\left[X_t\right]  
@@ -465,6 +504,19 @@ $$
 
 &= \phi_1 \mathbb{COV}\left[X_t X_{t-0}\right]    \\
 
+
+\mathbb{COV}\left[X_t X_{t-2}\right] 
+&= \mathbb{COV}\left[X_t X_{t+2}\right] \\
+&= \mathbb{E}\left[X_t X_{t+2}\right] - \mathbb{E}\left[X_t X_{t+2}\right] \\
+&= \mathbb{E}\left[X_t \left(\phi_1 X_{t+1} + \beta + \epsilon_{t+1} \right)\right] - \mathbb{E}\left[X_t \left(\phi_1 X_{t+1} + \beta + \epsilon_{t+1} \right)\right] \\
+&= \phi_1 \mathbb{E}\left[X_t X_{t+1}\right] + \mathbb{E}\left[X_t\right] \beta 
+- \phi_1 \mathbb{E}\left[X_t\right] \mathbb{E}\left[X_{t+1}\right] -\mathbb{E}\left[X_t\right] \beta  \\
+
+
+
+&= \phi_1 \mathbb{COV}\left[X_t X_{t-1}\right]    \\
+&= \phi_1^2 \mathbb{COV}\left[X_t X_{t-0}\right]    \\
+&= \phi_1^2 \mathbb{VAR}\left[X_t\right]      \\
 \Rightarrow \mathbb{E}\left[X_t X_{t-h}\right]
 &= \phi_1^h \mathbb{COV}\left[X_t X_{t-0}\right]  \\
 &= \phi_1^h \mathbb{VAR}\left[X_t\right]  
