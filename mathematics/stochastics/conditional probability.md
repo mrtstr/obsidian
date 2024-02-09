@@ -29,7 +29,6 @@ P\left(A_n \mid A_1 \cap A_2 \cap \:... \: A_{n-1} \right) \\
 \end{split}
 $$
 
-
 # Anki
 START
 Basic
@@ -70,3 +69,26 @@ Tags: mathematics statistics
 END
 
 
+START
+Basic
+- given a [[partitioned sample space]] $\{B_1, ..., B_n\}$
+- proof for the following
+$$
+\begin{split}
+P(A | X) = \sum_{all B_j} P(A| B, X) P(B_j | X)
+\end{split}
+$$
+Back: 
+
+$$
+\begin{split}
+P(A | X) 
+&= \frac{P(A , X) }{P(X)} \\
+&= \sum_{all B_j} \frac{P(A , X, B_j) }{P(X)} \\
+&= \sum_{all B_j} \frac{P(A | X, B_j) P(B_j | X) P(X) }{P(X)} \\
+&= \sum_{all B_j} P(A| B, X) P(B_j | X)
+\end{split}
+$$
+Tags: mathematics statistics
+<!--ID: 1707456323135-->
+END
