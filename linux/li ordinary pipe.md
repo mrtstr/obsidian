@@ -1,8 +1,8 @@
-## [[li ordinary pipe]]
+### [[li ordinary pipe]]
 - system command for [[li interprocess communication]]
 - for chaining processes togather by their [[li standard streams]]
-- [[stdout]] of one process is piped in the [[li stdin]] of another [[li process]]
-- [[li ordinary pipe|pipes]] then are unidirectional byte streams
+- [[li stdout]] of one process is piped in the [[li stdin]] of another [[li process]]
+- [[li pipe|pipes]] then are unidirectional byte streams
 
 ```sh
 command1 | command2 | command3
@@ -10,6 +10,7 @@ command1 | command2 | command3
 # the stdout of command 2 will be the stdin of command3
 ```
 
+### examples
 ```sh
 cat myfile | head -5 | grep c 
 # 1) print output of file 
@@ -22,7 +23,7 @@ cat myfile2 myfile 2>&1 1>/dev/null | grep something
 # 3) filtering for something
 ```
 
-##### 3.6.3.1 Ordinary Pipes
+### 3.6.3.1 Ordinary Pipes
 
 -   Ordinary pipes are uni-directional, with a reading end and a writing end. ( If bidirectional communications are needed, then a second pipe is required. )
 -   In UNIX ordinary pipes are created with the system call "int pipe( int fd [ ] )".

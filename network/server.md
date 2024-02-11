@@ -1,0 +1,1 @@
+A process that responds to a request for service from a client.
