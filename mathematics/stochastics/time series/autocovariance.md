@@ -15,7 +15,7 @@ $$
 ## [[autocovariance]] for [[stationary process]]
 $$
 \begin{split}
-K_{XX}(t_1, t_2) = K_{XX}(\tau , t_2 - t_1 + \tau)  \quad 
+\mathbb{COV}(t_1, t_2) = K_{XX}(h) = K_{XX}(t_2 - t_1)  \quad 
 \forall \tau, t_1, ... , t_n \in \mathbb{R} 
 \end{split}
 $$
@@ -36,7 +36,7 @@ $$
 
 ## linked
 
-![[stationary process#Definition (strongly) stationary process]]
+![[stationary process#Definition (weakly) stationary process]]]
 
 
 
@@ -75,7 +75,7 @@ $$
 ## [[autocovariance]] for [[stationary process]]
 $$
 \begin{split}
-K_{XX}(t_1, t_2) = K_{XX}(\tau , t_2 - t_1 + \tau)  \quad 
+\mathbb{COV}(t_1, t_2) = K_{XX}(h) = K_{XX}(t_2 - t_1)  \quad 
 \forall \tau, t_1, ... , t_n \in \mathbb{R} 
 \end{split}
 $$
@@ -93,18 +93,10 @@ K_{XX}(t_1, t_2)
 \end{split}
 $$
 
-#### Definition (strongly) [[stationary process]]
-- a [[stochastic process]] whose [[joint distribution]] is not time-dependent
-- given a [[stationary process]] $\{X_t\}$ and an arbitray [[set]] of time instances ${t_1, ..., t_n}$ the [[joint distribution|joint distributions]] of the [[random variable|random variables]] $X(t_1), ..., X(t_n)$ is the same as the [[joint distribution|joint distributions]] of the [[random variable|random variables]] $X(t_1+\tau), ..., X(t_n+\tau)$ 
-
-$$
-\begin{split}
-F_X(x_1, ..., x_n) = F_X(x_1 + \tau, ..., x_n + \tau) \quad 
-\forall \tau, t_1, ... , t_n \in \mathbb{R} \\
-f_X(x_1, ..., x_n) = f_X(x_1 + \tau, ..., x_n + \tau) \quad 
-\forall \tau, t_1, ... , t_n \in \mathbb{R} 
-\end{split}
-$$
+#### Definition (weakly) [[stationary process]]
+- a [[stochastic process]] whose [[expectation]], [[variance]] and [[covariance]] are not time-dependent
+- a [[stochastic process]] $\{X_t\}$ is weakly [[stationary process|stationary]] when $\mathbb{E}\left[X_t\right], \mathbb{VAR}\left[X_t\right], \mathbb{COVAR}\left[X_t, X_{t+h}\right]$ are time independent (the same for all $t$)
+- every starongly statanary process is also a (weakly) [[stationary process]]
 
 Tags: mathematics time_series
 <!--ID: 1704533194482-->

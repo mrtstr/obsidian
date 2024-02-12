@@ -432,10 +432,12 @@ Basic
 - protocol
 - example
 Back: 
-## [[py interatable]] containers
+#### [[py interatable]] containers
 - implement the container plus the [[py interatable]] protocol
 
-![[py interatable#py interatable protocol]]
+#### [[py interatable]] protocol
+#### `__iter__()`
+- usually called by the [[py buidin functions|buidin function inter()]] to convert a [[py interatable]] into an [[py iterator]]. 
 
 ### example
 ```python

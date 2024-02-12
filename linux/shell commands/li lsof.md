@@ -14,12 +14,6 @@ lsof <path of file>
 ```
 
 ### provided information
-#### type: type of file
-- `DIR`: opend directory
-- `unix`: unix domain socket ([[li local socket]])
-- `REG`: regular [[li file|file]]
-- `IPv4/IPv6`: internet domain socket [[network socket]]
-- `FIFO`: [[li named pipes]]
 #### `FD`: more information about the file descriptor
 - `cwd` - current working directory
 - `txt` - binary file
@@ -44,6 +38,7 @@ examples
 - list only opend [[li file descriptor]] of the current shell session
 - list only network [[li file descriptor]]
 - list all [[li process|processes]] that have a given file currently opend
+- types of [[li file descriptor]] (6)
 Back: 
 ### `lsof`
 [[shell command]] `lsof` list all open [[li file descriptor|file descriptors]] 
@@ -61,11 +56,6 @@ lsof <path of file>
 ```
 
 ### provided information
-#### type: type of file
-- `DIR`: directory
-- `REG`: regular file
-- `IPv4`: notwork connection using [[IP|IPv4]]
-- `IPv6`: notwork connection using [[IP|IPv6]]
 #### `FD`: more information about the file descriptor
 - `cwd` - current working directory
 - `txt` - binary file
@@ -74,13 +64,19 @@ lsof <path of file>
 - opening mode: (`r` for read access, `w` for write access, `u` for read and write access)
 
 ### [[li file descriptor]]
-- [[li file descriptor]] unique identifier for
-	- [[li standard streams]]
-	- [[li file|open files]]
-	- [[li socket|open sockets]] ([[li local socket]] or [[network socket]])
-- each [[li process]] has its own [[li file descriptor]] table
-- identified by positive integer values
-- [[li file descriptor|file descriptors]] can be [[li redirection|redirected]] into each other or chained togather using [[li pipe]] or [[li tee]]
+- [[li file descriptor]] unique identifier for any kind of data stream
+	- `CHR`: character special file(special part of the file system e.g. for a device or [[li standard streams]]) 
+	- `DIR`: opend directory
+	- `unix`: unix domain socket ([[li local socket]])
+	- `REG`: regular [[li file|file]]
+	- `IPv4/IPv6`: internet domain socket [[network socket]]
+	- `FIFO`: [[li named pipes]]
+→ same interface 
+- opening modes:
+	- `r`: read only
+	- `w`: write only
+	- `u`: read and write
+- index (small integer) to an entry in the [[li process]] table of open [[li file descriptor|file descriptors]]
 
 Tags: code linux
 <!--ID: 1707667667199-->
@@ -91,7 +87,7 @@ Basic
 [[shell command]] `lsof`
 - 4 flags
 - what does it do
-- provided information (4 + 5)
+- provided information (4+6)
 
 Back: 
 ### `lsof`
@@ -110,11 +106,6 @@ lsof <path of file>
 ```
 
 ### provided information
-#### type: type of file
-- `DIR`: directory
-- `REG`: regular file
-- `IPv4`: notwork connection using [[IP|IPv4]]
-- `IPv6`: notwork connection using [[IP|IPv6]]
 #### `FD`: more information about the file descriptor
 - `cwd` - current working directory
 - `txt` - binary file
@@ -123,13 +114,19 @@ lsof <path of file>
 - opening mode: (`r` for read access, `w` for write access, `u` for read and write access)
 
 ### [[li file descriptor]]
-- [[li file descriptor]] unique identifier for
-	- [[li standard streams]]
-	- [[li file|open files]]
-	- [[li socket|open sockets]] ([[li local socket]] or [[network socket]])
-- each [[li process]] has its own [[li file descriptor]] table
-- identified by positive integer values
-- [[li file descriptor|file descriptors]] can be [[li redirection|redirected]] into each other or chained togather using [[li pipe]] or [[li tee]]
+- [[li file descriptor]] unique identifier for any kind of data stream
+	- `CHR`: character special file(special part of the file system e.g. for a device or [[li standard streams]]) 
+	- `DIR`: opend directory
+	- `unix`: unix domain socket ([[li local socket]])
+	- `REG`: regular [[li file|file]]
+	- `IPv4/IPv6`: internet domain socket [[network socket]]
+	- `FIFO`: [[li named pipes]]
+→ same interface 
+- opening modes:
+	- `r`: read only
+	- `w`: write only
+	- `u`: read and write
+- index (small integer) to an entry in the [[li process]] table of open [[li file descriptor|file descriptors]]
 
 Tags: code linux
 <!--ID: 1707667667202-->
@@ -163,11 +160,6 @@ lsof <path of file>
 ```
 
 ### provided information
-#### type: type of file
-- `DIR`: directory
-- `REG`: regular file
-- `IPv4`: notwork connection using [[IP|IPv4]]
-- `IPv6`: notwork connection using [[IP|IPv6]]
 #### `FD`: more information about the file descriptor
 - `cwd` - current working directory
 - `txt` - binary file
@@ -176,13 +168,19 @@ lsof <path of file>
 - opening mode: (`r` for read access, `w` for write access, `u` for read and write access)
 
 ### [[li file descriptor]]
-- [[li file descriptor]] unique identifier for
-	- [[li standard streams]]
-	- [[li file|open files]]
-	- [[li socket|open sockets]] ([[li local socket]] or [[network socket]])
-- each [[li process]] has its own [[li file descriptor]] table
-- identified by positive integer values
-- [[li file descriptor|file descriptors]] can be [[li redirection|redirected]] into each other or chained togather using [[li pipe]] or [[li tee]]
+- [[li file descriptor]] unique identifier for any kind of data stream
+	- `CHR`: character special file(special part of the file system e.g. for a device or [[li standard streams]]) 
+	- `DIR`: opend directory
+	- `unix`: unix domain socket ([[li local socket]])
+	- `REG`: regular [[li file|file]]
+	- `IPv4/IPv6`: internet domain socket [[network socket]]
+	- `FIFO`: [[li named pipes]]
+→ same interface 
+- opening modes:
+	- `r`: read only
+	- `w`: write only
+	- `u`: read and write
+- index (small integer) to an entry in the [[li process]] table of open [[li file descriptor|file descriptors]]
 
 Tags: code linux
 <!--ID: 1707667667206-->

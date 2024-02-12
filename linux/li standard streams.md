@@ -35,9 +35,12 @@ Back:
 - can be [[li redirection|redicrected]] and chained ([[li ordinary pipe]])
 - a [[li child process]] inherits the standard streams of its [[li parent process]]
 
-### [[li redirection]] of [[li standard streams]]
-#### [[li redirection]] of [[li file]] into [[li stdin]]  
+### [[li redirection]] of [[li file descriptor|file descriptors]] into each other
+- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
+- in case of a not opend [[li file]] `[source file discriptor]>[file path]` will open the file and redirect into it
+- `>>` will append to a [[li file descriptor]] while `>` will overwrite the existing content
 
+### example: [[li redirection]] of [[li file]] into [[li stdin]]  
 - [[li file]] can be redirected to a [[li stdin]] channel using the `<` operator
 ```sh
 head -n 5 < myfile
@@ -46,22 +49,17 @@ cat myfile | head -n 5
 ```
 
 
-#### [[li redirection]] of [[li stdout]] and [[li stderr]] into [[li file|files]]
-- the operators `>` and `>>` control the [[li stdout]] stream and can forward then into arbitrary [[li file]]
-- If the file you are redirecting to does not exist, it will be created. 
-
+### example [[li redirection]] of [[li stdout]] and [[li stderr]] into [[li file|files]]
+- [[li stdout]] has alwas the [[li file descriptor]] 1 and [[li stderr]] always 2
+- They can be redicrected into [[li file|files]] (If the file you are redirecting to does not exist, it will be created)
+- in case of [[li stdout]] the 1 is not nessary
 ```sh
 ls 1> myfile          # write stdout of ls in myfile (replace)
+ls > myfile           # short form 
 ls 1>> myfile         # write stdout of ls in myfile (append)
-sleep -1 &> myfile   # write stdout and stderr of ls in myfile (append)
-sleep -1 &>> myfile  # write stdout and stderr of ls in myfile (replace)
-```
-
-```sh
-cat file1 >> myfile  # append myfile with the content of file1
-echo hallo >> myfile # appand line with hallo to myfile
-echo > myfile        # delete content of myfile
-cat file1 > file2    # replace conentent of file2 with content of file1
+ls >> myfile          # short form 
+sleep -1 2> myfile   # write stderr of command in myfile (append)
+sleep -1 2>> myfile  # write stderr of command in myfile (replace)
 ```
 
 ### [[li ordinary pipe]]

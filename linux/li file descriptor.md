@@ -7,6 +7,10 @@
 	- `IPv4/IPv6`: internet domain socket [[network socket]]
 	- `FIFO`: [[li named pipes]]
 → same interface 
+- opening modes:
+	- `r`: read only
+	- `w`: write only
+	- `u`: read and write
 - index (small integer) to an entry in the [[li process]] table of open [[li file descriptor|file descriptors]]
 
 ### [[li syscall|systemcalls]] for working with [[li file descriptor|file descriptors]]
@@ -31,17 +35,22 @@ Basic
 [[li file descriptor]]
 - concept
 - types (6)
+- opening modes (3)
 - how to display them
 Back: 
 ### [[li file descriptor]]
 - [[li file descriptor]] unique identifier for any kind of data stream
-	- [[li standard streams]]
-	- [[li file|files]] on disc
-	- [[li directory|directorys]]
-	- [[li socket|sockets]] ([[li local socket]] or [[network socket]])
-	- network connections
-	- [[li pipe|pipes]]
+	- `CHR`: character special file(special part of the file system e.g. for a device or [[li standard streams]]) 
+	- `DIR`: opend directory
+	- `unix`: unix domain socket ([[li local socket]])
+	- `REG`: regular [[li file|file]]
+	- `IPv4/IPv6`: internet domain socket [[network socket]]
+	- `FIFO`: [[li named pipes]]
 → same interface 
+- opening modes:
+	- `r`: read only
+	- `w`: write only
+	- `u`: read and write
 - index (small integer) to an entry in the [[li process]] table of open [[li file descriptor|file descriptors]]
 
 
@@ -81,6 +90,7 @@ Basic
 [[li file descriptor]]
 - concept
 - types (6)
+- opening modes(3)
 - [[li syscall|systemcalls]] for working with [[li file descriptor|file descriptors]] (5)
 Back: 
 ### [[li file descriptor]]
@@ -92,6 +102,10 @@ Back:
 	- `IPv4/IPv6`: internet domain socket [[network socket]]
 	- `FIFO`: [[li named pipes]]
 → same interface 
+- opening modes:
+	- `r`: read only
+	- `w`: write only
+	- `u`: read and write
 - index (small integer) to an entry in the [[li process]] table of open [[li file descriptor|file descriptors]]
 
 
