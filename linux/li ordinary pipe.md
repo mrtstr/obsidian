@@ -1,9 +1,14 @@
-### [[li ordinary pipe]]
-- system command for [[li interprocess communication]]
-- for chaining processes togather by their [[li standard streams]]
-- [[li stdout]] of one process is piped in the [[li stdin]] of another [[li process]]
-- [[li pipe|pipes]] then are unidirectional byte streams
+### [[li ordinary pipe]] concept
+- mechanism for unidirectional [[li interprocess communication]]
+- can be used with one [[li file descriptor]] for writing and one for reading unsing the FIFO order
+- can be created togather with the read and wirte [[li file descriptor]] using the [[li pipe]] [[li syscall]] 
+- usually the [[li file descriptor|file descriptors]] are passed to child [[li child process]] in order to enable them to comunicate with each other
 
+### [[li syscall]]
+![[linux/sys calls/li pipe#pipe(pipefd[2])]]
+
+### [[shell command]]
+- the [[li stdin]] and [[li stdout]] streams con be piped togather using the `|` operator in [[li shell command]]
 ```sh
 command1 | command2 | command3
 # the stdout of command 1 will be the stdin of command2
@@ -23,39 +28,81 @@ cat myfile2 myfile 2>&1 1>/dev/null | grep something
 # 3) filtering for something
 ```
 
-### 3.6.3.1 Ordinary Pipes
-
--   Ordinary pipes are uni-directional, with a reading end and a writing end. ( If bidirectional communications are needed, then a second pipe is required. )
--   In UNIX ordinary pipes are created with the system call "int pipe( int fd [ ] )".
-    -   The return value is 0 on success, -1 if an error occurs.
-    -   The int array must be allocated before the call, and the values are filled in by the pipe system call:
-        -   fd[ 0 ] is filled in with a file descriptor for the reading end of the pipe
-        -   fd[ 1 ] is filled in with a file descriptor for the writing end of the pipe
-    -   UNIX pipes are accessible as files, using standard read( ) and write( ) system calls.
-    -   Ordinary pipes are only accessible within the process that created them.
-        -   Typically a parent creates the pipe before forking off a child.
-        -   When the child inherits open files from its parent, including the pipe file(s), a channel of communication is established.
-        -   Each process ( parent and child ) should first close the ends of the pipe that they are not using. For example, if the parent is writing to the pipe and the child is reading, then the parent should close the reading end of its pipe after the fork and the child should close the writing end.
--   Figure 3.22 shows an ordinary pipe in UNIX, and Figure 3.23 shows code in which it is used.
-
-
+## related
+![[li file descriptor#li file descriptor]]
 # anki
+
 START
 Basic
-[[li ordinary pipe]]
+[[li ordinary pipe]] 
 - concept
+- system call
+- usage in a shell command
 
 Back: 
 
-- system command for [[li interprocess communication]]
-- for chaining processes togather by their [[li standard streams]]
-- [[stdout]] of one process is piped in the [[li stdin]] of another [[li process]]
-- [[li ordinary pipe|pipes]] then are unidirectional byte streams
+### [[li ordinary pipe]] concept
+- mechanism for unidirectional [[li interprocess communication]]
+- can be used with one [[li file descriptor]] for writing and one for reading unsing the FIFO order
+- can be created togather with the read and wirte [[li file descriptor]] using the [[li pipe]] [[li syscall]] 
+- usually the [[li file descriptor|file descriptors]] are passed to child [[li child process]] in order to enable them to comunicate with each other
 
+![[o_pipe 1.jpg]]
+
+#### pipe(pipefd[2])
+- [[li syscall]] for creating a [[li ordinary pipe]]
+- returns a [[li return code]], opends a ordinary/unnamed pipe and writes the input and output [[li file descriptor]] in the array `pipefd`
+
+#### [[shell command]]
+- the [[li stdin]] and [[li stdout]] streams con be piped togather using the `|` operator in [[li shell command]]
 ```sh
 command1 | command2 | command3
 # the stdout of command 1 will be the stdin of command2
 # the stdout of command 2 will be the stdin of command3
+```
+
+#### [[li file descriptor]]
+- [[li file descriptor]] unique identifier for any kind of data stream
+	- `CHR`: character special file(special part of the file system e.g. for a device or [[li standard streams]]) 
+	- `DIR`: opend directory
+	- `unix`: unix domain socket ([[li unix domain socket]])
+	- `REG`: regular [[li file|file]]
+	- `IPv4/IPv6`: internet domain socket [[network socket]]
+	- `FIFO`: [[li FIFO special file]]
+→ same interface 
+- opening modes:
+	- `r`: read only
+	- `w`: write only
+	- `u`: read and write
+- index (small integer) to an entry in the [[li process]] table of open [[li file descriptor|file descriptors]]
+Tags: code linux
+<!--ID: 1708245724879-->
+END
+
+
+START
+Basic
+example: pipeling togather [[li shell command|shell commands]] qith their [[li standard streams]]
+
+Back: 
+- the [[li stdin]] and [[li stdout]] streams con be piped togather using the `|` operator in [[li shell command]]
+```sh
+command1 | command2 | command3
+# the stdout of command 1 will be the stdin of command2
+# the stdout of command 2 will be the stdin of command3
+```
+
+### examples
+```sh
+cat myfile | head -5 | grep c 
+# 1) print output of file 
+# 2) forward stdout to stdin of a command collecting only first 5 lines
+# 3) forward stdout to stdin of a command filtering
+cat myfile2 myfile 2>&1 1>/dev/null | grep something
+# 1) redirecting stderr to stdout 
+# 2) redirecting stdout to the bit bucker
+# -> only stderr will be returned
+# 3) filtering for something
 ```
 Tags: code linux
 <!--ID: 1700412026134-->

@@ -2,10 +2,10 @@
 - [[li file descriptor]] unique identifier for any kind of data stream
 	- `CHR`: character special file(special part of the file system e.g. for a device or [[li standard streams]]) 
 	- `DIR`: opend directory
-	- `unix`: unix domain socket ([[li local socket]])
+	- `unix`: unix domain socket ([[li unix domain socket]])
 	- `REG`: regular [[li file|file]]
 	- `IPv4/IPv6`: internet domain socket [[network socket]]
-	- `FIFO`: [[li named pipes]]
+	- `FIFO`: [[li FIFO special file]]
 → same interface 
 - opening modes:
 	- `r`: read only
@@ -42,10 +42,10 @@ Back:
 - [[li file descriptor]] unique identifier for any kind of data stream
 	- `CHR`: character special file(special part of the file system e.g. for a device or [[li standard streams]]) 
 	- `DIR`: opend directory
-	- `unix`: unix domain socket ([[li local socket]])
+	- `unix`: unix domain socket ([[li unix domain socket]])
 	- `REG`: regular [[li file|file]]
 	- `IPv4/IPv6`: internet domain socket [[network socket]]
-	- `FIFO`: [[li named pipes]]
+	- `FIFO`: [[li FIFO special file]]
 → same interface 
 - opening modes:
 	- `r`: read only
@@ -97,10 +97,10 @@ Back:
 - [[li file descriptor]] unique identifier for any kind of data stream
 	- `CHR`: character special file(special part of the file system e.g. for a device or [[li standard streams]]) 
 	- `DIR`: opend directory
-	- `unix`: unix domain socket ([[li local socket]])
+	- `unix`: unix domain socket ([[li unix domain socket]])
 	- `REG`: regular [[li file|file]]
 	- `IPv4/IPv6`: internet domain socket [[network socket]]
-	- `FIFO`: [[li named pipes]]
+	- `FIFO`: [[li FIFO special file]]
 → same interface 
 - opening modes:
 	- `r`: read only

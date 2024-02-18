@@ -4,7 +4,7 @@
 - Each socket within the network has a unique name associated with it called a socket descriptor
 
 
-[[stream sockets]] and [[datagram socket]]
+[[SOCK_STREAM]] and [[SOCK_DGRAM]]
 
 As with file access, user processes ask the operating system to create a socket when one is needed
 The system returns an integer, the socket descriptor (sd), that the application uses every time it wants to refer to that socket.

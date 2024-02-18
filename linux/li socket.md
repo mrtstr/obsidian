@@ -1,7 +1,7 @@
 ## [[li socket]]
 - endpoint in a two-way communication channel
-- for sending data between [[li process|processes]] either [[li local socket|locally]] or over [[network socket|network]]
+- for sending data between [[li process|processes]] either [[li unix domain socket|locally]] or over [[network socket|network]]
 
-![[li local socket]]
+![[li unix domain socket]]
 
 ![[network socket#network socket]]

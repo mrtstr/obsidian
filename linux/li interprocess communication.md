@@ -17,7 +17,7 @@ Cooperating processes require some type of inter-process communication, which is
 
 ![[li signal]]
 
-![[li pipe#li pipe]]
+![[linux/li pipe#li pipe]]
 
 ![[li redirection]]
 
