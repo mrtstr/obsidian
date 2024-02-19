@@ -31,7 +31,8 @@ Back:
 - has to be opend simultaneously at both ends (read and write) before it can be used
 
 
-![[li mkfifo#mkfifo(pathname)]]
+### mkfifo(pathname)
+- [[li syscall]] for creatig a [[li FIFO special file]] under a given path
 
 #### [[li file descriptor]]
 - [[li file descriptor]] unique identifier for any kind of data stream
@@ -39,7 +40,7 @@ Back:
 	- `DIR`: opend directory
 	- `unix`: unix domain socket ([[li unix domain socket]])
 	- `REG`: regular [[li file|file]]
-	- `IPv4/IPv6`: internet domain socket [[network socket]]
+	- `IPv4/IPv6`: internet domain socket [[li network socket]]
 	- `FIFO`: [[li FIFO special file]]
 → same interface 
 - opening modes:

@@ -36,7 +36,7 @@ Back:
 - a [[li child process]] inherits the standard streams of its [[li parent process]]
 
 ### [[li redirection]] of [[li file descriptor|file descriptors]] into each other
-- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
+- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[linux/li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
 - in case of a not opend [[li file]] `[source file discriptor]>[file path]` will open the file and redirect into it
 - `>>` will append to a [[li file descriptor]] while `>` will overwrite the existing content
 

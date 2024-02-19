@@ -1,5 +1,5 @@
 ### [[li redirection]] of [[li file descriptor|file descriptors]] into each other
-- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
+- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[linux/li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
 - in case of a not opend [[li file]] `[source file discriptor]>[file path]` will open the file and redirect into it
 - `>>` will append to a [[li file descriptor]] while `>` will overwrite the existing content
 
@@ -89,7 +89,7 @@ examples
 - redirect stderr to file
 Back: 
 #### [[li redirection]] of [[li file descriptor|file descriptors]] into each other
-- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
+- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[linux/li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
 - in case of a not opend [[li file]] `[source file discriptor]>[file path]` will open the file and redirect into it
 - `>>` will append to a [[li file descriptor]] while `>` will overwrite the existing content
 
@@ -137,7 +137,7 @@ how to do the following using a [[li shell command]]
 - redirect stderr of a command in one file and stdout into another
 Back: 
 #### [[li redirection]] of [[li file descriptor|file descriptors]] into each other
-- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
+- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[linux/li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
 - in case of a not opend [[li file]] `[source file discriptor]>[file path]` will open the file and redirect into it
 - `>>` will append to a [[li file descriptor]] while `>` will overwrite the existing content
 ### examples
@@ -159,7 +159,7 @@ Basic
 How to ignore the [[stdout]] of a [[li shell command]]
 Back: 
 #### [[li redirection]] of [[li file descriptor|file descriptors]] into each other
-- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
+- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[linux/li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
 - in case of a not opend [[li file]] `[source file discriptor]>[file path]` will open the file and redirect into it
 - `>>` will append to a [[li file descriptor]] while `>` will overwrite the existing content
 
@@ -182,7 +182,7 @@ examples for
 - redirecting only [[li stderr]] to [[li stdout]] (and filter it)
 Back: 
 #### [[li redirection]] of [[li file descriptor|file descriptors]] into each other
-- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
+- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[linux/li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
 - in case of a not opend [[li file]] `[source file discriptor]>[file path]` will open the file and redirect into it
 - `>>` will append to a [[li file descriptor]] while `>` will overwrite the existing content
 #### [[li redirection]] [[li file descriptor]] into each other
@@ -223,7 +223,7 @@ cat myfile2 myfile 2>&1 > log
 
 Back: 
 #### [[li redirection]] of [[li file descriptor|file descriptors]] into each other
-- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
+- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[linux/li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
 - in case of a not opend [[li file]] `[source file discriptor]>[file path]` will open the file and redirect into it
 - `>>` will append to a [[li file descriptor]] while `>` will overwrite the existing content
 
@@ -256,7 +256,7 @@ cat myfile2 myfile 2>&1 1>/dev/null
 
 Back: 
 #### [[li redirection]] of [[li file descriptor|file descriptors]] into each other
-- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
+- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[linux/li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
 - in case of a not opend [[li file]] `[source file discriptor]>[file path]` will open the file and redirect into it
 - `>>` will append to a [[li file descriptor]] while `>` will overwrite the existing content
 
@@ -287,7 +287,7 @@ summary [[li redirection]]
 - how to ignore a [[li stdout]] or [[li stderr]] stream
 Back: 
 #### [[li redirection]] of [[li file descriptor|file descriptors]] into each other
-- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
+- [[li file descriptor|file descriptors]] ([[li standard streams]], [[li file|open files]], [[linux/li socket|open sockets]]) can be redirected into each other with the following syntax `[source file discriptor]>&[dest file descriptor]`
 - in case of a not opend [[li file]] `[source file discriptor]>[file path]` will open the file and redirect into it
 - `>>` will append to a [[li file descriptor]] while `>` will overwrite the existing content
 

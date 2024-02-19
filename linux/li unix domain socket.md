@@ -1,5 +1,8 @@
 ## [[li unix domain socket]]
- - AF_LOCAL/AF_UNIX [[li socket|sockets]] allow [[li process|processes]] to communicate with one another on a single system (independent of [[transmission control protocol (TCP)|TCP]]/[[IP|IP]])
+You already know that choosing a domain value for the `socket(2)` or `socketpair(2)` function chooses a protocol family to be used. For example, you know that
+
+- in case of a [[li unix domain socket]] 
+ - AF_LOCAL/AF_UNIX [[linux/li socket|sockets]] allow [[li process|processes]] to communicate with one another on a single system (independent of [[transmission control protocol (TCP)|TCP]]/[[IP|IP]])
 
 
 - The **AF_UNIX** (also known as **AF_LOCAL**) socket family is used to communicate between processes on the same machine efficiently.
