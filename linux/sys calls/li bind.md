@@ -1,10 +1,11 @@
 ### bind (syscall)
 - [[li syscall]] for binding an adress to and existing [[li socket]]
 - while the [[server]] uses [[li bind]] to bind a adress to a [[li socket]] the [[client]] uses [[li connect]] to connect to the adress
-- in case of a [[li unix domain socket]] [[li bind]] can be used to bind the socket to a  filesystem path
+- [[li unix domain socket]]: the adress is a filesystem path
+- [[li internet domain socket]]: adress is a [[IP]] adress
 ```C
-bind(
+int bind(
 	sockfd, // file descriptor for the socket
-	sockadd, // adress to bind to the file descriptor
+	sockadd, // adress (path or ip) to bind to the file descriptor
 ) // -> return code
 ```

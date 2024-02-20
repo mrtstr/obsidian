@@ -1,3 +1,13 @@
+### [[stream communication]]
+- sequenced
+- reliable
+- two-way full-duplex
+- connection-based 
+- asymetric ([[server]]/[[client]])
+- e.g. [[transmission control protocol (TCP)]]
+
+
+# rest
 you say hello to each other (SYN/ACK in TCP), and then you exchange information. Once you are done, you say goodbye (FIN/ACK in TCP)
 
 There is a guarantee that data will not arrive in a different order than you sent it, and there is a reasonable guarantee that data will not be damaged.

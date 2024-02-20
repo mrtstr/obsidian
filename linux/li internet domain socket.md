@@ -1,6 +1,6 @@
-## [[li network socket]]
+## [[li internet domain socket]]
 [[linux/li socket]]
-- in calse of a [[li network socket]] the [[server]] binds the adress to the [[li socket]] while the [[client]] will connect to the adress using [[li connect]] 
+- in calse of a [[li internet domain socket]] the [[server]] binds the adress to the [[li socket]] while the [[client]] will connect to the adress using [[li connect]] 
 - Each socket within the network has a unique name associated with it called a socket descriptor
 
 

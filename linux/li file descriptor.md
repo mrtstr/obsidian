@@ -4,7 +4,7 @@
 	- `DIR`: opend directory
 	- `unix`: unix domain socket ([[li unix domain socket]])
 	- `REG`: regular [[li file|file]]
-	- `IPv4/IPv6`: internet domain socket [[li network socket]]
+	- `IPv4/IPv6`: internet domain socket [[li internet domain socket]]
 	- `FIFO`: [[li FIFO special file]]
 → same interface 
 - opening modes:
@@ -44,7 +44,7 @@ Back:
 	- `DIR`: opend directory
 	- `unix`: unix domain socket ([[li unix domain socket]])
 	- `REG`: regular [[li file|file]]
-	- `IPv4/IPv6`: internet domain socket [[li network socket]]
+	- `IPv4/IPv6`: internet domain socket [[li internet domain socket]]
 	- `FIFO`: [[li FIFO special file]]
 → same interface 
 - opening modes:
@@ -99,7 +99,7 @@ Back:
 	- `DIR`: opend directory
 	- `unix`: unix domain socket ([[li unix domain socket]])
 	- `REG`: regular [[li file|file]]
-	- `IPv4/IPv6`: internet domain socket [[li network socket]]
+	- `IPv4/IPv6`: internet domain socket [[li internet domain socket]]
 	- `FIFO`: [[li FIFO special file]]
 → same interface 
 - opening modes:
