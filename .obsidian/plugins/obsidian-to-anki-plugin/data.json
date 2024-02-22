@@ -156,7 +156,8 @@
     "socket_connection 2.webp",
     "stream_socket.jpg",
     "socket_connection.jpg",
-    "socket_unix_vs_internet.jpg"
+    "socket_unix_vs_internet.jpg",
+    "stream_socket 2.jpg"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1200,7 +1201,7 @@
     "mathematics/stochastics/time series/autoregresive model AR(q).md": "0fd1d3777d825a301bfa85fccef20410",
     "shell command.md": "095c85aa072b1f56f263588a8108dc3c",
     "linux/li directory.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "linux/li socket.md": "04e4a3b7d98274df9c2e3c84ff0ca197",
+    "linux/li socket.md": "412a654bc8cc894b5d88eb2ca056fb07",
     "linux/li local socket.md": "31fa7f4dc9b58b461f83039a80e190ff",
     "linux/sys calls/li seek.md": "8ad151ba6b151a1c991ff9e7cc589577",
     "linux/sys calls/li write.md": "4740166eba406b0daa49607072466084",
@@ -1306,7 +1307,7 @@
     "network/SOCK_SEQPACKET.md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/SOCK_DGRAM.md": "e6eedacff595674a627dfe2bf38e1359",
     "network/SOCK_STREAM.md": "b40266fb437929f595a3cc3ea870f59a",
-    "linux/li unix domain socket.md": "a0598f1c5b0d5d5261a44ddfeaecee01",
+    "linux/li unix domain socket.md": "b25e8e31748eb73e2f11b32de2c4422e",
     "linux/li FIFO special file.md": "ecee853999476a8e367728d6cb062d25",
     "linux/sys calls/li mkfifo.md": "22021e6ee7ef2a93f3257874ae2e135d",
     "linux/sys calls/li pipe.md": "70102be01790fcd62f8bd12deeb95c57",
@@ -1315,18 +1316,18 @@
     "linux/sys calls/li bind.md": "8945a9b23d264c997fb1af4c12326284",
     "linux/sys calls/li connect.md": "4cdb212b145c83eaa6e06c3170a05f9d",
     "linux/sys calls/li socket (syscall).md": "8559b74aabd8d760d6c547cc986bf40b",
-    "linux/li internet domain socket.md": "374a28828ca8a959110807b7be3e44d7",
+    "linux/li internet domain socket.md": "c6a4547ee7f62562d37a83a3630319bf",
     "linux/sys calls/li accept.md": "0206328b0ebecc684b2c47af2a1fb7da",
     "linux/sys calls/li listen.md": "6347bad9819476502e2175a1f8b142d5",
     "linux/sys calls/li socketpair.md": "c7671c23a412c68e04bf2478250d70a3",
     "linux/li conection less socket.md": "985543da2efc24e704967020ab6097a8",
     "linux/li connection based socket.md": "1d03298de424a7d3a65336a2ef4cc590",
-    "linux/sys calls/li sendmsg.md": "78f66b2125e7ca49379df70cb48f3303",
+    "linux/sys calls/li sendmsg.md": "a0cc995c7ab0b841fac39578af1f9ad4",
     "linux/sys calls/li recvfrom.md": "bc42aca7589841fe52f63f5b25b17c82",
     "linux/sys calls/li recvmsg.md": "5e2bd8ca5c18a3601e0e31cfb626cc38",
     "linux/sys calls/li recv.md": "6abdc43036ef8a27e633687c2edb748f",
-    "linux/sys calls/li sendto.md": "2f9447c514272f8e6136e23446c16dcd",
-    "linux/sys calls/li send.md": "fff9018a760d09b2efe96fa50c77111b"
+    "linux/sys calls/li sendto.md": "68fe45dbc9ddfaf3a9cbd67f3efc14f2",
+    "linux/sys calls/li send.md": "47a5e2c9a124feac6dbd0e12c51367db"
   },
   "fields_dict": {
     "Basic": [
