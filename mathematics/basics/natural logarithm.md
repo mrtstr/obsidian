@@ -13,7 +13,7 @@ $$
 ![[derivative logarithms#theorem]]
 
 
-### proof
+### proof1
 
 $$
 \begin{split}
@@ -21,6 +21,17 @@ $$
 &=  \lim_{h \rightarrow 0} \frac{\frac{d\ln(1 + h)}{dh}}{\frac{dh}{dh}} \\
 &=  \lim_{h \rightarrow 0} \frac{d\ln(1 + h)}{dh} \\
 &=  \lim_{h \rightarrow 0} \frac{1}{1 + h} = 1 \\
+\end{split}
+$$
+
+### proof2
+
+$$
+\begin{split}
+ 
+1 &= ln(e)\\
+&=  \lim_{h \rightarrow 0} ln\left(\left(1 + h\right)^{\frac{1}{h}}\right) \\
+&=  \lim_{h \rightarrow 0} \frac{\ln(1 + h)}{h} \\
 \end{split}
 $$
 
@@ -129,7 +140,7 @@ Basic
 $$
 \lim_{h \rightarrow 0} \frac{\ln(1 + h)}{h} = 
 $$
-with proof
+with two proofs
 
 Back: 
 
@@ -155,7 +166,7 @@ $$
 \end{split}
 $$
 
-### proof
+### proof1
 
 $$
 \begin{split}
@@ -165,7 +176,16 @@ $$
 &=  \lim_{h \rightarrow 0} \frac{1}{1 + h} = 1 \\
 \end{split}
 $$
+### proof2
 
+$$
+\begin{split}
+ 
+1 &= ln(e)\\
+&=  \lim_{h \rightarrow 0} ln\left(\left(1 + h\right)^{\frac{1}{h}}\right) \\
+&=  \lim_{h \rightarrow 0} \frac{\ln(1 + h)}{h} \\
+\end{split}
+$$
 
 Tags: mathematics
 <!--ID: 1697875981298-->

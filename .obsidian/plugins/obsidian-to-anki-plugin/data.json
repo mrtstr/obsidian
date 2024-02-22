@@ -152,7 +152,11 @@
     "o_pipe 1.jpg",
     "1 ekw1o4xE_7ew9kYh6tVkCA 1.webp",
     "1 3Ny5SBf14TwhpRR5vOqF2A 1.webp",
-    "socket_connection 1.webp"
+    "socket_connection 1.webp",
+    "socket_connection 2.webp",
+    "stream_socket.jpg",
+    "socket_connection.jpg",
+    "socket_unix_vs_internet.jpg"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -963,7 +967,7 @@
     "mathematics/basics/limit.md": "1fe93499dc0ca9b71383065bc982dcb9",
     "mathematics/basics/geometric series.md": "5037e7a9d3d38ecd70c1a1c7eca236fd",
     "mathematics/basics/series.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/natural logarithm.md": "fcd4d8f397a34d874b85aa2d3cbcd6b4",
+    "mathematics/basics/natural logarithm.md": "114426ecf89f822c25bec60786b6d49d",
     "gym/gym plan2.md": "82a4095fd780da6651e9f4ee60e724ae",
     "mathematics/basics/proof.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/proof by induction.md": "838907aa5eab3c36739ae4aa3afbe7f1",
@@ -1196,7 +1200,7 @@
     "mathematics/stochastics/time series/autoregresive model AR(q).md": "0fd1d3777d825a301bfa85fccef20410",
     "shell command.md": "095c85aa072b1f56f263588a8108dc3c",
     "linux/li directory.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "linux/li socket.md": "6fc25ec2bb1c6831e235cdb4618277d3",
+    "linux/li socket.md": "04e4a3b7d98274df9c2e3c84ff0ca197",
     "linux/li local socket.md": "31fa7f4dc9b58b461f83039a80e190ff",
     "linux/sys calls/li seek.md": "8ad151ba6b151a1c991ff9e7cc589577",
     "linux/sys calls/li write.md": "4740166eba406b0daa49607072466084",
@@ -1310,11 +1314,19 @@
     "linux/li network socket.md": "44f46ff565f169dc8e588bcee3a21001",
     "linux/sys calls/li bind.md": "8945a9b23d264c997fb1af4c12326284",
     "linux/sys calls/li connect.md": "4cdb212b145c83eaa6e06c3170a05f9d",
-    "linux/sys calls/li socket (syscall).md": "695bf2a44c6a2349895380b0576173ee",
+    "linux/sys calls/li socket (syscall).md": "8559b74aabd8d760d6c547cc986bf40b",
     "linux/li internet domain socket.md": "374a28828ca8a959110807b7be3e44d7",
     "linux/sys calls/li accept.md": "0206328b0ebecc684b2c47af2a1fb7da",
     "linux/sys calls/li listen.md": "6347bad9819476502e2175a1f8b142d5",
-    "linux/sys calls/li socketpair.md": "c7671c23a412c68e04bf2478250d70a3"
+    "linux/sys calls/li socketpair.md": "c7671c23a412c68e04bf2478250d70a3",
+    "linux/li conection less socket.md": "985543da2efc24e704967020ab6097a8",
+    "linux/li connection based socket.md": "1d03298de424a7d3a65336a2ef4cc590",
+    "linux/sys calls/li sendmsg.md": "78f66b2125e7ca49379df70cb48f3303",
+    "linux/sys calls/li recvfrom.md": "bc42aca7589841fe52f63f5b25b17c82",
+    "linux/sys calls/li recvmsg.md": "5e2bd8ca5c18a3601e0e31cfb626cc38",
+    "linux/sys calls/li recv.md": "6abdc43036ef8a27e633687c2edb748f",
+    "linux/sys calls/li sendto.md": "2f9447c514272f8e6136e23446c16dcd",
+    "linux/sys calls/li send.md": "fff9018a760d09b2efe96fa50c77111b"
   },
   "fields_dict": {
     "Basic": [

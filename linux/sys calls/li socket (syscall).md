@@ -7,6 +7,8 @@ socket(
 	type, 
 ) // → file descriptor
 ```
+
+# relevant
 ![[li socket#li socket]]
 
 # anki
@@ -26,7 +28,7 @@ socket(
 ) // → file descriptor
 ```
 
-### socket (syscall)
+### socketpair (syscall)
 - [[li syscall]] for creating an already connected pair of [[li unix domain socket]]
 - for communincating among [[li child process]] similar to bidirectional version of a [[li ordinary pipe]] 
 - writes the two [[li file descriptor]] in `sv[0]` and `sv[1]` and returns a [[li return code]]
