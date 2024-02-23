@@ -1,3 +1,3 @@
-- [[protocol]] on top of [[transmission control protocol (TCP)|TCP]]/[[IP|IP]] 
+- [[protocol]] on top of [[transmission control protocol (TCP)|TCP]]/[[internet protocol (IP)|IP]] 
 - default [[port]] is TCP 80, but other ports can be used
 - This does not preclude HTTP from being implemented on top of any other protocol on the Internet, or on other networks. HTTP only presumes a reliable transport; any protocol that provides such guarantees can be used

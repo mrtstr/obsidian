@@ -47,7 +47,7 @@ int socketpair(
 #### domain
 - selects the protocol family which will be used for communication
 	- `AF_UNIX` for [[li unix domain socket]] (like a local [[li file]])
-	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[IP]] protocol
+	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[internet protocol (IP)]] protocol
 
 #### type
 - specifies communication semantics

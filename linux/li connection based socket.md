@@ -8,13 +8,14 @@
 ![[stream communication#stream communication]]
 
 ### establishing a connection
+
 - to establish a [[li socket]] connection between a [[li socket]] on the [[server]] side and a [[li socket]] of the [[client]] side the following steps are done
 - after this the [[li socket|sockets]] can communicate using the normal [[li file descriptor]] api ([[li read]], [[li write]])
 
 1) both [[server]] and [[client]] create a [[li socket]] with a connection based type (`SOCK_STREAM` and `SOCK_SEQPACKET`) 
 ![[li socket (syscall)#socket (syscall)]]
 
-2) the [[server]] binds an adress ([[IP]] or path) to the [[li socket]]
+2) the [[server]] binds an adress ([[internet protocol (IP)]] or path) to the [[li socket]]
 ![[li bind#bind (syscall)]]
 
 3) the [[server]] marks the [[li socket]] as passiv (accepting of connection requests)
@@ -188,7 +189,7 @@ struct msghdr {
 #### domain
 - selects the protocol family which will be used for communication
 	- `AF_UNIX` for [[li unix domain socket]] (like a local [[li file]])
-	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[IP]] protocol
+	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[internet protocol (IP)]] protocol
 
 #### type
 - specifies communication semantics
@@ -244,12 +245,12 @@ socket(
 ) // → file descriptor
 ```
 
-2) the [[server]] binds an adress ([[IP]] or path) to the [[li socket]]
+2) the [[server]] binds an adress ([[internet protocol (IP)]] or path) to the [[li socket]]
 ### bind (syscall)
 - [[li syscall]] for binding an adress to and existing [[li socket]]
 - while the [[server]] uses [[li bind]] to bind a adress to a [[li socket]] the [[client]] uses [[li connect]] to connect to the adress
 - [[li unix domain socket]]: the adress is a filesystem path
-- [[li internet domain socket]]: adress is a [[IP]] adress
+- [[li internet domain socket]]: adress is a [[internet protocol (IP)]] adress
 ```C
 int bind(
 	sockfd, // file descriptor for the socket
@@ -310,7 +311,7 @@ int accept(
 #### domain
 - selects the protocol family which will be used for communication
 	- `AF_UNIX` for [[li unix domain socket]] (like a local [[li file]])
-	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[IP]] protocol
+	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[internet protocol (IP)]] protocol
 
 #### type
 - specifies communication semantics
@@ -350,7 +351,7 @@ socket(
 - [[li syscall]] for binding an adress to and existing [[li socket]]
 - while the [[server]] uses [[li bind]] to bind a adress to a [[li socket]] the [[client]] uses [[li connect]] to connect to the adress
 - [[li unix domain socket]]: the adress is a filesystem path
-- [[li internet domain socket]]: adress is a [[IP]] adress
+- [[li internet domain socket]]: adress is a [[internet protocol (IP)]] adress
 ```C
 int bind(
 	sockfd, // file descriptor for the socket
@@ -378,7 +379,7 @@ int listen(
 #### domain
 - selects the protocol family which will be used for communication
 	- `AF_UNIX` for [[li unix domain socket]] (like a local [[li file]])
-	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[IP]] protocol
+	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[internet protocol (IP)]] protocol
 
 #### type
 - specifies communication semantics
@@ -452,7 +453,7 @@ socket(
 - [[li syscall]] for binding an adress to and existing [[li socket]]
 - while the [[server]] uses [[li bind]] to bind a adress to a [[li socket]] the [[client]] uses [[li connect]] to connect to the adress
 - [[li unix domain socket]]: the adress is a filesystem path
-- [[li internet domain socket]]: adress is a [[IP]] adress
+- [[li internet domain socket]]: adress is a [[internet protocol (IP)]] adress
 ```C
 int bind(
 	sockfd, // file descriptor for the socket
@@ -480,7 +481,7 @@ int listen(
 #### domain
 - selects the protocol family which will be used for communication
 	- `AF_UNIX` for [[li unix domain socket]] (like a local [[li file]])
-	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[IP]] protocol
+	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[internet protocol (IP)]] protocol
 
 #### type
 - specifies communication semantics

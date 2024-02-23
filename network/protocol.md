@@ -2,7 +2,7 @@ set of standards used to access resources via the Web
 
 ![[transmission control protocol (TCP)]]
 
-![[IP]]
+![[internet protocol (IP)]]
 
 ![[user datagram protocol (UDP)]]
 

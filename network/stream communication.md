@@ -1,18 +1,51 @@
 ### [[stream communication]]
-- sequenced
-- reliable
-- two-way full-duplex
-- connection-based 
-- asymetric ([[server]]/[[client]])
-- e.g. [[transmission control protocol (TCP)]]
+- **Byte-Oriented**: 
+	- data treatet as a continuous stream of bytes
+		→ no message boundaries, 
+		→ the receiver must handle message framing
+- **Ordered and Reliable**
+	- Data delivery is guaranteed and in order
+		→ If a packet is lost or corrupted, it will be retransmitted
+- **Connection-Oriented**: 
+	- connection between the sender and receiver has to be stablished before data transfer
+- **Flow Control**: 
+	- prevent sender from overwhelming the receiver
+- e.g. [[transmission control protocol (TCP)]] used in [[li connection based socket]] (`SOCK_STREAM` and `SOCK_SEQPACKET`)
 
 
-# rest
-you say hello to each other (SYN/ACK in TCP), and then you exchange information. Once you are done, you say goodbye (FIN/ACK in TCP)
+# anki
 
-There is a guarantee that data will not arrive in a different order than you sent it, and there is a reasonable guarantee that data will not be damaged.
+START
+Basic
+two of communication concepts with example protocols
+Back: 
+### [[stream communication]]
+- **Byte-Oriented**: 
+	- data treatet as a continuous stream of bytes
+		→ no message boundaries, 
+		→ the receiver must handle message framing
+- **Ordered and Reliable**
+	- Data delivery is guaranteed and in order
+		→ If a packet is lost or corrupted, it will be retransmitted
+- **Connection-Oriented**: 
+	- connection between the sender and receiver has to be stablished before data transfer
+- **Flow Control**: 
+	- prevent sender from overwhelming the receiver
+- e.g. [[transmission control protocol (TCP)]] used in [[li connection based socket]] (`SOCK_STREAM` and `SOCK_SEQPACKET`)
 
-So you use a stream socket when having information in order and intact is important. File transfer protocols are a good example here.
-
-
-Streambasierte Protokolle wie z. B. das TCP-Protokoll sind Streaming-Protokolle mit Sequencing und Fehlerkontrolle.
+### [[datagram]]
+- **Connectionless**
+	- no initial connection setup
+	- each packet is treated independently
+- **Unreliable**
+	- no guarantee for delivery and order of packets. 
+- **Message-Oriented**
+	- preserve message boundaries
+		→ Each send() call corresponds to one receive() call on the other end.
+- **No Flow Control**
+	- no inherent flow control mechanism
+	- application to implement flow control if needed.
+- e.g. [[user datagram protocol (UDP)]] used in `SOCK_DGRAM` [[li conection less socket]]
+Tags: code linux
+<!--ID: 1708682546582-->
+END

@@ -12,7 +12,7 @@
 
 ![[li socket (syscall)#socket (syscall)]]
 
-2) the [[server]] binds an adress ([[IP]] or path) to the [[li socket]]
+2) the [[server]] binds an adress ([[internet protocol (IP)]] or path) to the [[li socket]]
 ![[li bind#bind (syscall)]]
 
 ### communication between [[li conection less socket]]
@@ -70,12 +70,12 @@ socket(
 ) // → file descriptor
 ```
 
-2) the [[server]] binds an adress ([[IP]] or path) to the [[li socket]]
+2) the [[server]] binds an adress ([[internet protocol (IP)]] or path) to the [[li socket]]
 ### bind (syscall)
 - [[li syscall]] for binding an adress to and existing [[li socket]]
 - while the [[server]] uses [[li bind]] to bind a adress to a [[li socket]] the [[client]] uses [[li connect]] to connect to the adress
 - [[li unix domain socket]]: the adress is a filesystem path
-- [[li internet domain socket]]: adress is a [[IP]] adress
+- [[li internet domain socket]]: adress is a [[internet protocol (IP)]] adress
 ```C
 int bind(
 	sockfd, // file descriptor for the socket
@@ -174,7 +174,7 @@ struct msghdr {
 #### domain
 - selects the protocol family which will be used for communication
 	- `AF_UNIX` for [[li unix domain socket]] (like a local [[li file]])
-	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[IP]] protocol
+	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[internet protocol (IP)]] protocol
 
 #### type
 - specifies communication semantics

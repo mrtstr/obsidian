@@ -1,6 +1,6 @@
 ## [[li internet domain socket]]
 - for bidirectional [[li interprocess communication]] over the network
-- domain `AF_INET` or `AF_INET6` depending on which version of [[IP]] is used
+- domain `AF_INET` or `AF_INET6` depending on which version of [[internet protocol (IP)]] is used
 - [[li connection based socket]]: using the [[transmission control protocol (TCP)]]
 - [[li conection less socket]]: using the [[user datagram protocol (UDP)]]
 
@@ -24,7 +24,7 @@ Back:
 
 ### [[li internet domain socket]]
 - for bidirectional [[li interprocess communication]] over the network
-- domain `AF_INET` or `AF_INET6` depending on which version of [[IP]] is used
+- domain `AF_INET` or `AF_INET6` depending on which version of [[internet protocol (IP)]] is used
 - [[li connection based socket]]: using the [[transmission control protocol (TCP)]]
 - [[li conection less socket]]: using the [[user datagram protocol (UDP)]]
 
@@ -36,7 +36,7 @@ Back:
 #### domain
 - selects the protocol family which will be used for communication
 	- `AF_UNIX` for [[li unix domain socket]] (like a local [[li file]])
-	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[IP]] protocol
+	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[internet protocol (IP)]] protocol
 
 #### type
 - specifies communication semantics

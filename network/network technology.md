@@ -2,4 +2,4 @@
 
 - internet networking technology TCP/IP is named after its two main [[protocol|protocols]]:
 	- [[transmission control protocol (TCP)]]
-	- [[IP]]
+	- [[internet protocol (IP)]]

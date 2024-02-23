@@ -1,9 +1,17 @@
 ### [[datagram]]
-- connectionless
-- unreliable (package loss and out of order)
-- fixed length packages
-- symetric
-- e.g. [[user datagram protocol (UDP)]]
+- **Connectionless**
+	- no initial connection setup
+	- each packet is treated independently
+- **Unreliable**
+	- no guarantee for delivery and order of packets. 
+- **Message-Oriented**
+	- preserve message boundaries
+		→ Each send() call corresponds to one receive() call on the other end.
+- **No Flow Control**
+	- no inherent flow control mechanism
+	- application to implement flow control if needed.
+- e.g. [[user datagram protocol (UDP)]] used in `SOCK_DGRAM` [[li conection less socket]]
+
 # rest
 The basic unit of information, consisting of one or more data packets, which are passed across an Internet at the transport level.
 

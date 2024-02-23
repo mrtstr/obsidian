@@ -6,7 +6,7 @@
 ### domain
 - selects the protocol family which will be used for communication
 	- `AF_UNIX` for [[li unix domain socket]] (like a local [[li file]])
-	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[IP]] protocol
+	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[internet protocol (IP)]] protocol
 
 ![[1 ekw1o4xE_7ew9kYh6tVkCA.webp]]
 
@@ -40,7 +40,7 @@ Back:
 ### domain
 - selects the protocol family which will be used for communication
 	- `AF_UNIX` for [[li unix domain socket]] (like a local [[li file]])
-	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[IP]] protocol
+	- `AF_INET`/`AF_INET6`: for [[li internet domain socket]] using the [[internet protocol (IP)]] protocol
 
 ![[socket_unix_vs_internet.jpg]]
 
@@ -105,7 +105,7 @@ Back:
 #### setup
 - no connection has to be established like with a [[li connection based socket]] ([[li listen]], [[li connect]], [[li accept]] not needed)
 1) [[server]] and [[client]] create a [[li socket]] with type `SOCK_DGRAM` and the same domain
-2) the [[server]] binds an adress ([[IP]] or path) to the [[li socket]]
+2) the [[server]] binds an adress ([[internet protocol (IP)]] or path) to the [[li socket]]
 
 
 ### communication between [[li conection less socket]]
@@ -153,7 +153,7 @@ int recvfrom(
 - after this the [[li socket|sockets]] can communicate using the normal [[li file descriptor]] api ([[li read]], [[li write]])
 
 1) both [[server]] and [[client]] create a [[li socket]] with a connection based type (`SOCK_STREAM` and `SOCK_SEQPACKET`)  using [[li socket]]
-2) the [[server]] binds an adress ([[IP]] or path) to the [[li socket]] using [[li bind]]
+2) the [[server]] binds an adress ([[internet protocol (IP)]] or path) to the [[li socket]] using [[li bind]]
 3) the [[server]] marks the [[li socket]] as passiv (accepting of connection requests) using [[li listen]]
 4) the [[client]] sends a connection request using the [[li connect]] [[li syscall]] 
 5) the [[server]] creates new [[li socket]] that is connected to the [[client|clints]] [[li socket]] while the listing [[li socket]] keeps listing for connection requests using [[li accept]]

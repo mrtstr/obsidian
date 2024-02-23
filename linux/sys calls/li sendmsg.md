@@ -29,7 +29,7 @@ struct msghdr {
 # Anki
 START
 Basic
-[[li send]] vs [[li sendto]] [[li syscall]]
+[[li send]] vs [[li sendmsg]] [[li syscall]]
 
 Back: 
 - send is used mainly for [[li connection based socket]] (`SOCK_STREAM` and `SOCK_SEQPACKET`) to send over a established connection
