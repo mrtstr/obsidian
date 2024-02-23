@@ -1,0 +1,3 @@
+A port is the logical address of any protocol; alternatively, we might think of a port as a special door for each protocol, through which all packets are routed. Another way to put it is that every protocol has a mailbox, or box, where every protocol packet is dropped. Subsequently, the recipient will access that packet and peruse the content sent by the sender. Every protocol has a port, which is a specific line used for packet transfer.
+
+In this article, we are going to discuss TCP/IP Port as well as the types of TCP/IP Port.

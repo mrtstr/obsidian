@@ -6,7 +6,9 @@
 
 ### connection stablishment
 -   **Step 1 (SYN):** In the first step, the client wants to establish a connection with a server, so it sends a segment with SYN(Synchronize Sequence Number) which informs the server that the client is likely to start communication and with what sequence number it starts segments with
--   **Step 2 (SYN + ACK):** Server responds to the client request with SYN-ACK signal bits set. Acknowledgement(ACK) signifies the response of the segment it received and SYN signifies with what sequence number it is likely to start the segments with
+-   **Step 2 (SYN + ACK):** A port is the logical address of any protocol; alternatively, we might think of a port as a special door for each protocol, through which all packets are routed. Another way to put it is that every protocol has a mailbox, or box, where every protocol packet is dropped. Subsequently, the recipient will access that packet and peruse the content sent by the sender. Every protocol has a port, which is a specific line used for packet transfer.
+
+In this article, we are going to discuss TCP/IP Port as well as the types of TCP/IP Port.
 -   **Step 3 (ACK):** In the final part client acknowledges the response of the server and they both establish a reliable connection with which they will start the actual data transfer
 ![[net.png]]
 
