@@ -157,7 +157,9 @@
     "stream_socket.jpg",
     "socket_connection.jpg",
     "socket_unix_vs_internet.jpg",
-    "stream_socket 2.jpg"
+    "stream_socket 2.jpg",
+    "TCPSegmentHeader-1.png",
+    "TCPSegmentHeader-1 1.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1290,7 +1292,7 @@
     "linux/computer structures.md": "9de71dcb8805c6fb462eb01838c7122d",
     "network/IP.md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/hypertext transfer protocol (HTTP).md": "0ac4481c693d937d59aab11f06992e9b",
-    "network/port.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "network/port.md": "49f45721df048c326e047c3fca08f554",
     "network/user datagram protocol (UDP).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/datagram socket.md": "e6eedacff595674a627dfe2bf38e1359",
     "network/stream sockets.md": "b40266fb437929f595a3cc3ea870f59a",
@@ -1299,7 +1301,7 @@
     "network/server.md": "c5496c7b22fa119ec52764ab29f11646",
     "network/client.md": "22ad7a674146d220f1e4eb8adef6f8a9",
     "network/network socket.md": "c2cd7b3e7005aa9e8050aab7317f3279",
-    "network/transmission control protocol (TCP).md": "fd210805b0d9d9d17d7aca9706276be1",
+    "network/transmission control protocol (TCP).md": "ebea358126de7a8bc0659507a3ba8a7f",
     "network/CGI.md": "0d76396c89450f8c64e5d2c46ce22456",
     "network/URL.md": "98a8fb5b24c881f73f9225419390b227",
     "network/protocol.md": "ba01846548647b2bcba7efb00b5aa158",
@@ -1329,13 +1331,14 @@
     "linux/sys calls/li sendto.md": "68fe45dbc9ddfaf3a9cbd67f3efc14f2",
     "linux/sys calls/li send.md": "47a5e2c9a124feac6dbd0e12c51367db",
     "network/network traffic control.md": "6251d0a28a7c43c26b6699a59466d496",
-    "network/routing.md": "70b168b24f71a616c10c0598e27b6d37",
+    "network/routing.md": "9c2231efa44098d8e05fb4a76b7c12b3",
     "network/adressing.md": "40f57ee3efb222324d4265c13bfd3802",
     "network/secure shell protocol (SSH).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/file transfer protocol (FTP).md": "d41d8cd98f00b204e9800998ecf8427e",
-    "network/domain name system (DNS).md": "d41d8cd98f00b204e9800998ecf8427e",
-    "network/internet protocol (IP).md": "d41d8cd98f00b204e9800998ecf8427e",
-    "network/network layers.md": "c0ce010050c5e42e396a83a8545454e2"
+    "network/domain name system (DNS).md": "3382dc3b39e4b0069ca2c8d5b134f871",
+    "network/internet protocol (IP).md": "28de8a4c90c5a94d2d3ebc85d9870152",
+    "network/network layers.md": "e44ceed5f4ab6275f1a0835ea9909cf6",
+    "network/dynamic host configuration protocol (DHCP).md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [

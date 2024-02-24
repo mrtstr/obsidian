@@ -47,6 +47,6 @@ Back:
 - Structuring and managing a multi-node network
 	→ [[adressing]], [[routing]], [[network traffic control]]
 - e.g. [[internet protocol (IP)]]
-Tags: code linux
+Tags: code network
 <!--ID: 1708703380412-->
 END
