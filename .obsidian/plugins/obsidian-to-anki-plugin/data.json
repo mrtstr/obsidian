@@ -159,7 +159,10 @@
     "socket_unix_vs_internet.jpg",
     "stream_socket 2.jpg",
     "TCPSegmentHeader-1.png",
-    "TCPSegmentHeader-1 1.png"
+    "TCPSegmentHeader-1 1.png",
+    "Tcp_verbindung 1.png",
+    "330px-Tcp-handshake.svg 1.png",
+    "TCP-Teardown.svg 1.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1301,7 +1304,7 @@
     "network/server.md": "c5496c7b22fa119ec52764ab29f11646",
     "network/client.md": "22ad7a674146d220f1e4eb8adef6f8a9",
     "network/network socket.md": "c2cd7b3e7005aa9e8050aab7317f3279",
-    "network/transmission control protocol (TCP).md": "ebea358126de7a8bc0659507a3ba8a7f",
+    "network/transmission control protocol (TCP).md": "0b59db7ced7fb67a3c2da6a3dca69fc7",
     "network/CGI.md": "0d76396c89450f8c64e5d2c46ce22456",
     "network/URL.md": "98a8fb5b24c881f73f9225419390b227",
     "network/protocol.md": "ba01846548647b2bcba7efb00b5aa158",

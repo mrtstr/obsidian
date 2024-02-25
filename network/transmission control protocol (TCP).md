@@ -1,6 +1,6 @@
 # [[transmission control protocol (TCP)]]
 - protocol of the [[network layers#transport layer|transport layer]] 
-- [[li connection based socket]]
+- managed by the operation system with a [[li connection based socket]]
 
 ![[stream communication#stream communication]]
 
@@ -14,10 +14,10 @@
 - length between 20 and 60 Byte
 
 #### source [[port]] adress (2 Byte)
-A 16-bit field that holds the port address of the application that is sending the data segment.   
+- [[port]] address of the application that is sending the data segment
 
 #### destination [[port]] adress (2 Byte)
-A 16-bit field that holds the port address of the application in the host that is receiving the data segment.  
+- [[port]] address of the application in the host that is receiving the data segment
 
 #### sequence number (4 Byte) 
 - consecutively number of the segments
@@ -31,18 +31,20 @@ A 16-bit field that holds the port address of the application in the host that i
 - is ignored in the **ACK flag** is not set
 
 #### checksum (2 Byte)
-- sum varity that the segment is correct transmittet 
-This field holds the checksum for error control.
+- checksum for error control.
+
 #### urgent pointer (2 Byte)
-This field (valid only if the URG control flag is set) is used to point to data that is urgently required that needs to reach the receiving process at the earliest. The value of this field is added to the sequence number to get the byte number of the last urgent byte.
+- valid only if the URG control flag is set 
+- pointer to the data that is urgently required (e.g. error messages)
 
 #### recieve window (2 Byte)
 - also called maximum segment size MSS=1460 B
+- amount of data that a reciver can accept without acknowledging the sender
 
 #### data offset (1 Byte)
-- length of the header in 4 byte blocks
+- length of the header in 4 byte words
 	→ indicates where the payload starts
-This is a 4-bit field that indicates the length of the TCP header by a number of 4-byte words in the header, i.e if the header is 20 bytes(min length of TCP header), then this field will hold 5 (because 5 x 4 = 20) and the maximum length: 60 bytes, then it’ll hold the value 15(because 15 x 4 = 60). Hence, the value of this field is always between 5 and 15.   
+- if the header is 20 Byte thsi field will hold 5
 
 #### control-frags (8 Bit)
 control bits that control connection establishment, connection termination, connection abortion, flow control, mode of transfer etc
@@ -57,42 +59,132 @@ control bits that control connection establishment, connection termination, conn
 	- reset the connection
 	- technical problems or rejection of connection e.g. when port not open
 5) URG (urgent) flag
+	- notify the reciver that a part of the data needs emidiate attention e.g. for error messages
+	- part of the data that is urgent is indicated by the urgent pointer
 6) PSH (push) flag
-	- Asks to push the buffered data to the receiving application.
-7) CWR und ECE: for congestion controll
+	- Asks to push the buffered data to the receiving application even if the buffer is not full
+	- used for real time applications like voice over ip
+	- reduces the latency
+7) CWR und ECE: for congestion control
 
-#### window size
-This field tells the window size of the sending TCP in bytes
+#### recive window size
+- buffer size of the reciver
+- Sie bemisst den freien Speicher im Empfangs[puffer](https://de.wikipedia.org/wiki/Puffer_(Informatik) "Puffer (Informatik)") eines Computers, und damit die maximale Datenmenge, die empfangen werden kann, bevor es zu einem [Pufferüberlauf](https://de.wikipedia.org/wiki/Puffer%C3%BCberlauf "Pufferüberlauf") kommt und weitere eingehende Pakete verworfen werden müssen
 
 #### options and padding (0 to 40 Byte)
-- usualy not used
+- can contain options like the maximum segment sizze (MMS)
+- padding maked sure the header size is a multiple of 4 Byte
 
 ### payload
-- transmittet data and protocol information of [[network layers#application layer|application layer]] protocols like [[hypertext transfer protocol (HTTP)]])
+- transmittet data and protocol information of [[network layers#application layer|application layer]] protocols like [[hypertext transfer protocol (HTTP)]]
 
-### connection stablishment
+### maximum segment sizze (MMS)
+- parameter in the options field of the header
+- secifies the largest amount of data that can recived as payload in a single TCP sement
+- tradeoff between overhead and fragmentation in the [[internet protocol (IP)]] layer
+
+## phases
+- connection establishment
+- data transfer
+- termination
+
 ![[Tcp_verbindung.png]]
 
-### 3 way handshake
+### connection stablishment
+- 3 way handshake
+1) the [[client]] sends a SYN with a radom initilized sequence number x
+2) the [[server]] responds with a SYN-ACK by sendeing a sement with a ACK number x+1 and his own randomly initilizes sequence number y
+3) the [[client]] confirms the sequence number of the server by acknolaging in with an ACK number of y+1
+
+
 
 ![[330px-Tcp-handshake.svg.png]]
 
+### data transfer 
+- phase when the data is transmitted
+
+#### reliable transmission 
+reliable and error free transmission is ganteed by
+- sequenc number of each segment
+- acknowledgement of recived segments 
+- check sum
+
+#### flow controll
+- managing the rate of data transmission between two nodes to prevent a fast sender from overwhelming a slow receiver
+- with each segment the sender gives its reciver window = free space in the buffer = abount of data that can still be sent without ACK of the reciver
+- after the buffer is full the reciver will process the buffer and when the buffer is empty send a ACK to tell the sender that he is ready to recive again
+
+#### congestion control
+- lost packages will trigger a reduction in data delivery rate
+
 ### connection termination
+- connection termination happens in a four way handshake
+1) initiator send a FIN segment to initiate the termination of the connection
+2) the reciver ACK the final segment of the reciver
+3) the reciver sends a FIN segment with his last sement number
+4) the initiator ACK the final segment of the reciver
+
 ![[TCP-Teardown.svg.png]]
 
 
-## congestion controll
-- which is used for controlling the flow of data when congestion has actually occurred.
 
-## flow controll
-- managing the rate of data transmission between two nodes to prevent a fast sender from overwhelming a slow receiver
-- TCP uses a [sliding window](https://en.wikipedia.org/wiki/Sliding_window "Sliding window") flow control protocol.
-- In each TCP segment, the receiver specifies in the _receive window_ field the amount of additionally received data (in bytes) that it is willing to buffer for the connection
-- The sending host can send only up to that amount of data before it must wait for an acknowledgement and receive window update from the receiving host.
 
 
 
 # anki
+
+START
+Basic
+[[transmission control protocol (TCP)]] 
+- connection stablishment (3)
+- data transfer (3 + 3 + 1)
+- connection termination (4)
+Back: 
+## phases
+
+![[Tcp_verbindung 1.png]]
+
+### connection stablishment
+- 3 way handshake
+1) the [[client]] sends a SYN with a radom initilized sequence number x
+2) the [[server]] responds with a SYN-ACK by sendeing a sement with a ACK number x+1 and his own randomly initilizes sequence number y
+3) the [[client]] confirms the sequence number of the server by acknolaging in with an ACK number of y+1
+
+![[330px-Tcp-handshake.svg 1.png]]
+
+
+### data transfer 
+- phase when the data segments is transmitted
+
+#### reliable transmission 
+reliable and error free transmission is ganteed by
+- sequenc number of each segment
+- acknowledgement of recived segments 
+- check sum
+
+#### flow controll
+- managing the rate of data transmission between two nodes to prevent a fast sender from overwhelming a slow receiver
+- with each segment the sender gives its reciver window = free space in the buffer = abount of data that can still be sent without ACK of the reciver
+- after the buffer is full the reciver will process the buffer and when the buffer is empty send a ACK to tell the sender that he is ready to recive again
+
+#### congestion control
+- lost packages will trigger a reduction in data delivery rate
+
+### connection termination
+- connection termination happens in a four way handshake
+1) initiator send a FIN segment to initiate the termination of the connection
+2) the reciver ACK the final segment of the reciver
+3) the reciver sends a FIN segment with his last sement number
+4) the initiator ACK the final segment of the reciver
+
+![[TCP-Teardown.svg 1.png]]
+
+
+Tags: code network
+<!--ID: 1708873326983-->
+END
+
+
 
 START
 Basic
@@ -105,16 +197,16 @@ Back:
 - transmitted package maximal 1500 Bytes
 - consists of header ([[transmission control protocol (TCP)|TCP]] information) and payload 
 
-![[TCPSegmentHeader-1.png]]
+![[TCPSegmentHeader-1 1.png]]
 
 ### header
 - length between 20 and 60 Byte
 
 #### source [[port]] adress (2 Byte)
-A 16-bit field that holds the port address of the application that is sending the data segment.   
+- [[port]] address of the application that is sending the data segment
 
 #### destination [[port]] adress (2 Byte)
-A 16-bit field that holds the port address of the application in the host that is receiving the data segment.  
+- [[port]] address of the application in the host that is receiving the data segment
 
 #### sequence number (4 Byte) 
 - consecutively number of the segments
@@ -128,18 +220,20 @@ A 16-bit field that holds the port address of the application in the host that i
 - is ignored in the **ACK flag** is not set
 
 #### checksum (2 Byte)
-- checksum for error control
+- checksum for error control.
 
 #### urgent pointer (2 Byte)
-This field (valid only if the URG control flag is set) is used to point to data that is urgently required that needs to reach the receiving process at the earliest. The value of this field is added to the sequence number to get the byte number of the last urgent byte.
+- valid only if the URG control flag is set 
+- pointer to the data that is urgently required (e.g. error messages)
 
 #### recieve window (2 Byte)
-- also called maximum segment size MSS
+- also called maximum segment size MSS=1460 B
+- amount of data that a reciver can accept without acknowledging the sender
 
 #### data offset (1 Byte)
-- length of the header in 4 byte blocks
+- length of the header in 4 byte words
 	→ indicates where the payload starts
-This is a 4-bit field that indicates the length of the TCP header by a number of 4-byte words in the header, i.e if the header is 20 bytes(min length of TCP header), then this field will hold 5 (because 5 x 4 = 20) and the maximum length: 60 bytes, then it’ll hold the value 15(because 15 x 4 = 60). Hence, the value of this field is always between 5 and 15.   
+- if the header is 20 Byte thsi field will hold 5
 
 #### control-frags (8 Bit)
 control bits that control connection establishment, connection termination, connection abortion, flow control, mode of transfer etc
@@ -154,21 +248,188 @@ control bits that control connection establishment, connection termination, conn
 	- reset the connection
 	- technical problems or rejection of connection e.g. when port not open
 5) URG (urgent) flag
+	- notify the reciver that a part of the data needs emidiate attention e.g. for error messages
+	- part of the data that is urgent is indicated by the urgent pointer
 6) PSH (push) flag
-	- Asks to push the buffered data to the receiving application.
+	- Asks to push the buffered data to the receiving application even if the buffer is not full
+	- used for real time applications like voice over ip
+	- reduces the latency
 7) CWR und ECE: for congestion controll
 
-#### window size
-This field tells the window size of the sending TCP in bytes
+#### recive window size
+- buffer size of the reciver
+- Sie bemisst den freien Speicher im Empfangs[puffer](https://de.wikipedia.org/wiki/Puffer_(Informatik) "Puffer (Informatik)") eines Computers, und damit die maximale Datenmenge, die empfangen werden kann, bevor es zu einem [Pufferüberlauf](https://de.wikipedia.org/wiki/Puffer%C3%BCberlauf "Pufferüberlauf") kommt und weitere eingehende Pakete verworfen werden müssen
 
 #### options and padding (0 to 40 Byte)
-- usualy not used
+- can contain options like the maximum segment sizze (MMS)
+- padding maked sure the header size is a multiple of 4 Byte
 
 ### payload
 - transmittet data and protocol information of [[network layers#application layer|application layer]] protocols like [[hypertext transfer protocol (HTTP)]]
 
-![[TCPSegmentHeader-1 1.png]]
+### payload
+- transmittet data and protocol information of [[network layers#application layer|application layer]] protocols like [[hypertext transfer protocol (HTTP)]]
 
 Tags: code network
 <!--ID: 1708791364988-->
+END
+
+
+
+START
+Basic
+[[transmission control protocol (TCP)]]: maximum window size
+- what is it
+- how is it set
+- what influences the desiccion
+
+Back: 
+
+### maximum segment sizze (MMS)
+- parameter in the options field of the header
+- secifies the largest amount of data that can recived as payload in a single TCP sement
+- tradeoff between overhead and fragmentation in the [[internet protocol (IP)]] layer
+
+
+Tags: code network
+<!--ID: 1708873326988-->
+END
+
+
+START
+Basic
+[[transmission control protocol (TCP)]]
+- how does it make sure the transmission is reliable and error free?
+- how does it make sure the network is not overloaded?
+- how does it make sure the reciver is not overwhelmed?
+
+Back: 
+#### reliable transmission 
+reliable and error free transmission is ganteed by
+- sequenc number of each segment
+- acknowledgement of recived segments 
+- check sum
+
+#### flow controll
+- managing the rate of data transmission between two nodes to prevent a fast sender from overwhelming a slow receiver
+- with each segment the sender gives its reciver window = free space in the buffer = abount of data that can still be sent without ACK of the reciver
+- after the buffer is full the reciver will process the buffer and when the buffer is empty send a ACK to tell the sender that he is ready to recive again
+
+#### congestion control
+- lost packages will trigger a reduction in data delivery rate
+
+Tags: code network
+<!--ID: 1708873326991-->
+END
+
+
+START
+Basic
+[[transmission control protocol (TCP)]]
+- 8 flags in the control block of the header
+
+Back: 
+#### control-frags (8 Bit)
+control bits that control connection establishment, connection termination, connection abortion, flow control, mode of transfer etc
+1) SYN (synchronize sequence number) flag
+	- request to start a connection and synchronize with the provided sequence number
+2) ACK (acknowledgement) flag
+	- confirms togather with the **acknowledgement number** that the last segment was recieved
+	- if it's not set the **acknowledgement number** is ignored
+3) FIN (finish)
+	- last segment from sender
+4) RST (reset) flag
+	- reset the connection
+	- technical problems or rejection of connection e.g. when port not open
+5) URG (urgent) flag
+	- notify the reciver that a part of the data needs emidiate attention e.g. for error messages
+	- part of the data that is urgent is indicated by the urgent pointer
+6) PSH (push) flag
+	- Asks to push the buffered data to the receiving application even if the buffer is not full
+	- used for real time applications like voice over ip
+	- reduces the latency
+7) CWR und ECE: for congestion control
+
+Tags: code network
+<!--ID: 1708873326995-->
+END
+
+
+START
+Basic
+[[transmission control protocol (TCP)]]
+- how does it make sure data is processed fast in real time application?
+- how does it make sure things like error messages or control frags are processed immediately?
+
+Back: 
+- for real time applcations the push (PSH) flag is set to make sure the data is processed  emediatly even when the buffer is not full
+- for urgent data the urgent pointer is set to the data and the urgent (URG) flag is set
+
+### header
+- length between 20 and 60 Byte
+
+#### source [[port]] adress (2 Byte)
+- [[port]] address of the application that is sending the data segment
+
+#### destination [[port]] adress (2 Byte)
+- [[port]] address of the application in the host that is receiving the data segment
+
+#### sequence number (4 Byte) 
+- consecutively number of the segments
+- initilized randomly by the sender
+- [[server]] and [[client]] have their own independent sequence numbers
+
+#### acknowledgement number (4 Byte) 
+- expected sequence number of the next segment
+- present in every but the first segment seny by the [[client]]
+- confirms togather with the **ACK flag** that the last segment was recieved
+- is ignored in the **ACK flag** is not set
+
+#### checksum (2 Byte)
+- checksum for error control.
+
+#### urgent pointer (2 Byte)
+- valid only if the URG control flag is set 
+- pointer to the data that is urgently required (e.g. error messages)
+
+#### recieve window (2 Byte)
+- also called maximum segment size MSS=1460 B
+- amount of data that a reciver can accept without acknowledging the sender
+
+#### data offset (1 Byte)
+- length of the header in 4 byte words
+	→ indicates where the payload starts
+- if the header is 20 Byte thsi field will hold 5
+
+#### control-frags (8 Bit)
+control bits that control connection establishment, connection termination, connection abortion, flow control, mode of transfer etc
+1) SYN (synchronize sequence number) flag
+	- request to start a connection and synchronize with the provided sequence number
+2) ACK (acknowledgement) flag
+	- confirms togather with the **acknowledgement number** that the last segment was recieved
+	- if it's not set the **acknowledgement number** is ignored
+3) FIN (finish)
+	- last segment from sender
+4) RST (reset) flag
+	- reset the connection
+	- technical problems or rejection of connection e.g. when port not open
+5) URG (urgent) flag
+	- notify the reciver that a part of the data needs emidiate attention e.g. for error messages
+	- part of the data that is urgent is indicated by the urgent pointer
+6) PSH (push) flag
+	- Asks to push the buffered data to the receiving application even if the buffer is not full
+	- used for real time applications like voice over ip
+	- reduces the latency
+7) CWR und ECE: for congestion control
+
+#### recive window size
+- buffer size of the reciver
+- Sie bemisst den freien Speicher im Empfangs[puffer](https://de.wikipedia.org/wiki/Puffer_(Informatik) "Puffer (Informatik)") eines Computers, und damit die maximale Datenmenge, die empfangen werden kann, bevor es zu einem [Pufferüberlauf](https://de.wikipedia.org/wiki/Puffer%C3%BCberlauf "Pufferüberlauf") kommt und weitere eingehende Pakete verworfen werden müssen
+
+#### options and padding (0 to 40 Byte)
+- can contain options like the maximum segment sizze (MMS)
+- padding maked sure the header size is a multiple of 4 Byte
+
+Tags: code network
+<!--ID: 1708873326998-->
 END
