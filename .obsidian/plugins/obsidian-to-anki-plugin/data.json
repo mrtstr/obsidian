@@ -1295,7 +1295,7 @@
     "linux/computer structures.md": "9de71dcb8805c6fb462eb01838c7122d",
     "network/IP.md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/hypertext transfer protocol (HTTP).md": "0ac4481c693d937d59aab11f06992e9b",
-    "network/port.md": "49f45721df048c326e047c3fca08f554",
+    "network/port.md": "eec3472dc1d639b1b62a9c2fdf0afda7",
     "network/user datagram protocol (UDP).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/datagram socket.md": "e6eedacff595674a627dfe2bf38e1359",
     "network/stream sockets.md": "b40266fb437929f595a3cc3ea870f59a",
@@ -1308,7 +1308,7 @@
     "network/CGI.md": "0d76396c89450f8c64e5d2c46ce22456",
     "network/URL.md": "98a8fb5b24c881f73f9225419390b227",
     "network/protocol.md": "ba01846548647b2bcba7efb00b5aa158",
-    "network/network technology.md": "9448f0d1c69950ea264ddec7e76f8f8c",
+    "network/network technology.md": "b7a15a435222f42f511d061d82fccd4b",
     "network/SOCK_SEQPACKET.md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/SOCK_DGRAM.md": "e6eedacff595674a627dfe2bf38e1359",
     "network/SOCK_STREAM.md": "b40266fb437929f595a3cc3ea870f59a",
@@ -1340,7 +1340,7 @@
     "network/file transfer protocol (FTP).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/domain name system (DNS).md": "3382dc3b39e4b0069ca2c8d5b134f871",
     "network/internet protocol (IP).md": "28de8a4c90c5a94d2d3ebc85d9870152",
-    "network/network layers.md": "e44ceed5f4ab6275f1a0835ea9909cf6",
+    "network/network layers.md": "89db4536772f78aa649b743338b04f2c",
     "network/dynamic host configuration protocol (DHCP).md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
