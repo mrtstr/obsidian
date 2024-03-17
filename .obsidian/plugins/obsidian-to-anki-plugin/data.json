@@ -1295,7 +1295,7 @@
     "linux/computer structures.md": "9de71dcb8805c6fb462eb01838c7122d",
     "network/IP.md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/hypertext transfer protocol (HTTP).md": "0ac4481c693d937d59aab11f06992e9b",
-    "network/port.md": "eec3472dc1d639b1b62a9c2fdf0afda7",
+    "network/port.md": "b858c6686cb44b1653b83c98dd4c29b3",
     "network/user datagram protocol (UDP).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/datagram socket.md": "e6eedacff595674a627dfe2bf38e1359",
     "network/stream sockets.md": "b40266fb437929f595a3cc3ea870f59a",
@@ -1341,7 +1341,10 @@
     "network/domain name system (DNS).md": "3382dc3b39e4b0069ca2c8d5b134f871",
     "network/internet protocol (IP).md": "28de8a4c90c5a94d2d3ebc85d9870152",
     "network/network layers.md": "89db4536772f78aa649b743338b04f2c",
-    "network/dynamic host configuration protocol (DHCP).md": "d41d8cd98f00b204e9800998ecf8427e"
+    "network/dynamic host configuration protocol (DHCP).md": "d41d8cd98f00b204e9800998ecf8427e",
+    "linux/shell commands/li wc.md": "1c26923e6f58cf7447166bd403d0195d",
+    "linux/shell commands/li ss.md": "3ffca3c3f5142b243f816606dfb36c14",
+    "linux/shell commands/li netstat.md": "fc7c67834c56ca21cc497aecca9cf481"
   },
   "fields_dict": {
     "Basic": [
