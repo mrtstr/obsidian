@@ -162,7 +162,9 @@
     "TCPSegmentHeader-1 1.png",
     "Tcp_verbindung 1.png",
     "330px-Tcp-handshake.svg 1.png",
-    "TCP-Teardown.svg 1.png"
+    "TCP-Teardown.svg 1.png",
+    "extensonheaders.png",
+    "comparing-ipv4-and-ipv6-headers 1.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1295,7 +1297,7 @@
     "linux/computer structures.md": "9de71dcb8805c6fb462eb01838c7122d",
     "network/IP.md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/hypertext transfer protocol (HTTP).md": "0ac4481c693d937d59aab11f06992e9b",
-    "network/port.md": "b858c6686cb44b1653b83c98dd4c29b3",
+    "network/port.md": "55d08fbf8c917ed38b3b6832b44c5abe",
     "network/user datagram protocol (UDP).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/datagram socket.md": "e6eedacff595674a627dfe2bf38e1359",
     "network/stream sockets.md": "b40266fb437929f595a3cc3ea870f59a",
@@ -1334,17 +1336,22 @@
     "linux/sys calls/li sendto.md": "68fe45dbc9ddfaf3a9cbd67f3efc14f2",
     "linux/sys calls/li send.md": "47a5e2c9a124feac6dbd0e12c51367db",
     "network/network traffic control.md": "6251d0a28a7c43c26b6699a59466d496",
-    "network/routing.md": "9c2231efa44098d8e05fb4a76b7c12b3",
+    "network/routing.md": "cb3184c7865164f1c5f9b96a0f3b9b7f",
     "network/adressing.md": "40f57ee3efb222324d4265c13bfd3802",
     "network/secure shell protocol (SSH).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/file transfer protocol (FTP).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/domain name system (DNS).md": "3382dc3b39e4b0069ca2c8d5b134f871",
-    "network/internet protocol (IP).md": "28de8a4c90c5a94d2d3ebc85d9870152",
+    "network/internet protocol (IP).md": "14ba9d04d9fb2725ccd9c6886acbe9cd",
     "network/network layers.md": "89db4536772f78aa649b743338b04f2c",
     "network/dynamic host configuration protocol (DHCP).md": "d41d8cd98f00b204e9800998ecf8427e",
     "linux/shell commands/li wc.md": "1c26923e6f58cf7447166bd403d0195d",
     "linux/shell commands/li ss.md": "3ffca3c3f5142b243f816606dfb36c14",
-    "linux/shell commands/li netstat.md": "fc7c67834c56ca21cc497aecca9cf481"
+    "linux/shell commands/li netstat.md": "fc7c67834c56ca21cc497aecca9cf481",
+    "router.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "network/subnetwork.md": "c7cc611a3790b991609235e8cd6771bf",
+    "network/ip V6.md": "d8fd37f0a3fd6ec642cb286854a59306",
+    "network/gateway.md": "0f1ce1337e796bf904e112ebe2e28e99",
+    "network/ip V4.md": "6a1bd44c694bdbdc4cfbd6f9b6a8d3d4"
   },
   "fields_dict": {
     "Basic": [
