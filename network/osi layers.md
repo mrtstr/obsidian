@@ -1,28 +1,12 @@
-### application layer
-- high-level protocols for transfering
-- [[hypertext transfer protocol (HTTP)]]
-- [[secure shell protocol (SSH)]]
-- [[domain name system (DNS)]]
-- [[file transfer protocol (FTP)]]
+![[application layer#application layer]]
 
-### session layer
-- managing communication session
-- e.g. [[li socket]]
+![[session layer#session layer]]
 
-### transport layer
-- transmission of data segments between points on a network
-	→ acknowledgment, package segmentation
-- concepts: [[stream communication]] ([[transmission control protocol (TCP)]]) or [[datagram]] ([[user datagram protocol (UDP)]])
+![[transport layer#transport layer]]
 
-### network layer
-- Structuring and managing a multi-node network
-	→ [[adressing]], [[routing]], [[network traffic control]]
-- e.g. [[internet protocol (IP)]]
+![[network layer#network layer]]
 
-### data link layer
-- phsical connection between nodes using e.g. data link [[switch|swiches]]
-- makes sure the data get transmitted physicly to the right destination within a network
-- works on [[media access code (MAC)]] level
+![[data link layer#data link layer]]
 
 
 ## [[li socket|TCP connections]] and [[li socket|sockets]] 
@@ -65,7 +49,7 @@ Back:
 
 ### network layer
 - Structuring and managing a multi-node network
-	→ [[adressing]], [[routing]], [[network traffic control]]
+	→ [[adressing]], [[networking devices]], [[network traffic control]]
 - e.g. [[internet protocol (IP)]]
 
 ### data link layer

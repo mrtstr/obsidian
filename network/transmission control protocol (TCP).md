@@ -1,5 +1,5 @@
 # [[transmission control protocol (TCP)]]
-- protocol of the [[network layers#transport layer|transport layer]] 
+- protocol of the [[osi layers#transport layer|transport layer]] 
 - managed by the operation system with a [[li connection based socket]]
 
 ![[stream communication#stream communication]]
@@ -76,7 +76,7 @@ control bits that control connection establishment, connection termination, conn
 - padding maked sure the header size is a multiple of 4 Byte
 
 ### payload
-- transmittet data and protocol information of [[network layers#application layer|application layer]] protocols like [[hypertext transfer protocol (HTTP)]]
+- transmittet data and protocol information of [[osi layers#application layer|application layer]] protocols like [[hypertext transfer protocol (HTTP)]]
 
 ### maximum segment sizze (MMS)
 - parameter in the options field of the header
@@ -265,10 +265,10 @@ control bits that control connection establishment, connection termination, conn
 - padding maked sure the header size is a multiple of 4 Byte
 
 ### payload
-- transmittet data and protocol information of [[network layers#application layer|application layer]] protocols like [[hypertext transfer protocol (HTTP)]]
+- transmittet data and protocol information of [[osi layers#application layer|application layer]] protocols like [[hypertext transfer protocol (HTTP)]]
 
 ### payload
-- transmittet data and protocol information of [[network layers#application layer|application layer]] protocols like [[hypertext transfer protocol (HTTP)]]
+- transmittet data and protocol information of [[osi layers#application layer|application layer]] protocols like [[hypertext transfer protocol (HTTP)]]
 
 Tags: code network
 <!--ID: 1708791364988-->

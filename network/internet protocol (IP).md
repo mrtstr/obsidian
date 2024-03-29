@@ -1,5 +1,5 @@
 # [[internet protocol (IP)]]
-- protocol in the [[network layers#network layer|network layer]]
+- protocol in the [[osi layers#network layer|network layer]]
 - adressing inside networks → multiplexing from one node to another
 - wrappes the transport layer segment ([[transmission control protocol (TCP)]], [[user datagram protocol (UDP)]])
 - tro versions: ip v4 and ip v6
@@ -31,7 +31,7 @@ Basic
 - difference in [[ip V6]] and [[ip V4]]
 - releationship to the package size
 Back: 
-- splitting up packages by the [[routing|router]] that are larger than the maximum package size of the router (MTU) 
+- splitting up packages by the [[networking devices|router]] that are larger than the maximum package size of the router (MTU) 
 
 #### [[ip V4]]
 - all network layer devices are allowed to fragment packets (if the DF-bit (don't fragment) is not set)

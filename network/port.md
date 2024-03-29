@@ -112,7 +112,7 @@ lsof -i:443
 - [[li socket|socket]] statistics
 - displaying detailed information about network sockets
 #### displayed information
-- **netid**: [[network layers#transport layer|transport layer protocol]] and [[li socket#type|socket type]]
+- **netid**: [[osi layers#transport layer|transport layer protocol]] and [[li socket#type|socket type]]
 	- [[li unix domain socket]]: `u_str` for `SOCK_STREAM` and `u_dgr` for `SOCK_DRAM`
 	- [[li internet domain socket]]: [[transmission control protocol (TCP)|tcp]] or [[user datagram protocol (UDP)|udp]] 
 - **connection state**
@@ -122,14 +122,14 @@ lsof -i:443
 - **Peer Address:Port**
 - **[[li process|process]]**
 
-#### filter for [[network layers#transport layer|transport layer protocol]]
+#### filter for [[osi layers#transport layer|transport layer protocol]]
 ```bash
 ss
 	[-t] # Display TCP sockets
 	[-u] # Display UDP sockets
 ```
 
-#### filter for [[network layers#network layer|network protocol]]
+#### filter for [[osi layers#network layer|network protocol]]
 ```bash
 ss
 	[-4] # Display only IPv4 sockets
