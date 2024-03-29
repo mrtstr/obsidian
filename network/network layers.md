@@ -19,6 +19,11 @@
 	→ [[adressing]], [[routing]], [[network traffic control]]
 - e.g. [[internet protocol (IP)]]
 
+### data link layer
+- phsical connection between nodes using e.g. data link [[switch|swiches]]
+- makes sure the data get transmitted physicly to the right destination within a network
+- works on [[media access code (MAC)]] level
+
 
 ## [[li socket|TCP connections]] and [[li socket|sockets]] 
 ### definitions
@@ -38,9 +43,9 @@
 
 START
 Basic
-network layers (4) 
+network layers (5) 
 - concept
-- examples (4 + 1 + 2 + 1)
+- examples (4 + 1 + 2 + 1 + 3)
 Back: 
 ### application layer
 - high-level protocols for transfering
@@ -62,6 +67,12 @@ Back:
 - Structuring and managing a multi-node network
 	→ [[adressing]], [[routing]], [[network traffic control]]
 - e.g. [[internet protocol (IP)]]
+
+### data link layer
+- phsical connection between nodes using e.g. data link [[switch|swiches]]
+- makes sure the data get transmitted physicly to the right destination within a network
+- works on [[media access code (MAC)]] level
+
 Tags: code network
 <!--ID: 1708703380412-->
 END

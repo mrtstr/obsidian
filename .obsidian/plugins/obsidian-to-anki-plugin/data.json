@@ -1336,13 +1336,13 @@
     "linux/sys calls/li sendto.md": "68fe45dbc9ddfaf3a9cbd67f3efc14f2",
     "linux/sys calls/li send.md": "47a5e2c9a124feac6dbd0e12c51367db",
     "network/network traffic control.md": "6251d0a28a7c43c26b6699a59466d496",
-    "network/routing.md": "cb3184c7865164f1c5f9b96a0f3b9b7f",
+    "network/routing.md": "db8d08038bffcc64b1dba4e86bbc6e77",
     "network/adressing.md": "40f57ee3efb222324d4265c13bfd3802",
     "network/secure shell protocol (SSH).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/file transfer protocol (FTP).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/domain name system (DNS).md": "3382dc3b39e4b0069ca2c8d5b134f871",
     "network/internet protocol (IP).md": "14ba9d04d9fb2725ccd9c6886acbe9cd",
-    "network/network layers.md": "89db4536772f78aa649b743338b04f2c",
+    "network/network layers.md": "e65a5da8bc0b72bb7b0e74697ed0fa38",
     "network/dynamic host configuration protocol (DHCP).md": "d41d8cd98f00b204e9800998ecf8427e",
     "linux/shell commands/li wc.md": "1c26923e6f58cf7447166bd403d0195d",
     "linux/shell commands/li ss.md": "3ffca3c3f5142b243f816606dfb36c14",
@@ -1350,8 +1350,14 @@
     "router.md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/subnetwork.md": "c7cc611a3790b991609235e8cd6771bf",
     "network/ip V6.md": "d8fd37f0a3fd6ec642cb286854a59306",
-    "network/gateway.md": "0f1ce1337e796bf904e112ebe2e28e99",
-    "network/ip V4.md": "6a1bd44c694bdbdc4cfbd6f9b6a8d3d4"
+    "network/gateway.md": "ea7ce9794fbd98db595f81b19e66963d",
+    "network/ip V4.md": "6a1bd44c694bdbdc4cfbd6f9b6a8d3d4",
+    "network/media access code (MAC).md": "7a9159b7d72198bbb063944b950b467e",
+    "network/ethernet.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "network/ip network.md": "814ec97b98005652f5123e8074f114d4",
+    "network/networkmask.md": "420023a300e3c0589b9c84e848c1f0cc",
+    "network/switch.md": "6d87d4cd6e1d150aef08f7d11729da3f",
+    "network/router.md": "8bc17faa3bb6003dec440e30ab3915c3"
   },
   "fields_dict": {
     "Basic": [
