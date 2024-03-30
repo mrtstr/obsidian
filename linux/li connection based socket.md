@@ -15,7 +15,7 @@
 1) both [[server]] and [[client]] create a [[li socket]] with a connection based type (`SOCK_STREAM` and `SOCK_SEQPACKET`) 
 ![[li socket (syscall)#socket (syscall)]]
 
-2) the [[server]] binds an adress ([[internet protocol (IP)]] or path) to the [[li socket]]
+2) the [[server]] binds an adress ([[port]] or path) to the [[li socket]]
 ![[li bind#bind (syscall)]]
 
 3) the [[server]] marks the [[li socket]] as passiv (accepting of connection requests)
@@ -26,7 +26,7 @@
 
 ![[li connect#li connect (syscall)]]
 
-5) the [[server]] creates new [[li socket]] that is connected to the [[client|clints]] [[li socket]] while the listing [[li socket]] keeps listing for connection requests
+5) the [[server]] creates new [[li socket]] that is connected to the [[client|clints]] [[li socket]] while the listing [[li socket]] keeps listing for connection requests on the [[port]]
 
 ![[li accept#accept (syscall)]]
 
@@ -250,7 +250,7 @@ socket(
 - [[li syscall]] for binding an adress to and existing [[li socket]]
 - while the [[server]] uses [[li bind]] to bind a adress to a [[li socket]] the [[client]] uses [[li connect]] to connect to the adress
 - [[li unix domain socket]]: the adress is a filesystem path
-- [[li internet domain socket]]: adress is a [[internet protocol (IP)]] adress
+- [[li internet domain socket]]: adress is a [[port]]
 ```C
 int bind(
 	sockfd, // file descriptor for the socket
@@ -351,7 +351,7 @@ socket(
 - [[li syscall]] for binding an adress to and existing [[li socket]]
 - while the [[server]] uses [[li bind]] to bind a adress to a [[li socket]] the [[client]] uses [[li connect]] to connect to the adress
 - [[li unix domain socket]]: the adress is a filesystem path
-- [[li internet domain socket]]: adress is a [[internet protocol (IP)]] adress
+- [[li internet domain socket]]: adress is a [[port]]
 ```C
 int bind(
 	sockfd, // file descriptor for the socket
@@ -426,7 +426,7 @@ connect(
 	- of connectin based [[li socket]] types (`SOCK_STREAM` and `SOCK_SEQPACKET`)
 	- on the server side
 	-  in passiv mode/listening ([[li listen]] was called before)
-- returns a new [[li socket]] [[li file descriptor]] in a connected state while the listening [[li socket]] is uneffected and continues listening
+- returns a new [[li socket]] [[li file descriptor]] in a connected state (to a certain [[internet protocol (IP)]], [[port]] combination) while the listening [[li socket]] is uneffected and continues listening on its [[port]]
 ```C
 int accept(
 	sockfd, // listening socket file descriptor
@@ -453,7 +453,7 @@ socket(
 - [[li syscall]] for binding an adress to and existing [[li socket]]
 - while the [[server]] uses [[li bind]] to bind a adress to a [[li socket]] the [[client]] uses [[li connect]] to connect to the adress
 - [[li unix domain socket]]: the adress is a filesystem path
-- [[li internet domain socket]]: adress is a [[internet protocol (IP)]] adress
+- [[li internet domain socket]]: adress is a [[port]]
 ```C
 int bind(
 	sockfd, // file descriptor for the socket

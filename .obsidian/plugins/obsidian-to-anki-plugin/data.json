@@ -1304,7 +1304,7 @@
     "linux/computer structures.md": "9de71dcb8805c6fb462eb01838c7122d",
     "network/IP.md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/hypertext transfer protocol (HTTP).md": "0ac4481c693d937d59aab11f06992e9b",
-    "network/port.md": "e6742485576ffc1b762781bf317b983b",
+    "network/port.md": "898a6db5c7bbf2068af7217aba135017",
     "network/user datagram protocol (UDP).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/datagram socket.md": "e6eedacff595674a627dfe2bf38e1359",
     "network/stream sockets.md": "b40266fb437929f595a3cc3ea870f59a",
@@ -1327,15 +1327,15 @@
     "linux/sys calls/li pipe.md": "70102be01790fcd62f8bd12deeb95c57",
     "network/stream communication.md": "79cfcf9e63cbb99c9531987884508baf",
     "linux/li network socket.md": "44f46ff565f169dc8e588bcee3a21001",
-    "linux/sys calls/li bind.md": "7a0ac758c66782eb218da39ba99daf11",
+    "linux/sys calls/li bind.md": "a8c9fa277f23f923cdea14fd28823bbb",
     "linux/sys calls/li connect.md": "4cdb212b145c83eaa6e06c3170a05f9d",
     "linux/sys calls/li socket (syscall).md": "1f5b14153c9a0eb1882cd58bfe33b790",
     "linux/li internet domain socket.md": "a8613ff2df59c356567d70aea0e4e951",
     "linux/sys calls/li accept.md": "0206328b0ebecc684b2c47af2a1fb7da",
     "linux/sys calls/li listen.md": "6347bad9819476502e2175a1f8b142d5",
     "linux/sys calls/li socketpair.md": "c7671c23a412c68e04bf2478250d70a3",
-    "linux/li conection less socket.md": "dc7ae24fe304ed5733634bc8b66d4864",
-    "linux/li connection based socket.md": "93e1307f80d2330fa0ef1550caaf92e1",
+    "linux/li conection less socket.md": "4735119a4cb49a183b0891c17fc70c87",
+    "linux/li connection based socket.md": "a66eba9f6b4ab51cee1c31dd5ec5de0d",
     "linux/sys calls/li sendmsg.md": "3e62673525a20ae768c0d07ae4f95bdf",
     "linux/sys calls/li recvfrom.md": "bc42aca7589841fe52f63f5b25b17c82",
     "linux/sys calls/li recvmsg.md": "5e2bd8ca5c18a3601e0e31cfb626cc38",
@@ -1377,7 +1377,8 @@
     "network/application layer.md": "ca5664bcccb8feb38c61a4e7d5905297",
     "network/osi layers.md": "51b9244041c587794f07113e11d86441",
     "network/network domain.md": "b4d17e05d3c18e935f0e4b1eed735996",
-    "network/uniform resource locator (URL).md": "806cd165c1a2dc81da8618ba4499437b"
+    "network/uniform resource locator (URL).md": "806cd165c1a2dc81da8618ba4499437b",
+    "network/localhost.md": "ef0f5d4013e91705b4cd6e9b7e4b97ae"
   },
   "fields_dict": {
     "Basic": [

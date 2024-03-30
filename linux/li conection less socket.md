@@ -12,11 +12,11 @@
 
 ![[li socket (syscall)#socket (syscall)]]
 
-2) the [[server]] binds an adress ([[internet protocol (IP)]] or path) to the [[li socket]]
+2) the [[server]] binds an adress ([[port]] or path) to the [[li socket]]
 ![[li bind#bind (syscall)]]
 
 ### communication between [[li conection less socket]]
-- `SOCK_DGRAM` [[li conection less socket]] can use [[li sendto]] and [[li recvfrom]] to send or revic from a specific adress (ip or path)
+- `SOCK_DGRAM` [[li conection less socket]] can use [[li sendto]] and [[li recvfrom]] to send or revic from a specific adress (port or path)
 
 ![[li sendto#sendto (syscall)]]
 
@@ -75,7 +75,7 @@ socket(
 - [[li syscall]] for binding an adress to and existing [[li socket]]
 - while the [[server]] uses [[li bind]] to bind a adress to a [[li socket]] the [[client]] uses [[li connect]] to connect to the adress
 - [[li unix domain socket]]: the adress is a filesystem path
-- [[li internet domain socket]]: adress is a [[internet protocol (IP)]] adress
+- [[li internet domain socket]]: adress is a [[port]]
 ```C
 int bind(
 	sockfd, // file descriptor for the socket
@@ -84,7 +84,7 @@ int bind(
 ```
 
 ### communication between [[li conection less socket]]
-- `SOCK_DGRAM` [[li conection less socket]] can use [[li sendto]] and [[li recvfrom]] to send or revic from a specific adress (ip or path)
+- `SOCK_DGRAM` [[li conection less socket]] can use [[li sendto]] and [[li recvfrom]] to send or revic from a specific adress ([[port]] or path)
 
 ### sendto (syscall)
 - [[li syscall]] for sending `len` bytes from one [[li socket]] to another [[li socket]] with a certain `dest_addr`
