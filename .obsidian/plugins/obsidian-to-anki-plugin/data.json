@@ -166,7 +166,12 @@
     "extensonheaders.png",
     "comparing-ipv4-and-ipv6-headers 1.png",
     "subnet 2.png",
-    "subnet 3.png"
+    "subnet 3.png",
+    "routing_table 1.png",
+    "routing_table 2.png",
+    "ipv6subnetting 1.png",
+    "subnetting.png",
+    "ipv6subnetting 2.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1342,7 +1347,7 @@
     "network/adressing.md": "40f57ee3efb222324d4265c13bfd3802",
     "network/secure shell protocol (SSH).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/file transfer protocol (FTP).md": "d41d8cd98f00b204e9800998ecf8427e",
-    "network/domain name system (DNS).md": "3382dc3b39e4b0069ca2c8d5b134f871",
+    "network/domain name system (DNS).md": "038725fda8ff83ca8e6cf12bb0854539",
     "network/internet protocol (IP).md": "15c80292f61d93ec73f32a75b0beed86",
     "network/network layers.md": "e65a5da8bc0b72bb7b0e74697ed0fa38",
     "network/dynamic host configuration protocol (DHCP).md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1357,20 +1362,22 @@
     "network/media access code (MAC).md": "20ce8d3226741fff5337fb89250e4c81",
     "network/ethernet.md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/ip network.md": "814ec97b98005652f5123e8074f114d4",
-    "network/networkmask.md": "b76b3476913f6d4dbb94cde752ec4c0f",
+    "network/networkmask.md": "0edc4b39a275d5f933f9bfd97519466c",
     "network/switch.md": "c6fa44061b90e1cb3db439ce5aa9f6ab",
-    "network/router.md": "cf5fdd668032ad670268295f8dcd1f78",
+    "network/router.md": "cbef8b6b8b0eb4a5ec177a5b4b8fb644",
     "network/broadcast adress.md": "c56b0beb78ad90e2949c0b4eee1e45c6",
-    "network/network.md": "663b71c40595780fe279622694d711ca",
+    "network/network.md": "319256ad1bc2139e30b88d4b2b97b611",
     "network/network adress.md": "f807c3759eadd4d6c73409a1a8b241a8",
     "network/host adress.md": "dca1de2aff86236da4c09562a5686d36",
-    "network/networking devices.md": "755b494844cc779e4f761aa4f1fc1392",
+    "network/networking devices.md": "98cec33c026c4904669d9fd9ae5ae12f",
     "network/data link layer.md": "6586cd1353074f8da59d17068069afe8",
     "network/network layer.md": "28ec1a0932cccdf0dbf03e1bcd9b483a",
     "network/transport layer.md": "e23d00ffd79d77820a7ce5a24056ce95",
     "network/session layer.md": "a2f8bfa315521aa18855c945c3e596b0",
     "network/application layer.md": "ca5664bcccb8feb38c61a4e7d5905297",
-    "network/osi layers.md": "51b9244041c587794f07113e11d86441"
+    "network/osi layers.md": "51b9244041c587794f07113e11d86441",
+    "network/network domain.md": "b4d17e05d3c18e935f0e4b1eed735996",
+    "network/uniform resource locator (URL).md": "806cd165c1a2dc81da8618ba4499437b"
   },
   "fields_dict": {
     "Basic": [

@@ -1,28 +1,88 @@
 ## router
-### definition
 - A [[network|networking]] device that connects multiple [[network|networks]] together and forwards data packets between them
 	→ selecting paths for data packets to cross [[network|networks]] 
-- if the destination of a package is within another [[subnetwork]] the router will send it to its [[network adress]] where the other [[router]] recives it
-- within the [[network]] [[switch|swiches]] are used to distribute the packages (most [[router|routers]] have swiches included and thus have multiple [[ethernet]] ports)
+	- (within the [[network]] [[switch|swiches]] are used to distribute the packages but most [[router|routers]] have swiches included and thus have multiple [[ethernet]] ports)
 - works on the [[osi layers|network layer]] using the [[internet protocol (IP)]] adress
-
-
-#### directly connected networks
-- A directly connected network is a network that is directly attached to one of the router interfaces → The network address and subnet mask of the interface, along with the interface type and number, are entered into the routing table as a directly connected network
-
-#### remote networks
-- network that can only be reached by sending the packet to another router.
-- Routing table entries to remote networks may be either dynamic or static
-- Dynamic routes are routes to remote networks that were learned automatically by the router through a dynamic routing protocol. Static routes are routes that a network administrator manually configured
-
-- need to record routes to large numbers of devices using limited storage space represents a major challenge in routing table construction
-- currently dominant address aggregation technology is a bitwise prefix matching scheme called Classless Inter-Domain Routing (CIDR). Supernetworks can also be used to help control routing table size.
+- routes are found by **hop-by-hop routing** where reach [[router]] forwards the package to the next closes [[network]] in its routing table
+- **directly connected [[network]]**: [[network]] to which the [[router]] is directly connected
+- **remote [[network]]**: can only be reached by sending the packet to another router.
 
 ### routing table
-- is a [data table](https://en.wikipedia.org/wiki/Data_table "Data table") stored in a [router](https://en.wikipedia.org/wiki/Router_(computing) "Router (computing)") or a [network host](https://en.wikipedia.org/wiki/Network_host "Network host") that lists the routes to particular network destinations
-- in some cases, [metrics](https://en.wikipedia.org/wiki/Metrics_(networking) "Metrics (networking)") (distances) associated with those routes
-- f the node cannot directly connect to the destination node, it has to send it via other nodes along a route to the destination node
-- node needs to keep track of which way to deliver various packages of data, and for this it uses a routing table
-- Nodes can also share the contents of their routing table with other nodes
-this refers to the outgoing interface that connects to the destination
+- table stored in a [[router]] containing routes to [[network]] destinations and some properties of them
+- **dynamic routing table entry**: learned by the [[router]] by communicating with other [[router|routers]]
+- **static routing table entry**: manuelly defined
+- contrains
+	- destination [[network adress]]
+	- [[networkmask]]
+	- gateway/next hop = destination can be optimally reached by sending the packet to a specific this [[network adress]]
+	- routing distance metric: how long does it take to reach the destination
+
 ![[routing_table.png]]
+
+
+# anki
+
+START
+Basic
+- what does a [[router]] do?
+- what is the difference to a [[switch]]?
+- on which [[network layer]] does it operate?
+- how does a [[router]] determins routes?
+Back: 
+## router
+- A [[network|networking]] device that connects multiple [[network|networks]] together and forwards data packets between them
+	→ selecting paths for data packets to cross [[network|networks]] 
+	- (within the [[network]] [[switch|swiches]] are used to distribute the packages but most [[router|routers]] have swiches included and thus have multiple [[ethernet]] ports)
+- works on the [[osi layers|network layer]] using the [[internet protocol (IP)]] adress
+- routes are found by **hop-by-hop routing** where reach [[router]] forwards the package to the next closes [[network]] in its routing table
+- **directly connected [[network]]**: [[network]] to which the [[router]] is directly connected
+- **remote [[network]]**: can only be reached by sending the packet to another router.
+
+### routing table
+- table stored in a [[router]] containing routes to [[network]] destinations and some properties of them
+- **dynamic routing table entry**: learned by the [[router]] by communicating with other [[router|routers]]
+- **static routing table entry**: manuelly defined
+- contrains
+	- destination [[network adress]]
+	- [[networkmask]]
+	- gateway/next hop = destination can be optimally reached by sending the packet to a specific this [[network adress]]
+	- routing distance metric: how long does it take to reach the destination
+
+![[routing_table 1.png]]
+
+Tags: code network
+<!--ID: 1711813346662-->
+END
+
+
+START
+Basic
+- what is a routering table?
+- how is it used?
+- how is it filled?L
+- what does it contain? (4)
+Back: 
+## router
+- A [[network|networking]] device that connects multiple [[network|networks]] together and forwards data packets between them
+	→ selecting paths for data packets to cross [[network|networks]] 
+	- (within the [[network]] [[switch|swiches]] are used to distribute the packages but most [[router|routers]] have swiches included and thus have multiple [[ethernet]] ports)
+- works on the [[osi layers|network layer]] using the [[internet protocol (IP)]] adress
+- routes are found by **hop-by-hop routing** where reach [[router]] forwards the package to the next closes [[network]] in its routing table
+- **directly connected [[network]]**: [[network]] to which the [[router]] is directly connected
+- **remote [[network]]**: can only be reached by sending the packet to another router.
+
+### routing table
+- table stored in a [[router]] containing routes to [[network]] destinations and some properties of them
+- **dynamic routing table entry**: learned by the [[router]] by communicating with other [[router|routers]]
+- **static routing table entry**: manuelly defined
+- contrains
+	- destination [[network adress]]
+	- [[networkmask]]
+	- gateway/next hop = destination can be optimally reached by sending the packet to a specific this [[network adress]]
+	- routing distance metric: how long does it take to reach the destination
+
+![[routing_table 2.png]]
+
+Tags: code network
+<!--ID: 1711813346666-->
+END

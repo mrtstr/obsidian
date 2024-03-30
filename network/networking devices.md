@@ -3,6 +3,12 @@
 	→ a [[gateway]] connects networks ([[router]]) with different protocol's
 - a [[switch]] distributes data within a network
 
+1) the package is sent from a host to the [[router]] of its [[network]]
+2) (optional) there can be a [[switch]] between [[router]] and host 
+3) the [[router]] sends the package to the [[router]] of the recipients hosts [[network]] (direct or via other networks)
+4) there might be a [[gateway]] between the [[router|routers]] translating network protocols
+5) the [[router]] of the reciving [[network]] will send the package to its destiantion
+
 `host A` → `switch` → `router` → `gateway` → `router`→ `switch` → `host B`
 
 ![[switch#switch]]
@@ -24,6 +30,13 @@ Back:
 - a [[router]] is distributing packages across networks
 	→ a [[gateway]] connects networks ([[router]]) with different protocol's
 - a [[switch]] distributes data within a network
+
+
+1) the package is sent from a host to the [[router]] of its [[network]]
+2) (optional) there can be a [[switch]] between [[router]] and host 
+3) the [[router]] sends the package to the [[router]] of the recipients hosts [[network]] (direct or via other networks)
+4) there might be a [[gateway]] between the [[router|routers]] translating network protocols
+5) the [[router]] of the reciving [[network]] will send the package to its destiantion
 
 `host A` → `switch` → `router` → `gateway` → `router`→ `switch` → `host B`
 
