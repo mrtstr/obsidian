@@ -1,5 +1,5 @@
 # [[internet protocol (IP)]]
-- protocol in the [[osi layers#network layer|network layer]]
+- [[statefulness of protocols|stateless]] [[protocol]] in the [[osi layers#network layer|network layer]]
 - adressing inside networks → multiplexing from one node to another
 - wrappes the transport layer segment ([[transmission control protocol (TCP)]], [[user datagram protocol (UDP)]])
 - tro versions: ip v4 and ip v6

@@ -10,12 +10,8 @@
 
 
 ## [[li socket|TCP connections]] and [[li socket|sockets]] 
-### definitions
-- TCP connection is defined by two service endpoints ([[internet protocol (IP)|IP adress]], [[port]]) 
-	→ a TCP connection is identified by a 4-tuple (server ip, server port, client ip, client port)
-- a [[li socket|TCP socket]] is a connection endpoint instance with an [[internet protocol (IP)|IP adress]] and a [[port]] (but not uniquely identified by them)
-- a network service (address/port) can have multiple sockets but only one of them is [[li listen|listening]] to incomming connections requests
-- appart from the [[li listen|listening]] [[li socket]] there can be multiple [[li socket|sockts]] that are connected
+![[transmission control protocol (TCP)#TCP connection]]
+
 
 ### [[li process]] to [[li process]] routing
 - TCP demultiplexes incoming segments using (sender ip, sender port, reviever ip, reviever port) but cannot determine which [[li process]] gets an incoming segment 

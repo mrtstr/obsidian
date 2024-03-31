@@ -60,13 +60,15 @@ Back:
 ### [[ip V4]] subnetting
 - in [[ip V4]] the adress space is devided using a [[networkmask]]
 #### networkmask
-- used for dividing an [[internet protocol (IP)]] adress in [[network adress]] and [[host adress]]
-- property of a [[network|subnet]]
+- Used for secifing blocks/groups of [[internet protocol (IP)]] adresses by deviding the adress space in 
+- can devide a [[internet protocol (IP)]] adress into [[network adress]] and [[host adress]]
+- property of a [[network|subnet]] that defines its adress space
 - the [[network adress]] of a given [[internet protocol (IP)]] adress can calculcated by connection the [[internet protocol (IP)|ip adress]] and the [[networkmask]] with a bitwise and
 - consits of $n$ times `1` followed by $32-n$ times `0`
 $$
 Networkadress = Adress \: \& \: Networkmask
 $$
+- two notations: `11...110...0` or `/n` 
 
 ### [[ip V6]] subnetting
 - in [[ip V6]] the subnetting is not done by a [[networkmask]]
@@ -117,14 +119,16 @@ Back:
 - allways the last adress within a [[network|networks]] adress space
 - packages sent to the [[broadcast adress]] will be sent to all nodes within the [[network]]
 
-### networkmask (only [[ip V4]] but similar concept in [[ip V6]])
-- used for dividing an [[internet protocol (IP)]] adress in [[network adress]] and [[host adress]]
-- property of a [[network|subnet]]
+### networkmask
+- Used for secifing blocks/groups of [[internet protocol (IP)]] adresses by deviding the adress space in 
+- can devide a [[internet protocol (IP)]] adress into [[network adress]] and [[host adress]]
+- property of a [[network|subnet]] that defines its adress space
 - the [[network adress]] of a given [[internet protocol (IP)]] adress can calculcated by connection the [[internet protocol (IP)|ip adress]] and the [[networkmask]] with a bitwise and
 - consits of $n$ times `1` followed by $32-n$ times `0`
 $$
 Networkadress = Adress \: \& \: Networkmask
 $$
+- two notations: `11...110...0` or `/n` 
 
 ### network adress
 - unique identifierer of a [[network|subnet]] in the [[network]]

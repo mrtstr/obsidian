@@ -1,8 +1,15 @@
 # [[transmission control protocol (TCP)]]
-- protocol of the [[osi layers#transport layer|transport layer]] 
+- [[statefulness of protocols|stateful]] [[protocol]] of the [[osi layers#transport layer|transport layer]] for [[stream communication|stream based]] data transfer
 - managed by the operation system with a [[li connection based socket]]
 
 ![[stream communication#stream communication]]
+
+### TCP connection
+- [[transmission control protocol (TCP)|TCP]] connection is defined by two service endpoints ([[internet protocol (IP)|IP adress]], [[port]]) 
+	→ a TCP connection is identified by a 4-tuple (server ip, server port, client ip, client port)
+- a [[li socket|TCP socket]] is a connection endpoint instance with an [[internet protocol (IP)|IP adress]] and a [[port]] (but not uniquely identified by them)
+- a network service (address/port) can have multiple sockets but only one of them is [[li listen|listening]] to incomming connections requests
+- appart from the [[li listen|listening]] [[li socket]] there can be multiple [[li socket|sockts]] that are connected
 
 ## segement structure
 - transmitted package maximal 1500 Bytes
@@ -136,10 +143,37 @@ reliable and error free transmission is ganteed by
 START
 Basic
 [[transmission control protocol (TCP)]] 
+- summary [[transmission control protocol (TCP)]]
+- what is a TCP connection and how is it releated to a [[li socket]]?
 - connection stablishment (3)
 - data transfer (3 + 3 + 1)
 - connection termination (4)
 Back: 
+### [[transmission control protocol (TCP)]] 
+- [[statefulness of protocols|stateful]] [[protocol]] of the [[osi layers#transport layer|transport layer]] for [[stream communication|stream based]] data transfer
+- managed by the operation system with a [[li connection based socket]]
+
+#### [[stream communication]]
+- **Byte-Oriented**: 
+	- data treatet as a continuous stream of bytes
+		→ no message boundaries, 
+		→ the receiver must handle message framing
+- **Ordered and Reliable**
+	- Data delivery is guaranteed and in order
+		→ If a packet is lost or corrupted, it will be retransmitted
+- **Connection-Oriented**: 
+	- connection between the sender and receiver has to be stablished before data transfer
+- **Flow Control**: 
+	- prevent sender from overwhelming the receiver
+- e.g. [[transmission control protocol (TCP)]] used in [[li connection based socket]] (`SOCK_STREAM` and `SOCK_SEQPACKET`)
+
+### TCP connection
+- [[transmission control protocol (TCP)|TCP]] connection is defined by two service endpoints ([[internet protocol (IP)|IP adress]], [[port]]) 
+	→ a TCP connection is identified by a 4-tuple (server ip, server port, client ip, client port)
+- a [[li socket|TCP socket]] is a connection endpoint instance with an [[internet protocol (IP)|IP adress]] and a [[port]] (but not uniquely identified by them)
+- a network service (address/port) can have multiple sockets but only one of them is [[li listen|listening]] to incomming connections requests
+- appart from the [[li listen|listening]] [[li socket]] there can be multiple [[li socket|sockts]] that are connected
+
 ## phases
 
 ![[Tcp_verbindung 1.png]]
@@ -188,11 +222,30 @@ END
 
 START
 Basic
+[[transmission control protocol (TCP)]] summary
 [[transmission control protocol (TCP)]] segement structure
 - parts 
 - structure of parts (11 + 1)
 - control frags (8)
 Back: 
+### [[transmission control protocol (TCP)]] 
+- [[statefulness of protocols|stateful]] [[protocol]] of the [[osi layers#transport layer|transport layer]] for [[stream communication|stream based]] data transfer
+- managed by the operation system with a [[li connection based socket]]
+
+#### [[stream communication]]
+- **Byte-Oriented**: 
+	- data treatet as a continuous stream of bytes
+		→ no message boundaries, 
+		→ the receiver must handle message framing
+- **Ordered and Reliable**
+	- Data delivery is guaranteed and in order
+		→ If a packet is lost or corrupted, it will be retransmitted
+- **Connection-Oriented**: 
+	- connection between the sender and receiver has to be stablished before data transfer
+- **Flow Control**: 
+	- prevent sender from overwhelming the receiver
+- e.g. [[transmission control protocol (TCP)]] used in [[li connection based socket]] (`SOCK_STREAM` and `SOCK_SEQPACKET`)
+
 ## segement structure
 - transmitted package maximal 1500 Bytes
 - consists of header ([[transmission control protocol (TCP)|TCP]] information) and payload 
