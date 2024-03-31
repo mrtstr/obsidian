@@ -4,10 +4,12 @@
 
 ![[stream communication#stream communication]]
 
-### TCP connection
-- [[transmission control protocol (TCP)|TCP]] connection is defined by two service endpoints ([[internet protocol (IP)|IP adress]], [[port]]) 
+### TCP connections and [[li socket|sockets]] 
+- a  `AF_STREAM` [[li socket]] is a potential endpoint for a [[transmission control protocol (TCP)|TCP connection]]
+	→ the TCP connection can be established on a connected stocket pair
+- a [[transmission control protocol (TCP)|TCP connection]] is uniquely identified by two service endpoints ([[internet protocol (IP)|IP adress]], [[port]]) 
 	→ a TCP connection is identified by a 4-tuple (server ip, server port, client ip, client port)
-- a [[li socket|TCP socket]] is a connection endpoint instance with an [[internet protocol (IP)|IP adress]] and a [[port]] (but not uniquely identified by them)
+- a [[li socket]] is a connection endpoint instance with an [[internet protocol (IP)|IP adress]] and a [[port]] (but not uniquely identified by them) and can be used to establish a [[transmission control protocol (TCP)|TCP connection]]
 - a network service (address/port) can have multiple sockets but only one of them is [[li listen|listening]] to incomming connections requests
 - appart from the [[li listen|listening]] [[li socket]] there can be multiple [[li socket|sockts]] that are connected
 
@@ -98,6 +100,8 @@ control bits that control connection establishment, connection termination, conn
 ![[Tcp_verbindung.png]]
 
 ### connection stablishment
+(`SOCK_STREAM` `AF_INET` domain stocket connection has been estabnished)
+
 - 3 way handshake
 1) the [[client]] sends a SYN with a radom initilized sequence number x
 2) the [[server]] responds with a SYN-ACK by sendeing a sement with a ACK number x+1 and his own randomly initilizes sequence number y
@@ -173,12 +177,14 @@ Back:
 - a [[li socket|TCP socket]] is a connection endpoint instance with an [[internet protocol (IP)|IP adress]] and a [[port]] (but not uniquely identified by them)
 - a network service (address/port) can have multiple sockets but only one of them is [[li listen|listening]] to incomming connections requests
 - appart from the [[li listen|listening]] [[li socket]] there can be multiple [[li socket|sockts]] that are connected
+- a TCP connection can be stablished after a `SOCK_STREAM` `AF_INET` domain stocket connection has been estabnished
 
 ## phases
 
 ![[Tcp_verbindung 1.png]]
 
 ### connection stablishment
+(`SOCK_STREAM` `AF_INET` domain stocket connection has been estabnished)
 - 3 way handshake
 1) the [[client]] sends a SYN with a radom initilized sequence number x
 2) the [[server]] responds with a SYN-ACK by sendeing a sement with a ACK number x+1 and his own randomly initilizes sequence number y
