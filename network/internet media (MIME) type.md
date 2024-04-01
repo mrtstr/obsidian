@@ -28,6 +28,7 @@ Basic
 - concept
 - structure
 - examples types with subtypes
+- difference `text` vs `application`
 Back: 
 ### [[internet media (MIME) type]]
 - standardized identifier for transmitted file formats ([[hypertext transfer protocol (HTTP)]])

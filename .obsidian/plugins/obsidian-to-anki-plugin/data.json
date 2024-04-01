@@ -1347,7 +1347,7 @@
     "network/adressing.md": "40f57ee3efb222324d4265c13bfd3802",
     "network/secure shell protocol (SSH).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/file transfer protocol (FTP).md": "d41d8cd98f00b204e9800998ecf8427e",
-    "network/domain name system (DNS).md": "038725fda8ff83ca8e6cf12bb0854539",
+    "network/domain name system (DNS).md": "36f8dacae51e4409a8967fc0741cea55",
     "network/internet protocol (IP).md": "f69f2803417a75738e1713fce1e3f173",
     "network/network layers.md": "e65a5da8bc0b72bb7b0e74697ed0fa38",
     "network/dynamic host configuration protocol (DHCP).md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1378,11 +1378,11 @@
     "network/osi layers.md": "6dd10d0e07ea58812dca23b6db10dd16",
     "network/network domain.md": "b4d17e05d3c18e935f0e4b1eed735996",
     "network/uniform resource locator (URL).md": "806cd165c1a2dc81da8618ba4499437b",
-    "network/localhost.md": "ef0f5d4013e91705b4cd6e9b7e4b97ae",
+    "network/localhost.md": "cd647d37c679ee32d6fd79cdf005c08f",
     "TCP connection.md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/statefulness of protocols.md": "b5e8dd5d9bd3a9ecb771b004bdfaefa8",
     "network/web.md": "ea7bc116134cb474f26940a89370f900",
-    "network/internet media (MIME) type.md": "4dc76a5c88f083d417331be1965b96ff"
+    "network/internet media (MIME) type.md": "b7d6ec66ef2d7c4f73e5151c4e31e302"
   },
   "fields_dict": {
     "Basic": [

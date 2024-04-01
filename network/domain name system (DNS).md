@@ -84,7 +84,7 @@ Back:
 2) [[network domain]] is sent to a **domain name resolver** where It's either directly translated to an [[internet protocol (IP)]] adress of the server providing the ressource from the cache
 3) if the requested [[network domain]] is not cached the request is forwarded to the **domain name server** that as the quthority over the top level domain
 4) the request might be forwarded to **domain name servers** that have the authority over subdomains of the top level domain
-5) when the [[network domain]] is tranlated to an [[internet protocol (IP)]] adress the specific ressource is requested (second pard of the URL) from the server
+5) when the [[network domain]] is tranlated to an [[internet protocol (IP)]] adress the specific ressource is requested (second pard of the URL) from the server (using [[hypertext transfer protocol (HTTP)]])
 
 _______________________________
 ### [[domain name system (DNS)]]
