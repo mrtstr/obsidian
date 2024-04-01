@@ -1303,7 +1303,7 @@
     "linux/li bash.md": "cc16376de3b8e71f06dda6db7648b692",
     "linux/computer structures.md": "9de71dcb8805c6fb462eb01838c7122d",
     "network/IP.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "network/hypertext transfer protocol (HTTP).md": "12f0d308fb701b004c6ee32f6363fee8",
+    "network/hypertext transfer protocol (HTTP).md": "80fa915bff3f03a79624d5836dbf49ce",
     "network/port.md": "f71677086d4100ed21d28387c2d2eff1",
     "network/user datagram protocol (UDP).md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/datagram socket.md": "e6eedacff595674a627dfe2bf38e1359",
@@ -1382,7 +1382,8 @@
     "TCP connection.md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/statefulness of protocols.md": "b5e8dd5d9bd3a9ecb771b004bdfaefa8",
     "network/web.md": "ea7bc116134cb474f26940a89370f900",
-    "network/internet media (MIME) type.md": "b7d6ec66ef2d7c4f73e5151c4e31e302"
+    "network/internet media (MIME) type.md": "b7d6ec66ef2d7c4f73e5151c4e31e302",
+    "network/QUIC.md": "efc6ce75e16b4b258d7eb5bf7fe9e5e4"
   },
   "fields_dict": {
     "Basic": [
