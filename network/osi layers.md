@@ -9,8 +9,8 @@
 ![[data link layer#data link layer]]
 
 
-## [[li socket|TCP connections]] and [[li socket|sockets]] 
-![[transmission control protocol (TCP)#TCP connection]]
+
+![[transmission control protocol (TCP)#TCP connection and li socket]]
 
 
 ### [[li process]] to [[li process]] routing
@@ -92,13 +92,12 @@ Service endpoint vs [[li socket|TCP socket]]
 
 Back: 
 ### [[transmission control protocol (TCP)|TCP connection]] and [[li socket|sockets]] 
-- a  `AF_STREAM` [[li socket]] is a potential endpoint for a [[transmission control protocol (TCP)|TCP connection]]
-	→ the TCP connection can be established on a connected stocket pair
-- a [[transmission control protocol (TCP)|TCP connection]] is uniquely identified by two service endpoints ([[internet protocol (IP)|IP adress]], [[port]]) 
+- [[transmission control protocol (TCP)|TCP]] connection is uniquely identified by its two service endpoints ([[internet protocol (IP)|IP adress]], [[port]]) 
 	→ a TCP connection is identified by a 4-tuple (server ip, server port, client ip, client port)
-- a [[li socket]] is a connection endpoint instance with an [[internet protocol (IP)|IP adress]] and a [[port]] (but not uniquely identified by them) and can be used to establish a [[transmission control protocol (TCP)|TCP connection]]
-- a network service (address/port) can have multiple sockets but only one of them is [[li listen|listening]] to incomming connections requests
-- appart from the [[li listen|listening]] [[li socket]] there can be multiple [[li socket|sockts]] that are connected
+- a [[li socket|AF_INTET domain SOCK_STEAM]] is a connection endpoint instance with an [[internet protocol (IP)|IP adress]] and a [[port]] (but not uniquely identified by them)
+- a network service (address/port) can have multiple [[li socket|AF_INTET domain SOCK_STEAM]] but only one of them is [[li listen|listening]] to incomming connections requests
+- appart from the [[li listen|listening]] [[li socket]] there can be multiple [[li socket|sockts]] that are connected to differen ip adresse/[[port]] combination but only one to each connection partner
+- a TCP connection can be stablished after a `SOCK_STREAM` `AF_INET` domain stocket connection has been estabnished
 
 #### [[li process]] to [[li process]] routing
 - TCP demultiplexes incoming segments using (sender ip, sender port, reviever ip, reviever port) but cannot determine which [[li process]] gets an incoming segment 
@@ -116,13 +115,12 @@ Basic
 - relationship between a [[li socket]] and [[internet protocol (IP)|IP adress]], [[port]] combination 
 Back: 
 ### [[transmission control protocol (TCP)|TCP connection]] and [[li socket|sockets]] 
-- a  `AF_STREAM` [[li socket]] is a potential endpoint for a [[transmission control protocol (TCP)|TCP connection]]
-	→ the TCP connection can be established on a connected stocket pair
-- a [[transmission control protocol (TCP)|TCP connection]] is uniquely identified by two service endpoints ([[internet protocol (IP)|IP adress]], [[port]]) 
+- [[transmission control protocol (TCP)|TCP]] connection is uniquely identified by its two service endpoints ([[internet protocol (IP)|IP adress]], [[port]]) 
 	→ a TCP connection is identified by a 4-tuple (server ip, server port, client ip, client port)
-- a [[li socket]] is a connection endpoint instance with an [[internet protocol (IP)|IP adress]] and a [[port]] (but not uniquely identified by them) and can be used to establish a [[transmission control protocol (TCP)|TCP connection]]
-- a network service (address/port) can have multiple sockets but only one of them is [[li listen|listening]] to incomming connections requests
-- appart from the [[li listen|listening]] [[li socket]] there can be multiple [[li socket|sockts]] that are connected
+- a [[li socket|AF_INTET domain SOCK_STEAM]] is a connection endpoint instance with an [[internet protocol (IP)|IP adress]] and a [[port]] (but not uniquely identified by them)
+- a network service (address/port) can have multiple [[li socket|AF_INTET domain SOCK_STEAM]] but only one of them is [[li listen|listening]] to incomming connections requests
+- appart from the [[li listen|listening]] [[li socket]] there can be multiple [[li socket|sockts]] that are connected to differen ip adresse/[[port]] combination but only one to each connection partner
+- a TCP connection can be stablished after a `SOCK_STREAM` `AF_INET` domain stocket connection has been estabnished
 
 #### [[li process]] to [[li process]] routing
 - TCP demultiplexes incoming segments using (sender ip, sender port, reviever ip, reviever port) but cannot determine which [[li process]] gets an incoming segment 
@@ -201,12 +199,12 @@ ____________________________
 - e.g. [[transmission control protocol (TCP)]] used in [[li connection based socket]] (`SOCK_STREAM` and `SOCK_SEQPACKET`)
 
 
-### [[transmission control protocol (TCP)#TCP connection|TCP connections]]
-- [[transmission control protocol (TCP)|TCP]] connection is defined by two service endpoints ([[internet protocol (IP)|IP adress]], [[port]]) 
+#### TCP connection and [[li socket]]
+- [[transmission control protocol (TCP)|TCP]] connection is uniquely identified by its two service endpoints ([[internet protocol (IP)|IP adress]], [[port]]) 
 	→ a TCP connection is identified by a 4-tuple (server ip, server port, client ip, client port)
-- a [[li socket|TCP socket]] is a connection endpoint instance with an [[internet protocol (IP)|IP adress]] and a [[port]] (but not uniquely identified by them)
-- a network service (address/port) can have multiple sockets but only one of them is [[li listen|listening]] to incomming connections requests
-- appart from the [[li listen|listening]] [[li socket]] there can be multiple [[li socket|sockts]] that are connected
+- a [[li socket|AF_INTET domain SOCK_STEAM]] is a connection endpoint instance with an [[internet protocol (IP)|IP adress]] and a [[port]] (but not uniquely identified by them)
+- a network service (address/port) can have multiple [[li socket|AF_INTET domain SOCK_STEAM]] but only one of them is [[li listen|listening]] to incomming connections requests
+- appart from the [[li listen|listening]] [[li socket]] there can be multiple [[li socket|sockts]] that are connected to differen ip adresse/[[port]] combination but only one to each connection partner
 - a TCP connection can be stablished after a `SOCK_STREAM` `AF_INET` domain stocket connection has been estabnished
 
 ### [[hypertext transfer protocol (HTTP)]]
