@@ -1377,13 +1377,23 @@
     "network/application layer.md": "ca5664bcccb8feb38c61a4e7d5905297",
     "network/osi layers.md": "af04fab5639e7920af3f3cf2e3ab5efd",
     "network/network domain.md": "b4d17e05d3c18e935f0e4b1eed735996",
-    "network/uniform resource locator (URL).md": "806cd165c1a2dc81da8618ba4499437b",
+    "network/uniform resource locator (URL).md": "153b93df6f22484247407f5e0d6d1965",
     "network/localhost.md": "cd647d37c679ee32d6fd79cdf005c08f",
     "TCP connection.md": "d41d8cd98f00b204e9800998ecf8427e",
     "network/statefulness of protocols.md": "b5e8dd5d9bd3a9ecb771b004bdfaefa8",
     "network/web.md": "ea7bc116134cb474f26940a89370f900",
     "network/internet media (MIME) type.md": "b7d6ec66ef2d7c4f73e5151c4e31e302",
-    "network/QUIC.md": "efc6ce75e16b4b258d7eb5bf7fe9e5e4"
+    "network/QUIC.md": "efc6ce75e16b4b258d7eb5bf7fe9e5e4",
+    "network/URI.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "network/api/SOAP.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "network/api/representational state transfer (REST) api.md": "6f81e0e4d52bc5da807ef467b508fb49",
+    "code/formats/HTML.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/formats/csv.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/formats/XML.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/formats/json.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "network/api/gRPC.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "network/api/remote procedure call (RPC).md": "e8e9d73cdbc584b7fb17ccd8be366325",
+    "network/uniform resource identifier (URI).md": "e5406e08c45cf9807c45b9f9a5fda409"
   },
   "fields_dict": {
     "Basic": [

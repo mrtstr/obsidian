@@ -1,38 +1,39 @@
 ### uniform resource locator (URL)
-- complete adress/location of a network ressource
-- consists of two parts: 
-	1) [[network domain]]
-		- adress of the server that provides the ressource
-		- dot seperated hirachical structure
-		- translated by a [[domain name system (DNS)]] to a [[internet protocol (IP)]] adress if the server
-		- e.g. `google.de`
-	2) location of the ressource on the server: 
-		- `/` seperated hiracical struture
-		- processed by the server
-		- e.g. `/impressum`
+- a URL is a [[uniform resource identifier (URI)]] that is providing a method to access it
+![[uniform resource identifier (URI)#uniform resource identifier (URI)]]
 
 # anki
 
 START
 Basic
-What are
- [[uniform resource locator (URL)]] and [[network domain]]
-- concept
-- difference
-- whare are they processes?
+[[uniform resource locator (URL)]] vs [[uniform resource identifier (URI)]]
+
 Back: 
 ### uniform resource locator (URL)
-- complete adress/location of a network ressource
-- consists of two parts: 
-	1) [[network domain]]
-		- adress of the server that provides the ressource
-		- dot seperated hirachical structure
-		- translated by a [[domain name system (DNS)]] to a [[internet protocol (IP)]] adress if the server
-		- e.g. `google.de`
-	2) location of the ressource on the server: 
-		- `/` seperated hiracical struture
-		- processed by the server
-		- e.g. `/impressum`
+- a URL is a [[uniform resource identifier (URI)]] that is providing a method to access it
+
+### uniform resource identifier (URI)
+can:
+	- provide a way to access a ressource ([[uniform resource locator (URL)]])
+	- be a namespace
+	- be a **URN**: identifie a ressource but does not provide a way to access it
+- consists of 7 parts: 
+1) [[protocol]]: e.g. [[hypertext transfer protocol (HTTP)]]
+2) [[port]]: e.g. 80
+3) [[network domain]]
+	- adress of the server that provides the ressource
+	- dot seperated hirachical structure
+	- translated by a [[domain name system (DNS)]] to a [[internet protocol (IP)]] adress if the server
+	- e.g. `google.de`
+4) path to a ressource
+	- `/` seperated hiracical struture
+	- processed by the server
+	- e.g. `/impressum`
+5) parameters (optional)
+	- extra information provided to the [[server]] 
+	- e.g. `?topic=ABC&name=XYZ`
+6) ancor: specific part inside the ressource
+	- e.g. `#sample`
 
 ### [[network domain]]
 - human-readable adress/name of a server
@@ -42,5 +43,5 @@ Back:
 	- `en.google.de`
 
 Tags: code network
-<!--ID: 1711813346657-->
+<!--ID: 1712508821504-->
 END
