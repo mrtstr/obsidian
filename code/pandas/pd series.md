@@ -33,7 +33,7 @@ s["f"]
 ## Vectorised operations
 - behaves like [[np array]] with the difference that it aligns the elements by the index when doing operations between series 
 - the result is NaN when one element has not matching [[pd index]] in the other [[pd series|Series]].
-- The [[pd index|index]] of the results of an operation between [[pd series|Series]] is the [[pd index|index]] [[union]] of the [[pd index|indices]] of the operands but only elements with an [[pd index|index]] inside the [[pd index|index]] [[intersection]] of have values (the rest is Nan)
+- The [[pd index|index]] of the results of an operation between [[pd series|Series]] is the [[pd index|index]] [[union]] of the [[pd index|indices]] of the operands but only elements with an [[pd index|index]] inside the [[pd index|index]] [[intersection of sets]] of have values (the rest is Nan)
 ```python
 # operation between series
 s + s
@@ -51,7 +51,7 @@ Back:
 ## Vectorised operations
 - behaves like [[np array]] with the difference that it aligns the elements by the index when doing operations between series 
 - the result is NaN when one element has not matching [[pd index]] in the other [[pd series|Series]].
-- The [[pd index|index]] of the results of an operation between [[pd series|Series]] is the [[pd index|index]] [[union]] of the [[pd index|indices]] of the operands but only elements with an [[pd index|index]] inside the [[pd index|index]] [[intersection]] of have values (the rest is Nan)
+- The [[pd index|index]] of the results of an operation between [[pd series|Series]] is the [[pd index|index]] [[union]] of the [[pd index|indices]] of the operands but only elements with an [[pd index|index]] inside the [[pd index|index]] [[intersection of sets]] of have values (the rest is Nan)
 ```python
 # operation between series
 s + s

@@ -82,7 +82,7 @@ $$
 $$
 ### intutition
 When there exists a valid solution, it can be one of the following two cases:
-1) All row vectors of $A$ $\{A_{(1,*)}, ... , A_{(m,*)}\}$ are [[linear independent]]. In this case there will allways exist a [[intersection]] between the [[vector|vectors]] and thus there will exist a solution.
+1) All row vectors of $A$ $\{A_{(1,*)}, ... , A_{(m,*)}\}$ are [[linear independent]]. In this case there will allways exist a [[intersection of sets]] between the [[vector|vectors]] and thus there will exist a solution.
 2) The equations represented by the linear dependent $A_{(l,*)}$ $A_{(k,*)}$ represent the same equation but scaled with facor $c$. In this case, the equations will have the same solution. In this case $\begin{pmatrix}  A_{(l,*)} \\ b_l   \end{pmatrix}$ and $\begin{pmatrix}  A_{(k,*)} \\ b_k   \end{pmatrix}$ will also be linear dependent.
 $$
 \begin{split}
@@ -180,7 +180,7 @@ $$
 $$
 ### intutition
 When there exists a valid solution, it can be one of the following two cases:
-1) All row vectors of $A$ $\{A_{(1,*)}, ... , A_{(m,*)}\}$ are [[linear independent]]. In this case there will allways exist a [[intersection]] between the [[vector|vectors]] and thus there will exist a solution.
+1) All row vectors of $A$ $\{A_{(1,*)}, ... , A_{(m,*)}\}$ are [[linear independent]]. In this case there will allways exist a [[intersection of sets]] between the [[vector|vectors]] and thus there will exist a solution.
 2) The equations represented by the linear dependent $A_{(l,*)}$ $A_{(k,*)}$ represent the same equation but scaled with facor $c$. In this case, the equations will have the same solution. In this case $\begin{pmatrix}  A_{(l,*)} \\ b_l   \end{pmatrix}$ and $\begin{pmatrix}  A_{(k,*)} \\ b_k   \end{pmatrix}$ will also be linear dependent.
 $$
 \begin{split}
@@ -380,7 +380,7 @@ $$
 $$
 ### intutition
 When there exists a valid solution, it can be one of the following two cases:
-1) All row vectors of $A$ $\{A_{(1,*)}, ... , A_{(m,*)}\}$ are [[linear independent]]. In this case there will allways exist a [[intersection]] between the [[vector|vectors]] and thus there will exist a solution.
+1) All row vectors of $A$ $\{A_{(1,*)}, ... , A_{(m,*)}\}$ are [[linear independent]]. In this case there will allways exist a [[intersection of sets]] between the [[vector|vectors]] and thus there will exist a solution.
 2) The equations represented by the linear dependent $A_{(l,*)}$ $A_{(k,*)}$ represent the same equation but scaled with facor $c$. In this case, the equations will have the same solution. In this case $\begin{pmatrix}  A_{(l,*)} \\ b_l   \end{pmatrix}$ and $\begin{pmatrix}  A_{(k,*)} \\ b_k   \end{pmatrix}$ will also be linear dependent.
 $$
 \begin{split}

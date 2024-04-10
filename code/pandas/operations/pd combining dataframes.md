@@ -1,5 +1,5 @@
 ## [[pd concat]]
-- [[union]] on rows or columns and [[intersection]] (inner) or [[union]] (outer) on the other dimension
+- [[union]] on rows or columns and [[intersection of sets]] (inner) or [[union]] (outer) on the other dimension
 
 ## [[pd merge]]
 - joining two [[pd dataframe|pd dataframe]] with [[pd column|pd columns]] or [[pd index]] as keys like in SQL
@@ -17,7 +17,7 @@ Basic
 [[pandas]] methods for combining [[pd dataframe|pd dataframes]]
 Back: 
 ## [[pd concat]]
-- [[union]] on rows or columns and [[intersection]] (inner) or [[union]] (outer) on the other dimension
+- [[union]] on rows or columns and [[intersection of sets]] (inner) or [[union]] (outer) on the other dimension
 
 ## [[pd merge]]
 - joining two [[pd dataframe|pd dataframe]] with [[pd column|pd columns]] or [[pd index]] as keys like in SQL
