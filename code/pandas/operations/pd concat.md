@@ -1,5 +1,5 @@
 - Concatinate (do a [[union]]) [[pd dataframe|pd dataframes]] along the [[pd index]] or the [[pd column|pd columns]]
-- on the other axis do a [[intersection of sets]] (inner) or a [[union]] (outer)
+- on the other axis do a [[intersection]] (inner) or a [[union]] (outer)
 - equivalent to [[np concat]]
 ```python
 pd.concat(
@@ -149,7 +149,7 @@ Basic
 - parameters
 Back: 
 - Concatinate [[pd dataframe|pd dataframes]] (do a union) along the [[pd index]] or the [[pd column|pd columns]]
-- on the other axis do a [[intersection of sets]] (inner) or a union (outer)
+- on the other axis do a [[intersection]] (inner) or a union (outer)
 - equivalent to [[np concat]]
 ```python
 pd.concat(
@@ -235,7 +235,7 @@ df2 = pd.DataFrame(
 Back: 
 ## [[pd concat]]
 - Concatinate [[pd dataframe|pd dataframes]] (do a union) along the [[pd index]] or the [[pd column|pd columns]]
-- on the other axis do a [[intersection of sets]] (inner) or a union (outer)
+- on the other axis do a [[intersection]] (inner) or a union (outer)
 - equivalent to [[np concat]]
 ```python
 pd.concat(

@@ -1,3 +1,4 @@
+# first order logic
 ## elements
 1) [[logic connectives]]
 2) constants: represents a particular object in $\mathbb{U}$
@@ -5,6 +6,9 @@
 4) [[propositional function]]
 5) universal quantifier $\forall$ and existential quantifier $\exists$
 6) technical symbols $\in, \notin, (, )$
+
+# -----------------------------
+
 
 ![[logic connectives#logic connectives]]
 

@@ -13,7 +13,7 @@ P\left(A \mid B\right)
 $$
 ![[Selection_001.png]]
 
-### decomposition on the [[intersection of sets]] of [[event space|events]] 
+### decomposition on the [[intersection]] of [[event space|events]] 
 $$
 P(A \cap B) = P(B) P(A \mid B) = P(A) P(B \mid A)
 $$
@@ -34,7 +34,7 @@ START
 Basic
 conditional probability
 - definition
-- decomposition on the [[intersection of sets]] of [[event space|events]] 
+- decomposition on the [[intersection]] of [[event space|events]] 
 Back: 
 ## Definition
 Probability of [[event space|event]] $A$ happened given that we know [[event space|event]] $B$ happened
@@ -48,7 +48,7 @@ P\left(A \mid B\right)
 $$
 ![[Selection_001.png]]
 
-## decomposition on the [[intersection of sets]] of [[event space|events]] 
+## decomposition on the [[intersection]] of [[event space|events]] 
 $$
 P(A \cap B) = P(B) P(A \mid B) = P(A) P(B \mid A)
 $$

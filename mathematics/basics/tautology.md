@@ -1,0 +1,1 @@
+Assertion that is true in every possible interpretation in[[first order logic]]
