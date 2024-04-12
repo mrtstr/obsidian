@@ -65,7 +65,7 @@ MultiIndex([(1, 'blue'),
 ```python
 pd.MultiIndex.from_arrays()
 ```
-- can be created from the [[cartesian product]] between single dimensional list like object
+- can be created from the [[catesian product]] between single dimensional list like object
 ```python
 pd.MultiIndex.from_product()
 ```
@@ -160,7 +160,7 @@ MultiIndex([(1, 'blue'),
 ```python
 pd.MultiIndex.from_arrays()
 ```
-- can be created from the [[cartesian product]] between single dimensional list like object
+- can be created from the [[catesian product]] between single dimensional list like object
 ```python
 pd.MultiIndex.from_product()
 ```

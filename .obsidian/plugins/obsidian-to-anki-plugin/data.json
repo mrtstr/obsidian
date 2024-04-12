@@ -366,9 +366,9 @@
     "mathematics/basics/linear algebra/basis.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linear algebra/QR decomposition.md": "e0f31fd77c3e16c10ff03932f48078d2",
     "mathematics/basics/linear algebra/LU decomposition.md": "e0f31fd77c3e16c10ff03932f48078d2",
-    "mathematics/basics/inverse function.md": "c9942c4fe409ac5e1610628fa90ea353",
+    "mathematics/basics/inverse function.md": "f7b75348f2381c54049eee8269ef981a",
     "mathematics/basics/intersection.md": "40cb813a33a52118c01f8825c133eaf3",
-    "mathematics/basics/function.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/function.md": "1aaf411b034a2ded6a989b2ee5cb1168",
     "mathematics/basics/distributive.md": "3ee115a7723d5c40e43052ba083f59af",
     "mathematics/basics/disjunct.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/difference.md": "79e9ca28561cc1db97d76fd9a7ea06f1",
@@ -887,7 +887,7 @@
     "mathematics/stochastics/sprecial distributions/continuous/gamma distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/gamma function.md": "a41ed2e85225ae54cada894813a284be",
     "mathematics/integer.md": "bfeae022d0630defce1c43cd505f877e",
-    "mathematics/basics/composition.md": "70fef42d1af724835328cc5d5cbf4b9e",
+    "mathematics/basics/composition.md": "668ec84e80599f709c23415cf9706b70",
     "mathematics/basics/rational number.md": "2c1ed6b09a18c189c9829c4d3d564e92",
     "mathematics/basics/real number.md": "6f41edd984aafcb6193dd48dfb826a5c",
     "mathematics/basics/division.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1407,7 +1407,10 @@
     "mathematics/basics/proposition.md": "099aaedaf57d6f81850fe0b1a5381ccb",
     "mathematics/basics/logic connectives.md": "32729417807899564e9eebd64049a662",
     "mathematics/basics/complement.md": "c62defbed04be3db3ba8ec10f42ce4ba",
-    "mathematics/basics/tautology.md": "1865b1102ef258e6946e739832fbbd11"
+    "mathematics/basics/tautology.md": "1865b1102ef258e6946e739832fbbd11",
+    "mathematics/basics/bijective.md": "aef6164f9dba8a64be09b004ce5cbb9c",
+    "mathematics/basics/surjective.md": "bc8d77e309125fd9f8d3330b8e1fce82",
+    "mathematics/basics/injective.md": "89fa9ec0597db942e2cbe0acb7aa8bcf"
   },
   "fields_dict": {
     "Basic": [
