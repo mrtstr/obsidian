@@ -7,7 +7,7 @@
 
 ![[catesian product#catesian product]]
 
-### [[relation]] and [[function]]
+## [[relation]] and [[function]]
 - every [[function]] $f: A \rightarrow B$ is a [[relation]] from $A$ to $B$ where the [[relation]] is the [[function#grapf of a function|graph of f]] $graph(f) \subseteq A \times B$ 
 - not every [[relation]] is the [[function#grapf of a function|graph]] of a [[function]]: 
 	- $\{(a, b_1), (a, b_2)\}$ is a [[relation]] but a garpf of a [[function]]
@@ -15,7 +15,7 @@
 
 ![[function#definition function]]
 
-### properties
+## properties
 ![[reflexive#reflexive]]
 
 ![[symmetric#symmetric]]
@@ -26,6 +26,7 @@
 
 ![[transitive#transitive]]
 
+![[eqivalence relation#eqivalence relation]]
 
 # anki
 START
@@ -95,7 +96,7 @@ $$
 $$
 
 Tags: mathematics
-
+<!--ID: 1712933490539-->
 END
 
 
@@ -107,7 +108,11 @@ proof that
 - not every binary [[relation]] defines a [[function]]
 
 Back: 
-
+### [[relation]] and [[function]]
+- every [[function]] $f: A \rightarrow B$ is a [[relation]] from $A$ to $B$ where the [[relation]] is the [[function#grapf of a function|graph of f]] $graph(f) \subseteq A \times B$ 
+- not every [[relation]] is the [[function#grapf of a function|graph]] of a [[function]]: 
+	- $\{(a, b_1), (a, b_2)\}$ is a [[relation]] but a garph of a [[function]]
+	- $A = \{a_1, a_2\}$ and $B = \{b_1\}$ $R=\{(a_1, b_1)\}$ is a [[relation]] but not a [[function]]
 __________________
 ### relation
 - a **[[relation]]** on a [[set]] $A$ is a [[set#subsets|subset]] of the [[catesian product]] $A \times A$ 
@@ -168,7 +173,7 @@ $$
 $$
 
 Tags: mathematics
-
+<!--ID: 1712933490545-->
 END
 
 
@@ -232,7 +237,7 @@ $$
 - the [[catesian product]] of $n$ [[set|sets]] is a [[set]] of [[n tuple|n tuples]] with a [[cardinality]] of $\prod_{i \in [n]} |A_i|$  
 
 Tags: mathematics
-
+<!--ID: 1712933490547-->
 END
 
 
@@ -242,6 +247,9 @@ Basic
 - proof that [[antisymmetric]] are a superset of [[asymmetric]] [[relation|relations]]?
 - when is it equivalent?
 Back: 
+- $R = \{(a,b), (b,a), (a,a)\}$ is [[antisymmetric]] but not [[asymmetric]]
+- if $\forall a \in A: (a,a) \notin R$ [[antisymmetric]] and [[asymmetric]] are eqiuivalent
+
 ### antisymmetric
 - a [[relation]] $R$ on a [[set]] $B$ is [[antisymmetric]] if
 $$
@@ -291,5 +299,5 @@ $$
 - the [[catesian product]] of $n$ [[set|sets]] is a [[set]] of [[n tuple|n tuples]] with a [[cardinality]] of $\prod_{i \in [n]} |A_i|$  
 
 Tags: mathematics
-
+<!--ID: 1712933490551-->
 END
