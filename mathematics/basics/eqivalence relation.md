@@ -64,6 +64,12 @@ $$
 
 - if a [[set]] $A$ is split into [[equivalence class|equivalence classes]] every element has to be in a [[equivalence class]] and the [[equivalence class|equivalence classes]] have to be [[disjunct]]
 - example: $\sim = \{(a, b): a, b \in \mathbb{Z}: a \equiv b \: mod \: 3\}$ and $A = [8]_0$
+
+#### every [[partition]] $(A_i)_{i \in I}$ induces a [[eqivalence relation]] $\sim$
+$$
+\sim = \{(a, b): \exists i \in I : a \in A_i \land b \in A_i\}
+$$
+
 # -----------------------
 ![[relation#relation]]
 
@@ -301,6 +307,12 @@ Back:
 #### every [[eqivalence relation]] $\sim$ induces a [[partition]]
 - if a [[set]] $A$ is split into [[equivalence class|equivalence classes]] every element has to be in a [[equivalence class]] and the [[equivalence class|equivalence classes]] have to be [[disjunct]]
 - example: $\sim = \{(a, b): a, b \in \mathbb{Z}: a \equiv b \: mod \: 3\}$ and $A = [8]_0$
+
+#### every [[partition]] $(A_i)_{i \in I}$ induces a [[eqivalence relation]] $\sim$
+$$
+\sim = \{(a, b): \exists i \in I : a \in A_i \land b \in A_i\}
+$$
+
 
 ##### equivalence class
 - given a [[eqivalence relation]] $\sim$ and a [[set]] $A$
