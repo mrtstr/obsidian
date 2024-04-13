@@ -2,10 +2,13 @@
 ### definition function
 - a [[function]] $f$ is map of elements from one [[set]] $A$ to the elements of another [[set]] $B$ such that all elements of $A$ are mapped to exactly one element from $B$
 - the [[set]] $A$ is called the **domain** and the [[set]] $B$ is called the **co-domain**
+- formal a [[function]] is a [[relation]] from one [[set]] to another [[set]] that satisfies the following two conditions:
 $$
 \begin{split}
 &f: A \rightarrow B \\
-&\forall a \in A: \exists b \in B: f(a) = b
+\Rightarrow& R_f= \{(x, y): x \in A: f(x) = y\} = graph(f)\\
+&\forall a \in A: \exists b \in B: (a, b) \in R_f \\
+&(a, b) \in R_f \land  (a, c) \in R_f \Rightarrow b = c\\
 \end{split}
 $$
 - for every subset of $C\subseteq A$ we define a [[set]] $f(C)$ as follows
@@ -60,7 +63,7 @@ $$
 START
 Basic
 definitions
-- function
+- function (formal definition)
 - domain and codomain
 - image and preimage
 - image of a [[function]]
@@ -70,10 +73,13 @@ Back:
 ### function
 - a [[function]] $f$ is map of elements from one [[set]] $A$ to the elements of another [[set]] $B$ such that all elements of $A$ are ampped to exactly one element from $B$
 - the [[set]] $A$ is called the **domain** and the [[set]] $B$ is called the **co-domain**
+- formal a [[function]] is a [[relation]] from one [[set]] to another [[set]] that satisfies the following two conditions:
 $$
 \begin{split}
 &f: A \rightarrow B \\
-&\forall a \in A: \exists b \in B: f(a) = b
+\Rightarrow& R_f= \{(x, y): x \in A: f(x) = y\} = graph(f)\\
+&\forall a \in A: \exists b \in B: (a, b) \in R_f \\
+&(a, b) \in R_f \land  (a, c) \in R_f \Rightarrow b = c\\
 \end{split}
 $$
 - for every subset of $C\subseteq A$ we define a [[set]] $f(C)$ as follows
@@ -182,10 +188,13 @@ ____________________
 #### function
 - a [[function]] $f$ is map of elements from one [[set]] $A$ to the elements of another [[set]] $B$ such that all elements of $A$ are ampped to exactly one element from $B$
 - the [[set]] $A$ is called the **domain** and the [[set]] $B$ is called the **co-domain**
+- formal a [[function]] is a [[relation]] from one [[set]] to another [[set]] that satisfies the following two conditions:
 $$
 \begin{split}
 &f: A \rightarrow B \\
-&\forall a \in A: \exists b \in B: f(a) = b
+\Rightarrow& R_f= \{(x, y): x \in A: f(x) = y\} = graph(f)\\
+&\forall a \in A: \exists b \in B: (a, b) \in R_f \\
+&(a, b) \in R_f \land  (a, c) \in R_f \Rightarrow b = c\\
 \end{split}
 $$
 

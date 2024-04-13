@@ -366,9 +366,9 @@
     "mathematics/basics/linear algebra/basis.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linear algebra/QR decomposition.md": "e0f31fd77c3e16c10ff03932f48078d2",
     "mathematics/basics/linear algebra/LU decomposition.md": "e0f31fd77c3e16c10ff03932f48078d2",
-    "mathematics/basics/inverse function.md": "e866fef6e52f7f9638c060cc735ba1ee",
+    "mathematics/basics/inverse function.md": "46f832c916ee7053bd1947f8256842bd",
     "mathematics/basics/intersection.md": "40cb813a33a52118c01f8825c133eaf3",
-    "mathematics/basics/function.md": "c3883bc246f3283365761dccbf83c80c",
+    "mathematics/basics/function.md": "93de273566c843f4003794ff0d65a0fd",
     "mathematics/basics/distributive.md": "3ee115a7723d5c40e43052ba083f59af",
     "mathematics/basics/disjunct.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/difference.md": "79e9ca28561cc1db97d76fd9a7ea06f1",
@@ -1416,11 +1416,12 @@
     "mathematics/basics/antisymmetric.md": "eff94b0850921c5592c21f8049a505c1",
     "mathematics/basics/symmetric.md": "677492bdc479c3a5a69210868153f284",
     "mathematics/basics/reflexive.md": "ef4e2e989d2e90865081a180ae7e6634",
-    "mathematics/basics/relation.md": "1e0878331797d196d6cc53ca14ff4ab2",
-    "mathematics/basics/equivalence class.md": "01194ce1b23dcf7300f94377a688cc83",
+    "mathematics/basics/relation.md": "4caad3d09918435aede7c3c72dfb0b2c",
+    "mathematics/basics/equivalence class.md": "968af6183c52802e0474be6190d4f1fb",
     "mathematics/basics/ceil function.md": "52ec74ef3d5359fb1363f37a6befdda8",
     "mathematics/basics/floor function.md": "25d60550c57c44ed648f857895ac7f6e",
-    "mathematics/basics/eqivalence relation.md": "0bdfc4d99f1576d7b2b6024addb965e8"
+    "mathematics/basics/eqivalence relation.md": "3a34f8297546ac0463ef638fbcad31f5",
+    "mathematics/basics/partition.md": "957c2355d55a4b9b878e60a87e56f616"
   },
   "fields_dict": {
     "Basic": [
