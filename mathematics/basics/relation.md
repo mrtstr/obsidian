@@ -244,10 +244,22 @@ END
 
 START
 Basic
-- proof that [[antisymmetric]] are a superset of [[asymmetric]] [[relation|relations]]?
+- proof that [[asymmetric]] $\Rightarrow$ [[antisymmetric]] [[relation|relations]]?
+- proof that [[antisymmetric]] $\neq$ [[asymmetric]] [[relation|relations]]?
 - when is it equivalent?
 Back: 
+#### [[asymmetric]] $\Rightarrow$ [[antisymmetric]] [[relation|relations]]?
+$$
+\begin{split}
+&(a,b) \in R  \rightarrow (b,a) \notin R \\
+\Rightarrow& (a,b) \in R \land (b,a) \in R = F \\
+\Rightarrow& (a,b) \in R \land (b,a) \in R \rightarrow a = T \\
+\end{split}
+$$
+#### [[antisymmetric]] $\neq$ [[asymmetric]] [[relation|relations]]?
 - $R = \{(a,b), (b,a), (a,a)\}$ is [[antisymmetric]] but not [[asymmetric]]
+
+#### when is it equivalent?
 - if $\forall a \in A: (a,a) \notin R$ [[antisymmetric]] and [[asymmetric]] are eqiuivalent
 
 ### antisymmetric
@@ -300,4 +312,53 @@ $$
 
 Tags: mathematics
 <!--ID: 1712933490551-->
+END
+
+
+START
+Basic
+a [[relation]] with the following properties is called?
+
+$$
+\forall a \in A: (a,a) \in R
+$$
+$$
+\forall y \in B: \exists x: (x,y) \in R
+$$
+
+$$
+\forall a, b, c \in A: (a,b) \in R \land (b,c) \in R \rightarrow (a,c) \in R
+$$
+
+$$
+\forall x_1, x_2 \in A: (x_1, x_2) \in R \Rightarrow x_1=x_2
+$$
+
+$$
+\forall a, b \in A: (a,b) \in R \rightarrow (b, a) \in R
+$$
+Back: 
+#### [[reflexive]]
+$$
+\forall a \in A: (a,a) \in R
+$$
+#### [[surjective]]
+$$
+\forall y \in B: \exists x: (x,y) \in R
+$$
+#### [[transitive]]
+$$
+\forall a, b, c \in A: (a,b) \in R \land (b,c) \in R \rightarrow (a,c) \in R
+$$
+#### [[injective]]
+$$
+\forall x_1, x_2 \in A: (x_1, x_2) \in R \Rightarrow x_1=x_2
+$$
+#### [[symmetric]]
+$$
+\forall a, b \in A: (a,b) \in R \rightarrow (b, a) \in R
+$$
+
+Tags: mathematics
+<!--ID: 1712994707341-->
 END

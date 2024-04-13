@@ -128,7 +128,7 @@ Back:
 ### injective
 - a [[function]] $f: A \rightarrow B$ is [[injective]] (or one to one) if the following is true
 $$
-\forall x_1, x_2 \in A \Rightarrow f(x_1) = f(x_2)
+\forall x_1, x_2 \in A: f(x_1) = f(x_2) \Rightarrow x_1=x_2
 $$
 
 ### surjective
@@ -192,7 +192,7 @@ $$
 #### injective
 - a [[function]] $f: A \rightarrow B$ is [[injective]] (or one to one) if the following is true
 $$
-\forall x_1, x_2 \in A \Rightarrow f(x_1) = f(x_2)
+\forall x_1, x_2 \in A: f(x_1) = f(x_2) \Rightarrow x_1=x_2
 $$
 
 #### surjective
@@ -206,4 +206,54 @@ $$
 
 Tags: mathematics
 <!--ID: 1712910476484-->
+END
+
+
+
+START
+Basic
+give 2 examples each for [[function]] that are
+- [[injective]] but not [[surjective]]
+- [[surjective]] but not [[injective]]
+
+one based on the [[real number]] and one based on a self defined [[set]]
+Back: 
+#### [[injective]] but not [[surjective]]
+$$
+\begin{split}
+&f : A = \{a_1, a_2\} \rightarrow B = \{b_1, b_2, b_3\} \\
+&graph(f) = \{(a_1, b_1), (a_2, b_2)\}
+\end{split}
+$$
+$$
+f: \mathbb{R}_{\geq 0} \rightarrow \mathbb{R}: f(x) = x
+$$
+#### [[surjective]] but not [[injective]]
+$$
+\begin{split}
+&f : A = \{a_1\} \rightarrow B = \{b_1, b_2\} \\
+&graph(f) = \{(a_1, b_1), (a_1, b_2)\}
+\end{split}
+$$
+$$
+f: \mathbb{R} \rightarrow \mathbb{R}_{\geq 0}: f(x) = x^2
+$$
+
+
+________________________
+
+#### injective
+- a [[function]] $f: A \rightarrow B$ is [[injective]] (or one to one) if the following is true
+$$
+\forall x_1, x_2 \in A: f(x_1) = f(x_2) \Rightarrow x_1=x_2
+$$
+
+#### surjective
+- a [[function]] $f: A \rightarrow B$ is [[surjective]] if the following is true
+$$
+\forall y \in B: \exists x: f(x) = y
+$$
+
+Tags: mathematics
+<!--ID: 1712994707347-->
 END
