@@ -2,7 +2,7 @@
 
 ![[integer]]
 
-![[rational number]]
+![[rational numbers]]
 
 ![[real number]]
 

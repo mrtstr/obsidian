@@ -22,7 +22,7 @@ $$
 $$
 a^{-n} = \underbrace{\frac{1}{a \cdot ... \cdot a} }_\text{n times} = \frac{1}{a^n}
 $$
-## for exponent $q = \frac{n}{k} \in \mathbb{Q}$ [[rational number|rational numbers]] 
+## for exponent $q = \frac{n}{k} \in \mathbb{Q}$ [[rational numbers|rational numbers]] 
 $$
 a^{q} = a^\frac{n}{k} =
 \frac{
@@ -93,7 +93,7 @@ Basic
 [[exponential]]
 - definition
 	- for exponent $n \in \mathbb{Z}$ [[integer|integers]] 
-	- for exponent $q = \frac{n}{k} \in \mathbb{Q}$ [[rational number|rational numbers]] 
+	- for exponent $q = \frac{n}{k} \in \mathbb{Q}$ [[rational numbers|rational numbers]] 
 - properties
 	- [[addition]] of exponents
 	- [[substraction]] of exponents
@@ -110,7 +110,7 @@ $$
 $$
 a^{-n} = \underbrace{\frac{1}{a \cdot ... \cdot a} }_\text{n times} = \frac{1}{a^n}
 $$
-## for exponent $q = \frac{n}{k} \in \mathbb{Q}$ [[rational number|rational numbers]] 
+## for exponent $q = \frac{n}{k} \in \mathbb{Q}$ [[rational numbers|rational numbers]] 
 $$
 a^{q} = a^\frac{n}{k} =
 \frac{

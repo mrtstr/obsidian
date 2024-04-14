@@ -46,7 +46,7 @@ f^{-1}\left(y\right) &= y^{n} = x \\
 \end{split}
 $$
 
-### proof for [[exponential|exponents]] from the [[rational number]] $q = \frac{n}{m}$ using the [[chain rule of derivative|chain rule]]
+### proof for [[exponential|exponents]] from the [[rational numbers]] $q = \frac{n}{m}$ using the [[chain rule of derivative|chain rule]]
 $$
 \begin{split}
 \frac{dx^{\frac{n}{m}}}{dx} 
@@ -101,7 +101,7 @@ END
 START
 Basic
 [[power rule for derivative|elementary power rule]]
-- proof for [[exponential|exponents]] from the [[rational number]] given the [[power rule for derivative|elementary power rule]] for [[exponential|exponents]] from the [[natural numbers]]
+- proof for [[exponential|exponents]] from the [[rational numbers]] given the [[power rule for derivative|elementary power rule]] for [[exponential|exponents]] from the [[natural numbers]]
 
 Back: 
 ### definition derivative
@@ -152,7 +152,7 @@ f^{-1}\left(y\right) &= y^{n} = x \\
 \end{split}
 $$
 
-#### proof for [[exponential|exponents]] from the [[rational number]] $q = \frac{n}{m}$ using the [[chain rule of derivative|chain rule]]
+#### proof for [[exponential|exponents]] from the [[rational numbers]] $q = \frac{n}{m}$ using the [[chain rule of derivative|chain rule]]
 $$
 \begin{split}
 \frac{dx^{\frac{n}{m}}}{dx} 

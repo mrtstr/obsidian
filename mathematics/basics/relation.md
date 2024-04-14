@@ -1,5 +1,4 @@
 ## relation
-- generalized [[function]]
 - a **[[relation]]** on a [[set]] $A$ is a [[set#subsets|subset]] of the [[catesian product]] $A \times A$ 
 - a **binary [[relation]]** from a [[set]] $A$ to a [[set]] $B$ if it's a [[set#subsets|subset]] of [[catesian product]] $A \times B$ 
 - **n-ary [[relation]]** if $A_1, ..., A_n$ relations is a [[set#subsets|subset]] of the [[catesian product]] $A_1 \times ... \times A_n$ 
@@ -8,6 +7,7 @@
 ![[catesian product#catesian product]]
 
 ## [[relation]] and [[function]]
+- a [[relation]] is a generalized [[function]]
 - every [[function]] $f: A \rightarrow B$ is a [[relation]] from $A$ to $B$ where the [[relation]] is the [[function#grapf of a function|graph of f]] $graph(f) \subseteq A \times B$ 
 - not every [[relation]] is the [[function#grapf of a function|graph]] of a [[function]]: 
 	- $\{(a, b_1), (a, b_2)\}$ is a [[relation]] but a garpf of a [[function]]
