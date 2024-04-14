@@ -1,8 +1,12 @@
-## [[vector]] Definition
+### vector
+- given a [[vector space]] $(V, +, \cdot)$ on a [[field]] $\mathbb{K}$ (e.g $\mathbb{R}$) every $v \in V$ is called [[vector]]
+- example $V = \mathbb{R}^n$ defined on the [[field]] = [[real number]] $\mathbb{R}$
 $$
 \begin{split}
-a  \in \mathbb{R^{\left| \mathcal{I} \right| }} 
-&= \left(a_{i} \right)_{i \in \mathcal{I}} \\
-&=\begin{pmatrix}   a_{(1)} \\   ... \\ a_{(\left| \mathcal{I} \right|)}   \end{pmatrix}
+v  \in \mathbb{R}^{n}
+&= \left(v_{i} \right)_{i \in [n]} \\
+&=\begin{pmatrix}  v_{1} \\   ... \\ v_{n} \end{pmatrix}
 \end{split}
 $$
+# ---------------------
+![[vector space#vector space]]

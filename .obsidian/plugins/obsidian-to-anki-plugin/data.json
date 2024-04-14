@@ -851,7 +851,7 @@
     "code/data processing/df operations/df crossjoin.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/df operations/df aggregate.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/df operations/df  create columns.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/data processing/concepts/scalar.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/data processing/concepts/scalar.md": "a6e26781484c1788a28c3323ddf6cc2a",
     "code/data processing/concepts/parquet.md": "222fad6ead8b23ab6ffd64ceae51dd43",
     "code/data processing/concepts/datatype.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/dataframe.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -903,7 +903,7 @@
     "mathematics/stochastics/examples/substraction of binomial random variables.md": "3b3109edc9184c78bc203093e36b98d3",
     "mathematics/stochastics/sprecial distributions/discrete/poission binomial distribution.md": "b078d5c4ec431184e5efd4df66626a46",
     "mathematics/linear algebra/zero matrix.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/linear algebra/vector.md": "2788c902a8e4aa3bb2d2f4c73c78ba83",
+    "mathematics/linear algebra/vector.md": "545af6cc215144e268d58eb550cf9aad",
     "mathematics/linear algebra/vector norm.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/vecor space.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/triangular matrix.md": "3a625830fb33ff732cbc493c68f53c29",
@@ -1435,8 +1435,8 @@
     "mathematics/basics/lower bound.md": "ad5310f32b683ecdd60945cd58e49864",
     "mathematics/basics/upper bound.md": "19ce567b9e8e822aac284fbd5f2c7606",
     "mathematics/basics/minor.md": "222ddc9976ac8294a86448c41ff202c7",
-    "mathematics/linear algebra/vector space.md": "ac4440178f71480e04894c287601f0cf",
-    "mathematics/basics/field.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "mathematics/linear algebra/vector space.md": "ca822b42833b96a7d9ff3b194a575603",
+    "mathematics/basics/field.md": "97bfd7cf5cf0e76607e475e8c3761e61"
   },
   "fields_dict": {
     "Basic": [
