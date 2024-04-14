@@ -1,5 +1,5 @@
-## inverse function
-### definition
+### inverse function
+
 Given a [[bijective]] [[function]] $f:X \rightarrow Y$ then $f^{-1}:Y \rightarrow X$ is the [[inverse function]] of $f$ if the following condition is true
 
 $$

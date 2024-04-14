@@ -1,5 +1,4 @@
-## function
-### definition function
+### function
 - a [[function]] $f$ is map of elements from one [[set]] $A$ to the elements of another [[set]] $B$ such that all elements of $A$ are mapped to exactly one element from $B$
 - the [[set]] $A$ is called the **domain** and the [[set]] $B$ is called the **co-domain**
 - formal a [[function]] is a [[relation]] from one [[set]] to another [[set]] that satisfies the following two conditions:

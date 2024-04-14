@@ -1,51 +1,33 @@
-# Matrix
+
+### matrix
 - can be represented by a two-dimensional [[array]]
 - is a 2. Order [[tensor]] 
-- [[matrix calculus]]
-## Matrix Definition
 $$
 \begin{split}
-A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}} 
-&= \left(a_{i,j} \right)_{i \in \mathcal{I}, j \in \mathcal{J}} \\
-&= \left(A_{(*:j)} \right)_{j \in \mathcal{J}}
+A  \in \mathbb{R}^{n  \times m}
+&= \left(a_{i,j} \right)_{i \in [n], j \in [m]} \\
+&= \left(A_{(*:j)} \right)_{j \in [m]}
 = 
-\begin{pmatrix}   A_{(*:1)} &   ... & A_{(*:\left| \mathcal{J} \right|)}   \end{pmatrix}\\
-&= \left(A_{(i:*)} \right)_{i \in \mathcal{I}}
+\begin{pmatrix}   A_{(*:1)} &   ... & A_{(*:m}   \end{pmatrix}\\
+&= \left(A_{(i:*)} \right)_{i \in [n]}
 =  
-\begin{pmatrix}   A_{(1:*)} \\   ... \\ A_{(\left| \mathcal{I} \right|:*)}   \end{pmatrix}
+\begin{pmatrix}   A_{(1:*)} \\   ... \\ A_{(n:*)}   \end{pmatrix}
 \end{split}
 $$
-## Represented linear map
-A matrix $A\in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}}$ represents a [[unique]] [[linear function]] $F(x)$ that maps the $\mathbb{R}^{\left| \mathcal{J} \right|}$ to its [[column space]] $Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$
 
-$$F(x) = Ax: \mathbb{R}^{\left| \mathcal{J} \right|} \mapsto Im(A) = Span\left((A_{(*:j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$$
-![[Pasted image 20221015082805.png]]
 
-## Operations
-### [[matrix product|Product]]
-$$
-AB=\left(\sum\limits_{j \in \mathcal{J}} a_{ij}b_{jk}\right)_{i \in \mathcal{I},\: k \in \mathcal{K}}
-=
-\left(A_{(i:*)}{B_{(*:k)}^\top}\right)_{i \in \mathcal{I},\: k \in \mathcal{K}}
-$$
-### [[transpose|Transpose]] $A^\top$
-$$
-\begin{split}
-A^\top  \in \mathbb{R^{\left| \mathcal{J} \right| \times \left| \mathcal{I} \right|}} 
-&= \left(a_{i,j} \right)_{j \in \mathcal{J}, i \in \mathcal{I}} \\
-&= \left(A_{(*:j)} \right)_{j \in \mathcal{J}}
-= 
-\begin{pmatrix}   A_{(*:1)} &   ... & A_{(*:\left| \mathcal{J} \right|)}  \end{pmatrix}\\
-&= \left(A_{(i:*)} \right)_{i \in \mathcal{I}}
-=  
-\begin{pmatrix}   A_{(1:*)} \\   ... \\ A_{(\left| \mathcal{I} \right|:*)}    \end{pmatrix}
-\end{split}
-$$
-### [[inverse matrix|Inverse]] $A^{-1}$
-- exist for [[regular matrix]]
-$$
-AA^{-1} = A^{-1}A = I
-$$
+### operations
+
+![[matrix product#matrix product]]
+
+![[transpose#transpose]]
+
+![[inverse matrix#inverse function inverse matrix $A {-1}$]]
+
+### properties
+[[determinant]]
+
+# anki
 
 START
 Basic
@@ -54,8 +36,7 @@ matrix transpose
 - properties (6)
  
 Back: 
-# Transpose of a [[matrix]]
-## Definition
+#### [[transpose]]
 The [[transpose]] of [[matrix]] A is defined as follows 
 $$
 \begin{split}
@@ -70,7 +51,7 @@ A^\top  \in \mathbb{R^{\left| \mathcal{J} \right| \times \left| \mathcal{I} \rig
 \end{split}
 $$
  
-## Properties
+#### Properties
 1) $\left(A_1A_2 \: .. \:A_k\right)^\top=A_k^\top  \: .. \: A_2^\top A_1^\top$ 
 2) $\left(A+B\right)^\top=A^\top + B^\top$
 3) $(cA)^\top =cA^\top$
@@ -88,25 +69,37 @@ matrix
 - definition
 - induced map 
 Back: 
-## Definition
+### [[matrix]]
 $$
 \begin{split}
-A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}} 
-&= \left(a_{i,j} \right)_{i \in \mathcal{I}, j \in \mathcal{J}} \\
-&= \left(A_{(*:j)} \right)_{j \in \mathcal{J}}
+A  \in \mathbb{R}^{n  \times m}
+&= \left(a_{i,j} \right)_{i \in [n], j \in [m]} \\
+&= \left(A_{(*:j)} \right)_{j \in [m]}
 = 
-\begin{pmatrix}   A_{(*:1)} &   ... & A_{(*:\left| \mathcal{J} \right|)}   \end{pmatrix}\\
-&= \left(A_{(i:*)} \right)_{i \in \mathcal{I}}
+\begin{pmatrix}   A_{(*:1)} &   ... & A_{(*:m}   \end{pmatrix}\\
+&= \left(A_{(i:*)} \right)_{i \in [n]}
 =  
-\begin{pmatrix}   A_{(1:*)} \\   ... \\ A_{(\left| \mathcal{I} \right|:*)}   \end{pmatrix}
+\begin{pmatrix}   A_{(1:*)} \\   ... \\ A_{(n:*)}   \end{pmatrix}
 \end{split}
 $$
 
-## induced linear map
-A matrix $A\in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}}$ represents a [[unique]] [[linear function]] $F(x)$ that maps the $\mathbb{R}^{\left| \mathcal{J} \right|}$ to its [[column space]] $Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$
+### induced [[linear function]]
+A matrix $A\in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}}$ represents a [[unique]] linear [[function]] $F(x)$ that maps the $\mathbb{R}^{\left| \mathcal{J} \right|}$ to its [[column space]] $Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$
 
 $$F(x) = Ax: \mathbb{R}^{\left| \mathcal{J} \right|} \mapsto Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$$
-
+_________________
+#### function
+- a [[function]] $f$ is map of elements from one [[set]] $A$ to the elements of another [[set]] $B$ such that all elements of $A$ are mapped to exactly one element from $B$
+- the [[set]] $A$ is called the **domain** and the [[set]] $B$ is called the **co-domain**
+- formal a [[function]] is a [[relation]] from one [[set]] to another [[set]] that satisfies the following two conditions:
+$$
+\begin{split}
+&f: A \rightarrow B \\
+\Rightarrow& R_f= \{(x, y): x \in A: f(x) = y\} = graph(f)\\
+&\forall a \in A: \exists b \in B: (a, b) \in R_f \\
+&(a, b) \in R_f \land  (a, c) \in R_f \Rightarrow b = c\\
+\end{split}
+$$
 Tags: mathematics linear_algebra
 <!--ID: 1665308790802-->
 END
