@@ -11,7 +11,7 @@ $$
 1) we define a [[relation]] $M = \mathbb{Z} \times \mathbb{Z}^*$ 
 2) we define a [[eqivalence relation]] $\sim$ on $M$
 $$
-\sim = \{\left((a, b), (a', b'): (a, b), (a', b') \in M: a'b = ab' \right)\}
+\sim = \left\{\left((a, b), (a', b')\right): (a, b), (a', b') \in M: a'b = ab' \right\}
 $$
 3) we define the [[rational numbers]] $\mathbb{Q}$ as the [[equivalence class|equivalence classes]] $\sim$ on $M$
 
@@ -51,7 +51,7 @@ $$
 1) we define a [[relation]] $M = \mathbb{Z} \times \mathbb{Z}^*$ 
 2) we define a [[eqivalence relation]] $\sim$ on $M$
 $$
-\sim = \{\left((a, b), (a', b'): (a, b), (a', b') \in M: a'b = ab' \right)\}
+\sim = \left\{\left((a, b), (a', b')\right): (a, b), (a', b') \in M: a'b = ab' \right\}
 $$
 3) we define the [[rational numbers]] $\mathbb{Q}$ as the [[equivalence class|equivalence classes]] $\sim$ on $M$
 
