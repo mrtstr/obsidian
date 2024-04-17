@@ -41,11 +41,10 @@ $$
 
 $$
 \begin{split}
-[a]_\sim = [b]_\sim 
-&\Rightarrow \forall c \in [a]_{\sim}: c \in [b]_{\sim} \\
-&\Rightarrow \forall c \in [a]_{\sim}: a \sim c \land b \sim c \\
-&\Rightarrow \forall c \in [a]_{\sim}: a \sim c \land c \sim b \qquad &\text{(symmetry)} \\
-&\Rightarrow a \sim b \qquad &\text{(transitiv)} \\
+[a]_\sim = [b]_\sim \land a \in [a]_{\sim}&  \qquad &\text{(reflexiv)} \\
+&\Rightarrow a \in [b]_{\sim}\\
+&\Rightarrow b \sim a \\
+&\Rightarrow a \sim b \qquad &\text{(symmetry)} \\
 \end{split}
 $$
 (the other direction has to be true too because [[eqivalence relation]] are [[symmetric]])
@@ -213,11 +212,10 @@ $$
 
 $$
 \begin{split}
-[a]_\sim = [b]_\sim 
-&\Rightarrow \forall c \in [a]_{\sim}: c \in [b]_{\sim} \\
-&\Rightarrow \forall c \in [a]_{\sim}: a \sim c \land b \sim c \\
-&\Rightarrow \forall c \in [a]_{\sim}: a \sim c \land c \sim b \qquad &\text{(symmetry)} \\
-&\Rightarrow a \sim b \qquad &\text{(transitiv)} \\
+[a]_\sim = [b]_\sim \land a \in [a]_{\sim}&  \qquad &\text{(reflexiv)} \\
+&\Rightarrow a \in [b]_{\sim}\\
+&\Rightarrow b \sim a \\
+&\Rightarrow a \sim b \qquad &\text{(symmetry)} \\
 \end{split}
 $$
 
