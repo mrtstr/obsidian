@@ -1,7 +1,5 @@
 
 ### matrix
-- can be represented by a two-dimensional [[array]]
-- is a 2. Order [[tensor]] 
 $$
 \begin{split}
 A  \in \mathbb{R}^{n  \times m}

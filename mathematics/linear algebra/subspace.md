@@ -1,10 +1,10 @@
-## subspace
+### subspace
 - a [[vector space]] $(V, +, \cdot)$ on a [[field]] $\mathbb{K}$
 - $H \subseteq V$ is a [[subspace]] of $V$ if $H$ is a [[vector space]] itself equivalently the following conditions are true
 1) $v \in H \land \lambda \in \mathbb{K} \rightarrow \lambda \cdot v \in H$ ([[closure|closed]] for [[multiplication]] with [[scalar|scalars]])
 2) $v,w \in H \rightarrow v + w \in H$ ([[closure|closed]] for [[addition]])
 
-![[vector space#vector space]]
+
 
 ### [[subspace|subspaces]] of $\mathbb{R}^3$
 - trivial subspaces: $\mathbb{R}^3$ and $\{(0, 0, 0)\}$
@@ -32,6 +32,8 @@ x \in H &\Rightarrow \exists \lambda, \mu \in \mathbb{R}: x = \lambda \cdot v + 
 $$
 
 
+# -----------------------
+![[vector space#vector space]]
 # anki
 START
 Basic

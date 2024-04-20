@@ -1,10 +1,16 @@
 ### [[matrix]] product
 
 $$
-AB=\left(\sum\limits_{j \in [m]} a_{ij}b_{jk}\right)_{i \in [n],\: k \in [k]}
-=
-\left(A^{(i)}{B_{(k)}^\top}\right)_{i \in [n],\: k \in [k]}
+\begin{split}
+AB &=\left(\sum\limits_{l \in [k]} a_{il}b_{lj}\right)_{i \in [n],\: j \in [m]} \in \mathbb{R}^{n \times m} \\
+&=
+\left(A_{(i, *)}{B_{(*, j)}^\top}\right)_{i \in [n],\: j \in [m]} \\
+&= \left(\begin{matrix} 
+\left(AB_{(*, 1)}^\top\right)^\top \\ ... \\ \left(AB_{(*, m)}^\top\right)^\top 
+\end{matrix}\right)
+\end{split}
 $$
+
 ### Properties
 1) $AB \neq BA$ [[commutative|non commutative]]
 2) $A(B+C)=AB+BC$ [[distributive]]
@@ -23,11 +29,15 @@ matrix multiplication
  
 Back: 
 ### matrix product
-
 $$
-AB=\left(\sum\limits_{j \in \mathcal{J}} a_{ij}b_{jk}\right)_{i \in \mathcal{I},\: k \in \mathcal{K}}
-=
-\left(A^{(i)}{B_{(k)}^\top}\right)_{i \in \mathcal{I},\: k \in \mathcal{K}}
+\begin{split}
+AB &=\left(\sum\limits_{l \in [k]} a_{il}b_{lj}\right)_{i \in [n],\: j \in [m]} \in \mathbb{R}^{n \times m} \\
+&=
+\left(A_{(i, *)}{B_{(*, j)}^\top}\right)_{i \in [n],\: j \in [m]} \\
+&= \left(\begin{matrix} 
+\left(AB_{(*, 1)}^\top\right)^\top \\ ... \\ \left(AB_{(*, m)}^\top\right)^\top 
+\end{matrix}\right)
+\end{split}
 $$
 ### Properties
 1) $AB \neq BA$ [[commutative|non commutative]]

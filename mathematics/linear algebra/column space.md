@@ -1,40 +1,63 @@
-# Column Space
-- or image or range of a [[matrix]]
-
-## Definition
-- For a matrix $A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}}$ the [[column space]] $range(A)$ the set of all linear combinations of its column vectors $A_{(j)}$ 
-
+### column space
+- the [[column space]] of a [[matrix]] $A \in \mathbb{R}^{n \times m}$ is defined as the [[linear combinations]] if its column vectors $A_{(1, *)}, ..., A_{(n, *)}  \in \mathbb{R}^m$
 $$
-range(A)=\left\{ Ax \mid x \in \mathbb{R}^{\mathcal{\left|J\right |}}\right\}
-=span\left(\left\{A_{(j)}\right\}_{j \in \mathcal{J}}\right)
-\subseteq\mathbb{R^{\left| \mathcal{I} \right| }}
+\begin{split}
+\mathrm{range}(A)
+&=\left\{ Ax: x \in \mathbb{R}^m\right\} \subseteq\mathbb{R}^n \\
+&=\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right) \\
+&=\{w \in \mathbb{R}^n: \lambda_1, ... \lambda_n \in \mathbb{R}: w = \lambda_1 \cdot A_{(1, *)} + ... + \lambda_n \cdot A_{(n, *)}\} \\
+\end{split}
 $$
-## Properties
-- $range(A) \subseteq\mathbb{R^{\left| \mathcal{I} \right| }}$ 
+### properties
+
 - $dim(range(A)) + dim(kern(A)) = \left| \mathcal{J} \right|$ [[rank nullity theorem]]
 - $dim(range(A)) = dim(rowspace(A)) = rank(A)$ (the [[column space]] and the [[row space]] have the same number of dimensions) and they are equal to the [[rank]]
 
+# ------------------
+![[linear combinations#linear combinations]]
 
+![[matrix#matrix]]
+
+# anki
 
 START
 Basic
-column space of [[matrix]] $A$
-- definition (verbal + 2 equations)
-- relationship to the [[rank]]|
-- relationship to the dimensions of the domain of $Ax$
+definitions
+- [[column space]]
+- [[linear combinations]]
  
 Back: 
-## Definition
-- for a matrix $A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}}$ the [[column space]] $range(A)$ the set of all linear combinations of its column vectors $A_{(j)}$ 
+### column space
+- the [[column space]] of a [[matrix]] $A \in \mathbb{R}^{n \times m}$ is defined as the [[linear combinations]] if its column vectors $A_{(1, *)}, ..., A_{(n, *)}  \in \mathbb{R}^m$
+$$
+\begin{split}
+\mathrm{range}(A)
+&=\left\{ Ax: x \in \mathbb{R}^m\right\} \subseteq\mathbb{R}^n \\
+&=\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right) \\
+&=\{w \in \mathbb{R}^n: \lambda_1, ... \lambda_n \in \mathbb{R}: w = \lambda_1 \cdot A_{(1, *)} + ... + \lambda_n \cdot A_{(n, *)}\} \\
+\end{split}
+$$
+### linear combinations
+- given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
+- the [[linear combinations]] of $v_1, ..., v_n$ is defined as the following [[set]]
+$$
+\mathrm{span}(v_1, ..., v_n) = \{w \in V: \lambda_1, ... \lambda_n \in \mathbb{K}: w = \lambda_1 \cdot v_1 + ... + \lambda_n \cdot v_n\}
+$$
 
+_________________
+### matrix
 $$
-range(A)=\left\{ Ax \mid x \in \mathbb{R}^{\mathcal{\left|J\right |}}\right\}
-=span\left(\left\{A_{(j)}\right\}_{j \in \mathcal{J}}\right)
+\begin{split}
+A  \in \mathbb{R}^{n  \times m}
+&= \left(a_{i,j} \right)_{i \in [n], j \in [m]} \\
+&= \left(A_{(*:j)} \right)_{j \in [m]}
+= 
+\begin{pmatrix}   A_{(*:1)} &   ... & A_{(*:m}   \end{pmatrix}\\
+&= \left(A_{(i:*)} \right)_{i \in [n]}
+=  
+\begin{pmatrix}   A_{(1:*)} \\   ... \\ A_{(n:*)}   \end{pmatrix}
+\end{split}
 $$
-## Properties
-- $range(A) \subseteq\mathbb{R^{\left| \mathcal{I} \right| }}$ 
-- $dim(range(A)) + dim(kern(A)) = \left| \mathcal{J} \right|$ [[rank nullity theorem]]
-- $dim(range(A)) = dim(rowspace(A)) = rank(A)$ (the [[column space]] and the [[row space]] have the same number of dimensions) and they are equal to the [[rank]]
 Tags: mathematics linear_algebra
 <!--ID: 1665328452058-->
 END

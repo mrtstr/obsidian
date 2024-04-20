@@ -1,5 +1,5 @@
-# Rank Nullity Theorem
-![[matrix#Matrix#Matrix Definition]]
+### rank nullity theorem
+![[matrix#matrix]]
 For a [[matrix]] $A$ with the column vectors $A^{(j)}$ and the represented linear function $F$.
 $$F(x) = Ax: \mathbb{R}^{\left| \mathcal{J} \right|} \mapsto Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$$
 
