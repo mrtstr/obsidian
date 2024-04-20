@@ -46,6 +46,8 @@ $$
 
 
 # -------------------
+![[closure#closure]]
+
 ![[field#field]]
 
 ![[scalar#scalar]]
