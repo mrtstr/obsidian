@@ -1,40 +1,39 @@
-## vector space
+### vector space
 a [[vector space]] $(V, +, \cdot)$ on a [[field]] $\mathbb{K}$ (e.g $\mathbb{R}$) is defined by 3 elements
 1) a [[set]] $V$
 2) a [[addition]] operation $+: V \times V \rightarrow V$
 3) a [[multiplication]] operation $\cdot: \mathbb{K} \times V \rightarrow V$
-
 - note: $v \in V$ is called [[vector]] and $\lambda \in \mathbb{K}$ is called a [[scalar]]
-### conditions
+
 $(V, +, \cdot)$ is a [[vector space]] of the following conditions are true $u, v, w \in V$ and $\lambda, \mu \in \mathbb{K}$
-#### $(V, +)$ is [[commutative]]: 
+1) $(V, +)$ is [[commutative]]: 
 $$
 v + w = w + v
 $$
-#### $(V, +)$ is [[associative]]: 
+2) $(V, +)$ is [[associative]]: 
 $$
 (u + v) + w = u + (w + v)
 $$
 
-#### $(V, +)$ has a [[neutral element]] $0$ 
+3) $(V, +)$ has a [[neutral element]] $0$ 
 $$
 v+0=v
 $$
-#### additive [[inverse elements]]
+4) additive [[inverse elements]]
 for every $v \in V$ has exists an additive [[inverse elements]] $v' \in V$ such that $v + v' = 0$
 
-#### $(V, +, \cdot)$ are [[distributive]] for multiplications with scalars
+5) $(V, +, \cdot)$ are [[distributive]] for multiplications with scalars
 $$
 \begin{split}
 \lambda \cdot (v + w) = \lambda \cdot v + \lambda \cdot w \\
 v \cdot (\lambda + \mu) = v \cdot \lambda + v \cdot \mu
 \end{split}
 $$
-#### $(V, \cdot)$ is [[associative]] with scalars 
+6) $(V, \cdot)$ is [[associative]] with scalars 
 $$
 (\lambda + \mu) + v = \lambda + (\mu + v)
 $$
-#### $(V, \cdot)$ has a [[neutral element]] $1$ 
+7) $(V, \cdot)$ has a [[neutral element]] $1$ 
 $$
 v \cdot 1 = v
 $$

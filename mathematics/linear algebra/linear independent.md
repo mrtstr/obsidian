@@ -1,17 +1,24 @@
-A [[set]] of [[vector|vectors]] $V = \{v_i\}_{i \in \mathcal{I}}$ is [[linear independent]] when the following condition is true
+### linear independent
+- given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
+- $v_1, ..., v_n \in V$ are [[linear independent]] if the following condition is true
 $$
-\forall x \in \mathbb{R}^{\left| \mathcal{I} \right|}:\sum\limits_{v_i \in V} x_iv_i = 0 \Rightarrow x = \boldsymbol{0}
+\forall \lambda_i \in \mathbb{K} :\sum\limits_{i \in [n]} v_i \lambda_i = 0 \Rightarrow \forall \lambda_i \in \mathbb{K}:  \lambda_i = 0
 $$
 
+# ----------------
+![[vector space#vector space]]
+
+# anki
 START
 Basic
 linear independent: definition
 Back: 
-A [[set]] of [[vector|vectors]] $V = \{v_i\}_{i \in \mathcal{I}}$ is [[linear independent]] when the following condition is true
+### linear independent
+- given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
+- $v_1, ..., v_n \in V$ are [[linear independent]] if the following condition is true
 $$
-\forall x \in \mathbb{R}^{\left| \mathcal{I} \right|}:\sum\limits_{v_i \in V} x_iv_i = 0 \Rightarrow x = \boldsymbol{0}
+\forall \lambda_i \in \mathbb{K} :\sum\limits_{i \in [n]} v_i \lambda_i = 0 \Rightarrow \forall \lambda_i \in \mathbb{K}:  \lambda_i = 0
 $$
-
 Tags: mathematics linear_algebra
 <!--ID: 1665918408914-->
 END

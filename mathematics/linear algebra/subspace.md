@@ -19,7 +19,7 @@ $$
 \begin{split}
 x \in H &\Rightarrow \exists \lambda, \mu \in \mathbb{R}: x = \lambda \cdot v + \mu \cdot w \\
 x' \in H &\Rightarrow   \exists \lambda', \mu' \in \mathbb{R}: x' = \lambda \cdot v' + \mu' \cdot w' \\
-x + x' &= v \cdot (\lambda + \lambda') + w \cdot (\mu + \mu')  \in H \quad (\text{since } \mathbb{Z} \text{ is closed for addtion}) 
+x + x' &= v \cdot (\lambda + \lambda') + w \cdot (\mu + \mu')  \in H \quad (\text{since } \mathbb{K} \text{ is closed for addtion}) 
 \end{split}
 $$
 - $H$ is [[closure|closed]] for [[multiplication]] with [[scalar|scalars]]
@@ -27,7 +27,7 @@ $$
 \begin{split}
 x \in H &\Rightarrow \exists \lambda, \mu \in \mathbb{R}: x = \lambda \cdot v + \mu \cdot w \\
 \gamma \in \mathbb{R}: \gamma \cdot x &= (\lambda \cdot \gamma) \cdot v + (\mu \cdot \gamma) \cdot w \\
-\Rightarrow &= \gamma \cdot x  \in H \quad (\text{since } \mathbb{R} \text{ is closed for multiplication}) 
+\Rightarrow &= \gamma \cdot x  \in H \quad (\text{since } \mathbb{K} \text{ is closed for multiplication}) 
 \end{split}
 $$
 
