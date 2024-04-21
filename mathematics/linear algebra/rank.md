@@ -1,47 +1,24 @@
 ### rank
-- for a [[matrix]] $A \in \mathbb{R}^{n\times m}$ the [[rank]] of $A$ are the number of [[vector space#dimensions of a vector space|dimensions]] of its [[column space]]
-
+- for a [[matrix]] $A \in \mathbb{R}^{n\times m}$ the [[rank]] of $A$ is the number of [[vector space#dimensions of a vector space|dimensions]] of its [[column space]]
 $$
 \begin{split}
 \mathrm{rank}(A)
-&=\dim(\mathrm{range}(A) \subseteq \mathbb{R}^n) \\
-&=\dim\left(\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right) \subseteq \mathbb{R}^n \right)
+&=\dim\left(\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, m)}\right) \subseteq \mathbb{R}^n \right)
+\end{split}
+$$
+- note: the [[rank]] of a [[matrix]] is also equal to the number of [[vector space#dimensions of a vector space|dimensions]] of its [[column space]] 
+$$
+\begin{split}
+\mathrm{rank}(A)
+&=\dim\left(\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right) \subseteq \mathbb{R}^m \right)
 \end{split}
 $$
 
-![[vector space#dimensions of a vector space]]
-
-![[column space#column space]]
-
-
-
-
-
-## Definition
-
-- The [[rank]] is equal to the number of [[linear independent]] columns vectors $A_{(*,j)}$
-- The [[rank]] is equal to the number of [[linear independent]] row vectors $A_{(i,*)}$
-- The [[rank]] is equal to the dimensions of the [[column space]]
-$$
-rank(A) = dim(range(A))
-$$
-- the [[rank]] is equal to the total number of column vectors $\left| \mathcal{J} \right|$ minus the [[nullity]]
-
-$$
-\underbrace{
-rank(A)
-}_\text{\# linear independent column vectors Aj}
-  = 
-\underbrace{
-\left| \mathcal{J} \right|
-}_\text{\# all column vectors Aj}
--
-\underbrace{
-nullity(A)
-}_\text{\# linear dependent column vectors Aj}
-$$
 # ---------------------
-![[matrix#matrix]]
+
+
+![[dimensions#dimensions of a vector space]]
+
 
 
 ![[vector space#vector space]]
@@ -50,19 +27,30 @@ $$
 
 START
 Basic
-definition [[rank]] (and concepts where it's based on: 5)
+[[rank]] 
+- definition
+- (and concepts where it's based on: 5)
+- relationship to [[row space]]
 
 Back: 
 ### rank
 - for a [[matrix]] $A \in \mathbb{R}^{n\times m}$ the [[rank]] of $A$ is the number of [[vector space#dimensions of a vector space|dimensions]] of its [[column space]]
-
 $$
 \begin{split}
 \mathrm{rank}(A)
-&=\dim(\mathrm{range}(A) \subseteq \mathbb{R}^n) \\
-&=\dim\left(\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right) \subseteq \mathbb{R}^n \right)
+&=\dim\left(\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, m)}\right) \subseteq \mathbb{R}^n \right)
 \end{split}
 $$
+- note: the [[rank]] of a [[matrix]] is also equal to the number of [[vector space#dimensions of a vector space|dimensions]] of its [[column space]] 
+$$
+\begin{split}
+\mathrm{rank}(A)
+&=\dim\left(\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right) \subseteq \mathbb{R}^m \right)
+\end{split}
+$$
+
+
+
 _____________
 
 ### dimensions of a [[vector space]]
@@ -98,16 +86,40 @@ $$
 - the [[column space]] of a [[matrix]] $A \in \mathbb{R}^{n \times m}$ is defined as the [[linear combinations]] if its column vectors $A_{(1, *)}, ..., A_{(n, *)}  \in \mathbb{R}^m$
 $$
 \begin{split}
-\mathrm{range}(A)
+\mathrm{colspace}(A)
+&=\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, 1)}\right) \\
 &=\left\{ Ax: x \in \mathbb{R}^m\right\} \subseteq\mathbb{R}^n \\
-&=\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right) \\
-&=\{w \in \mathbb{R}^n: \lambda_1, ... \lambda_n \in \mathbb{R}: w = \lambda_1 \cdot A_{(1, *)} + ... + \lambda_n \cdot A_{(n, *)}\} \\
+&=\{w \in \mathbb{R}^n: \lambda_1, ... \lambda_n \in \mathbb{R}: w = \lambda_1 \cdot A_{(*, 1)} + ... + \lambda_n \cdot A_{(*, m)}\} \\
 \end{split}
 $$
+
+### the [[column space]] has the same number of [[dimensions]] as the [[row space]]
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ 
+$$
+\begin{split}
+\dim(\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right)) = \dim(\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, m)}\right)) 
+\end{split}
+$$
+#### proof
+- let $B = \left(\begin{matrix}b_1\ ... \ b_r \end{matrix}\right) \in \mathbb{R}^{n \times r}$ be a [[basis]] of the [[column space]] of $A \in \mathbb{R}^{n \times m}$
+
+$$
+\begin{split}
+&\forall j \in [m]: A_{*,j} = \sum_{l \in [r]} \lambda_{l, j} \cdot b_l \\
+\Rightarrow& A = B C \text{ with } C = (\lambda_{(l, j)})_{l \in [r], j \in [m]} \in \mathbb{R}^{r \times m} \\
+\Rightarrow& A_{(i,*)} = \sum_{l \in [r]}  b_{i,l} C_{(l, *)} \\ 
+\end{split}
+$$
+- that means that every row vector $A_{(i,*)}$ can be expressed as a [[linear combinations]] of $r$ [[vector|vectors]] $l \in [r]:C_{(l, *)}$
+- it follows $r = \dim\left(\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, m)}\right)\right) \leq \dim\left(\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right)\right)$
+- the proof for the other directions is equivalent so that $r = \dim\left(\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, m)}\right)\right) = \dim\left(\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right)\right) = \mathrm{rank}(A)$
 
 Tags: mathematics linear_algebra
 <!--ID: 1713684157513-->
 END
+
+
+
 
 START
 Basic

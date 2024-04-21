@@ -47,20 +47,9 @@ $$
 
 #### all [[polynomial]] with a degree of at most $d$
 
-### dimensions of a [[vector space]]
-- let $B$ be a [[vector space]] and $B$ be a [[basis]] of $V$
-- the dimensions of $V$ are defines as the [[cardinality]] of its [[basis]]
-- note: the [[vector space]] $\{{0}\}$ has per definition zero dimension 
-$$
-\dim(V) = |B|
-$$
-![[basis#basis]]
 
 # -------------------
 
-
-
-![[basis#every basis of a vector space has the same cardinality]]
 
 ![[closure#closure]]
 
@@ -87,43 +76,45 @@ Basic
  
 Back: 
 ### vector space
-a [[vector space]] $(V, +, \cdot)$ on a field $\mathbb{K}$ (e.g $\mathbb{R}$) is defined by 3 elements
+a [[vector space]] $(V, +, \cdot)$ on a [[field]] $\mathbb{K}$ (e.g $\mathbb{R}$) is defined by 3 elements
 1) a [[set]] $V$
 2) a [[addition]] operation $+: V \times V \rightarrow V$
 3) a [[multiplication]] operation $\cdot: \mathbb{K} \times V \rightarrow V$
 - note: $v \in V$ is called [[vector]] and $\lambda \in \mathbb{K}$ is called a [[scalar]]
-### conditions
+
 $(V, +, \cdot)$ is a [[vector space]] of the following conditions are true $u, v, w \in V$ and $\lambda, \mu \in \mathbb{K}$
-#### $(V, +)$ is [[commutative]]: 
+1) $(V, +)$ is [[commutative]]: 
 $$
 v + w = w + v
 $$
-#### $(V, +)$ is [[associative]]: 
+2) $(V, +)$ is [[associative]]: 
 $$
 (u + v) + w = u + (w + v)
 $$
 
-#### $(V, +)$ has a [[neutral element]] $0$ 
+3) $(V, +)$ has a [[neutral element]] $0$ 
 $$
 v+0=v
 $$
-#### additive [[inverse elements]]
+4) additive [[inverse elements]]
 for every $v \in V$ has exists an additive [[inverse elements]] $v' \in V$ such that $v + v' = 0$
-#### $(V, +, \cdot)$ are [[distributive]] for multiplications with scalars
+
+5) $(V, +, \cdot)$ are [[distributive]] for multiplications with scalars
 $$
 \begin{split}
 \lambda \cdot (v + w) = \lambda \cdot v + \lambda \cdot w \\
 v \cdot (\lambda + \mu) = v \cdot \lambda + v \cdot \mu
 \end{split}
 $$
-#### $(V, \cdot)$ is [[associative]] with scalars 
+6) $(V, \cdot)$ is [[associative]] with scalars 
 $$
 (\lambda + \mu) + v = \lambda + (\mu + v)
 $$
-#### $(V, \cdot)$ has a [[neutral element]] $1$ 
+7) $(V, \cdot)$ has a [[neutral element]] $1$ 
 $$
 v \cdot 1 = v
 $$
+
 _______________________
 
 #### commutative
@@ -181,44 +172,46 @@ v  \in \mathbb{R}^{n}
 \end{split}
 $$
 _______________________
-## vector space
-a [[vector space]] $(V, +, \cdot)$ on a field $\mathbb{K}$ (e.g $\mathbb{R}$) is defined by 3 elements
+### vector space
+a [[vector space]] $(V, +, \cdot)$ on a [[field]] $\mathbb{K}$ (e.g $\mathbb{R}$) is defined by 3 elements
 1) a [[set]] $V$
 2) a [[addition]] operation $+: V \times V \rightarrow V$
 3) a [[multiplication]] operation $\cdot: \mathbb{K} \times V \rightarrow V$
 - note: $v \in V$ is called [[vector]] and $\lambda \in \mathbb{K}$ is called a [[scalar]]
-### conditions
+
 $(V, +, \cdot)$ is a [[vector space]] of the following conditions are true $u, v, w \in V$ and $\lambda, \mu \in \mathbb{K}$
-#### $(V, +)$ is [[commutative]]: 
+1) $(V, +)$ is [[commutative]]: 
 $$
 v + w = w + v
 $$
-#### $(V, +)$ is [[associative]]: 
+2) $(V, +)$ is [[associative]]: 
 $$
 (u + v) + w = u + (w + v)
 $$
 
-#### $(V, +)$ has a [[neutral element]] $0$ 
+3) $(V, +)$ has a [[neutral element]] $0$ 
 $$
 v+0=v
 $$
-#### additive [[inverse elements]]
+4) additive [[inverse elements]]
 for every $v \in V$ has exists an additive [[inverse elements]] $v' \in V$ such that $v + v' = 0$
-#### $(V, +, \cdot)$ are [[distributive]] for multiplications with scalars
+
+5) $(V, +, \cdot)$ are [[distributive]] for multiplications with scalars
 $$
 \begin{split}
 \lambda \cdot (v + w) = \lambda \cdot v + \lambda \cdot w \\
 v \cdot (\lambda + \mu) = v \cdot \lambda + v \cdot \mu
 \end{split}
 $$
-#### $(V, \cdot)$ is [[associative]] with scalars 
+6) $(V, \cdot)$ is [[associative]] with scalars 
 $$
 (\lambda + \mu) + v = \lambda + (\mu + v)
 $$
-#### $(V, \cdot)$ has a [[neutral element]] $1$ 
+7) $(V, \cdot)$ has a [[neutral element]] $1$ 
 $$
 v \cdot 1 = v
 $$
+
 #### commutative
 a operation is commutative if the following is true in general
 $$
@@ -259,44 +252,46 @@ $\{A \in \mathbb{R}^{n \times m}\}$ with element wise addition and [[matrix prod
 
 all [[polynomial]] with a degree of at most $d$
 _______________________
-## vector space
-a [[vector space]] $(V, +, \cdot)$ on a field $\mathbb{K}$ (e.g $\mathbb{R}$) is defined by 3 elements
+### vector space
+a [[vector space]] $(V, +, \cdot)$ on a [[field]] $\mathbb{K}$ (e.g $\mathbb{R}$) is defined by 3 elements
 1) a [[set]] $V$
 2) a [[addition]] operation $+: V \times V \rightarrow V$
 3) a [[multiplication]] operation $\cdot: \mathbb{K} \times V \rightarrow V$
 - note: $v \in V$ is called [[vector]] and $\lambda \in \mathbb{K}$ is called a [[scalar]]
-### conditions
+
 $(V, +, \cdot)$ is a [[vector space]] of the following conditions are true $u, v, w \in V$ and $\lambda, \mu \in \mathbb{K}$
-#### $(V, +)$ is [[commutative]]: 
+1) $(V, +)$ is [[commutative]]: 
 $$
 v + w = w + v
 $$
-#### $(V, +)$ is [[associative]]: 
+2) $(V, +)$ is [[associative]]: 
 $$
 (u + v) + w = u + (w + v)
 $$
 
-#### $(V, +)$ has a [[neutral element]] $0$ 
+3) $(V, +)$ has a [[neutral element]] $0$ 
 $$
 v+0=v
 $$
-#### additive [[inverse elements]]
+4) additive [[inverse elements]]
 for every $v \in V$ has exists an additive [[inverse elements]] $v' \in V$ such that $v + v' = 0$
-#### $(V, +, \cdot)$ are [[distributive]] for multiplications with scalars
+
+5) $(V, +, \cdot)$ are [[distributive]] for multiplications with scalars
 $$
 \begin{split}
 \lambda \cdot (v + w) = \lambda \cdot v + \lambda \cdot w \\
 v \cdot (\lambda + \mu) = v \cdot \lambda + v \cdot \mu
 \end{split}
 $$
-#### $(V, \cdot)$ is [[associative]] with scalars 
+6) $(V, \cdot)$ is [[associative]] with scalars 
 $$
 (\lambda + \mu) + v = \lambda + (\mu + v)
 $$
-#### $(V, \cdot)$ has a [[neutral element]] $1$ 
+7) $(V, \cdot)$ has a [[neutral element]] $1$ 
 $$
 v \cdot 1 = v
 $$
+
 #### commutative
 a operation is commutative if the following is true in general
 $$
@@ -325,41 +320,3 @@ Tags: mathematics linear_algebra
 END
 
 
-START
-Basic
-definition dimensions of a [[vector space]] and concepts where its based on (3)
-Back: 
-### dimensions of a [[vector space]]
-- let $B$ be a [[vector space]] and $B$ be a [[basis]] of $V$
-- the dimensions of $V$ are defines as the [[cardinality]] of its [[basis]]
-- note: the [[vector space]] $\{{0}\}$ has per definition zero dimension 
-$$
-\dim(V) = |B|
-$$
-
-_______________________
-### basis
-- given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
-- $\{v_1, ..., v_n\}$ is a [[basis]] of $V$ if
-1) $\{v_1, ..., v_n\}$ is a spanning [[set]] of $V$
-2) $\{v_1, ..., v_n\}$ is [[linear independent]]
-
-
-### linear independent
-- given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
-- $v_1, ..., v_n \in V$ are [[linear independent]] if the following condition is true
-$$
-\forall \lambda_i \in \mathbb{K} :\sum\limits_{i \in [n]} v_i \lambda_i = 0 \Rightarrow \forall \lambda_i \in \mathbb{K}:  \lambda_i = 0
-$$
-
-### spanning [[set]] of a [[vector space]]
-- given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
-- the [[set]] $\{v_1, ..., v_n\}$ is a **spanning set** or **generating set** of $V$ if $\mathrm{span}(v_1, ..., v_n) = V$
-$$
-\mathrm{span}(v_1, ..., v_n) = \{w \in V: \lambda_1, ... \lambda_n \in \mathbb{K}: w = \lambda_1 \cdot v_1 + ... + \lambda_n \cdot v_n\} = V
-$$
-
-
-Tags: mathematics linear_algebra
-<!--ID: 1713684157507-->
-END

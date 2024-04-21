@@ -1,47 +1,39 @@
-### basis
-- given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
-- $\{v_1, ..., v_n\}$ is a [[basis]] of $V$ if
-1) $\{v_1, ..., v_n\}$ is a spanning [[set]] of $V$
-2) $\{v_1, ..., v_n\}$ is [[linear independent]]
-
-
-![[linear independent#linear independent]]
-
-![[span#spanning set of a vector space]]
-
-
-### [[linear combinations]] of a [[basis]]
-- let $\{v_1, ..., v_n\}$ be a [[basis]] of [[vector space]] $V$
-1) $\forall w \in V: \exists \lambda_1, ..., \lambda_i \in \mathbb{K}: w= \lambda_i \cdot v_1 + ... + \lambda_n \cdot v_n$
-2) $\lambda_1, ..., \lambda_i$ are uniqe
-#### proof
-1) results directly from $\{v_1, ..., v_n\}$ being a spanning set of $V$
-2) follows from $\{v_1, ..., v_n\}$ being [[linear independent]]
+### dimensions of a [[vector space]]
+- let $B$ be a [[vector space]] and $B$ be a [[basis]] of $V$
+- the dimensions of $V$ are defines as the [[cardinality]] of its [[basis]]
+- note: the [[vector space]] $\{{0}\}$ has per definition zero dimension 
+- note: since every [[basis]] of a [[vector space]] has the same [[cardinality]] (see [[basis#every basis of a vector space has the same cardinality|here]]) the [[dimensions]] of a [[vector space]] is equal to the [[cardinality]] of all of its [[basis]]
 $$
-\begin{split}
-&\lambda_i \cdot v_1 + ... + \lambda_n \cdot v_n = \lambda_i' \cdot v_1 + ... + \lambda_n' \cdot v_n \\
-\Rightarrow& (\lambda_i- \lambda_i') \cdot v_1 + ... + (\lambda_n- \lambda_n') \cdot v_n = 0 \\
-\Rightarrow& \forall i \in [n]: \lambda_i- \lambda_i' = 0 \quad \text{(linear independence)} \\
-\end{split}
+\dim(V) = |B|
 $$
 
-### every [[basis]] of a [[vector space]] has the same [[cardinality]]
-- let $\{v_1, ..., v_n\}$ and $\{w_1, ..., w_m\}$ be a [[basis|bases]] of [[vector space]] $V$
-- then $n=m$
-#### TODO add proof
-# -----------------
+# ------------------
+![[basis#basis]]
 
+
+![[basis#every basis of a vector space has the same cardinality]]
 
 # anki
 START
 Basic
-definition of [[basis]]
+definition dimensions of a [[vector space]] and concepts where its based on (3)
 Back: 
+### dimensions of a [[vector space]]
+- let $B$ be a [[vector space]] and $B$ be a [[basis]] of $V$
+- the dimensions of $V$ are defines as the [[cardinality]] of its [[basis]]
+- note: the [[vector space]] $\{{0}\}$ has per definition zero dimension 
+- note: since every [[basis]] of a [[vector space]] has the same [[cardinality]] (see [[basis#every basis of a vector space has the same cardinality|here]]) the [[dimensions]] of a [[vector space]] is equal to the [[cardinality]] of all of its [[basis]]
+$$
+\dim(V) = |B|
+$$
+
+_______________________
 ### basis
 - given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
 - $\{v_1, ..., v_n\}$ is a [[basis]] of $V$ if
 1) $\{v_1, ..., v_n\}$ is a spanning [[set]] of $V$
 2) $\{v_1, ..., v_n\}$ is [[linear independent]]
+
 
 ### linear independent
 - given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
@@ -53,8 +45,10 @@ $$
 ### spanning [[set]] of a [[vector space]]
 - given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
 - the [[set]] $\{v_1, ..., v_n\}$ is a **spanning set** or **generating set** of $V$ if $\mathrm{span}(v_1, ..., v_n) = V$
+$$
+\mathrm{span}(v_1, ..., v_n) = \{w \in V: \lambda_1, ... \lambda_n \in \mathbb{K}: w = \lambda_1 \cdot v_1 + ... + \lambda_n \cdot v_n\} = V
+$$
 
-______________________
 ### vector space
 a [[vector space]] $(V, +, \cdot)$ on a [[field]] $\mathbb{K}$ (e.g $\mathbb{R}$) is defined by 3 elements
 1) a [[set]] $V$
@@ -96,51 +90,51 @@ v \cdot 1 = v
 $$
 
 Tags: mathematics linear_algebra
-<!--ID: 1713633549046-->
+<!--ID: 1713684157507-->
 END
 
-
-# anki
 START
 Basic
-proof for:
-[[linear combinations]] of a [[basis]] are unique
+- example of a [[vector space]] with zero [[dimensions]]
+- why is the definition of the [[dimensions]] of a [[vector space]] $V$ a general property of $V$?
 Back: 
-#### [[linear combinations]] of a [[basis]]
-- let $\{v_1, ..., v_n\}$ be a [[basis]] of [[vector space]] $V$
-1) $\forall w \in V: \exists \lambda_1, ..., \lambda_i \in \mathbb{K}: w= \lambda_i \cdot v_1 + ... + \lambda_n \cdot v_n$
-2) $\lambda_1, ..., \lambda_i$ are uniqe
-#### proof
-1) results directly from $\{v_1, ..., v_n\}$ being a spanning set of $V$
-2) follows from $\{v_1, ..., v_n\}$ being [[linear independent]]
+### dimensions of a [[vector space]]
+- let $B$ be a [[vector space]] and $B$ be a [[basis]] of $V$
+- the dimensions of $V$ are defines as the [[cardinality]] of its [[basis]]
+- note: the [[vector space]] $\{{0}\}$ has per definition zero dimension 
+- note: since every [[basis]] of a [[vector space]] has the same [[cardinality]] (see [[basis#every basis of a vector space has the same cardinality|here]]) the [[dimensions]] of a [[vector space]] is equal to the [[cardinality]] of all of its [[basis]]
 $$
-\begin{split}
-&\lambda_i \cdot v_1 + ... + \lambda_n \cdot v_n = \lambda_i' \cdot v_1 + ... + \lambda_n' \cdot v_n \\
-\Rightarrow& (\lambda_i- \lambda_i') \cdot v_1 + ... + (\lambda_n- \lambda_n') \cdot v_n = 0 \\
-\Rightarrow& \forall i \in [n]: \lambda_i- \lambda_i' = 0 \quad \text{(linear independence)} \\
-\end{split}
+\dim(V) = |B|
 $$
 
-______________________
-#### basis
+### every [[basis]] of a [[vector space]] has the same [[cardinality]]
+- let $\{v_1, ..., v_n\}$ and $\{w_1, ..., w_m\}$ be a [[basis|bases]] of [[vector space]] $V$
+- then $n=m$
+
+_______________________
+
+### basis
 - given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
 - $\{v_1, ..., v_n\}$ is a [[basis]] of $V$ if
 1) $\{v_1, ..., v_n\}$ is a spanning [[set]] of $V$
 2) $\{v_1, ..., v_n\}$ is [[linear independent]]
 
-#### linear independent
+
+### linear independent
 - given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
 - $v_1, ..., v_n \in V$ are [[linear independent]] if the following condition is true
 $$
 \forall \lambda_i \in \mathbb{K} :\sum\limits_{i \in [n]} v_i \lambda_i = 0 \Rightarrow \forall \lambda_i \in \mathbb{K}:  \lambda_i = 0
 $$
 
-#### spanning [[set]] of a [[vector space]]
+### spanning [[set]] of a [[vector space]]
 - given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
 - the [[set]] $\{v_1, ..., v_n\}$ is a **spanning set** or **generating set** of $V$ if $\mathrm{span}(v_1, ..., v_n) = V$
+$$
+\mathrm{span}(v_1, ..., v_n) = \{w \in V: \lambda_1, ... \lambda_n \in \mathbb{K}: w = \lambda_1 \cdot v_1 + ... + \lambda_n \cdot v_n\} = V
+$$
 
-
-#### vector space
+### vector space
 a [[vector space]] $(V, +, \cdot)$ on a [[field]] $\mathbb{K}$ (e.g $\mathbb{R}$) is defined by 3 elements
 1) a [[set]] $V$
 2) a [[addition]] operation $+: V \times V \rightarrow V$
@@ -181,5 +175,5 @@ v \cdot 1 = v
 $$
 
 Tags: mathematics linear_algebra
-<!--ID: 1713633549051-->
+<!--ID: 1713707296737-->
 END

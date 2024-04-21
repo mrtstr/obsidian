@@ -1,55 +1,70 @@
 ### rank nullity theorem
-![[matrix#matrix]]
-For a [[matrix]] $A$ with the column vectors $A^{(j)}$ and the represented linear function $F$.
-$$F(x) = Ax: \mathbb{R}^{\left| \mathcal{J} \right|} \mapsto Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$$
+- let $A \in \mathbb{R}^{n \times m}$ 
+- then $n$ is equal to the [[rank]] of $A$ plus the [[dimensions]] of the [[nullspace]] of $A$
+$$
+\begin{split}
+n 
+&= \mathrm{rank}(A) + \dim\left(N(A)\right) \\
+&= \dim\left(\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, m)}\right) \subseteq \mathbb{R}^n \right) + \dim\left(\left\{ x \in \mathbb{R}^{m} \mid Ax=0 \right\}
+\subseteq\mathbb{R}^{m}\right) \\
+\end{split}
+$$
+- in other words the number of all column vectors is equal to the number of [[linear independent]] column vectors plus the number of linear dependent column vectors
 
-
-- The dimensions of the [[column space]] plus the dimensions of the [[nullspace]] are equal to the dimensions of the domain of $F$ 
-$$dim(range(A)) + dim(kern(A)) = \left| \mathcal{J} \right|$$
-The [[rank]] plus the [[nullity]] is equal to the total number of column vectors
 $$
 \underbrace{
-rank(A)
+\mathrm{rank}(A)
 }_\text{\# linear independent column vectors Aj} 
 +
 \underbrace{
-nullity(A)
+\dim\left(N(A)\right)
 }_\text{\# linear dependent column vectors Aj} 
 = 
 \underbrace{
-\left| \mathcal{J} \right|
+n
 }_\text{\# all column vectors Aj}
 $$
 ![[Pasted image 20221015081452.png]]
 
+#### proof
+# --------------------
+![[dimensions#dimensions of a vector space]]
+
+![[basis#basis]]
+
+![[nullspace#nullspace]]
+
+![[rank#rank]]
+# anki
+
 START
 Basic
-rank nullity theorem two equivalent definitions
+[[rank nullity theorem]] with proof
 Back: 
-For a [[matrix]] $A$ with the column vectors $A^{(j)}$ and the represented linear function $F$.
+### rank nullity theorem
+- let $A \in \mathbb{R}^{n \times m}$ 
+- then $n$ is equal to the [[rank]] of $A$ plus the [[dimensions]] of the [[nullspace]] of $A$
 $$
-A =\left(A^{(j)} \right)_{j \in \mathcal{J}}
-= 
-\begin{pmatrix}   A^{(1)}    ... & A^{(\left| \mathcal{J} \right|)}  \end{pmatrix}
-\in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}}
+\begin{split}
+n 
+&= \mathrm{rank}(A) + \dim\left(N(A)\right) \\
+&= \dim\left(\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, m)}\right) \subseteq \mathbb{R}^n \right) + \dim\left(\left\{ x \in \mathbb{R}^{m} \mid Ax=0 \right\}
+\subseteq\mathbb{R}^{m}\right) \\
+\end{split}
 $$
-$$F(x) = Ax: \mathbb{R}^{\left| \mathcal{J} \right|} \mapsto Im(A) = Span\left((A_{(j)})_{i \in \mathcal{I}}\right) \in \mathbb{R}^{\left| \mathcal{I} \right|}$$
+- in other words the number of all column vectors is equal to the number of [[linear independent]] column vectors plus the number of linear dependent column vectors
 
-
-- The dimensions of the [[column space]] plus the dimensions of the [[nullspace]] are equal to the dimensions of the domain of $F$ 
-$$dim(range(A)) + dim(kern(A)) = \left| \mathcal{J} \right|$$
-The [[rank]] plus the [[nullity]] is equal to the total number of column vectors
 $$
 \underbrace{
-rank(A)
+\mathrm{rank}(A)
 }_\text{\# linear independent column vectors Aj} 
 +
 \underbrace{
-nullity(A)
+\dim\left(N(A)\right)
 }_\text{\# linear dependent column vectors Aj} 
 = 
 \underbrace{
-\left| \mathcal{J} \right|
+n
 }_\text{\# all column vectors Aj}
 $$
 ![[Pasted image 20221015081452.png]]
