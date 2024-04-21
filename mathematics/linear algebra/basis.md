@@ -4,6 +4,12 @@
 1) $\{v_1, ..., v_n\}$ is a spanning [[set]] of $V$
 2) $\{v_1, ..., v_n\}$ is [[linear independent]]
 
+
+![[linear independent#linear independent]]
+
+![[linear combinations#spanning set of a vector space]]
+
+
 ### [[linear combinations]] of a [[basis]]
 - let $\{v_1, ..., v_n\}$ be a [[basis]] of [[vector space]] $V$
 1) $\forall w \in V: \exists \lambda_1, ..., \lambda_i \in \mathbb{K}: w= \lambda_i \cdot v_1 + ... + \lambda_n \cdot v_n$
@@ -33,9 +39,6 @@ u \in V
 \end{split}
 $$
 # -----------------
-![[linear combinations#linear combinations]]
-
-![[linear combinations#spanning set of a vector space]]
 
 ![[vector space#vector space]]
 

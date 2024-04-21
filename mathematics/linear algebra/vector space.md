@@ -46,7 +46,22 @@ $$
 #### $\{A \in \mathbb{R}^{n \times m}\}$ with element wise addition and [[matrix product]] is a [[vector space]]
 
 #### all [[polynomial]] with a degree of at most $d$
+
+### dimensions of a [[vector space]]
+- let $B$ be a [[vector space]] and $B$ be a [[basis]] of $V$
+- the dimensions of $V$ are defines as the [[cardinality]] of its [[basis]]
+- note: the [[vector space]] $\{{0}\}$ has per definition zero dimension 
+$$
+\dim(V) = |B|
+$$
+![[basis#basis]]
+
 # -------------------
+
+
+
+![[basis#every basis of a vector space has the same cardinality]]
+
 ![[closure#closure]]
 
 ![[field#field]]
@@ -307,4 +322,44 @@ $$
 
 Tags: mathematics linear_algebra
 <!--ID: 1713625090173-->
+END
+
+
+START
+Basic
+definition dimensions of a [[vector space]] and concepts where its based on (3)
+Back: 
+### dimensions of a [[vector space]]
+- let $B$ be a [[vector space]] and $B$ be a [[basis]] of $V$
+- the dimensions of $V$ are defines as the [[cardinality]] of its [[basis]]
+- note: the [[vector space]] $\{{0}\}$ has per definition zero dimension 
+$$
+\dim(V) = |B|
+$$
+
+_______________________
+### basis
+- given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
+- $\{v_1, ..., v_n\}$ is a [[basis]] of $V$ if
+1) $\{v_1, ..., v_n\}$ is a spanning [[set]] of $V$
+2) $\{v_1, ..., v_n\}$ is [[linear independent]]
+
+
+### linear independent
+- given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
+- $v_1, ..., v_n \in V$ are [[linear independent]] if the following condition is true
+$$
+\forall \lambda_i \in \mathbb{K} :\sum\limits_{i \in [n]} v_i \lambda_i = 0 \Rightarrow \forall \lambda_i \in \mathbb{K}:  \lambda_i = 0
+$$
+
+### spanning [[set]] of a [[vector space]]
+- given a [[vector space]] $V$ and $n$ [[vector|vectors]] $v_1, ..., v_n \in V$ 
+- the [[set]] $\{v_1, ..., v_n\}$ is a **spanning set** or **generating set** of $V$ if $\mathrm{span}(v_1, ..., v_n) = V$
+$$
+\mathrm{span}(v_1, ..., v_n) = \{w \in V: \lambda_1, ... \lambda_n \in \mathbb{K}: w = \lambda_1 \cdot v_1 + ... + \lambda_n \cdot v_n\} = V
+$$
+
+
+Tags: mathematics linear_algebra
+<!--ID: 1713684157507-->
 END
