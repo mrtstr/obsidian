@@ -31,7 +31,7 @@ v \cdot (\lambda + \mu) = v \cdot \lambda + v \cdot \mu
 $$
 6) $(V, \cdot)$ is [[associative]] with scalars 
 $$
-(\lambda + \mu) + v = \lambda + (\mu + v)
+(\lambda \cdot \mu) + v = \lambda \cdot (\mu \cdot v)
 $$
 7) $(V, \cdot)$ has a [[neutral element]] $1$ 
 $$
@@ -108,7 +108,7 @@ v \cdot (\lambda + \mu) = v \cdot \lambda + v \cdot \mu
 $$
 6) $(V, \cdot)$ is [[associative]] with scalars 
 $$
-(\lambda + \mu) + v = \lambda + (\mu + v)
+(\lambda \cdot \mu) + v = \lambda \cdot (\mu \cdot v)
 $$
 7) $(V, \cdot)$ has a [[neutral element]] $1$ 
 $$
@@ -205,7 +205,7 @@ v \cdot (\lambda + \mu) = v \cdot \lambda + v \cdot \mu
 $$
 6) $(V, \cdot)$ is [[associative]] with scalars 
 $$
-(\lambda + \mu) + v = \lambda + (\mu + v)
+(\lambda \cdot \mu) + v = \lambda \cdot (\mu \cdot v)
 $$
 7) $(V, \cdot)$ has a [[neutral element]] $1$ 
 $$
@@ -285,7 +285,7 @@ v \cdot (\lambda + \mu) = v \cdot \lambda + v \cdot \mu
 $$
 6) $(V, \cdot)$ is [[associative]] with scalars 
 $$
-(\lambda + \mu) + v = \lambda + (\mu + v)
+(\lambda \cdot \mu) + v = \lambda \cdot (\mu \cdot v)
 $$
 7) $(V, \cdot)$ has a [[neutral element]] $1$ 
 $$

@@ -26,7 +26,7 @@ $$
 $$
 \begin{split}
 x \in H &\Rightarrow \exists \lambda, \mu \in \mathbb{R}: x = \lambda \cdot v + \mu \cdot w \\
-\gamma \in \mathbb{R}: \gamma \cdot x &= (\lambda \cdot \gamma) \cdot v + (\mu \cdot \gamma) \cdot w \\
+\gamma \in \mathbb{K}: \gamma \cdot x &= (\lambda \cdot \gamma) \cdot v + (\mu \cdot \gamma) \cdot w \\
 \Rightarrow &= \gamma \cdot x  \in H \quad (\text{since } \mathbb{K} \text{ is closed for multiplication}) 
 \end{split}
 $$
@@ -130,6 +130,7 @@ Back:
 - every line or plane that contains the origin $(0,0,0)$ is a [[subspace]] of $\mathbb{R}^3$
 → $H = \{\lambda \cdot v + \mu \cdot w: \lambda, \mu \in \mathbb{R}\}$ with [[vector|vectors]] $v \in \mathbb{R}^3$ and $w \in \mathbb{R}^3$ is a [[subspace]] of $\mathbb{R}^3$ 
 - note: is $v \perp w$ $H$ and $v, w \neq (0,0,0)$ $H$ is a plane, if $v = w = (0,0,0)$ its the trivial [[subspace]] $\{(0, 0, 0)\}$ and otherwise $H$ is a line
+
 #### proof
 - let $H = \{\lambda \cdot v + \mu \cdot w: \lambda, \mu \in \mathbb{R}\}$ be a general plane or line spanned by the [[vector|vectors]] $v \in \mathbb{R}^3$ and $w \in \mathbb{R}^3$ 
 - $H \subseteq \mathbb{R}^3$ and $(0,0,0) \in H$
@@ -138,15 +139,15 @@ $$
 \begin{split}
 x \in H &\Rightarrow \exists \lambda, \mu \in \mathbb{R}: x = \lambda \cdot v + \mu \cdot w \\
 x' \in H &\Rightarrow   \exists \lambda', \mu' \in \mathbb{R}: x' = \lambda \cdot v' + \mu' \cdot w' \\
-x + x' &= v \cdot (\lambda + \lambda') + w \cdot (\mu + \mu')  \in H \quad (\text{since } \mathbb{Z} \text{ is closed for addtion}) 
+x + x' &= v \cdot (\lambda + \lambda') + w \cdot (\mu + \mu')  \in H \quad (\text{since } \mathbb{K} \text{ is closed for addtion}) 
 \end{split}
 $$
 - $H$ is [[closure|closed]] for [[multiplication]] with [[scalar|scalars]]
 $$
 \begin{split}
 x \in H &\Rightarrow \exists \lambda, \mu \in \mathbb{R}: x = \lambda \cdot v + \mu \cdot w \\
-\gamma \in \mathbb{R}: \gamma \cdot x &= (\lambda \cdot \gamma) \cdot v + (\mu \cdot \gamma) \cdot w \\
-\Rightarrow &= \gamma \cdot x  \in H \quad (\text{since } \mathbb{R} \text{ is closed for multiplication}) 
+\gamma \in \mathbb{K}: \gamma \cdot x &= (\lambda \cdot \gamma) \cdot v + (\mu \cdot \gamma) \cdot w \\
+\Rightarrow &= \gamma \cdot x  \in H \quad (\text{since } \mathbb{K} \text{ is closed for multiplication}) 
 \end{split}
 $$
 

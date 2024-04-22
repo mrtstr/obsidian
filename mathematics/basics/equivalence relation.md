@@ -93,17 +93,21 @@ c \in [a]_{\sim} \land c \in [b]_{\sim}
 $$
 - example: $\sim = \{(a, b): a, b \in \mathbb{Z}: a \equiv b \: mod \: 3\}$ and $A = [8]_0$
 
-#### every [[partition]] $(A_i)_{i \in I}$ induces a [[equivalence relation]] $\sim$
+#### every [[partition]] $(A_i)_{i \in [n]}$ induces a [[equivalence relation]] $\sim$
 $$
-\sim = \{(a, b): \exists i \in I : a \in A_i \land b \in A_i\}
+\sim = \{(a, b): \exists i \in [n] : a \in A_i \land b \in A_i\}
 $$
 [[symetry]] follows from the [[symetry]] of $\land$ 
-[[reflexive]] because $a \in A_i \Rightarrow a \in A_i \land a \in A_i \rightarrow (a,a) \in \sim$
+[[reflexive]]  
+$$
+\bigcup_{i \in [n]} A_i = A \land a \in A \Rightarrow \exists i \in [n]: a \in A_i \rightarrow (a,a) \in \sim
+$$
 [[transitive]] 
 $$
 \begin{split}
-(a \in A_i \land b \in A_i ) \land( b \in A_i \land c \in A_i) 
-\Rightarrow a \in A_i \land c \in A_i 
+a \sim b \land b \sim c 
+&\Rightarrow \exists i \in [n]: a \in A_i \land b \in A_i  \land c \in A_i \\
+&\Rightarrow a \sim b 
 \end{split}
 $$
 
@@ -446,21 +450,23 @@ $$
 [a]_\sim = \{b \in A : a \sim b\}
 $$
 
-#### every [[partition]] $(A_i)_{i \in I}$ induces a [[equivalence relation]] $\sim$
+#### every [[partition]] $(A_i)_{i \in [n]}$ induces a [[equivalence relation]] $\sim$
 $$
-\sim = \{(a, b): \exists i \in I : a \in A_i \land b \in A_i\}
+\sim = \{(a, b): \exists i \in [n] : a \in A_i \land b \in A_i\}
 $$
-
 [[symetry]] follows from the [[symetry]] of $\land$ 
-[[reflexive]] because $a \in A_i \Rightarrow a \in A_i \land a \in A_i \rightarrow (a,a) \in \sim$
+[[reflexive]]  
+$$
+\bigcup_{i \in [n]} A_i = A \land a \in A \Rightarrow \exists i \in [n]: a \in A_i \rightarrow (a,a) \in \sim
+$$
 [[transitive]] 
 $$
 \begin{split}
-(a \in A_i \land b \in A_i ) \land( b \in A_i \land c \in A_i) 
-\Rightarrow a \in A_i \land c \in A_i 
+a \sim b \land b \sim c 
+&\Rightarrow \exists i \in [n]: a \in A_i \land b \in A_i  \land c \in A_i \\
+&\Rightarrow a \sim b 
 \end{split}
 $$
-
 
 __________________
 
