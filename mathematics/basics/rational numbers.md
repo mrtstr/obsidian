@@ -9,7 +9,7 @@ $$
 \frac{a}{b} = \frac{a \cdot k}{b \cdot k}
 $$
 1) we define a [[relation]] $M = \mathbb{Z} \times \mathbb{Z}^*$ 
-2) we define a [[eqivalence relation]] $\sim$ on $M$
+2) we define a [[equivalence relation]] $\sim$ on $M$
 $$
 \sim = \left\{\left((a, b), (a', b')\right): (a, b), (a', b') \in M: a'b = ab' \right\}
 $$
@@ -27,7 +27,7 @@ $$
 # ------------------
 ![[relation#relation]]
 
-![[eqivalence relation#eqivalence relation]]
+![[equivalence relation#eqivalence relation]]
 
 ![[equivalence class#equivalence class]]
 
@@ -49,7 +49,7 @@ $$
 \frac{a}{b} = \frac{a \cdot k}{b \cdot k}
 $$
 1) we define a [[relation]] $M = \mathbb{Z} \times \mathbb{Z}^*$ 
-2) we define a [[eqivalence relation]] $\sim$ on $M$
+2) we define a [[equivalence relation]] $\sim$ on $M$
 $$
 \sim = \left\{\left((a, b), (a', b')\right): (a, b), (a', b') \in M: a'b = ab' \right\}
 $$
@@ -67,7 +67,7 @@ $$
 
 __________________
 #### equivalence class
-- given a [[eqivalence relation]] $\sim$ and a [[set]] $A$
+- given a [[equivalence relation]] $\sim$ and a [[set]] $A$
 - the [[equivalence class]] $[a]_\sim$ is defined as follows
 $$
 [a]_\sim = \{b \in A : a \sim b\}

@@ -38,19 +38,26 @@ $$
 ![[square matrix#square matrix]]
 
 ### properties
-- if the [[determinant]] of a [[square matrix]] $A \in \mathbb{R}^{n \times n}$ is not zero it is [[inverse matrix|invertable]] and a [[regular matrix]]
+#### [[determinant]] of the [[inverse matrix]]
+- the [[determinant]] of a [[matrix]] $A \in \mathbb{R}^{n \times n}$ is equal to the [[determinant]] of its [[inverse matrix]] to the power of $-1$
+$$
+\det(A)^{-1} = \det\left(A^{-1}\right)
+$$
 
-![[regular matrix#regular matrix]]
-
+#### [[determinant]] of the [[transpose]]
 - the [[determinant]] of a [[matrix]] $A \in \mathbb{R}^{n \times n}$ is equal to the [[determinant]] of its [[transpose]] 
 $$
 \det(A) = \det\left(A^{T}\right)
 $$
 
-- the [[determinant]] of a [[matrix]] $A \in \mathbb{R}^{n \times n}$ is equal to the [[determinant]] of its [[inverse matrix]] to the power of $-1$
-$$
-\det(A)^{-1} = \det\left(A^{-1}\right)
-$$
+![[columnspace and rowspace dimensions are equal#the column space has the same number of dimensions as the row space]]
+
+#### [[determinant]] of a [[regular matrix]]
+- if the [[determinant]] of a [[square matrix]] $A \in \mathbb{R}^{n \times n}$ is not zero it is [[inverse matrix|invertable]] and a [[regular matrix]]
+
+![[regular matrix#regular matrix]]
+
+
 
 - the [[determinant]] of a [[matrix]] $A \in \mathbb{R}^{n \times n}$ multipled with a scalar
 $$
@@ -378,3 +385,5 @@ $$
 Tags: mathematics
 <!--ID: 1713099059623-->
 END
+
+

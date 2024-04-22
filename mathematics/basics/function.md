@@ -16,12 +16,18 @@ $$
 f(C) = \{y \in B: \exists c \in C: f(c) = b\}
 \end{split}
 $$
-### image of a [[function]]
-- if $x \in A$ then $y=f(x) \in B$ is the **image** of $x$ and $x$ is the **preimage** of $y$
-$$
-\forall x \in A
-$$
-- the **image of function** is a [[set]] containing the images for all elements of $A$ is a subset of $B$
+
+### subsets of functions
+
+![[injective#injective]]
+
+![[surjective#surjective]]
+
+![[bijective#bijective]]
+
+# ----------------------------
+
+![[image#image of a function]]
 $$
 \begin{split}
 im(f) 
@@ -30,30 +36,8 @@ im(f)
 &\subseteq B
 \end{split}
 $$
-### grapf of a [[function]]
-- the grapf of a [[function]] is defined as a [[set]] of [[n tuple|pairs]] of elements from the domain with treir images
-$$
-\begin{split}
-graph(f) 
-&= f(A) \\
-&= \{(a,b): a \in A, b=f(a) \in im(f) \subseteq B\} \\
-\end{split}
-$$
-- the [[cardinality]] of the graph of a [[function]] is equal to the [[cardinality]] of its domain
-$$
-\begin{split}
-|graph(f)| = |A| 
-\end{split}
-$$
-### properties
+![[grapf#grapf of a function]]
 
-![[injective#injective]]
-
-![[surjective#surjective]]
-
-![[bijective#bijective]]
-
-### derrived functions
 
 ![[inverse function#inverse function]]
 

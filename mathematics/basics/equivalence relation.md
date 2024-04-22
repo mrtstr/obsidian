@@ -1,4 +1,4 @@
-### eqivalence [[relation]]
+### equivalence [[relation]]
 - a relation $\sim$ that is [[symmetric]], [[reflexive]] and [[transitive]] is called equivalence relation
 - $a \sim b$ is another notation for $(a, b) \in \sim$
 
@@ -17,12 +17,12 @@ $$
 \{(a,b): \forall a,b \in A\}
 $$
 
-#### [[floor function]] induced [[eqivalence relation]]
+#### [[floor function]] induced [[equivalence relation]]
 
 $$
 \{(a,b): \forall a,b \in \mathbb{R}: \lfloor a \rfloor = \lfloor b \rfloor\}
 $$
-#### absolute function $|\cdot|: \mathbb{R} \rightarrow \mathbb{R}_{\geq 0}$ induces [[eqivalence relation]]
+#### absolute function $|\cdot|: \mathbb{R} \rightarrow \mathbb{R}_{\geq 0}$ induces [[equivalence relation]]
 
 $$
 \{(a,b): \forall a,b \in \mathbb{R}: |a|  =  |b| \}
@@ -47,7 +47,7 @@ $$
 &\Rightarrow a \sim b \qquad &\text{(symmetry)} \\
 \end{split}
 $$
-(the other direction has to be true too because [[eqivalence relation]] are [[symmetric]])
+(the other direction has to be true too because [[equivalence relation]] are [[symmetric]])
 
 #### $a \sim b \Leftrightarrow [a]_\sim \cap [b]_\sim \neq \emptyset$
 $$
@@ -70,18 +70,18 @@ $$
 \end{split}
 $$
 
-#### every [[eqivalence relation]] $\sim$ induces a [[partition]]
+#### every [[equivalence relation]] $\sim$ induces a [[partition]]
 
 ![[equivalence class#equivalence class]]
 
 ![[partition#partition of a set]]
-- condition one follows from [[eqivalence relation]] being [[reflexive]]
+- condition one follows from [[equivalence relation]] being [[reflexive]]
 $$
 \begin{split}
 c \in A \Rightarrow c \in [c]_{\sim} \qquad \text{(reflexiv)} \\
 \end{split}
 $$
-- condition two follows from [[eqivalence relation]] being [[transitive]] and [[symmetric]]
+- condition two follows from [[equivalence relation]] being [[transitive]] and [[symmetric]]
 $$
 \begin{split}
 c \in [a]_{\sim} \land c \in [b]_{\sim} 
@@ -93,7 +93,7 @@ c \in [a]_{\sim} \land c \in [b]_{\sim}
 $$
 - example: $\sim = \{(a, b): a, b \in \mathbb{Z}: a \equiv b \: mod \: 3\}$ and $A = [8]_0$
 
-#### every [[partition]] $(A_i)_{i \in I}$ induces a [[eqivalence relation]] $\sim$
+#### every [[partition]] $(A_i)_{i \in I}$ induces a [[equivalence relation]] $\sim$
 $$
 \sim = \{(a, b): \exists i \in I : a \in A_i \land b \in A_i\}
 $$
@@ -124,7 +124,7 @@ $$
 
 START
 Basic
-[[eqivalence relation]]
+[[equivalence relation]]
 - definition
 - 4 examples
 Back: 
@@ -146,12 +146,12 @@ $$
 \{(a,b): \forall a,b \in A\}
 $$
 
-#### [[floor function]] induced [[eqivalence relation]]
+#### [[floor function]] induced [[equivalence relation]]
 
 $$
 \{(a,b): \forall a,b \in \mathbb{R}: \lfloor a \rfloor = \lfloor b \rfloor\}
 $$
-### absolute function $|\cdot|: \mathbb{R} \rightarrow \mathbb{R}_{\geq 0}$ induces [[eqivalence relation]]
+### absolute function $|\cdot|: \mathbb{R} \rightarrow \mathbb{R}_{\geq 0}$ induces [[equivalence relation]]
 
 $$
 \{(a,b): \forall a,b \in \mathbb{R}: |a|  =  |b| \}
@@ -197,7 +197,7 @@ END
 
 START
 Basic
-proof the following propertie of [[eqivalence relation]]
+proof the following propertie of [[equivalence relation]]
 $a \sim b \Leftrightarrow [a]_\sim = [b]_\sim$
 Back: 
 $$
@@ -219,11 +219,11 @@ $$
 \end{split}
 $$
 
-(the other direction has to be true too because [[eqivalence relation]] are [[symmetric]])
+(the other direction has to be true too because [[equivalence relation]] are [[symmetric]])
 
 __________________
 #### equivalence class
-- given a [[eqivalence relation]] $\sim$ and a [[set]] $A$
+- given a [[equivalence relation]] $\sim$ and a [[set]] $A$
 - the [[equivalence class]] $[a]_\sim$ is defined as follows
 $$
 [a]_\sim = \{b \in A : a \sim b\}
@@ -272,7 +272,7 @@ END
 
 START
 Basic
-proof the following propertie of [[eqivalence relation]]
+proof the following propertie of [[equivalence relation]]
 $a \sim b \Leftrightarrow [a]_\sim \cap [b]_\sim \neq \emptyset$
 
 Back: 
@@ -299,7 +299,7 @@ $$
 __________________
 
 #### equivalence class
-- given a [[eqivalence relation]] $\sim$ and a [[set]] $A$
+- given a [[equivalence relation]] $\sim$ and a [[set]] $A$
 - the [[equivalence class]] $[a]_\sim$ is defined as follows
 $$
 [a]_\sim = \{b \in A : a \sim b\}
@@ -359,21 +359,21 @@ Let $A$ be a [[set]] and $A_1,..., A_n \subseteq A$ subsets of $A$. $A_1,..., A_
 2) $A_i \cap A_j = \emptyset \: \forall i \neq j \in [n]$  
 
 ##### equivalence class
-- given a [[eqivalence relation]] $\sim$ and a [[set]] $A$
+- given a [[equivalence relation]] $\sim$ and a [[set]] $A$
 - the [[equivalence class]] $[a]_\sim$ is defined as follows
 $$
 [a]_\sim = \{b \in A : a \sim b\}
 $$
 
 
-#### every [[eqivalence relation]] $\sim$ induces a [[partition]]
-- condition one follows from [[eqivalence relation]] being [[reflexive]]
+#### every [[equivalence relation]] $\sim$ induces a [[partition]]
+- condition one follows from [[equivalence relation]] being [[reflexive]]
 $$
 \begin{split}
 c \in A \Rightarrow c \in [c]_{\sim} \qquad \text{(reflexiv)} \\
 \end{split}
 $$
-- condition two follows from [[eqivalence relation]] being [[transitive]] and [[symmetric]]
+- condition two follows from [[equivalence relation]] being [[transitive]] and [[symmetric]]
 $$
 \begin{split}
 c \in [a]_{\sim} \land c \in [b]_{\sim} 
@@ -431,7 +431,7 @@ END
 
 START
 Basic
-every [[partition]] $(A_i)_{i \in I}$ induces a [[eqivalence relation]] $\sim$ (proof)
+every [[partition]] $(A_i)_{i \in I}$ induces a [[equivalence relation]] $\sim$ (proof)
 
 Back: 
 #### partition of a [[set]]
@@ -440,13 +440,13 @@ Let $A$ be a [[set]] and $A_1,..., A_n \subseteq A$ subsets of $A$. $A_1,..., A_
 2) $A_i \cap A_j = \emptyset \: \forall i \neq j \in [n]$  
 
 ##### equivalence class
-- given a [[eqivalence relation]] $\sim$ and a [[set]] $A$
+- given a [[equivalence relation]] $\sim$ and a [[set]] $A$
 - the [[equivalence class]] $[a]_\sim$ is defined as follows
 $$
 [a]_\sim = \{b \in A : a \sim b\}
 $$
 
-#### every [[partition]] $(A_i)_{i \in I}$ induces a [[eqivalence relation]] $\sim$
+#### every [[partition]] $(A_i)_{i \in I}$ induces a [[equivalence relation]] $\sim$
 $$
 \sim = \{(a, b): \exists i \in I : a \in A_i \land b \in A_i\}
 $$
@@ -519,21 +519,21 @@ Let $A$ be a [[set]] and $A_1,..., A_n \subseteq A$ subsets of $A$. $A_1,..., A_
 2) $A_i \cap A_j = \emptyset \: \forall i \neq j \in [n]$  
 
 ##### equivalence class
-- given a [[eqivalence relation]] $\sim$ and a [[set]] $A$
+- given a [[equivalence relation]] $\sim$ and a [[set]] $A$
 - the [[equivalence class]] $[a]_\sim$ is defined as follows
 $$
 [a]_\sim = \{b \in A : a \sim b\}
 $$
 
 
-#### every [[eqivalence relation]] $\sim$ induces a [[partition]]
-- condition one follows from [[eqivalence relation]] being [[reflexive]]
+#### every [[equivalence relation]] $\sim$ induces a [[partition]]
+- condition one follows from [[equivalence relation]] being [[reflexive]]
 $$
 \begin{split}
 c \in A \Rightarrow c \in [c]_{\sim} \qquad \text{(reflexiv)} \\
 \end{split}
 $$
-- condition two follows from [[eqivalence relation]] being [[transitive]] and [[symmetric]]
+- condition two follows from [[equivalence relation]] being [[transitive]] and [[symmetric]]
 $$
 \begin{split}
 c \in [a]_{\sim} \land c \in [b]_{\sim} 
@@ -546,7 +546,7 @@ $$
 - example: $\sim = \{(a, b): a, b \in \mathbb{Z}: a \equiv b \: mod \: 3\}$ and $A = [8]_0$
 
 
-#### every [[partition]] $(A_i)_{i \in I}$ induces a [[eqivalence relation]] $\sim$
+#### every [[partition]] $(A_i)_{i \in I}$ induces a [[equivalence relation]] $\sim$
 $$
 \sim = \{(a, b): \exists i \in I : a \in A_i \land b \in A_i\}
 $$

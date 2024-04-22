@@ -1,0 +1,1 @@
+[[kernel]] of a [[function]]

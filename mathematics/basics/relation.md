@@ -26,7 +26,7 @@
 
 ![[transitive#transitive]]
 
-![[eqivalence relation#eqivalence relation]]
+![[equivalence relation#eqivalence relation]]
 
 # anki
 START

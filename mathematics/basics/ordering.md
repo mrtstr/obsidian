@@ -12,6 +12,19 @@ $$
 \forall a,b \in A: (a,b) \in R \lor (b, a) \in R
 $$
 
+### the [[maximum]] of a ordered [[set]] is uniqe
+- let $(A, \leq)$ be a ordered [[set]] and let $m \in A$ be a [[maximum]] of $A$ 
+- $m$ is unique
+#### proof
+let $(A, \leq)$ be a ordered [[set]] and let $m_1, m_2 \in A$ both be [[maximum|maxima]] of $A$ 
+$$
+\begin{split}
+m_1 \text{ is a maximum } &\Rightarrow m_2 \leq m_1 \\
+m_2 \text{ is a maximum } &\Rightarrow m_1 \leq m_2 \\
+m_2 \leq m_1 \land m_1 \leq m_2 &\Rightarrow m_1 = m_2 \quad \text(antisymmetry)
+\end{split}
+$$
+
 ### properties of ordered sets
 ![[maximum#maximal element or maximum]]
 
@@ -246,4 +259,64 @@ $$
 
 Tags: mathematics
 <!--ID: 1713084947422-->
+END
+
+
+START
+Basic
+proof that the [[maximum]] of a ordered [[set]] is uniqe
+Back: 
+- let $(A, \leq)$ be a ordered [[set]] and let $m \in A$ be a [[maximum]] of $A$ 
+- $m$ is unique
+#### proof
+let $(A, \leq)$ be a ordered [[set]] and let $m_1, m_2 \in A$ both be [[maximum|maxima]] of $A$ 
+$$
+\begin{split}
+m_1 \text{ is a maximum } &\Rightarrow m_2 \leq m_1 \\
+m_2 \text{ is a maximum } &\Rightarrow m_1 \leq m_2 \\
+m_2 \leq m_1 \land m_1 \leq m_2 &\Rightarrow m_1 = m_2 \quad \text(antisymmetry)
+\end{split}
+$$
+
+____________________________
+#### maximal element or [[maximum]]
+- given a [[set]] $A$ and a [[ordering|partial ordering]] $\leq$ 
+- an element $b \in A$ is a **maximal element** if it satisfies the following condtion
+$$
+\forall a \in A: a \leq b
+$$
+
+#### minimal element or [[minimum]]
+- given a [[set]] $A$ and a [[ordering|partial ordering]] $\leq$ 
+- an element $b \in A$ is a **minimal element** if it satisfies the following condtion
+$$
+\forall a \in A: b \leq a
+$$
+
+#### partial ordering
+- a [[relation]] $R$ on a [[set]] $A$ that is [[reflexive]], [[antisymmetric]] and [[transitive]]
+- a [[set]] with a partial [[ordering]] is called partially ordered or **poset**
+
+#### reflexive
+- a [[relation]] $R$ on a [[set]] $B$ is [[reflexive]] if
+$$
+\forall a \in A: (a,a) \in R
+$$
+
+
+#### antisymmetric
+- a [[relation]] $R$ on a [[set]] $B$ is [[antisymmetric]] if
+$$
+\forall a, b \in A: (a,b) \in R \land (b,a) \in R \rightarrow a =b
+$$
+
+
+#### transitive
+- a [[relation]] $R$ on a [[set]] $B$ is [[transitive]] if
+$$
+\forall a, b, c \in A: (a,b) \in R \land (b,c) \in R \rightarrow (a,c) \in R
+$$
+
+Tags: mathematics
+<!--ID: 1713770310244-->
 END

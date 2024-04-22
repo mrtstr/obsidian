@@ -1,12 +1,12 @@
 ### equivalence class
-- given a [[eqivalence relation]] $\sim$ and a [[set]] $A$
+- given a [[equivalence relation]] $\sim$ and a [[set]] $A$
 - the [[equivalence class]] $[a]_\sim$ is defined as follows
 $$
 [a]_\sim = \{b \in A : a \sim b\}
 $$
 - every element in $[a]_\sim$ is called a **representative** of the [[equivalence class]] $[a]_\sim$
 # --------------------
-![[eqivalence relation#eqivalence relation]]
+![[equivalence relation#eqivalence relation]]
 
 ![[relation#relation]]
 
@@ -20,7 +20,7 @@ Basic
 - what is a representative
 Back: 
 ### equivalence class
-- given a [[eqivalence relation]] $\sim$ and a [[set]] $A$
+- given a [[equivalence relation]] $\sim$ and a [[set]] $A$
 - the [[equivalence class]] $[a]_\sim$ is defined as follows
 $$
 [a]_\sim = \{b \in A : a \sim b\}
