@@ -50,16 +50,17 @@ $$
 (the other direction has to be true too because [[equivalence relation]] are [[symmetric]])
 
 #### $a \sim b \Leftrightarrow [a]_\sim \cap [b]_\sim \neq \emptyset$
+1) $a \sim b \Rightarrow [a]_\sim \cap [b]_\sim \neq \emptyset$
 $$
 \begin{split}
-a \in &[a]_\sim \land b \in [b]_\sim \qquad \text{(reflexiv)} \\
+b &\in [b]_\sim \qquad \text{(reflexiv)} \\
 a \sim b 
-&\Rightarrow  b \in [a]_\sim \land a \in  [b]_\sim \\
-&\Rightarrow a \in [a]_\sim \cap [b]_\sim \land b \in [a]_\sim \cap [b]_\sim  \\
+&\Rightarrow  a \in  [b]_\sim \\
+\Rightarrow  a \in  [b]_\sim \land \Rightarrow  a \in  [a]_\sim  &\Rightarrow a \in [a]_\sim \cap [b]_\sim  \\
 &\Rightarrow [a]_\sim \cap [b]_\sim \neq \emptyset  \\
 \end{split}
 $$
-
+1) $[a]_\sim \cap [b]_\sim \neq \emptyset \Rightarrow a \sim b$
 $$
 \begin{split}
 [a]_\sim \cap [b]_\sim \neq \emptyset
@@ -281,16 +282,17 @@ $a \sim b \Leftrightarrow [a]_\sim \cap [b]_\sim \neq \emptyset$
 
 Back: 
 
+1) $a \sim b \Rightarrow [a]_\sim \cap [b]_\sim \neq \emptyset$
 $$
 \begin{split}
-a \in &[a]_\sim \land b \in [b]_\sim \qquad \text{(reflexiv)} \\
+b &\in [b]_\sim \qquad \text{(reflexiv)} \\
 a \sim b 
-&\Rightarrow  b \in [a]_\sim \land a \in  [b]_\sim \\
-&\Rightarrow a \in [a]_\sim \cap [b]_\sim \land b \in [a]_\sim \cap [b]_\sim  \\
+&\Rightarrow  a \in  [b]_\sim \\
+\Rightarrow  a \in  [b]_\sim \land \Rightarrow  a \in  [a]_\sim  &\Rightarrow a \in [a]_\sim \cap [b]_\sim  \\
 &\Rightarrow [a]_\sim \cap [b]_\sim \neq \emptyset  \\
 \end{split}
 $$
-
+1) $[a]_\sim \cap [b]_\sim \neq \emptyset \Rightarrow a \sim b$
 $$
 \begin{split}
 [a]_\sim \cap [b]_\sim \neq \emptyset
@@ -300,6 +302,7 @@ $$
 &\Rightarrow a \sim b\\
 \end{split}
 $$
+
 __________________
 
 #### equivalence class
