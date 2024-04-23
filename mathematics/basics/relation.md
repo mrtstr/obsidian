@@ -13,7 +13,7 @@
 	- $\{(a, b_1), (a, b_2)\}$ is a [[relation]] but a garpf of a [[function]]
 	- $A = \{a_1, a_2\}$ and $B = \{b_1\}$ $R=\{(a_1, b_1)\}$ is a [[relation]] but not a [[function]]
 
-![[function#definition function]]
+![[function#function]]
 
 ## properties
 ![[reflexive#reflexive]]
@@ -328,6 +328,7 @@ a [[relation]] with the following properties is called?
 $$
 \forall a \in A: (a,a) \in R
 $$
+
 $$
 \forall y \in B: \exists x: (x,y) \in R
 $$
@@ -337,7 +338,7 @@ $$
 $$
 
 $$
-\forall x_1, x_2 \in A: (x_1, x_2) \in R \Rightarrow x_1=x_2
+\forall x_1, x_2, x_3 \in A: (x_1, x_2) \in R \land (x_1, x_3) \in R \Rightarrow x_2=x_3
 $$
 
 $$
@@ -358,7 +359,7 @@ $$
 $$
 #### [[injective]]
 $$
-\forall x_1, x_2 \in A: (x_1, x_2) \in R \Rightarrow x_1=x_2
+\forall x_1, x_2, x_3 \in A: (x_1, x_2) \in R \land (x_1, x_3) \in R \Rightarrow x_2=x_3
 $$
 #### [[symmetric]]
 $$
