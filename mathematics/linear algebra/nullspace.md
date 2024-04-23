@@ -30,8 +30,8 @@ $$
 $$
 \begin{split}
 v \in N(A) \land w \in N(A) &\Rightarrow Av = 0 \land Aw = 0 \\
-&\Rightarrow A v w^\top =  
- \left(\begin{matrix} 0 \\ ... \\ 0\end{matrix}\right)w^\top \in N(A)
+&\Rightarrow A (v + w) =  
+ Av + Aw = 0+0 = 0 \in N(A)
 \end{split}
 $$
 #### dimension of the [[nullspace]]
@@ -62,11 +62,10 @@ $$
 $$
 \begin{split}
 v \in N(A) \land w \in N(A) &\Rightarrow Av = 0 \land Aw = 0 \\
-&\Rightarrow A v w^\top =  
- \left(\begin{matrix} 0 \\ ... \\ 0\end{matrix}\right)w^\top \in N(A)
+&\Rightarrow A (v + w) =  
+ Av + Aw = 0+0 = 0 \in N(A)
 \end{split}
 $$
-
 ______________________
 
 
