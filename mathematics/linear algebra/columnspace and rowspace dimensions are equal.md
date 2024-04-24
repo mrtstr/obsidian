@@ -16,7 +16,7 @@ $$
 \end{split}
 $$
 - that means that every row vector $A_{(i,*)}$ can be expressed as a [[linear combinations]] of $r$ [[vector|vectors]] $l \in [r]:C_{(l, *)}$
-- it follows $r = \dim\left(\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, m)}\right)\right) \leq \dim\left(\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right)\right)$
+- it follows $r = \dim\left(\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, m)}\right)\right) \geq \dim\left(\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right)\right)$
 - the proof for the other directions is equivalent so that $r = \dim\left(\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, m)}\right)\right) = \dim\left(\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right)\right) = \mathrm{rank}(A)$
 
 # ------------------------
@@ -49,7 +49,7 @@ $$
 \end{split}
 $$
 - that means that every row vector $A_{(i,*)}$ can be expressed as a [[linear combinations]] of $r$ [[vector|vectors]] $l \in [r]:C_{(l, *)}$
-- it follows $r = \dim\left(\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, m)}\right)\right) \leq \dim\left(\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right)\right)$
+- it follows $r = \dim\left(\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, m)}\right)\right) \geq \dim\left(\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right)\right)$
 - the proof for the other directions is equivalent so that $r = \dim\left(\mathrm{span}\left(A_{(*, 1)}, ..., A_{(*, m)}\right)\right) = \dim\left(\mathrm{span}\left(A_{(1, *)}, ..., A_{(n, *)}\right)\right) = \mathrm{rank}(A)$
 
 _________________
