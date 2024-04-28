@@ -1,12 +1,22 @@
 ### determinant
 - let $A \in \mathbb{R}^{n \times n}$ be a [[square matrix]] 
-- its [[determinant]] $\det(A)$ is defined as follows
+- its [[determinant]] $\det(A)$ is defined as follows (here developed after column $i$)
 $$
 \det(A) = 
 \left\{
 \begin{matrix}
 a_{11} \qquad &n=1 \\
-\sum_{j \in [n]} a_{1j}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\sum_{j \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\end{matrix}
+\right.
+$$
+- the [[determinant]] can also be developed after a row $j$
+$$
+\det(A) = 
+\left\{
+\begin{matrix}
+a_{11} \qquad &n=1 \\
+\sum_{i \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
 \end{matrix}
 \right.
 $$
@@ -43,14 +53,20 @@ $$
 $$
 \det(A)^{-1} = \det\left(A^{-1}\right)
 $$
-
+Proof
+$$
+\begin{split}
+\det(AA^{-1})=1=\det(A)\det(A^{-1}) \\
+\Rightarrow \det(A^{-1}) = \frac{1}{\det(A)}
+\end{split}
+$$
 #### [[determinant]] of the [[transpose]]
 - the [[determinant]] of a [[matrix]] $A \in \mathbb{R}^{n \times n}$ is equal to the [[determinant]] of its [[transpose]] 
 $$
 \det(A) = \det\left(A^{T}\right)
 $$
 
-![[columnspace and rowspace dimensions are equal#the column space has the same number of dimensions as the row space]]
+
 
 #### [[determinant]] of a [[regular matrix]]
 - if the [[determinant]] of a [[square matrix]] $A \in \mathbb{R}^{n \times n}$ is not zero it is [[inverse matrix|invertable]] and a [[regular matrix]]
@@ -109,16 +125,27 @@ Basic
 Back: 
 ### determinant
 - let $A \in \mathbb{R}^{n \times n}$ be a [[square matrix]] 
-- its [[determinant]] $\det(A)$ is defined as follows
+- its [[determinant]] $\det(A)$ is defined as follows (here developed after column $i$)
 $$
 \det(A) = 
 \left\{
 \begin{matrix}
 a_{11} \qquad &n=1 \\
-\sum_{j \in [n]} a_{1j}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\sum_{j \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
 \end{matrix}
 \right.
 $$
+- the [[determinant]] can also be developed after a row $j$
+$$
+\det(A) = 
+\left\{
+\begin{matrix}
+a_{11} \qquad &n=1 \\
+\sum_{i \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\end{matrix}
+\right.
+$$
+
 
 ### minor
 - [[determinant]] of a smaller [[square matrix]] cut out from another [[square matrix]] by removing one or more columns and rows
@@ -178,13 +205,23 @@ $$
 ____________________
 ### determinant
 - let $A \in \mathbb{R}^{n \times n}$ be a [[square matrix]] 
-- its [[determinant]] $\det(A)$ is defined as follows
+- its [[determinant]] $\det(A)$ is defined as follows (here developed after column $i$)
 $$
 \det(A) = 
 \left\{
 \begin{matrix}
 a_{11} \qquad &n=1 \\
-\sum_{j \in [n]} a_{1j}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\sum_{j \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\end{matrix}
+\right.
+$$
+- the [[determinant]] can also be developed after a row $j$
+$$
+\det(A) = 
+\left\{
+\begin{matrix}
+a_{11} \qquad &n=1 \\
+\sum_{i \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
 \end{matrix}
 \right.
 $$
@@ -264,15 +301,25 @@ a [[square matrix]] $A \in \mathbb{R}^{n \times n}$ is a [[regular matrix]] when
 7) $\left\{ A_{(j)}\right\}_{j \in \mathcal{J}}$ are [[linear independent]] 
 
 
-#### determinant
+### determinant
 - let $A \in \mathbb{R}^{n \times n}$ be a [[square matrix]] 
-- its [[determinant]] $\det(A)$ is defined as follows
+- its [[determinant]] $\det(A)$ is defined as follows (here developed after column $i$)
 $$
 \det(A) = 
 \left\{
 \begin{matrix}
 a_{11} \qquad &n=1 \\
-\sum_{j \in [n]} a_{1j}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\sum_{j \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\end{matrix}
+\right.
+$$
+- the [[determinant]] can also be developed after a row $j$
+$$
+\det(A) = 
+\left\{
+\begin{matrix}
+a_{11} \qquad &n=1 \\
+\sum_{i \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
 \end{matrix}
 \right.
 $$
@@ -348,15 +395,25 @@ a [[square matrix]] $A \in \mathbb{R}^{n \times n}$ is a [[regular matrix]] when
 7) $\left\{ A_{(j)}\right\}_{j \in \mathcal{J}}$ are [[linear independent]] 
 
 
-#### determinant
+### determinant
 - let $A \in \mathbb{R}^{n \times n}$ be a [[square matrix]] 
-- its [[determinant]] $\det(A)$ is defined as follows
+- its [[determinant]] $\det(A)$ is defined as follows (here developed after column $i$)
 $$
 \det(A) = 
 \left\{
 \begin{matrix}
 a_{11} \qquad &n=1 \\
-\sum_{j \in [n]} a_{1j}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\sum_{j \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\end{matrix}
+\right.
+$$
+- the [[determinant]] can also be developed after a row $j$
+$$
+\det(A) = 
+\left\{
+\begin{matrix}
+a_{11} \qquad &n=1 \\
+\sum_{i \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
 \end{matrix}
 \right.
 $$
@@ -387,3 +444,206 @@ Tags: mathematics
 END
 
 
+START
+Basic
+proof for
+$$
+\det(A)^{-1} = \det\left(A^{-1}\right)
+$$
+Back: 
+#### [[determinant]] of the [[inverse matrix]]
+- the [[determinant]] of a [[matrix]] $A \in \mathbb{R}^{n \times n}$ is equal to the [[determinant]] of its [[inverse matrix]] to the power of $-1$
+$$
+\det(A)^{-1} = \det\left(A^{-1}\right)
+$$
+Proof
+$$
+\begin{split}
+\det(AA^{-1})=1=\det(A)\det(A^{-1}) \\
+\Rightarrow \det(A^{-1}) = \frac{1}{\det(A)}
+\end{split}
+$$
+
+
+
+____________________
+#### [[determinant]] [[multiplication]]
+- the [[determinant]] of a [[matrix product]] of a [[matrix]] $A \in \mathbb{R}^{n \times n}$ and [[matrix]] $B \in \mathbb{R}^{n \times n}$ 
+$$
+\det(AB) = \det(A)\det(B)
+$$
+
+### determinant
+- let $A \in \mathbb{R}^{n \times n}$ be a [[square matrix]] 
+- its [[determinant]] $\det(A)$ is defined as follows (here developed after column $i$)
+$$
+\det(A) = 
+\left\{
+\begin{matrix}
+a_{11} \qquad &n=1 \\
+\sum_{j \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\end{matrix}
+\right.
+$$
+- the [[determinant]] can also be developed after a row $j$
+$$
+\det(A) = 
+\left\{
+\begin{matrix}
+a_{11} \qquad &n=1 \\
+\sum_{i \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\end{matrix}
+\right.
+$$
+
+#### minor
+- [[determinant]] of a smaller [[square matrix]] cut out from another [[square matrix]] by removing one or more columns and rows
+- $M_{ij}$ defined as the [[square matrix|square submatrix]] with column $i$ and row $j$ removed from another [[square matrix]] $A$ 
+$$
+\det(M_{ij}) = \det\left((a_{lk})_{l \in [n] \setminus \{i\}, k \in [n] \setminus \{j\}}\right)
+$$
+
+
+
+Tags: mathematics
+<!--ID: 1714317971524-->
+END
+
+START
+Basic
+calculate the following [[determinant]]
+$$
+\det
+\left(
+\begin{matrix}
+5  \ &-2 \\
+-8 \ &4  \\
+\end{matrix}
+\right)
+$$
+
+$$
+\det
+\left(
+\begin{matrix}
+4  \ &3 \ &0 \\
+3\ &1 \ &2  \\
+5 \ &-1 \ &-4  \\
+\end{matrix}
+\right)
+$$
+
+$$
+\det
+\left(
+\begin{matrix}
+4  \ &3 \ &0 \ &0 \\
+3\ &1 \ &2  \ &0\\
+5 \ &-1 \ &-4 \ &0 \\
+3 \ &-1 \ &-4 \ &0 \\
+\end{matrix}
+\right)
+$$
+
+
+Back: 
+$$
+\begin{split}
+&\det
+\left(
+\begin{matrix}
+5  \ &-2 \\
+-8 \ &4  \\
+\end{matrix}
+\right) \\
+&= 5 \cdot4 - (-2)(-8) = 2
+\end{split} 
+$$
+
+$$
+\begin{split}
+&\det
+\left(
+\begin{matrix}
+4  \ &3 \ &0 \\
+3\ &1 \ &2  \\
+5 \ &-1 \ &-4  \\
+\end{matrix}
+\right) \\
+&= 4 \cdot (-1) + 3 \cdot 2 \cdot 5 - (-1) \cdot 2 \cdot 4 - \cdot (-4) \cdot 3 = 70
+\end{split}
+$$
+
+$$
+\det
+\left(
+\begin{matrix}
+4  \ &3 \ &0 \ &0 \\
+3\ &1 \ &2  \ &0\\
+5 \ &-1 \ &-4 \ &0 \\
+3 \ &-1 \ &-4 \ &0 \\
+\end{matrix}
+\right)
+= 0
+$$
+(since the column vectors are not [[linear independent]])
+____________________
+
+### $n>3$: develop after a column
+
+![[det 3.png]]
+
+### sarrus rule
+- for calculation a [[determinant]] of [[matrix]] from $\mathbb{R}^{2 \times 2}$ and $\mathbb{R}^{3 \times 3}$
+#### [[determinant]] of $A \in \mathbb{R}^{2 \times 2}$
+$$
+\begin{split}
+A 
+&= \det
+\left(\begin{matrix}
+a_{11} \ a_{21} \\ 
+a_{12} \ a_{22}
+\end{matrix}\right)
+\\
+&= a_{11}a_{22}-a_{12}a_{21}
+\end{split}
+$$
+#### [[determinant]] of $A \in \mathbb{R}^{3 \times 3}$
+
+![[Sarrus_rule1.svg 2.png]]
+
+
+### determinant
+- let $A \in \mathbb{R}^{n \times n}$ be a [[square matrix]] 
+- its [[determinant]] $\det(A)$ is defined as follows (here developed after column $i$)
+$$
+\det(A) = 
+\left\{
+\begin{matrix}
+a_{11} \qquad &n=1 \\
+\sum_{j \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\end{matrix}
+\right.
+$$
+- the [[determinant]] can also be developed after a row $j$
+$$
+\det(A) = 
+\left\{
+\begin{matrix}
+a_{11} \qquad &n=1 \\
+\sum_{i \in [n]} a_{ij}(-1)^{i+j}\det(M_{ij}) \qquad &n>1   \\
+\end{matrix}
+\right.
+$$
+
+### minor
+- [[determinant]] of a smaller [[square matrix]] cut out from another [[square matrix]] by removing one or more columns and rows
+- $M_{ij}$ defined as the [[square matrix|square submatrix]] with column $i$ and row $j$ removed from another [[square matrix]] $A$ 
+$$
+\det(M_{ij}) = \det\left((a_{lk})_{l \in [n] \setminus \{i\}, k \in [n] \setminus \{j\}}\right)
+$$
+
+
+Tags: mathematics
+<!--ID: 1714317971527-->
+END

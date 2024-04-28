@@ -174,7 +174,9 @@
     "ipv6subnetting 2.png",
     "det 1.png",
     "det 2.png",
-    "Sarrus_rule1.svg 1.png"
+    "Sarrus_rule1.svg 1.png",
+    "det 3.png",
+    "Sarrus_rule1.svg 2.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -312,7 +314,7 @@
     "mathematics/basics/stationary point.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/set.md": "f44bc7c6033de6e58f0756f67cb541e6",
     "mathematics/basics/power set.md": "cb0c722c7db5f2acf8ea74a32a4b6802",
-    "mathematics/basics/norm.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/norm.md": "177c88b9967eaf1f1ec6d275aa7bbaea",
     "mathematics/basics/monotonic function.md": "aa887bcb8cd6542c26944058463a8336",
     "mathematics/basics/metric.md": "c2fa81ecbae33d3052cde896c43652eb",
     "mathematics/basics/maxima and minima.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -939,13 +941,13 @@
     "mathematics/linear algebra/linear independent.md": "9b5ff517b8ef611eb0717d802b1d3378",
     "mathematics/linear algebra/linear function.md": "c379246438a9083feb9842d22589b9da",
     "mathematics/linear algebra/inverse matrix.md": "e3f1ad2f139b1a46b635e1e901c79820",
-    "mathematics/linear algebra/identity matrix.md": "1016b7d650d967550f557cd00306081b",
+    "mathematics/linear algebra/identity matrix.md": "a8bb5da4c898c4dd92a5708603ab7781",
     "mathematics/linear algebra/hilbert space.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/hessian matrix.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/eigenvectors.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/dot product.md": "c219119e9879fc5039880663f67e30c3",
     "mathematics/linear algebra/diagonal matrix.md": "a82687889b5ddc5ea6be4073c33a7345",
-    "mathematics/linear algebra/determinant.md": "044735b99a0f8c714d5f0d8472a20ea8",
+    "mathematics/linear algebra/determinant.md": "08b7c55be6e623bb73a13f69e2c50c34",
     "mathematics/linear algebra/definite quadratic form.md": "6515b3ae02abcc7480abedc6bcde5e5c",
     "mathematics/linear algebra/column space.md": "047ed9494e7a18d70853942156b097c0",
     "mathematics/linear algebra/cholesky decomposition.md": "ad3011eba82b348251f1183287ca3784",
@@ -1439,11 +1441,12 @@
     "mathematics/basics/field.md": "97bfd7cf5cf0e76607e475e8c3761e61",
     "mathematics/linear algebra/linear combinations.md": "1662cfec771e14ad8f158d3eebcfad01",
     "mathematics/basics/dimensions.md": "3e9869a3ca69958f2e1ad0bd02e4c634",
-    "mathematics/linear algebra/columnspace and rowspace dimensions are equal.md": "ef64595be12a3ef9a574eb0bafea4cd8",
+    "mathematics/linear algebra/columnspace and rowspace dimensions are equal.md": "2745af7f83838c9c8ae9ad8950f6b400",
     "mathematics/linear algebra/image.md": "a35f18ec861b8bccc5b855b0b1398d15",
     "mathematics/linear algebra/kernel.md": "492c4788cc0190ef0404ef506f374549",
     "mathematics/basics/grapf.md": "c04f5c5e3142682927503f75ebe29542",
-    "mathematics/basics/equivalence relation.md": "70072455b04b2cc25c8ed70bdfaa9949"
+    "mathematics/basics/equivalence relation.md": "70072455b04b2cc25c8ed70bdfaa9949",
+    "mathematics/linear algebra/elementary matrix.md": "4486f139d71b0bb280a26c62967a904a"
   },
   "fields_dict": {
     "Basic": [
