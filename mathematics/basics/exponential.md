@@ -15,7 +15,7 @@ f(x) = exp(x)
 ```
 
 ## for exponent $n \in \mathbb{Z}$ [[integer|integers]] 
-given a [[real number]] $a \in \mathbb{R}$ called the basis and a [[integer]] $n \in \mathbb{Z}$ called the exponent
+given a [[real numbers]] $a \in \mathbb{R}$ called the basis and a [[integer]] $n \in \mathbb{Z}$ called the exponent
 $$
 a^n = \underbrace{a \cdot ... \cdot a}_\text{n times}
 $$
@@ -103,7 +103,7 @@ Basic
 Back: 
 # Definition
 ## for exponent $n \in \mathbb{Z}$ [[integer|integers]] 
-given a [[real number]] $a \in \mathbb{R}$ called the basis and a [[integer]] $n \in \mathbb{Z}$ called the exponent
+given a [[real numbers]] $a \in \mathbb{R}$ called the basis and a [[integer]] $n \in \mathbb{Z}$ called the exponent
 $$
 a^n = \underbrace{a \cdot ... \cdot a}_\text{n times}
 $$

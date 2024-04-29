@@ -208,7 +208,7 @@ give 2 examples each for [[function]] that are
 - [[injective]] but not [[surjective]]
 - [[surjective]] but not [[injective]]
 
-one based on the [[real number]] and one based on a self defined [[set]]
+one based on the [[real numbers]] and one based on a self defined [[set]]
 Back: 
 #### [[injective]] but not [[surjective]]
 $$

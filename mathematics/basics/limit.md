@@ -1,3 +1,4 @@
+### limit
 Behavour of a [[function]] near a paticular input
 
 $$

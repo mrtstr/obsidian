@@ -16,7 +16,7 @@ $$
 \forall v, w \in V: ||v + w|| \leq ||v|| + ||w||
 $$
 
-### examples
+### examples for $V \subseteq \mathbb{R}^n$
 ![[615px-Vector-p-Norms_qtl1.svg.png]]
 
 #### $l$ [[norm]]
@@ -38,7 +38,16 @@ $$
 ||x||_\infty = \left(\sum_{i \in [n]} |x_i|^\infty \right)^{\frac{1}{\infty}} = \max_{i \in [n]} |x_i|
 $$
 
+### examples [[norm]] for [[function space]] $f: \Omega \subset \mathbb{R}^d \rightarrow \mathbb{R}$ 
+#### $L$ [[norm]]
+
+$$
+||f||_L = \left(\int_{\Omega} |f(x)|^L dx \right)^{\frac{1}{L}}
+$$
 # ---------------------
+![[function space#function space]]
+
+
 
 ![[positive definite#positive definite]]
 
@@ -133,7 +142,7 @@ END
 
 START
 Basic
-examples for [[norm|norms]]
+examples for [[norm|norms]] of $V \subseteq \mathbb{R}^n$
 Back: 
 ### examples
 #### $l$ [[norm]]

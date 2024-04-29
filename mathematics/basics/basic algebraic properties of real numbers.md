@@ -1,4 +1,4 @@
-# basic properties of [[real number|real numbers]]
+# basic properties of [[real numbers|real numbers]]
 all other properties can be derived from the following
 ## [[associative]]
 $$

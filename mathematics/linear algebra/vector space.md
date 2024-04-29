@@ -155,15 +155,15 @@ definitions
 Back: 
 
 #### field
-- a [[field]] $\mathbb{K}$ is a [[set]] on which operations like [[addition]], [[multiplication]], [[substraction]] and [[division]] are defined on and that are behaving similar to the [[rational numbers]] $\mathbb{Q}$ and [[real number]] $\mathbb{R}$
+- a [[field]] $\mathbb{K}$ is a [[set]] on which operations like [[addition]], [[multiplication]], [[substraction]] and [[division]] are defined on and that are behaving similar to the [[rational numbers]] $\mathbb{Q}$ and [[real numbers]] $\mathbb{R}$
 
 ### scalar
 - given a [[vector space]] $(V, +, \cdot)$ on a [[field]] $\mathbb{K}$ (e.g $\mathbb{R}$) every $v \in \mathbb{K}$ is called [[scalar]]
-- example $V = \mathbb{R}^n$ defined on the [[field]] = [[real number]] $\mathbb{R}$ → ever [[real number]] is a [[scalar]]
+- example $V = \mathbb{R}^n$ defined on the [[field]] = [[real numbers]] $\mathbb{R}$ → ever [[real numbers]] is a [[scalar]]
 
 ### vector
 - given a [[vector space]] $(V, +, \cdot)$ on a [[field]] $\mathbb{K}$ (e.g $\mathbb{R}$) every $v \in V$ is called [[vector]]
-- example $V = \mathbb{R}^n$ defined on the [[field]] = [[real number]] $\mathbb{R}$
+- example $V = \mathbb{R}^n$ defined on the [[field]] = [[real numbers]] $\mathbb{R}$
 $$
 \begin{split}
 v  \in \mathbb{R}^{n}
