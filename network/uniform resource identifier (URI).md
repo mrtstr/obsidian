@@ -1,9 +1,9 @@
 ### uniform resource identifier (URI)
-can:
-	- provide a way to access a ressource ([[uniform resource locator (URL)]])
-	- be a namespace
-	- be a **URN**: identifie a ressource but does not provide a way to access it
-- consists of 7 parts: 
+
+- provide a way to access a ressource ([[uniform resource locator (URL)]])
+- be a namespace
+- be a **URN**: identifie a ressource but does not provide a way to access it
+
 1) [[protocol]]: e.g. [[hypertext transfer protocol (HTTP)]]
 2) [[port]]: e.g. 80
 3) [[network domain]]

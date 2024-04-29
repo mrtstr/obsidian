@@ -77,16 +77,93 @@ END
 
 START
 Basic
-how are [[uniform resource locator (URL)]] processed? (5 steps)
+how are [[uniform resource identifier (URI)]] processed? (3 steps with details)
 
 Back: 
+#### resolve [[network domain]] to [[internet protocol (IP)|ip adress]] 
 1) [[network domain]] is extracted from the [[uniform resource locator (URL)]]
 2) [[network domain]] is sent to a **domain name resolver** where It's either directly translated to an [[internet protocol (IP)]] adress of the server providing the ressource from the cache
 3) if the requested [[network domain]] is not cached the request is forwarded to the **domain name server** that as the quthority over the top level domain
 4) the request might be forwarded to **domain name servers** that have the authority over subdomains of the top level domain
-5) when the [[network domain]] is tranlated to an [[internet protocol (IP)]] adress the specific ressource is requested (second pard of the URL) from the server (using [[hypertext transfer protocol (HTTP)]])
+
+#### establish `SOCK_STREAM` [[li socket]] connection on [[port]] 
+### establishing a connection
+- to establish a [[li socket]] connection between a [[li socket]] on the [[server]] side and a [[li socket]] of the [[client]] side
+- given that the [[server]] already has a [[li listen|listening]] `SOCK_STREAM` [[li socket]] on the [[port]] given in the [[uniform resource identifier (URI)]]
+
+1) the [[client]] sends a connection request using the [[li connect]] [[li syscall]]
+2) the [[server]] creates new [[li socket]] that is connected to the [[client|clints]] [[li socket]] while the listing [[li socket]] keeps listing for connection requests
+
+#### calling [[hypertext transfer protocol (HTTP)|http]] method on ressource
+- given that the [[transmission control protocol (TCP)]] has been established in the meantime
+- [[hypertext transfer protocol (HTTP)]] 
 
 _______________________________
+## hypertext transfer protocol (HTTP)
+-  simple and human-readable [[protocol]] in the [[application layer]] for transmitting data 
+- interactions are bases on [[statefulness of protocols|stateless]] request/response pairs between a [[client]] and a [[server]]
+-  extendable headers
+- default [[port]] is TCP 80, but other ports can be used
+
+### steps
+1) establishement of [[transmission control protocol (TCP)|TCP connection]]
+2) [[client]] sends a **request** to the [[server]]
+3) [[server]] answers with a **response**
+	- Request ([[client]] to [[server]])
+	- Response ([[server]] to [[client]])
+4) reusing or closing of [[transmission control protocol (TCP)|TCP connection]]
+
+### methods
+
+#### GET
+- request a ressource from a [[server]] with a [[uniform resource locator (URL)]]
+- should only retrieve data and should not have any other effect
+- all transmitted data are part of the [[uniform resource locator (URL)]]
+- there can be a request body, but it will be ignored
+- cachable
+- idempotent
+
+example request:
+```
+GET /infotext.html HTTP/1.1 # method path version
+Host: www.example.net       # domain name
+```
+
+response example:
+```
+HTTP/1.1 200 OK    # version and status code
+Server: Apache/1.3.29 (Unix) PHP/4.3.4  
+Content-Length: 123456  
+Content-Language: de
+Connection: close
+Content-Type: text/html
+(request bode: html file)
+```
+
+
+### uniform resource identifier (URI)
+
+- provide a way to access a ressource ([[uniform resource locator (URL)]])
+- be a namespace
+- be a **URN**: identifie a ressource but does not provide a way to access it
+
+1) [[protocol]]: e.g. [[hypertext transfer protocol (HTTP)]]
+2) [[port]]: e.g. 80
+3) [[network domain]]
+	- adress of the server that provides the ressource
+	- dot seperated hirachical structure
+	- translated by a [[domain name system (DNS)]] to a [[internet protocol (IP)]] adress if the server
+	- e.g. `google.de`
+4) path to a ressource
+	- `/` seperated hiracical struture
+	- processed by the server
+	- e.g. `/impressum`
+5) parameters (optional)
+	- extra information provided to the [[server]] 
+	- e.g. `?topic=ABC&name=XYZ`
+6) ancor: specific part inside the ressource
+	- e.g. `#sample`
+
 ### [[domain name system (DNS)]]
 - hierarchical and distributed naming system that translates
 	- [[network domain]] to [[internet protocol (IP)]] adresses (forward lookup, more common)
@@ -114,18 +191,7 @@ _______________________________
 	- `<lowest level>.<mid level>.<top level domain>`
 	- `en.google.de`
 
-### uniform resource locator (URL)
-- complete adress/location of a network ressource
-- consists of two parts: 
-	1) [[network domain]]
-		- adress of the server that provides the ressource
-		- dot seperated hirachical structure
-		- translated by a [[domain name system (DNS)]] to a [[internet protocol (IP)]] adress if the server
-		- e.g. `google.de`
-	2) location of the ressource on the server: 
-		- `/` seperated hiracical struture
-		- processed by the server
-		- e.g. `/impressum`
+
 
 Tags: code network
 <!--ID: 1711813346673-->

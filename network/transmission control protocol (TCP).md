@@ -1,8 +1,8 @@
-# [[transmission control protocol (TCP)]]
+### transmission control protocol (TCP)
 - [[statefulness of protocols|stateful]] [[protocol]] of the [[osi layers#transport layer|transport layer]] for [[stream communication|stream based]] data transfer
 - managed by the operation system with a [[li connection based socket]]
 
-![[stream communication#stream communication]]
+
 
 ### TCP connections and [[li socket|sockets]] 
 - a  `AF_STREAM` [[li socket]] is a potential endpoint for a [[transmission control protocol (TCP)|TCP connection]]
@@ -138,8 +138,8 @@ reliable and error free transmission is ganteed by
 ![[TCP-Teardown.svg.png]]
 
 
-
-
+# ----------------------
+![[stream communication#stream communication]]
 
 
 # anki

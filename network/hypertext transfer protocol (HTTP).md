@@ -39,7 +39,7 @@
 - optimized for mobile applications because when the mobile network is swiched the [[transmission control protocol (TCP)|TCP connection]] has to be reestablished
 - with [[QUIC]] the stream session can be reused
 
-![[transmission control protocol (TCP)#TCP connection]]
+![[transmission control protocol (TCP)#transmission control protocol (TCP)]]
 
 ### methods
 
