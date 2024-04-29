@@ -49,7 +49,7 @@ $$
 \end{matrix}
 \right)
 $$
-
+### If E is an elementary matrix, then E is nonsingular and its inverse matrix E −1 is an elementary matrix of the same type
 # -------------------
 
 ![[identity matrix#identity matrix]]
@@ -59,7 +59,7 @@ START
 Basic
 [[elementary matrix]]
 - definition with examples
-
+- what can be said about the [[inverse matrix]] of an [[elementary matrix]]
 Back: 
 ### elementary matrix
 - [[elementary matrix]] is a [[matrix]] which differs from the [[identity matrix]] by one single elementary row operation
@@ -112,7 +112,7 @@ $$
 \end{matrix}
 \right)
 $$
-
+### If E is an elementary matrix, then E is nonsingular and its inverse matrix E −1 is an elementary matrix of the same type
 Tags: mathematics linear_algebra
 <!--ID: 1714317971518-->
 END

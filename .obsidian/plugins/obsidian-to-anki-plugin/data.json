@@ -176,7 +176,8 @@
     "det 2.png",
     "Sarrus_rule1.svg 1.png",
     "det 3.png",
-    "Sarrus_rule1.svg 2.png"
+    "Sarrus_rule1.svg 2.png",
+    "615px-Vector-p-Norms_qtl1.svg 1.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -314,7 +315,7 @@
     "mathematics/basics/stationary point.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/set.md": "f44bc7c6033de6e58f0756f67cb541e6",
     "mathematics/basics/power set.md": "cb0c722c7db5f2acf8ea74a32a4b6802",
-    "mathematics/basics/norm.md": "177c88b9967eaf1f1ec6d275aa7bbaea",
+    "mathematics/basics/norm.md": "e39567f71550cf3fc37d72663acfaa3d",
     "mathematics/basics/monotonic function.md": "aa887bcb8cd6542c26944058463a8336",
     "mathematics/basics/metric.md": "c2fa81ecbae33d3052cde896c43652eb",
     "mathematics/basics/maxima and minima.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1446,7 +1447,13 @@
     "mathematics/linear algebra/kernel.md": "492c4788cc0190ef0404ef506f374549",
     "mathematics/basics/grapf.md": "c04f5c5e3142682927503f75ebe29542",
     "mathematics/basics/equivalence relation.md": "70072455b04b2cc25c8ed70bdfaa9949",
-    "mathematics/linear algebra/elementary matrix.md": "4486f139d71b0bb280a26c62967a904a"
+    "mathematics/linear algebra/elementary matrix.md": "e3b80bd7bebb70b5ea09706cbc9d8ec4",
+    "mathematics/basics/origin.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/positive definite.md": "fad671c2d0c5e724b2886bce3f6b7e4e",
+    "mathematics/basics/homogeneous.md": "5d0c7a84636c741cdddf60e08ab6a845",
+    "mathematics/basics/triangle inequality.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/normed space.md": "cdb2fa750fd8cf1dc84657f22879880e",
+    "mathematics/basics/function space.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [
