@@ -570,7 +570,7 @@ $$
 5 \ &-1 \ &-4  \\
 \end{matrix}
 \right) \\
-&= 4 \cdot (-1) + 3 \cdot 2 \cdot 5 - (-1) \cdot 2 \cdot 4 - \cdot (-4) \cdot 3 = 70
+&= 4 \cdot (-4) + 3 \cdot 2 \cdot 5 - (-1) \cdot 2 \cdot 4 -  (-4) \cdot 3 \cdot 3 = 58
 \end{split}
 $$
 

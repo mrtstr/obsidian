@@ -315,7 +315,7 @@
     "mathematics/basics/stationary point.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/set.md": "f44bc7c6033de6e58f0756f67cb541e6",
     "mathematics/basics/power set.md": "cb0c722c7db5f2acf8ea74a32a4b6802",
-    "mathematics/basics/norm.md": "07a1b0df659d1c67155fbd88a881fad6",
+    "mathematics/basics/norm.md": "7fe0b666a73ec0e94abbd7cb1f063531",
     "mathematics/basics/monotonic function.md": "aa887bcb8cd6542c26944058463a8336",
     "mathematics/basics/metric.md": "c2fa81ecbae33d3052cde896c43652eb",
     "mathematics/basics/maxima and minima.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -948,7 +948,7 @@
     "mathematics/linear algebra/eigenvectors.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/dot product.md": "c219119e9879fc5039880663f67e30c3",
     "mathematics/linear algebra/diagonal matrix.md": "a82687889b5ddc5ea6be4073c33a7345",
-    "mathematics/linear algebra/determinant.md": "08b7c55be6e623bb73a13f69e2c50c34",
+    "mathematics/linear algebra/determinant.md": "be37d298c494c3ab1fe328ca3bc61b97",
     "mathematics/linear algebra/definite quadratic form.md": "6515b3ae02abcc7480abedc6bcde5e5c",
     "mathematics/linear algebra/column space.md": "047ed9494e7a18d70853942156b097c0",
     "mathematics/linear algebra/cholesky decomposition.md": "ad3011eba82b348251f1183287ca3784",
@@ -1456,7 +1456,7 @@
     "mathematics/basics/function space.md": "b59044f68e95dca7aaee6f81a9adc8da",
     "mathematics/basics/real numbers.md": "6f41edd984aafcb6193dd48dfb826a5c",
     "mathematics/basics/sequence.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/convergence.md": "d87b082e5f61a41da6e13c6a190be9a1"
+    "mathematics/basics/convergence.md": "fb95d09aeaf0566821478c652fedbfb3"
   },
   "fields_dict": {
     "Basic": [
