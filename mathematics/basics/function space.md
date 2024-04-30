@@ -11,7 +11,7 @@ $$
 $$
 - [[set]] of [[function|functions]] $f: \Omega \subset \mathbb{R}^d \rightarrow \mathbb{R}$ 
 
-![[norm#examples norm for function space $f: Omega subset mathbb{R} d rightarrow mathbb{R}$]]
+![[norm#norm for function space $f: Omega subset mathbb{R} d rightarrow mathbb{R}$]]
 
 # ---------------------
 ![[function#function]]
@@ -25,7 +25,7 @@ Basic
 [[function space]]
 - definition
 - two examples
-- example: [[norm]] on a [[function space]]
+- example: [[norm]] on a [[function space]] (2)
 Back: 
 ### function space
 - [[set]] of [[function|functions]] $\{f: V \rightarrow W\}$ between the same [[vector space|vector spaces]] with a [[addition]] and a [[multiplication]] with a [[scalar]]
@@ -40,11 +40,16 @@ $$
 $$
 - [[set]] of [[function|functions]] $f: \Omega \subset \mathbb{R}^d \rightarrow \mathbb{R}$ 
 
+
 ### [[norm]] for [[function space]] $f: \Omega \subset \mathbb{R}^d \rightarrow \mathbb{R}$ 
-#### $L$ [[norm]]
+#### $L^p$ [[norm]]
 
 $$
-||f||_L = \left(\int_{\Omega} |f(x)|^L dx \right)^{\frac{1}{L}}
+||f||_p = \left(\int_{\Omega} |f(x)|^p dx \right)^{\frac{1}{p}}
+$$
+#### $L^\infty$ [[norm]]
+$$
+||f||_\infty = \max_{x \in \Omega} |f(x)|
 $$
 
 _______________________

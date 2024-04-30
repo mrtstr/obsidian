@@ -17,7 +17,7 @@ $$
 $$
 
 ### [[norm|norms]] for $V \subseteq \mathbb{R}^n$
-![[615px-Vector-p-Norms_qtl1.svg.png]]
+
 
 #### $l^p$ [[norm]]
 
@@ -37,7 +37,7 @@ $$
 $$
 ||x||_\infty = \left(\sum_{i \in [n]} |x_i|^\infty \right)^{\frac{1}{\infty}} = \max_{i \in [n]} |x_i|
 $$
-
+![[615px-Vector-p-Norms_qtl1.svg.png]]
 ### [[norm]] for [[function space]] $f: \Omega \subset \mathbb{R}^d \rightarrow \mathbb{R}$ 
 #### $L^p$ [[norm]]
 
@@ -148,6 +148,7 @@ END
 START
 Basic
 examples for [[norm|norms]] of $V \subseteq \mathbb{R}^n$ (4)
+geometric description
 Back: 
 #### $l^p$ [[norm]]
 
