@@ -1,29 +1,51 @@
-## Metric
-→ Function measuring distance between points in a metric space $d(x, y)$
-### Properties
-1) $d(x,y) \ge 0$ (positive)
-2) $d(x,x)=0$
-3) $d(x,y)=d(y,x)$ (symmetry)
-4) $d(a,c) \le d(a,b) + d(b,c)$ (triangle inequality)
+## metric
+- generalization of the distance between [[vector|vectors]]
+- let $V$ be a [[set]]
+- a [[function]] $d: V \times V \rightarrow (0, \infty)$ is a [[metric]] if the followng conditions are true
+1) [[symmetric]]
+$$
+\forall x, y \in V: d(x,y) = d(y,x)
+$$
+2) [[positive definite]]
+$$
+d(x, y) \leftrightarrow x=y
+$$
+$$
+\forall x, y \in V: d(x, y) \geq 0
+$$
 
-- can be induced by a [[norm]]: $d(x, y)= \|x-y\|$
+3) [[triangle inequality]]
+$$
+\forall x, y, z \in V: d(x,z) \leq d(x,y) + d(y,z)
+$$
 
-
+# anki
 START
 Basic
-metric: concept, properties and relationship with norm
+[[metric]]
+- definition
 Back: 
-concept:
-Function measuring distance between points in a metric space $d(x, y)$
+## metric
+- generalization of the distance between [[vector|vectors]]
+- let $V$ be a [[set]]
+- a [[function]] $d: V \times V \rightarrow (0, \infty)$ is a [[metric]] if the followng conditions are true
+1) [[symmetric]]
+$$
+\forall x, y \in V: d(x,y) = d(y,x)
+$$
+2) [[positive definite]]
+$$
+d(x, y) \leftrightarrow x=y
+$$
+$$
+\forall x, y \in V: d(x, y) \geq 0
+$$
 
-Properties
-1) $d(x,y) \ge 0$ (positive)
-2) $d(x,x)=0$
-3) $d(x,y)=d(y,x)$ (symmetry)
-4) $d(a,c) \le d(a,b) + d(b,c)$ (triangle inequality)
+3) [[triangle inequality]]
+$$
+\forall x, y, z \in V: d(x,z) \leq d(x,y) + d(y,z)
+$$
 
- can be induced by a [[norm]]: $d(x, y)= \|x-y\|$
- 
 Tags: mathematics
 <!--ID: 1661678999143-->
 END

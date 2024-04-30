@@ -315,9 +315,9 @@
     "mathematics/basics/stationary point.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/set.md": "f44bc7c6033de6e58f0756f67cb541e6",
     "mathematics/basics/power set.md": "cb0c722c7db5f2acf8ea74a32a4b6802",
-    "mathematics/basics/norm.md": "7fe0b666a73ec0e94abbd7cb1f063531",
+    "mathematics/basics/norm.md": "158ba82d6377a6f3ffdccbe079fbe8eb",
     "mathematics/basics/monotonic function.md": "aa887bcb8cd6542c26944058463a8336",
-    "mathematics/basics/metric.md": "c2fa81ecbae33d3052cde896c43652eb",
+    "mathematics/basics/metric.md": "abe0218b97971a6e5b1d8690212148c5",
     "mathematics/basics/maxima and minima.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/map.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linearity.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1456,7 +1456,10 @@
     "mathematics/basics/function space.md": "b59044f68e95dca7aaee6f81a9adc8da",
     "mathematics/basics/real numbers.md": "6f41edd984aafcb6193dd48dfb826a5c",
     "mathematics/basics/sequence.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/convergence.md": "fb95d09aeaf0566821478c652fedbfb3"
+    "mathematics/basics/convergence.md": "fb95d09aeaf0566821478c652fedbfb3",
+    "mathematics/basics/inner product.md": "d2882adaa5af418c022f1baf547a8db4",
+    "mathematics/basics/relationship norm and metric.md": "698c279e72471c68de0f8a9ffa35fe32",
+    "mathematics/basics/matrix induced inner product.md": "40977d6bcbff9b35b80b0449af78a504"
   },
   "fields_dict": {
     "Basic": [
