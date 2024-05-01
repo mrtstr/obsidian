@@ -91,10 +91,10 @@ Service endpoint vs [[li socket|TCP socket]]
 - Difference
 
 Back: 
-### [[transmission control protocol (TCP)|TCP connection]] and [[li socket|sockets]] 
+### TCP connection and [[li socket]]
 - [[transmission control protocol (TCP)|TCP]] connection is uniquely identified by its two service endpoints ([[internet protocol (IP)|IP adress]], [[port]]) 
 	→ a TCP connection is identified by a 4-tuple (server ip, server port, client ip, client port)
-- a [[li socket|AF_INTET domain SOCK_STEAM]] is a connection endpoint instance with an [[internet protocol (IP)|IP adress]] and a [[port]] (but not uniquely identified by them)
+- a [[li socket|AF_INTET domain SOCK_STEAM]] is a connection endpoint instance that has an [[internet protocol (IP)|IP adress]] and a [[port]] ([[internet protocol (IP)|IP adress]] of its host and [[port]] where its bound to) but not uniquely identified by them
 - a network service (address/port) can have multiple [[li socket|AF_INTET domain SOCK_STEAM]] but only one of them is [[li listen|listening]] to incomming connections requests
 - appart from the [[li listen|listening]] [[li socket]] there can be multiple [[li socket|sockts]] that are connected to differen ip adresse/[[port]] combination but only one to each connection partner
 - a TCP connection can be stablished after a `SOCK_STREAM` `AF_INET` domain stocket connection has been estabnished

@@ -38,6 +38,7 @@ can:
 	- be a namespace
 	- be a **URN**: identifie a ressource but does not provide a way to access it
 - consists of 7 parts: 
+
 1) [[protocol]]: e.g. [[hypertext transfer protocol (HTTP)]]
 2) [[port]]: e.g. 80
 3) [[network domain]]
@@ -82,6 +83,7 @@ can:
 	- be a namespace
 	- be a **URN**: identifie a ressource but does not provide a way to access it
 - consists of 7 parts: 
+
 1) [[protocol]]: e.g. [[hypertext transfer protocol (HTTP)]]
 2) [[port]]: e.g. 80
 3) [[network domain]]

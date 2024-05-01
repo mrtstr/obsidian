@@ -428,3 +428,57 @@ END
 
 
 
+START
+Basic
+unity circle [[norm]]
+- $l^1$
+- $l^2$
+- $l^\infty$
+Back: 
+
+![[615px-Vector-p-Norms_qtl1.svg 2.png]]
+_______________________
+### [[norm|norms]] for $V \subseteq \mathbb{R}^n$
+
+
+#### $l^p$ [[norm]]
+
+$$
+||x||_p = \left(\sum_{i \in [n]} |x_i|^p \right)^{\frac{1}{p}}
+$$
+#### $l^1$ [[norm]]
+$$
+||x||_1 = \sum_{i \in [n]} |x_i| 
+$$
+#### euclidian [[norm]] ($l^2$)
+$$
+||x||_2 = \left(\sum_{i \in [n]} |x_i|^2 \right)^{\frac{1}{2}}
+$$
+
+#### infinity [[norm]] ($l^\infty$)
+$$
+||x||_\infty = \left(\sum_{i \in [n]} |x_i|^\infty \right)^{\frac{1}{\infty}} = \max_{i \in [n]} |x_i|
+$$
+
+### norm
+- generalization of the concept of **length of a [[vector]]**
+- let $V$ be a [[vector space]]
+- the [[function]] $||\:.||: V \rightarrow \mathbb{R^+}$ is a [[norm]] is it satisfies the following conditions
+1) [[positive definite]]
+$$
+||x||=0 \Leftrightarrow x = 0
+$$
+
+2) absolutely [[homogeneous]]
+$$
+\forall x \in V, \lambda \in \mathbb{K}: ||\lambda \cdot x|| = |\lambda| \cdot ||x||
+$$
+3) [[triangle inequality]]
+$$
+\forall v, w \in V: ||v + w|| \leq ||v|| + ||w||
+$$
+
+
+Tags: mathematics
+<!--ID: 1714576018811-->
+END

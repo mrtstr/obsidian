@@ -98,7 +98,7 @@ $$
 $$
 \sim = \{(a, b): \exists i \in [n] : a \in A_i \land b \in A_i\}
 $$
-[[symetry]] follows from the [[symetry]] of $\land$ 
+[[symmetric]] follows from the [[symmetric|symetry]] of $\land$ 
 [[reflexive]]  
 $$
 \bigcup_{i \in [n]} A_i = A \land a \in A \Rightarrow \exists i \in [n]: a \in A_i \rightarrow (a,a) \in \sim
@@ -107,6 +107,9 @@ $$
 $$
 \begin{split}
 a \sim b \land b \sim c 
+&\Rightarrow \exists i \in [n]: a \in A_i \land b \in A_i 
+\land \exists j \in [n]: b \in A_j  \land c \in A_j \\
+&(\text{with } i = j \text{ because } \{A_i: i \in [n]\} \text{ is disjunct}) \\
 &\Rightarrow \exists i \in [n]: a \in A_i \land b \in A_i  \land c \in A_i \\
 &\Rightarrow a \sim b 
 \end{split}
@@ -466,6 +469,9 @@ $$
 $$
 \begin{split}
 a \sim b \land b \sim c 
+&\Rightarrow \exists i \in [n]: a \in A_i \land b \in A_i 
+\land \exists j \in [n]: b \in A_j  \land c \in A_j \\
+&(\text{with } i = j \text{ because } \{A_i: i \in [n]\} \text{ is disjunct}) \\
 &\Rightarrow \exists i \in [n]: a \in A_i \land b \in A_i  \land c \in A_i \\
 &\Rightarrow a \sim b 
 \end{split}

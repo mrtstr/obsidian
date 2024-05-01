@@ -1,28 +1,75 @@
-### cauchy schwarz inequality
-- let $V$ be a [[vector space]] with an [[inner product]] $\langle \cdot , \cdot \rangle$ 
-- then the following is true for all $x, y \in V$
+## inner products and norms
 
+### every [[inner product]] induces a [[norm]]
 $$
-|\langle x , y \rangle|^2 \leq \langle x , x \rangle \cdot \langle y , y \rangle
+||x|| = \sqrt{\langle x, x \rangle}
 $$
-eqivalent:
 $$
-|\langle x , y \rangle| \leq || x || \cdot || y ||
+||x||^2 = \langle x, x \rangle
 $$
-TODO: add proof
-# --------------------
-![[inner products and norms#inner products and norms]]
+### proof
+1) [[positive definite]] follows directy for the [[inner product]] being [[positive definite]]
+$$
+\langle x, x \rangle \geq 0 \Rightarrow ||x|| = \sqrt{\langle x, x \rangle} \geq 0
+$$
+
+2) absolutly [[homogeneous]]
+$$
+\begin{split}
+||\lambda x|| 
+&= \sqrt{\langle \lambda x, \lambda x \rangle} \\
+&= \sqrt{\lambda^2\langle  x,  x \rangle} \quad \text{(linearity of inner product)}\\
+&= \sqrt{\lambda^2} \sqrt{\langle  x,  x \rangle} \\
+&= |\lambda| \cdot || x||  \\
+\end{split}
+$$
+3) [[triangle inequality]]
+
+### some [[norm|norms]] induce [[inner product|inner products]]
+However, a norm ||⋅||is induced by an inner product if and only if it satisfies the parallelogram law:
+
+||x+y||2+||x−y||2=2(||x||2+||y||2)
+# ------------------
 
 ![[inner product#inner product]]
+
+![[norm#norm]]
 
 
 # anki
 
 START
 Basic
-cauchy schwarz inequality (without proof)
-- two versions
+proof that every [[inner product]] induces a [[norm]]
 Back: 
+
+### every [[inner product]] induces a [[norm]]
+$$
+||x|| = \sqrt{\langle x, x \rangle}
+$$
+$$
+||x||^2 = \langle x, x \rangle
+$$
+### proof
+1) [[positive definite]] follows directy for the [[inner product]] being [[positive definite]]
+$$
+\langle x, x \rangle \geq 0 \Rightarrow ||x|| = \sqrt{\langle x, x \rangle} \geq 0
+$$
+
+2) absolutly [[homogeneous]]
+$$
+\begin{split}
+||\lambda x|| 
+&= \sqrt{\langle \lambda x, \lambda x \rangle} \\
+&= \sqrt{\lambda^2\langle  x,  x \rangle} \quad \text{(linearity of inner product)}\\
+&= \sqrt{\lambda^2} \sqrt{\langle  x,  x \rangle} \\
+&= |\lambda| \cdot || x||  \\
+\end{split}
+$$
+3) [[triangle inequality]]
+
+_______________________
+
 ### cauchy schwarz inequality
 - let $V$ be a [[vector space]] with an [[inner product]] $\langle \cdot , \cdot \rangle$ 
 - then the following is true for all $x, y \in V$
@@ -34,8 +81,8 @@ eqivalent:
 $$
 |\langle x , y \rangle| \leq || x || \cdot || y ||
 $$
-TODO: add proof
-_______________________
+
+
 ### inner product
 - let $(V, +, \cdot)$ be a [[vector space]]
 -  [[function]]  $\langle\cdot,\cdot\rangle: V \times V \rightarrow \mathbb{R}$ is an [[inner product]] if the following conditions are true
@@ -84,5 +131,5 @@ $$
 
 
 Tags: mathematics
-<!--ID: 1714582042911-->
+<!--ID: 1714582042906-->
 END
