@@ -11,8 +11,40 @@ $$
 $$
 - [[set]] of [[function|functions]] $f: \Omega \subset \mathbb{R}^d \rightarrow \mathbb{R}$ 
 
-![[norm#norm for function space $f: Omega subset mathbb{R} d rightarrow mathbb{R}$]]
+### [[norm]] for [[function space]] $f: \Omega \subset \mathbb{R}^d \rightarrow \mathbb{R}$ 
+#### $L^p$ [[norm]]
 
+$$
+||f||_p = \left(\int_{\Omega} |f(x)|^p dx \right)^{\frac{1}{p}}
+$$
+#### $L^\infty$ [[norm]]
+$$
+||f||_\infty = \max_{x \in \Omega} |f(x)|
+$$
+
+### [[convergence]] of a [[sequence]] of [[function]]
+- given a [[sequence]] of [[function|functions]] $f_n: [a,b] \rightarrow \mathbb{R}$ 
+
+#### [[convergence]] for the $L^1$ [[norm]]
+- $f_n$ converges to $f$ for the $L^1$ [[norm]] in the following is true
+$$
+||f_n - f ||_1 \rightarrow 0 \Leftrightarrow \int^b_a |f_n(x) - f(x)| dx \rightarrow 0
+$$
+#### [[convergence]] for the $L^p$ [[norm]]
+- $f_n$ converges to $f$ for the $L^p$ [[norm]] in the following is true
+$$
+||f_n - f ||_p \rightarrow 0 \Leftrightarrow \left(\int^b_a |f_n(x) - f(x)|^p dx\right)^{\frac{1}{p}} \rightarrow 0
+$$
+#### [[convergence]] for the $L^\infty$ [[norm]]
+- $f_n$ converges to $f$ for the $L^\infty$ [[norm]] in the following is true
+$$
+||f_n - f ||_\infty \rightarrow 0 \Leftrightarrow \max_{a \leq x \leq b} |f_n(x) - f(x)| dx \rightarrow 0
+$$
+- this means that the distance between the functions has to go to zero for the complete domain
+#### $||f_n - f ||_\infty \rightarrow 0 \Rightarrow ||f_n - f ||_1 \rightarrow 0$ but not the other way around
+
+
+![[convergence#convergence in a normed space $ left(V, +, cdot, cdot right)$]]
 # ---------------------
 ![[function#function]]
 
@@ -51,6 +83,8 @@ $$
 $$
 ||f||_\infty = \max_{x \in \Omega} |f(x)|
 $$
+
+
 
 _______________________
 ### norm
@@ -114,4 +148,178 @@ $$
 
 Tags: mathematics
 <!--ID: 1714381242369-->
+END
+
+
+START
+Basic
+geometric interpretation 
+- $L^1$ [[norm]]
+- $L^\infty$ [[norm]]
+- [[convergence]] regarding the $L^1$ [[norm]]
+- [[convergence]] regarding the $L^\infty$ [[norm]]
+Back: 
+### [[norm]] for [[function space]] $f: \Omega \subset \mathbb{R}^d \rightarrow \mathbb{R}$ 
+#### $L^1$ [[norm]]
+- absolute area between the function and 0 over the complete domain
+$$
+||f||_p = \int_{\Omega} |f(x)| dx 
+$$
+#### $L^\infty$ [[norm]]
+- absolute maximum of a function has to be zero to it has to be zero over the complete domain
+$$
+||f||_\infty = \max_{x \in \Omega} |f(x)|
+$$
+
+### [[convergence]] of a [[sequence]] of [[function]]
+- given a [[sequence]] of [[function|functions]] $f_n: [a,b] \rightarrow \mathbb{R}$ 
+
+#### [[convergence]] for the $L^1$ [[norm]]
+- $f_n$ converges to $f$ for the $L^1$ [[norm]] in the following is true
+$$
+||f_n - f ||_1 \rightarrow 0 \Leftrightarrow \int^b_a |f_n(x) - f(x)| dx \rightarrow 0
+$$
+- the absolute area between the functions has to go to zero
+#### [[convergence]] for the $L^\infty$ [[norm]]
+- $f_n$ converges to $f$ for the $L^\infty$ [[norm]] in the following is true
+$$
+||f_n - f ||_\infty \rightarrow 0 \Leftrightarrow \max_{a \leq x \leq b} |f_n(x) - f(x)| dx \rightarrow 0
+$$
+- this means that the distance between the functions has to go to zero for the complete domain
+_______________________
+
+### function space
+- [[set]] of [[function|functions]] $\{f: V \rightarrow W\}$ between the same [[vector space|vector spaces]] with a [[addition]] and a [[multiplication]] with a [[scalar]]
+
+
+### norm
+- generalization of the concept of **length of a [[vector]]**
+- let $V$ be a [[vector space]]
+- the [[function]] $||\:.||: V \rightarrow \mathbb{R^+}$ is a [[norm]] is it satisfies the following conditions
+1) [[positive definite]]
+$$
+||x||=0 \Leftrightarrow x = 0
+$$
+
+2) absolutely [[homogeneous]]
+$$
+\forall x \in V, \lambda \in \mathbb{K}: ||\lambda \cdot x|| = |\lambda| \cdot ||x||
+$$
+3) [[triangle inequality]]
+$$
+\forall v, w \in V: ||v + w|| \leq ||v|| + ||w||
+$$
+
+Tags: mathematics
+<!--ID: 1714546780232-->
+END
+
+
+START
+Basic
+[[norm|norms]] for [[function space]] $f: \Omega \subset \mathbb{R}^d \rightarrow \mathbb{R}$ (2)
+Back: 
+
+### [[norm]] for [[function space]] $f: \Omega \subset \mathbb{R}^d \rightarrow \mathbb{R}$ 
+#### $L^p$ [[norm]]
+
+$$
+||f||_p = \left(\int_{\Omega} |f(x)|^p dx \right)^{\frac{1}{p}}
+$$
+#### $L^\infty$ [[norm]]
+$$
+||f||_\infty = \max_{x \in \Omega} |f(x)|
+$$
+
+_______________________
+### function space
+- [[set]] of [[function|functions]] $\{f: V \rightarrow W\}$ between the same [[vector space|vector spaces]] with a [[addition]] and a [[multiplication]] with a [[scalar]]
+
+
+### norm
+- generalization of the concept of **length of a [[vector]]**
+- let $V$ be a [[vector space]]
+- the [[function]] $||\:.||: V \rightarrow \mathbb{R^+}$ is a [[norm]] is it satisfies the following conditions
+1) [[positive definite]]
+$$
+||x||=0 \Leftrightarrow x = 0
+$$
+
+2) absolutely [[homogeneous]]
+$$
+\forall x \in V, \lambda \in \mathbb{K}: ||\lambda \cdot x|| = |\lambda| \cdot ||x||
+$$
+3) [[triangle inequality]]
+$$
+\forall v, w \in V: ||v + w|| \leq ||v|| + ||w||
+$$
+
+Tags: mathematics
+<!--ID: 1714411582377-->
+END
+
+START
+Basic
+definitions
+[[convergence]] of a [[sequence]] of [[function]]
+- for the $L^1$ [[norm]]
+- for the $L^\infty$ [[norm]]
+- is it equivalent?
+Back: 
+### [[convergence]] of a [[sequence]] of [[function]]
+- given a [[sequence]] of [[function|functions]] $f_n: [a,b] \rightarrow \mathbb{R}$ 
+
+#### [[convergence]] for the $L^1$ [[norm]]
+- $f_n$ converges to $f$ for the $L^1$ [[norm]] in the following is true
+$$
+||f_n - f ||_1 \rightarrow 0 \Leftrightarrow \int^b_a |f_n(x) - f(x)| dx \rightarrow 0
+$$
+#### [[convergence]] for the $L^p$ [[norm]]
+- $f_n$ converges to $f$ for the $L^p$ [[norm]] in the following is true
+$$
+||f_n - f ||_p \rightarrow 0 \Leftrightarrow \left(\int^b_a |f_n(x) - f(x)|^p dx\right)^{\frac{1}{p}} \rightarrow 0
+$$
+#### [[convergence]] for the $L^\infty$ [[norm]]
+- $f_n$ converges to $f$ for the $L^\infty$ [[norm]] in the following is true
+$$
+||f_n - f ||_\infty \rightarrow 0 \Leftrightarrow \max_{a \leq x \leq b} |f_n(x) - f(x)| dx \rightarrow 0
+$$
+- this means that the distance between the functions has to go to zero for the complete domain
+#### $||f_n - f ||_\infty \rightarrow 0 \Rightarrow ||f_n - f ||_1 \rightarrow 0$ but not the other way around
+
+_______________________
+### [[norm]] for [[function space]] $f: \Omega \subset \mathbb{R}^d \rightarrow \mathbb{R}$ 
+#### $L^p$ [[norm]]
+
+$$
+||f||_p = \left(\int_{\Omega} |f(x)|^p dx \right)^{\frac{1}{p}}
+$$
+#### $L^\infty$ [[norm]]
+$$
+||f||_\infty = \max_{x \in \Omega} |f(x)|
+$$
+
+
+### norm
+- generalization of the concept of **length of a [[vector]]**
+- let $V$ be a [[vector space]]
+- the [[function]] $||\:.||: V \rightarrow \mathbb{R^+}$ is a [[norm]] is it satisfies the following conditions
+1) [[positive definite]]
+$$
+||x||=0 \Leftrightarrow x = 0
+$$
+
+2) absolutely [[homogeneous]]
+$$
+\forall x \in V, \lambda \in \mathbb{K}: ||\lambda \cdot x|| = |\lambda| \cdot ||x||
+$$
+3) [[triangle inequality]]
+$$
+\forall v, w \in V: ||v + w|| \leq ||v|| + ||w||
+$$
+
+
+
+Tags: mathematics
+<!--ID: 1714411582368-->
 END

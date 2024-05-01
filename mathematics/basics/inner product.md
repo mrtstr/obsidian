@@ -48,6 +48,7 @@ Back:
 - generalization of the 
 - let $(V, +, \cdot)$ be a [[vector space]]
 -  [[function]]  $\langle\cdot,\cdot\rangle: V \times V \rightarrow \mathbb{R}$ is an [[inner product]] if the following conditions are true
+
 1) [[linear function|linearity]] (regarding both elemements because of the [[symmetric]])
 
 $$
@@ -72,6 +73,7 @@ _______________________
 - generalization of the concept of **length of a [[vector]]**
 - let $V$ be a [[vector space]]
 - the [[function]] $||\:.||: V \rightarrow \mathbb{R^+}$ is a [[norm]] is it satisfies the following conditions
+
 1) [[positive definite]]
 $$
 ||x||=0 \Leftrightarrow x = 0
@@ -163,6 +165,7 @@ _______________________
 - generalization of the 
 - let $(V, +, \cdot)$ be a [[vector space]]
 -  [[function]]  $\langle\cdot,\cdot\rangle: V \times V \rightarrow \mathbb{R}$ is an [[inner product]] if the following conditions are true
+
 1) [[linear function|linearity]] (regarding both elemements because of the [[symmetric]])
 
 $$

@@ -24,7 +24,9 @@ $$
 \Rightarrow& ||x - y||=0 \leftrightarrow x = y
 \end{split}
 $$
-3) [[triangle inequality]]
+3) greater or equal zero
+![[norm#a norm is never negative]]
+4) [[triangle inequality]]
 $$
 \begin{split}
 &\forall v, w \in V: ||v + w|| \leq ||v|| + ||w|| \quad \text{ (triangle equality for norm)} \\
@@ -90,7 +92,16 @@ $$
 \Rightarrow& ||x - y||=0 \leftrightarrow x = y
 \end{split}
 $$
-3) [[triangle inequality]]
+3) greater or equal zero
+$$
+\begin{split}
+&\text{let } ||x|| < 0 \\
+&0=|| x - x || \leq || x || + ||  (-1) x || = 2 || x || \cdot |-1| = 2 || x || \\
+\Rightarrow& ||x|| \geq 0 \\
+\Rightarrow& d(v,w) = ||v - w|| \geq 0 \\
+\end{split}
+$$
+4) [[triangle inequality]]
 $$
 \begin{split}
 &\forall v, w \in V: ||v + w|| \leq ||v|| + ||w|| \quad \text{ (triangle equality for norm)} \\
@@ -114,6 +125,7 @@ ___________________
 - generalization of the concept of **length of a [[vector]]**
 - let $V$ be a [[vector space]]
 - the [[function]] $||\:.||: V \rightarrow \mathbb{R^+}$ is a [[norm]] is it satisfies the following conditions
+
 1) [[positive definite]]
 $$
 ||x||=0 \Leftrightarrow x = 0
@@ -132,6 +144,7 @@ $$
 - generalization of the distance between [[vector|vectors]]
 - let $V$ be a [[set]]
 - a [[function]] $d: V \times V \rightarrow (0, \infty)$ is a [[metric]] if the followng conditions are true
+
 1) [[symmetric]]
 $$
 \forall x, y \in V: d(x,y) = d(y,x)
@@ -140,11 +153,12 @@ $$
 $$
 d(x, y) \leftrightarrow x=y
 $$
+3) never negative
 $$
 \forall x, y \in V: d(x, y) \geq 0
 $$
 
-3) [[triangle inequality]]
+4) [[triangle inequality]]
 $$
 \forall x, y, z \in V: d(x,z) \leq d(x,y) + d(y,z)
 $$
@@ -194,7 +208,16 @@ $$
 \Rightarrow& ||x - y||=0 \leftrightarrow x = y
 \end{split}
 $$
-3) [[triangle inequality]]
+3) greater or equal zero
+$$
+\begin{split}
+&\text{let } ||x|| < 0 \\
+&0=|| x - x || \leq || x || + ||  (-1) x || = 2 || x || \cdot |-1| = 2 || x || \\
+\Rightarrow& ||x|| \geq 0 \\
+\Rightarrow& d(v,w) = ||v - w|| \geq 0 \\
+\end{split}
+$$
+4) [[triangle inequality]]
 $$
 \begin{split}
 &\forall v, w \in V: ||v + w|| \leq ||v|| + ||w|| \quad \text{ (triangle equality for norm)} \\
@@ -204,6 +227,7 @@ $$
 \Rightarrow& d(x, z) \leq d(x, y) + d(y, z) \\ 
 \end{split}
 $$
+
 
 
 #### example
@@ -218,6 +242,7 @@ ___________________
 - generalization of the concept of **length of a [[vector]]**
 - let $V$ be a [[vector space]]
 - the [[function]] $||\:.||: V \rightarrow \mathbb{R^+}$ is a [[norm]] is it satisfies the following conditions
+
 1) [[positive definite]]
 $$
 ||x||=0 \Leftrightarrow x = 0
@@ -236,6 +261,7 @@ $$
 - generalization of the distance between [[vector|vectors]]
 - let $V$ be a [[set]]
 - a [[function]] $d: V \times V \rightarrow (0, \infty)$ is a [[metric]] if the followng conditions are true
+
 1) [[symmetric]]
 $$
 \forall x, y \in V: d(x,y) = d(y,x)
@@ -244,11 +270,12 @@ $$
 $$
 d(x, y) \leftrightarrow x=y
 $$
+3) never negative
 $$
 \forall x, y \in V: d(x, y) \geq 0
 $$
 
-3) [[triangle inequality]]
+4) [[triangle inequality]]
 $$
 \forall x, y, z \in V: d(x,z) \leq d(x,y) + d(y,z)
 $$

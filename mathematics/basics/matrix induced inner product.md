@@ -1,5 +1,5 @@
 ### matrix induced inner product
-- every [[symmetric matrix]] $A \in \mathbb{R}^{n \times n}$ induces an [[inner product]]
+- every [[symmetric matrix]] $A \in \mathbb{R}^{n \times n}$ induces an [[inner product]] $\langle \cdot, \cdot \rangle_A: \mathbb{R}^{n} \times \mathbb{R}^n \rightarrow \mathbb{R}$
 $$
 \langle x, y \rangle_A = y^\top Ax
 $$
@@ -14,7 +14,7 @@ Basic
 relationship [[matrix]] and [[inner product]]
 Back: 
 ### matrix induced inner product
-- every [[symmetric matrix]] $A \in \mathbb{R}^{n \times n}$ induces an [[inner product]]
+- every [[symmetric matrix]] $A \in \mathbb{R}^{n \times n}$ induces an [[inner product]] $\langle \cdot, \cdot \rangle_A: \mathbb{R}^{n} \times \mathbb{R}^n \rightarrow \mathbb{R}$
 $$
 \langle x, y \rangle_A = y^\top Ax
 $$

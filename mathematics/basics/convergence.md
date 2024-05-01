@@ -47,29 +47,7 @@ $$
 a_n = \frac{1}{n}
 $$
 
-### [[convergence]] of a [[sequence]] of [[function]]
-- given a [[sequence]] of [[function|functions]] $f_n: [a,b] \rightarrow \mathbb{R}$ 
 
-#### [[convergence]] for the $L^1$ [[norm]]
-- $f_n$ converges to $f$ for the $L^1$ [[norm]] in the following is true
-$$
-||f_n - f ||_1 \rightarrow 0 \Leftrightarrow \int^b_a |f_n(x) - f(x)| dx \rightarrow 0
-$$
-#### [[convergence]] for the $L^p$ [[norm]]
-- $f_n$ converges to $f$ for the $L^p$ [[norm]] in the following is true
-$$
-||f_n - f ||_p \rightarrow 0 \Leftrightarrow \left(\int^b_a |f_n(x) - f(x)|^p dx\right)^{\frac{1}{p}} \rightarrow 0
-$$
-#### [[convergence]] for the $L^\infty$ [[norm]]
-- $f_n$ converges to $f$ for the $L^\infty$ [[norm]] in the following is true
-$$
-||f_n - f ||_\infty \rightarrow 0 \Leftrightarrow \max_{a \leq x \leq b} |f_n(x) - f(x)| dx \rightarrow 0
-$$
-- this means that the distance between the functions has to go to zero for the complete domain
-#### $||f_n - f ||_\infty \rightarrow 0 \Rightarrow ||f_n - f ||_1 \rightarrow 0$ but not the other way around
-
-
-![[norm#norm for function space $f: Omega subset mathbb{R} d rightarrow mathbb{R}$]]
 
 ### [[convergence]] for $l^{p}$ implies element wise [[convergence]]
 - let the [[sequence]] $x_n \in {\mathbb{R}^d}$ converge for the $l^p$ [[norm]]
@@ -258,71 +236,6 @@ Tags: mathematics
 END
 
 
-START
-Basic
-definitions
-[[convergence]] of a [[sequence]] of [[function]]
-- for the $L^1$ [[norm]]
-- for the $L^\infty$ [[norm]]
-- is it equivalent?
-Back: 
-### [[convergence]] of a [[sequence]] of [[function]]
-- given a [[sequence]] of [[function|functions]] $f_n: [a,b] \rightarrow \mathbb{R}$ 
-
-#### [[convergence]] for the $L^1$ [[norm]]
-- $f_n$ converges to $f$ for the $L^1$ [[norm]] in the following is true
-$$
-||f_n - f ||_1 \rightarrow 0 \Leftrightarrow \int^b_a |f_n(x) - f(x)| dx \rightarrow 0
-$$
-#### [[convergence]] for the $L^p$ [[norm]]
-- $f_n$ converges to $f$ for the $L^p$ [[norm]] in the following is true
-$$
-||f_n - f ||_p \rightarrow 0 \Leftrightarrow \left(\int^b_a |f_n(x) - f(x)|^p dx\right)^{\frac{1}{p}} \rightarrow 0
-$$
-#### [[convergence]] for the $L^\infty$ [[norm]]
-- $f_n$ converges to $f$ for the $L^\infty$ [[norm]] in the following is true
-$$
-||f_n - f ||_\infty \rightarrow 0 \Leftrightarrow \max_{a \leq x \leq b} |f_n(x) - f(x)| dx \rightarrow 0
-$$
-- this means that the distance between the functions has to go to zero for the complete domain
-#### $||f_n - f ||_\infty \rightarrow 0 \Rightarrow ||f_n - f ||_1 \rightarrow 0$ but not the other way around
-
-_______________________
-### [[norm]] for [[function space]] $f: \Omega \subset \mathbb{R}^d \rightarrow \mathbb{R}$ 
-#### $L^p$ [[norm]]
-
-$$
-||f||_p = \left(\int_{\Omega} |f(x)|^p dx \right)^{\frac{1}{p}}
-$$
-#### $L^\infty$ [[norm]]
-$$
-||f||_\infty = \max_{x \in \Omega} |f(x)|
-$$
-
-
-### norm
-- generalization of the concept of **length of a [[vector]]**
-- let $V$ be a [[vector space]]
-- the [[function]] $||\:.||: V \rightarrow \mathbb{R^+}$ is a [[norm]] is it satisfies the following conditions
-1) [[positive definite]]
-$$
-||x||=0 \Leftrightarrow x = 0
-$$
-
-2) absolutely [[homogeneous]]
-$$
-\forall x \in V, \lambda \in \mathbb{K}: ||\lambda \cdot x|| = |\lambda| \cdot ||x||
-$$
-3) [[triangle inequality]]
-$$
-\forall v, w \in V: ||v + w|| \leq ||v|| + ||w||
-$$
-
-
-
-Tags: mathematics
-<!--ID: 1714411582368-->
-END
 
 
 

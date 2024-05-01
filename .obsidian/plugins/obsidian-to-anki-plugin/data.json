@@ -315,9 +315,9 @@
     "mathematics/basics/stationary point.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/set.md": "f44bc7c6033de6e58f0756f67cb541e6",
     "mathematics/basics/power set.md": "cb0c722c7db5f2acf8ea74a32a4b6802",
-    "mathematics/basics/norm.md": "158ba82d6377a6f3ffdccbe079fbe8eb",
+    "mathematics/basics/norm.md": "be2ed4ce9fca35a1c64a2b511cf6e760",
     "mathematics/basics/monotonic function.md": "aa887bcb8cd6542c26944058463a8336",
-    "mathematics/basics/metric.md": "abe0218b97971a6e5b1d8690212148c5",
+    "mathematics/basics/metric.md": "f1345608f9abdcd95c332df05dbe0c98",
     "mathematics/basics/maxima and minima.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/map.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/linearity.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1453,13 +1453,13 @@
     "mathematics/basics/homogeneous.md": "5d0c7a84636c741cdddf60e08ab6a845",
     "mathematics/basics/triangle inequality.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/normed space.md": "cdb2fa750fd8cf1dc84657f22879880e",
-    "mathematics/basics/function space.md": "b59044f68e95dca7aaee6f81a9adc8da",
+    "mathematics/basics/function space.md": "16415ed9cd0c8f23c36e746f71bf0ad1",
     "mathematics/basics/real numbers.md": "6f41edd984aafcb6193dd48dfb826a5c",
     "mathematics/basics/sequence.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/convergence.md": "fb95d09aeaf0566821478c652fedbfb3",
-    "mathematics/basics/inner product.md": "d2882adaa5af418c022f1baf547a8db4",
-    "mathematics/basics/relationship norm and metric.md": "698c279e72471c68de0f8a9ffa35fe32",
-    "mathematics/basics/matrix induced inner product.md": "40977d6bcbff9b35b80b0449af78a504"
+    "mathematics/basics/convergence.md": "e75401b260dffae2e0957909e9f247f6",
+    "mathematics/basics/inner product.md": "fdec873cd73c021bf6bdc4e3852dcacd",
+    "mathematics/basics/relationship norm and metric.md": "ac846cf88fddf692bea882d706acc0cf",
+    "mathematics/basics/matrix induced inner product.md": "6d5458542b9db9109dcd3a02bdab8a97"
   },
   "fields_dict": {
     "Basic": [

@@ -2,6 +2,7 @@
 - generalization of the distance between [[vector|vectors]]
 - let $V$ be a [[set]]
 - a [[function]] $d: V \times V \rightarrow (0, \infty)$ is a [[metric]] if the followng conditions are true
+
 1) [[symmetric]]
 $$
 \forall x, y \in V: d(x,y) = d(y,x)
@@ -13,7 +14,6 @@ $$
 $$
 \forall x, y \in V: d(x, y) \geq 0
 $$
-
 3) [[triangle inequality]]
 $$
 \forall x, y, z \in V: d(x,z) \leq d(x,y) + d(y,z)
