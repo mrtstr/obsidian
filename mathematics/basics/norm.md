@@ -25,16 +25,6 @@ $$
 $$
 
 
-### geometric interpretation of a [[norm]]
-- the [[norm]] mesures the length of a [[vector]] $|| x ||$
-- thus a every [[norm]] induces a [[metric]] messurement for the **distance between [[vector|vectors]]** 
-$$
-d(x, y) = || x - y ||
-$$
-- for example the eucledean distance between two [[vector|vectors]] $x, y \in V$
-$$
-d(x, y) = || x - y ||_2 = \left( \sum_{i \in [n]} |x_i - y_i|^2\right)^{\frac{1}{2}}
-$$
 
 ![[metric#metric]]
 

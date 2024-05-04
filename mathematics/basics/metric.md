@@ -1,4 +1,4 @@
-## metric
+### metric
 - generalization of the distance between [[vector|vectors]]
 - let $V$ be a [[set]]
 - a [[function]] $d: V \times V \rightarrow (0, \infty)$ is a [[metric]] if the followng conditions are true

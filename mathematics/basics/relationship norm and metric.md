@@ -7,6 +7,7 @@ d(x, y) = || x - y ||
 $$
 #### proof
 1) [[symmetric]] $d(x, y)=d(y, x)$
+
 $$
 \begin{split}
 ||x - y|| 
@@ -15,7 +16,9 @@ $$
 &= ||(y - x)||
 \end{split}
 $$
+
 2) [[positive definite]] follows from a [[norm]] being [[positive definite]]
+
 $$
 \begin{split}
 &||v||=0 \leftrightarrow v = 0 \quad \text{ (norm is positive definite)} \\
@@ -24,8 +27,11 @@ $$
 \Rightarrow& ||x - y||=0 \leftrightarrow x = y
 \end{split}
 $$
+
 3) greater or equal zero
+
 ![[norm#a norm is never negative]]
+
 4) [[triangle inequality]]
 $$
 \begin{split}
@@ -54,6 +60,17 @@ $$
 d(x, y) \leftrightarrow x=y \\
 d(x, 0) = || x|| \leftrightarrow x = 0
 \end{split}
+$$
+
+### geometric interpretation between [[norm]] and [[metric]]
+- the [[norm]] mesures the length of a [[vector]] $|| x ||$
+- thus a every [[norm]] induces a [[metric]] messurement for the **distance between [[vector|vectors]]** 
+$$
+d(x, y) = || x - y ||
+$$
+- for example the eucledean distance between two [[vector|vectors]] $x, y \in V$
+$$
+d(x, y) = || x - y ||_2 = \left( \sum_{i \in [n]} |x_i - y_i|^2\right)^{\frac{1}{2}}
 $$
 
 # --------------------

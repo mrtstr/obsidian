@@ -96,7 +96,7 @@ Back:
 
 
 $$
-\frac{d\log_b(ax)}{dx} = \frac{1}{\ln(b)ax}
+\frac{d\log_b(ax)}{dx} = \frac{1}{\ln(b)x}
 $$
 ### given
 $$

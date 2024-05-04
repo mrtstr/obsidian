@@ -19,6 +19,32 @@ $$
 $$
 \forall x \in V: \langle x  , x \rangle  \geq 0
 $$
+### geometric interpretation
+
+#### relationship to [[cosine]]
+- the inner product of two [[norm|normalized]] [[vector|vectors]] is equal to their [[cosine]]
+$$
+\cos(\phi) = \left\langle \frac{x}{||x||}, \frac{y}{||y||} \right\rangle = \frac{\langle x, y \rangle}{||x||\cdot||y||} 
+$$
+
+#### relationship to [[projection]]
+
+- given a [[vector]] $a$ and a [[vector]] $b$ then $\langle a, b \rangle$ is equal to the length of the [[projection]] of $a$ on $b$ [[multiplication|multiplied]] with the length of $b$ (and vice versa) 
+- thus the [[inner product]] contains the information about the (unnormalized) length of the [[projection]] of one [[vector]] to another
+
+![[1714824161003.jpg]]
+
+#### relationship to [[orthogonal]]
+- defines the convept of [[orthogonal|orthogonality]] which is a generalization of [[vector|vectors]] having a right angle to each other
+
+![[orthogonal#orthogonal]]
+
+
+
+![[inner products and norms#every inner product induces a norm]]
+
+![[cauchy schwarz inequality#cauchy schwarz inequality]]
+
 ### [[inner product]] examples
 
 ![[matrix induced inner product#matrix induced inner product]]
@@ -33,7 +59,7 @@ $$
 $$
 \langle u, v \rangle_{L^2} = \int_{\Omega} u(x)v(x) dx
 $$
-![[norm#norm for function space $f: Omega subset mathbb{R} d rightarrow mathbb{R}$]]
+![[function space#norm for function space $f: Omega subset mathbb{R} d rightarrow mathbb{R}$]]
 
 # ------------
 ![[vector space#vector space]]
@@ -202,4 +228,90 @@ $$
 
 Tags: mathematics
 <!--ID: 1714495264989-->
+END
+
+
+START
+Basic
+[[inner product]] geometric relationship to
+- [[projection]]
+- [[cosine]]
+- [[orthogonal]]
+Back: 
+#### relationship to [[cosine]]
+- the inner product of two [[norm|normalized]] [[vector|vectors]] is equal to their [[cosine]]
+$$
+\cos(\phi) = \left\langle \frac{x}{||x||}, \frac{y}{||y||} \right\rangle = \frac{\langle x, y \rangle}{||x||\cdot||y||} 
+$$
+
+#### relationship to [[projection]]
+
+- given a [[vector]] $a$ and a [[vector]] $b$ then $\langle a, b \rangle$ is equal to the length of the [[projection]] of $a$ on $b$ [[multiplication|multiplied]] with the length of $b$ (and vice versa) 
+- thus the [[inner product]] contains the information about the (unnormalized) length of the [[projection]] of one [[vector]] to another
+
+![[projection 1.jpg]]
+
+#### relationship to [[orthogonal]]
+- defines the convept of [[orthogonal|orthogonality]] which is a generalization of [[vector|vectors]] having a right angle to each other
+
+#### orthogonal
+- two [[vector|vectors]] are [[orthogonal]] when their [[inner product]] is $=0$
+
+$$
+\begin{split}
+a \perp b & \Leftrightarrow  ab^\top=\left<a,b\right> = 0 \\
+& \Leftrightarrow cos(a,b) = 0
+\end{split}
+$$
+
+
+_______________________
+### inner product
+- generalization of the 
+- let $(V, +, \cdot)$ be a [[vector space]]
+-  [[function]]  $\langle\cdot,\cdot\rangle: V \times V \rightarrow \mathbb{R}$ is an [[inner product]] if the following conditions are true
+
+1) [[linear function|linearity]] (regarding both elemements because of the [[symmetric]])
+
+$$
+\forall x,y,z \in V, \lambda \in \mathbb{R}:\langle x + \lambda y , z \rangle = \langle x , z  \rangle + \lambda \langle  y , z \rangle
+$$
+2) [[symmetric]]
+
+$$
+\forall x,y \in V: \langle x  , y \rangle = \langle y  , x \rangle
+$$
+3) [[positive definite]]
+
+$$
+\forall x \in V: \langle x  , x \rangle  \leftrightarrow x=0 
+$$
+$$
+\forall x \in V: \langle x  , x \rangle  \geq 0
+$$
+
+
+
+### norm
+- generalization of the concept of **length of a [[vector]]**
+- let $V$ be a [[vector space]]
+- the [[function]] $||\:.||: V \rightarrow \mathbb{R^+}$ is a [[norm]] is it satisfies the following conditions
+
+1) [[positive definite]]
+$$
+||x||=0 \Leftrightarrow x = 0
+$$
+
+2) absolutely [[homogeneous]]
+$$
+\forall x \in V, \lambda \in \mathbb{K}: ||\lambda \cdot x|| = |\lambda| \cdot ||x||
+$$
+3) [[triangle inequality]]
+$$
+\forall v, w \in V: ||v + w|| \leq ||v|| + ||w||
+$$
+
+
+Tags: mathematics
+<!--ID: 1714827693825-->
 END

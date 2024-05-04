@@ -1,17 +1,5 @@
-## Definition
+### symmetric matrix
 A [[square matrix]] $A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{I} \right|}}$ is symmetric when:
-$$
-\begin{split}
-A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{I} \right|}} 
-&= \left(a_{i,j} \right)_{i \in \mathcal{I}, j \in \mathcal{I}} \\
-&= \left(A^{(j)} \right)_{j \in \mathcal{I}}
-= 
-\begin{pmatrix}   A^{(1)} &   ... & A^{(\left| \mathcal{I} \right|)}  \end{pmatrix}\\
-&= \left(A_{(i)} \right)_{i \in \mathcal{I}}
-=  
-\begin{pmatrix}   A_{(1)} \\   ... \\ A_{(\left| \mathcal{I} \right|)}   \end{pmatrix}
-\end{split}
-$$
 1) $A = A^\top$ ($A$ is equal to its [[transpose]])
 2) $\forall i,j \in \mathcal{I}: a_{ij} = a_{ji}$
 3) $A^{(i)} = A_{(i)}$ (the ith column vector is equal to the ith row vector)
