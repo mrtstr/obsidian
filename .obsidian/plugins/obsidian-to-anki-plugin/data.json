@@ -389,7 +389,7 @@
     "mathematics/basics/convex set.md": "5129460916f232e4216d26f17e1b32dc",
     "mathematics/basics/convex function.md": "c249d7d2ea3bfebf9a9a9cfa6bb008c1",
     "mathematics/basics/commutative.md": "4c156fbc4472f2845f3479a5eb12bcb9",
-    "mathematics/basics/cauchy schwarz inequality.md": "29c7ed2f0e2f7d761969469764e91a5c",
+    "mathematics/basics/cauchy schwarz inequality.md": "502c8c96351caba5c47bdb0432bb0fdc",
     "mathematics/basics/cartesian product.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/cardinality.md": "17452fd66f23ae6adaedb9757e122fea",
     "mathematics/basics/associative.md": "fbd0bc676d7864dfd2d0fcbeabb8bbaf",
@@ -1466,7 +1466,7 @@
     "mathematics/basics/inner product.md": "df582ca8a8eb1dcfb4e566e4719ea99c",
     "mathematics/basics/relationship norm and metric.md": "5bd27559730217baeb97e4d81a242330",
     "mathematics/basics/matrix induced inner product.md": "40f364548c0de7650f6b0e223df873ca",
-    "mathematics/basics/inner products and norms.md": "52eae1bdadc04cc9d3c40fc83b5273f8"
+    "mathematics/basics/inner products and norms.md": "21faad323019b7a852f30dc92fc26733"
   },
   "fields_dict": {
     "Basic": [

@@ -24,17 +24,20 @@ $$
 \end{split}
 $$
 3) [[triangle inequality]]
+
 $$
 \begin{split}
 || x+y ||^2  
-&= \langle x+y, x+y \rangle \\
-&= \langle x, x \rangle + \langle y, y \rangle + 2\langle x, y \rangle \\
-\left(|| x || + || y ||\right)^2 
-&= || x ||^2 + || y ||^2 + 2|| x || \cdot || y || \\
-&= \langle x, x \rangle + \langle y, y \rangle + 2\sqrt{\langle x, x \rangle} \cdot \sqrt{\langle y, y \rangle} \\
-|| x+y ||  \leq || x || + || y || &\Leftrightarrow \langle x, y \rangle \leq \sqrt{\langle x, x \rangle} \cdot \sqrt{\langle y, y \rangle} \quad \text{(cauchy schwarz)}
+&\leq \left(|| x || + || y ||\right)^2  \\
+\langle x+y, x+y \rangle 
+&\leq || x ||^2 + || y ||^2 + 2|| x || \cdot || y || \\
+\langle x, x \rangle + \langle y, y \rangle + 2\langle x, y \rangle
+&\leq  \langle x, x \rangle + \langle y, y \rangle + 2\sqrt{\langle x, x \rangle} \cdot \sqrt{\langle y, y \rangle}\\
+\langle x, y \rangle
+&\leq  \sqrt{\langle x, x \rangle} \cdot \sqrt{\langle y, y \rangle}  \quad \text{(cauchy schwarz)} \\
 \end{split}
 $$
+
 
 ![[cauchy schwarz inequality#cauchy schwarz inequality]]
 
@@ -222,12 +225,13 @@ $$
 $$
 \begin{split}
 || x+y ||^2  
-&= \langle x+y, x+y \rangle \\
-&= \langle x, x \rangle + \langle y, y \rangle + 2\langle x, y \rangle \\
-\left(|| x || + || y ||\right)^2 
-&= || x ||^2 + || y ||^2 + 2|| x || \cdot || y || \\
-&= \langle x, x \rangle + \langle y, y \rangle + 2\sqrt{\langle x, x \rangle} \cdot \sqrt{\langle y, y \rangle} \\
-|| x+y ||  \leq || x || + || y || &\Leftrightarrow \langle x, y \rangle \leq \sqrt{\langle x, x \rangle} \cdot \sqrt{\langle y, y \rangle} \quad \text{(cauchy schwarz)}
+&\leq \left(|| x || + || y ||\right)^2  \\
+\langle x+y, x+y \rangle 
+&\leq || x ||^2 + || y ||^2 + 2|| x || \cdot || y || \\
+\langle x, x \rangle + \langle y, y \rangle + 2\langle x, y \rangle
+&\leq  \langle x, x \rangle + \langle y, y \rangle + 2\sqrt{\langle x, x \rangle} \cdot \sqrt{\langle y, y \rangle}\\
+\langle x, y \rangle
+&\leq  \sqrt{\langle x, x \rangle} \cdot \sqrt{\langle y, y \rangle}  \quad \text{(cauchy schwarz)} \\
 \end{split}
 $$
 
@@ -312,11 +316,9 @@ $$
 
 
 ### geometric relationship [[inner product]] and [[norm]]
-- the [[inner product]] describes the unnormalized length of the [[projection]] auf one [[vector]] to another
 - the length of the [[projection]] of a [[vector]] $x$ on itself equal to its length and thus $\langle x,x \rangle = ||x||^2$
 
 #### [[inner product]] and [[projection]]
-
 - given a [[vector]] $a$ and a [[vector]] $b$ then $\langle a, b \rangle$ is equal to the length of the [[projection]] of $a$ on $b$ [[multiplication|multiplied]] with the length of $b$ (and vice versa) 
 - thus the [[inner product]] contains the information about the (unnormalized) length of the [[projection]] of one [[vector]] to another
 
@@ -358,12 +360,13 @@ $$
 $$
 \begin{split}
 || x+y ||^2  
-&= \langle x+y, x+y \rangle \\
-&= \langle x, x \rangle + \langle y, y \rangle + 2\langle x, y \rangle \\
-\left(|| x || + || y ||\right)^2 
-&= || x ||^2 + || y ||^2 + 2|| x || \cdot || y || \\
-&= \langle x, x \rangle + \langle y, y \rangle + 2\sqrt{\langle x, x \rangle} \cdot \sqrt{\langle y, y \rangle} \\
-|| x+y ||  \leq || x || + || y || &\Leftrightarrow \langle x, y \rangle \leq \sqrt{\langle x, x \rangle} \cdot \sqrt{\langle y, y \rangle} \quad \text{(cauchy schwarz)}
+&\leq \left(|| x || + || y ||\right)^2  \\
+\langle x+y, x+y \rangle 
+&\leq || x ||^2 + || y ||^2 + 2|| x || \cdot || y || \\
+\langle x, x \rangle + \langle y, y \rangle + 2\langle x, y \rangle
+&\leq  \langle x, x \rangle + \langle y, y \rangle + 2\sqrt{\langle x, x \rangle} \cdot \sqrt{\langle y, y \rangle}\\
+\langle x, y \rangle
+&\leq  \sqrt{\langle x, x \rangle} \cdot \sqrt{\langle y, y \rangle}  \quad \text{(cauchy schwarz)} \\
 \end{split}
 $$
 
