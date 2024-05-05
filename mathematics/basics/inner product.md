@@ -34,6 +34,13 @@ $$
 
 ![[1714824161003.jpg]]
 
+$$
+\begin{split}
+\cos(\phi) = \frac{ankathte}{hypotenuse} = 
+\frac{||b'||}{||a||} = \frac{\langle a,b\rangle}{||a||\cdot||b||}
+\end{split}
+$$
+
 #### relationship to [[orthogonal]]
 - defines the convept of [[orthogonal|orthogonality]] which is a generalization of [[vector|vectors]] having a right angle to each other
 
@@ -234,7 +241,7 @@ END
 START
 Basic
 [[inner product]] geometric relationship to
-- [[projection]]
+- [[projection]] (with proof)
 - [[cosine]]
 - [[orthogonal]]
 Back: 
@@ -250,6 +257,13 @@ $$
 - thus the [[inner product]] contains the information about the (unnormalized) length of the [[projection]] of one [[vector]] to another
 
 ![[projection 1.jpg]]
+
+$$
+\begin{split}
+\cos(\phi) = \frac{ankathte}{hypotenuse} = 
+\frac{||b'||}{||a||} = \frac{\langle a,b\rangle}{||a||\cdot||b||}
+\end{split}
+$$
 
 #### relationship to [[orthogonal]]
 - defines the convept of [[orthogonal|orthogonality]] which is a generalization of [[vector|vectors]] having a right angle to each other
