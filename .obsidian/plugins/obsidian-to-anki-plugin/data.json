@@ -1463,10 +1463,12 @@
     "mathematics/basics/real numbers.md": "6f41edd984aafcb6193dd48dfb826a5c",
     "mathematics/basics/sequence.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/convergence.md": "e75401b260dffae2e0957909e9f247f6",
-    "mathematics/basics/inner product.md": "df582ca8a8eb1dcfb4e566e4719ea99c",
+    "mathematics/basics/inner product.md": "4fecb47e01a78874c9258395aa391748",
     "mathematics/basics/relationship norm and metric.md": "5bd27559730217baeb97e4d81a242330",
     "mathematics/basics/matrix induced inner product.md": "40f364548c0de7650f6b0e223df873ca",
-    "mathematics/basics/inner products and norms.md": "21faad323019b7a852f30dc92fc26733"
+    "mathematics/basics/inner products and norms.md": "21faad323019b7a852f30dc92fc26733",
+    "mathematics/basics/open set.md": "a6daf6a25fbf09574496790103727eca",
+    "mathematics/basics/ball.md": "1080dcb38d164b300825606b253b00ba"
   },
   "fields_dict": {
     "Basic": [

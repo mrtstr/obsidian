@@ -32,6 +32,10 @@ $$
 - given a [[vector]] $a$ and a [[vector]] $b$ then $\langle a, b \rangle$ is equal to the length of the [[projection]] of $a$ on $b$ [[multiplication|multiplied]] with the length of $b$ (and vice versa) 
 - thus the [[inner product]] contains the information about the (unnormalized) length of the [[projection]] of one [[vector]] to another
 
+$$
+\langle a,b \rangle = ||b|| \cdot ||b'|| = ||b|| \cdot \cos(\phi) ||a||
+$$
+
 ![[1714824161003.jpg]]
 
 $$
@@ -40,6 +44,11 @@ $$
 \frac{||b'||}{||a||} = \frac{\langle a,b\rangle}{||a||\cdot||b||}
 \end{split}
 $$
+- with the length of the projection of a on b being the [[cosine]] of the angle [[multiplication]] with the length of a
+$$
+||b'|| = \cos(\phi) ||a||
+$$
+
 
 #### relationship to [[orthogonal]]
 - defines the convept of [[orthogonal|orthogonality]] which is a generalization of [[vector|vectors]] having a right angle to each other
@@ -256,6 +265,10 @@ $$
 - given a [[vector]] $a$ and a [[vector]] $b$ then $\langle a, b \rangle$ is equal to the length of the [[projection]] of $a$ on $b$ [[multiplication|multiplied]] with the length of $b$ (and vice versa) 
 - thus the [[inner product]] contains the information about the (unnormalized) length of the [[projection]] of one [[vector]] to another
 
+$$
+\langle a,b \rangle = ||b|| \cdot ||b'|| = ||b|| \cdot \cos(\phi) ||a||
+$$
+
 ![[projection 1.jpg]]
 
 $$
@@ -263,6 +276,11 @@ $$
 \cos(\phi) = \frac{ankathte}{hypotenuse} = 
 \frac{||b'||}{||a||} = \frac{\langle a,b\rangle}{||a||\cdot||b||}
 \end{split}
+$$
+
+- with the length of the projection of a on b being the [[cosine]] of the angle [[multiplication]] with the length of a
+$$
+||b'|| = \cos(\phi) ||a||
 $$
 
 #### relationship to [[orthogonal]]
