@@ -931,7 +931,7 @@
     "mathematics/linear algebra/rank.md": "e5e94cbb3d8dfbdbf884c5eeb3c694a6",
     "mathematics/linear algebra/rank nullity theorem.md": "3952121cb916e06aacc8bd4255032457",
     "mathematics/linear algebra/pseudo inverse matrix.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/linear algebra/projection.md": "03dc841fcae067d2cc6f858faee54a01",
+    "mathematics/linear algebra/projection.md": "6c6e65dd9401748f89b33a19175a15c7",
     "mathematics/linear algebra/projection matrix.md": "631c6f4a941bdcb0d04c41b4658c4c4d",
     "mathematics/linear algebra/orthonormal.md": "4c80e6196aee5227752a4c93bcb61d4c",
     "mathematics/linear algebra/orthogonal.md": "5e1e2478abb877b79d7ddc60d9047702",
@@ -1468,7 +1468,8 @@
     "mathematics/basics/matrix induced inner product.md": "40f364548c0de7650f6b0e223df873ca",
     "mathematics/basics/inner products and norms.md": "21faad323019b7a852f30dc92fc26733",
     "mathematics/basics/open set.md": "a6daf6a25fbf09574496790103727eca",
-    "mathematics/basics/ball.md": "1080dcb38d164b300825606b253b00ba"
+    "mathematics/basics/ball.md": "1080dcb38d164b300825606b253b00ba",
+    "mathematics/basics/open and closed sets.md": "931e42a8fccf2fa413b95db2e3d4a5df"
   },
   "fields_dict": {
     "Basic": [
