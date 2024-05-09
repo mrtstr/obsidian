@@ -13,6 +13,11 @@ $$
 
 ![[projection 3.jpg]]
 
+
+### relationship [[projection]] to the [[cosine]]
+- the [[cosine]] is the length of the [[projection]] of a [[vector]] $a$ to a [[vector]] $b$ devided by the length of $a$
+
+
 ### [[projection]] into the [[column space]]
 Projection of a [[vector]] $b$ to the [[column space]] of [[matrix]] $A$
 - $b - Ax$ has to be [[orthogonal]] to the [[column space]] of $A$
@@ -112,4 +117,37 @@ $$
 
 Tags: mathematics
 <!--ID: 1714834319817-->
+END
+
+
+START
+Basic
+relationship [[projection]] to the [[cosine]]
+Back: 
+
+### relationship [[projection]] to the [[cosine]]
+- the [[cosine]] is the length of the [[projection]] of a [[vector]] $a$ to a [[vector]] $b$ devided by the length of $a$
+
+### [[projection]] of [[vector|vectors]] on eachother
+- let $b'$ be the projection of [[vector]] $a$ on [[vector]] $b$
+- the length of $b'$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $b$ does not depend on the length of $b$)
+
+$$
+||b'|| = \frac{\langle a,b \rangle}{||b||}
+$$
+- since $b'$ has the same direction as b the following is true
+$$
+b' = \frac{\langle a,b \rangle}{||b||} \frac{b}{||b||}
+$$
+
+
+
+#### relationship [[inner product]] to [[projection]]
+
+- given a [[vector]] $a$ and a [[vector]] $b$ then $\langle a, b \rangle$ is equal to the length of the [[projection]] of $a$ on $b$ [[multiplication|multiplied]] with the length of $b$ (and vice versa) 
+- thus the [[inner product]] contains the information about the (unnormalized) length of the [[projection]] of one [[vector]] to another
+
+
+Tags: mathematics
+
 END
