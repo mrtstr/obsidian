@@ -1463,7 +1463,7 @@
     "mathematics/basics/real numbers.md": "6f41edd984aafcb6193dd48dfb826a5c",
     "mathematics/basics/sequence.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/convergence.md": "e75401b260dffae2e0957909e9f247f6",
-    "mathematics/basics/inner product.md": "4fecb47e01a78874c9258395aa391748",
+    "mathematics/basics/inner product.md": "75ed3aa86e699ee7367f6cb21a2da24b",
     "mathematics/basics/relationship norm and metric.md": "5bd27559730217baeb97e4d81a242330",
     "mathematics/basics/matrix induced inner product.md": "40f364548c0de7650f6b0e223df873ca",
     "mathematics/basics/inner products and norms.md": "21faad323019b7a852f30dc92fc26733",
@@ -1471,7 +1471,9 @@
     "mathematics/basics/ball.md": "1080dcb38d164b300825606b253b00ba",
     "mathematics/basics/open and closed sets.md": "931e42a8fccf2fa413b95db2e3d4a5df",
     "mathematics/basics/cauchy complete.md": "97a7bb644618888dd4d5d9fd676bfc84",
-    "mathematics/basics/cauchy sequence.md": "66a8930d66ef38258df50ee8ff9f0a5f"
+    "mathematics/basics/cauchy sequence.md": "66a8930d66ef38258df50ee8ff9f0a5f",
+    "mathematics/basics/hilbert spaces.md": "1a8025bef6664b2e2a8a5270558d0ad0",
+    "mathematics/basics/banach spaces.md": "ffb600c5e7a4b0b23bc19514d866a9f7"
   },
   "fields_dict": {
     "Basic": [

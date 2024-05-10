@@ -19,6 +19,7 @@ $$
 $$
 \forall x \in V: \langle x  , x \rangle  \geq 0
 $$
+
 ### geometric interpretation
 
 #### relationship to [[cosine]]
