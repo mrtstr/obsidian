@@ -1469,7 +1469,9 @@
     "mathematics/basics/inner products and norms.md": "21faad323019b7a852f30dc92fc26733",
     "mathematics/basics/open set.md": "a6daf6a25fbf09574496790103727eca",
     "mathematics/basics/ball.md": "1080dcb38d164b300825606b253b00ba",
-    "mathematics/basics/open and closed sets.md": "931e42a8fccf2fa413b95db2e3d4a5df"
+    "mathematics/basics/open and closed sets.md": "931e42a8fccf2fa413b95db2e3d4a5df",
+    "mathematics/basics/cauchy complete.md": "97a7bb644618888dd4d5d9fd676bfc84",
+    "mathematics/basics/cauchy sequence.md": "66a8930d66ef38258df50ee8ff9f0a5f"
   },
   "fields_dict": {
     "Basic": [
