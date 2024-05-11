@@ -1,4 +1,4 @@
-# [[linear function|Linear Transformation]] of a [[random variable]]
+# [[linear map|Linear Transformation]] of a [[random variable]]
 ## Definition
 $$
 \begin{split}
@@ -19,7 +19,7 @@ $$
 
 
 
-# [[linear function|Linear Transformation]] of a [[random vector]]
+# [[linear map|Linear Transformation]] of a [[random vector]]
 $$
 \begin{split}
 \boldsymbol{X} &\sim f_\boldsymbol{X}(\boldsymbol{x}) \\
@@ -32,7 +32,7 @@ $$
 \end{split}
 $$
 
-# [[linear function|Linear Transformation]] of a [[stochastic independent|i.i.d.]] [[random vector]]
+# [[linear map|Linear Transformation]] of a [[stochastic independent|i.i.d.]] [[random vector]]
 
 $$
 \begin{split}
@@ -54,7 +54,7 @@ $$
 
 START
 Basic
-[[linear function|Linear Transformation]] of a [[random variable]]
+[[linear map|Linear Transformation]] of a [[random variable]]
 $$
 \begin{split}
 X &\sim f_X(x) \\
@@ -105,7 +105,7 @@ END
 
 START
 Basic
-[[linear function|Linear Transformation]] of a [[random vector]]
+[[linear map|Linear Transformation]] of a [[random vector]]
 - [[expectation]]
 - [[variance]]
 Back: 

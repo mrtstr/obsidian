@@ -15,7 +15,7 @@ y^\top Ax
 \end{split}
 $$
 2) [[positive definite]]: followns from $A$ being [[positive definite]]
-3) [[linear function|linearity]] 
+3) [[linear map|linearity]] 
 # ------------------
 ![[inner product#inner product]]
 
@@ -47,7 +47,7 @@ y^\top Ax
 \end{split}
 $$
 2) [[positive definite]]: followns from $A$ being [[positive definite]]
-3) [[linear function|linearity]] 
+3) [[linear map|linearity]] 
 
 ### symmetric matrix
 A [[square matrix]] $A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{I} \right|}}$ is symmetric when:
@@ -66,7 +66,7 @@ ___________________
 ### inner product
 - let $(V, +, \cdot)$ be a [[vector space]]
 -  [[function]]  $\langle\cdot,\cdot\rangle: V \times V \rightarrow \mathbb{R}$ is an [[inner product]] if the following conditions are true
-1) [[linear function|linearity]] (regarding both elemements because of the [[symmetric]])
+1) [[linear map|linearity]] (regarding both elemements because of the [[symmetric]])
 
 $$
 \forall x,y,z \in V, \lambda \in \mathbb{R}:\langle x + \lambda y , z \rangle = \langle x , z  \rangle + \lambda \langle  y , z \rangle

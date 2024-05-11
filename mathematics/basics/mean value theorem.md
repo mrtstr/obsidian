@@ -1,5 +1,5 @@
 ## Theorem
-Let $f$ be a [[continouse function|continouse]] [[derivative|differentiable]] [[function]] in the interval $(a,b)$ then the following is true
+Let $f$ be a [[continuous function|continouse]] [[derivative|differentiable]] [[function]] in the interval $(a,b)$ then the following is true
 $$
 \exists c \in (a, b): \left.\frac{df(x)}{dx}\right|_{x=c}=\frac{f(b)-f(a)}{b-a}
 $$
@@ -11,7 +11,7 @@ Basic
 [[mean value theorem]] without proof
 
 Back: 
-Let $f$ be a [[continouse function|continouse]] [[derivative|differentiable]] [[function]] in the interval $(a,b)$ then the following is true
+Let $f$ be a [[continuous function|continouse]] [[derivative|differentiable]] [[function]] in the interval $(a,b)$ then the following is true
 $$
 \exists c \in (a, b): \left.\frac{df(x)}{dx}\right|_{x=c}=\frac{f(b)-f(a)}{b-a}
 $$

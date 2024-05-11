@@ -1,29 +1,31 @@
-### linear function
+### linear map
 - let $F:V \rightarrow W$ be a [[function]] from one [[vector space]] $(V, +, \cdot)$ to another [[vector space]] $(W,\oplus, \odot)$ 
-- $F$ is a [[linear function]] if the following is true
+- $F$ is a [[linear map]] if the following is true
 
 $$
 \forall v,w \in V, \lambda , \mu \in \mathbb{K}:F(\lambda v + \mu w) = \lambda \odot F(v) \oplus \mu \odot F(W) 
 $$
 
-### [[kernel]] if a [[linear function]]
-- given a [[linear function]] $F:V \rightarrow W$ the [[kernel]] of $F$ is defined as follows
+### [[kernel]] if a [[linear map]]
+- given a [[linear map]] $F:V \rightarrow W$ the [[kernel]] of $F$ is defined as follows
 $$
 \ker(F) = \{v \in V : F(v) = 0\} \subseteq V
 $$
-- note: the [[kernel]] of a [[linear function]] refers to the same comcept as the [[nullspace]] of a [[matrix]] because a [[matrix]] induces a [[linear function]]
-### [[image]] if a [[linear function]]
-- given a [[linear function]] $F:V \rightarrow W$ the [[image]] of $F$ is defined as follows
+- note: the [[kernel]] of a [[linear map]] refers to the same comcept as the [[nullspace]] of a [[matrix]] because a [[matrix]] induces a [[linear map]]
+### [[image]] if a [[linear map]]
+- given a [[linear map]] $F:V \rightarrow W$ the [[image]] of $F$ is defined as follows
 $$
 F(S) = \{w \in W : \exists v \in S:  F(v) = w\} \subseteq W
 $$
 
-### range of a [[linear function]]
-- given a [[linear function]] $F:V \rightarrow W$ the range of $F$ is defined as the [[image]] if its domain
+### range of a [[linear map]]
+- given a [[linear map]] $F:V \rightarrow W$ the range of $F$ is defined as the [[image]] if its domain
 $$
 \mathrm{range} (F) = \{w \in W : \exists v \in V:  F(v) = w\} \subseteq W
 $$
-- note: the range of a [[linear function]] refers to the same comcept as the [[column space]] of a [[matrix]] because a [[matrix]] induces a [[linear function]]
+- note: the range of a [[linear map]] refers to the same comcept as the [[column space]] of a [[matrix]] because a [[matrix]] induces a [[linear map]]
+
+
 # --------------------------
 
 ![[function#function]]
@@ -33,7 +35,7 @@ $$
 START
 Basic
 definitions
-- [[linear function]]
+- [[linear map]]
 - [[kernel]]
 - [[image]]
 - range
@@ -45,31 +47,31 @@ differences
 Back: 
 ### linear function
 - let $F:V \rightarrow W$ be a [[function]] from one [[vector space]] $(V, +, \cdot)$ to another [[vector space]] $(W,\oplus, \odot)$ 
-- $F$ is a [[linear function]] if the following is true
+- $F$ is a [[linear map]] if the following is true
 
 $$
 \forall v,w \in V, \lambda , \mu \in \mathbb{K}:F(\lambda v + \mu w) = \lambda \odot F(v) \oplus \mu \odot F(W) 
 $$
 
-### [[kernel]] if a [[linear function]]
-- given a [[linear function]] $F:V \rightarrow W$ the [[kernel]] of $F$ is defined as follows
+### [[kernel]] if a [[linear map]]
+- given a [[linear map]] $F:V \rightarrow W$ the [[kernel]] of $F$ is defined as follows
 $$
 \ker(F) = \{v \in V : F(v) = 0\} \subseteq V
 $$
-- note: the [[kernel]] of a [[linear function]] refers to the same comcept as the [[nullspace]] of a [[matrix]] because a [[matrix]] induces a [[linear function]]
+- note: the [[kernel]] of a [[linear map]] refers to the same comcept as the [[nullspace]] of a [[matrix]] because a [[matrix]] induces a [[linear map]]
 
-### [[image]] if a [[linear function]]
-- given a [[linear function]] $F:V \rightarrow W$ the [[image]] of $F$ is defined as follows
+### [[image]] if a [[linear map]]
+- given a [[linear map]] $F:V \rightarrow W$ the [[image]] of $F$ is defined as follows
 $$
 F(S) = \{w \in W : \exists v \in S:  F(v) = w\} \subseteq W
 $$
 
-### range of a [[linear function]]
-- given a [[linear function]] $F:V \rightarrow W$ the range of $F$ is defined as the [[image]] if its domain
+### range of a [[linear map]]
+- given a [[linear map]] $F:V \rightarrow W$ the range of $F$ is defined as the [[image]] if its domain
 $$
 \mathrm{range} (F) = \{w \in W : \exists v \in V:  F(v) = w\} \subseteq W
 $$
-- note: the range of a [[linear function]] refers to the same comcept as the [[column space]] of a [[matrix]] because a [[matrix]] induces a [[linear function]]
+- note: the range of a [[linear map]] refers to the same comcept as the [[column space]] of a [[matrix]] because a [[matrix]] induces a [[linear map]]
 
 _________________
 
@@ -105,7 +107,7 @@ $$
 $$
 
 ### nullspace
-- the [[nullspace]] of a [[matrix]] is the [[set]] of [[vector|vectors]] that is mapped to the origin by the [[linear function]] induced by $A$
+- the [[nullspace]] of a [[matrix]] is the [[set]] of [[vector|vectors]] that is mapped to the origin by the [[linear map]] induced by $A$
 $$
 N(A)=\left\{ x \in \mathbb{R}^{m} \mid Ax=0 \right\}
 \subseteq\mathbb{R}^{m}

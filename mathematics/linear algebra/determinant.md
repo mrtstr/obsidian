@@ -96,7 +96,7 @@ Die **Determinante** einer Matrix ist genau dann **gleich Null**, wenn 
 ### interpretation
 - given a geometry $\in \mathbb{R}^n$ defined by its $n$ corners as [[vector|vectors]] $v_1,..., v_n \in \mathbb{R}^n$
 - the volumen of the geometry is $u$
-- after transforming $v_1,..., v_n \in \mathbb{R}^n$ with the [[linear function]] $f(x)=Ax$ the volumen of geometry defined by the vectors $v_i'=Av_i$ will be $u'=\det(A)u$ 
+- after transforming $v_1,..., v_n \in \mathbb{R}^n$ with the [[linear map]] $f(x)=Ax$ the volumen of geometry defined by the vectors $v_i'=Av_i$ will be $u'=\det(A)u$ 
 $$
 \begin{split}
 V 
@@ -358,7 +358,7 @@ Back:
 ### interpretation
 - given a geometry $\in \mathbb{R}^n$ defined by its $n$ corners as [[vector|vectors]] $v_1,..., v_n \in \mathbb{R}^n$
 - the volumen of the geometry is $u$
-- after transforming $v_1,..., v_n \in \mathbb{R}^n$ with the [[linear function]] $f(x)=Ax$ the volumen of geometry defined by the vectors $v_i'=Av_i$ will be $u'=\det(A)u$ 
+- after transforming $v_1,..., v_n \in \mathbb{R}^n$ with the [[linear map]] $f(x)=Ax$ the volumen of geometry defined by the vectors $v_i'=Av_i$ will be $u'=\det(A)u$ 
 
 $$
 \begin{split}

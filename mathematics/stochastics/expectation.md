@@ -27,8 +27,8 @@ $$
 $$
 \mathbb{E}[g(X, Y)]=\int\limits_\infty^\infty \int\limits_\infty^\infty g(x,y) \cdot f_{XY}(x,y)dx dy
 $$
-### [[linear function]] $g(X)$
-If $g(X)$ is a [[linear function]] $\mathbb{E}\left[g(X)\right] = g\left(\mathbb{E}[X]\right)$
+### [[linear map]] $g(X)$
+If $g(X)$ is a [[linear map]] $\mathbb{E}\left[g(X)\right] = g\left(\mathbb{E}[X]\right)$
 proof: see linearity of the [[expectation]]
 
 ### [[convex function]] $g(X)$
@@ -180,7 +180,7 @@ Basic
 [[expectation]] of [[functions of random variables]] $\mathbb{E}[g(X)]$
 - of a single [[random variable]]
 - of a multiple [[random variable]]
-- [[linear function]] $g(.)$
+- [[linear map]] $g(.)$
 - [[convex function]] $g(.)$
 Back: 
 ## [[expectation]] of [[functions of random variables]]
@@ -191,8 +191,8 @@ $$
 $$
 \mathbb{E}[g(X, Y)]=\int\limits_\infty^\infty \int\limits_\infty^\infty g(x,y) \cdot f_{XY}(x,y)dx dY
 $$
-### [[linear function]] $g(X)$
-If $g(X)$ is a [[linear function]] $\mathbb{E}[g(X)] = g(\mathbb{E}[X])$
+### [[linear map]] $g(X)$
+If $g(X)$ is a [[linear map]] $\mathbb{E}[g(X)] = g(\mathbb{E}[X])$
 
 proof:
 $$

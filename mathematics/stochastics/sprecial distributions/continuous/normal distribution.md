@@ -142,7 +142,7 @@ X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
 
 \end{split}
 $$
-### [[linear function|Linear Functions]] of [[normal distribution|normal distributed]] [[random variable|random variables]]
+### [[linear map|Linear Functions]] of [[normal distribution|normal distributed]] [[random variable|random variables]]
 
 $$
 \begin{split}

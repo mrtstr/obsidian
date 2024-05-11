@@ -2,12 +2,12 @@ The [[integral]] can be interpreted as
 - a continuous [[sum]] of a [[function]]
 - generalization of areas under a [[function]]
 
-The **infinit [[integral]]** is defined as the [[inverse function|inverse]] of the [[derivative]] while the **definit [[integral]]** is defined as a signed area under a [[continouse function]]
+The **infinit [[integral]]** is defined as the [[inverse function|inverse]] of the [[derivative]] while the **definit [[integral]]** is defined as a signed area under a [[continuous function]]
 
 ![[derivative#definition derivative]]
 
 ## Infinite [[integral]] is an [[inverse function|inverse]] [[derivative]]
-Let $f(x)=\frac{dF(x)}{dx}$ be a [[continouse function]] defined for a [[function domain|domain]] $[a,b]$ that is the [[derivative]] of a [[function]] $F$. Since the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]] it is defined as follows:
+Let $f(x)=\frac{dF(x)}{dx}$ be a [[continuous function]] defined for a [[function domain|domain]] $[a,b]$ that is the [[derivative]] of a [[function]] $F$. Since the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]] it is defined as follows:
 
 $$
 \begin{split}
@@ -137,10 +137,10 @@ The [[integral]] can be interpreted as
 - a continuous [[sum]] of a [[function]]
 - generalization of areas under a [[function]]
 
-The **infinit [[integral]]** is defined as the [[inverse function|inverse]] of the [[derivative]] while the **definit [[integral]]** is defined as a signed area under a [[continouse function]]
+The **infinit [[integral]]** is defined as the [[inverse function|inverse]] of the [[derivative]] while the **definit [[integral]]** is defined as a signed area under a [[continuous function]]
 
 ## Infinite [[integral]] is an [[inverse function|inverse]] [[derivative]]
-Let $f(x)=\frac{dF(x)}{dx}$ be a [[continouse function]] defined for a [[function domain|domain]] $[a,b]$ that is the [[derivative]] of a [[function]] $F$. Since the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]] it is defined as follows:
+Let $f(x)=\frac{dF(x)}{dx}$ be a [[continuous function]] defined for a [[function domain|domain]] $[a,b]$ that is the [[derivative]] of a [[function]] $F$. Since the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]] it is defined as follows:
 
 $$
 \begin{split}
@@ -178,7 +178,7 @@ Basic
 Back: 
 ### definition
 #### Infinite [[integral]] is an [[inverse function|inverse]] [[derivative]]
-Let $f(x)=\frac{dF(x)}{dx}$ be a [[continouse function]] defined for a [[function domain|domain]] $[a,b]$ that is the [[derivative]] of a [[function]] $F$. Since the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]] it is defined as follows:
+Let $f(x)=\frac{dF(x)}{dx}$ be a [[continuous function]] defined for a [[function domain|domain]] $[a,b]$ that is the [[derivative]] of a [[function]] $F$. Since the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]] it is defined as follows:
 
 $$
 \begin{split}
@@ -257,12 +257,12 @@ The [[integral]] can be interpreted as
 - a continuous [[sum]] of a [[function]]
 - generalization of areas under a [[function]]
 
-The **infinit [[integral]]** is defined as the [[inverse function|inverse]] of the [[derivative]] while the **definit [[integral]]** is defined as a signed area under a [[continouse function]]
+The **infinit [[integral]]** is defined as the [[inverse function|inverse]] of the [[derivative]] while the **definit [[integral]]** is defined as a signed area under a [[continuous function]]
 
 
 
 ## Infinite [[integral]] is an [[inverse function|inverse]] [[derivative]]
-Let $f(x)=\frac{dF(x)}{dx}$ be a [[continouse function]] defined for a [[function domain|domain]] $[a,b]$ that is the [[derivative]] of a [[function]] $F$. Since the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]] it is defined as follows:
+Let $f(x)=\frac{dF(x)}{dx}$ be a [[continuous function]] defined for a [[function domain|domain]] $[a,b]$ that is the [[derivative]] of a [[function]] $F$. Since the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]] it is defined as follows:
 
 $$
 \begin{split}

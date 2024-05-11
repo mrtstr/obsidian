@@ -24,9 +24,9 @@ F_{Y}(y) = \int\limits_{\{\boldsymbol{x} \mid g(\boldsymbol{x}) = y\}} f_{\bolds
 $$
 
 
-###  [[continuous random variable|continuous]] [[vector notation|multidimensional]] [[random variable]] with a [[linear function]]
+###  [[continuous random variable|continuous]] [[vector notation|multidimensional]] [[random variable]] with a [[linear map]]
 - $\boldsymbol{X} = (X_1, ..., X_n)$ is a [[continuous random variable|continuous]] [[vector notation|multidimensional]] [[random variable]] with a [[joint distribution]]  $f_{\boldsymbol{X}}(\boldsymbol{x})$
-- $\boldsymbol{Y} = (Y_1, ..., Y_n)= \boldsymbol{g(X)} = A \boldsymbol{X}$ with an [[linear function]] with a [[regular matrix]] $A \in \mathbb{R}^{n}$
+- $\boldsymbol{Y} = (Y_1, ..., Y_n)= \boldsymbol{g(X)} = A \boldsymbol{X}$ with an [[linear map]] with a [[regular matrix]] $A \in \mathbb{R}^{n}$
 $$
 f_\boldsymbol{Y}(\boldsymbol{y})=\underbrace{\frac{1}{|det(A)|}}_\text{normalization} f_{\boldsymbol{X}}
 \underbrace{
@@ -41,7 +41,7 @@ START
 Basic
 [[functions of random variables]]: 
 - $\boldsymbol{X} = (X_1, ..., X_n)$ is a [[continuous random variable|continuous]] [[vector notation|multidimensional]] [[random variable]] with a [[joint distribution]]  $f_{\boldsymbol{X}}(\boldsymbol{x})$
-- $\boldsymbol{Y} = (Y_1, ..., Y_n)= \boldsymbol{g(X)} = A \boldsymbol{X}$ with an [[linear function]] with a [[regular matrix]] $A \in \mathbb{R}^{n}$
+- $\boldsymbol{Y} = (Y_1, ..., Y_n)= \boldsymbol{g(X)} = A \boldsymbol{X}$ with an [[linear map]] with a [[regular matrix]] $A \in \mathbb{R}^{n}$
 - [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
 Back: 
 

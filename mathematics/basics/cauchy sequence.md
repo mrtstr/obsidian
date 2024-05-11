@@ -20,23 +20,26 @@ $$
 ### relationship to [[convergence|converging]] [[sequence]]
 #### every [[convergence|converging]] [[sequence]] is a [[cauchy sequence]]
 - let $x_n$ be a [[sequence]] [[convergence|converging]] against $x^*$ in a [[norm|normed]] [[vector space|space]] with [[norm]] $||\cdot||$
-- for each $n, m > N$ we can convstruct an $\epsilon_1, \epsilon_2$ and $N_1, N_2$ such that the following is true
+- for each $\epsilon > 0$ we can construct an $N, M$ such that the following is true
 
 $$
 \begin{split}
-&\forall \epsilon_1 > 0: \exists N_1: \forall n>N_1: || x_n - x^* || \leq \epsilon_1 \\
-&\forall \epsilon_2 > 0: \exists N_2: \forall m>N_2: || x_m - x^* || \leq \epsilon_2 \\
+\forall \epsilon >0 :\left(
+\exists N: \forall n>N: || x_n - x^* || \leq \frac{\epsilon}{2}
+\land
+\exists M: \forall m>M: || x_m - x^* || \leq \frac{\epsilon}{2} 
+\right)
 \end{split}
 $$
-
-- with the [[triangle inequality]] of the [[metric]] we can follow that $x_n$ is also a [[cauchy sequence]] with the [[metric]] induced by the [[norm]] $||\cdot||$
-
+- by taking $\hat{N} = \max{(N,M)}$ and applying the [[triangle inequality]] of the [[metric]] we can follow that 
 $$
 \begin{split}
-&2 \epsilon \geq d(x_n - x^*) + d(x_m - x^*) \geq d(x_n - x_m) \\
-&\Rightarrow \hat{\epsilon} \geq d(x_n - x_m) \\
+&\forall n,m > \hat{N}: d(x_n - x^*) + d(x_m - x^*) > \epsilon \\
+&d(x_n - x^*) + d(x_m - x^*) \geq d(x_n - x_m) \\
+\Rightarrow & \forall n,m > \hat{N}: \epsilon \geq d(x_n - x_m) \\
 \end{split}
 $$
+- thus $x_n$ is also a [[cauchy sequence]] with the [[metric]] induced by the [[norm]] $||\cdot||$
 
 #### not every [[cauchy sequence]] is [[convergence|converging]]
 - let $x_n$ be a [[cauchy sequence]] in a [[norm|normed]] [[vector space|space]] $(X, ||\cdot||)$ 
@@ -162,23 +165,26 @@ Back:
 ### relationship to [[convergence|converging]] [[sequence]]
 #### every [[convergence|converging]] [[sequence]] is a [[cauchy sequence]]
 - let $x_n$ be a [[sequence]] [[convergence|converging]] against $x^*$ in a [[norm|normed]] [[vector space|space]] with [[norm]] $||\cdot||$
-- for each $n, m > N$ we can convstruct an $\epsilon_1, \epsilon_2$ and $N_1, N_2$ such that the following is true
+- for each $\epsilon > 0$ we can construct an $N, M$ such that the following is true
 
 $$
 \begin{split}
-&\forall \epsilon_1 > 0: \exists N_1: \forall n>N_1: || x_n - x^* || \leq \epsilon_1 \\
-&\forall \epsilon_2 > 0: \exists N_2: \forall m>N_2: || x_m - x^* || \leq \epsilon_2 \\
+\forall \epsilon >0 :\left(
+\exists N: \forall n>N: || x_n - x^* || \leq \frac{\epsilon}{2}
+\land
+\exists M: \forall m>M: || x_m - x^* || \leq \frac{\epsilon}{2} 
+\right)
 \end{split}
 $$
-
-- with the [[triangle inequality]] of the [[metric]] we can follow that $x_n$ is also a [[cauchy sequence]] with the [[metric]] induced by the [[norm]] $||\cdot||$
-
+- by taking $\hat{N} = \max{(N,M)}$ and applying the [[triangle inequality]] of the [[metric]] we can follow that 
 $$
 \begin{split}
-&2 \epsilon \geq d(x_n - x^*) + d(x_m - x^*) \geq d(x_n - x_m) \\
-&\Rightarrow \hat{\epsilon} \geq d(x_n - x_m) \\
+&\forall n,m > \hat{N}: d(x_n - x^*) + d(x_m - x^*) > \epsilon \\
+&d(x_n - x^*) + d(x_m - x^*) \geq d(x_n - x_m) \\
+\Rightarrow & \forall n,m > \hat{N}: \epsilon \geq d(x_n - x_m) \\
 \end{split}
 $$
+- thus $x_n$ is also a [[cauchy sequence]] with the [[metric]] induced by the [[norm]] $||\cdot||$
 
 #### not every [[cauchy sequence]] is [[convergence|converging]]
 - let $x_n$ be a [[cauchy sequence]] in a [[norm|normed]] [[vector space|space]] $(X, ||\cdot||)$ 
@@ -257,23 +263,27 @@ proof that every [[convergence|converging]] [[sequence]] is a [[cauchy sequence]
 Back: 
 #### every [[convergence|converging]] [[sequence]] is a [[cauchy sequence]]
 - let $x_n$ be a [[sequence]] [[convergence|converging]] against $x^*$ in a [[norm|normed]] [[vector space|space]] with [[norm]] $||\cdot||$
-- for each $n, m > N$ we can convstruct an $\epsilon_1, \epsilon_2$ and $N_1, N_2$ such that the following is true
+- for each $\epsilon > 0$ we can construct an $N, M$ such that the following is true
 
 $$
 \begin{split}
-&\forall \epsilon_1 > 0: \exists N_1: \forall n>N_1: || x_n - x^* || \leq \epsilon_1 \\
-&\forall \epsilon_2 > 0: \exists N_2: \forall m>N_2: || x_m - x^* || \leq \epsilon_2 \\
+\forall \epsilon >0 :\left(
+\exists N: \forall n>N: || x_n - x^* || \leq \frac{\epsilon}{2}
+\land
+\exists M: \forall m>M: || x_m - x^* || \leq \frac{\epsilon}{2} 
+\right)
 \end{split}
 $$
-
-- with the [[triangle inequality]] of the [[metric]] we can follow that $x_n$ is also a [[cauchy sequence]] with the [[metric]] induced by the [[norm]] $||\cdot||$
-
+- by taking $\hat{N} = \max{(N,M)}$ and applying the [[triangle inequality]] of the [[metric]] we can follow that 
 $$
 \begin{split}
-&2 \epsilon \geq d(x_n - x^*) + d(x_m - x^*) \geq d(x_n - x_m) \\
-&\Rightarrow \hat{\epsilon} \geq d(x_n - x_m) \\
+&\forall n,m > \hat{N}: d(x_n - x^*) + d(x_m - x^*) > \epsilon \\
+&d(x_n - x^*) + d(x_m - x^*) \geq d(x_n - x_m) \\
+\Rightarrow & \forall n,m > \hat{N}: \epsilon \geq d(x_n - x_m) \\
 \end{split}
 $$
+- thus $x_n$ is also a [[cauchy sequence]] with the [[metric]] induced by the [[norm]] $||\cdot||$
+
 
 #### not every [[cauchy sequence]] is [[convergence|converging]]
 - let $x_n$ be a [[cauchy sequence]] in a [[norm|normed]] [[vector space|space]] $(X, ||\cdot||)$ 

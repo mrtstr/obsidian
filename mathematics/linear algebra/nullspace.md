@@ -1,5 +1,5 @@
 ### nullspace
-- the [[nullspace]] of a [[matrix]] is the [[set]] of [[vector|vectors]] that is mapped to the origin by the [[linear function]] induced by $A$
+- the [[nullspace]] of a [[matrix]] is the [[set]] of [[vector|vectors]] that is mapped to the origin by the [[linear map]] induced by $A$
 $$
 N(A)=\left\{ x \in \mathbb{R}^{m} \mid Ax=0 \right\}
 \subseteq\mathbb{R}^{m}
@@ -76,7 +76,7 @@ ______________________
 2) $v,w \in H \rightarrow v + w \in H$ ([[closure|closed]] for [[addition]])
 
 ### nullspace
-- the [[nullspace]] of a [[matrix]] is the [[set]] of [[vector|vectors]] that is mapped to the origin by the [[linear function]] induced by $A$
+- the [[nullspace]] of a [[matrix]] is the [[set]] of [[vector|vectors]] that is mapped to the origin by the [[linear map]] induced by $A$
 $$
 N(A)=\left\{ x \in \mathbb{R}^{m} \mid Ax=0 \right\}
 \subseteq\mathbb{R}^{m}
@@ -100,7 +100,7 @@ $$
 ______________________
 
 ### nullspace
-- the [[nullspace]] of a [[matrix]] is the [[set]] of [[vector|vectors]] that is mapped to the origin by the [[linear function]] induced by $A$
+- the [[nullspace]] of a [[matrix]] is the [[set]] of [[vector|vectors]] that is mapped to the origin by the [[linear map]] induced by $A$
 $$
 N(A)=\left\{ x \in \mathbb{R}^{m} \mid Ax=0 \right\}
 \subseteq\mathbb{R}^{m}

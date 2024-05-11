@@ -39,11 +39,11 @@ $$
 ![[covariance#covariance of stochastic independent random variable random variables]]
 
 ### [[correlation]] of linear dependent [[random variable|random variables]]
-from $\left|\rho\left[X,Y\right]\right|= 1$ that the [[random variable|random variables]] $X$ and $Y$  are linearly related thus $X=g(Y)$ and $Y=g(X)$ with $g(.)$ being a [[linear function]] and vice versa
+from $\left|\rho\left[X,Y\right]\right|= 1$ that the [[random variable|random variables]] $X$ and $Y$  are linearly related thus $X=g(Y)$ and $Y=g(X)$ with $g(.)$ being a [[linear map]] and vice versa
 $$
 \left|\rho\left[X,Y\right]\right|= 1 \Leftrightarrow X=g(Y)
 $$
-- if $Y$ is a [[linear function]] of $X$ $\rho\left[X,Y\right]$ is either $1$ or $-1$ depending on the sign of $a$
+- if $Y$ is a [[linear map]] of $X$ $\rho\left[X,Y\right]$ is either $1$ or $-1$ depending on the sign of $a$
 proof
 $$
 \begin{split}
@@ -164,11 +164,11 @@ Y&=X^2 \\
 $$
 
 ## [[correlation]] of linear dependent [[random variable|random variables]]
-from $\left|\rho\left[X,Y\right]\right|= 1$ that the [[random variable|random variables]] $X$ and $Y$  are linearly related thus $X=g(Y)$ and $Y=g(X)$ with $g(.)$ being a [[linear function]] and vice versa
+from $\left|\rho\left[X,Y\right]\right|= 1$ that the [[random variable|random variables]] $X$ and $Y$  are linearly related thus $X=g(Y)$ and $Y=g(X)$ with $g(.)$ being a [[linear map]] and vice versa
 $$
 \left|\rho\left[X,Y\right]\right|= 1 \Leftrightarrow X=g(Y)
 $$
-- if $Y$ is a [[linear function]] of $X$ $\rho\left[X,Y\right]$ is either $1$ or $-1$ depending on the sign of $a$
+- if $Y$ is a [[linear map]] of $X$ $\rho\left[X,Y\right]$ is either $1$ or $-1$ depending on the sign of $a$
 proof
 $$
 \begin{split}
@@ -273,11 +273,11 @@ Y&=X^2 \\
 $$
 
 ## [[correlation]] of linear dependent [[random variable|random variables]]
-from $\left|\rho\left[X,Y\right]\right|= 1$ that the [[random variable|random variables]] $X$ and $Y$  are linearly related thus $X=g(Y)$ and $Y=g(X)$ with $g(.)$ being a [[linear function]] and vice versa
+from $\left|\rho\left[X,Y\right]\right|= 1$ that the [[random variable|random variables]] $X$ and $Y$  are linearly related thus $X=g(Y)$ and $Y=g(X)$ with $g(.)$ being a [[linear map]] and vice versa
 $$
 \left|\rho\left[X,Y\right]\right|= 1 \Leftrightarrow X=g(Y)
 $$
-- if $Y$ is a [[linear function]] of $X$ $\rho\left[X,Y\right]$ is either $1$ or $-1$ depending on the sign of $a$
+- if $Y$ is a [[linear map]] of $X$ $\rho\left[X,Y\right]$ is either $1$ or $-1$ depending on the sign of $a$
 proof
 $$
 \begin{split}

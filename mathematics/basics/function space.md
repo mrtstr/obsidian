@@ -2,7 +2,7 @@
 - [[set]] of [[function|functions]] $\{f: V \rightarrow W\}$ between the same [[vector space|vector spaces]] with a [[addition]] and a [[multiplication]] with a [[scalar]]
 
 ### examples
-- [[set]] of [[linear function|linear functions]] $f: \mathbb{R}^m \rightarrow \mathbb{R}^n$ $\{Ax: A \in \mathbb{R}^{n \times m},  x \in \mathbb{R}^{m}\}$ 
+- [[set]] of [[linear map|linear functions]] $f: \mathbb{R}^m \rightarrow \mathbb{R}^n$ $\{Ax: A \in \mathbb{R}^{n \times m},  x \in \mathbb{R}^{m}\}$ 
 $$
 \begin{split}
 &+: V \times V \rightarrow V:(f + g)(v) = f(v) + g(v) \\ 
@@ -48,7 +48,7 @@ $$
 # ---------------------
 ![[function#function]]
 
-![[linear function#linear function]]
+![[linear map#linear function]]
 
 ![[vector space#vector space]]
 # anki
@@ -63,7 +63,7 @@ Back:
 - [[set]] of [[function|functions]] $\{f: V \rightarrow W\}$ between the same [[vector space|vector spaces]] with a [[addition]] and a [[multiplication]] with a [[scalar]]
 
 ### examples
-- [[set]] of [[linear function|linear functions]] $f: \mathbb{R}^m \rightarrow \mathbb{R}^n$ $\{Ax: A \in \mathbb{R}^{n \times m},  x \in \mathbb{R}^{m}\}$ 
+- [[set]] of [[linear map|linear functions]] $f: \mathbb{R}^m \rightarrow \mathbb{R}^n$ $\{Ax: A \in \mathbb{R}^{n \times m},  x \in \mathbb{R}^{m}\}$ 
 $$
 \begin{split}
 &+: V \times V \rightarrow V:(f + g)(v) = f(v) + g(v) \\ 

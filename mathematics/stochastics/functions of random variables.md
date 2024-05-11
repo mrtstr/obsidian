@@ -61,9 +61,9 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{y} = \frac{1}{2} y^{-\frac{1}{2}}
 \end{split}
 $$
 
-## [[linear function]] of a [[probability density function]]
+## [[linear map]] of a [[probability density function]]
 - $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
-- $Y=g(X)=aX+b$ with an [[linear function]] $g$
+- $Y=g(X)=aX+b$ with an [[linear map]] $g$
 
 $$
 f_Y(y)=\underbrace{\frac{1}{|a|}}_{\frac{dg^{-1}(y)}{dy}} f_{X}
@@ -129,9 +129,9 @@ END
 START
 Basic
 [[functions of random variables]]: 
-- [[continuous random variable]] with a [[linear function]]
+- [[continuous random variable]] with a [[linear map]]
 - $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
-- $Y=g(X)=aX+b$ with an [[linear function]] $g$
+- $Y=g(X)=aX+b$ with an [[linear map]] $g$
 - [[probability density function]] of the transformed [[random variable]] $f_Y(y)$ (with proof)
 Back: 
 

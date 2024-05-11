@@ -18,7 +18,7 @@ $$
 ### [[variance]] of a constant
 $\mathbb{VAR}[X] = 0$ $\Leftrightarrow$ $X$ is a constant with $P(X=c)=1$
 
-### [[variance]] of a [[linear function]] of a single [[random variable]]
+### [[variance]] of a [[linear map]] of a single [[random variable]]
 
 $$
 \mathbb{VAR}[aX + b]=a^2\mathbb{VAR}[X]
@@ -60,13 +60,13 @@ $$
 &= \mathbb{VAR}[X_1] + \mathbb{VAR}[X_2] \\
 \end{split}
 $$
-### [[variance]] of a [[linear function]] of a multiple [[linear independent]] [[random variable|random variables]]
+### [[variance]] of a [[linear map]] of a multiple [[linear independent]] [[random variable|random variables]]
 With $\mathbb{VAR}[aX + b]=a^2\mathbb{VAR}[X]$ and $\mathbb{VAR}\left[\sum_{i=1}^n X_i\right]=\sum_{i=1}^n  \mathbb{VAR}\left[ X_i\right]$ it follows:
 $$
 \mathbb{VAR}\left[b +\sum_{i=1}^n a_iX_i\right]=\sum_{i=1}^n a_i^2 \mathbb{VAR}\left[ X_i\right]
 $$
 (no proof)
-### [[variance]] of a [[linear function]] of a two [[random variable|random variables]]
+### [[variance]] of a [[linear map]] of a two [[random variable|random variables]]
 $$
 \begin{split}
 \mathbb{VAR}[aX_1 + bX_2 + c]&=\mathbb{E}\left[\left(aX_1 + bX_2-\mathbb{E}[aX_1 + bX_2]\right)^2\right] \\
@@ -130,7 +130,7 @@ $$
 ### [[variance]] of a constant
 $\mathbb{VAR}[X] = 0$ $\Leftrightarrow$ $X$ is a constant with $P(X=c)=1$
 
-### [[variance]] of a [[linear function]] of a single [[random variable]]
+### [[variance]] of a [[linear map]] of a single [[random variable]]
 
 $$
 \mathbb{VAR}[aX + b]=a^2\mathbb{VAR}[X]
@@ -172,13 +172,13 @@ $$
 &= \mathbb{VAR}[X_1] + \mathbb{VAR}[X_2] \\
 \end{split}
 $$
-### [[variance]] of a [[linear function]] of a multiple [[linear independent]] [[random variable|random variables]]
+### [[variance]] of a [[linear map]] of a multiple [[linear independent]] [[random variable|random variables]]
 With $\mathbb{VAR}[aX + b]=a^2\mathbb{VAR}[X]$ and $\mathbb{VAR}\left[\sum_{i=1}^n X_i\right]=\sum_{i=1}^n  \mathbb{VAR}\left[ X_i\right]$ it follows:
 $$
 \mathbb{VAR}\left[b +\sum_{i=1}^n a_iX_i\right]=\sum_{i=1}^n a_i^2 \mathbb{VAR}\left[ X_i\right]
 $$
 (no proof)
-### [[variance]] of a [[linear function]] of a two[[random variable|random variables]]
+### [[variance]] of a [[linear map]] of a two[[random variable|random variables]]
 $$
 \begin{split}
 \mathbb{VAR}[aX_1 + bX_2 + c]&=\mathbb{E}\left[\left(aX_1 + bX_2-\mathbb{E}[aX_1 + bX_2]\right)^2\right] \\
@@ -215,7 +215,7 @@ END
 
 START
 Basic
-[[variance]] of a [[linear function]] of a single [[random variable]] (with proof)
+[[variance]] of a [[linear map]] of a single [[random variable]] (with proof)
 Back: 
 
 $$
@@ -274,7 +274,7 @@ END
 
 START
 Basic
-[[variance]] of a [[linear function]] of a multiple [[linear independent]] [[random variable|random variables]]
+[[variance]] of a [[linear map]] of a multiple [[linear independent]] [[random variable|random variables]]
 - no proof but 
 Back: 
 With $\mathbb{VAR}[aX + b]=a^2\mathbb{VAR}[X]$ and $\mathbb{VAR}\left[\sum_{i=1}^n X_i\right]=\sum_{i=1}^n  \mathbb{VAR}\left[ X_i\right]$ it follows:
@@ -288,7 +288,7 @@ END
 
 START
 Basic
-[[variance]] of a [[linear function]] of a two [[random variable|random variables]] (with proof)
+[[variance]] of a [[linear map]] of a two [[random variable|random variables]] (with proof)
 Back: 
 $$
 \begin{split}

@@ -1,7 +1,7 @@
 ### inner product
 - let $(V, +, \cdot)$ be a [[vector space]]
 -  [[function]]  $\langle\cdot,\cdot\rangle: V \times V \rightarrow \mathbb{R}$ is an [[inner product]] if the following conditions are true
-1) [[linear function|linearity]] (regarding both elemements because of the [[symmetric]])
+1) [[linear map|linearity]] (regarding both elemements because of the [[symmetric]])
 
 $$
 \forall x,y,z \in V, \lambda \in \mathbb{R}:\langle x + \lambda y , z \rangle = \langle x , z  \rangle + \lambda \langle  y , z \rangle
@@ -92,7 +92,7 @@ Back:
 - let $(V, +, \cdot)$ be a [[vector space]]
 -  [[function]]  $\langle\cdot,\cdot\rangle: V \times V \rightarrow \mathbb{R}$ is an [[inner product]] if the following conditions are true
 
-1) [[linear function|linearity]] (regarding both elemements because of the [[symmetric]])
+1) [[linear map|linearity]] (regarding both elemements because of the [[symmetric]])
 
 $$
 \forall x,y,z \in V, \lambda \in \mathbb{R}:\langle x + \lambda y , z \rangle = \langle x , z  \rangle + \lambda \langle  y , z \rangle
@@ -209,7 +209,7 @@ _______________________
 - let $(V, +, \cdot)$ be a [[vector space]]
 -  [[function]]  $\langle\cdot,\cdot\rangle: V \times V \rightarrow \mathbb{R}$ is an [[inner product]] if the following conditions are true
 
-1) [[linear function|linearity]] (regarding both elemements because of the [[symmetric]])
+1) [[linear map|linearity]] (regarding both elemements because of the [[symmetric]])
 
 $$
 \forall x,y,z \in V, \lambda \in \mathbb{R}:\langle x + \lambda y , z \rangle = \langle x , z  \rangle + \lambda \langle  y , z \rangle
@@ -304,7 +304,7 @@ _______________________
 - let $(V, +, \cdot)$ be a [[vector space]]
 -  [[function]]  $\langle\cdot,\cdot\rangle: V \times V \rightarrow \mathbb{R}$ is an [[inner product]] if the following conditions are true
 
-1) [[linear function|linearity]] (regarding both elemements because of the [[symmetric]])
+1) [[linear map|linearity]] (regarding both elemements because of the [[symmetric]])
 
 $$
 \forall x,y,z \in V, \lambda \in \mathbb{R}:\langle x + \lambda y , z \rangle = \langle x , z  \rangle + \lambda \langle  y , z \rangle
