@@ -1475,7 +1475,7 @@
     "mathematics/basics/hilbert spaces.md": "1a8025bef6664b2e2a8a5270558d0ad0",
     "mathematics/basics/banach spaces.md": "ffb600c5e7a4b0b23bc19514d866a9f7",
     "mathematics/linear algebra/linear map.md": "792eedb116862ada2553141d9786a5f0",
-    "mathematics/basics/frobenius norm.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/basics/frobenius norm.md": "da3ac03841dcb234cde3d78314245892",
     "mathematics/basics/spectral norm.md": "6bac29af2a31542711171493f13cb648",
     "mathematics/basics/row sum norm.md": "9f8ff58506f0c55874f9b97c662ec9ee",
     "mathematics/basics/column sum norm.md": "73aca92d3f0b5c3e550e5932e9c98dd0",
@@ -1484,7 +1484,7 @@
     "mathematics/basics/range.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/domain.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/continuous function.md": "5e9da7078dd1c9152ab856abcecb8ddf",
-    "mathematics/basics/bounded linear map.md": "84f50359d53aaa9fe7f0207cab920cba",
+    "mathematics/basics/bounded linear map.md": "c2d9439481abd7dac6269dc91988d312",
     "mathematics/basics/operator norm.md": "96d09621696c41a9be9a16c4be3cf9a7"
   },
   "fields_dict": {
