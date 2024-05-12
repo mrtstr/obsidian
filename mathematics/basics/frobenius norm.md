@@ -5,12 +5,14 @@
 $$
 ||A||_F = \sqrt{\sum_{i \in [n]}\sum_{j \in [m]} |a_{ij}|^2}
 $$
-- the [[frobenius norm]] is not a [[operator norm]] but it is induced by a [[inner product]] $\langle A, B\rangle = trace(A^\top B)$
+- the [[frobenius norm]] is not a [[operator norm]] but it is induced by the [[frobenius inner product]] $\langle A, B\rangle_F = trace(A^\top B)$
 $$
-||A||_F = \sqrt{\langle A, A\rangle} = \sqrt{trace(A^\top A)} 
+||A||_F = \sqrt{\langle A, A\rangle_F} = \sqrt{trace(A^\top A)} 
 $$
 
 # ----------------
+
+![[frobenius inner product#frobenius inner product]]
 
 ![[norm#norm]]
 
@@ -31,11 +33,21 @@ Back:
 $$
 ||A||_F = \sqrt{\sum_{i \in [n]}\sum_{j \in [m]} |a_{ij}|^2}
 $$
-- the [[frobenius norm]] is not a [[operator norm]] but it is induced by a [[inner product]] $\langle A, B\rangle = trace(A^\top B)$
+- the [[frobenius norm]] is not a [[operator norm]] but it is induced by the [[frobenius inner product]] $\langle A, B\rangle_F = trace(A^\top B)$
 $$
-||A||_F = \sqrt{\langle A, A\rangle} = \sqrt{trace(A^\top A)} 
+||A||_F = \sqrt{\langle A, A\rangle_F} = \sqrt{trace(A^\top A)} 
 $$
-
+### frobenius inner product
+- given [[matrix]] $A, B \in \mathbb{R}^{n \times m}$
+- the [[frobenius inner product]] is defined as follows
+$$
+\langle A, B\rangle_F = \sum_{i \in [n]} \sum_{j \in [m]} a_{ij} b_{ij} 
+$$
+- the [[frobenius inner product]] can be expressed as the [[trace]] of the [[matrix product]]
+$$
+\langle A, B\rangle_F = \mathrm{trace}\left(A^\top B\right) = \mathrm{trace}\left(A B^\top\right)
+$$
+- the [[frobenius inner product]] induces the [[frobenius norm]]
 
 
 Tags: mathematics linear_algebra

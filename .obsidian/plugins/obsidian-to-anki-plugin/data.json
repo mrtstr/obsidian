@@ -918,7 +918,7 @@
     "mathematics/linear algebra/vecor space.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/triangular matrix.md": "3a625830fb33ff732cbc493c68f53c29",
     "mathematics/linear algebra/transpose.md": "fd1e02fd2f16e066013cffba8f025210",
-    "mathematics/linear algebra/trace.md": "efdc8b09e3e155643cca8ecdb0d08a74",
+    "mathematics/linear algebra/trace.md": "815b403416a6c74eff8a3ecb430bbd90",
     "mathematics/linear algebra/tensor.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/sylvesters criterion.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/linear algebra/subspace.md": "6d2a6030a25bfbd46547624ddd7d7a8b",
@@ -1476,7 +1476,7 @@
     "mathematics/basics/hilbert spaces.md": "1a8025bef6664b2e2a8a5270558d0ad0",
     "mathematics/basics/banach spaces.md": "ffb600c5e7a4b0b23bc19514d866a9f7",
     "mathematics/linear algebra/linear map.md": "792eedb116862ada2553141d9786a5f0",
-    "mathematics/basics/frobenius norm.md": "da3ac03841dcb234cde3d78314245892",
+    "mathematics/basics/frobenius norm.md": "9ede681858987bc4a229c59d31f4f338",
     "mathematics/basics/spectral norm.md": "bcfc5940c4452659168ccbd70ed73c54",
     "mathematics/basics/row sum norm.md": "2f4a9e10912cc628360582e35d20ebf5",
     "mathematics/basics/column sum norm.md": "6655e81369748d3be6a43578e39075fd",
@@ -1486,7 +1486,8 @@
     "mathematics/basics/domain.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/continuous function.md": "5e9da7078dd1c9152ab856abcecb8ddf",
     "mathematics/basics/bounded linear map.md": "4e1a84cc23957e2c88b9dbc0c98b17d0",
-    "mathematics/basics/operator norm.md": "5f83040cca02894d7d06f972c5f5f63d"
+    "mathematics/basics/operator norm.md": "5f83040cca02894d7d06f972c5f5f63d",
+    "mathematics/basics/frobenius inner product.md": "2718005389269f18b10f711d59692ae8"
   },
   "fields_dict": {
     "Basic": [
