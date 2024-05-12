@@ -10,11 +10,37 @@ $$
 $$
 - the [[frobenius inner product]] induces the [[frobenius norm]]
 
+### proof that the [[frobenius inner product]] is a [[inner product]]
+1) [[symmetric]]
+$$
+\langle A, B\rangle_F 
+= \sum_{i \in [n]} \sum_{j \in [m]} a_{ij} b_{ij} = \langle B, A\rangle_F
+$$
+2) [[linear map|linearity]]
+$$
+\begin{split}
+\langle A, \lambda \cdot B + C\rangle_F 
+&= \sum_{i \in [n]} \sum_{j \in [m]} a_{ij} \left( \lambda b_{ij} + c_{ij} \right) \\
+&= \lambda \sum_{i \in [n]} \sum_{j \in [m]} a_{ij}  b_{ij} + \sum_{i \in [n]} \sum_{j \in [m]} a_{ij}  c_{ij} \\
+&= \lambda \langle A,  B \rangle_F + \langle A,  C \rangle_F
+\end{split}
+$$
+3) [[positive definite]]
+$$
+\begin{split}
+\langle A, A\rangle_F 
+&= \sum_{i \in [n]} \sum_{j \in [m]} a_{ij}^2 = 0   \\
+\Leftrightarrow A &= 0 \\ \\
+\langle A, A\rangle_F 
+&= \sum_{i \in [n]} \sum_{j \in [m]} a_{ij}^2 \geq 0
+\end{split}
+$$
 #  ---------------------
 ![[trace#trace]]
 
 ![[frobenius norm#frobenius norm]]
 
+![[inner product#inner product]]
 # anki
 
 START
@@ -107,4 +133,79 @@ $$
 
 Tags: mathematics
 <!--ID: 1715521606643-->
+END
+
+
+START
+Basic
+proof that the [[frobenius inner product]] is a [[inner product]]
+Back: 
+
+### proof that the [[frobenius inner product]] is a [[inner product]]
+1) [[symmetric]]
+$$
+\langle A, B\rangle_F 
+= \sum_{i \in [n]} \sum_{j \in [m]} a_{ij} b_{ij} = \langle B, A\rangle_F
+$$
+2) [[linear map|linearity]]
+$$
+\begin{split}
+\langle A, \lambda \cdot B + C\rangle_F 
+&= \sum_{i \in [n]} \sum_{j \in [m]} a_{ij} \left( \lambda b_{ij} + c_{ij} \right) \\
+&= \lambda \sum_{i \in [n]} \sum_{j \in [m]} a_{ij}  b_{ij} + \sum_{i \in [n]} \sum_{j \in [m]} a_{ij}  c_{ij} \\
+&= \lambda \langle A,  B \rangle_F + \langle A,  C \rangle_F
+\end{split}
+$$
+3) [[positive definite]]
+$$
+\begin{split}
+\langle A, A\rangle_F 
+&= \sum_{i \in [n]} \sum_{j \in [m]} a_{ij}^2 = 0   \\
+\Leftrightarrow A &= 0 \\ \\
+\langle A, A\rangle_F 
+&= \sum_{i \in [n]} \sum_{j \in [m]} a_{ij}^2 \geq 0
+\end{split}
+$$
+
+_______________________
+### frobenius inner product
+- given [[matrix]] $A, B \in \mathbb{R}^{n \times m}$
+- the [[frobenius inner product]] is defined as follows
+$$
+\langle A, B\rangle_F = \sum_{i \in [n]} \sum_{j \in [m]} a_{ij} b_{ij} 
+$$
+- the [[frobenius inner product]] can be expressed as the [[trace]] of the [[matrix product]]
+$$
+\langle A, B\rangle_F = \mathrm{trace}\left(A^\top B\right) = \mathrm{trace}\left(A B^\top\right)
+$$
+- the [[frobenius inner product]] induces the [[frobenius norm]]
+
+### inner product
+- generalization of the 
+- let $(V, +, \cdot)$ be a [[vector space]]
+-  [[function]]  $\langle\cdot,\cdot\rangle: V \times V \rightarrow \mathbb{R}$ is an [[inner product]] if the following conditions are true
+
+1) [[linear map|linearity]] (regarding both elemements because of the [[symmetric]])
+
+$$
+\forall x,y,z \in V, \lambda \in \mathbb{R}:\langle x + \lambda y , z \rangle = \langle x , z  \rangle + \lambda \langle  y , z \rangle
+$$
+2) [[symmetric]]
+
+$$
+\forall x,y \in V: \langle x  , y \rangle = \langle y  , x \rangle
+$$
+3) [[positive definite]]
+
+$$
+\forall x \in V: \langle x  , x \rangle  \leftrightarrow x=0 
+$$
+$$
+\forall x \in V: \langle x  , x \rangle  \geq 0
+$$
+
+
+
+Tags: mathematics
+<!--ID: 1715530896387-->
 END
