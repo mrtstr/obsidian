@@ -2,9 +2,9 @@
 - [[norm|normed]] [[vector space|space]] that is [[cauchy complete]] with resprect to the [[metric]] induces by its norm is a [[banach space]]
 
 ### [[banach space]] [[function space]]
+- bounded (=[[continuous function|continouse]]) [[linear map|linear maps]] are [[banach space|banach spaces]] because they allways have the [[operator norm]] induced by the [[norm|norms]] of the [[domain]] and codomain and are [[cauchy complete]]
 
-- [[continuous function|continouse]] and bounded [[function]] with the $L^2$ or $L^\infty$ [[norm]] are [[banach space|banach spaces]] 
-
+![[operator norm#operator norm]]
 # ---------------
 ![[norm#norm]]
 
@@ -231,7 +231,18 @@ example for a [[function space]] that is a [[banach space]]
 Back: 
 ### [[banach space]] [[function space]]
 
-- [[continuous function|continouse]] and bounded [[function]] with the $L^2$ or $L^\infty$ [[norm]] are [[banach space|banach spaces]] 
+- bounded (=[[continuous function|continouse]]) [[linear map|linear maps]] are [[banach space|banach spaces]] because they allways have the [[operator norm]] induced by the [[norm|norms]] of the [[domain]] and codomain and are [[cauchy complete]]
+
+### operator norm
+- an [[operator norm]] is a [[norm]] in a [[function space]] that is induced by the [[norm|norms]] of the [[domain]] and codomain [[banach space]]
+- given two [[banach space|banach spaces]] $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ and a [[linear map]] $A: X\rightarrow Y$
+$$
+||A||_{X \rightarrow Y} = \inf\{C \geq 0: ||Ax||_Y \leq C ||x||_X\}
+$$
+- for a nonempty [[domain]] $X \neq \emptyset$ the [[operator norm]] can be exapressed as follows.
+ $$
+||A||_{X \rightarrow Y} = \sup_{x\neq 0} \frac{||Ax||_Y}{||x||_X} = \sup_{||x||_X = 1} ||Ax||_Y
+$$
 
 ___________________________
 ### banach spaces

@@ -9,14 +9,16 @@ $$
 ||A||_{X \rightarrow Y} = \sup_{x\neq 0} \frac{||Ax||_Y}{||x||_X} = \sup_{||x||_X = 1} ||Ax||_Y
 $$
 proof:
+- let $\hat{x} = arg\max \frac{\left|\left|Ax\right|\right|_Y}{||x||_X}$ 
+- we can scale or normalize $\hat{x}$ without changing the result because of the [[norm]] is [[homogeneous]]
 $$
 \begin{split}
-\sup_{x\neq 0} \frac{\left|\left|Ax\right|\right|_Y}{||x||_X} 
-&= \sup_{x\neq 0} \frac{\left|\left|Ax\right|\right|_Y \frac{1} {||x||_X}}{||x||_X\frac{1}{||x||_X}} \\
-&= \sup_{x\neq 0} \frac{\left|\left|A\frac{x}{||x||_X}\right|\right|_Y}{\left|\left|\frac{x}{||x||_X}\right|\right|_X} \\
-&= \sup_{||x||_X = 1} ||Ax||_Y
+\frac{\left|\left|A\hat{x}\right|\right|_Y}{||\hat{x}||_X} 
+&= \frac{\left|\left|A\hat{x}\right|\right|_Y \frac{1} {||\hat{x}||_X}}{||\hat{x}||_X\frac{1}{||\hat{x}||_X}} \\
+&=  \frac{\left|\left|A\frac{x}{||\hat{x}||_X}\right|\right|_Y}{\left|\left|\frac{x}{||\hat{x}||_X}\right|\right|_X} \\
 \end{split}
 $$
+- thus we can restrict the definition to just [[norm|normalized]] [[vector|vectors]] without impact on the result $\sup_{||x||_X = 1} ||Ax||_Y$
 - note: since $||\cdot||_X$ and $||\cdot||_Y$ can differt there are multiple [[operator norm|operator norms]]
 
 ### interpretation
@@ -59,14 +61,16 @@ $$
 ||A||_{X \rightarrow Y} = \sup_{x\neq 0} \frac{||Ax||_Y}{||x||_X} = \sup_{||x||_X = 1} ||Ax||_Y
 $$
 proof:
+- let $\hat{x} = arg\max \frac{\left|\left|Ax\right|\right|_Y}{||x||_X}$ 
+- we can scale or normalize $\hat{x}$ without changing the result because of the [[norm]] is [[homogeneous]]
 $$
 \begin{split}
-\sup_{x\neq 0} \frac{\left|\left|Ax\right|\right|_Y}{||x||_X} 
-&= \sup_{x\neq 0} \frac{\left|\left|Ax\right|\right|_Y \frac{1} {||x||_X}}{||x||_X\frac{1}{||x||_X}} \\
-&= \sup_{x\neq 0} \frac{\left|\left|A\frac{x}{||x||_X}\right|\right|_Y}{\left|\left|\frac{x}{||x||_X}\right|\right|_X} \\
-&= \sup_{||x||_X = 1} ||Ax||_Y
+\frac{\left|\left|A\hat{x}\right|\right|_Y}{||\hat{x}||_X} 
+&= \frac{\left|\left|A\hat{x}\right|\right|_Y \frac{1} {||\hat{x}||_X}}{||\hat{x}||_X\frac{1}{||\hat{x}||_X}} \\
+&=  \frac{\left|\left|A\frac{x}{||\hat{x}||_X}\right|\right|_Y}{\left|\left|\frac{x}{||\hat{x}||_X}\right|\right|_X} \\
 \end{split}
 $$
+- thus we can restrict the definition to just [[norm|normalized]] [[vector|vectors]] without impact on the result $\sup_{||x||_X = 1} ||Ax||_Y$
 - note: since $||\cdot||_X$ and $||\cdot||_Y$ can differt there are multiple [[operator norm|operator norms]]
 
 ### interpretation
@@ -124,16 +128,16 @@ $$
 what does this define?
 
 Back: 
-
-
+- let $\hat{x} = arg\max \frac{\left|\left|Ax\right|\right|_Y}{||x||_X}$ 
+- we can scale or normalize $\hat{x}$ without changing the result because of the [[norm]] is [[homogeneous]]
 $$
 \begin{split}
-\sup_{x\neq 0} \frac{\left|\left|Ax\right|\right|_Y}{||x||_X} 
-&= \sup_{x\neq 0} \frac{\left|\left|Ax\right|\right|_Y \frac{1} {||x||_X}}{||x||_X\frac{1}{||x||_X}} \\
-&= \sup_{x\neq 0} \frac{\left|\left|A\frac{x}{||x||_X}\right|\right|_Y}{\left|\left|\frac{x}{||x||_X}\right|\right|_X} \\
-&= \sup_{||x||_X = 1} ||Ax||_Y
+\frac{\left|\left|A\hat{x}\right|\right|_Y}{||\hat{x}||_X} 
+&= \frac{\left|\left|A\hat{x}\right|\right|_Y \frac{1} {||\hat{x}||_X}}{||\hat{x}||_X\frac{1}{||\hat{x}||_X}} \\
+&=  \frac{\left|\left|A\frac{x}{||\hat{x}||_X}\right|\right|_Y}{\left|\left|\frac{x}{||\hat{x}||_X}\right|\right|_X} \\
 \end{split}
 $$
+- thus we can restrict the definition to just [[norm|normalized]] [[vector|vectors]] without impact on the result $\sup_{||x||_X = 1} ||Ax||_Y$
 
 
 __________________
@@ -149,14 +153,16 @@ $$
 ||A||_{X \rightarrow Y} = \sup_{x\neq 0} \frac{||Ax||_Y}{||x||_X} = \sup_{||x||_X = 1} ||Ax||_Y
 $$
 proof:
+- let $\hat{x} = arg\max \frac{\left|\left|Ax\right|\right|_Y}{||x||_X}$ 
+- we can just scale or normalize $\hat{x}$ because of the [[norm]] is [[homogeneous]]
 $$
 \begin{split}
-\sup_{x\neq 0} \frac{\left|\left|Ax\right|\right|_Y}{||x||_X} 
-&= \sup_{x\neq 0} \frac{\left|\left|Ax\right|\right|_Y \frac{1} {||x||_X}}{||x||_X\frac{1}{||x||_X}} \\
-&= \sup_{x\neq 0} \frac{\left|\left|A\frac{x}{||x||_X}\right|\right|_Y}{\left|\left|\frac{x}{||x||_X}\right|\right|_X} \\
-&= \sup_{||x||_X = 1} ||Ax||_Y
+\frac{\left|\left|A\hat{x}\right|\right|_Y}{||\hat{x}||_X} 
+&= \frac{\left|\left|A\hat{x}\right|\right|_Y \frac{1} {||\hat{x}||_X}}{||\hat{x}||_X\frac{1}{||\hat{x}||_X}} \\
+&=  \frac{\left|\left|A\frac{x}{||\hat{x}||_X}\right|\right|_Y}{\left|\left|\frac{x}{||\hat{x}||_X}\right|\right|_X} \\
 \end{split}
 $$
+- thus we can restrict the definition to just [[norm|normalized]] [[vector|vectors]] without impact on the result $\sup_{||x||_X = 1} ||Ax||_Y$
 - note: since $||\cdot||_X$ and $||\cdot||_Y$ can differt there are multiple [[operator norm|operator norms]]
 
 ### linear function
@@ -212,7 +218,7 @@ Back:
 - given a [[matrix]] $A \in \mathbb{R}^{n \times m}$
 
 $$
-||A||_{1\rightarrow 1} = \max_{j \in [m]} \sum_{i \in [n]} |a_{ij}|
+||A||_{\infty\rightarrow \infty} =  \sup_{x\neq 0} \frac{||Ax||_\infty}{||x||_\infty} = \max_{i \in [n]} \sum_{j \in [m]} |a_{ij}|
 $$
 
 
@@ -221,7 +227,7 @@ $$
 - given a [[matrix]] $A \in \mathbb{R}^{n \times m}$
 
 $$
-||A||_{\infty\rightarrow \infty} = \max_{i \in [n]} \sum_{j \in [m]} |a_{ij}|
+||A||_{\infty\rightarrow \infty} =  \sup_{x\neq 0} \frac{||Ax||_\infty}{||x||_\infty} = \max_{i \in [n]} \sum_{j \in [m]} |a_{ij}|
 $$
 
 
@@ -230,7 +236,7 @@ $$
 - given a [[matrix]] $A \in \mathbb{R}^{n \times m}$
 
 $$
-||A||_{2\rightarrow 2} = \sqrt{\sigma_{\max}(A^\top A)}
+||A||_{2\rightarrow 2} =  \sup_{x\neq 0} \frac{||Ax||_2}{||x||_2} = \sqrt{\sigma_{\max}(A^\top A)}
 $$
 
 

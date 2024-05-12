@@ -87,6 +87,7 @@ $$
 B_\epsilon(x) = \{y \in A: d(x, y) < \epsilon\}
 $$
 
+### complement of a set
 $$
 \begin{split}
 A^c &= \mathbb{U} \setminus A \\
@@ -181,6 +182,7 @@ $$
 B_\epsilon(x) = \{y \in A: d(x, y) < \epsilon\}
 $$
 
+### complement of a set
 $$
 \begin{split}
 A^c &= \mathbb{U} \setminus A \\
@@ -261,6 +263,7 @@ $$
 B_\epsilon(x) = \{y \in A: d(x, y) < \epsilon\}
 $$
 
+### complement of a set
 $$
 \begin{split}
 A^c &= \mathbb{U} \setminus A \\

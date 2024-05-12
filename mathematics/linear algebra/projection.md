@@ -17,6 +17,12 @@ $$
 ### relationship [[projection]] to the [[cosine]]
 - the [[cosine]] is the length of the [[projection]] of a [[vector]] $a$ to a [[vector]] $b$ devided by the length of $a$
 
+$$
+\begin{split}
+\cos(\phi) = \frac{ankathte}{hypotenuse} = 
+\frac{||b'||}{||a||} = \frac{\langle a,b\rangle}{||a||\cdot||b||}
+\end{split}
+$$
 
 ### [[projection]] into the [[column space]]
 Projection of a [[vector]] $b$ to the [[column space]] of [[matrix]] $A$
@@ -127,6 +133,14 @@ Back:
 
 ### relationship [[projection]] to the [[cosine]]
 - the [[cosine]] is the length of the [[projection]] of a [[vector]] $a$ to a [[vector]] $b$ devided by the length of $a$
+$$
+\begin{split}
+\cos(\phi) = \frac{ankathte}{hypotenuse} = 
+\frac{||b'||}{||a||} = \frac{\langle a,b\rangle}{||a||\cdot||b||}
+\end{split}
+$$
+![[projection 6.jpg]]
+
 
 ### [[projection]] of [[vector|vectors]] on eachother
 - let $b'$ be the projection of [[vector]] $a$ on [[vector]] $b$

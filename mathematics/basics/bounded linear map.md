@@ -26,6 +26,7 @@ TODO add proof
 
 ![[cauchy complete#cauchy complete]]
 
+![[cauchy sequence#cauchy sequence]]
 # anki
 
 START
@@ -55,6 +56,20 @@ __________________
 ### banach spaces
 - [[norm|normed]] [[vector space|space]] that is [[cauchy complete]] with resprect to the [[metric]] induces by its norm is a [[banach space]]
 
+### cauchy complete
+- a [[metric]] [[vector space|space]] $(X, d)$ is **complete** if every [[cauchy sequence]] in $X$ also has a [[limit]] in $X$
+	→ no points are missing inside or at the boundarys
+
+### cauchy sequence
+- given a [[metric]] [[vector space|space]] $(X, d)$
+- a [[sequence]] $x_n$ is a [[cauchy sequence]] if the following is true
+
+$$
+\forall \epsilon > 0:\exists N: 
+\forall n,m \geq N: d(x_n,x_m) < \epsilon
+$$
+→ the elements become arbitrarily close to each other as the [[sequence]] progresses
+
 ### norm
 - generalization of the concept of **length of a [[vector]]**
 - let $V$ be a [[vector space]]
@@ -74,9 +89,6 @@ $$
 $$
 
 
-### cauchy complete
-- a [[metric]] [[vector space|space]] $(X, d)$ is **complete** if every [[cauchy sequence]] in $X$ also has a [[limit]] in $X$
-	→ no points are missing inside or at the boundarys
 
 
 Tags: mathematics linear_algebra
@@ -144,6 +156,15 @@ $$
 - a [[metric]] [[vector space|space]] $(X, d)$ is **complete** if every [[cauchy sequence]] in $X$ also has a [[limit]] in $X$
 	→ no points are missing inside or at the boundarys
 
+### cauchy sequence
+- given a [[metric]] [[vector space|space]] $(X, d)$
+- a [[sequence]] $x_n$ is a [[cauchy sequence]] if the following is true
+
+$$
+\forall \epsilon > 0:\exists N: 
+\forall n,m \geq N: d(x_n,x_m) < \epsilon
+$$
+→ the elements become arbitrarily close to each other as the [[sequence]] progresses
 
 Tags: mathematics linear_algebra
 <!--ID: 1715458120901-->

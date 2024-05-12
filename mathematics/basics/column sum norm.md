@@ -3,7 +3,7 @@
 - given a [[matrix]] $A \in \mathbb{R}^{n \times m}$
 
 $$
-||A||_{1\rightarrow 1} = \max_{j \in [m]} \sum_{i \in [n]} |a_{ij}|
+||A||_{1\rightarrow 1} =  \sup_{x\neq 0} \frac{||Ax||_1}{||x||_1} =  \max_{j \in [m]} \sum_{i \in [n]} |a_{ij}|
 $$
 
 # ----------------
@@ -27,14 +27,14 @@ Back:
 - given a [[matrix]] $A \in \mathbb{R}^{n \times m}$
 
 $$
-||A||_{1\rightarrow 1} = \max_{j \in [m]} \sum_{i \in [n]} |a_{ij}|
+||A||_{1\rightarrow 1} =  \sup_{x\neq 0} \frac{||Ax||_1}{||x||_1} =  \max_{j \in [m]} \sum_{i \in [n]} |a_{ij}|
 $$
 ### row sum norm
 - [[operator norm]] induces by the $l^\infty$ [[norm]]
 - given a [[matrix]] $A \in \mathbb{R}^{n \times m}$
 
 $$
-||A||_{\infty\rightarrow \infty} = \max_{i \in [n]} \sum_{j \in [m]} |a_{ij}|
+||A||_{\infty\rightarrow \infty} =  \sup_{x\neq 0} \frac{||Ax||_\infty}{||x||_\infty} = \max_{i \in [n]} \sum_{j \in [m]} |a_{ij}|
 $$
 
 ### spectral norm
@@ -42,7 +42,7 @@ $$
 - given a [[matrix]] $A \in \mathbb{R}^{n \times m}$
 
 $$
-||A||_{2\rightarrow 2} = \sqrt{\sigma_{\max}(A^\top A)}
+||A||_{2\rightarrow 2} =  \sup_{x\neq 0} \frac{||Ax||_2}{||x||_2} = \sqrt{\sigma_{\max}(A^\top A)}
 $$
 
 

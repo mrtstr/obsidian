@@ -3,7 +3,7 @@
 - given a [[matrix]] $A \in \mathbb{R}^{n \times m}$
 
 $$
-||A||_{2\rightarrow 2} = \sqrt{\sigma_{\max}(A^\top A)}
+||A||_{2\rightarrow 2} =  \sup_{x\neq 0} \frac{||Ax||_2}{||x||_2} = \sqrt{\sigma_{\max}(A^\top A)}
 $$
 
 # ----------------

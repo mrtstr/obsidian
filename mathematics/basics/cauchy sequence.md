@@ -34,7 +34,7 @@ $$
 - by taking $\hat{N} = \max{(N,M)}$ and applying the [[triangle inequality]] of the [[metric]] we can follow that 
 $$
 \begin{split}
-&\forall n,m > \hat{N}: d(x_n - x^*) + d(x_m - x^*) > \epsilon \\
+&\forall n,m > \hat{N}: \epsilon > d(x_n - x^*) + d(x_m - x^*)  \\
 &d(x_n - x^*) + d(x_m - x^*) \geq d(x_n - x_m) \\
 \Rightarrow & \forall n,m > \hat{N}: \epsilon \geq d(x_n - x_m) \\
 \end{split}
@@ -179,7 +179,7 @@ $$
 - by taking $\hat{N} = \max{(N,M)}$ and applying the [[triangle inequality]] of the [[metric]] we can follow that 
 $$
 \begin{split}
-&\forall n,m > \hat{N}: d(x_n - x^*) + d(x_m - x^*) > \epsilon \\
+&\forall n,m > \hat{N}: \epsilon > d(x_n - x^*) + d(x_m - x^*)  \\
 &d(x_n - x^*) + d(x_m - x^*) \geq d(x_n - x_m) \\
 \Rightarrow & \forall n,m > \hat{N}: \epsilon \geq d(x_n - x_m) \\
 \end{split}
@@ -277,7 +277,7 @@ $$
 - by taking $\hat{N} = \max{(N,M)}$ and applying the [[triangle inequality]] of the [[metric]] we can follow that 
 $$
 \begin{split}
-&\forall n,m > \hat{N}: d(x_n - x^*) + d(x_m - x^*) > \epsilon \\
+&\forall n,m > \hat{N}: \epsilon > d(x_n - x^*) + d(x_m - x^*)  \\
 &d(x_n - x^*) + d(x_m - x^*) \geq d(x_n - x_m) \\
 \Rightarrow & \forall n,m > \hat{N}: \epsilon \geq d(x_n - x_m) \\
 \end{split}
