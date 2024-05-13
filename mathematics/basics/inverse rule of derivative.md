@@ -1,14 +1,10 @@
-![[derivative#Definition]]
-
-![[inverse function#Definition Inverse Function]]
-
-## [[inverse function|inverse]] rule for [[derivative]]
+### [[inverse function|inverse]] rule for [[derivative]]
 - [[derivative]] of a [[inverse function]]
 
 $$
 \frac{df^{-1(y)}}{dy} = \frac{1}{\frac{df\left(f^{-1}(y)\right)}{df^{-1}(y)}}
 $$
-## proof for [[inverse function|inverse]] rule for [[derivative]]
+### proof for [[inverse function|inverse]] rule for [[derivative]]
 
 
 $$

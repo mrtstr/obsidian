@@ -1,10 +1,10 @@
-![[derivative#definition]]
 
-## [[linear map|linearity]] of the [[derivative]]
+
+### [[linear map|linearity]] of the [[derivative]]
 $$
 \frac{d\left(af(x) + bg(x)\right)}{dx} = a \frac{df(x)}{dx} + b \frac{dg(x)}{dx}
 $$
-## proof for [[linear map|linearity]] of the [[derivative]]
+### proof for [[linear map|linearity]] of the [[derivative]]
 
 $$
 \begin{split}

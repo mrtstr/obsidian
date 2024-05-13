@@ -1,12 +1,11 @@
-![[derivative#definition derivative]]
 
-## [[multiplication|product]] rule for [[derivative]]
+### [[multiplication|product]] rule for [[derivative]]
 - [[derivative]] of the [[multiplication]] of two [[function|functions]]
 $$
 \frac{d\left(f(x) \cdot g(x)\right)}{dx} 
 = f(x)\frac{dg(x)}{dx} + g(x) \frac{df(x)}{dx}
 $$
-## proof for [[multiplication|product]] rule for [[derivative]]
+### proof for [[multiplication|product]] rule for [[derivative]]
 $$
 \begin{split}
 \frac{d\left(f(x) \cdot g(x)\right)}{dx} 
@@ -21,7 +20,7 @@ f(x+h) \left(g(x+h) - g(x)\right) + g(x) \left(f(x+h) - g(x)\right)
 &=  \frac{df(x)}{dx} g(x) + \frac{dg(x)}{dx}f(x) 
 \end{split}
 $$
-##  Leibniz rule
+###  leibniz rule
 generalizing the [[product rule of derivative]] for [[derivative]] of higher order
 
 ### theorem

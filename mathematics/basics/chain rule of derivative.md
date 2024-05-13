@@ -1,13 +1,11 @@
-![[derivative#definition derivative]]
-
-## [[composition|chain]] rule for [[derivative]]
+### [[composition|chain]] rule for [[derivative]]
 - [[derivative]] of the [[composition]] of two [[function|functions]]
 
 $$
 \frac{df\left(g(x)\right)}{dx} = \frac{df\left(g(x)\right)}{dg(x)} \cdot \frac{dg(x)}{dx} 
 $$
 
-## intuition chain rule
+### intuition chain rule
 - the rate of change of $f$ to $x$ is equal to the rate of change of $f$ to $g$ times the rate of change of $g$ to $x$
 - if a car is $5$ times faster than a bike and a bike is 4 times faster than a wakling person than the car is $20 = 4 	\times 5$ faster than a waling person
 
