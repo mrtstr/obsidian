@@ -977,11 +977,11 @@
     "machine learning/embeddings.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/consine similariy.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/derivative of a constant.md": "ea114cffbca238dc5bac56ec8e3be70c",
-    "mathematics/basics/linearity of the derivative.md": "78032cddb70340953d2f135e60b4308f",
-    "mathematics/basics/inverse rule of derivative.md": "7dbb4994af0c0c9f18472d107470b7a2",
-    "mathematics/basics/chain rule of derivative.md": "fc3d434394882e8bc5d38cde94be16f6",
-    "mathematics/basics/product rule of derivative.md": "58ad4558b9cf604eaf32a4dc71141f17",
-    "mathematics/basics/derivative.md": "e6658b33b5b63089cab78f18c679cdc9",
+    "mathematics/basics/linearity of the derivative.md": "2d10eb17b605cf92cb3c5696f9375499",
+    "mathematics/basics/inverse rule of derivative.md": "9e3291952600b84aa9e8e368c8afba4f",
+    "mathematics/basics/chain rule of derivative.md": "a62551fa78857c9ca81ba95e6c179ffe",
+    "mathematics/basics/product rule of derivative.md": "cdfe5bdafdc895eea36bf9b1ea0e1137",
+    "mathematics/basics/derivative.md": "6988132a2e7012284ff648f027a0a90d",
     "mathematics/basics/induction proof.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/power rule for derivative.md": "d7a29e2629a4db0d7a2626c4f37a5b30",
     "mathematics/basics/polynomial.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1485,9 +1485,13 @@
     "mathematics/basics/range.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/domain.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/continuous function.md": "5e9da7078dd1c9152ab856abcecb8ddf",
-    "mathematics/basics/bounded linear map.md": "4e1a84cc23957e2c88b9dbc0c98b17d0",
+    "mathematics/basics/bounded linear map.md": "649868b1417ab7d1011b1c9f30849dce",
     "mathematics/basics/operator norm.md": "5f83040cca02894d7d06f972c5f5f63d",
-    "mathematics/basics/frobenius inner product.md": "d8f388e75fe4458ccc9de72cf9c01005"
+    "mathematics/basics/frobenius inner product.md": "d8f388e75fe4458ccc9de72cf9c01005",
+    "mathematics/basics/jacobian.md": "48a6156640ac8ddea48b913c5891b412",
+    "mathematics/basics/gradient.md": "6f4e9080bd9e8db6b4cae9b5b0197c55",
+    "mathematics/basics/directional derivative.md": "9208f76949447f4f5b0faac132d52b5c",
+    "mathematics/basics/differentiabe.md": "fb91b1bd83e3432935df710c4b551cb9"
   },
   "fields_dict": {
     "Basic": [
