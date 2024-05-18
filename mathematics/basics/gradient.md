@@ -1,5 +1,6 @@
 ### gradient
 - let $f: \mathbb{R}^m \to \mathbb{R}^n$ be a [[function]]
+
 $$
 \nabla f(x) = 
 \left(
@@ -22,6 +23,7 @@ Back:
 ### gradient
 
 - let $f: \mathbb{R}^m \to \mathbb{R}^n$ be a [[function]]
+
 $$
 \nabla f(x) = 
 \left(
@@ -34,7 +36,9 @@ $$
 \right)
 \in \mathbb{R}^{n \times m}
 $$
+
 ___________________
+
 ### derivative in a [[banach space]]
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
 - the [[bounded linear map]] $A \in L(X, Y)$ is the [[derivative]] of $f$ in point $x \in X$ is the following is true
@@ -43,6 +47,7 @@ $$
 $$
 - for every point $x \in X$ we will get a different [[bounded linear map]] $A: X \to Y$
 - the [[derivative]] $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]]
+
 $$
 A=Df(x) \in L(X,Y
 $$
@@ -57,6 +62,7 @@ $$
 - since the [[derivative]] $A: \mathbb{R}^n \to \mathbb{R}$ is a [[bounded linear map]] we can express it as a [[matrix]] $A \in \mathbb{R}^{1 \times n}$
 - $x, h \in \mathbb{R}^n$ are [[vector|vectors]] from the [[domain]] of $f$
 - we can follow that $h$ is the [[derivative]] exactly when each of its elements $h_i$ is the partial derivative of $f(x)$ after $x_i$
+
 $$
 \begin{split}
 &\lim_{||h|| \to 0} \frac{|f(x+h) - f(x) - Ah|}{||h||} = 0 \\

@@ -189,7 +189,7 @@ $$
 - for every point $x \in X$ we will get a different [[bounded linear map]] $A: X \to Y$
 - the [[derivative]] $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]]
 $$
-A=Df(x) \in L(X,Y
+A=Df(x) \in L(X,Y)
 $$
 
 ___________________

@@ -1,19 +1,19 @@
-### jacobian $f: \mathbb{R}^n \to \mathbb{R}$
+### jacobian $f: \mathbb{R}^m \to \mathbb{R}$
 - let $f: \mathbb{R}^n \to \mathbb{R}$ be a [[function]] mapping from a [[banach space]] $(\mathbb{R}^n, ||\cdot||)$ to a [[banach space]] $(\mathbb{R}, |\cdot|)$
-- since the [[derivative]] $A: \mathbb{R}^n \to \mathbb{R}$ is a [[bounded linear map]] we can express it as a [[matrix]] $A \in \mathbb{R}^{1 \times n}$
-- $x, h \in \mathbb{R}^n$ are [[vector|vectors]] from the [[domain]] of $f$
+- since the [[derivative]] $A: \mathbb{R}^m \to \mathbb{R}$ is a [[bounded linear map]] we can express it as a [[matrix]] $A \in \mathbb{R}^{1 \times m}$
+- $x, h \in \mathbb{R}^m$ are [[vector|vectors]] from the [[domain]] of $f$
 - we can follow that $h$ is the [[derivative]] exactly when each of its elements $h_i$ is the partial derivative of $f(x)$ after $x_i$
 $$
 \begin{split}
 &\lim_{||h|| \to 0} \frac{|f(x+h) - f(x) - Ah|}{||h||} = 0 \\
 
-\Leftrightarrow& \lim_{||h|| \to 0} \frac{\left|f(x+Ih) - f(x) - \sum_{i \in [n]} a_i h_i \right| }{||h||} = 0 \\
+\Leftrightarrow& \lim_{||h|| \to 0} \frac{\left|f(x+Ih) - f(x) - \sum_{j \in [m]} a_j h_j \right| }{||h||} = 0 \\
 
-\Leftrightarrow& \lim_{||h|| \to 0} \frac{\left|f\left(x+\sum_{i \in [n]} I_{(*, i) h_i}\right) - f(x) - \sum_{i \in [n]} a_i h_i \right| }{||h||} = 0 \\
+\Leftrightarrow& \lim_{||h|| \to 0} \frac{\left|f\left(x+\sum_{i \in [n]} I_{(*, j) h_j}\right) - f(x) - \sum_{j \in [m]} a_j h_j \right| }{||h||} = 0 \\
 
-\Leftrightarrow& \forall i \in [n]: \lim_{|h_i| \to 0} \frac{\left|f\left(x+I_{(*, i) h_i}\right) - f(x) - a_i h_i \right| }{|h_i|} = 0 \\
+\Leftrightarrow& \forall j \in [m]: \lim_{|h_j| \to 0} \frac{\left|f\left(x+I_{(*, j) h_j}\right) - f(x) - a_j h_j \right| }{|h_i|} = 0 \\
 
-\Leftrightarrow& \forall i \in [n]: h_i = \frac{\partial f(x)}{\partial x_i} \\
+\Leftrightarrow& \forall j \in [m]: h_j = \frac{\partial f(x)}{\partial x_j} \\
 
 \Leftrightarrow&  h = Df(x) = \left(\nabla f(x)\right)^\top \\
 \end{split}
@@ -54,30 +54,39 @@ $$
 
 START
 Basic
+
 [[jacobian]] $f: \mathbb{R}^n \to \mathbb{R}$
+
 [[jacobian]] $f: \mathbb{R}^m \to \mathbb{R}^n$
+
 (with proof)
+
+
 Back: 
-### jacobian $f: \mathbb{R}^n \to \mathbb{R}$
+
+### jacobian $f: \mathbb{R}^m \to \mathbb{R}$
+
 - let $f: \mathbb{R}^n \to \mathbb{R}$ be a [[function]] mapping from a [[banach space]] $(\mathbb{R}^n, ||\cdot||)$ to a [[banach space]] $(\mathbb{R}, |\cdot|)$
-- since the [[derivative]] $A: \mathbb{R}^n \to \mathbb{R}$ is a [[bounded linear map]] we can express it as a [[matrix]] $A \in \mathbb{R}^{1 \times n}$
-- $x, h \in \mathbb{R}^n$ are [[vector|vectors]] from the [[domain]] of $f$
-- we can follow that $h$ is the [[derivative]] exactly when each of its elements $h_i$ is the partial derivative of $f(x)$ after $x_i$
+- since the [[derivative]] $A: \mathbb{R}^m \to \mathbb{R}$ is a [[bounded linear map]] we can express it as a [[matrix]] $A \in \mathbb{R}^{1 \times m}$
+- $x, h \in \mathbb{R}^m$ are [[vector|vectors]] from the [[domain]] of $f$
+- we can follow that $h$ is the [[derivative]] exactly when each of its elements $h_j$ is the partial derivative of $f(x)$ after $x_j$
+
 $$
 \begin{split}
 &\lim_{||h|| \to 0} \frac{|f(x+h) - f(x) - Ah|}{||h||} = 0 \\
 
-\Leftrightarrow& \lim_{||h|| \to 0} \frac{\left|f(x+Ih) - f(x) - \sum_{i \in [n]} a_i h_i \right| }{||h||} = 0 \\
+\Leftrightarrow& \lim_{||h|| \to 0} \frac{\left|f(x+Ih) - f(x) - \sum_{j \in [m]} a_j h_j \right| }{||h||} = 0 \\
 
-\Leftrightarrow& \lim_{||h|| \to 0} \frac{\left|f\left(x+\sum_{i \in [n]} I_{(*, i) h_i}\right) - f(x) - \sum_{i \in [n]} a_i h_i \right| }{||h||} = 0 \\
+\Leftrightarrow& \lim_{||h|| \to 0} \frac{\left|f\left(x+\sum_{i \in [n]} I_{(*, j) h_j}\right) - f(x) - \sum_{j \in [m]} a_j h_j \right| }{||h||} = 0 \\
 
-\Leftrightarrow& \forall i \in [n]: \lim_{|h_i| \to 0} \frac{\left|f\left(x+I_{(*, i) h_i}\right) - f(x) - a_i h_i \right| }{|h_i|} = 0 \\
+\Leftrightarrow& \forall j \in [m]: \lim_{|h_j| \to 0} \frac{\left|f\left(x+I_{(*, j) h_j}\right) - f(x) - a_j h_j \right| }{|h_i|} = 0 \\
 
-\Leftrightarrow& \forall i \in [n]: h_i = \frac{\partial f(x)}{\partial x_i} \\
+\Leftrightarrow& \forall j \in [m]: h_j = \frac{\partial f(x)}{\partial x_j} \\
 
 \Leftrightarrow&  h = Df(x) = \left(\nabla f(x)\right)^\top \\
 \end{split}
 $$
+
 
 ### jacobian $f: \mathbb{R}^m \to \mathbb{R}^n$
 - let $f: \mathbb{R}^m \to \mathbb{R}^n$ be a [[function]] mapping from a [[banach space]] $(\mathbb{R}^m, ||\cdot||)$ to a [[banach space]] $(\mathbb{R}^n, ||\cdot||)$
@@ -103,13 +112,17 @@ D f(x) =
 \right)
 \in \mathbb{R}^{n \times m}
 $$
+
 ___________________
+
 ### derivative in a [[banach space]]
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
 - the [[bounded linear map]] $A \in L(X, Y)$ is the [[derivative]] of $f$ in point $x \in X$ is the following is true
+
 $$
 \lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Ah||_Y}{||h||_X} = 0
 $$
+
 - for every point $x \in X$ we will get a different [[bounded linear map]] $A: X \to Y$
 - the [[derivative]] $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]]
 $$
@@ -120,6 +133,7 @@ $$
 ### bounded linear map
 - given two [[banach space|banach spaces]] $(X, +, \cdot, ||\cdot||_X)$ and $(Y, \oplus, \odot , ||\cdot||_Y)$ and a [[linear map]] $A: X\rightarrow Y$
 - $A$ is a [[bounded linear map]] if the followng is true
+
 $$
 \exists C>0: \forall x \in X : ||Ax||_Y \leq C ||x||_X
 $$
@@ -129,9 +143,11 @@ $$
 
 - it says that the [[image]] of a [[bounded set]] also has to be a [[bounded set]]
 - we define $L(X,Y)$ as the [[set]] of all [[bounded linear map|bounded linear maps]] mapping from $X$ to $Y$
+
 $$
 L(X,Y) = \{A: X\to Y: A \text{ is linear and bounded}\}
 $$
+
 - every [[bounded linear map]] in a finite space can be expressed as a [[matrix]]
 
 ### derivative
