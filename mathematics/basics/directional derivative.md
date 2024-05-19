@@ -36,6 +36,7 @@ f(x, y) = \left\{
 &\frac{x}{x^2 + y^2} \qquad& \text{for } (x,y) \neq (0,0)
 \end{split} \right.
 $$
+
 ### [[partial derivative]] example
 - given a [[function]] $f$ with the [[gradient]] $\nabla f$ what is the [[directional derivative]] is the direction $h$?
 
