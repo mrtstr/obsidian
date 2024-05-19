@@ -23,6 +23,7 @@ $$
 $$
 f(X + H) = f(X) + AH + \varphi(H) \quad \text{with} \quad \lim_{H \to 0} \frac{||\varphi(H)||_Y}{||H||_X} = 0 
 $$
+- the [[derivative]] $Df(X)[H] = XH^\top + HX^\top \in L( \mathbb{R}^{n \times m},  \mathbb{R}^{n \times n})$ is a [[bounded linear map]] 
 $$
 \begin{split}
 f (X + H) 
@@ -291,6 +292,9 @@ Back:
 $$
 f(X + H) = f(X) + AH + \varphi(H) \quad \text{with} \quad \lim_{H \to 0} \frac{||\varphi(H)||_Y}{||H||_X} = 0 
 $$
+
+- the [[derivative]] $Df(X)[H] = XH^\top + HX^\top \in L( \mathbb{R}^{n \times m},  \mathbb{R}^{n \times n})$ is a [[bounded linear map]] 
+
 $$
 \begin{split}
 f (X + H) 
