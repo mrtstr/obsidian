@@ -1,14 +1,14 @@
 
 ### [[projection]] of [[vector|vectors]] on eachother
 - let $b'$ be the projection of [[vector]] $a$ on [[vector]] $b$
-- the length of $b'$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $b$ does not depend on the length of $b$)
+- the length of $b'$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $proj_b(a) = b$ does not depend on the length of $b$)
 
 $$
 ||b'|| = \frac{\langle a,b \rangle}{||b||}
 $$
 - since $b'$ has the same direction as b the following is true
 $$
-b' = \frac{\langle a,b \rangle}{||b||} \frac{b}{||b||}
+proj_b(a) = b' = \frac{\langle a,b \rangle}{||b||} \frac{b}{||b||}
 $$
 
 ![[projection 3.jpg]]
@@ -19,8 +19,8 @@ $$
 
 $$
 \begin{split}
-\cos(\phi) = \frac{ankathte}{hypotenuse} = 
-\frac{||b'||}{||a||} = \frac{\langle a,b\rangle}{||a||\cdot||b||}
+\cos(\phi) = \frac{ankathte}{hypotenuse} = \frac{||b'||}{||a||} = 
+\frac{||proj_b(a)||}{||a||} = \frac{\langle a,b\rangle}{||a||\cdot||b||}
 \end{split}
 $$
 
@@ -56,15 +56,17 @@ Basic
 Back: 
 ### [[projection]] of [[vector|vectors]] on eachother
 - let $b'$ be the projection of [[vector]] $a$ on [[vector]] $b$
-- the length of $b'$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $b$ does not depend on the length of $b$)
+- the length of $b'$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $proj_b(a) = b$ does not depend on the length of $b$)
 
 $$
 ||b'|| = \frac{\langle a,b \rangle}{||b||}
 $$
+
 - since $b'$ has the same direction as b the following is true
 $$
-b' = \frac{\langle a,b \rangle}{||b||} \frac{b}{||b||}
+proj_b(a) = b' = \frac{\langle a,b \rangle}{||b||} \frac{b}{||b||}
 $$
+
 
 ![[projection 4.jpg]]
 
@@ -135,8 +137,8 @@ Back:
 - the [[cosine]] is the length of the [[projection]] of a [[vector]] $a$ to a [[vector]] $b$ devided by the length of $a$
 $$
 \begin{split}
-\cos(\phi) = \frac{ankathte}{hypotenuse} = 
-\frac{||b'||}{||a||} = \frac{\langle a,b\rangle}{||a||\cdot||b||}
+\cos(\phi) = \frac{ankathte}{hypotenuse} = \frac{||b'||}{||a||} = 
+\frac{||proj_b(a)||}{||a||} = \frac{\langle a,b\rangle}{||a||\cdot||b||}
 \end{split}
 $$
 ![[projection 6.jpg]]
@@ -144,16 +146,15 @@ $$
 
 ### [[projection]] of [[vector|vectors]] on eachother
 - let $b'$ be the projection of [[vector]] $a$ on [[vector]] $b$
-- the length of $b'$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $b$ does not depend on the length of $b$)
+- the length of $b'$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $proj_b(a) = b$ does not depend on the length of $b$)
 
 $$
 ||b'|| = \frac{\langle a,b \rangle}{||b||}
 $$
 - since $b'$ has the same direction as b the following is true
 $$
-b' = \frac{\langle a,b \rangle}{||b||} \frac{b}{||b||}
+proj_b(a) = b' = \frac{\langle a,b \rangle}{||b||} \frac{b}{||b||}
 $$
-
 
 
 #### relationship [[inner product]] to [[projection]]

@@ -1,59 +1,29 @@
-### gradient
-- let $f: \mathbb{R}^m \to \mathbb{R}^n$ be a [[function]] then the [[gradient]] is a [[linear map]] $\nabla f(x): \mathbb{R}^m \to \mathbb{R}^n$ and is defined as follows
-
-$$
-\nabla f(x) = 
-\left(
-\begin{matrix}
-\frac{\partial f}{\partial x_1} \\
-... \\
-\frac{\partial f}{\partial x_n} \\
-\end{matrix}
-
-\right)
-\in \mathbb{R}^{n \times m}
-$$
-- the [[gradient]] gives the direction and the rate of fastest increase of $f$ because every of its elements $\frac{\partial f}{\partial x_i}$ gives the rate of change in the direction of the coordinate $x_i$ 
-# -----------------------
-![[partial derivative#partial derivative]]
-
-# anki
-
-
-START
-Basic
-[[gradient]] plus related concept
-- definition
-- geometric interpretation
-Back: 
-### gradient
-- let $f: \mathbb{R}^m \to \mathbb{R}^n$ be a [[function]] then the [[gradient]] is a [[linear map]] $\nabla f(x): \mathbb{R}^m \to \mathbb{R}^n$ and is defined as follows
-
-$$
-\nabla f(x) = 
-\left(
-\begin{matrix}
-\frac{\partial f}{\partial x_1} \\
-... \\
-\frac{\partial f}{\partial x_n} \\
-\end{matrix}
-
-\right)
-\in \mathbb{R}^{n \times m}
-$$
-- the [[gradient]] gives the direction and the rate of fastest increase of $f$ because every of its elements $\frac{\partial f}{\partial x_i}$ gives the rate of change in the direction of the coordinate $x_i$ 
-
 ### partial derivative
 - given a [[function]] $f: \mathbb{R}^n \to Y$
 - the [[partial derivative]] $\frac{\partial f}{\partial x_i}$ is defined as follows and mesures the rate of change of $f$ regarding the direction of die coordinate $x_i$ 
 
 $$
-\frac{\partial f}{\partial x_i}(x) = \lim_{h \to 0} \frac{f(x+h e_i) - f(x) }{h}
+\frac{\partial f}{\partial x_i}(x) = \lim_{h \to 0} \frac{f(x+h e_i) - f(x) }{h} 
+$$
+
+# -----------------------
+![[gradient#gradient]]
+
+START
+Basic
+[[partial derivative]]
+- definition
+- geometric interpretation
+Back: 
+### partial derivative
+- given a [[function]] $f: \mathbb{R}^n \to Y$
+- the [[partial derivative]] $\frac{\partial f}{\partial x_i}$ is defined as follows and mesures the rate of change of $f$ regarding the direction of die coordinate $x_i$ 
+
+$$
+\frac{\partial f}{\partial x_i}(x) = \lim_{h \to 0} \frac{f(x+h e_i) - f(x) }{h} 
 $$
 
 ___________________
-
-
 
 ### derivative in a [[banach space]]
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
@@ -98,5 +68,5 @@ $$
 
 
 Tags: mathematics
-<!--ID: 1715629635955-->
+<!--ID: 1716128307658-->
 END

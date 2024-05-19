@@ -932,7 +932,7 @@
     "mathematics/linear algebra/rank.md": "e5e94cbb3d8dfbdbf884c5eeb3c694a6",
     "mathematics/linear algebra/rank nullity theorem.md": "3952121cb916e06aacc8bd4255032457",
     "mathematics/linear algebra/pseudo inverse matrix.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/linear algebra/projection.md": "d39bc30e964e1148fdc10940669237eb",
+    "mathematics/linear algebra/projection.md": "ff6652049b5b63ac7c997f5be0078999",
     "mathematics/linear algebra/projection matrix.md": "631c6f4a941bdcb0d04c41b4658c4c4d",
     "mathematics/linear algebra/orthonormal.md": "4c80e6196aee5227752a4c93bcb61d4c",
     "mathematics/linear algebra/orthogonal.md": "5e1e2478abb877b79d7ddc60d9047702",
@@ -1488,10 +1488,11 @@
     "mathematics/basics/bounded linear map.md": "649868b1417ab7d1011b1c9f30849dce",
     "mathematics/basics/operator norm.md": "5f83040cca02894d7d06f972c5f5f63d",
     "mathematics/basics/frobenius inner product.md": "d8f388e75fe4458ccc9de72cf9c01005",
-    "mathematics/basics/jacobian.md": "04e8d483ebebc273306ccc90b9069880",
-    "mathematics/basics/gradient.md": "2e3b1cf997972cd4cfdfa12e58d8c1b4",
-    "mathematics/basics/directional derivative.md": "9208f76949447f4f5b0faac132d52b5c",
-    "mathematics/basics/differentiabe.md": "fb91b1bd83e3432935df710c4b551cb9"
+    "mathematics/basics/jacobian.md": "389dc208441ee7ffb209532bec9a1ecf",
+    "mathematics/basics/gradient.md": "7be17ce57595cebfef7cc1c0c80a1915",
+    "mathematics/basics/directional derivative.md": "b654dd64109172d71a23e0bfce4e9014",
+    "mathematics/basics/differentiabe.md": "fb91b1bd83e3432935df710c4b551cb9",
+    "mathematics/basics/partial derivative.md": "284d8445de10e2ec6c9521f8dd1069d3"
   },
   "fields_dict": {
     "Basic": [
