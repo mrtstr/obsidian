@@ -16,9 +16,27 @@ f(x + h) = f(x) + Ah + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{|
 $$
 
 ### examples
+
+#### $f: \mathbb{R} \to \mathbb{R}, f(x) = 3x^2$
+- the [[derivative]] $Df(x)[h]: \mathbb{R} \to L( \mathbb{R},  \mathbb{R})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}$ to the $\mathbb{R}$ and $H \in \mathbb{R}$
+$$
+f(x + h) = f(x) + ah + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{\varphi(h)}{h} = 0 
+$$
+$$
+\begin{split}
+f(x + h) = 3(x+h)^2 = \underbrace{3x^2}_{f(x)} + \underbrace{3h^2}_{\varphi(h)} + \underbrace{6hx}_{Df(x)[h]}
+\end{split}
+$$
+- $\varphi(h)$ converges fast enough against 0
+$$
+\lim_{h \to 0} \frac{\varphi(h)}{h} = \lim_{h \to 0} \frac{3h^2}{h}  = 0 
+$$
+- so the [[derivative]] in the point $x$ and in the direction $h$ is given as $Df(x)[h] = 6hx$ 
+
+
 #### $f: \mathbb{R}^{n \times m} \to \mathbb{R}^{n \times n}, f(X) = XX^\top$
 
-- this the [[derivative]] $Df(X)[H]: X \to L( \mathbb{R}^{n \times m},  \mathbb{R}^{n \times n})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}^{n \times m}$ to the $\mathbb{R}^{n \times n}$ and $H \in \mathbb{R}^{n \times m}$
+- the [[derivative]] $Df(X)[H]: X \to L( \mathbb{R}^{n \times m},  \mathbb{R}^{n \times n})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}^{n \times m}$ to the $\mathbb{R}^{n \times n}$ and $H \in \mathbb{R}^{n \times m}$
 - from the definition we know the following:
 $$
 f(X + H) = f(X) + AH + \varphi(H) \quad \text{with} \quad \lim_{H \to 0} \frac{||\varphi(H)||_Y}{||H||_X} = 0 
@@ -405,4 +423,72 @@ $$
 
 Tags: mathematics
 <!--ID: 1716139877291-->
+END
+
+
+START
+Basic
+calculate the [[derivative]] of the [[function]] $f: \mathbb{R} \to \mathbb{R}, f(x) = 3x^2$ using the full definition
+
+Back: 
+#### $f: \mathbb{R} \to \mathbb{R}, f(x) = 3x^2$
+- the [[derivative]] $Df(x)[h]: \mathbb{R} \to L( \mathbb{R},  \mathbb{R})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}$ to the $\mathbb{R}$ and $H \in \mathbb{R}$
+$$
+f(x + h) = f(x) + ah + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{\varphi(h)}{h} = 0 
+$$
+$$
+\begin{split}
+f(x + h) = 3(x+h)^2 = \underbrace{3x^2}_{f(x)} + \underbrace{3h^2}_{\varphi(h)} + \underbrace{6hx}_{Df(x)[h]}
+\end{split}
+$$
+- $\varphi(h)$ converges fast enough against 0
+$$
+\lim_{h \to 0} \frac{\varphi(h)}{h} = \lim_{h \to 0} \frac{3h^2}{h}  = 0 
+$$
+- so the [[derivative]] in the point $x$ and in the direction $h$ is given as $Df(x)[h] = 6hx$ 
+
+
+___________________
+
+
+### derivative in a [[banach space]]
+- let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
+- the [[bounded linear map]] $A \in L(X, Y)$ is the [[derivative]] of $f$ in point $x \in X$ is the following is true
+$$
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Ah||_Y}{||h||_X} = 0
+$$
+- for every point $x \in X$ we will get a different [[bounded linear map]] $A: X \to Y$
+- the [[derivative]] $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]]
+$$
+A=Df(x) \in L(X,Y)
+$$
+- this eqivalent definition is often easier to work with:
+$$
+f(x + h) = f(x) + Ah + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+$$
+
+### bounded linear map
+- given two [[banach space|banach spaces]] $(X, +, \cdot, ||\cdot||_X)$ and $(Y, \oplus, \odot , ||\cdot||_Y)$ and a [[linear map]] $A: X\rightarrow Y$
+- $A$ is a [[bounded linear map]] if the followng is true
+$$
+\exists C>0: \forall x \in X : ||Ax||_Y \leq C ||x||_X
+$$
+$$
+\forall x_1,x_2 \in X, \lambda , \mu \in \mathbb{R}:F(\lambda x_1 + \mu x_2) = \lambda \odot F(x_1) \oplus \mu \odot F(x_2) 
+$$
+
+- it says that the [[image]] of a [[bounded set]] also has to be a [[bounded set]]
+- we define $L(X,Y)$ as the [[set]] of all [[bounded linear map|bounded linear maps]] mapping from $X$ to $Y$
+$$
+L(X,Y) = \{A: X\to Y: A \text{ is linear and bounded}\}
+$$
+- every [[bounded linear map]] in a finite space can be expressed as a [[matrix]]
+
+### derivative
+$$
+\frac{df(x)}{dx} = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
+$$
+
+Tags: mathematics
+<!--ID: 1716141626057-->
 END
