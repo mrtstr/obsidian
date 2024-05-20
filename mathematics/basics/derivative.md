@@ -83,9 +83,9 @@ $$
 ### examples
 
 #### $f: \mathbb{R} \to \mathbb{R}, f(x) = 3x^2$
-- the [[derivative]] $Df(x)[h]: \mathbb{R} \to L( \mathbb{R},  \mathbb{R})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}$ to the $\mathbb{R}$ and $H \in \mathbb{R}$
+- the [[derivative]] $Df(x)[h]: \mathbb{R} \to L( \mathbb{R},  \mathbb{R})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}$ to the $\mathbb{R}$ thus
 $$
-f(x + h) = f(x) + ah + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{\varphi(h)}{h} = 0 
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{\varphi(h)}{h} = 0 
 $$
 $$
 \begin{split}
@@ -97,16 +97,16 @@ $$
 \lim_{h \to 0} \frac{\varphi(h)}{h} = \lim_{h \to 0} \frac{3h^2}{h}  = 0 
 $$
 - so the [[derivative]] in the point $x$ and in the direction $h$ is given as $Df(x)[h] = 6hx$ 
-
+- for a [[function]] $f: \mathbb{R} \to \mathbb{R}$ the [[derivative]] for different directions does not make sense so with $h=1$ we have $Df(x) = 6x$ 
 
 #### $f: \mathbb{R}^{n \times m} \to \mathbb{R}^{n \times n}, f(X) = XX^\top$
 
 - the [[derivative]] $Df(X)[H]: X \to L( \mathbb{R}^{n \times m},  \mathbb{R}^{n \times n})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}^{n \times m}$ to the $\mathbb{R}^{n \times n}$ and $H \in \mathbb{R}^{n \times m}$
 - from the definition we know the following:
 $$
-f(X + H) = f(X) + AH + \varphi(H) \quad \text{with} \quad \lim_{H \to 0} \frac{||\varphi(H)||_Y}{||H||_X} = 0 
+f(X + H) = f(X) + Df(X)[H] + \varphi(H) \quad \text{with} \quad \lim_{H \to 0} \frac{||\varphi(H)||_Y}{||H||_X} = 0 
 $$
-- the [[derivative]] $Df(X)[H] = XH^\top + HX^\top \in L( \mathbb{R}^{n \times m},  \mathbb{R}^{n \times n})$ is a [[bounded linear map]] 
+
 $$
 \begin{split}
 f (X + H) 
@@ -114,7 +114,8 @@ f (X + H)
 &= \underbrace{XX^\top}_{f(X)} + \underbrace{HH^\top}_{\varphi(H)} +  \underbrace{XH^\top + HX^\top}_{Df(X)[H]}  \\
 \end{split}
 $$
-- we only need to show that $\varphi(H) = HH^\top$ is [[convergence|converging]] fast enough
+- to show that $Df(X)[H] = XH^\top + HX^\top \in L( \mathbb{R}^{n \times m},  \mathbb{R}^{n \times n})$ is the [[derivative]]  we only need to show that $\varphi(H) = HH^\top$ is [[convergence|converging]] fast enough
+-  (using the fact the [[operator norm]] is submultiplicative)
 $$
 \begin{split}
 \frac{||\varphi(H)||}{||H||}
@@ -362,18 +363,14 @@ START
 Basic
 calculate the [[derivative]] of the [[function]] $f: \mathbb{R}^{n \times m} \to \mathbb{R}^{n \times n}, f(X) = XX^\top$
 
-
 Back: 
 #### $f: \mathbb{R}^{n \times m} \to \mathbb{R}^{n \times n}, f(X) = XX^\top$
 
-- this the [[derivative]] $Df(X)[H]: X \to L( \mathbb{R}^{n \times m},  \mathbb{R}^{n \times n})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}^{n \times m}$ to the $\mathbb{R}^{n \times n}$ and $H \in \mathbb{R}^{n \times m}$
+- the [[derivative]] $Df(X)[H]: X \to L( \mathbb{R}^{n \times m},  \mathbb{R}^{n \times n})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}^{n \times m}$ to the $\mathbb{R}^{n \times n}$ and $H \in \mathbb{R}^{n \times m}$
 - from the definition we know the following:
-
 $$
-f(X + H) = f(X) + AH + \varphi(H) \quad \text{with} \quad \lim_{H \to 0} \frac{||\varphi(H)||_Y}{||H||_X} = 0 
+f(X + H) = f(X) + Df(X)[H] + \varphi(H) \quad \text{with} \quad \lim_{H \to 0} \frac{||\varphi(H)||_Y}{||H||_X} = 0 
 $$
-
-- the [[derivative]] $Df(X)[H] = XH^\top + HX^\top \in L( \mathbb{R}^{n \times m},  \mathbb{R}^{n \times n})$ is a [[bounded linear map]] 
 
 $$
 \begin{split}
@@ -382,10 +379,7 @@ f (X + H)
 &= \underbrace{XX^\top}_{f(X)} + \underbrace{HH^\top}_{\varphi(H)} +  \underbrace{XH^\top + HX^\top}_{Df(X)[H]}  \\
 \end{split}
 $$
-
-- we only need to show that $\varphi(H) = HH^\top$ is [[convergence|converging]] fast enough 
-- (using the fact the [[operator norm]] is submultiplicative)
-
+- to show that $Df(X)[H] = XH^\top + HX^\top \in L( \mathbb{R}^{n \times m},  \mathbb{R}^{n \times n})$ is the [[derivative]]  we only need to show that $\varphi(H) = HH^\top$ is [[convergence|converging]] fast enough
 $$
 \begin{split}
 \frac{||\varphi(H)||}{||H||}
@@ -395,6 +389,8 @@ $$
 ||H^\top|| &\xrightarrow{H \to 0} 0
 \end{split}
 $$
+
+- (using the fact the [[operator norm]] is submultiplicative)
 
 ### the [[operator norm]] is submultiplicative
 - given two [[linear map|linear maps]] $A: X \to Y$ and $B: Y \to Z$ the following inequallity holds true
@@ -463,24 +459,6 @@ $$
 ### banach spaces
 - [[norm|normed]] [[vector space|space]] that is [[cauchy complete]] with resprect to the [[metric]] induces by its norm is a [[banach space]]
 
-### norm
-- generalization of the concept of **length of a [[vector]]**
-- let $V$ be a [[vector space]]
-- the [[function]] $||\:.||: V \rightarrow \mathbb{R^+}$ is a [[norm]] is it satisfies the following conditions
-1) [[positive definite]]
-$$
-||x||=0 \Leftrightarrow x = 0
-$$
-
-2) absolutely [[homogeneous]]
-$$
-\forall x \in V, \lambda \in \mathbb{K}: ||\lambda \cdot x|| = |\lambda| \cdot ||x||
-$$
-3) [[triangle inequality]]
-$$
-\forall v, w \in V: ||v + w|| \leq ||v|| + ||w||
-$$
-
 Tags: mathematics
 <!--ID: 1716139877291-->
 END
@@ -488,13 +466,13 @@ END
 
 START
 Basic
-calculate the [[derivative]] of the [[function]] $f: \mathbb{R} \to \mathbb{R}, f(x) = 3x^2$ using the full definition
+calculate the [[derivative]] of the [[function]] $f: \mathbb{R} \to \mathbb{R}, f(x) = 3x^2$ using the general definition
 
 Back: 
 #### $f: \mathbb{R} \to \mathbb{R}, f(x) = 3x^2$
-- the [[derivative]] $Df(x)[h]: \mathbb{R} \to L( \mathbb{R},  \mathbb{R})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}$ to the $\mathbb{R}$ and $H \in \mathbb{R}$
+- the [[derivative]] $Df(x)[h]: \mathbb{R} \to L( \mathbb{R},  \mathbb{R})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}$ to the $\mathbb{R}$ thus
 $$
-f(x + h) = f(x) + ah + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{\varphi(h)}{h} = 0 
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{\varphi(h)}{h} = 0 
 $$
 $$
 \begin{split}
@@ -506,10 +484,10 @@ $$
 \lim_{h \to 0} \frac{\varphi(h)}{h} = \lim_{h \to 0} \frac{3h^2}{h}  = 0 
 $$
 - so the [[derivative]] in the point $x$ and in the direction $h$ is given as $Df(x)[h] = 6hx$ 
+- for a [[function]] $f: \mathbb{R} \to \mathbb{R}$ the [[derivative]] for different directions does not make sense so with $h=1$ we have $Df(x) = 6x$ 
 
 
 ___________________
-
 
 ### general derivative
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
@@ -525,22 +503,6 @@ $$
 f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
 $$
 
-### bounded linear map
-- given two [[banach space|banach spaces]] $(X, +, \cdot, ||\cdot||_X)$ and $(Y, \oplus, \odot , ||\cdot||_Y)$ and a [[linear map]] $A: X\rightarrow Y$
-- $A$ is a [[bounded linear map]] if the followng is true
-$$
-\exists C>0: \forall x \in X : ||Ax||_Y \leq C ||x||_X
-$$
-$$
-\forall x_1,x_2 \in X, \lambda , \mu \in \mathbb{R}:F(\lambda x_1 + \mu x_2) = \lambda \odot F(x_1) \oplus \mu \odot F(x_2) 
-$$
-
-- it says that the [[image]] of a [[bounded set]] also has to be a [[bounded set]]
-- we define $L(X,Y)$ as the [[set]] of all [[bounded linear map|bounded linear maps]] mapping from $X$ to $Y$
-$$
-L(X,Y) = \{A: X\to Y: A \text{ is linear and bounded}\}
-$$
-- every [[bounded linear map]] in a finite space can be expressed as a [[matrix]]
 
 ### derivative
 $$
@@ -658,24 +620,6 @@ $$
 \Rightarrow& ||proj_b(a)|| \leq ||a||
 \end{split}
 $$
-
-### bounded linear map
-- given two [[banach space|banach spaces]] $(X, +, \cdot, ||\cdot||_X)$ and $(Y, \oplus, \odot , ||\cdot||_Y)$ and a [[linear map]] $A: X\rightarrow Y$
-- $A$ is a [[bounded linear map]] if the followng is true
-$$
-\exists C>0: \forall x \in X : ||Ax||_Y \leq C ||x||_X
-$$
-$$
-\forall x_1,x_2 \in X, \lambda , \mu \in \mathbb{R}:F(\lambda x_1 + \mu x_2) = \lambda \odot F(x_1) \oplus \mu \odot F(x_2) 
-$$
-
-- it says that the [[image]] of a [[bounded set]] also has to be a [[bounded set]]
-- we define $L(X,Y)$ as the [[set]] of all [[bounded linear map|bounded linear maps]] mapping from $X$ to $Y$
-$$
-L(X,Y) = \{A: X\to Y: A \text{ is linear and bounded}\}
-$$
-- every [[bounded linear map]] in a finite space can be expressed as a [[matrix]]
-
 
 Tags: mathematics
 <!--ID: 1716210599101-->
@@ -822,10 +766,7 @@ $$
 f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
 $$
 
-
-
 ___________________
-
 
 #### [[derivative]] as a [[projection]]
 - let's assume that $f: \mathbb{R}^m \to \mathbb{R}$ and thus $h, A^\top \in \mathbb{R}^m$ 
