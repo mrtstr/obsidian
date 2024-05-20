@@ -7,49 +7,6 @@
 $$
 D_hf(x) = \lim_{t\to0}  \frac{f(x+th) - f(x)}{t}
 $$
-
-### [[directional derivative]] and the [[gradient]]
-- the [[directional derivative]] in all directions can be constucted from the [[gradient]] 
-
-$$
-D_hf(x) =  \nabla f(x) h
-$$
-
-![[gradient#gradient]]
-
-
-### [[directional derivative]] and [[partial derivative]]
-- the [[directional derivative]] generalizes the [[partial derivative]] for an arbitrary direction $h$
-	→ the [[partial derivative]] $\frac{\partial f}{\partial x_i}(x)$ is a [[directional derivative]] $D_hf(x)$ with the direction being the cordinate $i$ $h=e_i$ 
-- while the [[partial derivative]] $\frac{\partial f}{\partial x_i}$ only gives the rate of change of a [[function]] $f$ in the direction of the coordinate its coodrinates the [[partial derivative]] does the same for an arbitrary direction
-
-![[partial derivative#partial derivative]]
-
-### [[directional derivative]] and [[differentiabe|differentiability]]
-- every [[differentiabe]] [[function]] has a [[directional derivative]] in all directions because the [[directional derivative]] can be constructed from the [[gradient]]
-- but not every [[function]] that has [[directional derivative]] in all directions is [[differentiabe]]
-- the following [[function]] $f(x, y)$ is not [[differentiabe]] in point $(0,0)$
-$$
-f(x, y) = \left\{ 
-\begin{split} 
-&0 & \text{for } (x,y) = (0,0) \\ 
-&\frac{x}{x^2 + y^2} \qquad& \text{for } (x,y) \neq (0,0)
-\end{split} \right.
-$$
-
-### [[partial derivative]] example
-- given a [[function]] $f$ with the [[gradient]] $\nabla f$ what is the [[directional derivative]] is the direction $h$?
-
-$$
-\nabla f = \left(\begin{matrix} a \\ b \\ c \end{matrix}\right)
-$$
-$$
-h = \left(\begin{matrix} 1 \\ 1 \\ 0 \end{matrix}\right)
-$$
-
-$$
-D_hf(x) = h \nabla f  = \left(\begin{matrix} a \\ b \\ 0 \end{matrix}\right)
-$$
 # -----------------
 
 ![[partial derivative#partial derivative]]

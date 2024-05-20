@@ -22,34 +22,40 @@ $$
 
 ### geometric interpretation
 
-#### relationship to [[cosine]]
+#### relationship [[inner product]] to [[cosine]]
 - the inner product of two [[norm|normalized]] [[vector|vectors]] is equal to their [[cosine]]
 $$
 \cos(\phi) = \left\langle \frac{x}{||x||}, \frac{y}{||y||} \right\rangle = \frac{\langle x, y \rangle}{||x||\cdot||y||} 
 $$
 
-#### relationship to [[projection]]
-
-- given a [[vector]] $a$ and a [[vector]] $b$ then $\langle a, b \rangle$ is equal to the length of the [[projection]] of $a$ on $b$ [[multiplication|multiplied]] with the length of $b$ (and vice versa) 
-- thus the [[inner product]] contains the information about the (unnormalized) length of the [[projection]] of one [[vector]] to another
-
-$$
-\langle a,b \rangle = ||b|| \cdot ||b'|| = ||b|| \cdot \cos(\phi) ||a||
-$$
-
-![[1714824161003.jpg]]
-
 $$
 \begin{split}
-\cos(\phi) = \frac{ankathte}{hypotenuse} = 
-\frac{||b'||}{||a||} = \frac{\langle a,b\rangle}{||a||\cdot||b||}
+\cos(\phi) = \frac{ankathte}{hypotenuse} 
+= \frac{||b'||}{||a||} 
+= \frac{||proj_b(a)||}{||a||} 
+= \frac{\langle a,b\rangle}{||a||\cdot||b||}
 \end{split}
 $$
 - with the length of the projection of a on b being the [[cosine]] of the angle [[multiplication]] with the length of a
 $$
-||b'|| = \cos(\phi) ||a||
+||b'|| = ||proj_b(a)|| = \cos(\phi) ||a||
 $$
 
+
+#### relationship [[inner product]] to [[projection]]
+
+- given a [[vector]] $a$ and a [[vector]] $b$ then $\langle a, b \rangle$ is equal to the length of the [[projection]] of $a$ on $b$ ($=porj_b(a)$) [[multiplication|multiplied]] with the length of $b$ (and vice versa) 
+- thus the [[inner product]] contains the information about the (unnormalized) length of the [[projection]] of one [[vector]] to another
+
+$$
+\begin{split}
+\langle a,b \rangle 
+&= ||b|| \cdot ||b'|| = ||b|| \cdot \cos(\phi) ||a|| \\
+&=||b|| \cdot ||proj_b(a)|| \\
+\end{split}
+$$
+
+![[1714824161003.jpg]]
 
 #### relationship to [[orthogonal]]
 - defines the convept of [[orthogonal|orthogonality]] which is a generalization of [[vector|vectors]] having a right angle to each other
@@ -263,26 +269,32 @@ $$
 
 #### relationship to [[projection]]
 
-- given a [[vector]] $a$ and a [[vector]] $b$ then $\langle a, b \rangle$ is equal to the length of the [[projection]] of $a$ on $b$ [[multiplication|multiplied]] with the length of $b$ (and vice versa) 
+- given a [[vector]] $a$ and a [[vector]] $b$ then $\langle a, b \rangle$ is equal to the length of the [[projection]] of $a$ on $b$ ($=porj_b(a)$) [[multiplication|multiplied]] with the length of $b$ (and vice versa) 
 - thus the [[inner product]] contains the information about the (unnormalized) length of the [[projection]] of one [[vector]] to another
 
 $$
-\langle a,b \rangle = ||b|| \cdot ||b'|| = ||b|| \cdot \cos(\phi) ||a||
+\begin{split}
+\langle a,b \rangle 
+&= ||b|| \cdot ||b'|| = ||b|| \cdot \cos(\phi) ||a|| \\
+&=||b|| \cdot ||proj_b(a)|| \\
+\end{split}
 $$
 
 ![[projection 1.jpg]]
 
 $$
 \begin{split}
-\cos(\phi) = \frac{ankathte}{hypotenuse} = 
-\frac{||b'||}{||a||} = \frac{\langle a,b\rangle}{||a||\cdot||b||}
+\cos(\phi) = \frac{ankathte}{hypotenuse} 
+= \frac{||b'||}{||a||} 
+= \frac{||proj_b(a)||}{||a||} 
+= \frac{\langle a,b\rangle}{||a||\cdot||b||}
 \end{split}
 $$
-
 - with the length of the projection of a on b being the [[cosine]] of the angle [[multiplication]] with the length of a
 $$
-||b'|| = \cos(\phi) ||a||
+||b'|| = ||proj_b(a)|| = \cos(\phi) ||a||
 $$
+
 
 #### relationship to [[orthogonal]]
 - defines the convept of [[orthogonal|orthogonality]] which is a generalization of [[vector|vectors]] having a right angle to each other

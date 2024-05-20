@@ -22,16 +22,16 @@ $$
 $$
 
 ### geometric interpreation [[cauchy schwarz inequality]]
-- since $\langle a, b \rangle$ is equal to the length of [[vector]] $b$ times the length of [[vector]] $a$ in $b$ $(=b')$ the [[cauchy schwarz inequality]] says that the [[projection]] of one [[vector]] to another can never be longer than the [[vector]] itself
+- since $\langle a, b \rangle$ is equal to the length of [[vector]] $b$ times the length of [[vector]] $a$ on $b$ $(proj_b(a))$ the [[cauchy schwarz inequality]] says that the [[projection]] of one [[vector]] to another can never be longer than the [[vector]] itself
 - equality can only happen when $a$ and $b$ are a scaled version of each other (they are [[linear independent|linear dependent]] and the angle between them is $0$ or $180$)
 - when $a$ and $b$ are [[orthogonal]] the [[projection]] of one to the other is zero which is the other extreme case
 $$
 \begin{split}
-&\langle a, b \rangle = ||b|| \cdot ||b'|| \leq ||a || \cdot ||b|| \\
-\Rightarrow& ||b'|| \leq ||a||
+&\langle a, b \rangle = ||b|| \cdot ||proj_b(a)|| \leq ||a || \cdot ||b|| \\
+\Rightarrow& ||proj_b(a)|| \leq ||a||
 \end{split}
 $$
-
+# -----------------
 ![[inner product#relationship to projection]]
 
 ### [[cauchy schwarz inequality]] for [[linear independent|linear dependen]] vectors
@@ -168,14 +168,13 @@ geometric interpreatation of the [[cauchy schwarz inequality]]
 - when are the extreme cases happening?
 Back: 
 ### geometric interpreation [[cauchy schwarz inequality]]
-- since $\langle a, b \rangle$ is equal to the length of [[vector]] $b$ times the length of [[vector]] $a$ in $b$ $(=b')$ the [[cauchy schwarz inequality]] says that the [[projection]] of one [[vector]] to another can never be longer than the [[vector]] itself
+- since $\langle a, b \rangle$ is equal to the length of [[vector]] $b$ times the length of [[vector]] $a$ on $b$ $(proj_b(a))$ the [[cauchy schwarz inequality]] says that the [[projection]] of one [[vector]] to another can never be longer than the [[vector]] itself
 - equality can only happen when $a$ and $b$ are a scaled version of each other (they are [[linear independent|linear dependent]] and the angle between them is $0$ or $180$)
 - when $a$ and $b$ are [[orthogonal]] the [[projection]] of one to the other is zero which is the other extreme case
-
 $$
 \begin{split}
-&\langle a, b \rangle = ||b|| \cdot ||b'|| \leq ||a || \cdot ||b|| \\
-\Rightarrow& ||b'|| \leq ||a||
+&\langle a, b \rangle = ||b|| \cdot ||proj_b(a)|| \leq ||a || \cdot ||b|| \\
+\Rightarrow& ||proj_b(a)|| \leq ||a||
 \end{split}
 $$
 

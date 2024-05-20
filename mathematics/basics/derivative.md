@@ -1,19 +1,114 @@
 ### derivative in a [[banach space]]
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
-- the [[bounded linear map]] $A \in L(X, Y)$ is the [[derivative]] of $f$ in point $x \in X$ is the following is true
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
 $$
-\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Ah||_Y}{||h||_X} = 0
-$$
-- for every point $x \in X$ we will get a different [[bounded linear map]] $A: X \to Y$
-- the [[derivative]] $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]]
-$$
-A=Df(x) \in L(X,Y
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
 $$
 
 - this eqivalent definition is often easier to work with:
 $$
-f(x + h) = f(x) + Ah + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
 $$
+
+### interpretation [[derivative]]
+
+#### [[derivative]] as a [[linear map|linear]] approximation
+- given a [[function]] $f: X \to Y$ the [[derivative]]  $Df(x)[h]: X \to Y$ is a [[linear map|linear]] approximation of $f$ in the point $x \in X$ relative to the origin
+- since the [[derivative]] $Df(x)[h]: X \to Y$ is an approvimation relative to the origin the following would be a [[linear map|linear]] approximation of $f$ 
+$$
+\widehat{f_{x}}(h) = f(x) + Df(x)[h]
+$$
+- for example the [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ can be expressed in a $\mathbb{R}^3$ with each point in the plain $x \in \mathbb{R}^2$ is mapped to a $y \in \mathbb{R}$
+- thus the [[derivative]] $Df(x)[h]: \mathbb{R}^2 \to \mathbb{R} = Ah$ with $A \in \mathbb{R}^{1 \times 2}$ would be a plain in the $\mathbb{R}^3$
+
+#### [[derivative]] as a rate of change in a direction
+- since the [[derivative]]  $Df(x_0)[h]: X \to Y$ is a [[linear map|linear]] approximation of $f$ in the point $x_0 \in X$ relative to the origin we can calculate the **rate of change** of $f$ in a point $x_0 \in X$ in the direction $h \in X$ by plugging the [[norm|normalized]] direction in $Df(x_0)[h]$
+$$
+Df(x_0)\left[\frac{h}{||h||}\right]
+$$
+- it answers how much would $f$ change when going an infinitesimal small step in the direction (normalized) direction $h \in X$ relative to the length of the infinitesimal small step which is a rate of change
+- note: for a sclar function $f$ the rate of change is a [[scalar]] but in general its element of the codomain of $f$ ($Y$)
+
+- in the case of a [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ the [[matrix]] $A = (\nabla f)^\top \in \mathbb{R}^{1 \times 2}$ can be expressed as a [[vector]] $a = \nabla f \in \mathbb{R}^{2}$ and the rate of change becomes the [[inner product]] between the direction and the [[gradient]]
+$$
+Df(x)\left[\frac{h}{||h||}\right] = A\frac{h}{||h||} = \frac{\left\langle a , h \right\rangle}{||h||} = \frac{\left\langle \nabla f , h \right\rangle}{||h||} \in \mathbb{R}
+$$
+
+
+#### [[derivative]] as a [[projection]]
+- since the [[derivative]] $Df(x_0)[h]: X \to Y, Df(x_0)[h]=Ah$ is a [[bounded linear map]] it can be expressed as a [[inner product]] of the [[matrix]] $A$ (representing the [[derivative]]) and the direction $h \in X$
+- thus the [[derivative]] can be interpreted as the [[projection]] of the [[matrix]] $A$ (e.g. the [[gradient]]) on the direction $h \in X$ (in case of the normalized direction [[vector]] with $||h|| = 1$ )
+$$
+Df(x)[h] = \langle A, h \rangle = ||proj_h(A)|| \cdot ||h||
+$$
+
+- in the case of a [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ the [[matrix]] $A = (\nabla f)^\top \in \mathbb{R}^{1 \times 2}$ can be expressed as a [[vector]] $a = \nabla f \in \mathbb{R}^{2}$ and the rate of change becomes the [[inner product]] between the direction and the [[gradient]]
+
+![[inner product#relationship inner product to projection]]
+
+
+#### [[derivative]] as a [[vector]] in the direction of the steepest ascent
+- before the forcus was on what the [[derivative]] $Df(x_0)[h]: X \to Y, Df(x_0)[h]=Ah$ does, but now we will focus thee properties of $A$ itself
+- we know that the $Df(x_0)[h]=Ah = \langle A, h \rangle = ||proj_h(A)|| \cdot ||h||$ is the rate of change in the direction $h$ and the length of the [[projection]] of $A$ on the direction $h$
+- from the [[cauchy schwarz inequality]] we know that the length of the [[projection]] of $A$ on any $h$ is less pr equal then the length of $A$ itself $||proj_h(A)|| \leq ||A||$ with a maximum reachen at $h = A$ 
+$$
+\begin{split}
+arg\max_{||h||=1} \langle A, h \rangle 
+&= \frac{A}{||A||} \\ 
+\max_{||h||=1} \langle A, h \rangle 
+&= \frac{\langle A, A \rangle }{||A||}
+&= \frac{||A||^2}{||A||} = ||A||  \\
+\end{split}
+$$
+
+![[inner products and norms#every inner product induces a norm]]
+
+![[cauchy schwarz inequality#geometric interpreation cauchy schwarz inequality]]
+
+![[cauchy schwarz inequality#cauchy schwarz inequality]]
+- generally the [[derivative]] $Df(x_0)[h]: X \to Y$ defines [[linear map]] from $X$ to $Y$ for every point $x_0 \in X$
+- $Df(x_0)[h]: X \to Y$ gives the rate of change 
+- in case of a [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ with [[derivative]] $Df(x)[h] = Ah = \langle \nabla f, h \rangle$ with $A \in \mathbb{R}^{1 \times 2}$ defines 
+- $\nabla f \in \mathbb{R}^2$ is a [[vector]] in the domain of $f$ (in the case the plain) that has a **direction** and a **length**
+- the **direction** is the direction of the steepest ascent of $f$ in point $x$ while the **length** descibes the rate of change in this direction
+- in the case of $f: \mathbb{R}^2 \to \mathbb{R}$ it is easy to see that this is defining a plain $\in \mathbb{R}^3$ with the longer the [[vector]] $\nabla f \in \mathbb{R}^2$ the more tilted the plain
+
+### [[directional derivative]] and [[partial derivative]]
+- the [[directional derivative]] generalizes the [[partial derivative]] for an arbitrary direction $h$
+	→ the [[partial derivative]] $\frac{\partial f}{\partial x_i}(x)$ is a [[directional derivative]] $D_hf(x)$ with the direction being the cordinate $i$ $h=e_i$ 
+- while the [[partial derivative]] $\frac{\partial f}{\partial x_i}$ only gives the rate of change of a [[function]] $f$ in the direction of the coordinate its coodrinates the [[partial derivative]] does the same for an arbitrary direction
+
+![[partial derivative#partial derivative]]
+
+### [[directional derivative]] and [[differentiabe|differentiability]]
+- every [[differentiabe]] [[function]] has a [[directional derivative]] in all directions because the [[directional derivative]] can be constructed from the [[gradient]]
+- but not every [[function]] that has [[directional derivative]] in all directions is [[differentiabe]]
+- the following [[function]] $f(x, y)$ is not [[differentiabe]] in point $(0,0)$
+$$
+f(x, y) = \left\{ 
+\begin{split} 
+&0 & \text{for } (x,y) = (0,0) \\ 
+&\frac{x}{x^2 + y^2} \qquad& \text{for } (x,y) \neq (0,0)
+\end{split} \right.
+$$
+
+### [[partial derivative]] example
+- given a [[function]] $f$ with the [[gradient]] $\nabla f$ what is the [[directional derivative]] is the direction $h$?
+
+$$
+\nabla f = \left(\begin{matrix} a \\ b \\ c \end{matrix}\right)
+$$
+$$
+h = \left(\begin{matrix} 1 \\ 1 \\ 0 \end{matrix}\right)
+$$
+
+$$
+D_hf(x) = h \nabla f  = \left(\begin{matrix} a \\ b \\ 0 \end{matrix}\right)
+$$
+
+
 
 ### examples
 

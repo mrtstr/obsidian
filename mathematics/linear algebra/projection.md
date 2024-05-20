@@ -1,10 +1,10 @@
 
 ### [[projection]] of [[vector|vectors]] on eachother
-- let $b'$ be the projection of [[vector]] $a$ on [[vector]] $b$
-- the length of $b'$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $proj_b(a) = b$ does not depend on the length of $b$)
+- let $b' = proj_b(a)$ be the projection of [[vector]] $a$ on [[vector]] $b$
+- the length of $proj_b(a)$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $proj_b(a)$ does not depend on the length of $b$)
 
 $$
-||b'|| = \frac{\langle a,b \rangle}{||b||}
+||proj_b(a)|| = ||b'|| = \frac{\langle a,b \rangle}{||b||}
 $$
 - since $b'$ has the same direction as b the following is true
 $$
@@ -55,18 +55,16 @@ Basic
 - equation
 Back: 
 ### [[projection]] of [[vector|vectors]] on eachother
-- let $b'$ be the projection of [[vector]] $a$ on [[vector]] $b$
-- the length of $b'$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $proj_b(a) = b$ does not depend on the length of $b$)
+- let $b' = proj_b(a)$ be the projection of [[vector]] $a$ on [[vector]] $b$
+- the length of $proj_b(a)$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $proj_b(a)$ does not depend on the length of $b$)
 
 $$
-||b'|| = \frac{\langle a,b \rangle}{||b||}
+||proj_b(a)|| = ||b'|| = \frac{\langle a,b \rangle}{||b||}
 $$
-
 - since $b'$ has the same direction as b the following is true
 $$
 proj_b(a) = b' = \frac{\langle a,b \rangle}{||b||} \frac{b}{||b||}
 $$
-
 
 ![[projection 4.jpg]]
 
