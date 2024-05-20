@@ -24,49 +24,74 @@ $$
 $$
 
 ___________________
-
-### derivative in a [[banach space]]
+### general derivative
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
-- the [[bounded linear map]] $A \in L(X, Y)$ is the [[derivative]] of $f$ in point $x \in X$ is the following is true
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
 $$
-\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Ah||_Y}{||h||_X} = 0
-$$
-- for every point $x \in X$ we will get a different [[bounded linear map]] $A: X \to Y$
-- the [[derivative]] $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]]
-
-$$
-A=Df(x) \in L(X,Y
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
 $$
 
-### derivative
+- this eqivalent definition is often easier to work with:
 $$
-\frac{df(x)}{dx} = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
 $$
-
-### jacobian $f: \mathbb{R}^n \to \mathbb{R}$
-- let $f: \mathbb{R}^n \to \mathbb{R}$ be a [[function]] mapping from a [[banach space]] $(\mathbb{R}^n, ||\cdot||)$ to a [[banach space]] $(\mathbb{R}, |\cdot|)$
-- since the [[derivative]] $A: \mathbb{R}^n \to \mathbb{R}$ is a [[bounded linear map]] we can express it as a [[matrix]] $A \in \mathbb{R}^{1 \times n}$
-- $x, h \in \mathbb{R}^n$ are [[vector|vectors]] from the [[domain]] of $f$
-- we can follow that $h$ is the [[derivative]] exactly when each of its elements $h_i$ is the partial derivative of $f(x)$ after $x_i$
-
-$$
-\begin{split}
-&\lim_{||h|| \to 0} \frac{|f(x+h) - f(x) - Ah|}{||h||} = 0 \\
-
-\Leftrightarrow& \lim_{||h|| \to 0} \frac{\left|f(x+Ih) - f(x) - \sum_{i \in [n]} a_i h_i \right| }{||h||} = 0 \\
-
-\Leftrightarrow& \lim_{||h|| \to 0} \frac{\left|f\left(x+\sum_{i \in [n]} I_{(*, i) h_i}\right) - f(x) - \sum_{i \in [n]} a_i h_i \right| }{||h||} = 0 \\
-
-\Leftrightarrow& \forall i \in [n]: \lim_{|h_i| \to 0} \frac{\left|f\left(x+I_{(*, i) h_i}\right) - f(x) - a_i h_i \right| }{|h_i|} = 0 \\
-
-\Leftrightarrow& \forall i \in [n]: h_i = \frac{\partial f(x)}{\partial x_i} \\
-
-\Leftrightarrow&  h = Df(x) = \left(\nabla f(x)\right)^\top \\
-\end{split}
-$$
-
 
 
 Tags: mathematics
 <!--ID: 1716128307658-->
+END
+
+
+START
+Basic
+[[directional derivative]] vs [[partial derivative]]
+- definitions
+- differenc
+
+Back: 
+#### [[directional derivative]] and [[partial derivative]]
+- the [[directional derivative]] generalizes the [[partial derivative]] for an arbitrary direction $h$
+	→ the [[partial derivative]] $\frac{\partial f}{\partial x_i}(x)$ is a [[directional derivative]] $D_hf(x)$ with the direction being the cordinate $i$ $h=e_i$ 
+- while the [[partial derivative]] $\frac{\partial f}{\partial x_i}$ only gives the rate of change of a [[function]] $f$ in the direction of the coordinate its coodrinates the [[partial derivative]] does the same for an arbitrary direction
+
+### partial derivative
+- given a [[function]] $f: \mathbb{R}^n \to Y$
+- the [[partial derivative]] $\frac{\partial f}{\partial x_i}$ is defined as follows and mesures the rate of change of $f$ regarding the direction of die coordinate $x_i$ 
+
+$$
+\frac{\partial f}{\partial x_i}(x) = \lim_{h \to 0} \frac{f(x+h e_i) - f(x) }{h} 
+$$
+
+
+### directional derivative
+- let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
+- the [[directional derivative]] $D_hf(x): X \to L(X,Y)$ in point $x \in X$ in the direction of $h \in X$ is defined as follows
+- like the [[derivative]] the [[function]] $D_hf(x): X \to L(X,Y)$ maps every point $x \in X$ to a [[bounded linear map]] $\in L(X, Y)$ 
+- the [[directional derivative]] measures the rate at which a [[function]] changes in a particular direction at a given point
+
+$$
+D_hf(x) = \lim_{t\to0}  \frac{f(x+th) - f(x)}{t}
+$$
+
+____________________________________
+
+### general derivative
+- let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+$$
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
+$$
+
+- this eqivalent definition is often easier to work with:
+$$
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+$$
+
+
+Tags: mathematics
+<!--ID: 1715629635958-->
 END

@@ -1,4 +1,4 @@
-### derivative in a [[banach space]]
+### general derivative
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
 - the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
 - the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
@@ -38,75 +38,45 @@ $$
 
 
 #### [[derivative]] as a [[projection]]
-- since the [[derivative]] $Df(x_0)[h]: X \to Y, Df(x_0)[h]=Ah$ is a [[bounded linear map]] it can be expressed as a [[inner product]] of the [[matrix]] $A$ (representing the [[derivative]]) and the direction $h \in X$
-- thus the [[derivative]] can be interpreted as the [[projection]] of the [[matrix]] $A$ (e.g. the [[gradient]]) on the direction $h \in X$ (in case of the normalized direction [[vector]] with $||h|| = 1$ )
+- let's assume that $f: \mathbb{R}^m \to \mathbb{R}$ and thus $h, A^\top \in \mathbb{R}^m$ 
+- since the [[derivative]] $Df(x_0)[h]=Ah$ is a [[bounded linear map]] it can be expressed as a [[inner product]] of the [[matrix]] $A$ (representing the [[derivative]]) and the direction $h \in X$
+- thus the [[derivative]] can be interpreted as the [[projection]] of the [[matrix]] $A$ (e.g. the [[gradient]]) on the direction $h \in X$ (in case of the normalized direction [[vector]] with $||h|| = 1$)
 $$
-Df(x)[h] = \langle A, h \rangle = ||proj_h(A)|| \cdot ||h||
+Df(x)[h] = Ah =\langle A^\top, h \rangle = ||proj_h(A^\top)|| \cdot ||h||
 $$
 
-- in the case of a [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ the [[matrix]] $A = (\nabla f)^\top \in \mathbb{R}^{1 \times 2}$ can be expressed as a [[vector]] $a = \nabla f \in \mathbb{R}^{2}$ and the rate of change becomes the [[inner product]] between the direction and the [[gradient]]
+- this result can be generalized for a function $f: \mathbb{R}^m \to \mathbb{R}^n$ by treating $f$ as $n$ scalar functions $f_i$ 
 
 ![[inner product#relationship inner product to projection]]
 
 
 #### [[derivative]] as a [[vector]] in the direction of the steepest ascent
 - before the forcus was on what the [[derivative]] $Df(x_0)[h]: X \to Y, Df(x_0)[h]=Ah$ does, but now we will focus thee properties of $A$ itself
-- we know that the $Df(x_0)[h]=Ah = \langle A, h \rangle = ||proj_h(A)|| \cdot ||h||$ is the rate of change in the direction $h$ and the length of the [[projection]] of $A$ on the direction $h$
-- from the [[cauchy schwarz inequality]] we know that the length of the [[projection]] of $A$ on any $h$ is less pr equal then the length of $A$ itself $||proj_h(A)|| \leq ||A||$ with a maximum reachen at $h = A$ 
+- let's assume that $f: \mathbb{R}^m \to \mathbb{R}$ and thus $h, A^\top \in \mathbb{R}^m$ 
+- we know that the [[derivative]] $Df(x_0)[h]=Ah = \langle A^\top, h \rangle = ||proj_h(A^\top)|| \cdot ||h||$ is the rate of change in the direction $h$ and the length of the [[projection]] of $A$ on the direction $h$
+- from the [[cauchy schwarz inequality]] we know that the length of the [[projection]] of $A^\top$ on any $h$ is less or equal then the length of $A^\top$ itself with a maximum reachen at $h = A^\top$ 
+$$
+||proj_h(A^\top)|| \leq ||A^\top||
+$$
+- thus the [[vector]] $\frac{A^\top}{||A^\top||}$ is pointing in the direction of the steepest ascent
 $$
 \begin{split}
-arg\max_{||h||=1} \langle A, h \rangle 
-&= \frac{A}{||A||} \\ 
-\max_{||h||=1} \langle A, h \rangle 
-&= \frac{\langle A, A \rangle }{||A||}
-&= \frac{||A||^2}{||A||} = ||A||  \\
+arg\max_{||h||=1} ||proj_h\left(A^\top\right)|| 
+=arg\max_{||h||=1} \langle A^\top, h \rangle 
+&= \frac{A^\top}{||A^\top||} \\ 
 \end{split}
 $$
+- to get the rate of change in the direction of the steepest asecent we can just plug $h^* = \frac{A^\top}{||A^\top||}$ it into the [[derivative]] to see that the steepest rate if ascent is equal to the length of the [[vector]] $A^\top$
+$$
+Df(x)\left[\frac{A^\top}{||A^\top||}\right] = \frac{AA^\top}{||A^\top||} = \frac{\langle A, A \rangle}{||A^\top||} = \frac{||A^\top||^2}{||A^\top||} = ||A^\top||\in \mathbb{R}
+$$
+- this result can be generalized for a function $f: \mathbb{R}^m \to \mathbb{R}^n$ by treating $f$ as $n$ scalar functions $f_i$ 
 
 ![[inner products and norms#every inner product induces a norm]]
 
 ![[cauchy schwarz inequality#geometric interpreation cauchy schwarz inequality]]
 
 ![[cauchy schwarz inequality#cauchy schwarz inequality]]
-- generally the [[derivative]] $Df(x_0)[h]: X \to Y$ defines [[linear map]] from $X$ to $Y$ for every point $x_0 \in X$
-- $Df(x_0)[h]: X \to Y$ gives the rate of change 
-- in case of a [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ with [[derivative]] $Df(x)[h] = Ah = \langle \nabla f, h \rangle$ with $A \in \mathbb{R}^{1 \times 2}$ defines 
-- $\nabla f \in \mathbb{R}^2$ is a [[vector]] in the domain of $f$ (in the case the plain) that has a **direction** and a **length**
-- the **direction** is the direction of the steepest ascent of $f$ in point $x$ while the **length** descibes the rate of change in this direction
-- in the case of $f: \mathbb{R}^2 \to \mathbb{R}$ it is easy to see that this is defining a plain $\in \mathbb{R}^3$ with the longer the [[vector]] $\nabla f \in \mathbb{R}^2$ the more tilted the plain
-
-### [[directional derivative]] and [[partial derivative]]
-- the [[directional derivative]] generalizes the [[partial derivative]] for an arbitrary direction $h$
-	→ the [[partial derivative]] $\frac{\partial f}{\partial x_i}(x)$ is a [[directional derivative]] $D_hf(x)$ with the direction being the cordinate $i$ $h=e_i$ 
-- while the [[partial derivative]] $\frac{\partial f}{\partial x_i}$ only gives the rate of change of a [[function]] $f$ in the direction of the coordinate its coodrinates the [[partial derivative]] does the same for an arbitrary direction
-
-![[partial derivative#partial derivative]]
-
-### [[directional derivative]] and [[differentiabe|differentiability]]
-- every [[differentiabe]] [[function]] has a [[directional derivative]] in all directions because the [[directional derivative]] can be constructed from the [[gradient]]
-- but not every [[function]] that has [[directional derivative]] in all directions is [[differentiabe]]
-- the following [[function]] $f(x, y)$ is not [[differentiabe]] in point $(0,0)$
-$$
-f(x, y) = \left\{ 
-\begin{split} 
-&0 & \text{for } (x,y) = (0,0) \\ 
-&\frac{x}{x^2 + y^2} \qquad& \text{for } (x,y) \neq (0,0)
-\end{split} \right.
-$$
-
-### [[partial derivative]] example
-- given a [[function]] $f$ with the [[gradient]] $\nabla f$ what is the [[directional derivative]] is the direction $h$?
-
-$$
-\nabla f = \left(\begin{matrix} a \\ b \\ c \end{matrix}\right)
-$$
-$$
-h = \left(\begin{matrix} 1 \\ 1 \\ 0 \end{matrix}\right)
-$$
-
-$$
-D_hf(x) = h \nabla f  = \left(\begin{matrix} a \\ b \\ 0 \end{matrix}\right)
-$$
 
 
 
@@ -164,16 +134,14 @@ $$
 
 ![[norm#norm]]
 
-### derivative
+### derivative for $f: \mathbb{R} \to \mathbb{R}$
 $$
 \frac{df(x)}{dx} = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
 $$
 # --------------------
 
-### elementary derivative rules of differentiation
+#### elementary derivative rules of differentiation
 
-
-![[linearity of the derivative#linear function linearity of the derivative]]
 
 ![[product rule of derivative#multiplication product rule for derivative]]
 
@@ -181,7 +149,7 @@ $$
 
 ![[inverse rule of derivative#inverse function inverse rule for derivative]]
 
-### [[derivative]] laws
+#### [[derivative]] laws
 
 ![[power rule for derivative#elementary power rulelinearity of the derivative]]
 
@@ -323,26 +291,25 @@ END
 
 START
 Basic
-derivative in a [[banach space]]
+general derivative
 - definition (2 versions)
 - what kind of function is it?
 
 Back: 
-### derivative in a [[banach space]]
+### general derivative
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
-- the [[bounded linear map]] $A \in L(X, Y)$ is the [[derivative]] of $f$ in point $x \in X$ is the following is true
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
 $$
-\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Ah||_Y}{||h||_X} = 0
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
 $$
-- for every point $x \in X$ we will get a different [[bounded linear map]] $A: X \to Y$
-- the [[derivative]] $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]]
-$$
-A=Df(x) \in L(X,Y)
-$$
+
 - this eqivalent definition is often easier to work with:
 $$
-f(x + h) = f(x) + Ah + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
 $$
+
 ___________________
 ### bounded linear map
 - given two [[banach space|banach spaces]] $(X, +, \cdot, ||\cdot||_X)$ and $(Y, \oplus, \odot , ||\cdot||_Y)$ and a [[linear map]] $A: X\rightarrow Y$
@@ -458,20 +425,18 @@ $$
 ||A||_{X \rightarrow Y} = \sup_{x\neq 0} \frac{||Ax||_Y}{||x||_X} = \sup_{||x||_X = 1} ||Ax||_Y
 $$
 
-### derivative in a [[banach space]]
+### general derivative
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
-- the [[bounded linear map]] $A \in L(X, Y)$ is the [[derivative]] of $f$ in point $x \in X$ is the following is true
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
 $$
-\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Ah||_Y}{||h||_X} = 0
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
 $$
-- for every point $x \in X$ we will get a different [[bounded linear map]] $A: X \to Y$
-- the [[derivative]] $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]]
-$$
-A=Df(x) \in L(X,Y)
-$$
+
 - this eqivalent definition is often easier to work with:
 $$
-f(x + h) = f(x) + Ah + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
 $$
 
 ### bounded linear map
@@ -546,20 +511,18 @@ $$
 ___________________
 
 
-### derivative in a [[banach space]]
+### general derivative
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
-- the [[bounded linear map]] $A \in L(X, Y)$ is the [[derivative]] of $f$ in point $x \in X$ is the following is true
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
 $$
-\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Ah||_Y}{||h||_X} = 0
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
 $$
-- for every point $x \in X$ we will get a different [[bounded linear map]] $A: X \to Y$
-- the [[derivative]] $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]]
-$$
-A=Df(x) \in L(X,Y)
-$$
+
 - this eqivalent definition is often easier to work with:
 $$
-f(x + h) = f(x) + Ah + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
 $$
 
 ### bounded linear map
@@ -586,4 +549,468 @@ $$
 
 Tags: mathematics
 <!--ID: 1716141626057-->
+END
+
+
+
+START
+Basic
+- geometric interpretation of the [[derivative]] $Df(x)[h]: X \to Y$
+- with example for $f: \mathbb{R}^2 \to \mathbb{R}$
+Back: 
+
+#### [[derivative]] as a [[linear map|linear]] approximation
+- given a [[function]] $f: X \to Y$ the [[derivative]]  $Df(x)[h]: X \to Y$ is a [[linear map|linear]] approximation of $f$ in the point $x \in X$ relative to the origin
+- since the [[derivative]] $Df(x)[h]: X \to Y$ is an approvimation relative to the origin the following would be a [[linear map|linear]] approximation of $f$ 
+$$
+\widehat{f_{x}}(h) = f(x) + Df(x)[h]
+$$
+- for example the [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ can be expressed in a $\mathbb{R}^3$ with each point in the plain $x \in \mathbb{R}^2$ is mapped to a $y \in \mathbb{R}$
+- thus the [[derivative]] $Df(x)[h]: \mathbb{R}^2 \to \mathbb{R} = Ah$ with $A \in \mathbb{R}^{1 \times 2}$ would be a plain in the $\mathbb{R}^3$
+
+
+
+### general derivative
+- let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+$$
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
+$$
+
+- this eqivalent definition is often easier to work with:
+$$
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+$$
+
+
+Tags: mathematics
+<!--ID: 1716210599096-->
+END
+
+
+
+START
+Basic
+- given a general [[function]] $f: X \to Y$ and its [[derivative]] $Df(x)[h]$
+- how to calculate the rate of cange of $f$ in a point $x_0 \in X$ in a arbitrary direction?
+- is the rate of change a [[scalar]] or a [[vector]]?
+- with example $f: \mathbb{R}^2 \to \mathbb{R}$
+Back:
+#### [[derivative]] as a rate of change in a direction
+- since the [[derivative]]  $Df(x_0)[h]: X \to Y$ is a [[linear map|linear]] approximation of $f$ in the point $x_0 \in X$ relative to the origin we can calculate the **rate of change** of $f$ in a point $x_0 \in X$ in the direction $h \in X$ by plugging the [[norm|normalized]] direction in $Df(x_0)[h]$
+$$
+Df(x_0)\left[\frac{h}{||h||}\right]
+$$
+- it answers how much would $f$ change when going an infinitesimal small step in the direction (normalized) direction $h \in X$ relative to the length of the infinitesimal small step which is a rate of change
+- note: for a sclar function $f$ the rate of change is a [[scalar]] but in general its element of the codomain of $f$ ($Y$)
+
+- in the case of a [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ the [[matrix]] $A = (\nabla f)^\top \in \mathbb{R}^{1 \times 2}$ can be expressed as a [[vector]] $a = \nabla f \in \mathbb{R}^{2}$ and the rate of change becomes the [[inner product]] between the direction and the [[gradient]]
+$$
+Df(x)\left[\frac{h}{||h||}\right] = A\frac{h}{||h||} = \frac{\left\langle a , h \right\rangle}{||h||} = \frac{\left\langle \nabla f , h \right\rangle}{||h||} \in \mathbb{R}
+$$
+
+
+### general derivative
+- let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+$$
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
+$$
+
+- this eqivalent definition is often easier to work with:
+$$
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+$$
+
+#### [[derivative]] as a [[linear map|linear]] approximation
+- given a [[function]] $f: X \to Y$ the [[derivative]]  $Df(x)[h]: X \to Y$ is a [[linear map|linear]] approximation of $f$ in the point $x \in X$ relative to the origin
+- since the [[derivative]] $Df(x)[h]: X \to Y$ is an approvimation relative to the origin the following would be a [[linear map|linear]] approximation of $f$ 
+$$
+\widehat{f_{x}}(h) = f(x) + Df(x)[h]
+$$
+- for example the [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ can be expressed in a $\mathbb{R}^3$ with each point in the plain $x \in \mathbb{R}^2$ is mapped to a $y \in \mathbb{R}$
+- thus the [[derivative]] $Df(x)[h]: \mathbb{R}^2 \to \mathbb{R} = Ah$ with $A \in \mathbb{R}^{1 \times 2}$ would be a plain in the $\mathbb{R}^3$
+
+
+
+___________________
+
+
+#### every [[inner product]] induces a [[norm]]
+$$
+||x|| = \sqrt{\langle x, x \rangle}
+$$
+$$
+||x||^2 = \langle x, x \rangle
+$$
+
+#### geometric interpreation [[cauchy schwarz inequality]]
+- since $\langle a, b \rangle$ is equal to the length of [[vector]] $b$ times the length of [[vector]] $a$ on $b$ $(proj_b(a))$ the [[cauchy schwarz inequality]] says that the [[projection]] of one [[vector]] to another can never be longer than the [[vector]] itself
+- equality can only happen when $a$ and $b$ are a scaled version of each other (they are [[linear independent|linear dependent]] and the angle between them is $0$ or $180$)
+- when $a$ and $b$ are [[orthogonal]] the [[projection]] of one to the other is zero which is the other extreme case
+$$
+\begin{split}
+&\langle a, b \rangle = ||b|| \cdot ||proj_b(a)|| \leq ||a || \cdot ||b|| \\
+\Rightarrow& ||proj_b(a)|| \leq ||a||
+\end{split}
+$$
+
+### bounded linear map
+- given two [[banach space|banach spaces]] $(X, +, \cdot, ||\cdot||_X)$ and $(Y, \oplus, \odot , ||\cdot||_Y)$ and a [[linear map]] $A: X\rightarrow Y$
+- $A$ is a [[bounded linear map]] if the followng is true
+$$
+\exists C>0: \forall x \in X : ||Ax||_Y \leq C ||x||_X
+$$
+$$
+\forall x_1,x_2 \in X, \lambda , \mu \in \mathbb{R}:F(\lambda x_1 + \mu x_2) = \lambda \odot F(x_1) \oplus \mu \odot F(x_2) 
+$$
+
+- it says that the [[image]] of a [[bounded set]] also has to be a [[bounded set]]
+- we define $L(X,Y)$ as the [[set]] of all [[bounded linear map|bounded linear maps]] mapping from $X$ to $Y$
+$$
+L(X,Y) = \{A: X\to Y: A \text{ is linear and bounded}\}
+$$
+- every [[bounded linear map]] in a finite space can be expressed as a [[matrix]]
+
+
+Tags: mathematics
+<!--ID: 1716210599101-->
+END
+
+
+
+START
+Basic
+- relationship of the [[derivative]] $Df(x)[h]: X \to Y$ with the concept of the [[projection]] (with proof)
+
+Back: 
+
+#### [[derivative]] as a [[projection]]
+- let's assume that $f: \mathbb{R}^m \to \mathbb{R}$ and thus $h, A^\top \in \mathbb{R}^m$ 
+- since the [[derivative]] $Df(x_0)[h]=Ah$ is a [[bounded linear map]] it can be expressed as a [[inner product]] of the [[matrix]] $A$ (representing the [[derivative]]) and the direction $h \in X$
+- thus the [[derivative]] can be interpreted as the [[projection]] of the [[matrix]] $A$ (e.g. the [[gradient]]) on the direction $h \in X$ (in case of the normalized direction [[vector]] with $||h|| = 1$)
+$$
+Df(x)[h] = Ah =\langle A^\top, h \rangle = ||proj_h(A^\top)|| \cdot ||h||
+$$
+
+- this result can be generalized for a function $f: \mathbb{R}^m \to \mathbb{R}^n$ by treating $f$ as $n$ scalar functions $f_i$ 
+
+
+#### relationship [[inner product]] to [[projection]]
+- given a [[vector]] $a$ and a [[vector]] $b$ then $\langle a, b \rangle$ is equal to the length of the [[projection]] of $a$ on $b$ ($=porj_b(a)$) [[multiplication|multiplied]] with the length of $b$ (and vice versa) 
+- thus the [[inner product]] contains the information about the (unnormalized) length of the [[projection]] of one [[vector]] to another
+
+$$
+\begin{split}
+\langle a,b \rangle 
+&= ||b|| \cdot ||b'|| = ||b|| \cdot \cos(\phi) ||a|| \\
+&=||b|| \cdot ||proj_b(a)|| \\
+\end{split}
+$$
+
+### general derivative
+- let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+$$
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
+$$
+
+- this eqivalent definition is often easier to work with:
+$$
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+$$
+
+___________________
+
+#### [[derivative]] as a rate of change in a direction
+- since the [[derivative]]  $Df(x_0)[h]: X \to Y$ is a [[linear map|linear]] approximation of $f$ in the point $x_0 \in X$ relative to the origin we can calculate the **rate of change** of $f$ in a point $x_0 \in X$ in the direction $h \in X$ by plugging the [[norm|normalized]] direction in $Df(x_0)[h]$
+$$
+Df(x_0)\left[\frac{h}{||h||}\right]
+$$
+- it answers how much would $f$ change when going an infinitesimal small step in the direction (normalized) direction $h \in X$ relative to the length of the infinitesimal small step which is a rate of change
+- note: for a sclar function $f$ the rate of change is a [[scalar]] but in general its element of the codomain of $f$ ($Y$)
+
+- in the case of a [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ the [[matrix]] $A = (\nabla f)^\top \in \mathbb{R}^{1 \times 2}$ can be expressed as a [[vector]] $a = \nabla f \in \mathbb{R}^{2}$ and the rate of change becomes the [[inner product]] between the direction and the [[gradient]]
+$$
+Df(x)\left[\frac{h}{||h||}\right] = A\frac{h}{||h||} = \frac{\left\langle a , h \right\rangle}{||h||} = \frac{\left\langle \nabla f , h \right\rangle}{||h||} \in \mathbb{R}
+$$
+
+#### [[derivative]] as a [[linear map|linear]] approximation
+- given a [[function]] $f: X \to Y$ the [[derivative]]  $Df(x)[h]: X \to Y$ is a [[linear map|linear]] approximation of $f$ in the point $x \in X$ relative to the origin
+- since the [[derivative]] $Df(x)[h]: X \to Y$ is an approvimation relative to the origin the following would be a [[linear map|linear]] approximation of $f$ 
+$$
+\widehat{f_{x}}(h) = f(x) + Df(x)[h]
+$$
+- for example the [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ can be expressed in a $\mathbb{R}^3$ with each point in the plain $x \in \mathbb{R}^2$ is mapped to a $y \in \mathbb{R}$
+- thus the [[derivative]] $Df(x)[h]: \mathbb{R}^2 \to \mathbb{R} = Ah$ with $A \in \mathbb{R}^{1 \times 2}$ would be a plain in the $\mathbb{R}^3$
+
+
+
+#### [[derivative]] as a [[vector]] in the direction of the steepest ascent
+- before the forcus was on what the [[derivative]] $Df(x_0)[h]: X \to Y, Df(x_0)[h]=Ah$ does, but now we will focus thee properties of $A$ itself
+- let's assume that $f: \mathbb{R}^m \to \mathbb{R}$ and thus $h, A^\top \in \mathbb{R}^m$ 
+- we know that the [[derivative]] $Df(x_0)[h]=Ah = \langle A^\top, h \rangle = ||proj_h(A^\top)|| \cdot ||h||$ is the rate of change in the direction $h$ and the length of the [[projection]] of $A$ on the direction $h$
+- from the [[cauchy schwarz inequality]] we know that the length of the [[projection]] of $A^\top$ on any $h$ is less or equal then the length of $A^\top$ itself with a maximum reachen at $h = A^\top$ 
+$$
+||proj_h(A^\top)|| \leq ||A^\top||
+$$
+- thus the [[vector]] $\frac{A^\top}{||A^\top||}$ is pointing in the direction of the steepest ascent
+$$
+\begin{split}
+arg\max_{||h||=1} ||proj_h\left(A^\top\right)|| 
+=arg\max_{||h||=1} \langle A^\top, h \rangle 
+&= \frac{A^\top}{||A^\top||} \\ 
+\end{split}
+$$
+- to get the rate of change in the direction of the steepest asecent we can just plug $h^* = \frac{A^\top}{||A^\top||}$ it into the [[derivative]] to see that the steepest rate if ascent is equal to the length of the [[vector]] $A^\top$
+$$
+Df(x)\left[\frac{A^\top}{||A^\top||}\right] = \frac{AA^\top}{||A^\top||} = \frac{\langle A, A \rangle}{||A^\top||} = \frac{||A^\top||^2}{||A^\top||} = ||A^\top||\in \mathbb{R}
+$$
+- this result can be generalized for a function $f: \mathbb{R}^m \to \mathbb{R}^n$ by treating $f$ as $n$ scalar functions $f_i$ 
+
+Tags: mathematics
+<!--ID: 1716210599104-->
+END
+
+
+
+START
+Basic
+- given a [[function]] $f: \mathbb{R}^m \to \mathbb{R}$ with a [[derivative]] $Df(x_0)[h]=Ah$
+- proof that $A$ points in the direction of the steepest ascent
+- how steep is the ascent?
+
+Back: 
+#### [[derivative]] as a [[vector]] in the direction of the steepest ascent
+- let's assume that $f: \mathbb{R}^m \to \mathbb{R}$ and thus $h, A^\top \in \mathbb{R}^m$ 
+- we know that the [[derivative]] $Df(x_0)[h]=Ah = \langle A^\top, h \rangle = ||proj_h(A^\top)|| \cdot ||h||$ is the rate of change in the direction $h$ and the length of the [[projection]] of $A$ on the direction $h$
+- from the [[cauchy schwarz inequality]] we know that the length of the [[projection]] of $A^\top$ on any $h$ is less or equal then the length of $A^\top$ itself with a maximum reachen at $h = A^\top$ 
+$$
+||proj_h(A^\top)|| \leq ||A^\top||
+$$
+- thus the [[vector]] $\frac{A^\top}{||A^\top||}$ is pointing in the direction of the steepest ascent
+$$
+\begin{split}
+arg\max_{||h||=1} ||proj_h\left(A^\top\right)|| 
+=arg\max_{||h||=1} \langle A^\top, h \rangle 
+&= \frac{A^\top}{||A^\top||} \\ 
+\end{split}
+$$
+- to get the rate of change in the direction of the steepest asecent we can just plug $h^* = \frac{A^\top}{||A^\top||}$ it into the [[derivative]] to see that the steepest rate if ascent is equal to the length of the [[vector]] $A^\top$
+$$
+Df(x)\left[\frac{A^\top}{||A^\top||}\right] = \frac{AA^\top}{||A^\top||} = \frac{\langle A, A \rangle}{||A^\top||} = \frac{||A^\top||^2}{||A^\top||} = ||A^\top||\in \mathbb{R}
+$$
+- this result can be generalized for a function $f: \mathbb{R}^m \to \mathbb{R}^n$ by treating $f$ as $n$ scalar functions $f_i$ 
+
+### general derivative
+- let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+$$
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
+$$
+
+- this eqivalent definition is often easier to work with:
+$$
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+$$
+
+
+
+___________________
+
+
+#### [[derivative]] as a [[projection]]
+- let's assume that $f: \mathbb{R}^m \to \mathbb{R}$ and thus $h, A^\top \in \mathbb{R}^m$ 
+- since the [[derivative]] $Df(x_0)[h]=Ah$ is a [[bounded linear map]] it can be expressed as a [[inner product]] of the [[matrix]] $A$ (representing the [[derivative]]) and the direction $h \in X$
+- thus the [[derivative]] can be interpreted as the [[projection]] of the [[matrix]] $A$ (e.g. the [[gradient]]) on the direction $h \in X$ (in case of the normalized direction [[vector]] with $||h|| = 1$)
+$$
+Df(x)[h] = Ah =\langle A^\top, h \rangle = ||proj_h(A^\top)|| \cdot ||h||
+$$
+
+- this result can be generalized for a function $f: \mathbb{R}^m \to \mathbb{R}^n$ by treating $f$ as $n$ scalar functions $f_i$ 
+
+
+#### [[derivative]] as a rate of change in a direction
+- since the [[derivative]]  $Df(x_0)[h]: X \to Y$ is a [[linear map|linear]] approximation of $f$ in the point $x_0 \in X$ relative to the origin we can calculate the **rate of change** of $f$ in a point $x_0 \in X$ in the direction $h \in X$ by plugging the [[norm|normalized]] direction in $Df(x_0)[h]$
+$$
+Df(x_0)\left[\frac{h}{||h||}\right]
+$$
+- it answers how much would $f$ change when going an infinitesimal small step in the direction (normalized) direction $h \in X$ relative to the length of the infinitesimal small step which is a rate of change
+- note: for a sclar function $f$ the rate of change is a [[scalar]] but in general its element of the codomain of $f$ ($Y$)
+
+- in the case of a [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ the [[matrix]] $A = (\nabla f)^\top \in \mathbb{R}^{1 \times 2}$ can be expressed as a [[vector]] $a = \nabla f \in \mathbb{R}^{2}$ and the rate of change becomes the [[inner product]] between the direction and the [[gradient]]
+$$
+Df(x)\left[\frac{h}{||h||}\right] = A\frac{h}{||h||} = \frac{\left\langle a , h \right\rangle}{||h||} = \frac{\left\langle \nabla f , h \right\rangle}{||h||} \in \mathbb{R}
+$$
+
+#### [[derivative]] as a [[linear map|linear]] approximation
+- given a [[function]] $f: X \to Y$ the [[derivative]]  $Df(x)[h]: X \to Y$ is a [[linear map|linear]] approximation of $f$ in the point $x \in X$ relative to the origin
+- since the [[derivative]] $Df(x)[h]: X \to Y$ is an approvimation relative to the origin the following would be a [[linear map|linear]] approximation of $f$ 
+$$
+\widehat{f_{x}}(h) = f(x) + Df(x)[h]
+$$
+- for example the [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ can be expressed in a $\mathbb{R}^3$ with each point in the plain $x \in \mathbb{R}^2$ is mapped to a $y \in \mathbb{R}$
+- thus the [[derivative]] $Df(x)[h]: \mathbb{R}^2 \to \mathbb{R} = Ah$ with $A \in \mathbb{R}^{1 \times 2}$ would be a plain in the $\mathbb{R}^3$
+
+
+#### relationship [[inner product]] to [[projection]]
+- given a [[vector]] $a$ and a [[vector]] $b$ then $\langle a, b \rangle$ is equal to the length of the [[projection]] of $a$ on $b$ ($=porj_b(a)$) [[multiplication|multiplied]] with the length of $b$ (and vice versa) 
+- thus the [[inner product]] contains the information about the (unnormalized) length of the [[projection]] of one [[vector]] to another
+
+$$
+\begin{split}
+\langle a,b \rangle 
+&= ||b|| \cdot ||b'|| = ||b|| \cdot \cos(\phi) ||a|| \\
+&=||b|| \cdot ||proj_b(a)|| \\
+\end{split}
+$$
+
+#### every [[inner product]] induces a [[norm]]
+$$
+||x|| = \sqrt{\langle x, x \rangle}
+$$
+$$
+||x||^2 = \langle x, x \rangle
+$$
+
+#### geometric interpreation [[cauchy schwarz inequality]]
+- since $\langle a, b \rangle$ is equal to the length of [[vector]] $b$ times the length of [[vector]] $a$ on $b$ $(proj_b(a))$ the [[cauchy schwarz inequality]] says that the [[projection]] of one [[vector]] to another can never be longer than the [[vector]] itself
+- equality can only happen when $a$ and $b$ are a scaled version of each other (they are [[linear independent|linear dependent]] and the angle between them is $0$ or $180$)
+- when $a$ and $b$ are [[orthogonal]] the [[projection]] of one to the other is zero which is the other extreme case
+$$
+\begin{split}
+&\langle a, b \rangle = ||b|| \cdot ||proj_b(a)|| \leq ||a || \cdot ||b|| \\
+\Rightarrow& ||proj_b(a)|| \leq ||a||
+\end{split}
+$$
+
+Tags: mathematics
+<!--ID: 1716210599108-->
+END
+
+
+
+START
+Basic
+- 4 ways the [[derivative]] can be interpreted germetricly
+
+Back: 
+### general derivative
+- let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+$$
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
+$$
+
+- this eqivalent definition is often easier to work with:
+$$
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+$$
+
+#### [[derivative]] as a [[linear map|linear]] approximation
+- given a [[function]] $f: X \to Y$ the [[derivative]]  $Df(x)[h]: X \to Y$ is a [[linear map|linear]] approximation of $f$ in the point $x \in X$ relative to the origin
+- since the [[derivative]] $Df(x)[h]: X \to Y$ is an approvimation relative to the origin the following would be a [[linear map|linear]] approximation of $f$ 
+$$
+\widehat{f_{x}}(h) = f(x) + Df(x)[h]
+$$
+- for example the [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ can be expressed in a $\mathbb{R}^3$ with each point in the plain $x \in \mathbb{R}^2$ is mapped to a $y \in \mathbb{R}$
+- thus the [[derivative]] $Df(x)[h]: \mathbb{R}^2 \to \mathbb{R} = Ah$ with $A \in \mathbb{R}^{1 \times 2}$ would be a plain in the $\mathbb{R}^3$
+
+#### [[derivative]] as a rate of change in a direction
+- since the [[derivative]]  $Df(x_0)[h]: X \to Y$ is a [[linear map|linear]] approximation of $f$ in the point $x_0 \in X$ relative to the origin we can calculate the **rate of change** of $f$ in a point $x_0 \in X$ in the direction $h \in X$ by plugging the [[norm|normalized]] direction in $Df(x_0)[h]$
+$$
+Df(x_0)\left[\frac{h}{||h||}\right]
+$$
+- it answers how much would $f$ change when going an infinitesimal small step in the direction (normalized) direction $h \in X$ relative to the length of the infinitesimal small step which is a rate of change
+- note: for a sclar function $f$ the rate of change is a [[scalar]] but in general its element of the codomain of $f$ ($Y$)
+
+- in the case of a [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ the [[matrix]] $A = (\nabla f)^\top \in \mathbb{R}^{1 \times 2}$ can be expressed as a [[vector]] $a = \nabla f \in \mathbb{R}^{2}$ and the rate of change becomes the [[inner product]] between the direction and the [[gradient]]
+$$
+Df(x)\left[\frac{h}{||h||}\right] = A\frac{h}{||h||} = \frac{\left\langle a , h \right\rangle}{||h||} = \frac{\left\langle \nabla f , h \right\rangle}{||h||} \in \mathbb{R}
+$$
+
+#### [[derivative]] as a [[projection]]
+- let's assume that $f: \mathbb{R}^m \to \mathbb{R}$ and thus $h, A^\top \in \mathbb{R}^m$ 
+- since the [[derivative]] $Df(x_0)[h]=Ah$ is a [[bounded linear map]] it can be expressed as a [[inner product]] of the [[matrix]] $A$ (representing the [[derivative]]) and the direction $h \in X$
+- thus the [[derivative]] can be interpreted as the [[projection]] of the [[matrix]] $A$ (e.g. the [[gradient]]) on the direction $h \in X$ (in case of the normalized direction [[vector]] with $||h|| = 1$)
+$$
+Df(x)[h] = Ah =\langle A^\top, h \rangle = ||proj_h(A^\top)|| \cdot ||h||
+$$
+
+- this result can be generalized for a function $f: \mathbb{R}^m \to \mathbb{R}^n$ by treating $f$ as $n$ scalar functions $f_i$ 
+
+#### [[derivative]] as a [[vector]] in the direction of the steepest ascent
+- let's assume that $f: \mathbb{R}^m \to \mathbb{R}$ and thus $h, A^\top \in \mathbb{R}^m$ 
+- we know that the [[derivative]] $Df(x_0)[h]=Ah = \langle A^\top, h \rangle = ||proj_h(A^\top)|| \cdot ||h||$ is the rate of change in the direction $h$ and the length of the [[projection]] of $A$ on the direction $h$
+- from the [[cauchy schwarz inequality]] we know that the length of the [[projection]] of $A^\top$ on any $h$ is less or equal then the length of $A^\top$ itself with a maximum reachen at $h = A^\top$ 
+$$
+||proj_h(A^\top)|| \leq ||A^\top||
+$$
+- thus the [[vector]] $\frac{A^\top}{||A^\top||}$ is pointing in the direction of the steepest ascent
+$$
+\begin{split}
+arg\max_{||h||=1} ||proj_h\left(A^\top\right)|| 
+=arg\max_{||h||=1} \langle A^\top, h \rangle 
+&= \frac{A^\top}{||A^\top||} \\ 
+\end{split}
+$$
+- to get the rate of change in the direction of the steepest asecent we can just plug $h^* = \frac{A^\top}{||A^\top||}$ it into the [[derivative]] to see that the steepest rate if ascent is equal to the length of the [[vector]] $A^\top$
+$$
+Df(x)\left[\frac{A^\top}{||A^\top||}\right] = \frac{AA^\top}{||A^\top||} = \frac{\langle A, A \rangle}{||A^\top||} = \frac{||A^\top||^2}{||A^\top||} = ||A^\top||\in \mathbb{R}
+$$
+- this result can be generalized for a function $f: \mathbb{R}^m \to \mathbb{R}^n$ by treating $f$ as $n$ scalar functions $f_i$ 
+
+Tags: mathematics
+<!--ID: 1716210599111-->
+END
+
+
+START
+Basic
+relationship and differences of the following concepts
+- [[directional derivative]]
+- [[gradient]]
+- [[partial derivative]]
+- [[jacobian]]
+Back: 
+
+
+### partial derivative
+- given a [[function]] $f: \mathbb{R}^n \to Y$
+- the [[partial derivative]] $\frac{\partial f}{\partial x_i}$ is defined as follows and mesures the rate of change of $f$ regarding the direction of die coordinate $x_i$ 
+
+$$
+\frac{\partial f}{\partial x_i}(x) = \lim_{h \to 0} \frac{f(x+h e_i) - f(x) }{h} 
+$$
+
+
+### gradient
+- let $f: \mathbb{R}^m \to \mathbb{R}^n$ be a [[function]] then the [[gradient]] is a [[linear map]] $\nabla f(x): \mathbb{R}^m \to \mathbb{R}^n$ and is defined as follows
+
+$$
+\nabla f(x) = 
+\left(
+\begin{matrix}
+\frac{\partial f}{\partial x_1} \\
+... \\
+\frac{\partial f}{\partial x_n} \\
+\end{matrix}
+
+\right)
+\in \mathbb{R}^{n \times m}
+$$
+- the [[gradient]] gives the direction and the rate of fastest increase of $f$ because every of its elements $\frac{\partial f}{\partial x_i}$ gives the rate of change in the direction of the coordinate $x_i$ 
+
+Tags: mathematics
+<!--ID: 1716128307662-->
 END

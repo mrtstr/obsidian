@@ -5,11 +5,10 @@
 $$
 |\langle x , y \rangle|^2 \leq \langle x , x \rangle \cdot \langle y , y \rangle
 $$
-eqivalent:
 $$
 |\langle x , y \rangle| \leq || x || \cdot || y ||
 $$
-#### proof
+### proof for the [[cauchy schwarz inequality]]
 $$
 \begin{split}
 0 &\leq \left\langle \frac{x}{||x||} - \frac{y}{||y||} , \frac{x}{||x||} - \frac{y}{||y||}  \right\rangle \quad \text{(positive definit)} \\
