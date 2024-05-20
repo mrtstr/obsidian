@@ -1,29 +1,48 @@
 ### partial derivative
 - given a [[function]] $f: \mathbb{R}^n \to Y$
-- the [[partial derivative]] $\frac{\partial f}{\partial x_i}$ is defined as follows and mesures the rate of change of $f$ regarding the direction of die coordinate $x_i$ 
+- the [[partial derivative]] $\frac{\partial f}{\partial x_i}:X \to Y$ is defined as follows and mesures the rate of change of $f$ regarding the direction of die coordinate $x_i$ 
 
 $$
-\frac{\partial f}{\partial x_i}(x) = \lim_{h \to 0} \frac{f(x+h e_i) - f(x) }{h} 
+\frac{\partial f}{\partial x_i}(x) = \lim_{h \to 0} \frac{f(x+h e_i) - f(x) }{h} \in Y
+$$
+
+### [[partial derivative]] to the general [[derivative]]
+- given a [[function]] $f: \mathbb{R}^n \to Y$ and a point $x_0 \in X$ 
+- the general [[derivative]] $Df(x_0)[h]: \mathbb{R}^n \to Y$ is a [[linear map]] approximating $f$ in the point $x_0$ and gives the rate of change in an arbitrary direction $h$
+- the [[partial derivative]] in $x_0$ after a coodrinate $x_i$ gives the rate of change regarding the direction of the coordinate $x_i$
+- when plugging the directional [[vector]] of the coordinate $i$  $e_i = (\begin{matrix}0 & ... & 1&0&0\end{matrix})$ in the general [[derivative]] it becomes the [[partial derivative]]
+$$
+Df(x_0)[e_i]:Ae_i = \frac{\partial f}{\partial x_i}(x_0) \to Y
 $$
 
 # -----------------------
-![[gradient#gradient]]
+![[derivative#general derivative]]
 
 START
 Basic
 [[partial derivative]]
-- definition
-- geometric interpretation
+- definition and geometric interpretation
+- what is the difference to the general [[derivative]]?
+- can one be expressed as the other?
 Back: 
+### [[partial derivative]] to the general [[derivative]]
+- given a [[function]] $f: \mathbb{R}^n \to Y$ and a point $x_0 \in X$ 
+- the general [[derivative]] $Df(x_0)[h]: \mathbb{R}^n \to Y$ is a [[linear map]] approximating $f$ in the point $x_0$ and gives the rate of change in an arbitrary direction $h$
+- the [[partial derivative]] in $x_0$ after a coodrinate $x_i$ gives the rate of change regarding the direction of the coordinate $x_i$
+- when plugging the directional [[vector]] of the coordinate $i$  $e_i = (\begin{matrix}0 & ... & 1&0&0\end{matrix})$ in the general [[derivative]] it becomes the [[partial derivative]]
+$$
+Df(x_0)[e_i]:Ae_i = \frac{\partial f}{\partial x_i}(x_0) \to Y
+$$
+
 ### partial derivative
 - given a [[function]] $f: \mathbb{R}^n \to Y$
-- the [[partial derivative]] $\frac{\partial f}{\partial x_i}$ is defined as follows and mesures the rate of change of $f$ regarding the direction of die coordinate $x_i$ 
+- the [[partial derivative]] $\frac{\partial f}{\partial x_i}:X \to Y$ is defined as follows and mesures the rate of change of $f$ regarding the direction of die coordinate $x_i$ 
 
 $$
-\frac{\partial f}{\partial x_i}(x) = \lim_{h \to 0} \frac{f(x+h e_i) - f(x) }{h} 
+\frac{\partial f}{\partial x_i}(x) = \lim_{h \to 0} \frac{f(x+h e_i) - f(x) }{h} \in Y
 $$
 
-___________________
+
 ### general derivative
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
 - the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
@@ -48,7 +67,7 @@ START
 Basic
 [[directional derivative]] vs [[partial derivative]]
 - definitions
-- differenc
+- difference
 
 Back: 
 #### [[directional derivative]] and [[partial derivative]]

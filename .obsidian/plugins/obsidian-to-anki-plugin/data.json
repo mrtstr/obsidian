@@ -981,7 +981,7 @@
     "mathematics/basics/inverse rule of derivative.md": "9e3291952600b84aa9e8e368c8afba4f",
     "mathematics/basics/chain rule of derivative.md": "a62551fa78857c9ca81ba95e6c179ffe",
     "mathematics/basics/product rule of derivative.md": "cdfe5bdafdc895eea36bf9b1ea0e1137",
-    "mathematics/basics/derivative.md": "038dc4144b0d3da9a865e4098420bf9c",
+    "mathematics/basics/derivative.md": "47de9ee3a5ef2f8f044d5b9a1a6eca2e",
     "mathematics/basics/induction proof.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/power rule for derivative.md": "d7a29e2629a4db0d7a2626c4f37a5b30",
     "mathematics/basics/polynomial.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1488,11 +1488,11 @@
     "mathematics/basics/bounded linear map.md": "649868b1417ab7d1011b1c9f30849dce",
     "mathematics/basics/operator norm.md": "398247c3dc0dda697d867362fe2432d3",
     "mathematics/basics/frobenius inner product.md": "d8f388e75fe4458ccc9de72cf9c01005",
-    "mathematics/basics/jacobian.md": "389dc208441ee7ffb209532bec9a1ecf",
-    "mathematics/basics/gradient.md": "1b7e89eb05bd9f83a88df13f0d7659ee",
-    "mathematics/basics/directional derivative.md": "a6a5bbac3ec39116b8f553e196e53597",
+    "mathematics/basics/jacobian.md": "f061e3914ddb535dc800362472a39a32",
+    "mathematics/basics/gradient.md": "0b10ed7449951fb73440d1ec28c1b0b3",
+    "mathematics/basics/directional derivative.md": "214a392cf4fb8a2bbacd7c724444f678",
     "mathematics/basics/differentiabe.md": "fb91b1bd83e3432935df710c4b551cb9",
-    "mathematics/basics/partial derivative.md": "72cee5ce9ba2c5acf935a3dd2c16a644"
+    "mathematics/basics/partial derivative.md": "4bb5629fe0cfd707d630dcaa22b27df8"
   },
   "fields_dict": {
     "Basic": [

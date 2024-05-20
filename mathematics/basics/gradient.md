@@ -1,1 +1,3 @@
 see [[jacobian]]
+
+![[jacobian#gradient]]

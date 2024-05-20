@@ -6,7 +6,7 @@
 - the [[directional derivative]] measures the rate at which a [[function]] changes in a particular direction at a given point
 
 $$
-D_hf(x) = \lim_{t\to0}  \frac{f(x+th) - f(x)}{t}
+D_hf(x) = \lim_{t\to0}  \frac{f(x+th) - f(x)}{t} = Df(x)[h]
 $$
 
 
@@ -22,3 +22,6 @@ f(x, y) = \left\{
 &\frac{x}{x^2 + y^2} \qquad& \text{for } (x,y) \neq (0,0)
 \end{split} \right.
 $$
+
+# ------------------
+![[derivative#general derivative]]
