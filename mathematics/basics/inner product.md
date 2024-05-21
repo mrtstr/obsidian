@@ -31,14 +31,13 @@ $$
 $$
 \begin{split}
 \cos(\phi) = \frac{ankathte}{hypotenuse} 
-= \frac{||b'||}{||a||} 
 = \frac{||proj_b(a)||}{||a||} 
 = \frac{\langle a,b\rangle}{||a||\cdot||b||}
 \end{split}
 $$
 - with the length of the projection of a on b being the [[cosine]] of the angle [[multiplication]] with the length of a
 $$
-||b'|| = ||proj_b(a)|| = \cos(\phi) ||a||
+||proj_b(a)|| = \cos(\phi) ||a||
 $$
 
 

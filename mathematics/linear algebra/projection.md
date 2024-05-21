@@ -147,7 +147,7 @@ $$
 - the length of $b'$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $proj_b(a) = b$ does not depend on the length of $b$)
 
 $$
-||b'|| = \frac{\langle a,b \rangle}{||b||}
+||proj_b(a)||=||b'|| = \frac{\langle a,b \rangle}{||b||}
 $$
 - since $b'$ has the same direction as b the following is true
 $$

@@ -29,7 +29,7 @@ $$
 Df(x_0)\left[\frac{h}{||h||}\right]
 $$
 - it answers how much would $f$ change when going an infinitesimal small step in the direction (normalized) direction $h \in X$ relative to the length of the infinitesimal small step which is a rate of change
-- note: for a sclar function $f$ the rate of change is a [[scalar]] but in general its element of the codomain of $f$ ($Y$)
+- note: for a sclar function $f$ the rate of change is a [[scalar]] but in general its element of the codomain of $f$ (in this case: $Y$)
 
 - in the case of a [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ the [[matrix]] $A = (\nabla f)^\top \in \mathbb{R}^{1 \times 2}$ can be expressed as a [[vector]] $a = \nabla f \in \mathbb{R}^{2}$ and the rate of change becomes the [[inner product]] between the direction and the [[gradient]]
 $$
@@ -126,9 +126,152 @@ $$
 \end{split}
 $$
 
-![[operator norm#the operator norm is submultiplicative]]
+
+
+#### $F(A): \mathbb{R}^{n \times m} \to \mathbb{R} = \frac{1}{2}||Ax -b||_2^2$
+- the [[derivative]] $DF(A)[H]: \mathbb{R}^{n \times m} \to L( \mathbb{R}^{n \times m},  \mathbb{R})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}^{n \times m}$ to $\mathbb{R}$ with $H \in \mathbb{R}^{n \times m}$
+- from the definition we know the following:
+$$
+F(A + H) = f(X) + DF(A)[H] + \varphi(H) \quad \text{with} \quad \lim_{H \to 0} \frac{||\varphi(H)||}{||H||} = 0 
+$$
+
+
+$$
+\begin{split}
+F (X + H) 
+&= \frac{1}{2}||(A+H)x -b||_2^2 \\
+&= \frac{1}{2}\langle (Ax -b) + Hx, (Ax -b) + Hx\rangle \\
+&= \frac{1}{2}\langle Ax -b, Ax -b\rangle + \frac{1}{2}\langle Hx, Hx\rangle + \langle Ax -b, Hx\rangle \\
+&= \underbrace{\frac{1}{2}||Ax-b||_2^2}_{f(X)} + \underbrace{\frac{1}{2}||Hx||_2^2}_{\varphi(H)} +  \underbrace{\langle Ax -b, Hx \rangle}_{Df(X)[H]}  \\
+\end{split}
+$$
+
+- show that $\varphi(H)$ is converging fast enough
+
+$$
+\begin{split}
+\frac{\varphi(H)}{||H||} 
+&= \frac{1}{2} \frac{||Hx||^2}{||H||} \\
+&= \frac{1}{2} \frac{1}{||H||}  \frac{||Hx||^2 ||x||^2}{||x||^2} \\
+&= \frac{1}{2}  \frac{||x||^2}{||H||} \frac{||Hx||^2 }{||x||^2} \\
+&\leq \frac{1}{2}  \frac{||x||^2}{||H||} \sup_{||y|| \neq 0} \frac{||Hy||^2 }{||y||^2} \\
+&= \frac{1}{2}  \frac{||x||^2}{||H||} ||H||^2 \\
+&= \frac{1}{2} ||H|| \cdot ||x||^2 \xrightarrow{H \to 0} 0 \\
+\end{split}
+$$
+
+- a [[scalar]] is its own [[trace]] and$\mathrm{trace}(AB) = \mathrm{trace}(BA)$
+
+
+$$
+\begin{split}
+DF(A)[H] 
+&= \langle Ax -b, Hx \rangle \\
+&= \left(Ax -b\right)^\top Hx \\
+&= trace\left(\left(Ax -b\right)^\top Hx\right) \\
+&= trace\left(x\left(Ax -b\right)^\top H\right) \\
+&= trace\left(x\left(x^\top A^\top  -b^\top\right) H\right) \\
+&= trace\left(\left(xx^\top A^\top  -xb^\top\right) H\right) \\
+&= \left\langle xx^\top A^\top  -xb^\top, H \right\rangle_F \\
+DF(A)
+&= \left(xx^\top A^\top  -xb^\top\right)^\top\\
+\nabla F(A)
+&= xx^\top A^\top  -xb^\top\\
+\end{split}
+$$
+
+![[trace#trace]]
+
+![[frobenius inner product#frobenius inner product]]
+
+#### $F(x): \mathbb{R}^{m} \to \mathbb{R} = \frac{1}{2}||Ax -b||_2^2$
+- the [[derivative]] $DF(x)[h]: \mathbb{R}^{m} \to L( \mathbb{R}^{m},  \mathbb{R})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}^{m}$ to $\mathbb{R}$ with $h \in \mathbb{R}^{m}$
+- from the definition we know the following:
+$$
+F(x + h) = F(x) + DF(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||}{||h||} = 0 
+$$
+
+
+$$
+\begin{split}
+F (x + h) 
+&= \frac{1}{2}||A(x+h) -b||_2^2 \\
+&= \frac{1}{2}\langle (Ax -b) + Ah, (Ax -b) + Ah\rangle \\
+&= \frac{1}{2}\langle Ax -b, Ax -b\rangle + \frac{1}{2}\langle Ah, Ah\rangle + \langle Ax -b, Ah\rangle \\
+&= \underbrace{\frac{1}{2}||Ax-b||_2^2}_{f(X)} + \underbrace{\frac{1}{2}||Ah||_2^2}_{\varphi(H)} +  \underbrace{\langle Ax -b, Ah \rangle}_{Df(x)[h]}  \\
+\end{split}
+$$
+
+- show that $\varphi(h)$ is converging fast enough
+
+$$
+\begin{split}
+\frac{\varphi(h)}{||h||} 
+&= \frac{1}{2} \frac{||Ah||^2}{||h||} \\
+&= \frac{1}{2} \frac{1}{||h||}  \frac{||Ah||^2 ||h||^2}{||h||^2} \\
+&= \frac{1}{2}  \frac{||h||^2}{||h||} \frac{||Ah||^2 }{||h||^2} \\
+&\leq \frac{1}{2}  \frac{||h||^2}{||h||} \sup_{||y|| \neq 0} \frac{||Ay||^2 }{||y||^2} \\
+&= \frac{1}{2} ||h|| \cdot ||A||^2 \xrightarrow{h \to 0} 0 \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+Df(x)[h] 
+&= \langle Ax -b, Ah \rangle \\
+&= \left(Ax -b\right)^\top Ah \\
+Df(x)
+&= \left(Ax -b\right)^\top A \\
+&=  A^\top \left(Ax -b\right) \\
+\nabla f (x)
+&= \left(A^\top \left(Ax -b\right)\right)^\top \\
+&= \left(Ax -b\right)^\top A \\
+\end{split}
+$$
+
+#### $F(b): \mathbb{R}^{m} \to \mathbb{R} = \frac{1}{2}||Ax -b||_2^2$
+- the [[derivative]] $DF(b)[h]: \mathbb{R}^{m} \to L( \mathbb{R}^{m},  \mathbb{R})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}^{m}$ to $\mathbb{R}$ with $h \in \mathbb{R}^{m}$
+- from the definition we know the following:
+$$
+F(b + h) = F(b) + DF(b)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||}{||h||} = 0 
+$$
+
+
+$$
+\begin{split}
+F (b + h) 
+&= \frac{1}{2}||Ax -b -h||_2^2 \\
+&= \frac{1}{2}\langle (Ax -b) -h, (Ax -b) -h\rangle \\
+&= \frac{1}{2}\langle Ax -b, Ax -b\rangle + \frac{1}{2}\langle h, h\rangle - \langle Ax -b, h\rangle \\
+&= \underbrace{\frac{1}{2}||Ax-b||_2^2}_{f(X)} + \underbrace{\frac{1}{2}||h||_2^2}_{\varphi(H)} +  \underbrace{-\langle Ax -b, h \rangle}_{Df(x)[h]}  \\
+\end{split}
+$$
+
+- show that $\varphi(h)$ is converging fast enough
+
+$$
+\begin{split}
+\frac{\varphi(h)}{||h||} 
+&= \frac{1}{2} \frac{||h||^2}{||h||} \\
+&= \frac{1}{2} ||h||  \xrightarrow{h \to 0} 0 \\
+\end{split}
+$$
+
+
+
+$$
+\begin{split}
+Df(x)[h] &= -\langle Ax -b, h \rangle \\
+Df(x) &= -(Ax -b)^\top \\
+\nabla f(x) &= -(Ax -b) \\
+\end{split}
+$$
 
 # --------------------
+
+![[operator norm#the operator norm is submultiplicative]]
+
 ![[bounded linear map#bounded linear map]]
 
 ![[banach space#banach spaces]]
@@ -566,7 +709,7 @@ $$
 Df(x_0)\left[\frac{h}{||h||}\right]
 $$
 - it answers how much would $f$ change when going an infinitesimal small step in the direction (normalized) direction $h \in X$ relative to the length of the infinitesimal small step which is a rate of change
-- note: for a sclar function $f$ the rate of change is a [[scalar]] but in general its element of the codomain of $f$ ($Y$)
+- note: for a sclar function $f$ the rate of change is a [[scalar]] but in general its element of the codomain of $f$ (in this case: $Y$)
 
 - in the case of a [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ the [[matrix]] $A = (\nabla f)^\top \in \mathbb{R}^{1 \times 2}$ can be expressed as a [[vector]] $a = \nabla f \in \mathbb{R}^{2}$ and the rate of change becomes the [[inner product]] between the direction and the [[gradient]]
 $$
@@ -1017,4 +1160,566 @@ $$
 
 Tags: mathematics
 <!--ID: 1716128307662-->
+END
+
+
+START
+Basic
+given the [[function]] $F(x): \mathbb{R}^{m} \to \mathbb{R} = \frac{1}{2}||Ax -b||_2^2$
+
+calculate
+- $Df(x)[h]$
+- $Df(x)$
+- $\nabla f(x)$
+
+Back: 
+#### $F(x): \mathbb{R}^{m} \to \mathbb{R} = \frac{1}{2}||Ax -b||_2^2$
+- the [[derivative]] $DF(x)[h]: \mathbb{R}^{m} \to L( \mathbb{R}^{m},  \mathbb{R})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}^{m}$ to $\mathbb{R}$ with $h \in \mathbb{R}^{m}$
+- from the definition we know the following:
+$$
+F(x + h) = F(x) + DF(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||}{||h||} = 0 
+$$
+
+
+$$
+\begin{split}
+F (x + h) 
+&= \frac{1}{2}||A(x+h) -b||_2^2 \\
+&= \frac{1}{2}\langle (Ax -b) + Ah, (Ax -b) + Ah\rangle \\
+&= \frac{1}{2}\langle Ax -b, Ax -b\rangle + \frac{1}{2}\langle Ah, Ah\rangle + \langle Ax -b, Ah\rangle \\
+&= \underbrace{\frac{1}{2}||Ax-b||_2^2}_{f(X)} + \underbrace{\frac{1}{2}||Ah||_2^2}_{\varphi(H)} +  \underbrace{\langle Ax -b, Ah \rangle}_{Df(x)[h]}  \\
+\end{split}
+$$
+
+- show that $\varphi(h)$ is converging fast enough
+
+$$
+\begin{split}
+\frac{\varphi(h)}{||h||} 
+&= \frac{1}{2} \frac{||Ah||^2}{||h||} \\
+&= \frac{1}{2} \frac{1}{||h||}  \frac{||Ah||^2 ||h||^2}{||h||^2} \\
+&= \frac{1}{2}  \frac{||h||^2}{||h||} \frac{||Ah||^2 }{||h||^2} \\
+&\leq \frac{1}{2}  \frac{||h||^2}{||h||} \sup_{||y|| \neq 0} \frac{||Ay||^2 }{||y||^2} \\
+&= \frac{1}{2} ||h|| \cdot ||A||^2 \xrightarrow{h \to 0} 0 \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+Df(x)[h] 
+&= \langle Ax -b, Ah \rangle \\
+&= \left(Ax -b\right)^\top Ah \\
+Df(x)
+&= \left(Ax -b\right)^\top A \\
+&=  A^\top \left(Ax -b\right) \\
+\nabla f (x)
+&= \left(A^\top \left(Ax -b\right)\right)^\top \\
+&= \left(Ax -b\right)^\top A \\
+\end{split}
+$$
+
+_______________________
+
+### general derivative
+- let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+$$
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
+$$
+
+- this eqivalent definition is often easier to work with:
+$$
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+$$
+
+### the [[operator norm]] is submultiplicative
+- given two [[linear map|linear maps]] $A: X \to Y$ and $B: Y \to Z$ the following inequallity holds true
+$$
+||BA||_{X \to Z} \leq ||A||_{X \to Y} ||B||_{Y \to Z}
+$$
+ $$
+ \begin{split}
+||BA||_{X \to Z} 
+&= \sup_{x\neq 0} \frac{||BAx||_Z}{||x||_X} \\
+&= \sup_{x\neq 0, Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{Y}}  \frac{||Ax||_Y}{||x||_X} \\
+&\leq \sup_{Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{Y}} \cdot \sup_{x \neq 0} \frac{||Ax||_Y}{||x||_X} \\
+&= \sup_{y \neq 0} \frac{||By||_Z}{||y||_{Y}} \cdot \sup_{x \neq 0} \frac{||Ax||_Y}{||x||_X}  \\
+&= ||A||_{X \to Y} ||B||_{Y \to Z}
+\end{split}
+$$
+
+### jacobian
+- given a [[function]] $f: \mathbb{R}^m \to \mathbb{R}^n$ the [[derivative]] $Df(x)[h]=Ah$ is a [[bounded linear map]] that can be represented by a [[matrix]] $A \in \mathbb{R}^{n \times m}$ 
+- for a general $f: \mathbb{R}^m \to \mathbb{R}^n$ the [[matrix]] $A\in \mathbb{R}^{n \times m}$ called the [[jacobian]] $\nabla f = A \in \mathbb{R}^{n \times m}$ 
+- if $f: \mathbb{R}^m \to \mathbb{R}$ is a scalar [[function]] [[transpose]] of [[matrix]] $A$ is a [[vector]]called the [[gradient]] $\nabla f = A^\top \in \mathbb{R}^m$ 
+
+
+#### jacobian $f: \mathbb{R}^m \to \mathbb{R}^n$
+- let $f: \mathbb{R}^m \to \mathbb{R}^n$ be a [[function]] mapping from a [[banach space]] $(\mathbb{R}^m, ||\cdot||)$ to a [[banach space]] $(\mathbb{R}^n, ||\cdot||)$
+- since the [[derivative]] $A: \mathbb{R}^m \to \mathbb{R}^n$ is a [[bounded linear map]] we can express it as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+- since we can treat the $n$ dimensions of the [[function]] $f: \mathbb{R}^m \to \mathbb{R}^n$ as $n$ different [[function|functions]] $i \in [n]: f_i: \mathbb{R}^m \to \mathbb{R}$ the following is the [[derivative]]
+
+$$
+D f(x) = 
+\left(
+\begin{matrix}
+\left(\nabla f_1(x)\right)^\top\\
+... \\
+\left(\nabla f_n(x)\right)^\top \\
+\end{matrix}
+\right)
+=
+\left(
+\begin{matrix}
+\frac{\partial f_1}{\partial x_1} & ... & \frac{\partial f_1}{\partial x_m} \\
+ & ... &  \\
+\frac{\partial f_n}{\partial x_1} &...& \frac{\partial f_n}{\partial x_m} \\
+\end{matrix}
+\right)
+\in \mathbb{R}^{n \times m}
+$$
+
+#### gradient
+- let $f: \mathbb{R}^m \to \mathbb{R}$ be a [[function]] then the [[gradient]] is a [[linear map]] $\nabla f(x): \mathbb{R}^m \to \mathbb{R}$ and is defined as follows
+
+$$
+\nabla f(x) = 
+\left(
+\begin{matrix}
+\frac{\partial f}{\partial x_1} \\
+... \\
+\frac{\partial f}{\partial x_n} \\
+\end{matrix}
+
+\right)
+\in \mathbb{R}^{n \times m}
+$$
+- the [[gradient]] gives the direction and the rate of fastest increase of $f$ because every of its elements $\frac{\partial f}{\partial x_i}$ gives the rate of change in the direction of the coordinate $x_i$ 
+
+
+Tags: mathematics
+
+END
+
+
+
+START
+Basic
+given the [[function]] $F(b): \mathbb{R}^{m} \to \mathbb{R} = \frac{1}{2}||Ax -b||_2^2$
+
+calculate
+- $Df(x)[h]$
+- $Df(x)$
+- $\nabla f(x)$
+
+Back: 
+#### $F(b): \mathbb{R}^{m} \to \mathbb{R} = \frac{1}{2}||Ax -b||_2^2$
+- the [[derivative]] $DF(b)[h]: \mathbb{R}^{m} \to L( \mathbb{R}^{m},  \mathbb{R})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}^{m}$ to $\mathbb{R}$ with $h \in \mathbb{R}^{m}$
+- from the definition we know the following:
+$$
+F(b + h) = F(b) + DF(b)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||}{||h||} = 0 
+$$
+
+
+$$
+\begin{split}
+F (b + h) 
+&= \frac{1}{2}||Ax -b -h||_2^2 \\
+&= \frac{1}{2}\langle (Ax -b) -h, (Ax -b) -h\rangle \\
+&= \frac{1}{2}\langle Ax -b, Ax -b\rangle + \frac{1}{2}\langle h, h\rangle - \langle Ax -b, h\rangle \\
+&= \underbrace{\frac{1}{2}||Ax-b||_2^2}_{f(X)} + \underbrace{\frac{1}{2}||h||_2^2}_{\varphi(H)} +  \underbrace{-\langle Ax -b, h \rangle}_{Df(x)[h]}  \\
+\end{split}
+$$
+
+- show that $\varphi(h)$ is converging fast enough
+
+$$
+\begin{split}
+\frac{\varphi(h)}{||h||} 
+&= \frac{1}{2} \frac{||h||^2}{||h||} \\
+&= \frac{1}{2} ||h||  \xrightarrow{h \to 0} 0 \\
+\end{split}
+$$
+
+
+
+$$
+\begin{split}
+Df(x)[h] &= -\langle Ax -b, h \rangle \\
+Df(x) &= -(Ax -b)^\top \\
+\nabla f(x) &= -(Ax -b) \\
+\end{split}
+$$
+
+_______________________
+
+### general derivative
+- let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+$$
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
+$$
+
+- this eqivalent definition is often easier to work with:
+$$
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+$$
+
+### the [[operator norm]] is submultiplicative
+- given two [[linear map|linear maps]] $A: X \to Y$ and $B: Y \to Z$ the following inequallity holds true
+$$
+||BA||_{X \to Z} \leq ||A||_{X \to Y} ||B||_{Y \to Z}
+$$
+ $$
+ \begin{split}
+||BA||_{X \to Z} 
+&= \sup_{x\neq 0} \frac{||BAx||_Z}{||x||_X} \\
+&= \sup_{x\neq 0, Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{Y}}  \frac{||Ax||_Y}{||x||_X} \\
+&\leq \sup_{Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{Y}} \cdot \sup_{x \neq 0} \frac{||Ax||_Y}{||x||_X} \\
+&= \sup_{y \neq 0} \frac{||By||_Z}{||y||_{Y}} \cdot \sup_{x \neq 0} \frac{||Ax||_Y}{||x||_X}  \\
+&= ||A||_{X \to Y} ||B||_{Y \to Z}
+\end{split}
+$$
+
+### jacobian
+- given a [[function]] $f: \mathbb{R}^m \to \mathbb{R}^n$ the [[derivative]] $Df(x)[h]=Ah$ is a [[bounded linear map]] that can be represented by a [[matrix]] $A \in \mathbb{R}^{n \times m}$ 
+- for a general $f: \mathbb{R}^m \to \mathbb{R}^n$ the [[matrix]] $A\in \mathbb{R}^{n \times m}$ called the [[jacobian]] $\nabla f = A \in \mathbb{R}^{n \times m}$ 
+- if $f: \mathbb{R}^m \to \mathbb{R}$ is a scalar [[function]] [[transpose]] of [[matrix]] $A$ is a [[vector]]called the [[gradient]] $\nabla f = A^\top \in \mathbb{R}^m$ 
+
+
+#### jacobian $f: \mathbb{R}^m \to \mathbb{R}^n$
+- let $f: \mathbb{R}^m \to \mathbb{R}^n$ be a [[function]] mapping from a [[banach space]] $(\mathbb{R}^m, ||\cdot||)$ to a [[banach space]] $(\mathbb{R}^n, ||\cdot||)$
+- since the [[derivative]] $A: \mathbb{R}^m \to \mathbb{R}^n$ is a [[bounded linear map]] we can express it as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+- since we can treat the $n$ dimensions of the [[function]] $f: \mathbb{R}^m \to \mathbb{R}^n$ as $n$ different [[function|functions]] $i \in [n]: f_i: \mathbb{R}^m \to \mathbb{R}$ the following is the [[derivative]]
+
+$$
+D f(x) = 
+\left(
+\begin{matrix}
+\left(\nabla f_1(x)\right)^\top\\
+... \\
+\left(\nabla f_n(x)\right)^\top \\
+\end{matrix}
+\right)
+=
+\left(
+\begin{matrix}
+\frac{\partial f_1}{\partial x_1} & ... & \frac{\partial f_1}{\partial x_m} \\
+ & ... &  \\
+\frac{\partial f_n}{\partial x_1} &...& \frac{\partial f_n}{\partial x_m} \\
+\end{matrix}
+\right)
+\in \mathbb{R}^{n \times m}
+$$
+
+#### gradient
+- let $f: \mathbb{R}^m \to \mathbb{R}$ be a [[function]] then the [[gradient]] is a [[linear map]] $\nabla f(x): \mathbb{R}^m \to \mathbb{R}$ and is defined as follows
+
+$$
+\nabla f(x) = 
+\left(
+\begin{matrix}
+\frac{\partial f}{\partial x_1} \\
+... \\
+\frac{\partial f}{\partial x_n} \\
+\end{matrix}
+
+\right)
+\in \mathbb{R}^{n \times m}
+$$
+- the [[gradient]] gives the direction and the rate of fastest increase of $f$ because every of its elements $\frac{\partial f}{\partial x_i}$ gives the rate of change in the direction of the coordinate $x_i$ 
+
+
+Tags: mathematics
+
+END
+
+
+
+START
+Basic
+given the [[function]] $F(A): \mathbb{R}^{n \times m} \to \mathbb{R} = \frac{1}{2}||Ax -b||_2^2$
+
+calculate
+- $Df(x)[h]$
+
+Back: 
+#### $F(A): \mathbb{R}^{n \times m} \to \mathbb{R} = \frac{1}{2}||Ax -b||_2^2$
+- the [[derivative]] $DF(A)[H]: \mathbb{R}^{n \times m} \to L( \mathbb{R}^{n \times m},  \mathbb{R})$ has to be [[bounded linear map]] mapping from the $\mathbb{R}^{n \times m}$ to $\mathbb{R}$ with $H \in \mathbb{R}^{n \times m}$
+- from the definition we know the following:
+$$
+F(A + H) = f(X) + DF(A)[H] + \varphi(H) \quad \text{with} \quad \lim_{H \to 0} \frac{||\varphi(H)||}{||H||} = 0 
+$$
+
+
+$$
+\begin{split}
+F (X + H) 
+&= \frac{1}{2}||(A+H)x -b||_2^2 \\
+&= \frac{1}{2}\langle (Ax -b) + Hx, (Ax -b) + Hx\rangle \\
+&= \frac{1}{2}\langle Ax -b, Ax -b\rangle + \frac{1}{2}\langle Hx, Hx\rangle + \langle Ax -b, Hx\rangle \\
+&= \underbrace{\frac{1}{2}||Ax-b||_2^2}_{f(X)} + \underbrace{\frac{1}{2}||Hx||_2^2}_{\varphi(H)} +  \underbrace{\langle Ax -b, Hx \rangle}_{Df(X)[H]}  \\
+\end{split}
+$$
+
+- show that $\varphi(H)$ is converging fast enough
+
+$$
+\begin{split}
+\frac{\varphi(H)}{||H||} 
+&= \frac{1}{2} \frac{||Hx||^2}{||H||} \\
+&= \frac{1}{2} \frac{1}{||H||}  \frac{||Hx||^2 ||x||^2}{||x||^2} \\
+&= \frac{1}{2}  \frac{||x||^2}{||H||} \frac{||Hx||^2 }{||x||^2} \\
+&\leq \frac{1}{2}  \frac{||x||^2}{||H||} \sup_{||y|| \neq 0} \frac{||Hy||^2 }{||y||^2} \\
+&= \frac{1}{2}  \frac{||x||^2}{||H||} ||H||^2 \\
+&= \frac{1}{2} ||H|| \cdot ||x||^2 \xrightarrow{H \to 0} 0 \\
+\end{split}
+$$
+
+- a [[scalar]] is its own [[trace]] and$\mathrm{trace}(AB) = \mathrm{trace}(BA)$
+
+
+$$
+\begin{split}
+DF(A)[H] 
+&= \langle Ax -b, Hx \rangle \\
+&= \left(Ax -b\right)^\top Hx \\
+&= trace\left(\left(Ax -b\right)^\top Hx\right) \\
+&= trace\left(x\left(Ax -b\right)^\top H\right) \\
+&= trace\left(x\left(x^\top A^\top  -b^\top\right) H\right) \\
+&= trace\left(\left(xx^\top A^\top  -xb^\top\right) H\right) \\
+&= \left\langle xx^\top A^\top  -xb^\top, H \right\rangle_F \\
+DF(A)
+&= \left(xx^\top A^\top  -xb^\top\right)^\top\\
+\nabla F(A)
+&= xx^\top A^\top  -xb^\top\\
+\end{split}
+$$
+
+_______________________
+
+### trace
+- given a [[square matrix]] $A \in \mathbb{R}^{n \times n}$
+- the [[trace]] of $A$ is defined as the [[addition|sum]] of the main diagonal
+$$
+\mathrm{trace}(A) = \sum_{i \in [n]} a_{ii}
+$$
+
+### general derivative
+- let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+$$
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
+$$
+
+- this eqivalent definition is often easier to work with:
+$$
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+$$
+
+### the [[operator norm]] is submultiplicative
+- given two [[linear map|linear maps]] $A: X \to Y$ and $B: Y \to Z$ the following inequallity holds true
+$$
+||BA||_{X \to Z} \leq ||A||_{X \to Y} ||B||_{Y \to Z}
+$$
+ $$
+ \begin{split}
+||BA||_{X \to Z} 
+&= \sup_{x\neq 0} \frac{||BAx||_Z}{||x||_X} \\
+&= \sup_{x\neq 0, Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{Y}}  \frac{||Ax||_Y}{||x||_X} \\
+&\leq \sup_{Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{Y}} \cdot \sup_{x \neq 0} \frac{||Ax||_Y}{||x||_X} \\
+&= \sup_{y \neq 0} \frac{||By||_Z}{||y||_{Y}} \cdot \sup_{x \neq 0} \frac{||Ax||_Y}{||x||_X}  \\
+&= ||A||_{X \to Y} ||B||_{Y \to Z}
+\end{split}
+$$
+
+### frobenius inner product
+- given [[matrix]] $A, B \in \mathbb{R}^{n \times m}$
+- the [[frobenius inner product]] is defined as follows
+$$
+\langle A, B\rangle_F = \sum_{i \in [n]} \sum_{j \in [m]} a_{ij} b_{ij} 
+$$
+- the [[frobenius inner product]] can be expressed as the [[trace]] of the [[matrix product]]
+$$
+\langle A, B\rangle_F = \mathrm{trace}\left(A^\top B\right) = \mathrm{trace}\left(A B^\top\right)
+$$
+- the [[frobenius inner product]] induces the [[frobenius norm]]
+
+
+### jacobian
+- given a [[function]] $f: \mathbb{R}^m \to \mathbb{R}^n$ the [[derivative]] $Df(x)[h]=Ah$ is a [[bounded linear map]] that can be represented by a [[matrix]] $A \in \mathbb{R}^{n \times m}$ 
+- for a general $f: \mathbb{R}^m \to \mathbb{R}^n$ the [[matrix]] $A\in \mathbb{R}^{n \times m}$ called the [[jacobian]] $\nabla f = A \in \mathbb{R}^{n \times m}$ 
+- if $f: \mathbb{R}^m \to \mathbb{R}$ is a scalar [[function]] [[transpose]] of [[matrix]] $A$ is a [[vector]]called the [[gradient]] $\nabla f = A^\top \in \mathbb{R}^m$ 
+
+
+#### jacobian $f: \mathbb{R}^m \to \mathbb{R}^n$
+- let $f: \mathbb{R}^m \to \mathbb{R}^n$ be a [[function]] mapping from a [[banach space]] $(\mathbb{R}^m, ||\cdot||)$ to a [[banach space]] $(\mathbb{R}^n, ||\cdot||)$
+- since the [[derivative]] $A: \mathbb{R}^m \to \mathbb{R}^n$ is a [[bounded linear map]] we can express it as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+- since we can treat the $n$ dimensions of the [[function]] $f: \mathbb{R}^m \to \mathbb{R}^n$ as $n$ different [[function|functions]] $i \in [n]: f_i: \mathbb{R}^m \to \mathbb{R}$ the following is the [[derivative]]
+
+$$
+D f(x) = 
+\left(
+\begin{matrix}
+\left(\nabla f_1(x)\right)^\top\\
+... \\
+\left(\nabla f_n(x)\right)^\top \\
+\end{matrix}
+\right)
+=
+\left(
+\begin{matrix}
+\frac{\partial f_1}{\partial x_1} & ... & \frac{\partial f_1}{\partial x_m} \\
+ & ... &  \\
+\frac{\partial f_n}{\partial x_1} &...& \frac{\partial f_n}{\partial x_m} \\
+\end{matrix}
+\right)
+\in \mathbb{R}^{n \times m}
+$$
+
+#### gradient
+- let $f: \mathbb{R}^m \to \mathbb{R}$ be a [[function]] then the [[gradient]] is a [[linear map]] $\nabla f(x): \mathbb{R}^m \to \mathbb{R}$ and is defined as follows
+
+$$
+\nabla f(x) = 
+\left(
+\begin{matrix}
+\frac{\partial f}{\partial x_1} \\
+... \\
+\frac{\partial f}{\partial x_n} \\
+\end{matrix}
+
+\right)
+\in \mathbb{R}^{n \times m}
+$$
+- the [[gradient]] gives the direction and the rate of fastest increase of $f$ because every of its elements $\frac{\partial f}{\partial x_i}$ gives the rate of change in the direction of the coordinate $x_i$ 
+
+
+Tags: mathematics
+
+END
+
+
+START
+Basic
+proof the following
+$$
+DF(A)[H] = \langle Ax -b, Hx \rangle 
+\Leftrightarrow
+\nabla F(A)= xx^\top A^\top  -xb^\top
+$$
+
+Back: 
+- a [[scalar]] is its own [[trace]] and$\mathrm{trace}(AB) = \mathrm{trace}(BA)$
+$$
+\begin{split}
+DF(A)[H] 
+&= \langle Ax -b, Hx \rangle \\
+&= \left(Ax -b\right)^\top Hx \\
+&= trace\left(\left(Ax -b\right)^\top Hx\right) \\
+&= trace\left(x\left(Ax -b\right)^\top H\right) \\
+&= trace\left(x\left(x^\top A^\top  -b^\top\right) H\right) \\
+&= trace\left(\left(xx^\top A^\top  -xb^\top\right) H\right) \\
+&= \left\langle xx^\top A^\top  -xb^\top, H \right\rangle_F \\
+DF(A)
+&= \left(xx^\top A^\top  -xb^\top\right)^\top\\
+\nabla F(A)
+&= xx^\top A^\top  -xb^\top\\
+\end{split}
+$$
+
+_______________________
+
+### trace
+- given a [[square matrix]] $A \in \mathbb{R}^{n \times n}$
+- the [[trace]] of $A$ is defined as the [[addition|sum]] of the main diagonal
+$$
+\mathrm{trace}(A) = \sum_{i \in [n]} a_{ii}
+$$
+
+### general derivative
+- let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
+- the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
+- the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+$$
+\lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
+$$
+
+- this eqivalent definition is often easier to work with:
+$$
+f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
+$$
+
+### frobenius inner product
+- given [[matrix]] $A, B \in \mathbb{R}^{n \times m}$
+- the [[frobenius inner product]] is defined as follows
+$$
+\langle A, B\rangle_F = \sum_{i \in [n]} \sum_{j \in [m]} a_{ij} b_{ij} 
+$$
+- the [[frobenius inner product]] can be expressed as the [[trace]] of the [[matrix product]]
+$$
+\langle A, B\rangle_F = \mathrm{trace}\left(A^\top B\right) = \mathrm{trace}\left(A B^\top\right)
+$$
+- the [[frobenius inner product]] induces the [[frobenius norm]]
+
+
+### jacobian
+- given a [[function]] $f: \mathbb{R}^m \to \mathbb{R}^n$ the [[derivative]] $Df(x)[h]=Ah$ is a [[bounded linear map]] that can be represented by a [[matrix]] $A \in \mathbb{R}^{n \times m}$ 
+- for a general $f: \mathbb{R}^m \to \mathbb{R}^n$ the [[matrix]] $A\in \mathbb{R}^{n \times m}$ called the [[jacobian]] $\nabla f = A \in \mathbb{R}^{n \times m}$ 
+- if $f: \mathbb{R}^m \to \mathbb{R}$ is a scalar [[function]] [[transpose]] of [[matrix]] $A$ is a [[vector]]called the [[gradient]] $\nabla f = A^\top \in \mathbb{R}^m$ 
+
+
+#### jacobian $f: \mathbb{R}^m \to \mathbb{R}^n$
+- let $f: \mathbb{R}^m \to \mathbb{R}^n$ be a [[function]] mapping from a [[banach space]] $(\mathbb{R}^m, ||\cdot||)$ to a [[banach space]] $(\mathbb{R}^n, ||\cdot||)$
+- since the [[derivative]] $A: \mathbb{R}^m \to \mathbb{R}^n$ is a [[bounded linear map]] we can express it as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+- since we can treat the $n$ dimensions of the [[function]] $f: \mathbb{R}^m \to \mathbb{R}^n$ as $n$ different [[function|functions]] $i \in [n]: f_i: \mathbb{R}^m \to \mathbb{R}$ the following is the [[derivative]]
+
+$$
+D f(x) = 
+\left(
+\begin{matrix}
+\left(\nabla f_1(x)\right)^\top\\
+... \\
+\left(\nabla f_n(x)\right)^\top \\
+\end{matrix}
+\right)
+=
+\left(
+\begin{matrix}
+\frac{\partial f_1}{\partial x_1} & ... & \frac{\partial f_1}{\partial x_m} \\
+ & ... &  \\
+\frac{\partial f_n}{\partial x_1} &...& \frac{\partial f_n}{\partial x_m} \\
+\end{matrix}
+\right)
+\in \mathbb{R}^{n \times m}
+$$
+
+#### gradient
+- let $f: \mathbb{R}^m \to \mathbb{R}$ be a [[function]] then the [[gradient]] is a [[linear map]] $\nabla f(x): \mathbb{R}^m \to \mathbb{R}$ and is defined as follows
+
+$$
+\nabla f(x) = 
+\left(
+\begin{matrix}
+\frac{\partial f}{\partial x_1} \\
+... \\
+\frac{\partial f}{\partial x_n} \\
+\end{matrix}
+
+\right)
+\in \mathbb{R}^{n \times m}
+$$
+- the [[gradient]] gives the direction and the rate of fastest increase of $f$ because every of its elements $\frac{\partial f}{\partial x_i}$ gives the rate of change in the direction of the coordinate $x_i$ 
+
+
+Tags: mathematics
+
 END

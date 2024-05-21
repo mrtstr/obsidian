@@ -30,7 +30,7 @@ $$
  \begin{split}
 ||BA||_{X \to Z} 
 &= \sup_{x\neq 0} \frac{||BAx||_Z}{||x||_X} \\
-&= \sup_{x\neq 0, Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{X \to Y}}  \frac{||Ax||_Y}{||x||_X} \\
+&= \sup_{x\neq 0, Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{Y}}  \frac{||Ax||_Y}{||x||_X} \\
 &\leq \sup_{Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{Y}} \cdot \sup_{x \neq 0} \frac{||Ax||_Y}{||x||_X} \\
 &= \sup_{y \neq 0} \frac{||By||_Z}{||y||_{Y}} \cdot \sup_{x \neq 0} \frac{||Ax||_Y}{||x||_X}  \\
 &= ||A||_{X \to Y} ||B||_{Y \to Z}
@@ -336,13 +336,12 @@ $$
  \begin{split}
 ||BA||_{X \to Z} 
 &= \sup_{x\neq 0} \frac{||BAx||_Z}{||x||_X} \\
-&= \sup_{x\neq 0, Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{X \to Y}}  \frac{||Ax||_Y}{||x||_X} \\
+&= \sup_{x\neq 0, Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{Y}}  \frac{||Ax||_Y}{||x||_X} \\
 &\leq \sup_{Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{Y}} \cdot \sup_{x \neq 0} \frac{||Ax||_Y}{||x||_X} \\
 &= \sup_{y \neq 0} \frac{||By||_Z}{||y||_{Y}} \cdot \sup_{x \neq 0} \frac{||Ax||_Y}{||x||_X}  \\
 &= ||A||_{X \to Y} ||B||_{Y \to Z}
 \end{split}
 $$
-
 ### operator norm
 - an [[operator norm]] is a [[norm]] in a [[function space]] that is induced by the [[norm|norms]] of the [[domain]] and codomain [[banach space]]
 - given two [[banach space|banach spaces]] $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ and a [[linear map]] $A: X\rightarrow Y$
