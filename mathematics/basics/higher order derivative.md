@@ -14,6 +14,13 @@ $$
 D^2f(x)[h, k]: X \to L\left(X \times X, Y\right)
 $$
 ### interpretation second order derivative
+- [[derivative]] is a [[linear map|linear]] approximation of a [[function]] $f: X \to Y$ in a point $x_0$ and discribes the rate of change regarding a direction $h$
+- the second order [[derivative]] describes the **rate of change of the rate of change** → how much the **rate of change** when going in the direction $h$ will change when going in direction $k$
 
+![[second_der.png]]
+
+- the plotted [[function]] $f: \mathbb{R}^2 \to \mathbb{R}$ given a direction $h$ (red line) 
 # ----------------
 ![[derivative#general derivative]]
+
+![[derivative#derivative as a linear map linear approximation]]

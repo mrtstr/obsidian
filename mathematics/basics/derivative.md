@@ -208,9 +208,9 @@ $$
 \begin{split}
 \frac{\varphi(h)}{||h||} 
 &= \frac{1}{2} \frac{||Ah||^2}{||h||} \\
-&= \frac{1}{2} \frac{1}{||h||}  \frac{||Ah||^2 ||h||^2}{||h||^2} \\
-&= \frac{1}{2}  \frac{||h||^2}{||h||} \frac{||Ah||^2 }{||h||^2} \\
-&\leq \frac{1}{2}  \frac{||h||^2}{||h||} \sup_{||y|| \neq 0} \frac{||Ay||^2 }{||y||^2} \\
+&= \frac{1}{2} ||h|| \frac{||Ah||^2}{||h||^2} \\
+&= \frac{1}{2} ||h|| \left(\frac{||Ah||}{||h||}\right)^2 \\
+&\leq \frac{1}{2} ||h|| \left(\sup_{||y|| \neq 0}\frac{||Ay||}{||y||}\right)^2 \\
 &= \frac{1}{2} ||h|| \cdot ||A||^2 \xrightarrow{h \to 0} 0 \\
 \end{split}
 $$
@@ -1197,9 +1197,9 @@ $$
 \begin{split}
 \frac{\varphi(h)}{||h||} 
 &= \frac{1}{2} \frac{||Ah||^2}{||h||} \\
-&= \frac{1}{2} \frac{1}{||h||}  \frac{||Ah||^2 ||h||^2}{||h||^2} \\
-&= \frac{1}{2}  \frac{||h||^2}{||h||} \frac{||Ah||^2 }{||h||^2} \\
-&\leq \frac{1}{2}  \frac{||h||^2}{||h||} \sup_{||y|| \neq 0} \frac{||Ay||^2 }{||y||^2} \\
+&= \frac{1}{2} ||h|| \frac{||Ah||^2}{||h||^2} \\
+&= \frac{1}{2} ||h|| \left(\frac{||Ah||}{||h||}\right)^2 \\
+&\leq \frac{1}{2} ||h|| \left(\sup_{||y|| \neq 0}\frac{||Ay||}{||y||}\right)^2 \\
 &= \frac{1}{2} ||h|| \cdot ||A||^2 \xrightarrow{h \to 0} 0 \\
 \end{split}
 $$
@@ -1447,6 +1447,8 @@ given the [[function]] $F(A): \mathbb{R}^{n \times m} \to \mathbb{R} = \frac{1}{
 
 calculate
 - $Df(x)[h]$
+- $Df(x)$
+- $\nabla f(x)$
 
 Back: 
 #### $F(A): \mathbb{R}^{n \times m} \to \mathbb{R} = \frac{1}{2}||Ax -b||_2^2$
