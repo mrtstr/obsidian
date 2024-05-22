@@ -8,7 +8,7 @@ $$
 
 START
 Basic
-[[closure]]
+[[closure]] under an operation
 - definition
 - example for a closed set and not closed [[set]]
 Back: 

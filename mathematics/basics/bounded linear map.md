@@ -1,19 +1,27 @@
 ### bounded linear map
 - given two [[banach space|banach spaces]] $(X, +, \cdot, ||\cdot||_X)$ and $(Y, \oplus, \odot , ||\cdot||_Y)$ and a [[linear map]] $A: X\rightarrow Y$
 - $A$ is a [[bounded linear map]] if the followng is true
+
+1) [[bounded set|boundedness]]
+
 $$
 \exists C>0: \forall x \in X : ||Ax||_Y \leq C ||x||_X
 $$
+2) [[linear map|linearity]]
+
 $$
 \forall x_1,x_2 \in X, \lambda , \mu \in \mathbb{R}:F(\lambda x_1 + \mu x_2) = \lambda \odot F(x_1) \oplus \mu \odot F(x_2) 
 $$
 
-- it says that the [[image]] of a [[bounded set]] also has to be a [[bounded set]]
 - we define $L(X,Y)$ as the [[set]] of all [[bounded linear map|bounded linear maps]] mapping from $X$ to $Y$
 $$
 L(X,Y) = \{A: X\to Y: A \text{ is linear and bounded}\}
 $$
 - every [[bounded linear map]] in a finite space can be expressed as a [[matrix]]
+
+$$
+f(x): \mathbb{R}^{m} \to \mathbb{R}^{n} = Ax
+$$
 
 ### bounded linear maps are a [[banach space]]
 - every [[bounded linear map]] has a [[operator norm]] and is [[cauchy complete]] and thus is a [[banach space]]
@@ -40,26 +48,34 @@ TODO add proof
 START
 Basic
 definition: [[bounded linear map]] and related concepts (3)
-- relationship to [[bounded set]]
-- relationship to [[matrix]]
+- general form
 Back: 
 
 ### bounded linear map
 - given two [[banach space|banach spaces]] $(X, +, \cdot, ||\cdot||_X)$ and $(Y, \oplus, \odot , ||\cdot||_Y)$ and a [[linear map]] $A: X\rightarrow Y$
 - $A$ is a [[bounded linear map]] if the followng is true
+
+1) [[bounded set|boundedness]]
+
 $$
 \exists C>0: \forall x \in X : ||Ax||_Y \leq C ||x||_X
 $$
+2) [[linear map|linearity]]
+
 $$
 \forall x_1,x_2 \in X, \lambda , \mu \in \mathbb{R}:F(\lambda x_1 + \mu x_2) = \lambda \odot F(x_1) \oplus \mu \odot F(x_2) 
 $$
 
-- it says that the [[image]] of a [[bounded set]] also has to be a [[bounded set]]
 - we define $L(X,Y)$ as the [[set]] of all [[bounded linear map|bounded linear maps]] mapping from $X$ to $Y$
 $$
 L(X,Y) = \{A: X\to Y: A \text{ is linear and bounded}\}
 $$
 - every [[bounded linear map]] in a finite space can be expressed as a [[matrix]]
+
+$$
+f(x): \mathbb{R}^{m} \to \mathbb{R}^{n} = Ax
+$$
+
 __________________
 
 
@@ -136,19 +152,27 @@ __________________
 ### bounded linear map
 - given two [[banach space|banach spaces]] $(X, +, \cdot, ||\cdot||_X)$ and $(Y, \oplus, \odot , ||\cdot||_Y)$ and a [[linear map]] $A: X\rightarrow Y$
 - $A$ is a [[bounded linear map]] if the followng is true
+
+1) [[bounded set|boundedness]]
+
 $$
 \exists C>0: \forall x \in X : ||Ax||_Y \leq C ||x||_X
 $$
+2) [[linear map|linearity]]
+
 $$
 \forall x_1,x_2 \in X, \lambda , \mu \in \mathbb{R}:F(\lambda x_1 + \mu x_2) = \lambda \odot F(x_1) \oplus \mu \odot F(x_2) 
 $$
 
-- it says that the [[image]] of a [[bounded set]] also has to be a [[bounded set]]
 - we define $L(X,Y)$ as the [[set]] of all [[bounded linear map|bounded linear maps]] mapping from $X$ to $Y$
 $$
 L(X,Y) = \{A: X\to Y: A \text{ is linear and bounded}\}
 $$
 - every [[bounded linear map]] in a finite space can be expressed as a [[matrix]]
+
+$$
+f(x): \mathbb{R}^{m} \to \mathbb{R}^{n} = Ax
+$$
 
 ### linear map
 - let $F:V \rightarrow W$ be a [[function]] from one [[vector space]] $(V, +, \cdot)$ to another [[vector space]] $(W,\oplus, \odot)$ 
