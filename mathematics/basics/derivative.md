@@ -172,7 +172,7 @@ DF(A)[H]
 &= trace\left(x\left(Ax -b\right)^\top H\right) \\
 &= trace\left(x\left(x^\top A^\top  -b^\top\right) H\right) \\
 &= trace\left(\left(xx^\top A^\top  -xb^\top\right) H\right) \\
-&= \left\langle xx^\top A^\top  -xb^\top, H \right\rangle_F \\
+&= \left\langle\left(xx^\top A^\top  -xb^\top\right)^\top, H \right\rangle_F \\
 DF(A)
 &= \left(xx^\top A^\top  -xb^\top\right)^\top\\
 \nabla F(A)
@@ -223,10 +223,9 @@ Df(x)[h]
 &= \left(Ax -b\right)^\top Ah \\
 Df(x)
 &= \left(Ax -b\right)^\top A \\
-&=  A^\top \left(Ax -b\right) \\
 \nabla f (x)
-&= \left(A^\top \left(Ax -b\right)\right)^\top \\
-&= \left(Ax -b\right)^\top A \\
+&= \left(\left(Ax -b\right)^\top A\right)^\top \\
+&= A^\top\left(Ax -b\right)  \\
 \end{split}
 $$
 
@@ -1212,10 +1211,9 @@ Df(x)[h]
 &= \left(Ax -b\right)^\top Ah \\
 Df(x)
 &= \left(Ax -b\right)^\top A \\
-&=  A^\top \left(Ax -b\right) \\
 \nabla f (x)
-&= \left(A^\top \left(Ax -b\right)\right)^\top \\
-&= \left(Ax -b\right)^\top A \\
+&= \left(\left(Ax -b\right)^\top A\right)^\top \\
+&= A^\top\left(Ax -b\right)  \\
 \end{split}
 $$
 
@@ -1483,7 +1481,7 @@ $$
 \end{split}
 $$
 
-- a [[scalar]] is its own [[trace]] and$\mathrm{trace}(AB) = \mathrm{trace}(BA)$
+- a [[scalar]] is its own [[trace]] and $\mathrm{trace}(AB) = \mathrm{trace}(BA)$
 
 
 $$
@@ -1495,7 +1493,7 @@ DF(A)[H]
 &= trace\left(x\left(Ax -b\right)^\top H\right) \\
 &= trace\left(x\left(x^\top A^\top  -b^\top\right) H\right) \\
 &= trace\left(\left(xx^\top A^\top  -xb^\top\right) H\right) \\
-&= \left\langle xx^\top A^\top  -xb^\top, H \right\rangle_F \\
+&= \left\langle\left(xx^\top A^\top  -xb^\top\right)^\top, H \right\rangle_F \\
 DF(A)
 &= \left(xx^\top A^\top  -xb^\top\right)^\top\\
 \nabla F(A)
@@ -1629,7 +1627,7 @@ DF(A)[H]
 &= trace\left(x\left(Ax -b\right)^\top H\right) \\
 &= trace\left(x\left(x^\top A^\top  -b^\top\right) H\right) \\
 &= trace\left(\left(xx^\top A^\top  -xb^\top\right) H\right) \\
-&= \left\langle xx^\top A^\top  -xb^\top, H \right\rangle_F \\
+&= \left\langle\left(xx^\top A^\top  -xb^\top\right)^\top, H \right\rangle_F \\
 DF(A)
 &= \left(xx^\top A^\top  -xb^\top\right)^\top\\
 \nabla F(A)
