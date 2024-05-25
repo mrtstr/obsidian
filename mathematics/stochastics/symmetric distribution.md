@@ -3,7 +3,7 @@
 ### Definition
 A [[distribution]] is symmetric around its mean iff $f_X(\mu + x) = f_X(\mu - x)$
 
-### [[CDF]] of [[distribution|distributions]] that are symmetric around its mean
+### [[cumulative distribution function (CDF)]] of [[distribution|distributions]] that are symmetric around its mean
 $$
 \begin{split}
 f_X(\mu + x) = f_X(\mu - x) 
@@ -27,7 +27,7 @@ $$
 ### Definition
 A [[distribution]] is symmetric around its zero iff $f_X(x) = f_X(- x)$
 ![[1680838682257.jpg]]
-### [[CDF]] of [[distribution|distributions]] that are symmetric around its zero
+### [[cumulative distribution function (CDF)]] of [[distribution|distributions]] that are symmetric around its zero
 $$
 \begin{split}
 f_X(x) = f_X(- x) 
@@ -73,14 +73,14 @@ START
 Basic
 [[symmetric distribution]] (around its mean)
 - definition
-- [[CDF]] (proof)
+- [[cumulative distribution function (CDF)]] (proof)
 
 Back: 
 ## symmetric around its mean
 ### Definition
 A [[distribution]] is symmetric around its mean iff $f_X(\mu + x) = f_X(\mu - x)$
 
-### [[CDF]] of [[distribution|distributions]] that are symmetric around its mean
+### [[cumulative distribution function (CDF)]] of [[distribution|distributions]] that are symmetric around its mean
 $$
 \begin{split}
 f_X(\mu + x) = f_X(\mu - x) 
@@ -111,14 +111,14 @@ START
 Basic
 [[symmetric distribution]] (around its zero)
 - definition
-- [[CDF]] (proof)
+- [[cumulative distribution function (CDF)]] (proof)
 - [[quantile function]] (proof)
 Back: 
 ## symmetric around zero
 ### Definition
 A [[distribution]] is symmetric around its zero iff $f_X(x) = f_X(- x)$
 ![[1680838682257.jpg]]
-### [[CDF]] of [[distribution|distributions]] that are symmetric around its zero
+### [[cumulative distribution function (CDF)]] of [[distribution|distributions]] that are symmetric around its zero
 $$
 \begin{split}
 f_X(x) = f_X(- x) 

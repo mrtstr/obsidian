@@ -9,7 +9,7 @@ f_X(X = x)=
 ,& \text{otherwise}
 \end{cases}
 $$
-## [[CDF]]
+## [[cumulative distribution function (CDF)]]
 
 $$
 \begin{split}
@@ -33,7 +33,7 @@ F_X(x)&=
 \end{split}
 $$
 ## [[quantile function]]
-Because [[CDF]] is continuous we can calculate $Q_X(p) = F^{-1}_X(p)$ by rearranging $p=\frac{x-a}{b-a}$:
+Because [[cumulative distribution function (CDF)]] is continuous we can calculate $Q_X(p) = F^{-1}_X(p)$ by rearranging $p=\frac{x-a}{b-a}$:
 $$
 Q_X(p): [0,1] \mapsto \mathbb{R} = a+p(b-a)
 $$
@@ -44,7 +44,7 @@ Basic
 [[continous uniform distribution]]
 - verbal definition
 - [[probability density function]]
-- [[CDF]]
+- [[cumulative distribution function (CDF)]]
 - [[quantile function]]
 
 Back: 
@@ -60,7 +60,7 @@ f_X(X = x)=
 ,& \text{otherwise}
 \end{cases}
 $$
-## [[CDF]]
+## [[cumulative distribution function (CDF)]]
 
 $$
 \begin{split}
@@ -84,7 +84,7 @@ F_X(x)&=
 \end{split}
 $$
 ## [[quantile function]]
-Because [[CDF]] is continuous we can calculate $Q_X(p) = F^{-1}_X(p)$ by rearranging $p=\frac{x-a}{b-a}$:
+Because [[cumulative distribution function (CDF)]] is continuous we can calculate $Q_X(p) = F^{-1}_X(p)$ by rearranging $p=\frac{x-a}{b-a}$:
 $$
 Q_X(p): [0,1] \mapsto \mathbb{R} = a+p(b-a)
 $$

@@ -38,7 +38,7 @@ $$
 
 ## [[probability integral transformation|transformation]] from [[standard normal distribution]] to a [[normal distribution]]
 
-### [[probability density function]] and [[CDF]]
+### [[probability density function]] and [[cumulative distribution function (CDF)]]
 $$
 \begin{split}
 X &\sim \phi(x) = f_X(x | \mu = 0, \sigma^2 =1)  \\
@@ -144,10 +144,10 @@ START
 Basic
 [[probability integral transformation|transformation]] from [[standard normal distribution]] to a [[normal distribution]]
 - [[probability density function]]
-- [[CDF]]
+- [[cumulative distribution function (CDF)]]
 Back: 
 
-### [[probability density function]] and [[CDF]]
+### [[probability density function]] and [[cumulative distribution function (CDF)]]
 $$
 \begin{split}
 X &\sim \phi(x) = f_X(x | \mu = 0, \sigma^2 =1)  \\
@@ -212,7 +212,7 @@ $$
 \end{split}
 $$
 
-### given the [[CDF]]
+### given the [[cumulative distribution function (CDF)]]
 $$
 \begin{split}
 X &\sim \phi(x) = f_X(x | \mu = 0, \sigma^2 =1)  \\

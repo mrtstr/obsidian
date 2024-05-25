@@ -200,7 +200,7 @@ END
 START
 Basic
 Let $X_1,X_2,X_3$ be independent lifetimes of memory chips. Suppose that each $X_i$ has the normal distribution with mean 300 hours and standard deviation 10 hours. Compute the probability that at least one of the three chips lasts at least 290 hours.
-- give result based on the [[standard normal distribution]] [[CDF]] $\Phi(x)$
+- give result based on the [[standard normal distribution]] [[cumulative distribution function (CDF)]] $\Phi(x)$
 Back: 
 $$
 \begin{split}

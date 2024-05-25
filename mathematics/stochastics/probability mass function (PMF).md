@@ -10,16 +10,10 @@ $$
 A [[random variable]] in a [[probability space]] is a mapping from the [[sample space]] to a [[measurable space]] (often real numbers). A [[probability mass function (PMF)]] is a [[random variable]] that can take only a finite number of values or at most infinite but [[countable]] number of values.
 
 
-### discrete random variable
-$$
-X: \Omega \mapsto \mathbb{R}
-$$
-For every [[set]] of real values  $\left\{\omega \mid X(\omega \in \Omega) \in C\right\} \in \mathcal{F}$, we can define a [[probability]] that $X$ takes a value inside $C$. This can be defined in the original [[probability space]] with the corresponding [[event]] $\left\{\omega \mid X(\omega \in \Omega) \in C\right\} \in \mathcal{F}$ inside the [[event space]].
-$$
-P(X \in C) = P\left(\left\{\omega \mid X(\omega) \in C\right\}\right)
-$$
+
 # ----------------------
-[[random variable]]
+
+![[probability space#probability space]]
 
 ![[discrete distribution#discrete distribution]]
 

@@ -1,4 +1,4 @@
-## Cumulative distribution function
+### cumulative distribution function (CDF)
 Probability that a [[probability mass function (PMF)]] will take a greater or equal value to the given value.
 ## Properties 
 1) $F_X:\Omega \mapsto [0,1]$
@@ -31,9 +31,9 @@ Approximated CDF from [[statistical sample|samples]]
 $\widehat{F}_X(x)=\frac{1}{n} \sum\limits_{i=1}^n\mathbb{I}[x_i \leq x]$ 
 
 ## relationship to the [[quantile function]] $Q_X(q)$
-- $Q_X(q)$ is the smallest values with a [[CDF]] less or equal than $q$  
+- $Q_X(q)$ is the smallest values with a [[cumulative distribution function (CDF)]] less or equal than $q$  
 $$Q_X(q) = \inf\left\{x \mid q \leq F_X(x)\right\}$$
-- $Q_X(q)$ is the inverse of the [[CDF]]
+- $Q_X(q)$ is the inverse of the [[cumulative distribution function (CDF)]]
 $$Q_X(q)=F_X^{-1}(q)\quad with \: q = F_X(x)=P(X \leq x)$$
 
 
@@ -81,9 +81,9 @@ Basic
  Relationship CDF $F_X(q)$ and [[quantile function]] $Q_X(q)$
 Back: 
 
-- $Q_X(q)$ is the smallest values with a [[CDF]] less or equal than $q$  
+- $Q_X(q)$ is the smallest values with a [[cumulative distribution function (CDF)]] less or equal than $q$  
 $$Q_X(q) = \inf\left\{x \mid q \leq F_X(x)\right\}$$
-- $Q_X(q)$ is the inverse of the [[CDF]]
+- $Q_X(q)$ is the inverse of the [[cumulative distribution function (CDF)]]
 $$Q_X(q)=F_X^{-1}(q)\quad with \: q = F_X(x)=P(X \leq x)$$
 
 Tags: mathematics statistics
@@ -94,8 +94,8 @@ END
 START
 Basic
 - Definition of $F_X(x^+)$ and $F_X(x^-)$
-- continuity of ([[discrete distribution|discrete]] and [[continuous random variable|continuous]]) [[CDF]]
-- $P(X<x)$ and $P(X=x)$ in relationship to the limits of the [[CDF]]
+- continuity of ([[discrete distribution|discrete]] and [[continuous random variable|continuous]]) [[cumulative distribution function (CDF)]]
+- $P(X<x)$ and $P(X=x)$ in relationship to the limits of the [[cumulative distribution function (CDF)]]
 Back: 
 ## limits
 $$

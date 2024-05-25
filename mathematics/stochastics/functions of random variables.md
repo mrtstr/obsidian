@@ -90,9 +90,9 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} = \frac{dF_X\left(\frac{y-b}{a}\right)}{dy} f_{
 $$
 
 ## [[continuous random variable]] with $g(X)=F_X(X)$
-- $X$ is a [[continuous random variable]] with a [[CDF]] $F_X(x)$
-- $Y$ is a [[functions of random variables|function of]] $X$ with the function being the [[CDF]] of $X$ $Y=F_X(X)$
-Then $Y \sim U(0,1)$ has [[continous uniform distribution|uniform distribution]] and its [[CDF]] is $F_Y(y) = y$.
+- $X$ is a [[continuous random variable]] with a [[cumulative distribution function (CDF)]] $F_X(x)$
+- $Y$ is a [[functions of random variables|function of]] $X$ with the function being the [[cumulative distribution function (CDF)]] of $X$ $Y=F_X(X)$
+Then $Y \sim U(0,1)$ has [[continous uniform distribution|uniform distribution]] and its [[cumulative distribution function (CDF)]] is $F_Y(y) = y$.
 
 #### Proof
 $$
@@ -110,7 +110,7 @@ START
 Basic
 functions of random variables: [[probability mass function (PMF)|discrete case]] with an arbitrary [[function]]
 - [[probability function]] $f_Y(y)$ of the transformed [[random variable]] $Y=g(X)$
-- [[CDF]] $F_Y(y)$ of the transformed [[random variable]] $Y=g(X)$
+- [[cumulative distribution function (CDF)]] $F_Y(y)$ of the transformed [[random variable]] $Y=g(X)$
 Back: 
  $X$ is a [[probability mass function (PMF)]] with a [[probability function]] $f_X(x)$
 - $Y=g(X)$ with an arbitrary [[function]] $g$
@@ -172,7 +172,7 @@ Basic
 - - general case: [[inverse function]] $g^{-1}(X)$ unknown
 
 
-- [[CDF]] of the transformed [[random variable]] $F_Y(y)$
+- [[cumulative distribution function (CDF)]] of the transformed [[random variable]] $F_Y(y)$
 - [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
 
 Back: 
@@ -204,7 +204,7 @@ Basic
 - $Y=g(X)$ with an arbitrary [[function]] $g$
 - [[inverse function]] $g^{-1}(X)$ known
 
-- [[CDF]] of the transformed [[random variable]] $F_Y(y)$
+- [[cumulative distribution function (CDF)]] of the transformed [[random variable]] $F_Y(y)$
 - [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
 
 Back: 
@@ -241,7 +241,7 @@ $$
 - $Y=g(X)=X^2$
 
 
-- [[CDF]] of the transformed [[random variable]] $F_Y(y)$
+- [[cumulative distribution function (CDF)]] of the transformed [[random variable]] $F_Y(y)$
 - [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
 Back: 
 $$
@@ -266,11 +266,11 @@ END
 START
 Basic
 [[functions of random variables|function]] of [[continuous random variable]] with $g(X)=F_X(X)$
-- $X$ is a [[continuous random variable]] with a [[CDF]] $F_X(x)$
-- $Y$ is a [[functions of random variables|function of]] $X$ with the function being the [[CDF]] of $X$ $Y=F_X(X)$
+- $X$ is a [[continuous random variable]] with a [[cumulative distribution function (CDF)]] $F_X(x)$
+- $Y$ is a [[functions of random variables|function of]] $X$ with the function being the [[cumulative distribution function (CDF)]] of $X$ $Y=F_X(X)$
 how is $Y$ distributed? (with proof)
 Back: 
-$Y \sim U(0,1)$ has [[continous uniform distribution|uniform distribution]] and its [[CDF]] is $F_Y(y) = y$.
+$Y \sim U(0,1)$ has [[continous uniform distribution|uniform distribution]] and its [[cumulative distribution function (CDF)]] is $F_Y(y) = y$.
 Proof
 $$
 \begin{split}

@@ -14,7 +14,7 @@ f(x) = 1/x 1/sqrt(2*PI) exp(-log(x)^2 / 2)
 g(x) = 1/sqrt(2*PI) exp(-x^2 / 2)
 ```
 
-## [[CDF]]
+## [[cumulative distribution function (CDF)]]
 $$
 F_X\left(x \: | \: \mu, \sigma^2\right) = 
 F_Y\left(log(x) \: | \: \mu, \sigma^2\right)
@@ -58,12 +58,12 @@ $$
 START
 Basic
 [[log normal distribution]]
-- [[CDF]] (with proof)
+- [[cumulative distribution function (CDF)]] (with proof)
 - [[probability density function]] (with proof)
 Back: 
 - A [[random variable]] $X$ is [[log normal distribution|log normal distributed]] if $Y=log(X) \sim f_Y\left(y|\mu, \sigma^2\right)$ is [[normal distribution|normal distributed]]
 
-## [[CDF]]
+## [[cumulative distribution function (CDF)]]
 $$
 F_X\left(x \: | \: \mu, \sigma^2\right) = 
 F_Y\left(log(x) \: | \: \mu, \sigma^2\right)

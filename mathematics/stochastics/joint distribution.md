@@ -123,8 +123,8 @@ $$
 ![[Screenshot from 2022-12-11 11-08-42.png]]
 
 
-## Joint [[CDF]]
-For the bivariante [[random variable]] $X,Y$ with the [[CDF|joint CDF]] $F_{XY}(x,y)$ and the multivariate [[random variable]] $\boldsymbol{X} =X_1,...,X_n$ with the [[CDF|joint CDF]] $F_{\boldsymbol{X}}(\boldsymbol{x})$.
+## Joint [[cumulative distribution function (CDF)]]
+For the bivariante [[random variable]] $X,Y$ with the [[cumulative distribution function (CDF)|joint CDF]] $F_{XY}(x,y)$ and the multivariate [[random variable]] $\boldsymbol{X} =X_1,...,X_n$ with the [[cumulative distribution function (CDF)|joint CDF]] $F_{\boldsymbol{X}}(\boldsymbol{x})$.
 
 - $F_{XY}(x,y)=P(X \leq x, Y \leq y)$ and $F_{\boldsymbol{X}}(\boldsymbol{x})=P(X_1 \leq x_1, ..., X_n \leq x_n)$
 - $X \perp Y \Leftrightarrow F_{XY}(x, y) = F_X(x)F_Y(y)$ and $\perp \boldsymbol{X} \Leftrightarrow F_{\boldsymbol{X}}(\boldsymbol{x}) = \prod\limits_{i=1}^n F_{X_i}(x_i)$
@@ -284,8 +284,8 @@ END
 
 START
 Basic
-[[CDF|joint CDF]]:
-For the bivariante [[random variable]] $X,Y$ with the [[CDF|joint CDF]] $F_{XY}(x,y)$ and the multivariate [[random variable]] $\boldsymbol{X} =X_1,...,X_n$ with the [[CDF|joint CDF]] $F_{\boldsymbol{X}}(\boldsymbol{x})$.
+[[cumulative distribution function (CDF)|joint CDF]]:
+For the bivariante [[random variable]] $X,Y$ with the [[cumulative distribution function (CDF)|joint CDF]] $F_{XY}(x,y)$ and the multivariate [[random variable]] $\boldsymbol{X} =X_1,...,X_n$ with the [[cumulative distribution function (CDF)|joint CDF]] $F_{\boldsymbol{X}}(\boldsymbol{x})$.
 - definition
 - of [[stochastic independent]] [[random variable]]
 - marginal CDF
