@@ -58,7 +58,7 @@ $$
 
 For the bivariante [[random variable]] $X,Y$ with the [[probability density function]] $f_{XY}(x,y)$ and the multivariate [[random variable]] $\boldsymbol{X} =X_1,...,X_n$ with the [[probability density function]] $f_{\boldsymbol{X}}(\boldsymbol{x})$.
 
-- Joint PDFs encode the marginal distributions of each [[discrete random variable]]
+- Joint PDFs encode the marginal distributions of each [[probability mass function (PMF)]]
 $$f_X(x) = \int\limits_{-\infty}^{\infty} f_{XY}(x,y) \: dy$$
 $$
 f_{X_1}(x_1) = 
@@ -212,7 +212,7 @@ properties (5) of the [[probability density function|continuous joint PDF]] or t
 Back: 
 
 
-- Joint PDFs encode the marginal distributions of each [[discrete random variable]]
+- Joint PDFs encode the marginal distributions of each [[probability mass function (PMF)]]
 $$f_X(x) = \int\limits_{-\infty}^{\infty} f_{XY}(x,y) \: dy$$
 $$
 f_{X_1}(x_1) = 

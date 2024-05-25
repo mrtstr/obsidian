@@ -1,3 +1,3 @@
-[[discrete random variable]]
+[[probability mass function (PMF)]]
 [[discrete distribution]]
 [[probability density function]]

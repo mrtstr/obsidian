@@ -1,7 +1,7 @@
 ## sample space $\Omega$
-- part of a [[random process]]
+- part of a [[random process]] $(\Omaga, )$
 - all possible outcomes
-- all values a [[discrete random variable]] can take
+- all values a [[probability mass function (PMF)]] can take
 - e.g. for a dice throw $\Omega = \left\{1,2,3,4,5,6\right\}$
 
 
@@ -16,7 +16,10 @@
 ## simple [[sample space]]
 finite [[sample space]] with $\forall s_i, s_j \in \Omega: P(s_i) = P(s_j)$
 
+# ----------------
+![[probability space#probability space]]
 
+# anki
 START
 Basic
 sample space
@@ -26,7 +29,7 @@ Back:
 ## sample space $\Omega$
 - part of a [[random process]]
 - all possible outcomes
-- all values a [[discrete random variable]] can take
+- all values a [[probability mass function (PMF)]] can take
 - e.g. for a dice throw $\Omega = \left\{1,2,3,4,5,6\right\}$
 
 

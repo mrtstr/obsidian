@@ -7,8 +7,8 @@ $$
 &\boldsymbol{g}: \mathbb{R}^n  \mapsto \mathbb{R}^m: \boldsymbol{g}(\boldsymbol{X}) = \boldsymbol{Y}
 \end{split}
 $$
-## [[discrete random variable|discrete]] case
-- $\boldsymbol{X} = (X_1, ..., X_n)$ is a [[discrete random variable|discrete]] [[vector notation|multidimensional]] [[random variable]] with a [[joint probability function]]  $f_{\boldsymbol{X}}(\boldsymbol{x})$
+## [[probability mass function (PMF)|discrete]] case
+- $\boldsymbol{X} = (X_1, ..., X_n)$ is a [[probability mass function (PMF)|discrete]] [[vector notation|multidimensional]] [[random variable]] with a [[joint probability function]]  $f_{\boldsymbol{X}}(\boldsymbol{x})$
 - $\boldsymbol{Y} = (Y_1, ..., Y_n) = \boldsymbol{g}(\boldsymbol{X})$
 The [[joint probability function]] $f_{\boldsymbol{Y}}(\boldsymbol{y})$ is defined as follows
 $$
@@ -79,7 +79,7 @@ END
 START
 Basic
 [[functions of multiple random variables]]
-- $\boldsymbol{X} = (X_1, ..., X_n)$ is a [[discrete random variable|discrete]] [[vector notation|multidimensional]] [[random variable]] with a [[joint probability function]]  $f_{\boldsymbol{X}}(\boldsymbol{x})$
+- $\boldsymbol{X} = (X_1, ..., X_n)$ is a [[probability mass function (PMF)|discrete]] [[vector notation|multidimensional]] [[random variable]] with a [[joint probability function]]  $f_{\boldsymbol{X}}(\boldsymbol{x})$
 - $\boldsymbol{Y} = (Y_1, ..., Y_n) = \boldsymbol{g}(\boldsymbol{X})$
 $$
 \begin{split}

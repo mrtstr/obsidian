@@ -1,11 +1,11 @@
-random variable
-Given a [[random variable|discrete]] [[random variable]] (can take only finite or at least [[countable]] values)  $X: \Omega \mapsto \mathbb{R}$ on a [[sample space]] $\Omega$ we can derive [[event|events]] for all [[set|sets]] of real values $C \subseteq \mathbb{R}$ on the original [[probability space]]. The [[discrete distribution]] of a [[discrete random variable]] is the collection of the [[probability|probabilities]] of these [[event|events]] $X \in C$.
+### discrete distribution
+Given a [[random variable|discrete]] [[random variable]] (can take only finite or at least [[countable]] values)  $X: \Omega \mapsto \mathbb{R}$ on a [[sample space]] $\Omega$ we can derive [[event|events]] for all [[set|sets]] of real values $C \subseteq \mathbb{R}$ on the original [[probability space]]. The [[discrete distribution]] of a [[probability mass function (PMF)]] is the collection of the [[probability|probabilities]] of these [[event|events]] $X \in C$.
 $$
 \left\{P(X \in C) \mid C \subseteq \mathbb{R} \right\} = \left\{P\left(\left\{\omega \mid X(\omega) \in C\right\} \right) \mid C \subseteq \mathbb{R}\right\}
 $$
 
 ### Example: tossing a coin 10 times
-The [[sample space]] is containing all possible outcomes $\Omega = \left\{H, T\right\}^{10}$ with $\left|\Omega\right|=2^{10}$. We can define a [[discrete random variable]] on $\Omega$ that is counting the number of heads $X: \Omega \mapsto \left\{1,..,10\right\}$. 
+The [[sample space]] is containing all possible outcomes $\Omega = \left\{H, T\right\}^{10}$ with $\left|\Omega\right|=2^{10}$. We can define a [[probability mass function (PMF)]] on $\Omega$ that is counting the number of heads $X: \Omega \mapsto \left\{1,..,10\right\}$. 
 For every [[set]] of numbers we can define an [[event]] with a [[probability]].
 $$
 \begin{split}
@@ -34,12 +34,12 @@ $$
 
 START
 Basic
-[[discrete distribution]] of a [[discrete random variable]]:
+[[discrete distribution]] of a [[probability mass function (PMF)]]:
 - definition
 - example
 Back: 
-Given a [[discrete random variable]] $X: \Omega \mapsto \mathbb{R}$ on a [[sample space]] $\Omega$ we can derive [[event|events]] for all [[set|sets]] of real values $C \subseteq \mathbb{R}$ on the original [[probability space]].
-The [[discrete distribution]] of a [[discrete random variable]] is the collection of the [[probability|probabilities]] of these [[event|events]] $X \in C$.
+Given a [[probability mass function (PMF)]] $X: \Omega \mapsto \mathbb{R}$ on a [[sample space]] $\Omega$ we can derive [[event|events]] for all [[set|sets]] of real values $C \subseteq \mathbb{R}$ on the original [[probability space]].
+The [[discrete distribution]] of a [[probability mass function (PMF)]] is the collection of the [[probability|probabilities]] of these [[event|events]] $X \in C$.
 $$
 
 \left\{P(X \in C) \mid C \subseteq \mathbb{R} \right\} = \left\{P\left(\left\{\omega \mid X(\omega) \in C\right\} \right) \mid C \subseteq \mathbb{R}\right\}

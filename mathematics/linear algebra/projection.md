@@ -24,6 +24,12 @@ $$
 \end{split}
 $$
 
+$$
+\underbrace{||proj_a(b)||}_{\cos{\phi} \cdot ||b||} \cdot ||a|| 
+=
+\underbrace{||proj_b(a)||}_{\cos{\phi} \cdot ||a||} \cdot ||b||
+$$
+
 ### [[projection]] into the [[column space]]
 Projection of a [[vector]] $b$ to the [[column space]] of [[matrix]] $A$
 - $b - Ax$ has to be [[orthogonal]] to the [[column space]] of $A$
@@ -163,4 +169,53 @@ $$
 
 Tags: mathematics
 <!--ID: 1715272168170-->
+END
+
+
+START
+Basic
+- proof and geometric interpretation for the following
+$$
+||proj_a(b)||  \cdot ||a|| 
+=
+||proj_b(a)||  \cdot ||b||
+$$
+Back: 
+$$
+\underbrace{||proj_a(b)||}_{\cos{\phi} \cdot ||b||} \cdot ||a|| 
+=
+\underbrace{||proj_b(a)||}_{\cos{\phi} \cdot ||a||} \cdot ||b||
+$$
+### relationship [[projection]] to the [[cosine]]
+- the [[cosine]] is the length of the [[projection]] of a [[vector]] $a$ to a [[vector]] $b$ devided by the length of $a$
+$$
+\begin{split}
+\cos(\phi) = \frac{ankathte}{hypotenuse} = \frac{||b'||}{||a||} = 
+\frac{||proj_b(a)||}{||a||} = \frac{\langle a,b\rangle}{||a||\cdot||b||}
+\end{split}
+$$
+![[projection 7.jpg]]
+
+
+### [[projection]] of [[vector|vectors]] on eachother
+- let $b'$ be the projection of [[vector]] $a$ on [[vector]] $b$
+- the length of $b'$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $proj_b(a) = b$ does not depend on the length of $b$)
+
+$$
+||proj_b(a)||=||b'|| = \frac{\langle a,b \rangle}{||b||}
+$$
+- since $b'$ has the same direction as b the following is true
+$$
+proj_b(a) = b' = \frac{\langle a,b \rangle}{||b||} \frac{b}{||b||}
+$$
+
+
+#### relationship [[inner product]] to [[projection]]
+
+- given a [[vector]] $a$ and a [[vector]] $b$ then $\langle a, b \rangle$ is equal to the length of the [[projection]] of $a$ on $b$ [[multiplication|multiplied]] with the length of $b$ (and vice versa) 
+- thus the [[inner product]] contains the information about the (unnormalized) length of the [[projection]] of one [[vector]] to another
+
+
+Tags: mathematics
+<!--ID: 1716645825924-->
 END

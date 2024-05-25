@@ -1,4 +1,4 @@
-[[probability density function]] of a [[discrete random variable]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
+[[probability density function]] of a [[probability mass function (PMF)]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
 ## [[probability density function]]
 $$
 f_X(X = x)=
@@ -48,7 +48,7 @@ Basic
 - [[quantile function]]
 
 Back: 
-[[probability density function]] of a [[discrete random variable]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
+[[probability density function]] of a [[probability mass function (PMF)]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
 
 ## probability function
 $$

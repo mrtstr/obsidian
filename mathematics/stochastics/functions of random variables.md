@@ -1,8 +1,8 @@
 [[function|functions]] of [[random variable|random variables]]
 
 
-# [[discrete random variable|discrete case]] with an arbitrary [[function]]
-- $X$ is a [[discrete random variable]] with a [[probability function]] $f_X(x)$
+# [[probability mass function (PMF)|discrete case]] with an arbitrary [[function]]
+- $X$ is a [[probability mass function (PMF)]] with a [[probability function]] $f_X(x)$
 - $Y=g(X)$ with an arbitrary [[function]] $g$
 $$
 f_{Y}(y)=P(Y=y)=P(g(X)=y)=\sum\limits_{x_i \in \{x \mid g(x)=y \}} f_X(x_i)
@@ -108,11 +108,11 @@ $$
 
 START
 Basic
-functions of random variables: [[discrete random variable|discrete case]] with an arbitrary [[function]]
+functions of random variables: [[probability mass function (PMF)|discrete case]] with an arbitrary [[function]]
 - [[probability function]] $f_Y(y)$ of the transformed [[random variable]] $Y=g(X)$
 - [[CDF]] $F_Y(y)$ of the transformed [[random variable]] $Y=g(X)$
 Back: 
- $X$ is a [[discrete random variable]] with a [[probability function]] $f_X(x)$
+ $X$ is a [[probability mass function (PMF)]] with a [[probability function]] $f_X(x)$
 - $Y=g(X)$ with an arbitrary [[function]] $g$
 
 $$

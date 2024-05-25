@@ -1,7 +1,7 @@
 
 ## Quantile or percentile function
 - $Q_X:[0,1] \mapsto \mathbb{R}$ 
-- For a given probability $q$: $Q_X(q)$ gives the value that a [[discrete random variable]] $X$ will not exceed with a probability of $q$.
+- For a given probability $q$: $Q_X(q)$ gives the value that a [[probability mass function (PMF)]] $X$ will not exceed with a probability of $q$.
 - $Q_X(q)$ is the smallest values with a [[CDF]] less or equal than $q$  
 $$Q_X(q) = \inf\left\{x \mid q \leq F_X(x)\right\}$$
 - $Q_X(q)$ is the inverse of the [[CDF]]
@@ -17,7 +17,7 @@ quantile function
 - definitions (verbal + 2 equations)
 Back: 
 - $Q_X:[0,1] \mapsto \mathbb{R}$ 
-- For a given probability $q$: $Q_X(q)$ gives the value that a [[discrete random variable]] $X$ will not exceed with a probability of $q$.
+- For a given probability $q$: $Q_X(q)$ gives the value that a [[probability mass function (PMF)]] $X$ will not exceed with a probability of $q$.
 - $Q_X(q)$ is the smallest values with a [[CDF]] greater or equal than $q$  
 $$Q_X(q) = \inf\left\{x \mid q \leq F_X(x)\right\}$$
 - $Q_X(q)$ is the inverse of the [[CDF]]

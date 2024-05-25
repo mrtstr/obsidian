@@ -14,7 +14,7 @@ $$
 f_{X}(x) = 
 \int\limits^{\infty}_{-\infty} f_{X\mid Y}(x \mid y) f_Y(y) dy
 $$
-## [[law of total probability]] for a [[discrete random variable]]
+## [[law of total probability]] for a [[probability mass function (PMF)]]
 $$
 f_{X}(x) = 
 \sum\limits_{all \:y} f_{X\mid Y}(x \mid y) f_Y(y)
@@ -41,7 +41,7 @@ START
 Basic
 [[law of total probability]]
 - [[continuous random variable]] 
-- [[discrete random variable]]
+- [[probability mass function (PMF)]]
 Back: 
 ## [[law of total probability]] for a [[continuous random variable]]
 
@@ -50,7 +50,7 @@ $$
 f_{X}(x) = 
 \int\limits^{\infty}_{-\infty} f_{X\mid Y}(x \mid y) f_Y(y) dy
 $$
-## [[law of total probability]] for a [[discrete random variable]]
+## [[law of total probability]] for a [[probability mass function (PMF)]]
 
 $$
 f_{X}(x) = 

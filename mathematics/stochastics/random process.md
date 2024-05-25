@@ -1,5 +1,5 @@
 - mathematical model for a process with randomness
-- collection of [[discrete random variable|random variables]] in a common [[probability space]]
+- collection of [[probability mass function (PMF)|random variables]] in a common [[probability space]]
 
 
 START
@@ -7,7 +7,7 @@ Basic
 random process
 Back: 
 - mathematical model for a process with randomness
-- collection of [[discrete random variable|random variables]] in a common [[probability space]]
+- collection of [[probability mass function (PMF)|random variables]] in a common [[probability space]]
 Tags: mathematics statistics
 <!--ID: 1664442661956-->
 END

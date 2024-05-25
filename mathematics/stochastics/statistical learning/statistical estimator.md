@@ -1,5 +1,5 @@
 ## Statistical Estimator
-- given [[statistical sample|observations]] of a [[discrete random variable]] $X$ with the unknown [[probability density function]] $f_{X \mid \theta}(x \mid \theta)$
+- given [[statistical sample|observations]] of a [[probability mass function (PMF)]] $X$ with the unknown [[probability density function]] $f_{X \mid \theta}(x \mid \theta)$
 - $\theta$ is a property (often a parameter) of $f_{X \mid \theta}(x \mid \theta)$
 - Goal: calculate an estimation $\widehat{\theta}$ of $\theta$ 
 
@@ -10,7 +10,7 @@ Basic
 statistical estimator
 - verbal definition 
 Back: 
-- given [[statistical sample|observations]] of a [[discrete random variable]] $X$ with the unknown [[probability density function]] $f_{X \mid \theta}(x \mid \theta)$
+- given [[statistical sample|observations]] of a [[probability mass function (PMF)]] $X$ with the unknown [[probability density function]] $f_{X \mid \theta}(x \mid \theta)$
 - $\theta$ is a property (often a parameter) of $f_{X \mid \theta}(x \mid \theta)$
 - Goal: calculate an estimation $\widehat{\theta}$ of $\theta$ 
 Tags: mathematics statistical_learning
@@ -23,7 +23,7 @@ difference statistical estimator and predictor
 
 Back: 
 ### Statistical Estimator
-- given [[statistical sample|observations]] of a [[discrete random variable]] $X$ with the unknown [[probability density function]] $f_{X \mid \theta}(x \mid \theta)$
+- given [[statistical sample|observations]] of a [[probability mass function (PMF)]] $X$ with the unknown [[probability density function]] $f_{X \mid \theta}(x \mid \theta)$
 - $\theta$ is a property (often a parameter) of $f_{X \mid \theta}(x \mid \theta)$
 - Goal: calculate an estimation $\widehat{\theta}$ of $\theta$ 
 

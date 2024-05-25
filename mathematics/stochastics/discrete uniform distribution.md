@@ -1,4 +1,4 @@
-[[discrete distribution]] of a [[discrete random variable]] with the same probability of taking all integers inside a range $\{a,...,b\}$ and 0 for all other values.
+[[discrete distribution]] of a [[probability mass function (PMF)]] with the same probability of taking all integers inside a range $\{a,...,b\}$ and 0 for all other values.
 ### [[probability function]]
 - has the same probability of taking all integers inside a range $\{a,...,b\}$ and 0 for all other values
 
@@ -22,7 +22,7 @@ Basic
 - probability function
 
 Back: 
-[[discrete distribution]] of a [[discrete random variable]] with the same probability of taking all integers inside a range $\{a,...,b\}$ and 0 for all other values.
+[[discrete distribution]] of a [[probability mass function (PMF)]] with the same probability of taking all integers inside a range $\{a,...,b\}$ and 0 for all other values.
 ## probability function
 $$
 f_X(X = x)= P(X = x)

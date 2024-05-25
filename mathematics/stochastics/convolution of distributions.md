@@ -53,7 +53,7 @@ convolutions of [[discrete distribution|discrete distributions]]
 - definition
 - proof
 Back: 
-- given the two [[stochastic independent]] [[discrete random variable]] $X_1 \perp X_2$ with the / [[probability function|probability functions]] $f_{X_1}(x_1)$ and $f_{X_2}(x_2)$
+- given the two [[stochastic independent]] [[probability mass function (PMF)]] $X_1 \perp X_2$ with the / [[probability function|probability functions]] $f_{X_1}(x_1)$ and $f_{X_2}(x_2)$
 - the [[convolution of distributions|convolution of the distributions]] the [[probability function]] of the sum $Y = X_1 + X_2$ $f_Y(y)$
 
 $$

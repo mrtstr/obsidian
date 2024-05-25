@@ -1,46 +1,19 @@
-## Concept
-- Defined for [[random variable]]
-- Generalization of the weighted mean: mean of possible outcomes weighted by its probability
-- defined for [[conditional distribution|conditional distributions]]: [[conditional expectation]] 
-
-## definition
-### [[expectation]] of a [[continuous random variable]] $X$ with a [[probability density function|PDF]] $f_X(x)$:
-$\mathbb{E}[X]=\int\limits_\infty^\infty x f_X(x)dx$  
-
-### [[expectation]] of a [[discrete random variable]] $X$:
-$\mathbb{E}[X]=\sum\limits_{i=0}^\infty x_i p(x_i)$  
-
-## Existance
-The reason that the [[expectation]] fails to exist if both of the sums/integrals are
-infinite is that, in such cases, the sums/integrals in are not well-defined. The sum of an infinite series whose positive and negative terms both add to infinity either fails to converge or can be made to converge to many different values by rearranging the terms in different orders.
-
-### [[discrete random variable]]
-The [[expectation]] of a [[discrete random variable]] $\mathbb{E}[X]$ exists if $\sum\limits_0^\infty x f_X(x) < \infty$ or $\sum\limits_\infty^0 x f_X(x) < \infty$. 
-### [[continuous random variable]]
-The [[expectation]] of a [[continuous random variable]] $\mathbb{E}[X]$ exists if $\int\limits_0^\infty x f_X(x)dx < \infty$ or $\int\limits_\infty^0 x f_X(x)dx < \infty$. 
-
-## [[expectation]] of [[functions of random variables]]
-### definition
+### expectation
+- generalization of the weighted mean: mean of possible outcomes weighted by its probability
+- for a [[continuous random variable]] $X$ with a [[probability density function|PDF]] $f_X(x)$ the [[expectation]] is defined as follows
+$$\mathbb{E}[X]=\int\limits_\infty^\infty x f_X(x)dx$$
+- for a discrete [[random variable]] $X$ with a [[probability mass function (PMF)]] $p$ the [[expectation]] is defined as follows
 $$
-\mathbb{E}[g(X)]=\int\limits_{-\infty}^\infty g(x) \cdot f_X(x)dx
+\mathbb{E}[X]=\sum\limits_{i=0}^\infty x_i p(x_i)
 $$
-$$
-\mathbb{E}[g(X, Y)]=\int\limits_\infty^\infty \int\limits_\infty^\infty g(x,y) \cdot f_{XY}(x,y)dx dy
-$$
-### [[linear map]] $g(X)$
-If $g(X)$ is a [[linear map]] $\mathbb{E}\left[g(X)\right] = g\left(\mathbb{E}[X]\right)$
-proof: see linearity of the [[expectation]]
+### properties of the [[expectation]]
 
-### [[convex function]] $g(X)$
-If $g(X)$ is a [[convex function]] $\mathbb{E}\left[g(X)\right] \geq g\left(\mathbb{E}[X]\right)$
-
-
-## Properties
-### [[expectation]] of the sum of [[random variable|random variables]]
+#### [[linear map|linearity]]
 $$
-\mathbb{E}\left[\sum_{i=1}^n X_i\right]=\sum_{i=1}^n\mathbb{E}\left[ X_i\right]
+\mathbb{E}\left[b +\sum_{i=1}^n a_iX_i\right]= b + \sum_{i=1}^n a_i \mathbb{E}\left[ X_i\right]
+
 $$
-proof for $n=2$
+
 $$
 \begin{split}
 \mathbb{E}\left[X_1 + X_2 \right] &= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty (x_1+x_2) \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
@@ -51,7 +24,7 @@ $$
 &= \mathbb{E}\left[X_1  \right] + \mathbb{E}\left[ X_2 \right]
 \end{split}
 $$
-### [[linearity]]
+
 $$\mathbb{E}[aX+b]=a\mathbb{E}[X]+b$$
 $$
 \begin{split}
@@ -60,12 +33,8 @@ $$
 &= a\mathbb{E}[X] + b \\
 \end{split}
 $$
-Togather with the sum rule it follows
-$$
-\mathbb{E}\left[b +\sum_{i=1}^n a_iX_i\right]= b + \sum_{i=1}^n a_i \mathbb{E}\left[ X_i\right]
 
-$$
-### [[expectation]] of the product of [[stochastic independent]] [[random variable|random variables]]
+#### [[expectation]] of the product of [[stochastic independent]] [[random variable|random variables]]
 $$
 \mathbb{E}\left[\prod_{i=1}^n X_i\right]=\prod_{i=1}^n\mathbb{E}\left[ X_i\right]
 $$
@@ -80,18 +49,54 @@ $$
 \end{split}
 $$
 
-### upper and lower bound
-- If $\exists a$ with $P(X \leq a) = 1$ than $\mathbb{E}\left[X  \right] \leq a$
-- If $\exists a$ with $P(X \geq a) = 1$ than $\mathbb{E}\left[X  \right] \geq a$
+
+### existance of the [[expectation]]
+The reason that the [[expectation]] fails to exist if both of the sums/integrals are
+infinite is that, in such cases, the sums/integrals in are not well-defined. The sum of an infinite series whose positive and negative terms both add to infinity either fails to converge or can be made to converge to many different values by rearranging the terms in different orders.
+
+- for a [[continuous random variable]] $X$:
+
+$$
+\exists \: \mathbb{E}[X] \Leftrightarrow
+\sum\limits_0^\infty x f_X(x) < \infty \lor \sum\limits_\infty^0 x f_X(x) < \infty
+$$
+- for a discrete [[random variable]] $X$:
+
+$$
+\exists \: \mathbb{E}[X] \Leftrightarrow
+\int\limits_0^\infty x f_X(x)dx < \infty 
+\lor
+\int\limits_\infty^0 x f_X(x)dx < \infty
+$$
+
+
+### [[expectation]] of [[functions of random variables]]
+
+$$
+\mathbb{E}[g(X)]=\int\limits_{-\infty}^\infty g(x) \cdot f_X(x)dx
+$$
+$$
+\mathbb{E}[g(X, Y)]=\int\limits_\infty^\infty \int\limits_\infty^\infty g(x,y) \cdot f_{XY}(x,y)dx dy
+$$
+#### [[linear map]] $g(X)$
+If $g(X)$ is a [[linear map]] $\mathbb{E}\left[g(X)\right] = g\left(\mathbb{E}[X]\right)$
+proof: see linearity of the [[expectation]]
+
+#### [[convex function]] $g(X)$
+If $g(X)$ is a [[convex function]] $\mathbb{E}\left[g(X)\right] \geq g\left(\mathbb{E}[X]\right)$
+
 
 
 
 ## examples
 #### expected value of the product of two random variables $X$ and $Y$ with a [[joint distribution]] $f_{XY}(x,y)$
-$\mathbb{E}[XY]=\int\limits_\infty^\infty \int\limits_\infty^\infty xyf_{XY}(x,y)dx dy = \mathbb{E}[X] \cdot\mathbb{E}[Y]-\mathbb{COV}[X,Y]$  
-(with $\mathbb{COV}[X,Y]=0$ when $X$ and $Y$ [[independence|independent]])
 
-### [[expectation]] of a [[random variable]] with a [[continous uniform distribution]]
+$$
+\mathbb{E}[XY]=\int\limits_\infty^\infty \int\limits_\infty^\infty xyf_{XY}(x,y)dx dy = \mathbb{E}[X] \cdot\mathbb{E}[Y]-\mathbb{COV}[X,Y]
+$$
+
+
+#### [[expectation]] of a [[random variable]] with a [[continous uniform distribution]]
 $$
 \begin{split}
 X &\sim U(a,b) \\ \\
@@ -102,7 +107,7 @@ X &\sim U(a,b) \\ \\
 &= \frac{(b+a)}{2} 
 \end{split} 
 $$
-### [[expectation]] of the maximum and minumum of [[random variable]]
+#### [[expectation]] of the maximum and minumum of [[random variable]]
 #### example
 Suppose that a point is chosen at random on a stick of unit length and that the stick is broken into two pieces at that point. Find the expected value of the length of the longer piece.
 $$
@@ -140,14 +145,17 @@ END
 
 START
 Basic
-definition: [[expectation]]
-- [[continuous random variable]]
-- [[discrete random variable]]
+definition [[expectation]]
+
 Back: 
-continuous:
-$\mathbb{E}[X]=\int\limits_\infty^\infty x f_X(x)dx$ 
-discrete:
-$\mathbb{E}[X]=\sum\limits_{i=0}^\infty x_i p(x_i)$  
+### expectation
+- generalization of the weighted mean: mean of possible outcomes weighted by its probability
+- for a [[continuous random variable]] $X$ with a [[probability density function|PDF]] $f_X(x)$ the [[expectation]] is defined as follows
+$$\mathbb{E}[X]=\int\limits_\infty^\infty x f_X(x)dx$$
+- for a discrete [[random variable]] $X$ with a [[probability mass function (PMF)]] $p$ the [[expectation]] is defined as follows
+$$
+\mathbb{E}[X]=\sum\limits_{i=0}^\infty x_i p(x_i)
+$$
 Tags: mathematics statistics
 <!--ID: 1661882015629-->
 END
@@ -183,15 +191,15 @@ Basic
 - [[linear map]] $g(.)$
 - [[convex function]] $g(.)$
 Back: 
-## [[expectation]] of [[functions of random variables]]
-### definition
+### [[expectation]] of [[functions of random variables]]
+
 $$
 \mathbb{E}[g(X)]=\int\limits_\infty^\infty g(x) \cdot f_X(x)dx
 $$
 $$
 \mathbb{E}[g(X, Y)]=\int\limits_\infty^\infty \int\limits_\infty^\infty g(x,y) \cdot f_{XY}(x,y)dx dY
 $$
-### [[linear map]] $g(X)$
+#### [[linear map]] $g(X)$
 If $g(X)$ is a [[linear map]] $\mathbb{E}[g(X)] = g(\mathbb{E}[X])$
 
 proof:
@@ -206,7 +214,7 @@ g(X) &= aX+b \\ \\
 \end{split}
 $$
 
-### [[convex function]] $g(X)$
+#### [[convex function]] $g(X)$
 If $g(X)$ is a [[convex function]] $\mathbb{E}\left[g(X)\right] \geq g\left(\mathbb{E}[X]\right)$
 
 
@@ -238,17 +246,25 @@ END
 START
 Basic
 existance of the [[expectation]]
--  [[discrete random variable]]
-- [[continuous random variable]]
 Back: 
-## existance
+### existance of the [[expectation]]
 The reason that the [[expectation]] fails to exist if both of the sums/integrals are
 infinite is that, in such cases, the sums/integrals in are not well-defined. The sum of an infinite series whose positive and negative terms both add to infinity either fails to converge or can be made to converge to many different values by rearranging the terms in different orders.
 
-### [[discrete random variable]]
-The [[expectation]] of a [[discrete random variable]] $\mathbb{E}[X]$ exists if $\sum\limits_0^\infty x f_X(x) < \infty$ or $\sum\limits_\infty^0 x f_X(x) < \infty$. 
-### [[continuous random variable]]
-The [[expectation]] of a [[continuous random variable]] $\mathbb{E}[X]$ exists if $\int\limits_0^\infty x f_X(x)dx < \infty$ or $\int\limits_\infty^0 x f_X(x)dx < \infty$. 
+- for a [[continuous random variable]] $X$:
+
+$$
+\exists \: \mathbb{E}[X] \Leftrightarrow
+\sum\limits_0^\infty x f_X(x) < \infty \lor \sum\limits_\infty^0 x f_X(x) < \infty
+$$
+- for a discrete [[random variable]] $X$:
+
+$$
+\exists \: \mathbb{E}[X] \Leftrightarrow
+\int\limits_0^\infty x f_X(x)dx < \infty 
+\lor
+\int\limits_\infty^0 x f_X(x)dx < \infty
+$$
 
 Tags: mathematics statistics
 <!--ID: 1673686885283-->
@@ -296,18 +312,24 @@ END
 START
 Basic
 properties of the [[expectation]]
-- sum of [[random variable]] $\mathbb{E}\left[\sum_{i=1}^n X_i\right]$
-- [[linearity]] $\mathbb{E}\left[X_1 + X_2 \right]$
-- $\mathbb{E}\left[\prod_{i=1}^n X_i\right]$
-- [[expectation]] of the product of [[stochastic independent]] [[random variable|random variables]]
-- upper and lower bound
-(proofs given but not required)
+
 Back: 
-### [[expectation]] of the sum of [[random variable|random variables]]
+### expectation
+- generalization of the weighted mean: mean of possible outcomes weighted by its probability
+- for a [[continuous random variable]] $X$ with a [[probability density function|PDF]] $f_X(x)$ the [[expectation]] is defined as follows
+$$\mathbb{E}[X]=\int\limits_\infty^\infty x f_X(x)dx$$
+- for a discrete [[random variable]] $X$ with a [[probability mass function (PMF)]] $p$ the [[expectation]] is defined as follows
 $$
-\mathbb{E}\left[\sum_{i=1}^n X_i\right]=\sum_{i=1}^n\mathbb{E}\left[ X_i\right]
+\mathbb{E}[X]=\sum\limits_{i=0}^\infty x_i p(x_i)
 $$
-proof for $n=2$
+### properties of the [[expectation]]
+
+#### [[linear map|linearity]]
+$$
+\mathbb{E}\left[b +\sum_{i=1}^n a_iX_i\right]= b + \sum_{i=1}^n a_i \mathbb{E}\left[ X_i\right]
+
+$$
+
 $$
 \begin{split}
 \mathbb{E}\left[X_1 + X_2 \right] &= \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty (x_1+x_2) \cdot f_{X_1X_2}(x_1,x_2)dx_1 dx_2 \\
@@ -318,7 +340,7 @@ $$
 &= \mathbb{E}\left[X_1  \right] + \mathbb{E}\left[ X_2 \right]
 \end{split}
 $$
-### [[linearity]]
+
 $$\mathbb{E}[aX+b]=a\mathbb{E}[X]+b$$
 $$
 \begin{split}
@@ -327,12 +349,8 @@ $$
 &= a\mathbb{E}[X] + b \\
 \end{split}
 $$
-Togather with the sum rule it follows
-$$
-\mathbb{E}\left[b +\sum_{i=1}^n a_iX_i\right]= b + \sum_{i=1}^n a_i \mathbb{E}\left[ X_i\right]
 
-$$
-### [[expectation]] of the product of [[stochastic independent]] [[random variable|random variables]]
+#### [[expectation]] of the product of [[stochastic independent]] [[random variable|random variables]]
 $$
 \mathbb{E}\left[\prod_{i=1}^n X_i\right]=\prod_{i=1}^n\mathbb{E}\left[ X_i\right]
 $$
@@ -346,10 +364,6 @@ $$
 &= \mathbb{E}\left[X_1  \right] \cdot \mathbb{E}\left[ X_2 \right]
 \end{split}
 $$
-
-### upper and lower bound
-- If $\exists a$ with $P(X \leq a) = 1$ than $\mathbb{E}\left[X  \right] \leq a$
-- If $\exists a$ with $P(X \geq a) = 1$ than $\mathbb{E}\left[X  \right] \geq a$
 
 Tags: mathematics statistics
 <!--ID: 1673767182027-->

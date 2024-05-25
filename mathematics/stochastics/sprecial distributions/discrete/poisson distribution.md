@@ -1,18 +1,61 @@
-# Definition
-### example
-- we want to model the arrivel of customers with a [[binomial distribution]]
-- on average 4.5 customer arrive per hour → $0.00125$ per second → $p=0.00125$ $n=3600$
-- we assume that every second either 1 or 0 customers arrove because to probability of two arriving at the same time are negligible
-- we assume [[stochastic independent|independence]] and homogeneity
-- we assume $p \ll 1 \Leftrightarrow x \ll n$ and 
+### poisson distribution
+- approimation of the [[binomial distribution]] for the case that $p$ is very low and thus $n \gg x$
+- if the probability for the [[binomial distribution]] is depending on the number of tries such that the following is true
+$$
+\lim_{n \to \infty} np_n = \lambda \in (0, \infty)
+$$
+- the [[probability measure]] is converging to the follwong approximation
+$$
+{n \choose x}p_n^{x}(1-p_n)^{n-x} \xrightarrow{n \to \infty} \lambda^x e^{-\lambda}{x!}
+$$
 
-### general conditions
-1) probability that two [[event|events]] occure in the same time interval is close to zero because the rate of occurence is very low enough of the time interval is short enough ( $p \ll 1 \Leftrightarrow x \ll n$)
-2) the probability that a [[event]] occured in a timeinterval is proportional to its lengh
-3) homogen: the probability that a [[event]] occured in the timeinterval does not depend on the interval's location
-4) [[stochastic independent|independence]]: the probability of one [[event]] in a time interval is [[stochastic independent]] from the occurence of events in non overlapping time intervals
+#### [[probability function]]
+- $\lambda = np$ with $n =$ number of [[bernoulli distribution|bernoulli experiments]] and $p=$ probability of positive outcome
+- assumtions: $p \ll 1 \Leftrightarrow x \ll n$
+- $x=$ number of positive outcomes
+$$
+f_X(x | \lambda) =
+\begin{cases}
+\frac{\lambda^xe^{-\lambda}}{x!}
+& \text{if } x \in \{0,1,2,..., n\}\\
+0
+& \text{otherwise}
+\end{cases}
+$$
+#### [[expectation]]
+$$
+\begin{split}
+\mathbb{E}[X] 
+&= \sum_{i=0}^\infty x \frac{\lambda^xe^{-\lambda}}{x!} \\
+&= \sum_{i=1}^\infty x \frac{\lambda^xe^{-\lambda}}{x!} \\
+&= \lambda \sum_{i=1}^\infty \frac{\lambda^{x-1}e^{-\lambda}}{(x-1)!} \\
+&= \lambda \sum_{i=1}^{\infty+1} \frac{\lambda^{x}e^{-\lambda}}{x!} \\
+&= \lambda \sum_{i=1}^{\infty} \frac{\lambda^{x}e^{-\lambda}}{x!} \\
+&= \lambda 
+\end{split}
+$$
+#### [[variance]]
+$$
+\begin{split}
+\mathbb{E}[X(X-1)] 
+&= \sum_{i=0}^\infty x (x-1) \frac{\lambda^xe^{-\lambda}}{x!} \\
+&= \sum_{i=2}^\infty x (x-1) \frac{\lambda^xe^{-\lambda}}{x!} \\
+&= \lambda^2 \sum_{i=2}^\infty \frac{\lambda^{x-2}e^{-\lambda}}{(x-2)!} \\
+&= \lambda^2 \sum_{i=2}^{\infty+2} \frac{\lambda^{x}e^{-\lambda}}{x!} \\
+&= \lambda^2 \sum_{i=1}^{\infty} \frac{\lambda^{x}e^{-\lambda}}{x!} \\
+&= \lambda^2 \\ \\
+\mathbb{E}[X(X-1)] 
+&= \mathbb{E}[X^2]-\mathbb{E}[X] = \lambda^2 \\
+\lambda^2 &= \mathbb{E}[X^2]- \lambda \\
+\Rightarrow  \mathbb{E}[X^2] &= \lambda^2 +\lambda \\ \\
+\mathbb{VAR}[X] 
+&= \mathbb{E}[X^2] - \mathbb{E}[X]^2 \\
+&= \lambda^2 +\lambda - \lambda^2 \\
+&= \lambda \\
+\end{split}
+$$
 
-### [[probability function]] derivation
+### [[probability function]] derivaed from the [[binomial distribution]]
 Eventhough the exact calculation is inconvenient, the change from $x$ to $x+1$ can be claulated easily
 $$
 \begin{split}
@@ -45,52 +88,23 @@ $$
  &\Rightarrow f_x(0) = e^{-\lambda}
 \end{split}
 $$
+![[binomial distribution#binomial distribution]]
 
-### [[probability function]]
-- $\lambda = np$ with $n =$ number of [[bernoulli distribution|bernoulli experiments]] and $p=$ probability of positive outcome
-- assumtions: $p \ll 1 \Leftrightarrow x \ll n$
-- $x=$ number of positive outcomes
-$$
-f_X(x | \lambda) =
-\begin{cases}
-\frac{\lambda^xe^{-\lambda}}{x!}
-& \text{if } x \in \{0,1,2,..., n\}\\
-0
-& \text{otherwise}
-\end{cases}
-$$
-### [[expectation]]
-$$
-\begin{split}
-\mathbb{E}[X] 
-&= \sum_{i=0}^\infty x \frac{\lambda^xe^{-\lambda}}{x!} \\
-&= \sum_{i=1}^\infty x \frac{\lambda^xe^{-\lambda}}{x!} \\
-&= \lambda \sum_{i=1}^\infty \frac{\lambda^{x-1}e^{-\lambda}}{(x-1)!} \\
-&= \lambda \sum_{i=1}^{\infty+1} \frac{\lambda^{x}e^{-\lambda}}{x!} \\
-&= \lambda \sum_{i=1}^{\infty} \frac{\lambda^{x}e^{-\lambda}}{x!} \\
-&= \lambda 
-\end{split}
-$$
-### [[variance]]
-$$
-\begin{split}
-\mathbb{E}[X(X-1)] 
-&= \sum_{i=0}^\infty x (x-1) \frac{\lambda^xe^{-\lambda}}{x!} \\
-&= \sum_{i=2}^\infty x (x-1) \frac{\lambda^xe^{-\lambda}}{x!} \\
-&= \lambda^2 \sum_{i=2}^\infty \frac{\lambda^{x-2}e^{-\lambda}}{(x-2)!} \\
-&= \lambda^2 \sum_{i=2}^{\infty+2} \frac{\lambda^{x}e^{-\lambda}}{x!} \\
-&= \lambda^2 \sum_{i=1}^{\infty} \frac{\lambda^{x}e^{-\lambda}}{x!} \\
-&= \lambda^2 \\ \\
-\mathbb{E}[X(X-1)] 
-&= \mathbb{E}[X^2]-\mathbb{E}[X] = \lambda^2 \\
-\lambda^2 &= \mathbb{E}[X^2]- \lambda \\
-\Rightarrow  \mathbb{E}[X^2] &= \lambda^2 +\lambda \\ \\
-\mathbb{VAR}[X] 
-&= \mathbb{E}[X^2] - \mathbb{E}[X]^2 \\
-&= \lambda^2 +\lambda - \lambda^2 \\
-&= \lambda \\
-\end{split}
-$$
+### examples
+- we want to model the arrivel of customers with a [[binomial distribution]]
+- on average 4.5 customer arrive per hour → $0.00125$ per second → $p=0.00125$ $n=3600$
+- we assume that every second either 1 or 0 customers arrove because to probability of two arriving at the same time are negligible
+- we assume [[stochastic independent|independence]] and homogeneity
+- we assume $p \ll 1 \Leftrightarrow x \ll n$ and 
+
+#### general conditions
+1) probability that two [[event|events]] occure in the same time interval is close to zero because the rate of occurence is very low enough of the time interval is short enough  $(p \ll 1 \Leftrightarrow x \ll n)$ 
+2) the probability that a [[event]] occured in a timeinterval is proportional to its lengh
+3) homogen: the probability that a [[event]] occured in the timeinterval does not depend on the interval's location
+4) [[stochastic independent|independence]]: the probability of one [[event]] in a time interval is [[stochastic independent]] from the occurence of events in non overlapping time intervals
+
+
+
 ### direct proof for $\mathbb{E}[Y] = \mathbb{VAR}[Y]$
 - the [[poisson distribution]] approximates a [[binomial distribution]] with a very small $p \ll 1$
 - it follows $\mathbb{E}[Y] = \mathbb{VAR}[Y]$
@@ -106,28 +120,112 @@ $$
 
 # anki
 
-
 START
 Basic
 [[poisson distribution]]
-- definition
-- conditions
-- [[probability function]] (with derivation)
+- definition and conditions (formal and intuitive)
+- [[probability function]] (without derivation)
 Back: 
-## examples
+### poisson distribution
+- approimation of the [[binomial distribution]] for the case that $p$ is very low and thus $n \gg x$
+- if the probability for the [[binomial distribution]] is depending on the number of tries such that the following is true
+$$
+\lim_{n \to \infty} np_n = \lambda \in (0, \infty)
+$$
+- the [[probability measure]] is converging to the follwong approximation
+$$
+{n \choose x}p_n^{x}(1-p_n)^{n-x} \xrightarrow{n \to \infty} \lambda^x e^{-\lambda}{x!}
+$$
+
+#### [[probability function]]
+- $\lambda = np$ with $n =$ number of [[bernoulli distribution|bernoulli experiments]] and $p=$ probability of positive outcome
+- assumtions: $p \ll 1 \Leftrightarrow x \ll n$
+- $x=$ number of positive outcomes
+$$
+f_X(x | \lambda) =
+\begin{cases}
+\frac{\lambda^xe^{-\lambda}}{x!}
+& \text{if } x \in \{0,1,2,..., n\}\\
+0
+& \text{otherwise}
+\end{cases}
+$$
+
+#### general conditions
+1) probability that two [[event|events]] occure in the same time interval is close to zero because the rate of occurence is very low enough of the time interval is short enough  $(p \ll 1 \Leftrightarrow x \ll n)$ 
+2) the probability that a [[event]] occured in a timeinterval is proportional to its lengh
+3) homogen: the probability that a [[event]] occured in the timeinterval does not depend on the interval's location
+4) [[stochastic independent|independence]]: the probability of one [[event]] in a time interval is [[stochastic independent]] from the occurence of events in non overlapping time intervals
+
+### examples
 - we want to model the arrivel of customers with a [[binomial distribution]]
 - on average 4.5 customer arrive per hour → $0.00125$ per second → $p=0.00125$ $n=3600$
 - we assume that every second either 1 or 0 customers arrove because to probability of two arriving at the same time are negligible
 - we assume [[stochastic independent|independence]] and homogeneity
 - we assume $p \ll 1 \Leftrightarrow x \ll n$ and 
 
-## general conditions
-1) probability that two [[event|events]] occure in the same time interval is close to zero because the rate of occurence is very low enough of the time interval is short enough ( $p \ll 1 \Leftrightarrow x \ll n$)
-2) the probability that a [[event]] occured in a timeinterval is proportional to its lengh
-3) homogen: the probability that a [[event]] occured in the timeinterval does not depend on the interval's location
-4) [[stochastic independent|independence]]: the probability of one [[event]] in a time interval is [[stochastic independent]] from the occurence of events in non overlapping time intervals
+________________________
 
-### [[probability function]]
+
+### binomial distribution
+- [[discrete distribution]] of a [[probability mass function (PMF)]] that describes the number of positive [[stochastic independent]] [[ random variable|bernoulli experiments]] with a parameter $p$ after $n$ 
+- $X_1, ..., X_n \sim Ber(p)$
+- $Y= g(\boldsymbol{X}) = X_1 + ... + X_n \sim Bin(n, p)$
+
+
+#### [[probability function]]
+- $n =$ number of [[bernoulli distribution|bernoulli experiments]] 
+- $p=$ probability of positive outcome
+- $x=$ number of positive outcomes
+
+$$
+f_X(X = x | n, p)= 
+\begin{cases}
+\overbrace{{n \choose x}}^\text{number of valid splits }
+\overbrace{p^{x}(1-p)^{n-x}}^\text{ probability per split}
+ 
+,& \text{if } x \in \{0,1,2,..., n\}\\
+0
+,& \text{otherwise}
+\end{cases}
+$$
+
+#### [[expectation]]
+- $Y= X_1 + ... + X_n$ with $X_1, ..., X_n \sim Ber(p)$ 
+- (because of the [[linear map|linearity]] of the [[expectation]])
+
+$$
+\mathbb{E}[Y] =\mathbb{E}[X_1 + ... + X_n] = n \mathbb{E}[X_i] = np
+$$
+
+#### [[variance]]
+- $Y= X_1 + ... + X_n$ with $X_1, ..., X_n \sim Ber(p)$
+- (because of the [[stochastic independent|stochastic independence]] of the [[bernoulli distribution|bernoulli random valiables]])
+
+Tags: mathematics statistics
+<!--ID: 1678167394158-->
+END
+
+
+START
+Basic
+[[poisson distribution]]: [[probability function]] (with derivation)
+Back: 
+#### [[probability function]]
+- $\lambda = np$ with $n =$ number of [[bernoulli distribution|bernoulli experiments]] and $p=$ probability of positive outcome
+- assumtions: $p \ll 1 \Leftrightarrow x \ll n$
+- $x=$ number of positive outcomes
+$$
+f_X(x | \lambda) =
+\begin{cases}
+\frac{\lambda^xe^{-\lambda}}{x!}
+& \text{if } x \in \{0,1,2,..., n\}\\
+0
+& \text{otherwise}
+\end{cases}
+$$
+
+### derived from the [[binomial distribution]]
 Eventhough the exact calculation is inconvenient, the change from $x$ to $x+1$ can be claulated easily
 $$
 \begin{split}
@@ -171,10 +269,131 @@ f_X(x) =
 & \text{otherwise}
 \end{cases}
 $$
+
+________________________
+
+### poisson distribution
+- approimation of the [[binomial distribution]] for the case that $p$ is very low and thus $n \gg x$
+- if the probability for the [[binomial distribution]] is depending on the number of tries such that the following is true
+$$
+\lim_{n \to \infty} np_n = \lambda \in (0, \infty)
+$$
+- the [[probability measure]] is converging to the follwong approximation
+$$
+{n \choose x}p_n^{x}(1-p_n)^{n-x} \xrightarrow{n \to \infty} \lambda^x e^{-\lambda}{x!}
+$$
+
+#### [[probability function]]
+- $\lambda = np$ with $n =$ number of [[bernoulli distribution|bernoulli experiments]] and $p=$ probability of positive outcome
+- assumtions: $p \ll 1 \Leftrightarrow x \ll n$
+- $x=$ number of positive outcomes
+$$
+f_X(x | \lambda) =
+\begin{cases}
+\frac{\lambda^xe^{-\lambda}}{x!}
+& \text{if } x \in \{0,1,2,..., n\}\\
+0
+& \text{otherwise}
+\end{cases}
+$$
+
+
+### binomial distribution
+- [[discrete distribution]] of a [[probability mass function (PMF)]] that describes the number of positive [[stochastic independent]] [[ random variable|bernoulli experiments]] with a parameter $p$ after $n$ 
+- $X_1, ..., X_n \sim Ber(p)$
+- $Y= g(\boldsymbol{X}) = X_1 + ... + X_n \sim Bin(n, p)$
+
+
+#### [[probability function]]
+- $n =$ number of [[bernoulli distribution|bernoulli experiments]] 
+- $p=$ probability of positive outcome
+- $x=$ number of positive outcomes
+
+$$
+f_X(X = x | n, p)= 
+\begin{cases}
+\overbrace{{n \choose x}}^\text{number of valid splits }
+\overbrace{p^{x}(1-p)^{n-x}}^\text{ probability per split}
+ 
+,& \text{if } x \in \{0,1,2,..., n\}\\
+0
+,& \text{otherwise}
+\end{cases}
+$$
+
+#### [[expectation]]
+- $Y= X_1 + ... + X_n$ with $X_1, ..., X_n \sim Ber(p)$ 
+- (because of the [[linear map|linearity]] of the [[expectation]])
+
+$$
+\mathbb{E}[Y] =\mathbb{E}[X_1 + ... + X_n] = n \mathbb{E}[X_i] = np
+$$
+
+#### [[variance]]
+- $Y= X_1 + ... + X_n$ with $X_1, ..., X_n \sim Ber(p)$
+- (because of the [[stochastic independent|stochastic independence]] of the [[bernoulli distribution|bernoulli random valiables]])
+
 Tags: mathematics statistics
-<!--ID: 1678167394158-->
+<!--ID: 1716655575977-->
 END
 
+
+START
+Basic
+[[binomial distribution]]
+- proof for $\mathbb{E}[Y] = \mathbb{VAR}[Y]$  if l $p \ll 1$
+Back: 
+#### direct proof for $\mathbb{E}[Y] = \mathbb{VAR}[Y]$
+- the [[poisson distribution]] approximates a [[binomial distribution]] with a very small $p \ll 1$
+- it follows $\mathbb{E}[Y] = \mathbb{VAR}[Y]$
+$$
+\begin{split}
+Y &= X_1 + ... + X_n \:\: with \:\: X_1, ..., X_n \sim Ber(p) \:\: i.i.d. \\
+\mathbb{E}[Y] &=\mathbb{E}[X_1 + ... + X_n] = n \mathbb{E}[X_i] = np \\
+\mathbb{VAR}[Y] &=\mathbb{VAR}[X_1 + ... + X_n] = n \mathbb{VAR}[X_i] = np(1-p) \\ \\
+p \ll 1 & \Rightarrow \mathbb{VAR}[Y] = np(1-p) \approx np \cdot 1 = \mathbb{E}[Y]
+\end{split}
+$$
+
+________________________
+### binomial distribution
+- [[discrete distribution]] of a [[probability mass function (PMF)]] that describes the number of positive [[stochastic independent]] [[ random variable|bernoulli experiments]] with a parameter $p$ after $n$ 
+- $X_1, ..., X_n \sim Ber(p)$
+- $Y= g(\boldsymbol{X}) = X_1 + ... + X_n \sim Bin(n, p)$
+
+
+#### [[probability function]]
+- $n =$ number of [[bernoulli distribution|bernoulli experiments]] 
+- $p=$ probability of positive outcome
+- $x=$ number of positive outcomes
+
+$$
+f_X(X = x | n, p)= 
+\begin{cases}
+\overbrace{{n \choose x}}^\text{number of valid splits }
+\overbrace{p^{x}(1-p)^{n-x}}^\text{ probability per split}
+ 
+,& \text{if } x \in \{0,1,2,..., n\}\\
+0
+,& \text{otherwise}
+\end{cases}
+$$
+
+#### [[expectation]]
+- $Y= X_1 + ... + X_n$ with $X_1, ..., X_n \sim Ber(p)$ 
+- (because of the [[linear map|linearity]] of the [[expectation]])
+
+$$
+\mathbb{E}[Y] =\mathbb{E}[X_1 + ... + X_n] = n \mathbb{E}[X_i] = np
+$$
+
+#### [[variance]]
+- $Y= X_1 + ... + X_n$ with $X_1, ..., X_n \sim Ber(p)$
+- (because of the [[stochastic independent|stochastic independence]] of the [[bernoulli distribution|bernoulli random valiables]])
+
+Tags: mathematics statistics
+<!--ID: 1716655575983-->
+END
 
 START
 Basic
