@@ -1,5 +1,7 @@
-A [[set]] is countable if the [[cardinality]] is finite or its elements can be mapped to the natural numbers 
+### countable
+- A [[set]] is [[countable]] if the [[cardinality]] is finite or its elements can be mapped to the [[natural numbers]]
 
+# anki
 
 START
 Basic

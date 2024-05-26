@@ -1,6 +1,6 @@
 ### expectation
 - generalization of the weighted mean: mean of possible outcomes weighted by its probability
-- for a [[continuous random variable]] $X$ with a [[probability density function|PDF]] $f_X(x)$ the [[expectation]] is defined as follows
+- for a [[continuous random variable]] $X$ with a [[probability density function (PDF)|PDF]] $f_X(x)$ the [[expectation]] is defined as follows
 $$\mathbb{E}[X]=\int\limits_\infty^\infty x f_X(x)dx$$
 - for a discrete [[random variable]] $X$ with a [[probability mass function (PMF)]] $p$ the [[expectation]] is defined as follows
 $$
@@ -150,7 +150,7 @@ definition [[expectation]]
 Back: 
 ### expectation
 - generalization of the weighted mean: mean of possible outcomes weighted by its probability
-- for a [[continuous random variable]] $X$ with a [[probability density function|PDF]] $f_X(x)$ the [[expectation]] is defined as follows
+- for a [[continuous random variable]] $X$ with a [[probability density function (PDF)|PDF]] $f_X(x)$ the [[expectation]] is defined as follows
 $$\mathbb{E}[X]=\int\limits_\infty^\infty x f_X(x)dx$$
 - for a discrete [[random variable]] $X$ with a [[probability mass function (PMF)]] $p$ the [[expectation]] is defined as follows
 $$
@@ -316,7 +316,7 @@ properties of the [[expectation]]
 Back: 
 ### expectation
 - generalization of the weighted mean: mean of possible outcomes weighted by its probability
-- for a [[continuous random variable]] $X$ with a [[probability density function|PDF]] $f_X(x)$ the [[expectation]] is defined as follows
+- for a [[continuous random variable]] $X$ with a [[probability density function (PDF)|PDF]] $f_X(x)$ the [[expectation]] is defined as follows
 $$\mathbb{E}[X]=\int\limits_\infty^\infty x f_X(x)dx$$
 - for a discrete [[random variable]] $X$ with a [[probability mass function (PMF)]] $p$ the [[expectation]] is defined as follows
 $$

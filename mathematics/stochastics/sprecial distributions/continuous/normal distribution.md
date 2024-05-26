@@ -1,5 +1,5 @@
 # normal distribution
-## [[probability density function]]
+## [[probability density function (PDF)]]
 
 $$
 f_X\left(x|\mu, \sigma^2\right) = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}\right]}
@@ -84,7 +84,7 @@ $$
 &\Rightarrow x=\mu
 \end{split}
 $$
-### maximum of the [[probability density function]]
+### maximum of the [[probability density function (PDF)]]
 $$
 \begin{split}
 \mathrm{max}_x \: f_X\left(x|\mu, \sigma^2\right) 

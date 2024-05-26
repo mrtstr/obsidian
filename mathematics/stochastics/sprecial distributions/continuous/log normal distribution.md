@@ -30,7 +30,7 @@ F_X\left(x\: | \: \mu, \sigma^2\right)
 \end{split}
 $$
 
-## [[probability density function]]
+## [[probability density function (PDF)]]
 $$
 f_X\left(x \: | \: \mu, \sigma^2\right) = 
 \frac{1}{x} f_Y\left(log(x) \: | \: \mu, \sigma^2\right)
@@ -59,7 +59,7 @@ START
 Basic
 [[log normal distribution]]
 - [[cumulative distribution function (CDF)]] (with proof)
-- [[probability density function]] (with proof)
+- [[probability density function (PDF)]] (with proof)
 Back: 
 - A [[random variable]] $X$ is [[log normal distribution|log normal distributed]] if $Y=log(X) \sim f_Y\left(y|\mu, \sigma^2\right)$ is [[normal distribution|normal distributed]]
 
@@ -79,7 +79,7 @@ F_X\left(x\: | \: \mu, \sigma^2\right)
 \end{split}
 $$
 
-## [[probability density function]]
+## [[probability density function (PDF)]]
 $$
 f_X\left(x \: | \: \mu, \sigma^2\right) = 
 \frac{1}{x} f_Y\left(log(x) \: | \: \mu, \sigma^2\right)

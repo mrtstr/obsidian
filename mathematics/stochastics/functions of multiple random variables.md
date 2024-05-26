@@ -42,7 +42,7 @@ Basic
 [[functions of random variables]]: 
 - $\boldsymbol{X} = (X_1, ..., X_n)$ is a [[continuous random variable|continuous]] [[vector notation|multidimensional]] [[random variable]] with a [[joint distribution]]  $f_{\boldsymbol{X}}(\boldsymbol{x})$
 - $\boldsymbol{Y} = (Y_1, ..., Y_n)= \boldsymbol{g(X)} = A \boldsymbol{X}$ with an [[linear map]] with a [[regular matrix]] $A \in \mathbb{R}^{n}$
-- [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
+- [[probability density function (PDF)]] of the transformed [[random variable]] $f_Y(y)$
 Back: 
 
 $$

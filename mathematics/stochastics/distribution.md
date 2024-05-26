@@ -2,4 +2,4 @@
 
 [[discrete distribution]]
 
-[[probability function]] / [[probability density function]]
+[[probability function]] / [[probability density function (PDF)]]

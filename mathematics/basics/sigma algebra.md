@@ -1,5 +1,5 @@
 ### $\sigma$ algebra
-- given a [[set]] $\Omega$ a $\sigma$-algebra $\mathcal{A}$ is a system of subsets of $\Omega$ with the following 3 base properties
+- given a [[set]] $\Omega$ a $\sigma$-algebra $\mathcal{A}=\sigma(\Omega)$ is a system of subsets of $\Omega$ with the following 3 base properties
 - used to describe the properties of an [[event space]] of a [[probability space]]
 
 1) the base [[set]] $\Omega$ is in its $\sigma$-algebra
@@ -53,6 +53,7 @@ A,B \in \mathcal{A}
 &\Rightarrow A \setminus B \in \mathcal{A}  \\
 \end{split}
 $$
+
 # --------------
 ![[set#de morgan’s laws]]
 

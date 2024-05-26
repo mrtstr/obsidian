@@ -1,6 +1,6 @@
 # convolution of distributions
-- given the two [[stochastic independent]] [[random variable|random variables]] $X_1 \perp X_2$ with the [[probability density function|probability density functions]] / [[probability function|probability functions]] $f_{X_1}(x_1)$ and $f_{X_2}(x_2)$
-- the [[convolution of distributions|convolution of the distributions]] the [[probability density function]] / [[probability function]] of the sum $Y = X_1 + X_2$ $f_Y(y)$
+- given the two [[stochastic independent]] [[random variable|random variables]] $X_1 \perp X_2$ with the [[probability density function (PDF)|probability density functions]] / [[probability function|probability functions]] $f_{X_1}(x_1)$ and $f_{X_2}(x_2)$
+- the [[convolution of distributions|convolution of the distributions]] the [[probability density function (PDF)]] / [[probability function]] of the sum $Y = X_1 + X_2$ $f_Y(y)$
 
 # convolutions of [[discrete distribution|discrete distributions]]
 $$
@@ -79,8 +79,8 @@ convolutions of [[continuous random variable|continuous distributions]]
 - definition
 - proof
 Back: 
-- given the two [[stochastic independent]] [[continuous random variable]] $X_1 \perp X_2$ with the [[probability density function|probability density functions]] $f_{X_1}(x_1)$ and $f_{X_2}(x_2)$
-- the [[convolution of distributions|convolution of the distributions]] the [[probability density function]] of the sum $Y = X_1 + X_2$ $f_Y(y)$
+- given the two [[stochastic independent]] [[continuous random variable]] $X_1 \perp X_2$ with the [[probability density function (PDF)|probability density functions]] $f_{X_1}(x_1)$ and $f_{X_2}(x_2)$
+- the [[convolution of distributions|convolution of the distributions]] the [[probability density function (PDF)]] of the sum $Y = X_1 + X_2$ $f_Y(y)$
 
 $$
 \begin{split}

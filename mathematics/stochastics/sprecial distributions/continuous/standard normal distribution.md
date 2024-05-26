@@ -1,6 +1,6 @@
 # standard [[normal distribution]]
 [[normal distribution]] with [[expectation|mean]] $\mu = 1$ and [[variance]] $\sigma^2 = 0$ is called [[standard normal distribution]]
-## [[probability density function]]
+## [[probability density function (PDF)]]
 $$
 \phi(x) = f_X\left(x|\mu = 1, \sigma^2 = 0\right) = \frac{1}{\sqrt{2 \pi }}\exp{\left[-\frac{x}{2}\right]}
 $$
@@ -38,7 +38,7 @@ $$
 
 ## [[probability integral transformation|transformation]] from [[standard normal distribution]] to a [[normal distribution]]
 
-### [[probability density function]] and [[cumulative distribution function (CDF)]]
+### [[probability density function (PDF)]] and [[cumulative distribution function (CDF)]]
 $$
 \begin{split}
 X &\sim \phi(x) = f_X(x | \mu = 0, \sigma^2 =1)  \\
@@ -80,12 +80,12 @@ START
 Basic
 [[standard normal distribution]]
 - definition
-- [[probability density function]]
+- [[probability density function (PDF)]]
 - [[moment generating function]]
 Back: 
 #### Definition
 [[normal distribution]] with [[expectation|mean]] $\mu = 1$ and [[variance]] $\sigma^2 = 0$ is called [[standard normal distribution]]
-#### [[probability density function]]
+#### [[probability density function (PDF)]]
 $$
 \phi(x) = f_X\left(x|\mu = 1, \sigma^2 = 0\right) = \frac{1}{\sqrt{2 \pi }}\exp{\left[-\frac{x}{2}\right]}
 $$
@@ -102,9 +102,9 @@ END
 START
 Basic
 [[probability integral transformation|transformation]] of a [[normal distribution]] to a [[standard normal distribution]]
-- [[probability density function]]
+- [[probability density function (PDF)]]
 Back: 
-## [[probability density function]]
+## [[probability density function (PDF)]]
 $$
 \phi(x) = f_X\left(x|\mu = 1, \sigma^2 = 0\right) = \frac{1}{\sqrt{2 \pi }}\exp{\left[-\frac{x}{2}\right]}
 $$
@@ -143,11 +143,11 @@ END
 START
 Basic
 [[probability integral transformation|transformation]] from [[standard normal distribution]] to a [[normal distribution]]
-- [[probability density function]]
+- [[probability density function (PDF)]]
 - [[cumulative distribution function (CDF)]]
 Back: 
 
-### [[probability density function]] and [[cumulative distribution function (CDF)]]
+### [[probability density function (PDF)]] and [[cumulative distribution function (CDF)]]
 $$
 \begin{split}
 X &\sim \phi(x) = f_X(x | \mu = 0, \sigma^2 =1)  \\

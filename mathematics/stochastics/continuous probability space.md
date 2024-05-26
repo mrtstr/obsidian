@@ -1,71 +1,31 @@
-### measurable space
-- a [[measurable space]] $\left(\Omega,\mathcal{A} = \sigma(\Omega)\right)$ is a [[set]] $\Omega$ equiped with a [[sigma algebra]] $\mathcal{A}$
-- every [[probability space]] is by definition a [[measurable space]]
+### continuous probability space
+- given a [[probability space]] $(\Omega, \mathcal{A}, P)$ 
+- $(\Omega, \mathcal{A}, P)$ is a [[continuous probability space]] if the [[sample space]] $\Omega$ is not [[countable]]
+# ----------------------
+![[countable#countable]]
 
-# ---------------------
+![[probability space#probability space]]
 
-![[sigma algebra#$ sigma$ algebra]]
+
+# anki
 
 
 START
 Basic
-[[probability space]]
-- definition plus related concepts
-- difference to a [[probability space]]
-
+definitions for [[continuous probability space]] and [[discrete probability space]]
 Back: 
-### measurable space
-- a [[measurable space]] $\left(\Omega,\mathcal{A} = \sigma(\Omega)\right)$ is a [[set]] $\Omega$ equiped with a [[sigma algebra]]
-- every [[probability space]] is by definition a [[measurable space]]
+### continuous probability space
+- given a [[probability space]] $(\Omega, \mathcal{A}, P)$ 
+- $(\Omega, \mathcal{A}, P)$ is a [[continuous probability space]] if the [[sample space]] $\Omega$ is not [[countable]]
 
-### $\sigma$ algebra
-- given a [[set]] $\Omega$ a $\sigma$-algebra $\mathcal{A}$ is a system of subsets of $\Omega$ with the following 3 base properties
-- used to describe the properties of an [[event space]] of a [[probability space]]
-1) the base [[set]] $\Omega$ is in its $\sigma$-algebra
+### discrete probability space
+- given a [[probability space]] $(\Omega, \mathcal{A}, P)$ 
+- $(\Omega, \mathcal{A}, P)$ is a [[discrete probability space]] if the [[sample space]] $\Omega$ is [[countable]]
 
-$$
-\begin{split}
-&\Omega \in \mathcal{A} \\
-\end{split}
-$$
-2) $\mathcal{A}$ is [[closure|closed]] over the [[complement]]
+# ----------------------
+### countable
+- A [[set]] is [[countable]] if the [[cardinality]] is finite or its elements can be mapped to the [[natural numbers]]
 
-$$
-\begin{split}
-&A \in \mathcal{A} \Rightarrow A^c \in \mathcal{A} \\
-\end{split}
-$$
-
-3) $\mathcal{A}$ is [[closure|closed]] over the [[union]]
-
-$$
-\begin{split}
-&A_1, ..., A_n \in \mathcal{A} \Rightarrow \bigcup_{i \in [n]} A_i \in \mathcal{A} \\
-\end{split}
-$$
-
-#### a [[sigma algebra]] is [[closure|closed]] over [[intersection]]
-$$
-A, B \in \mathcal{A} \Rightarrow A \cap B \in \mathcal{A}
-$$
-proof
-$$
-\begin{split}
-A,B \in \mathcal{A} 
-&\Rightarrow A^c, B^c \in \mathcal{A} \\
-&\Rightarrow \left(A^c \cup B^c\right)^c \in \mathcal{A} \\
-&\Rightarrow A \cap B \in \mathcal{A} \qquad \text{(de morgans law)} \\
-\end{split}
-$$
-
-
-#### a [[sigma algebra]] is [[closure|closed]] over [[difference of sets]]
-$$
-A, B \in \mathcal{A} \Rightarrow A \setminus B \in \mathcal{A}
-$$
-proof
-
-__________________________
 ## probability space
 - a [[probability space]] $(\Omega, \mathcal{A}, P)$ is a formal model for a [[random process]]
 - if a [[measurable space]] $\left(\Omega, \mathcal{A}=\sigma(\Omega)\right)$ is equiped with a [[probability measure]] $P$ it is a [[probability space]]
@@ -154,18 +114,6 @@ P\left(A^c \cap B\right) + P\left(A \cap B\right)
 \end{split}
 $$
 
-
-
-$$
-\begin{split}
-A,B \in \mathcal{A} 
-&\Rightarrow A \cap B^c \in \mathcal{A} \\
-&\Rightarrow \{x : x \in A \land x \in \Omega \land x \notin B\} \subseteq \mathcal{A} \\
-&\Rightarrow \{x : x \in A \land x \notin B\} \subseteq \mathcal{A} \\
-&\Rightarrow A \setminus B \in \mathcal{A}  \\
-\end{split}
-$$
-
 Tags: mathematics statistics
-<!--ID: 1716713552925-->
+<!--ID: 1716713552901-->
 END

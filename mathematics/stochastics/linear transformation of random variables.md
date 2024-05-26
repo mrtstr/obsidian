@@ -6,7 +6,7 @@ X &\sim f_X(x) \\
 Y &= aX + b \\
 \end{split}
 $$
-## [[probability density function]]
+## [[probability density function (PDF)]]
 ![[functions of random variables#linear function of a probability density function]]
 
 ## [[expectation]] and [[variance]]
@@ -61,11 +61,11 @@ X &\sim f_X(x) \\
 Y &= g(X) = aX + b \\
 \end{split}
 $$
-- [[probability density function]]
+- [[probability density function (PDF)]]
 - [[expectation]]
 - [[variance]]
 Back: 
-[[probability density function]]
+[[probability density function (PDF)]]
 
 $$
 f_Y(y)=\underbrace{\frac{1}{|a|}}_{\frac{dg^{-1}(y)}{dy}} f_{X}

@@ -5,7 +5,7 @@
 - for [[statistical predictor]] there is also a part of the [[error]] that is based on the randomness of $f_{Y|X}(y|x)$ and thus is unavoidable and has nothing to do with the model
 
 ### [[statistical estimator]]
-- given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[probability density function|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
+- given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[probability density function (PDF)|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
 - then the bias is the difference between the [[expectation|expected]] parameter estimation and the true parameters 
 - the randomness of $\widehat{\theta}_\mathcal{T}$ does not matter because the bias is based on the [[expectation]] over all possible samples $\widehat{\theta}_\mathcal{T}$ and $\theta$ is a constant property and thus is non-stochastic 
  $$
@@ -49,7 +49,7 @@ Basic
 - definition
 - property of an unbiased estimator
 Back: 
-- given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[probability density function|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
+- given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[probability density function (PDF)|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
 - then the bias is the difference between the [[expectation|expected]] parameter estimation and the true parameters 
 - the randomness of $\widehat{\theta}_\mathcal{T}$ does not matter because the bias is based on the [[expectation]] over all possible samples $\widehat{\theta}_\mathcal{T}$ and $\theta$ is a constant property and thus is non-stochastic 
  $$

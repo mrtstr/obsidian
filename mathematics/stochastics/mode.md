@@ -1,1 +1,1 @@
-[[probability density function]]
+[[probability density function (PDF)]]

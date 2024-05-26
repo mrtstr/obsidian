@@ -12,7 +12,7 @@ F_{Y}(y)=P(Y \leq y)=P(g(X) \leq y)=\sum\limits_{x_i \in \{x \mid g(x) \leq y \}
 $$
 
 # [[continuous random variable]]
-- $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
+- $X$ is a [[continuous random variable]] with a [[probability density function (PDF)]] $f_X(x)$
 - $Y=g(X)$ with an arbitrary [[function]] $g$
 ## [[inverse function]] $g^{-1}(X)$ unknown
 $$
@@ -40,7 +40,7 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} \\
 \end{split}
 $$
 #### example
-- $X \sim U(-1,1)$ is from a [[continous uniform distribution]] with a [[probability density function]] 
+- $X \sim U(-1,1)$ is from a [[continous uniform distribution]] with a [[probability density function (PDF)]] 
 $$f_X(x)=\begin{cases}
     \frac{1}{2},& \text{if } x \in [-1,1] \\
     0,              & \text{otherwise}
@@ -61,8 +61,8 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{y} = \frac{1}{2} y^{-\frac{1}{2}}
 \end{split}
 $$
 
-## [[linear map]] of a [[probability density function]]
-- $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
+## [[linear map]] of a [[probability density function (PDF)]]
+- $X$ is a [[continuous random variable]] with a [[probability density function (PDF)]] $f_X(x)$
 - $Y=g(X)=aX+b$ with an [[linear map]] $g$
 
 $$
@@ -130,9 +130,9 @@ START
 Basic
 [[functions of random variables]]: 
 - [[continuous random variable]] with a [[linear map]]
-- $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
+- $X$ is a [[continuous random variable]] with a [[probability density function (PDF)]] $f_X(x)$
 - $Y=g(X)=aX+b$ with an [[linear map]] $g$
-- [[probability density function]] of the transformed [[random variable]] $f_Y(y)$ (with proof)
+- [[probability density function (PDF)]] of the transformed [[random variable]] $f_Y(y)$ (with proof)
 Back: 
 
 $$
@@ -167,13 +167,13 @@ START
 Basic
 [[functions of random variables]]: 
 - [[continuous random variable]] with an arbitrary [[function]]
-- $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
+- $X$ is a [[continuous random variable]] with a [[probability density function (PDF)]] $f_X(x)$
 - $Y=g(X)$ with an arbitrary [[function]] $g$
 - - general case: [[inverse function]] $g^{-1}(X)$ unknown
 
 
 - [[cumulative distribution function (CDF)]] of the transformed [[random variable]] $F_Y(y)$
-- [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
+- [[probability density function (PDF)]] of the transformed [[random variable]] $f_Y(y)$
 
 Back: 
 #### [[inverse function]] $g^{-1}(X)$ unknown
@@ -200,12 +200,12 @@ START
 Basic
 [[functions of random variables]]: 
 - [[continuous random variable]] with an arbitrary [[function]]
-- $X$ is a [[continuous random variable]] with a [[probability density function]] $f_X(x)$
+- $X$ is a [[continuous random variable]] with a [[probability density function (PDF)]] $f_X(x)$
 - $Y=g(X)$ with an arbitrary [[function]] $g$
 - [[inverse function]] $g^{-1}(X)$ known
 
 - [[cumulative distribution function (CDF)]] of the transformed [[random variable]] $F_Y(y)$
-- [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
+- [[probability density function (PDF)]] of the transformed [[random variable]] $f_Y(y)$
 
 Back: 
 
@@ -232,7 +232,7 @@ END
 START
 Basic
 [[functions of random variables]] example:  
-- $X \sim U(-1,1)$ is from a [[continous uniform distribution]] with a [[probability density function]] 
+- $X \sim U(-1,1)$ is from a [[continous uniform distribution]] with a [[probability density function (PDF)]] 
 $$f_X(x)=\begin{cases}
     \frac{1}{2},& \text{if } x \in [-1,1] \\
     0,              & \text{otherwise}
@@ -242,7 +242,7 @@ $$
 
 
 - [[cumulative distribution function (CDF)]] of the transformed [[random variable]] $F_Y(y)$
-- [[probability density function]] of the transformed [[random variable]] $f_Y(y)$
+- [[probability density function (PDF)]] of the transformed [[random variable]] $f_Y(y)$
 Back: 
 $$
 \begin{split}

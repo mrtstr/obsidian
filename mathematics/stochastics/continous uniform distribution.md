@@ -1,5 +1,5 @@
-[[probability density function]] of a [[probability mass function (PMF)]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
-## [[probability density function]]
+[[probability density function (PDF)]] of a [[probability mass function (PMF)]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
+## [[probability density function (PDF)]]
 $$
 f_X(X = x)=
 \begin{cases}
@@ -43,12 +43,12 @@ START
 Basic
 [[continous uniform distribution]]
 - verbal definition
-- [[probability density function]]
+- [[probability density function (PDF)]]
 - [[cumulative distribution function (CDF)]]
 - [[quantile function]]
 
 Back: 
-[[probability density function]] of a [[probability mass function (PMF)]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
+[[probability density function (PDF)]] of a [[probability mass function (PMF)]] with the same probability of taking all values inside an interval $[a,b]$ and 0 for all other values.
 
 ## probability function
 $$

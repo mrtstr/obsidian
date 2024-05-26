@@ -4,7 +4,7 @@
 - every point in the feature space $x$ is a distribution of outputs $y$
 - approximate predictor $f(x)$ by minimizing the [[loss functions]]
 
-(in contrast, a [[statistical estimator]] is estimating a property of the true [[probability density function|distribution]] based on [[statistical estimator|observed data]])
+(in contrast, a [[statistical estimator]] is estimating a property of the true [[probability density function (PDF)|distribution]] based on [[statistical estimator|observed data]])
 
 
 ### Approximation

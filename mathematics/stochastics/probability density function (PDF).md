@@ -1,5 +1,5 @@
 ### probability density function
-The Probability density function $f_X]$ of a [[probability mass function (PMF)]] $X$ maps each point in the [[sample space]] to the relative likelihood that the [[probability mass function (PMF)]] will be in an infinitesimal small window around the value. (See for the [[joint distribution|joint PDF]] of for the PDF of a joint distribution)
+- given a [[random variable]] $X$ in a [[discrete probability space]] $(\Omega, \mathcal{A}, P)$ 
 #### properties
 1) $f_X:\Omega \mapsto [0,\infty]$
 2) the $\forall z \in \Omega:P(X = z) = f_X(z) = 0$ the case of real-valued random variables, the joint distribution, as a particular multivariate distribution, may be
@@ -8,6 +8,19 @@ The Probability density function $f_X]$ of a [[probability mass function (PMF)]]
 #### relationship to [[cumulative distribution function (CDF)]] $F_X(x)$
 - $F_X(x)=P(X \leq x) =\int\limits_{-\infty}^{x}  f_X(x)\:dx$ 
 - $f_X(x)=\frac{dF_X(x)}{dx}$ 
+
+
+# ----------------------
+![[continuous probability space#continuous probability space]]
+
+![[random variable#a random variable induces a probability measure]]
+
+
+![[random variable#random variable]]
+
+![[probability space#probability space]]
+
+# anki
 
 START
 Basic
