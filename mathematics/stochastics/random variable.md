@@ -1,12 +1,12 @@
 ### random variable
-- given a [[probability space]] $\left(\Omega, \mathcal{A} , P\right)$
-- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to (\mathbb{R}, \mathcal{B})$
+- given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
+- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ from the [[measurable space]] of $(\Omega, \mathcal{A})$ to the [[real numbers]] with the [[borel sigma algebra]] (which are a [[measurable space]] too)
 - this is the case exactly when the following is true (given the [[inverse function]] $X^{-1}: \mathbb{R} \to \Omega$)
 $$
 \forall x \in \mathbb{R}: X^{-1}\left((-\infty, x]\right) = \{\omega \in \Omega: X(\omega) \in (-\infty, x]\} \in \mathcal{A}
 $$
 
-#### proof
+### proof
 - to show that the given condition is sufficient to show that $X$ is a [[measurable function]] we will prove the following
 $$
 \begin{split}
@@ -28,22 +28,24 @@ $$
 - the second part can be proved because a [[sigma algebra]] is closed over [[union]]
 
 ### a [[random variable]] induces a [[probability measure]]
-- given a [[probability space]] $\left(\Omega, \mathcal{A} , P\right)$ and a [[measurable function]] $X: (\Omega, \mathcal{A}) \to (\mathbb{R}, \mathcal{B})$ we can define a [[probability measure]] $\mathcal{P}_X: \mathcal{B} \to [0,1]$ 
+- given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$ and a [[measurable function]] $X: (\Omega, \mathcal{A}) \to (\mathbb{R}, \mathcal{B})$ we can define a [[probability measure]] $\mathcal{P}_X: \mathcal{B}(\mathbb{R}) \to [0,1]$ 
 
 $$
-\mathcal{P}_X(E \subseteq \mathbb{R}) 
-= P\left(X^{-1}(E) \subseteq \Omega\right) = P\left(\left\{\omega \in \Omega : X(\omega) \in C\right\}\right)
+\begin{split}
+\mathcal{P}_X(C \subseteq \mathbb{R}) 
+&= \mathbb{P}\left(X^{-1}(C) \subseteq \Omega\right) \\
+&= \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in C\right\}\right) \\
+\end{split}
 $$
-- in a [[continuous probability space]] this [[probability measure]] is called [[probability density function (PDF)]]
-- in a [[discrete probability space]] this [[probability measure]] is called [[probability mass function (PMF)]]
+
 
 #### proof
 - the first proberties of a [[probability measure]] is trivial
 $$
 \begin{split}
 \mathcal{P}_X(\emptyset \subseteq \mathbb{R}) 
-&= P\left(\left\{\omega \in \Omega : X(\omega) \in \emptyset \right\}\right) \\
-&=  P\left( \emptyset \right) 
+&= \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in \emptyset \right\}\right) \\
+&=  \mathbb{P}\left( \emptyset \right) 
 = 0
 \end{split}
 $$
@@ -51,8 +53,8 @@ $$
 $$
 \begin{split}
 \mathcal{P}_X(\mathbb{R}) 
-&= P\left(\left\{\omega \in \Omega : X(\omega) \in \mathbb{R}\right\}\right) \\
-&=  P\left( \Omega \right) 
+&= \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in \mathbb{R}\right\}\right) \\
+&=  \mathbb{P}\left( \Omega \right) 
 = 1
 \end{split}
 $$
@@ -61,14 +63,17 @@ $$
 $$
 \begin{split}
 \mathcal{P}_X(A \cup B) 
-&= P\left(\left\{\omega \in \Omega : X(\omega) \in A \cup B \right\}\right) \\
-&= P\left(\left\{\omega \in \Omega : X(\omega) \in A  \right\} \cup \left\{\omega \in \Omega : X(\omega) \in  B \right\}\right) \\
-&= P\left(\left\{\omega \in \Omega : X(\omega) \in A  \right\}\right) + P\left(\left\{\omega \in \Omega : X(\omega) \in  B \right\}\right) \\
+&= \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in A \cup B \right\}\right) \\
+&= \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in A  \right\} \cup \left\{\omega \in \Omega : X(\omega) \in  B \right\}\right) \\
+&= \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in A  \right\}\right) + \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in  B \right\}\right) \\
 &= \mathcal{P}_X(A) + \mathcal{P}_X(B) \\
 \end{split}
 $$
 
 # --------------------------
+
+![[borel sigma algebra#borel sigma algebra]]
+
 ![[measurable function#measurable function]]
 
 ![[measurable space#measurable space]]
@@ -89,9 +94,9 @@ Basic
 
 Back: 
 ### random variable
-- given a [[probability space]] $\left(\Omega, \mathcal{A} , P\right)$
-- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to (\mathbb{R}, \mathcal{B})$
-- this is the case exactly when the following is true
+- given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
+- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ from the [[measurable space]] of $(\Omega, \mathcal{A})$ to the [[real numbers]] with the [[borel sigma algebra]] (which are a [[measurable space]] too)
+- this is the case exactly when the following is true (given the [[inverse function]] $X^{-1}: \mathbb{R} \to \Omega$)
 $$
 \forall x \in \mathbb{R}: X^{-1}\left((-\infty, x]\right) = \{\omega \in \Omega: X(\omega) \in (-\infty, x]\} \in \mathcal{A}
 $$
@@ -127,6 +132,12 @@ $$
 
 
 ____________________________
+
+### borel sigma algebra
+- the [[borel sigma algebra]] $\mathcal{B}(\mathbb{R})$ is a [[sigma algebra]] on the [[real numbers]] 
+- thus $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ are a [[measurable space]] 
+- $\mathcal{B}(\mathbb{R}) \subset \mathcal{P}(\mathbb{R})$ does contain all substs of $\mathbb{R}$ for which need a probability assigned to it
+
 
 ### measurable space
 - a [[measurable space]] $\left(\Omega,\mathcal{A} = \sigma(\Omega)\right)$ is a [[set]] $\Omega$ equiped with a [[sigma algebra]] $\mathcal{A}$
@@ -274,9 +285,9 @@ $$
 
 Back: 
 ### random variable
-- given a [[probability space]] $\left(\Omega, \mathcal{A} , P\right)$
-- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to (\mathbb{R}, \mathcal{B})$
-- this is the case exactly when the following is true
+- given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
+- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ from the [[measurable space]] of $(\Omega, \mathcal{A})$ to the [[real numbers]] with the [[borel sigma algebra]] (which are a [[measurable space]] too)
+- this is the case exactly when the following is true (given the [[inverse function]] $X^{-1}: \mathbb{R} \to \Omega$)
 $$
 \forall x \in \mathbb{R}: X^{-1}\left((-\infty, x]\right) = \{\omega \in \Omega: X(\omega) \in (-\infty, x]\} \in \mathcal{A}
 $$
@@ -312,6 +323,12 @@ $$
 
 
 ____________________________
+
+### borel sigma algebra
+- the [[borel sigma algebra]] $\mathcal{B}(\mathbb{R})$ is a [[sigma algebra]] on the [[real numbers]] 
+- thus $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ are a [[measurable space]] 
+- $\mathcal{B}(\mathbb{R}) \subset \mathcal{P}(\mathbb{R})$ does contain all substs of $\mathbb{R}$ for which need a probability assigned to it
+
 
 ### measurable space
 - a [[measurable space]] $\left(\Omega,\mathcal{A} = \sigma(\Omega)\right)$ is a [[set]] $\Omega$ equiped with a [[sigma algebra]] $\mathcal{A}$
@@ -367,22 +384,21 @@ Basic
 - how is this [[probability measure]] called in a [[discrete probability space]] and [[continuous probability space]]?
 Back: 
 ### a [[random variable]] induces a [[probability measure]]
-- given a [[probability space]] $\left(\Omega, \mathcal{A} , P\right)$ and a [[measurable function]] $X: (\Omega, \mathcal{A}) \to (\mathbb{R}, \mathcal{B})$ we can define a [[probability measure]] $\mathcal{P}_X: \mathcal{B} \to [0,1]$ 
+- given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$ and a [[measurable function]] $X: (\Omega, \mathcal{A}) \to (\mathbb{R}, \mathcal{B})$ we can define a [[probability measure]] $\mathcal{P}_X: \mathcal{B} \to [0,1]$ 
 
 $$
 \mathcal{P}_X(E \subseteq \mathbb{R}) 
-= P\left(X^{-1}(E) \subseteq \Omega\right) = P\left(\left\{\omega \in \Omega : X(\omega) \in C\right\}\right)
+= \mathbb{P}\left(X^{-1}(E) \subseteq \Omega\right) = \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in C\right\}\right)
 $$
-- in a [[continuous probability space]] this [[probability measure]] is called [[probability density function (PDF)]]
-- in a [[discrete probability space]] this [[probability measure]] is called [[probability mass function (PMF)]]
+
 
 #### proof
 - the first proberties of a [[probability measure]] is trivial
 $$
 \begin{split}
 \mathcal{P}_X(\emptyset \subseteq \mathbb{R}) 
-&= P\left(\left\{\omega \in \Omega : X(\omega) \in \emptyset \right\}\right) \\
-&=  P\left( \emptyset \right) 
+&= \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in \emptyset \right\}\right) \\
+&=  \mathbb{P}\left( \emptyset \right) 
 = 0
 \end{split}
 $$
@@ -390,8 +406,8 @@ $$
 $$
 \begin{split}
 \mathcal{P}_X(\mathbb{R}) 
-&= P\left(\left\{\omega \in \Omega : X(\omega) \in \mathbb{R}\right\}\right) \\
-&=  P\left( \Omega \right) 
+&= \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in \mathbb{R}\right\}\right) \\
+&=  \mathbb{P}\left( \Omega \right) 
 = 1
 \end{split}
 $$
@@ -400,30 +416,42 @@ $$
 $$
 \begin{split}
 \mathcal{P}_X(A \cup B) 
-&= P\left(\left\{\omega \in \Omega : X(\omega) \in A \cup B \right\}\right) \\
-&= P\left(\left\{\omega \in \Omega : X(\omega) \in A  \right\} \cup \left\{\omega \in \Omega : X(\omega) \in  B \right\}\right) \\
-&= P\left(\left\{\omega \in \Omega : X(\omega) \in A  \right\}\right) + P\left(\left\{\omega \in \Omega : X(\omega) \in  B \right\}\right) \\
+&= \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in A \cup B \right\}\right) \\
+&= \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in A  \right\} \cup \left\{\omega \in \Omega : X(\omega) \in  B \right\}\right) \\
+&= \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in A  \right\}\right) + \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in  B \right\}\right) \\
 &= \mathcal{P}_X(A) + \mathcal{P}_X(B) \\
 \end{split}
 $$
 
 
 ### random variable
-- given a [[probability space]] $\left(\Omega, \mathcal{A} , P\right)$
-- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to (\mathbb{R}, \mathcal{B})$
-- this is the case exactly when the following is true
+- given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
+- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ from the [[measurable space]] of $(\Omega, \mathcal{A})$ to the [[real numbers]] with the [[borel sigma algebra]] (which are a [[measurable space]] too)
+- this is the case exactly when the following is true (given the [[inverse function]] $X^{-1}: \mathbb{R} \to \Omega$)
 $$
 \forall x \in \mathbb{R}: X^{-1}\left((-\infty, x]\right) = \{\omega \in \Omega: X(\omega) \in (-\infty, x]\} \in \mathcal{A}
 $$
 
-
-### measurable function
-- given two [[measurable space|measurable spaces]] $\left(A, \sigma_A\right)$ and $\left(B, \sigma_B\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
-- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\sigma_B$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\sigma_B$ by the [[inverse function]] $f^{-1}$
+#### proof
+- to show that the given condition is sufficient to show that $X$ is a [[measurable function]] we will prove the following
 $$
-\forall E \in \sigma_B: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \sigma_A
+\begin{split}
+\forall x \in \mathbb{R}: &X^{-1}\left((-\infty, x]\right)  \in \mathcal{A} \\
+&\Rightarrow \\
+\forall x < y \in \mathbb{R}: &X^{-1}\left([y, x]\right)  \in \mathcal{A} \\
+&\Rightarrow \\
+\forall E \subseteq \mathbb{R}: &X^{-1}\left(E\right)  \in \mathcal{A}
+\end{split}
 $$
-- notation for a [[measurable function]] $f: \left(X, \sigma_X\right) \to \left(Y, \sigma_Y\right)$
+- first part
+$$
+\begin{split}
+&\forall x \in \mathbb{R} \forall \epsilon > 0 \in \mathbb{R}: X^{-1}\left((-\infty, x]\right)  \in \mathcal{A} \land X^{-1}\left((-\infty, x + \epsilon]\right)  \in \mathcal{A} \\
+&\Rightarrow X^{-1}\left((-\infty, y]\right) \setminus X^{-1}\left((-\infty, x]\right)  \in \mathcal{A} \qquad \text{(a sigma algbra is closed over difference)} \\
+&\Rightarrow\forall x < y \in \mathbb{R}:  X^{-1}\left([x, y]\right)   \in \mathcal{A} \\
+\end{split}
+$$
+- the second part can be proved because a [[sigma algebra]] is closed over [[union]]
 
 
 ### [[probability measure]] $P$
@@ -472,6 +500,11 @@ $$
 
 
 ____________________________
+
+### borel sigma algebra
+- the [[borel sigma algebra]] $\mathcal{B}(\mathbb{R})$ is a [[sigma algebra]] on the [[real numbers]] 
+- thus $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ are a [[measurable space]] 
+- $\mathcal{B}(\mathbb{R}) \subset \mathcal{P}(\mathbb{R})$ does contain all substs of $\mathbb{R}$ for which need a probability assigned to it
 
 
 ### measurable space

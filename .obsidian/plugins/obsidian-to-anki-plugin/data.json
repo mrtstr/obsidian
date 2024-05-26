@@ -253,7 +253,7 @@
     "mathematics/stochastics/sample variance.md": "98ffebf25c6146dcd51b6edd7866fd7e",
     "mathematics/stochastics/sample space.md": "47e2b017120e0473a32efff8acaf036d",
     "mathematics/stochastics/random vector.md": "7409e418238eb0ce16ba94cf7968d79a",
-    "mathematics/stochastics/random variable.md": "086876110bb4d4b9624b60930cb3428c",
+    "mathematics/stochastics/random variable.md": "e4ec3a509f38944a486609ca96b974ec",
     "mathematics/stochastics/random process.md": "8f240cb289fef8566f6609f45720df08",
     "mathematics/stochastics/random experiment.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/quantile function.md": "727b7ef1fc3cb2dce6d96cde238a56d0",
@@ -270,7 +270,7 @@
     "mathematics/stochastics/moments.md": "6dd5d381bf4ef457e769cd3ba795baa6",
     "mathematics/stochastics/mode.md": "2ec0423edf0dc3e42a77283ef98becbe",
     "mathematics/stochastics/median.md": "3aea12b9c0c3da6ff674fe6aaff1796a",
-    "mathematics/stochastics/measurable space.md": "751b1452ed690082c120f10c2f811e22",
+    "mathematics/stochastics/measurable space.md": "1881321cb5945ca77613bf4ce810aac5",
     "mathematics/stochastics/mean.md": "67061d094ea99869eb3dac3e4eb81775",
     "mathematics/stochastics/markov chain.md": "0a24df988f3539910a9e5a34b7827786",
     "mathematics/stochastics/marginal distribution.md": "4bfc676947eb25a21e4363eeba32e4e4",
@@ -287,7 +287,7 @@
     "mathematics/stochastics/expectation for non negative distributions.md": "bd7aa9667ffa5d7c95298c10a32ad4c6",
     "mathematics/stochastics/event.md": "ef94f078e81f4d14eac36d0fc494be1f",
     "mathematics/stochastics/event space.md": "cc048c36fb6a9331e039d70460a6b5ca",
-    "mathematics/stochastics/distribution.md": "73fe058898107df0621de3896da5e367",
+    "mathematics/stochastics/distribution.md": "55d3403d879912599055d0848d98e35d",
     "mathematics/stochastics/discrete uniform distribution.md": "6b70e5a2421d96a42656ac321c76e2e7",
     "mathematics/stochastics/discrete random variable.md": "640b7e0f0e63d009b860bd5139a7ffd4",
     "mathematics/stochastics/discrete distribution.md": "ae967627438925fe4b9c306db56a1a72",
@@ -1501,13 +1501,13 @@
     "mathematics/basics/sigma algebra.md": "cf916d0677eca887207945a30efb7672",
     "mathematics/stochastics/probability mass function (PMF).md": "40301797cefce108b70e0ed7e89e2868",
     "mathematics/stochastics/laplace experiment.md": "26a4cd51d2b807c2f5b2d7a9ecb284a1",
-    "mathematics/stochastics/borel sigma algebra.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/borel sigma algebra.md": "76b8f80639892ec00c96cd691fdd57c9",
     "mathematics/stochastics/probability density function (PDF).md": "1a3999d5ddc891406c585f81c7822dc8",
     "mathematics/stochastics/discrete probability space.md": "49d35055967f7233d3b1d1db5bad2fb2",
     "mathematics/stochastics/continuous probability space.md": "7a7730687e26f49f7d338b60160a8280",
     "mathematics/stochastics/Untitled 1.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/measurable function.md": "9a9e11207fe51a8d273a4a071027b31a",
-    "mathematics/stochastics/cumulative distribution function (CDF).md": "505d96941abd497bdbc029b95bf65cea"
+    "mathematics/stochastics/cumulative distribution function (CDF).md": "2609fdfbb3f2c0eb64dc3c18d3e75421"
   },
   "fields_dict": {
     "Basic": [
