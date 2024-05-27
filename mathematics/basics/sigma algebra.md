@@ -9,7 +9,14 @@ $$
 &\Omega \in \mathcal{A} \\
 \end{split}
 $$
-2) $\mathcal{A}$ is [[closure|closed]] over the [[complement]]
+2) [[empty set]] is in  $\sigma$-algebra
+
+$$
+\begin{split}
+&\emptyset \in \mathcal{A} \\
+\end{split}
+$$
+3) $\mathcal{A}$ is [[closure|closed]] over the [[complement]]
 
 $$
 \begin{split}
@@ -17,13 +24,14 @@ $$
 \end{split}
 $$
 
-3) $\mathcal{A}$ is [[closure|closed]] over the [[union]]
+4) $\mathcal{A}$ is [[closure|closed]] over the [[union]]
 
 $$
 \begin{split}
 &A_1, ..., A_n \in \mathcal{A} \Rightarrow \bigcup_{i \in [n]} A_i \in \mathcal{A} \\
 \end{split}
 $$
+
 #### a [[sigma algebra]] is [[closure|closed]] over [[intersection]]
 $$
 A, B \in \mathcal{A} \Rightarrow A \cap B \in \mathcal{A}
@@ -79,7 +87,14 @@ $$
 &\Omega \in \mathcal{A} \\
 \end{split}
 $$
-2) $\mathcal{A}$ is [[closure|closed]] over the [[complement]]
+2) [[empty set]] is in  $\sigma$-algebra
+
+$$
+\begin{split}
+&\emptyset \in \mathcal{A} \\
+\end{split}
+$$
+3) $\mathcal{A}$ is [[closure|closed]] over the [[complement]]
 
 $$
 \begin{split}
@@ -87,14 +102,13 @@ $$
 \end{split}
 $$
 
-3) $\mathcal{A}$ is [[closure|closed]] over the [[union]]
+4) $\mathcal{A}$ is [[closure|closed]] over the [[union]]
 
 $$
 \begin{split}
 &A_1, ..., A_n \in \mathcal{A} \Rightarrow \bigcup_{i \in [n]} A_i \in \mathcal{A} \\
 \end{split}
 $$
-
 #### a [[sigma algebra]] is [[closure|closed]] over [[intersection]]
 $$
 A, B \in \mathcal{A} \Rightarrow A \cap B \in \mathcal{A}
@@ -191,7 +205,14 @@ $$
 &\Omega \in \mathcal{A} \\
 \end{split}
 $$
-2) $\mathcal{A}$ is [[closure|closed]] over the [[complement]]
+2) [[empty set]] is in  $\sigma$-algebra
+
+$$
+\begin{split}
+&\emptyset \in \mathcal{A} \\
+\end{split}
+$$
+3) $\mathcal{A}$ is [[closure|closed]] over the [[complement]]
 
 $$
 \begin{split}
@@ -199,14 +220,13 @@ $$
 \end{split}
 $$
 
-3) $\mathcal{A}$ is [[closure|closed]] over the [[union]]
+4) $\mathcal{A}$ is [[closure|closed]] over the [[union]]
 
 $$
 \begin{split}
 &A_1, ..., A_n \in \mathcal{A} \Rightarrow \bigcup_{i \in [n]} A_i \in \mathcal{A} \\
 \end{split}
 $$
-
 
 #### a [[sigma algebra]] is [[closure|closed]] over [[difference of sets]]
 $$
@@ -261,7 +281,14 @@ $$
 &\Omega \in \mathcal{A} \\
 \end{split}
 $$
-2) $\mathcal{A}$ is [[closure|closed]] over the [[complement]]
+2) [[empty set]] is in  $\sigma$-algebra
+
+$$
+\begin{split}
+&\emptyset \in \mathcal{A} \\
+\end{split}
+$$
+3) $\mathcal{A}$ is [[closure|closed]] over the [[complement]]
 
 $$
 \begin{split}
@@ -269,14 +296,13 @@ $$
 \end{split}
 $$
 
-3) $\mathcal{A}$ is [[closure|closed]] over the [[union]]
+4) $\mathcal{A}$ is [[closure|closed]] over the [[union]]
 
 $$
 \begin{split}
 &A_1, ..., A_n \in \mathcal{A} \Rightarrow \bigcup_{i \in [n]} A_i \in \mathcal{A} \\
 \end{split}
 $$
-
 #### a [[sigma algebra]] is [[closure|closed]] over [[intersection]]
 $$
 A, B \in \mathcal{A} \Rightarrow A \cap B \in \mathcal{A}

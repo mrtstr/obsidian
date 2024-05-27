@@ -1,14 +1,25 @@
 
 ### probability mass function (PMF)
-- given a [[random variable]] $X$ in a [[discrete probability space]] $(\Omega, \mathcal{A}, P)$ 
+- given a [[random variable]] $X$ in a [[discrete probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$ (the [[sample space]] $\Omega$ is [[countable]])
+- this we can define  the [[probability mass function (PMF)]] $f_X: \Omega \to [0,1]$ that is assigning a [[probability]] to each outcome in the [[sample space]]
 
-$$f_X(x): \mathbb{R} \mapsto [0,1] = P(X=x)$$
+$$
+\begin{split}
+f_X(x) 
+&= \mathcal{P}_X(\{c\}) \\
+&= \mathbb{P}\left(X^{-1}(\{c\})\right) \\
+&= \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) = x\right\}\right) \\
+&= \mathbb{P}\left(X =x\right) \\
+\end{split}
+$$
+
+
 
 The probability that the [[probability mass function (PMF)]] $X$ is inside the [[set]] of real number $C \subseteq \mathbb{R}$ is equal to the sum of the probabilities of its set elements $x_i \in C$
 $$
 P(X \in C) = \sum\limits_{x_i \in C} f_X(x_i)
 $$
-A [[random variable]] in a [[probability space]] is a mapping from the [[sample space]] to a [[measurable space]] (often real numbers). A [[probability mass function (PMF)]] is a [[random variable]] that can take only a finite number of values or at most infinite but [[countable]] number of values.
+
 
 
 ### Example
@@ -27,6 +38,9 @@ $$
 $$ 
 
 # ----------------------
+
+![[distribution#distribution]]
+
 ![[continuous probability space#continuous probability space]]
 
 ![[random variable#a random variable induces a probability measure]]
@@ -34,7 +48,7 @@ $$
 
 ![[random variable#random variable]]
 
-![[probability space#probability space]]
+
 
 
 ## [[bernoulli distribution|bernoulli distribution]]

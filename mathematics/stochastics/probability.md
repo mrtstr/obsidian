@@ -10,7 +10,7 @@
 - $P(\overline{A}) = 1- P(A)$
 - $A \subseteq B \Leftrightarrow P(A) \leq P(B)$
 
-### [[stochastic exclusive]] [[event space|events]] ([[disjunct]] [[set|sets]])  $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
+### [[stochastic exclusive]] [[event space|events]] ([[mathematics/basics/disjoint]] [[set|sets]])  $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
 - $P(A \cup B)=P(A) + P(B)$
 - $P(A \cap B) = 0$
 ### [[stochastic independent]] [[event space|events]] $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
@@ -18,8 +18,8 @@
 
 
 ## Theorems
-### decomposition in [[disjunct]] [[set|sets]]
-The [[union]] of two [[set|sets]] can be decomposed in tow [[disjunct]] [[set|sets]] 
+### decomposition in [[mathematics/basics/disjoint]] [[set|sets]]
+The [[union]] of two [[set|sets]] can be decomposed in tow [[mathematics/basics/disjoint]] [[set|sets]] 
 $$A \cup B = B \cup (A \cap \overline{B}) = A \cup (B \cap \overline{A})$$
 
 Proof:
@@ -78,10 +78,10 @@ END
 START
 Basic
 probability:
-decomposition of the [[union]] of two [[set|sets]] two in [[disjunct]] [[set|sets]] (with proof)
+decomposition of the [[union]] of two [[set|sets]] two in [[mathematics/basics/disjoint]] [[set|sets]] (with proof)
 
 Back: 
-The [[union]] of two [[set|sets]] can be decomposed in tow [[disjunct]] [[set|sets]] 
+The [[union]] of two [[set|sets]] can be decomposed in tow [[mathematics/basics/disjoint]] [[set|sets]] 
 $$A \cup B = B \cup (A \cap \overline{B}) = A \cup (B \cap \overline{A})$$
 Proof:
 $$
@@ -145,7 +145,7 @@ General [[event space|events]] $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$:
 - $P(\overline{A}) =$ ?
 - $A \subseteq B \Leftrightarrow$ ?
 
-[[stochastic exclusive]] [[event space|events]] ([[disjunct]] [[set|sets]])  $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
+[[stochastic exclusive]] [[event space|events]] ([[mathematics/basics/disjoint]] [[set|sets]])  $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
 - $P(A \cup B)=$ ?
 - $P(A \cap B) =$ ?
 [[stochastic independent]] [[event space|events]] $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
@@ -159,7 +159,7 @@ Back:
 - $P(\overline{A}) = 1- P(A)$
 - $A \subseteq B \Leftrightarrow P(A) \leq P(B)$
 
-### [[stochastic exclusive]] [[event space|events]] ([[disjunct]] [[set|sets]])  $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
+### [[stochastic exclusive]] [[event space|events]] ([[mathematics/basics/disjoint]] [[set|sets]])  $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
 - $P(A \cup B)=P(A) + P(B)$
 - $P(A \cap B) = 0$
 ### [[stochastic independent]] [[event space|events]] $A,B \in \mathcal{F}=\mathcal{P}(\Omega)$
