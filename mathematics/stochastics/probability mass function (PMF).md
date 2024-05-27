@@ -113,12 +113,17 @@ $$
 $$
 ### random variable
 - given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
-- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ from the [[measurable space]] of $(\Omega, \mathcal{A})$ to the [[real numbers]] with the [[borel sigma algebra]] (which are a [[measurable space]] too)
+- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ 
+
+$$
+\forall C \in \mathbb{R}: X^{-1}(C) = \{\omega \in \Omega : X(\omega) \in C\} \in \mathcal{A}
+$$
+
 - this is the case exactly when the following is true (given the [[inverse function]] $X^{-1}: \mathbb{R} \to \Omega$)
 $$
 \forall x \in \mathbb{R}: X^{-1}\left((-\infty, x]\right) = \{\omega \in \Omega: X(\omega) \in (-\infty, x]\} \in \mathcal{A}
 $$
-
+TODO add proof
 
 ### a [[random variable]] induces a [[probability measure]]
 - given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$ and a [[measurable function]] $X: (\Omega, \mathcal{A}) \to (\mathbb{R}, \mathcal{B})$ we can define a [[probability measure]] $\mathcal{P}_X: \mathcal{B}(\mathbb{R}) \to [0,1]$ 
@@ -308,12 +313,17 @@ $$
 $$
 ### random variable
 - given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
-- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ from the [[measurable space]] of $(\Omega, \mathcal{A})$ to the [[real numbers]] with the [[borel sigma algebra]] (which are a [[measurable space]] too)
+- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ 
+
+$$
+\forall C \in \mathbb{R}: X^{-1}(C) = \{\omega \in \Omega : X(\omega) \in C\} \in \mathcal{A}
+$$
+
 - this is the case exactly when the following is true (given the [[inverse function]] $X^{-1}: \mathbb{R} \to \Omega$)
 $$
 \forall x \in \mathbb{R}: X^{-1}\left((-\infty, x]\right) = \{\omega \in \Omega: X(\omega) \in (-\infty, x]\} \in \mathcal{A}
 $$
-
+TODO add proof
 
 ### a [[random variable]] induces a [[probability measure]]
 - given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$ and a [[measurable function]] $X: (\Omega, \mathcal{A}) \to (\mathbb{R}, \mathcal{B})$ we can define a [[probability measure]] $\mathcal{P}_X: \mathcal{B}(\mathbb{R}) \to [0,1]$ 

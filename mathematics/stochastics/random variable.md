@@ -1,11 +1,18 @@
 ### random variable
 - given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
-- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ from the [[measurable space]] of $(\Omega, \mathcal{A})$ to the [[real numbers]] with the [[borel sigma algebra]] (which are a [[measurable space]] too)
+- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ 
+
+$$
+\forall C \in \mathcal{B}(\mathbb{R}): X^{-1}(C) = \{\omega \in \Omega : X(\omega) \in C\} \in \mathcal{A}
+$$
+
 - this is the case exactly when the following is true (given the [[inverse function]] $X^{-1}: \mathbb{R} \to \Omega$)
 $$
 \forall x \in \mathbb{R}: X^{-1}\left((-\infty, x]\right) = \{\omega \in \Omega: X(\omega) \in (-\infty, x]\} \in \mathcal{A}
 $$
 
+
+TODO add proof
 
 ### a [[random variable]] induces a [[probability measure]]
 - given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$ and a [[measurable function]] $X: (\Omega, \mathcal{A}) \to (\mathbb{R}, \mathcal{B})$ we can define a [[probability measure]] $\mathcal{P}_X: \mathcal{B}(\mathbb{R}) \to [0,1]$ 
@@ -93,42 +100,25 @@ Basic
 Back: 
 ### random variable
 - given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
-- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ from the [[measurable space]] of $(\Omega, \mathcal{A})$ to the [[real numbers]] with the [[borel sigma algebra]] (which are a [[measurable space]] too)
+- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ 
+
+$$
+\forall C \in \mathbb{R}: X^{-1}(C) = \{\omega \in \Omega : X(\omega) \in C\} \in \mathcal{A}
+$$
+
 - this is the case exactly when the following is true (given the [[inverse function]] $X^{-1}: \mathbb{R} \to \Omega$)
 $$
 \forall x \in \mathbb{R}: X^{-1}\left((-\infty, x]\right) = \{\omega \in \Omega: X(\omega) \in (-\infty, x]\} \in \mathcal{A}
 $$
-
-#### proof
-- to show that the given condition is sufficient to show that $X$ is a [[measurable function]] we will prove the following
-$$
-\begin{split}
-\forall x \in \mathbb{R}: &X^{-1}\left((-\infty, x]\right)  \in \mathcal{A} \\
-&\Rightarrow \\
-\forall x < y \in \mathbb{R}: &X^{-1}\left([y, x]\right)  \in \mathcal{A} \\
-&\Rightarrow \\
-\forall E \subseteq \mathbb{R}: &X^{-1}\left(E\right)  \in \mathcal{A}
-\end{split}
-$$
-- first part
-$$
-\begin{split}
-&\forall x \in \mathbb{R} \forall \epsilon > 0 \in \mathbb{R}: X^{-1}\left((-\infty, x]\right)  \in \mathcal{A} \land X^{-1}\left((-\infty, x + \epsilon]\right)  \in \mathcal{A} \\
-&\Rightarrow X^{-1}\left((-\infty, y]\right) \setminus X^{-1}\left((-\infty, x]\right)  \in \mathcal{A} \qquad \text{(a sigma algbra is closed over difference)} \\
-&\Rightarrow\forall x < y \in \mathbb{R}:  X^{-1}\left([x, y]\right)   \in \mathcal{A} \\
-\end{split}
-$$
-- the second part can be proved because a [[sigma algebra]] is closed over [[union]]
+TODO add proof
 
 ### measurable function
-- given two [[measurable space|measurable spaces]] $\left(A, \sigma_A\right)$ and $\left(B, \sigma_B\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
-- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\sigma_B$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\sigma_B$ by the [[inverse function]] $f^{-1}$
+- given two [[measurable space|measurable spaces]] $\left(A, \mathcal{A}\right)$ and $\left(B, \mathcal{B}\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
+- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\mathcal{B}$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\mathcal{A}$ by the [[inverse function]] $f^{-1}:B \to A$
 $$
-\forall E \in \sigma_B: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \sigma_A
+\forall E \in \mathcal{B}: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \mathcal{A}
 $$
-- notation for a [[measurable function]] $f: \left(X, \sigma_X\right) \to \left(Y, \sigma_Y\right)$
-
-
+- notation for a [[measurable function]] $f: \left(A, \mathcal{A}\right) \to \left(B, \mathcal{B}\right)$
 ____________________________
 
 ### borel sigma algebra
@@ -288,21 +278,26 @@ what is the difference between a [[random variable]] and a [[measurable function
 Back: 
 ### random variable
 - given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
-- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ from the [[measurable space]] of $(\Omega, \mathcal{A})$ to the [[real numbers]] with the [[borel sigma algebra]] (which are a [[measurable space]] too)
+- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ 
+
+$$
+\forall C \in \mathbb{R}: X^{-1}(C) = \{\omega \in \Omega : X(\omega) \in C\} \in \mathcal{A}
+$$
+
 - this is the case exactly when the following is true (given the [[inverse function]] $X^{-1}: \mathbb{R} \to \Omega$)
 $$
 \forall x \in \mathbb{R}: X^{-1}\left((-\infty, x]\right) = \{\omega \in \Omega: X(\omega) \in (-\infty, x]\} \in \mathcal{A}
 $$
+TODO add proof
 
 
 ### measurable function
-- given two [[measurable space|measurable spaces]] $\left(A, \sigma_A\right)$ and $\left(B, \sigma_B\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
-- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\sigma_B$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\sigma_B$ by the [[inverse function]] $f^{-1}$
+- given two [[measurable space|measurable spaces]] $\left(A, \mathcal{A}\right)$ and $\left(B, \mathcal{B}\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
+- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\mathcal{B}$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\mathcal{A}$ by the [[inverse function]] $f^{-1}:B \to A$
 $$
-\forall E \in \sigma_B: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \sigma_A
+\forall E \in \mathcal{B}: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \mathcal{A}
 $$
-- notation for a [[measurable function]] $f: \left(X, \sigma_X\right) \to \left(Y, \sigma_Y\right)$
-
+- notation for a [[measurable function]] $f: \left(A, \mathcal{A}\right) \to \left(B, \mathcal{B}\right)$
 
 ____________________________
 
@@ -434,11 +429,17 @@ $$
 
 ### random variable
 - given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
-- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ from the [[measurable space]] of $(\Omega, \mathcal{A})$ to the [[real numbers]] with the [[borel sigma algebra]] (which are a [[measurable space]] too)
+- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ 
+
+$$
+\forall C \in \mathbb{R}: X^{-1}(C) = \{\omega \in \Omega : X(\omega) \in C\} \in \mathcal{A}
+$$
+
 - this is the case exactly when the following is true (given the [[inverse function]] $X^{-1}: \mathbb{R} \to \Omega$)
 $$
 \forall x \in \mathbb{R}: X^{-1}\left((-\infty, x]\right) = \{\omega \in \Omega: X(\omega) \in (-\infty, x]\} \in \mathcal{A}
 $$
+TODO add proof
 
 
 
@@ -490,13 +491,12 @@ $$
 ____________________________
 
 ### measurable function
-- given two [[measurable space|measurable spaces]] $\left(A, \sigma_A\right)$ and $\left(B, \sigma_B\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
-- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\sigma_B$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\sigma_B$ by the [[inverse function]] $f^{-1}:B \to A$
+- given two [[measurable space|measurable spaces]] $\left(A, \mathcal{A}\right)$ and $\left(B, \mathcal{B}\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
+- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\mathcal{B}$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\mathcal{A}$ by the [[inverse function]] $f^{-1}:B \to A$
 $$
-\forall E \in \sigma_B: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \sigma_A
+\forall E \in \mathcal{B}: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \mathcal{A}
 $$
-- notation for a [[measurable function]] $f: \left(X, \sigma_X\right) \to \left(Y, \sigma_Y\right)$
-
+- notation for a [[measurable function]] $f: \left(A, \mathcal{A}\right) \to \left(B, \mathcal{B}\right)$
 
 
 ### borel sigma algebra

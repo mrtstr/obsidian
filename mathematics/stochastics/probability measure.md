@@ -3,14 +3,13 @@
 $$
 P: \mathcal{A} \mapsto [0,1]
 $$
-
 - the probability of the [[empty set]] is zero
+
 $$
 \begin{split}
 P(\emptyset) = 0 \\
 \end{split}
 $$
-
 - the [[probability]] of the [[sample space]] is one
 $$
 \begin{split}
@@ -40,8 +39,8 @@ P\left(A \cup A^c\right)
 \Rightarrow P\left(A^c\right) &= 1 - P(A) \\
 \end{split}
 $$
-
 - probability of the [[union]]
+
 $$
 \begin{split}
 P\left(A \cup B\right) 
@@ -49,7 +48,6 @@ P\left(A \cup B\right)
 \end{split}
 $$
 proof
-
 $$
 \begin{split}
 P\left(A \cup B\right) 

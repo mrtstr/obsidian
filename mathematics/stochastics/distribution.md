@@ -11,8 +11,35 @@ $$
 $$
 
 ### relationship to other conecpts
-- the [[distribution]] of a [[random variable]] of a theoretical construct that is used to define functions that are describing the [[distribution]] like the [[cumulative distribution function (CDF)]] and the [[probability mass function (PMF)]]
+- the [[distribution]] of a [[random variable]] of a theoretical construct
+- in practice functions that are specifing the [[distribution]] are used instead
+	→  [[cumulative distribution function (CDF)]], [[probability mass function (PMF)]] [[probability density function (PDF)]]
 
+- every [[random variable]] $X: \Omega \to \mathbb{R}$ in a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$ has a [[distribution]] $\mathcal{P}_X: \mathcal{B}(\mathbb{R}) \to [0,1]$ 
+
+$$
+\begin{split}
+\mathcal{P}_X(C)= \mathbb{P}\left(X^{-1}(C )\right) \\
+ \\
+\end{split}
+$$
+- every [[distribution]] $\mathcal{P}_X: \mathcal{B}(\mathbb{R}) \to [0,1]$ (and thus every [[random variable]]) has a [[cumulative distribution function (CDF)]] 
+
+$$
+F_X(x) = \mathcal{P}_X((-\infty, x])
+$$
+- every [[random variable]] in a [[discrete probability space]] has a [[probability mass function (PMF)]]
+
+$$
+\begin{split}
+f_X(x) = \mathcal{P}_X(\{x\}) \\
+\end{split}
+$$
+- some but not all [[random variable]] in a [[continuous probability space]] have a [[probability density function (PDF)]] because eventhough they might have a [[cumulative distribution function (CDF)]] it is not allways [[differentiabe]]
+
+$$
+f_X(x) = \frac{dF_X(x)}{dx}
+$$
 
 # -----------------
 
@@ -109,41 +136,25 @@ ____________________________
 
 ### random variable
 - given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
-- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ from the [[measurable space]] of $(\Omega, \mathcal{A})$ to the [[real numbers]] with the [[borel sigma algebra]] (which are a [[measurable space]] too)
+- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ 
+
+$$
+\forall C \in \mathbb{R}: X^{-1}(C) = \{\omega \in \Omega : X(\omega) \in C\} \in \mathcal{A}
+$$
+
 - this is the case exactly when the following is true (given the [[inverse function]] $X^{-1}: \mathbb{R} \to \Omega$)
 $$
 \forall x \in \mathbb{R}: X^{-1}\left((-\infty, x]\right) = \{\omega \in \Omega: X(\omega) \in (-\infty, x]\} \in \mathcal{A}
 $$
-
-#### proof
-- to show that the given condition is sufficient to show that $X$ is a [[measurable function]] we will prove the following
-$$
-\begin{split}
-\forall x \in \mathbb{R}: &X^{-1}\left((-\infty, x]\right)  \in \mathcal{A} \\
-&\Rightarrow \\
-\forall x < y \in \mathbb{R}: &X^{-1}\left([y, x]\right)  \in \mathcal{A} \\
-&\Rightarrow \\
-\forall E \subseteq \mathbb{R}: &X^{-1}\left(E\right)  \in \mathcal{A}
-\end{split}
-$$
-- first part
-$$
-\begin{split}
-&\forall x \in \mathbb{R} \forall \epsilon > 0 \in \mathbb{R}: X^{-1}\left((-\infty, x]\right)  \in \mathcal{A} \land X^{-1}\left((-\infty, x + \epsilon]\right)  \in \mathcal{A} \\
-&\Rightarrow X^{-1}\left((-\infty, y]\right) \setminus X^{-1}\left((-\infty, x]\right)  \in \mathcal{A} \qquad \text{(a sigma algbra is closed over difference)} \\
-&\Rightarrow\forall x < y \in \mathbb{R}:  X^{-1}\left([x, y]\right)   \in \mathcal{A} \\
-\end{split}
-$$
-- the second part can be proved because a [[sigma algebra]] is closed over [[union]]
+TODO add proof
 
 ### measurable function
-- given two [[measurable space|measurable spaces]] $\left(A, \sigma_A\right)$ and $\left(B, \sigma_B\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
-- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\sigma_B$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\sigma_B$ by the [[inverse function]] $f^{-1}$
+- given two [[measurable space|measurable spaces]] $\left(A, \mathcal{A}\right)$ and $\left(B, \mathcal{B}\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
+- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\mathcal{B}$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\mathcal{A}$ by the [[inverse function]] $f^{-1}:B \to A$
 $$
-\forall E \in \sigma_B: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \sigma_A
+\forall E \in \mathcal{B}: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \mathcal{A}
 $$
-- notation for a [[measurable function]] $f: \left(X, \sigma_X\right) \to \left(Y, \sigma_Y\right)$
-
+- notation for a [[measurable function]] $f: \left(A, \mathcal{A}\right) \to \left(B, \mathcal{B}\right)$
 
 ### borel sigma algebra
 - the [[borel sigma algebra]] $\mathcal{B}(\mathbb{R})$ is a [[sigma algebra]] on the [[real numbers]] 
@@ -296,12 +307,52 @@ END
 
 START
 Basic
-- relationship of the [[distribution]] of a [[random variable]] to the [[cumulative distribution function (CDF)]], [[probability mass function (PMF)]] and [[probability density function (PDF)]]
-- why is the [[distribution]] needed?
+relationship of the following concepts
+- [[probability space]]
+- [[random variable]]
+- [[distribution]]
+- [[cumulative distribution function (CDF)]]
+- [[probability mass function (PMF)]]
+- [[probability density function (PDF)]]
+
+does every [[random variable]] have a ...?
+- [[distribution]]
+- [[cumulative distribution function (CDF)]]
+- [[probability mass function (PMF)]]
+- [[probability density function (PDF)]]
 
 Back: 
 ### relationship to other conecpts
-- the [[distribution]] of a [[random variable]] of a theoretical construct that is used to define functions that are describing the [[distribution]] like the [[cumulative distribution function (CDF)]] and the [[probability mass function (PMF)]]
+- the [[distribution]] of a [[random variable]] of a theoretical construct
+- in practice functions that are specifing the [[distribution]] are used instead
+	→  [[cumulative distribution function (CDF)]],  [[probability mass function (PMF)]] [[probability density function (PDF)]]
+
+- every [[random variable]] $X: \Omega \to \mathbb{R}$ in a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$ has a [[distribution]] $\mathcal{P}_X: \mathcal{B}(\mathbb{R}) \to [0,1]$ 
+
+$$
+\begin{split}
+\mathcal{P}_X(C)= \mathbb{P}\left(X^{-1}(C )\right) \\
+ \\
+\end{split}
+$$
+- every [[distribution]] $\mathcal{P}_X: \mathcal{B}(\mathbb{R}) \to [0,1]$ (and thus every [[random variable]]) has a [[cumulative distribution function (CDF)]] 
+
+$$
+F_X(x) = \mathcal{P}_X((-\infty, x])
+$$
+- every [[random variable]] in a [[discrete probability space]] has a [[probability mass function (PMF)]]
+
+$$
+\begin{split}
+f_X(x) = \mathcal{P}_X(\{x\}) \\
+\end{split}
+$$
+- some but not all [[random variable]] in a [[continuous probability space]] have a [[probability density function (PDF)]] because eventhough they might have a [[cumulative distribution function (CDF)]] it is not allways [[differentiabe]]
+
+$$
+f_X(x) = \frac{dF_X(x)}{dx}
+$$
+
 ____________________________
 
 ### distribution
@@ -379,42 +430,25 @@ $$
 
 ### random variable
 - given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
-- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ from the [[measurable space]] of $(\Omega, \mathcal{A})$ to the [[real numbers]] with the [[borel sigma algebra]] (which are a [[measurable space]] too)
+- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ 
+
+$$
+\forall C \in \mathbb{R}: X^{-1}(C) = \{\omega \in \Omega : X(\omega) \in C\} \in \mathcal{A}
+$$
+
 - this is the case exactly when the following is true (given the [[inverse function]] $X^{-1}: \mathbb{R} \to \Omega$)
 $$
 \forall x \in \mathbb{R}: X^{-1}\left((-\infty, x]\right) = \{\omega \in \Omega: X(\omega) \in (-\infty, x]\} \in \mathcal{A}
 $$
-
-#### proof
-- to show that the given condition is sufficient to show that $X$ is a [[measurable function]] we will prove the following
-$$
-\begin{split}
-\forall x \in \mathbb{R}: &X^{-1}\left((-\infty, x]\right)  \in \mathcal{A} \\
-&\Rightarrow \\
-\forall x < y \in \mathbb{R}: &X^{-1}\left([y, x]\right)  \in \mathcal{A} \\
-&\Rightarrow \\
-\forall E \subseteq \mathbb{R}: &X^{-1}\left(E\right)  \in \mathcal{A}
-\end{split}
-$$
-- first part
-$$
-\begin{split}
-&\forall x \in \mathbb{R} \forall \epsilon > 0 \in \mathbb{R}: X^{-1}\left((-\infty, x]\right)  \in \mathcal{A} \land X^{-1}\left((-\infty, x + \epsilon]\right)  \in \mathcal{A} \\
-&\Rightarrow X^{-1}\left((-\infty, y]\right) \setminus X^{-1}\left((-\infty, x]\right)  \in \mathcal{A} \qquad \text{(a sigma algbra is closed over difference)} \\
-&\Rightarrow\forall x < y \in \mathbb{R}:  X^{-1}\left([x, y]\right)   \in \mathcal{A} \\
-\end{split}
-$$
-- the second part can be proved because a [[sigma algebra]] is closed over [[union]]
+TODO add proof
 
 ### measurable function
-- given two [[measurable space|measurable spaces]] $\left(A, \sigma_A\right)$ and $\left(B, \sigma_B\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
-- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\sigma_B$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\sigma_B$ by the [[inverse function]] $f^{-1}$
+- given two [[measurable space|measurable spaces]] $\left(A, \mathcal{A}\right)$ and $\left(B, \mathcal{B}\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
+- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\mathcal{B}$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\mathcal{A}$ by the [[inverse function]] $f^{-1}:B \to A$
 $$
-\forall E \in \sigma_B: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \sigma_A
+\forall E \in \mathcal{B}: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \mathcal{A}
 $$
-- notation for a [[measurable function]] $f: \left(X, \sigma_X\right) \to \left(Y, \sigma_Y\right)$
-
-
+- notation for a [[measurable function]] $f: \left(A, \mathcal{A}\right) \to \left(B, \mathcal{B}\right)$
 
 ### measurable space
 - a [[measurable space]] $\left(\Omega,\mathcal{A} = \sigma(\Omega)\right)$ is a [[set]] $\Omega$ equiped with a [[sigma algebra]] $\mathcal{A}$

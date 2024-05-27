@@ -20,7 +20,16 @@ $$\mathcal{A} \subseteq \mathcal{P}(\Omega) = \{A \mid A \subseteq \Omega \}$$
 - a [[probability measure]] on the [[measurable space]] $(\Omega, \mathcal{A})$ that assignes a [[probability]] to each event $P: \mathcal{A} \to [0,1]$
 - e.g. for a die throw: $P\left(\left\{2,4,6\right\}\right) = \frac{1}{2}$ 
 
+### relationship to other concepts
+- every [[measurable space]] $(\Omega, \mathcal{A})$ has a non empty [[set]]  $\Omega$ and a [[sigma algebra]]  $\mathcal{A}$
+- every a [[measurable space]] with a [[probability measure]] $\mathbb{P}$ is a [[probability space]]
+- a [[measurable function]] mappes from one [[measurable space]] to another [[measurable space]]
+- a [[measurable function]] from a [[probability space]] to a [[measurable space]] can induce a [[probability measure]] in its domain (thus its is a [[probability space]] too) 
+- a [[random variable]] is a [[measurable function]] that mapps to the [[real numbers]]
+- a [[random variable]] induces a [[probability space]] $(\mathbb{R}, \mathcal{B}(\mathbb{R}), \mathcal{P_X})$ by inducing a [[probability measure]] $\mathcal{P_X}$
 # ------------------
+![[measurable space#measurable space]]
+
 
 ![[probability measure#probability measure]]
 
@@ -313,4 +322,142 @@ $$
 
 Tags: mathematics statistics
 <!--ID: 1716713552921-->
+END
+
+
+
+
+
+START
+Basic
+
+relationship of the following concepts
+- [[measurable space]]
+- [[sigma algebra]]
+- [[probability space]]
+- [[probability measure]]
+- [[measurable function]]
+- [[random variable]]
+- [[distribution]]
+
+- is every [[random variable]] in a [[probability space]]?
+- is very [[measurable space]] a [[probability space]]?
+- does every [[random variable]] have a [[distribution]]?
+
+Back: 
+
+### relationship to other concepts
+- every [[measurable space]] $(\Omega, \mathcal{A})$ has a nonempty [[set]] $\Omega$ and a [[sigma algebra]]  $\mathcal{A}$
+- every a [[measurable space]] with a [[probability measure]] $\mathbb{P}$ is a [[probability space]]
+- a [[measurable function]] mappes from one [[measurable space]] to another [[measurable space]]
+- a [[measurable function]] from a [[probability space]] to a [[measurable space]] can induce a [[probability measure]] in its domain (thus its is a [[probability space]] too) 
+- a [[random variable]] is a [[measurable function]] that mapps to the [[real numbers]]
+- a [[random variable]] induces a [[probability space]] $(\mathbb{R}, \mathcal{B}(\mathbb{R}), \mathcal{P_X})$ by inducing a [[probability measure]] $\mathcal{P_X}$
+
+________________
+
+### distribution
+- given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$ and a [[random variable]] $X: \Omega \to \mathbb{R}$ (which is a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$)
+- $X$ is inducing the [[probability measure]] $\mathcal{P}_X: \mathcal{B}(\mathbb{R}) \to [0,1]$ from the [[borel sigma algebra]] $\mathcal{B}(\mathbb{R})$ it the interval $[0,1]$ (assigning a probability to each borel set $\subset \mathbb{R}$)
+- $\mathcal{P}_X: \mathcal{B}(\mathbb{R}) \to [0,1]$ is called the [[distribution]] of $X$ and exists for every [[random variable]] 
+$$
+\begin{split}
+\mathcal{P}_X(C) 
+&= \mathbb{P}\left(X^{-1}(C \subseteq \mathbb{R})\right) \\
+&= \mathbb{P}\left(\left\{\omega \in \Omega : X(\omega) \in C\right\}\right) \\
+\end{split}
+$$
+
+
+### random variable
+- given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
+- a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ 
+
+$$
+\forall C \in \mathcal{B}(\mathbb{R}): X^{-1}(C) = \{\omega \in \Omega : X(\omega) \in C\} \in \mathcal{A}
+$$
+
+
+### measurable function
+- given two [[measurable space|measurable spaces]] $\left(A, \mathcal{A}\right)$ and $\left(B, \mathcal{B}\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
+- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\mathcal{B}$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\mathcal{A}$ by the [[inverse function]] $f^{-1}:B \to A$
+$$
+\forall E \in \mathcal{B}: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \mathcal{A}
+$$
+- notation for a [[measurable function]] $f: \left(A, \mathcal{A}\right) \to \left(B, \mathcal{B}\right)$
+
+
+
+### measurable space
+- a [[measurable space]] $\left(\Omega,\mathcal{A} )\right)$ is a [[set]] $\Omega$ equiped with a [[sigma algebra]] $\mathcal{A}$
+- every [[probability space]] is by definition a [[measurable space]]
+
+
+
+### probability space
+- a [[probability space]] $(\Omega, \mathcal{A}, P)$ is a formal model for a [[random process]]
+- if a [[measurable space]] $\left(\Omega, \mathcal{A}=\sigma(\Omega)\right)$ is equiped with a [[probability measure]] $P$ it is a [[probability space]]
+
+### $\sigma$ algebra
+- given a [[set]] $\Omega$ a $\sigma$-algebra $\mathcal{A}$ is a system of subsets of $\Omega$ with the following 3 base properties
+- used to describe the properties of an [[event space]] of a [[probability space]]
+
+1) the base [[set]] $\Omega$ is in its $\sigma$-algebra
+
+$$
+\begin{split}
+&\Omega \in \mathcal{A} \\
+\end{split}
+$$
+2) [[empty set]] is in  $\sigma$-algebra
+
+$$
+\begin{split}
+&\emptyset \in \mathcal{A} \\
+\end{split}
+$$
+3) $\mathcal{A}$ is [[closure|closed]] over the [[complement]]
+
+$$
+\begin{split}
+&A \in \mathcal{A} \Rightarrow A^c \in \mathcal{A} \\
+\end{split}
+$$
+
+4) $\mathcal{A}$ is [[closure|closed]] over the [[union]]
+
+$$
+\begin{split}
+&A_1, ..., A_n \in \mathcal{A} \Rightarrow \bigcup_{i \in [n]} A_i \in \mathcal{A} \\
+\end{split}
+$$
+
+### probability measure
+- given a [[measurable space]] $(\Omega, \mathcal{A})$ of a [[set]] $\Omega$ equiped with a [[sigma algebra]] $\mathcal{A}$ a [[function]] $P: \mathcal{A} \mapsto [0,1]$ is a [[probability measure]]
+$$
+P: \mathcal{A} \mapsto [0,1]
+$$
+
+- the probability of the [[empty set]] is zero
+$$
+\begin{split}
+P(\emptyset) = 0 \\
+\end{split}
+$$
+
+- the [[probability]] of the [[sample space]] is one
+$$
+\begin{split}
+P(\Omega) = 1 \\
+\end{split}
+$$
+- given a [[countable]] collection of [[mathematics/basics/disjoint]] events $(A_n)_{n \in \mathbb{N}}$ 
+$$
+\begin{split}
+P\left(\bigcup_{i \in \mathbb{N}} A_i \right) = \sum_{i \in \mathbb{N}} P(A_i) \\
+\end{split}
+$$
+
+Tags: mathematics statistics
+<!--ID: 1716833666294-->
 END

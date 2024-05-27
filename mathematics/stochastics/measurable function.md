@@ -1,10 +1,10 @@
 ### measurable function
-- given two [[measurable space|measurable spaces]] $\left(A, \sigma_A\right)$ and $\left(B, \sigma_B\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
-- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\sigma_B$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\sigma_B$ by the [[inverse function]] $f^{-1}:B \to A$
+- given two [[measurable space|measurable spaces]] $\left(A, \mathcal{A}\right)$ and $\left(B, \mathcal{B}\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
+- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\mathcal{B}$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\mathcal{A}$ by the [[inverse function]] $f^{-1}:B \to A$
 $$
-\forall E \in \sigma_B: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \sigma_A
+\forall E \in \mathcal{B}: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \mathcal{A}
 $$
-- notation for a [[measurable function]] $f: \left(X, \sigma_X\right) \to \left(Y, \sigma_Y\right)$
+- notation for a [[measurable function]] $f: \left(A, \mathcal{A}\right) \to \left(B, \mathcal{B}\right)$
 
 
 # ----------------------
@@ -22,13 +22,12 @@ Basic
 
 Back: 
 ### measurable function
-- given two [[measurable space|measurable spaces]] $\left(A, \sigma_A\right)$ and $\left(B, \sigma_B\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
-- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\sigma_B$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\sigma_B$ by the [[inverse function]] $f^{-1}$
+- given two [[measurable space|measurable spaces]] $\left(A, \mathcal{A}\right)$ and $\left(B, \mathcal{B}\right)$ with the [[set|sets]] $A$ and $B$ and their [[sigma algebra|sigma algebra]]
+- the [[function]] $f: A\to B$ is a [[measurable function]] if every [[set]] in the [[sigma algebra]] of its codomain $\mathcal{B}$ can be mapped to a [[set]] in the domain [[sigma algebra]] $\mathcal{A}$ by the [[inverse function]] $f^{-1}:B \to A$
 $$
-\forall E \in \sigma_B: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \sigma_A
+\forall E \in \mathcal{B}: f^{-1}(E) = \{x \in A : f(x) \in E\} \in \mathcal{A}
 $$
-- notation for a [[measurable function]] $f: \left(X, \sigma_X\right) \to \left(Y, \sigma_Y\right)$
-
+- notation for a [[measurable function]] $f: \left(A, \mathcal{A}\right) \to \left(B, \mathcal{B}\right)$
 __________________
 
 
