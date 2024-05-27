@@ -39,8 +39,8 @@ $$
 \end{split}
 $$
 
-- given two [[mathematics/basics/disjoint]] subsets of the [[real numbers]] $A, B \subseteq \mathbb{R}$
-- fist we need to show that the image (of $X^{-1}$) of two [[mathematics/basics/disjoint]] [[set|sets]] is still [[mathematics/basics/disjoint]] 
+- given two [[disjoint]] subsets of the [[real numbers]] $A, B \subseteq \mathbb{R}$
+- fist we need to show that the image (of $X^{-1}$) of two [[disjoint]] [[set|sets]] is still [[disjoint]] 
 $$
 \begin{split}
 A \cap B = \emptyset \Leftrightarrow X^{-1}(A) \cap X^{-1}(B) = \emptyset
@@ -54,7 +54,7 @@ $$
 \forall x, y \in \mathbb{R}: X^{-1}(x) = X^{-1}(y) &\Rightarrow x = y
 \end{split}
 $$
-- thus $X^{-1}(A)$ and $X^{-1}(B)$ have to be [[mathematics/basics/disjoint]]
+- thus $X^{-1}(A)$ and $X^{-1}(B)$ have to be [[disjoint]]
 
 $$
 \begin{split}

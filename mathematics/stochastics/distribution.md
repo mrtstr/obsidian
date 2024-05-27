@@ -77,8 +77,8 @@ $$
 \end{split}
 $$
 
-- given two [[mathematics/basics/disjoint]] subsets of the [[real numbers]] $A, B \subseteq \mathbb{R}$
-- fist we need to show that the image (of $X^{-1}$) of two [[mathematics/basics/disjoint]] [[set|sets]] is still [[mathematics/basics/disjoint]] 
+- given two [[disjoint]] subsets of the [[real numbers]] $A, B \subseteq \mathbb{R}$
+- fist we need to show that the image (of $X^{-1}$) of two [[disjoint]] [[set|sets]] is still [[disjoint]] 
 $$
 \begin{split}
 A \cap B = \emptyset \Leftrightarrow X^{-1}(A) \cap X^{-1}(B) = \emptyset
@@ -217,7 +217,7 @@ $$
 P(\Omega) = 1 \\
 \end{split}
 $$
-- given a [[countable]] collection of [[mathematics/basics/disjoint]] events $(A_n)_{n \in \mathbb{N}}$ 
+- given a [[countable]] collection of [[disjoint]] events $(A_n)_{n \in \mathbb{N}}$ 
 $$
 \begin{split}
 P\left(\bigcup_{i \in \mathbb{N}} A_i \right) = \sum_{i \in \mathbb{N}} P(A_i) \\
