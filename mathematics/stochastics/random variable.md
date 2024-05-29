@@ -56,9 +56,17 @@ $$
 - because of the properties of the [[function]] we know the follwoing
 $$
 \begin{split}
+
 \forall x, y \in \mathbb{R}: X(\omega) = x \land \mathbb{R}: X(\omega) = y &\Rightarrow x = y \\
 \Leftrightarrow \\
 \forall x, y \in \mathbb{R}: X^{-1}(x) = X^{-1}(y) &\Rightarrow x = y
+\end{split}
+$$
+$$
+\begin{split}
+&\text{let } a \in A , b \in B: X^{-1}(a) = X^{-1}(b) = c \\ 
+\Rightarrow& X(c) = a \land X(c) = b \\
+\Rightarrow&  a = b \\
 \end{split}
 $$
 - thus $X^{-1}(A)$ and $X^{-1}(B)$ have to be [[disjoint]]
@@ -367,7 +375,7 @@ END
 START
 Basic
 - proof that a [[random variable]] induces a [[probability measure]] on the [[real numbers]]
-- how is this [[probability measure]] called in a [[discrete probability space]] and [[continuous probability space]]?
+
 Back: 
 ### a [[random variable]] induces a [[probability measure]]
 - given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$ and a [[measurable function]] $X: (\Omega, \mathcal{A}) \to (\mathbb{R}, \mathcal{B})$ we can define a [[probability measure]] $\mathcal{P}_X: \mathcal{B} \to [0,1]$ 
@@ -406,11 +414,20 @@ A \cap B = \emptyset \Leftrightarrow X^{-1}(A) \cap X^{-1}(B) = \emptyset
 \end{split}
 $$
 - because of the properties of the [[function]] we know the follwoing
+
 $$
 \begin{split}
+
 \forall x, y \in \mathbb{R}: X(\omega) = x \land \mathbb{R}: X(\omega) = y &\Rightarrow x = y \\
 \Leftrightarrow \\
 \forall x, y \in \mathbb{R}: X^{-1}(x) = X^{-1}(y) &\Rightarrow x = y
+\end{split}
+$$
+$$
+\begin{split}
+&\text{let } a \in A , b \in B: X^{-1}(a) = X^{-1}(b) = c \\ 
+\Rightarrow& X(c) = a \land X(c) = b \\
+\Rightarrow&  a = b \\
 \end{split}
 $$
 - thus $X^{-1}(A)$ and $X^{-1}(B)$ have to be [[mathematics/basics/disjoint]]
