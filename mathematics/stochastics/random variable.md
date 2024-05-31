@@ -7,6 +7,7 @@ $$
 $$
 
 - this is the case exactly when the following is true (given the [[inverse function]] $X^{-1}: \mathbb{R} \to \Omega$)
+
 $$
 \forall x \in \mathbb{R}: X^{-1}\left((-\infty, x]\right) = \{\omega \in \Omega: X(\omega) \in (-\infty, x]\} \in \mathcal{A}
 $$
@@ -54,6 +55,7 @@ A \cap B = \emptyset \Leftrightarrow X^{-1}(A) \cap X^{-1}(B) = \emptyset
 \end{split}
 $$
 - because of the properties of the [[function]] we know the follwoing
+
 $$
 \begin{split}
 
@@ -62,6 +64,7 @@ $$
 \forall x, y \in \mathbb{R}: X^{-1}(x) = X^{-1}(y) &\Rightarrow x = y
 \end{split}
 $$
+
 $$
 \begin{split}
 &\text{let } a \in A , b \in B: X^{-1}(a) = X^{-1}(b) = c \\ 
@@ -69,6 +72,7 @@ $$
 \Rightarrow&  a = b \\
 \end{split}
 $$
+
 - thus $X^{-1}(A)$ and $X^{-1}(B)$ have to be [[disjoint]]
 
 $$

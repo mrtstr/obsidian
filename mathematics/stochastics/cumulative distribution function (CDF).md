@@ -24,13 +24,11 @@ $$
 - $F(x) = \mathcal{P}_X((-\infty, x])$ is monotone increasing
 $$
 \begin{split}
-&x \leq y \\
-\Rightarrow &\left\{\omega \in \Omega: X(\omega) \in (-\infty, x]\right\} \subseteq \left\{\omega \in \Omega: X(\omega) \in (-\infty, y]\right\}  \\
-
-
-\Rightarrow& \mathbb{P}\left(X^{-1}\left((-\infty, y]\right)\right) =\mathbb{P}\left(X^{-1}\left((-\infty, x]\right)\right) + 
- \mathbb{P}\left(X^{-1}\left((x, y]\right)\right)\\
-\Rightarrow& \mathbb{P}\left(X^{-1}\left((-\infty, x]\right)\right) \leq\mathbb{P}\left(X^{-1}\left((-\infty, y]\right)\right) 
+F(x + \epsilon)
+&= \mathcal{P}_X((-\infty, x + \epsilon]) \\
+&= \mathcal{P}_X((-\infty, x ] \dot{\cup} (x, x + \epsilon]) \\
+&= \mathcal{P}_X((-\infty, x ]) +  \mathcal{P}_X((x, x + \epsilon]) \\
+&= F(x ) +  \mathcal{P}_X((x, x + \epsilon]) \geq F(x)\\
 \end{split}
 $$
 - the second part is to show that $\mathcal{P}((a, b]) = F(b) - F(a)$ is a [[probability measure]]
@@ -172,18 +170,16 @@ $$
 \lim_{x \to \infty} \mathcal{P}_X((-\infty, x]) = \mathcal{P}_X(\mathbb{R}) = 1
 $$
 - $F(x) = \mathcal{P}_X((-\infty, x])$ is monotone increasing
+
 $$
 \begin{split}
-&x \leq y \\
-\Rightarrow &\left\{\omega \in \Omega: X(\omega) \in (-\infty, x]\right\} \subseteq \left\{\omega \in \Omega: X(\omega) \in (-\infty, y]\right\}  \\
-
-
-\Rightarrow& \mathbb{P}\left(X^{-1}\left((-\infty, y]\right)\right) =\mathbb{P}\left(X^{-1}\left((-\infty, x]\right)\right) + 
- \mathbb{P}\left(X^{-1}\left((x, y]\right)\right)\\
-\Rightarrow& \mathbb{P}\left(X^{-1}\left((-\infty, x]\right)\right) \leq\mathbb{P}\left(X^{-1}\left((-\infty, y]\right)\right) 
+F(x + \epsilon)
+&= \mathcal{P}_X((-\infty, x + \epsilon]) \\
+&= \mathcal{P}_X((-\infty, x ] \dot{\cup} (x, x + \epsilon]) \\
+&= \mathcal{P}_X((-\infty, x ]) +  \mathcal{P}_X((x, x + \epsilon]) \\
+&= F(x ) +  \mathcal{P}_X((x, x + \epsilon]) \geq F(x)\\
 \end{split}
 $$
-
 
 
 
@@ -354,17 +350,17 @@ $$
 \lim_{x \to \infty} \mathcal{P}_X((-\infty, x]) = \mathcal{P}_X(\mathbb{R}) = 1
 $$
 - $F(x) = \mathcal{P}_X((-\infty, x])$ is monotone increasing
+
 $$
 \begin{split}
-&x \leq y \\
-\Rightarrow &\left\{\omega \in \Omega: X(\omega) \in (-\infty, x]\right\} \subseteq \left\{\omega \in \Omega: X(\omega) \in (-\infty, y]\right\}  \\
-
-
-\Rightarrow& \mathbb{P}\left(X^{-1}\left((-\infty, y]\right)\right) =\mathbb{P}\left(X^{-1}\left((-\infty, x]\right)\right) + 
- \mathbb{P}\left(X^{-1}\left((x, y]\right)\right)\\
-\Rightarrow& \mathbb{P}\left(X^{-1}\left((-\infty, x]\right)\right) \leq\mathbb{P}\left(X^{-1}\left((-\infty, y]\right)\right) 
+F(x + \epsilon)
+&= \mathcal{P}_X((-\infty, x + \epsilon]) \\
+&= \mathcal{P}_X((-\infty, x ] \dot{\cup} (x, x + \epsilon]) \\
+&= \mathcal{P}_X((-\infty, x ]) +  \mathcal{P}_X((x, x + \epsilon]) \\
+&= F(x ) +  \mathcal{P}_X((x, x + \epsilon]) \geq F(x)\\
 \end{split}
 $$
+
 - the second part is to show that $\mathcal{P}((a, b]) = F(b) - F(a)$ is a [[probability measure]]
 $$
 \begin{split}
@@ -529,15 +525,14 @@ $$
 \lim_{x \to \infty} \mathcal{P}_X((-\infty, x]) = \mathcal{P}_X(\mathbb{R}) = 1
 $$
 - $F(x) = \mathcal{P}_X((-\infty, x])$ is monotone increasing
+
 $$
 \begin{split}
-&x \leq y \\
-\Rightarrow &\left\{\omega \in \Omega: X(\omega) \in (-\infty, x]\right\} \subseteq \left\{\omega \in \Omega: X(\omega) \in (-\infty, y]\right\}  \\
-
-
-\Rightarrow& \mathbb{P}\left(X^{-1}\left((-\infty, y]\right)\right) =\mathbb{P}\left(X^{-1}\left((-\infty, x]\right)\right) + 
- \mathbb{P}\left(X^{-1}\left((x, y]\right)\right)\\
-\Rightarrow& \mathbb{P}\left(X^{-1}\left((-\infty, x]\right)\right) \leq\mathbb{P}\left(X^{-1}\left((-\infty, y]\right)\right) 
+F(x + \epsilon)
+&= \mathcal{P}_X((-\infty, x + \epsilon]) \\
+&= \mathcal{P}_X((-\infty, x ] \dot{\cup} (x, x + \epsilon]) \\
+&= \mathcal{P}_X((-\infty, x ]) +  \mathcal{P}_X((x, x + \epsilon]) \\
+&= F(x ) +  \mathcal{P}_X((x, x + \epsilon]) \geq F(x)\\
 \end{split}
 $$
 
@@ -621,15 +616,14 @@ $$
 \lim_{x \to \infty} \mathcal{P}_X((-\infty, x]) = \mathcal{P}_X(\mathbb{R}) = 1
 $$
 - $F(x) = \mathcal{P}_X((-\infty, x])$ is monotone increasing
+
 $$
 \begin{split}
-&x \leq y \\
-\Rightarrow &\left\{\omega \in \Omega: X(\omega) \in (-\infty, x]\right\} \subseteq \left\{\omega \in \Omega: X(\omega) \in (-\infty, y]\right\}  \\
-
-
-\Rightarrow& \mathbb{P}\left(X^{-1}\left((-\infty, y]\right)\right) =\mathbb{P}\left(X^{-1}\left((-\infty, x]\right)\right) + 
- \mathbb{P}\left(X^{-1}\left((x, y]\right)\right)\\
-\Rightarrow& \mathbb{P}\left(X^{-1}\left((-\infty, x]\right)\right) \leq\mathbb{P}\left(X^{-1}\left((-\infty, y]\right)\right) 
+F(x + \epsilon)
+&= \mathcal{P}_X((-\infty, x + \epsilon]) \\
+&= \mathcal{P}_X((-\infty, x ] \dot{\cup} (x, x + \epsilon]) \\
+&= \mathcal{P}_X((-\infty, x ]) +  \mathcal{P}_X((x, x + \epsilon]) \\
+&= F(x ) +  \mathcal{P}_X((x, x + \epsilon]) \geq F(x)\\
 \end{split}
 $$
 
