@@ -1,7 +1,6 @@
-[[probability space]]
-[[conditional distribution]]
 
-## Definition
+
+### conditional probability
 Probability of [[event space|event]] $A$ happened given that we know [[event space|event]] $B$ happened
 $$
 \begin{split}
@@ -36,7 +35,7 @@ conditional probability
 - definition
 - decomposition on the [[intersection]] of [[event space|events]] 
 Back: 
-## Definition
+## conditional probability
 Probability of [[event space|event]] $A$ happened given that we know [[event space|event]] $B$ happened
 $$
 \begin{split}

@@ -1,10 +1,17 @@
 ### stochastic independent
-- a collection of [[event|events]] is [[stochastic independent]] if the occurrence of [[event space|event]] $B$ does not change the [[probability]] that [[event space|event]] also happened
+- a collection of [[event|events]] $A_1, ..., A_k$ is [[stochastic independent]] if the follwoing is true
 
 $$
 P\left(\bigcap\limits_{i=1}^{k} A_i \right) = \prod\limits_{i=1}^{k} P(A_i) 
 $$
 
+### pairwise stochastic independent
+- a collection of [[event|events]] $A_1, ..., A_k$ is [[stochastic independent]] if the follwoing is true
+
+$$
+\forall i \neq j \in [k]: P\left( A_i \cap A_j \right) =  P(A_i) P(A_j) 
+$$
+- [[stochastic independent]] events are allways pairwise stochastic independent but not the other way around
 
 ## Properties $A \perp B$
 1) $P(A \mid B) = P(A)$
@@ -70,6 +77,32 @@ Tags: mathematics statistics
 <!--ID: 1666457499372-->
 END
 
+
+
+START
+Basic
+pairwise stochastic independent
+- definition
+- difference to [[stochastic independent]]
+Back: 
+### stochastic independent
+- a collection of [[event|events]] $A_1, ..., A_k$ is [[stochastic independent]] if the follwoing is true
+
+$$
+P\left(\bigcap\limits_{i=1}^{k} A_i \right) = \prod\limits_{i=1}^{k} P(A_i) 
+$$
+
+### pairwise stochastic independent
+- a collection of [[event|events]] $A_1, ..., A_k$ is [[stochastic independent]] if the follwoing is true
+
+$$
+\forall i \neq j \in [k]: P\left( A_i \cap A_j \right) =  P(A_i) P(A_j) 
+$$
+- [[stochastic independent]] events are allways pairwise stochastic independent but not the other way around
+
+Tags: mathematics statistics
+<!--ID: 1717336808317-->
+END
 
 START
 Basic
