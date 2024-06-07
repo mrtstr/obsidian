@@ -1,11 +1,20 @@
 
-## [[law of total probability]] for [[event|events]]
+### [[law of total probability]] for [[event|events]]
 for a [[partitioned sample space]] $B = \{B_i \mid i=1,2,...,k\}$ the following is true:
 $$
 P(A)=\sum\limits_{i=1}^{k}P(B_i)\cdot P(A \mid B_i)
 $$
 ![[Selection_002.png]]
 
+#### proof
+$$
+\begin{split}
+P(A) 
+&=P(A) \cdot 1 \\
+&=P(A) \cdot \sum\limits_{i=1}^{k}P(B_i) \\
+&= \sum\limits_{i=1}^{k}P(B_i)\cdot P(A \mid B_i) \\
+\end{split}
+$$
 
 ## [[law of total probability]] for a [[continuous random variable]]
 
@@ -25,7 +34,7 @@ START
 Basic
 [[law of total probability]] for [[event|events]]
 Back: 
-## Definition
+
 for a [[partitioned sample space]] $B = \{B_i \mid i=1,2,...,k\}$ the following is true:
 $$
 P(A)=\sum\limits_{i=1}^{k}P(B_i)\cdot P(A \mid B_i)

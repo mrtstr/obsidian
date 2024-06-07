@@ -1,5 +1,5 @@
-# normal distribution
-## [[probability density function (PDF)]]
+### normal distribution
+#### [[probability density function (PDF)]]
 
 $$
 f_X\left(x|\mu, \sigma^2\right) = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}\right]}
@@ -17,7 +17,7 @@ grid: true
 f(x) = 1/sqrt(2*PI) exp(-x^2 / 2)
 ```
 
-## [[moment generating function]]
+#### [[moment generating function]]
 
 ![[moment generating function#definition]]
 
@@ -25,7 +25,7 @@ $$
 \psi_X(t) = \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]}
 $$
 (no proof)
-## [[expectation]] / mean
+### [[expectation]]
 
 $$
 \begin{split}
@@ -36,7 +36,7 @@ $$
  &= \left. \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} (\mu+t \sigma^2) \right|_{t=0} \\
 \end{split}
 $$
-## [[variance]]
+#### [[variance]]
 
 $$
 \begin{split}
@@ -56,7 +56,9 @@ $$
 $$
 
 ## properties
+
 ### [[symmetric distribution]] around its mean $\mu$
+
 ![[symmetric distribution#symmetric around its mean]]
 ### proof
 
@@ -113,7 +115,7 @@ $$
 \end{split}
 $$
 ### proof1: [[functions of random variables]]
-![[functions of random variables#linear function of a probability density function]]
+
 
 $$
 \begin{split}
@@ -128,6 +130,7 @@ f_Y(y)
 \end{split}
 $$
 ## Linear Combinations of [[normal distribution|normal distributed]] [[random variable|random variables]]
+
 Linear Combinations of [[normal distribution|normal distributed]] [[random variable|random variables]] are again normal distributed.
 ### Sum of [[normal distribution|normal distributed]] [[random variable|random variables]]
 $$
@@ -344,7 +347,7 @@ END
 
 START
 Basic
-- [[linear function|Linear Transformation]] of a [[normal distribution]]
+- [[linear map]] of a [[normal distribution]]
 - proof with the equation for linear transformed [[random variable]]
 Back: 
 ### [[probability density function]]

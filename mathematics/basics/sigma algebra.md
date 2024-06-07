@@ -62,6 +62,53 @@ A,B \in \mathcal{A}
 \end{split}
 $$
 
+### trace sigma algebra
+- let $A$ be a nonempty [[set]] and let $\mathcal{A}$ be a [[sigma algebra]] on $A$
+- let $B \subseteq A$ be a subset of $A$ then $\mathcal{B}$ is a [[sigma algebra]] on $B$
+
+$$
+\mathcal{B} = \{B \cap S: S \in \mathcal{A}\}
+$$
+#### proof
+
+1) since $\emptyset \in \mathcal{A}$ and the [[empty set]] has to be in $B$
+
+$$
+B \cap \emptyset = \emptyset \in \mathcal{B}
+$$
+
+2) since $A \in \mathcal{A}$ and  $B$ is a subset of $A$ their [[intersection]] has to be in $\mathcal{B}$ 
+
+$$
+B \cap A = B \in \mathcal{B}
+$$
+
+3) $\mathcal{B}$ is [[closure|closed]] over the [[union]]
+
+$$
+\begin{split}
+&X, Y \in \mathcal{B}\\
+\Rightarrow& \exists X', Y' \in \mathcal{A}: X = X' \cap B \land Y = Y' \cap B \\
+\Rightarrow&  X' \cup  Y' \in \mathcal{A} \\
+\Rightarrow&  (X' \cup  Y') \cap B \in \mathcal{B} \\
+\Rightarrow&  (X' \cap B) \cup (X' \cap B) \in \mathcal{B} \\
+\Rightarrow&  X \cup Y \in \mathcal{B} \\
+\end{split}
+$$
+
+
+3) $\mathcal{A}$ is [[closure|closed]] over the [[complement]]
+$$
+\begin{split}
+&X \in \mathcal{B}\\
+\Rightarrow& \exists X' \in \mathcal{A}: X = X' \cap B \\
+\Rightarrow&  X'^c \in \mathcal{A} \\
+\Rightarrow&  X'^c \cup A \in \mathcal{A} \\
+\Rightarrow&  X'^c \cap A \cap B \in \mathcal{B} \\
+\Rightarrow&  X'^c \cap B \in \mathcal{B} \\
+\end{split}
+$$
+
 # --------------
 ![[set#de morgan’s laws]]
 

@@ -1,8 +1,8 @@
 ### stochastic independent
-- a collection of [[event|events]] $A_1, ..., A_k$ is [[stochastic independent]] if the follwoing is true
+- a collection of [[event|events]] $A_1, ..., A_k$ is [[stochastic independent]] if the following is true
 
 $$
-P\left(\bigcap\limits_{i=1}^{k} A_i \right) = \prod\limits_{i=1}^{k} P(A_i) 
+\forall I \subseteq [k]: P\left(\bigcap\limits_{i \in I} A_i \right) = \prod\limits_{i \in I} P(A_i) 
 $$
 
 ### pairwise stochastic independent
@@ -12,6 +12,37 @@ $$
 \forall i \neq j \in [k]: P\left( A_i \cap A_j \right) =  P(A_i) P(A_j) 
 $$
 - [[stochastic independent]] events are allways pairwise stochastic independent but not the other way around
+
+### stochastic independent $\rightarrow$ pairwise stochastic independent
+- its trivial because if the condition is true $\forall I \subseteq [k]$ it also inclused all pairs
+
+### pairwise stochastic independent $\nrightarrow$ stochastic independent
+- given the [[sample space]] $\Omega = \{1,2,3, 4\}$ and the [[event|envents]] $A=\{1,2\}$, $B=\{2,3\}$ and $C=\{1,3\}$
+
+$$
+\begin{split}
+\mathbb{P}(A) = \mathbb{P}(B) =\mathbb{P}(C) = \frac{1}{2}
+\end{split}
+$$
+
+- the [[event|events]] are pairwise stochastic independent because
+
+$$
+\begin{split}
+\mathbb{P}(A \cap B) = \mathbb{P}(A) \mathbb{P}(B) = \frac{1}{4} \\
+\mathbb{P}(A \cap C) = \mathbb{P}(A) \mathbb{P}(C) = \frac{1}{4} \\
+\mathbb{P}(B \cap C) = \mathbb{P}(B) \mathbb{P}(C) = \frac{1}{4} \\
+\end{split}
+$$
+
+- but not [[stochastic independent]] because
+
+$$
+\begin{split}
+\mathbb{P}(A \cap B \cap C) = \mathbb{P}(\emptyset)  = 0 \neq 
+ \mathbb{P}(A)\mathbb{P}(B) \mathbb{P}(C) = \frac{1}{16} \\
+\end{split}
+$$
 
 ## Properties $A \perp B$
 1) $P(A \mid B) = P(A)$
@@ -53,10 +84,10 @@ stochastic independence
 
 Back: 
 ### stochastic independent
-- a collection of [[event|events]] is [[stochastic independent]] if the occurrence of [[event space|event]] $B$ does not change the [[probability]] that [[event space|event]] also happened
+- a collection of [[event|events]] $A_1, ..., A_k$ is [[stochastic independent]] if the following is true
 
 $$
-P\left(\bigcap\limits_{i=1}^{k} A_i \right) = \prod\limits_{i=1}^{k} P(A_i) 
+\forall I \subseteq [k]: P\left(\bigcap\limits_{i \in I} A_i \right) = \prod\limits_{i \in I} P(A_i) 
 $$
 
 
@@ -86,10 +117,10 @@ pairwise stochastic independent
 - difference to [[stochastic independent]]
 Back: 
 ### stochastic independent
-- a collection of [[event|events]] $A_1, ..., A_k$ is [[stochastic independent]] if the follwoing is true
+- a collection of [[event|events]] $A_1, ..., A_k$ is [[stochastic independent]] if the following is true
 
 $$
-P\left(\bigcap\limits_{i=1}^{k} A_i \right) = \prod\limits_{i=1}^{k} P(A_i) 
+\forall I \subseteq [k]: P\left(\bigcap\limits_{i \in I} A_i \right) = \prod\limits_{i \in I} P(A_i) 
 $$
 
 ### pairwise stochastic independent
@@ -99,6 +130,37 @@ $$
 \forall i \neq j \in [k]: P\left( A_i \cap A_j \right) =  P(A_i) P(A_j) 
 $$
 - [[stochastic independent]] events are allways pairwise stochastic independent but not the other way around
+
+### stochastic independent $\rightarrow$ pairwise stochastic independent
+- its trivial because if the condition is true $\forall I \subseteq [k]$ it also inclused all pairs
+
+### pairwise stochastic independent $\nrightarrow$ stochastic independent
+- given the [[sample space]] $\Omega = \{1,2,3, 4\}$ and the [[event|envents]] $A=\{1,2\}$, $B=\{2,3\}$ and $C=\{1,3\}$
+
+$$
+\begin{split}
+\mathbb{P}(A) = \mathbb{P}(B) =\mathbb{P}(C) = \frac{1}{2}
+\end{split}
+$$
+
+- the [[event|events]] are pairwise stochastic independent because
+
+$$
+\begin{split}
+\mathbb{P}(A \cap B) = \mathbb{P}(A) \mathbb{P}(B) = \frac{1}{4} \\
+\mathbb{P}(A \cap C) = \mathbb{P}(A) \mathbb{P}(C) = \frac{1}{4} \\
+\mathbb{P}(B \cap C) = \mathbb{P}(B) \mathbb{P}(C) = \frac{1}{4} \\
+\end{split}
+$$
+
+- but not [[stochastic independent]] because
+
+$$
+\begin{split}
+\mathbb{P}(A \cap B \cap C) = \mathbb{P}(\emptyset)  = 0 \neq 
+ \mathbb{P}(A)\mathbb{P}(B) \mathbb{P}(C) = \frac{1}{16} \\
+\end{split}
+$$
 
 Tags: mathematics statistics
 <!--ID: 1717336808317-->
@@ -151,4 +213,64 @@ f_{X\mid Y}(x \mid y)
 $$
 Tags: mathematics statistics
 <!--ID: 1671186732887-->
+END
+
+
+START
+Basic
+- proof that from pairwise stochastic independence does not follow [[stochastic independent|stochstic independence]]
+- proof that from [[stochastic independent|stochstic independence]] follows pairwise stochastic independence
+
+Back: 
+
+### stochastic independent $\rightarrow$ pairwise stochastic independent
+- its trivial because if the condition is true $\forall I \subseteq [k]$ it also inclused all pairs
+
+### pairwise stochastic independent $\nrightarrow$ stochastic independent
+- given the [[sample space]] $\Omega = \{1,2,3, 4\}$ and the [[event|envents]] $A=\{1,2\}$, $B=\{2,3\}$ and $C=\{1,3\}$
+
+$$
+\begin{split}
+\mathbb{P}(A) = \mathbb{P}(B) =\mathbb{P}(C) = \frac{1}{2}
+\end{split}
+$$
+
+- the [[event|events]] are pairwise stochastic independent because
+
+$$
+\begin{split}
+\mathbb{P}(A \cap B) = \mathbb{P}(A) \mathbb{P}(B) = \frac{1}{4} \\
+\mathbb{P}(A \cap C) = \mathbb{P}(A) \mathbb{P}(C) = \frac{1}{4} \\
+\mathbb{P}(B \cap C) = \mathbb{P}(B) \mathbb{P}(C) = \frac{1}{4} \\
+\end{split}
+$$
+
+- but not [[stochastic independent]] because
+
+$$
+\begin{split}
+\mathbb{P}(A \cap B \cap C) = \mathbb{P}(\emptyset)  = 0 \neq 
+ \mathbb{P}(A)\mathbb{P}(B) \mathbb{P}(C) = \frac{1}{16} \\
+\end{split}
+$$
+
+_______________________
+
+### stochastic independent
+- a collection of [[event|events]] $A_1, ..., A_k$ is [[stochastic independent]] if the following is true
+
+$$
+\forall I \subseteq [k]: P\left(\bigcap\limits_{i \in I} A_i \right) = \prod\limits_{i \in I} P(A_i) 
+$$
+
+### pairwise stochastic independent
+- a collection of [[event|events]] $A_1, ..., A_k$ is [[stochastic independent]] if the follwoing is true
+
+$$
+\forall i \neq j \in [k]: P\left( A_i \cap A_j \right) =  P(A_i) P(A_j) 
+$$
+- [[stochastic independent]] events are allways pairwise stochastic independent but not the other way around
+
+Tags: mathematics statistics
+<!--ID: 1717746139307-->
 END
