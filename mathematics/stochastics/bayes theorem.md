@@ -1,6 +1,6 @@
 The [[bayes theorem]] describes the probability of an [[event space|event]] based on prior knowledge. Used for [[bayesian inference]].
 
-## [[bayes theorem]]
+### [[bayes theorem]]
 With [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ and general [[event space|event]] $A$ follows after [[conditional probability|law of total probability]] and the  [[multiplication rule]]:
 $$
 P\left(B_i \mid A\right) 
@@ -22,7 +22,7 @@ $$
 
 
 
-## [[conditional probability|conditional]] version of the [[bayes theorem]]
+### [[conditional probability|conditional]] version of the [[bayes theorem]]
 
 With [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ and general [[event space|events]] $A_1, A_2$ follows out of the [[bayes theorem]]: 
 
@@ -69,14 +69,10 @@ $$
 # Anki
 START
 Basic
-[[bayes theorem]]
-- explanation
-- definition 
-- proof
+[[bayes theorem]] with proof
 Back: 
-## Explanation
-The [[bayes theorem]] describes the probability of an [[event space|event]] based on prior knowledge. Used for [[bayesian inference]].
-## Definition
+
+### bayes theorem
 With [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ and general [[event space|event]] $A$ follows after [[conditional probability|law of total probability]] and the definition of [[multiplication rule]]:
 
 $$
@@ -84,7 +80,7 @@ P\left(B_i \mid A\right)
 = \frac{P\left(A \mid B_i\right)P\left(B_i\right)}
 {\sum\limits_{j=1}^k P\left(A \mid B_j\right)P\left(B_j\right)}
 $$
-## Proof
+#### proof
 $$
 \begin{split}
 P\left(B_i \mid A\right) 
