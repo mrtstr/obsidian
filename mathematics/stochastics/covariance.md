@@ -1,11 +1,10 @@
-## definition [[covariance]]
-The [[covariance]] is the [[variance]] of a [[joint distribution]]
-
+### covariance
 $$
 \mathbb{COV}\left[X,Y\right] = \mathbb{E}\left[(X-\mathbb{E}\left[X\right])(Y-\mathbb{E}\left[Y\right])\right]
 = 
 \mathbb{E}\left[XY\right]-\mathbb{E}\left[X\right]\mathbb{E}\left[Y\right]
 $$
+
 ## Interpretation
 ### positive [[covariance]]
 - $X$ and $Y$ move in the same direction at the same time thus there is a positive dependency between $X$ and $Y$
