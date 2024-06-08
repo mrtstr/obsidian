@@ -21,7 +21,7 @@ $$
 - given a [[random variable]] $X$ in a [[probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$
 
 $$
-\forall \epsilon > 0, r>0:\mathbb{VAR}\left[|X|^r\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right)
+\forall \epsilon > 0, r>0:\mathbb{VAR}\left[X\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right)
 $$
 #### proof
 $$
@@ -30,7 +30,7 @@ $$
 &\forall \epsilon > 0:\mathbb{E}\left[|X'|^2\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X'| \geq \epsilon\right) \\
 \Rightarrow &\forall \epsilon > 0:\mathbb{E}\left[|X - \mathbb{E}[X]|^2\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right) \\
 
-\Rightarrow & \forall \epsilon > 0:\mathbb{VAR}\left[|X|^r\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right) \\
+\Rightarrow & \forall \epsilon > 0:\mathbb{VAR}\left[X\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right) \\
 \end{split}
 $$
 
@@ -67,7 +67,7 @@ $$
 - given a [[random variable]] $X$ in a [[probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$
 
 $$
-\forall \epsilon > 0, r>0:\mathbb{VAR}\left[|X|^r\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right)
+\forall \epsilon > 0, r>0:\mathbb{VAR}\left[X\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right)
 $$
 #### proof
 $$
@@ -76,10 +76,9 @@ $$
 &\forall \epsilon > 0:\mathbb{E}\left[|X'|^2\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X'| \geq \epsilon\right) \\
 \Rightarrow &\forall \epsilon > 0:\mathbb{E}\left[|X - \mathbb{E}[X]|^2\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right) \\
 
-\Rightarrow & \forall \epsilon > 0:\mathbb{VAR}\left[|X|^r\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right) \\
+\Rightarrow & \forall \epsilon > 0:\mathbb{VAR}\left[X\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right) \\
 \end{split}
 $$
-
 Tags: mathematics statistics
 <!--ID: 1717740451569-->
 END
@@ -117,7 +116,7 @@ $$
 - given a [[random variable]] $X$ in a [[probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$
 
 $$
-\forall \epsilon > 0, r>0:\mathbb{VAR}\left[|X|^r\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right)
+\forall \epsilon > 0, r>0:\mathbb{VAR}\left[X\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right)
 $$
 #### proof
 $$
@@ -126,7 +125,7 @@ $$
 &\forall \epsilon > 0:\mathbb{E}\left[|X'|^2\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X'| \geq \epsilon\right) \\
 \Rightarrow &\forall \epsilon > 0:\mathbb{E}\left[|X - \mathbb{E}[X]|^2\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right) \\
 
-\Rightarrow & \forall \epsilon > 0:\mathbb{VAR}\left[|X|^r\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right) \\
+\Rightarrow & \forall \epsilon > 0:\mathbb{VAR}\left[X\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right) \\
 \end{split}
 $$
 
@@ -167,7 +166,7 @@ $$
 - given a [[random variable]] $X$ in a [[probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$
 
 $$
-\forall \epsilon > 0, r>0:\mathbb{VAR}\left[|X|^r\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right)
+\forall \epsilon > 0, r>0:\mathbb{VAR}\left[X\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right)
 $$
 #### proof
 $$
@@ -176,7 +175,7 @@ $$
 &\forall \epsilon > 0:\mathbb{E}\left[|X'|^2\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X'| \geq \epsilon\right) \\
 \Rightarrow &\forall \epsilon > 0:\mathbb{E}\left[|X - \mathbb{E}[X]|^2\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right) \\
 
-\Rightarrow & \forall \epsilon > 0:\mathbb{VAR}\left[|X|^r\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right) \\
+\Rightarrow & \forall \epsilon > 0:\mathbb{VAR}\left[X\right] \geq \epsilon^2 \cdot \mathbb{P}\left(|X - \mathbb{E}[X]| \geq \epsilon\right) \\
 \end{split}
 $$
 

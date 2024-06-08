@@ -313,7 +313,7 @@
     "mathematics/stochastics/collectors problem.md": "983d9a3ff53328d108ae9938fc38d04f",
     "mathematics/stochastics/binomial distribution.md": "b9f05394767de68cd6a75b238b2c68d4",
     "mathematics/stochastics/bernoulli random variable.md": "bc4b10413986c69234e89a09240f60a3",
-    "mathematics/stochastics/bayes theorem.md": "e9e8fe50dc11b172fa796bf6f57ea80a",
+    "mathematics/stochastics/bayes theorem.md": "f5b711511c66e653e9e49b01198fc0a4",
     "mathematics/stochastics/CDF.md": "83e632e67e9b6249956ab46c540e8fb3",
     "mathematics/optimization/greedy.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/optimization/brute force.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1577,9 +1577,10 @@
     "mathematics/basics/disjoint.md": "d41d8cd98f00b204e9800998ecf8427e",
     "discrete distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/cauchy schwarz inequality for probabilities.md": "4dcb314df925a98b8ca1dc273b2676c9",
-    "mathematics/stochastics/chebyshev markov inequality.md": "8f877d15f93557ac0a0c01018a1cb2a4",
+    "mathematics/stochastics/chebyshev markov inequality.md": "fb822eec05c8aa6ebe179e010ef0de8b",
     "mathematics/stochastics/inner product in a probability space.md": "230b69944316015ac86056b093cb3cb4",
-    "mathematics/stochastics/sprecial distributions/continuous/exponential distribution.md": "41f6066696565e023f98b39117785a27"
+    "mathematics/stochastics/sprecial distributions/continuous/exponential distribution.md": "41f6066696565e023f98b39117785a27",
+    "mathematics/stochastics/product probability space.md": "ec9beab7924878ab70530237abd4c03e"
   },
   "fields_dict": {
     "Basic": [

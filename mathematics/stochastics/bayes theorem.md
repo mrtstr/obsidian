@@ -11,9 +11,9 @@ Proof:
 $$
 \begin{split}
 P\left(B_i \mid A\right) 
-&= \frac{P\left(A \cap B_i\right)}
-{P\left(A \right)} \\
-
+&= \frac{P\left(A \cap B_i\right)}{P\left(A \right)} \\
+&= \frac{P\left(A \cap B_i\right)}{P\left(B_i \right)} \frac{P\left(B_i\right)}{P\left(A \right)} \\
+&= \frac{P\left(A | B_i\right)P\left(B_i\right)}{P\left(A \right)} \\
 &= \frac{\overbrace{P\left(A \mid B_i\right)P\left(B_i\right)}^\text{multiplication rule}}
 {\underbrace{\sum\limits_{j=1}^k P\left(A \mid B_j\right)P\left(B_j\right)}_\text{law of total probability}}
 \end{split}
@@ -84,9 +84,9 @@ $$
 $$
 \begin{split}
 P\left(B_i \mid A\right) 
-&= \frac{P\left(A \cap B_i\right)}
-{P\left(A \right)} \\
-
+&= \frac{P\left(A \cap B_i\right)}{P\left(A \right)} \\
+&= \frac{P\left(A \cap B_i\right)}{P\left(B_i \right)} \frac{P\left(B_i\right)}{P\left(A \right)} \\
+&= \frac{P\left(A | B_i\right)P\left(B_i\right)}{P\left(A \right)} \\
 &= \frac{\overbrace{P\left(A \mid B_i\right)P\left(B_i\right)}^\text{multiplication rule}}
 {\underbrace{\sum\limits_{j=1}^k P\left(A \mid B_j\right)P\left(B_j\right)}_\text{law of total probability}}
 \end{split}
