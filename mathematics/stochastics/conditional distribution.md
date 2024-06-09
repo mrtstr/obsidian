@@ -1,4 +1,4 @@
-## Definition
+### conditional distribution
 - derived from 
 - the [[conditional distribution]] can be interpreted as a [[joint distribution]] with one value fixed that is normalized to be a [[probability density function (PDF)|PDF]] again
 $$

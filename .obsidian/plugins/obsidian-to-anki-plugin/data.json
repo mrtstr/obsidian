@@ -296,11 +296,11 @@
     "mathematics/stochastics/convolution of distributions.md": "c935c1c1338c49b4c636a79d1cfcd003",
     "mathematics/stochastics/continuous random variable.md": "f9e239328ad109f8e663e84400acdaa7",
     "mathematics/stochastics/continous uniform distribution.md": "a1c7db1c2135f4b9fcbd85e0649d97f4",
-    "mathematics/stochastics/conditional variance.md": "5874b7ed4f7cbb84d7e2daf4b4f1b406",
+    "mathematics/stochastics/conditional variance.md": "89b573775047c0e7bc4a8720193361bc",
     "mathematics/stochastics/conditional expectation.md": "a0c5af364ed12e6d55ab623fe7e38b38",
     "mathematics/stochastics/conditional stochastic independent.md": "a4d13e21417423398370fc7ad51176e0",
     "mathematics/stochastics/conditional probability.md": "487c45c04d19d1add0bb9f55210d96e0",
-    "mathematics/stochastics/conditional distribution.md": "46654b917b0cc4607c87f0dbe80cbca4",
+    "mathematics/stochastics/conditional distribution.md": "f2c52c18a7be97588d80f9fbab503417",
     "mathematics/stochastics/combinatorics/sterling number.md": "608e4eca2d6aa47b4550ee3aa3cc4434",
     "mathematics/stochastics/combinatorics/permutations.md": "8dd6033d005a7374db3d2f92434c49a3",
     "mathematics/stochastics/combinatorics/multiplication rule.md": "87ee78a06636603301d7178286f5ff15",
@@ -1580,7 +1580,8 @@
     "mathematics/stochastics/chebyshev markov inequality.md": "fb822eec05c8aa6ebe179e010ef0de8b",
     "mathematics/stochastics/inner product in a probability space.md": "230b69944316015ac86056b093cb3cb4",
     "mathematics/stochastics/sprecial distributions/continuous/exponential distribution.md": "41f6066696565e023f98b39117785a27",
-    "mathematics/stochastics/product probability space.md": "588a46d45fdedb1f7cae63e4051706a2"
+    "mathematics/stochastics/product probability space.md": "588a46d45fdedb1f7cae63e4051706a2",
+    "mathematics/stochastics/sprecial distributions/multivariate normal distribution.md": "a3c0f3e4b1e8ce0cda907cb191384c16"
   },
   "fields_dict": {
     "Basic": [

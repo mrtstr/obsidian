@@ -1,4 +1,4 @@
-# Definition
+### conditional variance
 (Extension of the concept of the [[variance]] for [[conditional probability]])
 The [[conditional variance]] is a function of $x$
 $$
@@ -9,7 +9,7 @@ Similar to the [[conditional expectation]] the [[conditional variance]] can be u
 $$
 g(X)=\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]  = \mathbb{E}[(Y-\mathbb{E}[Y\:|\:X ])^2\:|\:X ] = \mathbb{E}[Y^2\:|\:X ]-\mathbb{E}[Y\:|\:X ]^2
 $$
-# [[law of total probability]] for the [[variance]]
+### [[law of total probability]] for the [[variance]]
 $$
 \mathbb{VAR}\left[Y\right] = \mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
 + \mathbb{VAR}\left[\mathbb{E}_{Y|X}\left[Y\:|\:X \right]\right]
@@ -29,7 +29,8 @@ $$
 &=\mathbb{VAR}[Y]
 \end{split}
 $$
-
+# -------------------
+![[conditional distribution#conditional distribution]]
 
 # anki
 
