@@ -57,9 +57,28 @@ P(A \cup \overline{B})
 \end{split}
 $$
 ### stochastic independent [[random variable|random variables]]
-Two [[random variable]] $X$ and $Y$ an [[stochastic independent]] iff the following statements are true
-1) $F_{XY}(x, y) = F_X(x)F_Y(y)$
-2) $f_{XY}(x, y) = f_X(x)f_Y(y)$
+- real valued [[random variable|random variables]] $X_1, ..., X_n$ are [[stochastic independent]] if the following eqivalent statements are true
+
+$$
+\begin{split}
+F_{X}(x_1, ..., x_n) &= F_{X_1}(x_1)...F_{X_n}(x_n) \\
+\mathbb{P}(X_1 \leq x_1, ..., X_n \leq x_n) &= \mathbb{P}(X_1 \leq x_1) ... \mathbb{P}(X_n \leq x_n) \\
+\mathcal{P}_X &= \mathcal{P}_{X_1} \otimes ... \otimes \mathcal{P}_{X_n}
+\end{split}
+$$
+
+- if $X_1, ..., X_n$ are [[continuous probability space|continuous]] and have a [[probability density function (PDF)]] the following is also true
+
+$$
+f_X(x_1, ..., x_n) = f_{X_1}(x_1) ...f_{X_n}(x_n)
+$$
+
+- if $X_1, ..., X_n$ are [[continuous probability space|continuous]] with a [[probability mass function (PMF)]] $p_X$ the following is also true
+
+$$
+p_X(x_1, ..., x_n) = p_{X_1}(x_1) ...p_{X_n}(x_n)
+$$
+
 
 ### [[conditional distribution]] of independent [[random variable|random variables]]
 $$
@@ -72,6 +91,8 @@ f_{X\mid Y}(x \mid y)
 = \frac{f_Y(y)f_X(x)}{f_Y(y)}
 = f_X(x)
 $$
+
+![[product probability space#product probability space]]
 
 # Anki
 START
@@ -186,12 +207,34 @@ END
 START
 Basic
 [[stochastic independent]] [[random variable]]
-- proprieties of the PDF and CDF
+- 3 eqivalent definitions
+- releationship to the concept of [[product probability space]]
+- [[discrete probability space|discrete]] and [[continuous probability space|continuous]] case
 
 Back: 
-Two [[random variable]] $X$ and $Y$ an [[stochastic independent]] iff the following statements are true
-1) $F_{XY}(x, y) = F_X(x)F_Y(y)$
-2) $f_{XY}(x, y) = f_X(x)f_Y(y)$
+### stochastic independent [[random variable|random variables]]
+- real valued [[random variable|random variables]] $X_1, ..., X_n$ are [[stochastic independent]] if the following eqivalent statements are true
+
+$$
+\begin{split}
+F_{X}(x_1, ..., x_n) &= F_{X_1}(x_1)...F_{X_n}(x_n) \\
+\mathbb{P}(X_1 \leq x_1, ..., X_n \leq x_n) &= \mathbb{P}(X_1 \leq x_1) ... \mathbb{P}(X_n \leq x_n) \\
+\mathcal{P}_X &= \mathcal{P}_{X_1} \otimes ... \otimes \mathcal{P}_{X_n}
+\end{split}
+$$
+
+- if $X_1, ..., X_n$ are [[continuous probability space|continuous]] and have a [[probability density function (PDF)]] the following is also true
+
+$$
+f_X(x_1, ..., x_n) = f_{X_1}(x_1) ...f_{X_n}(x_n)
+$$
+
+- if $X_1, ..., X_n$ are [[discrete probability space|discrete]] with a [[probability mass function (PMF)]] $p_X$ the following is also true
+
+$$
+p_X(x_1, ..., x_n) = p_{X_1}(x_1) ...p_{X_n}(x_n)
+$$
+
 Tags: mathematics statistics
 <!--ID: 1670766688733-->
 END
