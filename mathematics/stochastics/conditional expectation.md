@@ -1,5 +1,5 @@
 
-# Definition
+### conditional expectation
 - the [[conditional expectation]] $\mathbb{E}[Y|x]$ of a [[random variable]] $Y$ given $X$ can is a [[function]] of $x$ 
 - thus $\mathbb{E}[Y|c]$ with the constant $c$ is a constant itself
 - [[expectation]] for [[conditional distribution|conditional distributions]]
@@ -8,19 +8,19 @@ g(x) =\mathbb{E}[Y|x]=\int\limits_{-\infty}^\infty y f_{Y|X}(y|x)dy = \frac{1}{f
 $$
 - $g(X)=\mathbb{E}[Y|X]$ is a [[functions of random variables]] and thus is a [[random variable]] itself
 
-# Existance
+### existance of the [[conditional expectation]]
 - the [[conditional expectation]] is only defined for $f_{X}(x) \neq 0$ 
 
-# [[conditional expectation]] and [[statistical predictor]]
+### [[conditional expectation]] and [[statistical predictor]]
 - the [[function]] $g(x) =\mathbb{E}[Y|x]$ can be interpreted as a [[statistical predictor]] that predicts a [[random variable]] $Y$ given an observed depandent [[random variable]] $X$
 - the [[conditional expectation]] $\mathbb{E}[Y|x]$ optimizes the [[mean square error]] loss 
 
-# properties
-## linearity
+## properties
+### linearity
 $$
 \mathbb{E}\left[aY_1 + bY_2 + c \: | \: X\right] = a \mathbb{E}\left[Y_1 \: | \: X\right] + b \mathbb{E}\left[Y_2  \: | \: X\right] + c
 $$
-### proof
+#### proof
 $$
 \begin{split}
 \mathbb{E}\left[aY_1 + bY_2 + c \: | \: X\right]
@@ -41,11 +41,11 @@ c \\
 &= a \mathbb{E}\left[Y_1 \: | \: X\right] + b \mathbb{E}\left[Y_2  \: | \: X\right] + c
 \end{split}
 $$
-## [[stochastic independent]] [[random variable|random variables]]
+### [[stochastic independent]] [[random variable|random variables]]
 $$
 Y \perp X \Rightarrow  \mathbb{E}\left[Y|X\right] =\mathbb{E}\left[Y\right]
 $$
-### proof
+#### proof
 $$
 \begin{split}
 \mathbb{E}\left[Y|X\right]  
@@ -55,12 +55,12 @@ $$
 & = \mathbb{E}\left[Y\right]
 \end{split}
 $$
-## [[conditional expectation]] of a [[function]] of a given [[random variable]] 
+### [[conditional expectation]] of a [[function]] of a given [[random variable]] 
 $$
 \mathbb{E}\left[g(X, Y) | X = x\right]  = \mathbb{E}\left[g(x, Y) | X = x\right] = \int\limits_{-\infty}^{\infty} g(x,y) f_{Y|x}(y|x)dy = r(x)
 $$
 
-### implications
+#### implications
 #### $\mathbb{E}\left[Y g(X) | X\right]  = g(X) \mathbb{E}\left[Y | X\right]$
 
 - concider the [[function]] $r(x) = \mathbb{E}\left[Y g(X) | X = x\right] = \mathbb{E}\left[Y g(x) | X = x\right]  = g(x) \mathbb{E}\left[Y | X = x\right]$
@@ -74,12 +74,12 @@ $$
 - now lets concider the function $r(.)$ of a [[random variable]] $X$ 
 - $r(X)=g(X)=\mathbb{E}\left[g(X) | X\right]$
 
-## [[conditional expectation]] given a [[random variable]] and a [[function]] of the [[random variable]] 
+### [[conditional expectation]] given a [[random variable]] and a [[function]] of the [[random variable]] 
 $$
 \mathbb{E}\left[Y  | X , g(X) \right]  = \mathbb{E}\left[Y | X\right]
 $$
 
-## [[law of total probability]] for [[expectation|expectations]]
+### [[law of total probability]] for [[expectation|expectations]]
 ### [[law of total probability]] for [[expectation|expectations]] general case
 $$
 \mathbb{E}\left[g(X,Y)\right]  = \mathbb{E}\left[\mathbb{E}\left[g(X,Y)|X\right]\right]

@@ -13,8 +13,8 @@ $$
 ### negative [[covariance]]:
 - the [[covariance]] is negative when $X$ or $Y$ is bigger that its [[mean]] while the other is smaller than its [[mean]] and vice versa
 
-## properties  [[covariance]]
-### dependency on the absolute size of the [[random variable|random variables]]
+### properties [[covariance]]
+#### dependency on the absolute size of the [[random variable|random variables]]
 - the [[covariance]] is a measure for the linear dependency of [[random variable|random variables]] but it also depends on the absolute size of the [[random variable|random variables]] $X$ and $Y$
 $$
 \begin{split}
@@ -27,7 +27,7 @@ ab\left(\mathbb{E}\left[XY\right]-\mathbb{E}\left[X\right]\mathbb{E}\left[Y\righ
 ab\left(\mathbb{COV}\left[X,Y\right]\right) \\
 \end{split}
 $$
-### relationship to the [[variance]]
+#### relationship to the [[variance]]
 $$
 \mathbb{COVAR}[X_1,X_2] = \frac{\mathbb{VAR}[X_1 + X_2]-(\mathbb{VAR}[X_1]+\mathbb{VAR}[X_2])}{2}
 $$
@@ -50,7 +50,7 @@ $$
 2\mathbb{COVAR}[X_1,X_2] \\
 \end{split}
 $$
-### [[covariance]] of [[stochastic independent]] [[random variable|random variables]]
+#### [[covariance]] of [[stochastic independent]] [[random variable|random variables]]
 - [[stochastic independent]] [[random variable|random variables]] have no dependency thus the [[covariance]] is $0$ 
 $$
 \mathbb{COV}\left[X,Y\right]
@@ -79,28 +79,26 @@ $$
 
 # Anki
 
+
 START
 Basic
 [[covariance]]
 - definition
-- interpretation
-	- positive [[covariance]]
-	- negative [[covariance]]
-	- dependency on the absolute size of the [[random variable|random variables]]
-	- [[covariance]] of [[stochastic independent]] [[random variable|random variables]]
-	- zero [[covariance]]
+- positive [[covariance]]
+- negative [[covariance]]
+- dependency on the absolute size of the [[random variable|random variables]]
+- [[covariance]] of [[stochastic independent]] [[random variable|random variables]]
+- [[covariance]] of [[stochastic independent]] [[random variable|random variables]]
 (proofs not needed but given)
 
 Back: 
-## Definition
-The [[covariance]] is the [[variance]] of a [[joint distribution]]
-
+### covariance
 $$
 \mathbb{COV}\left[X,Y\right] = \mathbb{E}\left[(X-\mathbb{E}\left[X\right])(Y-\mathbb{E}\left[Y\right])\right]
 = 
 \mathbb{E}\left[XY\right]-\mathbb{E}\left[X\right]\mathbb{E}\left[Y\right]
 $$
-## Interpretation
+
 ### positive [[covariance]]
 - $X$ and $Y$ move in the same direction at the same time thus there is a positive dependency between $X$ and $Y$
 - $X$ and $Y$ are bigger/samler that their [[mean]] at the same time
@@ -152,7 +150,6 @@ END
 
 START
 Basic
-
 dependency of the [[covariance]] on the absolute size of the [[random variable|random variables]] (with proof)
 
 Back: 
