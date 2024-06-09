@@ -1,7 +1,19 @@
-[[function|functions]] of [[random variable|random variables]]
+### functions of random variables
+- given a sequence of [[random variable|random variable]] $X_1, ..., X_n$ in a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
+- the following are all [[random variable|random variables]]
+$$
+\begin{split}
+Y &= \sum_{in \in [n]} X_i \\
+Y &= \prod_{in \in [n]} X_i \\
+Y &= \sup_{in \in [n]} X_i \\
+Y &= \inf_{in \in [n]} X_i \\
+Y &= g\left(X_1, ..., X_n\right): \mathbb{R}^n \to \mathbb{R} \\
+\end{split}
+$$
 
+TODO add proofs
 
-# [[probability mass function (PMF)|discrete case]] with an arbitrary [[function]]
+### [[function|functions]] of [[discrete probability space|discrete]] [[random variable|random variables]]
 - $X$ is a [[probability mass function (PMF)]] with a [[probability function]] $f_X(x)$
 - $Y=g(X)$ with an arbitrary [[function]] $g$
 $$
@@ -11,10 +23,8 @@ $$
 F_{Y}(y)=P(Y \leq y)=P(g(X) \leq y)=\sum\limits_{x_i \in \{x \mid g(x) \leq y \}} f_X(x_i)
 $$
 
-# [[continuous random variable]]
-- $X$ is a [[continuous random variable]] with a [[probability density function (PDF)]] $f_X(x)$
-- $Y=g(X)$ with an arbitrary [[function]] $g$
-## [[inverse function]] $g^{-1}(X)$ unknown
+### [[function|functions]] of [[continuous probability space|continuous]] [[random variable|random variables]]
+#### [[inverse function]] $g^{-1}(X)$ unknown
 $$
 \begin{split}
 F_{Y}(y)
@@ -25,7 +35,7 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{dy}
 \end{split}
 $$
 
-## [[inverse function]] $g^{-1}(X)$ known
+#### [[inverse function]] $g^{-1}(X)$ known
 $$
 \begin{split}
 F_{Y}(y)
@@ -39,7 +49,7 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} \\
 &= \frac{dg^{-1}(y)}{dy} f_{X}\left(g^{-1}(y)\right) \\
 \end{split}
 $$
-#### example
+ example
 - $X \sim U(-1,1)$ is from a [[continous uniform distribution]] with a [[probability density function (PDF)]] 
 $$f_X(x)=\begin{cases}
     \frac{1}{2},& \text{if } x \in [-1,1] \\
@@ -61,7 +71,7 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{y} = \frac{1}{2} y^{-\frac{1}{2}}
 \end{split}
 $$
 
-## [[linear map]] of a [[probability density function (PDF)]]
+#### [[linear map]]
 - $X$ is a [[continuous random variable]] with a [[probability density function (PDF)]] $f_X(x)$
 - $Y=g(X)=aX+b$ with an [[linear map]] $g$
 
@@ -89,12 +99,12 @@ f_{Y}(y) &= \frac{dF_{Y}(y)}{dy} = \frac{dF_X\left(\frac{y-b}{a}\right)}{dy} f_{
 \end{split}
 $$
 
-## [[continuous random variable]] with $g(X)=F_X(X)$
+#### $g(X)=F_X(X)$
 - $X$ is a [[continuous random variable]] with a [[cumulative distribution function (CDF)]] $F_X(x)$
 - $Y$ is a [[functions of random variables|function of]] $X$ with the function being the [[cumulative distribution function (CDF)]] of $X$ $Y=F_X(X)$
 Then $Y \sim U(0,1)$ has [[continous uniform distribution|uniform distribution]] and its [[cumulative distribution function (CDF)]] is $F_Y(y) = y$.
 
-#### Proof
+Proof
 $$
 \begin{split}
 F_{Y}(y)&=P(Y \leq y) \\

@@ -280,10 +280,10 @@
     "mathematics/stochastics/joint distribution.md": "ac6fd404cbdb4e59f007ee077998f499",
     "mathematics/stochastics/interquartile range.md": "417cf4068261577d2c5a55eb0f280e75",
     "mathematics/stochastics/hypothesis.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/functions of random variables.md": "de1271a3a948cfeec409a61b386d1788",
+    "mathematics/stochastics/functions of random variables.md": "ff8f76fb82d688f432bdf33e63916d79",
     "mathematics/stochastics/functions of multiple random variables.md": "c967f3861e4cd375ab8f0ab4b037643f",
     "mathematics/stochastics/factoring of joint densities.md": "7022bdd24b246537b1418303a82e0479",
-    "mathematics/stochastics/expectation.md": "e0eba3937cce45d9fd545f8913b773d9",
+    "mathematics/stochastics/expectation.md": "363842a272456c336b1fe8f96fbd2fdc",
     "mathematics/stochastics/expectation for non negative distributions.md": "bd7aa9667ffa5d7c95298c10a32ad4c6",
     "mathematics/stochastics/event.md": "ef94f078e81f4d14eac36d0fc494be1f",
     "mathematics/stochastics/event space.md": "cc048c36fb6a9331e039d70460a6b5ca",
@@ -1580,7 +1580,7 @@
     "mathematics/stochastics/chebyshev markov inequality.md": "fb822eec05c8aa6ebe179e010ef0de8b",
     "mathematics/stochastics/inner product in a probability space.md": "230b69944316015ac86056b093cb3cb4",
     "mathematics/stochastics/sprecial distributions/continuous/exponential distribution.md": "41f6066696565e023f98b39117785a27",
-    "mathematics/stochastics/product probability space.md": "ec9beab7924878ab70530237abd4c03e"
+    "mathematics/stochastics/product probability space.md": "ceaafa0690c8ad9e4bb90bea67086226"
   },
   "fields_dict": {
     "Basic": [

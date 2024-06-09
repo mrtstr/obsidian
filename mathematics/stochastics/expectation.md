@@ -1,11 +1,16 @@
 ### expectation
 - generalization of the weighted mean: mean of possible outcomes weighted by its probability
-- for a [[continuous random variable]] $X$ with a [[probability density function (PDF)|PDF]] $f_X(x)$ the [[expectation]] is defined as follows
+- for a [[random variable]] with a [[continuous probability space]] $X$ with a [[probability density function (PDF)|PDF]] $f_X(x)$ the [[expectation]] is defined as follows
 $$\mathbb{E}[X]=\int\limits_\infty^\infty x f_X(x)dx$$
-- for a discrete [[random variable]] $X$ with a [[probability mass function (PMF)]] $p$ the [[expectation]] is defined as follows
+- for a discrete [[random variable]] $X$ with a [[probability mass function (PMF)]] $f_X$ the [[expectation]] is defined as follows
 $$
-\mathbb{E}[X]=\sum\limits_{i=0}^\infty x_i p(x_i)
+\begin{split}
+\mathbb{E}[X]
+&=\sum\limits_{i=0}^\infty x_i \cdot \mathbb{P}(X = x_i) \\
+&=\sum\limits_{i=0}^\infty x_i \cdot f_X(x_i)
+\end{split}
 $$
+
 ### properties of the [[expectation]]
 
 #### [[linear map|linearity]]
@@ -68,7 +73,7 @@ $$
 \lor
 \int\limits_\infty^0 x f_X(x)dx < \infty
 $$
-
+TODO add proof
 
 ### [[expectation]] of [[functions of random variables]]
 
@@ -78,6 +83,9 @@ $$
 $$
 \mathbb{E}[g(X, Y)]=\int\limits_\infty^\infty \int\limits_\infty^\infty g(x,y) \cdot f_{XY}(x,y)dx dy
 $$
+
+TODO add proof
+
 #### [[linear map]] $g(X)$
 If $g(X)$ is a [[linear map]] $\mathbb{E}\left[g(X)\right] = g\left(\mathbb{E}[X]\right)$
 proof: see linearity of the [[expectation]]
@@ -85,7 +93,26 @@ proof: see linearity of the [[expectation]]
 #### [[convex function]] $g(X)$
 If $g(X)$ is a [[convex function]] $\mathbb{E}\left[g(X)\right] \geq g\left(\mathbb{E}[X]\right)$
 
+### non negative [[random variable]]
 
+$$
+\begin{split}
+\mathbb{E}[X] = \sum_{n=1}^\infty \mathbb{P}(X \geq n) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\sum_{n=1}^\infty \mathbb{P}(X \geq n) 
+&= \sum_{n=1}^\infty \sum_{k=n}^\infty \mathbb{P}(X = k)  \\
+&=  \mathbb{P}(X = 1) + ... + \mathbb{P}(X = \infty) \\
+&\quad  +  \mathbb{P}(X = 2) + ... + \mathbb{P}(X = \infty) \\
+&\quad  +  \mathbb{P}(X = 3) + ... + \mathbb{P}(X = \infty) \\
+&\quad  +  ... \\
+&= \sum_{n=0}^\infty n \cdot \mathbb{P}(X = n)  \\
+&= \mathbb{E}[X]
+\end{split}
+$$
 
 
 ## examples
@@ -119,6 +146,38 @@ X &\sim U(0,1) \\ \\
 \end{split} 
 $$
 # anki
+
+START
+Basic
+[[expectation]] of a non-negative integer [[random variable]] with proof
+Back: 
+### non negative [[random variable]]
+
+$$
+\begin{split}
+\mathbb{E}[X] = \sum_{n=1}^\infty \mathbb{P}(X \geq n) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\sum_{n=1}^\infty \mathbb{P}(X \geq n) 
+&= \sum_{n=1}^\infty \sum_{k=n}^\infty \mathbb{P}(X = k)  \\
+&=  \mathbb{P}(X = 1) + ... + \mathbb{P}(X = \infty) \\
+&\quad  +  \mathbb{P}(X = 2) + ... + \mathbb{P}(X = \infty) \\
+&\quad  +  \mathbb{P}(X = 3) + ... + \mathbb{P}(X = \infty) \\
+&\quad  +  ... \\
+&= \sum_{n=0}^\infty n \cdot \mathbb{P}(X = n)  \\
+&= \mathbb{E}[X]
+\end{split}
+$$
+
+
+Tags: mathematics statistics
+<!--ID: 1717918464918-->
+END
+
+
 
 START
 Basic
@@ -188,8 +247,9 @@ Basic
 [[expectation]] of [[functions of random variables]] $\mathbb{E}[g(X)]$
 - of a single [[random variable]]
 - of a multiple [[random variable]]
-- [[linear map]] $g(.)$
-- [[convex function]] $g(.)$
+- [[linear map]] $g(\:\cdot\:)$
+- [[convex function]] $g(\:\cdot\:)$
+(without proof)
 Back: 
 ### [[expectation]] of [[functions of random variables]]
 
@@ -371,8 +431,9 @@ END
 
 
 START
-Suppose that the variables X1, . . . , Xn form a random sample of size n from a given  continuous distribution on the real line for which the p.d.f. is f . Find the expectation of the number of observations in the sample that fall within a specified interval a ≤ x ≤ b.
 Basic
+Suppose that the variables X1, . . . , Xn form a random sample of size n from a given  continuous distribution on the real line for which the p.d.f. is f . Find the expectation of the number of observations in the sample that fall within a specified interval a ≤ x ≤ b.
+Back: 
 $$
 \begin{split}
 &Y=\mathbb{I}\left[X_i \in [a,b]\right] \\
@@ -382,4 +443,5 @@ $$
 $$
 
 Tags: mathematics statistics
+<!--ID: 1717918464922-->
 END
