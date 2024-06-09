@@ -87,11 +87,24 @@ $$
 &=\sum_{i=1}^n \mathbb{VAR}\left[\sum_{i=1}^n X_i\right] + 2\sum_{i=1}^n\sum_{j=i + 1}^n  \mathbb{COVAR}\left[ X_i, X_j\right] \\
 \end{split}
 $$
+
+$$
+\mathbb{VAR}[X] = \min_a \mathbb{E}\left[(X-a)^2\right]
+$$
+proof
+
+$$
+\begin{split}
+\frac{d(\mathbb{E}\left[(X-a)^2\right])}{da} = 2a - e \mathbb{E}[X] = 0
+\end{split}
+$$
 # anki
 
 START
 Basic
-definition of variance 
+definition of [[variance]]
+definition of [[standard deviation]]
+
 Back: 
 
 ### variance
@@ -107,6 +120,67 @@ $$
 Tags: mathematics statistics
 <!--ID: 1661928261918-->
 END
+
+
+START
+Basic
+proof for the following
+$$
+\mathbb{VAR}[aX + b]=a^2\mathbb{VAR}[X]
+$$
+
+$$
+\mathbb{VAR}[X]=\mathbb{E}[X^2]-\mathbb{E}[X]^2 
+$$
+
+Back: 
+
+#### [[variance]] of a [[linear map]] of a single [[random variable]]
+
+$$
+\mathbb{VAR}[aX + b]=a^2\mathbb{VAR}[X]
+$$
+proof
+$$
+\begin{split}
+\mathbb{VAR}[aX + b]&=\mathbb{E}\left[\left(aX + b-\mathbb{E}[aX + b]\right)^2\right] \\
+&=\mathbb{E}\left[\left(aX + b -b -a\mathbb{E}[X ]\right)^2\right] \\
+&=a^2\mathbb{E}\left[\left(X  -\mathbb{E}[X ]\right)^2\right] \\
+&= a^2\mathbb{VAR}[X]
+\end{split}
+$$
+
+it follows that $\mathbb{VAR}[-X]=(-1)^2\mathbb{VAR}[X] = \mathbb{VAR}[X]$
+
+
+
+Tags: mathematics statistics
+<!--ID: 1717919252936-->
+END
+
+
+
+START
+Basic
+proof the following
+$$
+\mathbb{VAR}[X] = \min_a \mathbb{E}\left[(X-a)^2\right]
+$$
+Back: 
+
+
+$$
+\begin{split}
+\frac{d(\mathbb{E}\left[(X-a)^2\right])}{da} = 2a - e \mathbb{E}[X] = 0
+\end{split}
+$$
+
+Tags: mathematics statistics
+<!--ID: 1717919252941-->
+END
+
+
+
 
 START
 Basic
