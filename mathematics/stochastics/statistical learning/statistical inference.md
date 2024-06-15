@@ -3,6 +3,6 @@ Statistical inference is the process of using data to infer properties of an und
 [[classification]] and [[regression]]
 
 [[statistical predictor]]: point estimation, interval estimation
-[[statistical estimator]]: parameter estimation of [[probability density function (PDF)|probability distribution]]
+[[statistical estimator_old]]: parameter estimation of [[probability density function (PDF)|probability distribution]]
 
 example [[bayesian inference]]

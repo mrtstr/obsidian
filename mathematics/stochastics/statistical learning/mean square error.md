@@ -2,7 +2,7 @@
 [[loss functions]]
 
 # Definition
-For a [[statistical estimator|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ the [[mean square error]] is defined as the following
+For a [[statistical estimator_old|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ the [[mean square error]] is defined as the following
 $$
 L_{MSE}(X, \widehat{x})=\mathbb{E}\left[(X-\widehat{x})^2\right]
 $$
@@ -14,9 +14,9 @@ $$
 $L(Y, f(x))=E[(Y-f(x))^2] \rightarrow f(x)=E[Y|X=x]$  
 
 
-# [[mean square error|mse]] optimizing [[statistical estimator|statistical estimaton]] $\widehat{x}$
+# [[mean square error|mse]] optimizing [[statistical estimator_old|statistical estimaton]] $\widehat{x}$
 
-The [[statistical estimator|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ that is minimizing the [[mean square error]] is the [[expectation]] $\widehat{x}_{MSE}=\mathbb{E}[X]$.
+The [[statistical estimator_old|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ that is minimizing the [[mean square error]] is the [[expectation]] $\widehat{x}_{MSE}=\mathbb{E}[X]$.
 Proof
 $$
 \begin{split}
@@ -90,10 +90,10 @@ $$
 START
 Basic
 [[mean square error]] definition
-- [[statistical estimator]]
+- [[statistical estimator_old]]
 - [[statistical predictor]]
 Back: 
-For a [[statistical estimator|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ the [[mean square error]] is defined as the following
+For a [[statistical estimator_old|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ the [[mean square error]] is defined as the following
 $$
 L_{MSE}(X, \widehat{x})=\mathbb{E}\left[(X-\widehat{x})^2\right]
 $$
@@ -111,10 +111,10 @@ END
 
 START
 Basic
-[[mean square error|mse]] optimizing [[statistical estimator|statistical estimaton]] $\widehat{x}$ and its error (with proof)
+[[mean square error|mse]] optimizing [[statistical estimator_old|statistical estimaton]] $\widehat{x}$ and its error (with proof)
 Back: 
-### [[statistical estimator|statistical estimaton]] $\widehat{x}$
-The [[statistical estimator|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ that is minimizing the [[mean square error]] is the [[expectation]] $\widehat{x}_{MSE}=\mathbb{E}[X]$.
+### [[statistical estimator_old|statistical estimaton]] $\widehat{x}$
+The [[statistical estimator_old|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ that is minimizing the [[mean square error]] is the [[expectation]] $\widehat{x}_{MSE}=\mathbb{E}[X]$.
 Proof
 $$
 \begin{split}

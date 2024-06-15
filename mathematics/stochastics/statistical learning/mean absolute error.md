@@ -5,7 +5,7 @@ add error of optimal estimation
 [[loss functions]]
 
 ## Definition
-For a [[statistical estimator|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ the [[mean absolute error]] is defined as the following
+For a [[statistical estimator_old|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ the [[mean absolute error]] is defined as the following
 $$
 L_{MAE}(X, \widehat{x})=\mathbb{E}\left[|X-\widehat{x}|\right]
 $$
@@ -15,8 +15,8 @@ $$
 L_{MAE}(X, f(x))=\mathbb{E}\left[|X-f(x)|\right]
 $$
 ## minimum
-### [[statistical estimator|statistical estimaton]] $\widehat{x}$
-The [[statistical estimator|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ that is minimizing the [[mean absolute error]] is the [[median]] of $X$ $\widehat{x}_{MAE}=median[X]$.
+### [[statistical estimator_old|statistical estimaton]] $\widehat{x}$
+The [[statistical estimator_old|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ that is minimizing the [[mean absolute error]] is the [[median]] of $X$ $\widehat{x}_{MAE}=median[X]$.
 
 ### [[statistical predictor]] $f(x)$
 The [[statistical predictor]] $f(x)$ that is minimizing the [[mean absolute error]] is the [[conditional distribution|conditional]] [[median]] of the [[conditional distribution]] $f_{Y\mid X = x}(y)$ $f_{MAE}(x)=median[Y\:|\:X=x]$
@@ -26,11 +26,11 @@ The [[statistical predictor]] $f(x)$ that is minimizing the [[mean absolute erro
 START
 Basic
 [[mean absolute error]] definition and minumum
-- [[statistical estimator]]
+- [[statistical estimator_old]]
 - [[statistical predictor]]
 Back: 
 ## Definition
-For a [[statistical estimator|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ the [[mean absolute error]] is defined as the following
+For a [[statistical estimator_old|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ the [[mean absolute error]] is defined as the following
 $$
 L_{MAE}(X, \widehat{x})=\mathbb{E}\left[|X-\widehat{x}|\right]
 $$
@@ -40,8 +40,8 @@ $$
 L_{MAE}(X, f(x))=\mathbb{E}\left[|X-f(x)|\right]
 $$
 ## minimum
-### [[statistical estimator|statistical estimaton]] $\widehat{x}$
-The [[statistical estimator|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ that is minimizing the [[mean absolute error]] is the [[median]] of $X$ $\widehat{x}_{MAE}=median[X]$.
+### [[statistical estimator_old|statistical estimaton]] $\widehat{x}$
+The [[statistical estimator_old|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ that is minimizing the [[mean absolute error]] is the [[median]] of $X$ $\widehat{x}_{MAE}=median[X]$.
 
 ### [[statistical predictor]] $f(x)$
 The [[statistical predictor]] $f(x)$ that is minimizing the [[mean absolute error]] is the [[conditional distribution|conditional]] [[median]] of the [[conditional distribution]] $f_{Y\mid X = x}(y)$ $f_{MAE}(x)=median[Y\:|\:X=x]$

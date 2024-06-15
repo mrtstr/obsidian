@@ -4,11 +4,11 @@
 
 relationship of the [[error]] components [[model bias]] and [[model variance]]
 ## Decomposition
-### [[statistical estimator]]
+### [[statistical estimator_old]]
 - given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[probability density function (PDF)|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
 - in theory it is possible to predict the $\theta$ because it's a constant
 - in this case the [[error]] is only depending on the [[model bias]] and [[model variance]]
-- the [[mean square error]] of the [[statistical estimator]] can be decomposed as follows
+- the [[mean square error]] of the [[statistical estimator_old]] can be decomposed as follows
 $$
 \mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[
 \left(\widehat{\theta}_\mathcal{T}-
@@ -280,7 +280,7 @@ $$
 
 START
 Basic
-variance bias trade-off for [[statistical estimator]]
+variance bias trade-off for [[statistical estimator_old]]
 - relationship to [[mean square error]] (equation)
 - verbal explanation
 Back: 
@@ -341,13 +341,13 @@ END
 
 START
 Basic
-variance bias trade-off for [[statistical estimator]]
+variance bias trade-off for [[statistical estimator_old]]
 - relationship to [[mean square error]] (equation with proof)
 Back: 
 - given a [[statistical sample|sample]] $\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)$ from the true but unknown [[probability density function (PDF)|distribution]] and the parameter estimation $\widehat{\theta}_\mathcal{T}$ based on $\mathcal{T}$
 - in theory it is possible to predict the $\theta$ because it's a constant
 - in this case the [[error]] is only depending on the [[model bias]] and [[model variance]]
-- the [[mean square error]] of the [[statistical estimator]] can be decomposed as follows
+- the [[mean square error]] of the [[statistical estimator_old]] can be decomposed as follows
 $$
 \mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[
 \left(\widehat{\theta}_\mathcal{T}-
@@ -630,9 +630,9 @@ END
 START
 Basic
 variance bias trade-off
-- difference [[mean square error]] of a [[statistical predictor]] and a [[statistical estimator]]
+- difference [[mean square error]] of a [[statistical predictor]] and a [[statistical estimator_old]]
 Back: 
-- for a [[statistical estimator]] we want to approximate a constant parameter $\theta$ of the true but unknown distribution of the data (which is possible without any error)
+- for a [[statistical estimator_old]] we want to approximate a constant parameter $\theta$ of the true but unknown distribution of the data (which is possible without any error)
 - in this case the [[error]] is only depending on the squared [[model bias]] and [[model variance]]
 - for a [[statistical predictor]] we don't want to predict a parameter but a target value
 - because of the randomness of $f_{Y|X}(y|x)$ there will be a component of the [[error]] which is unavoidable
