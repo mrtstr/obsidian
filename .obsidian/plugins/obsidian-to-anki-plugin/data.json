@@ -1586,7 +1586,8 @@
     "mathematics/stochastics/parameter space.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical model.md": "4e7edc8ad300844ede703dccdc3638d7",
     "mathematics/stochastics/statistical learning/statistical estimator_old.md": "7090351e9b0e06644416694f1e365a08",
-    "mathematics/stochastics/statistics.md": "e8e72208877da490685db200044eda5f"
+    "mathematics/stochastics/statistics.md": "e8e72208877da490685db200044eda5f",
+    "mathematics/stochastics/bias.md": "1e64f7c2e2b8e44666ef1c5d5bc4bad0"
   },
   "fields_dict": {
     "Basic": [
