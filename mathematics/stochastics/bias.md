@@ -2,7 +2,11 @@
 - given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \theta \in \Theta)$ and a [[statistics]] $S: \left(\mathfrak{X}, \mathcal{L}\right) \to \left(\Omega,\mathcal{A} \right)$ with an [[statistical estimator]] $T: \mathfrak{X} \to \Omega$ is
 - the [[bias]] of $T$ is defined as follows
 $$
-\mathbb{B}_T[\vartheta] = \mathbb{E}_\vartheta[T] - \tau(\vartheta)
+\begin{split}
+\mathbb{B}_T[\vartheta] 
+&= \mathbb{E}_\vartheta[T] - \tau(\vartheta) \\
+&= \mathbb{E}_{X \sim \mathbb{P}_\vartheta}\left[T(X)\right] - \tau(\vartheta) \\
+\end{split}
 $$
 - given a [[set]] of parameters $\vartheta \in \Theta$ the [[function]] $\tau: \Theta \to \Omega$ gives the true characteristics of the [[distribution]] $\mathbb{P}_\vartheta$ defined by $\vartheta$
 - the [[expectation]] of the [[statistical estimator]] $\mathbb{E}_\vartheta[T]$ is the approximation of the [[statistics]] $\tau(\vartheta)$ assuming an infinitely large sample to estimate from
@@ -30,7 +34,11 @@ Back:
 - given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \theta \in \Theta)$ and a [[statistics]] $S: \left(\mathfrak{X}, \mathcal{L}\right) \to \left(\Omega,\mathcal{A} \right)$ with an [[statistical estimator]] $T: \mathfrak{X} \to \Omega$ is
 - the [[bias]] of $T$ is defined as follows
 $$
-\mathbb{B}_T[\vartheta] = \mathbb{E}_\vartheta[T] - \tau(\vartheta)
+\begin{split}
+\mathbb{B}_T[\vartheta] 
+&= \mathbb{E}_\vartheta[T] - \tau(\vartheta) \\
+&= \mathbb{E}_{X \sim \mathbb{P}_\vartheta}\left[T(X)\right] - \tau(\vartheta) \\
+\end{split}
 $$
 - given a [[set]] of parameters $\vartheta \in \Theta$ the [[function]] $\tau: \Theta \to \Omega$ gives the true characteristics of the [[distribution]] $\mathbb{P}_\vartheta$ defined by $\vartheta$
 - the [[expectation]] of the [[statistical estimator]] $\mathbb{E}_\vartheta[T]$ is the approximation of the [[statistics]] $\tau(\vartheta)$ assuming an infinitely large sample to estimate from
