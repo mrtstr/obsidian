@@ -295,7 +295,7 @@
     "mathematics/stochastics/correlation.md": "cd37ea6d66565a68e3a7fc5fad9610c9",
     "mathematics/stochastics/convolution of distributions.md": "c935c1c1338c49b4c636a79d1cfcd003",
     "mathematics/stochastics/continuous random variable.md": "f9e239328ad109f8e663e84400acdaa7",
-    "mathematics/stochastics/continous uniform distribution.md": "a1c7db1c2135f4b9fcbd85e0649d97f4",
+    "mathematics/stochastics/continous uniform distribution.md": "7f49ca30f0093374e4263139a9bc3689",
     "mathematics/stochastics/conditional variance.md": "89b573775047c0e7bc4a8720193361bc",
     "mathematics/stochastics/conditional expectation.md": "a0c5af364ed12e6d55ab623fe7e38b38",
     "mathematics/stochastics/conditional stochastic independent.md": "a4d13e21417423398370fc7ad51176e0",
@@ -1586,8 +1586,11 @@
     "mathematics/stochastics/parameter space.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical model.md": "4e7edc8ad300844ede703dccdc3638d7",
     "mathematics/stochastics/statistical learning/statistical estimator_old.md": "7090351e9b0e06644416694f1e365a08",
-    "mathematics/stochastics/statistics.md": "e8e72208877da490685db200044eda5f",
-    "mathematics/stochastics/bias.md": "4766885524bd43d59155ed9d0c48e732"
+    "mathematics/stochastics/statistics.md": "c84caa13de1fdc9e54673c28b42dcef9",
+    "mathematics/stochastics/bias.md": "e580122853cef32d6e9f17ae4a0f9cde",
+    "mathematics/stochastics/estimator variance.md": "f31cd5dae9b4c30174a848226d762c8d",
+    "mathematics/stochastics/estimating uniform distribution parameter.md": "c614f95b557d5dff7fde9f02fa582401",
+    "mathematics/stochastics/maximum of uniform samples.md": "093f4c46580e5ee5491ec2809d29452c"
   },
   "fields_dict": {
     "Basic": [

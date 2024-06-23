@@ -10,7 +10,7 @@ S(X \in \mathfrak{X}) = \tau\left(\vartheta(X)\right)
 $$
 
 #### deterministic [[function]] $\tau: \Theta \to \Omega$
-- extracts a property from the parameterized [[distribution]] $\mathbb{P}_\vartheta$ (given the paramter [[set]] $\vartheta$)
+- extracts a characteristics from the parameterized [[distribution]] $\mathbb{P}_\vartheta$ (given the paramter [[set]] $\vartheta$)
 - this can for example be the [[expectation]]
 $$
 \tau(\vartheta) = \mathbb{E}_\vartheta[X] = \sum_{\text{all }x} x \cdot \mathbb{P}_\vartheta (X = x)
@@ -89,7 +89,7 @@ S(X \in \mathfrak{X}) = \tau\left(\vartheta(X)\right)
 $$
 
 #### deterministic [[function]] $\tau: \Theta \to \Omega$
-- extracts a property from the parameterized [[distribution]] $\mathbb{P}_\vartheta$ (given the paramter [[set]] $\vartheta$)
+- extracts a characteristics from the parameterized [[distribution]] $\mathbb{P}_\vartheta$ (given the paramter [[set]] $\vartheta$)
 - this can for example be the [[expectation]]
 $$
 \tau(\vartheta) = \mathbb{E}_\vartheta[X] = \sum_{\text{all }x} x \cdot \mathbb{P}_\vartheta (X = x)
@@ -162,7 +162,7 @@ S(X \in \mathfrak{X}) = \tau\left(\vartheta(X)\right)
 $$
 
 #### deterministic [[function]] $\tau: \Theta \to \Omega$
-- extracts a property from the parameterized [[distribution]] $\mathbb{P}_\vartheta$ (given the paramter [[set]] $\vartheta$)
+- extracts a characteristics from the parameterized [[distribution]] $\mathbb{P}_\vartheta$ (given the paramter [[set]] $\vartheta$)
 - this can for example be the [[expectation]]
 $$
 \tau(\vartheta) = \mathbb{E}_\vartheta[X] = \sum_{\text{all }x} x \cdot \mathbb{P}_\vartheta (X = x)
@@ -239,7 +239,7 @@ S(X \in \mathfrak{X}) = \tau\left(\vartheta(X)\right)
 $$
 
 #### deterministic [[function]] $\tau: \Theta \to \Omega$
-- extracts a property from the parameterized [[distribution]] $\mathbb{P}_\vartheta$ (given the paramter [[set]] $\vartheta$)
+- extracts a characteristics from the parameterized [[distribution]] $\mathbb{P}_\vartheta$ (given the paramter [[set]] $\vartheta$)
 - this can for example be the [[expectation]]
 $$
 \tau(\vartheta) = \mathbb{E}_\vartheta[X] = \sum_{\text{all }x} x \cdot \mathbb{P}_\vartheta (X = x)
@@ -263,6 +263,5 @@ $$
 $$
 (\mathfrak{X}, \mathcal{L}, \mathbb{P}_\theta: \theta \in \Theta) = ( \mathfrak{X} \times ... \times \mathfrak{X}, \mathcal{L}' \otimes ... \otimes \mathcal{L}', \mathbb{P}'_\theta \otimes ... \otimes \mathbb{P}'_\theta: \theta \in \Theta)
 $$
-
 <!--ID: 1718536601465-->
 END
