@@ -12,7 +12,7 @@ P\left(B_i \mid A\right)
 \underbrace{\sum\limits_{j=1}^k P\left(A \mid B_j\right)P\left(B_j\right)}_{P(A)}
 }
 $$
-We are interested in the [[probability]] of [[event]] $B_i$, and we have a prior [[hypothesis]] $P(B_i)$. Then we observe the occurrence of and [[stochastic independent|dependent]] [[event]] $A$, and we want to update our [[hypothesis]]. For this we need the [[likelihood]] that [[event]] $A$ happened under the assumption that $B_i$ is true and divide it by the [[probability]] of the observed [[event]] $A$. The [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ is still normalized $\left(\sum P(B_i) = 1 \right)$.  
+We are interested in the [[probability]] of [[event]] $B_i$, and we have a prior [[hypothesis]] $P(B_i)$. Then we observe the occurrence of and [[stochastic independent|dependent]] [[event]] $A$, and we want to update our [[hypothesis]]. For this we need the [[likelihood function]] that [[event]] $A$ happened under the assumption that $B_i$ is true and divide it by the [[probability]] of the observed [[event]] $A$. The [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ is still normalized $\left(\sum P(B_i) = 1 \right)$.  
 
 ## Multiple Bayesian Updates
 This time we have multiple [[observations]] $\{A_i \mid i = 1,2...,N\}$. From the conditional version of the [[bayes theorem]] we know the following:
@@ -137,7 +137,7 @@ P\left(B_i \mid A\right)
 \underbrace{\sum\limits_{j=1}^k P\left(A \mid B_j\right)P\left(B_j\right)}_{P(A)}
 }
 $$
-We are interested in the [[probability]] of [[event]] $B_i$, and we have a prior [[hypothesis]] $P(B_i)$. Then we observe the occurrence of and [[stochastic independent|dependent]] [[event]] $A$, and we want to update our [[hypothesis]]. For this we need the [[likelihood]] that [[event]] $A$ happened under the assumption that $B_i$ is true and divide it by the [[probability]] of the observed [[event]] $A$. The [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ is still normalized $\left(\sum P(B_i) = 1 \right)$.  
+We are interested in the [[probability]] of [[event]] $B_i$, and we have a prior [[hypothesis]] $P(B_i)$. Then we observe the occurrence of and [[stochastic independent|dependent]] [[event]] $A$, and we want to update our [[hypothesis]]. For this we need the [[likelihood function]] that [[event]] $A$ happened under the assumption that $B_i$ is true and divide it by the [[probability]] of the observed [[event]] $A$. The [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ is still normalized $\left(\sum P(B_i) = 1 \right)$.  
 Tags: mathematics statistics
 <!--ID: 1667051814864-->
 END

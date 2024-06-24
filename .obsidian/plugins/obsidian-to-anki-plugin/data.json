@@ -701,7 +701,7 @@
     "mathematics/stochastics/statistical learning/classification.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical learning/bootsrap.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical learning/boosting.md": "4fbfb64277f8c651bc01dc41c28327f2",
-    "mathematics/stochastics/statistical learning/bayesian inference.md": "a63851ea7e38fe6c11de9ab4e5a04a43",
+    "mathematics/stochastics/statistical learning/bayesian inference.md": "c1c6a4d3bd768d82131573b5d18d36a8",
     "mathematics/stochastics/statistical learning/bagging.md": "2729dfcef226fdeb240c63ead6df4e01",
     "cv.md": "0e67cf3c921b3372a3d9d531f6981c17",
     "code/data processing/pandas/usecase/pd summary of grouped df.md": "e4b52dbe04a7e2c7fae4755f17d6f457",
@@ -1573,7 +1573,7 @@
     "mathematics/basics/PLU decomposition with permutations.md": "687e377de517227e91213f87fec1714f",
     "mathematics/basics/LU decomposition.md": "5b141c9cea479a629a4abcb94f2acefd",
     "mathematics/basics/LDU decomposition.md": "bb923fa77e672b69dcee31a17b6c00d1",
-    "notes.md": "b9761440a9476eac30dadcb00799e301",
+    "notes.md": "7a91b9b87d1d1b20eb8082e483e5906c",
     "mathematics/basics/disjoint.md": "d41d8cd98f00b204e9800998ecf8427e",
     "discrete distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/cauchy schwarz inequality for probabilities.md": "4dcb314df925a98b8ca1dc273b2676c9",
@@ -1591,7 +1591,10 @@
     "mathematics/stochastics/estimator variance.md": "f31cd5dae9b4c30174a848226d762c8d",
     "mathematics/stochastics/estimating uniform distribution parameter.md": "7c0a690c3ec70ad6472074e56541f77f",
     "mathematics/stochastics/maximum of uniform samples.md": "093f4c46580e5ee5491ec2809d29452c",
-    "mathematics/stochastics/n fold statistical model.md": "55a74b9502c926b3468ff1defa6cf482"
+    "mathematics/stochastics/n fold statistical model.md": "55a74b9502c926b3468ff1defa6cf482",
+    "mathematics/maximum likelihood estimator.md": "cde0d1d9208bfc9b768b358f830805f0",
+    "mathematics/stochastics/likelihood function.md": "d9d800a39cd2a3feb264ed84d7d3c24d",
+    "mathematics/stochastics/Untitled 2.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [

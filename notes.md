@@ -1,4 +1,28 @@
 
+
+
+$$
+\begin{split}
+\tilde{T_n^*} = \frac{n+1}{n} \tilde{T_n}  \\
+\end{split}
+$$
+$$
+\begin{split}
+\mathbb{VAR}_\vartheta\left[\tilde{T_n}\right]  
+&= \frac{\vartheta^2 n}{(n+2)(n+1)^2}    \\
+\end{split}
+$$
+$$
+\begin{split}
+\mathbb{VAR}_\vartheta\left[\tilde{T_n^*}\right]  
+&= \mathbb{VAR}_\vartheta\left[\frac{n+1}{n} \tilde{T_n} \right]   \\
+&= \frac{(n+1)^2}{n^2} \mathbb{VAR}_\vartheta\left[ \tilde{T_n} \right]   \\
+&= \frac{(n+1)^2}{n^2} \frac{\vartheta^2 n}{(n+2)(n+1)^2}    \\
+&= \frac{\vartheta^2}{n(n+2)}    \\
+\end{split}
+$$
+var_estimator_script
+
 ### proof
 - to show that the given condition is sufficient to show that $X$ is a [[measurable function]] we will prove the following
 $$
