@@ -96,6 +96,17 @@ $$
 \end{split}
 $$
 
+$$
+\begin{split}
+\mathbb{VAR}\left[\widetilde{T_n}\right]  
+&= \mathbb{VAR}\left[\frac{n+1}{n} T_n \right]   \\
+&= \frac{(n+1)^2}{n^2} \mathbb{VAR}\left[ T_n \right]   \\
+&= \frac{(n+1)^2}{n^2} \frac{\vartheta^2 n}{(n+2)(n+1)^2}    \\
+&= \frac{\vartheta^2}{n(n+2)}    \\
+
+\end{split}
+$$
+
 # ------------------
 
 ![[estimator variance#estimator variance]]
@@ -737,8 +748,12 @@ $$
 T_n = \max\{X_1, ..., X_n\}
 $$
 - calculate the [[variance]] of $T_n$
-Back: 
 
+how would the [[variance]] of $\widetilde{T_n}$  change?
+$$
+\widetilde{T_n} = \frac{n+1}{n} \max\{X_1, ..., X_n\}
+$$
+Back: 
 ##### [[bias]]
 - the [[statistical estimator]] the following [[expectation]] (see [[maximum of uniform samples]])
 $$
@@ -789,6 +804,18 @@ $$
 &= \vartheta^2  \left(\frac{n(n+1)^2 - n^2(n+2)}{(n+2)(n+1)^2} \right) \\ 
 &= \vartheta^2 n \left(\frac{(n+1)^2 - n(n+2)}{(n+2)(n+1)^2} \right) \\ 
 &=  \frac{\vartheta^2 n}{(n+2)(n+1)^2}  \\ 
+\end{split}
+$$
+
+
+$$
+\begin{split}
+\mathbb{VAR}\left[\widetilde{T_n}\right]  
+&= \mathbb{VAR}\left[\frac{n+1}{n} T_n \right]   \\
+&= \frac{(n+1)^2}{n^2} \mathbb{VAR}\left[ T_n \right]   \\
+&= \frac{(n+1)^2}{n^2} \frac{\vartheta^2 n}{(n+2)(n+1)^2}    \\
+&= \frac{\vartheta^2}{n(n+2)}    \\
+
 \end{split}
 $$
 
