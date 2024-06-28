@@ -56,8 +56,10 @@ $$
 &\sum_{i = 1}^n\frac{d\ln\left(f_X\left(X_1|\mu, \sigma^2\right)\right)}{d\sigma^2} = 0 \\
 \Rightarrow&\sum_{i = 1}^n \frac{d}{d\sigma^2} \ln\left(\frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(X_i-\mu)^2}{\sigma^2}\right]}\right) = 0 \\
 \Rightarrow&\sum_{i = 1}^n \frac{d}{d\sigma^2} \ln\left(\frac{1}{\sqrt{2 \pi \sigma^2}}\right) + \frac{d}{d\sigma^2} \ln\left(\exp{\left[-\frac{1}{2}\frac{(X_i-\mu)^2}{\sigma^2}\right]}\right) = 0 \\
-\Rightarrow&\sum_{i = 1}^n (-1) \frac{d}{d\sigma^2} \ln\left(\sqrt{2 \pi \sigma^2}\right) + \frac{d}{d\sigma^2} \left({-\frac{1}{2}\frac{(X_i-\mu)^2}{\sigma^2}}\right) = 0 \\
-\Rightarrow&\sum_{i = 1}^n \frac{-1}{\sqrt{2 \pi \sigma^2}}   \frac{\sqrt{2 \pi }}{\sqrt{\sigma^2}}+ {\frac{(X_i-\mu)^2}{\left(\sigma^2\right)^2}} = 0 \\
+\Rightarrow&\sum_{i = 1}^n (-1) \frac{d}{d\sigma^2} \ln\left((2 \pi \sigma^2)^{\frac{1}{2}}\right) + \frac{d}{d\sigma^2} \left({-\frac{1}{2}\frac{(X_i-\mu)^2}{\sigma^2}}\right) = 0 \\
+\Rightarrow&\sum_{i = 1}^n (-\frac{1}{2}) \frac{d}{d\sigma^2} \ln\left(2 \pi \sigma^2\right) + \frac{d}{d\sigma^2} \left({-\frac{1}{2}\frac{(X_i-\mu)^2}{\sigma^2}}\right) = 0 \\
+\Rightarrow&\sum_{i = 1}^n (-\frac{1}{2}) \frac{2\pi}{2\pi \sigma^2}
++ {\frac{(X_i-\mu)^2}{\left(\sigma^2\right)^2}} = 0 \\
 \Rightarrow&\sum_{i = 1}^n \frac{-1}{\sigma^2} + {\frac{(X_i-\mu)^2}{\left(\sigma^2\right)^2}} = 0 \\
 \Rightarrow&\sum_{i = 1}^n -1 + {\frac{(X_i-\mu)^2}{\sigma^2}} = 0 \\
 \Rightarrow&\sum_{i = 1}^n (X_i-\mu)^2 -\sigma^2n  = 0 \\
@@ -461,8 +463,10 @@ $$
 &\sum_{i = 1}^n\frac{d\ln\left(f_X\left(X_1|\mu, \sigma^2\right)\right)}{d\sigma^2} = 0 \\
 \Rightarrow&\sum_{i = 1}^n \frac{d}{d\sigma^2} \ln\left(\frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(X_i-\mu)^2}{\sigma^2}\right]}\right) = 0 \\
 \Rightarrow&\sum_{i = 1}^n \frac{d}{d\sigma^2} \ln\left(\frac{1}{\sqrt{2 \pi \sigma^2}}\right) + \frac{d}{d\sigma^2} \ln\left(\exp{\left[-\frac{1}{2}\frac{(X_i-\mu)^2}{\sigma^2}\right]}\right) = 0 \\
-\Rightarrow&\sum_{i = 1}^n (-1) \frac{d}{d\sigma^2} \ln\left(\sqrt{2 \pi \sigma^2}\right) + \frac{d}{d\sigma^2} \left({-\frac{1}{2}\frac{(X_i-\mu)^2}{\sigma^2}}\right) = 0 \\
-\Rightarrow&\sum_{i = 1}^n \frac{-1}{\sqrt{2 \pi \sigma^2}}   \frac{\sqrt{2 \pi }}{\sqrt{\sigma^2}}+ {\frac{(X_i-\mu)^2}{\left(\sigma^2\right)^2}} = 0 \\
+\Rightarrow&\sum_{i = 1}^n (-1) \frac{d}{d\sigma^2} \ln\left((2 \pi \sigma^2)^{\frac{1}{2}}\right) + \frac{d}{d\sigma^2} \left({-\frac{1}{2}\frac{(X_i-\mu)^2}{\sigma^2}}\right) = 0 \\
+\Rightarrow&\sum_{i = 1}^n (-\frac{1}{2}) \frac{d}{d\sigma^2} \ln\left(2 \pi \sigma^2\right) + \frac{d}{d\sigma^2} \left({-\frac{1}{2}\frac{(X_i-\mu)^2}{\sigma^2}}\right) = 0 \\
+\Rightarrow&\sum_{i = 1}^n (-\frac{1}{2}) \frac{2\pi}{2\pi \sigma^2}
++ {\frac{(X_i-\mu)^2}{\left(\sigma^2\right)^2}} = 0 \\
 \Rightarrow&\sum_{i = 1}^n \frac{-1}{\sigma^2} + {\frac{(X_i-\mu)^2}{\left(\sigma^2\right)^2}} = 0 \\
 \Rightarrow&\sum_{i = 1}^n -1 + {\frac{(X_i-\mu)^2}{\sigma^2}} = 0 \\
 \Rightarrow&\sum_{i = 1}^n (X_i-\mu)^2 -\sigma^2n  = 0 \\
