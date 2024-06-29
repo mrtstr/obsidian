@@ -114,7 +114,7 @@ $$
 \psi_Y(t) &= \exp{\left[(\mu a + b)t+\frac{1}{2}\sigma^2 a^2 t^2\right]}  \\
 \end{split}
 $$
-### proof1: [[functions of random variables]]
+### proof2: [[functions of random variables]]
 
 
 $$
@@ -129,10 +129,10 @@ f_Y(y)
 &=\frac{1}{\sqrt{2 \pi a^2 \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(y-a\mu + b)^2}{a^2 \sigma^2}\right]} \\ 
 \end{split}
 $$
-## Linear Combinations of [[normal distribution|normal distributed]] [[random variable|random variables]]
+### Linear Combinations of [[normal distribution|normal distributed]] [[random variable|random variables]]
 
 Linear Combinations of [[normal distribution|normal distributed]] [[random variable|random variables]] are again normal distributed.
-### Sum of [[normal distribution|normal distributed]] [[random variable|random variables]]
+#### Sum of [[normal distribution|normal distributed]] [[random variable|random variables]]
 $$
 \begin{split}
 X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
@@ -145,7 +145,7 @@ X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
 
 \end{split}
 $$
-### [[linear map|Linear Functions]] of [[normal distribution|normal distributed]] [[random variable|random variables]]
+#### [[linear map|Linear Functions]] of [[normal distribution|normal distributed]] [[random variable|random variables]]
 
 $$
 \begin{split}
@@ -159,7 +159,7 @@ X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
 
 \end{split}
 $$
-## [[random sample]] from a [[normal distribution]]
+### [[random sample]] from a [[normal distribution]]
 
 The mean from a [[random sample]] of the sixe $n$ from a [[normal distribution]] is again [[normal distribution|normal distributed]] with a mean $\mu$ and a [[variance]] $\frac{\sigma^2}{n}$. 
 $$
@@ -184,6 +184,52 @@ $$
 &\sim f_{\bar{X_n}}\left(\bar{x} \mid  \mu, \frac{\sigma^2}{n} \right) \\ \\
 \end{split}
 $$
+
+### standard normal transformation
+
+$$
+\begin{split}
+&X \sim \mathcal{N}(0,1) \\
+\Rightarrow& Y = \mu + \sigma X \sim \mathcal{N}(\mu,\sigma^2)
+\end{split}
+$$
+
+$$
+\begin{split}
+F_Y(y) 
+&= F_X\left(\frac{y- \mu}{\sigma}\right) \\ 
+f_y(y) 
+&= \frac{d}{dy} F_Y(y) \\
+F^{-1}_Y(q) 
+&= F^{-1}_X\left(q\right) \cdot \sigma + \mu \\ 
+\end{split}
+$$
+
+$$
+\begin{split}
+F_Y(y) 
+&= \mathbb{P}\left(Y \leq y\right) \\
+&= \mathbb{P}\left(\mu + \sigma X \leq y\right) \\
+&= \mathbb{P}\left(X \leq \frac{y- \mu}{\sigma}\right) \\
+&= F_X\left(\frac{y- \mu}{\sigma}\right) \\ 
+f_y(y) 
+&= \frac{d}{dy} F_Y(y) \\
+&= \frac{d}{dy} F_X\left(\frac{y- \mu}{\sigma}\right) \\
+&= \frac{1}{\sigma} f_X\left(\frac{y- \mu}{\sigma}\right) \\
+\end{split}
+$$
+
+- let $F_Y(y)=q \Leftrightarrow F^{-1}_Y(q)=y$
+$$
+\begin{split}
+F_Y(y) &= F_X\left(\frac{y- \mu}{\sigma}\right) \\
+F^{-1}_X\left(F_Y(y)\right) &= F^{-1}_X\left(F_X\left(\frac{y- \mu}{\sigma}\right)\right) \\
+F^{-1}_X\left(q\right) &= \frac{y- \mu}{\sigma}\\
+y &= F^{-1}_X\left(q\right) \sigma + \mu\\
+F^{-1}_Y(q) &= F^{-1}_X\left(q\right) \sigma + \mu\\
+\end{split}
+$$
+
 # anki
 
 
@@ -223,85 +269,9 @@ Tags: mathematics statistics
 END
 
 
-START
-Basic
-[[distribution]] of the mean of a [[random sample]] from a [[normal distribution]] (with proof)
-Back: 
-The mean from a [[random sample]] of the sixe $n$ from a [[normal distribution]] is again [[normal distribution|normal distributed]] with a mean $\mu$ and a [[variance]] $\frac{\sigma^2}{n}$. 
-$$
-\begin{split}
-X_i &\sim f_{X}\left(x | \mu, \sigma^2\right) \: i.i.d \\
-\Rightarrow \bar{X_n}&=\frac{1}{n}\sum_{i=1}^nX_i \sim f_{\bar{X_n}}\left(\bar{x} \mid  \mu, \frac{\sigma^2}{n} \right) 
-\end{split}
-$$
-proof
-Since the folowing is true
-$$
-\begin{split}
-X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
-\Rightarrow Y&=\sum_{i=1}^n a_i X_i +b \sim f_{Y}\left(y \mid \sum_{i=1}^n a_i \mu_i + b, \sum_{i=1}^n a_i^2 \sigma_i^2\right) \\ \\
-
-\psi_Y(t)&=\mathbb{E}\left[e^{tY}\right] = \mathbb{E}\left[\exp{\left(t\left(\sum_{i=1}^n a_i X_i + b\right)\right)}\right] \\
-&= \mathbb{E}\left[e^{tb}\right] \cdot \prod_{i=1}^n \mathbb{E}\left[\exp{\left(t a_i X_i\right)}\right] = \mathbb{E}\left[e^{tb}\right] \cdot  \prod_{i=1}^n \psi_{X_i}(a_it) \\
-&=\mathbb{E}\left[e^{tb}\right] \cdot \prod_{i=1}^n \exp{\left[\mu_i a_i t+\frac{1}{2}\sigma_i^2 a_i^2 t^2\right]} \\
-&= \exp{\left[t\left(\sum_{i=1}^n\mu_i + b\right) +\frac{t^2}{2}\sum_{i=1}^n\sigma_i^2 \right]} \\
-
-\end{split}
-$$
-$$
-\begin{split}
-\bar{X_n}&=\frac{1}{n}\sum_{i=1}^nX_i  \\
-&=\sum_{i=1}^n \frac{1}{n} X_i  \\
-&\sim f_{\bar{X_n}}\left(\bar{x} \mid \sum_{i=1}^n \frac{\mu_i}{n} , \sum_{i=1}^n  \frac{\sigma_i^2}{n^2}\right) \\
-&\sim f_{\bar{X_n}}\left(\bar{x} \mid  \mu, \frac{\sigma^2}{n} \right) \\ \\
-\end{split}
-$$
-Tags: mathematics statistics
-<!--ID: 1680958035453-->
-END
 
 
-START
-Basic
-Linear Combinations of [[normal distribution|normal distributed]] [[random variable|random variables]]
-- distribution of $Y$ with proof
 
-$$
-\begin{split}
-X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
-Y&=\sum_{i=1}^n a_i X_i +b 
-\end{split}
-$$
-
-Back: 
-### [[probability density function]]
-$$
-f_X\left(x|\mu, \sigma^2\right) = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}\right]}
-$$
-### [[moment generating function]]
-$$
-\psi_X(t) = \mathbb{E}\left[e^{tx}\right] = \int\limits_{-\infty}^\infty e^{tx} f_X(x) dx
-$$
-$$
-\psi_X(t) = \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]}
-$$
-### Linear Combinations of [[normal distribution|normal distributed]] [[random variable|random variables]]
-Linear Combinations of [[normal distribution|normal distributed]] [[random variable|random variables]] are again normal distributed.
-$$
-\begin{split}
-X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
-\Rightarrow Y&=\sum_{i=1}^n a_i X_i +b \sim f_{Y}\left(y \mid \sum_{i=1}^n a_i \mu_i + b, \sum_{i=1}^n a_i^2 \sigma_i^2\right) \\ \\
-
-\psi_Y(t)&=\mathbb{E}\left[e^{tY}\right] = \mathbb{E}\left[\exp{\left(t\left(\sum_{i=1}^n a_i X_i + b\right)\right)}\right] \\
-&= \mathbb{E}\left[e^{tb}\right] \cdot \prod_{i=1}^n \mathbb{E}\left[\exp{\left(t a_i X_i\right)}\right] = \mathbb{E}\left[e^{tb}\right] \cdot  \prod_{i=1}^n \psi_{X_i}(a_it) \\
-&=\mathbb{E}\left[e^{tb}\right] \cdot \prod_{i=1}^n \exp{\left[\mu_i a_i t+\frac{1}{2}\sigma_i^2 a_i^2 t^2\right]} \\
-&= \exp{\left[t\left(\sum_{i=1}^n\mu_i + b\right) +\frac{t^2}{2}\sum_{i=1}^n\sigma_i^2 \right]} \\
-
-\end{split}
-$$
-Tags: mathematics statistics
-<!--ID: 1680958035459-->
-END
 
 
 START
@@ -604,4 +574,290 @@ $$
 
 Tags: mathematics statistics
 <!--ID: 1680336763991-->
+END
+
+START
+Basic
+- given a [[random variable]] $X$ with [[standard normal distribution]]
+$$
+\begin{split}
+&X \sim \mathcal{N}(0,1) \\
+\Rightarrow& Y = \mathcal{N}(\mu,\sigma^2)
+\end{split}
+$$
+
+- give a function $F$ such that $Y = F(X) \sim \mathcal{N}(\mu,\sigma^2)$
+- [[cumulative distribution function (CDF)]] of $Y$ (no proof)
+- [[probability density function (PDF)]] of $Y$ (no proof)
+- [[quantile function]]  of $Y$ (no proof)
+
+Back: 
+### standard normal transformation
+
+$$
+\begin{split}
+&X \sim \mathcal{N}(0,1) \\
+\Rightarrow& Y = \mu + \sigma X \sim \mathcal{N}(\mu,\sigma^2)
+\end{split}
+$$
+
+$$
+\begin{split}
+F_Y(y) 
+&= F_X\left(\frac{y- \mu}{\sigma}\right) \\ 
+f_y(y) 
+&= \frac{d}{dy} F_Y(y) \\
+F^{-1}_Y(q) 
+&= F^{-1}_X\left(q\right) \cdot \sigma + \mu \\ 
+\end{split}
+$$
+
+$$
+\begin{split}
+F_Y(y) 
+&= \mathbb{P}\left(Y \leq y\right) \\
+&= \mathbb{P}\left(\mu + \sigma X \leq y\right) \\
+&= \mathbb{P}\left(X \leq \frac{y- \mu}{\sigma}\right) \\
+&= F_X\left(\frac{y- \mu}{\sigma}\right) \\ 
+f_y(y) 
+&= \frac{d}{dy} F_Y(y) \\
+&= \frac{d}{dy} F_X\left(\frac{y- \mu}{\sigma}\right) \\
+&= \frac{1}{\sigma} f_X\left(\frac{y- \mu}{\sigma}\right) \\
+\end{split}
+$$
+
+- let $F_Y(y)=q \Leftrightarrow F^{-1}_Y(q)=y$
+$$
+\begin{split}
+F_Y(y) &= F_X\left(\frac{y- \mu}{\sigma}\right) \\
+F^{-1}_X\left(F_Y(y)\right) &= F^{-1}_X\left(F_X\left(\frac{y- \mu}{\sigma}\right)\right) \\
+F^{-1}_X\left(q\right) &= \frac{y- \mu}{\sigma}\\
+y &= F^{-1}_X\left(q\right) \sigma + \mu\\
+F^{-1}_Y(q) &= F^{-1}_X\left(q\right) \sigma + \mu\\
+\end{split}
+$$
+
+Tags: mathematics statistics
+<!--ID: 1719674487798-->
+END
+
+START
+Basic
+- given a [[random variable]] $X$ with [[standard normal distribution]]
+$$
+\begin{split}
+&X \sim \mathcal{N}(0,1) \\
+\Rightarrow& Y = \mathcal{N}(\mu,\sigma^2)
+\end{split}
+$$
+
+- give a function $F$ such that $Y = F(X) \sim \mathcal{N}(\mu,\sigma^2)$
+- [[quantile function]]  of $Y$ (with proof)
+
+Back: 
+### standard normal transformation
+
+$$
+\begin{split}
+&X \sim \mathcal{N}(0,1) \\
+\Rightarrow& Y = \mu + \sigma X \sim \mathcal{N}(\mu,\sigma^2)
+\end{split}
+$$
+
+$$
+\begin{split}
+F_Y(y) 
+&= F_X\left(\frac{y- \mu}{\sigma}\right) \\ 
+f_y(y) 
+&= \frac{d}{dy} F_Y(y) \\
+F^{-1}_Y(q) 
+&= F^{-1}_X\left(q\right) \cdot \sigma + \mu \\ 
+\end{split}
+$$
+
+$$
+\begin{split}
+F_Y(y) 
+&= \mathbb{P}\left(Y \leq y\right) \\
+&= \mathbb{P}\left(\mu + \sigma X \leq y\right) \\
+&= \mathbb{P}\left(X \leq \frac{y- \mu}{\sigma}\right) \\
+&= F_X\left(\frac{y- \mu}{\sigma}\right) \\ 
+f_y(y) 
+&= \frac{d}{dy} F_Y(y) \\
+&= \frac{d}{dy} F_X\left(\frac{y- \mu}{\sigma}\right) \\
+&= \frac{1}{\sigma} f_X\left(\frac{y- \mu}{\sigma}\right) \\
+\end{split}
+$$
+
+- let $F_Y(y)=q \Leftrightarrow F^{-1}_Y(q)=y$
+$$
+\begin{split}
+F_Y(y) &= F_X\left(\frac{y- \mu}{\sigma}\right) \\
+F^{-1}_X\left(F_Y(y)\right) &= F^{-1}_X\left(F_X\left(\frac{y- \mu}{\sigma}\right)\right) \\
+F^{-1}_X\left(q\right) &= \frac{y- \mu}{\sigma}\\
+y &= F^{-1}_X\left(q\right) \sigma + \mu\\
+F^{-1}_Y(q) &= F^{-1}_X\left(q\right) \sigma + \mu\\
+\end{split}
+$$
+
+Tags: mathematics statistics
+<!--ID: 1719674487801-->
+END
+
+
+START
+Basic
+- given a [[random variable]] $X$ with [[standard normal distribution]]
+$$
+\begin{split}
+&X \sim \mathcal{N}(0,1) \\
+\Rightarrow& Y = \mathcal{N}(\mu,\sigma^2)
+\end{split}
+$$
+
+- give a function $F$ such that $Y = F(X) \sim \mathcal{N}(\mu,\sigma^2)$
+- [[probability density function (PDF)]] of $Y$ (with proof)
+
+Back: 
+### standard normal transformation
+
+$$
+\begin{split}
+&X \sim \mathcal{N}(0,1) \\
+\Rightarrow& Y = \mu + \sigma X \sim \mathcal{N}(\mu,\sigma^2)
+\end{split}
+$$
+
+$$
+\begin{split}
+F_Y(y) 
+&= F_X\left(\frac{y- \mu}{\sigma}\right) \\ 
+f_y(y) 
+&= \frac{d}{dy} F_Y(y) \\
+F^{-1}_Y(q) 
+&= F^{-1}_X\left(q\right) \cdot \sigma + \mu \\ 
+\end{split}
+$$
+
+$$
+\begin{split}
+F_Y(y) 
+&= \mathbb{P}\left(Y \leq y\right) \\
+&= \mathbb{P}\left(\mu + \sigma X \leq y\right) \\
+&= \mathbb{P}\left(X \leq \frac{y- \mu}{\sigma}\right) \\
+&= F_X\left(\frac{y- \mu}{\sigma}\right) \\ 
+f_y(y) 
+&= \frac{d}{dy} F_Y(y) \\
+&= \frac{d}{dy} F_X\left(\frac{y- \mu}{\sigma}\right) \\
+&= \frac{1}{\sigma} f_X\left(\frac{y- \mu}{\sigma}\right) \\
+\end{split}
+$$
+
+- let $F_Y(y)=q \Leftrightarrow F^{-1}_Y(q)=y$
+$$
+\begin{split}
+F_Y(y) &= F_X\left(\frac{y- \mu}{\sigma}\right) \\
+F^{-1}_X\left(F_Y(y)\right) &= F^{-1}_X\left(F_X\left(\frac{y- \mu}{\sigma}\right)\right) \\
+F^{-1}_X\left(q\right) &= \frac{y- \mu}{\sigma}\\
+y &= F^{-1}_X\left(q\right) \sigma + \mu\\
+F^{-1}_Y(q) &= F^{-1}_X\left(q\right) \sigma + \mu\\
+\end{split}
+$$
+
+Tags: mathematics statistics
+<!--ID: 1719674487804-->
+END
+
+
+
+
+START
+Basic
+[[distribution]] of the mean of a [[random sample]] from a [[normal distribution]] (with proof)
+Back: 
+The mean from a [[random sample]] of the sixe $n$ from a [[normal distribution]] is again [[normal distribution|normal distributed]] with a mean $\mu$ and a [[variance]] $\frac{\sigma^2}{n}$. 
+$$
+\begin{split}
+X_i &\sim f_{X}\left(x | \mu, \sigma^2\right) \: i.i.d \\
+\Rightarrow \bar{X_n}&=\frac{1}{n}\sum_{i=1}^nX_i \sim f_{\bar{X_n}}\left(\bar{x} \mid  \mu, \frac{\sigma^2}{n} \right) 
+\end{split}
+$$
+
+$$
+\begin{split}
+\bar{X_n}&=\frac{1}{n}\sum_{i=1}^nX_i  \\
+&=\sum_{i=1}^n \frac{1}{n} X_i  \\
+&\sim f_{\bar{X_n}}\left(\bar{x} \mid \sum_{i=1}^n \frac{\mu_i}{n} , \sum_{i=1}^n  \frac{\sigma_i^2}{n^2}\right) \\
+&\sim f_{\bar{X_n}}\left(\bar{x} \mid  \mu, \frac{\sigma^2}{n} \right) \\ \\
+\end{split}
+$$
+
+_______________________
+
+
+$$
+\begin{split}
+X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
+\Rightarrow Y&=\sum_{i=1}^n a_i X_i +b \sim f_{Y}\left(y \mid \sum_{i=1}^n a_i \mu_i + b, \sum_{i=1}^n a_i^2 \sigma_i^2\right) \\ \\
+
+\psi_Y(t)&=\mathbb{E}\left[e^{tY}\right] = \mathbb{E}\left[\exp{\left(t\left(\sum_{i=1}^n a_i X_i + b\right)\right)}\right] \\
+&= \mathbb{E}\left[e^{tb}\right] \cdot \prod_{i=1}^n \mathbb{E}\left[\exp{\left(t a_i X_i\right)}\right] = \mathbb{E}\left[e^{tb}\right] \cdot  \prod_{i=1}^n \psi_{X_i}(a_it) \\
+&=\mathbb{E}\left[e^{tb}\right] \cdot \prod_{i=1}^n \exp{\left[\mu_i a_i t+\frac{1}{2}\sigma_i^2 a_i^2 t^2\right]} \\
+&= \exp{\left[t\left(\sum_{i=1}^n\mu_i + b\right) +\frac{t^2}{2}\sum_{i=1}^n\sigma_i^2 \right]} \\
+
+\end{split}
+$$
+
+Tags: mathematics statistics
+<!--ID: 1680958035453-->
+END
+
+
+
+START
+Basic
+Linear Combinations of [[normal distribution|normal distributed]] [[random variable|random variables]]
+- distribution of $Y$ with proof
+
+$$
+\begin{split}
+X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
+Y&=\sum_{i=1}^n a_i X_i +b 
+\end{split}
+$$
+
+Back: 
+
+### Linear Combinations of [[normal distribution|normal distributed]] [[random variable|random variables]]
+Linear Combinations of [[normal distribution|normal distributed]] [[random variable|random variables]] are again normal distributed.
+$$
+\begin{split}
+X_i &\sim f_{X_i}\left(x_i | \mu_i, \sigma_i^2\right) \\
+\Rightarrow Y&=\sum_{i=1}^n a_i X_i +b \sim f_{Y}\left(y \mid \sum_{i=1}^n a_i \mu_i + b, \sum_{i=1}^n a_i^2 \sigma_i^2\right) \\ \\
+
+\psi_Y(t)&=\mathbb{E}\left[e^{tY}\right] = \mathbb{E}\left[\exp{\left(t\left(\sum_{i=1}^n a_i X_i + b\right)\right)}\right] \\
+&= \mathbb{E}\left[e^{tb}\right] \cdot \prod_{i=1}^n \mathbb{E}\left[\exp{\left(t a_i X_i\right)}\right] = \mathbb{E}\left[e^{tb}\right] \cdot  \prod_{i=1}^n \psi_{X_i}(a_it) \\
+&=\mathbb{E}\left[e^{tb}\right] \cdot \prod_{i=1}^n \exp{\left[\mu_i a_i t+\frac{1}{2}\sigma_i^2 a_i^2 t^2\right]} \\
+&= \exp{\left[t\left(\sum_{i=1}^n\mu_i + b\right) +\frac{t^2}{2}\sum_{i=1}^n\sigma_i^2 \right]} \\
+
+\end{split}
+$$
+
+_________________
+
+
+### [[probability density function]]
+$$
+f_X\left(x|\mu, \sigma^2\right) = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}\right]}
+$$
+### [[moment generating function]]
+$$
+\psi_X(t) = \mathbb{E}\left[e^{tx}\right] = \int\limits_{-\infty}^\infty e^{tx} f_X(x) dx
+$$
+$$
+\psi_X(t) = \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]}
+$$
+
+Tags: mathematics statistics
+<!--ID: 1680958035459-->
 END

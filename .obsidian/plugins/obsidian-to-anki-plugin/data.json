@@ -322,7 +322,7 @@
     "mathematics/basics/symetry.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/stationary point.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/set.md": "f44bc7c6033de6e58f0756f67cb541e6",
-    "mathematics/basics/power set.md": "cb0c722c7db5f2acf8ea74a32a4b6802",
+    "mathematics/basics/power set.md": "d5639895e1d1eb494c3eb16e3f1dc370",
     "mathematics/basics/norm.md": "367180f5a83de408f37a2e708d41fe97",
     "mathematics/basics/monotonic function.md": "aa887bcb8cd6542c26944058463a8336",
     "mathematics/basics/metric.md": "6fef9642ec90a639176f4e83f57e5c0e",
@@ -547,7 +547,7 @@
     "mathematics/stochastics/kurtosis.md": "d183c4579d7299637934847a1711296a",
     "mathematics/stochastics/symmetric distribution.md": "87f89d500c6836da14e9bb8b591e7c53",
     "mathematics/stochastics/moment generating function.md": "7d2914c70cca0368453dc81211725ba8",
-    "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md": "963dc4703a125e1c7002ca196d1a730c",
+    "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md": "3edeccf4cbfeed8be97fbef9d82e36ad",
     "mathematics/stochastics/linear transformation of random variables.md": "da79a9d75f8d6910b57e0e68484df069",
     "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md": "4e1130b4cddc1ae2f9cd907af04adf91",
     "mathematics/stochastics/random sample.md": "8e757b17c65a667596766c966ac478d5",
@@ -1595,7 +1595,8 @@
     "mathematics/maximum likelihood estimator.md": "87df319beda14dc5cf939e1832584a89",
     "mathematics/stochastics/likelihood function.md": "d9d800a39cd2a3feb264ed84d7d3c24d",
     "mathematics/stochastics/Untitled 2.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/best estimator.md": "5e62fc69229fdbdc04aa06c60a013f45"
+    "mathematics/stochastics/best estimator.md": "5e62fc69229fdbdc04aa06c60a013f45",
+    "mathematics/stochastics/confidence set.md": "30b3b44d4e17028fbb7a7556abcf06e8"
   },
   "fields_dict": {
     "Basic": [
