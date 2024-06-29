@@ -1582,7 +1582,7 @@
     "mathematics/stochastics/sprecial distributions/continuous/exponential distribution.md": "41f6066696565e023f98b39117785a27",
     "mathematics/stochastics/product probability space.md": "588a46d45fdedb1f7cae63e4051706a2",
     "mathematics/stochastics/sprecial distributions/multivariate normal distribution.md": "a3c0f3e4b1e8ce0cda907cb191384c16",
-    "mathematics/stochastics/statistical estimator.md": "597e11b6b7d3dff688be6a5c2c42e1d9",
+    "mathematics/stochastics/statistical estimator.md": "8ab165420bc912d573b66c97b9d06fbd",
     "mathematics/stochastics/parameter space.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical model.md": "e411c764277b782b6e7b4fd446352640",
     "mathematics/stochastics/statistical learning/statistical estimator_old.md": "7090351e9b0e06644416694f1e365a08",
@@ -1591,12 +1591,13 @@
     "mathematics/stochastics/estimator variance.md": "f31cd5dae9b4c30174a848226d762c8d",
     "mathematics/stochastics/estimating uniform distribution parameter.md": "7c0a690c3ec70ad6472074e56541f77f",
     "mathematics/stochastics/maximum of uniform samples.md": "093f4c46580e5ee5491ec2809d29452c",
-    "mathematics/stochastics/n fold statistical model.md": "10ef986f28cd0f5a7bafe22477d8f8cb",
+    "mathematics/stochastics/n fold statistical model.md": "fc006fa72d594fcdf3b1dfa38b87253b",
     "mathematics/maximum likelihood estimator.md": "87df319beda14dc5cf939e1832584a89",
     "mathematics/stochastics/likelihood function.md": "d9d800a39cd2a3feb264ed84d7d3c24d",
     "mathematics/stochastics/Untitled 2.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/best estimator.md": "5e62fc69229fdbdc04aa06c60a013f45",
-    "mathematics/stochastics/confidence set.md": "30b3b44d4e17028fbb7a7556abcf06e8"
+    "mathematics/stochastics/confidence set.md": "0978dae7af5c1fc69ae96678b2f00d5f",
+    "mathematics/stochastics/sprecial distributions/continuous/students t distribution.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [
