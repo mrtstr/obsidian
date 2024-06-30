@@ -160,7 +160,7 @@ $$
 \end{split}
 $$
 
-- a [[scalar]] is its own [[trace]] and$\mathrm{trace}(AB) = \mathrm{trace}(BA)$
+- a [[scalar]] is its own [[trace]] and $\mathrm{trace}(AB) = \mathrm{trace}(BA)$
 
 
 $$
