@@ -20,7 +20,7 @@ $$
 
 $$
 \begin{split}
-$\mathcal{S}$ 
+\mathcal{S} 
 &= \left[\bar{X}_n - \frac{\sigma \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}\right] \\
 z_{\frac{\alpha-1}{2}} &= \Phi^{-1}\left(\frac{\alpha-1}{2}\right)
 \end{split}
@@ -103,35 +103,60 @@ $$
 \begin{split}
 \lim_{n \to \infty}\mathcal{S}_n
 &= \left[\bar{X}_n - \frac{S_n \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}\right] \\
+z_{\frac{\alpha-1}{2}} &= \Phi^{-1}\left(\frac{\alpha-1}{2}\right)
 \end{split}
 $$
 
-- with $z_\frac{1-\alpha}{2} = F^{-1}_X\left(\frac{1-\alpha}{2}\right)$ being the [[quantile function]] of $X$
+- $\Phi^{-1}$ is the [[quantile function]] of the [[standard normal distribution]]
 #### proof
+$$
+\mathcal{S}=\left[l, u\right]
+$$
+
+$$
+\begin{split}
+\mathbb{P}(Y \leq u)&=F_Y(u) = \frac{\alpha-1}{2} \\
+\Rightarrow u &= F_Y^{-1}\left(\frac{\alpha-1}{2}\right) \\
+\end{split}
+$$
 
 $$
 \begin{split}
 Y 
 =&\bar{X}_n= \frac{1}{n} \sum_{i=1}^n X_i \\
 F_Y(y) 
-=& \mathbb{P}(Y \leq y) \\
-=& \mathbb{P}\left(\frac{1}{n} \sum_{i=1}^n X_i \leq y\right) \\
-=& \mathbb{P}\left( \sum_{i=1}^n X_i \leq n \cdot y\right) \\
-
+=& \mathbb{P}\left(Y \leq y\right) \\
+=& \mathbb{P}\left(\bar{X}_n \leq y\right) \\
+=& \mathbb{P}\left( \sqrt{n} \left(\bar{X}_n - \mu\right) \leq \sqrt{n} \left(y - \mu\right)\right) \\
+=& F_N\left(\sqrt{n} \left(y - \mu\right)\right) \text{ with } \sim \mathcal{N}(0, \sigma^2) \text{ (lindeberg levy CLT)} \\
+=& \Phi\left(\frac{\sqrt{n}}{\sigma} \left(y - \mu\right)\right) \\
 \end{split}
 $$
 
 
 $$
 \begin{split}
-\mathbb{P}(Y \geq l) &= F_Y(l) = 1 - \frac{\alpha-1}{2} \\
-\Rightarrow l &= F_Y^{-1}\left(1 - \frac{\alpha-1}{2}\right) \\
-\mathbb{P}(Y \leq u)&=F_Y(u) = \frac{\alpha-1}{2} \\
-\Rightarrow u &= F_Y^{-1}\left(\frac{\alpha-1}{2}\right) \\
+&\text{let } F_Y(y) = q \Leftrightarrow F_Y^{-1}(q) = y \\
+&F_Y(y) = \Phi\left(\frac{\sqrt{n}}{\sigma} \left(y - \mu\right)\right) \\
+\Rightarrow& \Phi^{-1}\left(F_Y(y)\right) = \frac{\sqrt{n}}{\sigma} \left(y - \mu\right) \\
+\Rightarrow& \Phi^{-1}\left(q\right) = \frac{\sqrt{n}}{\sigma} \left(F_Y^{-1}(q)  - \mu\right) \\
+\Rightarrow& F_Y^{-1}(q) = \Phi^{-1}\left(q\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+\end{split}
+$$
+- since $\bar{X}_n$ and $S^2_n$ are unbiased [[statistical estimator]] for  $\mu$ and $\sigma^2$ we have for $n \to \infty$
+
+$$
+\begin{split}
+F_Y^{-1}(q) 
+&= \Phi^{-1}\left(q\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+&= \Phi^{-1}\left(q\right) \frac{S_n}{\sqrt{n}} + \bar{X}_n \\
 \end{split}
 $$
 
+
 # -----------------------
+
+![[lindeberg levy CLT#lindeberg levy CLT]]
 
 ![[normal distribution#probability density function (PDF)]]
 
@@ -369,7 +394,7 @@ $$
 $$
 \begin{split}
 \mathcal{S} 
-&= \left[\bar{X}_n - \frac{S_n \cdot t_{\frac{n-1;\alpha-1}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot t_{\frac{n-1;\alpha-1}{2}}}{\sqrt{n}}\right] \\
+&= \left[\bar{X}_n - \frac{S_n \cdot t_{\frac{n-1;\alpha-1}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{S_n \cdot t_{\frac{n-1;\alpha-1}{2}}}{\sqrt{n}}\right] \\
 \end{split}
 $$
 
@@ -516,7 +541,7 @@ S^2_n &= \frac{1}{n-1} \sum_{i=1}^n \left(X_i - \bar{X}_n\right)^2 \\
 $$
 
 
-- what can be said about the is the [[confidence set]] $\mathcal{S}$ for $\mu$? (no proof)
+- what can be said about the is the [[confidence set]] $\mathcal{S}$ for $\mu$? (with proof)
 
 Back: 
 ### [[confidence set]] for a sample from a general [[random variable]]
@@ -534,12 +559,117 @@ $$
 $$
 \begin{split}
 \lim_{n \to \infty}\mathcal{S}_n
-&= \left[\bar{X}_n - \frac{S_n \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}\right] \\
+&= \left[\bar{X}_n - \frac{S_n \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{S_n \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}\right] \\
+z_{\frac{\alpha-1}{2}} &= \Phi^{-1}\left(\frac{\alpha-1}{2}\right)
 \end{split}
 $$
 
-- with $z_\frac{1-\alpha}{2} = F^{-1}_X\left(\frac{1-\alpha}{2}\right)$ being the [[quantile function]] of $X$
+- $\Phi^{-1}$ is the [[quantile function]] of the [[standard normal distribution]]
+#### proof
+$$
+\mathcal{S}=\left[l, u\right]
+$$
+
+$$
+\begin{split}
+\mathbb{P}(Y \leq u)&=F_Y(u) = \frac{\alpha-1}{2} \\
+\Rightarrow u &= F_Y^{-1}\left(\frac{\alpha-1}{2}\right) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+Y 
+=&\bar{X}_n= \frac{1}{n} \sum_{i=1}^n X_i \\
+F_Y(y) 
+=& \mathbb{P}\left(Y \leq y\right) \\
+=& \mathbb{P}\left(\bar{X}_n \leq y\right) \\
+=& \mathbb{P}\left( \sqrt{n} \left(\bar{X}_n - \mu\right) \leq \sqrt{n} \left(y - \mu\right)\right) \\
+=& F_N\left(\sqrt{n} \left(y - \mu\right)\right) \text{ with } \sim \mathcal{N}(0, \sigma^2) \text{ (lindeberg levy CLT)} \\
+=& \Phi\left(\frac{\sqrt{n}}{\sigma} \left(y - \mu\right)\right) \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+&\text{let } F_Y(y) = q \Leftrightarrow F_Y^{-1}(q) = y \\
+&F_Y(y) = \Phi\left(\frac{\sqrt{n}}{\sigma} \left(y - \mu\right)\right) \\
+\Rightarrow& \Phi^{-1}\left(F_Y(y)\right) = \frac{\sqrt{n}}{\sigma} \left(y - \mu\right) \\
+\Rightarrow& \Phi^{-1}\left(q\right) = \frac{\sqrt{n}}{\sigma} \left(F_Y^{-1}(q)  - \mu\right) \\
+\Rightarrow& F_Y^{-1}(q) = \Phi^{-1}\left(q\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+\end{split}
+$$
+- since $\bar{X}_n$ and $S^2_n$ are unbiased [[statistical estimator]] for  $\mu$ and $\sigma^2$ we have for $n \to \infty$
+
+$$
+\begin{split}
+F_Y^{-1}(q) 
+&= \Phi^{-1}\left(q\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+&= \Phi^{-1}\left(q\right) \frac{S_n}{\sqrt{n}} + \bar{X}_n \\
+\end{split}
+$$
+
 _________________________________
+
+### lindeberg levy CLT
+- given a sequence of [[random variable]] $X_1, ..., X_n$ i.i.d with $\mathbb{E}[X_i] = \mu$ and $\mathbb{VAR}[X_i] = \sigma^2$
+- $\sqrt{n} \left(\bar{X}_n - \mu\right)$ converges in [[distribution]] to a [[normal distribution]] $\mathcal{N}(0, \sigma^2)$
+
+$$
+\begin{split}
+&\bar{X}_n = \frac{1}{n} \sum_{i=1}^n X_i \\
+&\lim_{n \to \infty} \sqrt{n} \left(\bar{X}_n - \mu\right) \sim \mathcal{N}(0, \sigma^2)
+\end{split}
+$$
+
+### standard normal transformation
+
+$$
+\begin{split}
+&X \sim \mathcal{N}(0,1) \\
+\Rightarrow& Y = \mu + \sigma X \sim \mathcal{N}(\mu,\sigma^2)
+\end{split}
+$$
+
+$$
+\begin{split}
+F_Y(y) 
+&= F_X\left(\frac{y- \mu}{\sigma}\right) \\ 
+f_y(y) 
+&= \frac{d}{dy} F_Y(y) \\
+F^{-1}_Y(q) 
+&= F^{-1}_X\left(q\right) \cdot \sigma + \mu \\ 
+\end{split}
+$$
+
+$$
+\begin{split}
+F_Y(y) 
+&= \mathbb{P}\left(Y \leq y\right) \\
+&= \mathbb{P}\left(\mu + \sigma X \leq y\right) \\
+&= \mathbb{P}\left(X \leq \frac{y- \mu}{\sigma}\right) \\
+&= F_X\left(\frac{y- \mu}{\sigma}\right) \\ 
+f_y(y) 
+&= \frac{d}{dy} F_Y(y) \\
+&= \frac{d}{dy} F_X\left(\frac{y- \mu}{\sigma}\right) \\
+&= \frac{1}{\sigma} f_X\left(\frac{y- \mu}{\sigma}\right) \\
+\end{split}
+$$
+
+- let $F_Y(y)=q \Leftrightarrow F^{-1}_Y(q)=y$
+$$
+\begin{split}
+F_Y(y) &= F_X\left(\frac{y- \mu}{\sigma}\right) \\
+F^{-1}_X\left(F_Y(y)\right) &= F^{-1}_X\left(F_X\left(\frac{y- \mu}{\sigma}\right)\right) \\
+F^{-1}_X\left(q\right) &= \frac{y- \mu}{\sigma}\\
+y &= F^{-1}_X\left(q\right) \sigma + \mu\\
+F^{-1}_Y(q) &= F^{-1}_X\left(q\right) \sigma + \mu\\
+\end{split}
+$$
+
+
+
 ### confidence set
 - given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ and [[set]] $\mathcal{S}$ with a characteristics $\tau: \Theta \to \mathcal{S}$ 
 - a [[function]] $C: \mathfrak{X} \to \mathcal{P}(S)$ that is mapping the obervation space to the [[power set]] of $\mathcal{S}$ is called the [[confidence set]] of $\tau$ to the level of $1 - \alpha$ if the following is true
