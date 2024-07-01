@@ -1600,7 +1600,8 @@
     "mathematics/stochastics/sprecial distributions/continuous/students t distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/lindeberg levy CLT.md": "917c5d055d9eb76fdd829c78c42547ba",
     "mathematics/linear model.md": "3c89ed202f01a63e8128e15205de5d14",
-    "mathematics/optimization/least squares.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "mathematics/optimization/least squares.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/statistical test.md": "cfc3098e2019ee18686cc4fce0b9658d"
   },
   "fields_dict": {
     "Basic": [
