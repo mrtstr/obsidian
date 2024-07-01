@@ -1598,10 +1598,11 @@
     "mathematics/stochastics/best estimator.md": "5e62fc69229fdbdc04aa06c60a013f45",
     "mathematics/stochastics/confidence set.md": "751bd06065e6467339c20832145e1133",
     "mathematics/stochastics/sprecial distributions/continuous/students t distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/lindeberg levy CLT.md": "917c5d055d9eb76fdd829c78c42547ba",
+    "mathematics/stochastics/lindeberg levy CLT.md": "cb556046be2282128db79093c814b161",
     "mathematics/linear model.md": "3c89ed202f01a63e8128e15205de5d14",
     "mathematics/optimization/least squares.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/statistical test.md": "cfc3098e2019ee18686cc4fce0b9658d"
+    "mathematics/stochastics/statistical test.md": "cfc3098e2019ee18686cc4fce0b9658d",
+    "mathematics/stochastics/one sided gauss test.md": "51c36ef3f2741c36f4cd08f71e16a8f2"
   },
   "fields_dict": {
     "Basic": [
