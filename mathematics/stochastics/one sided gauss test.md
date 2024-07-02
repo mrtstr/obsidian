@@ -122,6 +122,36 @@ _________________________________
 - every [[statistics]] $\varphi: \mathfrak{X} \to [0,1]$ is called a [[statistical test]] of the **nullhypothesis** $\Theta_0$ against $\Theta_1$
 - given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ is the properbility of deciding for the alternative $\Theta_1$ thus the **rejection rate**
 
+$$
+\begin{split}
+\varphi(X) = \mathbb{P}\left(H_1 | X\right)
+\end{split}
+$$
+
+#### randomized vs non-random tests
+- non-random tests if $\forall x \in \mathfrak{X}: \varphi(x) \in \{0,1\}$ and random otherwise ($\varphi(x) \in [0,1]$)
+- for a non-random test $\varphi$ will look like this:
+
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+- for a randomized test $\varphi$ will look like this:
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+\gamma(x) & \Leftrightarrow &  \\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+
+
 ##### effective level of a [[statistical test]] $\varphi$
 - the **effective level** of a [[statistical test]] $\varphi$ is defined as follows
 $$
@@ -146,26 +176,6 @@ $$
 
 - the power function $\beta_\varphi$ can be interpreted as the **expected rejection rate** for a given parameter [[set]] $\vartheta$ if the obervations are sampled $x \sim \mathbb{P}_\vartheta$ from the [[distribution]] $\mathbb{P}_\vartheta$
 - ideally $\beta_\varphi (\vartheta)$ should be close to $0$ for $\vartheta \in \Theta_0$ and close to $1$ for $\vartheta \in \Theta_1$
-
-
-### error types
-
-##### type I error
-- type I error if $H_0$ is rejected but $H_0$ is correct
-- for a given parameter set $\vartheta \in \Theta_0$ the **type I error probability** is given by $\beta_\varphi (\vartheta)$
-- thus the **type I error probability** is bounded by the **test level** $\alpha$
-- concidered more servere and thus controlled by $\alpha$
-→ only the rejection of a hypothesis $H_0$ is reliable
-
-##### type II error
-- type II error if $H_0$ is accepted but $H_1$ is correct
-- for a given parameter set $\vartheta \in \Theta_1$ the **type II error probability** is given by $1-\beta_\varphi (\vartheta)$
-- theoreticly bounded by $1 - \alpha$ but practicly uncontrolled
-→ acceptence of $H_0$ is not reliable
-
-
-#### randomized vs non-random tests
-- non-random tests if $\forall x \in \mathfrak{X}: \varphi(x) \in \{0,1\}$ and random otherwise ($\varphi(x) \in [0,1]$)
 
 
 ### [[confidence set]] for the mean of the [[normal distribution]]
@@ -281,6 +291,36 @@ _________________________________
 - every [[statistics]] $\varphi: \mathfrak{X} \to [0,1]$ is called a [[statistical test]] of the **nullhypothesis** $\Theta_0$ against $\Theta_1$
 - given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ is the properbility of deciding for the alternative $\Theta_1$ thus the **rejection rate**
 
+$$
+\begin{split}
+\varphi(X) = \mathbb{P}\left(H_1 | X\right)
+\end{split}
+$$
+
+#### randomized vs non-random tests
+- non-random tests if $\forall x \in \mathfrak{X}: \varphi(x) \in \{0,1\}$ and random otherwise ($\varphi(x) \in [0,1]$)
+- for a non-random test $\varphi$ will look like this:
+
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+- for a randomized test $\varphi$ will look like this:
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+\gamma(x) & \Leftrightarrow &  \\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+
+
 ##### effective level of a [[statistical test]] $\varphi$
 - the **effective level** of a [[statistical test]] $\varphi$ is defined as follows
 $$
@@ -305,7 +345,6 @@ $$
 
 - the power function $\beta_\varphi$ can be interpreted as the **expected rejection rate** for a given parameter [[set]] $\vartheta$ if the obervations are sampled $x \sim \mathbb{P}_\vartheta$ from the [[distribution]] $\mathbb{P}_\vartheta$
 - ideally $\beta_\varphi (\vartheta)$ should be close to $0$ for $\vartheta \in \Theta_0$ and close to $1$ for $\vartheta \in \Theta_1$
-
 
 ### error types
 
