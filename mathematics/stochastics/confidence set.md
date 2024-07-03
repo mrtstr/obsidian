@@ -1,6 +1,6 @@
 ### confidence set
-- given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ and [[set]] $\mathcal{S}$ with a characteristics $\tau: \Theta \to \mathcal{S}$ 
-- a [[function]] $C: \mathfrak{X} \to \mathcal{P}(S)$ that is mapping the obervation space to the [[power set]] of $\mathcal{S}$ is called the [[confidence set]] of $\tau$ to the level of $1 - \alpha$ if the following is true
+- given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ and [[set]] $\mathcal{S}$ with a characteristics $\tau: \Theta \to \Omega$ 
+- a [[function]] $C: \mathfrak{X} \to \mathcal{P}(\Omega)$ that is mapping the obervation space to the [[power set]] of $\Omega$ is called the [[confidence set]] of $\tau$ to the level of $1 - \alpha$ if the following is true
 
 $$
 \mathbb{P}_\vartheta \left\{C \ni \tau(\vartheta)\right\} \geq 1-\alpha
@@ -182,14 +182,14 @@ Basic
 
 Back: 
 ### confidence set
-- given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ and [[set]] $\mathcal{S}$ with a characteristics $\tau: \Theta \to \mathcal{S}$ 
-- a [[function]] $C: \mathfrak{X} \to \mathcal{P}(S)$ that is mapping the obervation space to the [[power set]] of $\mathcal{S}$ is called the [[confidence set]] of $\tau$ to the level of $1 - \alpha$ if the following is true
+- given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ and [[set]] $\mathcal{S}$ with a characteristics $\tau: \Theta \to \Omega$ 
+- a [[function]] $C: \mathfrak{X} \to \mathcal{P}(\Omega)$ that is mapping the obervation space to the [[power set]] of $\Omega$ is called the [[confidence set]] of $\tau$ to the level of $1 - \alpha$ if the following is true
 
 $$
 \mathbb{P}_\vartheta \left\{C \ni \tau(\vartheta)\right\} \geq 1-\alpha
 $$
-- for a given observation we want to be at least $1 - \alpha$ sure that the true value is in $C$
-- we want $C$ to be as small as possible because $C = \mathcal{S}$ would statisfy the condition but would not contain any information
+ - for a given observation we want to be at least $1 - \alpha$ sure that the true value is in $C$
+ - we want $C$ to be as small as possible because $C = \mathcal{S}$ would statisfy the condition but would not contain any information
 
 _________________________________
 
@@ -277,14 +277,14 @@ $$
 
 _________________________________
 ### confidence set
-- given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ and [[set]] $\mathcal{S}$ with a characteristics $\tau: \Theta \to \mathcal{S}$ 
-- a [[function]] $C: \mathfrak{X} \to \mathcal{P}(S)$ that is mapping the obervation space to the [[power set]] of $\mathcal{S}$ is called the [[confidence set]] of $\tau$ to the level of $1 - \alpha$ if the following is true
+- given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ and [[set]] $\mathcal{S}$ with a characteristics $\tau: \Theta \to \Omega$ 
+- a [[function]] $C: \mathfrak{X} \to \mathcal{P}(\Omega)$ that is mapping the obervation space to the [[power set]] of $\Omega$ is called the [[confidence set]] of $\tau$ to the level of $1 - \alpha$ if the following is true
 
 $$
 \mathbb{P}_\vartheta \left\{C \ni \tau(\vartheta)\right\} \geq 1-\alpha
 $$
-- for a given observation we want to be at least $1 - \alpha$ sure that the true value is in $C$
-- we want $C$ to be as small as possible because $C = \mathcal{S}$ would statisfy the condition but would not contain any information
+ - for a given observation we want to be at least $1 - \alpha$ sure that the true value is in $C$
+ - we want $C$ to be as small as possible because $C = \mathcal{S}$ would statisfy the condition but would not contain any information
 
 
 ### [[random sample]] from a [[normal distribution]]
@@ -401,14 +401,14 @@ $$
 
 _________________________________
 ### confidence set
-- given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ and [[set]] $\mathcal{S}$ with a characteristics $\tau: \Theta \to \mathcal{S}$ 
-- a [[function]] $C: \mathfrak{X} \to \mathcal{P}(S)$ that is mapping the obervation space to the [[power set]] of $\mathcal{S}$ is called the [[confidence set]] of $\tau$ to the level of $1 - \alpha$ if the following is true
+- given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ and [[set]] $\mathcal{S}$ with a characteristics $\tau: \Theta \to \Omega$ 
+- a [[function]] $C: \mathfrak{X} \to \mathcal{P}(\Omega)$ that is mapping the obervation space to the [[power set]] of $\Omega$ is called the [[confidence set]] of $\tau$ to the level of $1 - \alpha$ if the following is true
 
 $$
 \mathbb{P}_\vartheta \left\{C \ni \tau(\vartheta)\right\} \geq 1-\alpha
 $$
-- for a given observation we want to be at least $1 - \alpha$ sure that the true value is in $C$
-- we want $C$ to be as small as possible because $C = \mathcal{S}$ would statisfy the condition but would not contain any information
+ - for a given observation we want to be at least $1 - \alpha$ sure that the true value is in $C$
+ - we want $C$ to be as small as possible because $C = \mathcal{S}$ would statisfy the condition but would not contain any information
 
 Tags: mathematics statistics
 <!--ID: 1719677907240-->
@@ -671,14 +671,14 @@ $$
 
 
 ### confidence set
-- given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ and [[set]] $\mathcal{S}$ with a characteristics $\tau: \Theta \to \mathcal{S}$ 
-- a [[function]] $C: \mathfrak{X} \to \mathcal{P}(S)$ that is mapping the obervation space to the [[power set]] of $\mathcal{S}$ is called the [[confidence set]] of $\tau$ to the level of $1 - \alpha$ if the following is true
+- given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ and [[set]] $\mathcal{S}$ with a characteristics $\tau: \Theta \to \Omega$ 
+- a [[function]] $C: \mathfrak{X} \to \mathcal{P}(\Omega)$ that is mapping the obervation space to the [[power set]] of $\Omega$ is called the [[confidence set]] of $\tau$ to the level of $1 - \alpha$ if the following is true
 
 $$
 \mathbb{P}_\vartheta \left\{C \ni \tau(\vartheta)\right\} \geq 1-\alpha
 $$
-- for a given observation we want to be at least $1 - \alpha$ sure that the true value is in $C$
-- we want $C$ to be as small as possible because $C = \mathcal{S}$ would statisfy the condition but would not contain any information
+ - for a given observation we want to be at least $1 - \alpha$ sure that the true value is in $C$
+ - we want $C$ to be as small as possible because $C = \mathcal{S}$ would statisfy the condition but would not contain any information
 
 Tags: mathematics statistics
 <!--ID: 1719680983086-->
