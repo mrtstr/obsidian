@@ -59,8 +59,8 @@ $$
 - ideally $\beta_\varphi (\vartheta)$ should be close to $0$ for $\vartheta \in \Theta_0$ and close to $1$ for $\vartheta \in \Theta_1$
 
 #### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
-- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
-- the power function $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
+- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
 - this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
 ### error types
 
@@ -169,7 +169,10 @@ $$
 
 - the power function $\beta_\varphi$ can be interpreted as the **expected rejection rate** for a given parameter [[set]] $\vartheta$ if the obervations are sampled $x \sim \mathbb{P}_\vartheta$ from the [[distribution]] $\mathbb{P}_\vartheta$
 - ideally $\beta_\varphi (\vartheta)$ should be close to $0$ for $\vartheta \in \Theta_0$ and close to $1$ for $\vartheta \in \Theta_1$
-
+#### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
+- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
+- this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
 Tags: mathematics statistics
 <!--ID: 1719830006825-->
 END
@@ -243,7 +246,10 @@ $$
 
 - the power function $\beta_\varphi$ can be interpreted as the **expected rejection rate** for a given parameter [[set]] $\vartheta$ if the obervations are sampled $x \sim \mathbb{P}_\vartheta$ from the [[distribution]] $\mathbb{P}_\vartheta$
 - ideally $\beta_\varphi (\vartheta)$ should be close to $0$ for $\vartheta \in \Theta_0$ and close to $1$ for $\vartheta \in \Theta_1$
-
+#### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
+- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
+- this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
 Tags: mathematics statistics
 <!--ID: 1719830006831-->
 END
@@ -334,7 +340,10 @@ $$
 
 - the power function $\beta_\varphi$ can be interpreted as the **expected rejection rate** for a given parameter [[set]] $\vartheta$ if the obervations are sampled $x \sim \mathbb{P}_\vartheta$ from the [[distribution]] $\mathbb{P}_\vartheta$
 - ideally $\beta_\varphi (\vartheta)$ should be close to $0$ for $\vartheta \in \Theta_0$ and close to $1$ for $\vartheta \in \Theta_1$
-
+#### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
+- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
+- this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
 Tags: mathematics statistics
 <!--ID: 1719830006834-->
 END
@@ -424,7 +433,10 @@ $$
 
 - the power function $\beta_\varphi$ can be interpreted as the **expected rejection rate** for a given parameter [[set]] $\vartheta$ if the obervations are sampled $x \sim \mathbb{P}_\vartheta$ from the [[distribution]] $\mathbb{P}_\vartheta$
 - ideally $\beta_\varphi (\vartheta)$ should be close to $0$ for $\vartheta \in \Theta_0$ and close to $1$ for $\vartheta \in \Theta_1$
-
+#### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
+- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
+- this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
 Tags: mathematics statistics
 <!--ID: 1719830006837-->
 END
@@ -451,8 +463,8 @@ $$
 - then we resolve the equation after $\vartheta_0$ to find the parameter that has a rejection rate of at worst $\alpha$ under the assumtion that $H_0$ is true
 
 #### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
-- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
-- the power function $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
+- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
 - this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
 
 ### statistical test
@@ -527,8 +539,8 @@ Basic
 - difference power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
 Back: 
 #### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
-- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
-- the power function $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
+- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
 - this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
 
 ### statistical test
