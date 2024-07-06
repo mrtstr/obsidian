@@ -21,8 +21,8 @@ $$
 $$
 \begin{split}
 \mathcal{S} 
-&= \left[\bar{X}_n - \frac{\sigma \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}\right] \\
-z_{\frac{\alpha-1}{2}} &= \Phi^{-1}\left(\frac{\alpha-1}{2}\right)
+&= \left[\bar{X}_n - \frac{\sigma \cdot z_{1-\frac{\alpha}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot z_{1-\frac{\alpha}{2}}}{\sqrt{n}}\right] \\
+z_{1-\frac{\alpha}{2}} &= \Phi^{-1}\left({1-\frac{\alpha}{2}}\right)
 \end{split}
 $$
 
@@ -31,18 +31,28 @@ $$
 $$
 \begin{split}
 Y &=\frac{1}{n} \sum_{i=1}^n X_i \sim \mathcal{N}\left(\mu, \frac{\sigma^2}{2}\right) \\
-\Rightarrow F_Y(y) &= \frac{\alpha-1}{2}
 \end{split}
 $$
 - if $S=[l, u]$ we can calculate the boundarys of $S$ with the [[quantile function]] of $Y$
 $$
 \begin{split}
-\mathbb{P}(Y \geq l) &= F_Y(l) = 1 - \frac{\alpha-1}{2} \\
-\Rightarrow l &= F_Y^{-1}\left(1 - \frac{\alpha-1}{2}\right) \\
-\mathbb{P}(Y \leq u)&=F_Y(u) = \frac{\alpha-1}{2} \\
-\Rightarrow u &= F_Y^{-1}\left(\frac{\alpha-1}{2}\right) \\
+1
+&= \mathbb{P}(Y \in \mathcal{S}) + \mathbb{P}(Y \leq l) + \mathbb{P}(Y \geq u)\\
+&= 1-\alpha +F_Y(l) +1- F_Y(u) \\
+&= 1-\alpha +F_Y(l) - F_Y(u) \\
+\Rightarrow F_Y(u) &= 1-\alpha +F_Y(l) \\
+F_Y(l)&=1 - F_Y(u) \\
+\Rightarrow F_Y(u) 
+&= 1-\alpha +1 - F_Y(u)\\
+&= \frac{2-\alpha}{2}\\
+&= 1 - \frac{\alpha}{2}\\
+\Rightarrow F_Y(l) 
+&= F_Y(u) - (1-\alpha) \\
+&= 1 - \frac{\alpha}{2} - 1 +\alpha \\
+&= \frac{\alpha}{2}  \\
 \end{split}
 $$
+
 
 - since $Y$ has a [[normal distribution]] we can perform a standard normal transformation
 - with $\Phi(x)$ and $\Phi^{-1}(q)$ being the [[cumulative distribution function (CDF)]] and [[quantile function]] of the [[standard normal distribution]]  
@@ -62,10 +72,28 @@ u
 &= F_Y^{-1}\left(\frac{\alpha-1}{2}\right) \\
 &=\Phi^{-1}\left(\frac{\alpha-1}{2}\right) \frac{\sigma}{\sqrt{n}} + \mu \\
 &=z_\left(\frac{\alpha-1}{2}\right) \frac{\sigma}{\sqrt{n}} + \bar{X}_n \\
-l &= \bar{X}_n - z_\left(\frac{\alpha-1}{2}\right) \frac{\sigma}{\sqrt{n}} \qquad \text{(follows from symmetry)}  \\
+l 
+&= F_Y^{-1}\left(\frac{\alpha}{2}\right) \\
+&=\Phi^{-1}\left(\frac{\alpha}{2}\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+\end{split}
+$$
+- from the [[symmetric distribution|symmetry]] of the [[standard normal distribution]] we know that 
+
+$$
+\begin{split}
+&\Phi\left(\frac{\alpha}{2}\right) = 1 - \Phi\left(-\frac{\alpha}{2}\right) \\
+\Leftrightarrow & \Phi^{-1}\left(\frac{\alpha}{2}\right) = - \Phi^{-1}\left(1-\frac{\alpha}{2}\right) \\
 \end{split}
 $$
 
+$$
+\begin{split}
+l 
+&=\Phi^{-1}\left(\frac{\alpha}{2}\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+&= - \Phi^{-1}\left(1-\frac{\alpha}{2}\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+&= \bar{X}_n - z_\left(\frac{\alpha-1}{2}\right) \frac{\sigma}{\sqrt{n}}  \\
+\end{split}
+$$
 
 ### [[confidence set]] for the [[normal distribution]] (mean and [[variance]] unknown)
 - given a sample $X_1, ..., X_n \sim \mathcal{N}(\mu, \sigma^2)$  
@@ -82,7 +110,7 @@ $$
 $$
 \begin{split}
 \mathcal{S}
-&= \left[\bar{X}_n - \frac{S_n \cdot t_{\frac{n-1;\alpha-1}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot t_{\frac{n-1;\alpha-1}{2}}}{\sqrt{n}}\right] \\
+&= \left[\bar{X}_n - \frac{S_n \cdot t_{n-1;1 - \frac{\alpha}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot t_{n-1;1 - \frac{\alpha}{2}}}{\sqrt{n}}\right] \\
 \end{split}
 $$
 
@@ -102,8 +130,8 @@ $$
 $$
 \begin{split}
 \lim_{n \to \infty}\mathcal{S}_n
-&= \left[\bar{X}_n - \frac{S_n \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}\right] \\
-z_{\frac{\alpha-1}{2}} &= \Phi^{-1}\left(\frac{\alpha-1}{2}\right)
+&= \left[\bar{X}_n - \frac{S_n \cdot z_{ 1-\frac{\alpha}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot z_{1-\frac{\alpha-1}{2}}}{\sqrt{n}}\right] \\
+z_{1-\frac{\alpha}{2}} &= \Phi^{-1}\left(1- \frac{\alpha}{2}\right)
 \end{split}
 $$
 
@@ -112,14 +140,27 @@ $$
 $$
 \mathcal{S}=\left[l, u\right]
 $$
-
 $$
 \begin{split}
-\mathbb{P}(Y \leq u)&=F_Y(u) = \frac{\alpha-1}{2} \\
-\Rightarrow u &= F_Y^{-1}\left(\frac{\alpha-1}{2}\right) \\
+1
+&= \mathbb{P}(Y \in \mathcal{S}) + \mathbb{P}(Y \leq l) + \mathbb{P}(Y \geq u)\\
+&= 1-\alpha +F_Y(l) +1- F_Y(u) \\
+&= 1-\alpha +F_Y(l) - F_Y(u) \\
+\Rightarrow F_Y(u) &= 1-\alpha +F_Y(l) \\
+F_Y(l)&=1 - F_Y(u) \\
+\Rightarrow F_Y(u) 
+&= 1-\alpha +1 - F_Y(u)\\
+&= \frac{2-\alpha}{2}\\
+&= 1 - \frac{\alpha}{2}\\
+\Rightarrow F_Y(l) 
+&= F_Y(u) - (1-\alpha) \\
+&= 1 - \frac{\alpha}{2} - 1 +\alpha \\
+&= \frac{\alpha}{2}  \\
+&=\Phi^{-1}\left(\frac{\alpha}{2}\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+&= - \Phi^{-1}\left(1-\frac{\alpha}{2}\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+&= \bar{X}_n - z_\left(\frac{\alpha-1}{2}\right) \frac{\sigma}{\sqrt{n}}  \\
 \end{split}
 $$
-
 $$
 \begin{split}
 Y 
@@ -155,6 +196,8 @@ $$
 
 
 # -----------------------
+
+![[symmetric distribution#quantile function of distribution distributions that are symmetric around its zero]]
 
 ![[lindeberg levy CLT#lindeberg levy CLT]]
 
@@ -222,15 +265,20 @@ $$
 
 Back: 
 ### [[confidence set]] for the mean of the [[normal distribution]]
-- given a sample $X_1, ..., X_n \sim \mathcal{N}(\mu, \sigma^2)$ with a known $\sigma$ the [[confidence set]] $S$ for $\mu$ is the following
-- 
+- given a sample $X_1, ..., X_n \sim \mathcal{N}(\mu, \sigma^2)$ with a known $\sigma$ the [[confidence set]] $\mathcal{S}$ for $\mu$ is the following
+- with the following [[statistical estimator]] of $\mu$
+
+$$
+\bar{X}_n = \frac{1}{n} \sum_{i=1}^n X_i 
+$$
+
+- $\Phi^{-1}$ is the [[quantile function]] of the [[standard normal distribution]]
 
 $$
 \begin{split}
-S 
-&= \left[\bar{X}_n - \frac{\sigma \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}\right] \\
-\bar{X}_n &= \frac{1}{n} \sum_{i=1}^n X_i \\
-z_{\frac{\alpha-1}{2}} &= \Phi^{-1}\left(\frac{\alpha-1}{2}\right)
+\mathcal{S} 
+&= \left[\bar{X}_n - \frac{\sigma \cdot z_{1-\frac{\alpha}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot z_{1-\frac{\alpha}{2}}}{\sqrt{n}}\right] \\
+z_{1-\frac{\alpha}{2}} &= \Phi^{-1}\left({1-\frac{\alpha}{2}}\right)
 \end{split}
 $$
 
@@ -239,18 +287,28 @@ $$
 $$
 \begin{split}
 Y &=\frac{1}{n} \sum_{i=1}^n X_i \sim \mathcal{N}\left(\mu, \frac{\sigma^2}{2}\right) \\
-\Rightarrow F_Y(y) &= \frac{\alpha-1}{2}
 \end{split}
 $$
 - if $S=[l, u]$ we can calculate the boundarys of $S$ with the [[quantile function]] of $Y$
 $$
 \begin{split}
-\mathbb{P}(Y \geq l) &= F_Y(l) = 1 - \frac{\alpha-1}{2} \\
-\Rightarrow l &= F_Y^{-1}\left(1 - \frac{\alpha-1}{2}\right) \\
-\mathbb{P}(Y \leq u)&=F_Y(u) = \frac{\alpha-1}{2} \\
-\Rightarrow u &= F_Y^{-1}\left(\frac{\alpha-1}{2}\right) \\
+1
+&= \mathbb{P}(Y \in \mathcal{S}) + \mathbb{P}(Y \leq l) + \mathbb{P}(Y \geq u)\\
+&= 1-\alpha +F_Y(l) +1- F_Y(u) \\
+&= 1-\alpha +F_Y(l) - F_Y(u) \\
+\Rightarrow F_Y(u) &= 1-\alpha +F_Y(l) \\
+F_Y(l)&=1 - F_Y(u) \\
+\Rightarrow F_Y(u) 
+&= 1-\alpha +1 - F_Y(u)\\
+&= \frac{2-\alpha}{2}\\
+&= 1 - \frac{\alpha}{2}\\
+\Rightarrow F_Y(l) 
+&= F_Y(u) - (1-\alpha) \\
+&= 1 - \frac{\alpha}{2} - 1 +\alpha \\
+&= \frac{\alpha}{2}  \\
 \end{split}
 $$
+
 
 - since $Y$ has a [[normal distribution]] we can perform a standard normal transformation
 - with $\Phi(x)$ and $\Phi^{-1}(q)$ being the [[cumulative distribution function (CDF)]] and [[quantile function]] of the [[standard normal distribution]]  
@@ -270,10 +328,28 @@ u
 &= F_Y^{-1}\left(\frac{\alpha-1}{2}\right) \\
 &=\Phi^{-1}\left(\frac{\alpha-1}{2}\right) \frac{\sigma}{\sqrt{n}} + \mu \\
 &=z_\left(\frac{\alpha-1}{2}\right) \frac{\sigma}{\sqrt{n}} + \bar{X}_n \\
-l &= \bar{X}_n - z_\left(\frac{\alpha-1}{2}\right) \frac{\sigma}{\sqrt{n}} \qquad \text{(follows from symmetry)}  \\
+l 
+&= F_Y^{-1}\left(\frac{\alpha}{2}\right) \\
+&=\Phi^{-1}\left(\frac{\alpha}{2}\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+\end{split}
+$$
+- from the [[symmetric distribution|symmetry]] of the [[standard normal distribution]] we know that 
+
+$$
+\begin{split}
+&\Phi\left(\frac{\alpha}{2}\right) = 1 - \Phi\left(-\frac{\alpha}{2}\right) \\
+\Leftrightarrow & \Phi^{-1}\left(\frac{\alpha}{2}\right) = - \Phi^{-1}\left(1-\frac{\alpha}{2}\right) \\
 \end{split}
 $$
 
+$$
+\begin{split}
+l 
+&=\Phi^{-1}\left(\frac{\alpha}{2}\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+&= - \Phi^{-1}\left(1-\frac{\alpha}{2}\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+&= \bar{X}_n - z_\left(\frac{\alpha-1}{2}\right) \frac{\sigma}{\sqrt{n}}  \\
+\end{split}
+$$
 
 _________________________________
 ### confidence set
@@ -285,6 +361,29 @@ $$
 $$
  - for a given observation we want to be at least $1 - \alpha$ sure that the true value is in $C$
  - we want $C$ to be as small as possible because $C = \mathcal{S}$ would statisfy the condition but would not contain any information
+
+
+### [[quantile function]] of [[distribution|distributions]] that are symmetric around its zero
+$$
+\begin{split}
+f_X(x) = f_X(- x) 
+&\Rightarrow F_X^{-1}(q) = -F_X^{-1}(1-q) \\
+\end{split}
+$$
+Proof
+$$
+\begin{split}
+
+1) &\quad f_X(x) = f_X(- x) \Rightarrow F_X(-x) = 1- F_X(x) \\
+2) &\quad F_X(x) = q \Leftrightarrow F^{-1}_X(q) = x \\
+\\  \\
+&\Rightarrow F^{-1}_X\left(F_X(-x)\right) = F^{-1}_X\left(1- F_X(x)\right) \\ 
+&\Rightarrow -x = F^{-1}_X\left(1- q\right) \\ 
+&\Rightarrow x = -F^{-1}_X\left(1- q\right) \\ 
+&\Rightarrow F^{-1}_X(q) = -F^{-1}_X\left(1- q\right) \\ 
+
+\end{split}
+$$
 
 
 ### [[random sample]] from a [[normal distribution]]
@@ -393,11 +492,10 @@ $$
 
 $$
 \begin{split}
-\mathcal{S} 
-&= \left[\bar{X}_n - \frac{S_n \cdot t_{\frac{n-1;\alpha-1}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{S_n \cdot t_{\frac{n-1;\alpha-1}{2}}}{\sqrt{n}}\right] \\
+\mathcal{S}
+&= \left[\bar{X}_n - \frac{S_n \cdot t_{n-1;1 - \frac{\alpha}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot t_{n-1;1 - \frac{\alpha}{2}}}{\sqrt{n}}\right] \\
 \end{split}
 $$
-
 
 _________________________________
 ### confidence set
@@ -559,8 +657,8 @@ $$
 $$
 \begin{split}
 \lim_{n \to \infty}\mathcal{S}_n
-&= \left[\bar{X}_n - \frac{S_n \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{S_n \cdot z_{\frac{\alpha-1}{2}}}{\sqrt{n}}\right] \\
-z_{\frac{\alpha-1}{2}} &= \Phi^{-1}\left(\frac{\alpha-1}{2}\right)
+&= \left[\bar{X}_n - \frac{S_n \cdot z_{ 1-\frac{\alpha}{2}}}{\sqrt{n}}, \bar{X}_n + \frac{\sigma \cdot z_{1-\frac{\alpha-1}{2}}}{\sqrt{n}}\right] \\
+z_{1-\frac{\alpha}{2}} &= \Phi^{-1}\left(1- \frac{\alpha}{2}\right)
 \end{split}
 $$
 
@@ -569,14 +667,27 @@ $$
 $$
 \mathcal{S}=\left[l, u\right]
 $$
-
 $$
 \begin{split}
-\mathbb{P}(Y \leq u)&=F_Y(u) = \frac{\alpha-1}{2} \\
-\Rightarrow u &= F_Y^{-1}\left(\frac{\alpha-1}{2}\right) \\
+1
+&= \mathbb{P}(Y \in \mathcal{S}) + \mathbb{P}(Y \leq l) + \mathbb{P}(Y \geq u)\\
+&= 1-\alpha +F_Y(l) +1- F_Y(u) \\
+&= 1-\alpha +F_Y(l) - F_Y(u) \\
+\Rightarrow F_Y(u) &= 1-\alpha +F_Y(l) \\
+F_Y(l)&=1 - F_Y(u) \\
+\Rightarrow F_Y(u) 
+&= 1-\alpha +1 - F_Y(u)\\
+&= \frac{2-\alpha}{2}\\
+&= 1 - \frac{\alpha}{2}\\
+\Rightarrow F_Y(l) 
+&= F_Y(u) - (1-\alpha) \\
+&= 1 - \frac{\alpha}{2} - 1 +\alpha \\
+&= \frac{\alpha}{2}  \\
+&=\Phi^{-1}\left(\frac{\alpha}{2}\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+&= - \Phi^{-1}\left(1-\frac{\alpha}{2}\right) \frac{\sigma}{\sqrt{n}} + \mu \\
+&= \bar{X}_n - z_\left(\frac{\alpha-1}{2}\right) \frac{\sigma}{\sqrt{n}}  \\
 \end{split}
 $$
-
 $$
 \begin{split}
 Y 
@@ -622,6 +733,29 @@ $$
 &\lim_{n \to \infty} \sqrt{n} \left(\bar{X}_n - \mu\right) \sim \mathcal{N}(0, \sigma^2)
 \end{split}
 $$
+
+### [[quantile function]] of [[distribution|distributions]] that are symmetric around its zero
+$$
+\begin{split}
+f_X(x) = f_X(- x) 
+&\Rightarrow F_X^{-1}(q) = -F_X^{-1}(1-q) \\
+\end{split}
+$$
+Proof
+$$
+\begin{split}
+
+1) &\quad f_X(x) = f_X(- x) \Rightarrow F_X(-x) = 1- F_X(x) \\
+2) &\quad F_X(x) = q \Leftrightarrow F^{-1}_X(q) = x \\
+\\  \\
+&\Rightarrow F^{-1}_X\left(F_X(-x)\right) = F^{-1}_X\left(1- F_X(x)\right) \\ 
+&\Rightarrow -x = F^{-1}_X\left(1- q\right) \\ 
+&\Rightarrow x = -F^{-1}_X\left(1- q\right) \\ 
+&\Rightarrow F^{-1}_X(q) = -F^{-1}_X\left(1- q\right) \\ 
+
+\end{split}
+$$
+
 
 ### standard normal transformation
 
@@ -682,4 +816,44 @@ $$
 
 Tags: mathematics statistics
 <!--ID: 1719680983086-->
+END
+
+
+
+START
+Basic
+proof the following for the [[standard normal distribution]]
+
+$$
+\Phi^{-1}\left(\frac{\alpha}{2}\right) = - \Phi^{-1}\left(1-\frac{\alpha}{2}\right)
+$$
+Back: 
+i follows from the [[symmetric distribution|symmetry]] around zero $F_X(\mu-x) = 1- F_X(\mu+x)$
+$$
+\begin{split}
+&\Phi\left(\frac{\alpha}{2}\right) = 1 - \Phi\left(-\frac{\alpha}{2}\right) \\
+\Leftrightarrow & \Phi^{-1}\left(\frac{\alpha}{2}\right) = - \Phi^{-1}\left(1-\frac{\alpha}{2}\right) \\
+\end{split}
+$$
+
+### [[quantile function]] of [[distribution|distributions]] that are symmetric around its zero
+
+$$
+\begin{split}
+
+
+\text{let}&\quad F_X(x) = q \Leftrightarrow F^{-1}_X(q) = x \\
+\\  \\
+&\Rightarrow F^{-1}_X\left(F_X(-x)\right) = F^{-1}_X\left(1- F_X(x)\right) \\ 
+&\Rightarrow -x = F^{-1}_X\left(1- q\right) \\ 
+&\Rightarrow x = -F^{-1}_X\left(1- q\right) \\ 
+&\Rightarrow F^{-1}_X(q) = -F^{-1}_X\left(1- q\right) \\ 
+
+\end{split}
+$$
+
+
+
+Tags: mathematics statistics
+<!--ID: 1720276666666-->
 END

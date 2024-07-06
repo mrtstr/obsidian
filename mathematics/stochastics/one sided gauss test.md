@@ -9,7 +9,35 @@ H_1: \mu > \mu_0 \\
 \end{split}
 $$
 
-- reject $H_0$ if $\bar X_n > \mu_o + \frac{z_{1-\alpha} \sigma}{\sqrt{n}}$ 
+- we want that $\varphi(X)=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ 
+
+$$
+\begin{split}
+\mathbb{P}\left(H_1\right | X) 
+&=\mathbb{P}\left(\mu > \mu_0 \right | X) \\ 
+&=\mathbb{P}\left(\bar X_n > \mu_0\right ) \\ 
+&=\mathbb{P}\left(\sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} > \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
+&= 1- \Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) \\
+&= 1- \alpha\\
+\end{split}
+$$
+
+- resolving the quation to find the theshold $\mu$ for $\varphi(X)$ to have a test level $\alpha$
+
+$$
+\begin{split}
+&\alpha
+=\Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) 
+ \\
+\Rightarrow& \Phi\left(\alpha\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
+\Rightarrow& - \Phi\left(1-\alpha\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
+\Rightarrow& \mu 
+= \mu_0 + \frac{\Phi\left(1-\alpha\right)\sigma_0}{\sqrt{n}} \\
+&= \mu_0 + \frac{z_{1-\alpha}\sigma_0}{\sqrt{n}} \\
+\end{split}
+$$
+
+
 $$
 \varphi(X_1, ..., X_n) = 
 \left\{\begin{matrix}
@@ -19,14 +47,15 @@ $$
 \right.
 $$
 
+- the power function of $\varphi$:
 $$
 \begin{split}
 \beta_\varphi(\mu) 
 &= \mathbb{E}_\mu [\varphi] \\
-&= 1 \cdot \mathbb{P}\left(\bar X_n > \mu_o + \frac{z_{1-\alpha} \sigma}{\sqrt{n}}\right) + 0 \cdot \mathbb{P}(...)\\
-&= \mathbb{P}\left(\bar X_n > \mu_o + \frac{z_{1-\alpha} \sigma}{\sqrt{n}}\right) \\
-&= \mathbb{P}\left( \sqrt{n} \frac{\bar X_n - \mu}{\sigma} > \sqrt{n} \frac{\mu_o - \mu}{\sigma}  + z_{1-\alpha}\right) \\
-&=1 - \Phi\left(  \sqrt{n} \frac{\mu_o - \mu}{\sigma}  + z_{1-\alpha}\right) \\
+&= 1 \cdot \mathbb{P}\left(\bar X_n > \mu_0 + \frac{z_{1-\alpha} \sigma_0}{\sqrt{n}}\right) + 0 \cdot \mathbb{P}(...)\\
+&= \mathbb{P}\left(\bar X_n > \mu_0 + \frac{z_{1-\alpha} \sigma_0}{\sqrt{n}}\right) \\
+&= \mathbb{P}\left( \sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} > \sqrt{n} \frac{\mu_0 - \mu}{\sigma}  + z_{1-\alpha}\right) \\
+&=1 - \Phi\left(  \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}  + z_{1-\alpha}\right) \\
 \end{split}
 $$
 
@@ -39,7 +68,33 @@ H_1: \mu < \mu_0 \\
 \end{split}
 $$
 
-- reject $H_0$ if $\bar X_n < \mu_o - \frac{z_{1-\alpha} \sigma}{\sqrt{n}}$ 
+- we want that $\varphi(X)=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ 
+
+$$
+\begin{split}
+\mathbb{P}\left(H_1\right | X) 
+&=\mathbb{P}\left(\mu < \mu_0 \right | X) \\ 
+&=\mathbb{P}\left(\bar X_n < \mu_0\right ) \\ 
+&=\mathbb{P}\left(\sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} < \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
+&= \Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) \\
+&= 1- \alpha\\
+\end{split}
+$$
+
+- resolving the quation to find the theshold $\mu$ for $\varphi(X)$ to have a test level $\alpha$
+
+$$
+\begin{split}
+&1-\alpha
+=\Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) 
+ \\
+\Rightarrow& \Phi\left(1-\alpha\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
+\Rightarrow& \mu 
+= \mu_0 - \frac{\Phi\left(1-\alpha\right)\sigma_0}{\sqrt{n}} \\
+&= \mu_0 - \frac{z_{1-\alpha}\sigma_0}{\sqrt{n}} \\
+\end{split}
+$$
+
 $$
 \varphi(X_1, ..., X_n) = 
 \left\{\begin{matrix}
@@ -76,9 +131,18 @@ $$
 
 START
 Basic
-[[one sided gauss test]] with an upper bound
+[[one sided gauss test]] 
+
+$$
+\begin{split}
+H_0: \mu \leq \mu_0 \\
+H_1: \mu > \mu_0 \\
+\end{split}
+$$
+
 - [[statistical test]] $\varphi$
 - power function $\beta_\varphi$
+
 Back: 
 ### one sided gauss test
 - given a sample $X_1, ..., X_n \sim \mathcal{N}(\mu, \sigma^2)$ with a known $\sigma$ and $\Theta = \{\mu \in \mathbb{R}\}$ 
@@ -91,7 +155,35 @@ H_1: \mu > \mu_0 \\
 \end{split}
 $$
 
-- reject $H_0$ if $\bar X_n > \mu_o + \frac{z_{1-\alpha} \sigma}{\sqrt{n}}$ 
+- we want that $\varphi(X)=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ 
+
+$$
+\begin{split}
+\mathbb{P}\left(H_1\right | X) 
+&=\mathbb{P}\left(\mu > \mu_0 \right | X) \\ 
+&=\mathbb{P}\left(\bar X_n > \mu_0\right ) \\ 
+&=\mathbb{P}\left(\sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} > \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
+&= 1- \Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) \\
+&= 1- \alpha\\
+\end{split}
+$$
+
+- resolving the quation to find the theshold $\mu$ for $\varphi(X)$ to have a test level $\alpha$
+
+$$
+\begin{split}
+&\alpha
+=\Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) 
+ \\
+\Rightarrow& \Phi\left(\alpha\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
+\Rightarrow& - \Phi\left(1-\alpha\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
+\Rightarrow& \mu 
+= \mu_0 + \frac{\Phi\left(1-\alpha\right)\sigma_0}{\sqrt{n}} \\
+&= \mu_0 + \frac{z_{1-\alpha}\sigma_0}{\sqrt{n}} \\
+\end{split}
+$$
+
+
 $$
 \varphi(X_1, ..., X_n) = 
 \left\{\begin{matrix}
@@ -101,20 +193,44 @@ $$
 \right.
 $$
 
+- the power function of $\varphi$:
 $$
 \begin{split}
 \beta_\varphi(\mu) 
 &= \mathbb{E}_\mu [\varphi] \\
-&= 1 \cdot \mathbb{P}\left(\bar X_n > \mu_o + \frac{z_{1-\alpha} \sigma}{\sqrt{n}}\right) + 0 \cdot \mathbb{P}(...)\\
-&= \mathbb{P}\left(\bar X_n > \mu_o + \frac{z_{1-\alpha} \sigma}{\sqrt{n}}\right) \\
-&= \mathbb{P}\left( \sqrt{n} \frac{\bar X_n - \mu}{\sigma} > \sqrt{n} \frac{\mu_o - \mu}{\sigma}  + z_{1-\alpha}\right) \\
-&=1 - \Phi\left(  \sqrt{n} \frac{\mu_o - \mu}{\sigma}  + z_{1-\alpha}\right) \\
+&= 1 \cdot \mathbb{P}\left(\bar X_n > \mu_0 + \frac{z_{1-\alpha} \sigma_0}{\sqrt{n}}\right) + 0 \cdot \mathbb{P}(...)\\
+&= \mathbb{P}\left(\bar X_n > \mu_0 + \frac{z_{1-\alpha} \sigma_0}{\sqrt{n}}\right) \\
+&= \mathbb{P}\left( \sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} > \sqrt{n} \frac{\mu_0 - \mu}{\sigma}  + z_{1-\alpha}\right) \\
+&=1 - \Phi\left(  \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}  + z_{1-\alpha}\right) \\
 \end{split}
 $$
 
 
 
 _________________________________
+
+### [[quantile function]] of [[distribution|distributions]] that are symmetric around its zero
+$$
+\begin{split}
+f_X(x) = f_X(- x) 
+&\Rightarrow F_X^{-1}(q) = -F_X^{-1}(1-q) \\
+\end{split}
+$$
+Proof
+$$
+\begin{split}
+
+1) &\quad f_X(x) = f_X(- x) \Rightarrow F_X(-x) = 1- F_X(x) \\
+2) &\quad F_X(x) = q \Leftrightarrow F^{-1}_X(q) = x \\
+\\  \\
+&\Rightarrow F^{-1}_X\left(F_X(-x)\right) = F^{-1}_X\left(1- F_X(x)\right) \\ 
+&\Rightarrow -x = F^{-1}_X\left(1- q\right) \\ 
+&\Rightarrow x = -F^{-1}_X\left(1- q\right) \\ 
+&\Rightarrow F^{-1}_X(q) = -F^{-1}_X\left(1- q\right) \\ 
+
+\end{split}
+$$
+
 
 ### statistical test
 - given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ 
@@ -246,7 +362,15 @@ END
 
 START
 Basic
-[[one sided gauss test]] with an lower bound
+[[one sided gauss test]] 
+
+$$
+\begin{split}
+H_0: \mu \geq \mu_0 \\
+H_1: \mu < \mu_0 \\
+\end{split}
+$$
+
 - [[statistical test]] $\varphi$
 - power function $\beta_\varphi$
 Back: 
@@ -262,7 +386,33 @@ H_1: \mu < \mu_0 \\
 \end{split}
 $$
 
-- reject $H_0$ if $\bar X_n < \mu_o - \frac{z_{1-\alpha} \sigma}{\sqrt{n}}$ 
+- we want that $\varphi(X)=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ 
+
+$$
+\begin{split}
+\mathbb{P}\left(H_1\right | X) 
+&=\mathbb{P}\left(\mu < \mu_0 \right | X) \\ 
+&=\mathbb{P}\left(\bar X_n < \mu_0\right ) \\ 
+&=\mathbb{P}\left(\sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} < \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
+&= \Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) \\
+&= 1- \alpha\\
+\end{split}
+$$
+
+- resolving the quation to find the theshold $\mu$ for $\varphi(X)$ to have a test level $\alpha$
+
+$$
+\begin{split}
+&1-\alpha
+=\Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) 
+ \\
+\Rightarrow& \Phi\left(1-\alpha\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
+\Rightarrow& \mu 
+= \mu_0 - \frac{\Phi\left(1-\alpha\right)\sigma_0}{\sqrt{n}} \\
+&= \mu_0 - \frac{z_{1-\alpha}\sigma_0}{\sqrt{n}} \\
+\end{split}
+$$
+
 $$
 \varphi(X_1, ..., X_n) = 
 \left\{\begin{matrix}

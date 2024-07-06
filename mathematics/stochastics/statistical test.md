@@ -81,17 +81,19 @@ $$
 
 ### calculation
 - given $\alpha$ and an observation $X$
-
+- we want that $\varphi(X)=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ with a hypothesis $H_1\left(\tau(\vartheta)\right)$ that is based on some characteristics $\tau(\vartheta)$ of $\mathbb{P}_\vartheta$
+- we replace the characteristics $\tau(\vartheta)$ in the hypothesis $H_1$ with an [[statistical estimator]] $T(X)$ in the equation for the [[statistical test]] $\varphi(X)=\mathbb{P}\left(H_1\left(T(X)\right)\right )=1 - \alpha$ 
+- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold in $\varphi(X)=\mathbb{P}\left(H_1\right |X)$ to finalize the definition of $\varphi$ 
+- note that $\varphi$ is a [[random variable]] 
+- now we can calculate the power function $\beta(\vartheta)=\mathbb{E}_\vartheta\left[\varphi(X)\right]$
+- in case of a non random test this simplifies to
 $$
 \begin{split}
-\sup_{\vartheta \in \Theta_0} \mathbb{P}_{\vartheta}(H_1|X) = \sup_{\vartheta \in \Theta_0} \mathbb{E}_{\vartheta} \left[\varphi \left(X\right)\right] = \alpha \\
+\beta_\varphi(\mu) 
+&= \mathbb{E}_\mu [\varphi] \\
+&= 1 \cdot \mathbb{P}\left(H_1\right |X) + 0 \cdot \mathbb{P}(...)\\
 \end{split}
 $$
-
-- we define $\vartheta_0$ as the parameter that is on the theshold between rejection and accepence of $H_0$
-- then we calculate the probability of an observation in $H_1$ (reject $H_0$) under the condition that $H_0$ is true to calculate the upper bound for the rejection rate $\alpha$ for parameters in $\Theta_0$
-- then we resolve the equation after $\vartheta_0$ to find the parameter that has a rejection rate of at worst $\alpha$ under the assumtion that $H_0$ is true
-
 # -----------------------
 
 
@@ -451,16 +453,19 @@ Back:
 
 ### calculation
 - given $\alpha$ and an observation $X$
-
+- we want that $\varphi(X)=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ with a hypothesis $H_1\left(\tau(\vartheta)\right)$ that is based on some characteristics $\tau(\vartheta)$ of $\mathbb{P}_\vartheta$
+- we replace the characteristics $\tau(\vartheta)$ in the hypothesis $H_1$ with an [[statistical estimator]] $T(X)$ in the equation for the [[statistical test]] $\varphi(X)=\mathbb{P}\left(H_1\left(T(X)\right)\right )=1 - \alpha$ 
+- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold in $\varphi(X)=\mathbb{P}\left(H_1\right |X)$ to finalize the definition of $\varphi$ 
+- note that $\varphi$ is a [[random variable]] 
+- now we can calculate the power function $\beta(\vartheta)=\mathbb{E}_\vartheta\left[\varphi(X)\right]$
+- in case of a non random test this simplifies to
 $$
 \begin{split}
-\sup_{\vartheta \in \Theta_0} \mathbb{P}_{\vartheta}(H_1|X) = \sup_{\vartheta \in \Theta_0} \mathbb{E}_{\vartheta} \left[\varphi \left(X\right)\right] = \alpha \\
+\beta_\varphi(\mu) 
+&= \mathbb{E}_\mu [\varphi] \\
+&= 1 \cdot \mathbb{P}\left(H_1\right |X) + 0 \cdot \mathbb{P}(...)\\
 \end{split}
 $$
-
-- we define $\vartheta_0$ as the parameter that is on the theshold between rejection and accepence of $H_0$
-- then we calculate the probability of an observation in $H_1$ (reject $H_0$) under the condition that $H_0$ is true to calculate the upper bound for the rejection rate $\alpha$ for parameters in $\Theta_0$
-- then we resolve the equation after $\vartheta_0$ to find the parameter that has a rejection rate of at worst $\alpha$ under the assumtion that $H_0$ is true
 
 #### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
 - both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
