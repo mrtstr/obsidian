@@ -28,7 +28,7 @@ $$
 $$
 
 
-##### effective level of a [[statistical test]] $\varphi$
+#### effective level of a [[statistical test]] $\varphi$
 - the **effective level** of a [[statistical test]] $\varphi$ is defined as follows
 $$
 \sup_{\vartheta \in \Theta} \mathbb{E}_{\vartheta} [\varphi]
@@ -37,14 +37,14 @@ $$
 - it is the maximal value the [[expectation]] of the [[statistical test]] $\varphi$ can take with parameters from the nullhypothesis $\Theta_0$
 - thus it is the maximal **expected rejection rate** that is possible with parameters from the nullhypothesis $\Theta_0$ (if the obervations are sampled $x \sim \mathbb{P}_\vartheta$ from the [[distribution]] $\mathbb{P}_\vartheta$)
 
-##### test level of a [[statistical test]] $\varphi$
+#### test level of a [[statistical test]] $\varphi$
 - a [[statistical test]] $\varphi$ is a test of level $\alpha$ if the following is true
 $$
 \sup_{\vartheta \in \Theta} \mathbb{E}_{\vartheta} [\varphi] \leq \alpha
 $$
 - the test level can be interpreted as the confidence level or an **upper bound for the expected rejection rate**
 
-##### power function of a [[statistical test]] $\varphi$
+#### power function of a [[statistical test]] $\varphi$
 - for a [[statistical test]] $\varphi$ the power function $\beta_\varphi: \Theta \to [0,1]$ is defined as follows 
 $$
 \beta_\varphi (\vartheta) = \mathbb{E}_{\vartheta} [\varphi] = \mathbb{E}_{x \sim \mathbb{P}_\vartheta} [\varphi(x)] = \mathbb{P}_\vartheta\left(H_1 | X\right)
@@ -101,7 +101,7 @@ $$
 $$
 
 - we want that $\beta_\varphi=1 - \alpha$ with a hypothesis $H_1\left(\tau(\vartheta)\right)$ that is based on some characteristics $\tau(\vartheta)$ of $\mathbb{P}_\vartheta$
-
+- that means if we reject $H_0$ we are al least $1-\alpha$ certain
 $$
 \begin{split}
 \mathbb{E}[\varphi]
@@ -115,14 +115,14 @@ $$
 $$
 \mathbb{P}\left(H_1\left(T(X)\right)|X\right )=1 - \alpha
 $$ 
-- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold $\vartheta_0$ in $\varphi(X)$ to finalize the definition of $\varphi$ 
+- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold $\vartheta$ in $\varphi(X)$ to finalize the definition of $\varphi$ 
 
 
 $$
 \varphi\left(X_1, ..., X_n\right) = 
 \left\{
 \begin{matrix}
-1 &  \qquad\text{if } \mathbb{P}\left(H_1\left(T(X)\right), \vartheta_0|X\right )\\
+1 &  \qquad\text{if } \mathbb{P}\left(H_1\left(T(X)\right), \vartheta|X\right )\\
 0 &  \qquad\text{else} \\
 \end{matrix} \right.
 $$
@@ -133,7 +133,7 @@ $$
 \begin{split}
 \beta_\varphi(\mu) 
 &= \mathbb{E}_\mu [\varphi] \\
-&= 1 \cdot \mathbb{P}\left(H_1\left(T(X)\right), \vartheta_0|X\right ) + 0 \cdot \mathbb{P}(...)\\
+&= 1 \cdot \mathbb{P}\left(H_1\left(T(X)\right), \vartheta|X\right ) + 0 \cdot \mathbb{P}(...)\\
 \end{split}
 $$
 
@@ -539,7 +539,7 @@ $$
 $$
 
 - we want that $\beta_\varphi=1 - \alpha$ with a hypothesis $H_1\left(\tau(\vartheta)\right)$ that is based on some characteristics $\tau(\vartheta)$ of $\mathbb{P}_\vartheta$
-
+- that means if we reject $H_0$ we are al least $1-\alpha$ certain
 $$
 \begin{split}
 \mathbb{E}[\varphi]
@@ -553,14 +553,14 @@ $$
 $$
 \mathbb{P}\left(H_1\left(T(X)\right)|X\right )=1 - \alpha
 $$ 
-- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold $\vartheta_0$ in $\varphi(X)$ to finalize the definition of $\varphi$ 
+- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold $\vartheta$ in $\varphi(X)$ to finalize the definition of $\varphi$ 
 
 
 $$
 \varphi\left(X_1, ..., X_n\right) = 
 \left\{
 \begin{matrix}
-1 &  \qquad\text{if } \mathbb{P}\left(H_1\left(T(X)\right), \vartheta_0|X\right )\\
+1 &  \qquad\text{if } \mathbb{P}\left(H_1\left(T(X)\right), \vartheta|X\right )\\
 0 &  \qquad\text{else} \\
 \end{matrix} \right.
 $$
@@ -571,7 +571,7 @@ $$
 \begin{split}
 \beta_\varphi(\mu) 
 &= \mathbb{E}_\mu [\varphi] \\
-&= 1 \cdot \mathbb{P}\left(H_1\left(T(X)\right), \vartheta_0|X\right ) + 0 \cdot \mathbb{P}(...)\\
+&= 1 \cdot \mathbb{P}\left(H_1\left(T(X)\right), \vartheta|X\right ) + 0 \cdot \mathbb{P}(...)\\
 \end{split}
 $$
 

@@ -1,7 +1,7 @@
 ### one sided gauss test
 - given a sample $X_1, ..., X_n \sim \mathcal{N}(\mu, \sigma^2)$ with a known $\sigma$ and $\Theta = \{\mu \in \mathbb{R}\}$ 
 
-#### upper bound
+#### right sided
 $$
 \begin{split}
 H_0: \mu \leq \mu_0 \\
@@ -9,7 +9,7 @@ H_1: \mu > \mu_0 \\
 \end{split}
 $$
 
-- we want that $\varphi(X)=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ 
+- we want that $\mathbb{E}[\varphi(X)]=\mathbb{P}\left(H_1\right |X)= 1-\alpha$ because when we reject $H_0$ we want at least to be $1-\alpha$ certain
 
 $$
 \begin{split}
@@ -38,6 +38,7 @@ $$
 $$
 
 
+
 $$
 \varphi(X_1, ..., X_n) = 
 \left\{\begin{matrix}
@@ -60,7 +61,7 @@ $$
 $$
 
 
-#### lower bound
+#### left sided
 $$
 \begin{split}
 H_0: \mu \geq \mu_0 \\
@@ -68,8 +69,7 @@ H_1: \mu < \mu_0 \\
 \end{split}
 $$
 
-- we want that $\varphi(X)=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ 
-
+- we want that $\mathbb{E}[\varphi(X)]=\mathbb{P}\left(H_1\right |X)= 1-\alpha$ because when we reject $H_0$ we want at least to be $1-\alpha$ certain
 $$
 \begin{split}
 \mathbb{P}\left(H_1\right | X) 
@@ -155,8 +155,7 @@ H_1: \mu > \mu_0 \\
 \end{split}
 $$
 
-- we want that $\varphi(X)=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ 
-
+- we want that $\mathbb{E}[\varphi(X)]=\mathbb{P}\left(H_1\right |X)= 1-\alpha$ because when we reject $H_0$ we want at least to be $1-\alpha$ certain
 $$
 \begin{split}
 \mathbb{P}\left(H_1\right | X) 
@@ -322,7 +321,7 @@ $$
 
 
 
-#### calculation
+### calculation
 - given $\alpha$ and an observation $X$ and the [[random variable]] $\varphi$
 
 $$
@@ -349,14 +348,14 @@ $$
 $$
 \mathbb{P}\left(H_1\left(T(X)\right)|X\right )=1 - \alpha
 $$ 
-- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold $\vartheta_0$ in $\varphi(X)$ to finalize the definition of $\varphi$ 
+- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold $\vartheta$ in $\varphi(X)$ to finalize the definition of $\varphi$ 
 
 
 $$
 \varphi\left(X_1, ..., X_n\right) = 
 \left\{
 \begin{matrix}
-1 &  \qquad\text{if } \mathbb{P}\left(H_1\left(T(X)\right), \vartheta_0|X\right )\\
+1 &  \qquad\text{if } \mathbb{P}\left(H_1\left(T(X)\right), \vartheta|X\right )\\
 0 &  \qquad\text{else} \\
 \end{matrix} \right.
 $$
@@ -367,7 +366,7 @@ $$
 \begin{split}
 \beta_\varphi(\mu) 
 &= \mathbb{E}_\mu [\varphi] \\
-&= 1 \cdot \mathbb{P}\left(H_1\left(T(X)\right), \vartheta_0|X\right ) + 0 \cdot \mathbb{P}(...)\\
+&= 1 \cdot \mathbb{P}\left(H_1\left(T(X)\right), \vartheta|X\right ) + 0 \cdot \mathbb{P}(...)\\
 \end{split}
 $$
 
@@ -464,7 +463,7 @@ H_1: \mu < \mu_0 \\
 \end{split}
 $$
 
-- we want that $\varphi(X)=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ 
+- we want that $\mathbb{E}[\varphi(X)]=\mathbb{P}\left(H_1\right |X)= 1-\alpha$ because when we reject $H_0$ we want at least to be $1-\alpha$ certain
 
 $$
 \begin{split}
@@ -630,14 +629,14 @@ $$
 $$
 \mathbb{P}\left(H_1\left(T(X)\right)|X\right )=1 - \alpha
 $$ 
-- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold $\vartheta_0$ in $\varphi(X)$ to finalize the definition of $\varphi$ 
+- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold $\vartheta$ in $\varphi(X)$ to finalize the definition of $\varphi$ 
 
 
 $$
 \varphi\left(X_1, ..., X_n\right) = 
 \left\{
 \begin{matrix}
-1 &  \qquad\text{if } \mathbb{P}\left(H_1\left(T(X)\right), \vartheta_0|X\right )\\
+1 &  \qquad\text{if } \mathbb{P}\left(H_1\left(T(X)\right), \vartheta|X\right )\\
 0 &  \qquad\text{else} \\
 \end{matrix} \right.
 $$
@@ -648,7 +647,7 @@ $$
 \begin{split}
 \beta_\varphi(\mu) 
 &= \mathbb{E}_\mu [\varphi] \\
-&= 1 \cdot \mathbb{P}\left(H_1\left(T(X)\right), \vartheta_0|X\right ) + 0 \cdot \mathbb{P}(...)\\
+&= 1 \cdot \mathbb{P}\left(H_1\left(T(X)\right), \vartheta|X\right ) + 0 \cdot \mathbb{P}(...)\\
 \end{split}
 $$
 
@@ -714,4 +713,149 @@ $$
 
 Tags: mathematics statistics
 <!--ID: 1719861660033-->
+END
+
+
+
+START
+Basic
+gaus test:
+- $H_0$
+- $H_1$
+- $\varphi(X)$
+for
+- two sided
+- left sided
+- right sided
+Back: 
+### two sided
+$$
+\begin{split}
+H_0: \mu = \mu_0 \\
+H_1: \mu \neq \mu_0 \\
+\end{split}
+$$
+
+$$
+\varphi(X_1, ..., X_n) = 
+\left\{\begin{matrix}
+1 &\qquad \text{if } \sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\alpha} \\
+0 &
+\end{matrix}
+\right.
+$$
+
+#### right sided
+$$
+\begin{split}
+H_0: \mu \leq \mu_0 \\
+H_1: \mu > \mu_0 \\
+\end{split}
+$$
+
+
+$$
+\varphi(X_1, ..., X_n) = 
+\left\{\begin{matrix}
+1 &\qquad \text{if } \bar X_n > \mu_o + \frac{z_{1-\alpha} \sigma}{\sqrt{n}} \\
+0 &
+\end{matrix}
+\right.
+$$
+
+#### left sided
+$$
+\begin{split}
+H_0: \mu \geq \mu_0 \\
+H_1: \mu < \mu_0 \\
+\end{split}
+$$
+
+$$
+\varphi(X_1, ..., X_n) = 
+\left\{\begin{matrix}
+1 &\qquad \text{if } \bar X_n < \mu_o - \frac{z_{1-\alpha} \sigma}{\sqrt{n}} \\
+0 &
+\end{matrix}
+\right.
+$$
+
+_________________________________
+
+### statistical test
+- given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ 
+- with a [[disjoint]] seperated [[parameter space]] $\Theta_0$ and $\Theta_1 = \Theta \setminus \Theta_0$ 
+- every [[statistics]] $\varphi: \mathfrak{X} \to [0,1]$ is called a [[statistical test]] of the **nullhypothesis** $\Theta_0$ against $\Theta_1$
+- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ one if $H_1$ is true and zero otherwise
+
+#### randomized vs non-random tests
+- non-random tests if $\forall x \in \mathfrak{X}: \varphi(x) \in \{0,1\}$ and random otherwise ($\varphi(x) \in [0,1]$)
+- for a non-random test $\varphi$ will look like this:
+
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+- for a randomized test $\varphi$ will look like this:
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+\gamma(x) & \Leftrightarrow &  \\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+
+
+##### effective level of a [[statistical test]] $\varphi$
+- the **effective level** of a [[statistical test]] $\varphi$ is defined as follows
+$$
+\sup_{\vartheta \in \Theta} \mathbb{E}_{\vartheta} [\varphi]
+= \sup_{\vartheta \in \Theta} \mathbb{E}_{x \sim \mathbb{P}_\vartheta} [\varphi(x)]
+$$
+- it is the maximal value the [[expectation]] of the [[statistical test]] $\varphi$ can take with parameters from the nullhypothesis $\Theta_0$
+- thus it is the maximal **expected rejection rate** that is possible with parameters from the nullhypothesis $\Theta_0$ (if the obervations are sampled $x \sim \mathbb{P}_\vartheta$ from the [[distribution]] $\mathbb{P}_\vartheta$)
+
+##### test level of a [[statistical test]] $\varphi$
+- a [[statistical test]] $\varphi$ is a test of level $\alpha$ if the following is true
+$$
+\sup_{\vartheta \in \Theta} \mathbb{E}_{\vartheta} [\varphi] \leq \alpha
+$$
+- the test level can be interpreted as the confidence level or an **upper bound for the expected rejection rate**
+
+##### power function of a [[statistical test]] $\varphi$
+- for a [[statistical test]] $\varphi$ the power function $\beta_\varphi: \Theta \to [0,1]$ is defined as follows 
+$$
+\beta_\varphi (\vartheta) = \mathbb{E}_{\vartheta} [\varphi] = \mathbb{E}_{x \sim \mathbb{P}_\vartheta} [\varphi(x)] = \mathbb{P}_\vartheta\left(H_1 | X\right)
+$$
+
+- the power function $\beta_\varphi$ can be interpreted as the **expected rejection rate** for a given parameter [[set]] $\vartheta$ if the obervations are sampled $x \sim \mathbb{P}_\vartheta$ from the [[distribution]] $\mathbb{P}_\vartheta$
+- ideally $\beta_\varphi (\vartheta)$ should be close to $0$ for $\vartheta \in \Theta_0$ and close to $1$ for $\vartheta \in \Theta_1$
+
+#### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
+- $\varphi$ is a [[random variable]] that is one if $H_1$ is true and zero otherwise given the observation $X \in \mathfrak{X}$ 
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+
+- the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
+- this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
+
+$$
+\beta_\varphi (\vartheta) = \mathbb{E}_{\vartheta} [\varphi] = \mathbb{E}_{x \sim \mathbb{P}_\vartheta} [\varphi(x)] = \mathbb{P}_\vartheta\left(H_1 | X\right)
+$$
+
+
+Tags: mathematics statistics
+<!--ID: 1720361311127-->
 END
