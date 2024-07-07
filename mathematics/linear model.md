@@ -44,13 +44,13 @@ $$
 
 
 ### example [[linear model]]
-- model the weight of a person based on hight
+##### model the weight of a person based on hight
 $$
 A=
 \left(\begin{matrix}
-1 & h_1 \\
+1 & t_1 \\
 ... & ...\\
-1 & h_n \\
+1 & t_n \\
 \end{matrix}\right) \in \mathbb{R}^{n \times 2}
 $$
 $$
@@ -61,6 +61,74 @@ w_1 \\
 w_n \\
 \end{matrix}\right) \in \mathbb{R}^{n }
 $$
+
+$$
+\gamma=
+\left(\begin{matrix}
+\gamma_1 \\
+\gamma_n \\
+\end{matrix}\right) \in \mathbb{R}^{2 }
+$$
+
+$$
+\begin{split}
+X 
+&= A \gamma + \sqrt{v} \xi \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\gamma
+&= arg \min_\gamma || X - A\gamma||^2 \\
+&= arg \min_\gamma \sum_{i\in [n]} (X_i - \gamma_0 - \gamma_1 \cdot t_i)^2 \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+&\frac{\partial}{\partial \gamma_0} \sum_{i\in [n]} \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2 \cdot \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right) = 0 \\
+\Rightarrow& \left(\sum_{i\in [n]}  X_i\right) - n \cdot \gamma_0 - \gamma_1 \cdot \left(\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& \left(\frac{1}{n}\sum_{i\in [n]}  X_i\right) - \gamma_0 - \gamma_1 \cdot \left(\frac{1}{n}\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& M(X) - \gamma_0 - \gamma_1 \cdot M(t) = 0 \\
+\Rightarrow& \gamma_0 = M(X)  - \gamma_1 \cdot M(t) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+&\frac{\partial}{\partial \gamma_1} \sum_{i\in [n]} \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2t_i \cdot \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right) = 0 \\
+
+\Rightarrow& \sum_{i\in [n]} t_i X_i - t_i \gamma_0 - t_i^2 \gamma_1  = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \gamma_0 \frac{1}{n} \sum_{i\in [n]} t_i  - \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \gamma_0 M(t)  - \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \gamma_0 M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \gamma_0 M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \left( M(X)  - \gamma_1 \cdot M(t)\right) M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \gamma_1 \cdot M(t)^2   + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \gamma_1 V(t)\\
+\Rightarrow& \gamma_1 V(t)  =  M(X)M(t)  - \frac{1}{n} \sum_{i\in [n]} t_i X_i \\
+\Rightarrow& \gamma_1 V(t)  =  C(X, t)\\
+\Rightarrow& \gamma_1   =   \frac{C(X, t)}{V(t)}\\
+\end{split}
+$$
+
+$$
+\begin{split}
+\gamma_0 &= M(X)  - \gamma_1 \cdot M(t) \\
+&= M(X)  - \frac{C(X, t)}{V(t)} \cdot M(t) \\
+\end{split}
+$$
+
 
 ### training of a [[linear model]]
 $$
@@ -89,6 +157,10 @@ $$
 &= \gamma \\
 \end{split}
 $$
+# --------------------------
+![[empirical variance#empirical variance]]
+
+![[empirical covariance#empirical covariance]]
 
 ![[derivative#$F(x): mathbb{R} {m} to mathbb{R} = frac{1}{2} Ax -b _2 2$]]
 
@@ -451,4 +523,419 @@ ________________________
 
 Tags: mathematics statistics
 <!--ID: 1719759188740-->
+END
+
+
+START
+Basic
+- given the following [[linear model]]
+
+$$
+A=
+\left(\begin{matrix}
+1 & t_1 \\
+... & ...\\
+1 & t_n \\
+\end{matrix}\right) \in \mathbb{R}^{n \times 2}
+$$
+$$
+X=
+\left(\begin{matrix}
+w_1 \\
+ ...\\
+w_n \\
+\end{matrix}\right) \in \mathbb{R}^{n }
+$$
+
+$$
+\gamma=
+\left(\begin{matrix}
+\gamma_1 \\
+\gamma_n \\
+\end{matrix}\right) \in \mathbb{R}^{2 }
+$$
+
+$$
+\begin{split}
+X 
+&= A \gamma + \sqrt{v} \xi \\
+\end{split}
+$$
+
+- proof the following:
+$$
+\begin{split}
+\gamma_0 &= M(X)  - \frac{C(X, t)}{V(t)} \cdot M(t) \\
+\gamma_1   &=   \frac{C(X, t)}{V(t)}\\
+\end{split}
+$$
+
+Back: 
+
+##### model the weight of a person based on hight
+$$
+A=
+\left(\begin{matrix}
+1 & t_1 \\
+... & ...\\
+1 & t_n \\
+\end{matrix}\right) \in \mathbb{R}^{n \times 2}
+$$
+$$
+X=
+\left(\begin{matrix}
+w_1 \\
+ ...\\
+w_n \\
+\end{matrix}\right) \in \mathbb{R}^{n }
+$$
+
+$$
+\gamma=
+\left(\begin{matrix}
+\gamma_1 \\
+\gamma_n \\
+\end{matrix}\right) \in \mathbb{R}^{2 }
+$$
+
+$$
+\begin{split}
+X 
+&= A \gamma + \sqrt{v} \xi \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\gamma
+&= arg \min_\gamma || X - A\gamma||^2 \\
+&= arg \min_\gamma \sum_{i\in [n]} (X_i - \gamma_0 - \gamma_1 \cdot t_i)^2 \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+&\frac{\partial}{\partial \gamma_0} \sum_{i\in [n]} \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2 \cdot \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right) = 0 \\
+\Rightarrow& \left(\sum_{i\in [n]}  X_i\right) - n \cdot \gamma_0 - \gamma_1 \cdot \left(\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& \left(\frac{1}{n}\sum_{i\in [n]}  X_i\right) - \gamma_0 - \gamma_1 \cdot \left(\frac{1}{n}\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& M(X) - \gamma_0 - \gamma_1 \cdot M(t) = 0 \\
+\Rightarrow& \gamma_0 = M(X)  - \gamma_1 \cdot M(t) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+&\frac{\partial}{\partial \gamma_1} \sum_{i\in [n]} \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2t_i \cdot \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right) = 0 \\
+
+\Rightarrow& \sum_{i\in [n]} t_i X_i - t_i \gamma_0 - t_i^2 \gamma_1  = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \gamma_0 \frac{1}{n} \sum_{i\in [n]} t_i  - \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \gamma_0 M(t)  - \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \gamma_0 M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \gamma_0 M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \left( M(X)  - \gamma_1 \cdot M(t)\right) M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \gamma_1 \cdot M(t)^2   + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \gamma_1 V(t)\\
+\Rightarrow& \gamma_1 V(t)  =  M(X)M(t)  - \frac{1}{n} \sum_{i\in [n]} t_i X_i \\
+\Rightarrow& \gamma_1 V(t)  =  C(X, t)\\
+\Rightarrow& \gamma_1   =   \frac{C(X, t)}{V(t)}\\
+\end{split}
+$$
+
+$$
+\begin{split}
+\gamma_0 &= M(X)  - \gamma_1 \cdot M(t) \\
+&= M(X)  - \frac{C(X, t)}{V(t)} \cdot M(t) \\
+\end{split}
+$$
+
+### linear model
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\gamma, v}: \gamma \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
+- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
+- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
+- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\gamma \in \mathbb{R}^s$ 
+- the $\mathbb{P}_{\gamma, v}$ is the [[distribution]] of $X$
+
+$$
+\begin{split}
+X 
+&= A \gamma + \sqrt{v} \xi \\
+&= \sum_{j \in [S]} A_{(*, j)} \gamma_j + \sqrt{v} \xi \\
+X_i
+&= \sum_{j \in [S]} A_{(i, j)} \gamma_j + \sqrt{v} \xi_i \\
+\end{split}
+$$
+
+### empirical variance
+- given $n$ [[stochastic independent]] samples from the same [[distribution]] the $V$ is appoximating the [[variance]] of the [[distribution]] (but has a [[bias]])
+
+$$
+\begin{split}
+M &= \frac{1}{n} \sum_{i=1}^n X_i \\
+V &= \frac{1}{n} \sum_{i=1}^n (X_i - M)^2 \\
+\end{split}
+$$
+
+$$
+\begin{split}
+V(X) 
+&= \frac{1}{n}\sum_{i\in [n]}  \left(X_i - M(X)\right)^2 \\
+&= \frac{1}{n}\sum_{i\in [n]}  X_i^2 + M(X)^2 - 2X_i M(X) \\
+&= \left(\frac{1}{n}\sum_{i\in [n]}  X_i^2 \right)+ \frac{n}{n}M(X)^2 - 2M(X) \frac{1}{n} \sum_{i\in [n]}X_i  \\
+&= \left(\frac{1}{n}\sum_{i\in [n]}  X_i^2 \right)- M(X)^2  \\
+\end{split}
+$$
+
+### empirical covariance
+- given $n$ [[stochastic independent]] samples from the two [[distribution]] of the [[random variable]] $X$ and $V$
+- the [[function]] $C$ is appoximating the [[covariance]] of the [[distribution]] (but has a [[bias]])
+
+$$
+\begin{split}
+M(X) &= \frac{1}{n} \sum_{i=1}^n X_i \\
+C(X, Y) &= \frac{1}{n} \sum_{i=1}^n \left(X_i - M(X)\right)\left(Y_i - M(Y)\right) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+C(X, Y) 
+&= \frac{1}{n} \sum_{i=1}^n \left(X_i - M(X)\right)\left(Y_i - M(Y)\right) \\
+&= \left(\frac{1}{n} \sum_{i=1}^n X_iY_i \right) + M(X)M(Y) - M(X)\frac{1}{n} \sum_{i=1}^n Y_i - M(Y)\frac{1}{n} \sum_{i=1}^n X_i \\
+&= \left(\frac{1}{n} \sum_{i=1}^n X_iY_i \right) + M(X)M(Y) - M(X)M(Y) - M(Y)M(X) \\
+&= \left(\frac{1}{n} \sum_{i=1}^n X_iY_i \right) - M(X)M(Y)\\
+\end{split}
+$$
+
+
+________________________
+
+### interpretation of a [[linear model]]
+- during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
+- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\gamma$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+
+#### design [[matrix]] $A$
+- the design [[matrix]] contains the training data
+- $s$ is the number of characteristics and $n$ is the number of observations
+- e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
+- e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
+#### parameter $\gamma$ and $v$
+- for each characteristic of the observation (features of the training samples) the model has a paramter $\gamma_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
+- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
+
+Tags: mathematics statistics
+<!--ID: 1720372857682-->
+END
+
+
+
+START
+Basic
+- given the following [[linear model]]
+
+$$
+A=
+\left(\begin{matrix}
+1 & t_1 \\
+... & ...\\
+1 & t_n \\
+\end{matrix}\right) \in \mathbb{R}^{n \times 2}
+$$
+$$
+X=
+\left(\begin{matrix}
+w_1 \\
+ ...\\
+w_n \\
+\end{matrix}\right) \in \mathbb{R}^{n }
+$$
+
+$$
+\gamma=
+\left(\begin{matrix}
+\gamma_1 \\
+\gamma_n \\
+\end{matrix}\right) \in \mathbb{R}^{2 }
+$$
+
+$$
+\begin{split}
+X 
+&= A \gamma + \sqrt{v} \xi \\
+\end{split}
+$$
+
+what are the [[least squares]] minimizing paramters $\gamma^*$ (as a function of the [[empirical variance]] and [[empirical covariance]])
+(no proof)
+Back: 
+
+##### model the weight of a person based on hight
+$$
+A=
+\left(\begin{matrix}
+1 & t_1 \\
+... & ...\\
+1 & t_n \\
+\end{matrix}\right) \in \mathbb{R}^{n \times 2}
+$$
+$$
+X=
+\left(\begin{matrix}
+w_1 \\
+ ...\\
+w_n \\
+\end{matrix}\right) \in \mathbb{R}^{n }
+$$
+
+$$
+\gamma=
+\left(\begin{matrix}
+\gamma_1 \\
+\gamma_n \\
+\end{matrix}\right) \in \mathbb{R}^{2 }
+$$
+
+$$
+\begin{split}
+X 
+&= A \gamma + \sqrt{v} \xi \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\gamma
+&= arg \min_\gamma || X - A\gamma||^2 \\
+&= arg \min_\gamma \sum_{i\in [n]} (X_i - \gamma_0 - \gamma_1 \cdot t_i)^2 \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+&\frac{\partial}{\partial \gamma_0} \sum_{i\in [n]} \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2 \cdot \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right) = 0 \\
+\Rightarrow& \left(\sum_{i\in [n]}  X_i\right) - n \cdot \gamma_0 - \gamma_1 \cdot \left(\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& \left(\frac{1}{n}\sum_{i\in [n]}  X_i\right) - \gamma_0 - \gamma_1 \cdot \left(\frac{1}{n}\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& M(X) - \gamma_0 - \gamma_1 \cdot M(t) = 0 \\
+\Rightarrow& \gamma_0 = M(X)  - \gamma_1 \cdot M(t) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+&\frac{\partial}{\partial \gamma_1} \sum_{i\in [n]} \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2t_i \cdot \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right) = 0 \\
+
+\Rightarrow& \sum_{i\in [n]} t_i X_i - t_i \gamma_0 - t_i^2 \gamma_1  = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \gamma_0 \frac{1}{n} \sum_{i\in [n]} t_i  - \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \gamma_0 M(t)  - \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \gamma_0 M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \gamma_0 M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \left( M(X)  - \gamma_1 \cdot M(t)\right) M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \gamma_1 \cdot M(t)^2   + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \gamma_1 V(t)\\
+\Rightarrow& \gamma_1 V(t)  =  M(X)M(t)  - \frac{1}{n} \sum_{i\in [n]} t_i X_i \\
+\Rightarrow& \gamma_1 V(t)  =  C(X, t)\\
+\Rightarrow& \gamma_1   =   \frac{C(X, t)}{V(t)}\\
+\end{split}
+$$
+
+$$
+\begin{split}
+\gamma_0 &= M(X)  - \gamma_1 \cdot M(t) \\
+&= M(X)  - \frac{C(X, t)}{V(t)} \cdot M(t) \\
+\end{split}
+$$
+
+### linear model
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\gamma, v}: \gamma \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
+- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
+- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
+- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\gamma \in \mathbb{R}^s$ 
+- the $\mathbb{P}_{\gamma, v}$ is the [[distribution]] of $X$
+
+$$
+\begin{split}
+X 
+&= A \gamma + \sqrt{v} \xi \\
+&= \sum_{j \in [S]} A_{(*, j)} \gamma_j + \sqrt{v} \xi \\
+X_i
+&= \sum_{j \in [S]} A_{(i, j)} \gamma_j + \sqrt{v} \xi_i \\
+\end{split}
+$$
+
+### empirical variance
+- given $n$ [[stochastic independent]] samples from the same [[distribution]] the $V$ is appoximating the [[variance]] of the [[distribution]] (but has a [[bias]])
+
+$$
+\begin{split}
+M &= \frac{1}{n} \sum_{i=1}^n X_i \\
+V &= \frac{1}{n} \sum_{i=1}^n (X_i - M)^2 \\
+\end{split}
+$$
+
+$$
+\begin{split}
+V(X) 
+&= \frac{1}{n}\sum_{i\in [n]}  \left(X_i - M(X)\right)^2 \\
+&= \frac{1}{n}\sum_{i\in [n]}  X_i^2 + M(X)^2 - 2X_i M(X) \\
+&= \left(\frac{1}{n}\sum_{i\in [n]}  X_i^2 \right)+ \frac{n}{n}M(X)^2 - 2M(X) \frac{1}{n} \sum_{i\in [n]}X_i  \\
+&= \left(\frac{1}{n}\sum_{i\in [n]}  X_i^2 \right)- M(X)^2  \\
+\end{split}
+$$
+
+### empirical covariance
+- given $n$ [[stochastic independent]] samples from the two [[distribution]] of the [[random variable]] $X$ and $V$
+- the [[function]] $C$ is appoximating the [[covariance]] of the [[distribution]] (but has a [[bias]])
+
+$$
+\begin{split}
+M(X) &= \frac{1}{n} \sum_{i=1}^n X_i \\
+C(X, Y) &= \frac{1}{n} \sum_{i=1}^n \left(X_i - M(X)\right)\left(Y_i - M(Y)\right) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+C(X, Y) 
+&= \frac{1}{n} \sum_{i=1}^n \left(X_i - M(X)\right)\left(Y_i - M(Y)\right) \\
+&= \left(\frac{1}{n} \sum_{i=1}^n X_iY_i \right) + M(X)M(Y) - M(X)\frac{1}{n} \sum_{i=1}^n Y_i - M(Y)\frac{1}{n} \sum_{i=1}^n X_i \\
+&= \left(\frac{1}{n} \sum_{i=1}^n X_iY_i \right) + M(X)M(Y) - M(X)M(Y) - M(Y)M(X) \\
+&= \left(\frac{1}{n} \sum_{i=1}^n X_iY_i \right) - M(X)M(Y)\\
+\end{split}
+$$
+
+
+________________________
+
+### interpretation of a [[linear model]]
+- during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
+- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\gamma$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+
+#### design [[matrix]] $A$
+- the design [[matrix]] contains the training data
+- $s$ is the number of characteristics and $n$ is the number of observations
+- e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
+- e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
+#### parameter $\gamma$ and $v$
+- for each characteristic of the observation (features of the training samples) the model has a paramter $\gamma_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
+- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
+
+Tags: mathematics statistics
+<!--ID: 1720372857686-->
 END

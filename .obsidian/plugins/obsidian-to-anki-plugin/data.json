@@ -1600,12 +1600,14 @@
     "mathematics/stochastics/confidence set.md": "a8aebe92a9951d71015eb52c0371fef0",
     "mathematics/stochastics/sprecial distributions/continuous/students t distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/lindeberg levy CLT.md": "cb556046be2282128db79093c814b161",
-    "mathematics/linear model.md": "3c89ed202f01a63e8128e15205de5d14",
+    "mathematics/linear model.md": "8349a09ed268a4e2f91e8ed773388bee",
     "mathematics/optimization/least squares.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical test.md": "d5c6da2bfe3dd7161be7ef80ff5feb5c",
     "mathematics/stochastics/one sided gauss test.md": "dd17d5c688a816cad2c0c8decaa13a11",
     "mathematics/stochastics/two sided gauss test.md": "66267867df1776a57b3d4141b29519b4",
-    "mathematics/stochastics/students t test.md": "8995575741b3f130da8cab5ac64051a8"
+    "mathematics/stochastics/students t test.md": "8995575741b3f130da8cab5ac64051a8",
+    "mathematics/stochastics/empirical covariance.md": "f1d9678c65dbf1fe28996a29afee1918",
+    "mathematics/stochastics/empirical variance.md": "d5f720c4095de308a3f9cdb2727e0003"
   },
   "fields_dict": {
     "Basic": [
