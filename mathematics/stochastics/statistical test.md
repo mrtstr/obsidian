@@ -2,12 +2,7 @@
 - given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ 
 - with a [[disjoint]] seperated [[parameter space]] $\Theta_0$ and $\Theta_1 = \Theta \setminus \Theta_0$ 
 - every [[statistics]] $\varphi: \mathfrak{X} \to [0,1]$ is called a [[statistical test]] of the **nullhypothesis** $\Theta_0$ against $\Theta_1$
-- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ is the properbility of deciding for the alternative $\Theta_1$ thus the **rejection rate** 
-$$
-\begin{split}
-\varphi(X) = \mathbb{P}\left(H_1 | X\right)
-\end{split}
-$$
+- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ one if $H_1$ is true and zero otherwise
 
 #### randomized vs non-random tests
 - non-random tests if $\forall x \in \mathfrak{X}: \varphi(x) \in \{0,1\}$ and random otherwise ($\varphi(x) \in [0,1]$)
@@ -59,9 +54,23 @@ $$
 - ideally $\beta_\varphi (\vartheta)$ should be close to $0$ for $\vartheta \in \Theta_0$ and close to $1$ for $\vartheta \in \Theta_1$
 
 #### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
-- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- $\varphi$ is a [[random variable]] that is one if $H_1$ is true and zero otherwise given the observation $X \in \mathfrak{X}$ 
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+
 - the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
 - this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
+
+$$
+\beta_\varphi (\vartheta) = \mathbb{E}_{\vartheta} [\varphi] = \mathbb{E}_{x \sim \mathbb{P}_\vartheta} [\varphi(x)] = \mathbb{P}_\vartheta\left(H_1 | X\right)
+$$
+
 ### error types
 
 ##### type I error
@@ -80,20 +89,54 @@ $$
 
 
 ### calculation
-- given $\alpha$ and an observation $X$
-- we want that $\varphi(X)=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ with a hypothesis $H_1\left(\tau(\vartheta)\right)$ that is based on some characteristics $\tau(\vartheta)$ of $\mathbb{P}_\vartheta$
-- we replace the characteristics $\tau(\vartheta)$ in the hypothesis $H_1$ with an [[statistical estimator]] $T(X)$ in the equation for the [[statistical test]] $\varphi(X)=\mathbb{P}\left(H_1\left(T(X)\right)\right )=1 - \alpha$ 
-- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold in $\varphi(X)=\mathbb{P}\left(H_1\right |X)$ to finalize the definition of $\varphi$ 
-- note that $\varphi$ is a [[random variable]] 
+- given $\alpha$ and an observation $X$ and the [[random variable]] $\varphi$
+
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & & \qquad\text{if } H_1\\
+0 & & \qquad\text{else} \\
+\end{matrix} \right.
+$$
+
+- we want that $\beta_\varphi=1 - \alpha$ with a hypothesis $H_1\left(\tau(\vartheta)\right)$ that is based on some characteristics $\tau(\vartheta)$ of $\mathbb{P}_\vartheta$
+
+$$
+\begin{split}
+\mathbb{E}[\varphi]
+&=1 \cdot\mathbb{P}\left(H_1\right |X) + 0 \cdot \mathbb{P}(...) \\
+&=\mathbb{P}\left(H_1\right |X)  \\
+&=1 - \alpha
+\end{split}
+$$
+
+- we replace the characteristics $\tau(\vartheta)$ in the hypothesis $H_1$ with an [[statistical estimator]] $T(X)$ in the equation for the [[statistical test]] 
+$$
+\mathbb{P}\left(H_1\left(T(X)\right)|X\right )=1 - \alpha
+$$ 
+- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold $\vartheta_0$ in $\varphi(X)$ to finalize the definition of $\varphi$ 
+
+
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 &  \qquad\text{if } \mathbb{P}\left(H_1\left(T(X)\right), \vartheta_0|X\right )\\
+0 &  \qquad\text{else} \\
+\end{matrix} \right.
+$$
+
 - now we can calculate the power function $\beta(\vartheta)=\mathbb{E}_\vartheta\left[\varphi(X)\right]$
-- in case of a non random test this simplifies to
+
 $$
 \begin{split}
 \beta_\varphi(\mu) 
 &= \mathbb{E}_\mu [\varphi] \\
-&= 1 \cdot \mathbb{P}\left(H_1\right |X) + 0 \cdot \mathbb{P}(...)\\
+&= 1 \cdot \mathbb{P}\left(H_1\left(T(X)\right), \vartheta_0|X\right ) + 0 \cdot \mathbb{P}(...)\\
 \end{split}
 $$
+
 # -----------------------
 
 
@@ -115,13 +158,7 @@ Back:
 - given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ 
 - with a [[disjoint]] seperated [[parameter space]] $\Theta_0$ and $\Theta_1 = \Theta \setminus \Theta_0$ 
 - every [[statistics]] $\varphi: \mathfrak{X} \to [0,1]$ is called a [[statistical test]] of the **nullhypothesis** $\Theta_0$ against $\Theta_1$
-- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ is the properbility of deciding for the alternative $\Theta_1$ thus the **rejection rate**
-
-$$
-\begin{split}
-\varphi(X) = \mathbb{P}\left(H_1 | X\right)
-\end{split}
-$$
+- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ one if $H_1$ is true and zero otherwise
 
 #### randomized vs non-random tests
 - non-random tests if $\forall x \in \mathfrak{X}: \varphi(x) \in \{0,1\}$ and random otherwise ($\varphi(x) \in [0,1]$)
@@ -172,9 +209,23 @@ $$
 - the power function $\beta_\varphi$ can be interpreted as the **expected rejection rate** for a given parameter [[set]] $\vartheta$ if the obervations are sampled $x \sim \mathbb{P}_\vartheta$ from the [[distribution]] $\mathbb{P}_\vartheta$
 - ideally $\beta_\varphi (\vartheta)$ should be close to $0$ for $\vartheta \in \Theta_0$ and close to $1$ for $\vartheta \in \Theta_1$
 #### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
-- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- $\varphi$ is a [[random variable]] that is one if $H_1$ is true and zero otherwise given the observation $X \in \mathfrak{X}$ 
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+
 - the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
 - this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
+
+$$
+\beta_\varphi (\vartheta) = \mathbb{E}_{\vartheta} [\varphi] = \mathbb{E}_{x \sim \mathbb{P}_\vartheta} [\varphi(x)] = \mathbb{P}_\vartheta\left(H_1 | X\right)
+$$
+
 Tags: mathematics statistics
 <!--ID: 1719830006825-->
 END
@@ -192,13 +243,7 @@ Back:
 - given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ 
 - with a [[disjoint]] seperated [[parameter space]] $\Theta_0$ and $\Theta_1 = \Theta \setminus \Theta_0$ 
 - every [[statistics]] $\varphi: \mathfrak{X} \to [0,1]$ is called a [[statistical test]] of the **nullhypothesis** $\Theta_0$ against $\Theta_1$
-- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ is the properbility of deciding for the alternative $\Theta_1$ thus the **rejection rate**
-
-$$
-\begin{split}
-\varphi(X) = \mathbb{P}\left(H_1 | X\right)
-\end{split}
-$$
+- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ one if $H_1$ is true and zero otherwise
 
 #### randomized vs non-random tests
 - non-random tests if $\forall x \in \mathfrak{X}: \varphi(x) \in \{0,1\}$ and random otherwise ($\varphi(x) \in [0,1]$)
@@ -249,9 +294,23 @@ $$
 - the power function $\beta_\varphi$ can be interpreted as the **expected rejection rate** for a given parameter [[set]] $\vartheta$ if the obervations are sampled $x \sim \mathbb{P}_\vartheta$ from the [[distribution]] $\mathbb{P}_\vartheta$
 - ideally $\beta_\varphi (\vartheta)$ should be close to $0$ for $\vartheta \in \Theta_0$ and close to $1$ for $\vartheta \in \Theta_1$
 #### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
-- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- $\varphi$ is a [[random variable]] that is one if $H_1$ is true and zero otherwise given the observation $X \in \mathfrak{X}$ 
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+
 - the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
 - this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
+
+$$
+\beta_\varphi (\vartheta) = \mathbb{E}_{\vartheta} [\varphi] = \mathbb{E}_{x \sim \mathbb{P}_\vartheta} [\varphi(x)] = \mathbb{P}_\vartheta\left(H_1 | X\right)
+$$
+
 Tags: mathematics statistics
 <!--ID: 1719830006831-->
 END
@@ -286,13 +345,7 @@ Back:
 - given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ 
 - with a [[disjoint]] seperated [[parameter space]] $\Theta_0$ and $\Theta_1 = \Theta \setminus \Theta_0$ 
 - every [[statistics]] $\varphi: \mathfrak{X} \to [0,1]$ is called a [[statistical test]] of the **nullhypothesis** $\Theta_0$ against $\Theta_1$
-- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ is the properbility of deciding for the alternative $\Theta_1$ thus the **rejection rate**
-
-$$
-\begin{split}
-\varphi(X) = \mathbb{P}\left(H_1 | X\right)
-\end{split}
-$$
+- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ one if $H_1$ is true and zero otherwise
 
 #### randomized vs non-random tests
 - non-random tests if $\forall x \in \mathfrak{X}: \varphi(x) \in \{0,1\}$ and random otherwise ($\varphi(x) \in [0,1]$)
@@ -343,9 +396,23 @@ $$
 - the power function $\beta_\varphi$ can be interpreted as the **expected rejection rate** for a given parameter [[set]] $\vartheta$ if the obervations are sampled $x \sim \mathbb{P}_\vartheta$ from the [[distribution]] $\mathbb{P}_\vartheta$
 - ideally $\beta_\varphi (\vartheta)$ should be close to $0$ for $\vartheta \in \Theta_0$ and close to $1$ for $\vartheta \in \Theta_1$
 #### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
-- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- $\varphi$ is a [[random variable]] that is one if $H_1$ is true and zero otherwise given the observation $X \in \mathfrak{X}$ 
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+
 - the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
 - this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
+
+$$
+\beta_\varphi (\vartheta) = \mathbb{E}_{\vartheta} [\varphi] = \mathbb{E}_{x \sim \mathbb{P}_\vartheta} [\varphi(x)] = \mathbb{P}_\vartheta\left(H_1 | X\right)
+$$
+
 Tags: mathematics statistics
 <!--ID: 1719830006834-->
 END
@@ -379,13 +446,7 @@ Back:
 - given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ 
 - with a [[disjoint]] seperated [[parameter space]] $\Theta_0$ and $\Theta_1 = \Theta \setminus \Theta_0$ 
 - every [[statistics]] $\varphi: \mathfrak{X} \to [0,1]$ is called a [[statistical test]] of the **nullhypothesis** $\Theta_0$ against $\Theta_1$
-- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ is the properbility of deciding for the alternative $\Theta_1$ thus the **rejection rate**
-
-$$
-\begin{split}
-\varphi(X) = \mathbb{P}\left(H_1 | X\right)
-\end{split}
-$$
+- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ one if $H_1$ is true and zero otherwise
 
 #### randomized vs non-random tests
 - non-random tests if $\forall x \in \mathfrak{X}: \varphi(x) \in \{0,1\}$ and random otherwise ($\varphi(x) \in [0,1]$)
@@ -436,9 +497,23 @@ $$
 - the power function $\beta_\varphi$ can be interpreted as the **expected rejection rate** for a given parameter [[set]] $\vartheta$ if the obervations are sampled $x \sim \mathbb{P}_\vartheta$ from the [[distribution]] $\mathbb{P}_\vartheta$
 - ideally $\beta_\varphi (\vartheta)$ should be close to $0$ for $\vartheta \in \Theta_0$ and close to $1$ for $\vartheta \in \Theta_1$
 #### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
-- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- $\varphi$ is a [[random variable]] that is one if $H_1$ is true and zero otherwise given the observation $X \in \mathfrak{X}$ 
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+
 - the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
 - this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
+
+$$
+\beta_\varphi (\vartheta) = \mathbb{E}_{\vartheta} [\varphi] = \mathbb{E}_{x \sim \mathbb{P}_\vartheta} [\varphi(x)] = \mathbb{P}_\vartheta\left(H_1 | X\right)
+$$
+
 Tags: mathematics statistics
 <!--ID: 1719830006837-->
 END
@@ -452,37 +527,77 @@ Basic
 Back: 
 
 ### calculation
-- given $\alpha$ and an observation $X$
-- we want that $\varphi(X)=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ with a hypothesis $H_1\left(\tau(\vartheta)\right)$ that is based on some characteristics $\tau(\vartheta)$ of $\mathbb{P}_\vartheta$
-- we replace the characteristics $\tau(\vartheta)$ in the hypothesis $H_1$ with an [[statistical estimator]] $T(X)$ in the equation for the [[statistical test]] $\varphi(X)=\mathbb{P}\left(H_1\left(T(X)\right)\right )=1 - \alpha$ 
-- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold in $\varphi(X)=\mathbb{P}\left(H_1\right |X)$ to finalize the definition of $\varphi$ 
-- note that $\varphi$ is a [[random variable]] 
+- given $\alpha$ and an observation $X$ and the [[random variable]] $\varphi$
+
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & & \qquad\text{if } H_1\\
+0 & & \qquad\text{else} \\
+\end{matrix} \right.
+$$
+
+- we want that $\beta_\varphi=1 - \alpha$ with a hypothesis $H_1\left(\tau(\vartheta)\right)$ that is based on some characteristics $\tau(\vartheta)$ of $\mathbb{P}_\vartheta$
+
+$$
+\begin{split}
+\mathbb{E}[\varphi]
+&=1 \cdot\mathbb{P}\left(H_1\right |X) + 0 \cdot \mathbb{P}(...) \\
+&=\mathbb{P}\left(H_1\right |X)  \\
+&=1 - \alpha
+\end{split}
+$$
+
+- we replace the characteristics $\tau(\vartheta)$ in the hypothesis $H_1$ with an [[statistical estimator]] $T(X)$ in the equation for the [[statistical test]] 
+$$
+\mathbb{P}\left(H_1\left(T(X)\right)|X\right )=1 - \alpha
+$$ 
+- we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold $\vartheta_0$ in $\varphi(X)$ to finalize the definition of $\varphi$ 
+
+
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 &  \qquad\text{if } \mathbb{P}\left(H_1\left(T(X)\right), \vartheta_0|X\right )\\
+0 &  \qquad\text{else} \\
+\end{matrix} \right.
+$$
+
 - now we can calculate the power function $\beta(\vartheta)=\mathbb{E}_\vartheta\left[\varphi(X)\right]$
-- in case of a non random test this simplifies to
+
 $$
 \begin{split}
 \beta_\varphi(\mu) 
 &= \mathbb{E}_\mu [\varphi] \\
-&= 1 \cdot \mathbb{P}\left(H_1\right |X) + 0 \cdot \mathbb{P}(...)\\
+&= 1 \cdot \mathbb{P}\left(H_1\left(T(X)\right), \vartheta_0|X\right ) + 0 \cdot \mathbb{P}(...)\\
 \end{split}
 $$
 
 #### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
-- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- $\varphi$ is a [[random variable]] that is one if $H_1$ is true and zero otherwise given the observation $X \in \mathfrak{X}$ 
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+
 - the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
 - this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
+
+$$
+\beta_\varphi (\vartheta) = \mathbb{E}_{\vartheta} [\varphi] = \mathbb{E}_{x \sim \mathbb{P}_\vartheta} [\varphi(x)] = \mathbb{P}_\vartheta\left(H_1 | X\right)
+$$
 
 ### statistical test
 - given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ 
 - with a [[disjoint]] seperated [[parameter space]] $\Theta_0$ and $\Theta_1 = \Theta \setminus \Theta_0$ 
 - every [[statistics]] $\varphi: \mathfrak{X} \to [0,1]$ is called a [[statistical test]] of the **nullhypothesis** $\Theta_0$ against $\Theta_1$
-- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ is the properbility of deciding for the alternative $\Theta_1$ thus the **rejection rate**
-
-$$
-\begin{split}
-\varphi(X) = \mathbb{P}\left(H_1 | X\right)
-\end{split}
-$$
+- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ one if $H_1$ is true and zero otherwise
 
 #### randomized vs non-random tests
 - non-random tests if $\forall x \in \mathfrak{X}: \varphi(x) \in \{0,1\}$ and random otherwise ($\varphi(x) \in [0,1]$)
@@ -544,20 +659,29 @@ Basic
 - difference power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
 Back: 
 #### power function $\beta_\varphi (\vartheta)$ vs [[statistics]] $\varphi(x) \in [0,1]$ 
-- both are the proberbility of $H_1$ given the observation $X \in \mathfrak{X}$ but $\varphi(\vartheta(X))$ is a [[statistics]] ([[random variable]]) and thus extracts a characteristic from $\mathbb{P}_\vartheta$ based on an estimated parameters $\vartheta(X)$ 
+- $\varphi$ is a [[random variable]] that is one if $H_1$ is true and zero otherwise given the observation $X \in \mathfrak{X}$ 
+$$
+\varphi\left(X_1, ..., X_n\right) = 
+\left\{
+\begin{matrix}
+1 & \Leftrightarrow & \qquad\text{reject } H_0\\
+0 & \Leftrightarrow & \qquad\text{dont reject } H_0\\
+\end{matrix} \right.
+$$
+
 - the power function is a deterministic $\beta_\varphi (\vartheta)$ evaluates $\mathbb{P}_\vartheta\left(H_1 | X\right)$ for a specific parameter $\vartheta$ 
 - this is needed because we want to calculate the [[supremum]] of $\beta_\varphi (\vartheta)$ to extract a specific parameter $\vartheta_0$
+
+$$
+\beta_\varphi (\vartheta) = \mathbb{E}_{\vartheta} [\varphi] = \mathbb{E}_{x \sim \mathbb{P}_\vartheta} [\varphi(x)] = \mathbb{P}_\vartheta\left(H_1 | X\right)
+$$
+
 
 ### statistical test
 - given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ 
 - with a [[disjoint]] seperated [[parameter space]] $\Theta_0$ and $\Theta_1 = \Theta \setminus \Theta_0$ 
 - every [[statistics]] $\varphi: \mathfrak{X} \to [0,1]$ is called a [[statistical test]] of the **nullhypothesis** $\Theta_0$ against $\Theta_1$
-- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ is the properbility of deciding for the alternative $\Theta_1$ thus the **rejection rate** 
-$$
-\begin{split}
-\varphi(X) = \mathbb{P}\left(H_1 | X\right)
-\end{split}
-$$
+- given an observation $x \in \mathfrak{X}$ the [[statistics]] $\varphi(x) \in [0,1]$ one if $H_1$ is true and zero otherwise
 
 #### randomized vs non-random tests
 - non-random tests if $\forall x \in \mathfrak{X}: \varphi(x) \in \{0,1\}$ and random otherwise ($\varphi(x) \in [0,1]$)
