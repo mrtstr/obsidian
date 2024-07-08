@@ -55,7 +55,7 @@ $$
 $$
 \varphi(X_1, ..., X_n) = 
 \left\{\begin{matrix}
-1 &\qquad \text{if } \sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\alpha} \\
+1 &\qquad \text{if } \sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\frac{\alpha}{2}} \\
 0 &
 \end{matrix}
 \right.
@@ -66,8 +66,8 @@ $$
 \begin{split}
 \beta_\varphi(\mu) 
 &= \mathbb{E}_\mu [\varphi] \\
-&= 1 \cdot \mathbb{P}_\mu\left(\sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\alpha}\right) + 0 \cdot \mathbb{P}(...)\\
-&= \mathbb{P}_\mu\left(\sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\alpha}\right)\\
+&= 1 \cdot \mathbb{P}_\mu\left(\sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\frac{\alpha}{2}}\right) + 0 \cdot \mathbb{P}(...)\\
+&= \mathbb{P}_\mu\left(\sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\frac{\alpha}{2}}\right)\\
 \end{split}
 $$
 
@@ -110,7 +110,7 @@ $$
 $$
 \varphi(X_1, ..., X_n) = 
 \left\{\begin{matrix}
-1 &\qquad \text{if } \sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\alpha} \\
+1 &\qquad \text{if } \sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\frac{\alpha}{2}} \\
 0 &
 \end{matrix}
 \right.
@@ -121,8 +121,8 @@ $$
 \begin{split}
 \beta_\varphi(\mu) 
 &= \mathbb{E}_\mu [\varphi] \\
-&= 1 \cdot \mathbb{P}_\mu\left(\sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\alpha}\right) + 0 \cdot \mathbb{P}(...)\\
-&= \mathbb{P}_\mu\left(\sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\alpha}\right)\\
+&= 1 \cdot \mathbb{P}_\mu\left(\sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\frac{\alpha}{2}}\right) + 0 \cdot \mathbb{P}(...)\\
+&= \mathbb{P}_\mu\left(\sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\frac{\alpha}{2}}\right)\\
 \end{split}
 $$
 

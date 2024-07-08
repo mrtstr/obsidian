@@ -19,7 +19,7 @@ $$
 $$
 \varphi(X_1, ..., X_n) = 
 \left\{\begin{matrix}
-1 &\qquad \text{if } \sqrt{n} \frac{|\bar X_n - \mu|}{S_n} > t_{n-1,1-\alpha} \\
+1 &\qquad \text{if } \sqrt{n} \frac{|\bar X_n - \mu|}{S_n} > t_{n-1,1-\frac{\alpha}{2}} \\
 0 &
 \end{matrix}
 \right.
@@ -101,7 +101,7 @@ $$
 $$
 \varphi(X_1, ..., X_n) = 
 \left\{\begin{matrix}
-1 &\qquad \text{if } \sqrt{n} \frac{|\bar X_n - \mu|}{S_n} > t_{n-1,1-\alpha} \\
+1 &\qquad \text{if } \sqrt{n} \frac{|\bar X_n - \mu|}{S_n} > t_{n-1,1-\frac{\alpha}{2}} \\
 0 &
 \end{matrix}
 \right.
