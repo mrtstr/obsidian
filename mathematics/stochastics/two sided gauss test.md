@@ -8,7 +8,7 @@ H_1: \mu \neq \mu_0 \\
 \end{split}
 $$
 
-- we want that $\mathbb{E}[\varphi(X)]=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ because we want to be $1-\alpha$ sure that $H_0$ is wrong
+- we want that $\mathbb{E}[\varphi(X)]=\mathbb{P}\left(H_1\right |X)= \alpha$ because we want to be $1-\alpha$ sure that $H_0$ is wrong
 
 ![[IMG-20240707-WA0000.jpg]]
 
@@ -19,8 +19,8 @@ $$
 &=\mathbb{P}\left(\bar X_n \neq \mu_0\right ) \\ 
 &=\mathbb{P}\left(\sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} \neq \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
 &=\mathbb{P}\left(\sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
-&=1- \alpha\\
-1-\frac{\alpha}{2} 
+&=\alpha\\
+\frac{\alpha}{2} 
 &=\mathbb{P}\left(\sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} > \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
 &=1-\mathbb{P}\left(\sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} \leq \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
 &=1-\Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right)  \\
@@ -31,14 +31,13 @@ $$
 - resolving the quation to find the theshold $\mu$ for $\varphi(X)$ to have a test level $\alpha$
 $$
 \begin{split}
-& \frac{\alpha}{2}
+&1- \frac{\alpha}{2}
 =\Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) 
  \\
-\Rightarrow& \Phi\left(\frac{\alpha}{2}\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
-\Rightarrow& - \Phi\left(1-\frac{\alpha}{2}\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
+\Rightarrow& \Phi\left(1-\frac{\alpha}{2}\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
 \Rightarrow& \mu 
-= \mu_0 + \frac{\Phi\left(1-\alpha\right)\sigma_0}{\sqrt{n}} \\
-&= \mu_0 + \frac{z_{1-\alpha}\sigma_0}{\sqrt{n}} \\
+= \mu_0 - \frac{\Phi\left(1-\alpha\right)\sigma_0}{\sqrt{n}} \\
+&= \mu_0 - \frac{z_{1-\alpha}\sigma_0}{\sqrt{n}} \\
 \end{split}
 $$
 
@@ -107,48 +106,6 @@ $$
 
 - we want that $\mathbb{E}[\varphi(X)]=\mathbb{P}\left(H_1\right |X)=1 - \alpha$ because we want to be $1-\alpha$ sure that $H_0$ is wrong
 
-
-
-$$
-\begin{split}
-\mathbb{P}\left(H_1\right | X) 
-&=\mathbb{P}\left(\mu \neq \mu_0 \right | X) \\ 
-&=\mathbb{P}\left(\bar X_n \neq \mu_0\right ) \\ 
-&=\mathbb{P}\left(\sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} \neq \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
-&=\mathbb{P}\left(\sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
-&=1- \alpha\\
-1-\frac{\alpha}{2} 
-&=\mathbb{P}\left(\sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} > \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
-&=1-\mathbb{P}\left(\sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} \leq \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
-&=1-\Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right)  \\
-\end{split}
-$$
-
-
-- resolving the quation to find the theshold $\mu$ for $\varphi(X)$ to have a test level $\alpha$
-$$
-\begin{split}
-& \frac{\alpha}{2}
-=\Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) 
- \\
-\Rightarrow& \Phi\left(\frac{\alpha}{2}\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
-\Rightarrow& - \Phi\left(1-\frac{\alpha}{2}\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
-\Rightarrow& \mu 
-= \mu_0 + \frac{\Phi\left(1-\alpha\right)\sigma_0}{\sqrt{n}} \\
-&= \mu_0 + \frac{z_{1-\alpha}\sigma_0}{\sqrt{n}} \\
-\end{split}
-$$
-
-
-$$
-\begin{split}
-
-
-&\mathbb{P}\left(\sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > \sqrt{n} \frac{\mu_0 - \mu_0 + \frac{z_{1-\alpha}\sigma_0}{\sqrt{n}}}{\sigma_0} \right)  \\
-=&\mathbb{P}\left(\sqrt{n} \frac{|\bar X_n - \mu|}{\sigma_0} > z_{1-\alpha} \right)  \\
-
-\end{split}
-$$
 
 $$
 \varphi(X_1, ..., X_n) = 

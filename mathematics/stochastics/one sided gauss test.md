@@ -9,7 +9,7 @@ H_1: \mu > \mu_0 \\
 \end{split}
 $$
 
-- we want that $\mathbb{E}[\varphi(X)]=\mathbb{P}\left(H_1\right |X)= 1-\alpha$ because when we reject $H_0$ we want at least to be $1-\alpha$ certain
+- we want that $\mathbb{E}[\varphi(X)]=\mathbb{P}\left(H_1\right |X)= \alpha$ because when we reject $H_0$ we want at least to be $1-\alpha$ certain
 
 $$
 \begin{split}
@@ -18,7 +18,7 @@ $$
 &=\mathbb{P}\left(\bar X_n > \mu_0\right ) \\ 
 &=\mathbb{P}\left(\sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} > \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
 &= 1- \Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) \\
-&= 1- \alpha\\
+&= \alpha\\
 \end{split}
 $$
 
@@ -26,17 +26,15 @@ $$
 
 $$
 \begin{split}
-&\alpha
+&1-\alpha
 =\Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) 
  \\
-\Rightarrow& \Phi\left(\alpha\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
-\Rightarrow& - \Phi\left(1-\alpha\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
+\Rightarrow& \Phi^{-1}\left(1-\alpha\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
 \Rightarrow& \mu 
-= \mu_0 + \frac{\Phi\left(1-\alpha\right)\sigma_0}{\sqrt{n}} \\
-&= \mu_0 + \frac{z_{1-\alpha}\sigma_0}{\sqrt{n}} \\
+= \mu_0 - \frac{\Phi^{-1}\left(1-\alpha\right)\sigma_0}{\sqrt{n}} \\
+&= \mu_0 - \frac{z_{1-\alpha}\sigma_0}{\sqrt{n}} \\
 \end{split}
 $$
-
 
 
 $$
@@ -156,33 +154,6 @@ H_1: \mu > \mu_0 \\
 $$
 
 - we want that $\mathbb{E}[\varphi(X)]=\mathbb{P}\left(H_1\right |X)= 1-\alpha$ because when we reject $H_0$ we want at least to be $1-\alpha$ certain
-$$
-\begin{split}
-\mathbb{P}\left(H_1\right | X) 
-&=\mathbb{P}\left(\mu > \mu_0 \right | X) \\ 
-&=\mathbb{P}\left(\bar X_n > \mu_0\right ) \\ 
-&=\mathbb{P}\left(\sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} > \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
-&= 1- \Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) \\
-&= 1- \alpha\\
-\end{split}
-$$
-
-- resolving the quation to find the theshold $\mu$ for $\varphi(X)$ to have a test level $\alpha$
-
-$$
-\begin{split}
-&\alpha
-=\Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) 
- \\
-\Rightarrow& \Phi\left(\alpha\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
-\Rightarrow& - \Phi\left(1-\alpha\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
-\Rightarrow& \mu 
-= \mu_0 + \frac{\Phi\left(1-\alpha\right)\sigma_0}{\sqrt{n}} \\
-&= \mu_0 + \frac{z_{1-\alpha}\sigma_0}{\sqrt{n}} \\
-\end{split}
-$$
-
-
 $$
 \varphi(X_1, ..., X_n) = 
 \left\{\begin{matrix}
@@ -464,31 +435,6 @@ H_1: \mu < \mu_0 \\
 $$
 
 - we want that $\mathbb{E}[\varphi(X)]=\mathbb{P}\left(H_1\right |X)= 1-\alpha$ because when we reject $H_0$ we want at least to be $1-\alpha$ certain
-
-$$
-\begin{split}
-\mathbb{P}\left(H_1\right | X) 
-&=\mathbb{P}\left(\mu < \mu_0 \right | X) \\ 
-&=\mathbb{P}\left(\bar X_n < \mu_0\right ) \\ 
-&=\mathbb{P}\left(\sqrt{n} \frac{\bar X_n - \mu}{\sigma_0} < \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \right)  \\
-&= \Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) \\
-&= 1- \alpha\\
-\end{split}
-$$
-
-- resolving the quation to find the theshold $\mu$ for $\varphi(X)$ to have a test level $\alpha$
-
-$$
-\begin{split}
-&1-\alpha
-=\Phi\left(\sqrt{n} \frac{\mu_0 - \mu}{\sigma_0}\right) 
- \\
-\Rightarrow& \Phi\left(1-\alpha\right) = \sqrt{n} \frac{\mu_0 - \mu}{\sigma_0} \\
-\Rightarrow& \mu 
-= \mu_0 - \frac{\Phi\left(1-\alpha\right)\sigma_0}{\sqrt{n}} \\
-&= \mu_0 - \frac{z_{1-\alpha}\sigma_0}{\sqrt{n}} \\
-\end{split}
-$$
 
 $$
 \varphi(X_1, ..., X_n) = 
