@@ -100,20 +100,20 @@ $$
 \end{matrix} \right.
 $$
 
-- we want that $\beta_\varphi=1 - \alpha$ with a hypothesis $H_1\left(\tau(\vartheta)\right)$ that is based on some characteristics $\tau(\vartheta)$ of $\mathbb{P}_\vartheta$
-- that means if we reject $H_0$ we are al least $1-\alpha$ certain
+- we want that $\beta_\varphi=\alpha$ with a hypothesis $H_1\left(\tau(\vartheta)\right)$ that is based on some characteristics $\tau(\vartheta)$ of $\mathbb{P}_\vartheta$
+- that means at the theshold $H_1$ has only a $\alpha$ probability of being true thus if we reject $H_0$ we are al least $1-\alpha$ certain
 $$
 \begin{split}
 \mathbb{E}[\varphi]
 &=1 \cdot\mathbb{P}\left(H_1\right |X) + 0 \cdot \mathbb{P}(...) \\
 &=\mathbb{P}\left(H_1\right |X)  \\
-&=1 - \alpha
+&=\alpha
 \end{split}
 $$
 
 - we replace the characteristics $\tau(\vartheta)$ in the hypothesis $H_1$ with an [[statistical estimator]] $T(X)$ in the equation for the [[statistical test]] 
 $$
-\mathbb{P}\left(H_1\left(T(X)\right)|X\right )=1 - \alpha
+\mathbb{P}\left(H_1\left(T(X)\right)|X\right )=\alpha
 $$ 
 - we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold $\vartheta$ in $\varphi(X)$ to finalize the definition of $\varphi$ 
 
@@ -122,7 +122,7 @@ $$
 \varphi\left(X_1, ..., X_n\right) = 
 \left\{
 \begin{matrix}
-1 &  \qquad\text{if } \mathbb{P}\left(H_1\left(T(X)\right), \vartheta|X\right )\\
+1 &  \qquad\text{if } H_1\left(\tau(\vartheta)\right)\\
 0 &  \qquad\text{else} \\
 \end{matrix} \right.
 $$
@@ -525,7 +525,6 @@ Basic
 [[statistical test]]
 - how to calculate it in general?
 Back: 
-
 ### calculation
 - given $\alpha$ and an observation $X$ and the [[random variable]] $\varphi$
 
@@ -538,20 +537,20 @@ $$
 \end{matrix} \right.
 $$
 
-- we want that $\beta_\varphi=1 - \alpha$ with a hypothesis $H_1\left(\tau(\vartheta)\right)$ that is based on some characteristics $\tau(\vartheta)$ of $\mathbb{P}_\vartheta$
-- that means if we reject $H_0$ we are al least $1-\alpha$ certain
+- we want that $\beta_\varphi=\alpha$ with a hypothesis $H_1\left(\tau(\vartheta)\right)$ that is based on some characteristics $\tau(\vartheta)$ of $\mathbb{P}_\vartheta$
+- that means at the theshold $H_1$ has only a $\alpha$ probability of being true thus if we reject $H_0$ we are al least $1-\alpha$ certain
 $$
 \begin{split}
 \mathbb{E}[\varphi]
 &=1 \cdot\mathbb{P}\left(H_1\right |X) + 0 \cdot \mathbb{P}(...) \\
 &=\mathbb{P}\left(H_1\right |X)  \\
-&=1 - \alpha
+&=\alpha
 \end{split}
 $$
 
 - we replace the characteristics $\tau(\vartheta)$ in the hypothesis $H_1$ with an [[statistical estimator]] $T(X)$ in the equation for the [[statistical test]] 
 $$
-\mathbb{P}\left(H_1\left(T(X)\right)|X\right )=1 - \alpha
+\mathbb{P}\left(H_1\left(T(X)\right)|X\right )=\alpha
 $$ 
 - we extract some kind of theshold from the equation for $\varphi$ to be a test of level $\alpha$ and plug the theshold $\vartheta$ in $\varphi(X)$ to finalize the definition of $\varphi$ 
 
@@ -560,7 +559,7 @@ $$
 \varphi\left(X_1, ..., X_n\right) = 
 \left\{
 \begin{matrix}
-1 &  \qquad\text{if } \mathbb{P}\left(H_1\left(T(X)\right), \vartheta|X\right )\\
+1 &  \qquad\text{if } H_1\left(\tau(\vartheta)\right)\\
 0 &  \qquad\text{else} \\
 \end{matrix} \right.
 $$

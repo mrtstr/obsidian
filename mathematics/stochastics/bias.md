@@ -9,8 +9,8 @@ $$
 \end{split}
 $$
 - given a [[set]] of parameters $\vartheta \in \Theta$ the [[function]] $\tau: \Theta \to \Omega$ gives the true characteristics of the [[distribution]] $\mathbb{P}_\vartheta$ defined by $\vartheta$
-- the [[expectation]] of the [[statistical estimator]] $\mathbb{E}_\vartheta[T]$ is the approximation of the [[statistics]] $\tau(\vartheta)$ assuming an infinitely large sample to estimate from
-→ the [[bias]] the remaining error when esimating based on an infinitely large sample
+- the [[expectation]] of the [[statistical estimator]] $\mathbb{E}_\vartheta[T]$ is the approximation of the [[statistics]] $\tau(\vartheta)$ is the mean approximation when calculating over an infinite amount of sample sets (not eqaul to an infinitely large sample let)
+→ the [[bias]] the mean error when doing the process infinite times
 
 
 # ---------------
@@ -31,7 +31,7 @@ Basic
 
 Back: 
 ### bias
-- given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \theta \in \Theta)$ and a [[statistics]] $S: \left(\mathfrak{X}, \mathcal{L}\right) \to \left(\Omega,\mathcal{A} \right)$ with an [[statistical estimator]] $T: \mathfrak{X} \to \Omega$  for the caracteristics $\tau: \Theta \to \Omega$
+- given a [[statistical model]] $(\mathfrak{X}, \mathcal{L}, \mathbb{P}_\vartheta: \theta \in \Theta)$ and a [[statistics]] $S: \left(\mathfrak{X}, \mathcal{L}\right) \to \left(\Omega,\mathcal{A} \right)$ with an [[statistical estimator]] $T: \mathfrak{X} \to \Omega$ is for the caracteristics $\tau: \Theta \to \Omega$
 - the [[bias]] of $T$ is defined as follows
 $$
 \begin{split}
@@ -41,8 +41,8 @@ $$
 \end{split}
 $$
 - given a [[set]] of parameters $\vartheta \in \Theta$ the [[function]] $\tau: \Theta \to \Omega$ gives the true characteristics of the [[distribution]] $\mathbb{P}_\vartheta$ defined by $\vartheta$
-- the [[expectation]] of the [[statistical estimator]] $\mathbb{E}_\vartheta[T]$ is the approximation of the [[statistics]] $\tau(\vartheta)$ assuming an infinitely large sample to estimate from
-→ the [[bias]] the remaining error when esimating based on an infinitely large sample
+- the [[expectation]] of the [[statistical estimator]] $\mathbb{E}_\vartheta[T]$ is the approximation of the [[statistics]] $\tau(\vartheta)$ is the mean approximation when calculating over an infinite amount of sample sets (not eqaul to an infinitely large sample let)
+→ the [[bias]] the mean error when doing the process infinite times
 
 _________________
 
