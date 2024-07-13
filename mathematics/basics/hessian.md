@@ -1,4 +1,4 @@
-### hessian
+### hessian of $f: \mathbb{R}^n \to \mathbb{R}$ 
 
 # ----------------
 ![[jacobian#jacobian]]

@@ -1496,7 +1496,7 @@
     "mathematics/basics/differentiabe.md": "fb91b1bd83e3432935df710c4b551cb9",
     "mathematics/basics/partial derivative.md": "4bb5629fe0cfd707d630dcaa22b27df8",
     "mathematics/basics/bilinear map.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/hessian.md": "fbb0adae08a7c4e0099ab3d8b03e07ee",
+    "mathematics/basics/hessian.md": "20e35f05b085ab2271a63b32f0714922",
     "mathematics/basics/higher order derivative.md": "7224d2bdba17fb335f2501b453047eb3",
     "mathematics/stochastics/Untitled.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/sigma algebra.md": "531ff05cccffc364cc5b5170946af672",
@@ -1518,7 +1518,7 @@
     "mathematics/basics/trace.md": "0404239cfa90ec0fc86c14d79fc41c5d",
     "mathematics/basics/tensor.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/sylvesters criterion.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/subspace.md": "6d2a6030a25bfbd46547624ddd7d7a8b",
+    "mathematics/basics/subspace.md": "af8094facfedf3ba0b5ce209709535f3",
     "mathematics/basics/square matrix.md": "65031cbeaa199c8f3dc44f016817b21a",
     "mathematics/basics/spectral theorem.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/span.md": "9db3b7cf0d76a9ca002d3cf228388138",
@@ -1602,12 +1602,13 @@
     "mathematics/stochastics/lindeberg levy CLT.md": "cb556046be2282128db79093c814b161",
     "mathematics/linear model.md": "8349a09ed268a4e2f91e8ed773388bee",
     "mathematics/optimization/least squares.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/statistical test.md": "d5c6da2bfe3dd7161be7ef80ff5feb5c",
-    "mathematics/stochastics/one sided gauss test.md": "b35af10a3941c34e89d0a4ddb761a28f",
+    "mathematics/stochastics/statistical test.md": "a404bb07ae01a1b4533eafc0294647a9",
+    "mathematics/stochastics/one sided gauss test.md": "db18367c4fa207d49dd00ea27f6650d4",
     "mathematics/stochastics/two sided gauss test.md": "539fdf19ccd1d6d904f2b9a46ed89287",
     "mathematics/stochastics/students t test.md": "88b381b685d252b99722af728bc2d2d2",
     "mathematics/stochastics/empirical covariance.md": "f1d9678c65dbf1fe28996a29afee1918",
-    "mathematics/stochastics/empirical variance.md": "d5f720c4095de308a3f9cdb2727e0003"
+    "mathematics/stochastics/empirical variance.md": "d5f720c4095de308a3f9cdb2727e0003",
+    "mathematics/optimization/level set.md": "f2aa743d3f2973b84e957f1b2c2d8d5f"
   },
   "fields_dict": {
     "Basic": [
