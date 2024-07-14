@@ -188,7 +188,9 @@
     "projection 7.jpg",
     "IMG-20240707-WA0000 1.jpg",
     "second_der 1.png",
-    "second_der 2.png"
+    "second_der 2.png",
+    "det.png",
+    "convex_function 1.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -392,7 +394,7 @@
     "mathematics/basics/countable.md": "c06c498e3cc623d7de81f8884adfb8f1",
     "mathematics/basics/convex.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/convex set.md": "5129460916f232e4216d26f17e1b32dc",
-    "mathematics/basics/convex function.md": "b847406fc537090ffdd8f98d480a4a75",
+    "mathematics/basics/convex function.md": "9053b3ced6e86ded4a33aab18cacb40f",
     "mathematics/basics/commutative.md": "4c156fbc4472f2845f3479a5eb12bcb9",
     "mathematics/basics/cauchy schwarz inequality.md": "147f91ab36e92180366695c5a8779e79",
     "mathematics/basics/cartesian product.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1015,7 +1017,7 @@
     "mathematics/basics/integral.md": "f50ea633772a7cf73f89ff6ad2ba15be",
     "mathematics/basics/integration by parts.md": "657fcf56e1da555491b84208005d46ce",
     "mathematics/basics/integration by substitution.md": "7f1b3b9d1b3ff3bfd295f56be5eb1092",
-    "mathematics/basics/mean value theorem.md": "92ec9069327ad4b02646618766458add",
+    "mathematics/basics/mean value theorem.md": "f7ef5272acff4a4b8732ee0ff81557b2",
     "mathematics/linear algebra/linear equation.md": "6c9e1bbce31bbfd118b54d109b6913e0",
     "mathematics/basics/closure.md": "534d0a40e9739c6cff7dd2981ae6536a",
     "mathematics/linear algebra/linear equation system.md": "8bad67f9ff3ed0b497a693e577b9d581",
@@ -1460,7 +1462,7 @@
     "mathematics/basics/equivalence relation.md": "8f5ef286c417ac54b4db3f8405e3907a",
     "mathematics/linear algebra/elementary matrix.md": "e3b80bd7bebb70b5ea09706cbc9d8ec4",
     "mathematics/basics/origin.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/positive definite.md": "685727558726d03b6e7be362d5ed7616",
+    "mathematics/basics/positive definite.md": "39f0f10ea7ad8c7a83be11ae43ccda90",
     "mathematics/basics/homogeneous.md": "5d0c7a84636c741cdddf60e08ab6a845",
     "mathematics/basics/triangle inequality.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/normed space.md": "cdb2fa750fd8cf1dc84657f22879880e",
@@ -1565,7 +1567,7 @@
     "mathematics/basics/eigenvectors.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/dot product.md": "c219119e9879fc5039880663f67e30c3",
     "mathematics/basics/diagonal matrix.md": "a82687889b5ddc5ea6be4073c33a7345",
-    "mathematics/basics/determinant.md": "f68d7f4893caed6748c2371791aee686",
+    "mathematics/basics/determinant.md": "0d048bbba1594f72b1ceacb6320188e7",
     "mathematics/basics/definite quadratic form.md": "6515b3ae02abcc7480abedc6bcde5e5c",
     "mathematics/basics/columnspace and rowspace dimensions are equal.md": "2745af7f83838c9c8ae9ad8950f6b400",
     "mathematics/basics/column space.md": "047ed9494e7a18d70853942156b097c0",
@@ -1612,7 +1614,9 @@
     "mathematics/stochastics/empirical variance.md": "d5f720c4095de308a3f9cdb2727e0003",
     "mathematics/optimization/level set.md": "f2aa743d3f2973b84e957f1b2c2d8d5f",
     "mathematics/optimization/quadratic aproximation.md": "c5f569d515a200207024addfc8cc65a4",
-    "mathematics/optimization/linear aproximation.md": "4d7d5054def078698fe6b187a3a071f6"
+    "mathematics/optimization/linear aproximation.md": "4d7d5054def078698fe6b187a3a071f6",
+    "mathematics/basics/definiteness of matrices.md": "608569fcc89d2ee873a0df9fdbfdaeab",
+    "mathematics/basics/definiteness criteria for matrices.md": "b0cf025f651c41f924e3a134c8d1bf33"
   },
   "fields_dict": {
     "Basic": [

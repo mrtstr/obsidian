@@ -21,7 +21,7 @@ a_{11} \qquad &n=1 \\
 \right.
 $$
 
-![[minor#minor]]
+
 
 ![[det.png]]
 
@@ -45,7 +45,12 @@ $$
 ![[Sarrus_rule1.svg.png]]
 
 # ----------------------
+
+![[minor#minor]]
+
 ![[square matrix#square matrix]]
+
+
 
 ### properties
 #### [[determinant]] of the [[inverse matrix]]
