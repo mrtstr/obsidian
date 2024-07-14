@@ -186,7 +186,9 @@
     "projection 5.jpg",
     "projection 6.jpg",
     "projection 7.jpg",
-    "IMG-20240707-WA0000 1.jpg"
+    "IMG-20240707-WA0000 1.jpg",
+    "second_der 1.png",
+    "second_der 2.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1490,14 +1492,14 @@
     "mathematics/basics/bounded linear map.md": "37943ae5c6eec6d4cec55424901b104c",
     "mathematics/basics/operator norm.md": "8fdaace99122b80b7880f0684e62df40",
     "mathematics/basics/frobenius inner product.md": "d8f388e75fe4458ccc9de72cf9c01005",
-    "mathematics/basics/jacobian.md": "f061e3914ddb535dc800362472a39a32",
+    "mathematics/basics/jacobian.md": "96cc71ba612195e20758151d890022b6",
     "mathematics/basics/gradient.md": "0b10ed7449951fb73440d1ec28c1b0b3",
     "mathematics/basics/directional derivative.md": "bed7bed85fec89b0c1a3395c9b987300",
     "mathematics/basics/differentiabe.md": "fb91b1bd83e3432935df710c4b551cb9",
     "mathematics/basics/partial derivative.md": "4bb5629fe0cfd707d630dcaa22b27df8",
     "mathematics/basics/bilinear map.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/hessian.md": "20e35f05b085ab2271a63b32f0714922",
-    "mathematics/basics/higher order derivative.md": "7224d2bdba17fb335f2501b453047eb3",
+    "mathematics/basics/hessian.md": "2c0a7996b0fad3e0725fb67002a2aeaf",
+    "mathematics/basics/higher order derivative.md": "23a7544dafbfd93c44e2cef496231e3c",
     "mathematics/stochastics/Untitled.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/sigma algebra.md": "531ff05cccffc364cc5b5170946af672",
     "mathematics/stochastics/probability mass function (PMF).md": "c4d1df5b2888b980c7a1810c2a76092d",
