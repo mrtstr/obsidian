@@ -392,7 +392,7 @@
     "mathematics/basics/countable.md": "c06c498e3cc623d7de81f8884adfb8f1",
     "mathematics/basics/convex.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/convex set.md": "5129460916f232e4216d26f17e1b32dc",
-    "mathematics/basics/convex function.md": "c249d7d2ea3bfebf9a9a9cfa6bb008c1",
+    "mathematics/basics/convex function.md": "b847406fc537090ffdd8f98d480a4a75",
     "mathematics/basics/commutative.md": "4c156fbc4472f2845f3479a5eb12bcb9",
     "mathematics/basics/cauchy schwarz inequality.md": "147f91ab36e92180366695c5a8779e79",
     "mathematics/basics/cartesian product.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1006,7 +1006,7 @@
     "mathematics/basics/binomial theorem.md": "bc109e93d225a198e0463243155eda17",
     "mathematics/basics/identity function.md": "369793b89b172be50457fb8b8a71d39f",
     "mathematics/basics/power series.md": "1d429c104b86317719dbc2ea0f265c57",
-    "mathematics/basics/taylor series.md": "b9b3f2c53970660435c1e0574f962346",
+    "mathematics/basics/taylor series.md": "5b32ae73582d934436debf9091f49258",
     "mathematics/basics/analytic function.md": "bf20bbf4bca19f1d85b579f0dbfd3e4b",
     "mathematics/basics/derivative logarithms.md": "10a2f8a565592433ad57fefca34ac884",
     "mathematics/basics/lhospital rule.md": "052a559ce79ddcc0e632eb6447609d02",
@@ -1610,7 +1610,9 @@
     "mathematics/stochastics/students t test.md": "88b381b685d252b99722af728bc2d2d2",
     "mathematics/stochastics/empirical covariance.md": "f1d9678c65dbf1fe28996a29afee1918",
     "mathematics/stochastics/empirical variance.md": "d5f720c4095de308a3f9cdb2727e0003",
-    "mathematics/optimization/level set.md": "f2aa743d3f2973b84e957f1b2c2d8d5f"
+    "mathematics/optimization/level set.md": "f2aa743d3f2973b84e957f1b2c2d8d5f",
+    "mathematics/optimization/quadratic aproximation.md": "c5f569d515a200207024addfc8cc65a4",
+    "mathematics/optimization/linear aproximation.md": "4d7d5054def078698fe6b187a3a071f6"
   },
   "fields_dict": {
     "Basic": [
