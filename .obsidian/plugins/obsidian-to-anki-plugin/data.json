@@ -1494,8 +1494,8 @@
     "mathematics/basics/bounded linear map.md": "37943ae5c6eec6d4cec55424901b104c",
     "mathematics/basics/operator norm.md": "8fdaace99122b80b7880f0684e62df40",
     "mathematics/basics/frobenius inner product.md": "d8f388e75fe4458ccc9de72cf9c01005",
-    "mathematics/basics/jacobian.md": "96cc71ba612195e20758151d890022b6",
-    "mathematics/basics/gradient.md": "0b10ed7449951fb73440d1ec28c1b0b3",
+    "mathematics/basics/jacobian.md": "9938b7c1963ec7c31b9eec73352217bd",
+    "mathematics/basics/gradient.md": "ed34cd75d9328b89652a76bdfaf526f2",
     "mathematics/basics/directional derivative.md": "bed7bed85fec89b0c1a3395c9b987300",
     "mathematics/basics/differentiabe.md": "fb91b1bd83e3432935df710c4b551cb9",
     "mathematics/basics/partial derivative.md": "4bb5629fe0cfd707d630dcaa22b27df8",
@@ -1616,7 +1616,9 @@
     "mathematics/optimization/quadratic aproximation.md": "c5f569d515a200207024addfc8cc65a4",
     "mathematics/optimization/linear aproximation.md": "4d7d5054def078698fe6b187a3a071f6",
     "mathematics/basics/definiteness of matrices.md": "608569fcc89d2ee873a0df9fdbfdaeab",
-    "mathematics/basics/definiteness criteria for matrices.md": "b0cf025f651c41f924e3a134c8d1bf33"
+    "mathematics/basics/definiteness criteria for matrices.md": "b0cf025f651c41f924e3a134c8d1bf33",
+    "mathematics/optimization/unconstraint optimization optimality criteria.md": "736aa50a47150d7b15c1e8e07ee03b71",
+    "mathematics/optimization/local minimum.md": "9cd5b610104208ff898cbdd1921de844"
   },
   "fields_dict": {
     "Basic": [
