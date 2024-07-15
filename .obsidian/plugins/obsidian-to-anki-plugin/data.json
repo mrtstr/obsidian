@@ -987,7 +987,7 @@
     "mathematics/basics/inverse rule of derivative.md": "9e3291952600b84aa9e8e368c8afba4f",
     "mathematics/basics/chain rule of derivative.md": "a62551fa78857c9ca81ba95e6c179ffe",
     "mathematics/basics/product rule of derivative.md": "cdfe5bdafdc895eea36bf9b1ea0e1137",
-    "mathematics/basics/derivative.md": "4d1ba2df5cbfac713ee888e9adb7a7da",
+    "mathematics/basics/derivative.md": "3c484884e7710f64964471bc50c5faff",
     "mathematics/basics/induction proof.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/power rule for derivative.md": "d7a29e2629a4db0d7a2626c4f37a5b30",
     "mathematics/basics/polynomial.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1618,7 +1618,11 @@
     "mathematics/basics/definiteness of matrices.md": "608569fcc89d2ee873a0df9fdbfdaeab",
     "mathematics/basics/definiteness criteria for matrices.md": "b0cf025f651c41f924e3a134c8d1bf33",
     "mathematics/optimization/unconstraint optimization optimality criteria.md": "ee9fc1d5fb0b8a0e425152eff572137f",
-    "mathematics/optimization/local minimum.md": "9cd5b610104208ff898cbdd1921de844"
+    "mathematics/optimization/local minimum.md": "9cd5b610104208ff898cbdd1921de844",
+    "mathematics/optimization/general descent method.md": "b02c1950e90373b0c05808575d39e2cd",
+    "mathematics/optimization/descent direction.md": "ad32ed826fee274a4fa36f16b6cff384",
+    "mathematics/optimization/armijo line search.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/optimization/gradient descent.md": "3b447925211f74c671c4a44860fdfc49"
   },
   "fields_dict": {
     "Basic": [

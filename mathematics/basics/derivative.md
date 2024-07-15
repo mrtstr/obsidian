@@ -72,6 +72,7 @@ Df(x)\left[\frac{A^\top}{||A^\top||}\right] = \frac{AA^\top}{||A^\top||} = \frac
 $$
 - this result can be generalized for a function $f: \mathbb{R}^m \to \mathbb{R}^n$ by treating $f$ as $n$ scalar functions $f_i$ 
 
+### ------------------
 ![[inner products and norms#every inner product induces a norm]]
 
 ![[cauchy schwarz inequality#geometric interpreation cauchy schwarz inequality]]
