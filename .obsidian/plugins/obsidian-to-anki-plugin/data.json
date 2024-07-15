@@ -1622,9 +1622,10 @@
     "mathematics/optimization/general descent method.md": "b02c1950e90373b0c05808575d39e2cd",
     "mathematics/optimization/descent direction.md": "ad32ed826fee274a4fa36f16b6cff384",
     "mathematics/optimization/armijo line search.md": "4b215a1ba65ac7bdcddcd7df4d8e4312",
-    "mathematics/optimization/gradient descent.md": "3f22054992c8b23c971dba60e1ba99fb",
+    "mathematics/optimization/gradient descent.md": "6235e9c3019a459c055668742eaae8ad",
     "mathematics/basics/convergence rates.md": "e62e9ee8863a55400717395d423dda03",
-    "mathematics/optimization/newton method.md": "90d665dd59bac168fa5faa40c2a89870"
+    "mathematics/optimization/newton method.md": "4c977f9ea9c890bc16c2859d6b5a8e7b",
+    "mathematics/optimization/newton type method.md": "a5c4a85977cbcfff9fe8d5c703d287a6"
   },
   "fields_dict": {
     "Basic": [

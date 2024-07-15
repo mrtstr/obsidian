@@ -181,3 +181,56 @@ $$
 Tags: mathematics
 <!--ID: 1721056221182-->
 END
+
+
+START
+Basic
+summary: [[convergence rates]] of
+- [[gradient descent]]
+- [[newton method]]
+- [[newton type method]]
+
+Back: 
+### convergence of gradient descent
+- [[gradient descent]] with the [[armijo line search]] is converging linearly against a [[local minimum]]
+
+### convergence of the newton method
+- the [[newton method]] converges quandraticly
+
+### convergence of the newton type method
+- the [[newton type method]] can converge superlinear in a (possibly small area around the [[local minimum]]) when the following conditions are satisfied
+1) the negative gradient is used when the newton type direction is not a descenting direction
+2) [[armijo line search]] is used
+
+### linear convergent
+- a [[convergence|convergent]] sequence $\left\{x^{(k)}\right\}$ with a limit $x^*$ is **linearly convergent** if the following is true
+
+$$
+\exists K: \exists \kappa \in [0,1]: \forall k > K: \frac{\left|\left| x^{(k+1)} -x^* \right|\right|}{\left|\left| x^{(k)} -x^* \right|\right|} \leq \kappa
+$$
+### superlinear convergent
+- a [[convergence|convergent]] sequence $\left\{x^{(k)}\right\}$ with a limit $x^*$ is **superlinear convergent** if there exists a linear converging sequence $\kappa^{(k)} \xrightarrow{k \to \infty} 0$ and $\kappa^{(k)} \in [0,1]:$ such that the following is true
+
+$$
+\exists K: \forall k > K: \frac{\left|\left| x^{(k+1)} -x^* \right|\right|}{\left|\left| x^{(k)} -x^* \right|\right|} \leq \kappa^{(k)}
+$$
+### quadratic convergent
+- a [[convergence|convergent]] sequence $\left\{x^{(k)}\right\}$ with a limit $x^*$ is **quadratic convergent** if the following is true
+
+$$
+\exists K: \exists \omega \in [0,\infty): \forall k > K: \frac{\left|\left| x^{(k+1)} -x^* \right|\right|}{\left|\left| x^{(k)} -x^* \right|\right|^2} \leq \omega
+$$
+
+
+
+### armijo condition
+- condition for a sufficiently large decending step size
+- based on a tuning parameter $\gamma \in (0,1]$ 
+$$
+f(x + \alpha d) < f(x) + \gamma \alpha \nabla f(x)^\top d
+$$
+- to calculate a stepsize that satsifies the condition there are multiple methods e.g. select $\beta \in (0, 1)$ and try $\alpha = \beta^i$ until $\alpha$ satisfies the armijo condition 
+
+Tags: mathematics
+<!--ID: 1721061309927-->
+END

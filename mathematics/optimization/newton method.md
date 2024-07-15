@@ -13,6 +13,18 @@ $$
 - with the [[gradient descent]] method the [[linear aproximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
 - but with the [[newton method]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
 
+$$
+x^{(k+1)} = x^{(k)} - \nabla^2  f\left(x^{(k)}\right)^{-1} \nabla f\left(x^{(k)}\right)
+$$
+
+### convergence of the newton method
+- the [[newton method]] converges quandraticly
+TODO add proof
+
+![[convergence rates#quadratic convergent]]
+
+# ----------------------
+
 
 ![[quadratic aproximation#quadratic aproximationof $f: mathbb{R} m to mathbb{R}$]]
 
@@ -27,18 +39,13 @@ Basic
 - definition
 - direction
 - step size
+- convergence
 
 Back: 
-### general descent method
-- iterative algorithm for solving continious optimization problems
-- for generally we start from a point $x^{(0)}$ and go steps of the length $\alpha^{(k)}$ in the direction $d$ untill we find a [[local minimum]]
-$$
-x^{(k+1)} = x^{(k)} + \alpha^{(k)} d^{(k)}
-$$
-
 ### newton method
 - iterative algorithm for solving continious optimization problems using the second [[derivative]] ([[hessian]])
 - useses a direction that minimizes the [[quadratic aproximation]] of $f$ in point $x^{(k)}$ 
+
 $$
 \begin{split}
 d 
@@ -48,8 +55,26 @@ d
 \Rightarrow& d = - \nabla^2  f\left(x^{(k)}\right)^{-1} \nabla f\left(x^{(k)}\right) \\
 \end{split}
 $$
+
 - with the [[gradient descent]] method the [[linear aproximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
 - but with the [[newton method]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
+
+$$
+x^{(k+1)} = x^{(k)} - \nabla^2  f\left(x^{(k)}\right)^{-1} \nabla f\left(x^{(k)}\right)
+$$
+
+### convergence of the newton method
+- the [[newton method]] converges quandraticly
+
+#### quadratic convergent
+- a [[convergence|convergent]] sequence $\left\{x^{(k)}\right\}$ with a limit $x^*$ is **quadratic convergent** if the following is true
+
+$$
+\exists K: \exists \omega \in [0,\infty): \forall k > K: \frac{\left|\left| x^{(k+1)} -x^* \right|\right|}{\left|\left| x^{(k)} -x^* \right|\right|^2} \leq \omega
+$$
+
+
+
 
 ### quadratic aproximationof $f: \mathbb{R}^m \to \mathbb{R}$
 - given a [[function]] $f: \mathbb{R}^m \to \mathbb{R}$ the following is a [[quadratic aproximation]] (or quadratic model) of $f$ of point $x_0$
@@ -58,8 +83,15 @@ $$
 q_{x_0}(d) = f(x_0) + \nabla f(x_0)^\top d + \frac{1}{2} \nabla  d^\top f(x_0) d
 $$
 
-
 _______________________
+
+### general descent method
+- iterative algorithm for solving continious optimization problems
+- for generally we start from a point $x^{(0)}$ and go steps of the length $\alpha^{(k)}$ in the direction $d$ untill we find a [[local minimum]]
+$$
+x^{(k+1)} = x^{(k)} + \alpha^{(k)} d^{(k)}
+$$
+
 
 ### gradient descent
 - iterative algorithm for solving continious optimization problems using the first order [[derivative]]
