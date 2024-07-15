@@ -1623,7 +1623,8 @@
     "mathematics/optimization/descent direction.md": "ad32ed826fee274a4fa36f16b6cff384",
     "mathematics/optimization/armijo line search.md": "4b215a1ba65ac7bdcddcd7df4d8e4312",
     "mathematics/optimization/gradient descent.md": "3f22054992c8b23c971dba60e1ba99fb",
-    "mathematics/basics/convergence rates.md": "e62e9ee8863a55400717395d423dda03"
+    "mathematics/basics/convergence rates.md": "e62e9ee8863a55400717395d423dda03",
+    "mathematics/optimization/newton method.md": "90d665dd59bac168fa5faa40c2a89870"
   },
   "fields_dict": {
     "Basic": [
