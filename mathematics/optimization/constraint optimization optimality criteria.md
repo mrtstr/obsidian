@@ -64,7 +64,9 @@ $$
 #### interpretation
 - when a [[constraint qualification]] is statisfied the [[linearized cone]] is eqivalent to the [[tanget cone]] and thus the [[set]] of all directions that do not point outside the [[feasible set]]
 - thus the **necessary optimality condition of first order** says the point $x^* \in \mathcal{F}$ is in the [[feasible set]] and that there are no feasable directions $d \in \mathcal{L}\left(\mathcal{F}, x^*\right)$ that can improve the objective function $f$
-- 
+
+
+![[Nlp_g1_g2_kegel.jpg]]
 
 ### linearized cone
 - given a [[feasible set]] $\mathcal{F}$ and a point $\bar{x} \in \mathcal{F}$
@@ -77,8 +79,8 @@ $$
 $$
 \mathcal{T}(\mathcal{F}, \bar x) \subset \mathcal{L}(\mathcal{F}, \bar x)
 $$
+![[IMG-20240722-WA0002 3.jpg]]
 
-![[IMG-20240722-WA0000 1.jpg]]
 
 _____________________________
 
@@ -130,13 +132,17 @@ Back:
 ### necessary optimality condition of second order
 - given an [[constraint optimization problem]]
 - lf $x^*$ is a [[local minimum]] and a [[constraint qualification]] holds in $x^*$ then the [[hessian]] is [[positive definite|PSD]] for all [[feasible set|feasable]] directions and $x^*$ is a **stationary point**
+
 $$
 \begin{split}
 &x^* \text{ is a stationary point} \\
 &\forall d \in \mathcal{L}\left(\mathcal{F}, x^*\right): d^\top\nabla^2 f\left(x^*\right)d^\top \geq 0
 \end{split}
 $$
+
 - this is eqivalent to the [[unconstraint optimization optimality criteria#necessary optimality condition of second order|necessary optimality condition of second order for unconstraint problems]] with the difference that we restrict the condition on [[feasible set|feasable]] directions
+
+![[Nlp_g1_g2_kegel 6.jpg]]
 
 ### necessary optimality condition of first order
 - given an [[constraint optimization problem]]
@@ -166,7 +172,7 @@ $$
 \mathcal{T}(\mathcal{F}, \bar x) \subset \mathcal{L}(\mathcal{F}, \bar x)
 $$
 
-![[IMG-20240722-WA0000 4.jpg]]
+![[IMG-20240722-WA0002.jpg]]
 
 _____________________________
 
@@ -192,6 +198,8 @@ $$
 $$
 \mathcal{T}(\mathcal{F}, \bar x) = \left\{d \in \mathbb{R}^m: \exists t^{(k)}, x^{(k)} \in \mathcal{F}: \lim_{k \to \infty} x^{(k)} = \bar x, \lim_{k \to \infty } t^{(k)} \left(x-x^{(k)}\right) = d \right\}
 $$
+
+
 
 - it's hard to works with the [[tanget cone]] because it is asking for the existence of infinite [[series]] but when a [[constraint qualification]] is satisfied its prossible to work with the [[linearized cone]] $\mathcal{L} \supset \mathcal{T}$
 - the [[tanget cone]] contains all directions that does not point outside if the [[feasible set]]
@@ -246,6 +254,7 @@ $$
 $$
 - every point $x^*$ that satisfies this conditions is called a **stationary point**
 
+![[Nlp_g1_g2_kegel 2.jpg]]
 
 
 ### linearized cone
@@ -259,8 +268,8 @@ $$
 $$
 \mathcal{T}(\mathcal{F}, \bar x) \subset \mathcal{L}(\mathcal{F}, \bar x)
 $$
+![[IMG-20240722-WA0002 4.jpg]]
 
-![[IMG-20240722-WA0000 5.jpg]]
 
 _____________________________
 

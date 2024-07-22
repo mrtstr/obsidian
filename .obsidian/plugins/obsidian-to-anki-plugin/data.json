@@ -194,7 +194,18 @@
     "IMG-20240722-WA0000 1.jpg",
     "IMG-20240722-WA0000 3.jpg",
     "IMG-20240722-WA0000 4.jpg",
-    "IMG-20240722-WA0000 5.jpg"
+    "IMG-20240722-WA0000 5.jpg",
+    "Nlp_g1_g2_kegel 3.jpg",
+    "Nlp_g1_g2_kegel.jpg",
+    "IMG-20240722-WA0002 3.jpg",
+    "Nlp_g1_g2_kegel 6.jpg",
+    "IMG-20240722-WA0002.jpg",
+    "Nlp_g1_g2_kegel 2.jpg",
+    "IMG-20240722-WA0002 4.jpg",
+    "IMG-20240722-WA0002 1.jpg",
+    "Nlp_g1_g2_kegel 5.jpg",
+    "Nlp_g1_g2_kegel 7.jpg",
+    "IMG-20240722-WA0002 5.jpg"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1630,13 +1641,15 @@
     "mathematics/basics/convergence rates.md": "e62e9ee8863a55400717395d423dda03",
     "mathematics/optimization/newton method.md": "4c977f9ea9c890bc16c2859d6b5a8e7b",
     "mathematics/optimization/newton type method.md": "a5c4a85977cbcfff9fe8d5c703d287a6",
-    "mathematics/optimization/linearized cone.md": "c26c4cdbc11a0381b63bf1405fd220ba",
-    "mathematics/optimization/tanget cone.md": "f404d16d08630060176c542b2cd26350",
+    "mathematics/optimization/linearized cone.md": "d18e1ffa7798e90cedf72602ae4c9f90",
+    "mathematics/optimization/tanget cone.md": "553566b6d6952417a4700654aa0fe4e0",
     "mathematics/optimization/constraint optimization problem.md": "48cbc806053881cc8f9cc84f37b910fa",
     "mathematics/optimization/feasible set.md": "aee976e9a179803d066442b30aa51c14",
-    "mathematics/optimization/constraint optimization optimality criteria.md": "a74b4e45a58410b4bf33d6e07a6fdfbc",
+    "mathematics/optimization/constraint optimization optimality criteria.md": "6198936cd70b00227b04757bd0cf5df9",
     "mathematics/optimization/constraint qualification.md": "95edca7af0c0c1cef3aca3eb7d7fdeb3",
-    "mathematics/optimization/cone.md": "adb12c9b76ce9d99e9833dc049cee19e"
+    "mathematics/optimization/cone.md": "21ac1fdb25855bdb91e1749b0157ac67",
+    "mathematics/optimization/active set.md": "7ac52303d9d31ade01973f26f65d2e97",
+    "mathematics/optimization/kkt conditions.md": "ae9d08ea42d056f516acff52e3ddad70"
   },
   "fields_dict": {
     "Basic": [

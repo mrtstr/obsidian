@@ -6,6 +6,8 @@ $$
 \mathcal{T}(\mathcal{F}, \bar x) = \left\{d \in \mathbb{R}^m: \exists t^{(k)}, x^{(k)} \in \mathcal{F}: \lim_{k \to \infty} x^{(k)} = \bar x, \lim_{k \to \infty } t^{(k)} \left(x-x^{(k)}\right) = d \right\}
 $$
 
+![[Nlp_g1_g2_kegel 4.jpg]]
+
 - it's hard to works with the [[tanget cone]] because it is asking for the existence of infinite [[series]] but when a [[constraint qualification]] is satisfied its prossible to work with the [[linearized cone]] $\mathcal{L} \supset \mathcal{T}$
 
 - the [[tanget cone]] contains all directions that does not point outside if the [[feasible set]]
@@ -23,7 +25,7 @@ START
 Basic
 [[tanget cone]]
 - definition and general [[cone]]
-- interpretation
+- interpretation with pic
 - problem with the difintion and what to do instead
 Back: 
 ### tanget cone
@@ -33,6 +35,8 @@ Back:
 $$
 \mathcal{T}(\mathcal{F}, \bar x) = \left\{d \in \mathbb{R}^m: \exists t^{(k)}, x^{(k)} \in \mathcal{F}: \lim_{k \to \infty} x^{(k)} = \bar x, \lim_{k \to \infty } t^{(k)} \left(x-x^{(k)}\right) = d \right\}
 $$
+
+![[Nlp_g1_g2_kegel 3.jpg]]
 
 - it's hard to works with the [[tanget cone]] because it is asking for the existence of infinite [[series]] but when a [[constraint qualification]] is satisfied its prossible to work with the [[linearized cone]] $\mathcal{L} \supset \mathcal{T}$
 - the [[tanget cone]] contains all directions that does not point outside if the [[feasible set]]
