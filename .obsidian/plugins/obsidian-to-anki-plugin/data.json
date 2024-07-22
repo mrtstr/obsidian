@@ -190,7 +190,9 @@
     "second_der 1.png",
     "second_der 2.png",
     "det.png",
-    "convex_function 1.png"
+    "convex_function 1.png",
+    "IMG-20240722-WA0000 1.jpg",
+    "IMG-20240722-WA0000 3.jpg"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1626,10 +1628,13 @@
     "mathematics/basics/convergence rates.md": "e62e9ee8863a55400717395d423dda03",
     "mathematics/optimization/newton method.md": "4c977f9ea9c890bc16c2859d6b5a8e7b",
     "mathematics/optimization/newton type method.md": "a5c4a85977cbcfff9fe8d5c703d287a6",
-    "mathematics/optimization/linearized cone.md": "3409ee0e746acd4158fc586d7881437f",
-    "mathematics/optimization/tanget cone.md": "6c0bc3d0277fc65f1d7bd8ace379b83e",
+    "mathematics/optimization/linearized cone.md": "c26c4cdbc11a0381b63bf1405fd220ba",
+    "mathematics/optimization/tanget cone.md": "f404d16d08630060176c542b2cd26350",
     "mathematics/optimization/constraint optimization problem.md": "48cbc806053881cc8f9cc84f37b910fa",
-    "mathematics/optimization/feasible set.md": "aee976e9a179803d066442b30aa51c14"
+    "mathematics/optimization/feasible set.md": "aee976e9a179803d066442b30aa51c14",
+    "mathematics/optimization/constraint optimization optimality criteria.md": "9d4c66c95cd6298961e924781aca486c",
+    "mathematics/optimization/constraint qualification.md": "95edca7af0c0c1cef3aca3eb7d7fdeb3",
+    "mathematics/optimization/cone.md": "adb12c9b76ce9d99e9833dc049cee19e"
   },
   "fields_dict": {
     "Basic": [
