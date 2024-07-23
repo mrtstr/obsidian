@@ -88,17 +88,16 @@ $$
 #### complementary slackness
 
 $$
- \nabla h\left(x^*\right)^\top \mu^* = 0
+ h\left(x^*\right)^\top \mu^* = 0
 $$
 
 - either $\mu^*_i = 0 \Leftrightarrow$ 
 	- inequality constraint is $h_i$ is [[active set|inactive]] / $h_i$ does not bind
-	- no shadow price because 
-- or $\nabla h\left(x^*\right)=0 \Leftrightarrow$
-	- or the inequality constraint is [[active set|active]]
+	- no shadow price 
+- or $h\left(x^*\right)=0 \Leftrightarrow$
+	- the inequality constraint is [[active set|active]]
 - neither can happen e.g. when the optimum of $f$ is in a point where $h(x)=0$
 - both cant happen because that would mean that a non-active inequality condition would prevent a better solution
-
 
 Tags: mathematics
 <!--ID: 1721728965042-->
