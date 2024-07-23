@@ -207,7 +207,8 @@
     "Nlp_g1_g2_kegel 7.jpg",
     "IMG-20240722-WA0002 5.jpg",
     "IMG-20240723-WA0001 1.jpg",
-    "IMG-20240723-WA0003 1.jpg"
+    "IMG-20240723-WA0003 1.jpg",
+    "IMG-20240723-WA0005 1.jpg"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1637,7 +1638,7 @@
     "mathematics/optimization/unconstraint optimization optimality criteria.md": "ee9fc1d5fb0b8a0e425152eff572137f",
     "mathematics/optimization/local minimum.md": "70b900b360f273629f62f7a1eb762c87",
     "mathematics/optimization/general descent method.md": "b02c1950e90373b0c05808575d39e2cd",
-    "mathematics/optimization/descent direction.md": "ad32ed826fee274a4fa36f16b6cff384",
+    "mathematics/optimization/descent direction.md": "937c77b533d2ea203adafb3734431e1a",
     "mathematics/optimization/armijo line search.md": "4b215a1ba65ac7bdcddcd7df4d8e4312",
     "mathematics/optimization/gradient descent.md": "6235e9c3019a459c055668742eaae8ad",
     "mathematics/basics/convergence rates.md": "e62e9ee8863a55400717395d423dda03",

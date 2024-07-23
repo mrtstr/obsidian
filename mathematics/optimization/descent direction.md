@@ -7,6 +7,8 @@ $$
 $$
 - if $\cos(\phi)=0$ we have no improvement at all because we move parallel to the current [[level set]] so we want a $\nu > 0$ with the maximal possible value being $\mu=1$ when $\nabla f \left(x^{(k)}\right) = d$ ([[cauchy schwarz inequality]])
 
+![[IMG-20240723-WA0005.jpg]]
+
 - note: the [[inner product]] pretween the [[gradient]] and the (normalized) direction is equivalent to the length of the [[projection]] of the [[gradient]] in the direction $d$ thus the share of $d$ that leads to an improvement 
 $$
 \left\langle - \nabla f \left(x^{(k)}\right), d\right\rangle = \left|\left| \mathrm{Proj}_d\left(\nabla f \left(x^{(k)}\right)\right) \right|\right| \cdot ||d||
@@ -50,7 +52,7 @@ $$
 \left\langle - \nabla f \left(x^{(k)}\right), d\right\rangle = \left|\left| \mathrm{Proj}_d\left(\nabla f \left(x^{(k)}\right)\right) \right|\right| \cdot ||d||
 $$
 
-
+![[IMG-20240723-WA0005 1.jpg]]
 
 
 _______________________
