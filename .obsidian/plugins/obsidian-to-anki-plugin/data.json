@@ -1649,7 +1649,8 @@
     "mathematics/optimization/constraint qualification.md": "95edca7af0c0c1cef3aca3eb7d7fdeb3",
     "mathematics/optimization/cone.md": "21ac1fdb25855bdb91e1749b0157ac67",
     "mathematics/optimization/active set.md": "7ac52303d9d31ade01973f26f65d2e97",
-    "mathematics/optimization/kkt conditions.md": "f6faf839db289f162743e4b751caf2d8"
+    "mathematics/optimization/kkt conditions.md": "65d1de10c346726cb8ef95713dfa4641",
+    "mathematics/optimization/lagrangian of a CNLP.md": "be0a9317cac1ca0a57721d5918abe2ab"
   },
   "fields_dict": {
     "Basic": [
