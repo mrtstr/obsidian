@@ -1657,10 +1657,12 @@
     "mathematics/optimization/kkt conditions.md": "c02a71c275fde363c09f4b684e00c51b",
     "mathematics/optimization/lagrangian of a CNLP.md": "26f156a9c02b0556cfef27b112d50ea5",
     "mathematics/optimization/unconstraint optimization problem.md": "7f9ad6383f95c1be29f76b8c9d6dd79b",
-    "mathematics/optimization/penalty methods CNLP.md": "af7a632a64a272fce63b05a7f488a07e",
+    "mathematics/optimization/penalty methods CNLP.md": "998949e635095d2653869fc555898b1b",
     "mathematics/optimization/active set method.md": "d3fb16d7a4b17e735f273f4cade37886",
     "mathematics/optimization/sequential quadratic programming (SQP).md": "5b1128a325f9960ee2940762083024a6",
-    "mathematics/numerical methods/condition.md": "05b4b103b9bab37442c6e654d2558c23"
+    "mathematics/numerical methods/condition.md": "05b4b103b9bab37442c6e654d2558c23",
+    "mathematics/numerical methods/error anlysis.md": "149f1f07a463b72c421b139e28a9ff94",
+    "mathematics/numerical methods/error round off.md": "4b4ecb9800cfb6b0243d339f0bd35778"
   },
   "fields_dict": {
     "Basic": [

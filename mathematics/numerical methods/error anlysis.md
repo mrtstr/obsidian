@@ -121,5 +121,5 @@ fl(x) = x(1+\delta) \text{ with } |\delta| \leq \epsilon
 $$
 
 Tags: mathematics
-
+<!--ID: 1721848483209-->
 END

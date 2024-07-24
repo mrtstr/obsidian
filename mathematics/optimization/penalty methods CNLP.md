@@ -11,7 +11,7 @@ $$
 \min_{x \in \mathbb{R}^m} &f(x) + \theta \cdot \phi(x) \\
 \end{split}
 $$
-- since $\phi_1(x)$ is not [[differentiabe]] we can use $\phi_2(x)$ instead
+- since $\phi_1(x)$ is not [[differentiabe]] we can use $\phi_2(x)$ instead, but this does not lead nessearily to an [[feasible set|feasible]] solution
 
 $$
 \phi_2(x) = ||g(x)||_2^2 + ||[h(x)]^-||_2^2
@@ -41,7 +41,7 @@ $$
 \min_{x \in \mathbb{R}^m} &f(x) + \theta \cdot \phi(x) \\
 \end{split}
 $$
-- since $\phi_1(x)$ is not [[differentiabe]] we can use $\phi_2(x)$ instead
+- since $\phi_1(x)$ is not [[differentiabe]] we can use $\phi_2(x)$ instead, but this does not lead nessearily to an [[feasible set|feasible]] solution
 
 $$
 \phi_2(x) = ||g(x)||_2^2 + ||[h(x)]^-||_2^2

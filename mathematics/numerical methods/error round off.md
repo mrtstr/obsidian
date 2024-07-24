@@ -120,7 +120,7 @@ $$
 
 
 Tags: mathematics
-
+<!--ID: 1721848483214-->
 END
 
 
@@ -170,7 +170,7 @@ fl(x) = x(1+\delta) \text{ with } |\delta| \leq \epsilon
 $$
 
 Tags: mathematics
-
+<!--ID: 1721848483220-->
 END
 
 
@@ -250,7 +250,7 @@ fl(x) = x(1+\delta) \text{ with } |\delta| \leq \epsilon
 $$
 
 Tags: mathematics
-
+<!--ID: 1721848483223-->
 END
 
 
@@ -329,7 +329,7 @@ fl(x) = x(1+\delta) \text{ with } |\delta| \leq \epsilon
 $$
 
 Tags: mathematics
-
+<!--ID: 1721848483225-->
 END
 
 START
@@ -427,5 +427,5 @@ fl(x) = x(1+\delta) \text{ with } |\delta| \leq \epsilon
 $$
 
 Tags: mathematics
-
+<!--ID: 1721848483228-->
 END
