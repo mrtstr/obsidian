@@ -1,4 +1,4 @@
-### sequential quadratic programming
+### SQP with only equalities
 - efficient methode for solving [[constraint optimization problem]] with only equality constraints
 - given the following [[constraint optimization problem]] with the objective [[function]] $f: \mathbb{R}^m \to \mathbb{R}$ and equality constraints $g: \mathbb{R}^m \to \mathbb{R}^n$  
 $$
@@ -28,28 +28,6 @@ $$
 = \left(\begin{matrix}
 \nabla^2 f(x) -  \nabla^2 g(x)\lambda & - \nabla g(x)  \\
 \nabla g(x)^\top & 0
-\end{matrix}\right)
-$$
-##### newton step
-- then we can performe a [[newton method]] step to minimize the problem
-$$
-\left(\begin{matrix}
-x^{(k+1)} \\
-\lambda^{(k+1)}
-\end{matrix}\right)
-=
-\left(\begin{matrix}
-x^{(k)} \\
-\lambda^{(k)}
-\end{matrix}\right)
-+ \alpha^{(k)}
-\left(\begin{matrix}
-\nabla^2 f(x) -  \nabla^2 g(x) & - \nabla g(x)  \\
-\nabla g(x)^\top & 0
-\end{matrix}\right)^{-1}
-\left(\begin{matrix}
-\nabla f(x) -  \nabla g(x) \lambda \\
-g(x)
 \end{matrix}\right)
 $$
 
@@ -119,7 +97,34 @@ $$
 \end{split}
 $$
 
+- this problem can be solved using a [[penalty methods CNLP]]
 
+##### newton step
+- then we can performe a [[newton method]] step to minimize the problem
+$$
+\left(\begin{matrix}
+x^{(k+1)} \\
+\lambda^{(k+1)}
+\end{matrix}\right)
+=
+\left(\begin{matrix}
+x^{(k)} \\
+\lambda^{(k)}
+\end{matrix}\right)
++ \alpha^{(k)}
+\left(\begin{matrix}
+\nabla^2 f(x) -  \nabla^2 g(x) & - \nabla g(x)  \\
+\nabla g(x)^\top & 0
+\end{matrix}\right)^{-1}
+\left(\begin{matrix}
+\nabla f(x) -  \nabla g(x) \lambda \\
+g(x)
+\end{matrix}\right)
+$$
+
+### sequential quadratic programming with only inequalities
+- guess a [[active set]] → only equalities
+- then solve the SQP
 # -----------------------------
 
 ![[quadratic aproximation#quadratic aproximationof $f: mathbb{R} m to mathbb{R}$]]
@@ -136,9 +141,14 @@ $$
 
 START
 Basic
-newton methode for [[constraint optimization problem]] with only equality constraints
+how to solve a [[unconstraint optimization problem]] with inequalities using [[sequential quadratic programming (SQP)]]
 
 Back: 
+### sequential quadratic programming with only inequalities
+- guess a [[active set]] → only equalities
+- then solve the SQP
+- check result and repeat of not a [[kkt conditions|KKT point]]
+### sequential quadratic programming
 - efficient methode for solving [[constraint optimization problem]] with only equality constraints
 - given the following [[constraint optimization problem]] with the objective [[function]] $f: \mathbb{R}^m \to \mathbb{R}$ and equality constraints $g: \mathbb{R}^m \to \mathbb{R}^n$  
 $$
@@ -170,27 +180,71 @@ $$
 \nabla g(x)^\top & 0
 \end{matrix}\right)
 $$
-##### newton step
-- then we can performe a [[newton method]] step to minimize the problem
+
+##### transformation into a quadratic problem
+- while minimizing the [[quadratic aproximation]] of the [[lagrangian of a CNLP]] we can transform the problem as follows
+
 $$
+\begin{split}
+d &=  arg\min q(d) \\
+&= arg\min \mathcal{L}\left(x, \lambda\right) + d^\top \nabla_{x, \lambda} \mathcal{L}\left(x, \lambda\right) + \frac{1}{2} d^\top 
 \left(\begin{matrix}
-x^{(k+1)} \\
-\lambda^{(k+1)}
+\frac{\partial^2\mathcal{L}\left(x, \lambda\right)}{\partial x \partial x} & \frac{\partial^2\mathcal{L}\left(x, \lambda\right)}{\partial x \partial \lambda} \\
+\frac{\partial^2\mathcal{L}\left(x, \lambda\right)}{\partial \lambda \partial x} & \frac{\partial^2\mathcal{L}\left(x, \lambda\right)}{\partial \lambda \partial \lambda}
 \end{matrix}\right)
-=
-\left(\begin{matrix}
-x^{(k)} \\
-\lambda^{(k)}
-\end{matrix}\right)
-+ \alpha^{(k)}
-\left(\begin{matrix}
-\nabla^2 f(x) -  \nabla^2 g(x) & - \nabla g(x)  \\
-\nabla g(x)^\top & 0
-\end{matrix}\right)^{-1}
-\left(\begin{matrix}
+d \\
+&= arg\min d^\top \left(\begin{matrix}
 \nabla f(x) -  \nabla g(x) \lambda \\
 g(x)
 \end{matrix}\right)
++ \frac{1}{2} d^\top 
+\left(\begin{matrix}
+\nabla^2 f(x) -  \nabla^2 g(x)\lambda & - \nabla g(x)  \\
+\nabla g(x)^\top & 0
+\end{matrix}\right) d \\
+&= arg\min d^\top \left(\begin{matrix}
+c\left(x, \lambda\right) \\
+g(x)
+\end{matrix}\right)
++ \frac{1}{2} d^\top 
+\left(\begin{matrix}
+H\left(x, \lambda\right) & - \nabla g(x)  \\
+\nabla g(x)^\top & 0
+\end{matrix}\right) d \\
+\end{split} \\
+$$
+
+
+$$
+\begin{split}
+c\left(x, \lambda\right) &= \nabla f(x) -  \nabla g(x) \lambda \\
+H\left(x, \lambda\right) &= \nabla^2 f(x) -  \nabla^2 g(x)\lambda \\
+\end{split}
+$$
+- when adding the equality constraint $g(x) + \nabla g(x)^\top d$ we can transorm the problem in an quadratic optimization problem
+
+$$
+\begin{split}
+0
+&= \frac{\partial }{\partial d} q(d) \\
+&= \left(\begin{matrix}
+c\left(x, \lambda\right)  \\
+g(x)
+\end{matrix}\right) 
++
+\left(\begin{matrix}
+H\left(x, \lambda\right) & - \nabla g(x)  \\
+\nabla g(x)^\top & 0
+\end{matrix}\right) d \\
+\Rightarrow  0 &= g(x) + \nabla g(x)^\top d \\
+\end{split} \\
+$$
+
+$$
+\begin{split}
+\min_{x \in \mathbb{R}^m} & \frac{1}{2} d^\top H\left(x^{(k)}, \lambda^{(k)}\right)d + d^\top c\left(x^{(k)}, \lambda^{(k)}\right)  \\
+\mathrm{s.t.} \: &g\left(x^{(k)}\right)+\nabla g\left(x^{(k)}\right)^\top d=0 \\
+\end{split}
 $$
 
 
@@ -261,6 +315,7 @@ START
 Basic
 [[sequential quadratic programming (SQP)]]
 - how to transform a [[constraint optimization problem]] with only inequality conditions into a quadratic problem
+- how to solve the problem?
 
 Back: 
 ### sequential quadratic programming
@@ -361,7 +416,7 @@ $$
 \mathrm{s.t.} \: &g\left(x^{(k)}\right)+\nabla g\left(x^{(k)}\right)^\top d=0 \\
 \end{split}
 $$
-
+- this problem can be solved using a [[penalty methods CNLP]]
 
 _______________________
 

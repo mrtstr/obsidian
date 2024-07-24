@@ -1659,7 +1659,8 @@
     "mathematics/optimization/unconstraint optimization problem.md": "7f9ad6383f95c1be29f76b8c9d6dd79b",
     "mathematics/optimization/penalty methods CNLP.md": "af7a632a64a272fce63b05a7f488a07e",
     "mathematics/optimization/active set method.md": "d3fb16d7a4b17e735f273f4cade37886",
-    "mathematics/optimization/sequential quadratic programming (SQP).md": "ec4c0df71589e7f35b69acf33893bc28"
+    "mathematics/optimization/sequential quadratic programming (SQP).md": "5b1128a325f9960ee2940762083024a6",
+    "mathematics/numerical methods/condition.md": "05b4b103b9bab37442c6e654d2558c23"
   },
   "fields_dict": {
     "Basic": [
