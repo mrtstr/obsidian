@@ -208,7 +208,9 @@
     "IMG-20240722-WA0002 5.jpg",
     "IMG-20240723-WA0001 1.jpg",
     "IMG-20240723-WA0003 1.jpg",
-    "IMG-20240723-WA0005 1.jpg"
+    "IMG-20240723-WA0005 1.jpg",
+    "Nlp_g1_g2_kegel 8.jpg",
+    "IMG-20240722-WA0002 6.jpg"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1648,14 +1650,16 @@
     "mathematics/optimization/tanget cone.md": "553566b6d6952417a4700654aa0fe4e0",
     "mathematics/optimization/constraint optimization problem.md": "48cbc806053881cc8f9cc84f37b910fa",
     "mathematics/optimization/feasible set.md": "aee976e9a179803d066442b30aa51c14",
-    "mathematics/optimization/constraint optimization optimality criteria.md": "6198936cd70b00227b04757bd0cf5df9",
+    "mathematics/optimization/constraint optimization optimality criteria.md": "c39502215da54cd9d4ff43a0f3e62880",
     "mathematics/optimization/constraint qualification.md": "95edca7af0c0c1cef3aca3eb7d7fdeb3",
     "mathematics/optimization/cone.md": "21ac1fdb25855bdb91e1749b0157ac67",
     "mathematics/optimization/active set.md": "7ac52303d9d31ade01973f26f65d2e97",
-    "mathematics/optimization/kkt conditions.md": "a6f165df943e28fdb8dfb283d9d8f102",
-    "mathematics/optimization/lagrangian of a CNLP.md": "c970e4996b100b51cc82e2f5481726ca",
+    "mathematics/optimization/kkt conditions.md": "c02a71c275fde363c09f4b684e00c51b",
+    "mathematics/optimization/lagrangian of a CNLP.md": "26f156a9c02b0556cfef27b112d50ea5",
     "mathematics/optimization/unconstraint optimization problem.md": "7f9ad6383f95c1be29f76b8c9d6dd79b",
-    "mathematics/optimization/penalty methods CNLP.md": "af7a632a64a272fce63b05a7f488a07e"
+    "mathematics/optimization/penalty methods CNLP.md": "af7a632a64a272fce63b05a7f488a07e",
+    "mathematics/optimization/active set method.md": "d3fb16d7a4b17e735f273f4cade37886",
+    "mathematics/optimization/sequential quadratic programming (SQP).md": "ec4c0df71589e7f35b69acf33893bc28"
   },
   "fields_dict": {
     "Basic": [

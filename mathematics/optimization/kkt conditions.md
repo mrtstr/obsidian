@@ -5,7 +5,7 @@
 
 #### stationarity
 $$
-\nabla f\left(x^*\right) = \nabla h\left(x^*\right) \mu^* = \nabla g\left(x^*\right) \lambda^*
+\nabla f\left(x^*\right) = \nabla h\left(x^*\right) \mu^* + \nabla g\left(x^*\right) \lambda^*
 $$
 
 - the [[gradient]] of the objective function $f$ has to be a [[linear combinations|linear combination]] of the [[gradient|gradient]] of the contraint functions $g$ and $h$ with $\lambda^*$ and $\mu^*$ being the multiplier
@@ -72,7 +72,7 @@ Back:
 
 #### stationarity
 $$
-\nabla f\left(x^*\right) = \nabla h\left(x^*\right) \mu^* = \nabla g\left(x^*\right) \lambda^*
+\nabla f\left(x^*\right) = \nabla h\left(x^*\right) \mu^* + \nabla g\left(x^*\right) \lambda^*
 $$
 
 - the [[gradient]] of the objective function $f$ has to be a [[linear combinations|linear combination]] of the [[gradient|gradient]] of the contraint functions $g$ and $h$ with $\lambda^*$ and $\mu^*$ being the multiplier
@@ -174,7 +174,7 @@ Back:
 
 #### stationarity
 $$
-\nabla f\left(x^*\right) = \nabla h\left(x^*\right) \mu^* = \nabla g\left(x^*\right) \lambda^*
+\nabla f\left(x^*\right) = \nabla h\left(x^*\right) \mu^* + \nabla g\left(x^*\right) \lambda^*
 $$
 
 - the [[gradient]] of the objective function $f$ has to be a [[linear combinations|linear combination]] of the [[gradient|gradient]] of the contraint functions $g$ and $h$ with $\lambda^*$ and $\mu^*$ being the multiplier
@@ -284,7 +284,7 @@ $$
 
 #### stationarity
 $$
-\nabla f\left(x^*\right) = \nabla h\left(x^*\right) \mu^* = \nabla g\left(x^*\right) \lambda^*
+\nabla f\left(x^*\right) = \nabla h\left(x^*\right) \mu^* + \nabla g\left(x^*\right) \lambda^*
 $$
 
 - the [[gradient]] of the objective function $f$ has to be a [[linear combinations|linear combination]] of the [[gradient|gradient]] of the contraint functions $g$ and $h$ with $\lambda^*$ and $\mu^*$ being the multiplier
@@ -399,7 +399,7 @@ Back:
 
 #### stationarity
 $$
-\nabla f\left(x^*\right) = \nabla h\left(x^*\right) \mu^* = \nabla g\left(x^*\right) \lambda^*
+\nabla f\left(x^*\right) = \nabla h\left(x^*\right) \mu^* + \nabla g\left(x^*\right) \lambda^*
 $$
 
 - the [[gradient]] of the objective function $f$ has to be a [[linear combinations|linear combination]] of the [[gradient|gradient]] of the contraint functions $g$ and $h$ with $\lambda^*$ and $\mu^*$ being the multiplier
