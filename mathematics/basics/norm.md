@@ -36,6 +36,9 @@ $$
 $$
 ||x||_p = \left(\sum_{i \in [n]} |x_i|^p \right)^{\frac{1}{p}}
 $$
+
+![[615px-Vector-p-Norms_qtl1.svg.png]]
+
 #### $l^1$ [[norm]]
 $$
 ||x||_1 = \sum_{i \in [n]} |x_i| 
@@ -49,10 +52,13 @@ $$
 $$
 ||x||_\infty = \left(\sum_{i \in [n]} |x_i|^\infty \right)^{\frac{1}{\infty}} = \max_{i \in [n]} |x_i|
 $$
-![[615px-Vector-p-Norms_qtl1.svg.png]]
-![[function space#norm for function space $f: Omega subset mathbb{R} d rightarrow mathbb{R}$]]
+
 
 # ---------------------
+
+![[function space#norm for function space $f: Omega subset mathbb{R} d rightarrow mathbb{R}$]]
+
+
 ![[function space#function space]]
 
 

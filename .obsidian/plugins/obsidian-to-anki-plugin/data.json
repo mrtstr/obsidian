@@ -348,7 +348,7 @@
     "mathematics/basics/stationary point.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/set.md": "f44bc7c6033de6e58f0756f67cb541e6",
     "mathematics/basics/power set.md": "d5639895e1d1eb494c3eb16e3f1dc370",
-    "mathematics/basics/norm.md": "367180f5a83de408f37a2e708d41fe97",
+    "mathematics/basics/norm.md": "bf680dfb7f196488ce70c91078e652d7",
     "mathematics/basics/monotonic function.md": "aa887bcb8cd6542c26944058463a8336",
     "mathematics/basics/metric.md": "6fef9642ec90a639176f4e83f57e5c0e",
     "mathematics/basics/maxima and minima.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1505,7 +1505,7 @@
     "mathematics/basics/frobenius norm.md": "fead2cbed504721832e2de4bf0e68f84",
     "mathematics/basics/spectral norm.md": "bcfc5940c4452659168ccbd70ed73c54",
     "mathematics/basics/row sum norm.md": "2f4a9e10912cc628360582e35d20ebf5",
-    "mathematics/basics/column sum norm.md": "4a02c4fa7d363b7b04f701d29abdbeab",
+    "mathematics/basics/column sum norm.md": "32e07d8a17fbd2eb9b4d91794d536950",
     "mathematics/basics/matrix norms.md": "1e6548dbd7f827f640121366ec3c45aa",
     "mathematics/basics/banach space.md": "86c11b45f92487702746d7a2446a6817",
     "mathematics/basics/range.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1660,9 +1660,10 @@
     "mathematics/optimization/penalty methods CNLP.md": "998949e635095d2653869fc555898b1b",
     "mathematics/optimization/active set method.md": "d3fb16d7a4b17e735f273f4cade37886",
     "mathematics/optimization/sequential quadratic programming (SQP).md": "5b1128a325f9960ee2940762083024a6",
-    "mathematics/numerical methods/condition.md": "05b4b103b9bab37442c6e654d2558c23",
+    "mathematics/numerical methods/condition.md": "f49c4cae97e294ee787666392c7775be",
     "mathematics/numerical methods/error anlysis.md": "149f1f07a463b72c421b139e28a9ff94",
-    "mathematics/numerical methods/error round off.md": "4b4ecb9800cfb6b0243d339f0bd35778"
+    "mathematics/numerical methods/error round off.md": "cc7b0903bd9b1ce8ff9f177531660262",
+    "mathematics/numerical methods/error propagation.md": "2f4e582c8843c5f877d4ca5e60ed7138"
   },
   "fields_dict": {
     "Basic": [
