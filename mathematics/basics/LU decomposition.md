@@ -1,6 +1,6 @@
 Note we will focus on a [[square matrix]] $A \in \mathbb{R}^{n \times n}$ but it's also possible for general [[matrix]] $A \in \mathbb{R}^{n \times m}$
-## [[LU decomposition]] without [[permutations]]
-### definition [[LU decomposition]]
+## LU decomposition
+
 A [[LU decomposition]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ such that the following is true
 $$
 A = LU
@@ -18,7 +18,7 @@ $$
 
 ### existence
 - not all [[square matrix|square matrices]] do have a [[LU decomposition]] without [[permutation matrix|permutations]] 
-- In the case of the [[pivot]] element being zero only the [[PLU decomposition with permutations]] is possible
+- In the case of the [[pivot]] element being zero only the [[PLU decomposition]] is possible
 proof
 $$
 \begin{split}
@@ -50,10 +50,10 @@ $$
 
 
 
-### [[time complexity]] of the [[LU decomposition without permutations]]
+### [[time complexity]] of the LU decomposition without permutations
 - its $\in \mathcal{O}(n^3)$  
 
-### process [[LU decomposition without permutations]]
+### process LU decomposition without permutations
 #### given
 
 ![[triangular matrix#inverse matrix inverse of a normalized triangular matrix]]
@@ -121,7 +121,7 @@ U &= A^{(n)} = A^{(3)} = L^{(3)}L^{(2)}L^{(1)}A \\
 \end{split}
 $$
 
-### example [[LU decomposition without permutations]]
+### example LU decomposition without permutations
 
 $$
 \begin{split}
@@ -225,14 +225,14 @@ $$
 
 START
 Basic
- [[LU decomposition without permutations]]
+ LU decomposition without permutations
  - definition
  - [[time complexity]]
  - existence (with proof)
  - uniqueness
 
 Back: 
-## definition [[LU decomposition without permutations]]
+## definition LU decomposition without permutations
 A [[LU decomposition without permutations]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ such that the following is true
 $$
 A = LU
@@ -309,8 +309,8 @@ END
 
 
 
-## definition [[LU decomposition without permutations]]
-A [[LU decomposition without permutations]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ such that the following is true
+## definition LU decomposition without permutations
+A LU decomposition without permutations of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ such that the following is true
 $$
 A = LU
 $$
@@ -388,7 +388,7 @@ END
 
 START
 Basic
-[[LU decomposition without permutations]] without [[permutations]]: process with proofs
+LU decomposition without permutations without [[permutations]]: process with proofs
 Back: 
 ### reducing $A$ in a [[row echelon form]] by multiplying with [[frobenius matrix|frobenius matrices]]
 

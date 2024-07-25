@@ -1,20 +1,31 @@
-Any [[linear equation system]] can be represented using a [[matrix]] $A$ and a [[vector]] $b$
-![[matrix#Matrix Definition]]
 
-![[vector#vector Definition]]
-## Defintion [[linear equation system]]
+
+### linear equation system
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ and tvo [[vector]] $x \in \mathbb{R}^{m}$ and $b \in \mathbb{R}^{n}$
 $$
 \begin{split}
 Ax&=b  \\
 A_{(*,1)}x_1 + ...+ A_{(*,m)}x_m&=b  \\
-A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| \mathcal{J} \right|}} &= \mathbb{R}^{n \times m}  \\
-x \in \mathbb{R^{\left| \mathcal{J} \right|}}&= \mathbb{R}^{m}  \\
-b \in \mathbb{R^{\left| \mathcal{I} \right|}}&= \mathbb{R}^{n}   \\
 \end{split}
 $$
 - $n$ = number of equation
 - $m$ = number of unknown valiables
-## The solution set
+
+### solvig a linear equation system
+![[PLU decomposition#PLU decomposition]]
+- given the [[PLU decomposition]] auf $A$ auch that $PA=LU$
+
+$$
+\begin{split}
+P^{-1}LUx &= b \\
+\Rightarrow LUx &= Pb \\
+\Rightarrow Ly &= Pb \text{ with } y=Ux \\
+\end{split}
+$$
+1) solve $Ly = Pb$ for $y$ using the triangular shape of $L$
+2) solve $Ux=y$ for $x$ using the triangular shape of $U$
+
+### solution set of linear equation system
 
 The solution [[set]] $X$ is the [[set]] of all $x_k$ that satisy all equations
 $$
@@ -25,7 +36,7 @@ There are 3 possible situations
 2) No solution: $X=\emptyset$ 
 3) Infinite solutions: $|X|=\infty$ 
 
-## Consitency
+### consitency of linear equation system
 A [[linear equation system]] is concitent if at least one solution $x$ exists that satisfies all equations.
 $$
 \begin{split}
@@ -53,11 +64,9 @@ A_{(l,*)} \perp A_{(k,*)}
 \end{split}
 $$
 
-## Existence Theorem
-## given
+### existence of a solution
 
-![[rank#Definition]]
-### Theorem
+
 $$
 \begin{split}
 &Ax=b \\
@@ -89,8 +98,8 @@ $$
 &\begin{pmatrix}  A_{(l,*)} \\ b_l   \end{pmatrix} = \begin{pmatrix}  A_{(k,*)} \\ b_k   \end{pmatrix} \cdot c \\
 \end{split}
 $$
-## general uniqueness theorem
-### theorem
+### general uniqueness theorem
+
 $$
 \begin{split}
 &Ax=b \\
@@ -410,3 +419,42 @@ The [[linear equation system]] can't be unterdetermined $m > n$ since it would h
 Tags: mathematics linear_algebra
 <!--ID: 1696341992861-->
 END
+
+START
+Basic
+How to solve the [[linear equation system]] $Ax=b$ given the [[PLU decomposition]] auf $A$?
+
+Back: 
+### solvig a linear equation system
+- given the [[PLU decomposition]] auf $A$ auch that $PA=LU$
+$$
+\begin{split}
+P^{-1}LUx &= b \\
+\Rightarrow LUx &= Pb \\
+\Rightarrow Ly &= Pb \text{ with } y=Ux \\
+\end{split}
+$$
+1) solve $Ly = Pb$ for $y$ using the triangular shape of $L$
+2) solve $Ux=y$ for $x$ using the triangular shape of $U$
+____________________________
+### linear equation system
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ and tvo [[vector]] $x \in \mathbb{R}^{m}$ and $b \in \mathbb{R}^{n}$
+$$
+\begin{split}
+Ax&=b  \\
+A_{(*,1)}x_1 + ...+ A_{(*,m)}x_m&=b  \\
+\end{split}
+$$
+- $n$ = number of equation
+- $m$ = number of unknown valiables
+
+### PLU decomposition
+A [[PLU decomposition]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ and a [[permutation matrix]] $P$ such that the following is true
+$$
+PA = LU
+$$
+
+Tags: mathematics linear_algebra
+<!--ID: 1721926284917-->
+END
+

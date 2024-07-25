@@ -1,10 +1,9 @@
-## [[LU decomposition]] with [[permutations]]
-
-### Definition PLU decomposition ([[LU decomposition]] with [[permutations]])
-A [[PLU decomposition with permutations]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ and a [[permutation matrix]] $P$ such that the following is true
+### PLU decomposition
+A [[PLU decomposition]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ and a [[permutation matrix]] $P$ such that the following is true
 $$
 PA = LU
 $$
+# ----------------------
 
 ![[triangular matrix#normalized lower triangular matrix]]
 
@@ -15,10 +14,10 @@ $$
 ### existence and uniqueness
 every [[square matrix]] $A \in \mathbb{R}^{n \times n}$ has a [[LU decomposition]] with [[permutations]] but it's not unique
 
-### [[time complexity]] of the [[PLU decomposition with permutations]]
+### [[time complexity]] of the [[PLU decomposition]]
 - its $\in \mathcal{O}(n^3)$  
 
-### process [[PLU decomposition with permutations]]
+### process [[PLU decomposition]]
 #### given
 
 ![[triangular matrix#inverse matrix inverse of a normalized triangular matrix]]
@@ -78,7 +77,7 @@ $$
 
 START
 Basic
-[[PLU decomposition with permutations]]
+[[PLU decomposition]]
  - definition
  - [[time complexity]]
  - existence
@@ -86,7 +85,7 @@ Basic
 
 Back: 
 ### Definition PLU decomposition ([[LU decomposition]] with [[permutations]])
-A [[PLU decomposition with permutations]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ and a [[permutation matrix]] $P$ such that the following is true
+A [[PLU decomposition]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ and a [[permutation matrix]] $P$ such that the following is true
 $$
 PA = LU
 $$
@@ -138,10 +137,10 @@ END
 
 START
 Basic
-[[PLU decomposition with permutations]]
+[[PLU decomposition]]
 - process
 Back: 
-## process [[PLU decomposition with permutations]]
+## process [[PLU decomposition]]
 
 #### 1) reducing $A$ in a [[row echelon form]] by multiplying with [[permutation matrix|permutation matrices]] and [[frobenius matrix|frobenius matrices]]
 
@@ -184,7 +183,7 @@ $$
 
 
 ## Definition PLU decomposition ([[LU decomposition]] with [[permutations]])
-A [[PLU decomposition with permutations]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ and a [[permutation matrix]] $P$ such that the following is true
+A [[PLU decomposition]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ and a [[permutation matrix]] $P$ such that the following is true
 $$
 PA = LU
 $$

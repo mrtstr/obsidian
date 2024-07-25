@@ -4,7 +4,7 @@
 $$
 \kappa(A) = \left|\left|A^{-1}\right|\right| \cdot \left|\left|A\right|\right|
 $$
-- the [[condition of a matrix]] anwsers the question of how big the relative error of $x$ would be when $b$ is pertubed by an error vector $e$
+- the [[condition of a matrix]] anwsers the question of how big the relative error of $x$ would be when $b$ is pertubed by an error vector $e$ (or $A$ is pertubed)
 $$
 Ax=b + e
 $$
@@ -45,7 +45,7 @@ Back:
 $$
 \kappa(A) = \left|\left|A^{-1}\right|\right| \cdot \left|\left|A\right|\right|
 $$
-- the [[condition of a matrix]] anwsers the question of how big the relative error of $x$ would be when $b$ is pertubed by an error vector $e$
+- the [[condition of a matrix]] anwsers the question of how big the relative error of $x$ would be when $b$ is pertubed by an error vector $e$ (or $A$ is pertubed)
 $$
 Ax=b + e
 $$
@@ -230,7 +230,7 @@ $$
 $$
 \kappa(A) = \left|\left|A^{-1}\right|\right| \cdot \left|\left|A\right|\right|
 $$
-- the [[condition of a matrix]] anwsers the question of how big the relative error of $x$ would be when $b$ is pertubed by an error vector $e$
+- the [[condition of a matrix]] anwsers the question of how big the relative error of $x$ would be when $b$ is pertubed by an error vector $e$ (or $A$ is pertubed)
 $$
 Ax=b + e
 $$
@@ -321,7 +321,7 @@ $$
 $$
 \kappa(A) = \left|\left|A^{-1}\right|\right| \cdot \left|\left|A\right|\right|
 $$
-- the [[condition of a matrix]] anwsers the question of how big the relative error of $x$ would be when $b$ is pertubed by an error vector $e$
+- the [[condition of a matrix]] anwsers the question of how big the relative error of $x$ would be when $b$ is pertubed by an error vector $e$ (or $A$ is pertubed)
 $$
 Ax=b + e
 $$
