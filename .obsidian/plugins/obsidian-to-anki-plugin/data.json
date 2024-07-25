@@ -1505,7 +1505,7 @@
     "mathematics/basics/frobenius norm.md": "fead2cbed504721832e2de4bf0e68f84",
     "mathematics/basics/spectral norm.md": "bcfc5940c4452659168ccbd70ed73c54",
     "mathematics/basics/row sum norm.md": "2f4a9e10912cc628360582e35d20ebf5",
-    "mathematics/basics/column sum norm.md": "32e07d8a17fbd2eb9b4d91794d536950",
+    "mathematics/basics/column sum norm.md": "2e3889f16a1c4d70d26fec368df63bca",
     "mathematics/basics/matrix norms.md": "1e6548dbd7f827f640121366ec3c45aa",
     "mathematics/basics/banach space.md": "86c11b45f92487702746d7a2446a6817",
     "mathematics/basics/range.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1575,7 +1575,7 @@
     "mathematics/basics/linear equation system.md": "8bad67f9ff3ed0b497a693e577b9d581",
     "mathematics/basics/linear combinations.md": "1662cfec771e14ad8f158d3eebcfad01",
     "mathematics/basics/kernel.md": "492c4788cc0190ef0404ef506f374549",
-    "mathematics/basics/inverse matrix.md": "e3f1ad2f139b1a46b635e1e901c79820",
+    "mathematics/basics/inverse matrix.md": "5958183a00e2f6df1ed6fa5e7e61b80a",
     "mathematics/basics/integer.md": "bfeae022d0630defce1c43cd505f877e",
     "mathematics/basics/image.md": "a35f18ec861b8bccc5b855b0b1398d15",
     "mathematics/basics/identity matrix.md": "a8bb5da4c898c4dd92a5708603ab7781",
@@ -1663,7 +1663,8 @@
     "mathematics/numerical methods/condition.md": "f49c4cae97e294ee787666392c7775be",
     "mathematics/numerical methods/error anlysis.md": "149f1f07a463b72c421b139e28a9ff94",
     "mathematics/numerical methods/error round off.md": "cc7b0903bd9b1ce8ff9f177531660262",
-    "mathematics/numerical methods/error propagation.md": "2f4e582c8843c5f877d4ca5e60ed7138"
+    "mathematics/numerical methods/error propagation.md": "2f4e582c8843c5f877d4ca5e60ed7138",
+    "mathematics/numerical methods/condition of a matrix.md": "c4c5cfc9200dc2a22bff1189b141cffa"
   },
   "fields_dict": {
     "Basic": [

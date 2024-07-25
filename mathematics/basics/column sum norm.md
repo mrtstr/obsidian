@@ -24,6 +24,7 @@ $$
 \end{split}
 $$
 3) [[triangle inequality]]
+
 $$
 \begin{split}
 ||A + B||_{1\to1}
