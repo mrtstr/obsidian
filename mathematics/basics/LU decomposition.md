@@ -219,6 +219,79 @@ U = A^{(n)} = A^{(3)} &= L^{(3)}L^{(2)}L^{(1)}A
 $$
 
 
+$$
+\begin{split}
+A &= A^{(1)} = \begin{pmatrix}
+16  &\ -8 &\ 12 \\
+-8  &\ 8 &\ 4 \\
+12 &\ 4 &\ 35 \\  
+\end{pmatrix} \\
+A^{(2)} &= L^{(1)} A^{(1)} = 
+\begin{pmatrix}
+1  &\ 0 &\ 0 \\
+\frac{1}{2}  &\ 1 &\ 0 \\
+-\frac{3}{4} &\ 0 &\ 1 \\  
+\end{pmatrix} 
+\begin{pmatrix}
+16  &\ -8 &\ 12 \\
+-8  &\ 8 &\ 4 \\
+12 &\ 4 &\ 35 \\  
+\end{pmatrix} 
+=
+\begin{pmatrix}
+16  &\ -8 &\ 12 \\
+0  &\ 4 &\ 10 \\
+0 &\ 16 &\ 26 \\  
+\end{pmatrix} \\
+A^{(2)} &= L^{(2)} A^{(2)} = 
+\begin{pmatrix}
+1  &\ 0 &\ 0 \\
+0  &\ 1 &\ 0 \\
+0 &\ \frac{5}{2} &\ 1 \\  
+\end{pmatrix} 
+\begin{pmatrix}
+1  &\ 3 &\ -1 \\
+0  &\ 2 &\ 6 \\
+0 &\ 6 &\ 3 \\  
+\end{pmatrix} 
+=
+\begin{pmatrix}
+16  &\ -8 &\ 12 \\
+0  &\ 4 &\ 10 \\
+0 &\ 0 &\ 1 \\  
+\end{pmatrix} = U\\
+U &= L^{(2)}L^{(1)}A \\
+\Rightarrow A &= \left(L^{(2)}L^{(1)}\right)^{-1}U = \left(L^{(1)}\right)^{-1}\left(L^{(2)}\right)^{-1}U = LU \\
+L &= 
+\begin{pmatrix}
+1  &\ 0 &\ 0 \\
+-\frac{1}{2}  &\ 1 &\ 0 \\
+\frac{3}{4} &\ 0 &\ 1 \\  
+\end{pmatrix} 
+\begin{pmatrix}
+1  &\ 0 &\ 0 \\
+0  &\ 1 &\ 0 \\
+0 &\ -\frac{5}{2} &\ 1 \\  
+\end{pmatrix} 
+
+=\begin{pmatrix}
+1  &\ 0 &\ 0 \\
+-\frac{1}{2}  &\ 1 &\ 0 \\
+\frac{3}{4} &\ -\frac{5}{2} &\ 1 \\  
+\end{pmatrix} \\
+A &= 
+\begin{pmatrix}
+1  &\ 0 &\ 0 \\
+-\frac{1}{2}  &\ 1 &\ 0 \\
+\frac{3}{4} &\ -\frac{5}{2} &\ 1 \\  
+\end{pmatrix} 
+\begin{pmatrix}
+16  &\ -8 &\ 12 \\
+0  &\ 4 &\ 10 \\
+0 &\ 0 &\ 1 \\  
+\end{pmatrix}
+\end{split}
+$$
 
 
 # Anki
@@ -551,7 +624,7 @@ END
 
 START
 Basic
-[[LU decomposition without permutations]] without [[permutations]] of the following [[matrix]]
+[[LU decomposition]] of the following [[matrix]]
 $$
 
 A  = \begin{pmatrix}
@@ -816,4 +889,254 @@ A [[matrix]] $A$ is in [[row echelon form]] if all non-zero rows have a [[pivot]
 
 Tags: mathematics linear_algebra
 <!--ID: 1697283008845-->
+END
+
+
+START
+Basic
+[[LU decomposition]] of the following [[matrix]]
+$$
+
+A  = \begin{pmatrix}
+16  &\ -8 &\ 12 \\
+-8  &\ 8 &\ 4 \\
+12 &\ 4 &\ 35 \\  
+\end{pmatrix}
+
+$$
+
+Back: 
+
+$$
+\begin{split}
+A &= A^{(1)} = \begin{pmatrix}
+16  &\ -8 &\ 12 \\
+-8  &\ 8 &\ 4 \\
+12 &\ 4 &\ 35 \\  
+\end{pmatrix} \\
+A^{(2)} &= L^{(1)} A^{(1)} = 
+\begin{pmatrix}
+1  &\ 0 &\ 0 \\
+\frac{1}{2}  &\ 1 &\ 0 \\
+-\frac{3}{4} &\ 0 &\ 1 \\  
+\end{pmatrix} 
+\begin{pmatrix}
+16  &\ -8 &\ 12 \\
+-8  &\ 8 &\ 4 \\
+12 &\ 4 &\ 35 \\  
+\end{pmatrix} 
+=
+\begin{pmatrix}
+16  &\ -8 &\ 12 \\
+0  &\ 4 &\ 10 \\
+0 &\ 16 &\ 26 \\  
+\end{pmatrix} \\
+A^{(2)} &= L^{(2)} A^{(2)} = 
+\begin{pmatrix}
+1  &\ 0 &\ 0 \\
+0  &\ 1 &\ 0 \\
+0 &\ \frac{5}{2} &\ 1 \\  
+\end{pmatrix} 
+\begin{pmatrix}
+1  &\ 3 &\ -1 \\
+0  &\ 2 &\ 6 \\
+0 &\ 6 &\ 3 \\  
+\end{pmatrix} 
+=
+\begin{pmatrix}
+16  &\ -8 &\ 12 \\
+0  &\ 4 &\ 10 \\
+0 &\ 0 &\ 1 \\  
+\end{pmatrix} = U\\
+U &= L^{(2)}L^{(1)}A \\
+\Rightarrow A &= \left(L^{(2)}L^{(1)}\right)^{-1}U = \left(L^{(1)}\right)^{-1}\left(L^{(2)}\right)^{-1}U = LU \\
+L &= 
+\begin{pmatrix}
+1  &\ 0 &\ 0 \\
+-\frac{1}{2}  &\ 1 &\ 0 \\
+\frac{3}{4} &\ 0 &\ 1 \\  
+\end{pmatrix} 
+\begin{pmatrix}
+1  &\ 0 &\ 0 \\
+0  &\ 1 &\ 0 \\
+0 &\ -\frac{5}{2} &\ 1 \\  
+\end{pmatrix} 
+
+=\begin{pmatrix}
+1  &\ 0 &\ 0 \\
+-\frac{1}{2}  &\ 1 &\ 0 \\
+\frac{3}{4} &\ -\frac{5}{2} &\ 1 \\  
+\end{pmatrix} \\
+A &= 
+\begin{pmatrix}
+1  &\ 0 &\ 0 \\
+-\frac{1}{2}  &\ 1 &\ 0 \\
+\frac{3}{4} &\ -\frac{5}{2} &\ 1 \\  
+\end{pmatrix} 
+\begin{pmatrix}
+16  &\ -8 &\ 12 \\
+0  &\ 4 &\ 10 \\
+0 &\ 0 &\ 1 \\  
+\end{pmatrix}
+\end{split}
+$$
+
+
+____________________________________________________
+
+### reducing $A$ in a [[row echelon form]]
+
+1) For reach column  $j \in [1, ..., n]$ select the [[pivot]] element $a_{i,i}$ and construct a [[frobenius matrix]] $L_i$ that makes $a_{i,i}$ to a [[pivot]] element by making all values below $a_{i,i}$ to zero. This is possible when $a_{i,i} \neq 0$, otherwise the [[LU decomposition without permutations]] is not possible (see [[PLU decomposition with permutations]]). The result of this process will be the upper [[triangular matrix]] $U = L^{(n)}L^{(n-1)}...L^{(1)}A$
+2) [[matrix product|multiply]] and [[inverse matrix|invert]] the [[frobenius matrix|frobenius matrices]] to calculcate the lower normalized [[triangular matrix]] $L = \left(L^{(n)}L^{(n-1)}...L^{(1)}\right)^{-1}$. This is easy because of the properties of normalized [[triangular matrix]]
+
+$$
+\begin{split}
+A &= A^{(1)} = \begin{pmatrix}
+a^{(1)}_{(1:1)}         &\ a^{(1)}_{(1:2)} &\ a^{(1)}_{(1:3)} \\
+a^{(1)}_{(2:1)}         &\ a^{(1)}_{(2:2)} &\ a^{(1)}_{(2:3)} \\
+a^{(1)}_{(3:1)}         &\ a^{(1)}_{(3:2)} &\ a^{(1)}_{(3:3)} \\  
+\end{pmatrix} \\
+A^{(2)} &= L^{(1)} A^{(1)} = 
+\begin{pmatrix}
+1                              &\ 0         &\ 0 \\
+-\frac{a^{(1)}_{(2:1)}}{a^{(1)}_{(1:1)}}   &\ 1         &\ 0 \\
+-\frac{a^{(1)}_{(3:1)}}{a^{(1)}_{(1:1)}}   &\ 0         &\ 1  \\  
+\end{pmatrix} 
+\begin{pmatrix}
+a^{(1)}_{(1:1)}         &\ a^{(1)}_{(1:2)} &\ a^{(1)}_{(1:3)} \\
+a^{(1)}_{(2:1)}         &\ a^{(1)}_{(2:2)} &\ a^{(1)}_{(2:3)} \\
+a^{(1)}_{(3:1)}         &\ a^{(1)}_{(3:2)} &\ a^{(1)}_{(3:3)} \\  
+\end{pmatrix}
+=
+\begin{pmatrix}
+a^{(2)}_{(1:1)}  &\ a^{(2)}_{(1:2)} &\ a^{(2)}_{(1:3)} \\
+0                &\ a^{(2)}_{(2:2)} &\ a^{(2)}_{(2:3)} \\
+0                &\ a^{(2)}_{(3:2)} &\ a^{(2)}_{(3:3)} \\  
+\end{pmatrix} \\
+A^{(3)} &= L^{(2)} A^{(2)} = 
+\begin{pmatrix}
+1  &\ 0        &\ 0 \\
+0  &\ 1         &\ 0 \\
+0  &\ -\frac{a^{(2)}_{(3:2)}}{a^{(2)}_{(2:2)}}        &\ 1  \\  
+\end{pmatrix} 
+\begin{pmatrix}
+a^{(2)}_{(1:1)}  &\ a^{(2)}_{(1:2)} &\ a^{(2)}_{(1:3)} \\
+0                &\ a^{(2)}_{(2:2)} &\ a^{(2)}_{(2:3)} \\
+0                &\ a^{(2)}_{(3:2)} &\ a^{(2)}_{(3:3)} \\  
+\end{pmatrix} 
+=
+\begin{pmatrix}
+a^{(3)}_{(1:1)}  &\ a^{(3)}_{(1:2)} &\ a^{(3)}_{(1:3)} \\
+0                &\ a^{(3)}_{(2:2)} &\ a^{(3)}_{(2:3)} \\
+0                &\ 0               &\ a^{(3)}_{(3:3)} \\  
+\end{pmatrix}  \\
+U &= A^{(n)} = A^{(3)} = L^{(3)}L^{(2)}L^{(1)}A \\
+\Rightarrow L &= \left(L^{(3)}L^{(2)}L^{(1)}\right)^{-1} = 
+\begin{pmatrix}
+1         &\ 0&\ 0\\
+-l^{(1)}_{(2:1)}         &1 &\ 0 \\
+-l^{(1)}_{(3:1)}         &\ -l^{(2)}_{(3:1)}  &\ 1 \\  
+\end{pmatrix} \\
+\Rightarrow A &= LU  
+\end{split}
+$$
+
+
+
+### given
+#### [[inverse matrix|inverse]] of a normalized [[triangular matrix]]
+$$
+\begin{split}
+U &= \begin{pmatrix}
+1         &\ u_{(1:2)} &\ u_{(1:3)} \\
+0         &\ 1         &\ l_{(2:3)} \\
+0         &\ 0         &\ 1 \\  
+\end{pmatrix} \\
+U^{-1} &= \begin{pmatrix}
+1         &\ -u_{(1:2)} &\ -u_{(1:3)} \\
+0         &\ 1         &\ -u_{(2:3)} \\
+0         &\ 0         &\ 1 \\  
+\end{pmatrix} \\
+UU^{-1}=U^{-1}U &=\begin{pmatrix}
+1         &\ u_{(1:2)} &\ u_{(1:3)} \\
+0         &\ 1         &\ u_{(2:3)} \\
+0         &\ 0         &\ 1 \\  
+\end{pmatrix}
+\begin{pmatrix}
+1         &\ -u_{(1:2)} &\ -u_{(1:3)} \\
+0         &\ 1         &\ -u_{(2:3)} \\
+0         &\ 0         &\ 1 \\  
+\end{pmatrix} \\
+&= \begin{pmatrix}
+1         &\ u_{(1:2)}-u_{(1:2)} &\ u_{(1:3)}-u_{(1:3)} \\
+0         &\ 1         &\ u_{(2:3)}-u_{(2:3)} \\
+0         &\ 0         &\ 1 \\  
+\end{pmatrix}
+= \begin{pmatrix}
+1         &\ 0 &\ 0 \\
+0         &\ 1         &\ 0 \\
+0         &\ 0         &\ 1 \\  
+\end{pmatrix} \\
+\end{split}
+$$
+#### [[matrix product|multiplication]] of normalized [[triangular matrix]]
+$$
+\begin{split}
+U^{(1)} &= \begin{pmatrix}
+1         &\ u_{(1:2)}^{(1)} &\ u_{(1:3)}^{(1)} \\
+0         &\ 1         &\ u_{(2:3)}^{(1)} \\
+0         &\ 0         &\ 1 \\  
+\end{pmatrix} \\
+U^{(2)} &= \begin{pmatrix}
+1         &\ u_{(1:2)}^{(2)} &\ u_{(1:3)}^{(2)} \\
+0         &\ 1         &\ u_{(2:3)}^{(1)} \\
+0         &\ 0         &\ 1 \\  
+\end{pmatrix} \\
+U^{(1)}U^{(2)}=U^{(2)}U^{(1)} &=
+\begin{pmatrix}
+1         &\ u_{(1:2)}^{(1)}+u_{(1:2)}^{(2)} &\ u_{(1:3)}^{(1)}+u_{(1:3)}^{(2)} \\
+0         &\ 1         &\ u_{(2:3)}^{(1)}+u_{(2:3)}^{(2)} \\
+0         &\ 0         &\ 1 \\  
+\end{pmatrix}
+
+\end{split}
+$$
+#### Definition frobenius matrix
+A frobenius [[matrix]] is a special form of lower normalized [[triangular matrix]] with the additional propertie that only one column can have non-zero entries below the diagonal 
+
+examples
+$$
+\begin{split}
+F_1 = \begin{pmatrix}
+1         &\ 0         &\ 0 \\
+f_{(2:1)} &\ 1         &\ 0 \\
+f_{(3:1)} &\ 0 &\ 1 \\  
+\end{pmatrix}\\
+F_2 = \begin{pmatrix}
+1         &\ 0         &\ 0 \\
+0 &\ 1         &\ 0 \\
+0 &\ f_{(3:2)} &\ 1 \\  
+\end{pmatrix}
+\end{split}
+$$
+
+#### Definition [[pivot]]
+An elelemt $a_{ij}$ if m [[matrix]] $A$ is a [[pivot]] element if the following conditions are true
+1) $a_{ij} \neq 0$
+2) all elements below $a_{ij}$ are zero and all elements on the right of  $a_{ij}$ are zero $\forall k \geq i, l \leq j,(kl) \neq (ij) :a_{kl} = 0$
+$$
+\begin{split}
+A = \begin{pmatrix}
+a_{(1:1)} &\    a_{(1:2)}     &\ a_{(1:3)} \\
+zero         &\ p             &\ a_{(2:3)} \\
+zero		&\   zero         &\ a_{(3:3)} \\  
+\end{pmatrix}
+\end{split}
+$$
+#### Definition [[row echelon form]]
+A [[matrix]] $A$ is in [[row echelon form]] if all non-zero rows have a [[pivot]]
+
+
+Tags: mathematics linear_algebra
+<!--ID: 1722005536122-->
 END

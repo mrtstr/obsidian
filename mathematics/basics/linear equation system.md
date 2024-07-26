@@ -24,6 +24,76 @@ P^{-1}LUx &= b \\
 $$
 1) solve $Ly = Pb$ for $y$ using the triangular shape of $L$
 2) solve $Ux=y$ for $x$ using the triangular shape of $U$
+#### example
+- solve $Ax=b$ with $b=\left(\begin{matrix}2&3&4 \end{matrix}\right)^\top$
+
+$$
+\begin{split}
+A &=  \begin{pmatrix}
+1  &\ 3 &\ -1 \\
+2  &\ 8 &\ 4 \\
+-1 &\ 3 &\ 4 \\  
+\end{pmatrix} \\ &= \begin{pmatrix}
+1    &\ 0     &\ 0 \\
+2   &\ 1    &\ 0 \\
+-1    &\ 3     &\ 1  \\ 
+\end{pmatrix}
+\begin{pmatrix}
+1  &\ 3 &\ -1 \\
+0  &\ 2 &\ 6 \\
+0 &\ 0 &\ -15 \\  
+\end{pmatrix} \\
+\\  
+&= LU
+\end{split}
+$$
+
+$$
+\begin{split}
+Ly&= \begin{pmatrix}
+1    &\ 0     &\ 0 \\
+2   &\ 1    &\ 0 \\
+-1    &\ 3     &\ 1  \\ 
+\end{pmatrix}
+\begin{pmatrix}
+y_1     \\
+y_2    \\
+y_3     \\ 
+\end{pmatrix}
+=
+\begin{pmatrix}
+2     \\
+3    \\
+4     \\ 
+\end{pmatrix} \\
+
+\Rightarrow 2 &=  y_1 \\
+\Rightarrow 3 &=  2y_1 + y_2 \Rightarrow y_2=-1 \\
+\Rightarrow 4 &=  -y_1 +3 y_2 + y_3 \Rightarrow y_3=9 \\
+
+
+Ux&= \begin{pmatrix}
+1  &\ 3 &\ -1 \\
+0  &\ 2 &\ 6 \\
+0 &\ 0 &\ -15 \\  
+\end{pmatrix} 
+\begin{pmatrix}
+x_1     \\
+x_2    \\
+x_3     \\ 
+\end{pmatrix}
+=
+\begin{pmatrix}
+2     \\
+-1    \\
+9     \\ 
+\end{pmatrix} \\
+\Rightarrow 3 &=  -15 x_3 \Rightarrow x_3=-\frac{3}{5} \\
+\Rightarrow -1 &= 2 x_2 + 6  x_3  \Rightarrow x_3=\frac{13}{10} \\
+\Rightarrow 9 &= x_1 + 3 x_2 + 6  x_3  \Rightarrow x_3=-\frac{5}{2} \\
+\end{split}
+$$
+
 
 ### solution set of linear equation system
 
@@ -456,5 +526,116 @@ $$
 
 Tags: mathematics linear_algebra
 <!--ID: 1721926284917-->
+END
+
+START
+Basic
+- solve $Ax=b$ with $b=\left(\begin{matrix}2&3&4 \end{matrix}\right)^\top$
+
+$$
+\begin{split}
+A &=  \begin{pmatrix}
+1  &\ 3 &\ -1 \\
+2  &\ 8 &\ 4 \\
+-1 &\ 3 &\ 4 \\  
+\end{pmatrix} \\ &= \begin{pmatrix}
+1    &\ 0     &\ 0 \\
+2   &\ 1    &\ 0 \\
+-1    &\ 3     &\ 1  \\ 
+\end{pmatrix}
+\begin{pmatrix}
+1  &\ 3 &\ -1 \\
+0  &\ 2 &\ 6 \\
+0 &\ 0 &\ -15 \\  
+\end{pmatrix} \\
+\\  
+&= LU
+\end{split}
+$$
+
+
+
+
+Back: 
+
+$$
+\begin{split}
+Ly&= \begin{pmatrix}
+1    &\ 0     &\ 0 \\
+2   &\ 1    &\ 0 \\
+-1    &\ 3     &\ 1  \\ 
+\end{pmatrix}
+\begin{pmatrix}
+y_1     \\
+y_2    \\
+y_3     \\ 
+\end{pmatrix}
+=
+\begin{pmatrix}
+2     \\
+3    \\
+4     \\ 
+\end{pmatrix} \\
+
+\Rightarrow 2 &=  y_1 \\
+\Rightarrow 3 &=  2y_1 + y_2 \Rightarrow y_2=-1 \\
+\Rightarrow 4 &=  -y_1 +3 y_2 + y_3 \Rightarrow y_3=9 \\
+
+
+Ux&= \begin{pmatrix}
+1  &\ 3 &\ -1 \\
+0  &\ 2 &\ 6 \\
+0 &\ 0 &\ -15 \\  
+\end{pmatrix} 
+\begin{pmatrix}
+x_1     \\
+x_2    \\
+x_3     \\ 
+\end{pmatrix}
+=
+\begin{pmatrix}
+2     \\
+-1    \\
+9     \\ 
+\end{pmatrix} \\
+\Rightarrow 3 &=  -15 x_3 \Rightarrow x_3=-\frac{3}{5} \\
+\Rightarrow -1 &= 2 x_2 + 6  x_3  \Rightarrow x_3=\frac{13}{10} \\
+\Rightarrow 9 &= x_1 + 3 x_2 + 6  x_3  \Rightarrow x_3=-\frac{5}{2} \\
+\end{split}
+$$
+
+
+### solvig a linear equation system
+- given the [[PLU decomposition]] auf $A$ auch that $PA=LU$
+$$
+\begin{split}
+P^{-1}LUx &= b \\
+\Rightarrow LUx &= Pb \\
+\Rightarrow Ly &= Pb \text{ with } y=Ux \\
+\end{split}
+$$
+1) solve $Ly = Pb$ for $y$ using the triangular shape of $L$
+2) solve $Ux=y$ for $x$ using the triangular shape of $U$
+
+____________________________
+### linear equation system
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ and tvo [[vector]] $x \in \mathbb{R}^{m}$ and $b \in \mathbb{R}^{n}$
+$$
+\begin{split}
+Ax&=b  \\
+A_{(*,1)}x_1 + ...+ A_{(*,m)}x_m&=b  \\
+\end{split}
+$$
+- $n$ = number of equation
+- $m$ = number of unknown valiables
+
+### PLU decomposition
+A [[PLU decomposition]] of $A \in \mathbb{R}^{n \times n}$ if a factorization in a normalized lower [[triangular matrix]] $L$ and an upper [[triangular matrix]] $U$ and a [[permutation matrix]] $P$ such that the following is true
+$$
+PA = LU
+$$
+
+Tags: mathematics linear_algebra
+<!--ID: 1721998262798-->
 END
 
