@@ -247,7 +247,7 @@ A^{(2)} &= L^{(2)} A^{(2)} =
 \begin{pmatrix}
 1  &\ 0 &\ 0 \\
 0  &\ 1 &\ 0 \\
-0 &\ \frac{5}{2} &\ 1 \\  
+0 &\ -\frac{5}{2} &\ 1 \\  
 \end{pmatrix} 
 \begin{pmatrix}
 1  &\ 3 &\ -1 \\
@@ -271,19 +271,19 @@ L &=
 \begin{pmatrix}
 1  &\ 0 &\ 0 \\
 0  &\ 1 &\ 0 \\
-0 &\ -\frac{5}{2} &\ 1 \\  
+0 &\ \frac{5}{2} &\ 1 \\  
 \end{pmatrix} 
 
 =\begin{pmatrix}
 1  &\ 0 &\ 0 \\
 -\frac{1}{2}  &\ 1 &\ 0 \\
-\frac{3}{4} &\ -\frac{5}{2} &\ 1 \\  
+\frac{3}{4} &\ \frac{5}{2} &\ 1 \\  
 \end{pmatrix} \\
 A &= 
 \begin{pmatrix}
 1  &\ 0 &\ 0 \\
 -\frac{1}{2}  &\ 1 &\ 0 \\
-\frac{3}{4} &\ -\frac{5}{2} &\ 1 \\  
+\frac{3}{4} &\ \frac{5}{2} &\ 1 \\  
 \end{pmatrix} 
 \begin{pmatrix}
 16  &\ -8 &\ 12 \\
@@ -906,7 +906,6 @@ A  = \begin{pmatrix}
 $$
 
 Back: 
-
 $$
 \begin{split}
 A &= A^{(1)} = \begin{pmatrix}
@@ -935,7 +934,7 @@ A^{(2)} &= L^{(2)} A^{(2)} =
 \begin{pmatrix}
 1  &\ 0 &\ 0 \\
 0  &\ 1 &\ 0 \\
-0 &\ \frac{5}{2} &\ 1 \\  
+0 &\ -\frac{5}{2} &\ 1 \\  
 \end{pmatrix} 
 \begin{pmatrix}
 1  &\ 3 &\ -1 \\
@@ -959,19 +958,19 @@ L &=
 \begin{pmatrix}
 1  &\ 0 &\ 0 \\
 0  &\ 1 &\ 0 \\
-0 &\ -\frac{5}{2} &\ 1 \\  
+0 &\ \frac{5}{2} &\ 1 \\  
 \end{pmatrix} 
 
 =\begin{pmatrix}
 1  &\ 0 &\ 0 \\
 -\frac{1}{2}  &\ 1 &\ 0 \\
-\frac{3}{4} &\ -\frac{5}{2} &\ 1 \\  
+\frac{3}{4} &\ \frac{5}{2} &\ 1 \\  
 \end{pmatrix} \\
 A &= 
 \begin{pmatrix}
 1  &\ 0 &\ 0 \\
 -\frac{1}{2}  &\ 1 &\ 0 \\
-\frac{3}{4} &\ -\frac{5}{2} &\ 1 \\  
+\frac{3}{4} &\ \frac{5}{2} &\ 1 \\  
 \end{pmatrix} 
 \begin{pmatrix}
 16  &\ -8 &\ 12 \\
@@ -980,7 +979,6 @@ A &=
 \end{pmatrix}
 \end{split}
 $$
-
 
 ____________________________________________________
 

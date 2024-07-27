@@ -91,7 +91,7 @@ $$
 ||x||^2 = \langle x, x \rangle
 $$
 Tags: mathematics linear_algebra
-
+<!--ID: 1722105316921-->
 END
 
 
@@ -171,5 +171,5 @@ $$
 ||x||^2 = \langle x, x \rangle
 $$
 Tags: mathematics linear_algebra
-
+<!--ID: 1722105316925-->
 END

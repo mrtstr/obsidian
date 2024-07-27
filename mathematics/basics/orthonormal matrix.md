@@ -73,5 +73,5 @@ $$
 ||x||^2 = \langle x, x \rangle
 $$
 Tags: mathematics linear_algebra
-
+<!--ID: 1722105316918-->
 END

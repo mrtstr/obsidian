@@ -43,7 +43,7 @@ A &=
 &=
 \begin{pmatrix}
 1  &\ 0 &\ 0 \\
--\frac{1}{2}  &\ 1 &\ 0 \\
+\frac{1}{2}  &\ 1 &\ 0 \\
 \frac{3}{4} &\ -\frac{5}{2} &\ 1 \\  
 \end{pmatrix} 
 \begin{pmatrix}
@@ -69,7 +69,7 @@ G&= LD^{\frac{1}{2}}
 \begin{pmatrix}
 1  &\ 0 &\ 0 \\
 -\frac{1}{2}  &\ 1 &\ 0 \\
-\frac{3}{4} &\ -\frac{5}{2} &\ 1 \\  
+\frac{3}{4} &\ \frac{5}{2} &\ 1 \\  
 \end{pmatrix} 
 \begin{pmatrix}
 4  &\ 0 &\ 0 \\
@@ -243,7 +243,7 @@ A &=
 \begin{pmatrix}
 1  &\ 0 &\ 0 \\
 -\frac{1}{2}  &\ 1 &\ 0 \\
-\frac{3}{4} &\ -\frac{5}{2} &\ 1 \\  
+\frac{3}{4} &\ \frac{5}{2} &\ 1 \\  
 \end{pmatrix} 
 \begin{pmatrix}
 16  &\ -8 &\ 12 \\
@@ -258,6 +258,7 @@ Back:
 
 
 - since $A$ is a [[symmetric matrix]] it has to have unique decomposition that $A= LDL^\top$ and a unique [[cholesky decomposition]] that $A= GG^\top$
+
 $$
 \begin{split}
 A
@@ -273,7 +274,7 @@ G&= LD^{\frac{1}{2}}
 \begin{pmatrix}
 1  &\ 0 &\ 0 \\
 -\frac{1}{2}  &\ 1 &\ 0 \\
-\frac{3}{4} &\ -\frac{5}{2} &\ 1 \\  
+\frac{3}{4} &\ \frac{5}{2} &\ 1 \\  
 \end{pmatrix} 
 \begin{pmatrix}
 4  &\ 0 &\ 0 \\

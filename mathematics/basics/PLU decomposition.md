@@ -360,7 +360,7 @@ A = \left(\begin{matrix}
 $$
 Back: 
 
-![[PLU.png]]
+![[PLU 1.png]]
 
 ### process [[PLU decomposition]]
 
