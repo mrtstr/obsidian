@@ -80,6 +80,8 @@ A &= U\Sigma V^\top \\
 $$
 
 ### singular value decomposition: squared matrices
+- the column vectors of $U$ are [[orthonormal]] [[eigenvectors]] of $AA^\top$ and $\sigma_k^2$ are its [[eigenvalues]]
+- the column vectors of $V$ are [[orthonormal]] [[eigenvectors]] of $A^\top A$ and $\sigma_k^2$ are its [[eigenvalues]]
 
 $$
 \begin{split}
@@ -88,6 +90,8 @@ AA^\top &= U \Sigma \Sigma^\top U^\top \\
 A^\top A &= V \Sigma^\top \Sigma V^\top  \\
 \end{split}
 $$
+
+
 #### proof
 
 $$
@@ -104,7 +108,7 @@ A^\top A
 \end{split}
 $$
 
-
+TODO: add rest
 # --------------------
 ![[orthogonal matrix#orthogonal matrix]]
 
@@ -113,6 +117,7 @@ $$
 ![[diagonal matrix#properties of square diagonal matrices]]
 
 
+# anki
 
 START
 Basic
@@ -675,6 +680,8 @@ how does a [[singular value decomposition]] of a [[square matrix]] $AA^\top$ and
 
 Back: 
 ### singular value decomposition: squared matrices
+- the column vectors of $U$ are [[orthonormal]] [[eigenvectors]] of $AA^\top$ and $\sigma_k^2$ are its [[eigenvalues]]
+- the column vectors of $V$ are [[orthonormal]] [[eigenvectors]] of $A^\top A$ and $\sigma_k^2$ are its [[eigenvalues]]
 
 $$
 \begin{split}
@@ -683,6 +690,8 @@ AA^\top &= U \Sigma \Sigma^\top U^\top \\
 A^\top A &= V \Sigma^\top \Sigma V^\top  \\
 \end{split}
 $$
+
+
 #### proof
 
 $$
@@ -699,6 +708,7 @@ A^\top A
 \end{split}
 $$
 
+TODO: add rest
 
 ------------------------
 ### singular value decomposition

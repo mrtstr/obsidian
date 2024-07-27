@@ -46,6 +46,7 @@ $$
 #### proof
 - $A$ has an [[inverse matrix]] thus needs to have a full [[rank]]
 
+
 # ----------------------------
 
 ![[determinant#properties]]
