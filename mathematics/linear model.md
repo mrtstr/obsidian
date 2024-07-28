@@ -773,7 +773,7 @@ X
 \end{split}
 $$
 
-what are the [[least squares]] minimizing paramters $\gamma^*$ (as a function of the [[empirical variance]] and [[empirical covariance]])
+what are the [[linear least squares]] minimizing paramters $\gamma^*$ (as a function of the [[empirical variance]] and [[empirical covariance]])
 (no proof)
 Back: 
 

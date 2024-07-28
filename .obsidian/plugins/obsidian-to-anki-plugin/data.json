@@ -1502,7 +1502,7 @@
     "mathematics/basics/hilbert spaces.md": "1a8025bef6664b2e2a8a5270558d0ad0",
     "mathematics/basics/banach spaces.md": "ffb600c5e7a4b0b23bc19514d866a9f7",
     "mathematics/linear algebra/linear map.md": "792eedb116862ada2553141d9786a5f0",
-    "mathematics/basics/frobenius norm.md": "fead2cbed504721832e2de4bf0e68f84",
+    "mathematics/basics/frobenius norm.md": "d4ca94620c367801fa47c503ccb15bc4",
     "mathematics/basics/spectral norm.md": "bcfc5940c4452659168ccbd70ed73c54",
     "mathematics/basics/row sum norm.md": "2f4a9e10912cc628360582e35d20ebf5",
     "mathematics/basics/column sum norm.md": "2e3889f16a1c4d70d26fec368df63bca",
@@ -1546,7 +1546,7 @@
     "mathematics/basics/square matrix.md": "65031cbeaa199c8f3dc44f016817b21a",
     "mathematics/basics/spectral theorem.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/span.md": "9db3b7cf0d76a9ca002d3cf228388138",
-    "mathematics/basics/singular value decomposition.md": "7dc2849e97b0b0fe14a9a9c94f4233d4",
+    "mathematics/basics/singular value decomposition.md": "e398ee78fca9e685fd85fc52d979c404",
     "mathematics/basics/scalar product.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/row space.md": "96ab8d212c032cc4c96977290d6c2938",
     "mathematics/basics/row echelon form.md": "370603eb09a301755ca78b5d110af274",
@@ -1560,7 +1560,7 @@
     "mathematics/basics/permutation matrix.md": "3c2abbd7f83f2f88a1fd91d998ac03aa",
     "mathematics/basics/orthonormal.md": "4c80e6196aee5227752a4c93bcb61d4c",
     "mathematics/basics/orthogonal.md": "5e1e2478abb877b79d7ddc60d9047702",
-    "mathematics/basics/orthogonal matrix.md": "863dc362c55aa04a5d75a398f1c379cf",
+    "mathematics/basics/orthogonal matrix.md": "a6f785e49694e870094f53d088874e39",
     "mathematics/basics/nullspace.md": "863af071b4b1ff4aeee3a3aad73738e8",
     "mathematics/basics/nullity.md": "fac51e65d649c61be25e2eb00e83d6f1",
     "mathematics/basics/normalized.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1624,7 +1624,7 @@
     "mathematics/stochastics/confidence set.md": "a8aebe92a9951d71015eb52c0371fef0",
     "mathematics/stochastics/sprecial distributions/continuous/students t distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/lindeberg levy CLT.md": "cb556046be2282128db79093c814b161",
-    "mathematics/linear model.md": "8349a09ed268a4e2f91e8ed773388bee",
+    "mathematics/linear model.md": "3877a0d7dbce93bd76f42cb6fc968bb6",
     "mathematics/optimization/least squares.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical test.md": "a404bb07ae01a1b4533eafc0294647a9",
     "mathematics/stochastics/one sided gauss test.md": "db18367c4fa207d49dd00ea27f6650d4",
@@ -1668,7 +1668,9 @@
     "mathematics/basics/PLU decomposition.md": "dd321af0e750c087fec62c98acfb3e9d",
     "mathematics/numerical methods/low rank approximation.md": "19aa079ee905196ee9ffc2aa4fe59927",
     "mathematics/basics/orthonormal matrix.md": "830f05eb2d8ac50ee12c16ec6703f833",
-    "mathematics/basics/eigenvalues.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "mathematics/basics/eigenvalues.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/numerical methods/general least squares.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/numerical methods/linear least squares.md": "c4b35c4756cefc1d68f648d528505054"
   },
   "fields_dict": {
     "Basic": [

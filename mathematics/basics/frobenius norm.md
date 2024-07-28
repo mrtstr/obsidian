@@ -362,7 +362,7 @@ $$
 
 
 Tags: mathematics linear_algebra
-
+<!--ID: 1722180274146-->
 END
 
 
@@ -464,7 +464,7 @@ $$
 Tags: mathematics linear_algebra
 
 
-
+<!--ID: 1722180274148-->
 END
 
 
@@ -583,6 +583,7 @@ $$
 - the [[frobenius inner product]] induces the [[frobenius norm]]
 
 Tags: mathematics linear_algebra
+<!--ID: 1722180274151-->
 END
 
 
@@ -650,4 +651,5 @@ $$
 - the [[frobenius inner product]] induces the [[frobenius norm]]
 
 Tags: mathematics linear_algebra
+<!--ID: 1722180274154-->
 END
