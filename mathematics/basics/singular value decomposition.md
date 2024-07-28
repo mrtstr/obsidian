@@ -40,6 +40,8 @@ A
 \widehat U & \widetilde U
 \end{matrix}\right)^\top \\
 &= \widehat U \widehat\Sigma \widehat V^\top \\
+&= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
+&= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \sum_{k \in [r]} \sigma_k \widehat U_{(*,k)}  \widehat V_{(*,k)}^\top \\
 \end{split}
 $$
@@ -170,6 +172,8 @@ A
 \widehat U & \widetilde U
 \end{matrix}\right)^\top \\
 &= \widehat U \widehat\Sigma \widehat V^\top \\
+&= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
+&= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \sum_{k \in [r]} \sigma_k \widehat U_{(*,k)}  \widehat V_{(*,k)}^\top \\
 \end{split}
 $$
@@ -312,6 +316,8 @@ A
 \widehat U & \widetilde U
 \end{matrix}\right)^\top \\
 &= \widehat U \widehat\Sigma \widehat V^\top \\
+&= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
+&= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \sum_{k \in [r]} \sigma_k \widehat U_{(*,k)}  \widehat V_{(*,k)}^\top \\
 \end{split}
 $$
@@ -371,6 +377,8 @@ A
 \widehat U & \widetilde U
 \end{matrix}\right)^\top \\
 &= \widehat U \widehat\Sigma \widehat V^\top \\
+&= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
+&= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \sum_{k \in [r]} \sigma_k \widehat U_{(*,k)}  \widehat V_{(*,k)}^\top \\
 \end{split}
 $$
@@ -516,10 +524,11 @@ A
 \widehat U & \widetilde U
 \end{matrix}\right)^\top \\
 &= \widehat U \widehat\Sigma \widehat V^\top \\
+&= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
+&= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \sum_{k \in [r]} \sigma_k \widehat U_{(*,k)}  \widehat V_{(*,k)}^\top \\
 \end{split}
 $$
-
 
 ### orthogonal matrix
 - a [[orthogonal matrix]] is a [[matrix]] $Q \in \mathbb{R}^{n \times n}$ with a [[transpose]] that is equal to its [[inverse matrix]]  
@@ -645,6 +654,8 @@ A
 \widehat U & \widetilde U
 \end{matrix}\right)^\top \\
 &= \widehat U \widehat\Sigma \widehat V^\top \\
+&= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
+&= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \sum_{k \in [r]} \sigma_k \widehat U_{(*,k)}  \widehat V_{(*,k)}^\top \\
 \end{split}
 $$
@@ -677,6 +688,7 @@ END
 START
 Basic
 how does a [[singular value decomposition]] of a [[square matrix]] $AA^\top$ and $A^\top A$ look like? 
+how can $\sigma_k$ be interpreted?
 
 Back: 
 ### singular value decomposition: squared matrices
@@ -753,6 +765,8 @@ A
 \widehat U & \widetilde U
 \end{matrix}\right)^\top \\
 &= \widehat U \widehat\Sigma \widehat V^\top \\
+&= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
+&= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \sum_{k \in [r]} \sigma_k \widehat U_{(*,k)}  \widehat V_{(*,k)}^\top \\
 \end{split}
 $$

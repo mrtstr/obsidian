@@ -20,7 +20,7 @@ $$
 $$
 \begin{split}
 ||A-A_k||_F &= \sqrt{\sigma^2_{k+1}+ ... + \sigma^2_{\max\{n,m\}}} \\
-||A-A_k||_2 &= \sigma^2_{k+1}
+||A-A_k||_2 &= \sigma_{k+1}
 \end{split}
 $$
 
@@ -62,7 +62,7 @@ $$
 $$
 \begin{split}
 ||A-A_k||_F &= \sqrt{\sigma^2_{k+1}+ ... + \sigma^2_{\max\{n,m\}}} \\
-||A-A_k||_2 &= \sigma^2_{k+1}
+||A-A_k||_2 &= \sigma_{k+1}
 \end{split}
 $$
 
@@ -127,6 +127,8 @@ A
 \widehat U & \widetilde U
 \end{matrix}\right)^\top \\
 &= \widehat U \widehat\Sigma \widehat V^\top \\
+&= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
+&= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \sum_{k \in [r]} \sigma_k \widehat U_{(*,k)}  \widehat V_{(*,k)}^\top \\
 \end{split}
 $$

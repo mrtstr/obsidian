@@ -36,6 +36,74 @@ $$
 \end{split}
 $$
 
+### [[frobenius norm]] of the [[identity matrix]]
+- given $I_n  \in \mathbb{R}^{n\times n}$
+
+$$
+||I_n||_F = \sqrt{n}
+$$
+
+$$
+\begin{split}
+||I_n||_F
+&= \sqrt{\langle I_n, I_n \rangle} \\
+&= \sqrt{trace(I_n^\top I_n)} \\
+&= \sqrt{trace(I_n)} \\
+&= \sqrt{n} \\
+\end{split}
+$$
+
+### [[frobenius norm]] of a [[orthogonal matrix]]
+- given the [[orthogonal matrix]] $Q  \in \mathbb{R}^{n\times m}$
+
+$$
+||Q|_F = \sqrt{n}
+$$
+
+$$
+\begin{split}
+||Q||_F
+&= \sqrt{\langle Q, Q \rangle} \\
+&= \sqrt{trace(Q^\top Q)} \\
+&= \sqrt{trace(I_n)} \\
+&= \sqrt{m} \\
+\end{split}
+$$
+
+### multiplication with a [[orthogonal matrix]] is neutral for the [[frobenius norm]] 
+- given the [[matrix]] $A \in \mathbb{R}^{n \times m}$ and the [[orthogonal matrix]] $Q_n  \in \mathbb{R}^{n\times n}$ and $Q_m  \in \mathbb{R}^{m\times m}$
+
+
+$$
+||A|_F = ||Q_1 A|_F = || AQ_2|_F  = || Q_1AQ_2|_F
+$$
+$$
+\begin{split}
+||Q_n A|_F
+&= \sqrt{\langle Q_n A, Q_n A \rangle} \\
+&= \sqrt{trace\left((Q_n A)^\top Q_n A\right)} \\
+&= \sqrt{trace\left( A^\top Q_n^\top Q_n A\right)} \\
+&= \sqrt{trace\left( A^\top  A\right)} \\
+&= \sqrt{\langle  A,  A \rangle} \\
+&= ||A|_F \\
+\end{split}
+$$
+
+$$
+\begin{split}
+|| AQ_m||_F
+&= || (AQ_m)^\top||_F \\
+&= || Q_m^\top A^\top||_F \\
+&= \sqrt{\langle Q_m^\top A^\top, Q_m^\top A^\top\rangle} \\
+&= \sqrt{trace\left((Q_m^\top A^\top)^\top Q_m^\top A^\top\right)} \\
+&= \sqrt{trace\left(  A Q_m Q_m^\top A^\top\right)} \\
+&= \sqrt{trace\left( A  A^\top\right)} \\
+&= \sqrt{\langle  A^\top,  A^\top \rangle} \\
+&= ||A^\top||_F \\
+&= ||A|_F \\
+\end{split}
+$$
+
 
 # ----------------
 
@@ -190,4 +258,310 @@ $$
 
 Tags: mathematics linear_algebra
 <!--ID: 1715530896393-->
+END
+
+
+START
+Basic
+[[frobenius norm]] of the [[identity matrix]]
+Back: 
+### [[frobenius norm]] of the [[identity matrix]]
+- given $I_n  \in \mathbb{R}^{n\times n}$
+
+$$
+||I_n||_F = \sqrt{n}
+$$
+
+$$
+\begin{split}
+||I_n||_F
+&= \sqrt{\langle I_n, I_n \rangle} \\
+&= \sqrt{trace(I_n^\top I_n)} \\
+&= \sqrt{trace(I_n)} \\
+&= \sqrt{\min\{n, m\}} \\
+\end{split}
+$$
+
+
+_________________________
+
+### trace
+- given a [[square matrix]] $A \in \mathbb{R}^{n \times n}$
+- the [[trace]] of $A$ is defined as the [[addition|sum]] of the main diagonal
+$$
+\mathrm{trace}(A) = \sum_{i \in [n]} a_{ii}
+$$
+
+### frobenius norm
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ 
+- the [[frobenius norm]] $||\cdot||_F$ is defined as follows
+
+$$
+||A||_F = \sqrt{\sum_{i \in [n]}\sum_{j \in [m]} |a_{ij}|^2}
+$$
+- the [[frobenius norm]] is not a [[operator norm]] but it is induced by the [[frobenius inner product]] $\langle A, B\rangle_F = trace(A^\top B)$
+$$
+||A||_F = \sqrt{\langle A, A\rangle_F} = \sqrt{trace(A^\top A)} 
+$$
+
+### norm
+- generalization of the concept of **length of a [[vector]]**
+- let $V$ be a [[vector space]]
+- the [[function]] $||\:.||: V \rightarrow \mathbb{R^+}$ is a [[norm]] is it satisfies the following conditions
+1) [[positive definite]]
+$$
+||x||=0 \Leftrightarrow x = 0
+$$
+
+2) absolutely [[homogeneous]]
+$$
+\forall x \in V, \lambda \in \mathbb{K}: ||\lambda \cdot x|| = |\lambda| \cdot ||x||
+$$
+3) [[triangle inequality]]
+$$
+\forall v, w \in V: ||v + w|| \leq ||v|| + ||w||
+$$
+
+
+### frobenius inner product
+- given [[matrix]] $A, B \in \mathbb{R}^{n \times m}$
+- the [[frobenius inner product]] is defined as follows
+$$
+\langle A, B\rangle_F = \sum_{i \in [n]} \sum_{j \in [m]} a_{ij} b_{ij} 
+$$
+- the [[frobenius inner product]] can be expressed as the [[trace]] of the [[matrix product]]
+$$
+\langle A, B\rangle_F = \mathrm{trace}\left(A^\top B\right) = \mathrm{trace}\left(A B^\top\right)
+$$
+- the [[frobenius inner product]] induces the [[frobenius norm]]
+
+
+Tags: mathematics linear_algebra
+
+
+
+END
+
+
+
+
+START
+Basic
+[[frobenius norm]] of a [[orthogonal matrix]] $Q  \in \mathbb{R}^{n\times m}$
+Back: 
+### [[frobenius norm]] of a [[orthogonal matrix]]
+- given the [[orthogonal matrix]] $Q  \in \mathbb{R}^{n\times m}$
+
+$$
+||Q|_F = \sqrt{n}
+$$
+
+$$
+\begin{split}
+||Q||_F
+&= \sqrt{\langle Q, Q \rangle} \\
+&= \sqrt{trace(Q^\top Q)} \\
+&= \sqrt{trace(I_n)} \\
+&= \sqrt{m} \\
+\end{split}
+$$
+
+_________________________
+
+### [[frobenius norm]] of the [[identity matrix]]
+- given $I_n  \in \mathbb{R}^{n\times n}$
+
+$$
+||I_n||_F = \sqrt{n}
+$$
+
+$$
+\begin{split}
+||I_n||_F
+&= \sqrt{\langle I_n, I_n \rangle} \\
+&= \sqrt{trace(I_n^\top I_n)} \\
+&= \sqrt{trace(I_n)} \\
+&= \sqrt{\min\{n, m\}} \\
+\end{split}
+$$
+
+
+
+### trace
+- given a [[square matrix]] $A \in \mathbb{R}^{n \times n}$
+- the [[trace]] of $A$ is defined as the [[addition|sum]] of the main diagonal
+$$
+\mathrm{trace}(A) = \sum_{i \in [n]} a_{ii}
+$$
+
+### frobenius norm
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ 
+- the [[frobenius norm]] $||\cdot||_F$ is defined as follows
+
+$$
+||A||_F = \sqrt{\sum_{i \in [n]}\sum_{j \in [m]} |a_{ij}|^2}
+$$
+- the [[frobenius norm]] is not a [[operator norm]] but it is induced by the [[frobenius inner product]] $\langle A, B\rangle_F = trace(A^\top B)$
+$$
+||A||_F = \sqrt{\langle A, A\rangle_F} = \sqrt{trace(A^\top A)} 
+$$
+
+### norm
+- generalization of the concept of **length of a [[vector]]**
+- let $V$ be a [[vector space]]
+- the [[function]] $||\:.||: V \rightarrow \mathbb{R^+}$ is a [[norm]] is it satisfies the following conditions
+1) [[positive definite]]
+$$
+||x||=0 \Leftrightarrow x = 0
+$$
+
+2) absolutely [[homogeneous]]
+$$
+\forall x \in V, \lambda \in \mathbb{K}: ||\lambda \cdot x|| = |\lambda| \cdot ||x||
+$$
+3) [[triangle inequality]]
+$$
+\forall v, w \in V: ||v + w|| \leq ||v|| + ||w||
+$$
+
+
+### frobenius inner product
+- given [[matrix]] $A, B \in \mathbb{R}^{n \times m}$
+- the [[frobenius inner product]] is defined as follows
+$$
+\langle A, B\rangle_F = \sum_{i \in [n]} \sum_{j \in [m]} a_{ij} b_{ij} 
+$$
+- the [[frobenius inner product]] can be expressed as the [[trace]] of the [[matrix product]]
+$$
+\langle A, B\rangle_F = \mathrm{trace}\left(A^\top B\right) = \mathrm{trace}\left(A B^\top\right)
+$$
+- the [[frobenius inner product]] induces the [[frobenius norm]]
+
+
+Tags: mathematics linear_algebra
+
+
+
+END
+
+
+
+START
+Basic
+- given the [[matrix]] $A \in \mathbb{R}^{n \times m}$ and the [[orthogonal matrix]] $Q_n  \in \mathbb{R}^{n\times n}$ and $Q_m  \in \mathbb{R}^{m\times m}$
+- how does the [[frobenius norm]] of $||A|_F$ change when multiping with the [[orthogonal matrix]] ($||A|_F$ $, ||Q_1 A|_F$, $|| AQ_2|_F$, $|| Q_1AQ_2|_F$)
+Back: 
+
+### multiplication with a [[orthogonal matrix]] is neutral for the [[frobenius norm]] 
+- given the [[matrix]] $A \in \mathbb{R}^{n \times m}$ and the [[orthogonal matrix]] $Q_n  \in \mathbb{R}^{n\times n}$ and $Q_m  \in \mathbb{R}^{m\times m}$
+
+
+$$
+||A|_F = ||Q_1 A|_F = || AQ_2|_F  = || Q_1AQ_2|_F
+$$
+$$
+\begin{split}
+||Q_n A|_F
+&= \sqrt{\langle Q_n A, Q_n A \rangle} \\
+&= \sqrt{trace\left((Q_n A)^\top Q_n A\right)} \\
+&= \sqrt{trace\left( A^\top Q_n^\top Q_n A\right)} \\
+&= \sqrt{trace\left( A^\top  A\right)} \\
+&= \sqrt{\langle  A,  A \rangle} \\
+&= ||A|_F \\
+\end{split}
+$$
+
+$$
+\begin{split}
+|| AQ_m||_F
+&= || (AQ_m)^\top||_F \\
+&= || Q_m^\top A^\top||_F \\
+&= \sqrt{\langle Q_m^\top A^\top, Q_m^\top A^\top\rangle} \\
+&= \sqrt{trace\left((Q_m^\top A^\top)^\top Q_m^\top A^\top\right)} \\
+&= \sqrt{trace\left(  A Q_m Q_m^\top A^\top\right)} \\
+&= \sqrt{trace\left( A  A^\top\right)} \\
+&= \sqrt{\langle  A^\top,  A^\top \rangle} \\
+&= ||A^\top||_F \\
+&= ||A|_F \\
+\end{split}
+$$
+
+
+
+_________________________
+
+### [[frobenius norm]] of the [[identity matrix]]
+- given $I_n  \in \mathbb{R}^{n\times n}$
+
+$$
+||I_n||_F = \sqrt{n}
+$$
+
+$$
+\begin{split}
+||I_n||_F
+&= \sqrt{\langle I_n, I_n \rangle} \\
+&= \sqrt{trace(I_n^\top I_n)} \\
+&= \sqrt{trace(I_n)} \\
+&= \sqrt{\min\{n, m\}} \\
+\end{split}
+$$
+
+
+
+### trace
+- given a [[square matrix]] $A \in \mathbb{R}^{n \times n}$
+- the [[trace]] of $A$ is defined as the [[addition|sum]] of the main diagonal
+$$
+\mathrm{trace}(A) = \sum_{i \in [n]} a_{ii}
+$$
+
+### frobenius norm
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ 
+- the [[frobenius norm]] $||\cdot||_F$ is defined as follows
+
+$$
+||A||_F = \sqrt{\sum_{i \in [n]}\sum_{j \in [m]} |a_{ij}|^2}
+$$
+- the [[frobenius norm]] is not a [[operator norm]] but it is induced by the [[frobenius inner product]] $\langle A, B\rangle_F = trace(A^\top B)$
+$$
+||A||_F = \sqrt{\langle A, A\rangle_F} = \sqrt{trace(A^\top A)} 
+$$
+
+### norm
+- generalization of the concept of **length of a [[vector]]**
+- let $V$ be a [[vector space]]
+- the [[function]] $||\:.||: V \rightarrow \mathbb{R^+}$ is a [[norm]] is it satisfies the following conditions
+1) [[positive definite]]
+$$
+||x||=0 \Leftrightarrow x = 0
+$$
+
+2) absolutely [[homogeneous]]
+$$
+\forall x \in V, \lambda \in \mathbb{K}: ||\lambda \cdot x|| = |\lambda| \cdot ||x||
+$$
+3) [[triangle inequality]]
+$$
+\forall v, w \in V: ||v + w|| \leq ||v|| + ||w||
+$$
+
+
+### frobenius inner product
+- given [[matrix]] $A, B \in \mathbb{R}^{n \times m}$
+- the [[frobenius inner product]] is defined as follows
+$$
+\langle A, B\rangle_F = \sum_{i \in [n]} \sum_{j \in [m]} a_{ij} b_{ij} 
+$$
+- the [[frobenius inner product]] can be expressed as the [[trace]] of the [[matrix product]]
+$$
+\langle A, B\rangle_F = \mathrm{trace}\left(A^\top B\right) = \mathrm{trace}\left(A B^\top\right)
+$$
+- the [[frobenius inner product]] induces the [[frobenius norm]]
+
+
+Tags: mathematics linear_algebra
+
+
+
 END

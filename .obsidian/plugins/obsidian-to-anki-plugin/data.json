@@ -1546,7 +1546,7 @@
     "mathematics/basics/square matrix.md": "65031cbeaa199c8f3dc44f016817b21a",
     "mathematics/basics/spectral theorem.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/span.md": "9db3b7cf0d76a9ca002d3cf228388138",
-    "mathematics/basics/singular value decomposition.md": "a314d90f6c02472ba8abe9d63e983d58",
+    "mathematics/basics/singular value decomposition.md": "7dc2849e97b0b0fe14a9a9c94f4233d4",
     "mathematics/basics/scalar product.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/row space.md": "96ab8d212c032cc4c96977290d6c2938",
     "mathematics/basics/row echelon form.md": "370603eb09a301755ca78b5d110af274",
@@ -1666,7 +1666,7 @@
     "mathematics/numerical methods/error propagation.md": "2f4e582c8843c5f877d4ca5e60ed7138",
     "mathematics/numerical methods/condition of a matrix.md": "bf2b81e989fccf52a561b663a6ff63e7",
     "mathematics/basics/PLU decomposition.md": "dd321af0e750c087fec62c98acfb3e9d",
-    "mathematics/numerical methods/low rank approximation.md": "ec296a06dfab6cbc362cc80aa5aeeee9",
+    "mathematics/numerical methods/low rank approximation.md": "19aa079ee905196ee9ffc2aa4fe59927",
     "mathematics/basics/orthonormal matrix.md": "830f05eb2d8ac50ee12c16ec6703f833",
     "mathematics/basics/eigenvalues.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
