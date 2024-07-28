@@ -113,7 +113,7 @@ $$
 $$
 ![[norm#euclidian norm ($l 2$)|euclidian norm]]
 
-### frobenius norm and the 
+### frobenius norm and the spectral norm
 - given a [[matrix]] $A\in \mathbb{R}^{n \times m}$
 - the [[frobenius norm]] of $||A||_F$ is greater or equal than the [[spectral norm]] $||A||_{2\to2}=||A||_{2}$ 
 
@@ -123,7 +123,8 @@ $$
 #### proof
 $$
 \begin{split}
-&||A||_F \geq ||A||_2 \\
+||Ax||_2^2
+\geq ||A||_2 \\
 \Leftrightarrow&||A||_F^2 \geq ||A||_2^2 \\
 \end{split}
 $$
