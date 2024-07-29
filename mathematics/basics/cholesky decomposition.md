@@ -1,12 +1,12 @@
-## definition [[cholesky decomposition]]
 
+### cholesky decomposition
 Decompostion of a [[square matrix|square]] [[symmetric matrix|symmetric]] [[matrix]] $A$ in the [[matrix product]] of a lower [[triangular matrix]] $L$ and its [[transpose]].
 
 $$
 A = LL^T
 $$
 
-### existence [[cholesky decomposition]]
+### existence cholesky decomposition
 When $A$ is a [[LU decomposition|LU decomposition]] and is a [[symmetric matrix]] it also has a [[cholesky decomposition]]
 
 $$

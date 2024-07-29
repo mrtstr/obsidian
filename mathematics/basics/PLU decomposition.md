@@ -362,6 +362,8 @@ Back:
 
 ![[PLU 1.png]]
 
+_______________________
+
 ### process [[PLU decomposition]]
 
 #### 1) reducing $A$ in a [[row echelon form]] by multiplying with [[permutation matrix|permutation matrices]] and [[frobenius matrix|frobenius matrices]]

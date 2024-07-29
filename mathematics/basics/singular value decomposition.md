@@ -117,6 +117,7 @@ TODO: add rest
 - given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with [[rank]] $r$ and a [[singular value decomposition]] $A = U\Sigma V^\top$ with [[orthonormal]] [[matrix]] $U\in\mathbb{R}^{n\times r}$ and [[orthonormal]] [[matrix]] $U\in\mathbb{R}^{m\times r}$ and a [[diagonal matrix]] $\Sigma \in \mathbb{R}^{r \times r}$ 
 
 - the [[frobenius norm]] of $A$
+
 $$
 ||A||_F = ||\Sigma||_F = \sqrt{\sum_{k \in [r]} \sigma^2_k}
 $$
@@ -129,15 +130,36 @@ $$
 &= \sqrt{\sum_{k \in [r]} \sigma^2_k} \\
 \end{split}
 $$
+
 ![[frobenius norm#multiplication with a orthogonal matrix is neutral for the frobenius norm]]
 
 ### singular value decomposition and spectral norm
 - given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with [[rank]] $r$ and a [[singular value decomposition]] $A = U\Sigma V^\top$ with [[orthonormal]] [[matrix]] $U\in\mathbb{R}^{n\times r}$ and [[orthonormal]] [[matrix]] $U\in\mathbb{R}^{m\times r}$ and a [[diagonal matrix]] $\Sigma \in \mathbb{R}^{r \times r}$ 
 - the [[spectral norm]] of $A$ can be expressed as follows
 
+$$
+\begin{split}
+||A||_{2\rightarrow 2} 
+&= \sup_{x\neq 0} \frac{||Ax||_2}{||x||_2} \\
+&= \sqrt{\sigma_{\max}(A^\top A)} \\
+&= \sqrt{\sigma_1^2} = \sigma_1 \\
+\end{split}
+$$
 
 $$
-||A||_{2\rightarrow 2} =  \sup_{x\neq 0} \frac{||Ax||_2}{||x||_2} = \sqrt{\sigma_{\max}(A^\top A)} = \sqrt{\sigma_1^2} = \sigma_1
+\begin{split}
+||A^{-1}||_{2\rightarrow 2} 
+&= \sup_{x\neq 0} \frac{||A^{-1}x||_2}{||x||_2} \\
+&= \sqrt{\sigma_{\max}\left(\left(A^\top\right)^{-1} A^{-1}\right)} \\
+&= \sqrt{\sigma_{\max}\left(\left(\left( U\Sigma V^\top\right)^\top\right)^{-1} \left( U\Sigma V^\top\right)^{-1}\right)} \\
+&= \sqrt{\sigma_{\max}\left(U^{-\top}\Sigma^{-1} V^{-1}  V^{-\top} \Sigma^{-1} U^{-1}\right)} \\
+&= \sqrt{\sigma_{\max}\left(U\Sigma^{-1} V^\top  V\Sigma^{-1} U^\top\right)} \\
+&= \sqrt{\sigma_{\max}\left(U\Sigma^{-1} \Sigma^{-1} U^\top\right)} \\
+&= \sqrt{\sigma_{\max}\left(U^\top U\Sigma^{-1} \Sigma^{-1} \right)} \\
+&= \sqrt{\sigma_{\max}\left(\Sigma^{-1} \Sigma^{-1} \right)} \\
+&= \sqrt{\sigma_{\max}\left(diag\left(\frac{1}{\sigma_1^2}, ..., \frac{1}{\sigma_r^2}\right) \right)} \\
+&= \sqrt{\frac{1}{\sigma_r^2}} = \frac{1}{\sigma_r} \\
+\end{split}
 $$
 
 # --------------------
@@ -1044,3 +1066,101 @@ $$
 Tags: mathematics linear_algebra
 <!--ID: 1722180274142-->
 END
+
+START
+Basic
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with [[rank]] $r$ and a [[singular value decomposition]] $A = U\Sigma V^\top$ with [[orthonormal]] [[matrix]] $U\in\mathbb{R}^{n\times r}$ and [[orthonormal]] [[matrix]] $U\in\mathbb{R}^{m\times r}$ and a [[diagonal matrix]] $\Sigma \in \mathbb{R}^{r \times r}$ 
+- what is the [[spectral norm]] of $A^{-1}$?
+Back: 
+### singular value decomposition and spectral norm
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with [[rank]] $r$ and a [[singular value decomposition]] $A = U\Sigma V^\top$ with [[orthonormal]] [[matrix]] $U\in\mathbb{R}^{n\times r}$ and [[orthonormal]] [[matrix]] $U\in\mathbb{R}^{m\times r}$ and a [[diagonal matrix]] $\Sigma \in \mathbb{R}^{r \times r}$ 
+- the [[spectral norm]] of $A$ can be expressed as follows
+
+
+$$
+||A||_{2\rightarrow 2} =  \sup_{x\neq 0} \frac{||Ax||_2}{||x||_2} = \sqrt{\sigma_{\max}(A^\top A)} = \sqrt{\sigma_1^2} = \sigma_1
+$$
+
+
+$$
+\begin{split}
+||A^{-1}||_{2\rightarrow 2} 
+&= \sup_{x\neq 0} \frac{||A^{-1}x||_2}{||x||_2} \\
+&= \sqrt{\sigma_{\max}\left(\left(A^\top\right)^{-1} A^{-1}\right)} \\
+&= \sqrt{\sigma_{\max}\left(\left(\left( U\Sigma V^\top\right)^\top\right)^{-1} \left( U\Sigma V^\top\right)^{-1}\right)} \\
+&= \sqrt{\sigma_{\max}\left(U^{-\top}\Sigma^{-1} V^{-1}  V^{-\top} \Sigma^{-1} U^{-1}\right)} \\
+&= \sqrt{\sigma_{\max}\left(U\Sigma^{-1} V^\top  V\Sigma^{-1} U^\top\right)} \\
+&= \sqrt{\sigma_{\max}\left(U\Sigma^{-1} \Sigma^{-1} U^\top\right)} \\
+&= \sqrt{\sigma_{\max}\left(U^\top U\Sigma^{-1} \Sigma^{-1} \right)} \\
+&= \sqrt{\sigma_{\max}\left(\Sigma^{-1} \Sigma^{-1} \right)} \\
+&= \sqrt{\sigma_{\max}\left(diag\left(\frac{1}{\sigma_1^2}, ..., \frac{1}{\sigma_r^2}\right) \right)} \\
+&= \sqrt{\frac{1}{\sigma_r^2}} = \frac{1}{\sigma_r} \\
+\end{split}
+$$
+
+------------------------
+
+### spectral norm
+- [[operator norm]] induces by the $l^2$ [[norm]]
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+
+$$
+||A||_{2\rightarrow 2} =  \sup_{x\neq 0} \frac{||Ax||_2}{||x||_2} = \sqrt{\sigma_{\max}(A^\top A)}
+$$
+
+### singular value decomposition: squared matrices
+- the column vectors of $U$ are [[orthonormal]] [[eigenvectors]] of $AA^\top$ and $\sigma_k^2$ are its [[eigenvalues]]
+- the column vectors of $V$ are [[orthonormal]] [[eigenvectors]] of $A^\top A$ and $\sigma_k^2$ are its [[eigenvalues]]
+
+$$
+\begin{split}
+AA^\top &= U \Sigma \Sigma^\top U^\top \\
+
+A^\top A &= V \Sigma^\top \Sigma V^\top  \\
+\end{split}
+$$
+
+
+#### proof
+
+$$
+\begin{split}
+AA^\top 
+&= U\Sigma V^\top \left( U\Sigma V^\top \right)^\top\\
+&= U\Sigma V^\top  V\Sigma^\top U^\top \\
+&= U \Sigma \Sigma^\top U^\top \\
+A^\top A
+&= \left( U\Sigma V^\top \right)^\top U\Sigma V^\top \\
+&= V\Sigma^\top U^\top U\Sigma V^\top   \\
+&= V\Sigma^\top\Sigma V^\top   \\
+
+\end{split}
+$$
+
+
+
+### singular value decomposition
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with [[rank]] $r$
+- there exists an [[orthonormal]] [[matrix]] $U\in\mathbb{R}^{n\times n}$ and [[orthonormal]] [[matrix]] $V\in\mathbb{R}^{m\times m}$ and a [[diagonal matrix]] $\Sigma \in \mathbb{R}^{n \times m}$ auch that
+$$
+A = U\Sigma V^\top =
+$$
+
+- the [[diagonal matrix]] $\Sigma$ has of $r$ postive ordered values on the diagonal and apart from that only zeros
+$$
+\begin{split}
+&\Sigma = \left( \begin{matrix}
+\sigma_1 & \\
+&...  \\
+&&\sigma_r  \\
+&&&0  \\
+\end{matrix} \right) \\
+&\text{with }\sigma_1 \geq ... \geq \sigma_r \ge 0
+\end{split}
+$$
+
+
+Tags: mathematics linear_algebra
+
+END
+

@@ -12,8 +12,8 @@ $$
 - $m$ = number of unknown valiables
 
 ### solvig a linear equation system
-![[PLU decomposition#PLU decomposition]]
-- given the [[PLU decomposition]] auf $A$ auch that $PA=LU$
+
+- given the [[PLU decomposition]] (or [[cholesky decomposition]] of $A$ is a [[symmetric matrix]]) auf $A$ auch that $PA=LU$
 
 $$
 \begin{split}
@@ -24,7 +24,8 @@ P^{-1}LUx &= b \\
 $$
 1) solve $Ly = Pb$ for $y$ using the triangular shape of $L$
 2) solve $Ux=y$ for $x$ using the triangular shape of $U$
-#### example
+
+### solvig a linear equation system example
 - solve $Ax=b$ with $b=\left(\begin{matrix}2&3&4 \end{matrix}\right)^\top$
 
 $$
