@@ -126,7 +126,7 @@ f(0) = 0 \land \forall v \in D: f(v) \geq 0
 $$
 
 Tags: mathematics linear_algebra
-
+<!--ID: 1722281289976-->
 END
 
 
@@ -198,7 +198,7 @@ f(0) = 0 \land \forall v \in D: f(v) \geq 0
 $$
 
 Tags: mathematics linear_algebra
-
+<!--ID: 1722281289978-->
 END
 
 
