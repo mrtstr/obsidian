@@ -57,6 +57,22 @@ Basic
 - condition of $A^\top A$
 
 Back: 
+### condition of a non square matrix
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with [[rank]] $m$ 
+- the [[condition]] of the $A$ for a arbitray [[operator norm]] is defined as follows
+$$
+\kappa(A) = \frac{\max_{||x||=1} ||Ax||}{\min_{||x||=1} ||Ax||}
+$$
+
+### condition of $A^\top A$
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with [[rank]] $m$ 
+- the [[condition]] of a squared version of a [[matrix]] the the [[condition]] of the original [[matrix]] to the power of two
+$$
+\kappa(A^\top A) = \kappa(A)^2
+$$
+
+
+------------------------
 ### condition of a square matrix
 - given a [[regular matrix|regular]] [[square matrix]] $A \in \mathbb{R}^{m \times m}$ 
 - the [[condition]] of the $A$ for a arbitray [[operator norm]] is defined as follows
@@ -83,22 +99,6 @@ $$
 \kappa(A) = \left|\left|A^{-1}\right|\right| \cdot \left|\left|A\right|\right| \leq \left|\left|AA^{-1}\right|\right| = 1
 $$
 
-### condition of a non square matrix
-- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with [[rank]] $m$ 
-- the [[condition]] of the $A$ for a arbitray [[operator norm]] is defined as follows
-$$
-\kappa(A) = \frac{\max_{||x||=1} ||Ax||}{\min_{||x||=1} ||Ax||}
-$$
-
-### condition of $A^\top A$
-- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with [[rank]] $m$ 
-- the [[condition]] of a squared version of a [[matrix]] the the [[condition]] of the original [[matrix]] to the power of two
-$$
-\kappa(A^\top A) = \kappa(A)^2
-$$
-
-
-------------------------
 
 
 ### condition
@@ -241,7 +241,6 @@ END
 
 START
 Basic
-
 - what is the [[condition of a matrix]] of the [[matrix]] $A$ regarding the $1$ [[norm]]?
 - what does it answer? 
 

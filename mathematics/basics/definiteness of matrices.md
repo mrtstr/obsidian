@@ -43,13 +43,13 @@ x^\top A^\top Ax =  (Ax)^\top Ax = \langle Ax, Ax \rangle = ||Ax||^2 \geq 0
 \end{split}
 $$
 
-- if $\mathrm{rank}(A) = n$  then $A^\top A$ is even positive definite
+- if $\mathrm{rank}(A) = m$  then $A^\top A$ is even positive definite
 
 $$
 \begin{split}
 &x^\top A^\top Ax =  (Ax)^\top Ax = \langle Ax, Ax \rangle = ||Ax||^2 \geq 0 \\
 &||Ax||^2 = 0 \Leftrightarrow Ax = 0 \\
-&\mathrm{rank}(A) = n \Rightarrow A_{(*, 1)}, ..., A_{(*, n)} \text{ are linear independen} \\
+&\mathrm{rank}(A) = m \Rightarrow A_{(*, 1)}, ..., A_{(*, m)} \text{ are linear independen} \\
 \Rightarrow & Ax = 0 \Rightarrow x=0
 \end{split}
 $$
@@ -73,13 +73,13 @@ x^\top A^\top Ax =  (Ax)^\top Ax = \langle Ax, Ax \rangle = ||Ax||^2 \geq 0
 \end{split}
 $$
 
-- if $\mathrm{rank}(A) = n$  then $A^\top A$ is even positive definite
+- if $\mathrm{rank}(A) = m$  then $A^\top A$ is even positive definite
 
 $$
 \begin{split}
 &x^\top A^\top Ax =  (Ax)^\top Ax = \langle Ax, Ax \rangle = ||Ax||^2 \geq 0 \\
 &||Ax||^2 = 0 \Leftrightarrow Ax = 0 \\
-&\mathrm{rank}(A) = n \Rightarrow A_{(*, 1)}, ..., A_{(*, n)} \text{ are linear independen} \\
+&\mathrm{rank}(A) = m \Rightarrow A_{(*, 1)}, ..., A_{(*, m)} \text{ are linear independen} \\
 \Rightarrow & Ax = 0 \Rightarrow x=0
 \end{split}
 $$
@@ -132,7 +132,7 @@ END
 
 START
 Basic
-- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with  $\mathrm{rank}(A) = n$ 
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with  $\mathrm{rank}(A) = m$ 
 - proof that $A^\top A$ is positive definite
 
 Back: 
@@ -145,13 +145,13 @@ x^\top A^\top Ax =  (Ax)^\top Ax = \langle Ax, Ax \rangle = ||Ax||^2 \geq 0
 \end{split}
 $$
 
-- if $\mathrm{rank}(A) = n$  then $A^\top A$ is even positive definite
+- if $\mathrm{rank}(A) = m$  then $A^\top A$ is even positive definite
 
 $$
 \begin{split}
 &x^\top A^\top Ax =  (Ax)^\top Ax = \langle Ax, Ax \rangle = ||Ax||^2 \geq 0 \\
 &||Ax||^2 = 0 \Leftrightarrow Ax = 0 \\
-&\mathrm{rank}(A) = n \Rightarrow A_{(*, 1)}, ..., A_{(*, n)} \text{ are linear independen} \\
+&\mathrm{rank}(A) = m \Rightarrow A_{(*, 1)}, ..., A_{(*, m)} \text{ are linear independen} \\
 \Rightarrow & Ax = 0 \Rightarrow x=0
 \end{split}
 $$

@@ -1,5 +1,5 @@
-# triangular matrix
-## lower triangular matrix 
+
+### lower triangular matrix 
 A [[matrix]] $L$ is a lower [[triangular matrix]] if all values obove the diagonal line are zero $\forall i < j: a_{ij} = 0$ 
 
 $$
@@ -11,7 +11,7 @@ l_{(3:1)} &\ l_{(3:2)} &\ l_{(3:3)} \\
 \end{pmatrix}
 \end{split}
 $$
-## upper triangular matrix 
+### upper triangular matrix 
 A [[matrix]] $U$ is an upper [[triangular matrix]] if all values obove the diagonal line are zero $\forall i < j: a_{ij} = 0$ 
 $$
 \begin{split}
@@ -24,7 +24,7 @@ u_{(1:1)} &\ u_{(1:2)} &\ u_{(1:3)} \\
 $$
 
 
-## properties
+### properties
 ### [[matrix product]] of [[triangular matrix|matrices]] 
 - if $L_1$ and $L_2$ are lower triangular matrices the product of  $L_1$ and $L_2$ is also a lower triangular matrix $L_1L2 = L_3$
 - if $U_1$ and $U_2$ are upper triangular matrices the product of  $U_1$ and $U_2$ is also a lower upper matrix $U_1U2 = U_3$
@@ -40,8 +40,8 @@ $$
 - [[inverse matrix]] of an upper [[triangular matrix]] is an upper [[triangular matrix]] 
 - [[inverse matrix]] of a lower [[triangular matrix]] is a lower [[triangular matrix]] 
 
-# normalized triangular matrix
-## normalized lower triangular matrix 
+
+### normalized lower triangular matrix 
 A [[matrix]] $L$ is a lower [[triangular matrix]] if 
 1) all values obove the diagonal line are zero $\forall i < j: a_{ij} = 0$
 2) all values on the diagonal are one $\forall i: a_{ii} = 1$
@@ -55,7 +55,7 @@ l_{(3:1)} &\ l_{(3:2)} &\ 1 \\
 \end{pmatrix}
 \end{split}
 $$
-## normalized upper triangular matrix 
+### normalized upper triangular matrix 
 A [[matrix]] $U$ is an upper [[triangular matrix]] if 
 1) all values obove the diagonal line are zero $\forall i < j: a_{ij} = 0$ 
 2) all values on the diagonal are one $\forall i: a_{ii} = 1$
@@ -68,9 +68,9 @@ U = \begin{pmatrix}
 \end{pmatrix}
 \end{split}
 $$
-## properties
+### properties
 
-### [[determinant]] of a normalized [[triangular matrix]]
+#### [[determinant]] of a normalized [[triangular matrix]]
 the [[determinant]] of a  normalized[[triangular matrix]] is equal to the product of its diagonal element which are all one
 $$
 \begin{split}
@@ -78,7 +78,7 @@ det(L) = \prod_{i=1}^n l_{ii} = 1\\
 det(U) = \prod_{i=1}^n u_{ii} = 1 \\
 \end{split}
 $$
-### [[inverse matrix|inverse]] of a normalized [[triangular matrix]]
+#### [[inverse matrix|inverse]] of a normalized [[triangular matrix]]
 $$
 \begin{split}
 U &= \begin{pmatrix}
@@ -113,7 +113,7 @@ UU^{-1}=U^{-1}U &=\begin{pmatrix}
 \end{pmatrix} \\
 \end{split}
 $$
-### [[matrix product|multiplication]] of normalized [[triangular matrix]]
+#### [[matrix product|multiplication]] of normalized [[triangular matrix]]
 $$
 \begin{split}
 U^{(1)} &= \begin{pmatrix}

@@ -30,15 +30,24 @@ A
 &= U\Sigma V^\top \\
 &=
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat U &  U_0
 \end{matrix}\right)
 \left(\begin{matrix}
 \widehat \Sigma & 0 \\
 0 & 0 \\
 \end{matrix}\right)
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat V & V_0
 \end{matrix}\right)^\top \\
+
+&=
+\left(\begin{matrix}
+\widehat U \widehat \Sigma &  0
+\end{matrix}\right)
+\left(\begin{matrix}
+\widehat V & V_0
+\end{matrix}\right)^\top \\
+
 &= \widehat U \widehat\Sigma \widehat V^\top \\
 &= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
@@ -155,8 +164,6 @@ $$
 &= \sqrt{\sigma_{\max}\left(U^{-\top}\Sigma^{-1} V^{-1}  V^{-\top} \Sigma^{-1} U^{-1}\right)} \\
 &= \sqrt{\sigma_{\max}\left(U\Sigma^{-1} V^\top  V\Sigma^{-1} U^\top\right)} \\
 &= \sqrt{\sigma_{\max}\left(U\Sigma^{-1} \Sigma^{-1} U^\top\right)} \\
-&= \sqrt{\sigma_{\max}\left(U^\top U\Sigma^{-1} \Sigma^{-1} \right)} \\
-&= \sqrt{\sigma_{\max}\left(\Sigma^{-1} \Sigma^{-1} \right)} \\
 &= \sqrt{\sigma_{\max}\left(diag\left(\frac{1}{\sigma_1^2}, ..., \frac{1}{\sigma_r^2}\right) \right)} \\
 &= \sqrt{\frac{1}{\sigma_r^2}} = \frac{1}{\sigma_r} \\
 \end{split}
@@ -215,27 +222,38 @@ $$
 - this means the [[rank]] $r$ [[matrix]] $A$ can be expressed as a sum of $k$ [[rank]] one matrice $\widehat U_{(*,k)}  \widehat V_{(*,k)}^\top$ that are weighted by $\sigma_k$ which is called the **spectral decomposition**
 
 #### proof
+
 $$
 \begin{split}
 A 
 &= U\Sigma V^\top \\
 &=
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat U &  U_0
 \end{matrix}\right)
 \left(\begin{matrix}
 \widehat \Sigma & 0 \\
 0 & 0 \\
 \end{matrix}\right)
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat V & V_0
 \end{matrix}\right)^\top \\
+
+&=
+\left(\begin{matrix}
+\widehat U \widehat \Sigma &  0
+\end{matrix}\right)
+\left(\begin{matrix}
+\widehat V & V_0
+\end{matrix}\right)^\top \\
+
 &= \widehat U \widehat\Sigma \widehat V^\top \\
 &= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \sum_{k \in [r]} \sigma_k \widehat U_{(*,k)}  \widehat V_{(*,k)}^\top \\
 \end{split}
 $$
+
 ### singular value decomposition: relationship of $U$ and $V$
 - matrix $A$ mappes the column vactors auf $U$ to the column vectors auf $V$ and vice versa
 
@@ -359,28 +377,37 @@ $$
 - this means the [[rank]] $r$ [[matrix]] $A$ can be expressed as a sum of $k$ [[rank]] one matrice $\widehat U_{(*,k)}  \widehat V_{(*,k)}^\top$ that are weighted by $\sigma_k$ which is called the **spectral decomposition**
 
 #### proof
+
 $$
 \begin{split}
 A 
 &= U\Sigma V^\top \\
 &=
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat U &  U_0
 \end{matrix}\right)
 \left(\begin{matrix}
 \widehat \Sigma & 0 \\
 0 & 0 \\
 \end{matrix}\right)
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat V & V_0
 \end{matrix}\right)^\top \\
+
+&=
+\left(\begin{matrix}
+\widehat U \widehat \Sigma &  0
+\end{matrix}\right)
+\left(\begin{matrix}
+\widehat V & V_0
+\end{matrix}\right)^\top \\
+
 &= \widehat U \widehat\Sigma \widehat V^\top \\
 &= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \sum_{k \in [r]} \sigma_k \widehat U_{(*,k)}  \widehat V_{(*,k)}^\top \\
 \end{split}
 $$
-
 
 ------------------------
 
@@ -420,28 +447,37 @@ Back:
 - this means the [[rank]] $r$ [[matrix]] $A$ can be expressed as a sum of $k$ [[rank]] one matrice $\widehat U_{(*,k)}  \widehat V_{(*,k)}^\top$ that are weighted by $\sigma_k$ which is called the **spectral decomposition**
 
 #### proof
+
 $$
 \begin{split}
 A 
 &= U\Sigma V^\top \\
 &=
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat U &  U_0
 \end{matrix}\right)
 \left(\begin{matrix}
 \widehat \Sigma & 0 \\
 0 & 0 \\
 \end{matrix}\right)
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat V & V_0
 \end{matrix}\right)^\top \\
+
+&=
+\left(\begin{matrix}
+\widehat U \widehat \Sigma &  0
+\end{matrix}\right)
+\left(\begin{matrix}
+\widehat V & V_0
+\end{matrix}\right)^\top \\
+
 &= \widehat U \widehat\Sigma \widehat V^\top \\
 &= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \sum_{k \in [r]} \sigma_k \widehat U_{(*,k)}  \widehat V_{(*,k)}^\top \\
 \end{split}
 $$
-
 
 
 ### singular value decomposition
@@ -536,9 +572,6 @@ A &= U\Sigma V^\top \\
 $$
 
 
-
-
-
 ------------------------
 
 ### singular value decomposition
@@ -567,21 +600,31 @@ $$
 - this means the [[rank]] $r$ [[matrix]] $A$ can be expressed as a sum of $k$ [[rank]] one matrice $\widehat U_{(*,k)}  \widehat V_{(*,k)}^\top$ that are weighted by $\sigma_k$ which is called the **spectral decomposition**
 
 #### proof
+
 $$
 \begin{split}
 A 
 &= U\Sigma V^\top \\
 &=
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat U &  U_0
 \end{matrix}\right)
 \left(\begin{matrix}
 \widehat \Sigma & 0 \\
 0 & 0 \\
 \end{matrix}\right)
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat V & V_0
 \end{matrix}\right)^\top \\
+
+&=
+\left(\begin{matrix}
+\widehat U \widehat \Sigma &  0
+\end{matrix}\right)
+\left(\begin{matrix}
+\widehat V & V_0
+\end{matrix}\right)^\top \\
+
 &= \widehat U \widehat\Sigma \widehat V^\top \\
 &= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
@@ -652,7 +695,6 @@ A &= U\Sigma V^\top \\
 \end{split}
 $$
 
-
 $$
 \begin{split}
 A &= U\Sigma V^\top \\
@@ -664,9 +706,6 @@ A &= U\Sigma V^\top \\
 &= \sigma_k V_{(*,k)} \\
 \end{split}
 $$
-
-
-
 
 
 ------------------------
@@ -697,28 +736,37 @@ $$
 - this means the [[rank]] $r$ [[matrix]] $A$ can be expressed as a sum of $k$ [[rank]] one matrice $\widehat U_{(*,k)}  \widehat V_{(*,k)}^\top$ that are weighted by $\sigma_k$ which is called the **spectral decomposition**
 
 #### proof
+
 $$
 \begin{split}
 A 
 &= U\Sigma V^\top \\
 &=
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat U &  U_0
 \end{matrix}\right)
 \left(\begin{matrix}
 \widehat \Sigma & 0 \\
 0 & 0 \\
 \end{matrix}\right)
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat V & V_0
 \end{matrix}\right)^\top \\
+
+&=
+\left(\begin{matrix}
+\widehat U \widehat \Sigma &  0
+\end{matrix}\right)
+\left(\begin{matrix}
+\widehat V & V_0
+\end{matrix}\right)^\top \\
+
 &= \widehat U \widehat\Sigma \widehat V^\top \\
 &= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \sum_{k \in [r]} \sigma_k \widehat U_{(*,k)}  \widehat V_{(*,k)}^\top \\
 \end{split}
 $$
-
 
 ### orthogonal matrix
 - a [[orthogonal matrix]] is a [[matrix]] $Q \in \mathbb{R}^{n \times n}$ with a [[transpose]] that is equal to its [[inverse matrix]]  
@@ -808,21 +856,31 @@ $$
 - this means the [[rank]] $r$ [[matrix]] $A$ can be expressed as a sum of $k$ [[rank]] one matrice $\widehat U_{(*,k)}  \widehat V_{(*,k)}^\top$ that are weighted by $\sigma_k$ which is called the **spectral decomposition**
 
 #### proof
+
 $$
 \begin{split}
 A 
 &= U\Sigma V^\top \\
 &=
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat U &  U_0
 \end{matrix}\right)
 \left(\begin{matrix}
 \widehat \Sigma & 0 \\
 0 & 0 \\
 \end{matrix}\right)
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat V & V_0
 \end{matrix}\right)^\top \\
+
+&=
+\left(\begin{matrix}
+\widehat U \widehat \Sigma &  0
+\end{matrix}\right)
+\left(\begin{matrix}
+\widehat V & V_0
+\end{matrix}\right)^\top \\
+
 &= \widehat U \widehat\Sigma \widehat V^\top \\
 &= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
@@ -937,21 +995,31 @@ $$
 - this means the [[rank]] $r$ [[matrix]] $A$ can be expressed as a sum of $k$ [[rank]] one matrice $\widehat U_{(*,k)}  \widehat V_{(*,k)}^\top$ that are weighted by $\sigma_k$ which is called the **spectral decomposition**
 
 #### proof
+
 $$
 \begin{split}
 A 
 &= U\Sigma V^\top \\
 &=
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat U &  U_0
 \end{matrix}\right)
 \left(\begin{matrix}
 \widehat \Sigma & 0 \\
 0 & 0 \\
 \end{matrix}\right)
 \left(\begin{matrix}
-\widehat U & \widetilde U
+\widehat V & V_0
 \end{matrix}\right)^\top \\
+
+&=
+\left(\begin{matrix}
+\widehat U \widehat \Sigma &  0
+\end{matrix}\right)
+\left(\begin{matrix}
+\widehat V & V_0
+\end{matrix}\right)^\top \\
+
 &= \widehat U \widehat\Sigma \widehat V^\top \\
 &= \left(\sum_{l \in [r]} \widehat U_{i,l} \widehat\Sigma_{l,k} \right)_{i \in [n], k \in [r]} \widehat V^\top \\
 &= \left( \widehat U_{i,k} \sigma_k \right)_{i \in [n], k \in [r]} \widehat V^\top \\
@@ -1081,7 +1149,6 @@ $$
 ||A||_{2\rightarrow 2} =  \sup_{x\neq 0} \frac{||Ax||_2}{||x||_2} = \sqrt{\sigma_{\max}(A^\top A)} = \sqrt{\sigma_1^2} = \sigma_1
 $$
 
-
 $$
 \begin{split}
 ||A^{-1}||_{2\rightarrow 2} 
@@ -1091,8 +1158,6 @@ $$
 &= \sqrt{\sigma_{\max}\left(U^{-\top}\Sigma^{-1} V^{-1}  V^{-\top} \Sigma^{-1} U^{-1}\right)} \\
 &= \sqrt{\sigma_{\max}\left(U\Sigma^{-1} V^\top  V\Sigma^{-1} U^\top\right)} \\
 &= \sqrt{\sigma_{\max}\left(U\Sigma^{-1} \Sigma^{-1} U^\top\right)} \\
-&= \sqrt{\sigma_{\max}\left(U^\top U\Sigma^{-1} \Sigma^{-1} \right)} \\
-&= \sqrt{\sigma_{\max}\left(\Sigma^{-1} \Sigma^{-1} \right)} \\
 &= \sqrt{\sigma_{\max}\left(diag\left(\frac{1}{\sigma_1^2}, ..., \frac{1}{\sigma_r^2}\right) \right)} \\
 &= \sqrt{\frac{1}{\sigma_r^2}} = \frac{1}{\sigma_r} \\
 \end{split}
@@ -1164,3 +1229,44 @@ Tags: mathematics linear_algebra
 <!--ID: 1722281289973-->
 END
 
+START
+Basic
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with [[rank]] $r$ and a [[singular value decomposition]] $A = U\Sigma V^\top$ with [[orthonormal]] [[matrix]] $U\in\mathbb{R}^{n\times r}$ and [[orthonormal]] [[matrix]] $U\in\mathbb{R}^{m\times r}$ and a [[diagonal matrix]] $\Sigma \in \mathbb{R}^{r \times r}$ 
+- let $A$ be a non [[regular matrix]] what happens when we try to calculate the inverse of the decomposed [[matrix]] $A$?
+Back:
+- if $r < \min(n,m)$ there are zeros on the diagonal of the [[diagonal matrix]] $\Sigma$ thus we would have to devide by zero if we want to invert it
+
+$$
+A^{-1} = \left(U\Sigma V^\top\right)^{-1} = V \Sigma^{-1} U^\top
+$$
+
+$$
+\Sigma^{-1} = diag\left(\frac{1}{\sigma_1}, .., \frac{1}{\sigma_r}, \frac{1}{0}\right)
+$$
+
+------------------------
+
+### singular value decomposition
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with [[rank]] $r$
+- there exists an [[orthonormal]] [[matrix]] $U\in\mathbb{R}^{n\times n}$ and [[orthonormal]] [[matrix]] $V\in\mathbb{R}^{m\times m}$ and a [[diagonal matrix]] $\Sigma \in \mathbb{R}^{n \times m}$ auch that
+$$
+A = U\Sigma V^\top =
+$$
+
+- the [[diagonal matrix]] $\Sigma$ has of $r$ postive ordered values on the diagonal and apart from that only zeros
+$$
+\begin{split}
+&\Sigma = \left( \begin{matrix}
+\sigma_1 & \\
+&...  \\
+&&\sigma_r  \\
+&&&0  \\
+\end{matrix} \right) \\
+&\text{with }\sigma_1 \geq ... \geq \sigma_r \ge 0
+\end{split}
+$$
+
+
+Tags: mathematics linear_algebra
+<!--ID: 1722327642919-->
+END
