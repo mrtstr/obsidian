@@ -218,7 +218,7 @@ END
 
 START
 Basic
-- given the [[matrix]] $A \in \mathbb{R}^{n \times m}$ with $n \geq m$ with the [[QR decomposition]] $A=QR$ ([[orthogonal matrix]] $Q \in \mathbb{R}^{n \times n}$ and a [[triangular matrix]] $R \in \mathbb{R}^{n \times m}$) and the slim QR decomposition $A=Q_1R_1$ ([[orthogonal matrix]] $Q_1 \in \mathbb{R}^{m \times m}$ and a [[triangular matrix]] $R \in \mathbb{R}_1^{m \times m}$)
+- given the [[matrix]] $A \in \mathbb{R}^{n \times m}$ with $n \geq m$ with the [[QR decomposition]] $A=QR$ ([[orthogonal matrix]] $Q \in \mathbb{R}^{n \times n}$ and a [[triangular matrix]] $R \in \mathbb{R}^{n \times m}$) and the slim QR decomposition $A=Q_1R_1$ ([[orthogonal matrix]] $Q_1 \in \mathbb{R}^{m \times m}$ and a [[triangular matrix]] $R_1 \in \mathbb{R}^{m \times m}$)
 
 - expression for the [[nullspace]] of $A$ (without proof)
 Back: 
