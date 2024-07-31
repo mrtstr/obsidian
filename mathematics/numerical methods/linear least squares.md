@@ -561,7 +561,7 @@ $$
 
 ### QR decomposition
 - for every [[matrix]] $A \in \mathbb{R}^{n \times m}$ with $n \geq m$ there exists a [[orthogonal matrix]] $Q \in \mathbb{R}^{n \times n}$ and a [[triangular matrix]] $R \in \mathbb{R}^{n \times m}$ auch that $A=QR$
-- furthermore there exists an [[orthogonal matrix]] $Q_1 \in \mathbb{R}^{m \times m}$ and a [[triangular matrix]] $R \in \mathbb{R_1}^{m \times m}$ auch that $A=Q_1R_1$
+- furthermore there exists an [[orthogonal matrix]] $Q_1 \in \mathbb{R}^{n \times m}$ and a [[triangular matrix]] $R_1 \in \mathbb{R}^{m \times m}$ auch that $A=Q_1R_1$
 
 $$
 \begin{split}
@@ -765,7 +765,7 @@ $$
 
 ### QR decomposition
 - for every [[matrix]] $A \in \mathbb{R}^{n \times m}$ with $n \geq m$ there exists a [[orthogonal matrix]] $Q \in \mathbb{R}^{n \times n}$ and a [[triangular matrix]] $R \in \mathbb{R}^{n \times m}$ auch that $A=QR$
-- furthermore there exists an [[orthogonal matrix]] $Q_1 \in \mathbb{R}^{m \times m}$ and a [[triangular matrix]] $R \in \mathbb{R_1}^{m \times m}$ auch that $A=Q_1R_1$
+- furthermore there exists an [[orthogonal matrix]] $Q_1 \in \mathbb{R}^{n \times m}$ and a [[triangular matrix]] $R_1 \in \mathbb{R}^{m \times m}$ auch that $A=Q_1R_1$
 
 $$
 \begin{split}

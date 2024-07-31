@@ -19,10 +19,12 @@ $$
 &\leq ||A^{-1}|| \cdot ||A||  \\
 \end{split}
 $$
-### upper bound of the condition of a sqaure matrix
+### lower bound of the condition of a sqaure matrix
 $$
-\kappa(A) = \left|\left|A^{-1}\right|\right| \cdot \left|\left|A\right|\right| \leq \left|\left|AA^{-1}\right|\right| = 1
+\kappa(A) = \left|\left|A^{-1}\right|\right| \cdot \left|\left|A\right|\right| \geq \left|\left|AA^{-1}\right|\right| = 1
 $$
+
+![[operator norm#the operator norm is submultiplicative]]
 
 ### condition of a non square matrix
 - given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with [[rank]] $m$ 
@@ -423,13 +425,28 @@ END
 
 START
 Basic
-upper bound of the [[condition of a matrix]] $A \in \mathbb{R}^{n \times n}$  (with proof)
+lower bound of the [[condition of a matrix]] $A \in \mathbb{R}^{n \times n}$ regarding an arbitrary [[operator norm]] (with proof)
 
 Back: 
-
-### upper bound of the condition of a square matrix
+### lower bound of the condition of a sqaure matrix
 $$
-\kappa(A) = \left|\left|A^{-1}\right|\right| \cdot \left|\left|A\right|\right| \leq \left|\left|AA^{-1}\right|\right| = 1
+\kappa(A) = \left|\left|A^{-1}\right|\right| \cdot \left|\left|A\right|\right| \geq \left|\left|AA^{-1}\right|\right| = 1
+$$
+
+### the [[operator norm]] is submultiplicative
+- given two [[linear map|linear maps]] $A: X \to Y$ and $B: Y \to Z$ the following inequallity holds true
+$$
+||BA||_{X \to Z} \leq ||A||_{X \to Y} ||B||_{Y \to Z}
+$$
+ $$
+ \begin{split}
+||BA||_{X \to Z} 
+&= \sup_{x\neq 0} \frac{||BAx||_Z}{||x||_X} \\
+&= \sup_{x\neq 0, Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{Y}}  \frac{||Ax||_Y}{||x||_X} \\
+&\leq \sup_{Ax \neq 0} \frac{||BAx||_Z}{||Ax||_{Y}} \cdot \sup_{x \neq 0} \frac{||Ax||_Y}{||x||_X} \\
+&= \sup_{y \neq 0} \frac{||By||_Z}{||y||_{Y}} \cdot \sup_{x \neq 0} \frac{||Ax||_Y}{||x||_X}  \\
+&= ||A||_{X \to Y} ||B||_{Y \to Z}
+\end{split}
 $$
 
 ------------------------

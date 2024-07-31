@@ -1,6 +1,6 @@
 ### QR decomposition
 - for every [[matrix]] $A \in \mathbb{R}^{n \times m}$ with $n \geq m$ there exists a [[orthogonal matrix]] $Q \in \mathbb{R}^{n \times n}$ and a [[triangular matrix]] $R \in \mathbb{R}^{n \times m}$ auch that $A=QR$
-- furthermore there exists an [[orthogonal matrix]] $Q_1 \in \mathbb{R}^{m \times m}$ and a [[triangular matrix]] $R \in \mathbb{R}_1^{m \times m}$ auch that $A=Q_1R_1$ which is called the **slim QR decomposition**
+- furthermore there exists an [[orthogonal matrix]] $Q_1 \in \mathbb{R}^{n \times m}$ and a [[triangular matrix]] $R_1 \in \mathbb{R}^{m \times m}$ auch that $A=Q_1R_1$ which is called the **slim QR decomposition**
 
 $$
 \begin{split}
@@ -84,7 +84,7 @@ $$
 
 ### QR decomposition
 - for every [[matrix]] $A \in \mathbb{R}^{n \times m}$ with $n \geq m$ there exists a [[orthogonal matrix]] $Q \in \mathbb{R}^{n \times n}$ and a [[triangular matrix]] $R \in \mathbb{R}^{n \times m}$ auch that $A=QR$
-- furthermore there exists an [[orthogonal matrix]] $Q_1 \in \mathbb{R}^{m \times m}$ and a [[triangular matrix]] $R \in \mathbb{R_1}^{m \times m}$ auch that $A=Q_1R_1$ which is called the **slim QR decomposition**
+- furthermore there exists an [[orthogonal matrix]] $Q_1 \in \mathbb{R}^{n \times m}$ and a [[triangular matrix]] $R_1 \in \mathbb{R}^{m \times m}$ auch that $A=Q_1R_1$ which is called the **slim QR decomposition**
 
 $$
 \begin{split}
@@ -162,7 +162,7 @@ Basic
 Back: 
 ### QR decomposition
 - for every [[matrix]] $A \in \mathbb{R}^{n \times m}$ with $n \geq m$ there exists a [[orthogonal matrix]] $Q \in \mathbb{R}^{n \times n}$ and a [[triangular matrix]] $R \in \mathbb{R}^{n \times m}$ auch that $A=QR$
-- furthermore there exists an [[orthogonal matrix]] $Q_1 \in \mathbb{R}^{m \times m}$ and a [[triangular matrix]] $R \in \mathbb{R_1}^{m \times m}$ auch that $A=Q_1R_1$ which is called the **slim QR decomposition**
+- furthermore there exists an [[orthogonal matrix]] $Q_1 \in \mathbb{R}^{n \times m}$ and a [[triangular matrix]] $R_1 \in \mathbb{R}^{m \times m}$ auch that $A=Q_1R_1$ which is called the **slim QR decomposition**
 
 $$
 \begin{split}
@@ -220,12 +220,6 @@ START
 Basic
 - given the [[matrix]] $A \in \mathbb{R}^{n \times m}$ with $n \geq m$ with the [[QR decomposition]] $A=QR$ ([[orthogonal matrix]] $Q \in \mathbb{R}^{n \times n}$ and a [[triangular matrix]] $R \in \mathbb{R}^{n \times m}$) and the slim QR decomposition $A=Q_1R_1$ ([[orthogonal matrix]] $Q_1 \in \mathbb{R}^{m \times m}$ and a [[triangular matrix]] $R_1 \in \mathbb{R}^{m \times m}$)
 
-- expression for the [[nullspace]] of $A$ (without proof)
-Back: 
-
-### complement of the [[image]]
-- given the [[matrix]] $A \in \mathbb{R}^{n \times m}$ with $n \geq m$ with the [[QR decomposition]] $A=QR$  ([[orthogonal matrix]] $Q \in \mathbb{R}^{n \times n}$ and a [[triangular matrix]] $R \in \mathbb{R}^{n \times m}$) and the slim QR decomposition $A=Q_1R_1$ ([[orthogonal matrix]] $Q_1 \in \mathbb{R}^{m \times m}$ and a [[triangular matrix]] $R \in \mathbb{R}_1^{m \times m}$)
-
 $$
 \begin{split}
 A 
@@ -233,6 +227,11 @@ A
 &= \left(\begin{matrix}Q_1 & Q_2\end{matrix}\right)\left(\begin{matrix}R_1 \\ 0\end{matrix}\right) \\
 \end{split}
 $$
+
+- expression for the [[nullspace]] of $A$ (without proof)
+
+Back: 
+### complement of the [[image]]
 
 - the [[complement]] of $A$ which is equal to its [[nullspace]] is equal to the [[image]] auf $Q_2$
 $$
@@ -264,7 +263,7 @@ $$
 
 ### QR decomposition
 - for every [[matrix]] $A \in \mathbb{R}^{n \times m}$ with $n \geq m$ there exists a [[orthogonal matrix]] $Q \in \mathbb{R}^{n \times n}$ and a [[triangular matrix]] $R \in \mathbb{R}^{n \times m}$ auch that $A=QR$
-- furthermore there exists an [[orthogonal matrix]] $Q_1 \in \mathbb{R}^{m \times m}$ and a [[triangular matrix]] $R \in \mathbb{R_1}^{m \times m}$ auch that $A=Q_1R_1$ which is called the **slim QR decomposition**
+- furthermore there exists an [[orthogonal matrix]] $Q_1 \in \mathbb{R}^{n \times m}$ and a [[triangular matrix]] $R_1 \in \mathbb{R}^{m \times m}$ auch that $A=Q_1R_1$ which is called the **slim QR decomposition**
 
 $$
 \begin{split}
