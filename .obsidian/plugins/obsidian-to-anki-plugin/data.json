@@ -210,7 +210,13 @@
     "IMG-20240723-WA0003 1.jpg",
     "IMG-20240723-WA0005 1.jpg",
     "Nlp_g1_g2_kegel 8.jpg",
-    "IMG-20240722-WA0002 6.jpg"
+    "IMG-20240722-WA0002 6.jpg",
+    "IMG-20240731-WA0003 3.jpg",
+    "Vector_subtraction.svg 1.png",
+    "IMG-20240731-WA0003 1.jpg",
+    "Vector_subtraction.svg 2.png",
+    "IMG-20240731-WA0003 2.jpg",
+    "Vector_subtraction.svg 3.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1554,7 +1560,7 @@
     "mathematics/basics/rank.md": "e5e94cbb3d8dfbdbf884c5eeb3c694a6",
     "mathematics/basics/rank nullity theorem.md": "3952121cb916e06aacc8bd4255032457",
     "mathematics/basics/pseudo inverse matrix.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/basics/projection.md": "5e929b0c002ffe07e4a4ddcd49c055b4",
+    "mathematics/basics/projection.md": "3997f4a8c2fe83c9ec70d0d83f1a870f",
     "mathematics/basics/projection matrix.md": "631c6f4a941bdcb0d04c41b4658c4c4d",
     "mathematics/basics/pivot.md": "a07502b52494a34c2f4d4af55a42f314",
     "mathematics/basics/permutation matrix.md": "3c2abbd7f83f2f88a1fd91d998ac03aa",
@@ -1664,14 +1670,16 @@
     "mathematics/numerical methods/error anlysis.md": "149f1f07a463b72c421b139e28a9ff94",
     "mathematics/numerical methods/error round off.md": "cc7b0903bd9b1ce8ff9f177531660262",
     "mathematics/numerical methods/error propagation.md": "2f4e582c8843c5f877d4ca5e60ed7138",
-    "mathematics/numerical methods/condition of a matrix.md": "439116acfe8d423bbbf29954d61fe460",
+    "mathematics/numerical methods/condition of a matrix.md": "53283445bb22ade0b42c6b8d5d3e33b3",
     "mathematics/basics/PLU decomposition.md": "d82c4c8f65d500a45ed671ac8f4f5989",
     "mathematics/numerical methods/low rank approximation.md": "19aa079ee905196ee9ffc2aa4fe59927",
     "mathematics/basics/orthonormal matrix.md": "830f05eb2d8ac50ee12c16ec6703f833",
     "mathematics/basics/eigenvalues.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/numerical methods/general least squares.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/numerical methods/linear least squares.md": "4680a8fa5e893ea8bcaae451876f3f74",
-    "mathematics/numerical methods/QR decomposition.md": "ce69e65353fb9d2beb68fe68eb1544d1"
+    "mathematics/numerical methods/QR decomposition.md": "da3652743ff1a8cc8f5f89b6863a0460",
+    "mathematics/basics/vector subtraction.md": "d59485b0c2250f8ed944d9ccdf8fcfef",
+    "mathematics/basics/reflection.md": "f48cba44bc9970bd43d556fb31e3f3a0"
   },
   "fields_dict": {
     "Basic": [

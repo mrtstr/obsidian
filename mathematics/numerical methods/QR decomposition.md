@@ -51,7 +51,19 @@ TODO add proof
 
 
 ### householder transformations
-- numericly stable methode for calculating the [[QR decomposition]]
+- numericly stable methode for calculating the [[QR decomposition]] by calculating the reflection on a hyperplane containing the origin
+
+$$
+\begin{split}
+Q 
+&=I - \frac{2}{v^\top v} v v^\top \\
+\end{split}
+$$
+
+![[reflection#relection as orthogonal matrix]]
+
+
+#### algorithm
 - start with $R^{(1)} = A$
 - then perform the following steps for each $i \in [n]$
 $$
@@ -433,5 +445,135 @@ u_{(1:1)} &\ u_{(1:2)} &\ u_{(1:3)} \\
 $$
 
 Tags: mathematics linear_algebra
+<!--ID: 1722447604115-->
+END
 
+
+
+START
+Basic
+householder transformations
+- equation
+- interpretation
+
+Back: 
+### householder transformations
+- numericly stable methode for calculating the [[QR decomposition]] by calculating the reflection on a hyperplane containing the origin
+
+$$
+\begin{split}
+Q 
+&=I - \frac{2}{v^\top v} v v^\top \\
+\end{split}
+$$
+
+### reflection
+
+![[IMG-20240731-WA0003 3.jpg]]
+
+$$
+\begin{split}
+\mathrm{refl}_b(a) 
+&= a - 2 ||\mathrm{proj}_b(a)|| \\
+&=a - 2 \frac{\langle a, b\rangle}{||b||^2} b  \\
+&=a - 2 \frac{a^\top b}{||b||^2} b  \\
+\end{split}
+$$
+
+### relection as orthogonal matrix
+- can be represented by an [[orthogonal matrix]] $Q$ such that $\mathrm{refl}_b(a) = Qa$
+
+$$
+\begin{split}
+Q_{(i,j)}
+&=\delta_{i,j} - 2 \frac{b_ib_j}{||b||^2} 
+ \\
+ Q
+&=I - 2 \frac{bb^\top}{||b||^2} 
+ \\
+\end{split}
+$$
+
+
+##### proof
+$$
+\begin{split}
+\mathrm{refl}_b(a)_{i} 
+
+&= \sum_{j \in [n]} Q_{(i, j)} a_j \\
+&= \sum_{j \in [n]} \left(\delta_{i,j} - 2 \frac{b_ib_j}{||b||^2}\right) a_j \\
+&= a_i- \frac{2}{||b||^2} b_i \sum_{j \in [n]}   b_j a_j \\
+&= a_i- \frac{2}{||b||^2} b_i a^\top b \\
+&=a_i - 2 \frac{a^\top b}{||b||^2} b_i  \\
+\Rightarrow \mathrm{refl}_b(a) =& Qa\\
+\end{split}
+$$
+
+
+
+### [[projection]] of [[vector|vectors]] on eachother
+- let $b' = proj_b(a)$ be the projection of [[vector]] $a$ on [[vector]] $b$
+- the length of $proj_b(a)$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $proj_b(a)$ does not depend on the length of $b$)
+
+$$
+||\mathrm{proj}_b(a)|| = ||b'|| = \frac{\langle a,b \rangle}{||b||}
+$$
+- since $b'$ has the same direction as b the following is true
+$$
+\mathrm{proj}_b(a) = b' = \frac{\langle a,b \rangle}{||b||} \frac{b}{||b||}
+$$
+
+
+_____________________
+
+### QR decomposition
+- for every [[matrix]] $A \in \mathbb{R}^{n \times m}$ with $n \geq m$ there exists a [[orthogonal matrix]] $Q \in \mathbb{R}^{n \times n}$ and a [[triangular matrix]] $R \in \mathbb{R}^{n \times m}$ auch that $A=QR$
+- furthermore there exists an [[orthogonal matrix]] $Q_1 \in \mathbb{R}^{n \times m}$ and a [[triangular matrix]] $R_1 \in \mathbb{R}^{m \times m}$ auch that $A=Q_1R_1$ which is called the **slim QR decomposition**
+
+$$
+\begin{split}
+A 
+&= QR \\
+&= \left(\begin{matrix}Q_1 & Q_2\end{matrix}\right)\left(\begin{matrix}R_1 \\ 0\end{matrix}\right) \\
+&= Q_1R_1 \\
+\end{split}
+$$
+
+- can be used for approximating the solution of an overdetermined [[linear equation system]] using [[linear least squares]]
+
+### orthogonal matrix
+- a [[orthogonal matrix]] is a [[matrix]] $Q \in \mathbb{R}^{n \times n}$ with a [[transpose]] that is equal to its [[inverse matrix]]  
+$$
+Q^{-1}=Q^{T} \Leftrightarrow Q^\top Q = QQ^\top = I
+$$
+
+- from $QQ^\top = Q^\top Q = I$ it follows that column [[vector|vectors]] $Q_{(*,j)}$ (and row [[vector|vectors]] $Q_{(i,*)}$) that are not on the diagonal are [[orthogonal]] (perpendicular) to each other 
+
+$$
+\left\langle Q_{(*,j)} Q_{(*,k)}\right\rangle = Q_{(*,j)}^\top Q_{(*,k)} = \left\{\begin{matrix} 1 &\text{if } j=k \\ 0 & \text{else} \end{matrix} \right.
+$$
+- from $\left\langle Q_{(*,j)} Q_{(*,j)}\right\rangle = 1$ follows that all column and row [[vector|vectors]] need to be normalized
+
+$$
+\begin{split}
+&\left\langle Q_{(*,j)} Q_{(*,j)}\right\rangle = 1 \\ 
+\Rightarrow& \sqrt{\left\langle Q_{(*,j)} Q_{(*,j)}\right\rangle} = ||Q_{(*,j)}|| = 1 \\ 
+
+\end{split}
+$$
+
+### upper triangular matrix 
+A [[matrix]] $U$ is an upper [[triangular matrix]] if all values obove the diagonal line are zero $\forall i < j: a_{ij} = 0$ 
+$$
+\begin{split}
+U = \begin{pmatrix}
+u_{(1:1)} &\ u_{(1:2)} &\ u_{(1:3)} \\
+0         &\ u_{(2:2)} &\ l_{(2:3)} \\
+0         &\ 0         &\ u_{(3:3)} \\  
+\end{pmatrix}
+\end{split}
+$$
+
+Tags: mathematics linear_algebra
+<!--ID: 1722447604119-->
 END

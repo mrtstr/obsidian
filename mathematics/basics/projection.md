@@ -4,11 +4,11 @@
 - the length of $proj_b(a)$ is given by the [[inner product]] of $a$  and $b$ devided by the length of $b$ (because the length of the [[projection]] on $proj_b(a)$ does not depend on the length of $b$)
 
 $$
-||proj_b(a)|| = ||b'|| = \frac{\langle a,b \rangle}{||b||}
+||\mathrm{proj}_b(a)|| = ||b'|| = \frac{\langle a,b \rangle}{||b||}
 $$
 - since $b'$ has the same direction as b the following is true
 $$
-proj_b(a) = b' = \frac{\langle a,b \rangle}{||b||} \frac{b}{||b||}
+\mathrm{proj}_b(a) = b' = \frac{\langle a,b \rangle}{||b||} \frac{b}{||b||}
 $$
 
 ![[projection 3.jpg]]
