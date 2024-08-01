@@ -51,26 +51,42 @@ TODO add proof
 
 
 ### householder transformations
-- numericly stable methode for calculating the [[QR decomposition]] by calculating the reflection on a hyperplane containing the origin
+- numericly stable methode for calculating the [[QR decomposition]] by calculating the [[reflection#orthogonal refelction|relection on an orthogonal hyperplane]]
+- in each iteration a [[orthogonal matrix]] $Q_i$ is constructed that tranforms $A$ in a way such that there are only zeros below the diagonal
+$$
+R = Q_n...Q_1A
+$$
+
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ 
+- the first [[reflection#orthogonal refelction as orthogonal matrix|orthogonal reflection matrix]] $Q_1$ should tranform the first column vector $A_{(*, 1)}$ in a way such that it becomes the first unit vector scaled by the length auf $A_{(*, 1)}$
+
+$$
+e_1 ||A_{(*, 1)}|| = \mathrm{oref}_v(A_{(*, 1)})
+$$
+- the reflection hyperplane is defined by the [[vector]] $v$ (see [[reflection#orthogonal refelction]])
+$$
+\begin{split}
+v &= A_{(*, 1)} - ||A_{(*, 1)}|| e_1 \\
+u &= \frac{A_{(*, 1)} - ||A_{(*, 1)}|| e_1}{||A_{(*, 1)} - \left|\left|A_{(*, 1)}|| e_1\right|\right|}
+\end{split}
+$$
+
+- a [[reflection#orthogonal refelction|orthogonal refelction]] can regarding a hyperplane defined by a [[vector]] $v$ (or $u$) can be perfomed by [[linear map|linear transformation]] with the following [[orthogonal matrix]] $Q$ such that $e_1 ||A_{(*, 1)}|| = QA_{(*, 1)})$ (see [[reflection#orthogonal refelction as orthogonal matrix]])
 
 $$
 \begin{split}
 Q 
-&=I - \frac{2}{v^\top v} v v^\top \\
+&=I - \frac{2}{v^\top v} v v^\top = I - 2 uu^\top \\
 \end{split}
 $$
-
-![[reflection#relection as orthogonal matrix]]
-
 
 #### algorithm
 - start with $R^{(1)} = A$
 - then perform the following steps for each $i \in [n]$
 $$
 \begin{split}
-u &= R^{(i)}_{(*, j)} + \mathrm{sign}\left(R^{(i)}_{(1, j)}\right) ||R^{(i)}_{(*, j)}|| e_1 \\
-v &= \frac{u}{||u||} \\
-Q^{(i)} &= I - 2vv^\top \\
+v &= R^{(i)}_{(*, j)} + \mathrm{sign}\left(R^{(i)}_{(1, j)}\right) ||R^{(i)}_{(*, j)}|| e_1 \\
+Q^{(i)} &= I - \frac{2}{v^\top v} 2vv^\top \\
 R^{(i+1)} &= Q^{(i)}R^{(i)}\\
 \end{split}
 $$
@@ -83,6 +99,15 @@ R&=Q_n...Q_1A \\
 $$
 
 # ---------------------------
+
+
+
+![[reflection#orthogonal refelction as orthogonal matrix]]
+
+![[reflection#reflection]]
+
+
+![[reflection#orthogonal refelction]]
 
 ![[orthogonal matrix#orthogonal matrix]]
 
@@ -455,33 +480,74 @@ Basic
 householder transformations
 - equation
 - interpretation
+- proofs
 
 Back: 
 ### householder transformations
-- numericly stable methode for calculating the [[QR decomposition]] by calculating the reflection on a hyperplane containing the origin
+- numericly stable methode for calculating the [[QR decomposition]] by calculating the [[reflection#orthogonal refelction|relection on an orthogonal hyperplane]]
+- in each iteration a [[orthogonal matrix]] $Q_i$ is constructed that tranforms $A$ in a way such that there are only zeros below the diagonal
+$$
+R = Q_n...Q_1A
+$$
+
+- given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ 
+- the first [[reflection#orthogonal refelction as orthogonal matrix|orthogonal reflection matrix]] $Q_1$ should tranform the first column vector $A_{(*, 1)}$ in a way such that it becomes the first unit vector scaled by the length auf $A_{(*, 1)}$
+
+$$
+e_1 ||A_{(*, 1)}|| = \mathrm{oref}_v(A_{(*, 1)})
+$$
+- the reflection hyperplane is defined by the [[vector]] $v$ (see [[reflection#orthogonal refelction]])
+$$
+\begin{split}
+v &= A_{(*, 1)} - ||A_{(*, 1)}|| e_1 \\
+u &= \frac{A_{(*, 1)} - ||A_{(*, 1)}|| e_1}{||A_{(*, 1)} - \left|\left|A_{(*, 1)}|| e_1\right|\right|}
+\end{split}
+$$
+
+- a [[reflection#orthogonal refelction|orthogonal refelction]] can regarding a hyperplane defined by a [[vector]] $v$ (or $u$) can be perfomed by [[linear map|linear transformation]] with the following [[orthogonal matrix]] $Q$ such that $e_1 ||A_{(*, 1)}|| = QA_{(*, 1)})$ (see [[reflection#orthogonal refelction as orthogonal matrix]])
 
 $$
 \begin{split}
 Q 
-&=I - \frac{2}{v^\top v} v v^\top \\
+&=I - \frac{2}{v^\top v} v v^\top = I - 2 uu^\top \\
 \end{split}
 $$
 
-### reflection
 
-![[IMG-20240731-WA0003 3.jpg]]
+### reflection
+- the [[reflection]] of a [[vector]] $a$ on a [[vector]] $b$ is defined as follows
 
 $$
 \begin{split}
+\mathrm{proj}_b(a) &= a + x \\ 
+\Rightarrow x &= \mathrm{proj}_b(a) - a \\ 
+
 \mathrm{refl}_b(a) 
-&= a - 2 ||\mathrm{proj}_b(a)|| \\
-&=a - 2 \frac{\langle a, b\rangle}{||b||^2} b  \\
-&=a - 2 \frac{a^\top b}{||b||^2} b  \\
+&= a + 2 x \\
+&= 2 ||\mathrm{proj}_b(a)|| - a \\
+&=2 \frac{\langle a, b\rangle}{||b||^2} b - a \\
 \end{split}
 $$
+![[IMG-20240801-WA0002 5.jpg]]
 
-### relection as orthogonal matrix
-- can be represented by an [[orthogonal matrix]] $Q$ such that $\mathrm{refl}_b(a) = Qa$
+
+### orthogonal refelction
+- the [[reflection]] of a [[vector]] $a$ on hypterplane [[orthogonal]] to [[vector]] $b$ is the inverted [[reflection]] 
+
+$$
+\mathrm{orefl}_b(a) = - \mathrm{refl}_b(a) = a - 2 \frac{\langle a, b\rangle}{||b||^2} b  
+$$
+- given a [[vector]] $a$ and $b$
+- the normalized [[vector]] $u$ (with $||u||=1$) should define a hyperplane such that $a$ is the [[orthogonal]] [[reflection]] of $b$
+$$
+a =\mathrm{orefl}_u(b) \Rightarrow u = \frac{a-b}{||a-b||}
+$$
+
+![[IMG-20240801-WA0004 3.jpg]]
+
+
+### orthogonal refelction as orthogonal matrix
+- the orthogonal refelction can be represented as a [[linear map|linear transformation]] with an [[orthogonal matrix]] $Q$ such that $\mathrm{orefl}_b(a) = Qa$
 
 $$
 \begin{split}
@@ -496,20 +562,33 @@ $$
 
 
 ##### proof
+
 $$
 \begin{split}
-\mathrm{refl}_b(a)_{i} 
-
-&= \sum_{j \in [n]} Q_{(i, j)} a_j \\
-&= \sum_{j \in [n]} \left(\delta_{i,j} - 2 \frac{b_ib_j}{||b||^2}\right) a_j \\
-&= a_i- \frac{2}{||b||^2} b_i \sum_{j \in [n]}   b_j a_j \\
-&= a_i- \frac{2}{||b||^2} b_i a^\top b \\
-&=a_i - 2 \frac{a^\top b}{||b||^2} b_i  \\
-\Rightarrow \mathrm{refl}_b(a) =& Qa\\
+\mathrm{orefl}_b(a)_{i}  
+&= a_{i}  - 2 \frac{\langle a, b\rangle}{||b||^2} b_{i}  \\
+&= a_{i}  -  \sum_{j \in [n]} \frac{2}{||b||^2}   a_jb_j b_{i}  \\
+&= \sum_{j \in [n]} \left(\delta_{i,j} - \frac{2}{||b||^2}   b_j b_{i}\right)  a_j \\
+\Rightarrow Q_{(i, j)} =& \delta_{i,j} - \frac{2}{||b||^2}   b_j b_{i}\\
+\Rightarrow Q =& I - \frac{2}{||b||^2}   b b^\top\\
 \end{split}
 $$
 
 
+$$
+\begin{split}
+\Rightarrow Q  Q^\top 
+=& \left(I - \frac{2}{||b||^2}   b b^\top\right) \left(I - \frac{2}{||b||^2}   b b^\top\right)^\top  \\
+=& \left(I - \frac{2}{||b||^2}   b b^\top\right) \left(I - \frac{2}{||b||^2}   b b^\top\right)  \\
+=& I -2 \frac{2}{||b||^2}   b b^\top + \frac{4}{||b||^4}   b b^\top b b^\top  \\
+=& I -4 \frac{1}{||b||^2}   b b^\top + 4 \frac{\langle b, b\rangle}{||b||^4}     b b^\top  \\
+=& I -4 \frac{1}{||b||^2}   b b^\top + \frac{4}{||b||^2}    b b^\top  \\
+=& I  \\
+\end{split}
+$$
+
+
+_____________________
 
 ### [[projection]] of [[vector|vectors]] on eachother
 - let $b' = proj_b(a)$ be the projection of [[vector]] $a$ on [[vector]] $b$
@@ -524,7 +603,6 @@ $$
 $$
 
 
-_____________________
 
 ### QR decomposition
 - for every [[matrix]] $A \in \mathbb{R}^{n \times m}$ with $n \geq m$ there exists a [[orthogonal matrix]] $Q \in \mathbb{R}^{n \times n}$ and a [[triangular matrix]] $R \in \mathbb{R}^{n \times m}$ auch that $A=QR$

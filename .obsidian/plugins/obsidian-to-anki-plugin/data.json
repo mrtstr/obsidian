@@ -216,7 +216,14 @@
     "IMG-20240731-WA0003 1.jpg",
     "Vector_subtraction.svg 2.png",
     "IMG-20240731-WA0003 2.jpg",
-    "Vector_subtraction.svg 3.png"
+    "Vector_subtraction.svg 3.png",
+    "IMG-20240801-WA0002 5.jpg",
+    "IMG-20240801-WA0004 3.jpg",
+    "IMG-20240801-WA0002 1.jpg",
+    "IMG-20240801-WA0004 1.jpg",
+    "IMG-20240801-WA0002 3.jpg",
+    "IMG-20240801-WA0004 2.jpg",
+    "IMG-20240801-WA0002 4.jpg"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1677,9 +1684,9 @@
     "mathematics/basics/eigenvalues.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/numerical methods/general least squares.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/numerical methods/linear least squares.md": "4680a8fa5e893ea8bcaae451876f3f74",
-    "mathematics/numerical methods/QR decomposition.md": "da3652743ff1a8cc8f5f89b6863a0460",
+    "mathematics/numerical methods/QR decomposition.md": "25cc985cf004755a11b027ebee27f934",
     "mathematics/basics/vector subtraction.md": "d59485b0c2250f8ed944d9ccdf8fcfef",
-    "mathematics/basics/reflection.md": "f48cba44bc9970bd43d556fb31e3f3a0"
+    "mathematics/basics/reflection.md": "c8460fdb92ba2e1f8fd479c6086bcc7a"
   },
   "fields_dict": {
     "Basic": [
