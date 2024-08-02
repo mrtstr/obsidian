@@ -5,8 +5,8 @@
 
 $$
 \begin{split}
-\min_{x \in \mathbb{R}^m} &f(x) \\
-\mathrm{s.t.} \: &g(x)=0 \\
+\min_{x \in \mathbb{R}^m} \quad &f(x) \\
+\mathrm{s.t.} \quad &g(x)=0 \\
 &h(x) \geq 0 \\
 \end{split}
 $$

@@ -30,14 +30,14 @@ $$
 ![[IMG-20240801-WA0004.jpg]]
 
 ### orthogonal refelction as orthogonal matrix
-- the orthogonal refelction can be represented as a [[linear map|linear transformation]] with an [[orthogonal matrix]] $Q$ such that $\mathrm{orefl}_b(a) = Qa$
+- the orthogonal refelction can be represented as a [[linear map|linear transformation]] with an [[orthogonal matrix]] $Q$ such that $\mathrm{orefl}_b(a) = Q_ba$
 
 $$
 \begin{split}
 Q_{(i,j)}
 &=\delta_{i,j} - 2 \frac{b_ib_j}{||b||^2} 
  \\
- Q
+ Q_b
 &=I - 2 \frac{bb^\top}{||b||^2} 
  \\
 \end{split}
@@ -144,7 +144,8 @@ END
 
 START
 Basic
-[[reflection#orthogonal refelction|orthogonal refelction]] as a [[orthogonal matrix]] (with proof)
+[[reflection#orthogonal refelction|orthogonal refelction]] as a [[orthogonal matrix]] (with proof) and check that its [[orthogonal]]
+
 $$
 \begin{split}
 \mathrm{orefl}_b(a) 
@@ -154,14 +155,14 @@ $$
 
 Back: 
 ### orthogonal refelction as orthogonal matrix
-- the orthogonal refelction can be represented as a [[linear map|linear transformation]] with an [[orthogonal matrix]] $Q$ such that $\mathrm{orefl}_b(a) = Qa$
+- the orthogonal refelction can be represented as a [[linear map|linear transformation]] with an [[orthogonal matrix]] $Q$ such that $\mathrm{orefl}_b(a) = Q_ba$
 
 $$
 \begin{split}
 Q_{(i,j)}
 &=\delta_{i,j} - 2 \frac{b_ib_j}{||b||^2} 
  \\
- Q
+ Q_b
 &=I - 2 \frac{bb^\top}{||b||^2} 
  \\
 \end{split}

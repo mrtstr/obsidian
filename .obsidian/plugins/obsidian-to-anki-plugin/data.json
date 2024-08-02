@@ -1661,7 +1661,7 @@
     "mathematics/optimization/newton type method.md": "a5c4a85977cbcfff9fe8d5c703d287a6",
     "mathematics/optimization/linearized cone.md": "d18e1ffa7798e90cedf72602ae4c9f90",
     "mathematics/optimization/tanget cone.md": "553566b6d6952417a4700654aa0fe4e0",
-    "mathematics/optimization/constraint optimization problem.md": "48cbc806053881cc8f9cc84f37b910fa",
+    "mathematics/optimization/constraint optimization problem.md": "59860e47153a8a07dc3ba114ba34a46d",
     "mathematics/optimization/feasible set.md": "aee976e9a179803d066442b30aa51c14",
     "mathematics/optimization/constraint optimization optimality criteria.md": "c39502215da54cd9d4ff43a0f3e62880",
     "mathematics/optimization/constraint qualification.md": "95edca7af0c0c1cef3aca3eb7d7fdeb3",
@@ -1686,7 +1686,10 @@
     "mathematics/numerical methods/linear least squares.md": "4680a8fa5e893ea8bcaae451876f3f74",
     "mathematics/numerical methods/QR decomposition.md": "25cc985cf004755a11b027ebee27f934",
     "mathematics/basics/vector subtraction.md": "d59485b0c2250f8ed944d9ccdf8fcfef",
-    "mathematics/basics/reflection.md": "c8460fdb92ba2e1f8fd479c6086bcc7a"
+    "mathematics/basics/reflection.md": "af025aded2248d812d8e8a490dfae8ec",
+    "mathematics/optimization/network flows.md": "bbadb79bfea35d59097fccbe14e6fc7e",
+    "mathematics/optimization/ford und fulkerson algorithm.md": "5fc2e5e7fa43339b320bd221b96693dd",
+    "mathematics/optimization/linear programm.md": "77d0a3fd30c0c1a1647eff0f1cca5f31"
   },
   "fields_dict": {
     "Basic": [
