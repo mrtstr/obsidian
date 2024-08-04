@@ -1,7 +1,7 @@
 ### linear primal programm
 - [[constraint optimization problem]] with a [[linear map|linear]] objective function and [[linear map|linear]] contraint functions
 - every [[linear map]] is [[convex]] thus every [[local minimum]] is a [[minimum|global minimum]] and 
-
+- approach: first feasable then find optimal
 ### canonical form
 
 $$
@@ -38,6 +38,7 @@ $$
 
 ### linear dual programm
 - given the following primal linear programm in canonical form with [[matrix]] $A\in \mathbb{R}^{n \times m}$
+- approach: first optimal then feasability
 
 $$
 \begin{split}
@@ -88,8 +89,8 @@ $$
 
 $$
 \begin{split}
-p_i\left(A_{(i, *)}^\top x - b_i\right) = 0 \\
-\left(c_j - p\top A_{(*, j)}^\top \right)x_j = 0 \\
+p_i\left(A_{(i, *)} x - b_i\right) = 0 \\
+\left(c_j - p^\top A_{(*, j)} \right)x_j = 0 \\
 \end{split}
 $$
 # anki
@@ -359,8 +360,8 @@ Back:
 
 $$
 \begin{split}
-p_i\left(A_{(i, *)}^\top x - b_i\right) = 0 \\
-\left(c_j - p\top A_{(*, j)}^\top \right)x_j = 0 \\
+p_i\left(A_{(i, *)} x - b_i\right) = 0 \\
+\left(c_j - p^\top A_{(*, j)} \right)x_j = 0 \\
 \end{split}
 $$
 
@@ -517,11 +518,10 @@ $$
 
 $$
 \begin{split}
-p_i\left(A_{(i, *)}^\top x - b_i\right) = 0 \\
-\left(c_j - p\top A_{(*, j)}^\top \right)x_j = 0 \\
+p_i\left(A_{(i, *)} x - b_i\right) = 0 \\
+\left(c_j - p^\top A_{(*, j)} \right)x_j = 0 \\
 \end{split}
 $$
-
 
 ### linear primal programm
 - [[constraint optimization problem]] with a [[linear map|linear]] objective function and [[linear map|linear]] contraint functions
