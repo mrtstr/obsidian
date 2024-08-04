@@ -131,7 +131,7 @@ $$
 $$
 
 Tags: mathematics linear_algebra
-
+<!--ID: 1722798041219-->
 END
 
 
@@ -188,7 +188,7 @@ $$
 $$
 
 Tags: mathematics linear_algebra
-
+<!--ID: 1722798041224-->
 END
 
 
@@ -281,7 +281,7 @@ $$
 - conditions $x_i \geq 0$ are transformed by subsituting $x_i$ with $y_i=-x_i$
 - add $x\geq0$ condition (no details)
 Tags: mathematics linear_algebra
-
+<!--ID: 1722798041227-->
 END
 
 
@@ -344,7 +344,7 @@ $$
 - conditions $x_i \geq 0$ are transformed by subsituting $x_i$ with $y_i=-x_i$
 - add $x\geq0$ condition (no details)
 Tags: mathematics linear_algebra
-
+<!--ID: 1722798041230-->
 END
 
 
@@ -452,7 +452,7 @@ $$
 - conditions $x_i \geq 0$ are transformed by subsituting $x_i$ with $y_i=-x_i$
 - add $x\geq0$ condition (no details)
 Tags: mathematics linear_algebra
-
+<!--ID: 1722798041232-->
 END
 
 
@@ -561,5 +561,5 @@ $$
 - conditions $x_i \geq 0$ are transformed by subsituting $x_i$ with $y_i=-x_i$
 - add $x\geq0$ condition (no details)
 Tags: mathematics linear_algebra
-
+<!--ID: 1722798041235-->
 END
