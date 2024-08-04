@@ -57,7 +57,7 @@ $$
 
 $$
 \begin{split}
-A_x &= \{a \in A: x(a) < u(a)\} \cup \{a^1 \in A^1: x(a)\} \\
+A_x &= \{a \in A: x(a) < u(a)\} \cup \{a^{-1} \in A^{-1}: x(a) > 0\} \\
 u_x &= \left\{\begin{matrix} 
 u(a) - x(a) && a \in A \\ 
 x(a^{-1}) && a^{-1} \in A
@@ -227,7 +227,7 @@ Back:
 
 $$
 \begin{split}
-A_x &= \{a \in A: x(a) < u(a)\} \cup \{a^1 \in A^1: x(a)\} \\
+A_x &= \{a \in A: x(a) < u(a)\} \cup \{a^{-1} \in A^{-1}: x(a) > 0\} \\
 u_x &= \left\{\begin{matrix} 
 u(a) - x(a) && a \in A \\ 
 x(a^{-1}) && a^{-1} \in A
@@ -321,13 +321,14 @@ Back:
 
 $$
 \begin{split}
-A_x &= \{a \in A: x(a) < u(a)\} \cup \{a^1 \in A^1: x(a)\} \\
+A_x &= \{a \in A: x(a) < u(a)\} \cup \{a^{-1} \in A^{-1}: x(a) > 0\} \\
 u_x &= \left\{\begin{matrix} 
 u(a) - x(a) && a \in A \\ 
 x(a^{-1}) && a^{-1} \in A
 \end{matrix} \right. \\
 \end{split}
 $$
+
 
 _________________
 
