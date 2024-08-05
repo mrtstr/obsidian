@@ -7,7 +7,7 @@ $$
 \mathrm{s.t.} \: &g(x)=0 \\
 \end{split}
 $$
-- the gole is to minimize the following [[lagrangian of a CNLP]] of the [[unconstraint optimization problem]] by minimizing the [[quadratic aproximation]] ([[newton method]])
+- the gole is to minimize the following [[lagrangian of a CNLP]] of the [[unconstraint optimization problem]] by minimizing the [[quadratic aproximation]] ([[newton methode]])
 $$
 \mathcal{L}\left(x, \lambda\right) = f(x) - g(x) \lambda   
 $$
@@ -100,7 +100,7 @@ $$
 - this problem can be solved using a [[penalty methods CNLP]]
 
 ##### newton step
-- then we can performe a [[newton method]] step to minimize the problem
+- then we can performe a [[newton methode]] step to minimize the problem
 $$
 \left(\begin{matrix}
 x^{(k+1)} \\
@@ -129,7 +129,7 @@ $$
 
 ![[quadratic aproximation#quadratic aproximationof $f: mathbb{R} m to mathbb{R}$]]
 
-![[newton method#newton method]]
+![[newton methode#newton method]]
 
 ![[lagrangian of a CNLP#lagrangian of a CNLP]]
 
@@ -157,7 +157,7 @@ $$
 \mathrm{s.t.} \: &g(x)=0 \\
 \end{split}
 $$
-- the gole is to minimize the following [[lagrangian of a CNLP]] of the [[unconstraint optimization problem]] by minimizing the [[quadratic aproximation]] ([[newton method]])
+- the gole is to minimize the following [[lagrangian of a CNLP]] of the [[unconstraint optimization problem]] by minimizing the [[quadratic aproximation]] ([[newton methode]])
 $$
 \mathcal{L}\left(x, \lambda\right) = f(x) - g(x) \lambda   
 $$
@@ -282,7 +282,7 @@ d
 $$
 
 - with the [[gradient descent]] method the [[linear aproximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
-- but with the [[newton method]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
+- but with the [[newton methode]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
 
 $$
 x^{(k+1)} = x^{(k)} - \nabla^2  f\left(x^{(k)}\right)^{-1} \nabla f\left(x^{(k)}\right)
@@ -327,7 +327,7 @@ $$
 \mathrm{s.t.} \: &g(x)=0 \\
 \end{split}
 $$
-- the gole is to minimize the following [[lagrangian of a CNLP]] of the [[unconstraint optimization problem]] by minimizing the [[quadratic aproximation]] ([[newton method]])
+- the gole is to minimize the following [[lagrangian of a CNLP]] of the [[unconstraint optimization problem]] by minimizing the [[quadratic aproximation]] ([[newton methode]])
 $$
 \mathcal{L}\left(x, \lambda\right) = f(x) - g(x) \lambda   
 $$
@@ -462,7 +462,7 @@ d
 $$
 
 - with the [[gradient descent]] method the [[linear aproximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
-- but with the [[newton method]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
+- but with the [[newton methode]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
 
 $$
 x^{(k+1)} = x^{(k)} - \nabla^2  f\left(x^{(k)}\right)^{-1} \nabla f\left(x^{(k)}\right)

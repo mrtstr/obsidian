@@ -272,9 +272,9 @@ $$
 
 $$
 \begin{split}
-||A||_1 &= \max\{3, 0\} = 3 \\
-||A^{-1}||_1 &= \max\left\{0, \frac{5}{15\cdot 15}\right\} = \frac{1}{45} \\
-\kappa(A) &= ||A^{-1}||_1 ||A||_1 = \frac{3}{45} \cdot 3 = \frac{1}{5} \\
+||A||_1 &= \max\{4, 5\} = 5 \\
+||A^{-1}||_1 &= \max\left\{\frac{3}{15}, \frac{5 + 1}{15}\right\} = \frac{6}{15} \\
+\kappa(A) &= ||A^{-1}||_1 ||A||_1 = \frac{6}{15} \cdot 5 = 2 \\
 \end{split}
 $$
 

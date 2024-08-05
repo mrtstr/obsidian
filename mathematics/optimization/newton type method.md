@@ -1,6 +1,6 @@
 ### newton type method
-- [[newton method]] with an approximated [[hessian]] $B$
-- with $B = \nabla^2 f\left(x^{(k)}\right)$ it's the [[newton method]]
+- [[newton methode]] with an approximated [[hessian]] $B$
+- with $B = \nabla^2 f\left(x^{(k)}\right)$ it's the [[newton methode]]
 
 $$
 x^{(k+1)} = x^{(k)} - \alpha^{(k)}  B^{-1} \nabla f\left(x^{(k)}\right)
@@ -17,7 +17,7 @@ $$
 ![[convergence rates#superlinear convergent]]
 
 
-![[newton method#newton method]]
+![[newton methode#newton method]]
 
 
 # anki
@@ -31,8 +31,8 @@ Basic
 
 Back: 
 ### newton type method
-- [[newton method]] with an approximated [[hessian]] $B$
-- with $B = \nabla^2 f\left(x^{(k)}\right)$ it's the [[newton method]]
+- [[newton methode]] with an approximated [[hessian]] $B$
+- with $B = \nabla^2 f\left(x^{(k)}\right)$ it's the [[newton methode]]
 
 $$
 x^{(k+1)} = x^{(k)} - \alpha^{(k)}  B^{-1} \nabla f\left(x^{(k)}\right)
@@ -68,7 +68,7 @@ d
 $$
 
 - with the [[gradient descent]] method the [[linear aproximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
-- but with the [[newton method]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
+- but with the [[newton methode]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
 
 $$
 x^{(k+1)} = x^{(k)} - \nabla^2  f\left(x^{(k)}\right)^{-1} \nabla f\left(x^{(k)}\right)

@@ -187,7 +187,7 @@ START
 Basic
 summary: [[convergence rates]] of
 - [[gradient descent]]
-- [[newton method]]
+- [[newton methode]]
 - [[newton type method]]
 
 Back: 
@@ -195,7 +195,7 @@ Back:
 - [[gradient descent]] with the [[armijo line search]] is converging linearly against a [[local minimum]]
 
 ### convergence of the newton method
-- the [[newton method]] converges quandraticly
+- the [[newton methode]] converges quandraticly
 
 ### convergence of the newton type method
 - the [[newton type method]] can converge superlinear in a (possibly small area around the [[local minimum]]) when the following conditions are satisfied

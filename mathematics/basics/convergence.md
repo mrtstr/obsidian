@@ -17,6 +17,7 @@ $$
 &||v_n - v^* || \xrightarrow{n \rightarrow \infty} 0
 \end{split}
 $$
+
 ### [[convergence]] notations
 $$
 ||v_n - v^* || \xrightarrow{n \rightarrow \infty} 0

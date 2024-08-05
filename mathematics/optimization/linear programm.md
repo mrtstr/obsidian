@@ -59,15 +59,14 @@ $$
 
 #### transfomration primal to dual in general form
 - the primal objective function $\min c^\top x$ becomes $\max p^\top b$
-- for each row vector $A_{(i, *)}$ that is representing a constraint function a constraint regrading $p_i$ in introduced
-	- $A_{(i, *)}x \geq b_i$ becomes $p_i\geq 0$
-	- $A_{(i, *)}x \leq b_i$ becomes $p_i\leq 0$
-	- $A_{(i, *)}x = b_i$ becomes $p_i=free$
-
 - for each constraint regading $x_j$ a constraint function is introduced based on its relation column vector $A_{(*, j)}$
 	- $x_j \geq 0$ becomes $p^\top A_{(*, j)} \leq c_i$
 	- $x_j \leq 0$ becomes $p^\top A_{(*, j)} \geq c_i$
 	- $x=0$ becomes $p^\top A_{(*, j)} = c_i$
+- for each row vector $A_{(i, *)}$ that is representing a constraint function a constraint regrading $p_i$ in introduced
+	- $A_{(i, *)}x \geq b_i$ becomes $p_i\geq 0$
+	- $A_{(i, *)}x \leq b_i$ becomes $p_i\leq 0$
+	- $A_{(i, *)}x = b_i$ becomes $p_i=free$
 
 #### interpretation
 - the variable $p$ can be interpreted as
@@ -231,15 +230,14 @@ $$
 
 #### transfomration primal to dual in general form
 - the primal objective function $\min c^\top x$ becomes $\max p^\top b$
-- for each row vector $A_{(i, *)}$ that is representing a constraint function a constraint regrading $p_i$ in introduced
-	- $A_{(i, *)}x \geq b_i$ becomes $p_i\geq 0$
-	- $A_{(i, *)}x \leq b_i$ becomes $p_i\leq 0$
-	- $A_{(i, *)}x = b_i$ becomes $p_i=free$
-
 - for each constraint regading $x_j$ a constraint function is introduced based on its relation column vector $A_{(*, j)}$
 	- $x_j \geq 0$ becomes $p^\top A_{(*, j)} \leq c_i$
 	- $x_j \leq 0$ becomes $p^\top A_{(*, j)} \geq c_i$
 	- $x=0$ becomes $p^\top A_{(*, j)} = c_i$
+- for each row vector $A_{(i, *)}$ that is representing a constraint function a constraint regrading $p_i$ in introduced
+	- $A_{(i, *)}x \geq b_i$ becomes $p_i\geq 0$
+	- $A_{(i, *)}x \leq b_i$ becomes $p_i\leq 0$
+	- $A_{(i, *)}x = b_i$ becomes $p_i=free$
 
 
 _____________________
@@ -294,16 +292,14 @@ how to build the dual problem for a primal linear programm in general form?
 Back: 
 #### transfomration primal to dual in general form
 - the primal objective function $\min c^\top x$ becomes $\max p^\top b$
-- for each row vector $A_{(i, *)}$ that is representing a constraint function a constraint regrading $p_i$ in introduced
-	- $A_{(i, *)}x \geq b_i$ becomes $p_i\geq 0$
-	- $A_{(i, *)}x \leq b_i$ becomes $p_i\leq 0$
-	- $A_{(i, *)}x = b_i$ becomes $p_i=free$
-
 - for each constraint regading $x_j$ a constraint function is introduced based on its relation column vector $A_{(*, j)}$
 	- $x_j \geq 0$ becomes $p^\top A_{(*, j)} \leq c_i$
 	- $x_j \leq 0$ becomes $p^\top A_{(*, j)} \geq c_i$
 	- $x=0$ becomes $p^\top A_{(*, j)} = c_i$
-
+- for each row vector $A_{(i, *)}$ that is representing a constraint function a constraint regrading $p_i$ in introduced
+	- $A_{(i, *)}x \geq b_i$ becomes $p_i\geq 0$
+	- $A_{(i, *)}x \leq b_i$ becomes $p_i\leq 0$
+	- $A_{(i, *)}x = b_i$ becomes $p_i=free$
 
 _____________________
 
@@ -388,15 +384,14 @@ $$
 
 #### transfomration primal to dual in general form
 - the primal objective function $\min c^\top x$ becomes $\max p^\top b$
-- for each row vector $A_{(i, *)}$ that is representing a constraint function a constraint regrading $p_i$ in introduced
-	- $A_{(i, *)}x \geq b_i$ becomes $p_i\geq 0$
-	- $A_{(i, *)}x \leq b_i$ becomes $p_i\leq 0$
-	- $A_{(i, *)}x = b_i$ becomes $p_i=free$
-
 - for each constraint regading $x_j$ a constraint function is introduced based on its relation column vector $A_{(*, j)}$
 	- $x_j \geq 0$ becomes $p^\top A_{(*, j)} \leq c_i$
 	- $x_j \leq 0$ becomes $p^\top A_{(*, j)} \geq c_i$
 	- $x=0$ becomes $p^\top A_{(*, j)} = c_i$
+- for each row vector $A_{(i, *)}$ that is representing a constraint function a constraint regrading $p_i$ in introduced
+	- $A_{(i, *)}x \geq b_i$ becomes $p_i\geq 0$
+	- $A_{(i, *)}x \leq b_i$ becomes $p_i\leq 0$
+	- $A_{(i, *)}x = b_i$ becomes $p_i=free$
 
 #### interpretation
 - the variable $p$ can be interpreted as
@@ -501,16 +496,14 @@ $$
 
 #### transfomration primal to dual in general form
 - the primal objective function $\min c^\top x$ becomes $\max p^\top b$
-- for each row vector $A_{(i, *)}$ that is representing a constraint function a constraint regrading $p_i$ in introduced
-	- $A_{(i, *)}x \geq b_i$ becomes $p_i\geq 0$
-	- $A_{(i, *)}x \leq b_i$ becomes $p_i\leq 0$
-	- $A_{(i, *)}x = b_i$ becomes $p_i=free$
-
 - for each constraint regading $x_j$ a constraint function is introduced based on its relation column vector $A_{(*, j)}$
 	- $x_j \geq 0$ becomes $p^\top A_{(*, j)} \leq c_i$
 	- $x_j \leq 0$ becomes $p^\top A_{(*, j)} \geq c_i$
 	- $x=0$ becomes $p^\top A_{(*, j)} = c_i$
-
+- for each row vector $A_{(i, *)}$ that is representing a constraint function a constraint regrading $p_i$ in introduced
+	- $A_{(i, *)}x \geq b_i$ becomes $p_i\geq 0$
+	- $A_{(i, *)}x \leq b_i$ becomes $p_i\leq 0$
+	- $A_{(i, *)}x = b_i$ becomes $p_i=free$
 
 
 #### primal dual slackness
