@@ -1672,7 +1672,7 @@
     "mathematics/optimization/unconstraint optimization problem.md": "7f9ad6383f95c1be29f76b8c9d6dd79b",
     "mathematics/optimization/penalty methods CNLP.md": "998949e635095d2653869fc555898b1b",
     "mathematics/optimization/active set method.md": "d3fb16d7a4b17e735f273f4cade37886",
-    "mathematics/optimization/sequential quadratic programming (SQP).md": "912e910527d2dd8020296064653df1e6",
+    "mathematics/optimization/sequential quadratic programming (SQP).md": "b920a21752c581e87401fa9d9dea32a7",
     "mathematics/numerical methods/condition.md": "f49c4cae97e294ee787666392c7775be",
     "mathematics/numerical methods/error anlysis.md": "149f1f07a463b72c421b139e28a9ff94",
     "mathematics/numerical methods/error round off.md": "cc7b0903bd9b1ce8ff9f177531660262",
@@ -1692,7 +1692,8 @@
     "mathematics/optimization/linear programm.md": "155b5b75905bff3080354c13629237a7",
     "mathematics/optimization/newton methode.md": "a9bf38a59f4e7af8e648c70ee80a8559",
     "mathematics/optimization/root finding problem.md": "8debfbdfa89ba4d5b8050b98650744a3",
-    "mathematics/optimization/local convergence.md": "b4372688ca79b9f8d56aa149a03a9154"
+    "mathematics/optimization/local convergence.md": "b4372688ca79b9f8d56aa149a03a9154",
+    "mathematics/optimization/active set methode.md": "c468dd1e56f604002254b1be07c6ee03"
   },
   "fields_dict": {
     "Basic": [

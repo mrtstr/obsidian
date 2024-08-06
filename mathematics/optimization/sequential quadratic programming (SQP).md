@@ -488,3 +488,38 @@ $$
 Tags: mathematics
 <!--ID: 1721813631691-->
 END
+
+
+
+
+START
+Basic
+strategy for guessing the active set for solving a [[constraint optimization problem]]
+
+Back: 
+1) solve the unconstaint problem (ignore the constraints)
+2) if the solution is not [[feasible set|feasable]] regading the constraints $\{h_i\}$ they have to be in the [[active set]]
+3) check the rest
+_______________________
+
+### lagrangian of a CNLP
+- methode for seaching for stanary points of an [[constraint optimization problem]] by tansforming it in an unconstrain optimization problem → searching for [[kkt conditions|kkt points]]
+- the [[lagrangian of a CNLP]] is defined as follows:
+$$
+\mathcal{L}\left(x, \lambda, \mu\right) = f(x) - \lambda^\top  g(x) - \mu^\top  h(x)
+$$
+
+- to find [[kkt conditions|kkt points]] we solve the following system of equations:
+
+$$
+\begin{split}
+\nabla_x \mathcal{L}\left(x, \lambda, \mu\right)&=f(x) - \lambda^\top  \nabla g(x) - \mu^\top  \nabla h(x)= 0 \\
+\nabla_\lambda \mathcal{L}\left(x, \lambda, \mu\right)&= g(x)= 0 \\
+\nabla_\mu \mathcal{L}\left(x, \lambda, \mu\right)&= h(x) \geq 0 \\
+\end{split}
+$$
+
+
+Tags: mathematics
+<!--ID: 1722968468073-->
+END
