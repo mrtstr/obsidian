@@ -25,7 +25,38 @@ $$
 ### properties
 [[determinant]]
 
+
+$$
+\begin{split}
+(A+B)^3
+& = (A+B)\cdot (A+B) \cdot (A+B) \\ 
+& = (A^2 + AB + BA + B^2) \cdot (A+B) \\ 
+& = A^3 + ABA + BA^2 + B^2A + A^2B + AB^2 + BAB + B^3 \\ 
+\end{split}
+$$
 # anki
+
+
+
+START
+Basic
+- given [[matrix]] $A$ and $B$ calculate $(A+B)^3$
+Back: 
+
+$$
+\begin{split}
+(A+B)^3
+& = (A+B)\cdot (A+B) \cdot (A+B) \\ 
+& = (A^2 + AB + BA + B^2) \cdot (A+B) \\ 
+& = A^3 + ABA + BA^2 + B^2A + A^2B + AB^2 + BAB + B^3 \\ 
+\end{split}
+$$
+
+
+Tags: mathematics linear_algebra
+<!--ID: 1723048766546-->
+END
+
 
 START
 Basic

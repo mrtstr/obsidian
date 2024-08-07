@@ -500,6 +500,11 @@ Back:
 1) solve the unconstaint problem (ignore the constraints)
 2) if the solution is not [[feasible set|feasable]] regading the constraints $\{h_i\}$ they have to be in the [[active set]]
 3) check the rest
+
+- then guess a active set $\mathcal{A}$ and all $\mu_i$ that are not in the [[set]] have to be zero 
+$$
+\mathcal{A}=\{i, j, ...\} \Rightarrow \forall i \in [n] \setminus \mathcal{A}: \mu_i = 0
+$$
 _______________________
 
 ### lagrangian of a CNLP
