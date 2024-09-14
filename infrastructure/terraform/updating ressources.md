@@ -1,0 +1,2 @@
+- some properties are mutable and some are immutable
+- updating immutable will result in deleting and recreating it while updating mutable properties will result in a change

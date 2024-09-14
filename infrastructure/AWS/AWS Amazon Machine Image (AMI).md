@@ -1,0 +1,2 @@
+- Linux image for running [[AWS EC2]]
+- can be used pre existing or custom build

@@ -1,0 +1,1 @@
+- blueprint for working with [[AWS Auto Scaling Group]] or spot instances

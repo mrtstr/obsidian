@@ -1,0 +1,2 @@
+- configure how that resource is created, updated, and/or deleted
+- e.g `create_before_destroy` to make shure it always reachable when changing
