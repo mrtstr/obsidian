@@ -1,4 +1,22 @@
+
 ```
+
+resource "aws_launch_configuration" "example" {  
+  image_id        = "ami-0fb653ca2d3203ac1"  
+  instance_type   = "t2.micro"  
+  security_groups = [aws_security_group.instance.id]  
+  
+  user_data = <<-EOF  
+              #!/bin/bash  
+              echo "Hello, World" > index.html  
+              nohup busybox httpd -f -p ${var.server_port} &  
+              EOF  # Required when using a launch configuration with an ASG.  
+  lifecycle {  
+    create_before_destroy = true  
+  }  
+}
+
+
 resource "aws_autoscaling_group" "example" {  
   launch_configuration = aws_launch_configuration.example.name  
   vpc_zone_identifier  = data.aws_subnets.default.ids  target_group_arns = [aws_lb_target_group.asg.arn]  
@@ -70,8 +88,8 @@ resource "aws_lb_target_group" "asg" {
     unhealthy_threshold = 2  
   }  
 }
-
 ```
+
 
 ![[AWS Elastic Load Balancer (ELB)#load balancer]]
 

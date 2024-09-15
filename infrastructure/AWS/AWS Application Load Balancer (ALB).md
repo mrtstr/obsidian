@@ -1,30 +1,23 @@
 ### Application Load Balancer
 - [[AWS Elastic Load Balancer (ELB)]] that works in the [[application layer]]
 - should be used for [[hypertext transfer protocol (HTTP)]] traffic
-- needs a listener 
-- needs a target group
-
-
-
-
-# anki
-
-START
-Basic
-[[AWS Application Load Balancer (ALB)]] example 
-Back: 
-### Application Load Balancer
-- [[AWS Elastic Load Balancer (ELB)]] that works in the [[application layer]]
-- should be used for [[hypertext transfer protocol (HTTP)]] traffic
-- need a listener
 
 ```
 resource "aws_lb" "example" {  
   name               = "terraform-asg-example"  
   load_balancer_type = "application"  
   subnets            = data.aws_subnets.default.ids  
+  security_groups    = [aws_security_group.alb.id]
 }
+```
 
+![[ALB 1.jpg]]
+
+#### listener
+- a listner is needed to filter and forward incomming requests based on [[protocol]] and [[port]]
+- a default response can be setup when no reachable
+
+```terraform
 resource "aws_lb_listener" "http" {  
   load_balancer_arn = aws_lb.example.arn  
   port              = 80  
@@ -42,6 +35,141 @@ resource "aws_lb_listener" "http" {
   }  
 }
 ```
+
+#### listener rule
+- can have a listener rule based on the prefix of the path of the incomming [[uniform resource identifier (URI)]]
+
+```terraform
+resource "aws_lb_listener_rule" "asg" {  
+  listener_arn = aws_lb_listener.http.arn  
+  priority     = 100  
+  
+  condition {  
+    path_pattern {  
+      values = ["*"]  
+    }  
+  }  
+  
+  action {  
+    type             = "forward"  
+    target_group_arn = aws_lb_target_group.asg.arn  
+  }  
+}
+```
+
+#### target group
+- group of instances the request is forwarded to
+- a list of e.g. [[AWS EC2]] instances can be procided but most of the time the target group should be assigned to a [[AWS Auto Scaling Group]] or a [[AWS ECS Elastic Container Service]] luster
+- can include a health checker
+
+```terraform
+resource "aws_lb_target_group" "asg" {  
+  name     = "terraform-asg-example"  
+  port     = var.server_port  
+  protocol = "HTTP"  
+  vpc_id   = data.aws_vpc.default.id  
+  
+  health_check {  
+    path                = "/"  
+    protocol            = "HTTP"  
+    matcher             = "200"  
+    interval            = 15  
+    timeout             = 3  
+    healthy_threshold   = 2  
+    unhealthy_threshold = 2  
+  }  
+}
+```
+
+
+
+
+
+# anki
+
+START
+Basic
+[[AWS Application Load Balancer (ALB)]] 
+- what is it doing
+- components (3) with example
+Back: 
+### Application Load Balancer
+- [[AWS Elastic Load Balancer (ELB)]] that works in the [[application layer]]
+- should be used for [[hypertext transfer protocol (HTTP)]] traffic
+
+
+![[ALB.jpg]]
+
+
+#### listener
+- a listner is needed to filter and forward incomming requests based on [[protocol]] and [[port]]
+- a default response can be setup when no reachable
+
+```terraform
+resource "aws_lb_listener" "http" {  
+  load_balancer_arn = aws_lb.example.arn  
+  port              = 80  
+  protocol          = "HTTP"  
+  
+  # By default, return a simple 404 page  
+  default_action {  
+    type = "fixed-response"  
+  
+    fixed_response {  
+      content_type = "text/plain"  
+      message_body = "404: page not found"  
+      status_code  = 404  
+    }  
+  }  
+}
+```
+
+#### listener rule
+- can have a listener rule based on the prefix of the path of the incomming [[uniform resource identifier (URI)]]
+
+```terraform
+resource "aws_lb_listener_rule" "asg" {  
+  listener_arn = aws_lb_listener.http.arn  
+  priority     = 100  
+  
+  condition {  
+    path_pattern {  
+      values = ["*"]  
+    }  
+  }  
+  
+  action {  
+    type             = "forward"  
+    target_group_arn = aws_lb_target_group.asg.arn  
+  }  
+}
+```
+
+#### target group
+- group of instances the request is forwarded to
+- a list of e.g. [[AWS EC2]] instances can be procided but most of the time the target group should be assigned to a [[AWS Auto Scaling Group]] or a [[AWS ECS Elastic Container Service]] luster
+- can include a health checker
+
+```terraform
+resource "aws_lb_target_group" "asg" {  
+  name     = "terraform-asg-example"  
+  port     = var.server_port  
+  protocol = "HTTP"  
+  vpc_id   = data.aws_vpc.default.id  
+  
+  health_check {  
+    path                = "/"  
+    protocol            = "HTTP"  
+    matcher             = "200"  
+    interval            = 15  
+    timeout             = 3  
+    healthy_threshold   = 2  
+    unhealthy_threshold = 2  
+  }  
+}
+```
+
+_______________________
 
 
 ### load balancer

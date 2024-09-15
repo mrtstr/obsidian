@@ -36,6 +36,7 @@ data "aws_subnets" "default" {
 START
 Basic
 - how to use [[AWS VPC (virtual private cloud)]] [[AWS subnet]] in [[terraform]] code
+- used concept
 
 Back: 
 they could be imported but its better maintainable to use [[tf data source]]
