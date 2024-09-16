@@ -99,13 +99,13 @@ resource "aws_lb_target_group" "asg" {
 
 START
 Basic
-what is needed to make a [[AWS ECS Elastic Container Service]] cluster or a [[AWS Auto Scaling Group]] commnicate with the internet?
+what is needed to make a [[AWS ECS]] cluster or a [[AWS Auto Scaling Group]] commnicate with the internet?
 Back: 
 - a [[AWS Elastic Load Balancer (ELB)]] to create a single service endpoint for the group/cluster and a [[AWS Security Group]] to allow outside communication
 
 
 ## load balancer
-- assigned to a [[AWS Auto Scaling Group]] ([[AWS EC2]] instances) or a [[AWS ECS Elastic Container Service]] cluster to make them accessable from outside
+- assigned to a [[AWS Auto Scaling Group]] ([[AWS EC2]] instances) or a [[AWS ECS]] cluster to make them accessable from outside
 
 #### Network Load Balancer
 - load balancer that works in the [[transport layer]] 

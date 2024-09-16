@@ -38,6 +38,21 @@ module "webserver_cluster" {
 
 START
 Basic
+filename/organization conventions in a [[terraform]] [[tf module]]
+Back: 
+### module naming conventions
+- **_variables.tf_:** Input variables
+- **_outputs.tf:_** Output variables
+- **_main.tf:_** Resources and data sources
+- **_providers.tf:_** You may want to put your provider blocks into a _providers.tf_ file so you can see, at a glance, what providers the code talks to and what authentication you’ll have to provide.
+- **_main-xxx.tf:_** If the _main.tf_ file is getting really long because it contains a large number of resources, you could break it down into smaller files that group the resources in some logical way: e.g., _main-iam.tf_ could contain all the IAM resources, _main-s3.tf_ could contain all the S3 resources, and so on.
+
+Tags: infra
+<!--ID: 1726516929897-->
+END
+
+START
+Basic
 - how is [[terraform]] code reused?
 - [[tf module]] and how do import it (with example)
 Back: 

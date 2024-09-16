@@ -59,7 +59,7 @@ resource "aws_lb_listener_rule" "asg" {
 
 #### target group
 - group of instances the request is forwarded to
-- a list of e.g. [[AWS EC2]] instances can be procided but most of the time the target group should be assigned to a [[AWS Auto Scaling Group]] or a [[AWS ECS Elastic Container Service]] luster
+- a list of e.g. [[AWS EC2]] instances can be procided but most of the time the target group should be assigned to a [[AWS Auto Scaling Group]] or a [[AWS ECS]] luster
 - can include a health checker
 
 ```terraform
@@ -147,7 +147,7 @@ resource "aws_lb_listener_rule" "asg" {
 
 #### target group
 - group of instances the request is forwarded to
-- a list of e.g. [[AWS EC2]] instances can be procided but most of the time the target group should be assigned to a [[AWS Auto Scaling Group]] or a [[AWS ECS Elastic Container Service]] luster
+- a list of e.g. [[AWS EC2]] instances can be procided but most of the time the target group should be assigned to a [[AWS Auto Scaling Group]] or a [[AWS ECS]] luster
 - can include a health checker
 
 ```terraform
@@ -173,7 +173,7 @@ _______________________
 
 
 ### load balancer
-- assigned to a [[AWS Auto Scaling Group]] ([[AWS EC2]] instances) or a [[AWS ECS Elastic Container Service]] cluster to make them accessable from outside
+- assigned to a [[AWS Auto Scaling Group]] ([[AWS EC2]] instances) or a [[AWS ECS]] cluster to make them accessable from outside
 - consists of multiple servers that can run in seperate [[AWS subnet]]
 - [[AWS]] automatically scales the number of load balancer servers up and down based on traffic
 - by default don't allow any traffic to a [[AWS Security Group]] is needed

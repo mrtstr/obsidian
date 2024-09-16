@@ -43,6 +43,7 @@ resource "aws_security_group" "web_server" {
 }
 ```
 
+# ---------------------
 ![[AWS VPC (virtual private cloud)]]
 
 # anki

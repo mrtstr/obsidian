@@ -1,5 +1,5 @@
 ### load balancer
-- assigned to a [[AWS Auto Scaling Group]] ([[AWS EC2]] instances) or a [[AWS ECS Elastic Container Service]] cluster to make them accessable from outside
+- assigned to a [[AWS Auto Scaling Group]] ([[AWS EC2]] instances) or a [[AWS ECS]] cluster to make them accessable from outside
 - consists of multiple servers that can run in seperate [[AWS subnet]]
 - [[AWS]] automatically scales the number of load balancer servers up and down based on traffic
 - by default don't allow any traffic to a [[AWS Security Group]] is needed
@@ -22,7 +22,7 @@ what are they used for?
 Back: 
 
 ### load balancer
-- assigned to a [[AWS Auto Scaling Group]] ([[AWS EC2]] instances) or a [[AWS ECS Elastic Container Service]] cluster to make them accessable from outside
+- assigned to a [[AWS Auto Scaling Group]] ([[AWS EC2]] instances) or a [[AWS ECS]] cluster to make them accessable from outside
 - consists of multiple servers that can run in seperate [[AWS subnet]]
 - [[AWS]] automatically scales the number of load balancer servers up and down based on traffic
 - by default don't allow any traffic to a [[AWS Security Group]] is needed

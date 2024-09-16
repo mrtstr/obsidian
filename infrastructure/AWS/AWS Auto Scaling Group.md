@@ -1,6 +1,6 @@
 ### auto scaling groups
 - for running multiple [[AWS EC2]] instances with autoscaling
-- similar to [[AWS ECS Elastic Container Service]] with virtual machines instead of [[docker]] container
+- similar to [[AWS ECS]] with virtual machines instead of [[docker]] container
 
 ```
 resource "aws_autoscaling_group" "example" {  
@@ -87,12 +87,12 @@ START
 Basic
 [[AWS Auto Scaling Group]]
 - plus one nesseay component with example each
-- concent end differenct to [[AWS ECS Service]]
+- concent end differenct to [[AWS ECS service]]
 
 Back: 
 ### auto scaling groups
 - for running multiple [[AWS EC2]] instances with autoscaling
-- similar to [[AWS ECS Elastic Container Service]] with virtual machines instead of [[docker]] container
+- similar to [[AWS ECS]] with virtual machines instead of [[docker]] container
 
 ```
 resource "aws_autoscaling_group" "example" {  

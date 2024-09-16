@@ -1,3 +1,0 @@
-- endpoint for outside communication with a [[AWS ECS Elastic Container Service]] cluster
-- loadbalances end routs requests to one of the instances within the cluster
-- still needs an [[AWS ingress]] to communicate

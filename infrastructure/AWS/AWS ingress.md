@@ -1,4 +1,4 @@
-- exposes HTTP and HTTPS routes from outside to a resource ([[AWS ECS Service]] or [[AWS EC2]] instance)
+- exposes HTTP and HTTPS routes from outside to a resource ([[AWS ECS service]] or [[AWS EC2]] instance)
 
 ```
 # allow incomming TCP requests on port 8080 (all ips)

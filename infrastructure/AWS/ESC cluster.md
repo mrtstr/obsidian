@@ -1,0 +1,1 @@
+### ESC cluster- Amazon ECS cluster is a logical grouping of tasks or services- contains multiple EC2 Instances or Container Instances
