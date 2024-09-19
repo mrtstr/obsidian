@@ -1720,7 +1720,7 @@
     "infrastructure/AWS/AWS ECS Elastic Container Service.md": "d41d8cd98f00b204e9800998ecf8427e",
     "infrastructure/AWS/AWS Amazon Machine Image (AMI).md": "a73282c5e1cd1b8dde9c2e67f16c974d",
     "infrastructure/AWS/AWS Network Load Balancer (NLB).md": "1ea70a385e01bd82c6fe1909a0e63061",
-    "infrastructure/AWS/AWS Application Load Balancer (ALB).md": "a9bae99d9708cbb09e090e7368538e39",
+    "infrastructure/AWS/AWS Application Load Balancer (ALB).md": "00e35efcc86ca98541ba9a986cc9cbe4",
     "infrastructure/AWS/AWS AZ (isolated datacenter).md": "84d0aaa477e5061c0e2e666f56375d48",
     "infrastructure/AWS/AWS NATGateway (network address translation).md": "f6010cda2eb46427bddfafe13b158351",
     "infrastructure/AWS/AWS VPC (virtual private cloud).md": "21ceb85c9b54c1304ed1c2dcf8f680dd",
@@ -1771,8 +1771,11 @@
     "infrastructure/AWS/AWS ECS on EC2.md": "19ee250583368674a7800d4aee769d33",
     "infrastructure/AWS/AWS gateway load balancer (GLB).md": "d41d8cd98f00b204e9800998ecf8427e",
     "infrastructure/AWS/AWS elastic network interface (ENI).md": "d41d8cd98f00b204e9800998ecf8427e",
-    "infrastructure/AWS/AWS target group.md": "9c8abe3fb89940c942ed3efa520409b8",
-    "infrastructure/AWS/AWS elastic file system EFS.md": "f761c6e5afeba49ebc1a418f0b8b7cf1"
+    "infrastructure/AWS/AWS target group.md": "71429a81e52f8b8123164968c0e21abc",
+    "infrastructure/AWS/AWS elastic file system EFS.md": "f761c6e5afeba49ebc1a418f0b8b7cf1",
+    "infrastructure/AWS/AWS autoscaling policy.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "infrastructure/AWS/AWS listner.md": "117e9486be80c93b13ff20158ee8363a",
+    "infrastructure/AWS/AWS example webside in ECS.md": "8d7d79533f0542fd98604e8f2bd24d8b"
   },
   "fields_dict": {
     "Basic": [
