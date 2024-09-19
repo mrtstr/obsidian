@@ -1,0 +1,2 @@
+- more powerful version of [[AWS launch configuration]]
+- template for starting [[AWS EC2]] instances in an [[AWS Auto Scaling Group]]

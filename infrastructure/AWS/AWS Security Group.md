@@ -13,6 +13,8 @@
 - from a certain [[port]] to a certain [[port]]
 - only allows traffic to the specified [[internet protocol (IP)]] range (`cidr_blocks`)
 
+## [[terraform]] example[d image][d image]
+
 ```
 resource "aws_security_group" "web_server" {  
   name        = "web_server"  

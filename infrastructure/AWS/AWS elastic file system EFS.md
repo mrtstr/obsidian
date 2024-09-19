@@ -1,0 +1,1 @@
+provides scalable file storage for use with [[AWS EC2]]

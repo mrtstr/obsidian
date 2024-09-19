@@ -1,6 +1,21 @@
 ### Application Load Balancer
-- [[AWS Elastic Load Balancer (ELB)]] that works in the [[application layer]]
-- should be used for [[hypertext transfer protocol (HTTP)]] traffic
+- distributes traffic among multiple servers
+- works in the [[application layer]] (e.g [[hypertext transfer protocol (HTTP)]] traffic)
+- conducts healthchecks
+- redirect diffent webservers depending on the request
+
+![[ALB 1.jpg]]
+
+#### listener
+- a listner is needed to filter and forward incomming requests based on [[protocol]] and [[port]]
+- a default response can be setup when no reachable
+
+#### listener rule
+- can have a listener rule based on the prefix of the path of the incomming [[uniform resource identifier (URI)]]
+
+![[AWS target group#target group]]
+
+## [[terraform]] example
 
 ```
 resource "aws_lb" "example" {  
@@ -11,12 +26,6 @@ resource "aws_lb" "example" {
 }
 ```
 
-![[ALB 1.jpg]]
-
-#### listener
-- a listner is needed to filter and forward incomming requests based on [[protocol]] and [[port]]
-- a default response can be setup when no reachable
-
 ```terraform
 resource "aws_lb_listener" "http" {  
   load_balancer_arn = aws_lb.example.arn  
@@ -35,32 +44,6 @@ resource "aws_lb_listener" "http" {
   }  
 }
 ```
-
-#### listener rule
-- can have a listener rule based on the prefix of the path of the incomming [[uniform resource identifier (URI)]]
-
-```terraform
-resource "aws_lb_listener_rule" "asg" {  
-  listener_arn = aws_lb_listener.http.arn  
-  priority     = 100  
-  
-  condition {  
-    path_pattern {  
-      values = ["*"]  
-    }  
-  }  
-  
-  action {  
-    type             = "forward"  
-    target_group_arn = aws_lb_target_group.asg.arn  
-  }  
-}
-```
-
-#### target group
-- group of instances the request is forwarded to
-- a list of e.g. [[AWS EC2]] instances can be procided but most of the time the target group should be assigned to a [[AWS Auto Scaling Group]] or a [[AWS ECS]] luster
-- can include a health checker
 
 ```terraform
 resource "aws_lb_target_group" "asg" {  
@@ -82,7 +65,23 @@ resource "aws_lb_target_group" "asg" {
 ```
 
 
-
+```terraform
+resource "aws_lb_listener_rule" "asg" {  
+  listener_arn = aws_lb_listener.http.arn  
+  priority     = 100  
+  
+  condition {  
+    path_pattern {  
+      values = ["*"]  
+    }  
+  }  
+  
+  action {  
+    type             = "forward"  
+    target_group_arn = aws_lb_target_group.asg.arn  
+  }  
+}
+```
 
 
 # anki
@@ -91,11 +90,15 @@ START
 Basic
 [[AWS Application Load Balancer (ALB)]] 
 - what is it doing
-- components (3) with example
+- components (2 + 2 + 2)
+- how is it connected to servers?
+- [[terraform]] example
 Back: 
 ### Application Load Balancer
-- [[AWS Elastic Load Balancer (ELB)]] that works in the [[application layer]]
-- should be used for [[hypertext transfer protocol (HTTP)]] traffic
+- distributes traffic among multiple servers
+- works in the [[application layer]] (e.g [[hypertext transfer protocol (HTTP)]] traffic)
+- conducts healthchecks
+- redirect diffent webservers depending on the request
 
 
 ![[ALB.jpg]]
@@ -105,6 +108,24 @@ Back:
 - a listner is needed to filter and forward incomming requests based on [[protocol]] and [[port]]
 - a default response can be setup when no reachable
 
+#### listener rule
+- can have a listener rule based on the prefix of the path of the incomming [[uniform resource identifier (URI)]]
+
+#### target group
+- linkes the [[AWS Application Load Balancer (ALB)]] to a group of servers (in [[AWS Auto Scaling Group]] or [[AWS ECS service]] a ALB id can be referenced)
+- can include a health checker
+
+## [[terraform]] example
+
+```
+resource "aws_lb" "example" {  
+  name               = "terraform-asg-example"  
+  load_balancer_type = "application"  
+  subnets            = data.aws_subnets.default.ids  
+  security_groups    = [aws_security_group.alb.id]
+}
+```
+
 ```terraform
 resource "aws_lb_listener" "http" {  
   load_balancer_arn = aws_lb.example.arn  
@@ -124,32 +145,6 @@ resource "aws_lb_listener" "http" {
 }
 ```
 
-#### listener rule
-- can have a listener rule based on the prefix of the path of the incomming [[uniform resource identifier (URI)]]
-
-```terraform
-resource "aws_lb_listener_rule" "asg" {  
-  listener_arn = aws_lb_listener.http.arn  
-  priority     = 100  
-  
-  condition {  
-    path_pattern {  
-      values = ["*"]  
-    }  
-  }  
-  
-  action {  
-    type             = "forward"  
-    target_group_arn = aws_lb_target_group.asg.arn  
-  }  
-}
-```
-
-#### target group
-- group of instances the request is forwarded to
-- a list of e.g. [[AWS EC2]] instances can be procided but most of the time the target group should be assigned to a [[AWS Auto Scaling Group]] or a [[AWS ECS]] luster
-- can include a health checker
-
 ```terraform
 resource "aws_lb_target_group" "asg" {  
   name     = "terraform-asg-example"  
@@ -165,6 +160,25 @@ resource "aws_lb_target_group" "asg" {
     timeout             = 3  
     healthy_threshold   = 2  
     unhealthy_threshold = 2  
+  }  
+}
+```
+
+
+```terraform
+resource "aws_lb_listener_rule" "asg" {  
+  listener_arn = aws_lb_listener.http.arn  
+  priority     = 100  
+  
+  condition {  
+    path_pattern {  
+      values = ["*"]  
+    }  
+  }  
+  
+  action {  
+    type             = "forward"  
+    target_group_arn = aws_lb_target_group.asg.arn  
   }  
 }
 ```
