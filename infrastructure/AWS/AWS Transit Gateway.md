@@ -1,1 +1,0 @@
-- connected [[AWS VPC (virtual private cloud)]] with other networks

@@ -1,7 +1,10 @@
 ### security group
-- acts as a virtual firewall between [[AWS]] ressources ([[AWS EC2]] or [[AWS Elastic Load Balancer (ELB)]])
-- since any network traffic is blocked by default a [[AWS Security Group]] is needed for external communication
-- is assigned to a [[AWS VPC (virtual private cloud)]]
+- virtual firewall between [[AWS]] ressources (e.g. [[AWS EC2]] or [[AWS Elastic Load Balancer (ELB)]])
+- any network traffic is blocked by default thus a [[AWS Security Group]] is needed for external communication
+- incomming traffic is controlled with an ingress rule and outgoing traffic is controlled with a egress rule
+- rules are defined by [[protocol]], [[internet protocol (IP)|ip range]] and [[port]]
+
+
 
 #### ingress
 - controlls incomming traffic from the internet
