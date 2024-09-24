@@ -1,12 +1,11 @@
 ### local route
-- every [[AWS subnet]] is [[AWS route|routed]] to every [[AWS subnet]] in its [[AWS VPC (virtual private cloud)]] with a the local route
+- every [[AWS subnet]] is [[AWS route|routed]] to the CIDR of its [[AWS VPC (virtual private cloud)]] with a the local route
 - this [[AWS route]] is create by default and cant be changed or deleted
 
 | Destination    | Target |
 | -------- | ------- |
-| `10.0.0.0/16`  | `local`    |
-| `<CIDR or subnet 2>`  | `local`    |
-| `<CIDR or subnet 3>`  | `local`    |
+| `<CIDR of VPC e.g 10.0.0.0/16>`  | `local`    |
+
 
 # ----------------
 
@@ -21,7 +20,7 @@ Basic
 
 Back: 
 ### local route
-- every [[AWS subnet]] is [[AWS route|routed]] to every [[AWS subnet]] in its [[AWS VPC (virtual private cloud)]] with a the local route
+- every [[AWS subnet]] is [[AWS route|routed]] to the CIDR of its [[AWS VPC (virtual private cloud)]] with a the local route
 - this [[AWS route]] is create by default and cant be changed or deleted
 
 ### default route
@@ -32,9 +31,7 @@ Back:
 
 | Destination    | Target |
 | -------- | ------- |
-| `10.0.0.0/16`  | `local`    |
-| `<CIDR or subnet 2>`  | `local`    |
-| `<CIDR or subnet 3>`  | `local`    |
+| `<CIDR of VPC e.g 10.0.0.0/16>`  | `local`    |
 | `0.0.0.0/0`  | `<igw-id>`    |
 
 # ---------------------
@@ -87,8 +84,8 @@ Back:
 
 
 ### private an public ip ranges
-- `10.0.0.0/16` (`10.0.0.0`  to `10.255.255.255`)
-- `172.16.0.0/16`  (`172.16.0.0` to `172.31.255.255`)
+- `10.0.0.0/8` (`10.0.0.0`  to `10.255.255.255`)
+- `172.16.0.0/20` (`172.16.0.0` to `172.31.255.255`)
 - `192.168.0.0/16` (`192.168.0.0` to `192.168.255.255`)
 
 - everything else is public

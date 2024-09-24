@@ -16,7 +16,7 @@
 - [[AWS route|routes]] from a connected [[AWS virtual private gateway (VPG)]] are added to a [[AWS route table]] by reference
 
 ## example
-- the local rule ensures connectivity to all other subnets within a [[AWS VPC (virtual private cloud)]] and cant be changes
+- the local rule ensures connectivity to the CIDR of the [[AWS VPC (virtual private cloud)]] and cant be changes
 - the default rule is to the [[AWS internet gateway]] because all relevant private ranges are covered with a more specific rule
 
 | Destination    | Target |
@@ -76,7 +76,7 @@ resource "aws_route" "r" {
 - [[AWS route|routes]] from a connected [[AWS virtual private gateway (VPG)]] are added to a [[AWS route table]] by reference
 
 ## example
-- the local rule ensures connectivity to all other subnets within a [[AWS VPC (virtual private cloud)]] and cant be changes
+- the local rule ensures connectivity to the CIDR of the [[AWS VPC (virtual private cloud)]] and cant be changes
 - the default rule is to the [[AWS internet gateway]] because all relevant private ranges are covered with a more specific rule
 
 | Destination    | Target |
@@ -93,8 +93,8 @@ resource "aws_route" "r" {
 ______________
 
 ## private an public ip ranges
-- `10.0.0.0/16` (`10.0.0.0`  to `10.255.255.255`)
-- `172.16.0.0/16`  (`172.16.0.0` to `172.31.255.255`)
+- `10.0.0.0/8` (`10.0.0.0`  to `10.255.255.255`)
+- `172.16.0.0/20` (`172.16.0.0` to `172.31.255.255`)
 - `192.168.0.0/16` (`192.168.0.0` to `192.168.255.255`)
 
 - everything else is public
@@ -133,15 +133,15 @@ END
 
 START
 Basic
-- `10.0.0.0` to `10.0.255.255` should be the local adress space the the [[AWS subnet]]
+- `10.0.0.0` to `10.0.255.255` is the CIDR of the [[AWS VPC (virtual private cloud)]]
 - `172.31.0.0` to `172.31.255.255` should be sent to a [[AWS VPC Peering]]
-- the rest should be routed to a [[AWS internet gateway]]
+- the [[AWS subnet]] is connected to the internet
 
 how does the [[AWS route table]] look like
 
 Back: 
 
-- the local rule ensures connectivity to all other subnets within a [[AWS VPC (virtual private cloud)]] and cant be changes
+- the local rule ensures connectivity to the CIDR of the [[AWS VPC (virtual private cloud)]] and cant be changes
 - the default rule is to the [[AWS internet gateway]] because all relevant private ranges are covered with a more specific rule
 
 | Destination    | Target |
@@ -188,53 +188,3 @@ Tags: infra
 <!--ID: 1727092048924-->
 END
 
-START
-Basic
-
-- given the following [[AWS route table]] how is the traffic routed
-
-| Destination    | Target |
-| -------- | ------- |
-| `10.0.0.0/16`  | `local`    |
-| `172.31.0.0/16`  | `pcx-11223344556677889`    |
-| `0.0.0.0/0`  | `igw-12345678901234567`    |
-
-Back: 
-
-- `10.0.0.0/16` (`10.0.0.0` to `10.0.255.255`) is covered by the local[[AWS route]]
-- `172.31.0.0/16` (`172.31.0.0` to `172.31.255.255`) is sent to a [[AWS VPC Peering]]
-- every adress (`0.0.0.0/0`) is routed to an [[AWS internet gateway]]
-→ everyting that is not in the local range or the [[AWS VPC Peering]] is sent to the [[AWS internet gateway]] because of the route priority
-
-### route table
-- contains [[AWS route|routes]] that direct network traffic between [[AWS subnet|subnets]] and [[AWS gateway|gateways]]
-- can be assiciated to multiple [[AWS subnet|subnets]] and [[AWS gateway|gateways]]
-- types
-	- `subnet route table`: associated with a [[AWS subnet]]
-	- `gateway route table`: assiciated with [[AWS virtual private gateway (VPG)]] and [[AWS internet gateway]]
-	- `trasit gateway route table`: assiciated with [[AWS transit gateway]]
-
-
-### route
-- entry in a [[AWS route table]] that connects [[AWS subnet|subnets]] and [[AWS gateway|gateways]] within a [[AWS VPC (virtual private cloud)]]
-- is associated with a [[AWS route table]], has a [[AWS private ip]] range (e.g. `10.0.1.0/22`) and has a target type (e.g. [[AWS gateway]] type)
-
-example
-```terraform
-resource "aws_route" "r" {
-  route_table_id            = aws_route_table.testing.id
-  destination_cidr_block    = "10.0.1.0/22"
-  vpc_peering_connection_id = "pcx-45ff3dc1"
-}
-```
-
-
-### route priority
-- generally the most specific route that matches the traffic is used
-	→ the route with the nongest matching prefix is used
-	→ example `10.10.2.15/32` has priority over `10.10.2.0/24`
-
-
-Tags: infra
-<!--ID: 1727092048926-->
-END

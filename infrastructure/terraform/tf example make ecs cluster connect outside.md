@@ -99,9 +99,18 @@ resource "aws_lb_target_group" "asg" {
 
 START
 Basic
-what is needed to make a [[AWS ECS]] cluster or a [[AWS Auto Scaling Group]] commnicate with the internet?
+what is needed to make a [[AWS ECS]] cluster or a [[AWS Auto Scaling Group]] commnicate with the internet? (3)
 Back: 
 - a [[AWS Elastic Load Balancer (ELB)]] to create a single service endpoint for the group/cluster and a [[AWS Security Group]] to allow outside communication
+- [[AWS Network Address translation (NAT) Gateway]] for outgoing traffic is only needed when the tasks are running in a private [[AWS subnet]] (which is recomended)
+### NAT Gateway 
+- mapps [[AWS private ip]] to [[AWS public ip]] (n to 1)
+- can connect a private [[AWS subnet]] to the internet, but only allows outbound traffic because multiple ressources can share the same [[AWS public ip]]
+- the following [[AWS route]] in a [[AWS route table]] of a [[AWS subnet]] can connect the ressources over a [[AWS Network Address translation (NAT) Gateway]] to the internet
+
+| Destination    | Target |
+| -------- | ------- |
+| `0.0.0.0/0`  | ``nat-gateway-id``    |
 
 
 ## load balancer

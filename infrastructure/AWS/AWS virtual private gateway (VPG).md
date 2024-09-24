@@ -1,2 +1,2 @@
 ### virtual private gateway
-- (virtually) connects a [[AWS VPC (virtual private cloud)]] to another network (on premis network or another [[AWS VPC (virtual private cloud)]]) with a [[VPN]] tunnle over the internet
+- connector for connecting a [[AWS VPC (virtual private cloud)]] to incomming [[AWS site to site VPN]] or [[AWS direct connect gateway]] connections
