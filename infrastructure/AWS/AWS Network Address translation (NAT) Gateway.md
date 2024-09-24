@@ -3,7 +3,7 @@
 - can be used to connect a private subnet to the internet ([[AWS private ip]] to [[AWS public ip]])
 - can be used to connect one private [[AWS VPC (virtual private cloud)|VPC]] to another ([[AWS private ip]] to [[AWS private ip]])
 
-#### for connecting a private subnet to the internet
+#### for outboung internet accsess for a private subnet
 - can connect a private [[AWS subnet]] to the internet, but only allows outbound traffic because multiple ressources can share the same [[AWS public ip]]
 - the [[AWS Network Address translation (NAT) Gateway]] will be placed in a public subnet and a [[AWS default route]] to that [[AWS Network Address translation (NAT) Gateway|NAT gateway]] is created in the private subnet
 - the following [[AWS route]] in a [[AWS route table]] of a [[AWS subnet]] can connect the ressources over a [[AWS Network Address translation (NAT) Gateway]] to the internet
@@ -29,7 +29,7 @@ Back:
 - can be used to connect a private subnet to the internet ([[AWS private ip]] to [[AWS public ip]])
 - can be used to connect one private [[AWS VPC (virtual private cloud)|VPC]] to another ([[AWS private ip]] to [[AWS private ip]])
 
-#### for connecting a private subnet to the internet
+#### for outboung internet accsess for a private subnet
 - can connect a private [[AWS subnet]] to the internet, but only allows outbound traffic because multiple ressources can share the same [[AWS public ip]]
 - the [[AWS Network Address translation (NAT) Gateway]] will be placed in a public subnet and a [[AWS default route]] to that [[AWS Network Address translation (NAT) Gateway|NAT gateway]] is created in the private subnet
 - the following [[AWS route]] in a [[AWS route table]] of a [[AWS subnet]] can connect the ressources over a [[AWS Network Address translation (NAT) Gateway]] to the internet
@@ -67,7 +67,7 @@ END
 START
 Basic
 given a private [[AWS subnet]]
-- how to connect it to the internet (incomming traffic only)
+- how to connect it to the internet (outboung access only)
 - complete internet connection
 Back: 
 ### NAT Gateway 
@@ -75,7 +75,7 @@ Back:
 - can be used to connect a private subnet to the internet ([[AWS private ip]] to [[AWS public ip]])
 - can be used to connect one private [[AWS VPC (virtual private cloud)|VPC]] to another ([[AWS private ip]] to [[AWS private ip]])
 
-#### for connecting a private subnet to the internet
+#### for outbound internet accsess for a private subnet
 - can connect a private [[AWS subnet]] to the internet, but only allows outbound traffic because multiple ressources can share the same [[AWS public ip]]
 - the [[AWS Network Address translation (NAT) Gateway]] will be placed in a public subnet and a [[AWS default route]] to that [[AWS Network Address translation (NAT) Gateway|NAT gateway]] is created in the private subnet
 - the following [[AWS route]] in a [[AWS route table]] of a [[AWS subnet]] can connect the ressources over a [[AWS Network Address translation (NAT) Gateway]] to the internet

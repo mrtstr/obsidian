@@ -34,7 +34,8 @@ Back:
 | `<CIDR of VPC e.g 10.0.0.0/16>`  | `local`    |
 | `0.0.0.0/0`  | `<igw-id>`    |
 
-# ---------------------
+------------------
+
 ### subnet
 - range of [[internet protocol (IP)|IP adresses]] in a [[AWS VPC (virtual private cloud)]]
 - has a [[AWS route table]] that determines which networks adresses are reachable

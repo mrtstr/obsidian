@@ -12,8 +12,6 @@
 
 ![[AWS virtual private gateway (VPG)#Virtual Private Gateway]]
 
-![[AWS transit gateway#transit gateway]]
-
 ### network connections
 - on prem networks can either be physicly connected or with a [[VPN]] over the internet
 
@@ -22,6 +20,8 @@
 ![[AWS site to site VPN#site to site VPN]]
 
 ### direction connection between VPCs
+
+![[AWS transit gateway#transit gateway]]
 
 ![[AWS VPC Peering#VPC Peering]]
 
@@ -57,6 +57,9 @@ Back:
 
 ### direction connection between VPCs
 
+#### transit gateway
+- central hub for connecting multiple [[AWS VPC (virtual private cloud)]] and to incomming [[AWS site to site VPN]] and [[AWS direct connect gateway]] connections
+
 #### VPC Peering
 - direct connection between [[AWS VPC (virtual private cloud)]] in the same [[AWS region]] that enables private [[AWS route|routes]] between them
 
@@ -70,11 +73,16 @@ END
 
 START
 Basic
-simple way for vonnection two [[AWS VPC (virtual private cloud)]] within the same [[AWS region]]
+two ways for connecting multiple [[AWS VPC (virtual private cloud)]] 
 Back: 
+1 to 1: [[AWS VPC Peering]]
+any to any: [[AWS transit gateway]]
+
 #### VPC Peering
 - direct connection between [[AWS VPC (virtual private cloud)]] in the same [[AWS region]] that enables private [[AWS route|routes]] between them
 
+#### transit gateway
+- central hub for connecting multiple [[AWS VPC (virtual private cloud)]] and to incomming [[AWS site to site VPN]] and [[AWS direct connect gateway]] connections
 Tags: infra
 <!--ID: 1727162581624-->
 END

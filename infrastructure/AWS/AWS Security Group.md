@@ -3,7 +3,7 @@
 - any network traffic is blocked by default thus a [[AWS Security Group]] is needed for external communication
 - incomming traffic is controlled with an ingress rule and outgoing traffic is controlled with a egress rule
 - rules are defined by [[protocol]], [[internet protocol (IP)|ip range]] and [[port]]
-
+- [[AWS Security Group]] are statefull and always allow the response (ingress and egress rules are just about the initator)
 
 
 #### ingress
@@ -57,11 +57,14 @@ START
 Basic
 - how to allow and controll traffic between [[AWS]] ressource and internet (incomming and outgoing)
 - with [[terraform]] example
+- how are responses handeled if there if no egress rule?
+
 Back: 
 ### security group
 - acts as a virtual firewall between [[AWS]] ressources ([[AWS EC2]] or [[AWS Elastic Load Balancer (ELB)]])
 - since any network traffic is blocked by default a [[AWS Security Group]] is needed for external communication
 - is assigned to a [[AWS VPC (virtual private cloud)]]
+- [[AWS Security Group]] are statefull and always allow the response (ingress and egress rules are just about the initator)
 
 #### ingress
 - controlls incomming traffic from the internet
