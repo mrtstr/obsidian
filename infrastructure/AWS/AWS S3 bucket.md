@@ -1,7 +1,7 @@
 ### S3 bucket
 - [[AWS]] object storage that lives outside the [[AWS VPC (virtual private cloud)]]
 - is connected to a [[AWS VPC (virtual private cloud)]] with a [[AWS VPC endpoint]]
-- access is managed by [[AWS iam role]]
+- access is managed by [[AWS identity and access management IAM]]
 
 # -------------
 
@@ -20,7 +20,7 @@ Back:
 ### S3 bucket
 - [[AWS]] object storage that lives outside the [[AWS VPC (virtual private cloud)]]
 - is connected to a [[AWS VPC (virtual private cloud)]] with a [[AWS VPC endpoint]]
-- access is managed by [[AWS iam role]]
+- access is managed by [[AWS identity and access management IAM]]
 
 
 ### VPC endpoint

@@ -11,7 +11,7 @@
 	- [[AWS ECS task definition]]
 	- [[AWS Security Group]] to open connection the [[AWS ECS task]] (their [[AWS target group]])
 	- [[AWS autoscaling policy]]
-	- [[AWS iam role]] for [[AWS ECS task]] and execution
+	- [[AWS identity and access management IAM]] for [[AWS ECS task]] and execution
 
 
 
@@ -30,7 +30,7 @@ Back:
 	- [[AWS ECS task definition]]
 	- [[AWS Security Group]] to open connection the [[AWS ECS task]] (their [[AWS target group]])
 	- [[AWS autoscaling policy]]
-	- [[AWS iam role]] for [[AWS ECS task]] and execution
+	- [[AWS identity and access management IAM]] for [[AWS ECS task]] and execution
 
 ______________________
 
@@ -81,8 +81,8 @@ ______________________
 
 #### properties
 - resources required: CPU, memory units (on task level)
-- has a execution [[AWS iam role]]: running the [[AWS ECS]] actions like pulling the [[d image]]
-- has a task [[AWS iam role]]: running the application (e.g. needs [[AWS S3 bucket]] access)
+- has a execution [[AWS identity and access management IAM]]: running the [[AWS ECS]] actions like pulling the [[d image]]
+- has a task [[AWS identity and access management IAM]]: running the application (e.g. needs [[AWS S3 bucket]] access)
 - has a container definition
 - has a networking mode that defines the networking properties of the tasks and containers 
 
