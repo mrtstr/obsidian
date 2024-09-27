@@ -4,10 +4,11 @@
 
 START
 Basic
-- relationship of [[AWS Auto Scaling Group]] and [[AWS AZ (isolated datacenter)]]
+- relationship of [[AWS Auto Scaling Group]] and [[AWS AZ (isolated datacenter)]] and [[AWS subnet]]
 
 Back: 
--  [[AWS Auto Scaling Group]] are in a single [[AWS subnet]] and a [[AWS AZ (isolated datacenter)]]
+-  [[AWS Auto Scaling Group]] can be spread over multiple [[AWS subnet]] and 
+- a [[AWS subnet]] lives in a single [[AWS AZ (isolated datacenter)]]
 
 
 Tags: infra

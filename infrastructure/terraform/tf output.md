@@ -1,6 +1,7 @@
 ### output
 - make information about your infrastructure (that might not be defined before applying like ip) available on the command line
 - expost information to the [[tf state|statefile]]
+- in a [[tf module]] they are the only public values (the rest is private)
 - optional properties: `description`, `sensitive`, and `depends_on`
 
 ```terraform
@@ -20,6 +21,7 @@ Back:
 ### output
 - make information about your infrastructure (that might not be defined before applying like ip) available on the command line
 - expost information to the [[tf state|statefile]]
+- in a [[tf module]] they are the only public values (the rest is private)
 - optional properties: `description`, `sensitive`, and `depends_on`
 
 ```terraform
