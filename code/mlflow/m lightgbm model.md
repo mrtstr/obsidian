@@ -1,0 +1,2 @@
+- API for logging and loading [[LightGBM]] models as [[m model]]
+- has a function `mlflow.lightgbm.autolog` saves the model in [[mlflow]]
