@@ -1810,8 +1810,8 @@
     "infrastructure/AWS/AWS identity and access management IAM.md": "9206f9365244a6f3883c3fc69983c21b",
     "mathematics/landau notation.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/fisher information.md": "c7ad21029354616f1177c10c889c6fb9",
-    "mathematics/stochastics/convergence in probability.md": "c5753e4f29e31ef59538f011b974caca",
-    "mathematics/stochastics/estimator consitency.md": "a9468fc0013267e030477773983f56ee",
+    "mathematics/stochastics/convergence in probability.md": "98586e3a31b378d32db1eb14a442cdbf",
+    "mathematics/stochastics/estimator consitency.md": "eeeb045dfabe0ddc0233ffaef0339d6a",
     "code/mlflow/mlflow.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/mlflow/m tag.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/mlflow/m run.md": "be17fa46342f78081e49684f77fea730",
@@ -1827,7 +1827,8 @@
     "code/LightGBM/lgb custom eval function.md": "c54765f2818bd48e85e6fdec2f695c50",
     "code/LightGBM/lgb callbacks.md": "8cdeb1e3577c6d505e314780b348e1d6",
     "code/LightGBM/lgb algorithm.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/LightGBM/LightGBM.md": "dc471b0506fb96763bc9579ffef5e577"
+    "code/LightGBM/LightGBM.md": "dc471b0506fb96763bc9579ffef5e577",
+    "mathematics/stochasic landau notation.md": "7fe05b71594e15f4d7def31ccdd471c3"
   },
   "fields_dict": {
     "Basic": [
