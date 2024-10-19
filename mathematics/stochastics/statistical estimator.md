@@ -6,13 +6,16 @@
 
 ### [[bias|unbiased]] [[statistical estimator]] for [[n fold statistical model]]
 - given an [[n fold statistical model]] $\left(\mathbb{R}^n, \mathcal{B}(\mathbb{R}^n), \mathbb{P}^{\otimes n}_{\vartheta \in \Theta}\right)$ with the following characteristics
+
 $$
 \begin{split}
 m(\vartheta) &= \mathbb{E}_\vartheta[X_1] \\
 v(\vartheta) &= \mathbb{VAR}_\vartheta[X_1] \\
 \end{split}
 $$
+
 - the following are  [[statistical estimator|statistical estimators]] for $m$ and $v$
+
 $$
 \begin{split}
 M &= \frac{1}{n} \sum_{i=1}^n X_i \\
@@ -20,8 +23,10 @@ V &= \frac{1}{n-1} \sum_{i=1}^n (X_i - M)^2 \\
 
 \end{split}
 $$
+
 - note: for the [[statistical estimator]] of the [[variance]] we can not devide by the sample size $n$ because the mean of the samples is not independent of the samples $X_i$ because $M$ contains $X_i$, and thus we have to devide by $n-1$ instead
 #### [[expectation]]
+
 $$
 \begin{split}
 \mathbb{E}_\vartheta[M]  
