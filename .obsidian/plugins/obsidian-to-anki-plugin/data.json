@@ -1645,7 +1645,7 @@
     "mathematics/stochastics/best estimator.md": "5e62fc69229fdbdc04aa06c60a013f45",
     "mathematics/stochastics/confidence set.md": "a8aebe92a9951d71015eb52c0371fef0",
     "mathematics/stochastics/sprecial distributions/continuous/students t distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/lindeberg levy CLT.md": "cb556046be2282128db79093c814b161",
+    "mathematics/stochastics/lindeberg levy CLT.md": "a690ab10ee440e3956addb1e7a1dd0e8",
     "mathematics/linear model.md": "3877a0d7dbce93bd76f42cb6fc968bb6",
     "mathematics/optimization/least squares.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical test.md": "a404bb07ae01a1b4533eafc0294647a9",
@@ -1809,9 +1809,9 @@
     "infrastructure/AWS/AWS amazon ressource name (ARN).md": "e9b8b44644e6a1ac259230f02760f37f",
     "infrastructure/AWS/AWS identity and access management IAM.md": "9206f9365244a6f3883c3fc69983c21b",
     "mathematics/landau notation.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/fisher information.md": "c7ad21029354616f1177c10c889c6fb9",
-    "mathematics/stochastics/convergence in probability.md": "45e9338a4785a72ac7cacc0fc4325483",
-    "mathematics/stochastics/estimator consitency.md": "be01bb0e2a099196bbc3c290650e5f77",
+    "mathematics/stochastics/fisher information.md": "90ab87d5ad72f3d7a06079d80d0e1c4e",
+    "mathematics/stochastics/convergence in probability.md": "0133da41f34aeabefef437e339fb679b",
+    "mathematics/stochastics/estimator consitency.md": "476015efdfa5a41b58c6185bbc6131c8",
     "code/mlflow/mlflow.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/mlflow/m tag.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/mlflow/m run.md": "be17fa46342f78081e49684f77fea730",
@@ -1828,7 +1828,8 @@
     "code/LightGBM/lgb callbacks.md": "8cdeb1e3577c6d505e314780b348e1d6",
     "code/LightGBM/lgb algorithm.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/LightGBM/LightGBM.md": "dc471b0506fb96763bc9579ffef5e577",
-    "mathematics/stochasic landau notation.md": "e805ff3c5e95de83d34b32fa83d37a24"
+    "mathematics/stochasic landau notation.md": "064e42016c1aa77136161f82474bb914",
+    "mathematics/stochastics/inversion method.md": "d5a868b10f9cf6b4ef9ddf2f79f4e6df"
   },
   "fields_dict": {
     "Basic": [
