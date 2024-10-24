@@ -1629,7 +1629,7 @@
     "mathematics/stochastics/sprecial distributions/continuous/exponential distribution.md": "41f6066696565e023f98b39117785a27",
     "mathematics/stochastics/product probability space.md": "588a46d45fdedb1f7cae63e4051706a2",
     "mathematics/stochastics/sprecial distributions/multivariate normal distribution.md": "a3c0f3e4b1e8ce0cda907cb191384c16",
-    "mathematics/stochastics/statistical estimator.md": "5332927e58f592fc1bb1e0973c94b187",
+    "mathematics/stochastics/statistical estimator.md": "a08885b5919003fe704603f3674ec95d",
     "mathematics/stochastics/parameter space.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical model.md": "2873040dc514aed53707cd8235af81d0",
     "mathematics/stochastics/statistical learning/statistical estimator_old.md": "7090351e9b0e06644416694f1e365a08",
@@ -1809,7 +1809,7 @@
     "infrastructure/AWS/AWS amazon ressource name (ARN).md": "e9b8b44644e6a1ac259230f02760f37f",
     "infrastructure/AWS/AWS identity and access management IAM.md": "9206f9365244a6f3883c3fc69983c21b",
     "mathematics/landau notation.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/fisher information.md": "90ab87d5ad72f3d7a06079d80d0e1c4e",
+    "mathematics/stochastics/fisher information.md": "7184704013226394513a790e44e8aa9c",
     "mathematics/stochastics/convergence in probability.md": "0133da41f34aeabefef437e339fb679b",
     "mathematics/stochastics/estimator consitency.md": "476015efdfa5a41b58c6185bbc6131c8",
     "code/mlflow/mlflow.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1829,7 +1829,10 @@
     "code/LightGBM/lgb algorithm.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/LightGBM/LightGBM.md": "dc471b0506fb96763bc9579ffef5e577",
     "mathematics/stochasic landau notation.md": "064e42016c1aa77136161f82474bb914",
-    "mathematics/stochastics/inversion method.md": "d5a868b10f9cf6b4ef9ddf2f79f4e6df"
+    "mathematics/stochastics/inversion method.md": "d5a868b10f9cf6b4ef9ddf2f79f4e6df",
+    "mathematics/stochastics/basic estimator for n fold statistical model.md": "ce6b6b6a8fb14de65a4c707e479d4b03",
+    "mathematics/stochastics/regularity of density function.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/cramer rao bound.md": "def0a0fec3cd2c2521290f928a9f67e0"
   },
   "fields_dict": {
     "Basic": [
