@@ -1639,7 +1639,7 @@
     "mathematics/stochastics/estimating uniform distribution parameter.md": "7c0a690c3ec70ad6472074e56541f77f",
     "mathematics/stochastics/maximum of uniform samples.md": "093f4c46580e5ee5491ec2809d29452c",
     "mathematics/stochastics/n fold statistical model.md": "fc006fa72d594fcdf3b1dfa38b87253b",
-    "mathematics/maximum likelihood estimator.md": "4320a3c6fe649b835eca16eaaf0cd838",
+    "mathematics/maximum likelihood estimator.md": "6ccd58b6a9336c868031282acbef5641",
     "mathematics/stochastics/likelihood function.md": "d9d800a39cd2a3feb264ed84d7d3c24d",
     "mathematics/stochastics/Untitled 2.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/best estimator.md": "5e62fc69229fdbdc04aa06c60a013f45",
@@ -1809,7 +1809,7 @@
     "infrastructure/AWS/AWS amazon ressource name (ARN).md": "e9b8b44644e6a1ac259230f02760f37f",
     "infrastructure/AWS/AWS identity and access management IAM.md": "9206f9365244a6f3883c3fc69983c21b",
     "mathematics/landau notation.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/fisher information.md": "7184704013226394513a790e44e8aa9c",
+    "mathematics/stochastics/fisher information.md": "feaeebf7ca82f4f7eb9114a3d44a145a",
     "mathematics/stochastics/convergence in probability.md": "0133da41f34aeabefef437e339fb679b",
     "mathematics/stochastics/estimator consitency.md": "476015efdfa5a41b58c6185bbc6131c8",
     "code/mlflow/mlflow.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1832,7 +1832,8 @@
     "mathematics/stochastics/inversion method.md": "d5a868b10f9cf6b4ef9ddf2f79f4e6df",
     "mathematics/stochastics/basic estimator for n fold statistical model.md": "ce6b6b6a8fb14de65a4c707e479d4b03",
     "mathematics/stochastics/regularity of density function.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/cramer rao bound.md": "def0a0fec3cd2c2521290f928a9f67e0"
+    "mathematics/stochastics/cramer rao bound.md": "def0a0fec3cd2c2521290f928a9f67e0",
+    "mathematics/stochastics/approximated ml estimator.md": "63987b0fc333e5a17f7c01d9f2b72c66"
   },
   "fields_dict": {
     "Basic": [

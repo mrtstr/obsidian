@@ -7,7 +7,7 @@ $$
 - the maximum likelihood [[statistical estimator]] can be interpreted the parameter [[set]] out of the [[parameter space]] that explaines the observation best
 
 
-### calculation of the [[maximum likelihood estimator]]
+### calculation of the maximum likelihood estimator
 - given $n$ samples $X_1, ..., X_n \sim f_X(x | \theta)$ with a [[n fold statistical model]] the [[likelihood function]] will look like the following
 
 $$
