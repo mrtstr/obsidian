@@ -71,7 +71,7 @@ $$
 &= \nabla f\left(x^{(k+1)}\right)^\top \nabla f\left(x^{(k)}\right) \\
 \end{split}
 $$
-- this can be iterpreted as seaching the [[minimum]] of the [[linear aproximation]] of $f$ in each point
+- this can be iterpreted as seaching the [[minimum]] of the [[linear approximation]] of $f$ in each point
 
 Tags: mathematics
 <!--ID: 1721056221173-->
@@ -118,7 +118,7 @@ $$
 x^{(k+1)} = x^{(k)} - \alpha^{(k)} \nabla f\left(x^{(k)}\right)
 $$
 
-- this can be iterpreted as seaching the [[minimum]] of the [[linear aproximation]] of $f$ in each point
+- this can be iterpreted as seaching the [[minimum]] of the [[linear approximation]] of $f$ in each point
 
 Tags: mathematics
 <!--ID: 1721056221178-->

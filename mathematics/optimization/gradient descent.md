@@ -7,7 +7,7 @@ $$
 x^{(k+1)} = x^{(k)} - \alpha^{(k)} \nabla f\left(x^{(k)}\right)
 $$
 
-- this can be iterpreted as seaching the [[minimum]] of the [[linear aproximation]] of $f$ in each point
+- this can be iterpreted as seaching the [[minimum]] of the [[linear approximation]] of $f$ in each point
 
 ### convergence of gradient descent
 - [[gradient descent]] with the [[armijo line search]] is converging linearly against a [[local minimum]]
@@ -19,7 +19,7 @@ $$
 
 ![[general descent method#general descent method]]
 
-![[linear aproximation#linear aproximation of $f: mathbb{R} m to mathbb{R}$]]
+![[linear approximation#linear aproximation of $f: mathbb{R} m to mathbb{R}$]]
 
 ![[derivative#derivative as a vector in the direction of the steepest ascent]]
 
@@ -49,7 +49,7 @@ $$
 x^{(k+1)} = x^{(k)} - \alpha^{(k)} \nabla f\left(x^{(k)}\right)
 $$
 
-- this can be iterpreted as seaching the [[minimum]] of the [[linear aproximation]] of $f$ in each point
+- this can be iterpreted as seaching the [[minimum]] of the [[linear approximation]] of $f$ in each point
 
 ### convergence of gradient descent
 - [[gradient descent]] with the [[armijo line search]] is converging linearly against a [[local minimum]]
@@ -95,7 +95,7 @@ $$
 - this result can be generalized for a function $f: \mathbb{R}^m \to \mathbb{R}^n$ by treating $f$ as $n$ scalar functions $f_i$ 
 
 ### linear aproximation of $f: \mathbb{R}^m \to \mathbb{R}$
-- given a [[function]] $f: \mathbb{R}^m \to \mathbb{R}$ the following is a [[linear aproximation]] (or linear model) of $f$ of point $x_0$
+- given a [[function]] $f: \mathbb{R}^m \to \mathbb{R}$ the following is a [[linear approximation]] (or linear model) of $f$ of point $x_0$
 
 $$
 l_{x_0}(d) = f(x_0) + \nabla f(x_0)^\top d
@@ -164,7 +164,7 @@ $$
 x^{(k+1)} = x^{(k)} - \alpha^{(k)} \nabla f\left(x^{(k)}\right)
 $$
 
-- this can be iterpreted as seaching the [[minimum]] of the [[linear aproximation]] of $f$ in each point
+- this can be iterpreted as seaching the [[minimum]] of the [[linear approximation]] of $f$ in each point
 
 ### local minimum
 - given a [[function]] $f: X \to Y$

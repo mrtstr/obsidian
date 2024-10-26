@@ -117,11 +117,11 @@ $$
 x^{(k+1)} = x^{(k)} - \alpha^{(k)} \nabla f\left(x^{(k)}\right)
 $$
 
-- this can be iterpreted as seaching the [[minimum]] of the [[linear aproximation]] of $f$ in each point
+- this can be iterpreted as seaching the [[minimum]] of the [[linear approximation]] of $f$ in each point
 
 
 ### linear aproximation of $f: \mathbb{R}^m \to \mathbb{R}$
-- given a [[function]] $f: \mathbb{R}^m \to \mathbb{R}$ the following is a [[linear aproximation]] (or linear model) of $f$ of point $x_0$
+- given a [[function]] $f: \mathbb{R}^m \to \mathbb{R}$ the following is a [[linear approximation]] (or linear model) of $f$ of point $x_0$
 
 $$
 l_{x_0}(d) = f(x_0) + \nabla f(x_0)^\top d

@@ -10,7 +10,7 @@ d
 \Rightarrow& d = - \nabla^2  f\left(x^{(k)}\right)^{-1} \nabla f\left(x^{(k)}\right) \\
 \end{split}
 $$
-- with the [[gradient descent]] method the [[linear aproximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
+- with the [[gradient descent]] method the [[linear approximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
 - but with the [[newton methode]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
 
 $$
@@ -86,7 +86,7 @@ d
 \end{split}
 $$
 
-- with the [[gradient descent]] method the [[linear aproximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
+- with the [[gradient descent]] method the [[linear approximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
 - but with the [[newton methode]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
 
 $$
@@ -132,7 +132,7 @@ $$
 x^{(k+1)} = x^{(k)} - \alpha^{(k)} \nabla f\left(x^{(k)}\right)
 $$
 
-- this can be iterpreted as seaching the [[minimum]] of the [[linear aproximation]] of $f$ in each point
+- this can be iterpreted as seaching the [[minimum]] of the [[linear approximation]] of $f$ in each point
 
 
 Tags: mathematics
@@ -184,7 +184,7 @@ d
 \end{split}
 $$
 
-- with the [[gradient descent]] method the [[linear aproximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
+- with the [[gradient descent]] method the [[linear approximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
 - but with the [[newton methode]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
 
 $$
@@ -228,7 +228,7 @@ $$
 x^{(k+1)} = x^{(k)} - \alpha^{(k)} \nabla f\left(x^{(k)}\right)
 $$
 
-- this can be iterpreted as seaching the [[minimum]] of the [[linear aproximation]] of $f$ in each point
+- this can be iterpreted as seaching the [[minimum]] of the [[linear approximation]] of $f$ in each point
 
 
 Tags: mathematics
@@ -285,7 +285,7 @@ d
 \end{split}
 $$
 
-- with the [[gradient descent]] method the [[linear aproximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
+- with the [[gradient descent]] method the [[linear approximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
 - but with the [[newton methode]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
 
 $$
@@ -319,7 +319,7 @@ $$
 x^{(k+1)} = x^{(k)} - \alpha^{(k)} \nabla f\left(x^{(k)}\right)
 $$
 
-- this can be iterpreted as seaching the [[minimum]] of the [[linear aproximation]] of $f$ in each point
+- this can be iterpreted as seaching the [[minimum]] of the [[linear approximation]] of $f$ in each point
 
 
 Tags: mathematics

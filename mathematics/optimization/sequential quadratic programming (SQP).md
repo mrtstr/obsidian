@@ -281,7 +281,7 @@ d
 \end{split}
 $$
 
-- with the [[gradient descent]] method the [[linear aproximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
+- with the [[gradient descent]] method the [[linear approximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
 - but with the [[newton methode]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
 
 $$
@@ -461,7 +461,7 @@ d
 \end{split}
 $$
 
-- with the [[gradient descent]] method the [[linear aproximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
+- with the [[gradient descent]] method the [[linear approximation]] is used which does not have a minimum thus we can only get a direction (negative [[gradient]])
 - but with the [[newton methode]] the [[quadratic aproximation]] is minimized thus the step size is already incuded in $d$ → $\alpha=1$
 
 $$
