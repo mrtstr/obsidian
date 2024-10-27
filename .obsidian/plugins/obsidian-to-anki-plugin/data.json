@@ -1809,9 +1809,9 @@
     "infrastructure/AWS/AWS amazon ressource name (ARN).md": "e9b8b44644e6a1ac259230f02760f37f",
     "infrastructure/AWS/AWS identity and access management IAM.md": "9206f9365244a6f3883c3fc69983c21b",
     "mathematics/landau notation.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/fisher information.md": "feaeebf7ca82f4f7eb9114a3d44a145a",
+    "mathematics/stochastics/fisher information.md": "d574903fbe9efed485860b245e8891bd",
     "mathematics/stochastics/convergence in probability.md": "0133da41f34aeabefef437e339fb679b",
-    "mathematics/stochastics/estimator consitency.md": "476015efdfa5a41b58c6185bbc6131c8",
+    "mathematics/stochastics/estimator consitency.md": "e0b5a94085d3e6f5a4acb8a5d612fa4f",
     "code/mlflow/mlflow.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/mlflow/m tag.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/mlflow/m run.md": "be17fa46342f78081e49684f77fea730",
@@ -1835,7 +1835,8 @@
     "mathematics/stochastics/cramer rao bound.md": "1ab202371846ae02dfa2968fb72e5af7",
     "mathematics/stochastics/approximated ml estimator.md": "bb82d295010833d29dc753c9f5fe6e6a",
     "linear approx.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/optimization/linear approximation.md": "c3678e1476031aba7475c3cf0348abf9"
+    "mathematics/optimization/linear approximation.md": "c3678e1476031aba7475c3cf0348abf9",
+    "mathematics/stochastics/consistency criteria.md": "26bec2d31bc45d267646f2ccb9424434"
   },
   "fields_dict": {
     "Basic": [
