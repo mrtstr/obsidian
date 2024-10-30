@@ -1811,7 +1811,7 @@
     "mathematics/landau notation.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/fisher information.md": "a6c3292bf321d5092178487dbcafd1df",
     "mathematics/stochastics/convergence in probability.md": "0133da41f34aeabefef437e339fb679b",
-    "mathematics/stochastics/estimator consitency.md": "e0b5a94085d3e6f5a4acb8a5d612fa4f",
+    "mathematics/stochastics/estimator consitency.md": "0f9563978265f82c4ad64ebe5d36984e",
     "code/mlflow/mlflow.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/mlflow/m tag.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/mlflow/m run.md": "be17fa46342f78081e49684f77fea730",
@@ -1836,7 +1836,7 @@
     "mathematics/stochastics/approximated ml estimator.md": "bb82d295010833d29dc753c9f5fe6e6a",
     "linear approx.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/optimization/linear approximation.md": "c3678e1476031aba7475c3cf0348abf9",
-    "mathematics/stochastics/consistency criteria.md": "26bec2d31bc45d267646f2ccb9424434",
+    "mathematics/stochastics/consistency criteria.md": "822d902e157da2c32da356e82a83a808",
     "mathematics/stochastics/score function.md": "e9ca191870c3687cdafb75ddacd3da6c"
   },
   "fields_dict": {

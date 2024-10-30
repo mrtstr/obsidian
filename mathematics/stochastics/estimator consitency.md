@@ -6,7 +6,11 @@ $$
 \begin{split}
 &\forall \vartheta \in \Theta: T_n \to_\mathbb{P} \tau(\vartheta) \\
 &\Leftrightarrow \\
-&\forall \vartheta \in \Theta: \forall \epsilon > 0:  \lim_{n \to \infty}\mathbb{P}_\vartheta\left(|T_n - \tau(\vartheta) | \geq \epsilon\right) = 0
+&\forall \vartheta \in \Theta: 
+\forall \epsilon > 0:  
+\forall \delta > 0: 
+\exists N: \forall n > N:
+\mathbb{P}_\vartheta\left(|T_n - \tau(\vartheta) | \geq \delta\right) < \epsilon 
 \end{split}
 $$
 
@@ -28,8 +32,13 @@ $$
 - $T_n$ is consistence if it [[convergence in probability|converges in probability]] against $\tau(\vartheta)$
 
 $$
-\vartheta \in \Theta: \exists M > 0: \lim_{n \to \infty}\mathbb{P}_\vartheta\left(\sqrt{n}||T_n - \tau(\vartheta) ||
- \geq M \right) = 0
+\forall \vartheta \in \Theta: 
+\forall \epsilon > 0:  
+\exists \delta > 0: 
+\exists N: \forall n > N:
+\exists C > 0:  
+\mathbb{P}_\vartheta\left(\sqrt{n}||T_n - \tau(\vartheta)||
+ \geq C \right) \leq \epsilon
 $$
 
 - or in [[stochasic landau notation]]:
@@ -104,7 +113,11 @@ $$
 \begin{split}
 &\forall \vartheta \in \Theta: T_n \to_\mathbb{P} \tau(\vartheta) \\
 &\Leftrightarrow \\
-&\forall \vartheta \in \Theta: \forall \epsilon > 0:  \lim_{n \to \infty}\mathbb{P}_\vartheta\left(|T_n - \tau(\vartheta) | \geq \epsilon\right) = 0
+&\forall \vartheta \in \Theta: 
+\forall \epsilon > 0:  
+\forall \delta > 0: 
+\exists N: \forall n > N:
+\mathbb{P}_\vartheta\left(|T_n - \tau(\vartheta) | \geq \delta\right) < \epsilon 
 \end{split}
 $$
 
@@ -185,8 +198,13 @@ Back:
 - $T_n$ is consistence if it [[convergence in probability|converges in probability]] against $\tau(\vartheta)$
 
 $$
-\vartheta \in \Theta: \exists M > 0: \lim_{n \to \infty}\mathbb{P}_\vartheta\left(\sqrt{n}||T_n - \tau(\vartheta) ||
- \geq M \right) = 0
+\forall \vartheta \in \Theta: 
+\forall \epsilon > 0:  
+\exists \delta > 0: 
+\exists N: \forall n > N:
+\exists C > 0:  
+\mathbb{P}_\vartheta\left(\sqrt{n}||T_n - \tau(\vartheta)||
+ \geq C \right) \leq \epsilon
 $$
 
 - or in [[stochasic landau notation]]:
@@ -198,6 +216,8 @@ T_n = \tau(\vartheta) + \mathcal{o}_{\mathbb{P}_\vartheta}\left(n^{-\frac{1}{2}}
 \end{split}
 $$
 
+
+
 ### estimator consitency
 - given a [[statistical estimator]] $T_n$ for a chracateristics $\tau(\vartheta)$
 - $T_n$ is consistence if it [[convergence in probability|converges in probability]] against $\tau(\vartheta)$
@@ -206,7 +226,11 @@ $$
 \begin{split}
 &\forall \vartheta \in \Theta: T_n \to_\mathbb{P} \tau(\vartheta) \\
 &\Leftrightarrow \\
-&\forall \vartheta \in \Theta: \forall \epsilon > 0:  \lim_{n \to \infty}\mathbb{P}_\vartheta\left(|T_n - \tau(\vartheta) | \geq \epsilon\right) = 0
+&\forall \vartheta \in \Theta: 
+\forall \epsilon > 0:  
+\forall \delta > 0: 
+\exists N: \forall n > N:
+\mathbb{P}_\vartheta\left(|T_n - \tau(\vartheta) | \geq \delta\right) < \epsilon 
 \end{split}
 $$
 
@@ -222,6 +246,7 @@ T_n - \tau(\vartheta) =  \mathcal{o}_{\mathbb{P}_\vartheta}(1) \\
 \hat \vartheta - \vartheta =  \mathcal{o}_{\mathbb{P}_\vartheta}(1) \\
 \end{split}
 $$
+
 __________________
 
 ### convergence in probability
@@ -317,7 +342,11 @@ $$
 \begin{split}
 &\forall \vartheta \in \Theta: T_n \to_\mathbb{P} \tau(\vartheta) \\
 &\Leftrightarrow \\
-&\forall \vartheta \in \Theta: \forall \epsilon > 0:  \lim_{n \to \infty}\mathbb{P}_\vartheta\left(|T_n - \tau(\vartheta) | \geq \epsilon\right) = 0
+&\forall \vartheta \in \Theta: 
+\forall \epsilon > 0:  
+\forall \delta > 0: 
+\exists N: \forall n > N:
+\mathbb{P}_\vartheta\left(|T_n - \tau(\vartheta) | \geq \delta\right) < \epsilon 
 \end{split}
 $$
 
@@ -356,10 +385,31 @@ $$
 ### estimator consitency
 - given a [[statistical estimator]] $T_n$ for a chracateristics $\tau(\vartheta)$
 - $T_n$ is consistence if it [[convergence in probability|converges in probability]] against $\tau(\vartheta)$
+
 $$
-\forall \epsilon > 0: \lim_{n \to \infty}\mathbb{P}_\vartheta\left(|T_n - \tau(\vartheta) | \geq \epsilon\right) = 0
+\begin{split}
+&\forall \vartheta \in \Theta: T_n \to_\mathbb{P} \tau(\vartheta) \\
+&\Leftrightarrow \\
+&\forall \vartheta \in \Theta: 
+\forall \epsilon > 0:  
+\forall \delta > 0: 
+\exists N: \forall n > N:
+\mathbb{P}_\vartheta\left(|T_n - \tau(\vartheta) | \geq \delta\right) < \epsilon 
+\end{split}
 $$
-- [[statistical estimator|estimators]] can be [[bias|biased]] and [[estimator consitency|consitent]] and [[bias|unbiased]] and [[estimator consitency|inconsitent]] 
+
+- the [[estimator consitency]] is about how the [[statistical estimator]] behaves with infinite sample size
+
+#### landau notation
+- the following definition is equivalent to the definition of [[estimator consitency]] in [[stochasic landau notation]]
+- it means that the difference between the [[statistical estimator]] and the true value [[convergence in probability|converges in probability]] against zero
+
+$$
+\begin{split}
+T_n - \tau(\vartheta) =  \mathcal{o}_{\mathbb{P}_\vartheta}(1) \\
+\hat \vartheta - \vartheta =  \mathcal{o}_{\mathbb{P}_\vartheta}(1) \\
+\end{split}
+$$
 
 
 ### convergence in probability
