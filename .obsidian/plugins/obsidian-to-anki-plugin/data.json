@@ -1837,7 +1837,10 @@
     "linear approx.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/optimization/linear approximation.md": "c3678e1476031aba7475c3cf0348abf9",
     "mathematics/stochastics/consistency criteria.md": "822d902e157da2c32da356e82a83a808",
-    "mathematics/stochastics/score function.md": "e9ca191870c3687cdafb75ddacd3da6c"
+    "mathematics/stochastics/score function.md": "e9ca191870c3687cdafb75ddacd3da6c",
+    "mathematics/stochastics/conditional expectation theorem.md": "be6bf9ddf42d0ef30bcb18b6dc22d63b",
+    "mathematics/stochastics/rao blackwell theorem.md": "2f2a650f70fd3724edf5cc687e0a6817",
+    "mathematics/stochastics/sufficient statistics.md": "389fc4ad163a755980612033a876dfa0"
   },
   "fields_dict": {
     "Basic": [
