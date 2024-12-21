@@ -6,14 +6,11 @@ models the [[time series]]
 - with parameters $a_1, ..., a_p$
 - [[white noise]] $e$ (i.i.d. with $\mathbb{E}[e] =0$ and $\mathbb{VAR}[e_t] \in (0, \infty)$)
 - constant $\beta$ (sometimes assumed to be zero)
+
 $$
 X_t = \sum_{i=1}^p a_i X_{t-i} + \beta + e_t
 $$
 
-
-![[stationary process#weakly stationary process]]
-
-![[white noise#white noise]]
 
 ## autoregresive model of order 1 $AR(1)$
 
@@ -117,6 +114,11 @@ $$
 \end{split}
 $$
 
+# ----------------------------
+
+![[stationary process#weakly stationary process]]
+
+![[white noise#white noise]]
 
 
 # Anki
@@ -217,7 +219,7 @@ START
 Basic
 #### [[autoregresive (AR) model]]
 - definition
-- [[autocorrelation (ACF)]] and [[autocovariance]]  of $AR(1)$
+- [[autocorrelation (ACF)]] and [[autocovariance]]  of $AR(1)$ (np proof)
 
 Back: 
 ### autoregresive (AR) model
@@ -356,7 +358,7 @@ _______
 - [[white noise]] with [[normal distribution|normal distributed]] values $e_t \sim \mathcal{N}(0, \sigma^2)$
 
 
-Tags: mathematics time_series
+Tags: mathematics time_series WS2425
 <!--ID: 1705250198077-->
 END
 

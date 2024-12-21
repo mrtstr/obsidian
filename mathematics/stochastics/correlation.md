@@ -1,4 +1,4 @@
-## correlation
+### correlation
 - The [[correlation]] is a measure for the linear dependency of [[random variable|random variables]] 
 - in contrast to the [[covariance]] the [[correlation]] is not depending on the absolut size of the [[random variable|random variables]]
 $$

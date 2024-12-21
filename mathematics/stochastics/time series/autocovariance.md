@@ -1,4 +1,4 @@
-## definition [[autocovariance]]
+### autocovariance
 - [[covariance]] between two points of a [[time series]] / [[stochastic process]]
 - given a [[stochastic process]] $\{X_t\}$ the [[autocovariance]] $K_{XX}(t_1, t_2)$ for the time instances $t_1$ and $t_2$ is given as follows
 
@@ -10,9 +10,10 @@ K_{XX}(t_1, t_2)
 \end{split}
 $$
 
-![[covariance#definition covariance]]
 
-## [[autocovariance]] for [[stationary process]]
+
+## autocovariance for stationary process
+
 $$
 \begin{split}
 \mathbb{COV}(t_1, t_2) = K_{XX}(h) = K_{XX}(t_2 - t_1)  \quad 
@@ -35,8 +36,9 @@ $$
 
 
 ## linked
+![[covariance#covariance]]
 
-![[stationary process#Definition (weakly) stationary process]]]
+![[stationary process#weakly stationary process]]
 
 
 
