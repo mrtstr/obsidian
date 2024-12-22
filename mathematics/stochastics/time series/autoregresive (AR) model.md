@@ -113,6 +113,18 @@ $$
 &=  a_1^h \\
 \end{split}
 $$
+##### proof with yule walker equation
+
+$$
+\begin{split}
+\rho_{X}(h) &= a_1 \rho_{X}(h-1)  \\
+\rho_{X}(1) &= a_1 \rho_{X}(0) = a_1  \\
+\rho_{X}(2) &= a_1 \rho_{X}(1) = a_1^2  \\
+\rho_{X}(h) &= a_1 \rho_{X}(h-1) = a_1^h  \\
+\end{split}
+$$
+
+![[yule walker equation#yule walker equation]]
 
 # ----------------------------
 
@@ -363,6 +375,102 @@ Tags: mathematics time_series WS2425
 END
 
 
+
+START
+Basic
+#### [[autoregresive (AR) model]]
+- [[autocorrelation (ACF)]] with proof using the [[yule walker equation]]
+
+Back: 
+### autoregresive (AR) model
+- The [[autoregresive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+- assumes an at least [[stationary process]]
+
+models the [[time series]]
+- with parameters $a_1, ..., a_p$
+- [[white noise]] $e$ (i.i.d. with $\mathbb{E}[e] =0$ and $\mathbb{VAR}[e_t] \in (0, \infty)$)
+- constant $\beta$ (sometimes assumed to be zero)
+$$
+X_t = \sum_{i=1}^p a_i X_{t-i} + \beta + e_t
+$$
+
+
+## autoregresive model of order 1 $AR(1)$
+
+$$
+X_t = a_1 X_{t-1} + \beta + e_t
+$$
+
+
+
+#### autocorrelation (ACF)
+
+
+$$
+\begin{split}
+\rho(h) 
+&= a_1^h
+\end{split}
+$$
+
+
+##### proof with yule walker equation
+
+$$
+\begin{split}
+\rho_{X}(h) &= a_1 \rho_{X}(h-1)  \\
+\rho_{X}(1) &= a_1 \rho_{X}(0) = a_1  \\
+\rho_{X}(2) &= a_1 \rho_{X}(1) = a_1^2  \\
+\rho_{X}(h) &= a_1 \rho_{X}(h-1) = a_1^h  \\
+\end{split}
+$$
+
+_____________________
+
+### yule walker equation
+- for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregresive (AR) model]]
+
+- fo $h > 0$
+$$
+\begin{split}
+\rho_{X}(h) 
+&= a_1 \rho_{X}(h-1) + a_2 \rho_{X}(h-2) + ... + a_p \rho_{X}(h-p) \\
+&= \sum_{i=1}^p a_i \rho_{X}(h-i)  \\
+\end{split}
+$$
+
+- fo $h = 0$
+$$
+\begin{split}
+\rho_{X}(0) - \sigma^2_e
+&= \sum_{i=1}^p a_i \rho_{X}(0-i)  \\
+\end{split}
+$$
+
+
+_______
+
+
+### weakly stationary process
+- a [[stochastic process]] whose [[expectation]], [[variance]] and [[covariance]] are not time-dependent
+- a [[stochastic process]] $\{X_t\}$ is weakly [[stationary process|stationary]] when $\mathbb{E}\left[X_t\right], \mathbb{VAR}\left[X_t\right], \mathbb{COVAR}\left[X_t, X_{t+h}\right]$ are time independent (the same for all $t$)
+- every starongly statanary process is also a (weakly) [[stationary process]]
+
+
+### white noise
+[[time series]] $(e_t, t \in \mathbb{Z})$ with 
+- i.i.d. values
+- zero mean $\mathbb{E}[e_t] = 0$  
+- constant and finite [[variance]] $\mathbb{VAR}[e_t] = \mathbb{E}[e_t^2]= \sigma^2 \in (0, \infty)$  
+- [[correlation|uncorralated]] values $t \neq s \Rightarrow  \mathbb{COV}[e_t, e_s] = \mathbb{COR}[e_t, e_s] = 0$
+
+#### gaussian white noise
+- [[white noise]] with [[normal distribution|normal distributed]] values $e_t \sim \mathcal{N}(0, \sigma^2)$
+
+
+Tags: mathematics time_series WS2425
+<!--ID: 1734865948126-->
+END
 
 START
 Basic

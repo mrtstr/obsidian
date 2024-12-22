@@ -8,15 +8,19 @@
 
 ![[white noise#white noise]]
 
-- a [[time series]] $(X_t)$ is an autoregressive [[time series]] of order $p$ if there exists an $AR(q)$ model with parameters $a_1,..., a_p$ and [[white noise]] $e_t$ to describe $(X_t)$ 
+### autoregressive time series
+- a [[time series]] $(X_t)$ is an autoregressive [[time series]] of order $p$ if there exists an $AR(q)$ model with parameters $a_1,..., a_p$ and [[white noise]] $e_t$ to describe the law of $(X_t)$ 
 
 ![[autoregresive (AR) model#autoregresive (AR) model]]
 
-- a [[time series]] $(X_t)$ is an moving average [[time series]] of order $q$ if there exists an $MA(q)$ model with parameters $b_1,..., b_q$ and [[white noise]] $e_t$ to describe $(X_t)$ 
+
+### moving average time series
+- a [[time series]] $(X_t)$ is an moving average [[time series]] of order $q$ if there exists an $MA(q)$ model with parameters $b_1,..., b_q$ and [[white noise]] $e_t$ to describe the law of $(X_t)$ 
 
 ![[moving average (MA) model#moving average model MA(q)]]
 
-- a [[time series]] $(X_t)$ is an autoregressive moving average [[time series]] of order $p$ if there exists an $ARMA(p, q)$ model with parameters $a_1, ..., a_p$ and $b_1,..., b_q$ and [[white noise]] $e_t$ to describe $(X_t)$ 
+### autoregressive moving average time series
+- a [[time series]] $(X_t)$ is an autoregressive moving average [[time series]] of order $p$ if there exists an $ARMA(p, q)$ model with parameters $a_1, ..., a_p$ and $b_1,..., b_q$ and [[white noise]] $e_t$ to describe the law of $(X_t)$ 
 
 ![[autoregressive moving average (ARMA) model#autoregressive moving average (ARMA) model]]
 
@@ -49,10 +53,10 @@ Back:
 #### gaussian white noise
 - [[white noise]] with [[normal distribution|normal distributed]] values $e_t \sim \mathcal{N}(0, \sigma^2)$
 
+### autoregressive time series
+- a [[time series]] $(X_t)$ is an autoregressive [[time series]] of order $p$ if there exists an $AR(q)$ model with parameters $a_1,..., a_p$ and [[white noise]] $e_t$ to describe the law of $(X_t)$ 
 
-- a [[time series]] $(X_t)$ is an autoregressive [[time series]] of order $p$ if there exists an $AR(q)$ model with parameters $a_1,..., a_p$ and [[white noise]] $e_t$ to describe $(X_t)$ 
-
-### autoregresive (AR) model
+#### autoregresive (AR) model
 - The [[autoregresive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
 - assumes an at least [[stationary process]]
 
@@ -64,10 +68,9 @@ $$
 X_t = \sum_{i=1}^p a_i X_{t-i} + \beta + e_t
 $$
 
-
-- a [[time series]] $(X_t)$ is an moving average [[time series]] of order $q$ if there exists an $MA(q)$ model with parameters $b_1,..., b_q$ and [[white noise]] $e_t$ to describe $(X_t)$ 
-
-### moving average model MA(q)
+### moving average time series
+- a [[time series]] $(X_t)$ is an moving average [[time series]] of order $q$ if there exists an $MA(q)$ model with parameters $b_1,..., b_q$ and [[white noise]] $e_t$ to describe the law of $(X_t)$ 
+#### moving average model MA(q)
 - discribes the current value as a linear combination of the past $p$  error / [[white noise]] terms
 models the [[time series]]
 - with parameters $b_1, ..., b_p$
@@ -78,14 +81,14 @@ $$
 X_t = \mu +  e_t  + \sum_{i=1}^q b_i e_{t-i} 
 $$
 
-#### interpretation
+##### interpretation
 - caputes the direct effect (shok response) of the past error terms on the curent value
 - assumes [[stationary process|weakly stationary]]
 
+### autoregressive moving average time series
+- a [[time series]] $(X_t)$ is an autoregressive moving average [[time series]] of order $p$ if there exists an $ARMA(p, q)$ model with parameters $a_1, ..., a_p$ and $b_1,..., b_q$ and [[white noise]] $e_t$ to describe the law of $(X_t)$ 
 
-- a [[time series]] $(X_t)$ is an autoregressive moving average [[time series]] of order $p$ if there exists an $ARMA(p, q)$ model with parameters $a_1, ..., a_p$ and $b_1,..., b_q$ and [[white noise]] $e_t$ to describe $(X_t)$ 
-
-### autoregressive moving average (ARMA) model
+#### autoregressive moving average (ARMA) model
 - The [[autoregressive moving average (ARMA) model]] of order $p$ $ARMA(p)$ is a combination of a [[autoregresive (AR) model]] and an [[moving average (MA) model]]
 - captures the linear releationship of the current value to the past $p$ values and to the past $q$ error terms
 

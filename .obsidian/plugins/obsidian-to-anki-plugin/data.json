@@ -1261,7 +1261,7 @@
     "mathematics/stochastics/time series/autocorrelation (pearson).md": "8342328e446a21ab72019f5dff67d18d",
     "mathematics/stochastics/time series/stationary process.md": "60744a3dfa340c0c972b1e9a2b0228df",
     "mathematics/stochastics/time series/stochastic process.md": "54a018ed36e547674c57d11f9c41b8da",
-    "mathematics/stochastics/time series/time series.md": "f535427f213dcf27d7bdffdb5530565f",
+    "mathematics/stochastics/time series/time series.md": "5d0cedbc096c060786b92f2d0b35fa4a",
     "mathematics/stochastics/time series/partial autocorrelation.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/autocovariance.md": "c3f3bdc8bac25f2745d0c0ff753f5a6f",
     "mathematics/stochastics/time series/autoregresive model.md": "8931045506569ff2a8f0a79584d23eaa",
@@ -1841,10 +1841,10 @@
     "mathematics/stochastics/conditional expectation theorem.md": "be6bf9ddf42d0ef30bcb18b6dc22d63b",
     "mathematics/stochastics/rao blackwell theorem.md": "2f2a650f70fd3724edf5cc687e0a6817",
     "mathematics/stochastics/sufficient statistics.md": "389fc4ad163a755980612033a876dfa0",
-    "mathematics/stochastics/time series/autoregresive (AR) model.md": "0dc58a9cf465c859a51f7f2b810098e7",
+    "mathematics/stochastics/time series/autoregresive (AR) model.md": "d58fbbc38f93d9a2e6467660536de550",
     "mathematics/stochastics/time series/Untitled.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/moving average (MA) model.md": "8e994876660c6bb2dca179784ce94da0",
-    "mathematics/stochastics/time series/yule walker equation.md": "546a972f5ef9c37b6fdd94a65537a8c4",
+    "mathematics/stochastics/time series/yule walker equation.md": "b4c0d84beeb35b2523a99abd1271b341",
     "mathematics/stochastics/time series/autoregressive moving average (ARMA) model.md": "dd5612a8bf6e63881317a17dacdffd7a"
   },
   "fields_dict": {
