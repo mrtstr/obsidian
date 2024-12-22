@@ -18,6 +18,7 @@ $$
 \end{split}
 $$
 - this can be writting as the following [[linear map|linear]] [[matrix]] equation which can be solved for the parameter vector $A$
+
 $$
 \begin{split}
 RA = r \Leftrightarrow A = R^{-1}r

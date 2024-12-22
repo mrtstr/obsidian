@@ -1841,12 +1841,13 @@
     "mathematics/stochastics/conditional expectation theorem.md": "be6bf9ddf42d0ef30bcb18b6dc22d63b",
     "mathematics/stochastics/rao blackwell theorem.md": "2f2a650f70fd3724edf5cc687e0a6817",
     "mathematics/stochastics/sufficient statistics.md": "389fc4ad163a755980612033a876dfa0",
-    "mathematics/stochastics/time series/autoregresive (AR) model.md": "eee1fdb5964907c7362f423fcbca99cc",
+    "mathematics/stochastics/time series/autoregresive (AR) model.md": "3fb2caa47245218e31355a23a4b61683",
     "mathematics/stochastics/time series/Untitled.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/moving average (MA) model.md": "8e994876660c6bb2dca179784ce94da0",
-    "mathematics/stochastics/time series/yule walker equation.md": "9d8fda2636e09ae5770c2b07b20b6062",
+    "mathematics/stochastics/time series/yule walker equation.md": "2845a3990cb06fdee7d828c37e0bbf9e",
     "mathematics/stochastics/time series/autoregressive moving average (ARMA) model.md": "dd5612a8bf6e63881317a17dacdffd7a",
-    "mathematics/stochastics/estimators for stationary time series.md": "c6647e3ef7e18adfa103ea4d52530973"
+    "mathematics/stochastics/estimators for stationary time series.md": "c6647e3ef7e18adfa103ea4d52530973",
+    "mathematics/stochastics/time series/forecasting time series.md": "26fcde88c818f72f68a686001893cec3"
   },
   "fields_dict": {
     "Basic": [
