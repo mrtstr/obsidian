@@ -124,6 +124,16 @@ $$
 \end{split}
 $$
 
+#### parameter boundarys
+
+$$
+\begin{split}
+a_1 
+&=  \frac{\rho_{X}(1)}{\rho_{X}(0)}   \\
+&=  \rho_{X}(1) \in [-1,1]  \\
+\end{split}
+$$
+
 ![[yule walker equation#yule walker equation]]
 
 # ----------------------------
@@ -619,4 +629,137 @@ _______
 
 Tags: mathematics time_series WS2425
 <!--ID: 1705250198080-->
+END
+
+
+START
+Basic
+given an [[autoregresive (AR) model]] of order 1 $AR(1)$
+- which values can the parameter $a_1$ take (with proof)
+
+Back: 
+
+## autoregresive model of order 1 $AR(1)$
+
+$$
+X_t = a_1 X_{t-1} + \beta + e_t
+$$
+
+
+
+#### parameter boundarys
+- since the [[correlation]] can only take values between $-1$ and $1$
+
+$$
+\begin{split}
+a_1 
+&=  \frac{\rho_{X}(1)}{\rho_{X}(0)}   \\
+&=  \rho_{X}(1) \in [-1,1]  \\
+\end{split}
+$$
+
+
+_____________________
+
+
+
+### yule walker equation
+- for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregresive (AR) model]]
+
+- fo $h > 0$
+$$
+\begin{split}
+\rho_{X}(h) 
+&= a_1 \rho_{X}(h-1) + a_2 \rho_{X}(h-2) + ... + a_p \rho_{X}(h-p) \\
+&= \sum_{i=1}^p a_i \rho_{X}(h-i)  \\
+\end{split}
+$$
+
+- fo $h = 0$
+$$
+\begin{split}
+\rho_{X}(0) - \sigma^2_e
+&= \sum_{i=1}^p a_i \rho_{X}(0-i)  \\
+\end{split}
+$$
+
+
+### autoregresive (AR) model
+- The [[autoregresive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+- assumes an at least [[stationary process]]
+
+models the [[time series]]
+- with parameters $a_1, ..., a_p$
+- [[white noise]] $e$ (i.i.d. with $\mathbb{E}[e] =0$ and $\mathbb{VAR}[e_t] \in (0, \infty)$)
+- constant $\beta$ (sometimes assumed to be zero)
+$$
+X_t = \sum_{i=1}^p a_i X_{t-i} + \beta + e_t
+$$
+
+
+
+### weakly stationary process
+- a [[stochastic process]] whose [[expectation]], [[variance]] and [[covariance]] are not time-dependent
+- a [[stochastic process]] $\{X_t\}$ is weakly [[stationary process|stationary]] when $\mathbb{E}\left[X_t\right], \mathbb{VAR}\left[X_t\right], \mathbb{COVAR}\left[X_t, X_{t+h}\right]$ are time independent (the same for all $t$)
+- every starongly statanary process is also a (weakly) [[stationary process]]
+
+
+### white noise
+[[time series]] $(e_t, t \in \mathbb{Z})$ with 
+- i.i.d. values
+- zero mean $\mathbb{E}[e_t] = 0$  
+- constant and finite [[variance]] $\mathbb{VAR}[e_t] = \mathbb{E}[e_t^2]= \sigma^2 \in (0, \infty)$  
+- [[correlation|uncorralated]] values $t \neq s \Rightarrow  \mathbb{COV}[e_t, e_s] = \mathbb{COR}[e_t, e_s] = 0$
+
+#### gaussian white noise
+- [[white noise]] with [[normal distribution|normal distributed]] values $e_t \sim \mathcal{N}(0, \sigma^2)$
+
+
+### correlation
+- The [[correlation]] is a measure for the linear dependency of [[random variable|random variables]] 
+- in contrast to the [[covariance]] the [[correlation]] is not depending on the absolut size of the [[random variable|random variables]]
+$$
+\rho[X,Y] =\frac{\mathbb{COVAR}[X,Y]}{\sqrt{\mathbb{VAR}[X]\mathbb{VAR}[Y]}}
+$$
+
+
+
+#### boundarys
+$$
+-1 \leq \rho[X,Y] \leq 1
+$$
+##### cauchy schwarz inequality for probabilities
+
+$$
+\mathbb{COV}[X, Y]^2 \leq \mathbb{VAR}[X]  \mathbb{VAR}[Y]
+$$
+
+
+$$
+\begin{split}
+0 
+&\leq \mathbb{E}\left[(X-\lambda Y)^2\right] \\
+&\leq \mathbb{E}\left[X^2\right] + \lambda^2 \mathbb{E}\left[Y^2\right] - 2\lambda\mathbb{E}\left[XY\right] \quad \text{with } \lambda = \frac{\mathbb{E}\left[XY\right]}{\mathbb{E}\left[Y^2\right]} \\
+
+&\leq \mathbb{E}\left[X^2\right] + \left(\frac{\mathbb{E}\left[XY\right]}{\mathbb{E}\left[Y^2\right]}\right)^2 \mathbb{E}\left[Y^2\right] -2 \frac{\mathbb{E}\left[XY\right]}{\mathbb{E}\left[Y^2\right]} \mathbb{E}\left[XY\right] \\
+&\leq \mathbb{E}\left[X^2\right] + \frac{\mathbb{E}\left[XY\right]^2}{\mathbb{E}\left[Y^2\right]}  - 2\frac{\mathbb{E}\left[XY\right]^2}{\mathbb{E}\left[Y^2\right]}  \\
+&\leq \mathbb{E}\left[X^2\right]  - \frac{\mathbb{E}\left[XY\right]^2}{\mathbb{E}\left[Y^2\right]}  \\
+&\leq \mathbb{E}\left[X^2\right]\mathbb{E}\left[Y^2\right]  - \mathbb{E}\left[XY\right]^2  \\
+\Rightarrow \mathbb{E}\left[XY\right]^2 &\leq \mathbb{E}\left[X^2\right]\mathbb{E}\left[Y^2\right]
+\end{split}
+$$
+
+- let $X' = X - \mathbb{E}[X]$ and $Y' = Y - \mathbb{E}[Y]$
+
+$$
+\begin{split}
+&\mathbb{E}\left[X'Y'\right]^2 \leq \mathbb{E}\left[^2\right]\mathbb{E}\left[Y'^2\right] \\
+\Rightarrow &\mathbb{E}\left[\left( X - \mathbb{E}[X]\right)\left( Y - \mathbb{E}[Y]\right)\right]^2 \leq \mathbb{E}\left[\left( X - \mathbb{E}[X]\right)^2\right]\mathbb{E}\left[\left( Y - \mathbb{E}[Y]\right)^2\right] \\
+\Rightarrow &\mathbb{COV}[X, Y]^2 \leq \mathbb{VAR}[X]  \mathbb{VAR}[Y]\\
+\end{split}
+$$
+
+
+Tags: mathematics time_series WS2425
+<!--ID: 1734890698110-->
 END

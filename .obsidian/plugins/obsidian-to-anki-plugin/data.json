@@ -1266,7 +1266,7 @@
     "mathematics/stochastics/time series/autocovariance.md": "c3f3bdc8bac25f2745d0c0ff753f5a6f",
     "mathematics/stochastics/time series/autoregresive model.md": "8931045506569ff2a8f0a79584d23eaa",
     "mathematics/stochastics/time series/partial autocorrelation (PACF).md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/autocorrelation (ACF).md": "7646470693089872851d94d35a132109",
+    "mathematics/stochastics/time series/autocorrelation (ACF).md": "c3512d3044f7311c07f850486a16d797",
     "mathematics/stochastics/time series/random walk.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/white noise.md": "62c4a41f272029a8345e2283debb2f21",
     "mathematics/stochastics/time series/GARCH.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1841,11 +1841,12 @@
     "mathematics/stochastics/conditional expectation theorem.md": "be6bf9ddf42d0ef30bcb18b6dc22d63b",
     "mathematics/stochastics/rao blackwell theorem.md": "2f2a650f70fd3724edf5cc687e0a6817",
     "mathematics/stochastics/sufficient statistics.md": "389fc4ad163a755980612033a876dfa0",
-    "mathematics/stochastics/time series/autoregresive (AR) model.md": "d58fbbc38f93d9a2e6467660536de550",
+    "mathematics/stochastics/time series/autoregresive (AR) model.md": "eee1fdb5964907c7362f423fcbca99cc",
     "mathematics/stochastics/time series/Untitled.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/moving average (MA) model.md": "8e994876660c6bb2dca179784ce94da0",
-    "mathematics/stochastics/time series/yule walker equation.md": "b4c0d84beeb35b2523a99abd1271b341",
-    "mathematics/stochastics/time series/autoregressive moving average (ARMA) model.md": "dd5612a8bf6e63881317a17dacdffd7a"
+    "mathematics/stochastics/time series/yule walker equation.md": "9d8fda2636e09ae5770c2b07b20b6062",
+    "mathematics/stochastics/time series/autoregressive moving average (ARMA) model.md": "dd5612a8bf6e63881317a17dacdffd7a",
+    "mathematics/stochastics/estimators for stationary time series.md": "c6647e3ef7e18adfa103ea4d52530973"
   },
   "fields_dict": {
     "Basic": [
