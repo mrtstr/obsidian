@@ -1347,7 +1347,7 @@
     "mathematics/stochastics/time series/autocorrelation (pearson).md": "8342328e446a21ab72019f5dff67d18d",
     "mathematics/stochastics/time series/stationary process.md": "cef05025bddb517cf0044cba166af217",
     "mathematics/stochastics/time series/stochastic process.md": "a52cc7321cd0d60d487e47b337956223",
-    "mathematics/stochastics/time series/time series.md": "24c57d2cee7c169d98b80bc96d7a2d34",
+    "mathematics/stochastics/time series/time series.md": "9eed1e3bb709e191f6591cee0f9d212b",
     "mathematics/stochastics/time series/partial autocorrelation.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/autocovariance.md": "b33a1d1608eefdbf32399d7931c7e6b4",
     "mathematics/stochastics/time series/autoregresive model.md": "8931045506569ff2a8f0a79584d23eaa",
@@ -1935,10 +1935,13 @@
     "mathematics/stochastics/estimators for stationary time series.md": "13c0be25b8e58354ac91f6e1b4b055bb",
     "mathematics/stochastics/time series/forecasting time series.md": "2849337c09eab698cc46f71e44ad1750",
     "mathematics/stochastics/time series/wiener process.md": "cf64669455190e5113ea7fec3379d369",
-    "mathematics/stochastics/time series/black scholes model.md": "820a15ff7ef8e3b1dea8a7abf2cbf4af",
-    "mathematics/stochastics/time series/drift.md": "d2cf9ac8d7ae1a41f55e58d3840e8f19",
-    "mathematics/stochastics/time series/trend.md": "26af480d357709c97cc71126031a5db5",
-    "mathematics/stochastics/time series/volatility.md": "b92776566910a08493a0bffc90d2ada7"
+    "mathematics/stochastics/time series/black scholes model.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/time series/drift.md": "c3f9fe19b93167e04c6c8484b23a1424",
+    "mathematics/stochastics/time series/trend.md": "46809ac554eb666ae6d3c74832c35a5b",
+    "mathematics/stochastics/time series/volatility.md": "b92776566910a08493a0bffc90d2ada7",
+    "mathematics/stochastics/time series/smoothing.md": "afbcfd436e7ef432e0a9bb289cc70547",
+    "mathematics/stochastics/time series/seasonality.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "bf37a4d51a0eae22182194f646b5d5b9"
   },
   "fields_dict": {
     "Basic": [

@@ -13,6 +13,16 @@
 
 ![[autoregresive (AR) model#autoregresive (AR) model]]
 
+### additive model
+
+$$
+X_t = m_t + s_t + c + e_t
+$$
+
+- time dependend deterministic [[trend]] $m_t$
+- [[seasonality]] $s_t$
+- error term $e_t$ (e.g. [[white noise]])
+- [[drift]] (static term) $c$
 
 ### moving average time series
 - a [[time series]] $(X_t)$ is an moving average [[time series]] of order $q$ if there exists an $MA(q)$ model with parameters $b_1,..., b_q$ and [[white noise]] $e_t$ to describe the law of $(X_t)$ 
@@ -32,6 +42,7 @@
 
 ![[trend#trend]]
 
+![[time series#additive model]]
 # Anki
 
 START
@@ -135,20 +146,23 @@ Back:
 
 ### drift
 - static component in a [[time series]]
-- in the following example the parameter $c$ would quantify the [[drift]]
+- in the following [[time series#additive model|additive mode]] the parameter $c$ would quantify the [[drift]]
+
 
 ### trend
-- the [[trend]] is a time variant component in a [[time series]]
-- in the following example the parameter $\delta$ would be the trend
+- the [[trend]] is a time variant and deterministic component in a [[time series]]
+- in the following [[time series#additive model|additive mode]] the deterministic function $m(t)$ would be the [[trend]]
 
+### additive model
 
 $$
-\begin{split}
-X_t &= c + \delta t \\
-\tilde X_t &= \tilde X_t + c + \delta t \\
-\end{split}
+X_t = m_t + s_t + c + e_t
 $$
 
+- time dependend deterministic [[trend]] $m_t$
+- [[seasonality]] $s_t$
+- error term $e_t$ (e.g. [[white noise]])
+- [[drift]] (static term) $c$
 
 Tags: mathematics time_series WS2425
 <!--ID: 1735056916124-->
