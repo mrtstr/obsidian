@@ -463,7 +463,6 @@ $$
 
 Tags: mathematics linear_algebra
 
-
 <!--ID: 1722180274148-->
 END
 

@@ -26,6 +26,11 @@
 
 # -------------------
 
+![[volatility#volatility]]
+
+![[drift#drift]]
+
+![[trend#trend]]
 
 # Anki
 
@@ -111,4 +116,40 @@ _______
 
 Tags: mathematics time_series WS2425
 <!--ID: 1734801203344-->
+END
+
+
+
+START
+Basic
+definitions for the following [[time series]] concepts with example:
+- [[volatility]]
+- [[drift]]
+- [[trend]]
+
+Back: 
+### volatility
+- subjective term and n clear defintion
+- defree of variation of a [[stochastic process]]
+- connected to the concept of squared [[variance]] 
+
+### drift
+- static component in a [[time series]]
+- in the following example the parameter $c$ would quantify the [[drift]]
+
+### trend
+- the [[trend]] is a time variant component in a [[time series]]
+- in the following example the parameter $\delta$ would be the trend
+
+
+$$
+\begin{split}
+X_t &= c + \delta t \\
+\tilde X_t &= \tilde X_t + c + \delta t \\
+\end{split}
+$$
+
+
+Tags: mathematics time_series WS2425
+<!--ID: 1735056916124-->
 END
