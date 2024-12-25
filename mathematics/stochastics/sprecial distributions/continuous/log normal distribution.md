@@ -1,3 +1,4 @@
+### log normal distribution
 - A [[random variable]] $X$ is [[log normal distribution|log normal distributed]] if the [[logarithm]] of $X$ $Y=log(X) \sim f_Y\left(y|\mu, \sigma^2\right)$ is [[normal distribution|normal distributed]]
 
 
@@ -14,7 +15,7 @@ f(x) = 1/x 1/sqrt(2*PI) exp(-log(x)^2 / 2)
 g(x) = 1/sqrt(2*PI) exp(-x^2 / 2)
 ```
 
-## [[cumulative distribution function (CDF)]]
+#### CDF
 $$
 F_X\left(x \: | \: \mu, \sigma^2\right) = 
 F_Y\left(log(x) \: | \: \mu, \sigma^2\right)
@@ -30,7 +31,7 @@ F_X\left(x\: | \: \mu, \sigma^2\right)
 \end{split}
 $$
 
-## [[probability density function (PDF)]]
+#### PDF
 $$
 f_X\left(x \: | \: \mu, \sigma^2\right) = 
 \frac{1}{x} f_Y\left(log(x) \: | \: \mu, \sigma^2\right)

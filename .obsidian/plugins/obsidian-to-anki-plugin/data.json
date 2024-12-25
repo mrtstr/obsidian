@@ -1030,7 +1030,7 @@
     "code/data processing/polars/pl Dataframe.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/memory mapped data.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/random access.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/sprecial distributions/continuous/log normal distribution.md": "87d06d5628db091320893b3211de5031",
+    "mathematics/stochastics/sprecial distributions/continuous/log normal distribution.md": "90d30cbffe502f923721a83eed390ea0",
     "mathematics/stochastics/sprecial distributions/continuous/gamma distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/gamma function.md": "00cfa929472b49d4d443314ef17dbaba",
     "mathematics/integer.md": "bfeae022d0630defce1c43cd505f877e",
@@ -1353,7 +1353,7 @@
     "mathematics/stochastics/time series/autoregresive model.md": "8931045506569ff2a8f0a79584d23eaa",
     "mathematics/stochastics/time series/partial autocorrelation (PACF).md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/autocorrelation (ACF).md": "c3512d3044f7311c07f850486a16d797",
-    "mathematics/stochastics/time series/random walk.md": "623ac75106ae88c55f7a751daab064f5",
+    "mathematics/stochastics/time series/random walk.md": "9ef00a2ca5afbcd50a84ae5602ec48c7",
     "mathematics/stochastics/time series/white noise.md": "62c4a41f272029a8345e2283debb2f21",
     "mathematics/stochastics/time series/GARCH.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/ARCH.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1941,7 +1941,7 @@
     "mathematics/stochastics/time series/volatility.md": "b92776566910a08493a0bffc90d2ada7",
     "mathematics/stochastics/time series/smoothing.md": "afbcfd436e7ef432e0a9bb289cc70547",
     "mathematics/stochastics/time series/seasonality.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "bf37a4d51a0eae22182194f646b5d5b9"
+    "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "d2428fd77716e33b12712826772f189c"
   },
   "fields_dict": {
     "Basic": [
