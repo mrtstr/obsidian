@@ -1030,7 +1030,7 @@
     "code/data processing/polars/pl Dataframe.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/memory mapped data.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/random access.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/sprecial distributions/continuous/log normal distribution.md": "90d30cbffe502f923721a83eed390ea0",
+    "mathematics/stochastics/sprecial distributions/continuous/log normal distribution.md": "17932b06fba33b081a024cb8de21d6ab",
     "mathematics/stochastics/sprecial distributions/continuous/gamma distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/gamma function.md": "00cfa929472b49d4d443314ef17dbaba",
     "mathematics/integer.md": "bfeae022d0630defce1c43cd505f877e",
@@ -1941,7 +1941,7 @@
     "mathematics/stochastics/time series/volatility.md": "b92776566910a08493a0bffc90d2ada7",
     "mathematics/stochastics/time series/smoothing.md": "afbcfd436e7ef432e0a9bb289cc70547",
     "mathematics/stochastics/time series/seasonality.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "5058377ab6a8bc5ade55e51b19b5b1fa",
+    "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "9b3f9f739d9af2e82b2efc7b615e8cf1",
     "mathematics/stochastics/time series/stochastic differential equation.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/martingal.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/markov process.md": "d41d8cd98f00b204e9800998ecf8427e"
