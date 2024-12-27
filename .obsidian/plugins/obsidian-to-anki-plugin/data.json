@@ -1354,7 +1354,7 @@
     "mathematics/stochastics/time series/partial autocorrelation (PACF).md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/autocorrelation (ACF).md": "c3512d3044f7311c07f850486a16d797",
     "mathematics/stochastics/time series/random walk.md": "9ef00a2ca5afbcd50a84ae5602ec48c7",
-    "mathematics/stochastics/time series/white noise.md": "62c4a41f272029a8345e2283debb2f21",
+    "mathematics/stochastics/time series/white noise.md": "97ae640895d12707081b8e8b9cf59139",
     "mathematics/stochastics/time series/GARCH.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/ARCH.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/conditionally heteroskedastic.md": "277de84ecb15982e9c5a31f88f5a105d",
@@ -1941,11 +1941,12 @@
     "mathematics/stochastics/time series/volatility.md": "b92776566910a08493a0bffc90d2ada7",
     "mathematics/stochastics/time series/smoothing.md": "afbcfd436e7ef432e0a9bb289cc70547",
     "mathematics/stochastics/time series/seasonality.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "60dca59afd785cdb75d1a6a4a68a64c3",
+    "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "420a4482a6b09c8588267e34fc302aff",
     "mathematics/stochastics/time series/stochastic differential equation.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/martingal.md": "9bc7dc3476a42ee1360d5f2fff9cac43",
     "mathematics/stochastics/time series/markov process.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/filtration.md": "ea1fe4c61474ec0786ef705ed0eff202"
+    "mathematics/stochastics/time series/filtration.md": "ea1fe4c61474ec0786ef705ed0eff202",
+    "geometric brownian motion.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [

@@ -51,7 +51,7 @@ P_t = P_0 \exp\left(\left(\mu - \frac{\sigma^2}{2}\right)\cdot t + \sigma W_t\ri
 $$
 
 ### geometric brownian motion is log normal distributed
-- [[geometric brownian motion]] is [[log normal distribution| log normal distributed]]
+- [[geometric brownian motion (GBM)]] is [[log normal distribution| log normal distributed]]
 - given $P_t$ with $P_0=1$ and the [[wiener process]] $W_t \sim \mathcal{N}(0, t)$
 - first part is deterministic and the second part is [[normal distribution|normal distributed]] $\sigma W_t \sim \mathcal{N}(0, \sigma^2 t)$
 - thus the [[natural logarithm]] of $P_t$ is also [[normal distribution|normal distributed]]  and thus $P_t$ has a [[log normal distribution]]
@@ -131,7 +131,7 @@ R_t
 $$
 ### properties
 - not [[differentiabe]]
-##### expectation
+#### expectation
 - since the [[geometric brownian motion (GBM)]] has a [[log normal distribution]] the [[expectation]] can be calculated as follows
 
 $$
@@ -142,7 +142,7 @@ $$
 \end{split}
 $$
 
-##### variance
+#### variance
 - since the [[geometric brownian motion (GBM)]] has a [[log normal distribution]] the [[variance]] can be calculated as follows
 
 $$
@@ -153,7 +153,7 @@ $$
 \end{split}
 $$
 
-##### martingal
+#### martingal
 - [[martingal]]
 $$
 \begin{split}
@@ -161,7 +161,7 @@ $$
 \end{split}
 $$
 
-##### maximum likelihood estimator for the parameters
+#### maximum likelihood estimator for the parameters
 - since the log returns are [[normal distribution|normal distributed]] the [[maximum likelihood estimator]] can be calculated as follows
 
 $$
@@ -172,8 +172,12 @@ $$
 \end{split}
 $$
 
+### short commings
+- with the [[geometric brownian motion (GBM)]] model the log returns $X_t$ are [[white noise#gaussian white noise|gaussian white noise]] and thus [[stochastic independent]]
+- when checking empirically one can see that $X_i$ is [[white noise]] because its [[autocorrelation (ACF)]] is zero but when checking other [[moments]] like $X_t^2$ one can see that the log returns are not [[stochastic independent]]
 # ----------
 
+![[white noise#white noise]]
 
 ![[natural logarithm#limit identity of the natural logarithm]]
 
@@ -187,6 +191,67 @@ $$
 ![[wiener process#wiener process]]
 
 # anki
+
+START
+Basic
+[[geometric brownian motion (GBM)]] 
+- short commings when modeling real asset prices
+
+Back: 
+- with the [[geometric brownian motion (GBM)]] model the log returns $X_t$ are [[white noise#gaussian white noise|gaussian white noise]] and thus [[stochastic independent]]
+- when checking empirically one can see that $X_i$ is [[white noise]] because its [[autocorrelation (ACF)]] is zero but when checking other [[moments]] like $X_t^2$ one can see that the log returns are not [[stochastic independent]]
+
+
+____________
+
+### geometric brownian motion
+- [[geometric brownian motion (GBM)]] is a [[stochastic process]] that can be used to describe the evolution of financial asset prices in a random but predictable manner
+- $P_t$ is a [[geometric brownian motion (GBM)]] with the [[wiener process]] $W_t$ the [[drift]]  $\mu$ (return rate) and the [[volatility]] (of the return) $\sigma$
+
+
+$$
+P_t = P_0 \exp\left(\left(\mu - \frac{\sigma^2}{2}\right)\cdot t + \sigma W_t\right)
+$$
+
+### geometric brownian motion is log normal distributed
+- [[geometric brownian motion (GBM)]] is [[log normal distribution| log normal distributed]]
+- given $P_t$ with $P_0=1$ and the [[wiener process]] $W_t \sim \mathcal{N}(0, t)$
+- first part is deterministic and the second part is [[normal distribution|normal distributed]] $\sigma W_t \sim \mathcal{N}(0, \sigma^2 t)$
+- thus the [[natural logarithm]] of $P_t$ is also [[normal distribution|normal distributed]]  and thus $P_t$ has a [[log normal distribution]]
+
+$$
+\begin{split}
+\ln(P_t) = \left(\mu - \frac{\sigma^2}{2}\right)\cdot t + \sigma W_t \sim \mathcal{N}\left(\left(\mu - \frac{\sigma^2}{2}\right)\cdot t, \sigma^2 t \right)
+\end{split}
+$$
+
+### log returns
+- the log returns $X_t$ are defined as follows
+
+$$
+\begin{split}
+X_t 
+&= \ln\left(\frac{P_t}{P_{t-1}} \right) \\
+&= \ln\left(P_t \right) - \ln\left(P_{t-1} \right) \\
+\end{split}
+$$
+#### distribution of the log returns
+- the log returns $X_t$ are i.i.d. [[normal distribution|normal distributed]]
+
+$$
+\begin{split}
+X_t 
+&= \ln\left(P_t \right) - \ln\left(P_{t-1} \right) \\
+&= \left(\mu - \frac{\sigma^2}{2}\right)\cdot t + \sigma W_t - \left(\mu - \frac{\sigma^2}{2}\right)\cdot (t-1) - \sigma W_{t-1} \\
+&= \left(\mu - \frac{\sigma^2}{2}\right) + \sigma \left( W_{t-1} - W_{t-1} \right) \\
+&= \left(\mu - \frac{\sigma^2}{2}\right) + \sigma e_t  \\
+&\sim \mathcal{N}\left(\mu - \frac{\sigma^2}{2} , \sigma^2  \right)
+\end{split}
+$$
+
+Tags: mathematics time_series WS2425
+<!--ID: 1735316706789-->
+END
 
 START
 Basic
@@ -236,7 +301,7 @@ ____________
 ### geometric brownian motion
 - [[geometric brownian motion (GBM)]] is a [[stochastic process]] that can be used to describe the evolution of financial asset prices in a random but predictable manner
 - $P_t$ is a [[geometric brownian motion (GBM)]] with the [[wiener process]] $W_t$ the [[drift]]  $\mu$ (return rate) and the [[volatility]] (of the return) $\sigma$
-- $P_t$ has a [[log normal distribution]] and is a [[martingal]] and a [[markov process]]
+
 
 $$
 P_t = P_0 \exp\left(\left(\mu - \frac{\sigma^2}{2}\right)\cdot t + \sigma W_t\right)
