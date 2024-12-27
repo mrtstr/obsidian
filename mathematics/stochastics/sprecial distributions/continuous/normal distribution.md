@@ -1,5 +1,5 @@
 ### normal distribution
-#### [[probability density function (PDF)]]
+
 
 $$
 f_X\left(x|\mu, \sigma^2\right) = \frac{1}{\sqrt{2 \pi \sigma^2}}\exp{\left[-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}\right]}
@@ -17,7 +17,7 @@ grid: true
 f(x) = 1/sqrt(2*PI) exp(-x^2 / 2)
 ```
 
-#### [[moment generating function]]
+### [[moment generating function]]
 
 ![[moment generating function#definition]]
 
@@ -36,7 +36,7 @@ $$
  &= \left. \exp{\left[\mu t+\frac{1}{2}\sigma^2 t^2\right]} (\mu+t \sigma^2) \right|_{t=0} \\
 \end{split}
 $$
-#### [[variance]]
+### [[variance]]
 
 $$
 \begin{split}
@@ -55,7 +55,7 @@ $$
 \end{split}
 $$
 
-## properties
+### properties
 
 ### [[symmetric distribution]] around its mean $\mu$
 

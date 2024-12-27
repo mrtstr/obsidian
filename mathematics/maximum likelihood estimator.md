@@ -28,7 +28,7 @@ $$
 ### [[maximum likelihood estimator]] for the [[normal distribution]]
 - given an [[n fold statistical model]] for n samples $X_1, ..., X_n \sim \mathcal{N}(\mu, \sigma^2)$ and a [[parameter space]] $\Theta = \mathbb{R} \times (0, \infty)$ 
 
-![[normal distribution#probability density function (PDF)]]
+![[normal distribution#normal distribution]]
 
 - the following [[statistical estimator]] are the [[maximum likelihood estimator|maximum likelihood estimator]]
 $$

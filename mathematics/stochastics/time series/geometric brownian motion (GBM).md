@@ -1,7 +1,6 @@
 ### geometric brownian motion
 - [[geometric brownian motion (GBM)]] is a [[stochastic process]] that can be used to describe the evolution of financial asset prices in a random but predictable manner
 - $P_t$ is a [[geometric brownian motion (GBM)]] with the [[wiener process]] $W_t$ the [[drift]]  $\mu$ (return rate) and the [[volatility]] (of the return) $\sigma$
-- $P_t$ has a [[log normal distribution]] and is a [[martingal]] and a [[markov process]]
 
 $$
 P_t = P_0 \exp\left(\left(\mu - \frac{\sigma^2}{2}\right)\cdot t + \sigma W_t\right)
@@ -154,6 +153,25 @@ $$
 \end{split}
 $$
 
+##### martingal
+- [[martingal]]
+$$
+\begin{split}
+\mathbb{E}\left[P_{t}| \left\{P_s: s \leq t-1\right\}\right] = \mu P_{t-1}
+\end{split}
+$$
+
+##### maximum likelihood estimator for the parameters
+- since the log returns are [[normal distribution|normal distributed]] the [[maximum likelihood estimator]] can be calculated as follows
+
+$$
+\begin{split}
+\bar X_n &= \frac{1}{n}  \sum_{i=1}^n X_i \\
+\hat\sigma_{ML}^2 &= \frac{1}{n}  \sum_{i=1}^n \left(X_i - \bar X_n\right)^2 \\
+\hat\mu_{ML}^2 &= \bar X_n +   \frac{\hat\sigma_{ML}^2}{2} \\
+\end{split}
+$$
+
 # ----------
 
 
@@ -169,6 +187,78 @@ $$
 ![[wiener process#wiener process]]
 
 # anki
+
+START
+Basic
+[[geometric brownian motion (GBM)]] 
+- [[maximum likelihood estimator]] for the parameters
+
+Back: 
+
+#### maximum likelihood estimator for the parameters
+- since the log returns are [[normal distribution|normal distributed]] the [[maximum likelihood estimator]] can be calculated as follows
+
+$$
+\begin{split}
+\bar X_n &= \frac{1}{n}  \sum_{i=1}^n X_i \\
+\hat\sigma_{ML}^2 &= \frac{1}{n-1}  \sum_{i=1}^n \left(X_i - \bar X_n\right)^2 \\
+\hat\mu_{ML}^2 &= \bar X_n +   \frac{\hat\sigma_{ML}^2}{2} \\
+\end{split}
+$$
+
+#### log returns
+- the log returns $X_t$ are defined as follows
+
+$$
+\begin{split}
+X_t 
+&= \ln\left(\frac{P_t}{P_{t-1}} \right) \\
+&= \ln\left(P_t \right) - \ln\left(P_{t-1} \right) \\
+\end{split}
+$$
+#### distribution of the log returns
+- the log returns $X_t$ are i.i.d. [[normal distribution|normal distributed]]
+
+$$
+\begin{split}
+X_t 
+&= \ln\left(P_t \right) - \ln\left(P_{t-1} \right) \\
+&= \left(\mu - \frac{\sigma^2}{2}\right)\cdot t + \sigma W_t - \left(\mu - \frac{\sigma^2}{2}\right)\cdot (t-1) - \sigma W_{t-1} \\
+&= \left(\mu - \frac{\sigma^2}{2}\right) + \sigma \left( W_{t-1} - W_{t-1} \right) \\
+&= \left(\mu - \frac{\sigma^2}{2}\right) + \sigma e_t  \\
+&\sim \mathcal{N}\left(\mu - \frac{\sigma^2}{2} , \sigma^2  \right)
+\end{split}
+$$
+
+
+____________
+
+### geometric brownian motion
+- [[geometric brownian motion (GBM)]] is a [[stochastic process]] that can be used to describe the evolution of financial asset prices in a random but predictable manner
+- $P_t$ is a [[geometric brownian motion (GBM)]] with the [[wiener process]] $W_t$ the [[drift]]  $\mu$ (return rate) and the [[volatility]] (of the return) $\sigma$
+- $P_t$ has a [[log normal distribution]] and is a [[martingal]] and a [[markov process]]
+
+$$
+P_t = P_0 \exp\left(\left(\mu - \frac{\sigma^2}{2}\right)\cdot t + \sigma W_t\right)
+$$
+
+### geometric brownian motion is log normal distributed
+- [[geometric brownian motion (GBM)]] is [[log normal distribution| log normal distributed]]
+- given $P_t$ with $P_0=1$ and the [[wiener process]] $W_t \sim \mathcal{N}(0, t)$
+- first part is deterministic and the second part is [[normal distribution|normal distributed]] $\sigma W_t \sim \mathcal{N}(0, \sigma^2 t)$
+- thus the [[natural logarithm]] of $P_t$ is also [[normal distribution|normal distributed]]  and thus $P_t$ has a [[log normal distribution]]
+
+$$
+\begin{split}
+\ln(P_t) = \left(\mu - \frac{\sigma^2}{2}\right)\cdot t + \sigma W_t \sim \mathcal{N}\left(\left(\mu - \frac{\sigma^2}{2}\right)\cdot t, \sigma^2 t \right)
+\end{split}
+$$
+
+
+
+Tags: mathematics time_series WS2425
+<!--ID: 1735314209304-->
+END
 
 START
 Basic

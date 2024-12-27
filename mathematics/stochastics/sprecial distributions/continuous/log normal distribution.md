@@ -146,7 +146,7 @@ f_X\left(x \: | \: \mu, \sigma^2\right)
 \end{split}
 $$
 
-Tags: mathematics statistics
+Tags: mathematics statistics WS2425
 <!--ID: 1735301089895-->
 END
 

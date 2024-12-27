@@ -680,7 +680,7 @@
     "mathematics/stochastics/kurtosis.md": "a850e09e219d79182fa5e88e6d2ce74a",
     "mathematics/stochastics/symmetric distribution.md": "547d518ef71d6c168fc000e96e0a07ac",
     "mathematics/stochastics/moment generating function.md": "5da27dc577700f17b877d0f54584cf55",
-    "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md": "e376c91540ed85e62a5fbc0a6ee58382",
+    "mathematics/stochastics/sprecial distributions/continuous/normal distribution.md": "211ab9e596f1998f92ec24270cd198d3",
     "mathematics/stochastics/linear transformation of random variables.md": "475003143c03fc3698285d1a653020e4",
     "mathematics/stochastics/sprecial distributions/continuous/standard normal distribution.md": "e61d925e75e100c7cdff3eec6ccc7a35",
     "mathematics/stochastics/random sample.md": "58f9f758a2bb2119251191da3811ddce",
@@ -1030,7 +1030,7 @@
     "code/data processing/polars/pl Dataframe.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/memory mapped data.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/data processing/concepts/random access.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/sprecial distributions/continuous/log normal distribution.md": "17932b06fba33b081a024cb8de21d6ab",
+    "mathematics/stochastics/sprecial distributions/continuous/log normal distribution.md": "7ff6735486118c35427f14eabf69b48e",
     "mathematics/stochastics/sprecial distributions/continuous/gamma distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/gamma function.md": "00cfa929472b49d4d443314ef17dbaba",
     "mathematics/integer.md": "bfeae022d0630defce1c43cd505f877e",
@@ -1725,7 +1725,7 @@
     "mathematics/stochastics/estimating uniform distribution parameter.md": "95985c28f4062b2ae2e36395a08b71f8",
     "mathematics/stochastics/maximum of uniform samples.md": "a1ec5889644bd14e662a122dab28c0f6",
     "mathematics/stochastics/n fold statistical model.md": "ac0002ec1a59089eb8ec6a4540dde0fc",
-    "mathematics/maximum likelihood estimator.md": "83a26e2d7138cbc27bf9151d17b0fd50",
+    "mathematics/maximum likelihood estimator.md": "e7c3f52176878fc0241ccb692015a531",
     "mathematics/stochastics/likelihood function.md": "77d9287937c552d230e0be290e90a8ab",
     "mathematics/stochastics/Untitled 2.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/best estimator.md": "e1e40b26e1da05518ab328e171d3d8e9",
@@ -1941,10 +1941,11 @@
     "mathematics/stochastics/time series/volatility.md": "b92776566910a08493a0bffc90d2ada7",
     "mathematics/stochastics/time series/smoothing.md": "afbcfd436e7ef432e0a9bb289cc70547",
     "mathematics/stochastics/time series/seasonality.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "9b3f9f739d9af2e82b2efc7b615e8cf1",
+    "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "60dca59afd785cdb75d1a6a4a68a64c3",
     "mathematics/stochastics/time series/stochastic differential equation.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/martingal.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/markov process.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "mathematics/stochastics/time series/martingal.md": "9bc7dc3476a42ee1360d5f2fff9cac43",
+    "mathematics/stochastics/time series/markov process.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/time series/filtration.md": "ea1fe4c61474ec0786ef705ed0eff202"
   },
   "fields_dict": {
     "Basic": [
