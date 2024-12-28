@@ -431,7 +431,7 @@ END
 START
 Basic
 #### [[autoregresive (AR) model]]
-- [[autocorrelation (ACF)]] with proof using the [[yule walker equation]]
+- [[autocorrelation (ACF)]] of $AR(1)$ model with proof using the [[yule walker equation]]
 
 Back: 
 ### autoregresive (AR) model

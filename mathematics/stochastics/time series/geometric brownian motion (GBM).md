@@ -178,6 +178,16 @@ $$
 - lets assume $X_t' = X_t - \left(\mu - \frac{\sigma^2}{2} \right)$ or that the mean of the log returns is zero thus $\mu = \frac{\sigma^2}{2}$ like for currency excange rates without general trends
 - with the [[geometric brownian motion (GBM)]] model the log returns $X_t$ are [[white noise#gaussian white noise|gaussian white noise]] and thus [[stochastic independent]]
 - when checking empirically one can see that $X_t$ is [[white noise]] because its [[autocorrelation (ACF)]] is zero but when checking other [[moments]] like $X_t^2$ one can see that the log returns are not [[stochastic independent]]
+
+observations for $h>0$:
+
+$$
+\begin{split}
+\mathbb{COV}[X_{t}, X_{t+h}] = \mathbb{E}[X_{t}X_{t+h}]-\mathbb{E}[X_{t}]\mathbb{E}[X_{t+h}] = 0\\
+\mathbb{COV}[X_{t}^2, X_{t+h}^2] = \mathbb{E}[X_{t}^2X_{t+h}^2]-\mathbb{E}[X_{t}^2]\mathbb{E}[X_{t+h}^2] \neq 0\\
+\end{split}
+$$
+
 # ---------- 
 
 ![[white noise#white noise]]
@@ -205,8 +215,16 @@ Back:
 - with the [[geometric brownian motion (GBM)]] model the log returns $X_t$ are [[white noise#gaussian white noise|gaussian white noise]] and thus [[stochastic independent]]
 - when checking empirically one can see that $X_t$ is [[white noise]] because its [[autocorrelation (ACF)]] is zero but when checking other [[moments]] like $X_t^2$ one can see that the log returns are not [[stochastic independent]]
 
-____________
+observations for $h>0$:
 
+$$
+\begin{split}
+\mathbb{COV}[X_{t}, X_{t+h}] = \mathbb{E}[X_{t}X_{t+h}]-\mathbb{E}[X_{t}]\mathbb{E}[X_{t+h}] = 0\\
+\mathbb{COV}[X_{t}^2, X_{t+h}^2] = \mathbb{E}[X_{t}^2X_{t+h}^2]-\mathbb{E}[X_{t}^2]\mathbb{E}[X_{t+h}^2] \neq 0\\
+\end{split}
+$$
+
+____________
 ### geometric brownian motion
 - [[geometric brownian motion (GBM)]] is a [[stochastic process]] that can be used to describe the evolution of financial asset prices in a random but predictable manner
 - $P_t$ is a [[geometric brownian motion (GBM)]] with the [[wiener process]] $W_t$ the [[drift]]  $\mu$ (return rate) and the [[volatility]] (of the return) $\sigma$
