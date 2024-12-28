@@ -19,7 +19,8 @@ $$
 $$
 \begin{split}
 \hat X_n &= \sum_{i \in [n]} X_i \\
-\hat\rho_n(h) &= \frac{1}{n} \sum_{t=1}^{n-|h|} \left(X_t- X_n\right)\left(X_{t+h}- X_n\right)
+\hat\gamma_n(h) &= \frac{1}{n} \sum_{t=1}^{n-|h|} \left(X_t- X_n\right)\left(X_{t+h}- X_n\right) \\
+\hat\rho_n(h) &= \frac{\hat\gamma_n(h)}{\hat\gamma_n(0)}  \\
 \end{split}
 $$
 
@@ -817,7 +818,8 @@ Back:
 $$
 \begin{split}
 \hat X_n &= \sum_{i \in [n]} X_i \\
-\hat\rho_n(h) &= \frac{1}{n} \sum_{t=1}^{n-|h|} \left(X_t- X_n\right)\left(X_{t+h}- X_n\right)
+\hat\gamma_n(h) &= \frac{1}{n} \sum_{t=1}^{n-|h|} \left(X_t- X_n\right)\left(X_{t+h}- X_n\right) \\
+\hat\rho_n(h) &= \frac{\hat\gamma_n(h)}{\hat\gamma_n(0)}  \\
 \end{split}
 $$
 

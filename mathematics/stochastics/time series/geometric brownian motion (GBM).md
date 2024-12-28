@@ -163,6 +163,7 @@ $$
 
 #### maximum likelihood estimator for the parameters
 - since the log returns are [[normal distribution|normal distributed]] the [[maximum likelihood estimator]] can be calculated as follows
+- from $\mathbb{E}[X] = \mu - \frac{\sigma^2}{2} \rightarrow \mu = \mathbb{E}[X]  - \frac{\sigma^2}{2}$
 
 $$
 \begin{split}
@@ -173,9 +174,11 @@ $$
 $$
 
 ### short commings
+
+- lets assume $X_t' = X_t - \left(\mu - \frac{\sigma^2}{2} \right)$ or that the mean of the log returns is zero thus $\mu = \frac{\sigma^2}{2}$ like for currency excange rates without general trends
 - with the [[geometric brownian motion (GBM)]] model the log returns $X_t$ are [[white noise#gaussian white noise|gaussian white noise]] and thus [[stochastic independent]]
-- when checking empirically one can see that $X_i$ is [[white noise]] because its [[autocorrelation (ACF)]] is zero but when checking other [[moments]] like $X_t^2$ one can see that the log returns are not [[stochastic independent]]
-# ----------
+- when checking empirically one can see that $X_t$ is [[white noise]] because its [[autocorrelation (ACF)]] is zero but when checking other [[moments]] like $X_t^2$ one can see that the log returns are not [[stochastic independent]]
+# ---------- 
 
 ![[white noise#white noise]]
 
@@ -198,9 +201,9 @@ Basic
 - short commings when modeling real asset prices
 
 Back: 
+- lets assume $X_t' = X_t - \left(\mu - \frac{\sigma^2}{2} \right)$ or that the mean of the log returns is zero thus $\mu = \frac{\sigma^2}{2}$ like for currency excange rates without general trends
 - with the [[geometric brownian motion (GBM)]] model the log returns $X_t$ are [[white noise#gaussian white noise|gaussian white noise]] and thus [[stochastic independent]]
-- when checking empirically one can see that $X_i$ is [[white noise]] because its [[autocorrelation (ACF)]] is zero but when checking other [[moments]] like $X_t^2$ one can see that the log returns are not [[stochastic independent]]
-
+- when checking empirically one can see that $X_t$ is [[white noise]] because its [[autocorrelation (ACF)]] is zero but when checking other [[moments]] like $X_t^2$ one can see that the log returns are not [[stochastic independent]]
 
 ____________
 
@@ -259,9 +262,9 @@ Basic
 - [[maximum likelihood estimator]] for the parameters
 
 Back: 
-
 #### maximum likelihood estimator for the parameters
 - since the log returns are [[normal distribution|normal distributed]] the [[maximum likelihood estimator]] can be calculated as follows
+- from $\mathbb{E}[X] = \mu - \frac{\sigma^2}{2} \rightarrow \mu = \mathbb{E}[X]  - \frac{\sigma^2}{2}$
 
 $$
 \begin{split}
