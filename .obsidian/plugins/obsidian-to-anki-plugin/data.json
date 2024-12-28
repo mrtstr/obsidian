@@ -1927,7 +1927,7 @@
     "mathematics/stochastics/conditional expectation theorem.md": "e444844db4dae3068226e143b84b86ea",
     "mathematics/stochastics/rao blackwell theorem.md": "2d1baa790a0630e1820eafdd809816e9",
     "mathematics/stochastics/sufficient statistics.md": "0bac5a3c18ab6a01463f598644d15581",
-    "mathematics/stochastics/time series/autoregresive (AR) model.md": "1acb59de4f66d7acde54b75f9c87414c",
+    "mathematics/stochastics/time series/autoregresive (AR) model.md": "f50558e2a99af714f91e9585d2fe3bea",
     "mathematics/stochastics/time series/Untitled.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/moving average (MA) model.md": "ba64b18b1d624b9a8833616d73a47de9",
     "mathematics/stochastics/time series/yule walker equation.md": "314674fc49af0de3943bbe51705be655",
@@ -1947,7 +1947,9 @@
     "mathematics/stochastics/time series/markov process.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/filtration.md": "11709d475b4811bce47ea32d04453110",
     "geometric brownian motion.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/sample autocovariance.md": "c755522fbebda0d6229b50418fda6cc7"
+    "mathematics/stochastics/time series/sample autocovariance.md": "c755522fbebda0d6229b50418fda6cc7",
+    "mathematics/stochastics/time series/structural break.md": "09434d45e13f4333baf4dd983ad0a1bf",
+    "mathematics/stochastics/time series/financial time series.md": "2389e5e70f57e5caa3975f0c7d6be78e"
   },
   "fields_dict": {
     "Basic": [
