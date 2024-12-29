@@ -1354,7 +1354,7 @@
     "mathematics/stochastics/time series/partial autocorrelation (PACF).md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/autocorrelation (ACF).md": "c3512d3044f7311c07f850486a16d797",
     "mathematics/stochastics/time series/random walk.md": "9ef00a2ca5afbcd50a84ae5602ec48c7",
-    "mathematics/stochastics/time series/white noise.md": "97ae640895d12707081b8e8b9cf59139",
+    "mathematics/stochastics/time series/white noise.md": "9f978bb16dbee34cf494b6a78df12dd1",
     "mathematics/stochastics/time series/GARCH.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/ARCH.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/conditionally heteroskedastic.md": "277de84ecb15982e9c5a31f88f5a105d",
@@ -1927,14 +1927,14 @@
     "mathematics/stochastics/conditional expectation theorem.md": "e444844db4dae3068226e143b84b86ea",
     "mathematics/stochastics/rao blackwell theorem.md": "2d1baa790a0630e1820eafdd809816e9",
     "mathematics/stochastics/sufficient statistics.md": "0bac5a3c18ab6a01463f598644d15581",
-    "mathematics/stochastics/time series/autoregresive (AR) model.md": "f50558e2a99af714f91e9585d2fe3bea",
+    "mathematics/stochastics/time series/autoregresive (AR) model.md": "de5110a99aca9892d8e83d07eb54c3e4",
     "mathematics/stochastics/time series/Untitled.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/moving average (MA) model.md": "ba64b18b1d624b9a8833616d73a47de9",
     "mathematics/stochastics/time series/yule walker equation.md": "314674fc49af0de3943bbe51705be655",
-    "mathematics/stochastics/time series/autoregressive moving average (ARMA) model.md": "d17a9ee6acd2684f37262c22824ec76d",
+    "mathematics/stochastics/time series/autoregressive moving average (ARMA) model.md": "f357891de7424ae666747c3a4e6e2fed",
     "mathematics/stochastics/estimators for stationary time series.md": "577aa202d838a30e34983c244bc07d04",
     "mathematics/stochastics/time series/forecasting time series.md": "2849337c09eab698cc46f71e44ad1750",
-    "mathematics/stochastics/time series/wiener process.md": "78ae0603634cc75c5aae025e4ba3e88f",
+    "mathematics/stochastics/time series/wiener process.md": "48c9fb2a380b54d801f0a39645a39fdc",
     "mathematics/stochastics/time series/black scholes model.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/drift.md": "c3f9fe19b93167e04c6c8484b23a1424",
     "mathematics/stochastics/time series/trend.md": "46809ac554eb666ae6d3c74832c35a5b",
@@ -1948,8 +1948,8 @@
     "mathematics/stochastics/time series/filtration.md": "11709d475b4811bce47ea32d04453110",
     "geometric brownian motion.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/sample autocovariance.md": "c755522fbebda0d6229b50418fda6cc7",
-    "mathematics/stochastics/time series/structural break.md": "09434d45e13f4333baf4dd983ad0a1bf",
-    "mathematics/stochastics/time series/financial time series.md": "2389e5e70f57e5caa3975f0c7d6be78e"
+    "mathematics/stochastics/time series/structural break.md": "fa7d25b1e33d9938b8e13b8a3c2defab",
+    "mathematics/stochastics/time series/financial time series.md": "2164019667958f72e2ecffde570ff4ef"
   },
   "fields_dict": {
     "Basic": [
