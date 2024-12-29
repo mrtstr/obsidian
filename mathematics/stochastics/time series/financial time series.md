@@ -1,8 +1,8 @@
 ### financial time series
-- log returns over time [[autocorrelation (ACF)|uncorelated]] but not i.i.d because the mean and [[variance]] might change over time ([[structural break]])
-- there appear to be periods with high and variability of log returns
-- the mean of the log returns might also not be constant over time
-
+- log returns over time [[autocorrelation (ACF)|uncorelated]] but dont seem to be from the same [[distribution]] because the mean and [[variance]] might change over time ([[structural break]])
+	- there appear to be periods with high and variability of log returns
+	- the mean of the log returns might also not be constant over time
+- log return also might not be [[stochastic independent]] because eventhough the [[autocorrelation (ACF)]] is zero for $h>0$ the [[autocorrelation (ACF)]] for higher moments like $X_t^2$ are not
 # anki
 
 START
@@ -11,9 +11,10 @@ properties of [[financial time series]] (3)
 
 Back: 
 ### financial time series
-- log returns over time [[autocorrelation (ACF)|uncorelated]] but not i.i.d because the mean and [[variance]] might change over time ([[structural break]])
-- there appear to be periods with high and variability of log returns
-- the mean of the log returns might also not be constant over time
+- log returns over time [[autocorrelation (ACF)|uncorelated]] but dont seem to be from the same [[distribution]] because the mean and [[variance]] might change over time ([[structural break]])
+	- there appear to be periods with high and variability of log returns
+	- the mean of the log returns might also not be constant over time
+- log return also might not be [[stochastic independent]] because eventhough the [[autocorrelation (ACF)]] is zero for $h>0$ the [[autocorrelation (ACF)]] for higher moments like $X_t^2$ are not
 
 
 ____________
