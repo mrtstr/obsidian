@@ -29,7 +29,7 @@ $$
 $$
 
 ### relationship to autoregresive models 
-- any [[autoregresive (AR) model]] $AR(q)$ model can be transfered to an eqivalent $MA(\infty)$ model  by repeated substitution
+- any [[autoregressive (AR) model]] $AR(q)$ model can be transfered to an eqivalent $MA(\infty)$ model  by repeated substitution
 - in the following example it is shown with an $AR(1)$ model, but it's also possible with any $AR(q)$ model - the calculcation will be much more complicated but $X_t$ will also only depend on the past error terms $e_{t-h}$ and $b_i$ will depend on $\{\phi_1, ..., \phi_q \}$ 
 - an $MA(q_1)$ model can also be approximated by any $AR(q)$ but the difference will be bigger the sameller $q_1$ is
 
@@ -54,7 +54,7 @@ $$
 - the result will be similar to the $MA(\infty)$ model with the parameters $b_i = \phi_1^i$  
 
 # -----------------
-![[autoregresive (AR) model#autoregresive model of order 1 $AR(1)$]]
+![[autoregressive (AR) model#autoregresive model of order 1 $AR(1)$]]
 
 ![[stationary process#weakly stationary process]]
 
@@ -90,12 +90,12 @@ END
 START
 Basic
 relationship
-[[moving average (MA) model]] and [[autoregresive (AR) model]]
+[[moving average (MA) model]] and [[autoregressive (AR) model]]
 
 Back: 
 
-### autoregresive (AR) model
-- The [[autoregresive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+### autoregressive (AR) model
+- The [[autoregressive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
 - assumes an at least [[stationary process]]
 
 models the [[time series]]
@@ -123,7 +123,7 @@ $$
 - assumes [[stationary process|weakly stationary]]
 
 ### relationship to autoregresive models 
-- any [[autoregresive (AR) model]] $AR(q)$ model can be transfered to an eqivalent $MA(\infty)$ model  by repeated substitution
+- any [[autoregressive (AR) model]] $AR(q)$ model can be transfered to an eqivalent $MA(\infty)$ model  by repeated substitution
 - in the following example it is shown with an $AR(1)$ model, but it's also possible with any $AR(q)$ model - the calculcation will be much more complicated but $X_t$ will also only depend on the past error terms $e_{t-h}$ and $b_i$ will depend on $\{\phi_1, ..., \phi_q \}$ 
 - an $MA(q_1)$ model can also be approximated by any $AR(q)$ but the difference will be bigger the sameller $q_1$ is
 

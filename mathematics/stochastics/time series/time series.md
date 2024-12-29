@@ -11,7 +11,7 @@
 ### autoregressive time series
 - a [[time series]] $(X_t)$ is an autoregressive [[time series]] of order $p$ if there exists an $AR(q)$ model with parameters $a_1,..., a_p$ and [[white noise]] $e_t$ to describe the law of $(X_t)$ 
 
-![[autoregresive (AR) model#autoregresive (AR) model]]
+![[autoregressive (AR) model#autoregressive (AR) model]]
 
 ### additive model
 
@@ -72,8 +72,8 @@ Back:
 ### autoregressive time series
 - a [[time series]] $(X_t)$ is an autoregressive [[time series]] of order $p$ if there exists an $AR(q)$ model with parameters $a_1,..., a_p$ and [[white noise]] $e_t$ to describe the law of $(X_t)$ 
 
-#### autoregresive (AR) model
-- The [[autoregresive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+#### autoregressive (AR) model
+- The [[autoregressive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
 - assumes an at least [[stationary process]]
 
 models the [[time series]]
@@ -105,7 +105,7 @@ $$
 - a [[time series]] $(X_t)$ is an autoregressive moving average [[time series]] of order $p$ if there exists an $ARMA(p, q)$ model with parameters $a_1, ..., a_p$ and $b_1,..., b_q$ and [[white noise]] $e_t$ to describe the law of $(X_t)$ 
 
 #### autoregressive moving average (ARMA) model
-- The [[autoregressive moving average (ARMA) model]] of order $p$ $ARMA(p)$ is a combination of a [[autoregresive (AR) model]] and an [[moving average (MA) model]]
+- The [[autoregressive moving average (ARMA) model]] of order $p$ $ARMA(p)$ is a combination of a [[autoregressive (AR) model]] and an [[moving average (MA) model]]
 - captures the linear releationship of the current value to the past $p$ values and to the past $q$ error terms
 
 models the [[time series]]

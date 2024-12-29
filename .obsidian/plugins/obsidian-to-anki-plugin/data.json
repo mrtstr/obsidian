@@ -1355,7 +1355,7 @@
     "mathematics/stochastics/time series/autocorrelation (pearson).md": "8342328e446a21ab72019f5dff67d18d",
     "mathematics/stochastics/time series/stationary process.md": "60744a3dfa340c0c972b1e9a2b0228df",
     "mathematics/stochastics/time series/stochastic process.md": "54a018ed36e547674c57d11f9c41b8da",
-    "mathematics/stochastics/time series/time series.md": "9eed1e3bb709e191f6591cee0f9d212b",
+    "mathematics/stochastics/time series/time series.md": "dbac787d34fd5976773d288b9c5324aa",
     "mathematics/stochastics/time series/partial autocorrelation.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/autocovariance.md": "c3f3bdc8bac25f2745d0c0ff753f5a6f",
     "mathematics/stochastics/time series/autoregresive model.md": "8931045506569ff2a8f0a79584d23eaa",
@@ -1937,9 +1937,9 @@
     "mathematics/stochastics/sufficient statistics.md": "389fc4ad163a755980612033a876dfa0",
     "mathematics/stochastics/time series/autoregresive (AR) model.md": "de5110a99aca9892d8e83d07eb54c3e4",
     "mathematics/stochastics/time series/Untitled.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/moving average (MA) model.md": "8e994876660c6bb2dca179784ce94da0",
-    "mathematics/stochastics/time series/yule walker equation.md": "2845a3990cb06fdee7d828c37e0bbf9e",
-    "mathematics/stochastics/time series/autoregressive moving average (ARMA) model.md": "f357891de7424ae666747c3a4e6e2fed",
+    "mathematics/stochastics/time series/moving average (MA) model.md": "919a7f3cbcfda9c7b67edca40bfe9a63",
+    "mathematics/stochastics/time series/yule walker equation.md": "0b896b6bca6b5688319369e2b199ba25",
+    "mathematics/stochastics/time series/autoregressive moving average (ARMA) model.md": "55fb6dd112be1c7dc9a4fdd75f80bfd8",
     "mathematics/stochastics/estimators for stationary time series.md": "577aa202d838a30e34983c244bc07d04",
     "mathematics/stochastics/time series/forecasting time series.md": "26fcde88c818f72f68a686001893cec3",
     "mathematics/stochastics/time series/wiener process.md": "48c9fb2a380b54d801f0a39645a39fdc",
@@ -1957,7 +1957,8 @@
     "geometric brownian motion.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/sample autocovariance.md": "c755522fbebda0d6229b50418fda6cc7",
     "mathematics/stochastics/time series/structural break.md": "fa7d25b1e33d9938b8e13b8a3c2defab",
-    "mathematics/stochastics/time series/financial time series.md": "2164019667958f72e2ecffde570ff4ef"
+    "mathematics/stochastics/time series/financial time series.md": "2164019667958f72e2ecffde570ff4ef",
+    "mathematics/stochastics/time series/autoregressive (AR) model.md": "136929d5008671a7619bd0e2fe073a5d"
   },
   "fields_dict": {
     "Basic": [

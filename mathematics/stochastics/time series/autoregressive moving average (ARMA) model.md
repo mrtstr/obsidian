@@ -1,5 +1,5 @@
 ### autoregressive moving average (ARMA) model
-- The [[autoregressive moving average (ARMA) model]] of order $p$ $ARMA(p)$ is a combination of a [[autoregresive (AR) model]] and an [[moving average (MA) model]]
+- The [[autoregressive moving average (ARMA) model]] of order $p$ $ARMA(p)$ is a combination of a [[autoregressive (AR) model]] and an [[moving average (MA) model]]
 - captures the linear releationship of the current value to the past $p$ values and to the past $q$ error terms
 
 models the [[time series]]
@@ -12,7 +12,7 @@ $$
 
 # -----------------
 
-![[autoregresive (AR) model#autoregresive (AR) model]]
+![[autoregressive (AR) model#autoregressive (AR) model]]
 
 ![[moving average (MA) model#moving average model MA(q)]]
 
@@ -27,7 +27,7 @@ Basic
 
 Back: 
 ### autoregressive moving average (ARMA) model
-- The [[autoregressive moving average (ARMA) model]] of order $p$ $ARMA(p)$ is a combination of a [[autoregresive (AR) model]] and an [[moving average (MA) model]]
+- The [[autoregressive moving average (ARMA) model]] of order $p$ $ARMA(p)$ is a combination of a [[autoregressive (AR) model]] and an [[moving average (MA) model]]
 - captures the linear releationship of the current value to the past $p$ values and to the past $q$ error terms
 
 models the [[time series]]
@@ -57,8 +57,8 @@ $$
 
 
 
-### autoregresive (AR) model
-- The [[autoregresive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+### autoregressive (AR) model
+- The [[autoregressive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
 - assumes an at least [[stationary process]]
 
 models the [[time series]]

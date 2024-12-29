@@ -1,5 +1,5 @@
 ### yule walker equation
-- for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregresive (AR) model]]
+- for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregressive (AR) model]]
 
 - fo $h > 0$
 $$
@@ -67,7 +67,7 @@ $$
 
 ![[autocorrelation (ACF)#autocorrelation (ACF) for stationary processes]]
 
-![[autoregresive (AR) model#autoregresive (AR) model]]
+![[autoregressive (AR) model#autoregressive (AR) model]]
 
 # anki
 
@@ -79,7 +79,7 @@ Basic
 - matrix form
 Back: 
 ### yule walker equation
-- for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregresive (AR) model]]
+- for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregressive (AR) model]]
 
 - fo $h > 0$
 $$
@@ -153,8 +153,8 @@ $$
 \end{split}
 $$
 
-### autoregresive (AR) model
-- The [[autoregresive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+### autoregressive (AR) model
+- The [[autoregressive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
 - assumes an at least [[stationary process]]
 
 models the [[time series]]
@@ -180,7 +180,7 @@ deriving the [[yule walker equation]]
 Back: 
 
 ### yule walker equation
-- for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregresive (AR) model]]
+- for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregressive (AR) model]]
 
 - fo $h > 0$
 $$
@@ -255,8 +255,8 @@ $$
 \end{split}
 $$
 
-### autoregresive (AR) model
-- The [[autoregresive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+### autoregressive (AR) model
+- The [[autoregressive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
 - assumes an at least [[stationary process]]
 
 models the [[time series]]
