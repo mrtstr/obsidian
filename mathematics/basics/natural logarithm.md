@@ -1,19 +1,15 @@
-## Definition
+### natural logarithm
 [[logarithm]] with [[eulers number]] as the basis $\ln(x) = \log_e(x)$
 
 
-## one identitiy [[natural logarithm]]
-### theorem one identitiy
+### one identitiy natural logarithm
+
 $$
 \lim_{h \rightarrow 0} \frac{\ln(1 + h)}{h} = 1
 $$
-### given
-![[lhospital rule#lhospital rule]]
 
-![[derivative logarithms#theorem]]
-
-
-### proof1
+### proof for one identitiy natural logarithm
+##### proof1
 
 $$
 \begin{split}
@@ -24,7 +20,7 @@ $$
 \end{split}
 $$
 
-### proof2
+##### proof2
 
 $$
 \begin{split}
@@ -35,19 +31,19 @@ $$
 \end{split}
 $$
 
-## [[limit]] identity of the [[natural logarithm]]
-### theorem
+### limit identity of the natural logarithm
+
 $$
 \begin{split}
-e &= \lim_{h \rightarrow 0} \left(1 + h\right)^{\frac{1}{h}} \\
-\Rightarrow \ln(a) &= \lim_{h \rightarrow 0} \frac{a^h - 1}{h}
+\ln(a) &= \lim_{h \rightarrow 0} \frac{a^h - 1}{h}
 \end{split}
 $$
-### given
+### proof for limit identity of the natural logarithm
+#### given
 ![[logarithm#Definition Logarithm]]
 
 ![[eulers number#theorem]]
-### [[proof]]
+#### proof
 - the [[natural logarithm]] is defined as the [[inverse function]] of $e^x$
 $$
 \begin{split}

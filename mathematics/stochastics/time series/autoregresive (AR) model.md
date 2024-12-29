@@ -19,7 +19,8 @@ $$
 $$
 \begin{split}
 \hat X_n &= \sum_{i \in [n]} X_i \\
-\hat\rho_n(h) &= \frac{1}{n} \sum_{t=1}^{n-|h|} \left(X_t- X_n\right)\left(X_{t+h}- X_n\right)
+\hat\gamma_n(h) &= \frac{1}{n} \sum_{t=1}^{n-|h|} \left(X_t- X_n\right)\left(X_{t+h}- X_n\right) \\
+\hat\rho_n(h) &= \frac{\hat\gamma_n(h)}{\hat\gamma_n(0)}  \\
 \end{split}
 $$
 
@@ -258,9 +259,7 @@ _______
 
 ### white noise
 [[time series]] $(e_t, t \in \mathbb{Z})$ with 
-- i.i.d. values
 - zero mean $\mathbb{E}[e_t] = 0$  
-- constant and finite [[variance]] $\mathbb{VAR}[e_t] = \mathbb{E}[e_t^2]= \sigma^2 \in (0, \infty)$  
 - [[correlation|uncorralated]] values $t \neq s \Rightarrow  \mathbb{COV}[e_t, e_s] = \mathbb{COR}[e_t, e_s] = 0$
 
 #### gaussian white noise
@@ -412,9 +411,7 @@ _______
 
 ### white noise
 [[time series]] $(e_t, t \in \mathbb{Z})$ with 
-- i.i.d. values
 - zero mean $\mathbb{E}[e_t] = 0$  
-- constant and finite [[variance]] $\mathbb{VAR}[e_t] = \mathbb{E}[e_t^2]= \sigma^2 \in (0, \infty)$  
 - [[correlation|uncorralated]] values $t \neq s \Rightarrow  \mathbb{COV}[e_t, e_s] = \mathbb{COR}[e_t, e_s] = 0$
 
 #### gaussian white noise
@@ -430,7 +427,7 @@ END
 START
 Basic
 #### [[autoregresive (AR) model]]
-- [[autocorrelation (ACF)]] with proof using the [[yule walker equation]]
+- [[autocorrelation (ACF)]] of $AR(1)$ model with proof using the [[yule walker equation]]
 
 Back: 
 ### autoregresive (AR) model
@@ -510,9 +507,7 @@ _______
 
 ### white noise
 [[time series]] $(e_t, t \in \mathbb{Z})$ with 
-- i.i.d. values
 - zero mean $\mathbb{E}[e_t] = 0$  
-- constant and finite [[variance]] $\mathbb{VAR}[e_t] = \mathbb{E}[e_t^2]= \sigma^2 \in (0, \infty)$  
 - [[correlation|uncorralated]] values $t \neq s \Rightarrow  \mathbb{COV}[e_t, e_s] = \mathbb{COR}[e_t, e_s] = 0$
 
 #### gaussian white noise
@@ -660,11 +655,8 @@ _______
 
 ### white noise
 [[time series]] $(e_t, t \in \mathbb{Z})$ with 
-- i.i.d. values
 - zero mean $\mathbb{E}[e_t] = 0$  
-- constant and finite [[variance]] $\mathbb{VAR}[e_t] = \mathbb{E}[e_t^2]= \sigma^2 \in (0, \infty)$  
 - [[correlation|uncorralated]] values $t \neq s \Rightarrow  \mathbb{COV}[e_t, e_s] = \mathbb{COR}[e_t, e_s] = 0$
-
 #### gaussian white noise
 - [[white noise]] with [[normal distribution|normal distributed]] values $e_t \sim \mathcal{N}(0, \sigma^2)$
 
@@ -747,11 +739,8 @@ $$
 
 ### white noise
 [[time series]] $(e_t, t \in \mathbb{Z})$ with 
-- i.i.d. values
 - zero mean $\mathbb{E}[e_t] = 0$  
-- constant and finite [[variance]] $\mathbb{VAR}[e_t] = \mathbb{E}[e_t^2]= \sigma^2 \in (0, \infty)$  
 - [[correlation|uncorralated]] values $t \neq s \Rightarrow  \mathbb{COV}[e_t, e_s] = \mathbb{COR}[e_t, e_s] = 0$
-
 #### gaussian white noise
 - [[white noise]] with [[normal distribution|normal distributed]] values $e_t \sim \mathcal{N}(0, \sigma^2)$
 
@@ -817,7 +806,8 @@ Back:
 $$
 \begin{split}
 \hat X_n &= \sum_{i \in [n]} X_i \\
-\hat\rho_n(h) &= \frac{1}{n} \sum_{t=1}^{n-|h|} \left(X_t- X_n\right)\left(X_{t+h}- X_n\right)
+\hat\gamma_n(h) &= \frac{1}{n} \sum_{t=1}^{n-|h|} \left(X_t- X_n\right)\left(X_{t+h}- X_n\right) \\
+\hat\rho_n(h) &= \frac{\hat\gamma_n(h)}{\hat\gamma_n(0)}  \\
 \end{split}
 $$
 
@@ -943,11 +933,8 @@ $$
 
 ### white noise
 [[time series]] $(e_t, t \in \mathbb{Z})$ with 
-- i.i.d. values
 - zero mean $\mathbb{E}[e_t] = 0$  
-- constant and finite [[variance]] $\mathbb{VAR}[e_t] = \mathbb{E}[e_t^2]= \sigma^2 \in (0, \infty)$  
 - [[correlation|uncorralated]] values $t \neq s \Rightarrow  \mathbb{COV}[e_t, e_s] = \mathbb{COR}[e_t, e_s] = 0$
-
 #### gaussian white noise
 - [[white noise]] with [[normal distribution|normal distributed]] values $e_t \sim \mathcal{N}(0, \sigma^2)$
 

@@ -1,18 +1,26 @@
 
-## [[series]] definition of [[eulers number]]
+### [[series]] definition of [[eulers number]]
 $$
 e = \sum\limits_{k=0}^\infty \frac{1}{k!}
 \tag{definition eulers number}
 $$
-## [[series]] identity of exponential [[function]]
-### theorem
+
+### limit identity of exponential function
+
+$$
+\begin{split}
+e^\lambda &= \lim_{n \rightarrow \infty} \left(1 + \frac{\lambda}{n}\right)^n \\
+\end{split}
+
+$$
+
+### series identity of exponential function
+
 $$
 e^\lambda = \sum\limits_{k=0}^\infty \frac{\lambda^k}{k!}
 $$
-### given
-![[taylor series#taylor series]]
 
-### proof
+#### proof
 $$
 \begin{split}
 f(\lambda) &= e^\lambda \\
@@ -26,12 +34,11 @@ f(\lambda) &= e^\lambda \\
 \end{split}
 $$
 
-## [[limit]] identity of [[eulers number]]
-### theorem
+### limit identity of eulers number
 
 $$
 \begin{split}
-e = \sum\limits_{k=0}^\infty \frac{1}{k!} \Rightarrow \\
+
 e &= \lim_{n \rightarrow \infty} \left(1 + \frac{1}{n}\right)^n \\
 &\Leftrightarrow_{h=\frac{1}{n}}
 \\
@@ -41,13 +48,14 @@ e &= \lim_{h \rightarrow 0} \left(1 + h\right)^{\frac{1}{h}}
 \tag{limit identity of e}
 $$
 
-### given
+### proof limit identity of eulers number
+#### given
 ![[eulers number#series definition of eulers number]]
 
 ![[binomial theorem#binomial theorem]]
 
 ![[binomial coefficient#Definition]]
-### [[proof]]
+#### [[proof]]
 $$
 \begin{split}
 \left(1 + \frac{1}{n}\right)^n 
@@ -69,7 +77,6 @@ $$
 \end{split}
 $$
 
-https://proofwiki.org/wiki/Euler%27s_Number:_Limit_of_Sequence_implies_Limit_of_Series
 
 
 ## [[derivative]] of $e^x$
