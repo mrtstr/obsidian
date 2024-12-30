@@ -7,7 +7,7 @@ P_t = P_0 \exp\left(\left(\mu - \frac{\sigma^2}{2}\right)\cdot t + \sigma W_t\ri
 $$
 
 ### geometric brownian motion as a SDG
-- given a deterministic case where the price of a good is growing by the constant interest rate $\mu$ each period the price in period $t$ can be modled as follows
+- given a deterministic case where the price of a good is growing by the constant interest rate $\mu$ each period the price in period $t$ can be modeled as follows
 
 $$
 \begin{split}
@@ -53,7 +53,7 @@ $$
 ### geometric brownian motion is log normal distributed
 - [[geometric brownian motion (GBM)]] is [[log normal distribution| log normal distributed]]
 - given $P_t$ with $P_0=1$ and the [[wiener process]] $W_t \sim \mathcal{N}(0, t)$
-- first part is deterministic and the second part is [[normal distribution|normal distributed]] $\sigma W_t \sim \mathcal{N}(0, \sigma^2 t)$
+- first part is deterministic, and the second part is [[normal distribution|normal distributed]] $\sigma W_t \sim \mathcal{N}(0, \sigma^2 t)$
 - thus the [[natural logarithm]] of $P_t$ is also [[normal distribution|normal distributed]]  and thus $P_t$ has a [[log normal distribution]]
 
 $$
@@ -69,10 +69,10 @@ $$
 - random part modeled with a [[wiener process]] in the exponent $e^{\sigma W_t}$ with the impact modeled by the [[volatility]] $\sigma$
 
 
-### properties
 
-#### returns
-- in perod $t$ the returns $R_t$ are given by the following
+
+### returns
+- in period $t$ the returns $R_t$ are given by the following
 
 $$
 \begin{split}
@@ -80,7 +80,21 @@ R_t = \frac{P_t - P_{t-1}}{P_{t-1}}
 =  \frac{P_t}{P_{t-1}} - 1
 \end{split}
 $$
-#### log returns
+#### relationship returns to log returns
+- the returns $R_t$ and the log returns $X_t$ are related as follows
+
+$$
+\begin{split}
+X_t 
+&= \ln\left(\frac{P_t}{P_{t-1}} \right) \\
+&= \ln\left(R_t + 1 \right) \\
+\Leftrightarrow\\
+R_t 
+&= \exp\left(X_t \right) - 1 \\
+\end{split}
+$$
+
+### log returns
 - the log returns $X_t$ are defined as follows
 
 $$
@@ -104,8 +118,8 @@ X_t
 \end{split}
 $$
 
-#### aproximation of the log returns
-- for small retuns the log returns can be approximated as follows
+#### approximation of the log returns
+- for small returns the log returns can be approximated as follows
 
 $$
 \begin{split}
@@ -116,22 +130,8 @@ X_t
 &= \frac{P_t}{P_{t-1}} - 1 \\
 \end{split}
 $$
-#### relationship returns to log returns
-- the returns $R_t$ and the log returns $X_t$ are related as follows
 
-$$
-\begin{split}
-X_t 
-&= \ln\left(\frac{P_t}{P_{t-1}} \right) \\
-&= \ln\left(R_t + 1 \right) \\
-\Leftrightarrow\\
-R_t 
-&= \exp\left(X_t \right) - 1 \\
-\end{split}
-$$
-### properties
-- not [[differentiabe]]
-#### expectation
+### expectation
 - since the [[geometric brownian motion (GBM)]] has a [[log normal distribution]] the [[expectation]] can be calculated as follows
 
 $$
@@ -142,7 +142,7 @@ $$
 \end{split}
 $$
 
-#### variance
+### variance
 - since the [[geometric brownian motion (GBM)]] has a [[log normal distribution]] the [[variance]] can be calculated as follows
 
 $$

@@ -1949,16 +1949,18 @@
     "mathematics/stochastics/time series/volatility.md": "b92776566910a08493a0bffc90d2ada7",
     "mathematics/stochastics/time series/smoothing.md": "afbcfd436e7ef432e0a9bb289cc70547",
     "mathematics/stochastics/time series/seasonality.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "813ef442cb172a1547d5f371a37e92af",
+    "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "2444660c809133e342eac0a673933023",
     "mathematics/stochastics/time series/stochastic differential equation.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/martingal.md": "9bc7dc3476a42ee1360d5f2fff9cac43",
     "mathematics/stochastics/time series/markov process.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/filtration.md": "11709d475b4811bce47ea32d04453110",
     "geometric brownian motion.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/sample autocovariance.md": "c755522fbebda0d6229b50418fda6cc7",
-    "mathematics/stochastics/time series/structural break.md": "fa7d25b1e33d9938b8e13b8a3c2defab",
+    "mathematics/stochastics/time series/structural break.md": "363f535afc3c180eaaf6e033b4a95a0a",
     "mathematics/stochastics/time series/financial time series.md": "2164019667958f72e2ecffde570ff4ef",
-    "mathematics/stochastics/time series/autoregressive (AR) model.md": "136929d5008671a7619bd0e2fe073a5d"
+    "mathematics/stochastics/time series/autoregressive (AR) model.md": "136929d5008671a7619bd0e2fe073a5d",
+    "mathematics/stochastics/time series/non-parametric volatility model.md": "b0a9eb47e20e1f94d7bf534b9b751886",
+    "mathematics/stochastics/time series/vl.md": "268ee91598bfa66c780dd96c547cd2b7"
   },
   "fields_dict": {
     "Basic": [

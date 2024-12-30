@@ -1,5 +1,5 @@
 ### structural break
-- when the underlaying law of a [[time series]] suddenly changes e.g. the parameters of the model are changing
+- when the underlying law of a [[time series]] suddenly changes e.g. the parameters of the model are changing
 
 #### mean changes
 - given and a log returns [[geometric brownian motion (GBM)#log returns|log returns]] $X_t = e_t + \mu$ that changes to $X_t = e_t - \mu$ with [[white noise#gaussian white noise|gaussian white noise]] $e_t$ 
@@ -9,7 +9,6 @@
 - given and a log returns [[geometric brownian motion (GBM)#log returns|log returns]] $X_t = \sigma_1 e_t$ that changes to $X_t = \sigma_2 e_t$ with [[white noise#gaussian white noise|gaussian white noise]] $e_t$ 
 - the [[autocorrelation (ACF)]] of $X_t$ or even of $X_t^2$  $\hat\rho(h)$ would not reflect the [[structural break]] because they are still [[stochastic independent]]
 - the [[structural break]] becomes visible in $\mathbb{VAR}[X_t]=\mathbb{E}[X_t^2]$
-
 
 
 # ---------
@@ -29,11 +28,15 @@
 START
 Basic
 given a [[financial time series]]
-- how to make which kind of structural changes visible in plots
+- problems with the i.i.d assumption for the log returns of the [[geometric brownian motion (GBM)]] model visible in plots 
 
 Back: 
+- not identical distributed: [[structural break]]:  $\mathbb{E}[X_t]$ and $\mathbb{E}[X_t^2]$
+- not [[stochastic independent]]: [[autocorrelation (ACF)]] $\hat\rho(h)$ of higher moments of the log returns like $X_t^2$
+	- $\hat\rho(h)$ of $X_t$ will just show [[correlation|uncorrelatedness]] which is often given even though the values are not [[stochastic independent]]
+
 ### structural break
-- when the underlaying law of a [[time series]] suddenly changes e.g. the parameters of the model are changing
+- when the underlying law of a [[time series]] suddenly changes e.g. the parameters of the model are changing
 
 #### mean changes
 - given and a log returns [[geometric brownian motion (GBM)#log returns|log returns]] $X_t = e_t + \mu$ that changes to $X_t = e_t - \mu$ with [[white noise#gaussian white noise|gaussian white noise]] $e_t$ 
