@@ -12,7 +12,7 @@ $$
 $$
 \begin{split}
 P_{t, n} &= \exp\left( \frac{t}{n} \alpha + \sigma W_{t, n}\right) \\
-W_{t, n}  &= \sum_{i=1}^t \frac{1}{\sqrt{n}} e_t \sim \mathcal{N}\left(0 , \frac{t}{n} \sigma^2 \right) \\
+W_{t, n}  &=  \sum_{i=1}^{t-1} \frac{1}{\sqrt{n}}  e_i \sim \mathcal{N}\left(0 , \frac{t}{n}  \right) \\
 W_{t, n} - W_{t-1, n} &=  \frac{1}{\sqrt{n}} e_t \sim \mathcal{N}\left(0 , \frac{1}{n}\right) \\
 X_{t,n} 
 &= \ln\left(P_{\frac{t}{n}}\right) - \ln\left(P_{\frac{t-1}{n}}\right) \\
@@ -24,7 +24,21 @@ $$
 
 ### drift estimator
 
-- the parameter $\alpha$ can be estimated as follows
+- when calculation the [[expectation]] and approximating it with the [[mean]] we get the following [[statistical estimator]] for $\alpha$
+- the parameter $\alpha$ is still based on the revenue for the periods $t$ and not based on observations
+
+$$
+\begin{split}
+\mathbb{E}\left[X_{t,n}\right] 
+&= \mathbb{E}\left[\frac{\alpha}{n} +  \frac{\sigma}{\sqrt{n}} e_t \right] \\
+&= \frac{\alpha}{n}   \\
+\Rightarrow \alpha &=  n \mathbb{E}\left[X_{t,n}\right] \\
+\Rightarrow\hat\alpha 
+&= \frac{n}{nT} \sum_{t=1}^{nT} X_{t,n} \\
+&= \frac{1}{T} \sum_{t=1}^{nT} X_{t,n} \\
+\end{split}
+$$
+
 - $\hat\alpha$ only depends on the first price $P_0$ and the last price $P_T$
 
 $$
@@ -37,6 +51,7 @@ $$
 $$
 
 - $\hat\alpha$ is a [[estimator consitency|consistent]] [[statistical estimator]] a fixed $n<\infty$ and $T \to \infty$, but cant be estimated consistently for a single day $T=1$ because the noise would dominate
+
 $$
 \begin{split}
 \hat\alpha 
@@ -115,7 +130,7 @@ $$
 $$
 \begin{split}
 P_{t, n} &= \exp\left( \frac{t}{n} \alpha + \sigma W_{t, n}\right) \\
-W_{t, n}  &= \sum_{i=1}^t \frac{1}{\sqrt{n}} e_t \sim \mathcal{N}\left(0 , \frac{t}{n} \sigma^2 \right) \\
+W_{t, n}  &=  \sum_{i=1}^{t-1} \frac{1}{\sqrt{n}}  e_i \sim \mathcal{N}\left(0 , \frac{t}{n}  \right) \\
 W_{t, n} - W_{t-1, n} &=  \frac{1}{\sqrt{n}} e_t \sim \mathcal{N}\left(0 , \frac{1}{n}\right) \\
 X_{t,n} 
 &= \ln\left(P_{\frac{t}{n}}\right) - \ln\left(P_{\frac{t-1}{n}}\right) \\
@@ -127,7 +142,21 @@ $$
 
 ### drift estimator
 
-- the parameter $\alpha$ can be estimated as follows
+- when calculation the [[expectation]] and approximating it with the [[mean]] we get the following [[statistical estimator]] for $\alpha$
+- the parameter $\alpha$ is still based on the revenue for the periods $t$ and not based on observations
+
+$$
+\begin{split}
+\mathbb{E}\left[X_{t,n}\right] 
+&= \mathbb{E}\left[\frac{\alpha}{n} +  \frac{\sigma}{\sqrt{n}} e_t \right] \\
+&= \frac{\alpha}{n}   \\
+\Rightarrow \alpha &=  n \mathbb{E}\left[X_{t,n}\right] \\
+\Rightarrow\hat\alpha 
+&= \frac{n}{nT} \sum_{t=1}^{nT} X_{t,n} \\
+&= \frac{1}{T} \sum_{t=1}^{nT} X_{t,n} \\
+\end{split}
+$$
+
 - $\hat\alpha$ only depends on the first price $P_0$ and the last price $P_T$
 
 $$
@@ -140,6 +169,7 @@ $$
 $$
 
 - $\hat\alpha$ is a [[estimator consitency|consistent]] [[statistical estimator]] a fixed $n<\infty$ and $T \to \infty$, but cant be estimated consistently for a single day $T=1$ because the noise would dominate
+
 $$
 \begin{split}
 \hat\alpha 
@@ -254,7 +284,7 @@ $$
 $$
 \begin{split}
 P_{t, n} &= \exp\left( \frac{t}{n} \alpha + \sigma W_{t, n}\right) \\
-W_{t, n}  &= \sum_{i=1}^t \frac{1}{\sqrt{n}} e_t \sim \mathcal{N}\left(0 , \frac{t}{n} \sigma^2 \right) \\
+W_{t, n}  &=  \sum_{i=1}^{t-1} \frac{1}{\sqrt{n}}  e_i \sim \mathcal{N}\left(0 , \frac{t}{n}  \right) \\
 W_{t, n} - W_{t-1, n} &=  \frac{1}{\sqrt{n}} e_t \sim \mathcal{N}\left(0 , \frac{1}{n}\right) \\
 X_{t,n} 
 &= \ln\left(P_{\frac{t}{n}}\right) - \ln\left(P_{\frac{t-1}{n}}\right) \\
@@ -263,6 +293,7 @@ X_{t,n}
 &\sim \mathcal{N}\left(\frac{\alpha}{n} , \frac{\sigma^2}{n}\right)
 \end{split}
 $$
+
 
 ___________
 ### geometric brownian motion
@@ -337,7 +368,7 @@ $$
 $$
 \begin{split}
 P_{t, n} &= \exp\left( \frac{t}{n} \alpha + \sigma W_{t, n}\right) \\
-W_{t, n}  &= \sum_{i=1}^t \frac{1}{\sqrt{n}} e_t \sim \mathcal{N}\left(0 , \frac{t}{n} \sigma^2 \right) \\
+W_{t, n}  &=  \sum_{i=1}^{t-1} \frac{1}{\sqrt{n}}  e_i \sim \mathcal{N}\left(0 , \frac{t}{n}  \right) \\
 W_{t, n} - W_{t-1, n} &=  \frac{1}{\sqrt{n}} e_t \sim \mathcal{N}\left(0 , \frac{1}{n}\right) \\
 X_{t,n} 
 &= \ln\left(P_{\frac{t}{n}}\right) - \ln\left(P_{\frac{t-1}{n}}\right) \\
@@ -349,7 +380,21 @@ $$
 
 ### drift estimator
 
-- the parameter $\alpha$ can be estimated as follows
+- when calculation the [[expectation]] and approximating it with the [[mean]] we get the following [[statistical estimator]] for $\alpha$
+- the parameter $\alpha$ is still based on the revenue for the periods $t$ and not based on observations
+
+$$
+\begin{split}
+\mathbb{E}\left[X_{t,n}\right] 
+&= \mathbb{E}\left[\frac{\alpha}{n} +  \frac{\sigma}{\sqrt{n}} e_t \right] \\
+&= \frac{\alpha}{n}   \\
+\Rightarrow \alpha &=  n \mathbb{E}\left[X_{t,n}\right] \\
+\Rightarrow\hat\alpha 
+&= \frac{n}{nT} \sum_{t=1}^{nT} X_{t,n} \\
+&= \frac{1}{T} \sum_{t=1}^{nT} X_{t,n} \\
+\end{split}
+$$
+
 - $\hat\alpha$ only depends on the first price $P_0$ and the last price $P_T$
 
 $$
@@ -362,6 +407,7 @@ $$
 $$
 
 - $\hat\alpha$ is a [[estimator consitency|consistent]] [[statistical estimator]] a fixed $n<\infty$ and $T \to \infty$, but cant be estimated consistently for a single day $T=1$ because the noise would dominate
+
 $$
 \begin{split}
 \hat\alpha 
@@ -372,7 +418,6 @@ $$
 &= \alpha  \quad \text{for } T \to \infty\\
 \end{split}
 $$
-
 
 
 ___________
@@ -449,7 +494,7 @@ $$
 $$
 \begin{split}
 P_{t, n} &= \exp\left( \frac{t}{n} \alpha + \sigma W_{t, n}\right) \\
-W_{t, n}  &= \sum_{i=1}^t \frac{1}{\sqrt{n}} e_t \sim \mathcal{N}\left(0 , \frac{t}{n} \sigma^2 \right) \\
+W_{t, n}  &=  \sum_{i=1}^{t-1} \frac{1}{\sqrt{n}}  e_i \sim \mathcal{N}\left(0 , \frac{t}{n}  \right) \\
 W_{t, n} - W_{t-1, n} &=  \frac{1}{\sqrt{n}} e_t \sim \mathcal{N}\left(0 , \frac{1}{n}\right) \\
 X_{t,n} 
 &= \ln\left(P_{\frac{t}{n}}\right) - \ln\left(P_{\frac{t-1}{n}}\right) \\
@@ -461,7 +506,21 @@ $$
 
 ### drift estimator
 
-- the parameter $\alpha$ can be estimated as follows
+- when calculation the [[expectation]] and approximating it with the [[mean]] we get the following [[statistical estimator]] for $\alpha$
+- the parameter $\alpha$ is still based on the revenue for the periods $t$ and not based on observations
+
+$$
+\begin{split}
+\mathbb{E}\left[X_{t,n}\right] 
+&= \mathbb{E}\left[\frac{\alpha}{n} +  \frac{\sigma}{\sqrt{n}} e_t \right] \\
+&= \frac{\alpha}{n}   \\
+\Rightarrow \alpha &=  n \mathbb{E}\left[X_{t,n}\right] \\
+\Rightarrow\hat\alpha 
+&= \frac{n}{nT} \sum_{t=1}^{nT} X_{t,n} \\
+&= \frac{1}{T} \sum_{t=1}^{nT} X_{t,n} \\
+\end{split}
+$$
+
 - $\hat\alpha$ only depends on the first price $P_0$ and the last price $P_T$
 
 $$
@@ -474,6 +533,7 @@ $$
 $$
 
 - $\hat\alpha$ is a [[estimator consitency|consistent]] [[statistical estimator]] a fixed $n<\infty$ and $T \to \infty$, but cant be estimated consistently for a single day $T=1$ because the noise would dominate
+
 $$
 \begin{split}
 \hat\alpha 
