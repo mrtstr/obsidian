@@ -1,4 +1,4 @@
-### non-parametric volatility model
+### the base model
 - given the [[geometric brownian motion (GBM)]] $P_t$ with $\alpha = \mu - \frac{\sigma^2}{2}$
 
 $$
@@ -57,8 +57,8 @@ $$
 \hat\alpha 
 &= \frac{1}{T} \sum_{t=1}^{nT} X_{t,n} \\
 &= \frac{1}{T} \sum_{t=1}^{nT} \frac{\alpha}{n} +  \frac{\sigma}{\sqrt{n}} e_t\\
-&=  \frac{nT}{nT}  \alpha  + n \frac{\sigma}{\sqrt{n}} \sum_{t=1}^{T}  e_t\\
-&= \alpha  + \sigma\sqrt{n} \sum_{t=1}^{T}  e_t\\
+&=  \frac{nT}{nT}  \alpha  + n \frac{\sigma}{\sqrt{n}} \frac{1}{T} \sum_{t=1}^{T}  e_t\\
+&= \alpha  + \sigma\sqrt{n} \frac{1}{T} \sum_{t=1}^{T}  e_t\\
 &= \alpha  \quad \text{for } T \to \infty\\
 \end{split}
 $$
@@ -76,7 +76,7 @@ $$
 &=   \frac{\alpha^2}{n^2} +  \frac{\sigma^2}{n}   \\
 \end{split}
 $$
-
+- the estimator is consistent for a sufficiently large number of observations $n$
 $$
 \begin{split}
 n\mathbb{E}\left[X_{t,n}^2\right]
@@ -95,8 +95,64 @@ $$
 &= \frac{1}{T} \sum_{t=1}^{nT} X_{t,n}^2
 \end{split}
 $$
+### time dependent parameters
+
+- assume $\alpha=0$ and is a function $\sigma:[0,1] \to [0, \infty)$ and $t=1,2,...,n$
+- note: we don't assume that $e_t$ is [[normal distribution|normal distributed]]
+
+$$
+\begin{split}
+X_{n,t} = \frac{\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} \cdot e_t
+\end{split}
+$$
+
+- instead of taking the [[mean]] of $X_{t,n}^2$ we try to estimate the function $\sigma$ by applying [[smoothing]] to the [[time series]] $X_{t,n}^2$ around the 
+- for example [[smoothing#rolling mean smoothing|rolling mean smoothing]] where the [[floor function]] $\lfloor un \rfloor \in \{0,..., n\}$ is used to map $u \in [0,1]$ to a number between zero and $n$ 
+
+$$
+\begin{split}
+\hat\sigma^2(u)
+&= \frac{1}{2q+1} \sum_{i=-q}^{q} X_{\lfloor un \rfloor-j,n}^2
+\end{split}
+$$
+
+- if $\frac{q}{n}$ is sufficiently small $\frac{\lfloor un \rfloor}{n} \approx n$ and $\mathbb{E}[\hat\sigma^2(u)] \approx \sigma^2(u)$
+
+### kernel based estimation
+
+
+$$
+\begin{split}
+\hat\sigma^2(u)
+&= \frac{n}{nh} \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right) \\
+&= \frac{1}{h} \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right)
+\end{split}
+$$
+
+
+- with the kernel function $K\left(u\right): [-1,1] \to [0, \infty)$ with $\int^1_{-1} \left(u\right) du = 1$
+
+
+$$
+\tilde K(u) = \frac{1}{h}K\left(\frac{\frac{t}{n} - u}{h}\right): \left[\frac{t}{n}-h, \frac{t}{n}+h\right] \to [0, \infty )
+$$
+
+- the bandwidth tuning parameter $h>0$ that determines the maximal distance the values can have from the point of interest $u$ to still have a weight greater than zero
+
+$$
+\begin{split}
+ 1 &\geq \left|\frac{\frac{t}{n} - u}{h}\right| \\
+ h &\geq \left|\frac{t}{n} - u\right| \\
+ h &\geq d\left(\frac{t}{n}, u\right) \\
+\end{split}
+$$
+
+- if $h=1$ all values of one "day" would be considered and their summed up weight would be one
+- if $h=\frac{1}{2}$ only half of the values of one "day" would be considered and their summed up weight would be one
 
 # ---------------------
+
+![[smoothing#smooting]]
 
 ![[wiener process#wiener process]]
 
@@ -112,10 +168,11 @@ Basic
 [[non-parametric volatility model]] summary
 - price $P_{t, n}$
 - log returns $X_{t, n}$
-- drift estimator
+- [[drift]] estimator
 - realized [[volatility]] estimator
-
+- under which conditions can [[drift]] and [[volatility]] be estimated
 Back: 
+- the [[drift]] needs a sufficiently large number of days $T$ while the [[volatility]] needs a high enough observation frequency $n$
 ### non-parametric volatility model
 - given the [[geometric brownian motion (GBM)]] $P_t$ with $\alpha = \mu - \frac{\sigma^2}{2}$
 
@@ -175,8 +232,8 @@ $$
 \hat\alpha 
 &= \frac{1}{T} \sum_{t=1}^{nT} X_{t,n} \\
 &= \frac{1}{T} \sum_{t=1}^{nT} \frac{\alpha}{n} +  \frac{\sigma}{\sqrt{n}} e_t\\
-&=  \frac{nT}{nT}  \alpha  + n \frac{\sigma}{\sqrt{n}} \sum_{t=1}^{T}  e_t\\
-&= \alpha  + \sigma\sqrt{n} \sum_{t=1}^{T}  e_t\\
+&=  \frac{nT}{nT}  \alpha  + n \frac{\sigma}{\sqrt{n}} \frac{1}{T} \sum_{t=1}^{T}  e_t\\
+&= \alpha  +  \sigma\sqrt{n} \frac{1}{T} \sum_{t=1}^{T}  e_t \\
 &= \alpha  \quad \text{for } T \to \infty\\
 \end{split}
 $$
@@ -194,6 +251,8 @@ $$
 &=   \frac{\alpha^2}{n^2} +  \frac{\sigma^2}{n}   \\
 \end{split}
 $$
+
+- the estimator is consistent for a sufficiently large number of observations $n$
 
 $$
 \begin{split}
@@ -413,8 +472,8 @@ $$
 \hat\alpha 
 &= \frac{1}{T} \sum_{t=1}^{nT} X_{t,n} \\
 &= \frac{1}{T} \sum_{t=1}^{nT} \frac{\alpha}{n} +  \frac{\sigma}{\sqrt{n}} e_t\\
-&=  \frac{nT}{nT}  \alpha  + n \frac{\sigma}{\sqrt{n}} \sum_{t=1}^{T}  e_t\\
-&= \alpha  + \sigma\sqrt{n} \sum_{t=1}^{T}  e_t\\
+&=  \frac{nT}{nT}  \alpha  + n \frac{\sigma}{\sqrt{n}} \frac{1}{T} \sum_{t=1}^{T}  e_t\\
+&= \alpha  + \sigma\sqrt{n} \frac{1}{T} \sum_{t=1}^{T}  e_t\\
 &= \alpha  \quad \text{for } T \to \infty\\
 \end{split}
 $$
@@ -475,10 +534,7 @@ END
 START
 Basic
 realized [[volatility]] estimator for [[non-parametric volatility model]]
-- [[bias]]
-- [[estimator consitency]]
-- when can it be estimated?
-
+- when is it consistent
 Back: 
 ### non-parametric volatility model
 - given the [[geometric brownian motion (GBM)]] $P_t$ with $\alpha = \mu - \frac{\sigma^2}{2}$
@@ -539,8 +595,8 @@ $$
 \hat\alpha 
 &= \frac{1}{T} \sum_{t=1}^{nT} X_{t,n} \\
 &= \frac{1}{T} \sum_{t=1}^{nT} \frac{\alpha}{n} +  \frac{\sigma}{\sqrt{n}} e_t\\
-&=  \frac{nT}{nT}  \alpha  + n \frac{\sigma}{\sqrt{n}} \sum_{t=1}^{T}  e_t\\
-&= \alpha  + \sigma\sqrt{n} \sum_{t=1}^{T}  e_t\\
+&=  \frac{nT}{nT}  \alpha  + n \frac{\sigma}{\sqrt{n}} \frac{1}{T} \sum_{t=1}^{T}  e_t\\
+&= \alpha  + \sigma\sqrt{n} \frac{1}{T} \sum_{t=1}^{T}  e_t\\
 &= \alpha  \quad \text{for } T \to \infty\\
 \end{split}
 $$
@@ -558,6 +614,8 @@ $$
 &=   \frac{\alpha^2}{n^2} +  \frac{\sigma^2}{n}   \\
 \end{split}
 $$
+
+- the estimator is consistent for a sufficiently large number of observations $n$
 
 $$
 \begin{split}
