@@ -16,21 +16,21 @@ $$
 
 $$
 \begin{split}
-\mathbb{COV}(t_1, t_2) = K_{XX}(h) = K_{XX}(t_2 - t_1)  \quad 
+\mathbb{COV}(t_1, t_2) = \gamma(h) = \gamma(t_2 - t_1)  \quad 
 \forall \tau, t_1, ... , t_n \in \mathbb{R} 
 \end{split}
 $$
 #### proof
 $$
 \begin{split}
-K_{XX}(t_1, t_2) 
+\gamma(t_1, t_2) 
  =&\mathbb{E}\left[X_{t_1}X_{t_2}\right] - \mathbb{E}\left[X_{t_1}\right]\mathbb{E}\left[X_{t_2}\right] \\
 = &\int\int x_{t_1}x_{t_2} f_{X_{t_1}X_{t_2}}(x_{t_1}x_{t_2})dx_{t_1}dx_{t_2} 
 - \int x_{t_1} f_{X_{t_1}}(x_{t_1})dx_{t_1} \int x_{t_2} f_{X_{t_2}}(x_{t_2})dx_{t_2} \\
 = &\int\int x_{t_1}x_{t_2} f_{X_{\tau}X_{\tau + t_2 - t_1}}(x_{t_1}x_{t_2})dx_{t_1}dx_{t_2} 
 - \int x_{t_1} f_{X_{\tau}}(x_{t_1})dx_{t_1} \int x_{t_2} f_{X_{\tau + t_2 - t_1}}(x_{t_2})dx_{t_2} \\
 =  &\mathbb{E}\left[X_{\tau}X_{\tau + t_2 - t_1}\right] - \mathbb{E}\left[X_{\tau}\right]\mathbb{E}\left[X_{\tau + t_2 - t_1}\right] \\
-=  &K_{XX}(\tau , t_2 - t_1 + \tau)
+=  &\gamma(\tau , t_2 - t_1 + \tau)
 \end{split}
 $$
 

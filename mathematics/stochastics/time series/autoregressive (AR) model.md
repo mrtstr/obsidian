@@ -14,13 +14,12 @@ $$
 - first estimate the [[autocorrelation (ACF)]]
 
 ### parameter estimation
-- first estimate the [[autocorrelation (ACF)]] $\hat\rho(h)$ using a [[estimators for stationary time series#autocorrelation estimators for stationary time series|autocorrelation estimators for stationary time series]]
+- first estimate the [[autocovariance]] $\hat\gamma(h)$ using a [[estimators for stationary time series#autocorrelation estimators for stationary time series|autocorrelation estimators for stationary time series]]
 
 $$
 \begin{split}
 \hat X_n &= \sum_{i \in [n]} X_i \\
 \hat\gamma_n(h) &= \frac{1}{n} \sum_{t=1}^{n-|h|} \left(X_t- X_n\right)\left(X_{t+h}- X_n\right) \\
-\hat\rho_n(h) &= \frac{\hat\gamma_n(h)}{\hat\gamma_n(0)}  \\
 \end{split}
 $$
 
@@ -38,14 +37,14 @@ $$
 A &= \left(\begin{matrix}
 a_1 & ... & a_p
 \end{matrix}\right) \\
-r &= (\rho(r))_{r \in [n]} = \left(\begin{matrix}
-\rho(1) & ... & \rho(p)
+r &= (\gamma(r))_{r \in [n]} = \left(\begin{matrix}
+\gamma(1) & ... & \rho(p)
 \end{matrix}\right) \\
-R &= (\rho(r-s))_{r, s \in [n]} \left(\begin{matrix}
-1 & \rho(1) & ... & \rho(p-1) \\
-\rho(1) & 1 & ... & \rho(p-2) \\
+R &= (\gamma(r-s))_{r, s \in [n]} \left(\begin{matrix}
+1 & \gamma(1) & ... & \gamma(p-1) \\
+\gamma(1) & 1 & ... & \gamma(p-2) \\
  &  & ... & \ \\
- \rho(p-1) & \rho(p-2) & ... & 1 \\
+ \gamma(p-1) & \gamma(p-2) & ... & 1 \\
 \end{matrix}\right)
 \end{split}
 $$
@@ -158,19 +157,20 @@ $$
 
 $$
 \begin{split}
-\rho_{X}(h) &= a_1 \rho_{X}(h-1)  \\
-\rho_{X}(1) &= a_1 \rho_{X}(0) = a_1  \\
-\rho_{X}(2) &= a_1 \rho_{X}(1) = a_1^2  \\
-\rho_{X}(h) &= a_1 \rho_{X}(h-1) = a_1^h  \\
+\gamma_{X}(h) &= a_1 \gamma_{X}(h-1)  \\
+\gamma_{X}(1) &= a_1 \gamma_{X}(0)   \\
+\gamma_{X}(2) &= a_1 \gamma_{X}(1) = a_1^2 \gamma_{X}(0) \\
+\gamma_{X}(h) &= a_1 \gamma_{X}(h-1) = a_1^h \gamma_{X}(0) \\
+\rho_{X}(h) &=  \frac{\gamma_{X}(h)}{\gamma_{X}(0)} =  a_1^h  \\
 \end{split}
 $$
 
-#### parameter boundarys
+#### parameter boundary's
 
 $$
 \begin{split}
 a_1 
-&=  \frac{\rho_{X}(1)}{\rho_{X}(0)}   \\
+&=  \frac{\gamma_{X}(1)}{\gamma_{X}(0)}   \\
 &=  \rho_{X}(1) \in [-1,1]  \\
 \end{split}
 $$
@@ -466,34 +466,37 @@ $$
 
 $$
 \begin{split}
-\rho_{X}(h) &= a_1 \rho_{X}(h-1)  \\
-\rho_{X}(1) &= a_1 \rho_{X}(0) = a_1  \\
-\rho_{X}(2) &= a_1 \rho_{X}(1) = a_1^2  \\
-\rho_{X}(h) &= a_1 \rho_{X}(h-1) = a_1^h  \\
+\gamma_{X}(h) &= a_1 \gamma_{X}(h-1)  \\
+\gamma_{X}(1) &= a_1 \gamma_{X}(0)   \\
+\gamma_{X}(2) &= a_1 \gamma_{X}(1) = a_1^2 \gamma_{X}(0) \\
+\gamma_{X}(h) &= a_1 \gamma_{X}(h-1) = a_1^h \gamma_{X}(0) \\
+\rho_{X}(h) &=  \frac{\gamma_{X}(h)}{\gamma_{X}(0)} = a_1^h  \\
 \end{split}
 $$
+
 
 _____________________
 
 ### yule walker equation
 - for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregressive (AR) model]]
 
-- fo $h > 0$
+- for $h > 0$
 $$
 \begin{split}
-\rho_{X}(h) 
-&= a_1 \rho_{X}(h-1) + a_2 \rho_{X}(h-2) + ... + a_p \rho_{X}(h-p) \\
-&= \sum_{i=1}^p a_i \rho_{X}(h-i)  \\
+\gamma(h) 
+&= a_1 \gamma(h-1) + a_2 \gamma{X}(h-2) + ... + a_p \gamma(h-p) \\
+&= \sum_{i=1}^p a_i \gamma(h-i)  \\
 \end{split}
 $$
 
-- fo $h = 0$
+- for $h = 0$
 $$
 \begin{split}
-\rho_{X}(0) - \sigma^2_e
-&= \sum_{i=1}^p a_i \rho_{X}(0-i)  \\
+\gamma(0) - \sigma^2_e
+&= \sum_{i=1}^p a_i \gamma(0-i)  \\
 \end{split}
 $$
+
 
 
 _______
@@ -681,38 +684,34 @@ $$
 
 
 #### parameter boundarys
-- since the [[correlation]] can only take values between $-1$ and $1$
 
 $$
 \begin{split}
 a_1 
-&=  \frac{\rho_{X}(1)}{\rho_{X}(0)}   \\
+&=  \frac{\gamma_{X}(1)}{\gamma_{X}(0)}   \\
 &=  \rho_{X}(1) \in [-1,1]  \\
 \end{split}
 $$
 
-
 _____________________
-
-
 
 ### yule walker equation
 - for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregressive (AR) model]]
 
-- fo $h > 0$
+- for $h > 0$
 $$
 \begin{split}
-\rho_{X}(h) 
-&= a_1 \rho_{X}(h-1) + a_2 \rho_{X}(h-2) + ... + a_p \rho_{X}(h-p) \\
-&= \sum_{i=1}^p a_i \rho_{X}(h-i)  \\
+\gamma(h) 
+&= a_1 \gamma(h-1) + a_2 \gamma{X}(h-2) + ... + a_p \gamma(h-p) \\
+&= \sum_{i=1}^p a_i \gamma(h-i)  \\
 \end{split}
 $$
 
-- fo $h = 0$
+- for $h = 0$
 $$
 \begin{split}
-\rho_{X}(0) - \sigma^2_e
-&= \sum_{i=1}^p a_i \rho_{X}(0-i)  \\
+\gamma(0) - \sigma^2_e
+&= \sum_{i=1}^p a_i \gamma(0-i)  \\
 \end{split}
 $$
 
@@ -801,13 +800,12 @@ how to estimate the parameters of a [[autoregressive (AR) model]]?
 
 Back: 
 ### parameter estimation
-- first estimate the [[autocorrelation (ACF)]] $\hat\rho(h)$ 
+- first estimate the [[autocovariance]] $\hat\gamma(h)$ using a [[estimators for stationary time series#autocorrelation estimators for stationary time series|autocorrelation estimators for stationary time series]]
 
 $$
 \begin{split}
 \hat X_n &= \sum_{i \in [n]} X_i \\
 \hat\gamma_n(h) &= \frac{1}{n} \sum_{t=1}^{n-|h|} \left(X_t- X_n\right)\left(X_{t+h}- X_n\right) \\
-\hat\rho_n(h) &= \frac{\hat\gamma_n(h)}{\hat\gamma_n(0)}  \\
 \end{split}
 $$
 
@@ -825,18 +823,20 @@ $$
 A &= \left(\begin{matrix}
 a_1 & ... & a_p
 \end{matrix}\right) \\
-r &= (\rho(r))_{r \in [n]} = \left(\begin{matrix}
-\rho(1) & ... & \rho(p)
+r &= (\gamma(r))_{r \in [n]} = \left(\begin{matrix}
+\gamma(1) & ... & \rho(p)
 \end{matrix}\right) \\
-R &= (\rho(r-s))_{r, s \in [n]} \left(\begin{matrix}
-1 & \rho(1) & ... & \rho(p-1) \\
-\rho(1) & 1 & ... & \rho(p-2) \\
+R &= (\gamma(r-s))_{r, s \in [n]} \left(\begin{matrix}
+1 & \gamma(1) & ... & \gamma(p-1) \\
+\gamma(1) & 1 & ... & \gamma(p-2) \\
  &  & ... & \ \\
- \rho(p-1) & \rho(p-2) & ... & 1 \\
+ \gamma(p-1) & \gamma(p-2) & ... & 1 \\
 \end{matrix}\right)
 \end{split}
 $$
 
+
+- use the [[yule walker equation]] to calculate the parameter vector
 
 
 _____________________
@@ -855,37 +855,29 @@ $$
 \sqrt{n} (X_n - \mu) \xrightarrow{\mathcal{D}} \mathcal{N}\left(0, \sum_{h = 1}^\infty \rho(h) \right)
 $$
 
-### autocorrelation estimators for stationary time series
-- given an observation $X_1, ..., X_n$ from a [[stationary process|stationary]] [[time series]]
-- the [[autocorrelation (ACF)]] $\rho(h)$ can be estimated with the following [[statistical estimator]] (for $h \leq n$)
-
-$$
-\hat\rho_n(h) = \frac{1}{n} \sum_{t=1}^{n-|h|} \left(X_t- X_n\right)\left(X_{t+h}- X_n\right)
-$$
-
-- under suitable assumptions $\hat\rho_n(h)$ is [[estimator consitency#$ sqrt{n}$ consitency|root n consistent]] and [[normal distribution]]
 
 
 ### yule walker equation
 - for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregressive (AR) model]]
 
-- fo $h > 0$
+- for $h > 0$
 $$
 \begin{split}
-\rho_{X}(h) 
-&= a_1 \rho_{X}(h-1) + a_2 \rho_{X}(h-2) + ... + a_p \rho_{X}(h-p) \\
-&= \sum_{i=1}^p a_i \rho_{X}(h-i)  \\
+\gamma(h) 
+&= a_1 \gamma(h-1) + a_2 \gamma{X}(h-2) + ... + a_p \gamma(h-p) \\
+&= \sum_{i=1}^p a_i \gamma(h-i)  \\
 \end{split}
 $$
 
-- fo $h = 0$
+- for $h = 0$
 $$
 \begin{split}
-\rho_{X}(0) - \sigma^2_e
-&= \sum_{i=1}^p a_i \rho_{X}(0-i)  \\
+\gamma(0) - \sigma^2_e
+&= \sum_{i=1}^p a_i \gamma(0-i)  \\
 \end{split}
 $$
-- this can be writting as the following [[linear map|linear]] [[matrix]] equation which can be solved for the parameter vector $A$
+
+- this can be written as the following [[linear map|linear]] [[matrix]] equation which can be solved for the parameter vector $A$
 
 $$
 \begin{split}
@@ -898,14 +890,14 @@ $$
 A &= \left(\begin{matrix}
 a_1 & ... & a_p
 \end{matrix}\right) \\
-r &= (\rho(r))_{r \in [n]} = \left(\begin{matrix}
-\rho(1) & ... & \rho(p)
+r &= (\gamma(r))_{r \in [n]} = \left(\begin{matrix}
+\gamma(1) & ... & \rho(p)
 \end{matrix}\right) \\
-R &= (\rho(r-s))_{r, s \in [n]} \left(\begin{matrix}
-1 & \rho(1) & ... & \rho(p-1) \\
-\rho(1) & 1 & ... & \rho(p-2) \\
+R &= (\gamma(r-s))_{r, s \in [n]} \left(\begin{matrix}
+1 & \gamma(1) & ... & \gamma(p-1) \\
+\gamma(1) & 1 & ... & \gamma(p-2) \\
  &  & ... & \ \\
- \rho(p-1) & \rho(p-2) & ... & 1 \\
+ \gamma(p-1) & \gamma(p-2) & ... & 1 \\
 \end{matrix}\right)
 \end{split}
 $$

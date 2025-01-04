@@ -1,23 +1,24 @@
 ### yule walker equation
 - for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregressive (AR) model]]
 
-- fo $h > 0$
+- for $h > 0$
 $$
 \begin{split}
-\rho_{X}(h) 
-&= a_1 \rho_{X}(h-1) + a_2 \rho_{X}(h-2) + ... + a_p \rho_{X}(h-p) \\
-&= \sum_{i=1}^p a_i \rho_{X}(h-i)  \\
+\gamma(h) 
+&= a_1 \gamma(h-1) + a_2 \gamma{X}(h-2) + ... + a_p \gamma(h-p) \\
+&= \sum_{i=1}^p a_i \gamma(h-i)  \\
 \end{split}
 $$
 
-- fo $h = 0$
+- for $h = 0$
 $$
 \begin{split}
-\rho_{X}(0) - \sigma^2_e
-&= \sum_{i=1}^p a_i \rho_{X}(0-i)  \\
+\gamma(0) - \sigma^2_e
+&= \sum_{i=1}^p a_i \gamma(0-i)  \\
 \end{split}
 $$
-- this can be writting as the following [[linear map|linear]] [[matrix]] equation which can be solved for the parameter vector $A$
+
+- this can be written as the following [[linear map|linear]] [[matrix]] equation which can be solved for the parameter vector $A$
 
 $$
 \begin{split}
@@ -30,14 +31,14 @@ $$
 A &= \left(\begin{matrix}
 a_1 & ... & a_p
 \end{matrix}\right) \\
-r &= (\rho(r))_{r \in [n]} = \left(\begin{matrix}
-\rho(1) & ... & \rho(p)
+r &= (\gamma(r))_{r \in [n]} = \left(\begin{matrix}
+\gamma(1) & ... & \rho(p)
 \end{matrix}\right) \\
-R &= (\rho(r-s))_{r, s \in [n]} \left(\begin{matrix}
-1 & \rho(1) & ... & \rho(p-1) \\
-\rho(1) & 1 & ... & \rho(p-2) \\
+R &= (\gamma(r-s))_{r, s \in [n]} \left(\begin{matrix}
+1 & \gamma(1) & ... & \gamma(p-1) \\
+\gamma(1) & 1 & ... & \gamma(p-2) \\
  &  & ... & \ \\
- \rho(p-1) & \rho(p-2) & ... & 1 \\
+ \gamma(p-1) & \gamma(p-2) & ... & 1 \\
 \end{matrix}\right)
 \end{split}
 $$
@@ -54,18 +55,16 @@ X_t
 &= \mathbb{E}\left[X_tX_{t-h}\right] - 0 \\
 &= \sum_{i=1}^p a_i \mathbb{E}\left[X_{t} X_{t-h-i}\right]  + \mathbb{E}\left[X_{t} e_{t-h}\right]\\
 &=  \sum_{i=0}^p a_i \mathbb{COV}\left[X_t, X_{t-h-i}\right] + \mathbb{E}\left[X_{t} e_{t-h}\right] \\
-\mathbb{COR}\left[X_t, X_{t-h}\right] 
-&= \sum_{i=0}^p a_i \mathbb{COR}\left[X_t, X_{t-h-i}\right] + \mathbb{E}\left[X_{t} e_{t-h}\right] \\ 
-\rho_{X}(h)
-&= \sum_{i=0}^p a_i \rho_{X}(h+i) + \mathbb{E}\left[X_{t} e_{t-h}\right]  \\
-&= \sum_{i=0}^p a_i \rho_{X}(h-i) + \mathbb{E}\left[X_{t} e_{t-h}\right] \quad \text{(stationarity)} \\
+\gamma(h)
+&= \sum_{i=0}^p a_i \gamma(h+i) + \mathbb{E}\left[X_{t} e_{t-h}\right]  \\
+&= \sum_{i=0}^p a_i \gamma(h-i) + \mathbb{E}\left[X_{t} e_{t-h}\right] \quad \text{(stationarity)} \\
 \end{split}
 $$
 
 
 # -----------------------
 
-![[autocorrelation (ACF)#autocorrelation (ACF) for stationary processes]]
+![[autocovariance#autocovariance for stationary process]]
 
 ![[autoregressive (AR) model#autoregressive (AR) model]]
 
@@ -81,23 +80,25 @@ Back:
 ### yule walker equation
 - for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregressive (AR) model]]
 
-- fo $h > 0$
+- for $h > 0$
 $$
 \begin{split}
-\rho_{X}(h) 
-&= a_1 \rho_{X}(h-1) + a_2 \rho_{X}(h-2) + ... + a_p \rho_{X}(h-p) \\
-&= \sum_{i=1}^p a_i \rho_{X}(h-i)  \\
+\gamma(h) 
+&= a_1 \gamma(h-1) + a_2 \gamma{X}(h-2) + ... + a_p \gamma(h-p) \\
+&= \sum_{i=1}^p a_i \gamma(h-i)  \\
 \end{split}
 $$
 
-- fo $h = 0$
+- for $h = 0$
 $$
 \begin{split}
-\rho_{X}(0) - \sigma^2_e
-&= \sum_{i=1}^p a_i \rho_{X}(0-i)  \\
+\gamma(0) - \sigma^2_e
+&= \sum_{i=1}^p a_i \gamma(0-i)  \\
 \end{split}
 $$
-- this can be writting as the following [[linear map|linear]] [[matrix]] equation which can be solved for the parameter vector $A$
+
+- this can be written as the following [[linear map|linear]] [[matrix]] equation which can be solved for the parameter vector $A$
+
 $$
 \begin{split}
 RA = r \Leftrightarrow A = R^{-1}r
@@ -109,14 +110,14 @@ $$
 A &= \left(\begin{matrix}
 a_1 & ... & a_p
 \end{matrix}\right) \\
-r &= \left(\begin{matrix}
-\rho(1) & ... & \rho(p)
+r &= (\gamma(r))_{r \in [n]} = \left(\begin{matrix}
+\gamma(1) & ... & \rho(p)
 \end{matrix}\right) \\
-R &= \left(\begin{matrix}
-1 & \rho(1) & ... & \rho(p-1) \\
-\rho(1) & 1 & ... & \rho(p-2) \\
+R &= (\gamma(r-s))_{r, s \in [n]} \left(\begin{matrix}
+1 & \gamma(1) & ... & \gamma(p-1) \\
+\gamma(1) & 1 & ... & \gamma(p-2) \\
  &  & ... & \ \\
- \rho(p-1) & \rho(p-2) & ... & 1 \\
+ \gamma(p-1) & \gamma(p-2) & ... & 1 \\
 \end{matrix}\right)
 \end{split}
 $$
@@ -133,23 +134,33 @@ X_t
 &= \mathbb{E}\left[X_tX_{t-h}\right] - 0 \\
 &= \sum_{i=1}^p a_i \mathbb{E}\left[X_{t} X_{t-h-i}\right]  + \mathbb{E}\left[X_{t} e_{t-h}\right]\\
 &=  \sum_{i=0}^p a_i \mathbb{COV}\left[X_t, X_{t-h-i}\right] + \mathbb{E}\left[X_{t} e_{t-h}\right] \\
-\mathbb{COR}\left[X_t, X_{t-h}\right] 
-&= \sum_{i=0}^p a_i \mathbb{COR}\left[X_t, X_{t-h-i}\right] + \mathbb{E}\left[X_{t} e_{t-h}\right] \\ 
-\rho_{X}(h)
-&= \sum_{i=0}^p a_i \rho_{X}(h+i) + \mathbb{E}\left[X_{t} e_{t-h}\right]  \\
-&= \sum_{i=0}^p a_i \rho_{X}(h-i) + \mathbb{E}\left[X_{t} e_{t-h}\right] \quad \text{(stationarity)} \\
+\gamma(h)
+&= \sum_{i=0}^p a_i \gamma(h+i) + \mathbb{E}\left[X_{t} e_{t-h}\right]  \\
+&= \sum_{i=0}^p a_i \gamma(h-i) + \mathbb{E}\left[X_{t} e_{t-h}\right] \quad \text{(stationarity)} \\
 \end{split}
 $$
 
-### autocorrelation (ACF) for stationary processes
+__________________
+
+## autocovariance for stationary process
 
 $$
 \begin{split}
-\rho_{XX}(t_1, t_2) 
-&= \rho_{XX}(t, t + h) \qquad \text{with } h = t_2-t_1\\
-&= \rho_{XX}(h) \\
-&= \frac{ \mathbb{COV}\left[X_{t}, X_{t - h}\right]}{\mathbb{VAR}\left[X_{t}\right]} 
-\qquad \text{with arbitray } \tau, h
+\mathbb{COV}(t_1, t_2) = \gamma(h) = \gamma(t_2 - t_1)  \quad 
+\forall \tau, t_1, ... , t_n \in \mathbb{R} 
+\end{split}
+$$
+#### proof
+$$
+\begin{split}
+\gamma(t_1, t_2) 
+ =&\mathbb{E}\left[X_{t_1}X_{t_2}\right] - \mathbb{E}\left[X_{t_1}\right]\mathbb{E}\left[X_{t_2}\right] \\
+= &\int\int x_{t_1}x_{t_2} f_{X_{t_1}X_{t_2}}(x_{t_1}x_{t_2})dx_{t_1}dx_{t_2} 
+- \int x_{t_1} f_{X_{t_1}}(x_{t_1})dx_{t_1} \int x_{t_2} f_{X_{t_2}}(x_{t_2})dx_{t_2} \\
+= &\int\int x_{t_1}x_{t_2} f_{X_{\tau}X_{\tau + t_2 - t_1}}(x_{t_1}x_{t_2})dx_{t_1}dx_{t_2} 
+- \int x_{t_1} f_{X_{\tau}}(x_{t_1})dx_{t_1} \int x_{t_2} f_{X_{\tau + t_2 - t_1}}(x_{t_2})dx_{t_2} \\
+=  &\mathbb{E}\left[X_{\tau}X_{\tau + t_2 - t_1}\right] - \mathbb{E}\left[X_{\tau}\right]\mathbb{E}\left[X_{\tau + t_2 - t_1}\right] \\
+=  &\gamma(\tau , t_2 - t_1 + \tau)
 \end{split}
 $$
 
@@ -182,41 +193,44 @@ Back:
 ### yule walker equation
 - for [[statistical estimator|estimating]] the parameters $a_1, ..., a_p$ of an [[autoregressive (AR) model]]
 
-- fo $h > 0$
+- for $h > 0$
 $$
 \begin{split}
-\rho_{X}(h) 
-&= a_1 \rho_{X}(h-1) + a_2 \rho_{X}(h-2) + ... + a_p \rho_{X}(h-p) \\
-&= \sum_{i=1}^p a_i \rho_{X}(h-i)  \\
+\gamma(h) 
+&= a_1 \gamma(h-1) + a_2 \gamma{X}(h-2) + ... + a_p \gamma(h-p) \\
+&= \sum_{i=1}^p a_i \gamma(h-i)  \\
 \end{split}
 $$
 
-- fo $h = 0$
+- for $h = 0$
 $$
 \begin{split}
-\rho_{X}(0) - \sigma^2_e
-&= \sum_{i=1}^p a_i \rho_{X}(0-i)  \\
+\gamma(0) - \sigma^2_e
+&= \sum_{i=1}^p a_i \gamma(0-i)  \\
 \end{split}
 $$
-- this can be writting as the following [[linear map|linear]] [[matrix]] equation which can be solved for the parameter vector $A$
+
+- this can be written as the following [[linear map|linear]] [[matrix]] equation which can be solved for the parameter vector $A$
+
 $$
 \begin{split}
 RA = r \Leftrightarrow A = R^{-1}r
 \end{split}
 $$
+
 $$
 \begin{split}
 A &= \left(\begin{matrix}
 a_1 & ... & a_p
 \end{matrix}\right) \\
-r &= (\rho(r))_{r \in [n]} = \left(\begin{matrix}
-\rho(1) & ... & \rho(p)
+r &= (\gamma(r))_{r \in [n]} = \left(\begin{matrix}
+\gamma(1) & ... & \rho(p)
 \end{matrix}\right) \\
-R &= (\rho(r-s))_{r, s \in [n]} \left(\begin{matrix}
-1 & \rho(1) & ... & \rho(p-1) \\
-\rho(1) & 1 & ... & \rho(p-2) \\
+R &= (\gamma(r-s))_{r, s \in [n]} \left(\begin{matrix}
+1 & \gamma(1) & ... & \gamma(p-1) \\
+\gamma(1) & 1 & ... & \gamma(p-2) \\
  &  & ... & \ \\
- \rho(p-1) & \rho(p-2) & ... & 1 \\
+ \gamma(p-1) & \gamma(p-2) & ... & 1 \\
 \end{matrix}\right)
 \end{split}
 $$
@@ -233,30 +247,37 @@ X_t
 &= \mathbb{E}\left[X_tX_{t-h}\right] - 0 \\
 &= \sum_{i=1}^p a_i \mathbb{E}\left[X_{t} X_{t-h-i}\right]  + \mathbb{E}\left[X_{t} e_{t-h}\right]\\
 &=  \sum_{i=0}^p a_i \mathbb{COV}\left[X_t, X_{t-h-i}\right] + \mathbb{E}\left[X_{t} e_{t-h}\right] \\
-\mathbb{COR}\left[X_t, X_{t-h}\right] 
-&= \sum_{i=0}^p a_i \mathbb{COR}\left[X_t, X_{t-h-i}\right] + \mathbb{E}\left[X_{t} e_{t-h}\right] \\ 
-\rho_{X}(h)
-&= \sum_{i=0}^p a_i \rho_{X}(h+i) + \mathbb{E}\left[X_{t} e_{t-h}\right]  \\
-&= \sum_{i=0}^p a_i \rho_{X}(h-i) + \mathbb{E}\left[X_{t} e_{t-h}\right] \quad \text{(stationarity)} \\
+\gamma(h)
+&= \sum_{i=0}^p a_i \gamma(h+i) + \mathbb{E}\left[X_{t} e_{t-h}\right]  \\
+&= \sum_{i=0}^p a_i \gamma(h-i) + \mathbb{E}\left[X_{t} e_{t-h}\right] \quad \text{(stationarity)} \\
 \end{split}
 $$
-
 ________________
 
-### autocorrelation (ACF) for stationary processes
+## autocovariance for stationary process
 
 $$
 \begin{split}
-\rho_{XX}(t_1, t_2) 
-&= \rho_{XX}(t, t + h) \qquad \text{with } h = t_2-t_1\\
-&= \rho_{XX}(h) \\
-&= \frac{ \mathbb{COV}\left[X_{t}, X_{t - h}\right]}{\mathbb{VAR}\left[X_{t}\right]} 
-\qquad \text{with arbitray } \tau, h
+\mathbb{COV}(t_1, t_2) = \gamma(h) = \gamma(t_2 - t_1)  \quad 
+\forall \tau, t_1, ... , t_n \in \mathbb{R} 
+\end{split}
+$$
+#### proof
+$$
+\begin{split}
+\gamma(t_1, t_2) 
+ =&\mathbb{E}\left[X_{t_1}X_{t_2}\right] - \mathbb{E}\left[X_{t_1}\right]\mathbb{E}\left[X_{t_2}\right] \\
+= &\int\int x_{t_1}x_{t_2} f_{X_{t_1}X_{t_2}}(x_{t_1}x_{t_2})dx_{t_1}dx_{t_2} 
+- \int x_{t_1} f_{X_{t_1}}(x_{t_1})dx_{t_1} \int x_{t_2} f_{X_{t_2}}(x_{t_2})dx_{t_2} \\
+= &\int\int x_{t_1}x_{t_2} f_{X_{\tau}X_{\tau + t_2 - t_1}}(x_{t_1}x_{t_2})dx_{t_1}dx_{t_2} 
+- \int x_{t_1} f_{X_{\tau}}(x_{t_1})dx_{t_1} \int x_{t_2} f_{X_{\tau + t_2 - t_1}}(x_{t_2})dx_{t_2} \\
+=  &\mathbb{E}\left[X_{\tau}X_{\tau + t_2 - t_1}\right] - \mathbb{E}\left[X_{\tau}\right]\mathbb{E}\left[X_{\tau + t_2 - t_1}\right] \\
+=  &\gamma(\tau , t_2 - t_1 + \tau)
 \end{split}
 $$
 
 ### autoregressive (AR) model
-- The [[autoregressive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+- The [[autoregressive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear relationship of the current value to the past p $p$ values
 - assumes an at least [[stationary process]]
 
 models the [[time series]]
