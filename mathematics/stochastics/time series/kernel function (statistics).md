@@ -46,5 +46,5 @@ $$
 TODO add proof
 
 Tags: mathematics time_series WS2425
-
+<!--ID: 1736001837825-->
 END

@@ -1,19 +1,14 @@
 ### smooting
 - methods for extracting a underlaying patter from a [[time series]] by removing [[white noise|noise]]
 - can be interpreted as a [[trend]] [[statistical estimator|estimator]]
-#### rolling mean smoothing
-- with $\sum_{i=-k}^k \theta_i=1$ e.g. $\theta_i=\frac{1}{2k+1}$
 
-$$
-\hat m_t = \sum_{i=-k}^k \theta_i X_{t+i}
-$$
+### examples
 
-#### exponential smoothing (EMA)
+![[rolling mean smoothing#rolling mean smoothing]]
 
-$$
-\hat m_t = (1-\alpha) X_t +\alpha m_{t-1}
-$$
+![[exponential smoothing (EMA)#exponential smoothing (EMA)]]
 
+![[kernel smoothing for time series#kernel smoothing for time series]]
 
 # -----------
 
@@ -26,7 +21,7 @@ START
 Basic
 [[smoothing]] for [[time series]]
 - definition
-- two examples
+- 3 examples
 
 Back: 
 ### smooting
@@ -44,6 +39,15 @@ $$
 
 $$
 \hat m_t = (1-\alpha) X_t +\alpha m_{t-1}
+$$
+
+
+### kernel smoothing for time series
+- generalized [[rolling mean smoothing]] with a shifted and scaled [[kernel function (statistics)]] $K: [-1,1] \to [0, \infty)$ for weighting the samples
+
+
+$$
+\hat X_t=\frac{1}{nh} \frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{h}\right)
 $$
 
 

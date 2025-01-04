@@ -326,7 +326,8 @@
     "connectivity-overview 1.png",
     "public-nat-gateway-diagram 2.png",
     "public-nat-gateway-diagram 1.png",
-    "two-vpcs-to-two-subnets-one-vpc 1.png"
+    "two-vpcs-to-two-subnets-one-vpc 1.png",
+    "Comparison_of_1D_histogram_and_KDE 1.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1357,7 +1358,7 @@
     "mathematics/stochastics/time series/stochastic process.md": "54a018ed36e547674c57d11f9c41b8da",
     "mathematics/stochastics/time series/time series.md": "dbac787d34fd5976773d288b9c5324aa",
     "mathematics/stochastics/time series/partial autocorrelation.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/autocovariance.md": "c3f3bdc8bac25f2745d0c0ff753f5a6f",
+    "mathematics/stochastics/time series/autocovariance.md": "a10bb60e677ec6138b3f478490212e50",
     "mathematics/stochastics/time series/autoregresive model.md": "8931045506569ff2a8f0a79584d23eaa",
     "mathematics/stochastics/time series/partial autocorrelation (PACF).md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/autocorrelation (ACF).md": "c3512d3044f7311c07f850486a16d797",
@@ -1938,7 +1939,7 @@
     "mathematics/stochastics/time series/autoregresive (AR) model.md": "de5110a99aca9892d8e83d07eb54c3e4",
     "mathematics/stochastics/time series/Untitled.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/moving average (MA) model.md": "919a7f3cbcfda9c7b67edca40bfe9a63",
-    "mathematics/stochastics/time series/yule walker equation.md": "0b896b6bca6b5688319369e2b199ba25",
+    "mathematics/stochastics/time series/yule walker equation.md": "d9b3ecf15f11c67024a24d229afeeb24",
     "mathematics/stochastics/time series/autoregressive moving average (ARMA) model.md": "55fb6dd112be1c7dc9a4fdd75f80bfd8",
     "mathematics/stochastics/estimators for stationary time series.md": "577aa202d838a30e34983c244bc07d04",
     "mathematics/stochastics/time series/forecasting time series.md": "26fcde88c818f72f68a686001893cec3",
@@ -1947,7 +1948,7 @@
     "mathematics/stochastics/time series/drift.md": "c3f9fe19b93167e04c6c8484b23a1424",
     "mathematics/stochastics/time series/trend.md": "46809ac554eb666ae6d3c74832c35a5b",
     "mathematics/stochastics/time series/volatility.md": "b92776566910a08493a0bffc90d2ada7",
-    "mathematics/stochastics/time series/smoothing.md": "afbcfd436e7ef432e0a9bb289cc70547",
+    "mathematics/stochastics/time series/smoothing.md": "d023dbed31c01acc4660599d4eca27db",
     "mathematics/stochastics/time series/seasonality.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "2444660c809133e342eac0a673933023",
     "mathematics/stochastics/time series/stochastic differential equation.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1958,9 +1959,15 @@
     "mathematics/stochastics/time series/sample autocovariance.md": "c755522fbebda0d6229b50418fda6cc7",
     "mathematics/stochastics/time series/structural break.md": "363f535afc3c180eaaf6e033b4a95a0a",
     "mathematics/stochastics/time series/financial time series.md": "2164019667958f72e2ecffde570ff4ef",
-    "mathematics/stochastics/time series/autoregressive (AR) model.md": "136929d5008671a7619bd0e2fe073a5d",
-    "mathematics/stochastics/time series/non-parametric volatility model.md": "11672b0a0ea8083c9aa77cb538a2a1ea",
-    "mathematics/stochastics/time series/vl.md": "268ee91598bfa66c780dd96c547cd2b7"
+    "mathematics/stochastics/time series/autoregressive (AR) model.md": "8114898ccef6eeaee00d80ed6de53036",
+    "mathematics/stochastics/time series/non-parametric volatility model.md": "99231508c8fe673310098b2ba85451db",
+    "mathematics/stochastics/time series/vl.md": "268ee91598bfa66c780dd96c547cd2b7",
+    "mathematics/stochastics/kernel density estimator.md": "4081f82cf3f97fe8ee4774bc7749a67e",
+    "mathematics/stochastics/time series/exponential smoothing (EMA).md": "ee4ef264c110073da3186376903ef3bb",
+    "mathematics/stochastics/time series/rolling mean smoothing.md": "c77ed4c84fbf0252a9f953c1ad316a7e",
+    "mathematics/stochastics/time series/kernel smoothing for time series.md": "9770378e1c20c1e9dae68cf4bd17a0b8",
+    "mathematics/stochastics/time series/kernel function (statistics).md": "30f88954162cc14648c17e00dfb8becb",
+    "mathematics/basics/kernel function.md": "300e7c3b2653fdd811f2618df176afd0"
   },
   "fields_dict": {
     "Basic": [
