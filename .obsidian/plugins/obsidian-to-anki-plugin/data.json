@@ -799,7 +799,7 @@
     "code/df processing/pandas/operations/pd apply.md": "e0a1c4d499a3d62f565e373ff414d874",
     "code/df processing/pandas/operations/pd allign.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/df processing/pandas/operations/pd agg.md": "756142910a5d52fc90dc5008d2c36f5d",
-    "mathematics/stochastics/statistical learning/variance bias trade-off.md": "3011eae685733e7aaf4440775ed3ca31",
+    "mathematics/stochastics/statistical learning/variance bias trade-off.md": "cfc512d35c3e38aea6111cbe13af32e0",
     "mathematics/stochastics/statistical learning/training error.md": "130af63ada9661956a0d11fcc59018c1",
     "mathematics/stochastics/statistical learning/time series algorithms.md": "e8f996a7ca8d2a2e4b1dfd840e6abb10",
     "mathematics/stochastics/statistical learning/statistical predictor.md": "fdd7d22fdd303ff3be2068ae3bc23edb",
@@ -1948,7 +1948,7 @@
     "mathematics/stochastics/time series/drift.md": "c3f9fe19b93167e04c6c8484b23a1424",
     "mathematics/stochastics/time series/trend.md": "46809ac554eb666ae6d3c74832c35a5b",
     "mathematics/stochastics/time series/volatility.md": "b92776566910a08493a0bffc90d2ada7",
-    "mathematics/stochastics/time series/smoothing.md": "d023dbed31c01acc4660599d4eca27db",
+    "mathematics/stochastics/time series/smoothing.md": "e06b27eb24b3a762368e34deb393298e",
     "mathematics/stochastics/time series/seasonality.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "2444660c809133e342eac0a673933023",
     "mathematics/stochastics/time series/stochastic differential equation.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1960,14 +1960,16 @@
     "mathematics/stochastics/time series/structural break.md": "363f535afc3c180eaaf6e033b4a95a0a",
     "mathematics/stochastics/time series/financial time series.md": "2164019667958f72e2ecffde570ff4ef",
     "mathematics/stochastics/time series/autoregressive (AR) model.md": "8114898ccef6eeaee00d80ed6de53036",
-    "mathematics/stochastics/time series/non-parametric volatility model.md": "99231508c8fe673310098b2ba85451db",
+    "mathematics/stochastics/time series/non-parametric volatility model.md": "edd753fddcd2947162cb47f5647b8b25",
     "mathematics/stochastics/time series/vl.md": "268ee91598bfa66c780dd96c547cd2b7",
     "mathematics/stochastics/kernel density estimator.md": "4081f82cf3f97fe8ee4774bc7749a67e",
     "mathematics/stochastics/time series/exponential smoothing (EMA).md": "ee4ef264c110073da3186376903ef3bb",
     "mathematics/stochastics/time series/rolling mean smoothing.md": "c77ed4c84fbf0252a9f953c1ad316a7e",
-    "mathematics/stochastics/time series/kernel smoothing for time series.md": "9770378e1c20c1e9dae68cf4bd17a0b8",
+    "mathematics/stochastics/time series/kernel smoothing for time series.md": "2ce36cf4c39e5c84a9cb0ac7c8f77da3",
     "mathematics/stochastics/time series/kernel function (statistics).md": "30f88954162cc14648c17e00dfb8becb",
-    "mathematics/basics/kernel function.md": "300e7c3b2653fdd811f2618df176afd0"
+    "mathematics/basics/kernel function.md": "300e7c3b2653fdd811f2618df176afd0",
+    "mathematics/stochastics/time series/weighted mean smoothing.md": "d5c8f16fce9c3b7e11f07cdd1ee567be",
+    "mathematics/stochastics/time series/weighted mean estimator for time series.md": "bd2164671bce56cb8b429794a2452345"
   },
   "fields_dict": {
     "Basic": [

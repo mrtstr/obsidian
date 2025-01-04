@@ -1,5 +1,5 @@
 ### kernel smoothing for time series
-- generalized [[rolling mean smoothing]] with a shifted and scaled [[kernel function (statistics)]] $K: [-1,1] \to [0, \infty)$ for weighting the samples
+- generalized [[weighted mean smoothing]] with a shifted and scaled [[kernel function (statistics)]] $K: [-1,1] \to [0, \infty)$ for weighting the samples
 - note the normalization $\frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{h}\right)}$ is necessary because $K$ is a continuous function and the [[time series]] is discrete
 
 $$
@@ -8,7 +8,7 @@ $$
 
 # -----------------
 
-![[rolling mean smoothing#rolling mean smoothing]]
+![[weighted mean smoothing#rolling mean smoothing]]
 
 
 ![[kernel function (statistics)#kernel function (statistics)]]
@@ -24,7 +24,7 @@ Basic
 [[kernel smoothing for time series]]
 Back: 
 ### kernel smoothing for time series
-- generalized [[rolling mean smoothing]] with a shifted and scaled [[kernel function (statistics)]] $K: [-1,1] \to [0, \infty)$ for weighting the samples
+- generalized [[weighted mean smoothing]] with a shifted and scaled [[kernel function (statistics)]] $K: [-1,1] \to [0, \infty)$ for weighting the samples
 - note the normalization $\frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{h}\right)}$ is necessary because $K$ is a continuous function and the [[time series]] is discrete
 
 $$

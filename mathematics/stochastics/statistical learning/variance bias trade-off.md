@@ -9,6 +9,7 @@ relationship of the [[error]] components [[model bias]] and [[model variance]]
 - in theory it is possible to predict the $\theta$ because it's a constant
 - in this case the [[error]] is only depending on the [[model bias]] and [[model variance]]
 - the [[mean square error]] of the [[statistical estimator_old]] can be decomposed as follows
+
 $$
 \mathbb{E}_{\mathcal{T} \sim f_{X \mid \theta}(x \mid \theta)}\left[
 \left(\widehat{\theta}_\mathcal{T}-

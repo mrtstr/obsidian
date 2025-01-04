@@ -1,4 +1,4 @@
-#### rolling mean smoothing
+#### weighted mean smoothing
 - with $\sum_{i=-k}^k \theta_i=1$ e.g. $\theta_i=\frac{1}{2k+1}$
 
 $$

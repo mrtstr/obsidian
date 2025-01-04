@@ -4,7 +4,7 @@
 
 ### examples
 
-![[rolling mean smoothing#rolling mean smoothing]]
+![[weighted mean smoothing#rolling mean smoothing]]
 
 ![[exponential smoothing (EMA)#exponential smoothing (EMA)]]
 
@@ -43,7 +43,7 @@ $$
 
 
 ### kernel smoothing for time series
-- generalized [[rolling mean smoothing]] with a shifted and scaled [[kernel function (statistics)]] $K: [-1,1] \to [0, \infty)$ for weighting the samples
+- generalized [[weighted mean smoothing]] with a shifted and scaled [[kernel function (statistics)]] $K: [-1,1] \to [0, \infty)$ for weighting the samples
 
 
 $$

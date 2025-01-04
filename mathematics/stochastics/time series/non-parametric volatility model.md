@@ -137,7 +137,7 @@ $$
 
 ![[kernel smoothing for time series#kernel smoothing for time series]]
 
-![[rolling mean smoothing#rolling mean smoothing]]
+![[weighted mean smoothing#rolling mean smoothing]]
 
 ![[kernel function (statistics)#kernel function (statistics)]]
 
@@ -881,7 +881,7 @@ K_h(u) = \frac{1}{h}K\left(\frac{u}{h}\right)
 $$
 
 ### kernel smoothing for time series
-- generalized [[rolling mean smoothing]] with a shifted and scaled [[kernel function (statistics)]] $K: [-1,1] \to [0, \infty)$ for weighting the samples
+- generalized [[weighted mean smoothing]] with a shifted and scaled [[kernel function (statistics)]] $K: [-1,1] \to [0, \infty)$ for weighting the samples
 - note the normalization $\frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{h}\right)}$ is necessary because $K$ is a continuous function and the [[time series]] is discrete
 
 $$
