@@ -7,9 +7,10 @@
 $$
 \begin{split}
 \hat X(u)
-&= \frac{1}{2q+1} \sum_{i=-q}^{q} X_\frac{\lfloor un \rfloor-j}{n}
+&= \frac{1}{2q+1} \sum_{i=-q}^{q} X_{\lfloor un \rfloor-j}
 \end{split}
 $$
+
 - when calculating the [[expectation]] we see that the maximum error depends on $\frac{q}{n}$ 
 	- a higher observation frequency i.e. a higher $n$ means that we have more observations around the point of interest $u$ which reduces the [[bias]]
 	- if we increase the window size $q$ we include more values that are further away from the point of interest $u$ which increases the [[bias]]
@@ -35,6 +36,7 @@ q(n) &\xrightarrow{n \to \infty} \infty \\
 \end{split}
 $$
 
+- this means we would have infinite close to the point of interest still infinite observations
 _______________
 
 ![[weighted mean smoothing#weighted mean smoothing]]
@@ -62,7 +64,7 @@ Back:
 $$
 \begin{split}
 \hat X(u)
-&= \frac{1}{2q+1} \sum_{i=-q}^{q} X_\frac{\lfloor un \rfloor-j}{n}
+&= \frac{1}{2q+1} \sum_{i=-q}^{q} X_{\lfloor un \rfloor-j}
 \end{split}
 $$
 
@@ -90,6 +92,8 @@ q(n) &\xrightarrow{n \to \infty} \infty \\
 \frac{q(n)}{n} &\xrightarrow{n \to \infty} 0 \\
 \end{split}
 $$
+
+- this means we would have infinite close to the point of interest still infinite observations
 
 _____________
 

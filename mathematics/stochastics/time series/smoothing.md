@@ -4,7 +4,7 @@
 
 ### examples
 
-![[weighted mean smoothing#rolling mean smoothing]]
+![[weighted mean smoothing#weighted mean smoothing]]
 
 ![[exponential smoothing (EMA)#exponential smoothing (EMA)]]
 
