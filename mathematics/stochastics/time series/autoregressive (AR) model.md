@@ -175,7 +175,29 @@ a_1
 \end{split}
 $$
 
+### the AR(1) model has no stationary solution
+- given the following $AR(1)$ model with $a_1>0$ and $e_t \sim \mathcal{N}(0, \sigma^2)$
+- there is not [[stationary process|stationary]] solution for $X_t$
 
+$$
+X_t = a_1 X_{t-1}  + e_t
+$$
+
+#### proof
+- by recursively insertion the equation into itself we get the following
+- by assuming [[stationary process|stationarity]] and calculating the [[variance]] we see that the variance is time-dependent and thus $X_t$ is not stationary
+
+$$
+\begin{split}
+X_t 
+&= a_1 X_{t-1}  + e_t \\
+&= a_1^t X_{0}  + \sum_{i=0}^{t-1} a_1^i e_{t-i} \\
+\mathbb{VAR}\left[X_t\right] 
+&= \mathbb{E}\left[\left(a_1^t X_{0}  + \sum_{i=0}^{t-1} a_1^i e_{t-i}\right)^2\right] \\
+&= a_1^{2t} \mathbb{E}\left[ X_{0}^2  \right] + \sum_{i=0}^{t-1}\sum_{j=0}^{t-1} a_1^i a_1^j\mathbb{E}\left[   e_{t-i}e_{t-j}\right]\\
+&= a_1^{2t} \mathbb{E}\left[ X_{0}^2  \right] + \sigma^2 \sum_{i=0}^{t-1} a_1^{2i}  \\
+\end{split}
+$$
 
 # ----------------------------
 ![[yule walker equation#yule walker equation]]
@@ -186,6 +208,75 @@ $$
 
 
 # Anki
+
+START
+Basic
+#### [[autoregressive (AR) model]]
+- proof that the $AR(1)$ model does not have a stationary solution
+
+Back: 
+
+### the AR(1) model has no stationary solution
+- given the following $AR(1)$ model with $a_1>0$ and $e_t \sim \mathcal{N}(0, \sigma^2)$
+- there is not [[stationary process|stationary]] solution for $X_t$
+
+$$
+X_t = a_1 X_{t-1}  + e_t
+$$
+
+#### proof
+- by recursively insertion the equation into itself we get the following
+- by assuming [[stationary process|stationarity]] and calculating the [[variance]] we see that the variance is time-dependent and thus $X_t$ is not stationary
+
+$$
+\begin{split}
+X_t 
+&= a_1 X_{t-1}  + e_t \\
+&= a_1^t X_{0}  + \sum_{i=0}^{t-1} a_1^i e_{t-i} \\
+\mathbb{VAR}\left[X_t\right] 
+&= \mathbb{E}\left[\left(a_1^t X_{0}  + \sum_{i=0}^{t-1} a_1^i e_{t-i}\right)^2\right] \\
+&= a_1^{2t} \mathbb{E}\left[ X_{0}^2  \right] + \sum_{i=0}^{t-1}\sum_{j=0}^{t-1} a_1^i a_1^j\mathbb{E}\left[   e_{t-i}e_{t-j}\right]\\
+&= a_1^{2t} \mathbb{E}\left[ X_{0}^2  \right] + \sigma^2 \sum_{i=0}^{t-1} a_1^{2i}  \\
+\end{split}
+$$
+
+
+
+_______
+### autoregressive (AR) model
+- The [[autoregressive (AR) model]] of order $p$ $AP(p)$ assumes the captures the linear releationship of the current value to the past p $p$ values
+- assumes an at least [[stationary process]]
+
+models the [[time series]]
+- with parameters $a_1, ..., a_p$
+- [[white noise]] $e$ (i.i.d. with $\mathbb{E}[e] =0$ and $\mathbb{VAR}[e_t] \in (0, \infty)$)
+- constant $\beta$ (sometimes assumed to be zero)
+$$
+X_t = \sum_{i=1}^p a_i X_{t-i} + \beta + e_t
+$$
+
+
+
+### weakly stationary process
+- a [[stochastic process]] whose [[expectation]], [[variance]] and [[covariance]] are not time-dependent
+- a [[stochastic process]] $\{X_t\}$ is weakly [[stationary process|stationary]] when $\mathbb{E}\left[X_t\right], \mathbb{VAR}\left[X_t\right], \mathbb{COVAR}\left[X_t, X_{t+h}\right]$ are time independent (the same for all $t$)
+- every starongly statanary process is also a (weakly) [[stationary process]]
+
+
+### white noise
+[[time series]] $(e_t, t \in \mathbb{Z})$ with 
+- zero mean $\mathbb{E}[e_t] = 0$  
+- [[correlation|uncorralated]] values $t \neq s \Rightarrow  \mathbb{COV}[e_t, e_s] = \mathbb{COR}[e_t, e_s] = 0$
+
+#### gaussian white noise
+- [[white noise]] with [[normal distribution|normal distributed]] values $e_t \sim \mathcal{N}(0, \sigma^2)$
+
+
+
+Tags: mathematics time_series WS2425
+<!--ID: 1736090396274-->
+END
+
 
 START
 Basic
