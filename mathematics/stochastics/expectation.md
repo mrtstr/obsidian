@@ -54,8 +54,26 @@ $$
 \end{split}
 $$
 
+### exception of the indicator function
+- given a [[random variable]] $X$ with a [[probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$
+- for every $A \in \mathcal{A}$ the following is true
 
-### existance of the [[expectation]]
+$$
+\begin{split}
+\mathbb{E}\left[\mathbb{I}[X \in A]\right] = \mathbb{P}\left[X \in A\right]
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\mathbb{I}[X \in A]\right] 
+&= \int_\Omega \mathbb{I}[X \in A]  \mathbb{P}\left[X = x\right] dx \\
+&= \int_{\{\omega \in \Omega: X(\omega) \in A \}}\mathbb{I}[X \in A]  \mathbb{P}\left[X = x\right] dx \\
+&= \mathbb{P}\left[X \in A\right] \\
+\end{split}
+$$
+
+### existence of the [[expectation]]
 The reason that the [[expectation]] fails to exist if both of the sums/integrals are
 infinite is that, in such cases, the sums/integrals in are not well-defined. The sum of an infinite series whose positive and negative terms both add to infinity either fails to converge or can be made to converge to many different values by rearranging the terms in different orders.
 
@@ -444,4 +462,49 @@ $$
 
 Tags: mathematics statistics
 <!--ID: 1717918464922-->
+END
+
+
+
+
+# Anki
+
+START
+Basic
+equivalence between [[expectation]] and [[probability density function (PDF)]] with proof
+
+Back: 
+### exception of the indicator function
+- given a [[random variable]] $X$ with a [[probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$
+- for every $A \in \mathcal{A}$ the following is true
+
+$$
+\begin{split}
+\mathbb{E}\left[\mathbb{I}[X \in A]\right] = \mathbb{P}\left[X \in A\right]
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\mathbb{I}[X \in A]\right] 
+&= \int_\Omega \mathbb{I}[X \in A]  \mathbb{P}\left[X = x\right] dx \\
+&= \int_{\{\omega \in \Omega: X(\omega) \in A \}}\mathbb{I}[X \in A]  \mathbb{P}\left[X = x\right] dx \\
+&= \mathbb{P}\left[X \in A\right] \\
+\end{split}
+$$
+
+___________________
+
+### [[expectation]] of [[functions of random variables]]
+
+$$
+\mathbb{E}[g(X)]=\int\limits_{-\infty}^\infty g(x) \cdot f_X(x)dx
+$$
+$$
+\mathbb{E}[g(X, Y)]=\int\limits_\infty^\infty \int\limits_\infty^\infty g(x,y) \cdot f_{XY}(x,y)dx dy
+$$
+
+
+Tags: mathematics time_series WS2425
+
 END
