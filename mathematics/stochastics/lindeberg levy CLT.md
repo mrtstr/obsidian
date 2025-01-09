@@ -17,7 +17,7 @@ TODO add proof
 
 $$
 \begin{split}
-Y_n = \frac{1}{\sigma} \frac{1}{\sqrt{n}} \sum_{k \in [n]} X_k
+Y_n = \frac{\sqrt{n}}{\sigma}  \sum_{k \in [n]} X_k
 \end{split}
 $$
 
@@ -25,10 +25,8 @@ $$
 \begin{split}
 \lim_{n \to \infty} F_Y(y) 
 &= F\left(Y \leq y \right) \\
-&= F\left(\frac{1}{\sigma} \frac{1}{\sqrt{n}} \sum_{k \in [n]} X_k \leq y \right) \\
-&= F\left(\frac{1}{\sigma} \frac{1}{\sqrt{n}} \frac{1}{n} \sum_{k \in [n]} X_k \leq \frac{y}{\sqrt{n}} \right) \\
-&= F\left(\frac{1}{\sigma} \frac{1}{\sqrt{n}} \hat X_n \leq \frac{y}{n} \right) \\
-&= F\left(\frac{1}{\sigma} \sqrt{n} \frac{\sqrt{n}}{\sqrt{n}} \hat X_n \leq y \frac{n}{n} \right) \\
+&= F\left(\frac{\sqrt{n}}{\sigma}  \sum_{k \in [n]} X_k \leq y \right) \\
+
 &= F\left(\frac{\sqrt{n}}{\sigma}   (\hat X_n - \mu) \leq y  \right) \\
 &\sim \mathcal{N}(0,1)\\
 \end{split}
@@ -108,15 +106,12 @@ $$
 
 Back: 
 
-
 $$
 \begin{split}
 \lim_{n \to \infty} F_Y(y) 
 &= F\left(Y \leq y \right) \\
-&= F\left(\frac{1}{\sigma} \frac{1}{\sqrt{n}} \sum_{k \in [n]} X_k \leq y \right) \\
-&= F\left(\frac{1}{\sigma} \frac{1}{\sqrt{n}} \frac{1}{n} \sum_{k \in [n]} X_k \leq \frac{y}{\sqrt{n}} \right) \\
-&= F\left(\frac{1}{\sigma} \frac{1}{\sqrt{n}} \hat X_n \leq \frac{y}{n} \right) \\
-&= F\left(\frac{1}{\sigma} \sqrt{n} \frac{\sqrt{n}}{\sqrt{n}} \hat X_n \leq y \frac{n}{n} \right) \\
+&= F\left(\frac{\sqrt{n}}{\sigma}  \sum_{k \in [n]} X_k \leq y \right) \\
+
 &= F\left(\frac{\sqrt{n}}{\sigma}   (\hat X_n - \mu) \leq y  \right) \\
 &\sim \mathcal{N}(0,1)\\
 \end{split}

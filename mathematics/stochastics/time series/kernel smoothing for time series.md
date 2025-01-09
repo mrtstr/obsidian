@@ -4,14 +4,14 @@
 - note that $\frac{t-t_i}{n}$ and $\frac{t_i}{n}-u$ is always inside $[-1, 1]$
 
 $$
-\hat X_t=\frac{1}{nh} \frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right)
+\hat X_t=\frac{1}{h} \frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right)
 $$
 
 
 - depending on $u \in [0,1]$ where 0 is the beginning of the observed time interval and $1$ is the end
 
 $$
-\hat X(u)=\frac{1}{nh} \frac{1}{\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right)
+\hat X(u)=\frac{1}{h} \frac{1}{\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right)
 $$
 
 
@@ -40,21 +40,21 @@ Back:
 - note that $\frac{t-t_i}{n}$ and $\frac{t_i}{n}-u$ is always inside $[-1, 1]$
 
 $$
-\hat X_t=\frac{1}{nh} \frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right)
+\hat X_t=\frac{1}{h} \frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right)
 $$
 
 
 - depending on $u \in [0,1]$ where 0 is the beginning of the observed time interval and $1$ is the end
 
 $$
-\hat X(u)=\frac{1}{nh} \frac{1}{\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right)
+\hat X(u)=\frac{1}{h} \frac{1}{\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right)
 $$
 
 
 ____________________
 
 ### kernel function (statistics)
-- symmetric [[probability density function (PDF)]] or [[probability mass function (PMF)]] $K$ that is centered around zero
+- [[probability density function (PDF)]] or [[probability mass function (PMF)]] $K$ that is often centered around zero and symmetric
 
 $$
 \begin{split}

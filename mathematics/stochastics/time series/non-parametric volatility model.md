@@ -864,7 +864,7 @@ $$
 ___________
 
 ### kernel function (statistics)
-- symmetric [[probability density function (PDF)]] or [[probability mass function (PMF)]] $K$ that is centered around zero
+- [[probability density function (PDF)]] or [[probability mass function (PMF)]] $K$ that is often centered around zero and symmetric
 
 $$
 \begin{split}
