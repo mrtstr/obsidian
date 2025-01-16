@@ -71,7 +71,7 @@ $$
 
 
 ### $F(x + y) = F(x) + \mathcal{P}((x, x+y])$
-- it followns directry from the properties of [[probability measure]] and the fact that $F(x) = \mathcal{P}((\infty, x])$ has [[probability measure]] on $(\mathbb{R}, \mathcal{B}(\mathbb{R}))$ 
+- it follows directly from the properties of [[probability measure]] and the fact that $F(x) = \mathcal{P}((\infty, x])$ has [[probability measure]] on $(\mathbb{R}, \mathcal{B}(\mathbb{R}))$ 
 
 $$
 \begin{split}
