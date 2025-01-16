@@ -119,7 +119,7 @@ $$
 |\langle x , y \rangle| \leq || x || \cdot || y ||
 $$
 
-Tags: mathematics statistics
+Tags: mathematics statistics WS2425
 <!--ID: 1737021016313-->
 END
 
