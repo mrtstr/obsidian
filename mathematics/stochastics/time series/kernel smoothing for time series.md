@@ -14,7 +14,6 @@ $$
 \hat X(u)=\frac{1}{h} \frac{1}{\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right)
 $$
 
-
 # -----------------
 
 ![[weighted mean smoothing#weighted mean smoothing]]

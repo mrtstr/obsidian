@@ -1,5 +1,5 @@
-### smooting
-- methods for extracting a underlaying patter from a [[time series]] by removing [[white noise|noise]]
+### smoothing
+- methods for extracting a underlying patter from a [[time series]] by removing [[white noise|noise]]
 - can be interpreted as a [[trend]] [[statistical estimator|estimator]]
 
 ### examples
