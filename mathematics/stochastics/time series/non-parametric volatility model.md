@@ -885,7 +885,7 @@ $$
 - note the normalization $\frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{h}\right)}$ is necessary because $K$ is a continuous function and the [[time series]] is discrete
 
 $$
-\hat X_t=\frac{1}{nh} \frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{h}\right)
+\hat X_t=\frac{1}{h} \frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right)
 $$
 
 #### rolling mean smoothing

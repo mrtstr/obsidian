@@ -221,7 +221,7 @@ END
 START
 Basic
 given $X_1, ..., X_n \sim \mathcal{N}(\mu = \vartheta, \sigma^2)$ i.i.d with a known $\sigma^2$
-- what is the upper bound for estimators for $\vartheta$ 
+- what is the upper bound for the [[mean square error]] for estimators for $\vartheta$ 
 
 Back: 
 - using the [[cramer rao bound]] we just have to calculate the [[fisher information]] for the model to define an upper bound
