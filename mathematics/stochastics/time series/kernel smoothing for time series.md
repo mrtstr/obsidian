@@ -6,7 +6,7 @@ $$
 \begin{split}
 \hat X_t
 &= \frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right) \\
-&=\frac{1}{nh}  \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right) + \mathcal{O}\left(\frac{1}{n}\right) \\
+&=\frac{1}{nh}  \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right) + \mathcal{O}\left(\frac{1}{nh}\right) \\
 \end{split}
 $$
 
@@ -17,7 +17,7 @@ $$
 \begin{split}
 \hat X(u)
 &= \frac{1}{\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
-&=\frac{1}{nh}  \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) + \mathcal{O}\left(\frac{1}{n}\right) \\
+&=\frac{1}{nh}  \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) + \mathcal{O}\left(\frac{1}{nh}\right) \\
 \end{split}
 $$
 
@@ -31,7 +31,7 @@ $$
 =&\frac{1}{\frac{1}{n}\sum_{i=1}^n  K_h\left(\frac{t_i}{n}-u\right)} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
 =&\frac{1}{\frac{1}{n}\sum_{i=1}^n  K_h\left(\frac{t_i}{n}-u\right)} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
 =&\frac{1}{\int K_h\left(t-u\right) dt} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
-=& \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) + \mathcal{O}\left(\frac{1}{n}\right) \\
+=& \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) + \mathcal{O}\left(\frac{1}{nh}\right) \\
 \end{split}
 $$
 
@@ -88,7 +88,6 @@ $$
 - the normalization $\frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)}$ is necessary because $K$ is a continuous function and the [[time series]] is discrete but for sufficiently large $n$ the normalization term is a [[riemann sum]] that approximates the integral of the [[kernel]] which is one
 
 
-
 $$
 \begin{split}
 &\frac{1}{\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
@@ -96,11 +95,9 @@ $$
 =&\frac{1}{\frac{1}{n}\sum_{i=1}^n  K_h\left(\frac{t_i}{n}-u\right)} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
 =&\frac{1}{\frac{1}{n}\sum_{i=1}^n  K_h\left(\frac{t_i}{n}-u\right)} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
 =&\frac{1}{\int K_h\left(t-u\right) dt} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
-=& \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) + \mathcal{O}\left(\frac{1}{n}\right) \\
+=& \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) + \mathcal{O}\left(\frac{1}{nh}\right) \\
 \end{split}
 $$
-
-
 
 ____________________
 
@@ -145,6 +142,7 @@ $$
 TODO add proof
 
 Tags: mathematics time_series WS2425
+<!--ID: 1737394997651-->
 END
 
 START
@@ -180,7 +178,6 @@ $$
 - the normalization $\frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)}$ is necessary because $K$ is a continuous function and the [[time series]] is discrete but for sufficiently large $n$ the normalization term is a [[riemann sum]] that approximates the integral of the [[kernel]] which is one
 
 
-
 $$
 \begin{split}
 &\frac{1}{\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
@@ -188,10 +185,9 @@ $$
 =&\frac{1}{\frac{1}{n}\sum_{i=1}^n  K_h\left(\frac{t_i}{n}-u\right)} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
 =&\frac{1}{\frac{1}{n}\sum_{i=1}^n  K_h\left(\frac{t_i}{n}-u\right)} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
 =&\frac{1}{\int K_h\left(t-u\right) dt} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
-=& \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) + \mathcal{O}\left(\frac{1}{n}\right) \\
+=& \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) + \mathcal{O}\left(\frac{1}{nh}\right) \\
 \end{split}
 $$
-
 
 
 ____________________

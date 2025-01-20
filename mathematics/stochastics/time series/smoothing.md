@@ -6,7 +6,7 @@
 
 ![[weighted mean smoothing for time series#weighted mean smoothing]]
 
-![[exponential smoothing (EMA)#exponential smoothing (EMA)]]
+![[exponential smoothing for time series#exponential smoothing (EMA)]]
 
 ![[kernel smoothing for time series#kernel smoothing for time series]]
 

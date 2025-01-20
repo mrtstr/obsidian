@@ -11,7 +11,7 @@ $$
 \hat m_t = \sum_{i=1}^k \theta_i X_{t-i}
 $$
 
-- for example [[mean smoothing for time series]] and [[kernel smoothing for time series]] use this approach
+- for example [[mean smoothing for time series]] and [[kernel smoothing for time series]] and use this approach
 # ---------------
 
 ![[mean smoothing for time series#mean smoothing for time series]]
@@ -164,4 +164,5 @@ $$
 TODO add proof
 
 Tags: mathematics time_series WS2425
+<!--ID: 1737394997648-->
 END
