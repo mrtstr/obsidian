@@ -1,4 +1,4 @@
-### the base model
+## the base model
 - given the [[geometric brownian motion (GBM)]] $P_t$ with $\alpha = \mu - \frac{\sigma^2}{2}$
 
 $$
@@ -95,7 +95,7 @@ $$
 &= \frac{1}{T} \sum_{t=1}^{nT} X_{t,n}^2
 \end{split}
 $$
-### time dependent parameters
+## time dependent volatility  model
 
 - assume $\alpha=0$ and is a function $\sigma:[0,1] \to [0, \infty)$ and $t=1,2,...,n$
 - note: we don't assume that $e_t$ is [[normal distribution|normal distributed]]
@@ -123,21 +123,36 @@ $$
 
 #### kernel smoothing
 - using [[kernel smoothing for time series]] to estimate a time depended implied [[volatility]]
+- note this approximation can be done because for sufficiently large $n$ the normalization term is a [[riemann sum]] which approximates the [[integral]] of the [[kernel]] which is normalized
 
 $$
 \begin{split}
 \hat\sigma^2(u)
-&= \frac{n}{nh} \cdot \frac{1}{\sum_{i=1}^{n}   K\left(\frac{\frac{t}{n} - u}{h}\right)} \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right) \\
-&= \frac{1}{h} \frac{1}{\sum_{i=1}^{n}   K\left(\frac{\frac{t}{n} - u}{h}\right)} \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right)
+&= \frac{n}{nh}  \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right) \\
+&= \frac{1}{h}  \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right)
+\end{split}
+$$
+### error
+
+$$
+\begin{split}
+\hat\sigma^2(u)
+&= \sigma^2(u) + \mathcal{O}\left(\frac{1}{\sqrt{nh}}\right) + \mathcal{O}\left(h^2\right) \\
 \end{split}
 $$
 
-
+$$
+\begin{split}
+\hat\sigma^2(u)
+&= \frac{n}{nh}  \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right) \\
+&= \frac{1}{h}  \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right)
+\end{split}
+$$
 # ---------------------
 
 ![[kernel smoothing for time series#kernel smoothing for time series]]
 
-![[weighted mean smoothing#rolling mean smoothing]]
+![[weighted mean smoothing for time series#rolling mean smoothing]]
 
 ![[kernel function (statistics)#kernel function (statistics)]]
 
@@ -290,18 +305,59 @@ $$
 
 #### kernel smoothing
 - using [[kernel smoothing for time series]] to estimate a time depended implied [[volatility]]
+- note this approximation can be done because for sufficiently large $n$ the normalization term is a [[riemann sum]] which approximates the [[integral]] of the [[kernel]] which is normalized
 
 $$
 \begin{split}
 \hat\sigma^2(u)
-&= \frac{n}{nh} \cdot \frac{1}{\sum_{i=1}^{n}   K\left(\frac{\frac{t}{n} - u}{h}\right)} \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right) \\
-&= \frac{1}{h} \frac{1}{\sum_{i=1}^{n}   K\left(\frac{\frac{t}{n} - u}{h}\right)} \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right)
+&= \frac{n}{nh}  \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right) \\
+&= \frac{1}{h}  \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right)
 \end{split}
 $$
 
 
 
 ___________
+
+### kernel smoothing for time series
+- generalized [[weighted mean smoothing for time series]] with a shifted and scaled [[kernel function (statistics)]] $K: [-1,1] \to [0, \infty)$ for weighting the samples
+- note that $\frac{t-t_i}{n}$ and $\frac{t_i}{n}-u$ is always inside $[-1, 1]$
+
+$$
+\begin{split}
+\hat X_t
+&= \frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right) \\
+&=\frac{1}{nh}  \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right) + \mathcal{O}\left(\frac{1}{n}\right) \\
+\end{split}
+$$
+
+
+- depending on $u \in [0,1]$ where 0 is the beginning of the observed time interval and $1$ is the end
+
+$$
+\begin{split}
+\hat X(u)
+&= \frac{1}{\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
+&=\frac{1}{nh}  \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) + \mathcal{O}\left(\frac{1}{n}\right) \\
+\end{split}
+$$
+
+- the normalization $\frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)}$ is necessary because $K$ is a continuous function and the [[time series]] is discrete but for sufficiently large $n$ the normalization term is a [[riemann sum]] that approximates the integral of the [[kernel]] which is one
+
+
+$$
+\begin{split}
+&\frac{1}{\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
+=&\frac{1}{\frac{1}{nh}\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
+=&\frac{1}{\frac{1}{n}\sum_{i=1}^n  K_h\left(\frac{t_i}{n}-u\right)} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
+=&\frac{1}{\frac{1}{n}\sum_{i=1}^n  K_h\left(\frac{t_i}{n}-u\right)} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
+=&\frac{1}{\int K_h\left(t-u\right) dt} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
+=& \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) + \mathcal{O}\left(\frac{1}{n}\right) \\
+\end{split}
+$$
+
+
+
 ### geometric brownian motion
 - [[geometric brownian motion (GBM)]] is a [[stochastic process]] that can be used to describe the evolution of financial asset prices in a random but predictable manner
 - $P_t$ is a [[geometric brownian motion (GBM)]] with the [[wiener process]] $W_t$ the [[drift]]  $\mu$ (return rate) and the [[volatility]] (of the return) $\sigma$
@@ -850,15 +906,15 @@ $$
 
 #### kernel smoothing
 - using [[kernel smoothing for time series]] to estimate a time depended implied [[volatility]]
+- note this approximation can be done because for sufficiently large $n$ the normalization term is a [[riemann sum]] which approximates the [[integral]] of the [[kernel]] which is normalized
 
 $$
 \begin{split}
 \hat\sigma^2(u)
-&= \frac{n}{nh} \cdot \frac{1}{\sum_{i=1}^{n}   K\left(\frac{\frac{t}{n} - u}{h}\right)} \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right) \\
-&= \frac{1}{h} \frac{1}{\sum_{i=1}^{n}   K\left(\frac{\frac{t}{n} - u}{h}\right)} \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right)
+&= \frac{n}{nh}  \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right) \\
+&= \frac{1}{h}  \sum_{i=1}^{n} X_{t,n}^2 \cdot K\left(\frac{\frac{t}{n} - u}{h}\right)
 \end{split}
 $$
-
 
 
 ___________
@@ -880,12 +936,33 @@ $$
 K_h(u) = \frac{1}{h}K\left(\frac{u}{h}\right)
 $$
 
-### kernel smoothing for time series
-- generalized [[weighted mean smoothing]] with a shifted and scaled [[kernel function (statistics)]] $K: [-1,1] \to [0, \infty)$ for weighting the samples
-- note the normalization $\frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{h}\right)}$ is necessary because $K$ is a continuous function and the [[time series]] is discrete
+#### kernel smoothing for time series
+- generalized [[weighted mean smoothing for time series]] with a shifted and scaled [[kernel function (statistics)]] $K: [-1,1] \to [0, \infty)$ for weighting the samples
+- note that $\frac{t-t_i}{n}$ and $\frac{t_i}{n}-u$ is always inside $[-1, 1]$
 
 $$
-\hat X_t=\frac{1}{h} \frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right)
+\begin{split}
+\hat X_t
+&=\frac{1}{h} \frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right) \\
+&=\frac{1}{h}  \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right) + \mathcal{O}\left(\frac{1}{n}\right) \\
+\end{split}
+$$
+
+
+- depending on $u \in [0,1]$ where 0 is the beginning of the observed time interval and $1$ is the end
+
+$$
+\begin{split}
+\hat X(u)
+&=\frac{1}{h} \frac{1}{\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
+&=\frac{1}{h}  \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) + \mathcal{O}\left(\frac{1}{n}\right) \\
+\end{split}
+$$
+
+- the normalization $\frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)}$ is necessary because $K$ is a continuous function and the [[time series]] is discrete but for sufficiently large $n$ the normalization term is a [[riemann sum]] that approximates the integral of the [[kernel]] which is one
+
+$$
+\frac{1}{hn} \sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right) = \frac{1}{h}\int_{-1}^1  K\left(\frac{t}{h}\right) dt = 1
 $$
 
 #### rolling mean smoothing
@@ -938,6 +1015,43 @@ X_t
 &= \ln\left(\left(\frac{P_t}{P_{t-1}}  -1 \right) +1 \right)  \\
 &\approx \ln\left(\exp\left(\frac{P_t}{P_{t-1}}  -1 \right) \right) \quad \text{since }e^\alpha \approx 1+ \alpha  \\
 &= \frac{P_t}{P_{t-1}} - 1 \\
+\end{split}
+$$
+
+### kernel smoothing for time series
+- generalized [[weighted mean smoothing for time series]] with a shifted and scaled [[kernel function (statistics)]] $K: [-1,1] \to [0, \infty)$ for weighting the samples
+- note that $\frac{t-t_i}{n}$ and $\frac{t_i}{n}-u$ is always inside $[-1, 1]$
+
+$$
+\begin{split}
+\hat X_t
+&= \frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right) \\
+&=\frac{1}{nh}  \sum_{i=1}^n X_{t_i} K\left(\frac{t-t_i}{nh}\right) + \mathcal{O}\left(\frac{1}{n}\right) \\
+\end{split}
+$$
+
+
+- depending on $u \in [0,1]$ where 0 is the beginning of the observed time interval and $1$ is the end
+
+$$
+\begin{split}
+\hat X(u)
+&= \frac{1}{\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
+&=\frac{1}{nh}  \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) + \mathcal{O}\left(\frac{1}{n}\right) \\
+\end{split}
+$$
+
+- the normalization $\frac{1}{\sum_{i=1}^n  K\left(\frac{t-t_i}{nh}\right)}$ is necessary because $K$ is a continuous function and the [[time series]] is discrete but for sufficiently large $n$ the normalization term is a [[riemann sum]] that approximates the integral of the [[kernel]] which is one
+
+
+$$
+\begin{split}
+&\frac{1}{\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
+=&\frac{1}{\frac{1}{nh}\sum_{i=1}^n  K\left(\frac{\frac{t_i}{n}-u}{h}\right)} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
+=&\frac{1}{\frac{1}{n}\sum_{i=1}^n  K_h\left(\frac{t_i}{n}-u\right)} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
+=&\frac{1}{\frac{1}{n}\sum_{i=1}^n  K_h\left(\frac{t_i}{n}-u\right)} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
+=&\frac{1}{\int K_h\left(t-u\right) dt} \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) \\
+=& \frac{1}{nh} \sum_{i=1}^n X_{t_i} K\left(\frac{\frac{t_i}{n}-u}{h}\right) + \mathcal{O}\left(\frac{1}{n}\right) \\
 \end{split}
 $$
 

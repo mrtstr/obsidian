@@ -1,4 +1,4 @@
-### weighted mean estimator for time series
+### mean smoothing for time series
 - given the [[time series]] $X_1, ..., X_n$ that are taken during one time interval
 - we are looking for a continuous [[statistical estimator]] $\hat X(u)$ during the time interval where $u=0$ is the beginning of the interval and $u=1$ is the end
 
@@ -37,16 +37,18 @@ q(n) &\xrightarrow{n \to \infty} \infty \\
 $$
 
 - this means we would have infinite close to the point of interest still infinite observations
-_______________
 
-![[weighted mean smoothing#weighted mean smoothing]]
+# ----------------
+
+
+![[weighted mean smoothing for time series#weighted mean smoothing]]
 
 
 # Anki
 
 START
 Basic
-[[weighted mean estimator for time series]]
+[[mean smoothing for time series]]
 - given the [[time series]] $X_1, ..., X_n$ that are taken during one time interval
 - we are looking for a continuous [[statistical estimator]] $\hat X(u)$ during the time interval where $u=0$ is the beginning of the interval and $u=1$ is the end
 - with [[expectation]]
@@ -55,7 +57,7 @@ asymptotically optimal window size $q$
 - explanation but no formal proof
 
 Back: 
-### weighted mean estimator for time series
+### mean smoothing for time series
 - given the [[time series]] $X_1, ..., X_n$ that are taken during one time interval
 - we are looking for a continuous [[statistical estimator]] $\hat X(u)$ during the time interval where $u=0$ is the beginning of the interval and $u=1$ is the end
 

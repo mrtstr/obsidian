@@ -1,5 +1,5 @@
 ### geometric series
-geometric [[series]] 
+geometric [[series]] is converging for $0< q < 1$
 
 $$
 \sum_{k=1}^\infty q^k = \frac{1}{1-q}
@@ -15,7 +15,7 @@ Basic
 
 Back: 
 ### geometric series
-geometric [[series]] 
+geometric [[series]] is converging for $0< q < 1$
 
 $$
 \sum_{k=1}^\infty q^k = \frac{1}{1-q}
