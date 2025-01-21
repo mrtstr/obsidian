@@ -14,7 +14,8 @@ $$
 ### weakly stationary process
 - a [[stochastic process]] whose [[expectation]], [[variance]] and [[covariance]] are not time-dependent
 - a [[stochastic process]] $\{X_t\}$ is weakly [[stationary process|stationary]] when $\mathbb{E}\left[X_t\right], \mathbb{VAR}\left[X_t\right], \mathbb{COVAR}\left[X_t, X_{t+h}\right]$ are time independent (the same for all $t$)
-- every starongly statanary process is also a (weakly) [[stationary process]]
+- the [[variance]] $\mathbb{VAR}\left[X_t\right]< \infty$ has to be finite
+- every strongly stationary process is also a (weakly) [[stationary process]]
 
 
 # Anki
@@ -44,9 +45,11 @@ START
 Basic
 Definition (weakly) stationary [[stochastic process]]
 Back: 
+### weakly stationary process
 - a [[stochastic process]] whose [[expectation]], [[variance]] and [[covariance]] are not time-dependent
 - a [[stochastic process]] $\{X_t\}$ is weakly [[stationary process|stationary]] when $\mathbb{E}\left[X_t\right], \mathbb{VAR}\left[X_t\right], \mathbb{COVAR}\left[X_t, X_{t+h}\right]$ are time independent (the same for all $t$)
-- every starongly statanary process is also a (weakly) [[stationary process]]
+- the [[variance]] $\mathbb{VAR}\left[X_t\right]< \infty$ has to be finite
+- every strongly stationary process is also a (weakly) [[stationary process]]
 
 Tags: mathematics time_series WS2425
 <!--ID: 1705250198085-->
