@@ -5,12 +5,129 @@
 $$
 \begin{split}
  X_t&= \sigma_t \cdot e_t \\
-\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-1} + \sum_{j=1}^{q} b_i \sigma^2_{t-1}
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
 \end{split}
 $$
 
 - that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
 	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+### the GARCH model is white noise
+- the [[GARCH model]] is [[white noise]] but not [[stochastic independent]] [[white noise]] and thus also not identical distributed because then all moments like $X_t^2$ had to be independent which they are not
+
+$$
+\begin{split}
+\mathbb{E}\left[ X_t\right] 
+&= \mathbb{E}\left[ \sigma_t \cdot e_t\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t \cdot e_t | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t \mathbb{E}\left[ e_t | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t \cdot 0\right] = 0\\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{VAR}\left[ X_t\right] 
+&= \mathbb{E}\left[ X_t^2\right] \\
+&= \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 \right]\right] \\
+&= \mathbb{E}\left[\sigma_t \right] \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+\mathbb{COV}\left[ X_t, X_{t+h}\right] 
+&= \mathbb{E}\left[ X_t X_{t+h}\right] \\
+&= \mathbb{E}\left[ \sigma_t e_t \sigma_{t+h}  e_{t+h}\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t e_t \sigma_{t+h}  e_{t+h} | \mathcal{F}_{t+h-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t e_t \sigma_{t+h} \mathbb{E}\left[   e_{t+h} | \mathcal{F}_{t+h-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t e_t \sigma_{t+h} \mathbb{E}\left[   e_{t+h} \right]\right] = 0 \\
+\end{split}
+$$
+
+### squared GARCH model is an ARMA model
+- the squared [[GARCH model]] $X^2_t$ is similar to a [[autoregressive moving average (ARMA) model]] with $a_i'= a_i + b_i$ and $b_j'=b_j$ (assuming $a_i=0$ for $i>p$ and $b_j=0$ for $j>q$)
+- this makes sense because we care using an [[autoregressive moving average (ARMA) model]] to model the [[variance]] which is closely related to $X^2_t$ 
+
+$$
+\begin{split}
+\eta_t 
+&= \sigma^2_t \left(e^2_t-1\right) \\
+&= e^2_t \sigma^2_t - \sigma^2_t\\
+&= X^2_t - \sigma^2_t\\
+\Rightarrow \sigma^2_t  &= X^2_t - \eta_t 
+\end{split}
+$$
+
+$$
+\begin{split}
+X^2_t 
+&= \sigma^2_t e^2_t \\
+&= \sigma^2_t e^2_t + \sigma^2_t - \sigma^2_t \\
+&= \sigma^2_t + \underbrace{ \sigma^2_t \left(e^2_t-1\right)}_{\eta_t}  \\
+&= a_0 + \sum_{i=1}^{p} a_i X^2_{t-i} + \sum_{j=1}^{q} b_i \sigma^2_{t-j} e^2_t + \eta_t\\
+&= a_0 + \sum_{i=1}^{p} a_i X^2_{t-i} + \sum_{j=1}^{q} b_i \left( X^2_{t-j} - \eta_{t-j}\right) e^2_t + \eta_t\\
+&= a_0 + \sum_{i=1}^{\max(p,q)} (a_i+b_i) X^2_{t-i} - \sum_{j=1}^{q} b_i \eta_{t-j}  e^2_t + \eta_t\\
+\end{split}
+$$
+
+- $\eta_t = \sigma^2_t \left(e^2_t-1\right)$ is [[white noise]]
+
+$$
+\begin{split}
+\mathbb{E}\left[\eta_t\right] 
+&= \mathbb{E}\left[\mathbb{E}\left[\eta_t | \mathcal{F_{t-1}}\right]\right]  \\
+&= \mathbb{E}\left[\mathbb{E}\left[\sigma^2_t \left(e^2_t-1\right) | \mathcal{F_{t-1}}\right]\right]  \\
+&= \mathbb{E}\left[ \sigma^2_t \mathbb{E}\left[ \left(e^2_t-1\right) | \mathcal{F_{t-1}}\right]\right]  \\
+&= \mathbb{E}\left[ \sigma^2_t \mathbb{E}\left[ e^2_t-1 \right]\right]  \\
+&= \mathbb{E}\left[ \sigma^2_t \cdot 0\right] = 0 \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\eta_t\eta_s\right] 
+&= \mathbb{E}\left[\mathbb{E}\left[\eta_t \eta_s | \mathcal{F_{s-1}}\right]\right]  \\
+&= \mathbb{E}\left[ \eta_t \mathbb{E}\left[ \eta_t | \mathcal{F_{t-1}}\right]\right]  \\
+&= \mathbb{E}\left[ \eta_t \cdot 0\right] = 0 \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\eta_t^2\right] 
+&= \mathbb{E}\left[\sigma^4_t \left(e^2_t-1\right)^2 \right] \\
+&= \mathbb{E}\left[\sigma^4_t \right]  \mathbb{E}\left[ e^4_t-1 \right] \\
+\end{split}
+$$
+### existence and stationary of GARCH solutions
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+
+$$
+\sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
+$$
+
+- the solution is not unique
+
+### GARCH(1,1) model
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}
+\end{split}
+$$
+- has a unique and strictly stationary solutions if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$
+
+$$
+\sigma_t^2 = a_0\left(1 + \sum_{j=1}^\infty \prod_{i=1}^\infty \left(a\cdot e^2_{t-1} + b\right)\right)
+$$
 
 # ---------------
 ![[non-parametric volatility model#the base model]]
@@ -22,8 +139,9 @@ $$
 START
 Basic
 [[GARCH model]]
-- concept
-- definition + assumptions
+- when does a [[stationary process|stationary]] solution exist
+- does there always exists a solution and is it unique?
+
 Back: 
 ### GARCH model
 - the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
@@ -32,12 +150,289 @@ Back:
 $$
 \begin{split}
  X_t&= \sigma_t \cdot e_t \\
-\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-1} + \sum_{j=1}^{q} b_i \sigma^2_{t-1}
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
 \end{split}
 $$
 
 - that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
 	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+### existence and stationary of GARCH solutions
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+
+$$
+\sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
+$$
+
+- the solution is not unique
+
+Tags: mathematics time_series WS2425
+<!--ID: 1737474478123-->
+END
+
+START
+Basic
+[[GARCH model]]
+- proof that the  [[GARCH model]] $X_t$ is [[white noise]]
+- is it [[stochastic independent]]
+- is it i.i.d
+
+Back: 
+### GARCH model
+- the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
+\end{split}
+$$
+
+- that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
+	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+### the GARCH model is white noise
+- the [[GARCH model]] is [[white noise]] but not [[stochastic independent]] [[white noise]] and thus also not identical distributed because then all moments like $X_t^2$ had to be independent which they are not
+
+$$
+\begin{split}
+\mathbb{E}\left[ X_t\right] 
+&= \mathbb{E}\left[ \sigma_t \cdot e_t\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t \cdot e_t | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t \mathbb{E}\left[ e_t | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t \cdot 0\right] = 0\\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{VAR}\left[ X_t\right] 
+&= \mathbb{E}\left[ X_t^2\right] \\
+&= \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 \right]\right] \\
+&= \mathbb{E}\left[\sigma_t \right] \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+\mathbb{COV}\left[ X_t, X_{t+h}\right] 
+&= \mathbb{E}\left[ X_t X_{t+h}\right] \\
+&= \mathbb{E}\left[ \sigma_t e_t \sigma_{t+h}  e_{t+h}\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t e_t \sigma_{t+h}  e_{t+h} | \mathcal{F}_{t+h-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t e_t \sigma_{t+h} \mathbb{E}\left[   e_{t+h} | \mathcal{F}_{t+h-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t e_t \sigma_{t+h} \mathbb{E}\left[   e_{t+h} \right]\right] = 0 \\
+\end{split}
+$$
+
+
+Tags: mathematics time_series WS2425
+<!--ID: 1737474478126-->
+END
+
+START
+Basic
+[[GARCH model]]
+- proof that the squared [[GARCH model]] $X^2_t$ is similar to a [[autoregressive moving average (ARMA) model]] 
+
+Back: 
+### GARCH model
+- the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
+\end{split}
+$$
+
+- that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
+	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+
+### squared GARCH model is an ARMA model
+- the squared [[GARCH model]] $X^2_t$ is similar to a [[autoregressive moving average (ARMA) model]] with $a_i'= a_i + b_i$ and $b_j'=b_j$ (assuming $a_i=0$ for $i>p$ and $b_j=0$ for $j>q$)
+- this makes sense because we care using an [[autoregressive moving average (ARMA) model]] to model the [[variance]] which is closely related to $X^2_t$ 
+
+$$
+\begin{split}
+\eta_t 
+&= \sigma^2_t \left(e^2_t-1\right) \\
+&= e^2_t \sigma^2_t - \sigma^2_t\\
+&= X^2_t - \sigma^2_t\\
+\Rightarrow \sigma^2_t  &= X^2_t - \eta_t 
+\end{split}
+$$
+
+$$
+\begin{split}
+X^2_t 
+&= \sigma^2_t e^2_t \\
+&= \sigma^2_t e^2_t + \sigma^2_t - \sigma^2_t \\
+&= \sigma^2_t + \underbrace{ \sigma^2_t \left(e^2_t-1\right)}_{\eta_t}  \\
+&= a_0 + \sum_{i=1}^{p} a_i X^2_{t-i} + \sum_{j=1}^{q} b_i \sigma^2_{t-j} e^2_t + \eta_t\\
+&= a_0 + \sum_{i=1}^{p} a_i X^2_{t-i} + \sum_{j=1}^{q} b_i \left( X^2_{t-j} - \eta_{t-j}\right) e^2_t + \eta_t\\
+&= a_0 + \sum_{i=1}^{\max(p,q)} (a_i+b_i) X^2_{t-i} - \sum_{j=1}^{q} b_i \eta_{t-j}  e^2_t + \eta_t\\
+\end{split}
+$$
+
+- $\eta_t = \sigma^2_t \left(e^2_t-1\right)$ is [[white noise]]
+
+$$
+\begin{split}
+\mathbb{E}\left[\eta_t\right] 
+&= \mathbb{E}\left[\mathbb{E}\left[\eta_t | \mathcal{F_{t-1}}\right]\right]  \\
+&= \mathbb{E}\left[\mathbb{E}\left[\sigma^2_t \left(e^2_t-1\right) | \mathcal{F_{t-1}}\right]\right]  \\
+&= \mathbb{E}\left[ \sigma^2_t \mathbb{E}\left[ \left(e^2_t-1\right) | \mathcal{F_{t-1}}\right]\right]  \\
+&= \mathbb{E}\left[ \sigma^2_t \mathbb{E}\left[ e^2_t-1 \right]\right]  \\
+&= \mathbb{E}\left[ \sigma^2_t \cdot 0\right] = 0 \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\eta_t\eta_s\right] 
+&= \mathbb{E}\left[\mathbb{E}\left[\eta_t \eta_s | \mathcal{F_{s-1}}\right]\right]  \\
+&= \mathbb{E}\left[ \eta_t \mathbb{E}\left[ \eta_t | \mathcal{F_{t-1}}\right]\right]  \\
+&= \mathbb{E}\left[ \eta_t \cdot 0\right] = 0 \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\eta_t^2\right] 
+&= \mathbb{E}\left[\sigma^4_t \left(e^2_t-1\right)^2 \right] \\
+&= \mathbb{E}\left[\sigma^4_t \right]  \mathbb{E}\left[ e^4_t-1 \right] \\
+\end{split}
+$$
+
+Tags: mathematics time_series WS2425
+<!--ID: 1737474478129-->
+END
+
+START
+Basic
+[[GARCH model]] summary
+- concept
+- definition + assumptions
+- properties of $X_t$ and $X_t^2$ without proof 
+Back: 
+### GARCH model
+- the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
+\end{split}
+$$
+
+- that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
+	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+### the GARCH model is white noise
+- the [[GARCH model]] is [[white noise]] but not [[stochastic independent]] [[white noise]] and thus also not identical distributed
+
+$$
+\begin{split}
+\mathbb{E}\left[ X_t\right] 
+&= \mathbb{E}\left[ \sigma_t \cdot e_t\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t \cdot e_t | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t \mathbb{E}\left[ e_t | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t \cdot 0\right] = 0\\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{VAR}\left[ X_t\right] 
+&= \mathbb{E}\left[ X_t^2\right] \\
+&= \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 \right]\right] \\
+&= \mathbb{E}\left[\sigma_t \right] \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+\mathbb{COV}\left[ X_t, X_{t+h}\right] 
+&= \mathbb{E}\left[ X_t X_{t+h}\right] \\
+&= \mathbb{E}\left[ \sigma_t e_t \sigma_{t+h}  e_{t+h}\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t e_t \sigma_{t+h}  e_{t+h} | \mathcal{F}_{t+h-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t e_t \sigma_{t+h} \mathbb{E}\left[   e_{t+h} | \mathcal{F}_{t+h-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t e_t \sigma_{t+h} \mathbb{E}\left[   e_{t+h} \right]\right] = 0 \\
+\end{split}
+$$
+
+### squared GARCH model is an ARMA model
+- the squared [[GARCH model]] $X^2_t$ is similar to a [[autoregressive moving average (ARMA) model]] with $a_i'= a_i + b_i$ and $b_j'=b_j$ (assuming $a_i=0$ for $i>p$ and $b_j=0$ for $j>q$)
+- this makes sense because we care using an [[autoregressive moving average (ARMA) model]] to model the [[variance]] which is closely related to $X^2_t$ 
+
+$$
+\begin{split}
+\eta_t 
+&= \sigma^2_t \left(e^2_t-1\right) \\
+&= e^2_t \sigma^2_t - \sigma^2_t\\
+&= X^2_t - \sigma^2_t\\
+\Rightarrow \sigma^2_t  &= X^2_t - \eta_t 
+\end{split}
+$$
+
+$$
+\begin{split}
+X^2_t 
+&= \sigma^2_t e^2_t \\
+&= \sigma^2_t e^2_t + \sigma^2_t - \sigma^2_t \\
+&= \sigma^2_t + \underbrace{ \sigma^2_t \left(e^2_t-1\right)}_{\eta_t}  \\
+&= a_0 + \sum_{i=1}^{p} a_i X^2_{t-i} + \sum_{j=1}^{q} b_i \sigma^2_{t-j} e^2_t + \eta_t\\
+&= a_0 + \sum_{i=1}^{p} a_i X^2_{t-i} + \sum_{j=1}^{q} b_i \left( X^2_{t-j} - \eta_{t-j}\right) e^2_t + \eta_t\\
+&= a_0 + \sum_{i=1}^{\max(p,q)} (a_i+b_i) X^2_{t-i} - \sum_{j=1}^{q} b_i \eta_{t-j}  e^2_t + \eta_t\\
+\end{split}
+$$
+
+- $\eta_t = \sigma^2_t \left(e^2_t-1\right)$ is [[white noise]]
+
+$$
+\begin{split}
+\mathbb{E}\left[\eta_t\right] 
+&= \mathbb{E}\left[\mathbb{E}\left[\eta_t | \mathcal{F_{t-1}}\right]\right]  \\
+&= \mathbb{E}\left[\mathbb{E}\left[\sigma^2_t \left(e^2_t-1\right) | \mathcal{F_{t-1}}\right]\right]  \\
+&= \mathbb{E}\left[ \sigma^2_t \mathbb{E}\left[ \left(e^2_t-1\right) | \mathcal{F_{t-1}}\right]\right]  \\
+&= \mathbb{E}\left[ \sigma^2_t \mathbb{E}\left[ e^2_t-1 \right]\right]  \\
+&= \mathbb{E}\left[ \sigma^2_t \cdot 0\right] = 0 \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\eta_t\eta_s\right] 
+&= \mathbb{E}\left[\mathbb{E}\left[\eta_t \eta_s | \mathcal{F_{s-1}}\right]\right]  \\
+&= \mathbb{E}\left[ \eta_t \mathbb{E}\left[ \eta_t | \mathcal{F_{t-1}}\right]\right]  \\
+&= \mathbb{E}\left[ \eta_t \cdot 0\right] = 0 \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\eta_t^2\right] 
+&= \mathbb{E}\left[\sigma^4_t \left(e^2_t-1\right)^2 \right] \\
+&= \mathbb{E}\left[\sigma^4_t \right]  \mathbb{E}\left[ e^4_t-1 \right] \\
+\end{split}
+$$
+
 
 _____________
 
