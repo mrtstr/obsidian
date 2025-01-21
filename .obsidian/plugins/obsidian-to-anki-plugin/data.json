@@ -1960,20 +1960,21 @@
     "mathematics/stochastics/time series/structural break.md": "363f535afc3c180eaaf6e033b4a95a0a",
     "mathematics/stochastics/time series/financial time series.md": "2164019667958f72e2ecffde570ff4ef",
     "mathematics/stochastics/time series/autoregressive (AR) model.md": "69d74779aed3755f96b383f58873c27e",
-    "mathematics/stochastics/time series/non-parametric volatility model.md": "cc501aa03e54f35d1cce3a6d35eaffc3",
+    "mathematics/stochastics/time series/non-parametric volatility model.md": "c51574888cd988a680626d5786cfba38",
     "mathematics/stochastics/time series/vl.md": "268ee91598bfa66c780dd96c547cd2b7",
     "mathematics/stochastics/kernel density estimator.md": "3d589cb18b65ddd2f781deb2bcf36721",
     "mathematics/stochastics/time series/exponential smoothing (EMA).md": "e465e9b1eca1b19be360f10424c2b3e7",
     "mathematics/stochastics/time series/rolling mean smoothing.md": "c77ed4c84fbf0252a9f953c1ad316a7e",
-    "mathematics/stochastics/time series/kernel smoothing for time series.md": "cd9016f8769381a20cda3803a44d1d03",
+    "mathematics/stochastics/time series/kernel smoothing for time series.md": "a76fb744d20f986a11e7f036bb0b1cc3",
     "mathematics/stochastics/time series/kernel function (statistics).md": "deaa812e82868b82aa88a7f9cf4ee583",
     "mathematics/basics/kernel function.md": "300e7c3b2653fdd811f2618df176afd0",
     "mathematics/stochastics/time series/weighted mean smoothing.md": "d5c8f16fce9c3b7e11f07cdd1ee567be",
     "mathematics/stochastics/time series/weighted mean estimator for time series.md": "1d1c977eb402d30b64677d57264cfda8",
-    "mathematics/stochastics/time series/exponential smoothing for time series.md": "86262364dd92427f0be788910832e0a9",
+    "mathematics/stochastics/time series/exponential smoothing for time series.md": "c11a367f621c672c4851a5c6a1579331",
     "mathematics/stochastics/time series/weighted mean smoothing for time series.md": "470f2f348529f9d5d2d06178126035a4",
     "mathematics/stochastics/time series/mean smoothing for time series.md": "408130d28a16489bc893c065b885135b",
-    "mathematics/basics/riemann sum.md": "64bef43987433f30d16b2350827dd7ae"
+    "mathematics/basics/riemann sum.md": "64bef43987433f30d16b2350827dd7ae",
+    "mathematics/stochastics/time series/GARCH model.md": "b87cb7a266271435e42aa807ca689288"
   },
   "fields_dict": {
     "Basic": [

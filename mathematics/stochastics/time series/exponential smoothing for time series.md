@@ -51,6 +51,55 @@ $$
 START
 Basic
 [[exponential smoothing for time series]]
+prove the following equality
+$$
+\begin{split}
+
+ \sum_{i=0}^\infty \alpha^i (1-\alpha) X_{t-i} =
+ (1-\alpha) X_t +\alpha m_{t-1} \\
+\end{split}
+$$
+
+Back: 
+### exponential smoothing for time series
+- [[smoothing]] method for [[time series]] that is only based on the past (asymmetric)
+- can be described as a [[kernel smoothing for time series]]
+
+$$
+\begin{split}
+\hat m_t 
+&= \sum_{i=0}^\infty w_i X_{t-i} \quad \text{ with } w_i = \alpha^i (1-\alpha) \\
+&= w_0 X_t + \sum_{i=1}^\infty w_i X_{t-i} \\
+&= w_0 X_t + \alpha \sum_{i=0}^\infty w_i X_{t-i-1} \\
+&= (1-\alpha) X_t +\alpha m_{t-1} \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\sum_{i=0}^\infty   \alpha^i (1-\alpha) 
+&= (1-\alpha) \sum_{i=0}^\infty   \alpha^i \\
+&=   \frac{1-\alpha }{1-\alpha } \\
+&=   1 \\
+\end{split}
+$$
+
+___________
+
+### geometric series
+geometric [[series]] 
+
+$$
+\sum_{k=1}^\infty q^k = \frac{1}{1-q}
+$$
+
+Tags: mathematics time_series WS2425
+<!--ID: 1737448608375-->
+END
+
+START
+Basic
+[[exponential smoothing for time series]]
 - closed form and recursive
 - proof that its normalized
 - relationship to [[kernel smoothing for time series]] (no proof)
