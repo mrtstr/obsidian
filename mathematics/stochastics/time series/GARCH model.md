@@ -1,4 +1,5 @@
-### GARCH model
+## GARCH model
+
 - the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
 - $e_t \sim (0,1)$ i.i.d
 - $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
@@ -106,13 +107,21 @@ $$
 \end{split}
 $$
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
 $$
+- in this case the [[variance]] is as follows
 
-- the solution is not unique
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \frac{a_0}{1-\sum_{i=1}^{p} a_i  - \sum_{j=1}^{q} b_j }
+$$
+- the given condition is not necessary for the existence of a strict stationary solution but in this case the [[variance]] does not exist and we have the following
+
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \infty
+$$
 
 ## GARCH(1,1) model
 - $e_t \sim (0,1)$ i.i.d
@@ -209,6 +218,22 @@ $$
 \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \Leftrightarrow a + b < 1
 $$
 
+$$
+\begin{split}
+\mathbb{E}\left[ X_t^2\right] 
+&= \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 \right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \right] \\
+&= \mathbb{E}\left[a_0 + a X_{t-1}^2 +  b \sigma^2_{t-1}\right] \\
+&= a_0 +a \mathbb{E}\left[  X_{t-1}^2 \right] + b \mathbb{E}\left[\sigma^2_{t-1}\right] \\
+&= a_0 +(a+b) \mathbb{E}\left[  X_{t-1}^2 \right]  \\
+\Rightarrow \mathbb{E}\left[ X_t^2\right]& \left(1 - (a+b)\right) = a_0 > 0 \\
+\Rightarrow a + b > &0
+\end{split}
+$$
+
 - this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
 - then only the condition for a strong but not weak stationary solution is true
 
@@ -217,6 +242,7 @@ $$
 $$
 
 - then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
+- for example for ARCH(1) $\mathbb{E}[\ln ae_1^2]<0 \rightarrow a<3.56$ which is much weaker than $a < 1$
 # ---------------
 ![[stationary process#stationary process]]
 
@@ -331,6 +357,22 @@ $$
 \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \Leftrightarrow a + b < 1
 $$
 
+$$
+\begin{split}
+\mathbb{E}\left[ X_t^2\right] 
+&= \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 \right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \right] \\
+&= \mathbb{E}\left[a_0 + a X_{t-1}^2 +  b \sigma^2_{t-1}\right] \\
+&= a_0 +a \mathbb{E}\left[  X_{t-1}^2 \right] + b \mathbb{E}\left[\sigma^2_{t-1}\right] \\
+&= a_0 +(a+b) \mathbb{E}\left[  X_{t-1}^2 \right]  \\
+\Rightarrow \mathbb{E}\left[ X_t^2\right]& \left(1 - (a+b)\right) = a_0 > 0 \\
+\Rightarrow a + b > &0
+\end{split}
+$$
+
 - this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
 - then only the condition for a strong but not weak stationary solution is true
 
@@ -339,6 +381,7 @@ $$
 $$
 
 - then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
+- for example for ARCH(1) $\mathbb{E}[\ln ae_1^2]<0 \rightarrow a<3.56$ which is much weaker than $a < 1$
 
 ________________
 
@@ -381,13 +424,22 @@ $$
 - the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
 
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
 $$
+- in this case the [[variance]] is as follows
 
-- the solution is not unique
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \frac{a_0}{1-\sum_{i=1}^{p} a_i  - \sum_{j=1}^{q} b_j }
+$$
+- the given condition is not necessary for the existence of a strict stationary solution but in this case the [[variance]] does not exist and we have the following
+
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \infty
+$$
+
 
 Tags: mathematics time_series WS2425
 <!--ID: 1737556427966-->
@@ -495,6 +547,22 @@ $$
 \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \Leftrightarrow a + b < 1
 $$
 
+$$
+\begin{split}
+\mathbb{E}\left[ X_t^2\right] 
+&= \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 \right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \right] \\
+&= \mathbb{E}\left[a_0 + a X_{t-1}^2 +  b \sigma^2_{t-1}\right] \\
+&= a_0 +a \mathbb{E}\left[  X_{t-1}^2 \right] + b \mathbb{E}\left[\sigma^2_{t-1}\right] \\
+&= a_0 +(a+b) \mathbb{E}\left[  X_{t-1}^2 \right]  \\
+\Rightarrow \mathbb{E}\left[ X_t^2\right]& \left(1 - (a+b)\right) = a_0 > 0 \\
+\Rightarrow a + b > &0
+\end{split}
+$$
+
 - this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
 - then only the condition for a strong but not weak stationary solution is true
 
@@ -503,6 +571,7 @@ $$
 $$
 
 - then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
+- for example for ARCH(1) $\mathbb{E}[\ln ae_1^2]<0 \rightarrow a<3.56$ which is much weaker than $a < 1$
 
 ________________
 ### stationary process
@@ -544,13 +613,22 @@ $$
 - the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
 
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
 $$
+- in this case the [[variance]] is as follows
 
-- the solution is not unique
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \frac{a_0}{1-\sum_{i=1}^{p} a_i  - \sum_{j=1}^{q} b_j }
+$$
+- the given condition is not necessary for the existence of a strict stationary solution but in this case the [[variance]] does not exist and we have the following
+
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \infty
+$$
+
 
 Tags: mathematics time_series WS2425
 <!--ID: 1737556427969-->
@@ -660,6 +738,22 @@ $$
 \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \Leftrightarrow a + b < 1
 $$
 
+$$
+\begin{split}
+\mathbb{E}\left[ X_t^2\right] 
+&= \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 \right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \right] \\
+&= \mathbb{E}\left[a_0 + a X_{t-1}^2 +  b \sigma^2_{t-1}\right] \\
+&= a_0 +a \mathbb{E}\left[  X_{t-1}^2 \right] + b \mathbb{E}\left[\sigma^2_{t-1}\right] \\
+&= a_0 +(a+b) \mathbb{E}\left[  X_{t-1}^2 \right]  \\
+\Rightarrow \mathbb{E}\left[ X_t^2\right]& \left(1 - (a+b)\right) = a_0 > 0 \\
+\Rightarrow a + b > &0
+\end{split}
+$$
+
 - this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
 - then only the condition for a strong but not weak stationary solution is true
 
@@ -668,7 +762,7 @@ $$
 $$
 
 - then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
-
+- for example for ARCH(1) $\mathbb{E}[\ln ae_1^2]<0 \rightarrow a<3.56$ which is much weaker than $a < 1$
 
 ________________
 ### stationary process
@@ -710,13 +804,22 @@ $$
 - the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
 
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
 $$
+- in this case the [[variance]] is as follows
 
-- the solution is not unique
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \frac{a_0}{1-\sum_{i=1}^{p} a_i  - \sum_{j=1}^{q} b_j }
+$$
+- the given condition is not necessary for the existence of a strict stationary solution but in this case the [[variance]] does not exist and we have the following
+
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \infty
+$$
+
 
 Tags: mathematics time_series WS2425
 <!--ID: 1737556427972-->
@@ -827,6 +930,22 @@ $$
 \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \Leftrightarrow a + b < 1
 $$
 
+$$
+\begin{split}
+\mathbb{E}\left[ X_t^2\right] 
+&= \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 \right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \right] \\
+&= \mathbb{E}\left[a_0 + a X_{t-1}^2 +  b \sigma^2_{t-1}\right] \\
+&= a_0 +a \mathbb{E}\left[  X_{t-1}^2 \right] + b \mathbb{E}\left[\sigma^2_{t-1}\right] \\
+&= a_0 +(a+b) \mathbb{E}\left[  X_{t-1}^2 \right]  \\
+\Rightarrow \mathbb{E}\left[ X_t^2\right]& \left(1 - (a+b)\right) = a_0 > 0 \\
+\Rightarrow a + b > &0
+\end{split}
+$$
+
 - this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
 - then only the condition for a strong but not weak stationary solution is true
 
@@ -835,6 +954,7 @@ $$
 $$
 
 - then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
+- for example for ARCH(1) $\mathbb{E}[\ln ae_1^2]<0 \rightarrow a<3.56$ which is much weaker than $a < 1$
 ________________
 
 ### stationary process
@@ -876,13 +996,22 @@ $$
 - the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
 
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
 $$
+- in this case the [[variance]] is as follows
 
-- the solution is not unique
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \frac{a_0}{1-\sum_{i=1}^{p} a_i  - \sum_{j=1}^{q} b_j }
+$$
+- the given condition is not necessary for the existence of a strict stationary solution but in this case the [[variance]] does not exist and we have the following
+
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \infty
+$$
+
 
 Tags: mathematics time_series WS2425
 <!--ID: 1737556427974-->
@@ -988,6 +1117,22 @@ $$
 \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \Leftrightarrow a + b < 1
 $$
 
+$$
+\begin{split}
+\mathbb{E}\left[ X_t^2\right] 
+&= \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2\right] \\
+&= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 \right]\right] \\
+&= \mathbb{E}\left[\sigma_t^2 \right] \\
+&= \mathbb{E}\left[a_0 + a X_{t-1}^2 +  b \sigma^2_{t-1}\right] \\
+&= a_0 +a \mathbb{E}\left[  X_{t-1}^2 \right] + b \mathbb{E}\left[\sigma^2_{t-1}\right] \\
+&= a_0 +(a+b) \mathbb{E}\left[  X_{t-1}^2 \right]  \\
+\Rightarrow \mathbb{E}\left[ X_t^2\right]& \left(1 - (a+b)\right) = a_0 > 0 \\
+\Rightarrow a + b > &0
+\end{split}
+$$
+
 - this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
 - then only the condition for a strong but not weak stationary solution is true
 
@@ -996,7 +1141,7 @@ $$
 $$
 
 - then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
-
+- for example for ARCH(1) $\mathbb{E}[\ln ae_1^2]<0 \rightarrow a<3.56$ which is much weaker than $a < 1$
 ### stationary process
 - not every strong stationary process is weak stationary because the [[variance]] might not exist
 - every strong stationary process with existing [[moments]] is also weak stationary
@@ -1038,13 +1183,22 @@ $$
 - the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
 
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
 $$
+- in this case the [[variance]] is as follows
 
-- the solution is not unique
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \frac{a_0}{1-\sum_{i=1}^{p} a_i  - \sum_{j=1}^{q} b_j }
+$$
+- the given condition is not necessary for the existence of a strict stationary solution but in this case the [[variance]] does not exist and we have the following
+
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \infty
+$$
+
 
 Tags: mathematics time_series WS2425
 <!--ID: 1737556427977-->
@@ -1056,6 +1210,8 @@ Basic
 [[GARCH model]]
 - when does a [[stationary process|stationary]] solution exist
 - does there always exists a solution and is it unique?
+- relationship weak vs strong stationary solutions
+- what does it mean for the [[variance]]
 
 Back: 
 ### GARCH model
@@ -1074,13 +1230,22 @@ $$
 - the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
 
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
 $$
+- in this case the [[variance]] is as follows
 
-- the solution is not unique
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \frac{a_0}{1-\sum_{i=1}^{p} a_i  - \sum_{j=1}^{q} b_j }
+$$
+- the given condition is not necessary for the existence of a strict stationary solution but in this case the [[variance]] does not exist and we have the following
+
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \infty
+$$
+
 
 Tags: mathematics time_series WS2425
 <!--ID: 1737474478123-->
