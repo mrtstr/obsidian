@@ -126,7 +126,7 @@ $$
 
 
 ### stationary solution
-if the GARCH(1,1) model has a solution it looks like the following
+if the GARCH(1,1) model has a solution ($\neq \infty, -\infty$) it looks like the following and is unique
 
 $$
 \sigma_t^2 = a_0 \left(1 + \sum_{j=1}^k \prod_{i=1}^j \left(a\cdot e_{t-i}^2 +  b \right)\right)
@@ -166,12 +166,307 @@ $$
 
 #### weak stationary solution
 - if $a_0>0$ and $a,b\geq0$ and $a+b < 1$ then the GARCH(1,1) model has a weak stationary solution 
-- the is because $a + b < 1$ implies the condition for strong stationary and since the [[variance]] $\mathbb{VAR}\left[X_t\right]\frac{a_0}{1-(a+b)}$ does exist the solution also has to be weak stationary
+- the is because $a + b < 1$ implies the condition for strong stationary 
+
 $$
  a + b < 1 \Rightarrow \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0
 $$
 
-###### proof
+$$
+\begin{split}
+&\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \\
+\Leftrightarrow &\mathbb{E}[\exp\ln(a \cdot e_1^2 + b)] < 1 \\
+\Leftrightarrow &\mathbb{E}[a \cdot e_1^2 + b] =a+b < 1 \\
+\end{split}
+$$
+
+- $a + b < 1$ also implies that the [[variance]] $\mathbb{VAR}\left[X_t\right]=\frac{a_0}{1-(a+b)}$ does exist 
+- from strong stationary plus the existence of the [[variance]] follows weak stationary
+
+##### variance
+- for a weak stationary solution of the GARCH model the [[variance]] is as follows
+- it is easy to see that the [[variance]] does not exist if $a + b \geq 1$
+
+$$
+\begin{split}
+\mathbb{VAR}\left[X_t\right]
+&= \mathbb{E}\left[\sigma_t^2\right] \\
+&= \mathbb{E}\left[X_t^2\right]\\
+&= \mathbb{E}\left[a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}  \right] \\
+&= \mathbb{E}\left[a_0 +  a \sigma_{t-1}^2 e_{t-1}^2 +  b \sigma^2_{t-1}  \right] \\
+&= a_0 +  a \mathbb{E}\left[ \sigma_{t-1}^2\right] \mathbb{E}\left[e_{t-1}^2 \right]+  b \mathbb{E}\left[ \sigma^2_{t-1}  \right] \\
+&= a_0 +  a \mathbb{E}\left[ \sigma_{t-1}^2\right] +  b \mathbb{E}\left[ \sigma^2_{t-1}  \right] \\
+&= a_0 +  (a+b) \mathbb{E}\left[ \sigma_{t-1}^2\right]  \\
+&= a_0 +  (a+b) \mathbb{E}\left[ \sigma_{t}^2\right]  \\
+&= \frac{a_0}{1-(a+b)}    \\
+\end{split}
+$$
+
+##### strong but not weak stationary solution
+- if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ that the conditions for weak and strong stationary imply each other and 
+
+$$
+\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \Leftrightarrow a + b < 1
+$$
+
+- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
+- then only the condition for a strong but not weak stationary solution is true
+
+$$
+\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \land a + b \geq 1
+$$
+
+- then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
+# ---------------
+![[stationary process#stationary process]]
+
+![[non-parametric volatility model#the base model]]
+
+![[non-parametric volatility model#time dependent volatility model]]
+
+# anki
+
+START
+Basic
+GARCH(1,1) model summary
+- definition
+- solution
+- when does it have a strict stationary solution
+- when does it have a weak stationary solution
+- do they imply each other?
+- are the solutions unique?
+
+Back: 
+## GARCH(1,1) model
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}
+\end{split}
+$$
+
+### stationary solution
+if the GARCH(1,1) model has a solution ($\neq \infty, -\infty$) it looks like the following and is unique
+
+$$
+\sigma_t^2 = a_0 \left(1 + \sum_{j=1}^k \prod_{i=1}^j \left(a\cdot e_{t-i}^2 +  b \right)\right)
+$$
+- with certain conditions the rest term $\sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ converges to zero
+
+$$
+\begin{split}
+\sigma^2_t 
+&= a_0 + a X_{t-1}^2 +  b \sigma^2_{t-1} \\
+&= a_0 + \sigma_{t-1}^2 \left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 + \left(a_0 + \sigma_{t-2}^2 \left(a\cdot e_{t-2}^2 +  b \right)\right) \left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 + a_0 \left(a\cdot e_{t-1}^2 +  b \right) + \sigma_{t-2}^2 \left(a\cdot e_{t-2}^2 +  b \right)\left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 \left(1 + \sum_{j=1}^k \prod_{i=1}^j \left(a\cdot e_{t-i}^2 +  b \right)\right) + \sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)
+\end{split}
+$$
+#### strict stationary solution
+- the [[GARCH model]] has a unique and strictly stationary solutions if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$
+- the factor of the rest term $\sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ goes to zero if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$ because otherwise $\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ would go to infinity 
+$$
+\begin{split}
+\ln\left(\prod_{i=1}^n\left(a \cdot e_{t-i}^2 + b \right)\right) 
+&= \sum_{i=1}^n \ln\left(a \cdot e_{t-i}^2 + b \right) \\
+&= n \ln\left(a \cdot e_{1}^2 + b \right) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right] 
+&= \mathbb{E}\left[\exp\ln\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right]  \\
+&= \mathbb{E}\left[\exp\left(n \ln\left(a \cdot e_{1}^2 + b \right)\right) \right] \xrightarrow{\text{condition}} 0 \\
+\end{split}
+$$
+
+- with $\mathbb{E}[\ln(a \cdot e_1^2 + b)] = 0$ the rest term does not converge too (no proof)
+
+#### weak stationary solution
+- if $a_0>0$ and $a,b\geq0$ and $a+b < 1$ then the GARCH(1,1) model has a weak stationary solution 
+- the is because $a + b < 1$ implies the condition for strong stationary 
+
+$$
+ a + b < 1 \Rightarrow \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0
+$$
+
+$$
+\begin{split}
+&\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \\
+\Leftrightarrow &\mathbb{E}[\exp\ln(a \cdot e_1^2 + b)] < 1 \\
+\Leftrightarrow &\mathbb{E}[a \cdot e_1^2 + b] =a+b < 1 \\
+\end{split}
+$$
+
+- $a + b < 1$ also implies that the [[variance]] $\mathbb{VAR}\left[X_t\right]=\frac{a_0}{1-(a+b)}$ does exist 
+- from strong stationary plus the existence of the [[variance]] follows weak stationary
+
+##### variance
+- for a weak stationary solution of the GARCH model the [[variance]] is as follows
+- it is easy to see that the [[variance]] does not exist if $a + b \geq 1$
+
+$$
+\begin{split}
+\mathbb{VAR}\left[X_t\right]
+&= \mathbb{E}\left[\sigma_t^2\right] \\
+&= \mathbb{E}\left[X_t^2\right]\\
+&= \mathbb{E}\left[a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}  \right] \\
+&= \mathbb{E}\left[a_0 +  a \sigma_{t-1}^2 e_{t-1}^2 +  b \sigma^2_{t-1}  \right] \\
+&= a_0 +  a \mathbb{E}\left[ \sigma_{t-1}^2\right] \mathbb{E}\left[e_{t-1}^2 \right]+  b \mathbb{E}\left[ \sigma^2_{t-1}  \right] \\
+&= a_0 +  a \mathbb{E}\left[ \sigma_{t-1}^2\right] +  b \mathbb{E}\left[ \sigma^2_{t-1}  \right] \\
+&= a_0 +  (a+b) \mathbb{E}\left[ \sigma_{t-1}^2\right]  \\
+&= a_0 +  (a+b) \mathbb{E}\left[ \sigma_{t}^2\right]  \\
+&= \frac{a_0}{1-(a+b)}    \\
+\end{split}
+$$
+
+##### strong but not weak stationary solution
+- if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ that the conditions for weak and strong stationary imply each other and 
+
+$$
+\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \Leftrightarrow a + b < 1
+$$
+
+- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
+- then only the condition for a strong but not weak stationary solution is true
+
+$$
+\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \land a + b \geq 1
+$$
+
+- then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
+
+________________
+
+### stationary process
+- not every strong stationary process is weak stationary because the [[variance]] might not exist
+- every strong stationary process with existing [[moments]] is also weak stationary
+
+- weak stationary does not imply strong stationary because just because the first moments are time invariant does not guarantee that the [[distribution]] is time invariant 
+#### strongly stationary process
+- a [[stochastic process]] whose [[joint distribution]] is not time-dependent
+- given a [[stationary process]] $\{X_t\}$ and an arbitray [[set]] of time instances ${t_1, ..., t_n}$ the [[joint distribution|joint distributions]] of the [[random variable|random variables]] $X(t_1), ..., X(t_n)$ is the same as the [[joint distribution|joint distributions]] of the [[random variable|random variables]] $X(t_1+\tau), ..., X(t_n+\tau)$ 
+
+$$
+\begin{split}
+F_X(x_1, ..., x_n) = F_X(x_1 + \tau, ..., x_n + \tau) \quad 
+\forall \tau, t_1, ... , t_n \in \mathbb{R} \\
+f_X(x_1, ..., x_n) = f_X(x_1 + \tau, ..., x_n + \tau) \quad 
+\forall \tau, t_1, ... , t_n \in \mathbb{R} 
+\end{split}
+$$
+
+#### weakly stationary process
+- a [[stochastic process]] whose [[expectation]], [[variance]] and [[covariance]] are not time-dependent
+- a [[stochastic process]] $\{X_t\}$ is weakly [[stationary process|stationary]] when $\mathbb{E}\left[X_t\right], \mathbb{VAR}\left[X_t\right], \mathbb{COVAR}\left[X_t, X_{t+h}\right]$ are time independent (the same for all $t$)
+- the [[variance]] $\mathbb{VAR}\left[X_t\right]< \infty$ has to be finite
+
+### GARCH model
+- the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
+\end{split}
+$$
+
+- that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
+	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+### existence and stationary of GARCH solutions
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+
+$$
+\sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
+$$
+
+- the solution is not unique
+
+Tags: mathematics time_series WS2425
+<!--ID: 1737556427966-->
+END
+
+START
+Basic
+GARCH(1,1) model
+- solution with proof but no convergence proof
+- is the solution unique?
+Back: 
+
+## GARCH(1,1) model
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}
+\end{split}
+$$
+
+### stationary solution
+if the GARCH(1,1) model has a solution ($\neq \infty, -\infty$) it looks like the following and is unique
+
+$$
+\sigma_t^2 = a_0 \left(1 + \sum_{j=1}^k \prod_{i=1}^j \left(a\cdot e_{t-i}^2 +  b \right)\right)
+$$
+- with certain conditions the rest term $\sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ converges to zero
+
+$$
+\begin{split}
+\sigma^2_t 
+&= a_0 + a X_{t-1}^2 +  b \sigma^2_{t-1} \\
+&= a_0 + \sigma_{t-1}^2 \left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 + \left(a_0 + \sigma_{t-2}^2 \left(a\cdot e_{t-2}^2 +  b \right)\right) \left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 + a_0 \left(a\cdot e_{t-1}^2 +  b \right) + \sigma_{t-2}^2 \left(a\cdot e_{t-2}^2 +  b \right)\left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 \left(1 + \sum_{j=1}^k \prod_{i=1}^j \left(a\cdot e_{t-i}^2 +  b \right)\right) + \sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)
+\end{split}
+$$
+#### strict stationary solution
+- the [[GARCH model]] has a unique and strictly stationary solutions if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$
+- the factor of the rest term $\sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ goes to zero if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$ because otherwise $\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ would go to infinity 
+$$
+\begin{split}
+\ln\left(\prod_{i=1}^n\left(a \cdot e_{t-i}^2 + b \right)\right) 
+&= \sum_{i=1}^n \ln\left(a \cdot e_{t-i}^2 + b \right) \\
+&= n \ln\left(a \cdot e_{1}^2 + b \right) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right] 
+&= \mathbb{E}\left[\exp\ln\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right]  \\
+&= \mathbb{E}\left[\exp\left(n \ln\left(a \cdot e_{1}^2 + b \right)\right) \right] \xrightarrow{\text{condition}} 0 \\
+\end{split}
+$$
+
+- with $\mathbb{E}[\ln(a \cdot e_1^2 + b)] = 0$ the rest term does not converge too (no proof)
+
+#### weak stationary solution
+- if $a_0>0$ and $a,b\geq0$ and $a+b < 1$ then the GARCH(1,1) model has a weak stationary solution 
+- the is because $a + b < 1$ implies the condition for strong stationary 
+
+$$
+ a + b < 1 \Rightarrow \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0
+$$
+
+$$
+\begin{split}
+&\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \\
+\Leftrightarrow &\mathbb{E}[\exp\ln(a \cdot e_1^2 + b)] < 1 \\
+\Leftrightarrow &\mathbb{E}[a \cdot e_1^2 + b] =a+b < 1 \\
+\end{split}
+$$
+
+- $a + b < 1$ also implies that the [[variance]] $\mathbb{VAR}\left[X_t\right]=\frac{a_0}{1-(a+b)}$ does exist 
+- from strong stationary plus the existence of the [[variance]] follows weak stationary
 
 
 ##### variance
@@ -195,9 +490,11 @@ $$
 
 ##### strong but not weak stationary solution
 - if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ that the conditions for weak and strong stationary imply each other and 
+
 $$
 \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \Leftrightarrow a + b < 1
 $$
+
 - this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
 - then only the condition for a strong but not weak stationary solution is true
 
@@ -206,12 +503,553 @@ $$
 $$
 
 - then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
-# ---------------
-![[non-parametric volatility model#the base model]]
 
-![[non-parametric volatility model#time dependent volatility model]]
+________________
+### stationary process
+- not every strong stationary process is weak stationary because the [[variance]] might not exist
+- every strong stationary process with existing [[moments]] is also weak stationary
 
-# anki
+- weak stationary does not imply strong stationary because just because the first moments are time invariant does not guarantee that the [[distribution]] is time invariant 
+#### strongly stationary process
+- a [[stochastic process]] whose [[joint distribution]] is not time-dependent
+- given a [[stationary process]] $\{X_t\}$ and an arbitray [[set]] of time instances ${t_1, ..., t_n}$ the [[joint distribution|joint distributions]] of the [[random variable|random variables]] $X(t_1), ..., X(t_n)$ is the same as the [[joint distribution|joint distributions]] of the [[random variable|random variables]] $X(t_1+\tau), ..., X(t_n+\tau)$ 
+
+$$
+\begin{split}
+F_X(x_1, ..., x_n) = F_X(x_1 + \tau, ..., x_n + \tau) \quad 
+\forall \tau, t_1, ... , t_n \in \mathbb{R} \\
+f_X(x_1, ..., x_n) = f_X(x_1 + \tau, ..., x_n + \tau) \quad 
+\forall \tau, t_1, ... , t_n \in \mathbb{R} 
+\end{split}
+$$
+
+#### weakly stationary process
+- a [[stochastic process]] whose [[expectation]], [[variance]] and [[covariance]] are not time-dependent
+- a [[stochastic process]] $\{X_t\}$ is weakly [[stationary process|stationary]] when $\mathbb{E}\left[X_t\right], \mathbb{VAR}\left[X_t\right], \mathbb{COVAR}\left[X_t, X_{t+h}\right]$ are time independent (the same for all $t$)
+- the [[variance]] $\mathbb{VAR}\left[X_t\right]< \infty$ has to be finite
+
+### GARCH model
+- the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
+\end{split}
+$$
+
+- that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
+	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+### existence and stationary of GARCH solutions
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+
+$$
+\sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
+$$
+
+- the solution is not unique
+
+Tags: mathematics time_series WS2425
+<!--ID: 1737556427969-->
+END
+
+
+START
+Basic
+GARCH(1,1) model
+- solution without proof
+- minimal condition for convergence with proof
+- is the solution unique
+
+Back: 
+## GARCH(1,1) model
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}
+\end{split}
+$$
+
+### stationary solution
+if the GARCH(1,1) model has a solution ($\neq \infty, -\infty$) it looks like the following and is unique
+
+$$
+\sigma_t^2 = a_0 \left(1 + \sum_{j=1}^k \prod_{i=1}^j \left(a\cdot e_{t-i}^2 +  b \right)\right)
+$$
+- with certain conditions the rest term $\sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ converges to zero
+
+$$
+\begin{split}
+\sigma^2_t 
+&= a_0 + a X_{t-1}^2 +  b \sigma^2_{t-1} \\
+&= a_0 + \sigma_{t-1}^2 \left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 + \left(a_0 + \sigma_{t-2}^2 \left(a\cdot e_{t-2}^2 +  b \right)\right) \left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 + a_0 \left(a\cdot e_{t-1}^2 +  b \right) + \sigma_{t-2}^2 \left(a\cdot e_{t-2}^2 +  b \right)\left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 \left(1 + \sum_{j=1}^k \prod_{i=1}^j \left(a\cdot e_{t-i}^2 +  b \right)\right) + \sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)
+\end{split}
+$$
+#### strict stationary solution
+- the [[GARCH model]] has a unique and strictly stationary solutions if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$
+- the factor of the rest term $\sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ goes to zero if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$ because otherwise $\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ would go to infinity 
+$$
+\begin{split}
+\ln\left(\prod_{i=1}^n\left(a \cdot e_{t-i}^2 + b \right)\right) 
+&= \sum_{i=1}^n \ln\left(a \cdot e_{t-i}^2 + b \right) \\
+&= n \ln\left(a \cdot e_{1}^2 + b \right) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right] 
+&= \mathbb{E}\left[\exp\ln\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right]  \\
+&= \mathbb{E}\left[\exp\left(n \ln\left(a \cdot e_{1}^2 + b \right)\right) \right] \xrightarrow{\text{condition}} 0 \\
+\end{split}
+$$
+
+- with $\mathbb{E}[\ln(a \cdot e_1^2 + b)] = 0$ the rest term does not converge too (no proof)
+
+#### weak stationary solution
+- if $a_0>0$ and $a,b\geq0$ and $a+b < 1$ then the GARCH(1,1) model has a weak stationary solution 
+- the is because $a + b < 1$ implies the condition for strong stationary 
+
+$$
+ a + b < 1 \Rightarrow \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0
+$$
+
+$$
+\begin{split}
+&\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \\
+\Leftrightarrow &\mathbb{E}[\exp\ln(a \cdot e_1^2 + b)] < 1 \\
+\Leftrightarrow &\mathbb{E}[a \cdot e_1^2 + b] =a+b < 1 \\
+\end{split}
+$$
+
+- $a + b < 1$ also implies that the [[variance]] $\mathbb{VAR}\left[X_t\right]=\frac{a_0}{1-(a+b)}$ does exist 
+- from strong stationary plus the existence of the [[variance]] follows weak stationary
+
+
+##### variance
+- for a weak stationary solution of the GARCH model the [[variance]] is as follows
+- it is easy to see that the [[variance]] does not exist if $a + b \geq 1$
+
+$$
+\begin{split}
+\mathbb{VAR}\left[X_t\right]
+&= \mathbb{E}\left[\sigma_t^2\right] \\
+&= \mathbb{E}\left[X_t^2\right]\\
+&= \mathbb{E}\left[a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}  \right] \\
+&= \mathbb{E}\left[a_0 +  a \sigma_{t-1}^2 e_{t-1}^2 +  b \sigma^2_{t-1}  \right] \\
+&= a_0 +  a \mathbb{E}\left[ \sigma_{t-1}^2\right] \mathbb{E}\left[e_{t-1}^2 \right]+  b \mathbb{E}\left[ \sigma^2_{t-1}  \right] \\
+&= a_0 +  a \mathbb{E}\left[ \sigma_{t-1}^2\right] +  b \mathbb{E}\left[ \sigma^2_{t-1}  \right] \\
+&= a_0 +  (a+b) \mathbb{E}\left[ \sigma_{t-1}^2\right]  \\
+&= a_0 +  (a+b) \mathbb{E}\left[ \sigma_{t}^2\right]  \\
+&= \frac{a_0}{1-(a+b)}    \\
+\end{split}
+$$
+
+##### strong but not weak stationary solution
+- if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ that the conditions for weak and strong stationary imply each other and 
+
+$$
+\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \Leftrightarrow a + b < 1
+$$
+
+- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
+- then only the condition for a strong but not weak stationary solution is true
+
+$$
+\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \land a + b \geq 1
+$$
+
+- then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
+
+
+________________
+### stationary process
+- not every strong stationary process is weak stationary because the [[variance]] might not exist
+- every strong stationary process with existing [[moments]] is also weak stationary
+
+- weak stationary does not imply strong stationary because just because the first moments are time invariant does not guarantee that the [[distribution]] is time invariant 
+#### strongly stationary process
+- a [[stochastic process]] whose [[joint distribution]] is not time-dependent
+- given a [[stationary process]] $\{X_t\}$ and an arbitray [[set]] of time instances ${t_1, ..., t_n}$ the [[joint distribution|joint distributions]] of the [[random variable|random variables]] $X(t_1), ..., X(t_n)$ is the same as the [[joint distribution|joint distributions]] of the [[random variable|random variables]] $X(t_1+\tau), ..., X(t_n+\tau)$ 
+
+$$
+\begin{split}
+F_X(x_1, ..., x_n) = F_X(x_1 + \tau, ..., x_n + \tau) \quad 
+\forall \tau, t_1, ... , t_n \in \mathbb{R} \\
+f_X(x_1, ..., x_n) = f_X(x_1 + \tau, ..., x_n + \tau) \quad 
+\forall \tau, t_1, ... , t_n \in \mathbb{R} 
+\end{split}
+$$
+
+#### weakly stationary process
+- a [[stochastic process]] whose [[expectation]], [[variance]] and [[covariance]] are not time-dependent
+- a [[stochastic process]] $\{X_t\}$ is weakly [[stationary process|stationary]] when $\mathbb{E}\left[X_t\right], \mathbb{VAR}\left[X_t\right], \mathbb{COVAR}\left[X_t, X_{t+h}\right]$ are time independent (the same for all $t$)
+- the [[variance]] $\mathbb{VAR}\left[X_t\right]< \infty$ has to be finite
+
+### GARCH model
+- the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
+\end{split}
+$$
+
+- that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
+	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+### existence and stationary of GARCH solutions
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+
+$$
+\sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
+$$
+
+- the solution is not unique
+
+Tags: mathematics time_series WS2425
+<!--ID: 1737556427972-->
+END
+
+
+START
+Basic
+GARCH(1,1) model
+- solution without proof
+- condition for weak stationary with proof
+
+Back: 
+
+
+## GARCH(1,1) model
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}
+\end{split}
+$$
+
+### stationary solution
+if the GARCH(1,1) model has a solution ($\neq \infty, -\infty$) it looks like the following and is unique
+
+$$
+\sigma_t^2 = a_0 \left(1 + \sum_{j=1}^k \prod_{i=1}^j \left(a\cdot e_{t-i}^2 +  b \right)\right)
+$$
+- with certain conditions the rest term $\sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ converges to zero
+
+$$
+\begin{split}
+\sigma^2_t 
+&= a_0 + a X_{t-1}^2 +  b \sigma^2_{t-1} \\
+&= a_0 + \sigma_{t-1}^2 \left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 + \left(a_0 + \sigma_{t-2}^2 \left(a\cdot e_{t-2}^2 +  b \right)\right) \left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 + a_0 \left(a\cdot e_{t-1}^2 +  b \right) + \sigma_{t-2}^2 \left(a\cdot e_{t-2}^2 +  b \right)\left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 \left(1 + \sum_{j=1}^k \prod_{i=1}^j \left(a\cdot e_{t-i}^2 +  b \right)\right) + \sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)
+\end{split}
+$$
+#### strict stationary solution
+- the [[GARCH model]] has a unique and strictly stationary solutions if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$
+- the factor of the rest term $\sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ goes to zero if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$ because otherwise $\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ would go to infinity 
+$$
+\begin{split}
+\ln\left(\prod_{i=1}^n\left(a \cdot e_{t-i}^2 + b \right)\right) 
+&= \sum_{i=1}^n \ln\left(a \cdot e_{t-i}^2 + b \right) \\
+&= n \ln\left(a \cdot e_{1}^2 + b \right) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right] 
+&= \mathbb{E}\left[\exp\ln\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right]  \\
+&= \mathbb{E}\left[\exp\left(n \ln\left(a \cdot e_{1}^2 + b \right)\right) \right] \xrightarrow{\text{condition}} 0 \\
+\end{split}
+$$
+
+- with $\mathbb{E}[\ln(a \cdot e_1^2 + b)] = 0$ the rest term does not converge too (no proof)
+
+#### weak stationary solution
+- if $a_0>0$ and $a,b\geq0$ and $a+b < 1$ then the GARCH(1,1) model has a weak stationary solution 
+- the is because $a + b < 1$ implies the condition for strong stationary 
+
+$$
+ a + b < 1 \Rightarrow \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0
+$$
+
+$$
+\begin{split}
+&\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \\
+\Leftrightarrow &\mathbb{E}[\exp\ln(a \cdot e_1^2 + b)] < 1 \\
+\Leftrightarrow &\mathbb{E}[a \cdot e_1^2 + b] =a+b < 1 \\
+\end{split}
+$$
+
+- $a + b < 1$ also implies that the [[variance]] $\mathbb{VAR}\left[X_t\right]=\frac{a_0}{1-(a+b)}$ does exist 
+- from strong stationary plus the existence of the [[variance]] follows weak stationary
+
+
+##### variance
+- for a weak stationary solution of the GARCH model the [[variance]] is as follows
+- it is easy to see that the [[variance]] does not exist if $a + b \geq 1$
+
+$$
+\begin{split}
+\mathbb{VAR}\left[X_t\right]
+&= \mathbb{E}\left[\sigma_t^2\right] \\
+&= \mathbb{E}\left[X_t^2\right]\\
+&= \mathbb{E}\left[a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}  \right] \\
+&= \mathbb{E}\left[a_0 +  a \sigma_{t-1}^2 e_{t-1}^2 +  b \sigma^2_{t-1}  \right] \\
+&= a_0 +  a \mathbb{E}\left[ \sigma_{t-1}^2\right] \mathbb{E}\left[e_{t-1}^2 \right]+  b \mathbb{E}\left[ \sigma^2_{t-1}  \right] \\
+&= a_0 +  a \mathbb{E}\left[ \sigma_{t-1}^2\right] +  b \mathbb{E}\left[ \sigma^2_{t-1}  \right] \\
+&= a_0 +  (a+b) \mathbb{E}\left[ \sigma_{t-1}^2\right]  \\
+&= a_0 +  (a+b) \mathbb{E}\left[ \sigma_{t}^2\right]  \\
+&= \frac{a_0}{1-(a+b)}    \\
+\end{split}
+$$
+
+##### strong but not weak stationary solution
+- if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ that the conditions for weak and strong stationary imply each other and 
+
+$$
+\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \Leftrightarrow a + b < 1
+$$
+
+- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
+- then only the condition for a strong but not weak stationary solution is true
+
+$$
+\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \land a + b \geq 1
+$$
+
+- then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
+________________
+
+### stationary process
+- not every strong stationary process is weak stationary because the [[variance]] might not exist
+- every strong stationary process with existing [[moments]] is also weak stationary
+
+- weak stationary does not imply strong stationary because just because the first moments are time invariant does not guarantee that the [[distribution]] is time invariant 
+#### strongly stationary process
+- a [[stochastic process]] whose [[joint distribution]] is not time-dependent
+- given a [[stationary process]] $\{X_t\}$ and an arbitray [[set]] of time instances ${t_1, ..., t_n}$ the [[joint distribution|joint distributions]] of the [[random variable|random variables]] $X(t_1), ..., X(t_n)$ is the same as the [[joint distribution|joint distributions]] of the [[random variable|random variables]] $X(t_1+\tau), ..., X(t_n+\tau)$ 
+
+$$
+\begin{split}
+F_X(x_1, ..., x_n) = F_X(x_1 + \tau, ..., x_n + \tau) \quad 
+\forall \tau, t_1, ... , t_n \in \mathbb{R} \\
+f_X(x_1, ..., x_n) = f_X(x_1 + \tau, ..., x_n + \tau) \quad 
+\forall \tau, t_1, ... , t_n \in \mathbb{R} 
+\end{split}
+$$
+
+#### weakly stationary process
+- a [[stochastic process]] whose [[expectation]], [[variance]] and [[covariance]] are not time-dependent
+- a [[stochastic process]] $\{X_t\}$ is weakly [[stationary process|stationary]] when $\mathbb{E}\left[X_t\right], \mathbb{VAR}\left[X_t\right], \mathbb{COVAR}\left[X_t, X_{t+h}\right]$ are time independent (the same for all $t$)
+- the [[variance]] $\mathbb{VAR}\left[X_t\right]< \infty$ has to be finite
+
+### GARCH model
+- the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
+\end{split}
+$$
+
+- that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
+	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+### existence and stationary of GARCH solutions
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+
+$$
+\sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
+$$
+
+- the solution is not unique
+
+Tags: mathematics time_series WS2425
+<!--ID: 1737556427974-->
+END
+
+START
+Basic
+GARCH(1,1) model
+- can a solution be weak stationery but not strong stationary or the other way around?
+Back: 
+## GARCH(1,1) model
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}
+\end{split}
+$$
+
+### stationary solution
+if the GARCH(1,1) model has a solution ($\neq \infty, -\infty$) it looks like the following and is unique
+
+$$
+\sigma_t^2 = a_0 \left(1 + \sum_{j=1}^k \prod_{i=1}^j \left(a\cdot e_{t-i}^2 +  b \right)\right)
+$$
+- with certain conditions the rest term $\sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ converges to zero
+
+$$
+\begin{split}
+\sigma^2_t 
+&= a_0 + a X_{t-1}^2 +  b \sigma^2_{t-1} \\
+&= a_0 + \sigma_{t-1}^2 \left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 + \left(a_0 + \sigma_{t-2}^2 \left(a\cdot e_{t-2}^2 +  b \right)\right) \left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 + a_0 \left(a\cdot e_{t-1}^2 +  b \right) + \sigma_{t-2}^2 \left(a\cdot e_{t-2}^2 +  b \right)\left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 \left(1 + \sum_{j=1}^k \prod_{i=1}^j \left(a\cdot e_{t-i}^2 +  b \right)\right) + \sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)
+\end{split}
+$$
+#### strict stationary solution
+- the [[GARCH model]] has a unique and strictly stationary solutions if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$
+- the factor of the rest term $\sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ goes to zero if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$ because otherwise $\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ would go to infinity 
+$$
+\begin{split}
+\ln\left(\prod_{i=1}^n\left(a \cdot e_{t-i}^2 + b \right)\right) 
+&= \sum_{i=1}^n \ln\left(a \cdot e_{t-i}^2 + b \right) \\
+&= n \ln\left(a \cdot e_{1}^2 + b \right) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right] 
+&= \mathbb{E}\left[\exp\ln\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right]  \\
+&= \mathbb{E}\left[\exp\left(n \ln\left(a \cdot e_{1}^2 + b \right)\right) \right] \xrightarrow{\text{condition}} 0 \\
+\end{split}
+$$
+
+- with $\mathbb{E}[\ln(a \cdot e_1^2 + b)] = 0$ the rest term does not converge too (no proof)
+
+#### weak stationary solution
+- if $a_0>0$ and $a,b\geq0$ and $a+b < 1$ then the GARCH(1,1) model has a weak stationary solution 
+- the is because $a + b < 1$ implies the condition for strong stationary 
+
+$$
+ a + b < 1 \Rightarrow \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0
+$$
+
+$$
+\begin{split}
+&\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \\
+\Leftrightarrow &\mathbb{E}[\exp\ln(a \cdot e_1^2 + b)] < 1 \\
+\Leftrightarrow &\mathbb{E}[a \cdot e_1^2 + b] =a+b < 1 \\
+\end{split}
+$$
+
+- $a + b < 1$ also implies that the [[variance]] $\mathbb{VAR}\left[X_t\right]=\frac{a_0}{1-(a+b)}$ does exist 
+- from strong stationary plus the existence of the [[variance]] follows weak stationary
+
+
+##### variance
+- for a weak stationary solution of the GARCH model the [[variance]] is as follows
+- it is easy to see that the [[variance]] does not exist if $a + b \geq 1$
+
+$$
+\begin{split}
+\mathbb{VAR}\left[X_t\right]
+&= \mathbb{E}\left[\sigma_t^2\right] \\
+&= \mathbb{E}\left[X_t^2\right]\\
+&= \mathbb{E}\left[a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}  \right] \\
+&= \mathbb{E}\left[a_0 +  a \sigma_{t-1}^2 e_{t-1}^2 +  b \sigma^2_{t-1}  \right] \\
+&= a_0 +  a \mathbb{E}\left[ \sigma_{t-1}^2\right] \mathbb{E}\left[e_{t-1}^2 \right]+  b \mathbb{E}\left[ \sigma^2_{t-1}  \right] \\
+&= a_0 +  a \mathbb{E}\left[ \sigma_{t-1}^2\right] +  b \mathbb{E}\left[ \sigma^2_{t-1}  \right] \\
+&= a_0 +  (a+b) \mathbb{E}\left[ \sigma_{t-1}^2\right]  \\
+&= a_0 +  (a+b) \mathbb{E}\left[ \sigma_{t}^2\right]  \\
+&= \frac{a_0}{1-(a+b)}    \\
+\end{split}
+$$
+
+##### strong but not weak stationary solution
+- if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ that the conditions for weak and strong stationary imply each other and 
+
+$$
+\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \Leftrightarrow a + b < 1
+$$
+
+- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
+- then only the condition for a strong but not weak stationary solution is true
+
+$$
+\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \land a + b \geq 1
+$$
+
+- then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
+
+### stationary process
+- not every strong stationary process is weak stationary because the [[variance]] might not exist
+- every strong stationary process with existing [[moments]] is also weak stationary
+
+- weak stationary does not imply strong stationary because just because the first moments are time invariant does not guarantee that the [[distribution]] is time invariant 
+#### strongly stationary process
+- a [[stochastic process]] whose [[joint distribution]] is not time-dependent
+- given a [[stationary process]] $\{X_t\}$ and an arbitray [[set]] of time instances ${t_1, ..., t_n}$ the [[joint distribution|joint distributions]] of the [[random variable|random variables]] $X(t_1), ..., X(t_n)$ is the same as the [[joint distribution|joint distributions]] of the [[random variable|random variables]] $X(t_1+\tau), ..., X(t_n+\tau)$ 
+
+$$
+\begin{split}
+F_X(x_1, ..., x_n) = F_X(x_1 + \tau, ..., x_n + \tau) \quad 
+\forall \tau, t_1, ... , t_n \in \mathbb{R} \\
+f_X(x_1, ..., x_n) = f_X(x_1 + \tau, ..., x_n + \tau) \quad 
+\forall \tau, t_1, ... , t_n \in \mathbb{R} 
+\end{split}
+$$
+
+#### weakly stationary process
+- a [[stochastic process]] whose [[expectation]], [[variance]] and [[covariance]] are not time-dependent
+- a [[stochastic process]] $\{X_t\}$ is weakly [[stationary process|stationary]] when $\mathbb{E}\left[X_t\right], \mathbb{VAR}\left[X_t\right], \mathbb{COVAR}\left[X_t, X_{t+h}\right]$ are time independent (the same for all $t$)
+- the [[variance]] $\mathbb{VAR}\left[X_t\right]< \infty$ has to be finite
+
+
+________________
+### GARCH model
+- the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
+\end{split}
+$$
+
+- that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
+	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+### existence and stationary of GARCH solutions
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true
+
+$$
+\sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
+$$
+
+- the solution is not unique
+
+Tags: mathematics time_series WS2425
+<!--ID: 1737556427977-->
+END
+
 
 START
 Basic
