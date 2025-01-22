@@ -34,7 +34,7 @@ $$
 &= \mathbb{E}\left[ \mathbb{E}\left[ \sigma_t^2 \cdot e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
 &= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 | \mathcal{F}_{t-1}\right]\right] \\
 &= \mathbb{E}\left[\sigma_t^2 \mathbb{E}\left[ e_t^2 \right]\right] \\
-&= \mathbb{E}\left[\sigma_t \right] \\
+&= \mathbb{E}\left[\sigma_t^2 \right] \\
 \end{split}
 $$
 
@@ -114,7 +114,7 @@ $$
 
 - the solution is not unique
 
-### GARCH(1,1) model
+## GARCH(1,1) model
 - $e_t \sim (0,1)$ i.i.d
 - $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
 $$
@@ -123,12 +123,89 @@ $$
 \sigma^2_t &= a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}
 \end{split}
 $$
-- has a unique and strictly stationary solutions if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$
+
+
+### stationary solution
+if the GARCH(1,1) model has a solution it looks like the following
 
 $$
-\sigma_t^2 = a_0\left(1 + \sum_{j=1}^\infty \prod_{i=1}^\infty \left(a\cdot e^2_{t-1} + b\right)\right)
+\sigma_t^2 = a_0 \left(1 + \sum_{j=1}^k \prod_{i=1}^j \left(a\cdot e_{t-i}^2 +  b \right)\right)
+$$
+- with certain conditions the rest term $\sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ converges to zero
+
+$$
+\begin{split}
+\sigma^2_t 
+&= a_0 + a X_{t-1}^2 +  b \sigma^2_{t-1} \\
+&= a_0 + \sigma_{t-1}^2 \left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 + \left(a_0 + \sigma_{t-2}^2 \left(a\cdot e_{t-2}^2 +  b \right)\right) \left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 + a_0 \left(a\cdot e_{t-1}^2 +  b \right) + \sigma_{t-2}^2 \left(a\cdot e_{t-2}^2 +  b \right)\left(a\cdot e_{t-1}^2 +  b \right)  \\
+&= a_0 \left(1 + \sum_{j=1}^k \prod_{i=1}^j \left(a\cdot e_{t-i}^2 +  b \right)\right) + \sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)
+\end{split}
+$$
+#### strict stationary solution
+- the [[GARCH model]] has a unique and strictly stationary solutions if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$
+- the factor of the rest term $\sigma_{t-k-1}^2 \prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ goes to zero if and only if $\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0$ because otherwise $\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right)$ would go to infinity 
+$$
+\begin{split}
+\ln\left(\prod_{i=1}^n\left(a \cdot e_{t-i}^2 + b \right)\right) 
+&= \sum_{i=1}^n \ln\left(a \cdot e_{t-i}^2 + b \right) \\
+&= n \ln\left(a \cdot e_{1}^2 + b \right) \\
+\end{split}
 $$
 
+$$
+\begin{split}
+\mathbb{E}\left[\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right] 
+&= \mathbb{E}\left[\exp\ln\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right]  \\
+&= \mathbb{E}\left[\exp\left(n \ln\left(a \cdot e_{1}^2 + b \right)\right) \right] \xrightarrow{\text{condition}} 0 \\
+\end{split}
+$$
+
+- with $\mathbb{E}[\ln(a \cdot e_1^2 + b)] = 0$ the rest term does not converge too (no proof)
+
+#### weak stationary solution
+- if $a_0>0$ and $a,b\geq0$ and $a+b < 1$ then the GARCH(1,1) model has a weak stationary solution 
+- the is because $a + b < 1$ implies the condition for strong stationary and since the [[variance]] $\mathbb{VAR}\left[X_t\right]\frac{a_0}{1-(a+b)}$ does exist the solution also has to be weak stationary
+$$
+ a + b < 1 \Rightarrow \mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0
+$$
+
+###### proof
+
+
+##### variance
+- for a weak stationary solution of the GARCH model the [[variance]] is as follows
+- it is easy to see that the [[variance]] does not exist if $a + b \geq 1$
+
+$$
+\begin{split}
+\mathbb{VAR}\left[X_t\right]
+&= \mathbb{E}\left[\sigma_t^2\right] \\
+&= \mathbb{E}\left[X_t^2\right]\\
+&= \mathbb{E}\left[a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}  \right] \\
+&= \mathbb{E}\left[a_0 +  a \sigma_{t-1}^2 e_{t-1}^2 +  b \sigma^2_{t-1}  \right] \\
+&= a_0 +  a \mathbb{E}\left[ \sigma_{t-1}^2\right] \mathbb{E}\left[e_{t-1}^2 \right]+  b \mathbb{E}\left[ \sigma^2_{t-1}  \right] \\
+&= a_0 +  a \mathbb{E}\left[ \sigma_{t-1}^2\right] +  b \mathbb{E}\left[ \sigma^2_{t-1}  \right] \\
+&= a_0 +  (a+b) \mathbb{E}\left[ \sigma_{t-1}^2\right]  \\
+&= a_0 +  (a+b) \mathbb{E}\left[ \sigma_{t}^2\right]  \\
+&= \frac{a_0}{1-(a+b)}    \\
+\end{split}
+$$
+
+##### strong but not weak stationary solution
+- if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ that the conditions for weak and strong stationary imply each other and 
+$$
+\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \Leftrightarrow a + b < 1
+$$
+- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
+- then only the condition for a strong but not weak stationary solution is true
+
+$$
+\mathbb{E}[\ln(a \cdot e_1^2 + b)] < 0 \land a + b \geq 1
+$$
+
+- then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
 # ---------------
 ![[non-parametric volatility model#the base model]]
 
