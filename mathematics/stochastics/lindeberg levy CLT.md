@@ -100,7 +100,7 @@ Basic
 
 $$
 \begin{split}
-Y_n = \frac{1}{\sigma} \frac{1}{\sqrt{n}} \sum_{k \in [n]} X_k
+Y_n = \frac{\sqrt{n}}{\sigma}  \sum_{k \in [n]} X_k
 \end{split}
 $$
 
