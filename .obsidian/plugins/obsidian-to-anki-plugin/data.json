@@ -1950,7 +1950,7 @@
     "mathematics/stochastics/time series/volatility.md": "b92776566910a08493a0bffc90d2ada7",
     "mathematics/stochastics/time series/smoothing.md": "f7ad21959da4c31c53424639670b74d5",
     "mathematics/stochastics/time series/seasonality.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "2444660c809133e342eac0a673933023",
+    "mathematics/stochastics/time series/geometric brownian motion (GBM).md": "58cb08a244a59f3073fd89ff5c8007e2",
     "mathematics/stochastics/time series/stochastic differential equation.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/time series/martingal.md": "9bc7dc3476a42ee1360d5f2fff9cac43",
     "mathematics/stochastics/time series/markov process.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1960,7 +1960,7 @@
     "mathematics/stochastics/time series/structural break.md": "363f535afc3c180eaaf6e033b4a95a0a",
     "mathematics/stochastics/time series/financial time series.md": "2164019667958f72e2ecffde570ff4ef",
     "mathematics/stochastics/time series/autoregressive (AR) model.md": "69d74779aed3755f96b383f58873c27e",
-    "mathematics/stochastics/time series/non-parametric volatility model.md": "e0752d941b9781e40a285c5deefa7b09",
+    "mathematics/stochastics/time series/non-parametric volatility model.md": "3af37b91b8201d7b83ee90c460a2e816",
     "mathematics/stochastics/time series/vl.md": "268ee91598bfa66c780dd96c547cd2b7",
     "mathematics/stochastics/kernel density estimator.md": "3d589cb18b65ddd2f781deb2bcf36721",
     "mathematics/stochastics/time series/exponential smoothing (EMA).md": "e465e9b1eca1b19be360f10424c2b3e7",
@@ -1977,7 +1977,7 @@
     "mathematics/stochastics/time series/GARCH model.md": "c4710e8071de85e04d5d57af9bdb2e43",
     "mathematics/stochastics/time series/ARCH model.md": "eaf33ab3b00c6551ac65160caa011c7f",
     "mathematics/stochastics/estimator convergence.md": "df18dbee082d5f164d7a2dc61e14c2cb",
-    "mathematics/stochastics/time series/implied and realized volatility.md": "f5baa4946244853dbec3b9865b4e4897"
+    "mathematics/stochastics/time series/implied and realized volatility.md": "8496dca263004ce4fbff4495ff3ca671"
   },
   "fields_dict": {
     "Basic": [

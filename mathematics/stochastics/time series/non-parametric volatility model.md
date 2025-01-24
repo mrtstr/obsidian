@@ -165,7 +165,7 @@ $$
 \end{split}
 $$
 ### convergence of the RV estimator
-
+- the realized [[volatility]] (RV) estimator converges against the integrated [[volatility]] (IV)
 $$
 \begin{split}
 \hat\sigma^2
@@ -245,6 +245,8 @@ $$
 - instead of taking the [[mean]] of $X_{t,n}^2$ we try to estimate the function $\sigma$ by applying [[smoothing]] to the [[time series]] $X_{t,n}^2$ around the 
 
 ### convergence of the RV estimator
+- the realized [[volatility]] (RV) estimator converges against the integrated [[volatility]] (IV)
+
 $$
 \begin{split}
 \hat\sigma^2

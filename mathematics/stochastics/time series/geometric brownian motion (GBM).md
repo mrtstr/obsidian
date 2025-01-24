@@ -62,8 +62,6 @@ $$
 \end{split}
 $$
 
-
-
 ### components
 - exponential growth $\left(e^{\mu}\right)^t$ of the asset price assuming a constant interest rate $\mu$ (using the fact that $e^\alpha \approx 1+ \alpha$)
 - random part modeled with a [[wiener process]] in the exponent $e^{\sigma W_t}$ with the impact modeled by the [[volatility]] $\sigma$
