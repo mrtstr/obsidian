@@ -23,7 +23,9 @@ $$
 
 $$
 \begin{split}
-\hat\sigma_{ML}^2 &= \frac{1}{n}  \sum_{i=1}^n \left(X_i - \bar X_n\right)^2 \\ 
+\hat\sigma_{ML}^2 
+&= \frac{1}{n}  \sum_{i=1}^n \left(X_i - \bar X_n\right)^2 \\ 
+&= \left(\frac{1}{n}  \sum_{i=1}^n X_i^2 \right)  - \left(\bar X_n\right)^2 \\ 
 \end{split}
 $$
 ##### time dependent
@@ -58,7 +60,7 @@ $$
 
 $$
 \begin{split}
-\sigma^2 
+\hat\sigma^2 
 &=  \sum_{t=1}^n X_{t,n}^2 - \frac{1}{n} \left(\frac{1}{T} \sum_{t=1}^{nT} X_{t,n} \right)^2 \\
 \end{split}
 $$
@@ -84,6 +86,7 @@ $$
 &=  \sum_{t=1}^n X_{t,n}^2 - \frac{1}{n} \left(\frac{1}{T} \sum_{t=1}^{nT} X_{t,n} \right)^2 \\
 \end{split}
 $$
+
 
 # ---------------
 
@@ -768,10 +771,11 @@ X_t
 &\sim \mathcal{N}\left(\mu - \frac{\sigma^2}{2} , \sigma^2  \right)
 \end{split}
 $$
-
 $$
 \begin{split}
-\hat\sigma_{ML}^2 &= \frac{1}{n}  \sum_{i=1}^n \left(X_i - \bar X_n\right)^2 \\ 
+\hat\sigma_{ML}^2 
+&= \frac{1}{n}  \sum_{i=1}^n \left(X_i - \bar X_n\right)^2 \\ 
+&= \left(\frac{1}{n}  \sum_{i=1}^n X_i^2 \right)  - \left(\bar X_n\right)^2 \\ 
 \end{split}
 $$
 ##### time dependent
