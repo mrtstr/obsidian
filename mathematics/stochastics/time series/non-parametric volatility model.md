@@ -95,6 +95,8 @@ $$
 &= \frac{1}{T} \sum_{t=1}^{nT} X_{t,n}^2
 \end{split}
 $$
+
+
 ## time dependent volatility  model
 
 - assume $\alpha=0$ and is a function $\sigma:[0,1] \to [0, \infty)$ and $t=1,2,...,n$
@@ -102,7 +104,7 @@ $$
 
 $$
 \begin{split}
-X_{n,t} = \frac{\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} \cdot e_t
+X_{n,t} = \frac{\alpha\left(\frac{t}{n}\right)}{n} + \frac{\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} e_t = \frac{\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} \cdot e_t
 \end{split}
 $$
 
@@ -162,6 +164,44 @@ $$
 &= \frac{1}{h} \int_0^1 \sigma\left(x\right)^2  K\left(\frac{x - u}{h}\right) dx + \mathcal{O}\left(\frac{1}{nh}\right)   \\
 \end{split}
 $$
+### convergence of the RV estimator
+
+$$
+\begin{split}
+\hat\sigma^2
+&= \sum_{t=1}^n X_{t,n}^2 \xrightarrow{n \to \infty} \int_0^1\sigma^2(u) du \\
+\end{split}
+$$
+
+##### proof
+- to show that the estimator converges in probability (see [[estimator convergence]]) we have to prove that its [[expectation]] converges and that its [[variance]] converges to zero
+- the proof is completed with the [[riemann sum]]
+
+$$
+\begin{split}
+\hat\sigma^2
+&= \sum_{t=1}^n X_{t,n}^2  \\
+&= \sum_{t=1}^n \left(\frac{\alpha\left(\frac{t}{n}\right)}{n} + \frac{\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} e_t\right)^2  \\
+&= \sum_{t=1}^n \frac{\alpha^2\left(\frac{t}{n}\right)}{n^2} + \frac{\sigma^2\left(\frac{t}{n}\right)}{n} e_t^2 + 2\frac{\alpha\left(\frac{t}{n}\right)}{n}  \frac{\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} e_t  \\
+&= \frac{1}{n} \sum_{t=1}^n \frac{\alpha^2\left(\frac{t}{n}\right)}{n} + \sigma^2\left(\frac{t}{n}\right) e_t^2 + 2  \frac{\alpha\left(\frac{t}{n}\right)\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} e_t  \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\hat\sigma^2\right]
+&\xrightarrow{n \to \infty} \sum_{t=1}^n \mathbb{E}\left[X_{t,n}^2\right]   \\
+&\xrightarrow{n \to \infty} \frac{1}{n} \sum_{t=1}^n \frac{\alpha^2\left(\frac{t}{n}\right)}{n} + \sigma^2\left(\frac{t}{n}\right) \mathbb{E}\left[e_t^2\right] + 2  \frac{\alpha\left(\frac{t}{n}\right)\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} \mathbb{E}\left[e_t\right]   \\
+&\xrightarrow{n \to \infty} \frac{1}{n} \sum_{t=1}^n \frac{\alpha^2\left(\frac{t}{n}\right)}{n} + \frac{1}{n} \sum_{t=1}^n \sigma^2\left(\frac{t}{n}\right)   \\
+&\xrightarrow{n \to \infty}  \frac{1}{n} \sum_{t=1}^n \sigma^2\left(\frac{t}{n}\right)   \\
+&\xrightarrow{n \to \infty}  \int_0^1 \sigma^2\left(u\right) du + \mathcal{O}\left(\frac{1}{n}\right)  \\
+&\xrightarrow{n \to \infty}  \int_0^1 \sigma^2\left(u\right) du  \\
+\end{split}
+$$
+
+- [[variance]] goes to zero (TODO add proof)
+
+
 # ---------------------
 
 ![[kernel smoothing for time series#kernel smoothing for time series]]
@@ -179,6 +219,108 @@ $$
 
 # Anki
 
+
+START
+Basic
+- prove for the following [[convergence in probability]] of the realized [[volatility]] estimator $\hat\sigma^2$
+$$
+\begin{split}
+\hat\sigma^2
+&= \sum_{t=1}^n X_{t,n}^2 \xrightarrow{n \to \infty} \int_0^1\sigma^2(u) du \\
+\end{split}
+$$
+
+Back: 
+## time dependent volatility  model
+
+- assume $\alpha=0$ and is a function $\sigma:[0,1] \to [0, \infty)$ and $t=1,2,...,n$
+- note: we don't assume that $e_t$ is [[normal distribution|normal distributed]]
+
+$$
+\begin{split}
+X_{n,t} = \frac{\alpha\left(\frac{t}{n}\right)}{n} + \frac{\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} e_t = \frac{\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} \cdot e_t
+\end{split}
+$$
+
+- instead of taking the [[mean]] of $X_{t,n}^2$ we try to estimate the function $\sigma$ by applying [[smoothing]] to the [[time series]] $X_{t,n}^2$ around the 
+
+### convergence of the RV estimator
+$$
+\begin{split}
+\hat\sigma^2
+&= \sum_{t=1}^n X_{t,n}^2 \xrightarrow{n \to \infty} \int_0^1\sigma^2(u) du \\
+\end{split}
+$$
+
+##### proof
+- to show that the estimator converges in probability we have to prove that its [[expectation]] converges and that its [[variance]] converges to zero
+- the proof is completed with the [[riemann sum]]
+
+$$
+\begin{split}
+\hat\sigma^2
+&= \sum_{t=1}^n X_{t,n}^2  \\
+&= \sum_{t=1}^n \left(\frac{\alpha\left(\frac{t}{n}\right)}{n} + \frac{\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} e_t\right)^2  \\
+&= \sum_{t=1}^n \frac{\alpha^2\left(\frac{t}{n}\right)}{n^2} + \frac{\sigma^2\left(\frac{t}{n}\right)}{n} e_t^2 + 2\frac{\alpha\left(\frac{t}{n}\right)}{n}  \frac{\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} e_t  \\
+&= \frac{1}{n} \sum_{t=1}^n \frac{\alpha^2\left(\frac{t}{n}\right)}{n} + \sigma^2\left(\frac{t}{n}\right) e_t^2 + 2  \frac{\alpha\left(\frac{t}{n}\right)\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} e_t  \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E}\left[\hat\sigma^2\right]
+&\xrightarrow{n \to \infty} \sum_{t=1}^n \mathbb{E}\left[X_{t,n}^2\right]   \\
+&\xrightarrow{n \to \infty} \frac{1}{n} \sum_{t=1}^n \frac{\alpha^2\left(\frac{t}{n}\right)}{n} + \sigma^2\left(\frac{t}{n}\right) \mathbb{E}\left[e_t^2\right] + 2  \frac{\alpha\left(\frac{t}{n}\right)\sigma\left(\frac{t}{n}\right)}{\sqrt{n}} \mathbb{E}\left[e_t\right]   \\
+&\xrightarrow{n \to \infty} \frac{1}{n} \sum_{t=1}^n \frac{\alpha^2\left(\frac{t}{n}\right)}{n} + \frac{1}{n} \sum_{t=1}^n \sigma^2\left(\frac{t}{n}\right)   \\
+&\xrightarrow{n \to \infty}  \frac{1}{n} \sum_{t=1}^n \sigma^2\left(\frac{t}{n}\right)   \\
+&\xrightarrow{n \to \infty}  \int_0^1 \sigma^2\left(u\right) du + \mathcal{O}\left(\frac{1}{n}\right)  \\
+&\xrightarrow{n \to \infty}  \int_0^1 \sigma^2\left(u\right) du  \\
+\end{split}
+$$
+
+- [[variance]] goes to zero (TODO add proof)
+
+___________
+
+### estimator convergence
+- give a [[statistical estimator]] $X_n$ and with en [[expectation]] that [[convergence in probability|converges in probability]] against $\mu$ and a [[variance]] that converges against zero i.e. $\mathbb{E}[X_n] \xrightarrow{\mathbb{P}} \mu$ and $\mathbb{VAR}[X_n] \xrightarrow{\mathbb{P}} 0$ 
+- then $X_n \xrightarrow{\mathbb{P}} \mu$ also converges against $\mu$
+
+#### proof
+$$
+\begin{split}
+\mathbb{P}\left(|X_n-\mu| > \epsilon\right) 
+&\leq \frac{\mathbb{E}\left[(X_n-\mu)^2\right]}{\epsilon^2}  \\
+&\leq \frac{\mathbb{VAR}[X_n]}{\epsilon^2} \xrightarrow{n \to \infty} 0 \\
+\end{split}
+$$
+
+
+### riemann sum
+- $x_1, ..., x_{n+1}$ are points that are [[partition|partitioning]] $[a, b]$ in $n$ sub-intervals thus $a=x_1 < ...< x_n < x_{n+1} = b$
+- $c_i \in [x_{i-1}, x_{i}]$ is an arbitrary point in each sub-interval 
+- then the [[integral]] of $f$ can be approximated as follows
+
+$$
+\begin{split}
+\int_a^b f(x) dx = \sum_{i=1}^n f(c_i) \left(x_{i+1} - x_i\right)+ \mathcal{O}\left(\frac{1}{n}\right)
+\end{split}
+$$
+
+if the sub-intervals $x_i - x_{i-1}=\frac{a-b}{n}$ are equally sized then it simplifies as follows
+
+$$
+\begin{split}
+\int_a^b f(x) dx = \frac{a-b}{n} \sum_{i=1}^n f(c_i) + \mathcal{O}\left(\frac{1}{n}\right)
+\end{split}
+$$
+
+- the error is in $\mathcal{O}\left(\frac{1}{n}\right)$
+
+
+Tags: mathematics time_series WS2425
+<!--ID: 1737718507735-->
+END
 
 START
 Basic

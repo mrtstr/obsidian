@@ -2,7 +2,7 @@
 geometric [[series]] is converging for $0< q < 1$
 
 $$
-\sum_{k=1}^\infty q^k = \frac{1}{1-q}
+\sum_{k=0}^\infty q^k = \frac{1}{1-q}
 $$
 
 # Anki
@@ -18,7 +18,7 @@ Back:
 geometric [[series]] is converging for $0< q < 1$
 
 $$
-\sum_{k=1}^\infty q^k = \frac{1}{1-q}
+\sum_{k=0}^\infty q^k = \frac{1}{1-q}
 $$
 
 

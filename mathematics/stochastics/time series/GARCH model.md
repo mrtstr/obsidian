@@ -162,7 +162,7 @@ $$
 &= n \ln\left(a \cdot e_{1}^2 + b \right) \\
 \end{split}
 $$
-
+- to show the [[estimator convergence]] it is enough to show that its [[expectation]] and [[variance]] are [[convergence in probability|converging in probability]] against zero (as a consequence of the [[chebyshev markov inequality]])
 $$
 \begin{split}
 \mathbb{E}\left[\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right] 
@@ -234,7 +234,7 @@ $$
 \end{split}
 $$
 
-- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
+- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is not measurable with respect to $\mathcal{F_{t-1}}$ 
 - then only the condition for a strong but not weak stationary solution is true
 
 $$
@@ -244,6 +244,8 @@ $$
 - then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
 - for example for ARCH(1) $\mathbb{E}[\ln ae_1^2]<0 \rightarrow a<3.56$ which is much weaker than $a < 1$
 # ---------------
+![[estimator convergence#estimator convergence]]
+
 ![[stationary process#stationary process]]
 
 ![[non-parametric volatility model#the base model]]
@@ -302,6 +304,8 @@ $$
 \end{split}
 $$
 
+- to show the [[estimator convergence]] it is enough to show that its [[expectation]] and [[variance]] are [[convergence in probability|converging in probability]] against zero (as a consequence of the [[chebyshev markov inequality]])
+
 $$
 \begin{split}
 \mathbb{E}\left[\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right] 
@@ -373,7 +377,7 @@ $$
 \end{split}
 $$
 
-- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
+- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is not measurable with respect to $\mathcal{F_{t-1}}$ 
 - then only the condition for a strong but not weak stationary solution is true
 
 $$
@@ -491,6 +495,8 @@ $$
 \end{split}
 $$
 
+- to show the [[estimator convergence]] it is enough to show that its [[expectation]] and [[variance]] are [[convergence in probability|converging in probability]] against zero (as a consequence of the [[chebyshev markov inequality]])
+
 $$
 \begin{split}
 \mathbb{E}\left[\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right] 
@@ -563,7 +569,7 @@ $$
 \end{split}
 $$
 
-- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
+- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is not measurable with respect to $\mathcal{F_{t-1}}$ 
 - then only the condition for a strong but not weak stationary solution is true
 
 $$
@@ -682,6 +688,8 @@ $$
 \end{split}
 $$
 
+- to show the [[estimator convergence]] it is enough to show that its [[expectation]] and [[variance]] are [[convergence in probability|converging in probability]] against zero (as a consequence of the [[chebyshev markov inequality]])
+
 $$
 \begin{split}
 \mathbb{E}\left[\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right] 
@@ -754,7 +762,7 @@ $$
 \end{split}
 $$
 
-- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
+- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is not measurable with respect to $\mathcal{F_{t-1}}$ 
 - then only the condition for a strong but not weak stationary solution is true
 
 $$
@@ -765,6 +773,20 @@ $$
 - for example for ARCH(1) $\mathbb{E}[\ln ae_1^2]<0 \rightarrow a<3.56$ which is much weaker than $a < 1$
 
 ________________
+
+### estimator convergence
+- give a [[statistical estimator]] $X_n$ and with en [[expectation]] that [[convergence in probability|converges in probability]] against $\mu$ and a [[variance]] that converges against zero i.e. $\mathbb{E}[X_n] \xrightarrow{\mathbb{P}} \mu$ and $\mathbb{VAR}[X_n] \xrightarrow{\mathbb{P}} 0$ 
+- then $X_n \xrightarrow{\mathbb{P}} \mu$ also converges against $\mu$
+
+#### proof
+$$
+\begin{split}
+\mathbb{P}\left(|X_n-\mu| > \epsilon\right) 
+&\leq \frac{\mathbb{E}\left[(X_n-\mu)^2\right]}{\epsilon^2}  \\
+&\leq \frac{\mathbb{VAR}[X_n]}{\epsilon^2} \xrightarrow{n \to \infty} 0 \\
+\end{split}
+$$
+
 ### stationary process
 - not every strong stationary process is weak stationary because the [[variance]] might not exist
 - every strong stationary process with existing [[moments]] is also weak stationary
@@ -874,6 +896,8 @@ $$
 \end{split}
 $$
 
+- to show the [[estimator convergence]] it is enough to show that its [[expectation]] and [[variance]] are [[convergence in probability|converging in probability]] against zero (as a consequence of the [[chebyshev markov inequality]])
+
 $$
 \begin{split}
 \mathbb{E}\left[\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right] 
@@ -946,7 +970,7 @@ $$
 \end{split}
 $$
 
-- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
+- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is not measurable with respect to $\mathcal{F_{t-1}}$ 
 - then only the condition for a strong but not weak stationary solution is true
 
 $$
@@ -1061,6 +1085,8 @@ $$
 \end{split}
 $$
 
+- to show the [[estimator convergence]] it is enough to show that its [[expectation]] and [[variance]] are [[convergence in probability|converging in probability]] against zero (as a consequence of the [[chebyshev markov inequality]])
+
 $$
 \begin{split}
 \mathbb{E}\left[\prod_{i=1}^{k+1}  \left(a\cdot e_{t-i}^2 +  b \right) \right] 
@@ -1133,7 +1159,7 @@ $$
 \end{split}
 $$
 
-- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is measurable with respect to $\mathcal{F_{t-1}}$ 
+- this means a strong but not weak stationary solution can only exist if $\sigma^2_t$ is not measurable with respect to $\mathcal{F_{t-1}}$ 
 - then only the condition for a strong but not weak stationary solution is true
 
 $$
