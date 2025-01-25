@@ -108,7 +108,7 @@ $$
 \end{split}
 $$
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true and the solution is unique for a given $p$ and $q$
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
@@ -124,6 +124,29 @@ $$
 \mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \infty
 $$
 
+### uniqueness of GARCH solutions
+- given a weak stationary solution of a GARCH(p, q) model
+- the solution is unique for the given $p$ and $q$ but there can be another GARCH $\tilde p$ $\tilde q$ model with the same solution
+- for example the two GARCH models describe the same [[time series]]
+
+$$
+\begin{split}
+\sigma_{t}^2 
+&=\frac{3}{4} + \frac{1}{3}X_{t-1}^2 + \frac{1}{2} \sigma_{t-1}^2 \\
+&=\frac{3}{4} + \frac{1}{3}X_{t-1}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{2}{6} \sigma_{t-1}^2 \\
+&=\frac{3}{4} + \frac{1}{3}X_{t-1}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{1}{3} \left(\frac{3}{4} + \frac{1}{3}X_{t-2}^2 + \frac{1}{2} \sigma_{t-2}^2\right) \\
+&=\frac{3}{4} + \frac{1}{3}X_{t-1}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{1}{4} + \frac{1}{9}X_{t-2}^2 + \frac{1}{6} \sigma_{t-2}^2 \\
+&=1 + \frac{1}{3}X_{t-1}^2 + \frac{1}{9}X_{t-2}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{1}{6} \sigma_{t-2}^2 \\
+\sigma_{t}^2 
+&=1 + \frac{1}{3}X_{t-1}^2 + \frac{1}{9}X_{t-2}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{1}{6} \sigma_{t-2}^2 \\
+\end{split}
+$$
+
+- if a GARCH model that satisfies the following conditions its [[time series]] is identifiable which means there is no other GARCH model that describes the same [[time series]] that satisfies both conditions
+1) $\mathcal{L}\left(e_1^2\right)$  does not have a one point distribution
+2) $A(z)=\sum_{i=1}^p a_i z^i$ and $B(z)=\sum_{i=1}^q b_i z^i$ don't have the same roots (nullstellen)
+
+- in the example the first example does satisfy the conditions but the second does not so they don't violate the theorem
 ## GARCH(1,1) model
 - $e_t \sim (0,1)$ i.i.d
 - $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
@@ -256,6 +279,41 @@ $$
 &= \frac{a_0}{1 - \sum_{j=1}^{q} b_j } \\
 \end{split}
 $$
+
+## GARCH parameter estimation
+- the parameters of the GARCH model can be estimated with the quasi [[maximum likelihood estimator|maximum likelihood]] method
+- assume there is a [[probability density function (PDF)]] $f\left(X_n, ..., X_1\right)$ and split it up in a product of conditional PDFs
+
+$$
+\begin{split}
+f\left(X_n, ..., X_1\right)
+&=\prod_{t=1}^n f\left(X_t | X_{t-1}, ..., X_{t-p},\sigma_{t}, ..., \sigma_{t-q} \right) \\
+\end{split}
+$$
+- since $\sigma_t$ is measurable given $X_{t-1}$ and $\sigma_t$ it only depends on the [[white noise]] $e_t \sim (0,1)$ that is NOT [[normal distribution|normal distributed]]
+$$
+\begin{split}
+F_X(x) 
+&= P(X_t < x) \\
+&= P(\sigma_t e_t < x) \\
+&= P\left( e_t < \frac{x}{\sigma_t}\right) \\
+&= F_e\left( \frac{X_t}{\sigma_t}\right) \\
+\\
+f\left(X_t | X_{t-1}, ..., X_{t-p},\sigma_{t}, ..., \sigma_{t-q} \right)
+&= f_X(X_t) \\
+&= \frac{d}{dx} F_e\left( \frac{X_t}{\sigma_t}\right) \\
+&= \frac{1}{\sigma_t} f_e\left( \frac{X_t}{\sigma_t}\right) \\
+\end{split}
+$$
+
+- as a result we have the following for the [[probability density function (PDF)]]
+$$
+\begin{split}
+f\left(X_n, ..., X_1\right)
+&=\prod_{t=1}^n\frac{1}{\sigma_t} f_e\left( \frac{X_t}{\sigma_t}\right) \\
+\end{split}
+$$
+- for the next step we assume that $e_t \sim \mathcal{N}(0,1)$ 
 # ---------------
 ![[estimator convergence#estimator convergence]]
 
@@ -441,7 +499,7 @@ $$
 - the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
 
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true and the solution is unique for a given $p$ and $q$
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
@@ -632,7 +690,7 @@ $$
 - the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
 
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true and the solution is unique for a given $p$ and $q$
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
@@ -839,7 +897,7 @@ $$
 - the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
 
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true and the solution is unique for a given $p$ and $q$
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
@@ -1033,7 +1091,7 @@ $$
 - the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
 
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true and the solution is unique for a given $p$ and $q$
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
@@ -1222,7 +1280,7 @@ $$
 - the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
 
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true and the solution is unique for a given $p$ and $q$
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
@@ -1269,7 +1327,7 @@ $$
 - the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
 
 ### existence and stationary of GARCH solutions
-- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true but the solution is not unique
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true and the solution is unique for a given $p$ and $q$
 
 $$
 \sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
@@ -1947,5 +2005,58 @@ $$
 
 
 Tags: mathematics time_series WS2425
+<!--ID: 1737832825893-->
+END
 
+
+START
+Basic
+[[GARCH model]]
+- what can be said about the uniqueness of GARCH solutions
+
+Back: 
+### uniqueness of GARCH solutions
+- given a weak stationary solution of a GARCH(p, q) model
+- the solution is unique for the given $p$ and $q$ but there can be another GARCH $\tilde p$ $\tilde q$ model with the same solution
+- for example the two GARCH models describe the same [[time series]]
+
+$$
+\begin{split}
+\sigma_{t}^2 
+&=\frac{3}{4} + \frac{1}{3}X_{t-1}^2 + \frac{1}{2} \sigma_{t-1}^2 \\
+&=\frac{3}{4} + \frac{1}{3}X_{t-1}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{2}{6} \sigma_{t-1}^2 \\
+&=\frac{3}{4} + \frac{1}{3}X_{t-1}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{1}{3} \left(\frac{3}{4} + \frac{1}{3}X_{t-2}^2 + \frac{1}{2} \sigma_{t-2}^2\right) \\
+&=\frac{3}{4} + \frac{1}{3}X_{t-1}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{1}{4} + \frac{1}{9}X_{t-2}^2 + \frac{1}{6} \sigma_{t-2}^2 \\
+&=1 + \frac{1}{3}X_{t-1}^2 + \frac{1}{9}X_{t-2}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{1}{6} \sigma_{t-2}^2 \\
+\sigma_{t}^2 
+&=1 + \frac{1}{3}X_{t-1}^2 + \frac{1}{9}X_{t-2}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{1}{6} \sigma_{t-2}^2 \\
+\end{split}
+$$
+
+- if a GARCH model that satisfies the following conditions its [[time series]] is identifiable which means there is no other GARCH model that describes the same [[time series]] that satisfies both conditions
+1) $\mathcal{L}\left(e_1^2\right)$  does not have a one point distribution
+2) $A(z)=\sum_{i=1}^p a_i z^i$ and $B(z)=\sum_{i=1}^q b_i z^i$ don't have the same roots (nullstellen)
+
+- in the example the first example does satisfy the conditions but the second does not so they don't violate the theorem
+
+## GARCH model
+- for modeling the conditional volatility as [[white noise]] based on historical returns, capturing the time-varying nature of volatility
+- produces forecasts of future volatility conditioned on past data
+- the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
+\end{split}
+$$
+
+- that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
+	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+
+Tags: mathematics time_series WS2425
+<!--ID: 1737832825898-->
 END
