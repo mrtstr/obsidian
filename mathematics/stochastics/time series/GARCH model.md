@@ -244,6 +244,18 @@ $$
 
 - then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
 - for example for ARCH(1) $\mathbb{E}[\ln ae_1^2]<0 \rightarrow a<3.56$ which is much weaker than $a < 1$
+
+### GARCH(0, q)
+- GARCH(0, q) does not make sense because it would lead to a constant $\sigma^2_t$ which would make the process a [[white noise#i.i.d white noise|i.i.d white noise]]
+
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t 
+&= a_0 +  \sum_{j=1}^{q} b_j \sigma^2_{t-j} \\
+&= \frac{a_0}{1 - \sum_{j=1}^{q} b_j } \\
+\end{split}
+$$
 # ---------------
 ![[estimator convergence#estimator convergence]]
 
@@ -1894,4 +1906,46 @@ $$
 
 Tags: mathematics time_series WS2425
 <!--ID: 1737734993473-->
+END
+
+
+START
+Basic
+[[GARCH model]]
+- why does GARCH(0, q) don't make sense?
+
+Back: 
+
+### GARCH(0, q)
+- GARCH(0, q) does not make sense because it would lead to a constant $\sigma^2_t$ which would make the process a [[white noise#i.i.d white noise|i.i.d white noise]]
+
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t 
+&= a_0 +  \sum_{j=1}^{q} b_j \sigma^2_{t-j} \\
+&= \frac{a_0}{1 - \sum_{j=1}^{q} b_j } \\
+\end{split}
+$$
+
+## GARCH model
+- for modeling the conditional volatility as [[white noise]] based on historical returns, capturing the time-varying nature of volatility
+- produces forecasts of future volatility conditioned on past data
+- the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
+\end{split}
+$$
+
+- that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
+	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+
+Tags: mathematics time_series WS2425
+
 END
