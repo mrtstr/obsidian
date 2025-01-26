@@ -281,6 +281,7 @@ $$
 $$
 
 ## GARCH parameter estimation
+### quasi maximum likelihood solution
 - the parameters of the GARCH model can be estimated with the quasi [[maximum likelihood estimator|maximum likelihood]] method
 - assume there is a [[probability density function (PDF)]] $f\left(X_n, ..., X_1\right)$ and split it up in a product of conditional PDFs
 
@@ -314,7 +315,66 @@ f\left(X_n, ..., X_1\right)
 \end{split}
 $$
 - for the next step we assume that $e_t \sim \mathcal{N}(0,1)$ 
+
+$$
+\begin{split}
+f\left(X_n, ..., X_1\right)
+&=\prod_{t=1}^n\frac{1}{\sigma_t} f_e\left( \frac{X_t}{\sigma_t}\right) \\
+&=\prod_{t=1}^n\frac{1}{\sqrt{2\pi\sigma_t^2(a, b) }} \exp\left(\frac{X_t^2}{\sigma_t^2(a,b)} \right) \\
+\end{split}
+$$
+
+- this can be solved using the [[maximum likelihood estimator|maximum likelihood method]] by calculating the [[gradient]] regarding the parameters $\theta=(a,b)$ and solve the equation system
+
+$$
+\begin{split}
+\ln f\left(X_n, ..., X_1\right)
+&=\ln\prod_{t=1}^n (2\pi\sigma_t^2(a, b))^{-\frac{1}{2}} \exp\left(-\frac{X_t^2}{\sigma_t^2(a,b)} \right) \\
+&=-\sum_{t=1}^n \ln \pi\sigma_t^2(a, b) + \frac{X_t^2}{\sigma_t^2(a,b)}  \\
+\end{split}
+$$
+
+### yule walker solution
+- for the GARCH(1, 1) model we can construct an [[autoregressive (AR) model]] for $X_t^2 - \mu$ and solve this with the [[yule walker equation]]
+- this approach could be generalized for GARCH(p, q)
+
+$$
+\begin{split}
+X_t
+&=\sigma_te_t \\
+X_t^2
+&=\sigma_t^2e_t^2 \\
+&=\sigma_t^2 + \sigma_t^2 (e_t^2-1) \\
+&=a_0 + a_1 X_{t-1}^2 + \underbrace{\left(a_0 + a_1 X_{t-1}^2\right) (e_t^2-1)}_{\eta_t} \\
+\mathbb{E}\left[X_t^2\right] 
+&:=\mu  \\
+&=a_0 + a_1 \mathbb{E}\left[X_{t-1}^2\right]  \\
+&=a_0 + a_1 \mu  \\
+X_t^2 - \mu
+&=a_0 + a_1 X_{t-1}^2 - a_0 + a_1 \mu  + \eta_t \\
+&= a_1 \left(X_{t-1}^2 - \mu\right)  + \eta_t \\
+\end{split}
+$$
+
+- with the [[yule walker equation]] we get the following parameters
+
+$$
+\begin{split}
+a_1^{YW} 
+&= \frac{\gamma(1)}{\gamma(0)} \\
+&=  \frac{\sum_{i=1}^n\frac{1}{n}\left(X_t^2-\bar \\X^2\right)\left(X_{t-1}^2-\bar X^2\right)}{\sum_{i=1}^n\frac{1}{n}\left(X_t^2-\bar X^2\right)^2} \\
+\mathbb{E}\left[X_t^2\right] 
+&=a_0 + a_1 \mathbb{E}\left[X_{t-1}^2\right]  \\
+&=a_0 + a_1 \mathbb{E}\left[X_{t}^2\right]  \\
+\Rightarrow a_0^{YW} &= \mathbb{E}\left[X_{t}^2\right]\left(1-a_1^{YW}\right)
+\end{split}
+$$
+
+
+- for [[estimator consitency]] we need $a_1 < \frac{1}{\sqrt{\mathbb{E}\left[e_1^4\right]}}$ which reduces the size of the parameter space
+
 # ---------------
+![[yule walker equation#yule walker equation]]
 ![[estimator convergence#estimator convergence]]
 
 ![[stationary process#stationary process]]
@@ -324,6 +384,209 @@ $$
 ![[non-parametric volatility model#time dependent volatility model]]
 
 # anki
+
+START
+Basic
+- how to solve the [[GARCH model]] with the [[yule walker equation]]?
+- disadvantages of this approach and how to solve it instead
+
+Back: 
+### yule walker solution
+- for the GARCH(1, 1) model we can construct an [[autoregressive (AR) model]] for $X_t^2 - \mu$ and solve this with the [[yule walker equation]]
+- (this approach could be generalized for GARCH(p, q))
+
+$$
+\begin{split}
+X_t
+&=\sigma_te_t \\
+X_t^2
+&=\sigma_t^2e_t^2 \\
+&=\sigma_t^2 + \sigma_t^2 (e_t^2-1) \\
+&=a_0 + a_1 X_{t-1}^2 + \underbrace{\left(a_0 + a_1 X_{t-1}^2\right) (e_t^2-1)}_{\eta_t} \\
+\mathbb{E}\left[X_t^2\right] 
+&:=\mu  \\
+&=a_0 + a_1 \mathbb{E}\left[X_{t-1}^2\right]  \\
+&=a_0 + a_1 \mu  \\
+X_t^2 - \mu
+&=a_0 + a_1 X_{t-1}^2 - a_0 + a_1 \mu  + \eta_t \\
+&= a_1 \left(X_{t-1}^2 - \mu\right)  + \eta_t \\
+\end{split}
+$$
+
+- with the [[yule walker equation]] we get the following parameters
+
+$$
+\begin{split}
+a_1^{YW} 
+&= \frac{\gamma(1)}{\gamma(0)} \\
+&=  \frac{\sum_{i=1}^n\frac{1}{n}\left(X_t^2-\bar \\X^2\right)\left(X_{t-1}^2-\bar X^2\right)}{\sum_{i=1}^n\frac{1}{n}\left(X_t^2-\bar X^2\right)^2} \\
+\mathbb{E}\left[X_t^2\right] 
+&=a_0 + a_1 \mathbb{E}\left[X_{t-1}^2\right]  \\
+&=a_0 + a_1 \mathbb{E}\left[X_{t}^2\right]  \\
+\Rightarrow a_0^{YW} &= \mathbb{E}\left[X_{t}^2\right]\left(1-a_1^{YW}\right)
+\end{split}
+$$
+
+
+- for [[estimator consitency]] we need $a_1 < \frac{1}{\sqrt{\mathbb{E}\left[e_1^4\right]}}$ which reduces the size of the parameter space and we have to assume the existence of finite higher moments
+
+________________
+
+### GARCH model
+- the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
+\end{split}
+$$
+
+- that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
+	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+## GARCH parameter estimation
+- the parameters of the GARCH model can be estimated with the quasi [[maximum likelihood estimator|maximum likelihood]] method
+- assume there is a [[probability density function (PDF)]] $f\left(X_n, ..., X_1\right)$ and split it up in a product of conditional PDFs
+
+$$
+\begin{split}
+f\left(X_n, ..., X_1\right)
+&=\prod_{t=1}^n f\left(X_t | X_{t-1}, ..., X_{t-p},\sigma_{t}, ..., \sigma_{t-q} \right) \\
+\end{split}
+$$
+- since $\sigma_t$ is measurable given $X_{t-1}$ and $\sigma_t$ it only depends on the [[white noise]] $e_t \sim (0,1)$ that is NOT [[normal distribution|normal distributed]]
+$$
+\begin{split}
+F_X(x) 
+&= P(X_t < x) \\
+&= P(\sigma_t e_t < x) \\
+&= P\left( e_t < \frac{x}{\sigma_t}\right) \\
+&= F_e\left( \frac{X_t}{\sigma_t}\right) \\
+\\
+f\left(X_t | X_{t-1}, ..., X_{t-p},\sigma_{t}, ..., \sigma_{t-q} \right)
+&= f_X(X_t) \\
+&= \frac{d}{dx} F_e\left( \frac{X_t}{\sigma_t}\right) \\
+&= \frac{1}{\sigma_t} f_e\left( \frac{X_t}{\sigma_t}\right) \\
+\end{split}
+$$
+
+- as a result we have the following for the [[probability density function (PDF)]]
+$$
+\begin{split}
+f\left(X_n, ..., X_1\right)
+&=\prod_{t=1}^n\frac{1}{\sigma_t} f_e\left( \frac{X_t}{\sigma_t}\right) \\
+\end{split}
+$$
+- for the next step we assume that $e_t \sim \mathcal{N}(0,1)$ 
+
+$$
+\begin{split}
+f\left(X_n, ..., X_1\right)
+&=\prod_{t=1}^n\frac{1}{\sigma_t} f_e\left( \frac{X_t}{\sigma_t}\right) \\
+&=\prod_{t=1}^n\frac{1}{\sqrt{2\pi\sigma_t^2(a, b) }} \exp\left(\frac{X_t^2}{\sigma_t^2(a,b)} \right) \\
+\end{split}
+$$
+
+- this can be solved using the [[maximum likelihood estimator|maximum likelihood method]] by calculating the [[gradient]] regarding the parameters $\theta=(a,b)$ and solve the equation system
+
+$$
+\begin{split}
+\ln f\left(X_n, ..., X_1\right)
+&=\ln\prod_{t=1}^n (2\pi\sigma_t^2(a, b))^{-\frac{1}{2}} \exp\left(-\frac{X_t^2}{\sigma_t^2(a,b)} \right) \\
+&=-\sum_{t=1}^n \ln \pi\sigma_t^2(a, b) + \frac{X_t^2}{\sigma_t^2(a,b)}  \\
+\end{split}
+$$
+
+
+Tags: mathematics time_series WS2425
+<!--ID: 1737914989959-->
+END
+
+START
+Basic
+how can the parameters of the [[GARCH model]] be estimated?
+
+Back: 
+## GARCH parameter estimation
+- the parameters of the GARCH model can be estimated with the quasi [[maximum likelihood estimator|maximum likelihood]] method
+- assume there is a [[probability density function (PDF)]] $f\left(X_n, ..., X_1\right)$ and split it up in a product of conditional PDFs
+
+$$
+\begin{split}
+f\left(X_n, ..., X_1\right)
+&=\prod_{t=1}^n f\left(X_t | X_{t-1}, ..., X_{t-p},\sigma_{t}, ..., \sigma_{t-q} \right) \\
+\end{split}
+$$
+- since $\sigma_t$ is measurable given $X_{t-1}$ and $\sigma_t$ it only depends on the [[white noise]] $e_t \sim (0,1)$ that is NOT [[normal distribution|normal distributed]]
+$$
+\begin{split}
+F_X(x) 
+&= P(X_t < x) \\
+&= P(\sigma_t e_t < x) \\
+&= P\left( e_t < \frac{x}{\sigma_t}\right) \\
+&= F_e\left( \frac{X_t}{\sigma_t}\right) \\
+\\
+f\left(X_t | X_{t-1}, ..., X_{t-p},\sigma_{t}, ..., \sigma_{t-q} \right)
+&= f_X(X_t) \\
+&= \frac{d}{dx} F_e\left( \frac{X_t}{\sigma_t}\right) \\
+&= \frac{1}{\sigma_t} f_e\left( \frac{X_t}{\sigma_t}\right) \\
+\end{split}
+$$
+
+- as a result we have the following for the [[probability density function (PDF)]]
+$$
+\begin{split}
+f\left(X_n, ..., X_1\right)
+&=\prod_{t=1}^n\frac{1}{\sigma_t} f_e\left( \frac{X_t}{\sigma_t}\right) \\
+\end{split}
+$$
+- for the next step we assume that $e_t \sim \mathcal{N}(0,1)$ 
+
+$$
+\begin{split}
+f\left(X_n, ..., X_1\right)
+&=\prod_{t=1}^n\frac{1}{\sigma_t} f_e\left( \frac{X_t}{\sigma_t}\right) \\
+&=\prod_{t=1}^n\frac{1}{\sqrt{2\pi\sigma_t^2(a, b) }} \exp\left(\frac{X_t^2}{\sigma_t^2(a,b)} \right) \\
+\end{split}
+$$
+
+- this can be solved using the [[maximum likelihood estimator|maximum likelihood method]] by calculating the [[gradient]] regarding the parameters $\theta=(a,b)$ and solve the equation system
+
+$$
+\begin{split}
+\ln f\left(X_n, ..., X_1\right)
+&=\ln\prod_{t=1}^n (2\pi\sigma_t^2(a, b))^{-\frac{1}{2}} \exp\left(-\frac{X_t^2}{\sigma_t^2(a,b)} \right) \\
+&=-\sum_{t=1}^n \ln \pi\sigma_t^2(a, b) + \frac{X_t^2}{\sigma_t^2(a,b)}  \\
+\end{split}
+$$
+
+
+________________
+
+### GARCH model
+- the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
+\end{split}
+$$
+
+- that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
+	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+
+
+Tags: mathematics time_series WS2425
+<!--ID: 1737914989963-->
+END
+
 
 START
 Basic
