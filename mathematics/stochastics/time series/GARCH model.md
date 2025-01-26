@@ -1,5 +1,5 @@
 ## GARCH model
-- for modeling the conditional volatility as [[white noise]] based on historical returns, capturing the time-varying nature of volatility
+- for modeling the conditional volatility based on historical returns, capturing the time-varying nature of volatility
 - produces forecasts of future volatility conditioned on past data
 - the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
 - $e_t \sim (0,1)$ i.i.d
@@ -125,7 +125,7 @@ $$
 $$
 
 ### uniqueness of GARCH solutions
-- given a weak stationary solution of a GARCH(p, q) model
+- given a weak stationary solution of a GARCH(p, q) model with $a_0>0$
 - the solution is unique for the given $p$ and $q$ but there can be another GARCH $\tilde p$ $\tilde q$ model with the same solution
 - for example the two GARCH models describe the same [[time series]]
 
@@ -457,6 +457,30 @@ $$
 
 - then the [[variance]] $\mathbb{E}\left[X_t^2\right]=\infty$ does exist because if it would exist strong stationary would imply weak stationary
 - for example for ARCH(1) $\mathbb{E}[\ln ae_1^2]<0 \rightarrow a<3.56$ which is much weaker than $a < 1$
+
+### uniqueness of GARCH solutions
+- given a weak stationary solution of a GARCH(p, q) model with $a_0>0$
+- the solution is unique for the given $p$ and $q$ but there can be another GARCH $\tilde p$ $\tilde q$ model with the same solution
+- for example the two GARCH models describe the same [[time series]]
+
+$$
+\begin{split}
+\sigma_{t}^2 
+&=\frac{3}{4} + \frac{1}{3}X_{t-1}^2 + \frac{1}{2} \sigma_{t-1}^2 \\
+&=\frac{3}{4} + \frac{1}{3}X_{t-1}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{2}{6} \sigma_{t-1}^2 \\
+&=\frac{3}{4} + \frac{1}{3}X_{t-1}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{1}{3} \left(\frac{3}{4} + \frac{1}{3}X_{t-2}^2 + \frac{1}{2} \sigma_{t-2}^2\right) \\
+&=\frac{3}{4} + \frac{1}{3}X_{t-1}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{1}{4} + \frac{1}{9}X_{t-2}^2 + \frac{1}{6} \sigma_{t-2}^2 \\
+&=1 + \frac{1}{3}X_{t-1}^2 + \frac{1}{9}X_{t-2}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{1}{6} \sigma_{t-2}^2 \\
+\sigma_{t}^2 
+&=1 + \frac{1}{3}X_{t-1}^2 + \frac{1}{9}X_{t-2}^2 + \frac{1}{6} \sigma_{t-1}^2 + \frac{1}{6} \sigma_{t-2}^2 \\
+\end{split}
+$$
+
+- if a GARCH model that satisfies the following conditions its [[time series]] is identifiable which means there is no other GARCH model that describes the same [[time series]] that satisfies both conditions
+1) $\mathcal{L}\left(e_1^2\right)$  does not have a one point distribution
+2) $A(z)=\sum_{i=1}^p a_i z^i$ and $B(z)=\sum_{i=1}^q b_i z^i$ don't have the same roots (nullstellen)
+
+- in the example the first example does satisfy the conditions but the second does not so they don't violate the theorem
 
 ________________
 
@@ -1738,7 +1762,7 @@ Basic
 
 Back: 
 ## GARCH model
-- for modeling the conditional volatility as [[white noise]] based on historical returns, capturing the time-varying nature of volatility
+- for modeling the conditional volatility based on historical returns, capturing the time-varying nature of volatility
 - produces forecasts of future volatility conditioned on past data
 - the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
 - $e_t \sim (0,1)$ i.i.d
@@ -1987,7 +2011,7 @@ $$
 $$
 
 ## GARCH model
-- for modeling the conditional volatility as [[white noise]] based on historical returns, capturing the time-varying nature of volatility
+- for modeling the conditional volatility based on historical returns, capturing the time-varying nature of volatility
 - produces forecasts of future volatility conditioned on past data
 - the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
 - $e_t \sim (0,1)$ i.i.d
@@ -2016,7 +2040,7 @@ Basic
 
 Back: 
 ### uniqueness of GARCH solutions
-- given a weak stationary solution of a GARCH(p, q) model
+- given a weak stationary solution of a GARCH(p, q) model with $a_0>0$
 - the solution is unique for the given $p$ and $q$ but there can be another GARCH $\tilde p$ $\tilde q$ model with the same solution
 - for example the two GARCH models describe the same [[time series]]
 
@@ -2040,7 +2064,7 @@ $$
 - in the example the first example does satisfy the conditions but the second does not so they don't violate the theorem
 
 ## GARCH model
-- for modeling the conditional volatility as [[white noise]] based on historical returns, capturing the time-varying nature of volatility
+- for modeling the conditional volatility based on historical returns, capturing the time-varying nature of volatility
 - produces forecasts of future volatility conditioned on past data
 - the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
 - $e_t \sim (0,1)$ i.i.d

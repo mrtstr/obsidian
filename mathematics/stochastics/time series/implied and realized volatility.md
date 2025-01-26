@@ -807,7 +807,7 @@ $$
 $$
 
 ### GARCH model
-- for modeling the conditional volatility as [[white noise]] based on historical returns, capturing the time-varying nature of volatility
+- for modeling the conditional volatility based on historical returns, capturing the time-varying nature of volatility
 - produces forecasts of future volatility conditioned on past data
 - the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
 - $e_t \sim (0,1)$ i.i.d
