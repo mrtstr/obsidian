@@ -373,6 +373,22 @@ $$
 
 - for [[estimator consitency]] we need $a_1 < \frac{1}{\sqrt{\mathbb{E}\left[e_1^4\right]}}$ which reduces the size of the parameter space
 
+
+
+
+### relationship to exponential smoothing
+- with $\mathbb{E}\left[\hat\sigma_t^2\right] =\mathbb{E}\left[\hat X_t^2\right] = \frac{\hat a_0}{1 - (\hat a + \hat b)}$ and the fact that $\hat a + \hat b \approx 1$ most of the time we have the following relationship showing that garch(1, 1) model is similar to [[exponential smoothing for time series]] with $\alpha = \hat b$
+- $\hat\sigma_t^2$ has a similar function as the trend $m_t$ in the case of [[exponential smoothing for time series]]
+
+$$
+\begin{split}
+\hat\sigma_t^2 &= a_0 + \hat a\hat X_{t-1}^2 + b \hat\sigma_{t-1}^2 \\
+\hat\sigma_t^2 - \frac{\hat a_0}{1 - (\hat a + \hat b)} 
+&=  \hat a\left(\hat X_{t-1}^2 - \frac{\hat a_0}{1 - (\hat a + \hat b)}\right) + \hat b \left(\hat\sigma_{t-1}^2 - \frac{\hat a_0}{1 - (\hat a + \hat b)}\right) \\
+&=  \left(1 - \hat b\right)\left(\hat X_{t-1}^2 - \frac{\hat a_0}{1 - (\hat a + \hat b)}\right) + \hat b \left(\hat\sigma_{t-1}^2 - \frac{\hat a_0}{1 - (\hat a + \hat b)}\right) \\
+\end{split}
+$$
+
 # ---------------
 ![[yule walker equation#yule walker equation]]
 ![[estimator convergence#estimator convergence]]
@@ -384,6 +400,100 @@ $$
 ![[non-parametric volatility model#time dependent volatility model]]
 
 # anki
+
+START
+Basic
+relationship GARCH(1,1) to exponential smoothing
+
+Back: 
+### relationship to exponential smoothing
+- with $\mathbb{E}\left[\hat\sigma_t^2\right] =\mathbb{E}\left[\hat X_t^2\right] = \frac{\hat a_0}{1 - (\hat a + \hat b)}$ and the fact that $\hat a + \hat b \approx 1$ most of the time we have the following relationship showing that garch(1, 1) model is similar to [[exponential smoothing for time series]] with $\alpha = \hat b$
+- $\hat\sigma_t^2$ has a similar function as the trend $m_t$ in the case of [[exponential smoothing for time series]]
+
+$$
+\begin{split}
+\hat\sigma_t^2 &= a_0 + \hat a\hat X_{t-1}^2 + b \hat\sigma_{t-1}^2 \\
+\hat\sigma_t^2 - \frac{\hat a_0}{1 - (\hat a + \hat b)} 
+&=  \hat a\left(\hat X_{t-1}^2 - \frac{\hat a_0}{1 - (\hat a + \hat b)}\right) + \hat b \left(\hat\sigma_{t-1}^2 - \frac{\hat a_0}{1 - (\hat a + \hat b)}\right) \\
+&=  \left(1 - \hat b\right)\left(\hat X_{t-1}^2 - \frac{\hat a_0}{1 - (\hat a + \hat b)}\right) + \hat b \left(\hat\sigma_{t-1}^2 - \frac{\hat a_0}{1 - (\hat a + \hat b)}\right) \\
+\end{split}
+$$
+
+
+### GARCH(1,1) model
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 +  a X_{t-1}^2 +  b \sigma^2_{t-1}
+\end{split}
+$$
+
+### exponential smoothing for time series
+- [[smoothing]] method for [[time series]] that is only based on the past (asymmetric)
+- can be described as a [[kernel smoothing for time series]]
+
+$$
+\begin{split}
+\hat m_t 
+&= \sum_{i=0}^\infty w_i X_{t-i} \quad \text{ with } w_i = \alpha^i (1-\alpha) \\
+&= w_0 X_t + \sum_{i=1}^\infty w_i X_{t-i} \\
+&= w_0 X_t + \alpha \sum_{i=0}^\infty w_i X_{t-i-1} \\
+&= (1-\alpha) X_t +\alpha m_{t-1} \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\sum_{i=0}^\infty   \alpha^i (1-\alpha) 
+&= (1-\alpha) \sum_{i=0}^\infty   \alpha^i \\
+&=   \frac{1-\alpha }{1-\alpha } \\
+&=   1 \\
+\end{split}
+$$
+
+
+________________
+
+
+### GARCH model
+- the concept behind the [[GARCH model]] is to use a [[autoregressive moving average (ARMA) model]] to model the [[volatility]] 
+- $e_t \sim (0,1)$ i.i.d
+- $a_i, b_j \geq 0$ and $a_p, b_q \neq 0$
+$$
+\begin{split}
+ X_t&= \sigma_t \cdot e_t \\
+\sigma^2_t &= a_0 + \sum_{i=1}^{p} a_i X_{t-i}^2 + \sum_{j=1}^{q} b_j \sigma^2_{t-j}
+\end{split}
+$$
+
+- that means that $\sigma^2_t=\mathbb{VAR}[X_t|X_{t-1}, X_{t-2},...]$ is equal to the [[conditional variance]] of $X_t$ given the past values
+	→ $\sigma^2_t$ is measurable given the past values
+- the [[GARCH model]] $X_t$ is [[white noise]] but not independent white noise and the squared [[GARCH model]] $X^2_t$ is a [[autoregressive moving average (ARMA) model]] [[time series]]
+
+### existence and stationary of GARCH solutions
+- for every [[white noise]] there always exists a [[stationary process#weakly stationary process|weakly stationary]] solution that describes it if and only if the following is true and the solution is unique for a given $p$ and $q$
+
+$$
+\sum_{i=1}^{p} a_i  + \sum_{j=1}^{q} b_j < 1
+$$
+- in this case the [[variance]] is as follows
+
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \frac{a_0}{1-\sum_{i=1}^{p} a_i  - \sum_{j=1}^{q} b_j }
+$$
+- the given condition is not necessary for the existence of a strict stationary solution but in this case the [[variance]] does not exist and we have the following
+
+$$
+\mathbb{VAR}[X_t] = \mathbb{E}[X_t^2] = \mathbb{E}[\sigma_t^2] = \infty
+$$
+
+
+Tags: mathematics time_series WS2425
+<!--ID: 1738394450002-->
+END
+
 
 START
 Basic
