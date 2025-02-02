@@ -1977,7 +1977,13 @@
     "mathematics/stochastics/time series/GARCH model.md": "d835a396721bb36993001da71e73f529",
     "mathematics/stochastics/time series/ARCH model.md": "eaf33ab3b00c6551ac65160caa011c7f",
     "mathematics/stochastics/estimator convergence.md": "df18dbee082d5f164d7a2dc61e14c2cb",
-    "mathematics/stochastics/time series/implied and realized volatility.md": "903aae7b9816f60ee531d401bca99c5c"
+    "mathematics/stochastics/time series/implied and realized volatility.md": "903aae7b9816f60ee531d401bca99c5c",
+    "infrastructure/AWS/AWS sso (single sign on).md": "78a09e28eacbe4b90c7b5dfd89a45baf",
+    "infrastructure/AWS/AWS session.md": "2cbe674dcbbb04e72eb77c5e6c20dbb2",
+    "infrastructure/AWS/AWS role.md": "1800504bc9f84d081ae6a5ef58f9abf7",
+    "infrastructure/AWS/AWS iam user.md": "8eb90fba7ec099015d704bb16982eece",
+    "infrastructure/AWS/AWS STS (security token service).md": "1b7606547d7b7ebe9e36ca5401c2e4ec",
+    "infrastructure/AWS/AWS JWT (json web token).md": "804d8265f6417bc27709d0cde149d3e7"
   },
   "fields_dict": {
     "Basic": [

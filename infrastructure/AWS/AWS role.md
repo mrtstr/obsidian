@@ -391,6 +391,6 @@ resource "aws_iam_role_policy_attachment" "ecr_access" {
 
 }
 ```
-Tags: infra AWS
-
+Tags: infra AWS WS2425
+<!--ID: 1738516417572-->
 END

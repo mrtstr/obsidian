@@ -436,6 +436,6 @@ jwt.decode(web_identity_token, options={"verify_signature": False})
 }
 ```
 
-Tags: infra AWS
-
+Tags: infra AWS WS2425
+<!--ID: 1738516417575-->
 END
