@@ -11,7 +11,8 @@ $$
 \end{split}
 $$
 ### given
-![[derivative#definition derivative]]
+![[derivative#general derivative]]
+
 ![[integral#Infinite integral is an inverse function inverse derivative]]
 ![[product rule of derivative#multiplication product rule for derivative]]
 ### Proof
@@ -56,7 +57,18 @@ f(x) &= \ln(x) \\
 \end{split}
 $$
 
-
+$$
+\begin{split}
+I
+=&\lim_{R\to\infty}\int_0^{2\pi} \int_0^{R} r e^{-\frac{r^2}{2}} dr d\varphi \\
+=& \lim_{R\to\infty}\int_0^{2\pi} \int_0^{g(R)} \frac{r}{\frac{dg(r)}{dr}} e^{-g(r)} dg d\varphi \\
+=& \lim_{R\to\infty}\int_0^{2\pi} \int_0^{\frac{R^2}{2}} \frac{r}{r} e^{-g} dg d\varphi \\
+=& \lim_{R\to\infty}\int_0^{2\pi}  \left[-e^{-g} \right]_0^\frac{R^2}{2} d\varphi \\
+=& \lim_{R\to\infty}\int_0^{2\pi}  \left(-e^{-\frac{R^2}{2} } + e^0 \right) d\varphi \\
+=& \lim_{R\to\infty}2\pi \left(1-e^{-\frac{R^2}{2} }  \right) \\
+=& 2\pi \\
+\end{split}
+$$
 # anki
 START
 Basic
@@ -163,4 +175,5 @@ $$
 Tags: mathematics
 <!--ID: 1693646460694-->
 END
+
 

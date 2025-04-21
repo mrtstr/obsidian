@@ -322,3 +322,43 @@ $$
 Tags: mathematics
 <!--ID: 1694252282998-->
 END
+
+
+START
+Basic
+calculate 
+
+$$
+I=\lim_{R\to\infty}\int_0^{2\pi} \int_0^{R} r e^{-\frac{r^2}{2}} 
+$$
+Back: 
+
+$$
+\begin{split}
+I
+=&\lim_{R\to\infty}\int_0^{2\pi} \int_0^{R} r e^{-\frac{r^2}{2}} dr d\varphi \\
+=& \lim_{R\to\infty}\int_0^{2\pi} \int_0^{g(R)} \frac{r}{\frac{dg(r)}{dr}} e^{-g(r)} dg d\varphi \\
+=& \lim_{R\to\infty}\int_0^{2\pi} \int_0^{\frac{R^2}{2}} \frac{r}{r} e^{-g} dg d\varphi \\
+=& \lim_{R\to\infty}\int_0^{2\pi}  \left[-e^{-g} \right]_0^\frac{R^2}{2} d\varphi \\
+=& \lim_{R\to\infty}\int_0^{2\pi}  \left(-e^{-\frac{R^2}{2} } + e^0 \right) d\varphi \\
+=& \lim_{R\to\infty}2\pi \left(1-e^{-\frac{R^2}{2} }  \right) \\
+=& 2\pi \\
+\end{split}
+$$
+### theorem [[integration by substitution]]
+
+#### definit [[integral]]
+$$
+\begin{split}
+\int_a^b f\left(g(x)\right) \frac{dg(x)}{x}dx = \int_{g(a)}^{g(b)} f\left(t\right) dt \quad \text{with} \quad t=g(x)
+\end{split}
+$$
+#### infinit [[integral]]
+$$
+\begin{split}
+\int f\left(g(x)\right) \frac{dg(x)}{x}dx = \left.\int f\left(t\right) dt \right|_{t=g(x)}
+\end{split}
+$$
+
+Tags: mathematics SS25
+END
