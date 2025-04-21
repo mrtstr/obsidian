@@ -28,7 +28,7 @@ F(x)
 &= 1 - e^{-\lambda x} \\
 \end{split}
 $$
-#### expectation
+### expectation
 - [[expectation]] of the [[exponential distribution]]
 
 $$
@@ -56,6 +56,31 @@ $$
 \end{split}
 $$
 
+### plot
+
+```functionplot
+---
+title: lambda=1
+xLabel: 
+yLabel: 
+bounds: [-0.1,4,0,1]
+disableZoom: true
+grid: true
+---
+f(x) = exp(-x)
+```
+
+```functionplot
+---
+title: lambda=5
+xLabel: 
+yLabel: 
+bounds: [-0.1,4,0,5]
+disableZoom: true
+grid: true
+---
+f(x) = 5*exp(-x*5)
+```
 # --------------------
 
 ![[integration by parts#theorem integration by parts]]
@@ -253,7 +278,7 @@ $$
 $$
 
 Tags: mathematics statistics SS25
-
+<!--ID: 1745238828236-->
 END
 
 
@@ -348,7 +373,7 @@ $$
 $$
 
 Tags: mathematics statistics SS25
-
+<!--ID: 1745238828238-->
 END
 
 
@@ -431,5 +456,5 @@ $$
 $$
 
 Tags: mathematics statistics SS25
-
+<!--ID: 1745238828240-->
 END

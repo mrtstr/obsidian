@@ -327,7 +327,8 @@
     "public-nat-gateway-diagram 2.png",
     "public-nat-gateway-diagram 1.png",
     "two-vpcs-to-two-subnets-one-vpc 1.png",
-    "Comparison_of_1D_histogram_and_KDE 1.png"
+    "Comparison_of_1D_histogram_and_KDE 1.png",
+    "exp_dist.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -1610,7 +1611,7 @@
     "mathematics/basics/inner product.md": "8809555b1294b823efd09931bd00867d",
     "mathematics/basics/relationship norm and metric.md": "5bd27559730217baeb97e4d81a242330",
     "mathematics/basics/matrix induced inner product.md": "352fed4beb8c8606914be90e773c4374",
-    "mathematics/basics/inner products and norms.md": "909992f44e3388eb4bc00265d58332c6",
+    "mathematics/basics/inner products and norms.md": "243396e23222720c08f91598b3b376a3",
     "mathematics/basics/open set.md": "a6daf6a25fbf09574496790103727eca",
     "mathematics/basics/ball.md": "1080dcb38d164b300825606b253b00ba",
     "mathematics/basics/open and closed sets.md": "c07c553c6c5d6a519536f4e26d40adbe",
@@ -1721,7 +1722,7 @@
     "mathematics/stochastics/cauchy schwarz inequality for probabilities.md": "7b47761c0cbe85c7fce41d3441699add",
     "mathematics/stochastics/chebyshev markov inequality.md": "fb822eec05c8aa6ebe179e010ef0de8b",
     "mathematics/stochastics/inner product in a probability space.md": "230b69944316015ac86056b093cb3cb4",
-    "mathematics/stochastics/sprecial distributions/continuous/exponential distribution.md": "41f6066696565e023f98b39117785a27",
+    "mathematics/stochastics/sprecial distributions/continuous/exponential distribution.md": "a1cc3874855960fbf0a5bfeb3862d929",
     "mathematics/stochastics/product probability space.md": "588a46d45fdedb1f7cae63e4051706a2",
     "mathematics/stochastics/sprecial distributions/multivariate normal distribution.md": "a3c0f3e4b1e8ce0cda907cb191384c16",
     "mathematics/stochastics/statistical estimator.md": "a08885b5919003fe704603f3674ec95d",
@@ -1787,7 +1788,7 @@
     "mathematics/basics/orthonormal matrix.md": "830f05eb2d8ac50ee12c16ec6703f833",
     "mathematics/basics/eigenvalues.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/numerical methods/general least squares.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/numerical methods/linear least squares.md": "4680a8fa5e893ea8bcaae451876f3f74",
+    "mathematics/numerical methods/linear least squares.md": "2078f54fb14f403beaeff76b23a756fd",
     "mathematics/numerical methods/QR decomposition.md": "25cc985cf004755a11b027ebee27f934",
     "mathematics/basics/vector subtraction.md": "d59485b0c2250f8ed944d9ccdf8fcfef",
     "mathematics/basics/reflection.md": "af025aded2248d812d8e8a490dfae8ec",
@@ -1983,7 +1984,11 @@
     "infrastructure/AWS/AWS role.md": "1800504bc9f84d081ae6a5ef58f9abf7",
     "infrastructure/AWS/AWS iam user.md": "8eb90fba7ec099015d704bb16982eece",
     "infrastructure/AWS/AWS STS (security token service).md": "1b7606547d7b7ebe9e36ca5401c2e4ec",
-    "infrastructure/AWS/AWS JWT (json web token).md": "804d8265f6417bc27709d0cde149d3e7"
+    "infrastructure/AWS/AWS JWT (json web token).md": "804d8265f6417bc27709d0cde149d3e7",
+    "mathematics/stochastics/entropy.md": "6d7f277e331258d82ca1cf02ae991c44",
+    "mathematics/stochastics/high dimensional linear regression.md": "76cd694fe82b7383b25b875d33bade84",
+    "mathematics/stochastics/akaike information criterion.md": "89decb9c7945ff574c509035a8abad51",
+    "machine learning/language models/token sequence.md": "fd53c94fa9da67f386e4b2c45f8b0da2"
   },
   "fields_dict": {
     "Basic": [
