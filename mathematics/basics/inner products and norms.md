@@ -8,12 +8,12 @@ $$
 ||x||^2 = \langle x, x \rangle
 $$
 ### proof
-1) [[positive definite]] follows directy for the [[inner product]] being [[positive definite]]
+1) [[positive definite]] follows directly for the [[inner product]] being [[positive definite]]
 $$
 \langle x, x \rangle \geq 0 \Rightarrow ||x|| = \sqrt{\langle x, x \rangle} \geq 0
 $$
 
-2) absolutly [[homogeneous]]
+2) absolutely [[homogeneous]]
 $$
 \begin{split}
 ||\lambda x|| 

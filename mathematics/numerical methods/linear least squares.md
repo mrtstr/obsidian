@@ -1,6 +1,6 @@
 ### linear least squares
 - given an overdeterminded [[linear equation system]] with [[matrix]] $A \in \mathbb{R}^{n \times m}$ and [[vector|vectors]] $x \in \mathbb{R}^{m}$ and $b \in \mathbb{R}^{n}$ with $n \ge m$
-- since there is no exact soltion the approach is to find the best fitting solution that minimizes the squared deviation
+- since there is no exact solution the approach is to find the best fitting solution that minimizes the squared deviation
 
 $$
 x = \mathrm{argmin} ||Ax - b||_2
