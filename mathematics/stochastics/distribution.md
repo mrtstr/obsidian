@@ -35,7 +35,7 @@ $$
 f_X(x) = \mathcal{P}_X(\{x\}) \\
 \end{split}
 $$
-- some but not all [[random variable]] in a [[continuous probability space]] have a [[probability density function (PDF)]] because eventhough they might have a [[cumulative distribution function (CDF)]] it is not allways [[differentiabe]]
+- some but not all [[random variable]] in a [[continuous probability space]] have a [[probability density function (PDF)]] because eventhough they might have a [[cumulative distribution function (CDF)]] it is not allways [[differentiable]]
 
 $$
 f_X(x) = \frac{dF_X(x)}{dx}
@@ -347,7 +347,7 @@ $$
 f_X(x) = \mathcal{P}_X(\{x\}) \\
 \end{split}
 $$
-- some but not all [[random variable]] in a [[continuous probability space]] have a [[probability density function (PDF)]] because eventhough they might have a [[cumulative distribution function (CDF)]] it is not allways [[differentiabe]]
+- some but not all [[random variable]] in a [[continuous probability space]] have a [[probability density function (PDF)]] because eventhough they might have a [[cumulative distribution function (CDF)]] it is not allways [[differentiable]]
 
 $$
 f_X(x) = \frac{dF_X(x)}{dx}

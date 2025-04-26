@@ -135,7 +135,7 @@ $$
 \end{split}
 $$
 ### error for the kernel estimator
-- given log returns $X_{t,n}$ with a [[differentiabe]] and bounded parameters that are functions $\sigma:[0,1] \to [0,\infty)$ and $\alpha:[0,1] \to \mathbb{R}$ and [[white noise]] $e_t \sim (0,1)$ with $\mathbb{E}[e_t^4]=\kappa < \infty$
+- given log returns $X_{t,n}$ with a [[differentiable]] and bounded parameters that are functions $\sigma:[0,1] \to [0,\infty)$ and $\alpha:[0,1] \to \mathbb{R}$ and [[white noise]] $e_t \sim (0,1)$ with $\mathbb{E}[e_t^4]=\kappa < \infty$
 
 $$
 \begin{split}
@@ -551,7 +551,7 @@ $$
 $$
 
 ### error for the kernel estimator
-- given log returns $X_{t,n}$ with a [[differentiabe]] and bounded parameters that are functions $\sigma:[0,1] \to [0,\infty)$ and $\alpha:[0,1] \to \mathbb{R}$ and [[white noise]] $e_t \sim (0,1)$ with $\mathbb{E}[e_t^4]=\kappa < \infty$
+- given log returns $X_{t,n}$ with a [[differentiable]] and bounded parameters that are functions $\sigma:[0,1] \to [0,\infty)$ and $\alpha:[0,1] \to \mathbb{R}$ and [[white noise]] $e_t \sim (0,1)$ with $\mathbb{E}[e_t^4]=\kappa < \infty$
 
 $$
 \begin{split}
@@ -1594,7 +1594,7 @@ $$
 \end{split}
 $$
 ### error for the kernel estimator
-- given log returns $X_{t,n}$ with a [[differentiabe]] and bounded parameters that are functions $\sigma:[0,1] \to [0,\infty)$ and $\alpha:[0,1] \to \mathbb{R}$ and [[white noise]] $e_t \sim (0,1)$ with $\mathbb{E}[e_t^4]=\kappa < \infty$
+- given log returns $X_{t,n}$ with a [[differentiable]] and bounded parameters that are functions $\sigma:[0,1] \to [0,\infty)$ and $\alpha:[0,1] \to \mathbb{R}$ and [[white noise]] $e_t \sim (0,1)$ with $\mathbb{E}[e_t^4]=\kappa < \infty$
 
 $$
 \begin{split}

@@ -4,7 +4,7 @@
 ##### the statistical model
 - given a [[random variable]] $X$ with a [[statistical model]] $(\mathfrak{X}, \mathcal{A}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ with a [[probability density function (PDF)]] $f_\vartheta(x)$ 
 - the true [[distribution]] of the [[random variable]] $\mathcal{L}(X)$ is in $\left\{\mathbb{P}_\vartheta: \vartheta \in \Theta\right\}$
-- $f_\vartheta(x)$ is [[differentiabe]] with respect to $\vartheta$ and satisfies the following condition
+- $f_\vartheta(x)$ is [[differentiable]] with respect to $\vartheta$ and satisfies the following condition
 
 $$
 \begin{split}
@@ -142,7 +142,7 @@ Back:
 ##### the statistical model
 - given a [[random variable]] $X$ with a [[statistical model]] $(\mathfrak{X}, \mathcal{A}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ with a [[probability density function (PDF)]] $f_\vartheta(x)$ 
 - the true [[distribution]] of the [[random variable]] $\mathcal{L}(X)$ is in $\left\{\mathbb{P}_\vartheta: \vartheta \in \Theta\right\}$
-- $f_\vartheta(x)$ is [[differentiabe]] with respect to $\vartheta$ and satisfies the following condition
+- $f_\vartheta(x)$ is [[differentiable]] with respect to $\vartheta$ and satisfies the following condition
 
 $$
 \begin{split}
@@ -267,7 +267,7 @@ ________________________
 ##### the statistical model
 - given a [[random variable]] $X$ with a [[statistical model]] $(\mathfrak{X}, \mathcal{A}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ with a [[probability density function (PDF)]] $f_\vartheta(x)$ 
 - the true [[distribution]] of the [[random variable]] $\mathcal{L}(X)$ is in $\left\{\mathbb{P}_\vartheta: \vartheta \in \Theta\right\}$
-- $f_\vartheta(x)$ is [[differentiabe]] with respect to $\vartheta$ and satisfies the following condition
+- $f_\vartheta(x)$ is [[differentiable]] with respect to $\vartheta$ and satisfies the following condition
 
 $$
 \begin{split}
@@ -453,7 +453,7 @@ $$
 ##### the statistical model
 - given a [[random variable]] $X$ with a [[statistical model]] $(\mathfrak{X}, \mathcal{A}, \mathbb{P}_\vartheta: \vartheta \in \Theta)$ with a [[probability density function (PDF)]] $f_\vartheta(x)$ 
 - the true [[distribution]] of the [[random variable]] $\mathcal{L}(X)$ is in $\left\{\mathbb{P}_\vartheta: \vartheta \in \Theta\right\}$
-- $f_\vartheta(x)$ is [[differentiabe]] with respect to $\vartheta$ and satisfies the following condition
+- $f_\vartheta(x)$ is [[differentiable]] with respect to $\vartheta$ and satisfies the following condition
 
 $$
 \begin{split}

@@ -1,4 +1,5 @@
 ### probability density function
+#### for a random variable
 - given a [[random variable]] $X: \Omega \to \mathbb{R}$ in a [[continuous probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$ with the [[distribution]] $\mathcal{P}_X:\mathcal{B}(\mathbb{R}) \to [0,1]$ and its [[cumulative distribution function (CDF)]] $F_X: \mathbb{R} \to [0,1]$
 - the [[probability mass function (PMF)]] would be undefined but the [[probability density function (PDF)]] $f_X: \mathbb{R} \to [0,1]$ can be derived from the [[cumulative distribution function (CDF)]]
 
@@ -14,7 +15,24 @@ $$
 \end{split}
 $$
 
+#### for a general probability measure
+- given a [[probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$ with a [[probability measure]] $\mathbb{P}: \mathcal{A} \to [0,1]$
+- the [[probability density function (PDF)]] $p: \Omega \to \mathbb{R}$ of $\mathbb{P}$ exists if $\mathbb{P}$ is [[differentiable]] and is defined as follows
+- the [[probability density function (PDF)]] $p: \Omega \to \mathbb{R}$ with respect to a reference measure (typically [[lebesgue measure]] $\lambda$ on $\mathbb{R}$) is defined as follows by the [[radon nikodym theorem]]
+- **only works** if the probability measure P\mathbb{P}P is **absolutely continuous with respect to Lebesgue measure** λ\lambdaλ
+
+$$
+\begin{split}
+&p(\omega) = \frac{d\mathbb{P}}{d\lambda} (\omega) \\
+\Rightarrow &d\mathbb{P}(\omega) = p(\omega)d\lambda(\omega) \\
+\end{split}
+$$
+
 # ----------------------
+![[radon nikodym theorem#radon nikodym theorem]]
+
+![[lebesgue measure#lebesgue measure]]
+
 ![[continuous probability space#continuous probability space]]
 
 ![[random variable#a random variable induces a probability measure]]

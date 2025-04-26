@@ -33,7 +33,7 @@ F_X(x_1, ..., x_n)
 $$
 
 ### joint [[probability density function (PDF)]] 
-- a [[continuous probability space|continuous]] [[random variable]] with a [[differentiabe]] joint [[cumulative distribution function (CDF)]] $f_X(x_1, ..., x_n): \mathbb{R}^n \to [0,1]$ has joint [[probability density function (PDF)]] 
+- a [[continuous probability space|continuous]] [[random variable]] with a [[differentiable]] joint [[cumulative distribution function (CDF)]] $f_X(x_1, ..., x_n): \mathbb{R}^n \to [0,1]$ has joint [[probability density function (PDF)]] 
 $$
 \begin{split}
 f_X(x_1, ..., x_n)
@@ -187,7 +187,7 @@ F_X(x_1, ..., x_n)
 $$
 
 ### joint [[probability density function (PDF)]] 
-- a [[continuous probability space|continuous]] [[random variable]] with a [[differentiabe]] joint [[cumulative distribution function (CDF)]] $f_X(x_1, ..., x_n): \mathbb{R}^n \to [0,1]$ has joint [[probability density function (PDF)]] 
+- a [[continuous probability space|continuous]] [[random variable]] with a [[differentiable]] joint [[cumulative distribution function (CDF)]] $f_X(x_1, ..., x_n): \mathbb{R}^n \to [0,1]$ has joint [[probability density function (PDF)]] 
 $$
 \begin{split}
 f_X(x_1, ..., x_n)

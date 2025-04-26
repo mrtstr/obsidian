@@ -1,6 +1,6 @@
-### differentiabe
+### differentiable
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
-- the [[function]] $f$ is [[differentiabe]] if for every element of $X$ there is a [[bounded linear map]] $A$ such that the following is true
+- the [[function]] $f$ is [[differentiable]] if for every element of $X$ there is a [[bounded linear map]] $A$ such that the following is true
 $$
 \forall x \in X: \exists A \in L(X, Y) : \lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Ah||_Y}{||h||_X} = 0
 $$
@@ -15,11 +15,11 @@ $$
 # anki
 START
 Basic
-definition for [[differentiabe]]
+definition for [[differentiable]]
 Back: 
 ### differentiabe
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
-- the [[function]] $f$ is [[differentiabe]] if for every element of $X$ there is a [[bounded linear map]] $A$ such that the following is true
+- the [[function]] $f$ is [[differentiable]] if for every element of $X$ there is a [[bounded linear map]] $A$ such that the following is true
 $$
 \forall x \in X: \exists A \in L(X, Y) : \lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Ah||_Y}{||h||_X} = 0
 $$

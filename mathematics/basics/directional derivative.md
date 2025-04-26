@@ -8,10 +8,10 @@ $$
 - the [[directional derivative]] is equal to the general [[derivative]] $Df(x)[h]$ when plugging in a constant direction $h$
 
 
-### [[directional derivative]] and [[differentiabe|differentiability]]
-- every [[differentiabe]] [[function]] has a [[directional derivative]] in all directions because the [[directional derivative]] can be constructed from the [[gradient]]
-- but not every [[function]] that has [[directional derivative]] in all directions is [[differentiabe]]
-- the following [[function]] $f(x, y)$ is not [[differentiabe]] in point $(0,0)$
+### [[directional derivative]] and [[differentiable|differentiability]]
+- every [[differentiable]] [[function]] has a [[directional derivative]] in all directions because the [[directional derivative]] can be constructed from the [[gradient]]
+- but not every [[function]] that has [[directional derivative]] in all directions is [[differentiable]]
+- the following [[function]] $f(x, y)$ is not [[differentiable]] in point $(0,0)$
 $$
 f(x, y) = \left\{ 
 \begin{split} 

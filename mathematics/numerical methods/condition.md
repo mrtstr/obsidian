@@ -8,7 +8,7 @@ $$
 $$
 
 ### upper bound for the condition
-- if the [[function]] $F$ is [[differentiabe]] then a $C$ that satsifies the following is an upper bound for the [[condition]] $\kappa\left(F\right) \leq C$
+- if the [[function]] $F$ is [[differentiable]] then a $C$ that satsifies the following is an upper bound for the [[condition]] $\kappa\left(F\right) \leq C$
 
 $$
 \frac{\left|\left|\nabla F(x)\right|\right| \cdot ||x||}{||F(x)||} \leq C
@@ -53,7 +53,7 @@ START
 Basic
 [[condition]] of a [[function]]
 - definition
-- how to estimate the [[condition]] of a [[differentiabe]] [[function]]?
+- how to estimate the [[condition]] of a [[differentiable]] [[function]]?
 Back: 
 ### condition
 - given a [[function]] $F: X \subset \mathbb{R}^m \to Y \subset \mathbb{R}^n$ 
@@ -65,7 +65,7 @@ $$
 $$
 
 ### upper bound for the condition
-- if the [[function]] $F$ is [[differentiabe]] then a $C$ that satsifies the following is an upper bound for the [[condition]] $\kappa\left(F\right) \leq C$
+- if the [[function]] $F$ is [[differentiable]] then a $C$ that satsifies the following is an upper bound for the [[condition]] $\kappa\left(F\right) \leq C$
 
 $$
 \frac{\left|\left|\nabla F(x)\right|\right| \cdot ||x||}{||F(x)||} \leq C
@@ -143,7 +143,7 @@ $$
 $$
 
 ### upper bound for the condition
-- if the [[function]] $F$ is [[differentiabe]] then a $C$ that satsifies the following is an upper bound for the [[condition]] $\kappa\left(F\right) \leq C$
+- if the [[function]] $F$ is [[differentiable]] then a $C$ that satsifies the following is an upper bound for the [[condition]] $\kappa\left(F\right) \leq C$
 
 $$
 \frac{\left|\left|\nabla F(x)\right|\right| \cdot ||x||}{||F(x)||} \leq C

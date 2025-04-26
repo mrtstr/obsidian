@@ -28,7 +28,7 @@ $$
 
 
 #### proof
-- the first proberties of a [[probability measure]] is trivial
+- the first properties of a [[probability measure]] is trivial
 $$
 \begin{split}
 \mathcal{P}_X(\emptyset \subseteq \mathbb{R}) 
