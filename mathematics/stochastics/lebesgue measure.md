@@ -27,10 +27,20 @@ $$
 \end{split}
 $$
 - example for an interval set $A=[a,b]$
+
 $$
 \begin{split}
 \mathbb{\lambda}([a,b]) 
 &= \int_{[a, b]}  d\lambda(\omega) = b - a\\
+\end{split}
+$$
+
+- in $\mathbb{R}^n$ the [[lebesgue measure]] and the [[riemann integral]] are the same because they agree on length
+
+$$
+\begin{split}
+\mathbb{\lambda}([a,b]) 
+&= \int_{[a, b]} g(\omega)  d\lambda(\omega) = \int_a^b g(\omega)  d\omega\\
 \end{split}
 $$
 ### lebesgue measures to measure probability
@@ -46,10 +56,16 @@ $$
 \begin{split}
 \mathbb{\lambda}(\Omega) 
 &= \int_{\Omega} p(\omega)  d\lambda(\omega) =1\\
+
 \end{split}
 $$
 
-
+$$
+\begin{split}
+\mathbb{\lambda}([a,b]) 
+&= \int_{[a, b]} p(\omega) d\lambda(\omega) = b - a\\
+\end{split}
+$$
 
 # -------------------
 
