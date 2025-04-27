@@ -165,5 +165,7 @@ $$
 ### measurable space
 - a [[measurable space]] $\left(\Omega,\mathcal{A} )\right)$ is a [[set]] $\Omega$ equipped with a [[sigma algebra]] $\mathcal{A}$
 - every [[probability space]] is by definition a [[measurable space]]
+
+Tags: mathematics statistics SS25
 <!--ID: 1745741685392-->
 END

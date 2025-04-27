@@ -65,7 +65,7 @@ $$
 START
 Basic
 [[probability density function (PDF)]]
-- general definition
+- general definition and intuition
 - relationship to the [[radon nikodym theorem]]
 - how to calculate the [[probability density function (PDF)]] of a [[random variable]]
 Back: 
