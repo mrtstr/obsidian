@@ -20,6 +20,7 @@ $$
 - when $\lambda$ is a [[lebesgue measure]] on $\mathbb{R}^n$ $\nu$ is a [[probability measure]] of a [[random variable]]
 - then $f$ is the [[probability density function (PDF)]] of $X$
 - In this setting, computing probabilities becomes an [[riemann integral]]
+
 # ----------------------
 
 ![[probability measure#probability measure]]
@@ -164,6 +165,5 @@ $$
 ### measurable space
 - a [[measurable space]] $\left(\Omega,\mathcal{A} )\right)$ is a [[set]] $\Omega$ equipped with a [[sigma algebra]] $\mathcal{A}$
 - every [[probability space]] is by definition a [[measurable space]]
-
 <!--ID: 1745741685392-->
 END

@@ -191,7 +191,7 @@ P\left(\bigcup_{i \in \mathbb{N}} A_i \right) = \sum_{i \in \mathbb{N}} P(A_i) \
 $$
 ### radon nikodym theorem
 - given two [[probability measure]] $\nu$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
-- $\nu$ is absolute continuous to $\lambda$ which means $\lambda(A) = 0 \Rightarrow \nu(A) = 0$
+- $\nu$ is [[absolutely continuous]] to $\lambda$ which means $\lambda(A) = 0 \Rightarrow \nu(A) = 0$
 - this means that $\nu$ is just a scaled version of $\lambda$ and there exists a function $f=\frac{d\nu}{d\lambda}$ that compensates for that
 
 $$
@@ -204,7 +204,14 @@ $$
 \end{split}
 $$
 
-- How much more (or less) weight does ν\nuν give to each point, compared to μ\muμ?
+#### intuition
+- intuitively f answers how dense $\nu$ is to $\lambda$ at each point $\omega$ 
+
+#### common application
+- when $\lambda$ is a [[lebesgue measure]] on $\mathbb{R}^n$ $\nu$ is a [[probability measure]] of a [[random variable]]
+- then $f$ is the [[probability density function (PDF)]] of $X$
+- In this setting, computing probabilities becomes an [[riemann integral]]
+
 
 ### measurable space
 - a [[measurable space]] $\left(\Omega,\mathcal{A} )\right)$ is a [[set]] $\Omega$ equipped with a [[sigma algebra]] $\mathcal{A}$

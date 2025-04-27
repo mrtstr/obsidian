@@ -46,6 +46,9 @@ $$
 # ----------------------
 ![[radon nikodym theorem#radon nikodym theorem]]
 
+
+![[absolutely continuous#absolutely continuous]]
+
 ![[lebesgue measure#lebesgue measure]]
 
 ![[continuous probability space#continuous probability space]]
@@ -140,9 +143,9 @@ END
 
 START
 Basic
-- given a [[random variable]] $X: \Omega \to \mathbb{R}$ with a [[probability measure]] $\mathcal{P}_X(C)$ on $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$
-- how can the [[probability density function (PDF)]] $f_X$ be derived from the [[probability density function (PDF)]] $p(\omega)$ of its source space?
-- how is the [[probability density function (PDF)]] $p(\omega)$ of its source space defined, and when does it exist? (name a theorem)
+[[probability density function (PDF)]]
+- definition (general and for a [[random variable]] $X$)
+- when does it exist (general and for a [[random variable]] $X$)
 
 Back: 
 ### probability density function
@@ -189,10 +192,18 @@ $$
 \end{split}
 $$
 
+### absolutely continuous
+- given two [[probability measure]] $\mathcal{P}$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
+- $\mathcal{P}$ is [[absolutely continuous]] to $\lambda$ written as $\mathcal{P} \ll \lambda$ if the following is hold for all $A \in \mathcal{A}$
+
+$$
+\lambda(A) = 0 \quad \Rightarrow \quad \mathcal{P}(A) = 0
+$$
+
+- in other words: $\mathcal{P}$ does not assign probabilities to sets that $\lambda$ considers zero
+- in this case $\mathcal{P}$ can be described as a scaled version of $\lambda$ see ([[radon nikodym theorem]])
 
 __________________
-
-
 
 ### lebesgue measure
 - the [[lebesgue measure]] is a way to assign a "size" or "length" to subsets of the $\mathbb{R}^n$ 
@@ -292,22 +303,7 @@ $$
 P\left(\bigcup_{i \in \mathbb{N}} A_i \right) = \sum_{i \in \mathbb{N}} P(A_i) \\
 \end{split}
 $$
-### radon nikodym theorem
-- given two [[probability measure]] $\nu$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
-- $\nu$ is absolute continuous to $\lambda$ which means $\lambda(A) = 0 \Rightarrow \nu(A) = 0$
-- this means that $\nu$ is just a scaled version of $\lambda$ and there exists a function $f=\frac{d\nu}{d\lambda}$ that compensates for that
 
-$$
-\begin{split}
-\mathbb{\nu}(A) 
-&= \int_\Omega \mathbb{I}[\omega \in A] d\nu \\
-&= \int_A  d\nu \\
-
-&= \int_A \frac{d\nu}{d\lambda} d\lambda \\
-\end{split}
-$$
-
-- How much more (or less) weight does ν\nuν give to each point, compared to μ\muμ?
 
 ### measurable space
 - a [[measurable space]] $\left(\Omega,\mathcal{A} )\right)$ is a [[set]] $\Omega$ equipped with a [[sigma algebra]] $\mathcal{A}$

@@ -1645,7 +1645,7 @@
     "mathematics/stochastics/probability mass function (PMF).md": "c4d1df5b2888b980c7a1810c2a76092d",
     "mathematics/stochastics/laplace experiment.md": "26a4cd51d2b807c2f5b2d7a9ecb284a1",
     "mathematics/stochastics/borel sigma algebra.md": "76b8f80639892ec00c96cd691fdd57c9",
-    "mathematics/stochastics/probability density function (PDF).md": "d404b4b019ab8592953b99fd2c2bbd3f",
+    "mathematics/stochastics/probability density function (PDF).md": "2d84b0d8b8f93f4d2de6d07190216874",
     "mathematics/stochastics/discrete probability space.md": "49d35055967f7233d3b1d1db5bad2fb2",
     "mathematics/stochastics/continuous probability space.md": "0fc3b93b1162374cdbc011c1041c46a9",
     "mathematics/stochastics/Untitled 1.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1990,11 +1990,11 @@
     "mathematics/stochastics/akaike information criterion.md": "89decb9c7945ff574c509035a8abad51",
     "machine learning/language models/token sequence.md": "fd53c94fa9da67f386e4b2c45f8b0da2",
     "mathematics/riemann integral.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/radon nikodym theorem.md": "90b85ad82726c84795a92064989eb725",
-    "mathematics/stochastics/lebesgue measure.md": "776070ac58ad4e8ccc496e0e10d05c73",
-    "mathematics/stochastics/integrating over probability measures.md": "8d3a912a5c75bcfb935b3de5cd8f0577",
+    "mathematics/stochastics/radon nikodym theorem.md": "5aaf39d1bed67b1850d095bed1e4f503",
+    "mathematics/stochastics/lebesgue measure.md": "bca17694bafc7dc48126f7e232f3506c",
+    "mathematics/stochastics/integrating over probability measures.md": "664a64f57d8a8df1e480f9ccd4786ac6",
     "mathematics/basics/differentiable.md": "183bd378550e3e338f2476c895d3ca3c",
-    "mathematics/stochastics/absolutely continuous.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "mathematics/stochastics/absolutely continuous.md": "7047051283a01a97b868092deed88d14"
   },
   "fields_dict": {
     "Basic": [
