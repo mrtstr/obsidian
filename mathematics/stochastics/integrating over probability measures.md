@@ -10,7 +10,7 @@ $$
 $$
 
 - integrating over $\mathbb{P}$ means we are measuring the [[probability]] of $A$ with respect to $\mathbb{P}$ and not to the [[riemann integral]] in $\mathbb{R}^n$
-- however if $\mathbb{P}$ is absolutely continuous to a [[lebesgue measure]] $\lambda$ we can convert this to a [[riemann integral]]
+- however if $\mathbb{P}$ is absolutely continuous to a [[lebesgue measure]] $\lambda$ that is defined on the same [[measurable space]] we can convert this to a [[riemann integral]]
 - since $\mathbb{P}$ is total continues to $\lambda$ by the [[radon nikodym theorem]] there exists a [[probability density function (PDF)]] $p: \Omega \to [0, \infty)$ such that
 
 $$
@@ -26,6 +26,13 @@ $$
 &= \int_A  p(\omega) d\lambda(\omega) = \int_A  p(\omega) d\omega \\
 \end{split}
 $$
+
+
+
+-  [[probability measure]] $\mathbb{P}$ and the [[lebesgue measure]] $\lambda$ generally live on different spaces (cannot be compared directly)
+- But for a [[random variable]] $X: \Omega \to \mathbb{R}^n$ its pushforward measure $\mathcal{P}_X$ is a measure on $\mathbb{R}^n$, and now it makes sense to ask if $\mathcal{P}_X<< \lambda$ ([[absolutely continuous]])
+- if yes $X$ as a [[probability density function (PDF)]] and [[riemann integral]] often matches [[lebesgue measure]] (if the PDF has nice properties)
+
 
 #### random variable
 - given a [[random variable]] $X: \Omega \to \mathbb{R}$ from a source space $\left(\Omega, \mathcal{A})\right)$ to $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$with a pushforward measure $\mathcal{P}_X(C)$
@@ -58,22 +65,20 @@ $$
 $$
 
 - the [[probability density function (PDF)]] $p(\omega)$ is converting from the source [[probability measure]] $\mathbb{P}$ to the [[lebesgue measure]] $\lambda$
+
+$$
+\begin{split}
+f_X(x) = \frac{d\mathcal{P}_X}{d\lambda}(x) \Rightarrow d\mathcal{P}_X = f_X(x) d\lambda
+\end{split}
+$$
+
 - however if the [[random variable]] $X$ itself has a [[probability density function (PDF)]] $f_X: \mathbb{R} \to \mathbb{R}$ that is converting from $\mathcal{P}_X(C)$ to the [[lebesgue measure]] $\lambda$ then $\mathcal{P}_X(C)$ can also be expressed as an [[integral]] on $\mathbb{R}$
 
 $$
 \begin{split}
 \mathcal{P}_X(C) 
-&= \int_C f_X(x) dx\\
-&= \int_C p\left(X^{-1}(x)\right) \left|\frac{dX^{-1}}{dx}\right| dx\\
-\end{split}
-$$
-
-- if $X(\omega)$ is [[inverse function|invertable]] and the inverse is [[differentiable]] then $f_X(x)$ can be derived from the [[probability density function (PDF)]] of the source space
-- this is done by pulling in the inverse random variable in the original [[probability density function (PDF)]] and rescaling by the Jacobian determinant (in higher dimensions), or in 1D, by the absolute value of the derivative.
-
-$$
-\begin{split}
-f_X(x) = p\left(X^{-1}(x)\right) \left|\frac{dX^{-1}}{dx}\right|
+&= \int_C d\mathcal{P}_X 
+&= \int_C f_X(x) dx
 \end{split}
 $$
 
@@ -95,6 +100,7 @@ Basic
 [[integrating over probability measures]]
 - how to calculate the [[probability]] of a [[set]] using a [[probability measure]] (two version)
 - what does it mean to integrate over a [[probability measure]] and how to translate it to a [[riemann integral]]
+- in which situations is this practically used and when is not possible?
 
 Back: 
 ### integrating over probability measures
@@ -126,6 +132,9 @@ $$
 \end{split}
 $$
 
+-  [[probability measure]] $\mathbb{P}$ and the [[lebesgue measure]] $\lambda$ generally live on different spaces (cannot be compared directly)
+- But for a [[random variable]] $X: \Omega \to \mathbb{R}^n$ its pushforward measure $\mathcal{P}_X$ is a measure on $\mathbb{R}^n$, and now it makes sense to ask if $\mathcal{P}_X<< \lambda$ ([[absolutely continuous]])
+- if yes $X$ as a [[probability density function (PDF)]] and [[riemann integral]] often matches [[lebesgue measure]] (if the PDF has nice properties)
 
 __________________
 ### lebesgue measure
@@ -293,6 +302,10 @@ $$
 \end{split}
 $$
 
+-  [[probability measure]] $\mathbb{P}$ and the [[lebesgue measure]] $\lambda$ generally live on different spaces (cannot be compared directly)
+- But for a [[random variable]] $X: \Omega \to \mathbb{R}^n$ its pushforward measure $\mathcal{P}_X$ is a measure on $\mathbb{R}^n$, and now it makes sense to ask if $\mathcal{P}_X<< \lambda$ ([[absolutely continuous]])
+- if yes $X$ as a [[probability density function (PDF)]] and [[riemann integral]] often matches [[lebesgue measure]] (if the PDF has nice properties)
+
 #### random variable
 - given a [[random variable]] $X: \Omega \to \mathbb{R}$ from a source space $\left(\Omega, \mathcal{A})\right)$ to $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$with a pushforward measure $\mathcal{P}_X(C)$
 
@@ -324,22 +337,20 @@ $$
 $$
 
 - the [[probability density function (PDF)]] $p(\omega)$ is converting from the source [[probability measure]] $\mathbb{P}$ to the [[lebesgue measure]] $\lambda$
+
+$$
+\begin{split}
+f_X(x) = \frac{d\mathcal{P}_X}{d\lambda}(x) \Rightarrow d\mathcal{P}_X = f_X(x) d\lambda
+\end{split}
+$$
+
 - however if the [[random variable]] $X$ itself has a [[probability density function (PDF)]] $f_X: \mathbb{R} \to \mathbb{R}$ that is converting from $\mathcal{P}_X(C)$ to the [[lebesgue measure]] $\lambda$ then $\mathcal{P}_X(C)$ can also be expressed as an [[integral]] on $\mathbb{R}$
 
 $$
 \begin{split}
 \mathcal{P}_X(C) 
-&= \int_C f_X(x) dx\\
-&= \int_C p\left(X^{-1}(x)\right) \left|\frac{dX^{-1}}{dx}\right| dx\\
-\end{split}
-$$
-
-- if $X(\omega)$ is [[inverse function|invertable]] and the inverse is [[differentiable]] then $f_X(x)$ can be derived from the [[probability density function (PDF)]] of the source space
-- this is done by pulling in the inverse random variable in the original [[probability density function (PDF)]] and rescaling by the Jacobian determinant (in higher dimensions), or in 1D, by the absolute value of the derivative.
-
-$$
-\begin{split}
-f_X(x) = p\left(X^{-1}(x)\right) \left|\frac{dX^{-1}}{dx}\right|
+&= \int_C d\mathcal{P}_X 
+&= \int_C f_X(x) dx
 \end{split}
 $$
 
@@ -445,22 +456,6 @@ $$
 P\left(\bigcup_{i \in \mathbb{N}} A_i \right) = \sum_{i \in \mathbb{N}} P(A_i) \\
 \end{split}
 $$
-### radon nikodym theorem
-- given two [[probability measure]] $\nu$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
-- $\nu$ is absolute continuous to $\lambda$ which means $\lambda(A) = 0 \Rightarrow \nu(A) = 0$
-- this means that $\nu$ is just a scaled version of $\lambda$ and there exists a function $f=\frac{d\nu}{d\lambda}$ that compensates for that
-
-$$
-\begin{split}
-\mathbb{\nu}(A) 
-&= \int_\Omega \mathbb{I}[\omega \in A] d\nu \\
-&= \int_A  d\nu \\
-
-&= \int_A \frac{d\nu}{d\lambda} d\lambda \\
-\end{split}
-$$
-
-- How much more (or less) weight does ν\nuν give to each point, compared to μ\muμ?
 
 ### measurable space
 - a [[measurable space]] $\left(\Omega,\mathcal{A} )\right)$ is a [[set]] $\Omega$ equipped with a [[sigma algebra]] $\mathcal{A}$

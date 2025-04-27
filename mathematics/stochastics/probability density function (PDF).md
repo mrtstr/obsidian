@@ -1,41 +1,47 @@
 ### probability density function
-- a [[probability density function (PDF)]] is a function converts a [[probability measure]] to a [[lebesgue measure]] 
+- a [[probability density function (PDF)]] is a [[measurable function]] $p: \mathbb{R} \to [0, \infty)$ that describes how a [[probability measure]] $\mathcal{P}$ on $\left(\mathbb{R}^n, \mathcal{B}(\mathbb{R}^n)\right)$ is [[absolutely continuous]] with respect to the [[lebesgue measure]] $\lambda$ (see [[radon nikodym theorem]])
 
 $$
 \begin{split}
-&p(\omega) = \frac{d\mathbb{P}}{d\lambda} (\omega) \\
-\Rightarrow &d\mathbb{P}(\omega) = p(\omega)d\lambda(\omega) \\
+&p(\omega) = \frac{d\mathcal{P}}{d\lambda} (\omega) \\
+\Rightarrow &d\mathcal{P}(\omega) = p(\omega)d\lambda(\omega) \\
+\end{split}
+$$
+- thus for all $A \subseteq \mathbb{R}$
+
+$$
+\begin{split}
+\mathcal{P}(A) = \int_A  d\mathcal{P}(\omega) 
+&= \int_A  p(\omega) d\lambda(\omega) = \int_A  p(\omega) d\omega \\
 \end{split}
 $$
 
+- intuitively, the [[probability density function (PDF)]] weights the [[lebesgue measure]] to build the [[probability measure]] $\mathcal{P}$
+
 #### for a random variable
-- given a [[random variable]] $X: \Omega \to \mathbb{R}$ in a [[continuous probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$ with the [[distribution]] $\mathcal{P}_X:\mathcal{B}(\mathbb{R}) \to [0,1]$ and its [[cumulative distribution function (CDF)]] $F_X: \mathbb{R} \to [0,1]$
-- the [[probability mass function (PMF)]] would be undefined but the [[probability density function (PDF)]] $f_X: \mathbb{R} \to [0,1]$ can be derived from the [[cumulative distribution function (CDF)]]
+- given a [[random variable]] $X: \Omega \to \mathbb{R}$ in that maps a [[continuous probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$ into $(\mathbb{R}, \mathcal{B}(\mathbb{R})\mathcal{P}_X)$
+- where $\mathcal{P}_X:\mathcal{B}(\mathbb{R}) \to [0,1]$ is the pushforward [[probability measure]] 
+- and its [[cumulative distribution function (CDF)]] $F_X: \mathbb{R} \to [0,1]$
+
+$$
+F_X =\mathcal{P}_X\left([-\infty, x)\right)
+$$
+
+- if $F_X$ is [[differentiable]] the [[probability density function (PDF)]] $f_X: \mathbb{R} \to [0,\infty)$ exists and is given by
 
 $$
 f_X(x) = \frac{dF_X(x)}{dx}
 $$
-- with the [[probability density function (PDF)]] we can calculate the [[probability]] that a [[continuous probability space|continuous]] [[random variable]] is in a [[set]] of values $C$ (of $C$ is countable the [[probability]] is zero)
+
+- With the PDF, we can compute probabilities of events involving $X$ by integrating over sets $C$
 
 $$
 \begin{split}
 \mathbb{P}(X \in C) &=\int\limits^{C}  f_X(x)\:dx \\
-\mathbb{P}(X \in [a,b]) &=\int\limits_{b}^{a}  f_X(x)\:dx
+\mathbb{P}(X \in [a,b]) &=\int\limits_{a}^{b}  f_X(x)\:dx
 \end{split}
 $$
 
-#### for a general probability measure
-- given a [[probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$ with a [[probability measure]] $\mathbb{P}: \mathcal{A} \to [0,1]$
-- the [[probability density function (PDF)]] $p: \Omega \to \mathbb{R}$ of $\mathbb{P}$ exists if $\mathbb{P}$ is [[differentiable]] and is defined as follows
-- the [[probability density function (PDF)]] $p: \Omega \to \mathbb{R}$ with respect to a reference measure (typically [[lebesgue measure]] $\lambda$ on $\mathbb{R}$) is defined as follows by the [[radon nikodym theorem]]
-- **only works** if the probability measure P\mathbb{P}P is **absolutely continuous with respect to Lebesgue measure** λ\lambdaλ
-
-$$
-\begin{split}
-&p(\omega) = \frac{d\mathbb{P}}{d\lambda} (\omega) \\
-\Rightarrow &d\mathbb{P}(\omega) = p(\omega)d\lambda(\omega) \\
-\end{split}
-$$
 
 # ----------------------
 ![[radon nikodym theorem#radon nikodym theorem]]
@@ -56,26 +62,78 @@ $$
 START
 Basic
 [[probability density function (PDF)]]
-- definition
-- probability that a [[random variable]] is in a [[set]]
+- general definition
+- relationship to the [[radon nikodym theorem]]
+- how to calculate the [[probability density function (PDF)]] of a [[random variable]]
 Back: 
 ### probability density function
-- given a [[random variable]] $X: \Omega \to \mathbb{R}$ in a [[continuous probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$ with the [[distribution]] $\mathcal{P}_X:\mathcal{B}(\mathbb{R}) \to [0,1]$ and its [[cumulative distribution function (CDF)]] $F_X: \mathbb{R} \to [0,1]$
-- the [[probability mass function (PMF)]] would be undefined but the [[probability density function (PDF)]] $f_X: \mathbb{R} \to [0,1]$ can be derived from the [[cumulative distribution function (CDF)]]
+- a [[probability density function (PDF)]] is a [[measurable function]] $p: \mathbb{R} \to [0, \infty)$ that describes how a [[probability measure]] $\mathcal{P}$ on $\left(\mathbb{R}^n, \mathcal{B}(\mathbb{R}^n)\right)$ is [[absolutely continuous]] with respect to the [[lebesgue measure]] $\lambda$ (see [[radon nikodym theorem]])
+
+$$
+\begin{split}
+&p(\omega) = \frac{d\mathcal{P}}{d\lambda} (\omega) \\
+\Rightarrow &d\mathcal{P}(\omega) = p(\omega)d\lambda(\omega) \\
+\end{split}
+$$
+- thus for all $A \subseteq \mathbb{R}$
+
+$$
+\begin{split}
+\mathcal{P}(A) = \int_A  d\mathcal{P}(\omega) 
+&= \int_A  p(\omega) d\lambda(\omega) = \int_A  p(\omega) d\omega \\
+\end{split}
+$$
+
+- intuitively, the [[probability density function (PDF)]] weights the [[lebesgue measure]] to build the [[probability measure]] $\mathcal{P}$
+
+#### for a random variable
+- given a [[random variable]] $X: \Omega \to \mathbb{R}$ in that maps a [[continuous probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$ into $(\mathbb{R}, \mathcal{B}(\mathbb{R})\mathcal{P}_X)$
+- where $\mathcal{P}_X:\mathcal{B}(\mathbb{R}) \to [0,1]$ is the pushforward [[probability measure]] 
+- and its [[cumulative distribution function (CDF)]] $F_X: \mathbb{R} \to [0,1]$
+
+$$
+F_X =\mathcal{P}_X\left([-\infty, x)\right)
+$$
+
+- if $F_X$ is [[differentiable]] the [[probability density function (PDF)]] $f_X: \mathbb{R} \to [0,\infty)$ exists and is given by
 
 $$
 f_X(x) = \frac{dF_X(x)}{dx}
 $$
-- with the [[probability density function (PDF)]] we can calculate the [[probability]] that a [[continuous probability space|continuous]] [[random variable]] is in a [[set]] of values $C$ (of $C$ is countable the [[probability]] is zero)
+
+- With the PDF, we can compute probabilities of events involving $X$ by integrating over sets $C$
 
 $$
 \begin{split}
 \mathbb{P}(X \in C) &=\int\limits^{C}  f_X(x)\:dx \\
-\mathbb{P}(X \in [a,b]) &=\int\limits_{b}^{a}  f_X(x)\:dx
+\mathbb{P}(X \in [a,b]) &=\int\limits_{a}^{b}  f_X(x)\:dx
 \end{split}
 $$
 
-Tags: mathematics statistics
+### radon nikodym theorem
+- given two [[probability measure]] $\nu$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
+- $\nu$ is [[absolutely continuous]] to $\lambda$ which means $\lambda(A) = 0 \Rightarrow \nu(A) = 0$
+- this means that $\nu$ is just a scaled version of $\lambda$ and there exists a function $f=\frac{d\nu}{d\lambda}$ that compensates for that
+
+$$
+\begin{split}
+\mathbb{\nu}(A) 
+&= \int_\Omega \mathbb{I}[\omega \in A] d\nu \\
+&= \int_A  d\nu \\
+
+&= \int_A \frac{d\nu}{d\lambda} d\lambda \\
+\end{split}
+$$
+
+#### intuition
+- intuitively f answers how dense $\nu$ is to $\lambda$ at each point $\omega$ 
+
+#### common application
+- when $\lambda$ is a [[lebesgue measure]] on $\mathbb{R}^n$ $\nu$ is a [[probability measure]] of a [[random variable]]
+- then $f$ is the [[probability density function (PDF)]] of $X$
+- In this setting, computing probabilities becomes an [[riemann integral]]
+
+Tags: mathematics statistics SS25
 <!--ID: 1664291691108-->
 END
 
@@ -87,82 +145,47 @@ Basic
 - how is the [[probability density function (PDF)]] $p(\omega)$ of its source space defined, and when does it exist? (name a theorem)
 
 Back: 
-### integrating over probability measures
-- given a [[probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$ and with a [[probability measure]] $\mathbb{P}$ 
-- the probability of an [[event]] $A \in \mathcal{A}$ defined by the [[integral]] over its [[probability measure]] 
+### probability density function
+- a [[probability density function (PDF)]] is a [[measurable function]] $p: \mathbb{R} \to [0, \infty)$ that describes how a [[probability measure]] $\mathcal{P}$ on $\left(\mathbb{R}^n, \mathcal{B}(\mathbb{R}^n)\right)$ is [[absolutely continuous]] with respect to the [[lebesgue measure]] $\lambda$ (see [[radon nikodym theorem]])
+
 $$
 \begin{split}
-\mathbb{P}(A) 
-&= \int_\Omega \mathbb{I}[\omega \in A] d\mathbb{P}(\omega) \\
-&= \int_A  d\mathbb{P}(\omega) \\
+&p(\omega) = \frac{d\mathcal{P}}{d\lambda} (\omega) \\
+\Rightarrow &d\mathcal{P}(\omega) = p(\omega)d\lambda(\omega) \\
 \end{split}
 $$
-
-- integrating over $\mathbb{P}$ means we are measuring the [[probability]] of $A$ with respect to $\mathbb{P}$ and not to the [[riemann integral]] in $\mathbb{R}^n$
-- however if $\mathbb{P}$ is absolutely continuous to a [[lebesgue measure]] $\lambda$ we can convert this to a [[riemann integral]]
-- since $\mathbb{P}$ is total continues to $\lambda$ by the [[radon nikodym theorem]] there exists a [[probability density function (PDF)]] $p: \Omega \to [0, \infty)$ such that
-
-$$
-p(\omega) = \frac{d\mathbb{P}}{d\lambda}(\omega) \Rightarrow d\mathbb{P} = p(\omega) d\lambda
-$$
-
-- therefore $\mathbb{P}(A)$ of any $A \in \mathcal{A}$ can be expressed as an [[integral]] over $\lambda$ weighted by the [[probability density function (PDF)]] $p$
-- and thus also as a [[riemann integral]] because the [[lebesgue measure]] which is equivalent to the [[riemann integral]] in $\mathbb{R}^n$
+- thus for all $A \subseteq \mathbb{R}$
 
 $$
 \begin{split}
-\mathbb{P}(A) = \int_A  d\mathbb{P}(\omega) 
+\mathcal{P}(A) = \int_A  d\mathcal{P}(\omega) 
 &= \int_A  p(\omega) d\lambda(\omega) = \int_A  p(\omega) d\omega \\
 \end{split}
 $$
 
-#### random variable
-- given a [[random variable]] $X: \Omega \to \mathbb{R}$ from a source space $\left(\Omega, \mathcal{A})\right)$ to $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$with a pushforward measure $\mathcal{P}_X(C)$
+- intuitively, the [[probability density function (PDF)]] weights the [[lebesgue measure]] to build the [[probability measure]] $\mathcal{P}$
+
+#### for a random variable
+- given a [[random variable]] $X: \Omega \to \mathbb{R}$ in that maps a [[continuous probability space]] $(\Omega, \mathcal{A}, \mathbb{P})$ into $(\mathbb{R}, \mathcal{B}(\mathbb{R})\mathcal{P}_X)$
+- where $\mathcal{P}_X:\mathcal{B}(\mathbb{R}) \to [0,1]$ is the pushforward [[probability measure]] 
+- and its [[cumulative distribution function (CDF)]] $F_X: \mathbb{R} \to [0,1]$
 
 $$
-\mathcal{P}_X(C) = \mathbb{P}\left(X^{-1}(C)\right) = \mathbb{P}\left( \{\omega \in \Omega : X(\omega) \in C\}\right)
+F_X =\mathcal{P}_X\left([-\infty, x)\right)
 $$
 
-- for every [[set]] $C \in \mathcal{B}(\mathbb{R})$ the probability $\mathcal{P}_X(C)$ can be calculated by integrating over $\mathcal{P}_X$
+- if $F_X$ is [[differentiable]] the [[probability density function (PDF)]] $f_X: \mathbb{R} \to [0,\infty)$ exists and is given by
 
 $$
-\begin{split}
-\mathcal{P}_X(C) 
-&= \int_C d\mathcal{P}_X 
-&= \int_\mathbb{R} \mathbb{I}[x \in C] d\mathcal{P}_X  \\
-\end{split}
+f_X(x) = \frac{dF_X(x)}{dx}
 $$
 
-- however $\mathcal{P}_X(C)$ can also always be measured with the [[probability measure]] of the source space $\mathbb{P}$
-- if $\mathbb{P}$ is absolutely continuous to a [[lebesgue measure]] $\lambda$ we can even convert this to a [[riemann integral]]
-
-$$
-\begin{split}
-\mathcal{P}_X(C) 
-&= \int_C d\mathcal{P}_X \\
-&= \int_{X^{-1}(C)}  d\mathbb{P}(\omega) \\
-&= \int_{X^{-1}(C)} p(\omega) d\lambda(\omega) 
-&= \int_{X^{-1}(C)} p(\omega) d\omega \\
-\end{split}
-$$
-
-- the [[probability density function (PDF)]] $p(\omega)$ is converting from the source [[probability measure]] $\mathbb{P}$ to the [[lebesgue measure]] $\lambda$
-- however if the [[random variable]] $X$ itself has a [[probability density function (PDF)]] $f_X: \mathbb{R} \to \mathbb{R}$ that is converting from $\mathcal{P}_X(C)$ to the [[lebesgue measure]] $\lambda$ then $\mathcal{P}_X(C)$ can also be expressed as an [[integral]] on $\mathbb{R}$
+- With the PDF, we can compute probabilities of events involving $X$ by integrating over sets $C$
 
 $$
 \begin{split}
-\mathcal{P}_X(C) 
-&= \int_C f_X(x) dx\\
-&= \int_C p\left(X^{-1}(x)\right) \left|\frac{dX^{-1}}{dx}\right| dx\\
-\end{split}
-$$
-
-- if $X(\omega)$ is [[inverse function|invertable]] and the inverse is [[differentiable]] then $f_X(x)$ can be derived from the [[probability density function (PDF)]] of the source space
-- this is done by pulling in the inverse random variable in the original [[probability density function (PDF)]] and rescaling by the Jacobian determinant (in higher dimensions), or in 1D, by the absolute value of the derivative.
-
-$$
-\begin{split}
-f_X(x) = p\left(X^{-1}(x)\right) \left|\frac{dX^{-1}}{dx}\right|
+\mathbb{P}(X \in C) &=\int\limits^{C}  f_X(x)\:dx \\
+\mathbb{P}(X \in [a,b]) &=\int\limits_{a}^{b}  f_X(x)\:dx
 \end{split}
 $$
 
