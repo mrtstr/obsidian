@@ -27,8 +27,6 @@ $$
 \end{split}
 $$
 
-
-
 -  [[probability measure]] $\mathbb{P}$ and the [[lebesgue measure]] $\lambda$ generally live on different spaces (cannot be compared directly)
 - But for a [[random variable]] $X: \Omega \to \mathbb{R}^n$ its pushforward measure $\mathcal{P}_X$ is a measure on $\mathbb{R}^n$, and now it makes sense to ask if $\mathcal{P}_X<< \lambda$ ([[absolutely continuous]])
 - if yes $X$ as a [[probability density function (PDF)]] and [[riemann integral]] often matches [[lebesgue measure]] (if the PDF has nice properties)
@@ -93,7 +91,7 @@ $$
 \end{split}
 $$
 
-see [[change of variables formula for pushforward measures]]
+see [[change of variables formula]]
 # ----------
 
 ![[lebesgue measure#lebesgue measure]]

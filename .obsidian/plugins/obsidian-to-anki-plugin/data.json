@@ -1154,7 +1154,7 @@
     "mathematics/basics/continouse function.md": "7758017402bd31e584a9df089584081a",
     "mathematics/basics/integral.md": "f50ea633772a7cf73f89ff6ad2ba15be",
     "mathematics/basics/integration by parts.md": "7c31baa9828baa01c6ee203e61b14f26",
-    "mathematics/basics/integration by substitution.md": "8efc6084c24c9d2b94c94ded7d42108b",
+    "mathematics/basics/integration by substitution.md": "5ac9f6e309faf382ac0ea9d9b55ae114",
     "mathematics/basics/mean value theorem.md": "f7ef5272acff4a4b8732ee0ff81557b2",
     "mathematics/linear algebra/linear equation.md": "6c9e1bbce31bbfd118b54d109b6913e0",
     "mathematics/basics/closure.md": "534d0a40e9739c6cff7dd2981ae6536a",
@@ -1992,12 +1992,13 @@
     "mathematics/riemann integral.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/radon nikodym theorem.md": "410e95b73558b02e1926d290730b840d",
     "mathematics/stochastics/lebesgue measure.md": "bca17694bafc7dc48126f7e232f3506c",
-    "mathematics/stochastics/integrating over probability measures.md": "dd9e15ee5e422bb82176e88d2403bd75",
+    "mathematics/stochastics/integrating over probability measures.md": "2cddd95beb7e2d1b8365918ff2f4b2d6",
     "mathematics/basics/differentiable.md": "183bd378550e3e338f2476c895d3ca3c",
     "mathematics/stochastics/absolutely continuous.md": "7047051283a01a97b868092deed88d14",
     "mathematics/stochastics/simple function.md": "895811fe972a8634d996c7307b825ac2",
     "mathematics/stochastics/empirical distribution of a dataset.md": "f13cd2b26d1fbe68fd75f8cc2a376584",
-    "mathematics/stochastics/dirac measure.md": "bf0abfb55061ae5e26eabe0de44a8a23"
+    "mathematics/stochastics/dirac measure.md": "bf0abfb55061ae5e26eabe0de44a8a23",
+    "mathematics/stochastics/change of variables formula.md": "370be7db469422d0c23024e58c2faf5b"
   },
   "fields_dict": {
     "Basic": [

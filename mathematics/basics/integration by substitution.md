@@ -16,7 +16,7 @@ $$
 F(x) &= \int_{a}^{x} f(t) dt \Leftrightarrow f(x) = \frac{dF(x)}{dx} \\
 \end{split}
 $$
-We know the folowing from the [[chain rule of derivative]]
+We know the following from the [[chain rule of derivative]]
 
 $$
 \begin{split}
