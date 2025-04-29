@@ -1,33 +1,15 @@
-## [[integration by substitution]]
-
+### integration by substitution
 - the [[integration by substitution]] rule for the [[integral]] is the equivalent of the [[chain rule of derivative]]
 - used to calculate the [[integral]] of [[function]] that is a [[composition]] of two [[function|functions]]
-
-
-### theorem [[integration by substitution]]
-
-#### definit [[integral]]
+#### definit integral
 $$
 \begin{split}
 \int_a^b f\left(g(x)\right) \frac{dg(x)}{x}dx = \int_{g(a)}^{g(b)} f\left(t\right) dt \quad \text{with} \quad t=g(x)
 \end{split}
 $$
-#### infinit [[integral]]
-$$
-\begin{split}
-\int f\left(g(x)\right) \frac{dg(x)}{x}dx = \left.\int f\left(t\right) dt \right|_{t=g(x)}
-\end{split}
-$$
 
-### given
+##### proof
 
-![[integral#Infinite integral is an inverse function inverse derivative]]
-
-![[integral#definit integral]]
-
-![[chain rule of derivative#composition chain rule for derivative]]
-
-### Proof
 Let $F$ be the [[integral|anti derivative]] of $f$.
 $$
 \begin{split}
@@ -35,6 +17,7 @@ F(x) &= \int_{a}^{x} f(t) dt \Leftrightarrow f(x) = \frac{dF(x)}{dx} \\
 \end{split}
 $$
 We know the folowing from the [[chain rule of derivative]]
+
 $$
 \begin{split}
 \frac{dF\left(g(x)\right)}{dx} 
@@ -42,7 +25,7 @@ $$
 &= f\left(g(x)\right)\frac{dg(x)}{x} \\
 \end{split}
 $$
-#### definit [[integral]]
+
 
 By plugging this in the definition of the [[integral|definit integral]] we can prove the [[integration by substitution]] transformation rule
 $$
@@ -55,7 +38,31 @@ $$
 &= \int_{g(a)}^{g(b)} f\left(t\right) dt \quad \text{with} \quad t=g(x) \\
 \end{split}
 $$
-#### infinit [[integral]]
+
+
+#### infinit integral
+$$
+\begin{split}
+\int f\left(g(x)\right) \frac{dg(x)}{x}dx = \left.\int f\left(t\right) dt \right|_{t=g(x)}
+\end{split}
+$$
+##### proof
+Let $F$ be the [[integral|anti derivative]] of $f$.
+$$
+\begin{split}
+F(x) &= \int_{a}^{x} f(t) dt \Leftrightarrow f(x) = \frac{dF(x)}{dx} \\
+\end{split}
+$$
+We know the following from the [[chain rule of derivative]]
+
+$$
+\begin{split}
+\frac{dF\left(g(x)\right)}{dx} 
+&= \frac{dF\left(g(x)\right)}{dg(x)}\frac{dg(x)}{x} \\
+&= f\left(g(x)\right)\frac{dg(x)}{x} \\
+\end{split}
+$$
+
 $$
 \begin{split}
 \int f\left(g(x)\right) \frac{dg(x)}{x}dx 
@@ -64,6 +71,13 @@ $$
 &= \left. \int f\left(t\right) dt \right|_{t=g(x)}  \\
 \end{split}
 $$
+
+
+
+### Proof
+
+
+
 ### examples
 $$
 \begin{split}
@@ -103,6 +117,16 @@ $$
 &= (x+1)^6 \frac{2}{7}+ (x+1)^4\frac{2}{5}  + C  \\
 \end{split}
 $$
+# -------------
+
+
+![[integral#Infinite integral is an inverse function inverse derivative]]
+
+![[integral#definit integral]]
+
+![[chain rule of derivative#composition chain rule for derivative]]
+
+
 # anki
 START
 Basic

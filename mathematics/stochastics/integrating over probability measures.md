@@ -78,6 +78,7 @@ $$
 \begin{split}
 \mathcal{P}_X(C) 
 &= \int_C d\mathcal{P}_X 
+&= \int_C f_X(x) d\lambda (x)
 &= \int_C f_X(x) dx
 \end{split}
 $$
@@ -92,6 +93,7 @@ $$
 \end{split}
 $$
 
+see [[change of variables formula for pushforward measures]]
 # ----------
 
 ![[lebesgue measure#lebesgue measure]]
@@ -367,10 +369,10 @@ $$
 \begin{split}
 \mathcal{P}_X(C) 
 &= \int_C d\mathcal{P}_X 
+&= \int_C f_X(x) d\lambda (x)
 &= \int_C f_X(x) dx
 \end{split}
 $$
-
 __________________
 
 
