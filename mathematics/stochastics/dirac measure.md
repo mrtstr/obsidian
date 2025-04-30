@@ -52,7 +52,7 @@ $$
 __________________
 
 ### absolutely continuous
-- given two [[probability measure]] $\mathcal{P}$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
+- given two [[measure]] $\mathcal{P}$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
 - $\mathcal{P}$ is [[absolutely continuous]] to $\lambda$ written as $\mathcal{P} \ll \lambda$ if the following is hold for all $A \in \mathcal{A}$
 
 $$
@@ -88,7 +88,7 @@ P\left(\bigcup_{i \in \mathbb{N}} A_i \right) = \sum_{i \in \mathbb{N}} P(A_i) \
 \end{split}
 $$
 ### radon nikodym theorem
-- given two [[probability measure]] $\nu$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
+- given two [[measure]] $\nu$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
 - $\nu$ is [[absolutely continuous]] to $\lambda$ which means $\lambda(A) = 0 \Rightarrow \nu(A) = 0$
 - this means that $\nu$ is just a scaled version of $\lambda$ and there exists a function $f=\frac{d\nu}{d\lambda}$ that compensates for that
 
@@ -209,7 +209,7 @@ $$
 __________________
 
 ### absolutely continuous
-- given two [[probability measure]] $\mathcal{P}$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
+- given two [[measure]] $\mathcal{P}$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
 - $\mathcal{P}$ is [[absolutely continuous]] to $\lambda$ written as $\mathcal{P} \ll \lambda$ if the following is hold for all $A \in \mathcal{A}$
 
 $$
@@ -245,7 +245,7 @@ P\left(\bigcup_{i \in \mathbb{N}} A_i \right) = \sum_{i \in \mathbb{N}} P(A_i) \
 \end{split}
 $$
 ### radon nikodym theorem
-- given two [[probability measure]] $\nu$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
+- given two [[measure]]  $\nu$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
 - $\nu$ is [[absolutely continuous]] to $\lambda$ which means $\lambda(A) = 0 \Rightarrow \nu(A) = 0$
 - this means that $\nu$ is just a scaled version of $\lambda$ and there exists a function $f=\frac{d\nu}{d\lambda}$ that compensates for that
 
