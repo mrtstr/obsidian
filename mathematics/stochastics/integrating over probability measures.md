@@ -88,15 +88,16 @@ $$
 #### functions of random variables
 - given a function $g: \mathbb{R} \to \mathbb{R}$ and [[random variable]] $X: \Omega \to \mathbb{R}$ from a source space $\left(\Omega, \mathcal{A})\right)$ to $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$with a pushforward measure $\mathcal{P}_X(C)$
 - $g$ can be measured with respect to $\mathcal{P}_X$ or the source [[probability measure]] $\mathbb{P}$
+- or the [[lebesgue measure]] if the [[probability density function (PDF)]] exists
 
 $$
 \begin{split}
 \int_\mathbb{R} g(x) d\mathcal{P}_X(x)
 &= \int_\Omega g\left(X(\omega)\right) d\mathbb{P}(\omega) \\
+&= \int_\mathbb{R} g\left(x\right) f_X(x) d\lambda(x) \\
 \end{split}
 $$
 
-see [[change of variables]]
 # ----------
 
 ![[lebesgue measure#lebesgue measure]]
@@ -511,18 +512,19 @@ END
 
 START
 Basic
-how can $\mathbb{E}[g(X)]$ be calculated with two different [[probability measure]]?
+how can $\mathbb{E}[g(X)]$ be calculated with 3 different [[probability measure]]?
 
 Back: 
 #### functions of random variables
 - given a function $g: \mathbb{R} \to \mathbb{R}$ and [[random variable]] $X: \Omega \to \mathbb{R}$ from a source space $\left(\Omega, \mathcal{A})\right)$ to $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$with a pushforward measure $\mathcal{P}_X(C)$
 - $g$ can be measured with respect to $\mathcal{P}_X$ or the source [[probability measure]] $\mathbb{P}$
+- or the [[lebesgue measure]] if the [[probability density function (PDF)]] exists
 
 $$
 \begin{split}
-\mathbb{E}[g(X)]
-&= \int_\mathbb{R} g(x) d\mathcal{P}_X(x)
+\int_\mathbb{R} g(x) d\mathcal{P}_X(x)
 &= \int_\Omega g\left(X(\omega)\right) d\mathbb{P}(\omega) \\
+&= \int_\mathbb{R} g\left(x\right) f_X(x) d\lambda(x) \\
 \end{split}
 $$
 

@@ -29,6 +29,68 @@ $$
 
 # anki
 
+START
+Basic
+proof that a discrete [[random variable]] cant have a [[probability density function (PDF)]]
+
+Back: 
+- its not [[absolutely continuous]] to the [[lebesgue measure]] because some $x \in \Omega$ have $\mathcal{P}_X(\{x\}) >0$ but $\lambda(\{x\})=x-x=0$
+### radon nikodym theorem
+- given two [[measure]]  $\nu$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
+- $\nu$ is [[absolutely continuous]] to $\lambda$ which means $\lambda(A) = 0 \Rightarrow \nu(A) = 0$
+- this means that $\nu$ is just a scaled version of $\lambda$ and there exists a function $f=\frac{d\nu}{d\lambda}$ that compensates for that
+
+$$
+\begin{split}
+\mathbb{\nu}(A) 
+&= \int_\Omega \mathbb{I}[\omega \in A] d\nu \\
+&= \int_A  d\nu \\
+
+&= \int_A \frac{d\nu}{d\lambda} d\lambda \\
+\end{split}
+$$
+
+#### intuition
+- intuitively f answers how dense $\nu$ is to $\lambda$ at each point $\omega$ 
+
+#### common application
+- when $\lambda$ is a [[lebesgue measure]] on $\mathbb{R}^n$ $\nu$ is a [[probability measure]] of a [[random variable]]
+- then $f$ is the [[probability density function (PDF)]] of $X$
+- In this setting, computing probabilities becomes an [[riemann integral]]
+
+### probability density function
+- a [[probability density function (PDF)]] is a [[measurable function]] $p: \mathbb{R} \to [0, \infty)$ that describes how a [[probability measure]] $\mathcal{P}$ on $\left(\mathbb{R}^n, \mathcal{B}(\mathbb{R}^n)\right)$ is [[absolutely continuous]] with respect to the [[lebesgue measure]] $\lambda$ (see [[radon nikodym theorem]])
+
+$$
+\begin{split}
+&p(\omega) = \frac{d\mathcal{P}}{d\lambda} (\omega) \\
+\Rightarrow &d\mathcal{P}(\omega) = p(\omega)d\lambda(\omega) \\
+\end{split}
+$$
+- thus for all $A \subseteq \mathbb{R}$
+
+$$
+\begin{split}
+\mathcal{P}(A) = \int_A  d\mathcal{P}(\omega) 
+&= \int_A  p(\omega) d\lambda(\omega) = \int_A  p(\omega) d\omega \\
+\end{split}
+$$
+
+- intuitively, the [[probability density function (PDF)]] weights the [[lebesgue measure]] to build the [[probability measure]] $\mathcal{P}$
+- instead of describing the [[probability density function (PDF)]] as a differential equation often it makes sense to describe the ratio of the measurement of an infinitesimal small [[ball]] around the point $\omega$
+
+$$
+\begin{split}
+&p(\omega) \approx \frac{\mathcal{P}\left(B_\epsilon (\omega)\right)}{\lambda \left(B_\epsilon (\omega)\right)} \quad \text{as } \epsilon \to 0  \\
+&p\left(g(\omega)\right) \approx \frac{\mathcal{P}\left(B_\epsilon \left(g(\omega)\right)\right)}{\lambda \left(B_\epsilon \left(g(\omega)\right)\right)} \quad \text{as } \epsilon \to 0  \\
+\end{split}
+$$
+
+
+Tags: mathematics statistics SS25
+<!--ID: 1746022619881-->
+END
+
 
 START
 Basic
