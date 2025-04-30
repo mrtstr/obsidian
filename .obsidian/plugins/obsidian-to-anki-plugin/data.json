@@ -1645,7 +1645,7 @@
     "mathematics/stochastics/probability mass function (PMF).md": "c4d1df5b2888b980c7a1810c2a76092d",
     "mathematics/stochastics/laplace experiment.md": "26a4cd51d2b807c2f5b2d7a9ecb284a1",
     "mathematics/stochastics/borel sigma algebra.md": "76b8f80639892ec00c96cd691fdd57c9",
-    "mathematics/stochastics/probability density function (PDF).md": "b29bec9e3dc30acc71d2485848ec29c9",
+    "mathematics/stochastics/probability density function (PDF).md": "65617a347c7da9fabbc9bbc39fedfb54",
     "mathematics/stochastics/discrete probability space.md": "49d35055967f7233d3b1d1db5bad2fb2",
     "mathematics/stochastics/continuous probability space.md": "0fc3b93b1162374cdbc011c1041c46a9",
     "mathematics/stochastics/Untitled 1.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1992,13 +1992,14 @@
     "mathematics/riemann integral.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/radon nikodym theorem.md": "410e95b73558b02e1926d290730b840d",
     "mathematics/stochastics/lebesgue measure.md": "bca17694bafc7dc48126f7e232f3506c",
-    "mathematics/stochastics/integrating over probability measures.md": "2cddd95beb7e2d1b8365918ff2f4b2d6",
+    "mathematics/stochastics/integrating over probability measures.md": "ff3fc17594211f52ae97bbe7bfd6210a",
     "mathematics/basics/differentiable.md": "183bd378550e3e338f2476c895d3ca3c",
     "mathematics/stochastics/absolutely continuous.md": "7047051283a01a97b868092deed88d14",
     "mathematics/stochastics/simple function.md": "895811fe972a8634d996c7307b825ac2",
     "mathematics/stochastics/empirical distribution of a dataset.md": "f13cd2b26d1fbe68fd75f8cc2a376584",
     "mathematics/stochastics/dirac measure.md": "bf0abfb55061ae5e26eabe0de44a8a23",
-    "mathematics/stochastics/change of variables formula.md": "370be7db469422d0c23024e58c2faf5b"
+    "mathematics/stochastics/change of variables formula.md": "370be7db469422d0c23024e58c2faf5b",
+    "mathematics/stochastics/change of variables.md": "5f9fc8083fb583dd2b0c809556a184d6"
   },
   "fields_dict": {
     "Basic": [

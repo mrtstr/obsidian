@@ -36,7 +36,12 @@ $$
 - given a [[random variable]] $X: \Omega \to \mathbb{R}$ from a source space $\left(\Omega, \mathcal{A})\right)$ to $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$with a pushforward measure $\mathcal{P}_X(C)$
 
 $$
-\mathcal{P}_X(C) = \mathbb{P}\left(X^{-1}(C)\right) = \mathbb{P}\left( \{\omega \in \Omega : X(\omega) \in C\}\right)
+\begin{split}
+\mathcal{P}_X(C) 
+&= \mathbb{P}\left(X^{-1}(C)\right) 
+= \mathbb{P}\left( \{\omega \in \Omega : X(\omega) \in C\}\right) \\
+&= \mathbb{P}\left( X \in C\right) \quad \text{(in short)} \\
+\end{split}
 $$
 
 - for every [[set]] $C \in \mathcal{B}(\mathbb{R})$ the probability $\mathcal{P}_X(C)$ can be calculated by integrating over $\mathcal{P}_X$
@@ -91,7 +96,7 @@ $$
 \end{split}
 $$
 
-see [[change of variables formula]]
+see [[change of variables]]
 # ----------
 
 ![[lebesgue measure#lebesgue measure]]
@@ -327,7 +332,12 @@ $$
 - given a [[random variable]] $X: \Omega \to \mathbb{R}$ from a source space $\left(\Omega, \mathcal{A})\right)$ to $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$with a pushforward measure $\mathcal{P}_X(C)$
 
 $$
-\mathcal{P}_X(C) = \mathbb{P}\left(X^{-1}(C)\right) = \mathbb{P}\left( \{\omega \in \Omega : X(\omega) \in C\}\right)
+\begin{split}
+\mathcal{P}_X(C) 
+&= \mathbb{P}\left(X^{-1}(C)\right) 
+= \mathbb{P}\left( \{\omega \in \Omega : X(\omega) \in C\}\right) \\
+&= \mathbb{P}\left( X \in C\right) \quad \text{(in short)} \\
+\end{split}
 $$
 
 - for every [[set]] $C \in \mathcal{B}(\mathbb{R})$ the probability $\mathcal{P}_X(C)$ can be calculated by integrating over $\mathcal{P}_X$
@@ -538,7 +548,12 @@ $$
 - given a [[random variable]] $X: \Omega \to \mathbb{R}$ from a source space $\left(\Omega, \mathcal{A})\right)$ to $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$with a pushforward measure $\mathcal{P}_X(C)$
 
 $$
-\mathcal{P}_X(C) = \mathbb{P}\left(X^{-1}(C)\right) = \mathbb{P}\left( \{\omega \in \Omega : X(\omega) \in C\}\right)
+\begin{split}
+\mathcal{P}_X(C) 
+&= \mathbb{P}\left(X^{-1}(C)\right) 
+= \mathbb{P}\left( \{\omega \in \Omega : X(\omega) \in C\}\right) \\
+&= \mathbb{P}\left( X \in C\right) \quad \text{(in short)} \\
+\end{split}
 $$
 
 - for every [[set]] $C \in \mathcal{B}(\mathbb{R})$ the probability $\mathcal{P}_X(C)$ can be calculated by integrating over $\mathcal{P}_X$
@@ -689,6 +704,102 @@ $$
 
 Tags: mathematics statistics SS25
 <!--ID: 1745771490773-->
+END
+
+
+START
+Basic
+- given a [[random variable]] $X: \Omega \to \mathbb{R}$ from a source space $\left(\Omega, \mathcal{A}, \mathbb{P})\right)$ to $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$with a pushforward measure $\mathcal{P}_X(C)$
+- what does $\mathbb{P}\left( X \in C\right)$ in this case mean?
+Back: 
+
+__________________
+
+#### random variable
+- given a [[random variable]] $X: \Omega \to \mathbb{R}$ from a source space $\left(\Omega, \mathcal{A})\right)$ to $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$with a pushforward measure $\mathcal{P}_X(C)$
+
+$$
+\begin{split}
+\mathcal{P}_X(C) 
+&= \mathbb{P}\left(X^{-1}(C)\right) 
+= \mathbb{P}\left( \{\omega \in \Omega : X(\omega) \in C\}\right) \\
+&= \mathbb{P}\left( X \in C\right) \quad \text{(in short)} \\
+\end{split}
+$$
+
+- for every [[set]] $C \in \mathcal{B}(\mathbb{R})$ the probability $\mathcal{P}_X(C)$ can be calculated by integrating over $\mathcal{P}_X$
+
+$$
+\begin{split}
+\mathcal{P}_X(C) 
+&= \int_C d\mathcal{P}_X 
+&= \int_\mathbb{R} \mathbb{I}[x \in C] d\mathcal{P}_X  \\
+\end{split}
+$$
+
+- however $\mathcal{P}_X(C)$ can also always be measured with the [[probability measure]] of the source space $\mathbb{P}$
+- if $\mathbb{P}$ is absolutely continuous to a [[lebesgue measure]] $\lambda$ we can even convert this to a [[riemann integral]]
+
+$$
+\begin{split}
+\mathcal{P}_X(C) 
+&= \int_C d\mathcal{P}_X \\
+&= \int_{X^{-1}(C)}  d\mathbb{P}(\omega) \\
+&= \int_{X^{-1}(C)} p(\omega) d\lambda(\omega) 
+&= \int_{X^{-1}(C)} p(\omega) d\omega \\
+\end{split}
+$$
+
+- the [[probability density function (PDF)]] $p(\omega)$ is converting from the source [[probability measure]] $\mathbb{P}$ to the [[lebesgue measure]] $\lambda$
+
+$$
+\begin{split}
+f_X(x) = \frac{d\mathcal{P}_X}{d\lambda}(x) \Rightarrow d\mathcal{P}_X = f_X(x) d\lambda
+\end{split}
+$$
+
+- however if the [[random variable]] $X$ itself has a [[probability density function (PDF)]] $f_X: \mathbb{R} \to \mathbb{R}$ that is converting from $\mathcal{P}_X(C)$ to the [[lebesgue measure]] $\lambda$ then $\mathcal{P}_X(C)$ can also be expressed as an [[integral]] on $\mathbb{R}$
+
+$$
+\begin{split}
+\mathcal{P}_X(C) 
+&= \int_C d\mathcal{P}_X 
+&= \int_C f_X(x) dx
+\end{split}
+$$
+
+
+### probability measure
+- given a [[measurable space]] $(\Omega, \mathcal{A})$ of a [[set]] $\Omega$ equiped with a [[sigma algebra]] $\mathcal{A}$ a [[function]] $P: \mathcal{A} \mapsto [0,1]$ is a [[probability measure]]
+$$
+P: \mathcal{A} \mapsto [0,1]
+$$
+- the probability of the [[empty set]] is zero
+
+$$
+\begin{split}
+P(\emptyset) = 0 \\
+\end{split}
+$$
+- the [[probability]] of the [[sample space]] is one
+$$
+\begin{split}
+P(\Omega) = 1 \\
+\end{split}
+$$
+- given a [[countable]] collection of [[mathematics/basics/disjoint]] events $(A_n)_{n \in \mathbb{N}}$ 
+$$
+\begin{split}
+P\left(\bigcup_{i \in \mathbb{N}} A_i \right) = \sum_{i \in \mathbb{N}} P(A_i) \\
+\end{split}
+$$
+
+### measurable space
+- a [[measurable space]] $\left(\Omega,\mathcal{A} )\right)$ is a [[set]] $\Omega$ equipped with a [[sigma algebra]] $\mathcal{A}$
+- every [[probability space]] is by definition a [[measurable space]]
+
+Tags: mathematics statistics SS25
+<!--ID: 1745991645679-->
 END
 
 
