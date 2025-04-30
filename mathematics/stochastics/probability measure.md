@@ -1,5 +1,5 @@
 ### probability measure
-- given a [[measurable space]] $(\Omega, \mathcal{A})$ of a [[set]] $\Omega$ equiped with a [[sigma algebra]] $\mathcal{A}$ a [[function]] $P: \mathcal{A} \mapsto [0,1]$ is a [[probability measure]]
+- given a [[measurable space]] $(\Omega, \mathcal{A})$ of a [[set]] $\Omega$ equipped with a [[sigma algebra]] $\mathcal{A}$ a [[function]] $P: \mathcal{A} \mapsto [0,1]$ is a [[probability measure]]
 $$
 P: \mathcal{A} \mapsto [0,1]
 $$
@@ -23,7 +23,7 @@ P\left(\bigcup_{i \in \mathbb{N}} A_i \right) = \sum_{i \in \mathbb{N}} P(A_i) \
 \end{split}
 $$
 #### derived properties
-- propability of the [[complement]]
+- probability of the [[complement]]
 $$
 \begin{split}
 P\left(A^c\right) 

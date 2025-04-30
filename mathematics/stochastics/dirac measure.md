@@ -116,17 +116,26 @@ $$
 - every [[probability space]] is by definition a [[measurable space]]
 
 ### lebesgue measure
-- the [[lebesgue measure]] is a way to assign a "size" or "length" to subsets of the $\mathbb{R}^n$ 
-- for intervals in the $\mathbb{R}^n$ it is defined as follows, but there also exists a definition for a general subset
+- the [[lebesgue measure]] is a [[measure]] that assigns size, length or volume to sets
+- similar but more flexible than the [[riemann integral]] (in $\mathbb{R}^n$ they are interchangeable)
+- for higher dimensions the [[lebesgue measure]] $\lambda^n: \mathcal{B} ({\mathbb{R}^n}) \to [0, \infty)$ forms a [[product measure space]] using the [[catesian product]]  over the dimensions of $\mathbb{R}$ 
 
 $$
 \begin{split}
-\lambda([a,b]) &= b-a  &\text{(length of an interval)} \\
-\lambda([a_1,b_1] \times [a_2,b_2]) &= (b_1-a_1)(b_2-a_2) &\text{(volumn of a box)} \\
-\lambda\left( \bigtimes_{i \in [n]} [a_i,b_i] \right) &= \prod_{i \in [n]}(b_i-a_i) &\text{(volumn of a n-box)} \\
+\lambda([a,b]) 
+&= \int_a^b1 \: d\lambda(x)  &\text{(length of an interval)} \\
+&= b-a   \\
+\lambda^2 ([a_1,b_1] \times [a_2,b_2])
+&= \int_{[a_1,b_1] \times [a_2,b_2]}1 \: d\lambda(x_1, x_2) &\text{(volumn of a box)} \\ 
+&= \int_{a_1}^{b_1} \int_{a_2}^{b_2} 1 \, d\lambda^1(y) \, d\lambda^1(x) \\
+&= \int_{a_1}^{b_1}\int_{a_2}^{b_2}1 \: dx_1dx_2  \\
+&= (b_1-a_1)(b_2-a_2)  \\
+\lambda^n\left( \bigtimes_{i=1}^n [a_i, b_i] \right)
+&= \int_{\bigtimes_{i=1}^n [a_i, b_i]} 1 \, d\lambda^n(x_1, \dots, x_n) & \text{(volume of an $n$-box)} \\
+&= \int_{a_1}^{b_1} \cdots \int_{a_n}^{b_n} 1 \, d\lambda^1(x_n) \cdots d\lambda^1(x_1) \\
+&= \prod_{i=1}^n (b_i - a_i)
 \end{split}
 $$
-
 
 - in a **discrete** setting (countable sets), a measure can be defined by a sum:
 
@@ -264,17 +273,26 @@ $$
 - every [[probability space]] is by definition a [[measurable space]]
 
 ### lebesgue measure
-- the [[lebesgue measure]] is a way to assign a "size" or "length" to subsets of the $\mathbb{R}^n$ 
-- for intervals in the $\mathbb{R}^n$ it is defined as follows, but there also exists a definition for a general subset
+- the [[lebesgue measure]] is a [[measure]] that assigns size, length or volume to sets
+- similar but more flexible than the [[riemann integral]] (in $\mathbb{R}^n$ they are interchangeable)
+- for higher dimensions the [[lebesgue measure]] $\lambda^n: \mathcal{B} ({\mathbb{R}^n}) \to [0, \infty)$ forms a [[product measure space]] using the [[catesian product]]  over the dimensions of $\mathbb{R}$ 
 
 $$
 \begin{split}
-\lambda([a,b]) &= b-a  &\text{(length of an interval)} \\
-\lambda([a_1,b_1] \times [a_2,b_2]) &= (b_1-a_1)(b_2-a_2) &\text{(volumn of a box)} \\
-\lambda\left( \bigtimes_{i \in [n]} [a_i,b_i] \right) &= \prod_{i \in [n]}(b_i-a_i) &\text{(volumn of a n-box)} \\
+\lambda([a,b]) 
+&= \int_a^b1 \: d\lambda(x)  &\text{(length of an interval)} \\
+&= b-a   \\
+\lambda^2 ([a_1,b_1] \times [a_2,b_2])
+&= \int_{[a_1,b_1] \times [a_2,b_2]}1 \: d\lambda(x_1, x_2) &\text{(volumn of a box)} \\ 
+&= \int_{a_1}^{b_1} \int_{a_2}^{b_2} 1 \, d\lambda^1(y) \, d\lambda^1(x) \\
+&= \int_{a_1}^{b_1}\int_{a_2}^{b_2}1 \: dx_1dx_2  \\
+&= (b_1-a_1)(b_2-a_2)  \\
+\lambda^n\left( \bigtimes_{i=1}^n [a_i, b_i] \right)
+&= \int_{\bigtimes_{i=1}^n [a_i, b_i]} 1 \, d\lambda^n(x_1, \dots, x_n) & \text{(volume of an $n$-box)} \\
+&= \int_{a_1}^{b_1} \cdots \int_{a_n}^{b_n} 1 \, d\lambda^1(x_n) \cdots d\lambda^1(x_1) \\
+&= \prod_{i=1}^n (b_i - a_i)
 \end{split}
 $$
-
 
 - in a **discrete** setting (countable sets), a measure can be defined by a sum:
 
@@ -312,7 +330,6 @@ $$
 \int_{[a, b]} g(\omega)  d\lambda(\omega) = \int_a^b g(\omega)  d\omega\\
 \end{split}
 $$
-
 
 Tags: mathematics statistics SS25
 <!--ID: 1745771490770-->

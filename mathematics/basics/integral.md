@@ -4,7 +4,7 @@ The [[integral]] can be interpreted as
 
 The **infinit [[integral]]** is defined as the [[inverse function|inverse]] of the [[derivative]] while the **definit [[integral]]** is defined as a signed area under a [[continuous function]]
 
-![[derivative#definition derivative]]
+![[derivative#derivative]]**
 
 ## Infinite [[integral]] is an [[inverse function|inverse]] [[derivative]]
 Let $f(x)=\frac{dF(x)}{dx}$ be a [[continuous function]] defined for a [[function domain|domain]] $[a,b]$ that is the [[derivative]] of a [[function]] $F$. Since the **infinit [[integral]]** is the [[inverse function]] of the [[derivative]] it is defined as follows:

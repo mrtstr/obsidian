@@ -1,92 +1,73 @@
-### radon nikodym theorem
-- given two [[probability measure]] $\nu$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
-- $\nu$ is [[absolutely continuous]] to $\lambda$ which means $\lambda(A) = 0 \Rightarrow \nu(A) = 0$
-- this means that $\nu$ is just a scaled version of $\lambda$ and there exists a function $f=\frac{d\nu}{d\lambda}$ that compensates for that
+### measure
+- given a [[measurable space]] $(\Omega, \mathcal{A})$ of a [[set]] $\Omega$ equipped with a [[sigma algebra]] $\mathcal{A}$ a [[function]] $\lambda: \mathcal{A} \mapsto \mathbb{R}$ is a [[measure]] if the following holds true
+
+- the probability of the [[empty set]] is zero and can't be negative
 
 $$
 \begin{split}
-\mathbb{\nu}(A) 
-&= \int_\Omega \mathbb{I}[\omega \in A] d\nu \\
-&= \int_A  d\nu \\
-
-&= \int_A \frac{d\nu}{d\lambda} d\lambda \\
+\lambda(\emptyset) = 0 \\
+\lambda(A) \geq 0 \\
 \end{split}
 $$
 
-#### intuition
-- intuitively f answers how dense $\nu$ is to $\lambda$ at each point $\omega$ 
+- given a [[countable]] collection of [[mathematics/basics/disjoint]] events $(A_n)_{n \in \mathbb{N}}$ with $A_n \in \mathcal{A}$ 
 
-#### common application
-- when $\lambda$ is a [[lebesgue measure]] on $\mathbb{R}^n$ $\nu$ is a [[probability measure]] of a [[random variable]]
-- then $f$ is the [[probability density function (PDF)]] of $X$
-- In this setting, computing probabilities becomes an [[riemann integral]]
+$$
+\begin{split}
+\lambda\left(\bigcup_{i \in \mathbb{N}} A_i \right) = \sum_{i \in \mathbb{N}} \lambda(A_i) \\
+\end{split}
+$$
 
-# ----------------------
+- $\lambda$ is normalized in a sense that  $\lambda(\Omega) = 1$ it's a [[probability measure]]
+- one important example is the [[lebesgue measure]] which describes the column of sets
 
-![[probability measure#probability measure]]
+- the following notations are equivalent
 
-
+$$
+\lambda(A) = \int_A 1 \:d\lambda(x)
+$$
 
 # anki
 
-
 START
 Basic
-[[radon nikodym theorem]]
+[[measure]]
 - definition
-- intuition
-- common application
+- special class of measures
+- one example
+- notation
 
 Back: 
+### measure
+- given a [[measurable space]] $(\Omega, \mathcal{A})$ of a [[set]] $\Omega$ equipped with a [[sigma algebra]] $\mathcal{A}$ a [[function]] $\lambda: \mathcal{A} \mapsto \mathbb{R}$ is a [[measure]] if the following holds true
 
-### radon nikodym theorem
-- given two [[probability measure]] $\nu$ and $\lambda$ on the same [[measurable space]] $(\Omega, \mathcal{A})$ 
-- $\nu$ is [[absolutely continuous]] to $\lambda$ which means $\lambda(A) = 0 \Rightarrow \nu(A) = 0$
-- this means that $\nu$ is just a scaled version of $\lambda$ and there exists a function $f=\frac{d\nu}{d\lambda}$ that compensates for that
+- the probability of the [[empty set]] is zero and can't be negative
 
 $$
 \begin{split}
-\mathbb{\nu}(A) 
-&= \int_\Omega \mathbb{I}[\omega \in A] d\nu \\
-&= \int_A  d\nu \\
-
-&= \int_A \frac{d\nu}{d\lambda} d\lambda \\
+\lambda(\emptyset) = 0 \\
+\lambda(A) \geq 0 \\
 \end{split}
 $$
 
-#### intuition
-- intuitively f answers how dense $\nu$ is to $\lambda$ at each point $\omega$ 
+- given a [[countable]] collection of [[mathematics/basics/disjoint]] events $(A_n)_{n \in \mathbb{N}}$ with $A_n \in \mathcal{A}$ 
 
-#### common application
-- when $\lambda$ is a [[lebesgue measure]] on $\mathbb{R}^n$ $\nu$ is a [[probability measure]] of a [[random variable]]
-- then $f$ is the [[probability density function (PDF)]] of $X$
-- In this setting, computing probabilities becomes an [[riemann integral]]
+$$
+\begin{split}
+\lambda\left(\bigcup_{i \in \mathbb{N}} A_i \right) = \sum_{i \in \mathbb{N}} \lambda(A_i) \\
+\end{split}
+$$
+
+- $\lambda$ is normalized in a sense that  $\lambda(\Omega) = 1$ it's a [[probability measure]]
+- one important example is the [[lebesgue measure]] which describes the column of sets
+
+- the following notations are equivalent
+
+$$
+\lambda(A) = \int_A 1 \:d\lambda
+$$
 
 __________________
-### probability measure
-- given a [[measurable space]] $(\Omega, \mathcal{A})$ of a [[set]] $\Omega$ equiped with a [[sigma algebra]] $\mathcal{A}$ a [[function]] $P: \mathcal{A} \mapsto [0,1]$ is a [[probability measure]]
-$$
-P: \mathcal{A} \mapsto [0,1]
-$$
-- the probability of the [[empty set]] is zero
-
-$$
-\begin{split}
-P(\emptyset) = 0 \\
-\end{split}
-$$
-- the [[probability]] of the [[sample space]] is one
-$$
-\begin{split}
-P(\Omega) = 1 \\
-\end{split}
-$$
-- given a [[countable]] collection of [[mathematics/basics/disjoint]] events $(A_n)_{n \in \mathbb{N}}$ 
-$$
-\begin{split}
-P\left(\bigcup_{i \in \mathbb{N}} A_i \right) = \sum_{i \in \mathbb{N}} P(A_i) \\
-\end{split}
-$$
 
 ### lebesgue measure
 - the [[lebesgue measure]] is a [[measure]] that assigns size, length or volume to sets
@@ -149,7 +130,7 @@ $$
 
 ### lebesgue measures for probability
 - on a [[measurable space]] $\left(\Omega,\mathcal{A} \right)$ the [[lebesgue measure]] $\lambda$ is a [[probability measure]] if $\lambda(\Omega)=1$
-- on a finite $\Omega$ we can define a [[probability measure]] by re-scaling
+- on a finite $\Omega$ we can define a [[probability measure]] by rescaling
 $$
 \lambda_p(A) = \frac{\lambda(A)}{\lambda(\Omega)}
 $$
@@ -172,10 +153,36 @@ $$
 $$
 
 
+### probability measure
+- given a [[measurable space]] $(\Omega, \mathcal{A})$ of a [[set]] $\Omega$ equiped with a [[sigma algebra]] $\mathcal{A}$ a [[function]] $P: \mathcal{A} \mapsto [0,1]$ is a [[probability measure]]
+$$
+P: \mathcal{A} \mapsto [0,1]
+$$
+- the probability of the [[empty set]] is zero
+
+$$
+\begin{split}
+P(\emptyset) = 0 \\
+\end{split}
+$$
+- the [[probability]] of the [[sample space]] is one
+$$
+\begin{split}
+P(\Omega) = 1 \\
+\end{split}
+$$
+- given a [[countable]] collection of [[mathematics/basics/disjoint]] events $(A_n)_{n \in \mathbb{N}}$ 
+$$
+\begin{split}
+P\left(\bigcup_{i \in \mathbb{N}} A_i \right) = \sum_{i \in \mathbb{N}} P(A_i) \\
+\end{split}
+$$
+
+
 ### measurable space
 - a [[measurable space]] $\left(\Omega,\mathcal{A} )\right)$ is a [[set]] $\Omega$ equipped with a [[sigma algebra]] $\mathcal{A}$
 - every [[probability space]] is by definition a [[measurable space]]
 
 Tags: mathematics statistics SS25
-<!--ID: 1745741685392-->
+<!--ID: 1746006343534-->
 END
