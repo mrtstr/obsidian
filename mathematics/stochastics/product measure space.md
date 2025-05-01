@@ -40,6 +40,45 @@ $$
 
 - [[stochastic independent]] [[random variable]] form a [[product probability space]]
 - the [[lebesgue measure]] $\lambda^n: \mathcal{B} ({\mathbb{R}^n}) \to [0, \infty)$ is a product measure over the dimensions if $\mathbb{R}$
+
+### lebesgue measure
+- the [[lebesgue measure]] is a [[measure]] that assigns size, length or volume to sets
+- similar but more flexible than the [[riemann integral]] (in $\mathbb{R}^n$ they are interchangeable)
+- for higher dimensions the [[lebesgue measure]] $\lambda^n: \mathcal{B} ({\mathbb{R}^n}) \to [0, \infty)$ forms a [[product measure space]] using the [[catesian product]]  over the dimensions of $\mathbb{R}$ 
+
+$$
+\begin{split}
+\lambda([a,b]) 
+&= \int_a^b1 \: d\lambda(x)  &\text{(length of an interval)} \\
+&= b-a   \\
+\lambda^2 ([a_1,b_1] \times [a_2,b_2])
+&= \int_{[a_1,b_1] \times [a_2,b_2]}1 \: d\lambda(x_1, x_2) &\text{(volumn of a box)} \\ 
+&= \int_{a_1}^{b_1} \int_{a_2}^{b_2} 1 \, d\lambda^1(y) \, d\lambda^1(x) \\
+&= \int_{a_1}^{b_1}\int_{a_2}^{b_2}1 \: dx_1dx_2  \\
+&= (b_1-a_1)(b_2-a_2)  \\
+&= \lambda([a_1,b_1])\lambda([a_2,b_2])  \\
+\lambda^n\left( \bigtimes_{i=1}^n [a_i, b_i] \right)
+&= \int_{\bigtimes_{i=1}^n [a_i, b_i]} 1 \, d\lambda^n(x_1, \dots, x_n) & \text{(volume of an $n$-box)} \\
+&= \int_{a_1}^{b_1} \cdots \int_{a_n}^{b_n} 1 \, d\lambda^1(x_n) \cdots d\lambda^1(x_1) \\
+&= \prod_{i=1}^n (b_i - a_i) \\
+&= \prod_{i=1}^n \lambda([a_i,b_i]) 
+\end{split}
+$$
+### product probability space
+- given the [[probability space|probability spaces]] $(\Omega_1, \mathcal{A}_1, \mathbb{P}_1)$ and $(\Omega_2, \mathcal{A}_2, \mathbb{P}_2)$
+- we can construct a [[product probability space]] $(\Omega_1 \times \Omega_2, \mathcal{A}_1  \otimes \mathcal{A}_2 , \mathbb{P}_1 \otimes \mathbb{P}_2)$
+
+$$
+\mathcal{A}_1  \otimes \mathcal{A}_2 = \{A_1 \times A_2 : A_1 \in \mathcal{A}_1, A_2 \in \mathcal{A}_2\}
+$$
+
+$$
+\begin{split}
+\mathbb{P}_1 \otimes \mathbb{P}_2=\mathbb{P}(A_1 \times A_2) = \mathbb{P}(A_1)\mathbb{P}(A_2)
+\end{split}
+$$
+
+
 __________________
 ### measure
 - given a [[measurable space]] $(\Omega, \mathcal{A})$ of a [[set]] $\Omega$ equipped with a [[sigma algebra]] $\mathcal{A}$ a [[function]] $\lambda: \mathcal{A} \mapsto \mathbb{R}$ is a [[measure]] if the following holds true
@@ -68,79 +107,6 @@ $$
 
 $$
 \lambda(A) = \int_A 1 \:d\lambda
-$$
-
-### lebesgue measure
-- the [[lebesgue measure]] is a way to assign a "size" or "length" to subsets of the $\mathbb{R}^n$ 
-- for intervals in the $\mathbb{R}^n$ it is defined as follows, but there also exists a definition for a general subset
-
-$$
-\begin{split}
-\lambda([a,b]) &= b-a  &\text{(length of an interval)} \\
-\lambda([a_1,b_1] \times [a_2,b_2]) &= (b_1-a_1)(b_2-a_2) &\text{(volumn of a box)} \\
-\lambda\left( \bigtimes_{i \in [n]} [a_i,b_i] \right) &= \prod_{i \in [n]}(b_i-a_i) &\text{(volumn of a n-box)} \\
-\end{split}
-$$
-
-
-- in a **discrete** setting (countable sets), a measure can be defined by a sum:
-
-$$
-\begin{split}
-\mathbb{\lambda}(A) 
-&= \sum_{\omega \in A}  \lambda(\{\omega\}) \\
-\end{split}
-$$
-
-- in the continuous case thus, we **must use integration** instead of summation
-$$
-\begin{split}
-\lambda(A) 
-&= \int_\Omega \mathbb{I}[\omega \in A] d\lambda(\omega) \\
-&= \int_A  d\lambda(\omega) \\
-\end{split}
-$$
-
-- in $\mathbb{R}^n$ the [[lebesgue measure]] and the [[riemann integral]] are the same because they agree on length
-
-
-$$
-\begin{split}
-\mathbb{\lambda}([a,b]) 
-&= \int_{[a, b]}  d\lambda(\omega) = b - a\\
-\end{split}
-$$
-
-
-- for an interval $[a,b]$ and a regular function $g$:
-
-$$
-\begin{split}
-\int_{[a, b]} g(\omega)  d\lambda(\omega) = \int_a^b g(\omega)  d\omega\\
-\end{split}
-$$
-### lebesgue measures for probability
-- on a [[measurable space]] $\left(\Omega,\mathcal{A} \right)$ the [[lebesgue measure]] $\lambda$ is a [[probability measure]] if $\lambda(\Omega)=1$
-- on a finite $\Omega$ we can define a [[probability measure]] by rescaling
-$$
-\lambda_p(A) = \frac{\lambda(A)}{\lambda(\Omega)}
-$$
-
-- on infinite sets $\Omega$ we need a [[probability density function (PDF)]] $p: \Omega \to \mathbb{R}^n$ that decays fast enough such that
-
-$$
-\begin{split}
-\mathbb{\lambda}(\Omega) 
-&= \int_{\Omega} p(\omega)  d\lambda(\omega) =1\\
-
-\end{split}
-$$
-
-$$
-\begin{split}
-\mathbb{\lambda}([a,b]) 
-&= \int_{[a, b]} p(\omega) d\lambda(\omega) = b - a\\
-\end{split}
 $$
 
 

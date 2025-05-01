@@ -18,11 +18,13 @@ $$
 
 - intuitively, the [[probability density function (PDF)]] weights the [[lebesgue measure]] to build the [[probability measure]] $\mathcal{P}$
 - instead of describing the [[probability density function (PDF)]] as a differential equation often it makes sense to describe the ratio of the measurement of an infinitesimal small [[ball]] around the point $\omega$
+- if we have a function inside the [[probability density function (PDF)]] there are two options how to approximate it, but the second one makes more assumptions about $g$ being smooth and inheritable around $\omega$
 
 $$
 \begin{split}
-&p(\omega) \approx \frac{\mathcal{P}\left(B_\epsilon (\omega)\right)}{\lambda \left(B_\epsilon (\omega)\right)} \quad \text{as } \epsilon \to 0  \\
-&p\left(g(\omega)\right) \approx \frac{\mathcal{P}\left(B_\epsilon \left(g(\omega)\right)\right)}{\lambda \left(B_\epsilon \left(g(\omega)\right)\right)} \quad \text{as } \epsilon \to 0  \\
+p(\omega) &\approx \frac{\mathcal{P}\left(B_\epsilon (\omega)\right)}{\lambda \left(B_\epsilon (\omega)\right)} \quad \text{as } \epsilon \to 0  \\
+p\left(g(\omega)\right) &\approx \frac{\mathcal{P}\left(B_\epsilon \left(g(\omega)\right)\right)}{\lambda \left(B_\epsilon \left(g(\omega)\right)\right)} \quad \text{as } \epsilon \to 0  \\
+&\approx \frac{\mathcal{P}(g\left(B_\epsilon \left(\omega)\right)\right)}{\lambda \left(g\left(B_\epsilon (\omega)\right)\right)} \quad \text{as } \epsilon \to 0  \\
 \end{split}
 $$
 
@@ -375,11 +377,13 @@ $$
 
 - intuitively, the [[probability density function (PDF)]] weights the [[lebesgue measure]] to build the [[probability measure]] $\mathcal{P}$
 - instead of describing the [[probability density function (PDF)]] as a differential equation often it makes sense to describe the ratio of the measurement of an infinitesimal small [[ball]] around the point $\omega$
+- if we have a function inside the [[probability density function (PDF)]] there are two options how to approximate it, but the second one makes more assumptions about $g$ being smooth and inheritable around $\omega$
 
 $$
 \begin{split}
-&p(\omega) \approx \frac{\mathcal{P}\left(B_\epsilon (\omega)\right)}{\lambda \left(B_\epsilon (\omega)\right)} \quad \text{as } \epsilon \to 0  \\
-&p\left(g(\omega)\right) \approx \frac{\mathcal{P}\left(B_\epsilon \left(g(\omega)\right)\right)}{\lambda \left(B_\epsilon \left(g(\omega)\right)\right)} \quad \text{as } \epsilon \to 0  \\
+p(\omega) &\approx \frac{\mathcal{P}\left(B_\epsilon (\omega)\right)}{\lambda \left(B_\epsilon (\omega)\right)} \quad \text{as } \epsilon \to 0  \\
+p\left(g(\omega)\right) &\approx \frac{\mathcal{P}\left(B_\epsilon \left(g(\omega)\right)\right)}{\lambda \left(B_\epsilon \left(g(\omega)\right)\right)} \quad \text{as } \epsilon \to 0  \\
+&\approx \frac{\mathcal{P}(g\left(B_\epsilon \left(\omega)\right)\right)}{\lambda \left(g\left(B_\epsilon (\omega)\right)\right)} \quad \text{as } \epsilon \to 0  \\
 \end{split}
 $$
 

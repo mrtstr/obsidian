@@ -13,10 +13,12 @@ $$
 &= \int_{a_1}^{b_1} \int_{a_2}^{b_2} 1 \, d\lambda^1(y) \, d\lambda^1(x) \\
 &= \int_{a_1}^{b_1}\int_{a_2}^{b_2}1 \: dx_1dx_2  \\
 &= (b_1-a_1)(b_2-a_2)  \\
+&= \lambda([a_1,b_1])\lambda([a_2,b_2])  \\
 \lambda^n\left( \bigtimes_{i=1}^n [a_i, b_i] \right)
 &= \int_{\bigtimes_{i=1}^n [a_i, b_i]} 1 \, d\lambda^n(x_1, \dots, x_n) & \text{(volume of an $n$-box)} \\
 &= \int_{a_1}^{b_1} \cdots \int_{a_n}^{b_n} 1 \, d\lambda^1(x_n) \cdots d\lambda^1(x_1) \\
-&= \prod_{i=1}^n (b_i - a_i)
+&= \prod_{i=1}^n (b_i - a_i) \\
+&= \prod_{i=1}^n \lambda([a_i,b_i]) 
 \end{split}
 $$
 
