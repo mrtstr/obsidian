@@ -288,6 +288,7 @@ START
 Basic
 what is the difference between a [[random variable]] and a [[measurable function]]
 Back: 
+- every [[random variable]] is a [[measurable function]] but a [[measurable function]] is only a [[random variable]] when defined on a [[probability space]] (thus a [[measurable space]] that has a [[probability measure]])
 ### random variable
 - given a [[probability space]] $\left(\Omega, \mathcal{A} , \mathbb{P}\right)$
 - a [[function]] $X: \Omega \to \mathbb{R}$ from the [[sample space]] $\Omega$ to the [[real numbers]] $\mathbb{R}$ is a [[random variable]] if it's a [[measurable function]] $X: (\Omega, \mathcal{A}) \to \left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$ 
