@@ -151,7 +151,7 @@ $$
 \end{split}
 $$
 
-#### martingal
+#### martingale
 - [[martingal]]
 $$
 \begin{split}
@@ -171,9 +171,9 @@ $$
 \end{split}
 $$
 
-### short commings
+### short comings
 
-- lets assume $X_t' = X_t - \left(\mu - \frac{\sigma^2}{2} \right)$ or that the mean of the log returns is zero thus $\mu = \frac{\sigma^2}{2}$ like for currency excange rates without general trends
+- lets assume $X_t' = X_t - \left(\mu - \frac{\sigma^2}{2} \right)$ or that the mean of the log returns is zero thus $\mu = \frac{\sigma^2}{2}$ like for currency exchange rates without general trends
 - with the [[geometric brownian motion (GBM)]] model the log returns $X_t$ are [[white noise#gaussian white noise|gaussian white noise]] and thus [[stochastic independent]]
 - when checking empirically one can see that $X_t$ is [[white noise]] because its [[autocorrelation (ACF)]] is zero but when checking other [[moments]] like $X_t^2$ one can see that the log returns are not [[stochastic independent]]
 

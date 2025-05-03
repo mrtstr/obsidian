@@ -1,7 +1,7 @@
 ## set
 - non-ordered collection of objects in our underlying universe $\mathbb{U}$
-- are only charaterized by their elemets
-- can be defined by explicitly listing its elements $\{a_1, ..., a_n\}$ or based on a superset with a [[first order logic]] condition $\{ x\in S : condition(x) \}$
+- are only characterized by their elements
+- can be defined by explicitly listing its elements $\{a_1, ..., a_n\}$ or based on a  super set with a [[first order logic]] condition $\{ x\in S : condition(x) \}$
 
 
 ### spacial sets

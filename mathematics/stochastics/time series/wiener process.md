@@ -15,7 +15,7 @@ $$
 #### axioms
 
 1) $W_0 = 0$
-2) $W_t$ has indenpendent increments thus $W_{t+h}-W_{t}$ is independent of $W_s: s < t$ 
+2) $W_t$ has independent increments thus $W_{t+h}-W_{t}$ is independent of $W_s: s < t$ 
 3) the increments are [[normal distribution|normal distributed]] $W_{t+h}-W_t \sim \mathcal{N}(0, h)$
 4) $W_t$ is a [[continuous function]] in $t$
 
