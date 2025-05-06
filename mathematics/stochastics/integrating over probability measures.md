@@ -739,8 +739,6 @@ Basic
 - what does $\mathbb{P}\left( X \in C\right)$ in this case mean?
 Back: 
 
-__________________
-
 #### random variable
 - given a [[random variable]] $X: \Omega \to \mathbb{R}$ from a source space $\left(\Omega, \mathcal{A})\right)$ to $\left(\mathbb{R}, \mathcal{B}(\mathbb{R})\right)$with a pushforward measure $\mathcal{P}_X(C)$
 
