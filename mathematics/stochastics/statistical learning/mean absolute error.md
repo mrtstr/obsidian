@@ -2,7 +2,7 @@ TODO
 add proofs
 add error of optimal estimation
 # [[mean absolute error]]
-[[loss functions]]
+[[loss function]]
 
 ## Definition
 For a [[statistical estimator_old|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ the [[mean absolute error]] is defined as the following

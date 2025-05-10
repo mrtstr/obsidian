@@ -17,7 +17,7 @@ $$
 $$
 
 ### approximating measurable functions with simple functions
-- given a non-negative [[measurable function]] $g:\Omega \to [0, \infty]$ like a [[probability density function (PDF)]] or a [[loss functions]]
+- given a non-negative [[measurable function]] $g:\Omega \to [0, \infty]$ like a [[probability density function (PDF)]] or a [[loss function]]
 - $g$ can be approximated by a sequence of [[simple function]]
 
 TODO add details
@@ -54,7 +54,7 @@ $$
 $$
 
 ### approximating measurable functions with simple functions
-- given a non-negative [[measurable function]] $g:\Omega \to [0, \infty]$ like a [[probability density function (PDF)]] or a [[loss functions]]
+- given a non-negative [[measurable function]] $g:\Omega \to [0, \infty]$ like a [[probability density function (PDF)]] or a [[loss function]]
 - $g$ can be approximated by a sequence of [[simple function]]
 
 

@@ -43,7 +43,7 @@ T(x_i, \Theta_m)
 $$
 - find a tree that approximates the residuals of the previous model
 - in general It's hard for find the regions $R_m$ (for difficult than building a normal tree)
-- for some lesses it simplifies but for a general [[loss functions]] it can be approximated with [[gradient boosted trees]]
+- for some lesses it simplifies but for a general [[loss function]] it can be approximated with [[gradient boosted trees]]
 ## training with [[mean square error|MSE loss]]
 - for MSE the problems simplifies
 	→ find tree model to predict residuals
@@ -124,7 +124,7 @@ T(x_i, \Theta_m)
 $$
 - find a tree that approximates the residuals of the previous model
 - in general It's hard for find the regions $R_m$ (for difficult than building a normal tree)
-- for some lesses it simplifies but for a general [[loss functions]] it can be approximated with [[gradient boosted trees]]
+- for some lesses it simplifies but for a general [[loss function]] it can be approximated with [[gradient boosted trees]]
 ## with MSE 
 - for MSE the problems simplifies
 	→ find tree model to predict residuals

@@ -1,5 +1,5 @@
 # [[mean square error]]
-[[loss functions]]
+[[loss function]]
 
 # Definition
 For a [[statistical estimator_old|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ the [[mean square error]] is defined as the following

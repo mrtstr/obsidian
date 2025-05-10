@@ -2,7 +2,7 @@
 - Goal: find connect between input/features $x$ and a [[stochastic independent|stochastic dependent]] $y$
 - because the [[joint distribution]] $f_{XY}(x,y)$ is hard to find the goal is to approximate properties (e.g. mean, median, or [[quantile function|quantiles]]) of the [[conditional distribution]]  $f_{Y|X}(y|x)$
 - every point in the feature space $x$ is a distribution of outputs $y$
-- approximate predictor $f(x)$ by minimizing the [[loss functions]]
+- approximate predictor $f(x)$ by minimizing the [[loss function]]
 
 (in contrast, a [[statistical estimator_old]] is estimating a property of the true [[probability density function (PDF)|distribution]] based on [[statistical estimator_old|observed data]])
 

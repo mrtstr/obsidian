@@ -10,6 +10,7 @@ $$
 $$
 \mathbb{\hat P}_n(A) = \frac{1}{n} \sum_{i=1}^n \delta_{x_i}(A) = \frac{|A \cap \mathcal{D}|}{n}
 $$
+
 # -----------------------
 
 ![[dirac measure#dirac measure]]

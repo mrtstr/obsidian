@@ -13,7 +13,7 @@ T(x,
 )
 }_\text{tree model}
 $$
-[[boosting]] [[tree models]] ([[boosted trees]]) for general [[loss functions]] is hard because the following problem is hard to solve.
+[[boosting]] [[tree models]] ([[boosted trees]]) for general [[loss function]] is hard because the following problem is hard to solve.
 $$
 \widehat{\Theta}_m= argmin 
 \underbrace{
@@ -141,7 +141,7 @@ T(x,
 )
 }_\text{tree model}
 $$
-[[boosting]] [[tree models]] ([[boosted trees]]) for general [[loss functions]] is hard because the following problem is hard to solve.
+[[boosting]] [[tree models]] ([[boosted trees]]) for general [[loss function]] is hard because the following problem is hard to solve.
 $$
 \widehat{\Theta}_m= argmin 
 \underbrace{
