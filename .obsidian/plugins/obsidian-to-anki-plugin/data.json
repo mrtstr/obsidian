@@ -1657,7 +1657,7 @@
     "mathematics/basics/vector norm.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/triangular matrix.md": "3553904dd97775d44e92821fb3498950",
     "mathematics/basics/transpose.md": "fd1e02fd2f16e066013cffba8f025210",
-    "mathematics/basics/trace.md": "0404239cfa90ec0fc86c14d79fc41c5d",
+    "mathematics/basics/trace.md": "e9183b415484ea0115acb7e680e772f1",
     "mathematics/basics/tensor.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/sylvesters criterion.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/subspace.md": "af8094facfedf3ba0b5ce209709535f3",
@@ -2011,7 +2011,7 @@
     "mathematics/stochastics/statistical learning/loss function.md": "cf03dcb62bc418dce24abc906281270e",
     "mathematics/stochastics/statistical learning/training dataset.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/covariance matrix.md": "0909a47cbd5bb3645954a6fb87e6bde4",
-    "mathematics/stochastics/quadratic forms of random variables.md": "36439360a53df8506edbbc24cd739d8a",
+    "mathematics/stochastics/quadratic forms of random variables.md": "d7735465b8a1cc7aae0290af3a06a6ad",
     "mathematics/stochastics/conditional covariance matrix.md": "5701b723e0b4c8adf7f73aece48a41c1"
   },
   "fields_dict": {

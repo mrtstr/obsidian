@@ -4,14 +4,14 @@
 $$
 \mathrm{trace}(A) = \sum_{i \in [n]} a_{ii}
 $$
-### properties
-#### the [[trace]] is equal to the [[addition|sum]] of [[eigenvectors|eigenvalues]]
+#### properties
+##### the trace is equal to the sum of eigenvalues
 
 $$
 \mathrm{trace}(A) = \sum_{i \in [n]} \sigma_i(A)
 $$
 TODO add proof
-#### [[trace]] of a [[matrix product]]
+##### trace of a matrix product
 - for $A, B \in \mathbb{R}^{n \times n}$ 
 $$
 \mathrm{trace}(AB) = \mathrm{trace}(BA)
@@ -26,7 +26,7 @@ $$
 \end{split}
 $$
 
-#### [[trace]] of a [[transpose]]
+##### trace of a transpose
 $$
 \mathrm{trace}(A) = \mathrm{trace}\left(A^\top\right)
 $$
