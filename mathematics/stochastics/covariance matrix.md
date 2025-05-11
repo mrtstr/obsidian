@@ -22,7 +22,6 @@ $$
 $$
 #### base properties
 
-
 - $K_{XX}$ is [[symmetric]]
 - $K_{XX}$ is [[positive definite]]
 
@@ -30,6 +29,8 @@ $$
 \begin{split}
 \mathbb{VAR}[AX + b]
 &= A\mathbb{VAR}[X]A^\top \\
+\mathbb{COV}[AX + a, BY + b]
+&= A\mathbb{COV}[X,Y]B^\top \\
 \end{split}
 $$
 
@@ -39,7 +40,6 @@ $$
 &= \mathbb{E}\left[X Y^\top\right] - \mathbb{E}\left[X \right] \mathbb{E}\left[Y \right]^\top \\
 \end{split}
 $$
-
 
 $$
 \begin{split}
@@ -61,6 +61,7 @@ K_{X_2X_1} & K_{X_2X_2} \\
 
 \end{split}
 $$
+
 ### decomposition of the covariance matrix
 - given two [[random variable]] $X \in \mathbb{R}^n$ and $Y \in \mathbb{R}^M$ with the [[expectation]] $\mathbb{E}[X] = \left(\mathbb{E}[X_i]\right)_{i \in [n]}$ and $\mathbb{E}[Y] = \left(\mathbb{E}[Y_i]\right)_{i \in [m]}$
 - the [[covariance matrix]] can be expressed as follows
@@ -90,6 +91,8 @@ $$
 \begin{split}
 \mathbb{VAR}[AX + b]
 &= A\mathbb{VAR}[X]A^\top \\
+\mathbb{COV}[AX + a, BY + b]
+&= A\mathbb{COV}[X,Y]B^\top \\
 \end{split}
 $$
 
@@ -174,6 +177,8 @@ $$
 \begin{split}
 \mathbb{VAR}[AX + b]
 &= A\mathbb{VAR}[X]A^\top \\
+\mathbb{COV}[AX + a, BY + b]
+&= A\mathbb{COV}[X,Y]B^\top \\
 \end{split}
 $$
 
@@ -237,6 +242,8 @@ $$
 \begin{split}
 \mathbb{VAR}[AX + b]
 &= A\mathbb{VAR}[X]A^\top \\
+\mathbb{COV}[AX + a, BY + b]
+&= A\mathbb{COV}[X,Y]B^\top \\
 \end{split}
 $$
 
@@ -350,6 +357,8 @@ $$
 \begin{split}
 \mathbb{VAR}[AX + b]
 &= A\mathbb{VAR}[X]A^\top \\
+\mathbb{COV}[AX + a, BY + b]
+&= A\mathbb{COV}[X,Y]B^\top \\
 \end{split}
 $$
 
@@ -413,6 +422,8 @@ $$
 \begin{split}
 \mathbb{VAR}[AX + b]
 &= A\mathbb{VAR}[X]A^\top \\
+\mathbb{COV}[AX + a, BY + b]
+&= A\mathbb{COV}[X,Y]B^\top \\
 \end{split}
 $$
 
@@ -529,6 +540,8 @@ $$
 \begin{split}
 \mathbb{VAR}[AX + b]
 &= A\mathbb{VAR}[X]A^\top \\
+\mathbb{COV}[AX + a, BY + b]
+&= A\mathbb{COV}[X,Y]B^\top \\
 \end{split}
 $$
 
@@ -591,6 +604,8 @@ $$
 \begin{split}
 \mathbb{VAR}[AX + b]
 &= A\mathbb{VAR}[X]A^\top \\
+\mathbb{COV}[AX + a, BY + b]
+&= A\mathbb{COV}[X,Y]B^\top \\
 \end{split}
 $$
 
@@ -643,7 +658,8 @@ END
 START
 Basic
 - given a constant [[matrix]] $A \in \mathbb{R}^{n \times m}$ and constant [[vector]] $b \in \mathbb{R}^{n}$ and a [[random vector]] $X$
-- [[covariance matrix]] of $AX+b$
+- [[covariance matrix]] of $\mathbb{VAR}[AX + b]$ (with proof)
+- [[covariance matrix]] of $\mathbb{COV}[AX + a, BY + b]$ (no proof)
 
 Back: 
 ### covariance of a linear function
@@ -653,6 +669,8 @@ $$
 \begin{split}
 \mathbb{VAR}[AX + b]
 &= A\mathbb{VAR}[X]A^\top \\
+\mathbb{COV}[AX + a, BY + b]
+&= A\mathbb{COV}[X,Y]B^\top \\
 \end{split}
 $$
 
@@ -704,6 +722,8 @@ $$
 \begin{split}
 \mathbb{VAR}[AX + b]
 &= A\mathbb{VAR}[X]A^\top \\
+\mathbb{COV}[AX + a, BY + b]
+&= A\mathbb{COV}[X,Y]B^\top \\
 \end{split}
 $$
 
@@ -761,31 +781,6 @@ $$
 \end{split}
 $$
 
-### covariance of a linear function
-- for every constant [[matrix]] $A \in \mathbb{R}^{n \times m}$ and constant [[vector]] $b \in \mathbb{R}^{n}$ 
-
-$$
-\begin{split}
-\mathbb{VAR}[AX + b]
-&= A\mathbb{VAR}[X]A^\top \\
-\end{split}
-$$
-
-#### proof
-
-$$
-\begin{split}
-\mathbb{VAR}[AX + b]
-&= \mathbb{E}\left[\left(AX + b\right) \left(AX + b\right)^\top\right] - \mathbb{E}[AX + b] \mathbb{E}[AX + b]^\top \\
-&= \mathbb{E}\left[AXX^\top A^\top\right] + bb^\top + \mathbb{E}\left[AXb^\top\right] + \mathbb{E}\left[b(AX)^\top\right] \\
-&- \mathbb{E}[AX] \mathbb{E}[AX ]^\top - bb^\top - \mathbb{E}\left[AXb^\top\right] - \mathbb{E}\left[b(AX)^\top\right] \\
-&= \mathbb{E}\left[AXX^\top A^\top\right] - \mathbb{E}[AX] \mathbb{E}[AX ]^\top \\
-&= A\mathbb{E}\left[XX^\top\right] A^\top - A\mathbb{E}[X] \left(A\mathbb{E}[X ]\right)^\top \\
-&= A\mathbb{E}\left[XX^\top\right] A^\top - A\mathbb{E}[X] \mathbb{E}[X]^\top A^\top \\
-&= A\left(\mathbb{E}\left[XX^\top\right] -\mathbb{E}[X] \mathbb{E}[X]^\top \right) A^\top  \\
-&= A\mathbb{VAR}[X]A^\top  \\
-\end{split}
-$$
 
 ### covariance matrix of the sum of two random vectors
 - given two [[random variable]] $X \in \mathbb{R}^n$ and $Y \in \mathbb{R}^M$ with the [[expectation]] $\mathbb{E}[X] = \left(\mathbb{E}[X_i]\right)_{i \in [n]}$ and $\mathbb{E}[Y] = \left(\mathbb{E}[Y_i]\right)_{i \in [m]}$

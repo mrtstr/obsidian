@@ -2010,7 +2010,9 @@
     "mathematics/stochastics/statistical learning/risk.md": "79f53ff374faf46bdc363acc2c56fde1",
     "mathematics/stochastics/statistical learning/loss function.md": "cf03dcb62bc418dce24abc906281270e",
     "mathematics/stochastics/statistical learning/training dataset.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/covariance matrix.md": "57485f6da1af7c038dab0ede77d462ef"
+    "mathematics/stochastics/covariance matrix.md": "0909a47cbd5bb3645954a6fb87e6bde4",
+    "mathematics/stochastics/quadratic forms of random variables.md": "36439360a53df8506edbbc24cd739d8a",
+    "mathematics/stochastics/conditional covariance matrix.md": "5701b723e0b4c8adf7f73aece48a41c1"
   },
   "fields_dict": {
     "Basic": [
