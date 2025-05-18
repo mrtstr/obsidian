@@ -48,6 +48,9 @@ $$
 
 ![[exponential distribution#plot]]
 
+
+# -------------
+
 ![[exponential distribution#exponential distribution]]
 
 ![[exponential distribution#expectation]]
