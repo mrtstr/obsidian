@@ -839,7 +839,7 @@
     "mathematics/stochastics/statistical learning/ensemble methods.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical learning/data science algorithms.md": "1037e27488a8ecd508ac4f9d0fa78e48",
     "mathematics/stochastics/statistical learning/curse of dimensionality.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/statistical learning/cross entropy.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/statistical learning/cross entropy.md": "9416a3c26c36ec2cce5113e7e9e9f587",
     "mathematics/stochastics/statistical learning/clustering.md": "bf6dcbad8ee5b46fa4bbd6d3c6791e69",
     "mathematics/stochastics/statistical learning/classification.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical learning/bootsrap.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -1985,7 +1985,7 @@
     "infrastructure/AWS/AWS iam user.md": "8eb90fba7ec099015d704bb16982eece",
     "infrastructure/AWS/AWS STS (security token service).md": "1b7606547d7b7ebe9e36ca5401c2e4ec",
     "infrastructure/AWS/AWS JWT (json web token).md": "804d8265f6417bc27709d0cde149d3e7",
-    "mathematics/stochastics/entropy.md": "6d7f277e331258d82ca1cf02ae991c44",
+    "mathematics/stochastics/entropy.md": "16807b5a19988a8adc4a6944582d3e03",
     "mathematics/stochastics/high dimensional linear regression.md": "76cd694fe82b7383b25b875d33bade84",
     "mathematics/stochastics/akaike information criterion.md": "89decb9c7945ff574c509035a8abad51",
     "machine learning/language models/token sequence.md": "fd53c94fa9da67f386e4b2c45f8b0da2",
@@ -2013,7 +2013,8 @@
     "mathematics/stochastics/covariance matrix.md": "0909a47cbd5bb3645954a6fb87e6bde4",
     "mathematics/stochastics/quadratic forms of random variables.md": "d7735465b8a1cc7aae0290af3a06a6ad",
     "mathematics/stochastics/conditional covariance matrix.md": "5701b723e0b4c8adf7f73aece48a41c1",
-    "mathematics/stochastics/linear combinations of random variables.md": "c5478082fcddd28bfc6bfcc239843d70"
+    "mathematics/stochastics/linear combinations of random variables.md": "c5478082fcddd28bfc6bfcc239843d70",
+    "mathematics/stochastics/kl divergence.md": "1ab9d6113c35b23166bb19ebe13915cb"
   },
   "fields_dict": {
     "Basic": [
