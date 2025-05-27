@@ -4,7 +4,7 @@
 $$
 T(x) = arg\max  \varrho(x, \vartheta)
 $$
-- the maximum likelihood [[statistical estimator]] can be interpreted the parameter [[set]] out of the [[parameter space]] that explaines the observation best
+- the maximum likelihood [[statistical estimator]] can be interpreted the parameter [[set]] out of the [[parameter space]] that explained the observation best
 
 
 ### calculation of the maximum likelihood estimator

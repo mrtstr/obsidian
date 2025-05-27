@@ -456,7 +456,7 @@
     "mathematics/stochastics/collectors problem.md": "983d9a3ff53328d108ae9938fc38d04f",
     "mathematics/stochastics/binomial distribution.md": "b9f05394767de68cd6a75b238b2c68d4",
     "mathematics/stochastics/bernoulli random variable.md": "bc4b10413986c69234e89a09240f60a3",
-    "mathematics/stochastics/bayes theorem.md": "f5b711511c66e653e9e49b01198fc0a4",
+    "mathematics/stochastics/bayes theorem.md": "cd5ff38068b044fe605127898cf332d6",
     "mathematics/stochastics/CDF.md": "83e632e67e9b6249956ab46c540e8fb3",
     "mathematics/optimization/greedy.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/optimization/brute force.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -844,7 +844,7 @@
     "mathematics/stochastics/statistical learning/classification.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical learning/bootsrap.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical learning/boosting.md": "4fbfb64277f8c651bc01dc41c28327f2",
-    "mathematics/stochastics/statistical learning/bayesian inference.md": "c1c6a4d3bd768d82131573b5d18d36a8",
+    "mathematics/stochastics/statistical learning/bayesian inference.md": "68070f75e5d2e4274e7599114226a251",
     "mathematics/stochastics/statistical learning/bagging.md": "2729dfcef226fdeb240c63ead6df4e01",
     "cv.md": "0e67cf3c921b3372a3d9d531f6981c17",
     "code/data processing/pandas/usecase/pd summary of grouped df.md": "e4b52dbe04a7e2c7fae4755f17d6f457",
@@ -1735,7 +1735,7 @@
     "mathematics/stochastics/estimating uniform distribution parameter.md": "7c0a690c3ec70ad6472074e56541f77f",
     "mathematics/stochastics/maximum of uniform samples.md": "093f4c46580e5ee5491ec2809d29452c",
     "mathematics/stochastics/n fold statistical model.md": "fc006fa72d594fcdf3b1dfa38b87253b",
-    "mathematics/maximum likelihood estimator.md": "e7c3f52176878fc0241ccb692015a531",
+    "mathematics/maximum likelihood estimator.md": "291c02c5d88e355374f72c63ecb082fb",
     "mathematics/stochastics/likelihood function.md": "d9d800a39cd2a3feb264ed84d7d3c24d",
     "mathematics/stochastics/Untitled 2.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/best estimator.md": "5e62fc69229fdbdc04aa06c60a013f45",
@@ -2015,7 +2015,9 @@
     "mathematics/stochastics/conditional covariance matrix.md": "5701b723e0b4c8adf7f73aece48a41c1",
     "mathematics/stochastics/linear combinations of random variables.md": "c5478082fcddd28bfc6bfcc239843d70",
     "mathematics/stochastics/kl divergence.md": "d8882d8a013c1306550f063d9c892104",
-    "mathematics/stochastics/statistical learning/mutual information.md": "d5ee62fefb877fceb80ed60387e5558f"
+    "mathematics/stochastics/statistical learning/mutual information.md": "d5ee62fefb877fceb80ed60387e5558f",
+    "mathematics/stochastics/statistical learning/ridge regression.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/statistical learning/maximum aposteriori.md": "730ed6590bbd9da82166886391e32f95"
   },
   "fields_dict": {
     "Basic": [

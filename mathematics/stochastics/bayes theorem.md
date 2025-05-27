@@ -1,6 +1,5 @@
+### bayes theorem
 The [[bayes theorem]] describes the probability of an [[event space|event]] based on prior knowledge. Used for [[bayesian inference]].
-
-### [[bayes theorem]]
 With [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ and general [[event space|event]] $A$ follows after [[conditional probability|law of total probability]] and the  [[multiplication rule]]:
 $$
 P\left(B_i \mid A\right) 

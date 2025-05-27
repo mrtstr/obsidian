@@ -1,6 +1,10 @@
+
+### bayesian inference
 Method for [[statistical inference]] in which the [[bayes theorem]] is used to update a [[hypothesis]] that is based on prior knowledge when new [[event space|events]] occur.
 
-## Single Bayesian Update
+
+#### Single Bayesian Update
+
 For a [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ and general [[event space|event]] $A$ the [[bayes theorem]] states the following.
 $$
 P\left(B_i \mid A\right) 
@@ -14,7 +18,7 @@ P\left(B_i \mid A\right)
 $$
 We are interested in the [[probability]] of [[event]] $B_i$, and we have a prior [[hypothesis]] $P(B_i)$. Then we observe the occurrence of and [[stochastic independent|dependent]] [[event]] $A$, and we want to update our [[hypothesis]]. For this we need the [[likelihood function]] that [[event]] $A$ happened under the assumption that $B_i$ is true and divide it by the [[probability]] of the observed [[event]] $A$. The [[partitioned sample space]] $\{B_i \mid i = 1,2...,k\}$ is still normalized $\left(\sum P(B_i) = 1 \right)$.  
 
-## Multiple Bayesian Updates
+#### Multiple Bayesian Updates
 This time we have multiple [[observations]] $\{A_i \mid i = 1,2...,N\}$. From the conditional version of the [[bayes theorem]] we know the following:
 
 
@@ -116,8 +120,11 @@ P\left(H_1 \mid B_1^{(2)}\right)
 \end{split}
 $$
 
+# -----------
 
+![[bayes theorem#bayes theorem]]
 
+# anki
 
 START
 Basic
