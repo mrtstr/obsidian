@@ -1985,7 +1985,7 @@
     "infrastructure/AWS/AWS iam user.md": "8eb90fba7ec099015d704bb16982eece",
     "infrastructure/AWS/AWS STS (security token service).md": "1b7606547d7b7ebe9e36ca5401c2e4ec",
     "infrastructure/AWS/AWS JWT (json web token).md": "804d8265f6417bc27709d0cde149d3e7",
-    "mathematics/stochastics/entropy.md": "16807b5a19988a8adc4a6944582d3e03",
+    "mathematics/stochastics/entropy.md": "dcd0ae15a8cf261c464b86c623c26d19",
     "mathematics/stochastics/high dimensional linear regression.md": "76cd694fe82b7383b25b875d33bade84",
     "mathematics/stochastics/akaike information criterion.md": "89decb9c7945ff574c509035a8abad51",
     "machine learning/language models/token sequence.md": "fd53c94fa9da67f386e4b2c45f8b0da2",
@@ -2014,7 +2014,7 @@
     "mathematics/stochastics/quadratic forms of random variables.md": "d7735465b8a1cc7aae0290af3a06a6ad",
     "mathematics/stochastics/conditional covariance matrix.md": "5701b723e0b4c8adf7f73aece48a41c1",
     "mathematics/stochastics/linear combinations of random variables.md": "c5478082fcddd28bfc6bfcc239843d70",
-    "mathematics/stochastics/kl divergence.md": "1ab9d6113c35b23166bb19ebe13915cb"
+    "mathematics/stochastics/kl divergence.md": "cc7bdba98406d598e35fa9dcfe72a5b4"
   },
   "fields_dict": {
     "Basic": [

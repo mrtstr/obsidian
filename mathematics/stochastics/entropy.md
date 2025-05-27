@@ -29,8 +29,8 @@ $$
 $$
 H(X) = \mathbb{E}\left[-\log\left(f_X(X)\right)\right] = - \int_\mathbb{R} f_X(x) \log\left(f_X(x)\right) dx
 $$
-##### example
-- [[exponential distribution]]
+#### example
+##### exponential distribution
 
 $$
 \begin{split}
@@ -45,7 +45,20 @@ H(X)
 $$
 
 - the higher $\lambda$ is the less the PDF spreads thus $1-\ln(2)=0.3<1-\ln(1)=1$
+##### standard normal distribution
+- [[normal distribution]] with $\mu=0$ and $\sigma^2=1$
 
+$$
+\begin{split}
+H(X) 
+&= - \int_\mathbb{R} f(x) \ln\left(\frac{1}{\sqrt{2 \pi }}\exp{\left[-\frac{x^2}{2}\right]}\right) dx \\
+&= - \int_\mathbb{R} f(x) \left( \frac{-1}{2} \ln\left(2 \pi\right) -\frac{x^2}{2} \right) dx \\
+&= \frac{1}{2} \ln\left(2 \pi\right) \int_\mathbb{R} f(x) dx +  \frac{1}{2}\int_\mathbb{R} x^2 f(x) dx \\
+&= \frac{1}{2} \ln\left(2 \pi\right)  +  \frac{1}{2} \mathbb{VAR}[X] \\
+&= \frac{1}{2} \left(\ln\left(2 \pi\right) + 1 \right) \\
+\end{split}
+$$
+# ------------
 ![[exponential distribution#plot]]
 
 
@@ -56,6 +69,42 @@ $$
 ![[exponential distribution#expectation]]
 
 # anki
+
+START
+Basic
+[[entropy]] of the [[standard normal distribution]]
+
+Back: 
+
+- [[normal distribution]] with $\mu=0$ and $\sigma^2=1$
+
+$$
+\begin{split}
+H(X) 
+&= - \int_\mathbb{R} f(x) \ln\left(\frac{1}{\sqrt{2 \pi }}\exp{\left[-\frac{x^2}{2}\right]}\right) dx \\
+&= - \int_\mathbb{R} f(x) \left( \frac{-1}{2} \ln\left(2 \pi\right) -\frac{x^2}{2} \right) dx \\
+&= \frac{1}{2} \ln\left(2 \pi\right) \int_\mathbb{R} f(x) dx +  \frac{1}{2}\int_\mathbb{R} x^2 f(x) dx \\
+&= \frac{1}{2} \ln\left(2 \pi\right)  +  \frac{1}{2} \mathbb{VAR}[X] \\
+&= \frac{1}{2} \left(\ln\left(2 \pi\right) + 1 \right) \\
+\end{split}
+$$
+
+### differential entropy
+- for continuous random variables the concept of [[entropy]] can be extended
+- does not have an intuitive interpretation other than **measurement for uncertainty or spread**
+- other than the [[entropy]] the differential entropy can be negative and is sensitive to scaling
+
+- for a continuous random variable with the [[probability density function (PDF)]] $f_X$ the differential entropy is defined as follows
+
+$$
+H(X) = \mathbb{E}\left[-\log\left(f_X(X)\right)\right] = - \int_\mathbb{R} f_X(x) \log\left(f_X(x)\right) dx
+$$
+
+
+Tags: mathematics statistics SS25
+<!--ID: 1748332617290-->
+END
+
 
 START
 Basic
