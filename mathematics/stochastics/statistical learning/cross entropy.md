@@ -37,7 +37,15 @@ $$
 $$
 \text{supp}(P) \nsubseteq \text{supp}(Q)
 $$
+### cross entropy of independent random variables
 
+$$
+\begin{split}
+H\left(P , Q \right) 
+&= - \int_\mathbb{R} p(x) \log \left( q(x) \right) dx \\
+
+\end{split}
+$$
 # -------
 
 ![[entropy#entropy]]

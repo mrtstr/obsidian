@@ -18,7 +18,6 @@ $$
 - $D_{KL}(P \parallel Q) = \infty$ if there exists any $x$ such that $p(x) > 0$ and $q(x) = 0$ because this would make the [[cross entropy]] go to infinity
 
 
----
 
 ### Relationship to Entropy and Cross-Entropy
 
@@ -83,11 +82,7 @@ $$
 - since $D_{KL}(P \parallel Q) \geq 0 \Rightarrow H(Q) \geq H(P)$ 
 
 ![[entropy#standard normal distribution]]
-# --------
 
-![[cross entropy#cross entropy]]
-
-![[entropy#differential entropy]]
 
 # anki
 
