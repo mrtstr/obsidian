@@ -1,42 +1,51 @@
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\gamma, v}: \gamma \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
-- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
-- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\gamma \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\gamma, v}$ is the [[distribution]] of $X$
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
+- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(X)=s$ 
+- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon_i]=\sigma^2$
+- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
+- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
 
 $$
 \begin{split}
-X 
-&= A \gamma + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \gamma_j + \sqrt{v} \xi \\
-X_i
-&= \sum_{j \in [S]} A_{(i, j)} \gamma_j + \sqrt{v} \xi_i \\
+Y 
+&= X \theta + \epsilon \\
+&= \sum_{j \in [S]} X_{(*, j)} \theta_j + \epsilon \\
+Y_i
+&= \sum_{j \in [S]} X_{(i, j)} \theta_j + \epsilon_i \\
+\end{split}
+$$
+#### feature map
+- can be generalized by introducing a function $\varphi: \mathcal{X} \to \mathbb{R}^d$ that transforms the input features
+- in this way the model can lean non-linear relationships between input and output
+
+$$
+\begin{split}
+Y = f_\theta(X) + \epsilon = \varphi(X)^\top\theta  + \epsilon
 \end{split}
 $$
 
 ### interpretation of a [[linear model]]
-- during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\gamma$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+- during the training the parameters are fitted to explain the relationship between the dependent variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
+- for an unknown sample we can model unknown properties $X$ based on the known characteristics $X_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[Y\right]=X\theta$ and the [[variance]] $\mathbb{VAR}\left[Y\right]=v$
 
-#### design [[matrix]] $A$
+#### design [[matrix]] $X$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
-- e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
-- e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\gamma$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\gamma_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
+- e.g. $X \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
+- e.g. $X \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
+#### parameter $\theta$ and $v$
+- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
 - since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
 
 
 ### [[expectation]] and [[variance]] of a [[linear model]]
 $$
 \begin{split}
-\mathbb{E}\left[X\right]
-&= \mathbb{E}\left[A \gamma + \sqrt{v} \xi\right]  \\
-&= A\gamma  + \sqrt{v}\mathbb{E}\left[   \xi\right]  \\
-&= A\gamma   \\
-\mathbb{E}\left[X\right]
+\mathbb{E}\left[Y\right]
+&= \mathbb{E}\left[X \theta + \sqrt{v} \xi\right]  \\
+&= X\theta  + \sqrt{v}\mathbb{E}\left[   \xi\right]  \\
+&= X\theta   \\
+\mathbb{E}\left[Y\right]
 &= v\mathbb{VAR}\left[\xi\right]  \\
 &= v  \\
 \end{split}
@@ -46,7 +55,7 @@ $$
 ### example [[linear model]]
 ##### model the weight of a person based on hight
 $$
-A=
+X=
 \left(\begin{matrix}
 1 & t_1 \\
 ... & ...\\
@@ -54,7 +63,7 @@ A=
 \end{matrix}\right) \in \mathbb{R}^{n \times 2}
 $$
 $$
-X=
+Y=
 \left(\begin{matrix}
 w_1 \\
  ...\\
@@ -63,68 +72,68 @@ w_n \\
 $$
 
 $$
-\gamma=
+\theta=
 \left(\begin{matrix}
-\gamma_1 \\
-\gamma_n \\
+\theta_1 \\
+\theta_n \\
 \end{matrix}\right) \in \mathbb{R}^{2 }
 $$
 
 $$
 \begin{split}
-X 
-&= A \gamma + \sqrt{v} \xi \\
+Y 
+&= A \theta + \sqrt{v} \xi \\
 \end{split}
 $$
 
 $$
 \begin{split}
-\gamma
-&= arg \min_\gamma || X - A\gamma||^2 \\
-&= arg \min_\gamma \sum_{i\in [n]} (X_i - \gamma_0 - \gamma_1 \cdot t_i)^2 \\
-\end{split}
-$$
-
-
-$$
-\begin{split}
-&\frac{\partial}{\partial \gamma_0} \sum_{i\in [n]} \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right)^2 = 0 \\
-\Rightarrow& \sum_{i\in [n]} -2 \cdot \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right) = 0 \\
-\Rightarrow& \left(\sum_{i\in [n]}  X_i\right) - n \cdot \gamma_0 - \gamma_1 \cdot \left(\sum_{i\in [n]}  t_i\right) = 0 \\
-\Rightarrow& \left(\frac{1}{n}\sum_{i\in [n]}  X_i\right) - \gamma_0 - \gamma_1 \cdot \left(\frac{1}{n}\sum_{i\in [n]}  t_i\right) = 0 \\
-\Rightarrow& M(X) - \gamma_0 - \gamma_1 \cdot M(t) = 0 \\
-\Rightarrow& \gamma_0 = M(X)  - \gamma_1 \cdot M(t) \\
-\end{split}
-$$
-
-$$
-\begin{split}
-&\frac{\partial}{\partial \gamma_1} \sum_{i\in [n]} \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right)^2 = 0 \\
-\Rightarrow& \sum_{i\in [n]} -2t_i \cdot \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right) = 0 \\
-
-\Rightarrow& \sum_{i\in [n]} t_i X_i - t_i \gamma_0 - t_i^2 \gamma_1  = 0 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \gamma_0 \frac{1}{n} \sum_{i\in [n]} t_i  - \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \gamma_0 M(t)  - \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \gamma_0 M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\theta
+&= arg \min_\theta || Y - X\theta||^2 \\
+&= arg \min_\theta \sum_{i\in [n]} (Y_i - \theta_0 - \theta_1 \cdot t_i)^2 \\
 \end{split}
 $$
 
 
 $$
 \begin{split}
-& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \gamma_0 M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \left( M(X)  - \gamma_1 \cdot M(t)\right) M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \gamma_1 \cdot M(t)^2   + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \gamma_1 V(t)\\
-\Rightarrow& \gamma_1 V(t)  =  M(X)M(t)  - \frac{1}{n} \sum_{i\in [n]} t_i X_i \\
-\Rightarrow& \gamma_1 V(t)  =  C(X, t)\\
-\Rightarrow& \gamma_1   =   \frac{C(X, t)}{V(t)}\\
+&\frac{\partial}{\partial \theta_0} \sum_{i\in [n]} \left(Y_i - \theta_0 - \theta_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2 \cdot \left(X_i - \theta_0 - \theta_1 \cdot t_i\right) = 0 \\
+\Rightarrow& \left(\sum_{i\in [n]}  Y_i\right) - n \cdot \theta_0 - \theta_1 \cdot \left(\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& \left(\frac{1}{n}\sum_{i\in [n]}  Y_i\right) - \theta_0 - \theta_1 \cdot \left(\frac{1}{n}\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& M(Y) - \theta_0 - \theta_1 \cdot M(t) = 0 \\
+\Rightarrow& \theta_0 = M(Y)  - \theta_1 \cdot M(t) \\
 \end{split}
 $$
 
 $$
 \begin{split}
-\gamma_0 &= M(X)  - \gamma_1 \cdot M(t) \\
+&\frac{\partial}{\partial \theta_1} \sum_{i\in [n]} \left(Y_i - \theta_0 - \theta_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2t_i \cdot \left(Y_i - \theta_0 - \theta_1 \cdot t_i\right) = 0 \\
+
+\Rightarrow& \sum_{i\in [n]} t_i X_i - t_i \theta_0 - t_i^2 \theta_1  = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \theta_0 \frac{1}{n} \sum_{i\in [n]} t_i  - \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \theta_0 M(t)  - \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \theta_0 M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \theta_0 M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \left( M(X)  - \theta_1 \cdot M(t)\right) M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \theta_1 \cdot M(t)^2   + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \theta_1 V(t)\\
+\Rightarrow& \theta_1 V(t)  =  M(X)M(t)  - \frac{1}{n} \sum_{i\in [n]} t_i X_i \\
+\Rightarrow& \theta_1 V(t)  =  C(X, t)\\
+\Rightarrow& \theta_1   =   \frac{C(X, t)}{V(t)}\\
+\end{split}
+$$
+
+$$
+\begin{split}
+\theta_0 &= M(X)  - \theta_1 \cdot M(t) \\
 &= M(X)  - \frac{C(X, t)}{V(t)} \cdot M(t) \\
 \end{split}
 $$
@@ -133,9 +142,9 @@ $$
 ### training of a [[linear model]]
 $$
 \begin{split}
-\hat\gamma 
-&= arg \min_\gamma ||X - A\gamma||^2 \\
-&= \left(A^\top A\right)^{-1}A^\top X \\
+\hat\theta 
+&= arg \min_\theta ||Y - X\theta||^2 \\
+&= \left(X^\top X\right)^{-1}X^\top Y \\
 \end{split}
 $$
 
@@ -143,20 +152,21 @@ $$
 
 $$
 \begin{split}
-&D||X - A\gamma||^2(\gamma)^\top 
-= A^\top\left(A\gamma -X\right) = 0 \\
-\Rightarrow&\gamma= \left(A^\top A\right)^{-1}A^\top X
+&D||Y - X\theta||^2(\theta)^\top 
+= A^\top\left(X\theta -Y\right) = 0 \\
+\Rightarrow&\theta= \left(X^\top X\right)^{-1}X^\top Y
 \end{split}
 $$
-#### proof that $\hat\gamma$ is [[bias|unbiased]]
+#### proof that $\hat\theta$ is [[bias|unbiased]]
 $$
 \begin{split}
-\mathbb{E}[\hat\gamma] 
-&= \left(A^\top A\right)^{-1}A^\top \mathbb{E}[X] \\
-&= \left(A^\top A\right)^{-1}A^\top A\gamma \\
-&= \gamma \\
+\mathbb{E}[\hat\theta] 
+&= \left(X^\top X\right)^{-1}X^\top \mathbb{E}[Y] \\
+&= \left(X^\top X\right)^{-1}X^\top Y\theta \\
+&= \theta \\
 \end{split}
 $$
+
 # --------------------------
 ![[empirical variance#empirical variance]]
 
@@ -175,33 +185,33 @@ Basic
 - interpretation
 Back: 
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\gamma, v}: \gamma \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
 - is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
 - the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\gamma \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\gamma, v}$ is the [[distribution]] of $X$
+- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
+- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
 
 $$
 \begin{split}
 X 
-&= A \gamma + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \gamma_j + \sqrt{v} \xi \\
+&= A \theta + \sqrt{v} \xi \\
+&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
 X_i
-&= \sum_{j \in [S]} A_{(i, j)} \gamma_j + \sqrt{v} \xi_i \\
+&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
 \end{split}
 $$
 
 ### interpretation of a [[linear model]]
 - during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\gamma$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\theta$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
 
 #### design [[matrix]] $A$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
 - e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
 - e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\gamma$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\gamma_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
+#### parameter $\theta$ and $v$
+- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
 - since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
 
 Tags: mathematics statistics
@@ -221,9 +231,9 @@ Back:
 $$
 \begin{split}
 \mathbb{E}\left[X\right]
-&= \mathbb{E}\left[A \gamma + \sqrt{v} \xi\right]  \\
-&= A\gamma  + \sqrt{v}\mathbb{E}\left[   \xi\right]  \\
-&= A\gamma   \\
+&= \mathbb{E}\left[A \theta + \sqrt{v} \xi\right]  \\
+&= A\theta  + \sqrt{v}\mathbb{E}\left[   \xi\right]  \\
+&= A\theta   \\
 \mathbb{E}\left[X\right]
 &= v\mathbb{VAR}\left[\xi\right]  \\
 &= v  \\
@@ -234,33 +244,33 @@ _______________________
 
 
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\gamma, v}: \gamma \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
 - is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
 - the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\gamma \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\gamma, v}$ is the [[distribution]] of $X$
+- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
+- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
 
 $$
 \begin{split}
 X 
-&= A \gamma + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \gamma_j + \sqrt{v} \xi \\
+&= A \theta + \sqrt{v} \xi \\
+&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
 X_i
-&= \sum_{j \in [S]} A_{(i, j)} \gamma_j + \sqrt{v} \xi_i \\
+&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
 \end{split}
 $$
 
 ### interpretation of a [[linear model]]
 - during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\gamma$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\theta$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
 
 #### design [[matrix]] $A$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
 - e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
 - e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\gamma$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\gamma_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
+#### parameter $\theta$ and $v$
+- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
 - since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
 
 Tags: mathematics statistics
@@ -278,9 +288,9 @@ Back:
 
 $$
 \begin{split}
-&D||X - A\gamma||^2(\gamma)^\top 
-= A^\top\left(A\gamma -X\right) = 0 \\
-\Rightarrow&\gamma= \left(A^\top A\right)^{-1}A^\top X
+&D||X - A\theta||^2(\theta)^\top 
+= A^\top\left(A\theta -X\right) = 0 \\
+\Rightarrow&\theta= \left(A^\top A\right)^{-1}A^\top X
 \end{split}
 $$
 
@@ -334,33 +344,33 @@ _______________________
 
 
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\gamma, v}: \gamma \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
 - is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
 - the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\gamma \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\gamma, v}$ is the [[distribution]] of $X$
+- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
+- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
 
 $$
 \begin{split}
 X 
-&= A \gamma + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \gamma_j + \sqrt{v} \xi \\
+&= A \theta + \sqrt{v} \xi \\
+&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
 X_i
-&= \sum_{j \in [S]} A_{(i, j)} \gamma_j + \sqrt{v} \xi_i \\
+&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
 \end{split}
 $$
 
 ### interpretation of a [[linear model]]
 - during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\gamma$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\theta$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
 
 #### design [[matrix]] $A$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
 - e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
 - e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\gamma$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\gamma_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
+#### parameter $\theta$ and $v$
+- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
 - since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
 
 Tags: mathematics statistics
@@ -375,27 +385,27 @@ Basic
 $$
 \begin{split}
 X 
-&= A \gamma + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \gamma_j + \sqrt{v} \xi \\
+&= A \theta + \sqrt{v} \xi \\
+&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
 X_i
-&= \sum_{j \in [S]} A_{(i, j)} \gamma_j + \sqrt{v} \xi_i \\
+&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
 \end{split}
 $$
 proof that the following [[statistical estimator]] is [[bias|unbiased]]
 $$
 \begin{split}
-\gamma= \left(A^\top A\right)^{-1}A^\top X
+\theta= \left(A^\top A\right)^{-1}A^\top X
 \end{split}
 $$
 Back: 
 
-#### proof that $\hat\gamma$ is [[bias|unbiased]]
+#### proof that $\hat\theta$ is [[bias|unbiased]]
 $$
 \begin{split}
-\mathbb{E}[\hat\gamma] 
+\mathbb{E}[\hat\theta] 
 &= \left(A^\top A\right)^{-1}A^\top \mathbb{E}[X] \\
-&= \left(A^\top A\right)^{-1}A^\top A\gamma \\
-&= \gamma \\
+&= \left(A^\top A\right)^{-1}A^\top A\theta \\
+&= \theta \\
 \end{split}
 $$
 
@@ -404,9 +414,9 @@ $$
 $$
 \begin{split}
 \mathbb{E}\left[X\right]
-&= \mathbb{E}\left[A \gamma + \sqrt{v} \xi\right]  \\
-&= A\gamma  + \sqrt{v}\mathbb{E}\left[   \xi\right]  \\
-&= A\gamma   \\
+&= \mathbb{E}\left[A \theta + \sqrt{v} \xi\right]  \\
+&= A\theta  + \sqrt{v}\mathbb{E}\left[   \xi\right]  \\
+&= A\theta   \\
 \mathbb{E}\left[X\right]
 &= v\mathbb{VAR}\left[\xi\right]  \\
 &= v  \\
@@ -430,33 +440,33 @@ $$
 
 
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\gamma, v}: \gamma \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
 - is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
 - the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\gamma \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\gamma, v}$ is the [[distribution]] of $X$
+- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
+- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
 
 $$
 \begin{split}
 X 
-&= A \gamma + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \gamma_j + \sqrt{v} \xi \\
+&= A \theta + \sqrt{v} \xi \\
+&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
 X_i
-&= \sum_{j \in [S]} A_{(i, j)} \gamma_j + \sqrt{v} \xi_i \\
+&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
 \end{split}
 $$
 
 ### interpretation of a [[linear model]]
 - during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\gamma$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\theta$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
 
 #### design [[matrix]] $A$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
 - e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
 - e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\gamma$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\gamma_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
+#### parameter $\theta$ and $v$
+- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
 - since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
 
 Tags: mathematics statistics
@@ -491,34 +501,34 @@ $$
 
 
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\gamma, v}: \gamma \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
 - is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
 - the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\gamma \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\gamma, v}$ is the [[distribution]] of $X$
+- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
+- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
 
 $$
 \begin{split}
 X 
-&= A \gamma + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \gamma_j + \sqrt{v} \xi \\
+&= A \theta + \sqrt{v} \xi \\
+&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
 X_i
-&= \sum_{j \in [S]} A_{(i, j)} \gamma_j + \sqrt{v} \xi_i \\
+&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
 \end{split}
 $$
 ________________________
 
 ### interpretation of a [[linear model]]
 - during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\gamma$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\theta$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
 
 #### design [[matrix]] $A$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
 - e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
 - e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\gamma$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\gamma_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
+#### parameter $\theta$ and $v$
+- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
 - since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
 
 Tags: mathematics statistics
@@ -548,25 +558,25 @@ w_n \\
 $$
 
 $$
-\gamma=
+\theta=
 \left(\begin{matrix}
-\gamma_1 \\
-\gamma_n \\
+\theta_1 \\
+\theta_n \\
 \end{matrix}\right) \in \mathbb{R}^{2 }
 $$
 
 $$
 \begin{split}
 X 
-&= A \gamma + \sqrt{v} \xi \\
+&= A \theta + \sqrt{v} \xi \\
 \end{split}
 $$
 
 - proof the following:
 $$
 \begin{split}
-\gamma_0 &= M(X)  - \frac{C(X, t)}{V(t)} \cdot M(t) \\
-\gamma_1   &=   \frac{C(X, t)}{V(t)}\\
+\theta_0 &= M(X)  - \frac{C(X, t)}{V(t)} \cdot M(t) \\
+\theta_1   &=   \frac{C(X, t)}{V(t)}\\
 \end{split}
 $$
 
@@ -591,86 +601,86 @@ w_n \\
 $$
 
 $$
-\gamma=
+\theta=
 \left(\begin{matrix}
-\gamma_1 \\
-\gamma_n \\
+\theta_1 \\
+\theta_n \\
 \end{matrix}\right) \in \mathbb{R}^{2 }
 $$
 
 $$
 \begin{split}
 X 
-&= A \gamma + \sqrt{v} \xi \\
+&= A \theta + \sqrt{v} \xi \\
 \end{split}
 $$
 
 $$
 \begin{split}
-\gamma
-&= arg \min_\gamma || X - A\gamma||^2 \\
-&= arg \min_\gamma \sum_{i\in [n]} (X_i - \gamma_0 - \gamma_1 \cdot t_i)^2 \\
-\end{split}
-$$
-
-
-$$
-\begin{split}
-&\frac{\partial}{\partial \gamma_0} \sum_{i\in [n]} \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right)^2 = 0 \\
-\Rightarrow& \sum_{i\in [n]} -2 \cdot \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right) = 0 \\
-\Rightarrow& \left(\sum_{i\in [n]}  X_i\right) - n \cdot \gamma_0 - \gamma_1 \cdot \left(\sum_{i\in [n]}  t_i\right) = 0 \\
-\Rightarrow& \left(\frac{1}{n}\sum_{i\in [n]}  X_i\right) - \gamma_0 - \gamma_1 \cdot \left(\frac{1}{n}\sum_{i\in [n]}  t_i\right) = 0 \\
-\Rightarrow& M(X) - \gamma_0 - \gamma_1 \cdot M(t) = 0 \\
-\Rightarrow& \gamma_0 = M(X)  - \gamma_1 \cdot M(t) \\
-\end{split}
-$$
-
-$$
-\begin{split}
-&\frac{\partial}{\partial \gamma_1} \sum_{i\in [n]} \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right)^2 = 0 \\
-\Rightarrow& \sum_{i\in [n]} -2t_i \cdot \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right) = 0 \\
-
-\Rightarrow& \sum_{i\in [n]} t_i X_i - t_i \gamma_0 - t_i^2 \gamma_1  = 0 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \gamma_0 \frac{1}{n} \sum_{i\in [n]} t_i  - \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \gamma_0 M(t)  - \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \gamma_0 M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\theta
+&= arg \min_\theta || X - A\theta||^2 \\
+&= arg \min_\theta \sum_{i\in [n]} (X_i - \theta_0 - \theta_1 \cdot t_i)^2 \\
 \end{split}
 $$
 
 
 $$
 \begin{split}
-& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \gamma_0 M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \left( M(X)  - \gamma_1 \cdot M(t)\right) M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \gamma_1 \cdot M(t)^2   + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \gamma_1 V(t)\\
-\Rightarrow& \gamma_1 V(t)  =  M(X)M(t)  - \frac{1}{n} \sum_{i\in [n]} t_i X_i \\
-\Rightarrow& \gamma_1 V(t)  =  C(X, t)\\
-\Rightarrow& \gamma_1   =   \frac{C(X, t)}{V(t)}\\
+&\frac{\partial}{\partial \theta_0} \sum_{i\in [n]} \left(X_i - \theta_0 - \theta_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2 \cdot \left(X_i - \theta_0 - \theta_1 \cdot t_i\right) = 0 \\
+\Rightarrow& \left(\sum_{i\in [n]}  X_i\right) - n \cdot \theta_0 - \theta_1 \cdot \left(\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& \left(\frac{1}{n}\sum_{i\in [n]}  X_i\right) - \theta_0 - \theta_1 \cdot \left(\frac{1}{n}\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& M(X) - \theta_0 - \theta_1 \cdot M(t) = 0 \\
+\Rightarrow& \theta_0 = M(X)  - \theta_1 \cdot M(t) \\
 \end{split}
 $$
 
 $$
 \begin{split}
-\gamma_0 &= M(X)  - \gamma_1 \cdot M(t) \\
+&\frac{\partial}{\partial \theta_1} \sum_{i\in [n]} \left(X_i - \theta_0 - \theta_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2t_i \cdot \left(X_i - \theta_0 - \theta_1 \cdot t_i\right) = 0 \\
+
+\Rightarrow& \sum_{i\in [n]} t_i X_i - t_i \theta_0 - t_i^2 \theta_1  = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \theta_0 \frac{1}{n} \sum_{i\in [n]} t_i  - \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \theta_0 M(t)  - \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \theta_0 M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \theta_0 M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \left( M(X)  - \theta_1 \cdot M(t)\right) M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \theta_1 \cdot M(t)^2   + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \theta_1 V(t)\\
+\Rightarrow& \theta_1 V(t)  =  M(X)M(t)  - \frac{1}{n} \sum_{i\in [n]} t_i X_i \\
+\Rightarrow& \theta_1 V(t)  =  C(X, t)\\
+\Rightarrow& \theta_1   =   \frac{C(X, t)}{V(t)}\\
+\end{split}
+$$
+
+$$
+\begin{split}
+\theta_0 &= M(X)  - \theta_1 \cdot M(t) \\
 &= M(X)  - \frac{C(X, t)}{V(t)} \cdot M(t) \\
 \end{split}
 $$
 
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\gamma, v}: \gamma \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
 - is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
 - the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\gamma \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\gamma, v}$ is the [[distribution]] of $X$
+- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
+- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
 
 $$
 \begin{split}
 X 
-&= A \gamma + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \gamma_j + \sqrt{v} \xi \\
+&= A \theta + \sqrt{v} \xi \\
+&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
 X_i
-&= \sum_{j \in [S]} A_{(i, j)} \gamma_j + \sqrt{v} \xi_i \\
+&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
 \end{split}
 $$
 
@@ -720,15 +730,15 @@ ________________________
 
 ### interpretation of a [[linear model]]
 - during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\gamma$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\theta$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
 
 #### design [[matrix]] $A$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
 - e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
 - e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\gamma$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\gamma_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
+#### parameter $\theta$ and $v$
+- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
 - since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
 
 Tags: mathematics statistics
@@ -759,21 +769,21 @@ w_n \\
 $$
 
 $$
-\gamma=
+\theta=
 \left(\begin{matrix}
-\gamma_1 \\
-\gamma_n \\
+\theta_1 \\
+\theta_n \\
 \end{matrix}\right) \in \mathbb{R}^{2 }
 $$
 
 $$
 \begin{split}
 X 
-&= A \gamma + \sqrt{v} \xi \\
+&= A \theta + \sqrt{v} \xi \\
 \end{split}
 $$
 
-what are the [[linear least squares]] minimizing paramters $\gamma^*$ (as a function of the [[empirical variance]] and [[empirical covariance]])
+what are the [[linear least squares]] minimizing paramters $\theta^*$ (as a function of the [[empirical variance]] and [[empirical covariance]])
 (no proof)
 Back: 
 
@@ -796,86 +806,86 @@ w_n \\
 $$
 
 $$
-\gamma=
+\theta=
 \left(\begin{matrix}
-\gamma_1 \\
-\gamma_n \\
+\theta_1 \\
+\theta_n \\
 \end{matrix}\right) \in \mathbb{R}^{2 }
 $$
 
 $$
 \begin{split}
 X 
-&= A \gamma + \sqrt{v} \xi \\
+&= A \theta + \sqrt{v} \xi \\
 \end{split}
 $$
 
 $$
 \begin{split}
-\gamma
-&= arg \min_\gamma || X - A\gamma||^2 \\
-&= arg \min_\gamma \sum_{i\in [n]} (X_i - \gamma_0 - \gamma_1 \cdot t_i)^2 \\
-\end{split}
-$$
-
-
-$$
-\begin{split}
-&\frac{\partial}{\partial \gamma_0} \sum_{i\in [n]} \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right)^2 = 0 \\
-\Rightarrow& \sum_{i\in [n]} -2 \cdot \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right) = 0 \\
-\Rightarrow& \left(\sum_{i\in [n]}  X_i\right) - n \cdot \gamma_0 - \gamma_1 \cdot \left(\sum_{i\in [n]}  t_i\right) = 0 \\
-\Rightarrow& \left(\frac{1}{n}\sum_{i\in [n]}  X_i\right) - \gamma_0 - \gamma_1 \cdot \left(\frac{1}{n}\sum_{i\in [n]}  t_i\right) = 0 \\
-\Rightarrow& M(X) - \gamma_0 - \gamma_1 \cdot M(t) = 0 \\
-\Rightarrow& \gamma_0 = M(X)  - \gamma_1 \cdot M(t) \\
-\end{split}
-$$
-
-$$
-\begin{split}
-&\frac{\partial}{\partial \gamma_1} \sum_{i\in [n]} \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right)^2 = 0 \\
-\Rightarrow& \sum_{i\in [n]} -2t_i \cdot \left(X_i - \gamma_0 - \gamma_1 \cdot t_i\right) = 0 \\
-
-\Rightarrow& \sum_{i\in [n]} t_i X_i - t_i \gamma_0 - t_i^2 \gamma_1  = 0 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \gamma_0 \frac{1}{n} \sum_{i\in [n]} t_i  - \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \gamma_0 M(t)  - \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \gamma_0 M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\theta
+&= arg \min_\theta || X - A\theta||^2 \\
+&= arg \min_\theta \sum_{i\in [n]} (X_i - \theta_0 - \theta_1 \cdot t_i)^2 \\
 \end{split}
 $$
 
 
 $$
 \begin{split}
-& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \gamma_0 M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \left( M(X)  - \gamma_1 \cdot M(t)\right) M(t)  + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \gamma_1 \cdot M(t)^2   + \gamma_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \gamma_1 V(t)\\
-\Rightarrow& \gamma_1 V(t)  =  M(X)M(t)  - \frac{1}{n} \sum_{i\in [n]} t_i X_i \\
-\Rightarrow& \gamma_1 V(t)  =  C(X, t)\\
-\Rightarrow& \gamma_1   =   \frac{C(X, t)}{V(t)}\\
+&\frac{\partial}{\partial \theta_0} \sum_{i\in [n]} \left(X_i - \theta_0 - \theta_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2 \cdot \left(X_i - \theta_0 - \theta_1 \cdot t_i\right) = 0 \\
+\Rightarrow& \left(\sum_{i\in [n]}  X_i\right) - n \cdot \theta_0 - \theta_1 \cdot \left(\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& \left(\frac{1}{n}\sum_{i\in [n]}  X_i\right) - \theta_0 - \theta_1 \cdot \left(\frac{1}{n}\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& M(X) - \theta_0 - \theta_1 \cdot M(t) = 0 \\
+\Rightarrow& \theta_0 = M(X)  - \theta_1 \cdot M(t) \\
 \end{split}
 $$
 
 $$
 \begin{split}
-\gamma_0 &= M(X)  - \gamma_1 \cdot M(t) \\
+&\frac{\partial}{\partial \theta_1} \sum_{i\in [n]} \left(X_i - \theta_0 - \theta_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2t_i \cdot \left(X_i - \theta_0 - \theta_1 \cdot t_i\right) = 0 \\
+
+\Rightarrow& \sum_{i\in [n]} t_i X_i - t_i \theta_0 - t_i^2 \theta_1  = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \theta_0 \frac{1}{n} \sum_{i\in [n]} t_i  - \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \theta_0 M(t)  - \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \theta_0 M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \theta_0 M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \left( M(X)  - \theta_1 \cdot M(t)\right) M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \theta_1 \cdot M(t)^2   + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \theta_1 V(t)\\
+\Rightarrow& \theta_1 V(t)  =  M(X)M(t)  - \frac{1}{n} \sum_{i\in [n]} t_i X_i \\
+\Rightarrow& \theta_1 V(t)  =  C(X, t)\\
+\Rightarrow& \theta_1   =   \frac{C(X, t)}{V(t)}\\
+\end{split}
+$$
+
+$$
+\begin{split}
+\theta_0 &= M(X)  - \theta_1 \cdot M(t) \\
 &= M(X)  - \frac{C(X, t)}{V(t)} \cdot M(t) \\
 \end{split}
 $$
 
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\gamma, v}: \gamma \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
 - is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
 - the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\gamma \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\gamma, v}$ is the [[distribution]] of $X$
+- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
+- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
 
 $$
 \begin{split}
 X 
-&= A \gamma + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \gamma_j + \sqrt{v} \xi \\
+&= A \theta + \sqrt{v} \xi \\
+&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
 X_i
-&= \sum_{j \in [S]} A_{(i, j)} \gamma_j + \sqrt{v} \xi_i \\
+&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
 \end{split}
 $$
 
@@ -925,17 +935,54 @@ ________________________
 
 ### interpretation of a [[linear model]]
 - during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\gamma$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\theta$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
 
 #### design [[matrix]] $A$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
 - e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
 - e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\gamma$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\gamma_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
+#### parameter $\theta$ and $v$
+- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
 - since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
 
 Tags: mathematics statistics
 <!--ID: 1720372857686-->
+END
+
+
+
+START
+Basic
+can a [[linear model]] learn non learn relationships?
+
+Back: 
+### linear model
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
+- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(X)=s$ 
+- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon_i]=\sigma^2$
+- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
+- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
+
+$$
+\begin{split}
+Y 
+&= X \theta + \epsilon \\
+&= \sum_{j \in [S]} X_{(*, j)} \theta_j + \epsilon \\
+Y_i
+&= \sum_{j \in [S]} X_{(i, j)} \theta_j + \epsilon_i \\
+\end{split}
+$$
+#### feature map
+- can be generalized by introducing a function $\varphi: \mathcal{X} \to \mathbb{R}^d$ that transforms the input features
+- in this way the model can lean non-linear relationships between input and output
+
+$$
+\begin{split}
+Y = f_\theta(X) + \epsilon = \varphi(X)^\top\theta  + \epsilon
+\end{split}
+$$
+
+Tags: mathematics statistics SS25
+<!--ID: 1748424598842-->
 END

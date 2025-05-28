@@ -1742,7 +1742,7 @@
     "mathematics/stochastics/confidence set.md": "a8aebe92a9951d71015eb52c0371fef0",
     "mathematics/stochastics/sprecial distributions/continuous/students t distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/lindeberg levy CLT.md": "3fb9284657f1f849dedf2789005c2588",
-    "mathematics/linear model.md": "3877a0d7dbce93bd76f42cb6fc968bb6",
+    "mathematics/linear model.md": "21d15e070c2995c591d28070d68277cb",
     "mathematics/optimization/least squares.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical test.md": "a404bb07ae01a1b4533eafc0294647a9",
     "mathematics/stochastics/one sided gauss test.md": "db18367c4fa207d49dd00ea27f6650d4",
@@ -1788,7 +1788,7 @@
     "mathematics/basics/orthonormal matrix.md": "830f05eb2d8ac50ee12c16ec6703f833",
     "mathematics/basics/eigenvalues.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/numerical methods/general least squares.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/numerical methods/linear least squares.md": "2078f54fb14f403beaeff76b23a756fd",
+    "mathematics/numerical methods/linear least squares.md": "80ae4ab764da39bdb1b731b81a86684f",
     "mathematics/numerical methods/QR decomposition.md": "25cc985cf004755a11b027ebee27f934",
     "mathematics/basics/vector subtraction.md": "d59485b0c2250f8ed944d9ccdf8fcfef",
     "mathematics/basics/reflection.md": "af025aded2248d812d8e8a490dfae8ec",
@@ -2016,7 +2016,7 @@
     "mathematics/stochastics/linear combinations of random variables.md": "c5478082fcddd28bfc6bfcc239843d70",
     "mathematics/stochastics/kl divergence.md": "d8882d8a013c1306550f063d9c892104",
     "mathematics/stochastics/statistical learning/mutual information.md": "d5ee62fefb877fceb80ed60387e5558f",
-    "mathematics/stochastics/statistical learning/ridge regression.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/statistical learning/ridge regression.md": "9ab0dcc08e3e5f794e4a7827e404bda3",
     "mathematics/stochastics/statistical learning/maximum aposteriori.md": "730ed6590bbd9da82166886391e32f95"
   },
   "fields_dict": {

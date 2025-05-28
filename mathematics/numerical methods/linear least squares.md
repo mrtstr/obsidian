@@ -71,6 +71,9 @@ $$
 - however $A^\top Ax = A^\top b$ has a [[condition]] of $\kappa(A^\top A)=\kappa(A)^2$
 - while solving $R_1x  = Q_1^\top b$ is eqivalent to solving $Q_1^{-\top}  R_1x = Q_1 R_1x = AX = b$ and thus has a [[condition]] $\kappa(A)$
 
+# ----------
+
+
 ![[condition#condition]]
 
 ![[condition of a matrix#condition of a square matrix]]
