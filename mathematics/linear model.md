@@ -14,6 +14,7 @@ Y_i
 &= \sum_{j \in [S]} X_{(i, j)} \theta_j + \epsilon_i \\
 \end{split}
 $$
+
 #### feature map
 - can be generalized by introducing a function $\varphi: \mathcal{X} \to \mathbb{R}^d$ that transforms the input features
 - in this way the model can lean non-linear relationships between input and output

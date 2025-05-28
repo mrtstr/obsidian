@@ -1742,7 +1742,7 @@
     "mathematics/stochastics/confidence set.md": "a8aebe92a9951d71015eb52c0371fef0",
     "mathematics/stochastics/sprecial distributions/continuous/students t distribution.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/lindeberg levy CLT.md": "3fb9284657f1f849dedf2789005c2588",
-    "mathematics/linear model.md": "21d15e070c2995c591d28070d68277cb",
+    "mathematics/linear model.md": "285c45ad471c251c1995067234b5ecb5",
     "mathematics/optimization/least squares.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical test.md": "a404bb07ae01a1b4533eafc0294647a9",
     "mathematics/stochastics/one sided gauss test.md": "db18367c4fa207d49dd00ea27f6650d4",
@@ -2016,7 +2016,7 @@
     "mathematics/stochastics/linear combinations of random variables.md": "c5478082fcddd28bfc6bfcc239843d70",
     "mathematics/stochastics/kl divergence.md": "d8882d8a013c1306550f063d9c892104",
     "mathematics/stochastics/statistical learning/mutual information.md": "d5ee62fefb877fceb80ed60387e5558f",
-    "mathematics/stochastics/statistical learning/ridge regression.md": "9ab0dcc08e3e5f794e4a7827e404bda3",
+    "mathematics/stochastics/statistical learning/ridge regression.md": "84d1ce87a6b7f914bc592d4f813a179d",
     "mathematics/stochastics/statistical learning/maximum aposteriori.md": "730ed6590bbd9da82166886391e32f95"
   },
   "fields_dict": {
