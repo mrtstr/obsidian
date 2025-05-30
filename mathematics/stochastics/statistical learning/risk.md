@@ -9,7 +9,7 @@ $$
 \end{split}
 $$
 
-### empirical risk
+#### empirical risk
 - the empirical [[risk]] is the approximation of the true [[risk]] and using the [[training dataset]] $\mathcal{D}_{train}=\{(x_i, y_i): i \in [n]\}$
 
 $$
@@ -19,14 +19,19 @@ $$
 \end{split}
 $$
 
-### excess risk
+#### bayes risk
 - given a [[hypothesis space]] $\mathcal{H}$ and the optimal model $\theta^*=arg\min_{\theta \in \mathcal{H}} \mathcal{R}(\theta)$ 
+
+$$
+\mathcal{R}^*=\mathcal{R}(\theta^*)=\min_{\theta \in \mathcal{H}}\mathcal{R}(\theta)
+$$
+#### excess risk
+- given a [[hypothesis space]] $\mathcal{H}$ and with the bayes [[risk]] $\mathcal{R}^*$
 - the excess risk for a model $\theta \in \mathcal{H}$ is defined as follows
 
 $$
 \begin{split}
-\mathcal{R}_{excess}(\theta) = \mathcal{{R}}(\theta) - \mathcal{{R}}(\theta^*) 
-
+\mathcal{R}_{excess}(\theta) = \mathcal{{R}}(\theta) - \mathcal{R}^*
 \end{split}
 $$
 
@@ -45,6 +50,7 @@ definitions for
 - [[loss function]]
 - [[risk]]
 - empirical risk
+- bayes risk
 - excess risk
 
 Back: 
@@ -73,17 +79,21 @@ $$
 \end{split}
 $$
 
-### excess risk
+### bayes risk
 - given a [[hypothesis space]] $\mathcal{H}$ and the optimal model $\theta^*=arg\min_{\theta \in \mathcal{H}} \mathcal{R}(\theta)$ 
+
+$$
+\mathcal{R}^*=\mathcal{R}(\theta^*)=\min_{\theta \in \mathcal{H}}\mathcal{R}(\theta)
+$$
+### excess risk
+- given a [[hypothesis space]] $\mathcal{H}$ and with the bayes [[risk]] $\mathcal{R}^*$
 - the excess risk for a model $\theta \in \mathcal{H}$ is defined as follows
 
 $$
 \begin{split}
-\mathcal{R}_{excess}(\theta) = \mathcal{{R}}(\theta) - \mathcal{{R}}(\theta^*) 
-
+\mathcal{R}_{excess}(\theta) = \mathcal{{R}}(\theta) - \mathcal{R}^*
 \end{split}
 $$
-
 ______________
 ### data distribution
 - the [[data distribution]] is the [[joint distribution]] of the [[input and output space]] of a model
