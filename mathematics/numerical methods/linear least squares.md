@@ -1,5 +1,5 @@
 ### linear least squares
-- given an overdeterminded [[linear equation system]] with [[matrix]] $A \in \mathbb{R}^{n \times m}$ and [[vector|vectors]] $x \in \mathbb{R}^{m}$ and $b \in \mathbb{R}^{n}$ with $n \ge m$
+- given an over determined [[linear equation system]] with [[matrix]] $A \in \mathbb{R}^{n \times m}$ and [[vector|vectors]] $x \in \mathbb{R}^{m}$ and $b \in \mathbb{R}^{n}$ with $n \ge m$
 - since there is no exact solution the approach is to find the best fitting solution that minimizes the squared deviation
 
 $$
@@ -8,7 +8,7 @@ $$
 
 ### normal equation
 - by setting the [[derivative]] of the objective function to zero we get the **normal equation**$A^\top Ax = A^\top b$
-- every solution that minimizes the rquared residuals will satisfy $A^\top Ax = A^\top b$
+- every solution that minimizes the squared residuals will satisfy $A^\top Ax = A^\top b$
 
 $$
 \begin{split}
@@ -19,7 +19,7 @@ Df(x)[h] &= A^\top\left(Ax -b\right) = 0 \\
 $$
 
 ### existence of a solution
-- given an overdeterminded [[linear equation system]] with [[matrix]] $A \in \mathbb{R}^{n \times m}$ and [[vector|vectors]] $x \in \mathbb{R}^{m}$ and $b \in \mathbb{R}^{n}$ with $n \ge m$
+- given an over determined [[linear equation system]] with [[matrix]] $A \in \mathbb{R}^{n \times m}$ and [[vector|vectors]] $x \in \mathbb{R}^{m}$ and $b \in \mathbb{R}^{n}$ with $n \ge m$
 - $\mathrm{argmin} ||Ax - b||_2$ always has a solution if $\mathrm{rank}(A)=m$
 
 ##### proof
@@ -70,6 +70,96 @@ $$
 
 - however $A^\top Ax = A^\top b$ has a [[condition]] of $\kappa(A^\top A)=\kappa(A)^2$
 - while solving $R_1x  = Q_1^\top b$ is eqivalent to solving $Q_1^{-\top}  R_1x = Q_1 R_1x = AX = b$ and thus has a [[condition]] $\kappa(A)$
+
+
+
+### example [[linear model]]
+##### model the weight of a person based on hight
+$$
+X=
+\left(\begin{matrix}
+1 & t_1 \\
+... & ...\\
+1 & t_n \\
+\end{matrix}\right) \in \mathbb{R}^{n \times 2}
+$$
+$$
+Y=
+\left(\begin{matrix}
+w_1 \\
+ ...\\
+w_n \\
+\end{matrix}\right) \in \mathbb{R}^{n }
+$$
+
+$$
+\theta=
+\left(\begin{matrix}
+\theta_1 \\
+\theta_n \\
+\end{matrix}\right) \in \mathbb{R}^{2 }
+$$
+
+$$
+\begin{split}
+Y 
+&= A \theta + \sqrt{v} \xi \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\theta
+&= arg \min_\theta || Y - X\theta||^2 \\
+&= arg \min_\theta \sum_{i\in [n]} (Y_i - \theta_0 - \theta_1 \cdot t_i)^2 \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+&\frac{\partial}{\partial \theta_0} \sum_{i\in [n]} \left(Y_i - \theta_0 - \theta_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2 \cdot \left(X_i - \theta_0 - \theta_1 \cdot t_i\right) = 0 \\
+\Rightarrow& \left(\sum_{i\in [n]}  Y_i\right) - n \cdot \theta_0 - \theta_1 \cdot \left(\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& \left(\frac{1}{n}\sum_{i\in [n]}  Y_i\right) - \theta_0 - \theta_1 \cdot \left(\frac{1}{n}\sum_{i\in [n]}  t_i\right) = 0 \\
+\Rightarrow& M(Y) - \theta_0 - \theta_1 \cdot M(t) = 0 \\
+\Rightarrow& \theta_0 = M(Y)  - \theta_1 \cdot M(t) \\
+\end{split}
+$$
+
+$$
+\begin{split}
+&\frac{\partial}{\partial \theta_1} \sum_{i\in [n]} \left(Y_i - \theta_0 - \theta_1 \cdot t_i\right)^2 = 0 \\
+\Rightarrow& \sum_{i\in [n]} -2t_i \cdot \left(Y_i - \theta_0 - \theta_1 \cdot t_i\right) = 0 \\
+
+\Rightarrow& \sum_{i\in [n]} t_i X_i - t_i \theta_0 - t_i^2 \theta_1  = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \theta_0 \frac{1}{n} \sum_{i\in [n]} t_i  - \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \theta_0 M(t)  - \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \theta_0 M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \theta_0 M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \left( M(X)  - \theta_1 \cdot M(t)\right) M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \theta_1 \cdot M(t)^2   + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
+\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \theta_1 V(t)\\
+\Rightarrow& \theta_1 V(t)  =  M(X)M(t)  - \frac{1}{n} \sum_{i\in [n]} t_i X_i \\
+\Rightarrow& \theta_1 V(t)  =  C(X, t)\\
+\Rightarrow& \theta_1   =   \frac{C(X, t)}{V(t)}\\
+\end{split}
+$$
+
+$$
+\begin{split}
+\theta_0 &= M(X)  - \theta_1 \cdot M(t) \\
+&= M(X)  - \frac{C(X, t)}{V(t)} \cdot M(t) \\
+\end{split}
+$$
+
+
 
 # ----------
 

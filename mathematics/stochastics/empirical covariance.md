@@ -1,6 +1,6 @@
 ### empirical covariance
 - given $n$ [[stochastic independent]] samples from the two [[distribution]] of the [[random variable]] $X$ and $V$
-- the [[function]] $C$ is appoximating the [[covariance]] of the [[distribution]] (but has a [[bias]])
+- the [[function]] $C$ is approximating the [[covariance]] of the [[distribution]] (but has a [[bias]])
 
 $$
 \begin{split}
@@ -21,7 +21,7 @@ $$
 
 
 ### corrected empirical covariance
-- given $n$ [[stochastic independent]] samples from the same [[distribution]] the $V^*$ is appoximating the [[variance]] of the [[distribution]] and is [[bias|unbiased]]
+- given $n$ [[stochastic independent]] samples from the same [[distribution]] the $V^*$ is approximating the [[variance]] of the [[distribution]] and is [[bias|unbiased]]
 $$
 \begin{split}
 C^*(X, Y) &= \frac{1}{n-1} \sum_{i=1}^n \left(X_i - M(X)\right)\left(Y_i - M(Y)\right) \\ \\
@@ -41,7 +41,7 @@ definitions for
 Back: 
 ### empirical covariance
 - given $n$ [[stochastic independent]] samples from the two [[distribution]] of the [[random variable]] $X$ and $V$
-- the [[function]] $C$ is appoximating the [[covariance]] of the [[distribution]] (but has a [[bias]])
+- the [[function]] $C$ is approximating the [[covariance]] of the [[distribution]] (but has a [[bias]])
 
 $$
 \begin{split}

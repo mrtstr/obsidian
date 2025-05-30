@@ -1,14 +1,12 @@
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}\right)$ 
 - is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(X)=s$ 
-- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon_i]=\sigma^2$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
+- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon]=I\sigma^2$
 
 $$
 \begin{split}
 Y 
-&= X \theta + \epsilon \\
+&= X \theta + \epsilon \sim \mathcal{N}(X \theta, \sigma^ I) \\
 &= \sum_{j \in [S]} X_{(*, j)} \theta_j + \epsilon \\
 Y_i
 &= \sum_{j \in [S]} X_{(i, j)} \theta_j + \epsilon_i \\
@@ -32,141 +30,26 @@ $$
 #### design [[matrix]] $X$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
-- e.g. $X \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
+- e.g. $X \in \mathbb{R}^{n \times 2}$ containing the height and weight of $n$ different people
 - e.g. $X \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\theta$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
-- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
+#### parameter $\theta$
+- for each characteristic of the observation (features of the training samples) the model has a parameter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependent variable $X_i$
+- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ reflects the variance that is not explained by the linear relationship between characteristics $A$ and dependent variable $X$
 
 
 ### [[expectation]] and [[variance]] of a [[linear model]]
 $$
 \begin{split}
 \mathbb{E}\left[Y\right]
-&= \mathbb{E}\left[X \theta + \sqrt{v} \xi\right]  \\
-&= X\theta  + \sqrt{v}\mathbb{E}\left[   \xi\right]  \\
+&= \mathbb{E}\left[X \theta + \epsilon \right]  \\
+&= X\theta  + \mathbb{E}\left[   \epsilon\right]  \\
 &= X\theta   \\
 \mathbb{E}\left[Y\right]
-&= v\mathbb{VAR}\left[\xi\right]  \\
-&= v  \\
+&= \mathbb{VAR}\left[\epsilon\right]  \\
+&=  \sigma^2 \\
 \end{split}
 $$
 
-
-### example [[linear model]]
-##### model the weight of a person based on hight
-$$
-X=
-\left(\begin{matrix}
-1 & t_1 \\
-... & ...\\
-1 & t_n \\
-\end{matrix}\right) \in \mathbb{R}^{n \times 2}
-$$
-$$
-Y=
-\left(\begin{matrix}
-w_1 \\
- ...\\
-w_n \\
-\end{matrix}\right) \in \mathbb{R}^{n }
-$$
-
-$$
-\theta=
-\left(\begin{matrix}
-\theta_1 \\
-\theta_n \\
-\end{matrix}\right) \in \mathbb{R}^{2 }
-$$
-
-$$
-\begin{split}
-Y 
-&= A \theta + \sqrt{v} \xi \\
-\end{split}
-$$
-
-$$
-\begin{split}
-\theta
-&= arg \min_\theta || Y - X\theta||^2 \\
-&= arg \min_\theta \sum_{i\in [n]} (Y_i - \theta_0 - \theta_1 \cdot t_i)^2 \\
-\end{split}
-$$
-
-
-$$
-\begin{split}
-&\frac{\partial}{\partial \theta_0} \sum_{i\in [n]} \left(Y_i - \theta_0 - \theta_1 \cdot t_i\right)^2 = 0 \\
-\Rightarrow& \sum_{i\in [n]} -2 \cdot \left(X_i - \theta_0 - \theta_1 \cdot t_i\right) = 0 \\
-\Rightarrow& \left(\sum_{i\in [n]}  Y_i\right) - n \cdot \theta_0 - \theta_1 \cdot \left(\sum_{i\in [n]}  t_i\right) = 0 \\
-\Rightarrow& \left(\frac{1}{n}\sum_{i\in [n]}  Y_i\right) - \theta_0 - \theta_1 \cdot \left(\frac{1}{n}\sum_{i\in [n]}  t_i\right) = 0 \\
-\Rightarrow& M(Y) - \theta_0 - \theta_1 \cdot M(t) = 0 \\
-\Rightarrow& \theta_0 = M(Y)  - \theta_1 \cdot M(t) \\
-\end{split}
-$$
-
-$$
-\begin{split}
-&\frac{\partial}{\partial \theta_1} \sum_{i\in [n]} \left(Y_i - \theta_0 - \theta_1 \cdot t_i\right)^2 = 0 \\
-\Rightarrow& \sum_{i\in [n]} -2t_i \cdot \left(Y_i - \theta_0 - \theta_1 \cdot t_i\right) = 0 \\
-
-\Rightarrow& \sum_{i\in [n]} t_i X_i - t_i \theta_0 - t_i^2 \theta_1  = 0 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \theta_0 \frac{1}{n} \sum_{i\in [n]} t_i  - \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i - \theta_0 M(t)  - \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2   = 0 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \theta_0 M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
-\end{split}
-$$
-
-
-$$
-\begin{split}
-& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \theta_0 M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i = \left( M(X)  - \theta_1 \cdot M(t)\right) M(t)  + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \theta_1 \cdot M(t)^2   + \theta_1 \frac{1}{n} \sum_{i\in [n]} t_i^2 \\
-\Rightarrow& \frac{1}{n} \sum_{i\in [n]} t_i X_i =  M(X)M(t)  - \theta_1 V(t)\\
-\Rightarrow& \theta_1 V(t)  =  M(X)M(t)  - \frac{1}{n} \sum_{i\in [n]} t_i X_i \\
-\Rightarrow& \theta_1 V(t)  =  C(X, t)\\
-\Rightarrow& \theta_1   =   \frac{C(X, t)}{V(t)}\\
-\end{split}
-$$
-
-$$
-\begin{split}
-\theta_0 &= M(X)  - \theta_1 \cdot M(t) \\
-&= M(X)  - \frac{C(X, t)}{V(t)} \cdot M(t) \\
-\end{split}
-$$
-
-
-### training of a [[linear model]]
-$$
-\begin{split}
-\hat\theta 
-&= arg \min_\theta ||Y - X\theta||^2 \\
-&= \left(X^\top X\right)^{-1}X^\top Y \\
-\end{split}
-$$
-
-#### proof
-
-$$
-\begin{split}
-&D||Y - X\theta||^2(\theta)^\top 
-= A^\top\left(X\theta -Y\right) = 0 \\
-\Rightarrow&\theta= \left(X^\top X\right)^{-1}X^\top Y
-\end{split}
-$$
-#### proof that $\hat\theta$ is [[bias|unbiased]]
-$$
-\begin{split}
-\mathbb{E}[\hat\theta] 
-&= \left(X^\top X\right)^{-1}X^\top \mathbb{E}[Y] \\
-&= \left(X^\top X\right)^{-1}X^\top Y\theta \\
-&= \theta \\
-\end{split}
-$$
 
 # --------------------------
 ![[empirical variance#empirical variance]]
