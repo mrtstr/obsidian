@@ -20,7 +20,8 @@ $$
 \end{split}
 $$
 
-- non centered empirical [[empirical covariance]] $\hat\Sigma$
+- non centered empirical [[empirical covariance]] $\hat\Sigma$ with the [[scalar product]] $\langle a, b\rangle_\hat\Sigma=a^\top\hat\Sigma b$ and the [[norm]]$|| a||_\hat\Sigma^2 =a^\top\hat\Sigma b$ 
+
 $$
 \hat\Sigma = \frac{1}{n} X^\top X
 $$
