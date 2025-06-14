@@ -74,6 +74,7 @@ $$
 
 
 - focus on the parameter error $\mathrm{MSE}(\theta_{\lambda})$ instead of the excess risk of the output
+- with the following bias variance decomposition
 
 $$
 \begin{split}
@@ -112,7 +113,7 @@ $$
 \end{split}
 $$
 
-- there is no closed form for the minimizer of the MSE in general but if we assume
+there is not closed solution in general but it can be solved numericly
 
 $$
 \begin{split}
@@ -120,6 +121,10 @@ $$
 &= arg \min_\lambda  \mathrm{MSE}(\theta_{\lambda})  \\
 \end{split}
 $$
+
+- with the following assumtions there exists a closed solution
+
+
 
 1) $\hat\Sigma=I$ such that all eigenvalues $\lambda_i=1$
 2) all $\beta_i$ are equal $\theta^*=\beta \sum u_i$
@@ -150,41 +155,34 @@ $$
 \end{split}
 $$
 
+## Simulation
+### random parameters
+
+##### single trail
+![/home/martin/repos/stock_prediction/plots/ridge_mse_plot_single_2025-06-14_19-01-53.svg](file:///home/martin/repos/stock_prediction/plots/ridge_mse_plot_single_2025-06-14_19-01-53.svg)
+
+##### multiple trails
+
+![/home/martin/repos/stock_prediction/plots/ridge_mse_plot_multi_2025-06-14_19-02-44.svg](file:///home/martin/repos/stock_prediction/plots/ridge_mse_plot_multi_2025-06-14_19-02-44.svg)
+
+### Isotropic coefficient vector
+##### single trail
+![/home/martin/repos/stock_prediction/plots/ridge_mse_plot_multi_2025-06-14_19-08-40.svg](file:///home/martin/repos/stock_prediction/plots/ridge_mse_plot_multi_2025-06-14_19-08-40.svg)
+
+
+##### multiple trails
+![/home/martin/repos/stock_prediction/plots/ridge_mse_plot_multi_2025-06-14_19-08-00.svg](file:///home/martin/repos/stock_prediction/plots/ridge_mse_plot_multi_2025-06-14_19-08-00.svg)
+
 
 $$
 \begin{split}
-\mathrm{MSE}(\theta_{\lambda}) 
-&=  \mathbb{E}\left[ \left|\left| \theta_{\lambda} - \theta^*    \right|\right|^2_2 \right]   \\
-&=  \mathbb{E}\left[ \left|\left| \mathbb{E}\left[\hat\theta_\lambda\right] - \theta^* + \mathbb{E}\left[\hat\theta_\lambda\right] -  \theta_{\lambda} \right|\right|^2_2 \right]   \\
-&=   \left|\left|  \mathbb{E}\left[\hat\theta_\lambda\right] - \theta^* \right|\right|^2_2  + \mathbb{E}\left[ \left|\left|\mathbb{E}\left[\hat\theta_\lambda\right] -   \hat\theta_\lambda\right|\right|^2_2 \right]  \\
-&=   \left|\left|  \mathbb{E}\left[\hat\theta_\lambda\right] - \theta^* \right|\right|^2_2  + \mathbb{E}\left[ \left|\left|\mathbb{E}\left[\hat\theta_\lambda\right] -   \hat\theta_\lambda\right|\right|^2_2 \right]  \\
-&=  \lambda^2   \theta^{*\top}\left(\hat\Sigma + \lambda I \right)^{-2}  \hat\Sigma \theta^*   + \frac{\sigma^2}{n} \mathrm{TR}\left(\hat\Sigma^2\left(\hat\Sigma + \lambda I \right)^{-2} \right)  \\
-\end{split}
-$$
-
-$$
-\begin{split}
-\theta_\lambda 
-&=\left(X^\top X + n \lambda I \right)^{-1}X^\top Y \\
-&=\frac{1}{n}\left(\hat\Sigma + \lambda I \right)^{-1}X^\top Y \\
-\end{split}
-$$
-
-- $\mathbb{E}_{X}\left[\mathbb{E}_{\epsilon}\left[\mathrm{MSE}(\theta_{\lambda})  | \Sigma\right]\right]$
-
-$$
-\begin{split}
-\mathbb{E}_{\epsilon, X}\left[\mathrm{MSE}(\theta_{\lambda}) \right]
+\mathbb{E}_{\epsilon, X}\left[\mathrm{MSE}(\theta_{\lambda}) \right] 
+&= 
 \end{split}
 $$
 
 
-![[Pasted image 20250608172948.png]]
+
+
 
 - calculate analytically the minimum of the exception of the MSE taken over X and epsilon for a given theta
-
-![[Pasted image 20250609181937.png]]
-![[Pasted image 20250609182004.png]]
-
-
-![[Pasted image 20250609182028.png]]
