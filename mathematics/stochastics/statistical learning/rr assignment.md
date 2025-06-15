@@ -179,7 +179,17 @@ $$
 ![/home/martin/repos/stock_prediction/ridge_mse_plot_single_ones_2025-06-15_18-57-37.svg](file:///home/martin/repos/stock_prediction/ridge_mse_plot_single_ones_2025-06-15_18-57-37.svg)
 ##### multiple trails
 
-![/home/martin/repos/stock_prediction/ridge_mse_plot_multi_ones_2025-06-15_18-54-26.svg](file:///home/martin/repos/stock_prediction/ridge_mse_plot_multi_ones_2025-06-15_18-54-26.svg)
+![/home/martin/repos/stock_prediction/ridge_mse_plot_single_ones_2025-06-15_20-07-38.svg](file:///home/martin/repos/stock_prediction/ridge_mse_plot_single_ones_2025-06-15_20-07-38.svg)
+
+- optimal of theoretic curve
+- opt of simulated curve
+- closed form of opt under assumptions
+
+![/home/martin/repos/stock_prediction/ridge_mse_plot_single_ones_2025-06-15_20-20-05.svg](file:///home/martin/repos/stock_prediction/ridge_mse_plot_single_ones_2025-06-15_20-20-05.svg)
+
+
+![/home/martin/repos/stock_prediction/ridge_mse_plot_single_ones_2025-06-15_20-26-22.svg](file:///home/martin/repos/stock_prediction/ridge_mse_plot_single_ones_2025-06-15_20-26-22.svg)
+
 
 $$
 \begin{split}
@@ -188,7 +198,7 @@ $$
 \end{split}
 $$
 
-
+![/home/martin/repos/stock_prediction/ridge_mse_plot_multi_ones_2025-06-15_20-04-06.svg](file:///home/martin/repos/stock_prediction/ridge_mse_plot_multi_ones_2025-06-15_20-04-06.svg)
 
 
 
