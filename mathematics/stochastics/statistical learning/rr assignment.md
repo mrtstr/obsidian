@@ -155,24 +155,31 @@ $$
 \end{split}
 $$
 
+![[Pasted image 20250615181031.png]]
 ## Simulation
 ### random parameters
 
 ##### single trail
-![/home/martin/repos/stock_prediction/plots/ridge_mse_plot_single_2025-06-14_19-01-53.svg](file:///home/martin/repos/stock_prediction/plots/ridge_mse_plot_single_2025-06-14_19-01-53.svg)
+
+![/home/martin/repos/stock_prediction/ridge_mse_plot_single_rand_2025-06-15_18-48-36.svg](file:///home/martin/repos/stock_prediction/ridge_mse_plot_single_rand_2025-06-15_18-48-36.svg)
+
+
+![/home/martin/repos/stock_prediction/ridge_mse_plot_single_rand_2025-06-15_18-49-18.svg](file:///home/martin/repos/stock_prediction/ridge_mse_plot_single_rand_2025-06-15_18-49-18.svg)
 
 ##### multiple trails
 
-![/home/martin/repos/stock_prediction/plots/ridge_mse_plot_multi_2025-06-14_19-02-44.svg](file:///home/martin/repos/stock_prediction/plots/ridge_mse_plot_multi_2025-06-14_19-02-44.svg)
+![/home/martin/repos/stock_prediction/ridge_mse_plot_multi_rand_2025-06-15_18-51-33.svg](file:///home/martin/repos/stock_prediction/ridge_mse_plot_multi_rand_2025-06-15_18-51-33.svg)
+
 
 ### Isotropic coefficient vector
 ##### single trail
-![/home/martin/repos/stock_prediction/plots/ridge_mse_plot_multi_2025-06-14_19-08-40.svg](file:///home/martin/repos/stock_prediction/plots/ridge_mse_plot_multi_2025-06-14_19-08-40.svg)
 
+![/home/martin/repos/stock_prediction/ridge_mse_plot_single_ones_2025-06-15_18-55-51.svg](file:///home/martin/repos/stock_prediction/ridge_mse_plot_single_ones_2025-06-15_18-55-51.svg)
 
+![/home/martin/repos/stock_prediction/ridge_mse_plot_single_ones_2025-06-15_18-57-37.svg](file:///home/martin/repos/stock_prediction/ridge_mse_plot_single_ones_2025-06-15_18-57-37.svg)
 ##### multiple trails
-![/home/martin/repos/stock_prediction/plots/ridge_mse_plot_multi_2025-06-14_19-08-00.svg](file:///home/martin/repos/stock_prediction/plots/ridge_mse_plot_multi_2025-06-14_19-08-00.svg)
 
+![/home/martin/repos/stock_prediction/ridge_mse_plot_multi_ones_2025-06-15_18-54-26.svg](file:///home/martin/repos/stock_prediction/ridge_mse_plot_multi_ones_2025-06-15_18-54-26.svg)
 
 $$
 \begin{split}
