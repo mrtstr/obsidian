@@ -1154,7 +1154,7 @@
     "mathematics/basics/continouse function.md": "7758017402bd31e584a9df089584081a",
     "mathematics/basics/integral.md": "ea69bb435c5162b67b6906931bfa7afc",
     "mathematics/basics/integration by parts.md": "7c31baa9828baa01c6ee203e61b14f26",
-    "mathematics/basics/integration by substitution.md": "5ac9f6e309faf382ac0ea9d9b55ae114",
+    "mathematics/basics/integration by substitution.md": "c917ee93a0a321e0ad50ffa2635dd4af",
     "mathematics/basics/mean value theorem.md": "f7ef5272acff4a4b8732ee0ff81557b2",
     "mathematics/linear algebra/linear equation.md": "6c9e1bbce31bbfd118b54d109b6913e0",
     "mathematics/basics/closure.md": "534d0a40e9739c6cff7dd2981ae6536a",
@@ -2015,12 +2015,19 @@
     "mathematics/stochastics/conditional covariance matrix.md": "5701b723e0b4c8adf7f73aece48a41c1",
     "mathematics/stochastics/linear combinations of random variables.md": "c5478082fcddd28bfc6bfcc239843d70",
     "mathematics/stochastics/kl divergence.md": "d8882d8a013c1306550f063d9c892104",
-    "mathematics/stochastics/statistical learning/mutual information.md": "d5ee62fefb877fceb80ed60387e5558f",
+    "mathematics/stochastics/statistical learning/mutual information.md": "aad321f95924548e0836577e6e7da1eb",
     "mathematics/stochastics/statistical learning/ridge regression.md": "16c8914925322a338c5ad61f7ed92642",
     "mathematics/stochastics/statistical learning/maximum aposteriori.md": "730ed6590bbd9da82166886391e32f95",
     "mathematics/stochastics/statistical learning/ordinary least square estimator.md": "b2970a4748b38507eb367f2a0d2f0ee6",
     "mathematics/stochastics/statistical learning/generalization gap.md": "7eed0ac0f6933b0504a20cbb97cd2961",
-    "mathematics/stochastics/statistical learning/m fold cross validation.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "mathematics/stochastics/statistical learning/m fold cross validation.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/statistical learning/logistic regession.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/stochastics/statistical learning/probabilistic model.md": "ddbd5f201029edf6aefa58b16e4580d5",
+    "mathematics/stochastics/statistical learning/rr2.md": "15109724cef9d7b042854c31f206b999",
+    "mathematics/stochastics/statistical learning/rr assignment.md": "a329763137b7dc9757ee4fd8f25db8be",
+    "mathematics/basics/diagonalizable matrix.md": "e7e08e343adbda8e452bd25ec6c153ab",
+    "machine learning/latent space.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "machine learning/latent variable.md": "55c618e6f219efddaa01868f3c0a0fcd"
   },
   "fields_dict": {
     "Basic": [

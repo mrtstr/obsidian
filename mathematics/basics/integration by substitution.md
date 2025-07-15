@@ -1,3 +1,5 @@
+### high dimensional integration by substitution
+
 ### integration by substitution
 - the [[integration by substitution]] rule for the [[integral]] is the equivalent of the [[chain rule of derivative]]
 - used to calculate the [[integral]] of [[function]] that is a [[composition]] of two [[function|functions]]
