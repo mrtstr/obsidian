@@ -43,6 +43,33 @@ $$
 \mathcal{R}(\theta_\mathrm{train}) - \mathcal{\hat{R}}(\theta_\mathrm{train}) \geq 0
 \end{split}
 $$
+
+#### maximum likelihood
+- the log [[likelihood function]] based the [[empirical distribution of a dataset|test dataset]] which contains $M$ samples from a true [[distribution]] $P_{\theta^*}$ 
+- note: here we assume that $M$ is large enough that we will find the true [[distribution]]
+
+$$
+\begin{split}
+\mathbb{E}_{\mathcal{D}\sim P_{\theta^*}}\left[{\mathcal{L}}(\theta)\right]
+&=\mathbb{E}_{\mathcal{D}\sim P_\theta^*}\left[\log\left(p\left(\mathcal{D}_Y|\mathcal{D}_X, \theta\right)\right)\right] \\
+&=\sum_{m=1}^M \mathbb{E}_{(X_m, Y_m)\sim P_{\theta^*}}\left[\log\left(p\left(Y_m|X_m, \theta\right)\right)\right] \\
+&=M \mathbb{E}_{(X, Y)\sim P_{\theta^*}}\left[\log\left(p\left(Y|X, \theta\right)\right)\right] \\
+\end{split}
+$$
+
+
+- but instead we maximize the [[likelihood function]] on the a [[empirical distribution of a dataset|training dataset]] which contains $N$ samples from the same true [[distribution]] $P_{\theta^*}$ 
+
+$$
+\begin{split}
+\theta_{MLE}
+&=\mathrm{arg}\max_\theta\sum_{m=1}^N \log\left(p\left(Y_n|X_n, \theta\right)\right) \\
+
+\end{split}
+$$
+
+![[kl divergence#kl divergence and maximum likelihood]]
+
 # -------------
 
 ![[risk#risk]]
