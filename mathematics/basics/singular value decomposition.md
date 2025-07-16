@@ -91,8 +91,8 @@ A &= U\Sigma V^\top \\
 $$
 
 ### singular value decomposition: squared matrices
-- the column vectors of $U$ are [[orthonormal]] [[eigenvectors]] of $AA^\top$ and $\sigma_k^2$ are its [[eigenvalues]]
-- the column vectors of $V$ are [[orthonormal]] [[eigenvectors]] of $A^\top A$ and $\sigma_k^2$ are its [[eigenvalues]]
+- the column vectors of $U$ are [[orthonormal]] [[eigenvector]] of $AA^\top$ and $\sigma_k^2$ are its [[eigenvalue]]
+- the column vectors of $V$ are [[orthonormal]] [[eigenvector]] of $A^\top A$ and $\sigma_k^2$ are its [[eigenvalue]]
 
 $$
 \begin{split}

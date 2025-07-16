@@ -7,8 +7,6 @@ $$
 \mathbb{VAR}[X]=\mathbb{E}[(X-\mathbb{E}[X])^2]=\mathbb{E}[X^2]-\mathbb{E}[X]^2 = \sigma_X^2
 $$
 
-
-
 ### properties of the [[variance]]
 #### non negativity 
 $$

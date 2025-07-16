@@ -2,22 +2,22 @@
 A [[square matrix]] $A \in \mathbb{R}^{\left| \mathcal{I} \right| \times \left| \mathcal{I} \right|}$ is 
 ## positive definite
 1) $x^\top Ax > 0$   
-2) $\lambda_i(A) > 0$ (all [[eigenvectors|eigenvalues]] $>0$)
+2) $\lambda_i(A) > 0$ (all [[eigenvector|eigenvalues]] $>0$)
 3) [[sylvesters criterion]]
 
 ## semi positive definite
 1) $x^\top Ax \geq 0$   
-2) $\lambda_i(A) \geq 0$ (all [[eigenvectors|eigenvalues]] $>0$)
+2) $\lambda_i(A) \geq 0$ (all [[eigenvector|eigenvalues]] $>0$)
 3) [[sylvesters criterion]]
 
 ## negative definite
 1) $x^\top Ax < 0$   
-2) $\lambda_i(A) < 0$ (all [[eigenvectors|eigenvalues]] $>0$)
+2) $\lambda_i(A) < 0$ (all [[eigenvector|eigenvalues]] $>0$)
 3) [[sylvesters criterion]]
 
 ## semi negative definite
 1) $x^\top Ax \leq 0$   
-2) $\lambda_i(A) \leq 0$ (all [[eigenvectors|eigenvalues]] $>0$)
+2) $\lambda_i(A) \leq 0$ (all [[eigenvector|eigenvalues]] $>0$)
 3) [[sylvesters criterion]]
 
 # Properties
@@ -36,22 +36,22 @@ Back:
 A [[square matrix]] $A \in \mathbb{R}^{\left| \mathcal{I} \right| \times \left| \mathcal{I} \right|}$ is 
 ## positive definite
 1) $x^\top Ax > 0$   
-2) $\lambda_i(A) > 0$ (all [[eigenvectors|eigenvalues]] $>0$)
+2) $\lambda_i(A) > 0$ (all [[eigenvector|eigenvalues]] $>0$)
 3) [[sylvesters criterion]]
 
 ## semi positive definite
 1) $x^\top Ax \geq 0$   
-2) $\lambda_i(A) \geq 0$ (all [[eigenvectors|eigenvalues]] $>0$)
+2) $\lambda_i(A) \geq 0$ (all [[eigenvector|eigenvalues]] $>0$)
 3) [[sylvesters criterion]]
 
 ## negative definite
 1) $x^\top Ax < 0$   
-2) $\lambda_i(A) < 0$ (all [[eigenvectors|eigenvalues]] $>0$)
+2) $\lambda_i(A) < 0$ (all [[eigenvector|eigenvalues]] $>0$)
 3) [[sylvesters criterion]]
 
 ## semi negative definite
 1) $x^\top Ax \leq 0$   
-2) $\lambda_i(A) \leq 0$ (all [[eigenvectors|eigenvalues]] $>0$)
+2) $\lambda_i(A) \leq 0$ (all [[eigenvector|eigenvalues]] $>0$)
 3) [[sylvesters criterion]]
 
 # Properties

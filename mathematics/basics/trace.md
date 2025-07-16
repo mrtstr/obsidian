@@ -44,7 +44,7 @@ START
 Basic
 [[trace]] of a [[matrix]]
 - definition
-- relationship [[trace]] to [[eigenvectors|eigenvalues]]
+- relationship [[trace]] to [[eigenvector|eigenvalues]]
 - [[trace]] of a [[matrix product]] (with proof)
 - [[trace]] of a [[transpose]] (with proof)
 Back: 
@@ -55,7 +55,7 @@ $$
 \mathrm{trace}(A) = \sum_{i \in [n]} a_{ii}
 $$
 ### properties
-#### the [[trace]] is equal to the [[addition|sum]] of [[eigenvectors|eigenvalues]]
+#### the [[trace]] is equal to the [[addition|sum]] of [[eigenvector|eigenvalues]]
 
 $$
 \mathrm{trace}(A) = \sum_{i \in [n]} \sigma_i(A)

@@ -6,11 +6,11 @@ A = BDB^{-1}
 $$
 
 #### existence of diagonalizable matrix
-- this is the case exactly when $A$ has  $n$ [[linear independent]] [[eigenvectors]], which is guaranteed if has $n$ distinct [[eigenvalues]] 
-- the [[eigenvalues]] of $A$ are always $\lambda_1$, ..., $\lambda_n$
+- this is the case exactly when $A$ has  $n$ [[linear independent]] [[eigenvector]], which is guaranteed if has $n$ distinct [[eigenvalue]] 
+- the [[eigenvalue]] of $A$ are always $\lambda_1$, ..., $\lambda_n$
 - note: the reverse is not true i.e. if $A$ is a [[diagonal matrix]] it doesn't need to have distinct eigenvalues
 ###### proof
-- let $\lambda_1, ..., \lambda_n$ be the [[eigenvalues]] of $A$ with the corresponding [[eigenvectors]] $v_i$ $\Rightarrow Av_i = \lambda_iv_i$
+- let $\lambda_1, ..., \lambda_n$ be the [[eigenvalue]] of $A$ with the corresponding [[eigenvector]] $v_i$ $\Rightarrow Av_i = \lambda_iv_i$
 - since $v_1,..., v_n$ are [[linear independent]] $B=(v_1, ..., v_n)$ is invertable
 
 $$
@@ -31,7 +31,7 @@ $$
 A^m = BD^mB^{-1}
 $$
 
-- $A$ is an [[inverse matrix|invertible matrix]] it can't have [[eigenvalues]] that are zero
+- $A$ is an [[inverse matrix|invertible matrix]] it can't have [[eigenvalue]] that are zero
 
 ###### proof
 
@@ -84,11 +84,11 @@ A = BDB^{-1}
 $$
 
 #### existence of diagonalizable matrix
-- this is the case exactly when $A$ has  $n$ [[linear independent]] [[eigenvectors]], which is guaranteed if has $n$ distinct [[eigenvalues]] 
-- the [[eigenvalues]] of $A$ are always $\lambda_1$, ..., $\lambda_n$
+- this is the case exactly when $A$ has  $n$ [[linear independent]] [[eigenvector]], which is guaranteed if has $n$ distinct [[eigenvalue]] 
+- the [[eigenvalue]] of $A$ are always $\lambda_1$, ..., $\lambda_n$
 - note: the reverse is not true i.e. if $A$ is a [[diagonal matrix]] it doesn't need to have distinct eigenvalues
 ###### proof
-- let $\lambda_1, ..., \lambda_n$ be the [[eigenvalues]] of $A$ with the corresponding [[eigenvectors]] $v_i$ $\Rightarrow Av_i = \lambda_iv_i$
+- let $\lambda_1, ..., \lambda_n$ be the [[eigenvalue]] of $A$ with the corresponding [[eigenvector]] $v_i$ $\Rightarrow Av_i = \lambda_iv_i$
 - since $v_1,..., v_n$ are [[linear independent]] $B=(v_1, ..., v_n)$ is invertable
 
 $$
@@ -109,7 +109,7 @@ $$
 A^m = BD^mB^{-1}
 $$
 
-- $A$ is an [[inverse matrix|invertible matrix]] it can't have [[eigenvalues]] that are zero
+- $A$ is an [[inverse matrix|invertible matrix]] it can't have [[eigenvalue]] that are zero
 
 ###### proof
 
@@ -160,11 +160,11 @@ A = BDB^{-1}
 $$
 
 #### existence of diagonalizable matrix
-- this is the case exactly when $A$ has  $n$ [[linear independent]] [[eigenvectors]], which is guaranteed if has $n$ distinct [[eigenvalues]] 
-- the [[eigenvalues]] of $A$ are always $\lambda_1$, ..., $\lambda_n$
+- this is the case exactly when $A$ has  $n$ [[linear independent]] [[eigenvector]], which is guaranteed if has $n$ distinct [[eigenvalue]] 
+- the [[eigenvalue]] of $A$ are always $\lambda_1$, ..., $\lambda_n$
 - note: the reverse is not true i.e. if $A$ is a [[diagonal matrix]] it doesn't need to have distinct eigenvalues
 ###### proof
-- let $\lambda_1, ..., \lambda_n$ be the [[eigenvalues]] of $A$ with the corresponding [[eigenvectors]] $v_i$ $\Rightarrow Av_i = \lambda_iv_i$
+- let $\lambda_1, ..., \lambda_n$ be the [[eigenvalue]] of $A$ with the corresponding [[eigenvector]] $v_i$ $\Rightarrow Av_i = \lambda_iv_i$
 - since $v_1,..., v_n$ are [[linear independent]] $B=(v_1, ..., v_n)$ is invertable
 
 $$
@@ -185,7 +185,7 @@ $$
 A^m = BD^mB^{-1}
 $$
 
-- $A$ is an [[inverse matrix|invertible matrix]] it can't have [[eigenvalues]] that are zero
+- $A$ is an [[inverse matrix|invertible matrix]] it can't have [[eigenvalue]] that are zero
 
 ###### proof
 
@@ -236,11 +236,11 @@ A = BDB^{-1}
 $$
 
 #### existence of diagonalizable matrix
-- this is the case exactly when $A$ has  $n$ [[linear independent]] [[eigenvectors]], which is guaranteed if has $n$ distinct [[eigenvalues]] 
-- the [[eigenvalues]] of $A$ are always $\lambda_1$, ..., $\lambda_n$
+- this is the case exactly when $A$ has  $n$ [[linear independent]] [[eigenvector]], which is guaranteed if has $n$ distinct [[eigenvalue]] 
+- the [[eigenvalue]] of $A$ are always $\lambda_1$, ..., $\lambda_n$
 - note: the reverse is not true i.e. if $A$ is a [[diagonal matrix]] it doesn't need to have distinct eigenvalues
 ###### proof
-- let $\lambda_1, ..., \lambda_n$ be the [[eigenvalues]] of $A$ with the corresponding [[eigenvectors]] $v_i$ $\Rightarrow Av_i = \lambda_iv_i$
+- let $\lambda_1, ..., \lambda_n$ be the [[eigenvalue]] of $A$ with the corresponding [[eigenvector]] $v_i$ $\Rightarrow Av_i = \lambda_iv_i$
 - since $v_1,..., v_n$ are [[linear independent]] $B=(v_1, ..., v_n)$ is invertable
 
 $$
@@ -261,7 +261,7 @@ $$
 A^m = BD^mB^{-1}
 $$
 
-- $A$ is an [[inverse matrix|invertible matrix]] it can't have [[eigenvalues]] that are zero
+- $A$ is an [[inverse matrix|invertible matrix]] it can't have [[eigenvalue]] that are zero
 
 ###### proof
 

@@ -25,6 +25,57 @@ $$
 
 ![[det.png]]
 
+
+#### interpretation
+- given a geometry $\in \mathbb{R}^n$ defined by its $n$ corners as [[vector|vectors]] $v_1,..., v_n \in \mathbb{R}^n$
+- the volumen of the geometry is $u$
+- after transforming $v_1,..., v_n \in \mathbb{R}^n$ with the [[linear map]] $f(x)=Ax$ the volumen of geometry defined by the vectors $v_i'=Av_i$ will be $u'=\det(A)u$ 
+$$
+\begin{split}
+V 
+&= 
+\left(\begin{matrix}
+v_1 \\ 
+... \\ 
+v_n
+\end{matrix}\right)
+\\
+V' 
+&= 
+\left(\begin{matrix}
+v_1' \\ 
+... \\ 
+v_n'
+\end{matrix}\right)
+&= AV \\
+vol(V') &= vol(V) \det(A)
+\end{split}
+$$
+
+#### properties
+##### [[determinant]] of the [[inverse matrix]]
+- the [[determinant]] of a [[matrix]] $A \in \mathbb{R}^{n \times n}$ is equal to the [[determinant]] of its [[inverse matrix]] to the power of $-1$
+$$
+\det(A)^{-1} = \det\left(A^{-1}\right)
+$$
+Proof
+$$
+\begin{split}
+\det(AA^{-1})=1=\det(A)\det(A^{-1}) \\
+\Rightarrow \det(A^{-1}) = \frac{1}{\det(A)}
+\end{split}
+$$
+##### [[determinant]] of the [[transpose]]
+- the [[determinant]] of a [[matrix]] $A \in \mathbb{R}^{n \times n}$ is equal to the [[determinant]] of its [[transpose]] 
+$$
+\det(A) = \det\left(A^{T}\right)
+$$
+
+
+
+##### [[determinant]] of a [[regular matrix]]
+- if the [[determinant]] of a [[square matrix]] $A \in \mathbb{R}^{n \times n}$ is not zero it is [[inverse matrix|invertable]] and a [[regular matrix]]
+
 ### sarrus rule
 - for calculation a [[determinant]] of [[matrix]] from $\mathbb{R}^{2 \times 2}$ and $\mathbb{R}^{3 \times 3}$
 #### [[determinant]] of $A \in \mathbb{R}^{2 \times 2}$
@@ -52,29 +103,7 @@ $$
 
 
 
-### properties
-#### [[determinant]] of the [[inverse matrix]]
-- the [[determinant]] of a [[matrix]] $A \in \mathbb{R}^{n \times n}$ is equal to the [[determinant]] of its [[inverse matrix]] to the power of $-1$
-$$
-\det(A)^{-1} = \det\left(A^{-1}\right)
-$$
-Proof
-$$
-\begin{split}
-\det(AA^{-1})=1=\det(A)\det(A^{-1}) \\
-\Rightarrow \det(A^{-1}) = \frac{1}{\det(A)}
-\end{split}
-$$
-#### [[determinant]] of the [[transpose]]
-- the [[determinant]] of a [[matrix]] $A \in \mathbb{R}^{n \times n}$ is equal to the [[determinant]] of its [[transpose]] 
-$$
-\det(A) = \det\left(A^{T}\right)
-$$
 
-
-
-#### [[determinant]] of a [[regular matrix]]
-- if the [[determinant]] of a [[square matrix]] $A \in \mathbb{R}^{n \times n}$ is not zero it is [[inverse matrix|invertable]] and a [[regular matrix]]
 
 ![[regular matrix#regular matrix]]
 
@@ -98,31 +127,7 @@ Die **Determinante** einer Matrix ist genau dann **gleich Null**, wenn 
 -   Zeilen/Spalten zusammen das **Vielfache (eine Linearkombination)** von anderen Zeilen/Spalten sind.
 
 
-### interpretation
-- given a geometry $\in \mathbb{R}^n$ defined by its $n$ corners as [[vector|vectors]] $v_1,..., v_n \in \mathbb{R}^n$
-- the volumen of the geometry is $u$
-- after transforming $v_1,..., v_n \in \mathbb{R}^n$ with the [[linear map]] $f(x)=Ax$ the volumen of geometry defined by the vectors $v_i'=Av_i$ will be $u'=\det(A)u$ 
-$$
-\begin{split}
-V 
-&= 
-\left(\begin{matrix}
-v_1 \\ 
-... \\ 
-v_n
-\end{matrix}\right)
-\\
-V' 
-&= 
-\left(\begin{matrix}
-v_1' \\ 
-... \\ 
-v_n'
-\end{matrix}\right)
-&= AV \\
-vol(V') &= vol(V) \det(A)
-\end{split}
-$$
+
 # anki
 START
 Basic

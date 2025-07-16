@@ -149,7 +149,7 @@ $$
 $$
 
 ### improvement over the ordinary least square estimator
-- given the [[condition]] of $X^\top X$with its [[eigenvalues]] $\sigma_1\leq ... \leq \sigma_d$
+- given the [[condition]] of $X^\top X$with its [[eigenvalue]] $\sigma_1\leq ... \leq \sigma_d$
 $$
 \kappa = \kappa\left(X^\top X\right) = \frac{\hat\sigma_1}{\hat\sigma_d}= \frac{\hat\sigma_{max}}{\hat\sigma_{min}}
 $$
@@ -743,7 +743,7 @@ $$
 $$
 
 ### improvement over the ordinary least square estimator
-- given the [[condition]] of $X^\top X$with its [[eigenvalues]] $\sigma_1\leq ... \leq \sigma_d$
+- given the [[condition]] of $X^\top X$with its [[eigenvalue]] $\sigma_1\leq ... \leq \sigma_d$
 $$
 \kappa = \kappa\left(X^\top X\right) = \frac{\hat\sigma_1}{\hat\sigma_d}= \frac{\hat\sigma_{max}}{\hat\sigma_{min}}
 $$
