@@ -2,26 +2,17 @@
 - a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}\right)$ 
 - is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(X)=s$ 
 - the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon]=I\sigma^2$
-
+- with the [[feature map]] $\varphi: \mathcal{X} \to \mathbb{R}^s$
 $$
 \begin{split}
 Y 
-&= X \theta + \epsilon \sim \mathcal{N}(X \theta, \sigma^ I) \\
-&= \sum_{j \in [S]} X_{(*, j)} \theta_j + \epsilon \\
+&= \varphi(X) \theta + \epsilon \sim \mathcal{N}(\varphi(X) \theta, \sigma^ I) \\
+&= \sum_{j \in [S]} \varphi(X_{(*, j)}) \theta_j + \epsilon \\
 Y_i
-&= \sum_{j \in [S]} X_{(i, j)} \theta_j + \epsilon_i \\
+&= \sum_{j \in [S]} \varphi(X_{(i, j)}) \theta_j + \epsilon_i \\
 \end{split}
 $$
 
-#### feature map
-- can be generalized by introducing a function $\varphi: \mathcal{X} \to \mathbb{R}^d$ that transforms the input features
-- in this way the model can lean non-linear relationships between input and output
-
-$$
-\begin{split}
-Y = f_\theta(X) + \epsilon = \varphi(X)^\top\theta  + \epsilon
-\end{split}
-$$
 
 ### interpretation of a [[linear model]]
 - during the training the parameters are fitted to explain the relationship between the dependent variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
@@ -50,6 +41,7 @@ $$
 \end{split}
 $$
 
+![[feature map#feature map]]
 
 # --------------------------
 ![[empirical variance#empirical variance]]
@@ -69,34 +61,50 @@ Basic
 - interpretation
 Back: 
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
-- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
-- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
-
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}\right)$ 
+- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(X)=s$ 
+- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon]=I\sigma^2$
+- with the [[feature map]] $\varphi: \mathcal{X} \to \mathbb{R}^s$
 $$
 \begin{split}
-X 
-&= A \theta + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
-X_i
-&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
+Y 
+&= \varphi(X) \theta + \epsilon \sim \mathcal{N}(\varphi(X) \theta, \sigma^ I) \\
+&= \sum_{j \in [S]} \varphi(X_{(*, j)}) \theta_j + \epsilon \\
+Y_i
+&= \sum_{j \in [S]} \varphi(X_{(i, j)}) \theta_j + \epsilon_i \\
 \end{split}
 $$
 
 ### interpretation of a [[linear model]]
-- during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\theta$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+- during the training the parameters are fitted to explain the relationship between the dependent variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
+- for an unknown sample we can model unknown properties $X$ based on the known characteristics $X_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[Y\right]=X\theta$ and the [[variance]] $\mathbb{VAR}\left[Y\right]=v$
 
-#### design [[matrix]] $A$
+#### design [[matrix]] $X$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
-- e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
-- e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\theta$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
-- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
+- e.g. $X \in \mathbb{R}^{n \times 2}$ containing the height and weight of $n$ different people
+- e.g. $X \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
+#### parameter $\theta$
+- for each characteristic of the observation (features of the training samples) the model has a parameter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependent variable $X_i$
+- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ reflects the variance that is not explained by the linear relationship between characteristics $A$ and dependent variable $X$
+
+
+### feature map
+- can be generalized by introducing a function $\varphi: \mathcal{X} \to \mathbb{R}^d$ that transforms the input features
+- in this way the model can lean non-linear relationships between input and output
+
+$$
+\begin{split}
+Y = f_\theta(X) + \epsilon = \varphi(X)^\top\theta  + \epsilon
+\end{split}
+$$
+- often a learnable bias that does not depend on the input is added
+
+$$
+\varphi\left(\left[\begin{matrix}x_1 \\ x_2\end{matrix}\right]\right)
+=
+\left[\begin{matrix}1 \\x_1 \\ x_2\end{matrix}\right]
+$$
 
 Tags: mathematics statistics
 <!--ID: 1719759188721-->
@@ -125,37 +133,52 @@ $$
 $$
 
 _______________________
-
-
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
-- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
-- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
-
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}\right)$ 
+- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(X)=s$ 
+- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon]=I\sigma^2$
+- with the [[feature map]] $\varphi: \mathcal{X} \to \mathbb{R}^s$
 $$
 \begin{split}
-X 
-&= A \theta + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
-X_i
-&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
+Y 
+&= \varphi(X) \theta + \epsilon \sim \mathcal{N}(\varphi(X) \theta, \sigma^ I) \\
+&= \sum_{j \in [S]} \varphi(X_{(*, j)}) \theta_j + \epsilon \\
+Y_i
+&= \sum_{j \in [S]} \varphi(X_{(i, j)}) \theta_j + \epsilon_i \\
 \end{split}
 $$
 
 ### interpretation of a [[linear model]]
-- during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\theta$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+- during the training the parameters are fitted to explain the relationship between the dependent variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
+- for an unknown sample we can model unknown properties $X$ based on the known characteristics $X_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[Y\right]=X\theta$ and the [[variance]] $\mathbb{VAR}\left[Y\right]=v$
 
-#### design [[matrix]] $A$
+#### design [[matrix]] $X$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
-- e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
-- e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\theta$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
-- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
+- e.g. $X \in \mathbb{R}^{n \times 2}$ containing the height and weight of $n$ different people
+- e.g. $X \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
+#### parameter $\theta$
+- for each characteristic of the observation (features of the training samples) the model has a parameter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependent variable $X_i$
+- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ reflects the variance that is not explained by the linear relationship between characteristics $A$ and dependent variable $X$
+
+
+### feature map
+- can be generalized by introducing a function $\varphi: \mathcal{X} \to \mathbb{R}^d$ that transforms the input features
+- in this way the model can lean non-linear relationships between input and output
+
+$$
+\begin{split}
+Y = f_\theta(X) + \epsilon = \varphi(X)^\top\theta  + \epsilon
+\end{split}
+$$
+- often a learnable bias that does not depend on the input is added
+
+$$
+\varphi\left(\left[\begin{matrix}x_1 \\ x_2\end{matrix}\right]\right)
+=
+\left[\begin{matrix}1 \\x_1 \\ x_2\end{matrix}\right]
+$$
+
 
 Tags: mathematics statistics
 <!--ID: 1719759188726-->
@@ -228,34 +251,51 @@ _______________________
 
 
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
-- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
-- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
-
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}\right)$ 
+- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(X)=s$ 
+- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon]=I\sigma^2$
+- with the [[feature map]] $\varphi: \mathcal{X} \to \mathbb{R}^s$
 $$
 \begin{split}
-X 
-&= A \theta + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
-X_i
-&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
+Y 
+&= \varphi(X) \theta + \epsilon \sim \mathcal{N}(\varphi(X) \theta, \sigma^ I) \\
+&= \sum_{j \in [S]} \varphi(X_{(*, j)}) \theta_j + \epsilon \\
+Y_i
+&= \sum_{j \in [S]} \varphi(X_{(i, j)}) \theta_j + \epsilon_i \\
 \end{split}
 $$
 
-### interpretation of a [[linear model]]
-- during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\theta$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
 
-#### design [[matrix]] $A$
+### interpretation of a [[linear model]]
+- during the training the parameters are fitted to explain the relationship between the dependent variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
+- for an unknown sample we can model unknown properties $X$ based on the known characteristics $X_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[Y\right]=X\theta$ and the [[variance]] $\mathbb{VAR}\left[Y\right]=v$
+
+#### design [[matrix]] $X$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
-- e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
-- e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\theta$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
-- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
+- e.g. $X \in \mathbb{R}^{n \times 2}$ containing the height and weight of $n$ different people
+- e.g. $X \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
+#### parameter $\theta$
+- for each characteristic of the observation (features of the training samples) the model has a parameter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependent variable $X_i$
+- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ reflects the variance that is not explained by the linear relationship between characteristics $A$ and dependent variable $X$
+
+### feature map
+- can be generalized by introducing a function $\varphi: \mathcal{X} \to \mathbb{R}^d$ that transforms the input features
+- in this way the model can lean non-linear relationships between input and output
+
+$$
+\begin{split}
+Y = f_\theta(X) + \epsilon = \varphi(X)^\top\theta  + \epsilon
+\end{split}
+$$
+- often a learnable bias that does not depend on the input is added
+
+$$
+\varphi\left(\left[\begin{matrix}x_1 \\ x_2\end{matrix}\right]\right)
+=
+\left[\begin{matrix}1 \\x_1 \\ x_2\end{matrix}\right]
+$$
+
 
 Tags: mathematics statistics
 <!--ID: 1719759188731-->
@@ -324,34 +364,51 @@ $$
 
 
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
-- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
-- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
-
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}\right)$ 
+- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(X)=s$ 
+- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon]=I\sigma^2$
+- with the [[feature map]] $\varphi: \mathcal{X} \to \mathbb{R}^s$
 $$
 \begin{split}
-X 
-&= A \theta + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
-X_i
-&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
+Y 
+&= \varphi(X) \theta + \epsilon \sim \mathcal{N}(\varphi(X) \theta, \sigma^ I) \\
+&= \sum_{j \in [S]} \varphi(X_{(*, j)}) \theta_j + \epsilon \\
+Y_i
+&= \sum_{j \in [S]} \varphi(X_{(i, j)}) \theta_j + \epsilon_i \\
 \end{split}
 $$
 
-### interpretation of a [[linear model]]
-- during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\theta$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
 
-#### design [[matrix]] $A$
+### interpretation of a [[linear model]]
+- during the training the parameters are fitted to explain the relationship between the dependent variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
+- for an unknown sample we can model unknown properties $X$ based on the known characteristics $X_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[Y\right]=X\theta$ and the [[variance]] $\mathbb{VAR}\left[Y\right]=v$
+
+#### design [[matrix]] $X$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
-- e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
-- e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\theta$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
-- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
+- e.g. $X \in \mathbb{R}^{n \times 2}$ containing the height and weight of $n$ different people
+- e.g. $X \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
+#### parameter $\theta$
+- for each characteristic of the observation (features of the training samples) the model has a parameter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependent variable $X_i$
+- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ reflects the variance that is not explained by the linear relationship between characteristics $A$ and dependent variable $X$
+
+### feature map
+- can be generalized by introducing a function $\varphi: \mathcal{X} \to \mathbb{R}^d$ that transforms the input features
+- in this way the model can lean non-linear relationships between input and output
+
+$$
+\begin{split}
+Y = f_\theta(X) + \epsilon = \varphi(X)^\top\theta  + \epsilon
+\end{split}
+$$
+- often a learnable bias that does not depend on the input is added
+
+$$
+\varphi\left(\left[\begin{matrix}x_1 \\ x_2\end{matrix}\right]\right)
+=
+\left[\begin{matrix}1 \\x_1 \\ x_2\end{matrix}\right]
+$$
+
 
 Tags: mathematics statistics
 <!--ID: 1719759188735-->
@@ -383,23 +440,22 @@ w_n \\
 \end{matrix}\right) \in \mathbb{R}^{n }
 $$
 
-
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
-- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
-- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
-
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}\right)$ 
+- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(X)=s$ 
+- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon]=I\sigma^2$
+- with the [[feature map]] $\varphi: \mathcal{X} \to \mathbb{R}^s$
 $$
 \begin{split}
-X 
-&= A \theta + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
-X_i
-&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
+Y 
+&= \varphi(X) \theta + \epsilon \sim \mathcal{N}(\varphi(X) \theta, \sigma^ I) \\
+&= \sum_{j \in [S]} \varphi(X_{(*, j)}) \theta_j + \epsilon \\
+Y_i
+&= \sum_{j \in [S]} \varphi(X_{(i, j)}) \theta_j + \epsilon_i \\
 \end{split}
 $$
+
+
 ________________________
 
 ### interpretation of a [[linear model]]
@@ -552,21 +608,20 @@ $$
 $$
 
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
-- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
-- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
-
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}\right)$ 
+- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(X)=s$ 
+- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon]=I\sigma^2$
+- with the [[feature map]] $\varphi: \mathcal{X} \to \mathbb{R}^s$
 $$
 \begin{split}
-X 
-&= A \theta + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
-X_i
-&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
+Y 
+&= \varphi(X) \theta + \epsilon \sim \mathcal{N}(\varphi(X) \theta, \sigma^ I) \\
+&= \sum_{j \in [S]} \varphi(X_{(*, j)}) \theta_j + \epsilon \\
+Y_i
+&= \sum_{j \in [S]} \varphi(X_{(i, j)}) \theta_j + \epsilon_i \\
 \end{split}
 $$
+
 
 ### empirical variance
 - given $n$ [[stochastic independent]] samples from the same [[distribution]] the $V$ is appoximating the [[variance]] of the [[distribution]] (but has a [[bias]])
@@ -613,17 +668,18 @@ $$
 ________________________
 
 ### interpretation of a [[linear model]]
-- during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\theta$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+- during the training the parameters are fitted to explain the relationship between the dependent variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
+- for an unknown sample we can model unknown properties $X$ based on the known characteristics $X_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[Y\right]=X\theta$ and the [[variance]] $\mathbb{VAR}\left[Y\right]=v$
 
-#### design [[matrix]] $A$
+#### design [[matrix]] $X$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
-- e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
-- e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\theta$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
-- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
+- e.g. $X \in \mathbb{R}^{n \times 2}$ containing the height and weight of $n$ different people
+- e.g. $X \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
+#### parameter $\theta$
+- for each characteristic of the observation (features of the training samples) the model has a parameter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependent variable $X_i$
+- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ reflects the variance that is not explained by the linear relationship between characteristics $A$ and dependent variable $X$
+
 
 Tags: mathematics statistics
 <!--ID: 1720372857682-->
@@ -757,21 +813,20 @@ $$
 $$
 
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, v}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
-- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(A)=s$ 
-- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\xi=(\xi_1, ..., \xi_n)^\top$ with $\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
-
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}\right)$ 
+- is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(X)=s$ 
+- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon]=I\sigma^2$
+- with the [[feature map]] $\varphi: \mathcal{X} \to \mathbb{R}^s$
 $$
 \begin{split}
-X 
-&= A \theta + \sqrt{v} \xi \\
-&= \sum_{j \in [S]} A_{(*, j)} \theta_j + \sqrt{v} \xi \\
-X_i
-&= \sum_{j \in [S]} A_{(i, j)} \theta_j + \sqrt{v} \xi_i \\
+Y 
+&= \varphi(X) \theta + \epsilon \sim \mathcal{N}(\varphi(X) \theta, \sigma^ I) \\
+&= \sum_{j \in [S]} \varphi(X_{(*, j)}) \theta_j + \epsilon \\
+Y_i
+&= \sum_{j \in [S]} \varphi(X_{(i, j)}) \theta_j + \epsilon_i \\
 \end{split}
 $$
+
 
 ### empirical variance
 - given $n$ [[stochastic independent]] samples from the same [[distribution]] the $V$ is appoximating the [[variance]] of the [[distribution]] (but has a [[bias]])
@@ -818,17 +873,17 @@ $$
 ________________________
 
 ### interpretation of a [[linear model]]
-- during the training the parameters are fitted to explain the relationship between the dependen variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
-- for an unknown sample we can model unknown propertie $X$ based on the known characterists $A_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[X\right]=A\theta$ and th [[variance]] $\mathbb{VAR}\left[X\right]=v$
+- during the training the parameters are fitted to explain the relationship between the dependent variable $X_i$ and its characteristics (features) $A_{(i, *)} \in \mathbb{R}^s$ for all training samples $i \in [n]$ 
+- for an unknown sample we can model unknown properties $X$ based on the known characteristics $X_{(1, *)} \in \mathbb{R}^1$ as a [[random variable]] with the [[expectation]] $\mathbb{E}\left[Y\right]=X\theta$ and the [[variance]] $\mathbb{VAR}\left[Y\right]=v$
 
-#### design [[matrix]] $A$
+#### design [[matrix]] $X$
 - the design [[matrix]] contains the training data
 - $s$ is the number of characteristics and $n$ is the number of observations
-- e.g. $A \in \mathbb{R}^{n \times 2}$ containing the hight and weight of $n$ different people
-- e.g. $A \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
-#### parameter $\theta$ and $v$
-- for each characteristic of the observation (features of the training samples) the model has a paramter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependen variable $X_i$
-- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ refelcts the variance that is not explained by the linear relationship between chracteristics $A$ and dependent variable $X$
+- e.g. $X \in \mathbb{R}^{n \times 2}$ containing the height and weight of $n$ different people
+- e.g. $X \in \mathbb{R}^{n \times 3}$ containing the GDP of $n$ different countries in 3 consecutive year's
+#### parameter $\theta$
+- for each characteristic of the observation (features of the training samples) the model has a parameter $\theta_i: i \in [s]$ that reflects the impact the feature $i$ has on the dependent variable $X_i$
+- since the [[variance]] of the error is normalized ($\mathbb{E}[\xi_i]=0$ and $\mathbb{VAR}[\xi_i]=1$) the parameter $v$ reflects the variance that is not explained by the linear relationship between characteristics $A$ and dependent variable $X$
 
 Tags: mathematics statistics
 <!--ID: 1720372857686-->
@@ -842,21 +897,20 @@ can a [[linear model]] learn non learn relationships?
 
 Back: 
 ### linear model
-- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}, v \in (0, \infty)\right)$ 
+- a [[linear model]] $\left(\mathbb{R}^n, \mathcal{B}\left(\mathbb{R}^n\right), \mathbb{P}_{\theta, \sigma^2}: \theta \in \mathbb{R}^{s}\right)$ 
 - is defined by a design [[matrix]] $A \in \mathbb{R}^{n \times s}$ with $s<n$ and a full [[rank]] $\mathrm{rank}(X)=s$ 
-- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon_i]=\sigma^2$
-- the model parameters are a positive [[scalar]] values $v$ that is a weight for the error term and real valued [[vector]] $\theta \in \mathbb{R}^s$ 
-- the $\mathbb{P}_{\theta, v}$ is the [[distribution]] of $X$
-
+- the error is model my a [[stochastic independent]] normalized [[random variable|random vector]] $\epsilon=(\epsilon_1, ..., \epsilon_n)^\top$ with $\mathbb{E}[\epsilon_i]=0$ and $\mathbb{VAR}[\epsilon]=I\sigma^2$
+- with the [[feature map]] $\varphi: \mathcal{X} \to \mathbb{R}^s$
 $$
 \begin{split}
 Y 
-&= X \theta + \epsilon \\
-&= \sum_{j \in [S]} X_{(*, j)} \theta_j + \epsilon \\
+&= \varphi(X) \theta + \epsilon \sim \mathcal{N}(\varphi(X) \theta, \sigma^ I) \\
+&= \sum_{j \in [S]} \varphi(X_{(*, j)}) \theta_j + \epsilon \\
 Y_i
-&= \sum_{j \in [S]} X_{(i, j)} \theta_j + \epsilon_i \\
+&= \sum_{j \in [S]} \varphi(X_{(i, j)}) \theta_j + \epsilon_i \\
 \end{split}
 $$
+
 #### feature map
 - can be generalized by introducing a function $\varphi: \mathcal{X} \to \mathbb{R}^d$ that transforms the input features
 - in this way the model can lean non-linear relationships between input and output
