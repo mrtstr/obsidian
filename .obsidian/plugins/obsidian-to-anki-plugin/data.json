@@ -828,7 +828,7 @@
     "mathematics/stochastics/statistical learning/model variance.md": "59fc014bd4d661cec2d8edac37a6d68c",
     "mathematics/stochastics/statistical learning/model complexity.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical learning/model bias.md": "e665d3c72e648381f160865187cd6c2e",
-    "mathematics/stochastics/statistical learning/mean square error.md": "7f4c48c19a228b99ddf938a1922a39a6",
+    "mathematics/stochastics/statistical learning/mean square error.md": "7efe875ec000fd6df05cd78ddef136ee",
     "mathematics/stochastics/statistical learning/mean absolute error.md": "ea27c89f63cbb152443889f1c692add2",
     "mathematics/stochastics/statistical learning/maximum likelihood.md": "31eb45faf106e6dcd8aaa40f61f9ee39",
     "mathematics/stochastics/statistical learning/loss functions.md": "7738da874641d872eb54a464efc53e39",
@@ -2032,7 +2032,7 @@
     "machine learning/hyperparameter.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/overfitting.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/regularization.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "machine learning/feature map.md": "14f0af1e55d3c91617dfc856c3f44e9f"
+    "machine learning/feature map.md": "b779c4b7dbb107b8e8a73981ac1262c0"
   },
   "fields_dict": {
     "Basic": [

@@ -1,6 +1,19 @@
-# [[mean square error]]
-[[loss function]]
+### mean square error
+- the [[mean square error]] is a [[loss function]] that is defined as follows
 
+$$
+\begin{split}
+MSE(f_\theta, \mathcal{D}) 
+= \frac{1}{|\mathcal{D}|} ||Y - f_\theta(X)||^2_2 \\
+= \frac{1}{|\mathcal{D}|} \sum_{(x, y) \sim \mathcal{D}} (y - f_\theta(x))^2 \\
+\end{split}
+$$
+- minimizing the [[mean square error]] is equivalent to approximating the [[conditional expectation]]
+- if the following is true minimizing is [[mean square error]] leads to the [[maximum likelihood estimator]]
+
+$$
+Y \sim \mathcal{N}\left(f_\theta(X), \sigma^2\right) \Leftrightarrow \epsilon = Y - f_\theta(X) \sim \mathcal{N}\left(0, \sigma^2\right)
+$$
 # Definition
 For a [[statistical estimator_old|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ the [[mean square error]] is defined as the following
 $$
@@ -86,7 +99,42 @@ $$
 \mathbb{E}\left[\mathbb{VAR}_{Y|X}\left[Y\:|\:X \right]\right]
 }_\text{$=0$}
 $$
-# Anki
+
+
+# anki
+
+
+START
+Basic
+[[mean square error]]
+- definition
+- what does minimizing it approximates?
+- relationship to the [[maximum likelihood estimator]]
+
+Back: 
+### mean square error
+- the [[mean square error]] is a [[loss function]] that is defined as follows
+
+$$
+\begin{split}
+MSE(f_\theta, \mathcal{D}) 
+= \frac{1}{|\mathcal{D}|} ||Y - f_\theta(X)||^2_2 \\
+= \frac{1}{|\mathcal{D}|} \sum_{(x, y) \sim \mathcal{D}} (y - f_\theta(x))^2 \\
+\end{split}
+$$
+- minimizing the [[mean square error]] is equivalent to approximating the [[conditional expectation]]
+- if the following is true minimizing is [[mean square error]] leads to the [[maximum likelihood estimator]]
+
+$$
+Y \sim \mathcal{N}\left(f_\theta(X), \sigma^2\right) \Leftrightarrow \epsilon = Y - f_\theta(X) \sim \mathcal{N}\left(0, \sigma^2\right)
+$$
+
+
+Tags: mathematics statistics SS25
+<!--ID: 1752658871314-->
+END
+
+
 START
 Basic
 [[mean square error]] definition
