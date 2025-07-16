@@ -1,5 +1,10 @@
 ### high dimensional integration by substitution
 
+$$
+\int_{\phi(A)} f(x) dx = \int_A f(\phi(u)) |\det\left(\nabla\phi(u)\right)| du
+$$
+
+TODO add example
 ### integration by substitution
 - the [[integration by substitution]] rule for the [[integral]] is the equivalent of the [[chain rule of derivative]]
 - used to calculate the [[integral]] of [[function]] that is a [[composition]] of two [[function|functions]]
@@ -388,4 +393,25 @@ $$
 
 Tags: mathematics SS25
 <!--ID: 1745252097017-->
+END
+
+
+# anki
+
+
+START
+Basic
+equation for the (infinite) high dimensional [[integration by substitution]]
+
+Back: 
+### high dimensional integration by substitution
+
+$$
+\int_{\phi(A)} f(x) dx = \int_A f(\phi(u)) |\det\left(\nabla\phi(u)\right)| du
+$$
+
+TODO add example
+
+Tags: mathematics basics SS25
+<!--ID: 1752672173345-->
 END
