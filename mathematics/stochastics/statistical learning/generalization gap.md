@@ -44,7 +44,7 @@ $$
 \end{split}
 $$
 
-#### maximum likelihood
+#### log likelihood and MSE generalization gap
 - the [[expectation|expected]] [[likelihood function|log likelihood]] under the true data generating [[distribution]] $P_{\theta^*}$ is the following
 
 $$
@@ -52,8 +52,8 @@ $$
 \mathbb{E}_{(X, Y)\sim P_{\theta^*}}\left[\log\left(p\left(Y|X, \theta\right)\right)\right] \\
 \end{split}
 $$
-- for a [[empirical distribution of a dataset|test dataset]] $\mathcal{D}=\left\{(X_m, Y_m)\right\}^M_{m=1}$ drawn from $P_{\theta^*}$ the [[expectation|expected]] log likelihood is
 
+- for a [[empirical distribution of a dataset|test dataset]] $\mathcal{D}=\left\{(X_m, Y_m)\right\}^M_{m=1}$ drawn from $P_{\theta^*}$ the [[expectation|expected]] log likelihood is
 
 $$
 \begin{split}
@@ -63,7 +63,6 @@ $$
 &=M \mathbb{E}_{(X, Y)\sim P_{\theta^*}}\left[\log\left(p\left(Y|X, \theta\right)\right)\right] \\
 \end{split}
 $$
-
 
 - but instead we maximize the empirical [[likelihood function|log likelihood]] on the a [[empirical distribution of a dataset|training dataset]] $\hat{\mathcal{D}}\left\{(X_n, Y_n)\right\}^N_{n=1}$
 
@@ -84,7 +83,6 @@ $$
 \xrightarrow{M\to\infty} \mathbb{E}_{(X, Y)\sim P_{\theta^*}}\left[\log\left(p\left(Y|X, \theta\right)\right)\right]\\
 \end{split}
 $$
-
 
 - so if we assume sufficiently large $N$ and $M$ we can approximate
 
@@ -115,6 +113,7 @@ $$
 $$
 
 - if we plug this in we have the following [[mean square error]] [[generalization gap]]
+
 $$
 \begin{split}
 - \frac{1}{2\sigma^2}  {\mathrm{MSE}}(f_{\theta^*}) &= - \frac{1}{2\sigma^2}  \hat{\mathrm{MSE}}_{train}(f_{\theta^*}) + \frac{d}{N} \\
