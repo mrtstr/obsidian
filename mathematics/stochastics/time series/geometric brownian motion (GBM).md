@@ -668,7 +668,7 @@ END
 
 START
 Basic
-approximation of $1+ \alpha$ and why does it work?
+approximation of $1+ \alpha$ as a e function and why does it work?
 
 Back: 
 - works for small $\alpha$

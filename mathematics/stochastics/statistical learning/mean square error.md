@@ -9,11 +9,31 @@ MSE(f_\theta, \mathcal{D})
 \end{split}
 $$
 - minimizing the [[mean square error]] is equivalent to approximating the [[conditional expectation]]
-- if the following is true minimizing is [[mean square error]] leads to the [[maximum likelihood estimator]]
+
+#### relationship to the maximum likelihood estimator
+- if the following is true 
 
 $$
-Y \sim \mathcal{N}\left(f_\theta(X), \sigma^2\right) \Leftrightarrow \epsilon = Y - f_\theta(X) \sim \mathcal{N}\left(0, \sigma^2\right)
+Y \sim \mathcal{N}\left(f_{\theta^*}(X), \sigma^2\right) \Leftrightarrow \epsilon = Y - f_{\theta^*}(X) \sim \mathcal{N}\left(0, \sigma^2\right)
 $$
+
+- minimizing is [[mean square error]] leads to the [[maximum likelihood estimator]]
+
+$$
+\theta_{MLE} = arg\max_\theta \log p(Y|X,\theta)  = arg\min_\theta \mathrm{MSE}(f_{\theta^*})
+$$
+
+- if this condition is true and then the relationship between the [[mean square error]] and the [[likelihood function|log likelihood]] of the mse and ll minimizing parameters $\theta^*$ is as follows
+
+$$
+\begin{split}
+\hat{\mathcal{L}}({\theta^*}) 
+&= \sum_{i=1}^N \log{\left(\frac{1}{\sqrt{2\pi \sigma^2}}\right)} -\frac{1}{2} \frac{\left(y_i - f_{\theta^*}(x_i) \right)^2}{\sigma^2} \\
+&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{1}{2\sigma^2}\sum_{i=1}^N\left(y_i - f_{\theta^*}(x_i) \right)^2 \\
+&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{N}{2\sigma^2}  \mathrm{MSE}(f_{\theta^*}) \\
+\end{split}
+$$
+
 # Definition
 For a [[statistical estimator_old|statistical estimaton]] $\widehat{x}$ of the [[random variable]] $X$ the [[mean square error]] is defined as the following
 $$
@@ -103,6 +123,50 @@ $$
 
 # anki
 
+START
+Basic
+- relationship between the [[mean square error]]  and the [[maximum likelihood estimator]]
+- can one be expressed as the other?
+
+Back: 
+### mean square error
+- the [[mean square error]] is a [[loss function]] that is defined as follows
+
+$$
+\begin{split}
+MSE(f_\theta, \mathcal{D}) 
+= \frac{1}{|\mathcal{D}|} ||Y - f_\theta(X)||^2_2 \\
+= \frac{1}{|\mathcal{D}|} \sum_{(x, y) \sim \mathcal{D}} (y - f_\theta(x))^2 \\
+\end{split}
+$$
+- minimizing the [[mean square error]] is equivalent to approximating the [[conditional expectation]]
+
+#### relationship to the maximum likelihood estimator
+- if the following is true 
+
+$$
+Y \sim \mathcal{N}\left(f_{\theta^*}(X), \sigma^2\right) \Leftrightarrow \epsilon = Y - f_{\theta^*}(X) \sim \mathcal{N}\left(0, \sigma^2\right)
+$$
+
+- minimizing is [[mean square error]] leads to the [[maximum likelihood estimator]]
+
+$$
+\theta_{MLE} = arg\max_\theta \log p(Y|X,\theta)  = arg\min_\theta \mathrm{MSE}(f_{\theta^*})
+$$
+
+- if this condition is true and then the relationship between the [[mean square error]] and the [[likelihood function|log likelihood]] of the mse and ll minimizing parameters $\theta^*$ is as follows
+
+$$
+\begin{split}
+\hat{\mathcal{L}}({\theta^*}) 
+&= \sum_{i=1}^N \log{\left(\frac{1}{\sqrt{2\pi \sigma^2}}\right)} -\frac{1}{2} \frac{\left(y_i - f_{\theta^*}(x_i) \right)^2}{\sigma^2} \\
+&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{1}{2\sigma^2}\sum_{i=1}^N\left(y_i - f_{\theta^*}(x_i) \right)^2 \\
+&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{N}{2\sigma^2}  \mathrm{MSE}(f_{\theta^*}) \\
+\end{split}
+$$
+Tags: mathematics statistics SS25
+<!--ID: 1752744686652-->
+END
 
 START
 Basic
@@ -123,13 +187,30 @@ MSE(f_\theta, \mathcal{D})
 \end{split}
 $$
 - minimizing the [[mean square error]] is equivalent to approximating the [[conditional expectation]]
-- if the following is true minimizing is [[mean square error]] leads to the [[maximum likelihood estimator]]
+
+#### relationship to the maximum likelihood estimator
+- if the following is true 
 
 $$
-Y \sim \mathcal{N}\left(f_\theta(X), \sigma^2\right) \Leftrightarrow \epsilon = Y - f_\theta(X) \sim \mathcal{N}\left(0, \sigma^2\right)
+Y \sim \mathcal{N}\left(f_{\theta^*}(X), \sigma^2\right) \Leftrightarrow \epsilon = Y - f_{\theta^*}(X) \sim \mathcal{N}\left(0, \sigma^2\right)
 $$
 
+- minimizing is [[mean square error]] leads to the [[maximum likelihood estimator]]
 
+$$
+\theta_{MLE} = arg\max_\theta \log p(Y|X,\theta)  = arg\min_\theta \mathrm{MSE}(f_{\theta^*})
+$$
+
+- if this condition is true and then the relationship between the [[mean square error]] and the [[likelihood function|log likelihood]] of the mse and ll minimizing parameters $\theta^*$ is as follows
+
+$$
+\begin{split}
+\hat{\mathcal{L}}({\theta^*}) 
+&= \sum_{i=1}^N \log{\left(\frac{1}{\sqrt{2\pi \sigma^2}}\right)} -\frac{1}{2} \frac{\left(y_i - f_{\theta^*}(x_i) \right)^2}{\sigma^2} \\
+&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{1}{2\sigma^2}\sum_{i=1}^N\left(y_i - f_{\theta^*}(x_i) \right)^2 \\
+&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{N}{2\sigma^2}  \mathrm{MSE}(f_{\theta^*}) \\
+\end{split}
+$$
 Tags: mathematics statistics SS25
 <!--ID: 1752658871314-->
 END

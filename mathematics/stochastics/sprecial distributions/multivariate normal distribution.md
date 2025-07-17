@@ -5,8 +5,8 @@
 $$
 \begin{split}
 f(x) 
-&=  \frac{1}{\sqrt{\det(2 \pi \Sigma)}} \exp\left(\frac{1}{2} \left( y - \mu)^\top \Sigma^{-1} (y - \mu) \right\rangle \right) \\
-&=  \frac{1}{\sqrt{(2 \pi)^d|\det(\Sigma)|}} \exp\left(\frac{1}{2} \left( y - \mu)^\top \Sigma^{-1} (y - \mu) \right\rangle \right) \\
+&=  \frac{1}{\sqrt{\det(2 \pi \Sigma)}} \exp\left(-\frac{1}{2} \left( y - \mu)^\top \Sigma^{-1} (y - \mu) \right\rangle \right) \\
+&=  \frac{1}{\sqrt{(2 \pi)^d|\det(\Sigma)|}} \exp\left(-\frac{1}{2} \left( y - \mu)^\top \Sigma^{-1} (y - \mu) \right\rangle \right) \\
 \end{split}
 $$
 
@@ -29,8 +29,8 @@ Back:
 $$
 \begin{split}
 f(x) 
-&=  \frac{1}{\sqrt{\det(2 \pi \Sigma)}} \exp\left(\frac{1}{2} \left( y - \mu)^\top \Sigma^{-1} (y - \mu) \right\rangle \right) \\
-&=  \frac{1}{\sqrt{(2 \pi)^d|\det(\Sigma)|}} \exp\left(\frac{1}{2} \left( y - \mu)^\top \Sigma^{-1} (y - \mu) \right\rangle \right) \\
+&=  \frac{1}{\sqrt{\det(2 \pi \Sigma)}} \exp\left(-\frac{1}{2} \left( y - \mu)^\top \Sigma^{-1} (y - \mu) \right\rangle \right) \\
+&=  \frac{1}{\sqrt{(2 \pi)^d|\det(\Sigma)|}} \exp\left(-\frac{1}{2} \left( y - \mu)^\top \Sigma^{-1} (y - \mu) \right\rangle \right) \\
 \end{split}
 $$
 

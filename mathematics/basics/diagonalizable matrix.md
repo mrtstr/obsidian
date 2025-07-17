@@ -71,7 +71,7 @@ $$
 
 START
 Basic
-[[diagonal matrix]]
+[[diagonalizable matrix]]
 - definition
 - sufficient condition
 - powers of a [[diagonal matrix]]
@@ -185,7 +185,7 @@ END
 
 START
 Basic
-[[diagonal matrix]]
+[[diagonalizable matrix]]
 - definition
 - proof for: sufficient existance condition
 
@@ -294,7 +294,7 @@ END
 
 START
 Basic
-[[diagonal matrix]]
+[[diagonalizable matrix]]
 - definition
 - proof for: invariant shifts
 

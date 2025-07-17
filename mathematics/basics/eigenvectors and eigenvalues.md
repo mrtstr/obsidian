@@ -8,7 +8,6 @@ $$
 #### calculation of eigenvalues
 - [[eigenvalue]] can be calculated by solving the roots of the characteristic [[polynomial]]
 
-
 $$
 \det(A-\lambda I) = 0
 $$
@@ -17,6 +16,7 @@ $$
 
 ##### proof
 - using the fact that for a general $B \in \mathbb{R}^{n \times n}$ there exists a non-zero solution for $Bx=0$ exactly when $\det(B)=0$
+- this means that $\lambda$ is an [[eigenvalue]] it has to make the columns of $A - \lambda I$ linear dependent when being subtracted from the diagonal
 
 $$
 \begin{split}
@@ -102,6 +102,7 @@ $$
 
 ##### proof
 - using the fact that for a general $B \in \mathbb{R}^{n \times n}$ there exists a non-zero solution for $Bx=0$ exactly when $\det(B)=0$
+- this means that $\lambda$ is an [[eigenvalue]] it has to make the columns of $A - \lambda I$ linear dependent when being subtracted from the diagonal
 
 $$
 \begin{split}
@@ -176,6 +177,7 @@ $$
 
 ##### proof
 - using the fact that for a general $B \in \mathbb{R}^{n \times n}$ there exists a non-zero solution for $Bx=0$ exactly when $\det(B)=0$
+- this means that $\lambda$ is an [[eigenvalue]] it has to make the columns of $A - \lambda I$ linear dependent when being subtracted from the diagonal
 
 $$
 \begin{split}
@@ -249,6 +251,7 @@ $$
 
 ##### proof
 - using the fact that for a general $B \in \mathbb{R}^{n \times n}$ there exists a non-zero solution for $Bx=0$ exactly when $\det(B)=0$
+- this means that $\lambda$ is an [[eigenvalue]] it has to make the columns of $A - \lambda I$ linear dependent when being subtracted from the diagonal
 
 $$
 \begin{split}
@@ -339,6 +342,7 @@ $$
 
 ##### proof
 - using the fact that for a general $B \in \mathbb{R}^{n \times n}$ there exists a non-zero solution for $Bx=0$ exactly when $\det(B)=0$
+- this means that $\lambda$ is an [[eigenvalue]] it has to make the columns of $A - \lambda I$ linear dependent when being subtracted from the diagonal
 
 $$
 \begin{split}
