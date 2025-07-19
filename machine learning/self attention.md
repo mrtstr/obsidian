@@ -36,7 +36,7 @@ V = XW_V \\
 $$
 - insted of just taking the [[dot product]] between the input [[embeddings]] we tranform them with a [[linear layer]] before which is equal to a [[matrix product]] with a [[matrix]] of learned parameters 
 - afterward we normalize the therm with the size of the context $t$
-- and take the [[softmax]] to make sure every row is normalized
+- and take the [[softmax function]] to make sure every row is normalized
 $$
 \begin{split}
 Y = softmax\left(\frac{QK^\top}{\sqrt{t}}\right)V
@@ -92,7 +92,7 @@ V = XW_V \\
 $$
 - insted of just taking the [[dot product]] between the input [[embeddings]] we tranform them with a [[linear layer]] before which is equal to a [[matrix product]] with a [[matrix]] of learned parameters 
 - afterward we normalize the therm with the size of the context $t$
-- and take the [[softmax]] to make sure every row is normalized
+- and take the [[softmax function]] to make sure every row is normalized
 $$
 \begin{split}
 Y = softmax\left(\frac{QK^\top}{\sqrt{t}}\right)V

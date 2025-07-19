@@ -1116,7 +1116,7 @@
     "mathematics/basics/basic algebraic properties.md": "302330634f142517896923e8540c8260",
     "mathematics/basics/basic algebraic properties of real numbers.md": "ddd1d2901c9766985631628e78418f73",
     "machine learning/softmax.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "machine learning/self attention.md": "a94fd08269f7edb22921e7d6cb338ea9",
+    "machine learning/self attention.md": "84cb7184040e1bef1ee4bddceef1bb45",
     "machine learning/linear layer.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/embeddings.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/consine similariy.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -2022,13 +2022,13 @@
     "mathematics/stochastics/statistical learning/generalization gap.md": "700b8288f9d22a9f42626e11f66da7ad",
     "mathematics/stochastics/statistical learning/m fold cross validation.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical learning/logistic regession.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/statistical learning/probabilistic model.md": "ddbd5f201029edf6aefa58b16e4580d5",
+    "mathematics/stochastics/statistical learning/probabilistic model.md": "7c9ffa233204891dbf2c01fa099fa96d",
     "mathematics/stochastics/statistical learning/rr2.md": "15109724cef9d7b042854c31f206b999",
     "mathematics/stochastics/statistical learning/rr assignment.md": "a329763137b7dc9757ee4fd8f25db8be",
     "mathematics/basics/diagonalizable matrix.md": "363c50539681948b27dd389622504453",
     "machine learning/latent space.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/latent variable.md": "55c618e6f219efddaa01868f3c0a0fcd",
-    "machine learning/hierarchical model.md": "449b6e520c3832209c85008ecaf4d5d2",
+    "machine learning/hierarchical model.md": "362096e8e274661d1910871b15ddac93",
     "machine learning/hyperparameter.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/overfitting.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/regularization.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -2042,7 +2042,10 @@
     "machine learning/log likelihood.md": "ead65dcc2bfbcba9eb414a161f55e951",
     "mathematics/stochastics/statistical learning/logit function.md": "c3330f05223ff33f81f0917caf446088",
     "mathematics/stochastics/statistical learning/sigmoid function.md": "8f6264b38e00e539576b3b9faecc4505",
-    "mathematics/stochastics/statistical learning/logistic regression.md": "fe74b2288665d49a476faba26f2c7eb1"
+    "mathematics/stochastics/statistical learning/logistic regression.md": "fe74b2288665d49a476faba26f2c7eb1",
+    "mathematics/stochastics/statistical learning/multinomial logistic regresssion.md": "bbdeefeedf0f533b9ba70d00dd75dddd",
+    "machine learning/logit.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "machine learning/softmax function.md": "a239d9466a4a60df2d50099f9b322358"
   },
   "fields_dict": {
     "Basic": [
