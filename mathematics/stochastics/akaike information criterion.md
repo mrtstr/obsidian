@@ -95,8 +95,8 @@ $$
 
 $$
 \begin{split}
-\mathbb{E}_{\mathcal{D}\sim P_{\theta^*}}\left[{\mathcal{L}}(\theta_{MLE})\right] &= \frac{N}{M}\mathbb{E}_{\mathcal{D}_{train}}\left[\hat{\mathcal{L}}(\theta_{MLE})\right] + d \\
-\frac{1}{N}\mathbb{E}_{\mathcal{D}\sim P_{\theta^*}}\left[{\mathcal{L}}(\theta_{MLE})\right] &= \frac{1}{M}\mathbb{E}_{\mathcal{D}_{train}}\left[\hat{\mathcal{L}}(\theta_{MLE})\right] + \frac{d}{N}
+\mathbb{E}_{\mathcal{D}\sim P_{\theta^*}}\left[{\mathcal{L}}(\theta_{MLE})\right] &= \frac{N}{M}\mathbb{E}_{\mathcal{D}_{train}}\left[\hat{\mathcal{L}}(\theta_{MLE})\right] - d \\
+\frac{1}{N}\mathbb{E}_{\mathcal{D}\sim P_{\theta^*}}\left[{\mathcal{L}}(\theta_{MLE})\right] &= \frac{1}{M}\mathbb{E}_{\mathcal{D}_{train}}\left[\hat{\mathcal{L}}(\theta_{MLE})\right] - \frac{d}{N}
 \end{split}
 $$
 
@@ -115,12 +115,11 @@ $$
 
 $$
 \begin{split}
-- \frac{1}{2\sigma^2}  {\mathrm{MSE}}(f_{\theta^*}) &= - \frac{1}{2\sigma^2}  \hat{\mathrm{MSE}}_{train}(f_{\theta^*}) + \frac{d}{N} \\
- {\mathrm{MSE}}(f_{\theta^*}) &=  \hat{\mathrm{MSE}}_{train}(f_{\theta^*}) - \frac{2\sigma^2d}{N} \\
+- \frac{1}{2\sigma^2}  {\mathrm{MSE}}(f_{\theta^*}) &= - \frac{1}{2\sigma^2}  \hat{\mathrm{MSE}}_{train}(f_{\theta^*}) - \frac{d}{N} \\
+ {\mathrm{MSE}}(f_{\theta^*}) &=  \hat{\mathrm{MSE}}_{train}(f_{\theta^*}) + \frac{2\sigma^2d}{N} \\
 
 \end{split}
 $$
-
 
 Tags: mathematics statistics SS25
 <!--ID: 1752750759594-->

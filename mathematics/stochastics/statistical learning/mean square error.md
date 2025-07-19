@@ -20,7 +20,7 @@ $$
 - minimizing is [[mean square error]] leads to the [[maximum likelihood estimator]]
 
 $$
-\theta_{MLE} = arg\max_\theta \log p(Y|X,\theta)  = arg\min_\theta \mathrm{MSE}(f_{\theta^*})
+\theta_{MLE} = arg\max_\theta \mathbb{E}_{(X,Y) \sim \mathcal{D}}\left[\log p(Y|X,\theta)\right]  = arg\min_\theta \mathbb{E}_{(X,Y) \sim \mathcal{D}}\left[\mathrm{MSE}(f_{\theta}(X), Y)\right]
 $$
 
 - if this condition is true and then the relationship between the [[mean square error]] and the [[likelihood function|log likelihood]] of the mse and ll minimizing parameters $\theta^*$ is as follows
@@ -30,7 +30,7 @@ $$
 \hat{\mathcal{L}}({\theta^*}) 
 &= \sum_{i=1}^N \log{\left(\frac{1}{\sqrt{2\pi \sigma^2}}\right)} -\frac{1}{2} \frac{\left(y_i - f_{\theta^*}(x_i) \right)^2}{\sigma^2} \\
 &=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{1}{2\sigma^2}\sum_{i=1}^N\left(y_i - f_{\theta^*}(x_i) \right)^2 \\
-&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{N}{2\sigma^2}  \mathrm{MSE}(f_{\theta^*}) \\
+&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{N}{2\sigma^2}  \mathrm{MSE}(f_{\theta^*}(X), Y) \\
 \end{split}
 $$
 
@@ -151,7 +151,7 @@ $$
 - minimizing is [[mean square error]] leads to the [[maximum likelihood estimator]]
 
 $$
-\theta_{MLE} = arg\max_\theta \log p(Y|X,\theta)  = arg\min_\theta \mathrm{MSE}(f_{\theta^*})
+\theta_{MLE} = arg\max_\theta \mathbb{E}_{(X,Y) \sim \mathcal{D}}\left[\log p(Y|X,\theta)\right]  = arg\min_\theta \mathbb{E}_{(X,Y) \sim \mathcal{D}}\left[\mathrm{MSE}(f_{\theta}(X), Y)\right]
 $$
 
 - if this condition is true and then the relationship between the [[mean square error]] and the [[likelihood function|log likelihood]] of the mse and ll minimizing parameters $\theta^*$ is as follows
@@ -161,9 +161,11 @@ $$
 \hat{\mathcal{L}}({\theta^*}) 
 &= \sum_{i=1}^N \log{\left(\frac{1}{\sqrt{2\pi \sigma^2}}\right)} -\frac{1}{2} \frac{\left(y_i - f_{\theta^*}(x_i) \right)^2}{\sigma^2} \\
 &=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{1}{2\sigma^2}\sum_{i=1}^N\left(y_i - f_{\theta^*}(x_i) \right)^2 \\
-&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{N}{2\sigma^2}  \mathrm{MSE}(f_{\theta^*}) \\
+&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{N}{2\sigma^2}  \mathrm{MSE}(f_{\theta^*}(X), Y) \\
 \end{split}
 $$
+
+
 Tags: mathematics statistics SS25
 <!--ID: 1752744686652-->
 END
@@ -198,7 +200,7 @@ $$
 - minimizing is [[mean square error]] leads to the [[maximum likelihood estimator]]
 
 $$
-\theta_{MLE} = arg\max_\theta \log p(Y|X,\theta)  = arg\min_\theta \mathrm{MSE}(f_{\theta^*})
+\theta_{MLE} = arg\max_\theta \mathbb{E}_{(X,Y) \sim \mathcal{D}}\left[\log p(Y|X,\theta)\right]  = arg\min_\theta \mathbb{E}_{(X,Y) \sim \mathcal{D}}\left[\mathrm{MSE}(f_{\theta}(X), Y)\right]
 $$
 
 - if this condition is true and then the relationship between the [[mean square error]] and the [[likelihood function|log likelihood]] of the mse and ll minimizing parameters $\theta^*$ is as follows
@@ -208,9 +210,11 @@ $$
 \hat{\mathcal{L}}({\theta^*}) 
 &= \sum_{i=1}^N \log{\left(\frac{1}{\sqrt{2\pi \sigma^2}}\right)} -\frac{1}{2} \frac{\left(y_i - f_{\theta^*}(x_i) \right)^2}{\sigma^2} \\
 &=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{1}{2\sigma^2}\sum_{i=1}^N\left(y_i - f_{\theta^*}(x_i) \right)^2 \\
-&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{N}{2\sigma^2}  \mathrm{MSE}(f_{\theta^*}) \\
+&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{N}{2\sigma^2}  \mathrm{MSE}(f_{\theta^*}(X), Y) \\
 \end{split}
 $$
+
+
 Tags: mathematics statistics SS25
 <!--ID: 1752658871314-->
 END

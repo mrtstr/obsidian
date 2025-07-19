@@ -48,6 +48,16 @@ $$
 1) $I(X, Y) \geq 0$
 2) $I(X, Y) = 0 \Leftrightarrow$ $X$ and $Y$ are [[stochastic independent]]
 
+
+#### high dimensional case
+
+$$
+\begin{split}
+I[X_1, ..., X_n] 
+&= D_{KL}\left(f_{X} \parallel \prod p(X_i)\right) \\
+&= \sum H(X_i)  - H(X_1, ..., X_n) \\
+\end{split}
+$$
 # --------
 
 ![[cross entropy#cross entropy]]
@@ -55,6 +65,129 @@ $$
 ![[entropy#differential entropy]]
 
 # anki
+
+
+START
+Basic
+[[mutual information]] for a [[random vector]]
+
+
+Back: 
+
+#### high dimensional case
+
+$$
+\begin{split}
+I[X_1, ..., X_n] 
+&= D_{KL}\left(f_{X} \parallel \prod p(X_i)\right) \\
+&= \sum H(X_i)  - H(X_1, ..., X_n) \\
+\end{split}
+$$
+
+_______________
+### mutual information
+- given two random variables $X$ and $Y$ with a joint [[distribution]] $f_{XY}$
+- the [[mutual information]] is defined as the following with the joint [[entropy]] $H(X,Y)$ and the [[entropy]] $H(X)$ and $H(Y)$
+
+$$
+\begin{split}
+I[X, Y] 
+&= D_{KL}(f_{XY} \parallel f_{X}f_{Y}) \\
+&= H(X) + H(Y) - H(X,Y) \\
+&= H(Y) - H(Y|X) \\
+&= H(X) - H(X|Y) \\
+\end{split}
+$$
+
+#### properties
+1) $I(X, Y) \geq 0$
+2) $I(X, Y) = 0 \Leftrightarrow$ $X$ and $Y$ are [[stochastic independent]]
+
+### kl divergence
+- KL divergence is a measure of how much the **assumed distribution $Q$**
+  diverges from the **true distribution $P$**.
+#### Continuous Case
+
+$$
+D_{KL}(P \parallel Q) = \int_{\mathbb{R}} p(x) \log \left( \frac{p(x)}{q(x)} \right) dx
+$$
+
+#### Discrete Case
+
+$$
+D_{KL}(P \parallel Q) = \sum_{x \in \mathcal{X}} p(x) \log \left( \frac{p(x)}{q(x)} \right)
+$$
+
+- $D_{KL}(P \parallel Q) \in [0, \infty]$
+- $D_{KL}(P \parallel Q) = 0$ if and only if $P = Q$
+- $D_{KL}(P \parallel Q) = \infty$ if there exists any $x$ such that $p(x) > 0$ and $q(x) = 0$ because this would make the [[cross entropy]] go to infinity
+
+### cross entropy
+- [[cross entropy]] is a measure of the dissimilarity between two probability distributions: a **true distribution** $P$ and an **estimated (or assumed) distribution** $Q$
+- It quantifies the **expected number of bits** needed to encode samples from $P$
+  using a code that is optimized for $Q$
+- It is defined as the **expected negative log-likelihood** under $Q$
+  when the data is actually drawn from $P$
+
+#### Continuous Case
+
+$$
+\begin{split}
+H\left(P , Q \right) 
+&= - \int_\mathbb{R} p(x) \log \left( q(x) \right) dx \\
+&= - \mathbb{E}_p\left[\log \left( q(x) \right)\right] \\
+\end{split}
+$$
+
+#### Discrete Case
+
+$$
+\begin{split}
+H\left(P , Q \right) 
+&= - \sum_{x \in \mathcal{X}} p(x) \log \left( q(x) \right) dx \\
+&= - \mathbb{E}_p\left[\log \left( q(x) \right)\right] \\
+\end{split}
+$$
+
+#### range
+- The **minimum** cross-entropy is reached when $P=Q$ in which case it reduces to the **entropy** of $P$:
+
+$$
+H(P, Q) = H(P) \quad \text{if and only if} \quad P = Q
+$$
+
+- can go to infinity if there are regions where  $p(x) > 0$ but $q(x) = 0$ because $\log \left(q(x)\right)=\log \left(0\right) = -\infty$, and thus the expectation $-\mathbb{E}_{x \sim P}[\log q(x)]$ becomes infinite.
+
+$$
+\text{supp}(P) \nsubseteq \text{supp}(Q)
+$$
+
+### entropy
+- measure of the **average amount of information** contained in an observation of a [[random variable]] in bits (if the $\log_2$ is used)
+- in other words the average amount of removed uncertainty by an observation 
+- for a discrete random variable with the [[probability function]] $p_X$ the [[entropy]] is defined as follows
+
+$$
+H(X) = \mathbb{E}\left[-\log\left(p_X(X)\right)\right] = - \sum p_X(x_i) \log\left(p_X(x_i)\right)
+$$
+
+- $H(X)$ is positive, and its maximum value depends on the [[distribution]] of $X$
+
+### differential entropy
+- for continuous random variables the concept of [[entropy]] can be extended
+- does not have an intuitive interpretation other than **measurement for uncertainty or spread**
+- other than the [[entropy]] the differential entropy can be negative and is sensitive to scaling
+
+- for a continuous random variable with the [[probability density function (PDF)]] $f_X$ the differential entropy is defined as follows
+
+$$
+H(X) = \mathbb{E}\left[-\log\left(f_X(X)\right)\right] = - \int_\mathbb{R} f_X(x) \log\left(f_X(x)\right) dx
+$$
+
+
+Tags: mathematics statistics SS25
+<!--ID: 1752933658943-->
+END
 
 START
 Basic

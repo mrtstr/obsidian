@@ -89,7 +89,9 @@ $$
 $$
 \begin{split}
 \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\log\left(p\left(Y|X, \theta\right)\right)\right] 
-=& \int\int \log\left(p\left(Y|X, \theta\right)\right) p\left(Y|X, \theta^*\right) dydx \\
+=& \int\int \log\left(p\left(Y|X, \theta\right)\right) p\left(Y,X\right) dydx \\
+=& \int\int \log\left(p\left(Y|X, \theta\right)\right) p\left(Y|X\right) p\left(X\right) dydx \\
+=& \int\int \log\left(p\left(Y|X, \theta\right)\right) p\left(Y|X, \theta^*\right) p\left(X\right) dydx \\
 =& \mathbb{E}_{X\sim P_\theta^*}\left[ \int  \log\left(p\left(Y|X, \theta\right)\right) p\left(Y|X, \theta^*\right) dy \right] \\
 =& \mathbb{E}_{X\sim P_\theta^*}\left[ -H\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right] \\
 =& \mathbb{E}_{X\sim P_\theta^*}\left[ \int  \log\left(p\left(Y|X, \theta\right) \frac{p\left(Y|X, \theta^*\right)}{p\left(Y|X, \theta^*\right)}\right) p\left(Y|X, \theta^*\right) dy \right] \\
@@ -111,8 +113,154 @@ $$
 
 - because the [[kl divergence]] is zero exactly if both distributions are identical, we can be sure to find a parameter vector with the same [[distribution]] as the true parameter vector
 
+### summary: kl divergence as a loss function
+
+- in general minimizing the [[kl divergence]] leads to the maximum [[maximum likelihood estimator]]
+
+$$
+\begin{split}
+&\mathrm{arg}\min_\theta \mathbb{E}_{X\sim P_\theta^*}\left[- D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right]\\
+&=  \mathrm{arg}\max_\theta \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\log\left(p\left(Y|X, \theta\right)\right)\right]\\
+\end{split}
+$$
+
+- if the [[white noise|noise]] of the model is [[normal distribution|normal distributed]] with zero mean its also equivalent to minimizing the [[mean square error]]
+
+$$
+Y = f_{\theta^*}(X) + \epsilon, \quad \epsilon \sim \mathcal{N}(0, \sigma^2)
+$$
+
+$$
+\begin{split}
+&\mathrm{arg}\min_\theta \mathbb{E}_{X\sim P_\theta^*}\left[- D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right]\\
+&=  \mathrm{arg}\max_\theta \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\log\left(p\left(Y|X, \theta\right)\right)\right]\\
+&= \mathrm{arg}\min_\theta \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\left(\mathrm{MSE}(Y, f_\theta(X))\right)\right] \\
+\end{split}
+$$
+
 # anki
 
+START
+Basic
+
+- relationship between the (conditional) [[kl divergence]] and the (conditional) [[likelihood function]] with proof
+- implications
+
+Back: 
+
+### summary: kl divergence as a loss function
+
+- in general minimizing the [[kl divergence]] leads to the maximum [[maximum likelihood estimator]]
+
+$$
+\begin{split}
+&\mathrm{arg}\min_\theta \mathbb{E}_{X\sim P_\theta^*}\left[- D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right]\\
+&=  \mathrm{arg}\max_\theta \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\log\left(p\left(Y|X, \theta\right)\right)\right]\\
+\end{split}
+$$
+
+- if the [[white noise|noise]] of the model is [[normal distribution|normal distributed]] with zero mean its also equivalent to minimizing the [[mean square error]]
+
+$$
+Y = f_{\theta^*}(X) + \epsilon, \quad \epsilon \sim \mathcal{N}(0, \sigma^2)
+$$
+
+$$
+\begin{split}
+&\mathrm{arg}\min_\theta \mathbb{E}_{X\sim P_\theta^*}\left[- D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right]\\
+&=  \mathrm{arg}\max_\theta \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\log\left(p\left(Y|X, \theta\right)\right)\right]\\
+&= \mathrm{arg}\min_\theta \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\left(\mathrm{MSE}(Y, f_\theta(X))\right)\right] \\
+\end{split}
+$$
+
+
+### kl divergence and maximum likelihood
+- the log [[likelihood function]] is proportional to the negative [[kl divergence]]
+
+$$
+\begin{split}
+\mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\log\left(p\left(Y|X, \theta\right)\right)\right] 
+=& \int\int \log\left(p\left(Y|X, \theta\right)\right) p\left(Y,X\right) dydx \\
+=& \int\int \log\left(p\left(Y|X, \theta\right)\right) p\left(Y|X\right) p\left(X\right) dydx \\
+=& \int\int \log\left(p\left(Y|X, \theta\right)\right) p\left(Y|X, \theta^*\right) p\left(X\right) dydx \\
+=& \mathbb{E}_{X\sim P_\theta^*}\left[ \int  \log\left(p\left(Y|X, \theta\right)\right) p\left(Y|X, \theta^*\right) dy \right] \\
+=& \mathbb{E}_{X\sim P_\theta^*}\left[ -H\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right] \\
+=& \mathbb{E}_{X\sim P_\theta^*}\left[ \int  \log\left(p\left(Y|X, \theta\right) \frac{p\left(Y|X, \theta^*\right)}{p\left(Y|X, \theta^*\right)}\right) p\left(Y|X, \theta^*\right) dy \right] \\
+=& \mathbb{E}_{X\sim P_\theta^*}\left[ \int - \log\left( \frac{p\left(Y|X, \theta^*\right)}{p\left(Y|X, \theta\right)}\right) p\left(Y|X, \theta^*\right) + H(p\left(Y|X, \theta^*\right)) dy \right]  \\
+=& \mathbb{E}_{X\sim P_\theta^*}\left[- D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) + C \right] \\
+\end{split}
+$$
+
+- thus maximizing the [[likelihood function]] is equivalent to minimizing the [[kl divergence]] between the true distribution and the [[distribution]] parameterized by the learned parameters $\theta$
+
+$$
+\begin{split}
+&\mathrm{arg}\max_\theta \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\log\left(p\left(Y|X, \theta\right)\right)\right] \\
+&= \mathrm{arg}\min_\theta \mathbb{E}_{X\sim P_\theta^*}\left[- D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) + C \right] \\
+&= \theta^* \\
+\end{split}
+$$
+
+- because the [[kl divergence]] is zero exactly if both distributions are identical, we can be sure to find a parameter vector with the same [[distribution]] as the true parameter vector
+
+#### mean square error and the maximum likelihood estimator
+- if the following is true 
+
+$$
+Y \sim \mathcal{N}\left(f_{\theta^*}(X), \sigma^2\right) \Leftrightarrow \epsilon = Y - f_{\theta^*}(X) \sim \mathcal{N}\left(0, \sigma^2\right)
+$$
+
+- minimizing is [[mean square error]] leads to the [[maximum likelihood estimator]]
+
+$$
+\theta_{MLE} = arg\max_\theta \mathbb{E}_{(X,Y) \sim \mathcal{D}}\left[\log p(Y|X,\theta)\right]  = arg\min_\theta \mathbb{E}_{(X,Y) \sim \mathcal{D}}\left[\mathrm{MSE}(f_{\theta}(X), Y)\right]
+$$
+
+- if this condition is true and then the relationship between the [[mean square error]] and the [[likelihood function|log likelihood]] of the mse and ll minimizing parameters $\theta^*$ is as follows
+
+$$
+\begin{split}
+\hat{\mathcal{L}}({\theta^*}) 
+&= \sum_{i=1}^N \log{\left(\frac{1}{\sqrt{2\pi \sigma^2}}\right)} -\frac{1}{2} \frac{\left(y_i - f_{\theta^*}(x_i) \right)^2}{\sigma^2} \\
+&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{1}{2\sigma^2}\sum_{i=1}^N\left(y_i - f_{\theta^*}(x_i) \right)^2 \\
+&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{N}{2\sigma^2}  \mathrm{MSE}(f_{\theta^*}(X), Y) \\
+\end{split}
+$$
+
+
+
+_______________
+
+### kl divergence
+- KL divergence is a measure of how much the **assumed distribution $Q$**
+  diverges from the **true distribution $P$**.
+#### Continuous Case
+
+$$
+D_{KL}(P \parallel Q) = \int_{\mathbb{R}} p(x) \log \left( \frac{p(x)}{q(x)} \right) dx
+$$
+
+
+- $D_{KL}(P \parallel Q) \in [0, \infty]$
+- $D_{KL}(P \parallel Q) = 0$ if and only if $P = Q$
+- $D_{KL}(P \parallel Q) = \infty$ if there exists any $x$ such that $p(x) > 0$ and $q(x) = 0$ because this would make the [[cross entropy]] go to infinity
+
+
+
+### entropy
+- measure of the **average amount of information** contained in an observation of a [[random variable]] in bits (if the $\log_2$ is used)
+- in other words the average amount of removed uncertainty by an observation 
+- for a discrete random variable with the [[probability function]] $p_X$ the [[entropy]] is defined as follows
+
+$$
+H(X) = \mathbb{E}\left[-\log\left(p_X(X)\right)\right] = - \sum p_X(x_i) \log\left(p_X(x_i)\right)
+$$
+
+- $H(X)$ is positive, and its maximum value depends on the [[distribution]] of $X$
+
+Tags: mathematics statistics SS25
+
+END
 
 START
 Basic
@@ -127,7 +275,9 @@ Back:
 $$
 \begin{split}
 \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\log\left(p\left(Y|X, \theta\right)\right)\right] 
-=& \int\int \log\left(p\left(Y|X, \theta\right)\right) p\left(Y|X, \theta^*\right) dydx \\
+=& \int\int \log\left(p\left(Y|X, \theta\right)\right) p\left(Y,X\right) dydx \\
+=& \int\int \log\left(p\left(Y|X, \theta\right)\right) p\left(Y|X\right) p\left(X\right) dydx \\
+=& \int\int \log\left(p\left(Y|X, \theta\right)\right) p\left(Y|X, \theta^*\right) p\left(X\right) dydx \\
 =& \mathbb{E}_{X\sim P_\theta^*}\left[ \int  \log\left(p\left(Y|X, \theta\right)\right) p\left(Y|X, \theta^*\right) dy \right] \\
 =& \mathbb{E}_{X\sim P_\theta^*}\left[ -H\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right] \\
 =& \mathbb{E}_{X\sim P_\theta^*}\left[ \int  \log\left(p\left(Y|X, \theta\right) \frac{p\left(Y|X, \theta^*\right)}{p\left(Y|X, \theta^*\right)}\right) p\left(Y|X, \theta^*\right) dy \right] \\
@@ -135,7 +285,6 @@ $$
 =& \mathbb{E}_{X\sim P_\theta^*}\left[- D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) + C \right] \\
 \end{split}
 $$
-
 
 - thus maximizing the [[likelihood function]] is equivalent to minimizing the [[kl divergence]] between the true distribution and the [[distribution]] parameterized by the learned parameters $\theta$
 

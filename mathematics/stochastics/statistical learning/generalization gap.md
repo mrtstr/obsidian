@@ -96,8 +96,8 @@ $$
 
 $$
 \begin{split}
-\mathbb{E}_{\mathcal{D}\sim P_{\theta^*}}\left[{\mathcal{L}}(\theta_{MLE})\right] &= \frac{N}{M}\mathbb{E}_{\mathcal{D}_{train}}\left[\hat{\mathcal{L}}(\theta_{MLE})\right] + d \\
-\frac{1}{N}\mathbb{E}_{\mathcal{D}\sim P_{\theta^*}}\left[{\mathcal{L}}(\theta_{MLE})\right] &= \frac{1}{M}\mathbb{E}_{\mathcal{D}_{train}}\left[\hat{\mathcal{L}}(\theta_{MLE})\right] + \frac{d}{N}
+\mathbb{E}_{\mathcal{D}\sim P_{\theta^*}}\left[{\mathcal{L}}(\theta_{MLE})\right] &= \frac{N}{M}\mathbb{E}_{\mathcal{D}_{train}}\left[\hat{\mathcal{L}}(\theta_{MLE})\right] - d \\
+\frac{1}{N}\mathbb{E}_{\mathcal{D}\sim P_{\theta^*}}\left[{\mathcal{L}}(\theta_{MLE})\right] &= \frac{1}{M}\mathbb{E}_{\mathcal{D}_{train}}\left[\hat{\mathcal{L}}(\theta_{MLE})\right] - \frac{d}{N}
 \end{split}
 $$
 
@@ -116,8 +116,8 @@ $$
 
 $$
 \begin{split}
-- \frac{1}{2\sigma^2}  {\mathrm{MSE}}(f_{\theta^*}) &= - \frac{1}{2\sigma^2}  \hat{\mathrm{MSE}}_{train}(f_{\theta^*}) + \frac{d}{N} \\
- {\mathrm{MSE}}(f_{\theta^*}) &=  \hat{\mathrm{MSE}}_{train}(f_{\theta^*}) - \frac{2\sigma^2d}{N} \\
+- \frac{1}{2\sigma^2}  {\mathrm{MSE}}(f_{\theta^*}) &= - \frac{1}{2\sigma^2}  \hat{\mathrm{MSE}}_{train}(f_{\theta^*}) - \frac{d}{N} \\
+ {\mathrm{MSE}}(f_{\theta^*}) &=  \hat{\mathrm{MSE}}_{train}(f_{\theta^*}) + \frac{2\sigma^2d}{N} \\
 
 \end{split}
 $$
@@ -146,7 +146,7 @@ Basic
 - regarding the [[mean square error]] and the log [[likelihood function|log likelihood]] with proof
 
 Back: 
-#### maximum likelihood
+#### log likelihood and MSE generalization gap
 - the [[expectation|expected]] [[likelihood function|log likelihood]] under the true data generating [[distribution]] $P_{\theta^*}$ is the following
 
 $$
@@ -154,8 +154,8 @@ $$
 \mathbb{E}_{(X, Y)\sim P_{\theta^*}}\left[\log\left(p\left(Y|X, \theta\right)\right)\right] \\
 \end{split}
 $$
-- for a [[empirical distribution of a dataset|test dataset]] $\mathcal{D}=\left\{(X_m, Y_m)\right\}^M_{m=1}$ drawn from $P_{\theta^*}$ the [[expectation|expected]] log likelihood is
 
+- for a [[empirical distribution of a dataset|test dataset]] $\mathcal{D}=\left\{(X_m, Y_m)\right\}^M_{m=1}$ drawn from $P_{\theta^*}$ the [[expectation|expected]] log likelihood is
 
 $$
 \begin{split}
@@ -165,7 +165,6 @@ $$
 &=M \mathbb{E}_{(X, Y)\sim P_{\theta^*}}\left[\log\left(p\left(Y|X, \theta\right)\right)\right] \\
 \end{split}
 $$
-
 
 - but instead we maximize the empirical [[likelihood function|log likelihood]] on the a [[empirical distribution of a dataset|training dataset]] $\hat{\mathcal{D}}\left\{(X_n, Y_n)\right\}^N_{n=1}$
 
@@ -187,7 +186,6 @@ $$
 \end{split}
 $$
 
-
 - so if we assume sufficiently large $N$ and $M$ we can approximate
 
 $$
@@ -200,8 +198,8 @@ $$
 
 $$
 \begin{split}
-\mathbb{E}_{\mathcal{D}\sim P_{\theta^*}}\left[{\mathcal{L}}(\theta_{MLE})\right] &= \frac{N}{M}\mathbb{E}_{\mathcal{D}_{train}}\left[\hat{\mathcal{L}}(\theta_{MLE})\right] + d \\
-\frac{1}{N}\mathbb{E}_{\mathcal{D}\sim P_{\theta^*}}\left[{\mathcal{L}}(\theta_{MLE})\right] &= \frac{1}{M}\mathbb{E}_{\mathcal{D}_{train}}\left[\hat{\mathcal{L}}(\theta_{MLE})\right] + \frac{d}{N}
+\mathbb{E}_{\mathcal{D}\sim P_{\theta^*}}\left[{\mathcal{L}}(\theta_{MLE})\right] &= \frac{N}{M}\mathbb{E}_{\mathcal{D}_{train}}\left[\hat{\mathcal{L}}(\theta_{MLE})\right] - d \\
+\frac{1}{N}\mathbb{E}_{\mathcal{D}\sim P_{\theta^*}}\left[{\mathcal{L}}(\theta_{MLE})\right] &= \frac{1}{M}\mathbb{E}_{\mathcal{D}_{train}}\left[\hat{\mathcal{L}}(\theta_{MLE})\right] - \frac{d}{N}
 \end{split}
 $$
 
@@ -217,38 +215,14 @@ $$
 $$
 
 - if we plug this in we have the following [[mean square error]] [[generalization gap]]
-$$
-\begin{split}
-- \frac{1}{2\sigma^2}  {\mathrm{MSE}}(f_{\theta^*}) &= - \frac{1}{2\sigma^2}  \hat{\mathrm{MSE}}_{train}(f_{\theta^*}) + \frac{d}{N} \\
- {\mathrm{MSE}}(f_{\theta^*}) &=  \hat{\mathrm{MSE}}_{train}(f_{\theta^*}) - \frac{2\sigma^2d}{N} \\
-
-\end{split}
-$$
-
-#### relationship to the maximum likelihood estimator
-- if the following is true 
-
-$$
-Y \sim \mathcal{N}\left(f_{\theta^*}(X), \sigma^2\right) \Leftrightarrow \epsilon = Y - f_{\theta^*}(X) \sim \mathcal{N}\left(0, \sigma^2\right)
-$$
-
-- minimizing is [[mean square error]] leads to the [[maximum likelihood estimator]]
-
-$$
-\theta_{MLE} = arg\max_\theta \log p(Y|X,\theta)  = arg\min_\theta \mathrm{MSE}(f_{\theta^*})
-$$
-
-- if this condition is true and then the relationship between the [[mean square error]] and the [[likelihood function|log likelihood]] of the mse and ll minimizing parameters $\theta^*$ is as follows
 
 $$
 \begin{split}
-\hat{\mathcal{L}}({\theta^*}) 
-&= \sum_{i=1}^N \log{\left(\frac{1}{\sqrt{2\pi \sigma^2}}\right)} -\frac{1}{2} \frac{\left(y_i - f_{\theta^*}(x_i) \right)^2}{\sigma^2} \\
-&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{1}{2\sigma^2}\sum_{i=1}^N\left(y_i - f_{\theta^*}(x_i) \right)^2 \\
-&=  -\frac{N}{2}\log{\left(2\pi \sigma^2\right)} - \frac{N}{2\sigma^2}  \mathrm{MSE}(f_{\theta^*}) \\
+- \frac{1}{2\sigma^2}  {\mathrm{MSE}}(f_{\theta^*}) &= - \frac{1}{2\sigma^2}  \hat{\mathrm{MSE}}_{train}(f_{\theta^*}) - \frac{d}{N} \\
+ {\mathrm{MSE}}(f_{\theta^*}) &=  \hat{\mathrm{MSE}}_{train}(f_{\theta^*}) + \frac{2\sigma^2d}{N} \\
+
 \end{split}
 $$
-
 
 _______
 ### generalization gap
