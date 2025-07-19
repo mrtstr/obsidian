@@ -804,13 +804,13 @@
     "mathematics/stochastics/statistical learning/training error.md": "130af63ada9661956a0d11fcc59018c1",
     "mathematics/stochastics/statistical learning/time series algorithms.md": "e8f996a7ca8d2a2e4b1dfd840e6abb10",
     "mathematics/stochastics/statistical learning/statistical predictor.md": "b621e19f28780bbac52a1ab63b7d07ff",
-    "mathematics/stochastics/statistical learning/statistical inference.md": "ebfd329c495544cb614546f176e7dc2e",
+    "mathematics/stochastics/statistical learning/statistical inference.md": "d9e29b2d0fe36d092dbeffb888e8a5a2",
     "mathematics/stochastics/statistical learning/statistical estimator.md": "7090351e9b0e06644416694f1e365a08",
     "mathematics/stochastics/statistical learning/similarity algorithms.md": "79afd2a9d7006a5b6a59650a27788d31",
     "mathematics/stochastics/statistical learning/regression.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical learning/quantile regression.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical learning/pattern mining algorithms.md": "723241c38773c440b9441913393ab412",
-    "mathematics/stochastics/statistical learning/models/tree based models/tree models.md": "1e70503f68d4ec6cba5dd9a519ae1218",
+    "mathematics/stochastics/statistical learning/models/tree based models/tree models.md": "0c7bb08c6b9f4ce98b3984b66e91820e",
     "mathematics/stochastics/statistical learning/models/tree based models/regression tree.md": "ba85df3c127933b7b07a747a022e49f4",
     "mathematics/stochastics/statistical learning/models/tree based models/random forrest.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/stochastics/statistical learning/models/tree based models/pruning.md": "9ecad75a6cae2a5d17ecd3c222f8c2d7",
@@ -2036,10 +2036,13 @@
     "mathematics/basics/eigenvalue.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/eigenvectors and eigenvalues.md": "1ae69b0d20489896beccfcee1bab1c89",
     "mathematics/basics/eigenvector.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/statistical learning/lasso regression.md": "beb27603f70813f2851f71507841b19d",
+    "mathematics/stochastics/statistical learning/lasso regression.md": "69b69d09d00ac018a2c2a283ba0b5cda",
     "mathematics/stochastics/sprecial distributions/continuous/laplace distribution.md": "35535b645ec3875e2a684c522df57057",
     "machine learning/k fold cross validation.md": "283a2f5248282af112cd18f8a7195334",
-    "machine learning/log likelihood.md": "ead65dcc2bfbcba9eb414a161f55e951"
+    "machine learning/log likelihood.md": "ead65dcc2bfbcba9eb414a161f55e951",
+    "mathematics/stochastics/statistical learning/logit function.md": "c3330f05223ff33f81f0917caf446088",
+    "mathematics/stochastics/statistical learning/sigmoid function.md": "8f6264b38e00e539576b3b9faecc4505",
+    "mathematics/stochastics/statistical learning/logistic regression.md": "fe74b2288665d49a476faba26f2c7eb1"
   },
   "fields_dict": {
     "Basic": [
