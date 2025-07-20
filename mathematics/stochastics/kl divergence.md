@@ -119,7 +119,7 @@ $$
 
 $$
 \begin{split}
-&\mathrm{arg}\min_\theta \mathbb{E}_{X\sim P_\theta^*}\left[- D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right]\\
+&\mathrm{arg}\min_\theta \mathbb{E}_{X\sim P_\theta^*}\left[ D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right]\\
 &=  \mathrm{arg}\max_\theta \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\log\left(p\left(Y|X, \theta\right)\right)\right]\\
 \end{split}
 $$
@@ -132,7 +132,7 @@ $$
 
 $$
 \begin{split}
-&\mathrm{arg}\min_\theta \mathbb{E}_{X\sim P_\theta^*}\left[- D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right]\\
+&\mathrm{arg}\min_\theta \mathbb{E}_{X\sim P_\theta^*}\left[ D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right]\\
 &=  \mathrm{arg}\max_\theta \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\log\left(p\left(Y|X, \theta\right)\right)\right]\\
 &= \mathrm{arg}\min_\theta \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\left(\mathrm{MSE}(Y, f_\theta(X))\right)\right] \\
 \end{split}
@@ -142,9 +142,9 @@ $$
 
 START
 Basic
-
-- relationship between the (conditional) [[kl divergence]] and the (conditional) [[likelihood function]] with proof
-- implications
+summary: [[kl divergence]] as a loss function
+- relationship to [[maximum likelihood estimator]]
+- relationship to [[mean square error]] loss
 
 Back: 
 
@@ -154,7 +154,7 @@ Back:
 
 $$
 \begin{split}
-&\mathrm{arg}\min_\theta \mathbb{E}_{X\sim P_\theta^*}\left[- D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right]\\
+&\mathrm{arg}\min_\theta \mathbb{E}_{X\sim P_\theta^*}\left[ D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right]\\
 &=  \mathrm{arg}\max_\theta \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\log\left(p\left(Y|X, \theta\right)\right)\right]\\
 \end{split}
 $$
@@ -167,7 +167,7 @@ $$
 
 $$
 \begin{split}
-&\mathrm{arg}\min_\theta \mathbb{E}_{X\sim P_\theta^*}\left[- D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right]\\
+&\mathrm{arg}\min_\theta \mathbb{E}_{X\sim P_\theta^*}\left[ D_{KL}\left(p\left(Y|X, \theta^*\right)||p\left(Y|X, \theta\right)\right) \right]\\
 &=  \mathrm{arg}\max_\theta \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\log\left(p\left(Y|X, \theta\right)\right)\right]\\
 &= \mathrm{arg}\min_\theta \mathbb{E}_{(X, Y)\sim P_\theta^*}\left[\left(\mathrm{MSE}(Y, f_\theta(X))\right)\right] \\
 \end{split}
@@ -259,7 +259,7 @@ $$
 - $H(X)$ is positive, and its maximum value depends on the [[distribution]] of $X$
 
 Tags: mathematics statistics SS25
-
+<!--ID: 1752996087241-->
 END
 
 START

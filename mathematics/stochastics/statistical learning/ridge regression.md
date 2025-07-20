@@ -174,8 +174,28 @@ $$
 - [[ridge regression]] is equivalent to [[maximum aposteriori]] with a linear model and prior with a [[normal distribution]]
 - the regularization term $\lambda=\frac{\sigma^2}{\tau^2}$ is equal to the ratio of the [[variance]] of the [[white noise]] $\epsilon\sim \mathcal{N}(0, I\sigma^2)$ and the prior $p(\theta) \sim \mathcal{N}(0, I\tau^2)$
 
+### existence of a solution for the ridge regression
+- the matrix $X^\top X + n \lambda I$ is always [[inverse matrix|invertable]] for a $\lambda>0$
+
+##### proof
+- if the matrix is not [[inverse matrix|invertable]] then $\exists v \neq 0$ such that $\left(X^\top X + n \lambda I\right)v = 0$
+
+$$
+\begin{split}
+\left(X^\top X + n \lambda I\right)v = 0 \\
+\Rightarrow v^\top\left(X^\top X + n \lambda I\right)v = 0 \\
+\Rightarrow v^\top X^\top Xv + n \lambda v^\top Iv = 0 \\
+\Rightarrow (Xv)^\top Xv + n \lambda ||v|| = 0 \\
+\Rightarrow ||Xv|| + n \lambda ||v|| = 0 \\
+\end{split}
+$$
+
+- this is a contradiction because $||Xv||\geq 0$ and $n \lambda ||v|| > 0$
+
 ![[maximum aposteriori#maximum aposteriori]]
-# -----------
+
+
+
 
 ![[ordinary least square estimator#ordinary least square estimator]]
 
@@ -185,6 +205,79 @@ $$
 
 
 # anki
+
+
+START
+Basic
+proof that there always exists a solution for the [[ridge regression]]
+
+Back: 
+
+### existence of a solution for the ridge regression
+- the matrix $X^\top X + n \lambda I$ is always [[inverse matrix|invertable]] for a $\lambda>0$
+
+##### proof
+- if the matrix is not [[inverse matrix|invertable]] then $\exists v \neq 0$ such that $\left(X^\top X + n \lambda I\right)v = 0$
+
+$$
+\begin{split}
+\left(X^\top X + n \lambda I\right)v = 0 \\
+\Rightarrow v^\top\left(X^\top X + n \lambda I\right)v = 0 \\
+\Rightarrow v^\top X^\top Xv + n \lambda v^\top Iv = 0 \\
+\Rightarrow (Xv)^\top Xv + n \lambda ||v|| = 0 \\
+\Rightarrow ||Xv|| + n \lambda ||v|| = 0 \\
+\end{split}
+$$
+
+- this is a contradiction because $||Xv||\geq 0$ and $n \lambda ||v|| > 0$
+
+
+### ridge regression
+- [[ridge regression]] is a [[linear model]] with features $X \in \mathbb{R}^{n \times d}$ and parameters $\theta \in \mathbb{R}^d$ and [[white noise#gaussian white noise|gaussian white noise]] $\epsilon\sim \mathcal{N}(0, I\sigma^2)$
+- in other words: [[ordinary least square estimator]] with a regularization
+- the training is done with regularization term that penalizes the $L2$ [[norm]] of the parameters $\theta$ with a regularization factor $\lambda$
+##### model
+$$
+\begin{split}
+Y 
+&= X \theta + \epsilon \sim \mathcal{N}(X \theta, I\sigma^2) \\
+\end{split}
+$$
+
+##### objective function
+
+$$
+\begin{split}
+\hat\theta_\mathrm{ridge} 
+&= arg \min_\theta \frac{1}{n} ||Y - X\theta||^2 + \lambda ||\theta||^2_2 \\
+\end{split}
+$$
+##### solution
+
+- non centered empirical [[empirical covariance]] $\hat\Sigma$ with the [[scalar product]] $\langle a, b\rangle_\hat\Sigma=a^\top\hat\Sigma b$ and the [[norm]]$|| a||_\hat\Sigma^2 =a^\top\hat\Sigma b$ 
+
+$$
+\hat\Sigma = \frac{1}{n} X^\top X
+$$
+
+$$
+\begin{split}
+\nabla\left(\frac{1}{n}||Y - X\theta||^2 + \lambda ||\theta||^2_2 \right) 
+&= \frac{2}{n} X^\top\left(X\theta -Y\right) + 2\lambda \theta  = 0 \\
+0 &= \frac{1}{n} X^\top X\theta - \frac{1}{n} X^\top Y + \lambda \theta \\
+\frac{1}{n}X^\top Y&=\left(\frac{1}{n}X^\top X + \lambda I \right)\theta  \\
+\Rightarrow\theta_\mathrm{ridge} 
+&=\frac{1}{n}\left(\frac{1}{n}X^\top X + \lambda I \right)^{-1}X^\top Y \\
+&=\left(X^\top X + n \lambda I \right)^{-1}X^\top Y \\
+&=\frac{1}{n}\left(\hat\Sigma + \lambda I \right)^{-1}X^\top Y \\
+\end{split}
+$$
+
+
+Tags: mathematics statistics SS25
+<!--ID: 1753031200140-->
+END
+
 
 START
 Basic
