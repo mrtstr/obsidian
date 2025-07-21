@@ -328,7 +328,8 @@
     "public-nat-gateway-diagram 1.png",
     "two-vpcs-to-two-subnets-one-vpc 1.png",
     "Comparison_of_1D_histogram_and_KDE 1.png",
-    "exp_dist.png"
+    "exp_dist.png",
+    "Pasted image 20250721103039.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -2043,7 +2044,7 @@
     "mathematics/stochastics/statistical learning/logit function.md": "c3330f05223ff33f81f0917caf446088",
     "mathematics/stochastics/statistical learning/sigmoid function.md": "8f6264b38e00e539576b3b9faecc4505",
     "mathematics/stochastics/statistical learning/logistic regression.md": "fe74b2288665d49a476faba26f2c7eb1",
-    "mathematics/stochastics/statistical learning/multinomial logistic regresssion.md": "bbdeefeedf0f533b9ba70d00dd75dddd",
+    "mathematics/stochastics/statistical learning/multinomial logistic regresssion.md": "a7ae1e661ea701b811e77127a3eaf0b2",
     "machine learning/logit.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/softmax function.md": "a239d9466a4a60df2d50099f9b322358"
   },
