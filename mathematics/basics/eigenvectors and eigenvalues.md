@@ -30,7 +30,7 @@ $$
 
 - if $\lambda$ is a simple [[root]] (i.e., algebraic multiplicity = 1) of the characteristic [[polynomial]] there are an infinite number of [[eigenvector]] but all of them are [[linear independent]] i.e. there are all scaled version of the same [[vector]]
 - if the algebraic multiplicity if $\lambda$ is $m$ then there are between one and $m$ [[linear independent]] [[eigenvector]] associated with $\lambda$
-- if $A$ is a [[diagonalizable matrix]] it has exactly $n$ [[linear independent]] [[eigenvalue]]. In this case for each $\lambda$ the algebraic multiplicity has to be equal to the number of [[linear independent]] [[eigenvector]]
+- if $A$ is a [[eigendecomposition]] it has exactly $n$ [[linear independent]] [[eigenvalue]]. In this case for each $\lambda$ the algebraic multiplicity has to be equal to the number of [[linear independent]] [[eigenvector]]
 
 
 ### relationship of the eigenvalues and the determinant
@@ -55,7 +55,7 @@ $$
 $$
 
 ##### proof for a diagonalizable matrix
-- where we assume that $A=BDB^{-1}$ is a [[diagonalizable matrix]] but there is a proof without that assumption
+- where we assume that $A=BDB^{-1}$ is a [[eigendecomposition]] but there is a proof without that assumption
 $$
 \begin{split}
 \mathrm{trace}(A) 
@@ -66,7 +66,7 @@ $$
 $$
 # ------------
 
-![[diagonalizable matrix#diagonalizable matrix]]
+![[eigendecomposition#diagonalizable matrix]]
 
 ![[determinant#determinant]]
 
@@ -116,13 +116,13 @@ $$
 
 - if $\lambda$ is a simple [[root]] (i.e., algebraic multiplicity = 1) of the characteristic [[polynomial]] there are an infinite number of [[eigenvector]] but all of them are [[linear independent]] i.e. there are all scaled version of the same [[vector]]
 - if the algebraic multiplicity if $\lambda$ is $m$ then there are between one and $m$ [[linear independent]] [[eigenvector]] associated with $\lambda$
-- if $A$ is a [[diagonalizable matrix]] it has exactly $n$ [[linear independent]] [[eigenvalue]]. In this case for each $\lambda$ the algebraic multiplicity has to be equal to the number of [[linear independent]] [[eigenvector]]
+- if $A$ is a [[eigendecomposition]] it has exactly $n$ [[linear independent]] [[eigenvalue]]. In this case for each $\lambda$ the algebraic multiplicity has to be equal to the number of [[linear independent]] [[eigenvector]]
 
 
 _________________
 
 ### diagonalizable matrix
-- a [[matrix]] $A \in \mathbb{R}^{n\times n}$ is a [[diagonalizable matrix]] if there exists a [[inverse matrix|inverable matrix]] $B\in \mathbb{R}^{n\times n}$ and a [[diagonal matrix]] $D=diag(\lambda_1, ..., \lambda_n)\in \mathbb{R}^{n\times n}$ such that the following decomposition is possible
+- a [[matrix]] $A \in \mathbb{R}^{n\times n}$ is a [[eigendecomposition]] if there exists a [[inverse matrix|inverable matrix]] $B\in \mathbb{R}^{n\times n}$ and a [[diagonal matrix]] $D=diag(\lambda_1, ..., \lambda_n)\in \mathbb{R}^{n\times n}$ such that the following decomposition is possible
 
 $$
 A = BDB^{-1}
@@ -191,13 +191,13 @@ $$
 
 - if $\lambda$ is a simple [[root]] (i.e., algebraic multiplicity = 1) of the characteristic [[polynomial]] there are an infinite number of [[eigenvector]] but all of them are [[linear independent]] i.e. there are all scaled version of the same [[vector]]
 - if the algebraic multiplicity if $\lambda$ is $m$ then there are between one and $m$ [[linear independent]] [[eigenvector]] associated with $\lambda$
-- if $A$ is a [[diagonalizable matrix]] it has exactly $n$ [[linear independent]] [[eigenvalue]]. In this case for each $\lambda$ the algebraic multiplicity has to be equal to the number of [[linear independent]] [[eigenvector]]
+- if $A$ is a [[eigendecomposition]] it has exactly $n$ [[linear independent]] [[eigenvalue]]. In this case for each $\lambda$ the algebraic multiplicity has to be equal to the number of [[linear independent]] [[eigenvector]]
 
 
 _________________
 
 ### diagonalizable matrix
-- a [[matrix]] $A \in \mathbb{R}^{n\times n}$ is a [[diagonalizable matrix]] if there exists a [[inverse matrix|inverable matrix]] $B\in \mathbb{R}^{n\times n}$ and a [[diagonal matrix]] $D=diag(\lambda_1, ..., \lambda_n)\in \mathbb{R}^{n\times n}$ such that the following decomposition is possible
+- a [[matrix]] $A \in \mathbb{R}^{n\times n}$ is a [[eigendecomposition]] if there exists a [[inverse matrix|inverable matrix]] $B\in \mathbb{R}^{n\times n}$ and a [[diagonal matrix]] $D=diag(\lambda_1, ..., \lambda_n)\in \mathbb{R}^{n\times n}$ such that the following decomposition is possible
 
 $$
 A = BDB^{-1}
@@ -265,7 +265,7 @@ $$
 
 - if $\lambda$ is a simple [[root]] (i.e., algebraic multiplicity = 1) of the characteristic [[polynomial]] there are an infinite number of [[eigenvector]] but all of them are [[linear independent]] i.e. there are all scaled version of the same [[vector]]
 - if the algebraic multiplicity if $\lambda$ is $m$ then there are between one and $m$ [[linear independent]] [[eigenvector]] associated with $\lambda$
-- if $A$ is a [[diagonalizable matrix]] it has exactly $n$ [[linear independent]] [[eigenvalue]]. In this case for each $\lambda$ the algebraic multiplicity has to be equal to the number of [[linear independent]] [[eigenvector]]
+- if $A$ is a [[eigendecomposition]] it has exactly $n$ [[linear independent]] [[eigenvalue]]. In this case for each $\lambda$ the algebraic multiplicity has to be equal to the number of [[linear independent]] [[eigenvector]]
 
 
 ### relationship of the eigenvalues and the determinant
@@ -287,7 +287,7 @@ $$
 _________________
 
 ### diagonalizable matrix
-- a [[matrix]] $A \in \mathbb{R}^{n\times n}$ is a [[diagonalizable matrix]] if there exists a [[inverse matrix|inverable matrix]] $B\in \mathbb{R}^{n\times n}$ and a [[diagonal matrix]] $D=diag(\lambda_1, ..., \lambda_n)\in \mathbb{R}^{n\times n}$ such that the following decomposition is possible
+- a [[matrix]] $A \in \mathbb{R}^{n\times n}$ is a [[eigendecomposition]] if there exists a [[inverse matrix|inverable matrix]] $B\in \mathbb{R}^{n\times n}$ and a [[diagonal matrix]] $D=diag(\lambda_1, ..., \lambda_n)\in \mathbb{R}^{n\times n}$ such that the following decomposition is possible
 
 $$
 A = BDB^{-1}
@@ -356,7 +356,7 @@ $$
 
 - if $\lambda$ is a simple [[root]] (i.e., algebraic multiplicity = 1) of the characteristic [[polynomial]] there are an infinite number of [[eigenvector]] but all of them are [[linear independent]] i.e. there are all scaled version of the same [[vector]]
 - if the algebraic multiplicity if $\lambda$ is $m$ then there are between one and $m$ [[linear independent]] [[eigenvector]] associated with $\lambda$
-- if $A$ is a [[diagonalizable matrix]] it has exactly $n$ [[linear independent]] [[eigenvalue]]. In this case for each $\lambda$ the algebraic multiplicity has to be equal to the number of [[linear independent]] [[eigenvector]]
+- if $A$ is a [[eigendecomposition]] it has exactly $n$ [[linear independent]] [[eigenvalue]]. In this case for each $\lambda$ the algebraic multiplicity has to be equal to the number of [[linear independent]] [[eigenvector]]
 
 
 
@@ -367,7 +367,7 @@ $$
 $$
 
 ##### proof for a diagonalizable matrix
-- where we assume that $A=BDB^{-1}$ is a [[diagonalizable matrix]] but there is a proof without that assumption
+- where we assume that $A=BDB^{-1}$ is a [[eigendecomposition]] but there is a proof without that assumption
 $$
 \begin{split}
 \mathrm{trace}(A) 
@@ -382,7 +382,7 @@ $$
 _________________
 
 ### diagonalizable matrix
-- a [[matrix]] $A \in \mathbb{R}^{n\times n}$ is a [[diagonalizable matrix]] if there exists a [[inverse matrix|inverable matrix]] $B\in \mathbb{R}^{n\times n}$ and a [[diagonal matrix]] $D=diag(\lambda_1, ..., \lambda_n)\in \mathbb{R}^{n\times n}$ such that the following decomposition is possible
+- a [[matrix]] $A \in \mathbb{R}^{n\times n}$ is a [[eigendecomposition]] if there exists a [[inverse matrix|inverable matrix]] $B\in \mathbb{R}^{n\times n}$ and a [[diagonal matrix]] $D=diag(\lambda_1, ..., \lambda_n)\in \mathbb{R}^{n\times n}$ such that the following decomposition is possible
 
 $$
 A = BDB^{-1}

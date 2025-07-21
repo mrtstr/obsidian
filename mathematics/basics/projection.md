@@ -30,27 +30,98 @@ $$
 \underbrace{||proj_b(a)||}_{\cos{\phi} \cdot ||a||} \cdot ||b||
 $$
 
-### [[projection]] into the [[column space]]
-Projection of a [[vector]] $b$ to the [[column space]] of [[matrix]] $A$
-- $b - Ax$ has to be [[orthogonal]] to the [[column space]] of $A$
-→ $A^\top \left(b-Ax\right) = 0$A^\top b
-→ $A^\top b  = A^\top Ax$
-→ $x  = \left(A^\top A \right)^{-1}A^\top b$
+### projection into the column space
+- [[projection]] of a [[vector]] $b$ to the [[column space]] of [[matrix]] $A$ is defined as $P_A(b)$
+- $b - AP_A(b)$ has to be [[orthogonal]] to the [[column space]] of $A$ 
+
+$$
+\begin{split}
+\langle A, b-AP_A(b) \rangle &= A^\top \left(b-AP_A(b)\right) = 0 \\
+A^\top b  &= A^\top AP_A(b)\\
+P_A(b)  &= \left(A^\top A \right)^{-1}A^\top b
+
+\end{split}
+$$
+
+
 
 ![[Pasted image 20221009111212.png]]
+
+
+### projection into an orthonormal subspace
+- given the [[orthonormal]] [[basis]] $V=V_1,..., V_n \in \mathbb{R}^{d \times n}$ with $V^\top V=I$
+- let $P_V(X)$ be the [[projection]] of $X$ into $\mathrm{span}(V_1, ..., V_n)$
+
+$$
+\begin{split}
+&V^\top \left(VP_V(X) - X\right) = 0 \\ 
+&V^\top X = V^\top VP_V(X) = P_V(X) \\ 
+
+\end{split}
+$$
+
+
+# anki
+
+START
+Basic
+[[projection]] into an [[orthonormal]] [[subspace]] with proof
+Back: 
+### projection into an orthonormal subspace
+- given the [[orthonormal]] [[basis]] $V=V_1,..., V_n \in \mathbb{R}^{d \times n}$ with $V^\top V=I$
+- let $P_V(X)$ be the [[projection]] of $X$ into $\mathrm{span}(V_1, ..., V_n)$
+
+$$
+\begin{split}
+&V^\top \left(VP_V(X) - X\right) = 0 \\ 
+&V^\top X = V^\top VP_V(X) = P_V(X) \\ 
+
+\end{split}
+$$
+
+
+### projection into the column space
+- [[projection]] of a [[vector]] $b$ to the [[column space]] of [[matrix]] $A$ is defined as $P_A(b)$
+- $b - AP_A(b)$ has to be [[orthogonal]] to the [[column space]] of $A$ 
+
+$$
+\begin{split}
+\langle A, b-AP_A(b) \rangle &= A^\top \left(b-AP_A(b)\right) = 0 \\
+A^\top b  &= A^\top AP_A(b)\\
+P_A(b)  &= \left(A^\top A \right)^{-1}A^\top b
+
+\end{split}
+$$
+
+
+
+![[Pasted image 20221009111212.png]]
+Tags: mathematics linear_algebra SS25
+<!--ID: 1753118033401-->
+END
 
 
 START
 Basic
-Projection of a [[vector]] $b$ to the [[column space]] of [[matrix]] $A$
+[[projection]] into the [[column space]] of a [[matrix]] with proof
 Back: 
-- $b - Ax$ has to be [[orthogonal]] to the [[column space]] of $A$
-→ $A^\top \left(b-Ax\right) = 0$A^\top b
-→ $A^\top b  = A^\top Ax$
-→ $x  = \left(A^\top A \right)^{-1}A^\top b$
+### projection into the column space
+- [[projection]] of a [[vector]] $b$ to the [[column space]] of [[matrix]] $A$ is defined as $P_A(b)$
+- $b - AP_A(b)$ has to be [[orthogonal]] to the [[column space]] of $A$ 
+
+$$
+\begin{split}
+\langle A, b-AP_A(b) \rangle &= A^\top \left(b-AP_A(b)\right) = 0 \\
+A^\top b  &= A^\top AP_A(b)\\
+P_A(b)  &= \left(A^\top A \right)^{-1}A^\top b
+
+\end{split}
+$$
+
+
 
 ![[Pasted image 20221009111212.png]]
-Tags: mathematics linear_algebra
+Tags: mathematics linear_algebra SS25
 <!--ID: 1665308790789-->
 END
 

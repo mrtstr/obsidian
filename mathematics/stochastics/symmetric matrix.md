@@ -12,6 +12,10 @@ A [[square matrix]] $A  \in \mathbb{R^{\left| \mathcal{I} \right| \times \left| 
 5) every [[symmetric matrix]] is a [[normal matrix]]
 6) $A$ [[symmetric matrix|symmetric]] then $XAX^\top$ is [[symmetric matrix|symmetric]] 
 
+
+### eigenvectors of a symmetric matrix 
+- the [[eigenvector]] of a [[symmetric matrix]] with distinct [[eigenvalue]] are always [[orthogonal]]
+
 # Anki
 
 START
