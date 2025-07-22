@@ -31,18 +31,20 @@ $$
 $$
 
 ### projection into the column space
-- [[projection]] of a [[vector]] $b$ to the [[column space]] of [[matrix]] $A$ is defined as $P_A(b)$
-- $b - AP_A(b)$ has to be [[orthogonal]] to the [[column space]] of $A$ 
+- [[projection]] of a [[vector]] $b \in \mathbb{R}^n$ to the [[column space]] of [[matrix]] $A \in \mathbb{R}^{n \times d}$ is defined as $P_A(b)=Ax$ 
+- $x=\mathrm{arg} \min \|Ax - b \|$ is the coefficient vector that writes the [[projection]]in the coordinates of $A$
+- $b - P_A(b)$ has to be [[orthogonal]] to the [[column space]] of $A$ 
+- thus the [[projection]] matrix is $P_A = A\left(A^\top A \right)^{-1}A^\top$ and the projection function is $P_A(b) = A\left(A^\top A \right)^{-1}A^\top b$
 
 $$
 \begin{split}
-\langle A, b-AP_A(b) \rangle &= A^\top \left(b-AP_A(b)\right) = 0 \\
-A^\top b  &= A^\top AP_A(b)\\
-P_A(b)  &= \left(A^\top A \right)^{-1}A^\top b
-
+\langle A, b-P_A(b) \rangle &= A^\top \left(b-P_A(b)\right) = 0 \\
+A^\top P_A(b) &= A^\top b  \\ 
+A^\top Ax &= A^\top b  \\ 
+x  &= \left(A^\top A \right)^{-1}A^\top b\\
+P_A(b)=Ax  &= A \left(A^\top A \right)^{-1}A^\top b\\
 \end{split}
 $$
-
 
 
 ![[Pasted image 20221009111212.png]]
@@ -50,13 +52,16 @@ $$
 
 ### projection into an orthonormal subspace
 - given the [[orthonormal]] [[basis]] $V=V_1,..., V_n \in \mathbb{R}^{d \times n}$ with $V^\top V=I$
-- let $P_V(X)$ be the [[projection]] of $X$ into $\mathrm{span}(V_1, ..., V_n)$
+- let $P_V(X)=Vx$ be the [[projection]] of $X$ into $\mathrm{span}(V_1, ..., V_n)$
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
+- $x=\mathrm{arg} \min \|Vx - X \|$ is the coefficient vector that writes the [[projection]] in the coordinates of $V$
 
 $$
 \begin{split}
-&V^\top \left(VP_V(X) - X\right) = 0 \\ 
-&V^\top X = V^\top VP_V(X) = P_V(X) \\ 
-
+P_V(X) 
+&= V \left(V^\top V \right)^{-1}V^\top X\\
+&= V IV^\top X\\
+&= V V^\top X\\
 \end{split}
 $$
 
@@ -67,29 +72,37 @@ START
 Basic
 [[projection]] into an [[orthonormal]] [[subspace]] with proof
 Back: 
+
 ### projection into an orthonormal subspace
 - given the [[orthonormal]] [[basis]] $V=V_1,..., V_n \in \mathbb{R}^{d \times n}$ with $V^\top V=I$
-- let $P_V(X)$ be the [[projection]] of $X$ into $\mathrm{span}(V_1, ..., V_n)$
+- let $P_V(X)=Vx$ be the [[projection]] of $X$ into $\mathrm{span}(V_1, ..., V_n)$
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
+- $x=\mathrm{arg} \min \|Vx - X \|$ is the coefficient vector that writes the [[projection]] in the coordinates of $V$
 
 $$
 \begin{split}
-&V^\top \left(VP_V(X) - X\right) = 0 \\ 
-&V^\top X = V^\top VP_V(X) = P_V(X) \\ 
-
+P_V(X) 
+&= V \left(V^\top V \right)^{-1}V^\top X\\
+&= V IV^\top X\\
+&= V V^\top X\\
 \end{split}
 $$
 
 
+
 ### projection into the column space
-- [[projection]] of a [[vector]] $b$ to the [[column space]] of [[matrix]] $A$ is defined as $P_A(b)$
-- $b - AP_A(b)$ has to be [[orthogonal]] to the [[column space]] of $A$ 
+- [[projection]] of a [[vector]] $b \in \mathbb{R}^n$ to the [[column space]] of [[matrix]] $A \in \mathbb{R}^{n \times d}$ is defined as $P_A(b)=Ax$ 
+- $x=\mathrm{arg} \min \|Ax - b \|$ is the coefficient vector that writes the [[projection]]in the coordinates of $A$
+- $b - P_A(b)$ has to be [[orthogonal]] to the [[column space]] of $A$ 
+- thus the [[projection]] matrix is $P_A = A\left(A^\top A \right)^{-1}A^\top$ and the projection function is $P_A(b) = A\left(A^\top A \right)^{-1}A^\top b$
 
 $$
 \begin{split}
-\langle A, b-AP_A(b) \rangle &= A^\top \left(b-AP_A(b)\right) = 0 \\
-A^\top b  &= A^\top AP_A(b)\\
-P_A(b)  &= \left(A^\top A \right)^{-1}A^\top b
-
+\langle A, b-P_A(b) \rangle &= A^\top \left(b-P_A(b)\right) = 0 \\
+A^\top P_A(b) &= A^\top b  \\ 
+A^\top Ax &= A^\top b  \\ 
+x  &= \left(A^\top A \right)^{-1}A^\top b\\
+P_A(b)=Ax  &= A \left(A^\top A \right)^{-1}A^\top b\\
 \end{split}
 $$
 
@@ -106,18 +119,20 @@ Basic
 [[projection]] into the [[column space]] of a [[matrix]] with proof
 Back: 
 ### projection into the column space
-- [[projection]] of a [[vector]] $b$ to the [[column space]] of [[matrix]] $A$ is defined as $P_A(b)$
-- $b - AP_A(b)$ has to be [[orthogonal]] to the [[column space]] of $A$ 
+- [[projection]] of a [[vector]] $b \in \mathbb{R}^n$ to the [[column space]] of [[matrix]] $A \in \mathbb{R}^{n \times d}$ is defined as $P_A(b)=Ax$ 
+- $x=\mathrm{arg} \min \|Ax - b \|$ is the coefficient vector that writes the [[projection]]in the coordinates of $A$
+- $b - P_A(b)$ has to be [[orthogonal]] to the [[column space]] of $A$ 
+- thus the [[projection]] matrix is $P_A = A\left(A^\top A \right)^{-1}A^\top$ and the projection function is $P_A(b) = A\left(A^\top A \right)^{-1}A^\top b$
 
 $$
 \begin{split}
-\langle A, b-AP_A(b) \rangle &= A^\top \left(b-AP_A(b)\right) = 0 \\
-A^\top b  &= A^\top AP_A(b)\\
-P_A(b)  &= \left(A^\top A \right)^{-1}A^\top b
-
+\langle A, b-P_A(b) \rangle &= A^\top \left(b-P_A(b)\right) = 0 \\
+A^\top P_A(b) &= A^\top b  \\ 
+A^\top Ax &= A^\top b  \\ 
+x  &= \left(A^\top A \right)^{-1}A^\top b\\
+P_A(b)=Ax  &= A \left(A^\top A \right)^{-1}A^\top b\\
 \end{split}
 $$
-
 
 
 ![[Pasted image 20221009111212.png]]

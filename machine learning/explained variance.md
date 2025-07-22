@@ -29,7 +29,8 @@ $$
 
 
 #### residual variance
-- let $V=[U_1, ..., U_r] \in \mathbb{R}^{d \times r}$ 
+- let $V=[U_1, ..., U_r] \in \mathbb{R}^{d \times r}$ with $V \in \mathbb{R}^{d \times r}$ with $V^\top V = I_r$ but $V V^\top \neq I_d$
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
 - residual [[variance]] $RV(r)$ with $\mathrm{dim}(V)=r$ is the rest of the [[variance]] on the data that is not explained by the lower dimensional representation $P_V(X)$ is defined as follows
 
 
@@ -42,12 +43,9 @@ RV(r)
 $$
 ##### proof
 
+- the following being the projection itself (see [[projection#projection into an orthonormal subspace]]) 
 $$
-\begin{split}
-&V^\top \left(VP_V(X) - X\right) = 0 \\ 
-&V^\top X = V^\top VP_V(X) = P_V(X) \\ 
-
-\end{split}
+P_V(X) = VV^\top X
 $$
 
 - $V^\top U=[I_r , 0]^\top$
@@ -55,7 +53,21 @@ $$
 $$
 \begin{split}
 \mathbb{E} \left[ \left\| P_V(X)  \right\|_2^2 \right]
-&=\mathbb{E} \left[ \left\| V^\top X  \right\|_2^2 \right] \\
+&=\mathbb{E} \left[ \left\| VV^\top X  \right\|_2^2 \right] \\
+&=\mathbb{E} \left[\mathrm{tr}\left((VV^\top X)^\top VV^\top X\right) \right] \\
+&=\mathbb{E} \left[\mathrm{tr}\left( X^\top VV^\top VV^\top X\right) \right] \\
+&=\mathbb{E} \left[\mathrm{tr}\left( X^\top VV^\top X\right) \right] \\
+&= \mathbb{E} \left[ \mathrm{tr}(V^\top X X^\top V) \right] \\
+&= \mathrm{tr}(V^\top \Sigma V) \\
+&= \mathrm{tr}(V^\top U\mathrm{diag}(\lambda_1,..., \lambda_n)U^\top V) \\
+&= \sum_{i=1}^r \lambda_i
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E} \left[ \left\| P_V(X)  \right\|_2^2 \right]
+&=\mathbb{E} \left[ \left\| VV^\top X  \right\|_2^2 \right] \\
 &=\mathbb{E} \left[\mathrm{tr}\left((V^\top X)^\top V^\top X\right) \right] \\
 &=\mathbb{E} \left[\mathrm{tr}\left( V^\top X\right)(V^\top X)^\top \right] \\
 &= \mathbb{E} \left[ \mathrm{tr}(V^\top X X^\top V) \right] \\
@@ -64,6 +76,7 @@ $$
 &= \sum_{i=1}^r \lambda_i
 \end{split}
 $$
+
 
 $$
 \begin{split}
@@ -144,7 +157,8 @@ $$
 
 
 #### residual variance
-- let $V=[U_1, ..., U_r] \in \mathbb{R}^{d \times r}$ 
+- let $V=[U_1, ..., U_r] \in \mathbb{R}^{d \times r}$ with $V \in \mathbb{R}^{d \times r}$ with $V^\top V = I_r$ but $V V^\top \neq I_d$
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
 - residual [[variance]] $RV(r)$ with $\mathrm{dim}(V)=r$ is the rest of the [[variance]] on the data that is not explained by the lower dimensional representation $P_V(X)$ is defined as follows
 
 
@@ -157,12 +171,9 @@ RV(r)
 $$
 ##### proof
 
+- the following being the projection itself (see [[projection#projection into an orthonormal subspace]]) 
 $$
-\begin{split}
-&V^\top \left(VP_V(X) - X\right) = 0 \\ 
-&V^\top X = V^\top VP_V(X) = P_V(X) \\ 
-
-\end{split}
+P_V(X) = VV^\top X
 $$
 
 - $V^\top U=[I_r , 0]^\top$
@@ -170,7 +181,21 @@ $$
 $$
 \begin{split}
 \mathbb{E} \left[ \left\| P_V(X)  \right\|_2^2 \right]
-&=\mathbb{E} \left[ \left\| V^\top X  \right\|_2^2 \right] \\
+&=\mathbb{E} \left[ \left\| VV^\top X  \right\|_2^2 \right] \\
+&=\mathbb{E} \left[\mathrm{tr}\left((VV^\top X)^\top VV^\top X\right) \right] \\
+&=\mathbb{E} \left[\mathrm{tr}\left( X^\top VV^\top VV^\top X\right) \right] \\
+&=\mathbb{E} \left[\mathrm{tr}\left( X^\top VV^\top X\right) \right] \\
+&= \mathbb{E} \left[ \mathrm{tr}(V^\top X X^\top V) \right] \\
+&= \mathrm{tr}(V^\top \Sigma V) \\
+&= \mathrm{tr}(V^\top U\mathrm{diag}(\lambda_1,..., \lambda_n)U^\top V) \\
+&= \sum_{i=1}^r \lambda_i
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E} \left[ \left\| P_V(X)  \right\|_2^2 \right]
+&=\mathbb{E} \left[ \left\| VV^\top X  \right\|_2^2 \right] \\
 &=\mathbb{E} \left[\mathrm{tr}\left((V^\top X)^\top V^\top X\right) \right] \\
 &=\mathbb{E} \left[\mathrm{tr}\left( V^\top X\right)(V^\top X)^\top \right] \\
 &= \mathbb{E} \left[ \mathrm{tr}(V^\top X X^\top V) \right] \\
@@ -179,6 +204,7 @@ $$
 &= \sum_{i=1}^r \lambda_i
 \end{split}
 $$
+
 
 $$
 \begin{split}
@@ -261,7 +287,7 @@ $$
 - with the following being the projection itself (see [[projection#projection into an orthonormal subspace]]) 
 
 $$
-P_V(X) = V^\top X
+P_V(X) = VV^\top X
 $$
 
 
@@ -277,6 +303,7 @@ Basic
 - total variance with proof
 
 Back: 
+
 ### explained variance
 - method of decomposing the variance in the part the is explained by a using representation in a [[latent space]] of dimension $r$ and a part that is not explained by it (using the [[principal component analysis]])
 
@@ -308,7 +335,8 @@ $$
 
 
 #### residual variance
-- let $V=[U_1, ..., U_r] \in \mathbb{R}^{d \times r}$ 
+- let $V=[U_1, ..., U_r] \in \mathbb{R}^{d \times r}$ with $V \in \mathbb{R}^{d \times r}$ with $V^\top V = I_r$ but $V V^\top \neq I_d$
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
 - residual [[variance]] $RV(r)$ with $\mathrm{dim}(V)=r$ is the rest of the [[variance]] on the data that is not explained by the lower dimensional representation $P_V(X)$ is defined as follows
 
 
@@ -321,12 +349,9 @@ RV(r)
 $$
 ##### proof
 
+- the following being the projection itself (see [[projection#projection into an orthonormal subspace]]) 
 $$
-\begin{split}
-&V^\top \left(VP_V(X) - X\right) = 0 \\ 
-&V^\top X = V^\top VP_V(X) = P_V(X) \\ 
-
-\end{split}
+P_V(X) = VV^\top X
 $$
 
 - $V^\top U=[I_r , 0]^\top$
@@ -334,7 +359,21 @@ $$
 $$
 \begin{split}
 \mathbb{E} \left[ \left\| P_V(X)  \right\|_2^2 \right]
-&=\mathbb{E} \left[ \left\| V^\top X  \right\|_2^2 \right] \\
+&=\mathbb{E} \left[ \left\| VV^\top X  \right\|_2^2 \right] \\
+&=\mathbb{E} \left[\mathrm{tr}\left((VV^\top X)^\top VV^\top X\right) \right] \\
+&=\mathbb{E} \left[\mathrm{tr}\left( X^\top VV^\top VV^\top X\right) \right] \\
+&=\mathbb{E} \left[\mathrm{tr}\left( X^\top VV^\top X\right) \right] \\
+&= \mathbb{E} \left[ \mathrm{tr}(V^\top X X^\top V) \right] \\
+&= \mathrm{tr}(V^\top \Sigma V) \\
+&= \mathrm{tr}(V^\top U\mathrm{diag}(\lambda_1,..., \lambda_n)U^\top V) \\
+&= \sum_{i=1}^r \lambda_i
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E} \left[ \left\| P_V(X)  \right\|_2^2 \right]
+&=\mathbb{E} \left[ \left\| VV^\top X  \right\|_2^2 \right] \\
 &=\mathbb{E} \left[\mathrm{tr}\left((V^\top X)^\top V^\top X\right) \right] \\
 &=\mathbb{E} \left[\mathrm{tr}\left( V^\top X\right)(V^\top X)^\top \right] \\
 &= \mathbb{E} \left[ \mathrm{tr}(V^\top X X^\top V) \right] \\
@@ -343,6 +382,7 @@ $$
 &= \sum_{i=1}^r \lambda_i
 \end{split}
 $$
+
 
 $$
 \begin{split}
@@ -472,7 +512,8 @@ $$
 
 
 #### residual variance
-- let $V=[U_1, ..., U_r] \in \mathbb{R}^{d \times r}$ 
+- let $V=[U_1, ..., U_r] \in \mathbb{R}^{d \times r}$ with $V \in \mathbb{R}^{d \times r}$ with $V^\top V = I_r$ but $V V^\top \neq I_d$
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
 - residual [[variance]] $RV(r)$ with $\mathrm{dim}(V)=r$ is the rest of the [[variance]] on the data that is not explained by the lower dimensional representation $P_V(X)$ is defined as follows
 
 
@@ -485,12 +526,9 @@ RV(r)
 $$
 ##### proof
 
+- the following being the projection itself (see [[projection#projection into an orthonormal subspace]]) 
 $$
-\begin{split}
-&V^\top \left(VP_V(X) - X\right) = 0 \\ 
-&V^\top X = V^\top VP_V(X) = P_V(X) \\ 
-
-\end{split}
+P_V(X) = VV^\top X
 $$
 
 - $V^\top U=[I_r , 0]^\top$
@@ -498,7 +536,21 @@ $$
 $$
 \begin{split}
 \mathbb{E} \left[ \left\| P_V(X)  \right\|_2^2 \right]
-&=\mathbb{E} \left[ \left\| V^\top X  \right\|_2^2 \right] \\
+&=\mathbb{E} \left[ \left\| VV^\top X  \right\|_2^2 \right] \\
+&=\mathbb{E} \left[\mathrm{tr}\left((VV^\top X)^\top VV^\top X\right) \right] \\
+&=\mathbb{E} \left[\mathrm{tr}\left( X^\top VV^\top VV^\top X\right) \right] \\
+&=\mathbb{E} \left[\mathrm{tr}\left( X^\top VV^\top X\right) \right] \\
+&= \mathbb{E} \left[ \mathrm{tr}(V^\top X X^\top V) \right] \\
+&= \mathrm{tr}(V^\top \Sigma V) \\
+&= \mathrm{tr}(V^\top U\mathrm{diag}(\lambda_1,..., \lambda_n)U^\top V) \\
+&= \sum_{i=1}^r \lambda_i
+\end{split}
+$$
+
+$$
+\begin{split}
+\mathbb{E} \left[ \left\| P_V(X)  \right\|_2^2 \right]
+&=\mathbb{E} \left[ \left\| VV^\top X  \right\|_2^2 \right] \\
 &=\mathbb{E} \left[\mathrm{tr}\left((V^\top X)^\top V^\top X\right) \right] \\
 &=\mathbb{E} \left[\mathrm{tr}\left( V^\top X\right)(V^\top X)^\top \right] \\
 &= \mathbb{E} \left[ \mathrm{tr}(V^\top X X^\top V) \right] \\
@@ -507,6 +559,7 @@ $$
 &= \sum_{i=1}^r \lambda_i
 \end{split}
 $$
+
 
 $$
 \begin{split}
@@ -589,7 +642,7 @@ $$
 - with the following being the projection itself (see [[projection#projection into an orthonormal subspace]]) 
 
 $$
-P_V(X) = V^\top X
+P_V(X) = VV^\top X
 $$
 
 

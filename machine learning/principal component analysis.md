@@ -22,6 +22,7 @@ V_r &= \arg\min_{\|v\|=1,\; v \perp V_1, \dots, V_{r-1}} \; \mathbb{E} \left[ \l
 $$
 
 - Equivalently, the optimal $r$-dimensional [[subspace]] $V = \mathrm{span}( U_1, \dots, U_r)$ minimizes the [[projection]] error:
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
 
 $$
 \begin{split}
@@ -46,7 +47,7 @@ $$
 - with the following being the projection itself (see [[projection#projection into an orthonormal subspace]]) 
 
 $$
-P_V(X) = V^\top X
+P_V(X) = VV^\top X
 $$
 
 # -----------
@@ -96,6 +97,7 @@ V_r &= \arg\min_{\|v\|=1,\; v \perp V_1, \dots, V_{r-1}} \; \mathbb{E} \left[ \l
 $$
 
 - Equivalently, the optimal $r$-dimensional [[subspace]] $V = \mathrm{span}( U_1, \dots, U_r)$ minimizes the [[projection]] error:
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
 
 $$
 \begin{split}
@@ -120,36 +122,43 @@ $$
 - with the following being the projection itself (see [[projection#projection into an orthonormal subspace]]) 
 
 $$
-P_V(X) = V^\top X
+P_V(X) = VV^\top X
 $$
 
 ____________
 
-
 ### projection into the column space
-- [[projection]] of a [[vector]] $b$ to the [[column space]] of [[matrix]] $A$ is defined as $P_A(b)$
-- $b - AP_A(b)$ has to be [[orthogonal]] to the [[column space]] of $A$ 
+- [[projection]] of a [[vector]] $b \in \mathbb{R}^n$ to the [[column space]] of [[matrix]] $A \in \mathbb{R}^{n \times d}$ is defined as $P_A(b)=Ax$ 
+- $x=\mathrm{arg} \min \|Ax - b \|$ is the coefficient vector that writes the [[projection]]in the coordinates of $A$
+- $b - P_A(b)$ has to be [[orthogonal]] to the [[column space]] of $A$ 
+- thus the [[projection]] matrix is $P_A = A\left(A^\top A \right)^{-1}A^\top$ and the projection function is $P_A(b) = A\left(A^\top A \right)^{-1}A^\top b$
 
 $$
 \begin{split}
-\langle A, b-AP_A(b) \rangle &= A^\top \left(b-AP_A(b)\right) = 0 \\
-A^\top b  &= A^\top AP_A(b)\\
-P_A(b)  &= \left(A^\top A \right)^{-1}A^\top b
-
+\langle A, b-P_A(b) \rangle &= A^\top \left(b-P_A(b)\right) = 0 \\
+A^\top P_A(b) &= A^\top b  \\ 
+A^\top Ax &= A^\top b  \\ 
+x  &= \left(A^\top A \right)^{-1}A^\top b\\
+P_A(b)=Ax  &= A \left(A^\top A \right)^{-1}A^\top b\\
 \end{split}
 $$
+
 
 ### projection into an orthonormal subspace
 - given the [[orthonormal]] [[basis]] $V=V_1,..., V_n \in \mathbb{R}^{d \times n}$ with $V^\top V=I$
-- let $P_V(X)$ be the [[projection]] of $X$ into $\mathrm{span}(V_1, ..., V_n)$
+- let $P_V(X)=Vx$ be the [[projection]] of $X$ into $\mathrm{span}(V_1, ..., V_n)$
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
+- $x=\mathrm{arg} \min \|Vx - X \|$ is the coefficient vector that writes the [[projection]] in the coordinates of $V$
 
 $$
 \begin{split}
-&V^\top \left(VP_V(X) - X\right) = 0 \\ 
-&V^\top X = V^\top VP_V(X) = P_V(X) \\ 
-
+P_V(X) 
+&= V \left(V^\top V \right)^{-1}V^\top X\\
+&= V IV^\top X\\
+&= V V^\top X\\
 \end{split}
 $$
+
 
 ### eigendecomposition
 - a [[matrix]] $A \in \mathbb{R}^{n\times n}$ is a [[eigendecomposition]] if there exists a [[inverse matrix|inverable matrix]] $B\in \mathbb{R}^{n\times n}$ and a [[diagonal matrix]] $D=diag(\lambda_1, ..., \lambda_n)\in \mathbb{R}^{n\times n}$ such that the following decomposition is possible with $\lambda_1$, ..., $\lambda_n$ being the [[eigenvalue]]
@@ -236,6 +245,7 @@ V_r &= \arg\min_{\|v\|=1,\; v \perp V_1, \dots, V_{r-1}} \; \mathbb{E} \left[ \l
 $$
 
 - Equivalently, the optimal $r$-dimensional [[subspace]] $V = \mathrm{span}( U_1, \dots, U_r)$ minimizes the [[projection]] error:
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
 
 $$
 \begin{split}
@@ -260,37 +270,43 @@ $$
 - with the following being the projection itself (see [[projection#projection into an orthonormal subspace]]) 
 
 $$
-P_V(X) = V^\top X
+P_V(X) = VV^\top X
 $$
-
 
 ____________
 
-
 ### projection into the column space
-- [[projection]] of a [[vector]] $b$ to the [[column space]] of [[matrix]] $A$ is defined as $P_A(b)$
-- $b - AP_A(b)$ has to be [[orthogonal]] to the [[column space]] of $A$ 
+- [[projection]] of a [[vector]] $b \in \mathbb{R}^n$ to the [[column space]] of [[matrix]] $A \in \mathbb{R}^{n \times d}$ is defined as $P_A(b)=Ax$ 
+- $x=\mathrm{arg} \min \|Ax - b \|$ is the coefficient vector that writes the [[projection]]in the coordinates of $A$
+- $b - P_A(b)$ has to be [[orthogonal]] to the [[column space]] of $A$ 
+- thus the [[projection]] matrix is $P_A = A\left(A^\top A \right)^{-1}A^\top$ and the projection function is $P_A(b) = A\left(A^\top A \right)^{-1}A^\top b$
 
 $$
 \begin{split}
-\langle A, b-AP_A(b) \rangle &= A^\top \left(b-AP_A(b)\right) = 0 \\
-A^\top b  &= A^\top AP_A(b)\\
-P_A(b)  &= \left(A^\top A \right)^{-1}A^\top b
-
+\langle A, b-P_A(b) \rangle &= A^\top \left(b-P_A(b)\right) = 0 \\
+A^\top P_A(b) &= A^\top b  \\ 
+A^\top Ax &= A^\top b  \\ 
+x  &= \left(A^\top A \right)^{-1}A^\top b\\
+P_A(b)=Ax  &= A \left(A^\top A \right)^{-1}A^\top b\\
 \end{split}
 $$
+
 
 ### projection into an orthonormal subspace
 - given the [[orthonormal]] [[basis]] $V=V_1,..., V_n \in \mathbb{R}^{d \times n}$ with $V^\top V=I$
-- let $P_V(X)$ be the [[projection]] of $X$ into $\mathrm{span}(V_1, ..., V_n)$
+- let $P_V(X)=Vx$ be the [[projection]] of $X$ into $\mathrm{span}(V_1, ..., V_n)$
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
+- $x=\mathrm{arg} \min \|Vx - X \|$ is the coefficient vector that writes the [[projection]] in the coordinates of $V$
 
 $$
 \begin{split}
-&V^\top \left(VP_V(X) - X\right) = 0 \\ 
-&V^\top X = V^\top VP_V(X) = P_V(X) \\ 
-
+P_V(X) 
+&= V \left(V^\top V \right)^{-1}V^\top X\\
+&= V IV^\top X\\
+&= V V^\top X\\
 \end{split}
 $$
+
 
 ### eigendecomposition
 - a [[matrix]] $A \in \mathbb{R}^{n\times n}$ is a [[eigendecomposition]] if there exists a [[inverse matrix|inverable matrix]] $B\in \mathbb{R}^{n\times n}$ and a [[diagonal matrix]] $D=diag(\lambda_1, ..., \lambda_n)\in \mathbb{R}^{n\times n}$ such that the following decomposition is possible with $\lambda_1$, ..., $\lambda_n$ being the [[eigenvalue]]
@@ -396,6 +412,7 @@ V_r &= \arg\min_{\|v\|=1,\; v \perp V_1, \dots, V_{r-1}} \; \mathbb{E} \left[ \l
 $$
 
 - Equivalently, the optimal $r$-dimensional [[subspace]] $V = \mathrm{span}( U_1, \dots, U_r)$ minimizes the [[projection]] error:
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
 
 $$
 \begin{split}
@@ -420,7 +437,7 @@ $$
 - with the following being the projection itself (see [[projection#projection into an orthonormal subspace]]) 
 
 $$
-P_V(X) = V^\top X
+P_V(X) = VV^\top X
 $$
 
 ### eigendecomposition

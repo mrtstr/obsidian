@@ -11,14 +11,14 @@ g, f
 \end{split}
 $$
 
-- for example using the [[principal component analysis]] 
+- for example using the [[principal component analysis]] with the [[orthonormal matrix]] $V \in \mathbb{R}^{d \times r}$ with $V^\top V = I_r$ but $V V^\top \neq I_d$
 
 
 $$
 \begin{split}
-Z &=g(X) = P_V(X) = V^\top X \\
-f(Z) &= P_{V^\top}(Z) = V Z \\
-\tilde X &= f\left(g\left(X\right)\right) = f\left(V^\top X\right)= VV^\top X = X\\
+Z &=g(X) = V^\top X \\
+f(Z) &=   V Z \\
+\tilde X &= f\left(g\left(X\right)\right) = f\left(V^\top X\right)= VV^\top X\\
 \end{split}
 $$
 
@@ -109,9 +109,8 @@ $$
 - with the following being the projection itself (see [[projection#projection into an orthonormal subspace]]) 
 
 $$
-P_V(X) = V^\top X
+P_V(X) = VV^\top X
 $$
-
 
 
 Tags: mathematics SS25
