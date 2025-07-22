@@ -232,8 +232,6 @@ $$
 P_V(X) = VV^\top X
 $$
 
-
-
 Tags: mathematics SS25
 <!--ID: 1753171070154-->
 END
