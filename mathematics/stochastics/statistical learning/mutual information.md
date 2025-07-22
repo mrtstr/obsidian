@@ -47,7 +47,7 @@ $$
 #### properties
 1) $I(X, Y) \geq 0$
 2) $I(X, Y) = 0 \Leftrightarrow$ $X$ and $Y$ are [[stochastic independent]]
-
+3) $I(X, Y) \leq \min(H(X), H(Y))$
 
 #### high dimensional case
 
@@ -214,7 +214,8 @@ $$
 #### properties
 1) $I(X, Y) \geq 0$
 2) $I(X, Y) = 0 \Leftrightarrow$ $X$ and $Y$ are [[stochastic independent]]
-
+3) $I(X, Y) \leq \min(H(X), H(Y))$
+4) $I(X, Y) = \min(H(X), H(Y))$ if they are a deterministic function of each other
 _______________
 
 ### kl divergence

@@ -1,4 +1,5 @@
 ### principal component analysis
+- represent a [[random vector]] in a lower dimensional [[latent space]] of a given [[dimensions|dimension]] such that it captures the most amount of [[variance]]
 - [[principal component analysis]] computes an **orthogonal [[projection]]** of the input data into a lower-dimensional space in order to represent it in a reduced [[latent space]].
 - The amount of information retained by the projection can be measured using the **[[explained variance]]**, which quantifies how much of the original variance is preserved.
 - let $X \in \mathbb{R}^{d}$ be zero mean [[random variable]] $X \in \mathbb{R}^{n}$ with $\Sigma=\mathbb{VAR} \left[X\right]$ with a [[eigendecomposition|spectral decomposition]]  
@@ -33,7 +34,8 @@ V^{(r)}
 \end{split}
 $$
 
-- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as  follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this means that $V = \mathrm{span}( U_1, \dots, U_r)$ is the $r$ dimensional [[subspace]] that computes the most amount of [[variance]] of the data $X$
 
 $$
 \begin{split}
@@ -70,21 +72,18 @@ Basic
 
 Back: 
 ### principal component analysis
+- represent a [[random vector]] in a lower dimensional [[latent space]] of a given [[dimensions|dimension]] such that it captures the most amount of [[variance]]
 - [[principal component analysis]] computes an **orthogonal [[projection]]** of the input data into a lower-dimensional space in order to represent it in a reduced [[latent space]].
 - The amount of information retained by the projection can be measured using the **[[explained variance]]**, which quantifies how much of the original variance is preserved.
-
 - let $X \in \mathbb{R}^{d}$ be zero mean [[random variable]] $X \in \mathbb{R}^{n}$ with $\Sigma=\mathbb{VAR} \left[X\right]$ with a [[eigendecomposition|spectral decomposition]]  
-- since $\Sigma$ is a [[symmetric matrix]] it is always a [[eigendecomposition]] with a [[orthonormal]] bases, and it admits a [[eigendecomposition|spectral decomposition]] 
+- since $\Sigma$ is a [[symmetric matrix]] it is always a [[eigendecomposition]] with a [[orthonormal]] bases, and it admits a [[eigendecomposition]]
 
 $$
-\Sigma=U\mathrm{diag}(\lambda_1,..., \lambda_n)U^\top
+\Sigma= \frac{1}{n} X^\top X =U\mathrm{diag}(\lambda_1,..., \lambda_n)U^\top
 $$
 
 - with $\lambda_1\geq ...\geq \lambda_d$ being the [[eigenvalue]] and $U=[U_1, ..., U_d] \in \mathbb{R}^{d \times d}$ its [[orthogonal matrix]] of[[eigenvector]]s
 
-$$
-\Sigma = \frac{1}{n} X^\top X
-$$
 
 - Then the principal components $V_1, \dots, V_r$ that solve the following minimization problems are the [[orthonormal]] [[eigenvector]] of $\Sigma$
 - in other words the [[principal component analysis]] is a reduced form of the [[eigendecomposition]] of the empirical [[covariance matrix]]
@@ -108,7 +107,8 @@ V^{(r)}
 \end{split}
 $$
 
-- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as  follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this means that $V = \mathrm{span}( U_1, \dots, U_r)$ is the $r$ dimensional [[subspace]] that computes the most amount of [[variance]] of the data $X$
 
 $$
 \begin{split}
@@ -124,6 +124,7 @@ $$
 $$
 P_V(X) = VV^\top X
 $$
+
 
 ____________
 
@@ -186,7 +187,7 @@ $$
 
 #### eigendecomposition of symmetric matrices
 - if $A$ is a [[symmetric matrix]] then $B$ is an [[orthogonal matrix]] because $B^T=B^{-1}$ 
-- every [[symmetric matrix]] is a [[eigendecomposition]]
+- every [[symmetric matrix]] is a [[eigendecomposition]] but if $\mathrm{rank}(A)<d$ some of its [[eigenvalue]] are zero but it still has $d$ [[linear independent]] [[eigenvector]]
 
 
 Tags: mathematics SS25
@@ -198,6 +199,7 @@ START
 Basic
 [[principal component analysis]]
 - proof for the following what 
+- interpretation of the first statement
 
 1) 
 
@@ -213,25 +215,24 @@ $$
 
 
 $$
-P_V(X) = V^\top X
+P_V(X) = VV^\top X
 $$
 
 
 
 Back: 
 ### principal component analysis
+- represent a [[random vector]] in a lower dimensional [[latent space]] of a given [[dimensions|dimension]] such that it captures the most amount of [[variance]]
+- [[principal component analysis]] computes an **orthogonal [[projection]]** of the input data into a lower-dimensional space in order to represent it in a reduced [[latent space]].
+- The amount of information retained by the projection can be measured using the **[[explained variance]]**, which quantifies how much of the original variance is preserved.
 - let $X \in \mathbb{R}^{d}$ be zero mean [[random variable]] $X \in \mathbb{R}^{n}$ with $\Sigma=\mathbb{VAR} \left[X\right]$ with a [[eigendecomposition|spectral decomposition]]  
-- since $\Sigma$ is a [[symmetric matrix]] it is always a [[eigendecomposition]] with a [[orthonormal]] bases, and it admits a [[eigendecomposition|spectral decomposition]] 
+- since $\Sigma$ is a [[symmetric matrix]] it is always a [[eigendecomposition]] with a [[orthonormal]] bases, and it admits a [[eigendecomposition]]
 
 $$
-\Sigma=U\mathrm{diag}(\lambda_1,..., \lambda_n)U^\top
+\Sigma= \frac{1}{n} X^\top X =U\mathrm{diag}(\lambda_1,..., \lambda_n)U^\top
 $$
 
 - with $\lambda_1\geq ...\geq \lambda_d$ being the [[eigenvalue]] and $U=[U_1, ..., U_d] \in \mathbb{R}^{d \times d}$ its [[orthogonal matrix]] of[[eigenvector]]s
-
-$$
-\Sigma = \frac{1}{n} X^\top X
-$$
 
 
 - Then the principal components $V_1, \dots, V_r$ that solve the following minimization problems are the [[orthonormal]] [[eigenvector]] of $\Sigma$
@@ -256,7 +257,8 @@ V^{(r)}
 \end{split}
 $$
 
-- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as  follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this means that $V = \mathrm{span}( U_1, \dots, U_r)$ is the $r$ dimensional [[subspace]] that computes the most amount of [[variance]] of the data $X$
 
 $$
 \begin{split}
@@ -272,6 +274,7 @@ $$
 $$
 P_V(X) = VV^\top X
 $$
+
 
 ____________
 
@@ -334,7 +337,8 @@ $$
 
 #### eigendecomposition of symmetric matrices
 - if $A$ is a [[symmetric matrix]] then $B$ is an [[orthogonal matrix]] because $B^T=B^{-1}$ 
-- every [[symmetric matrix]] is a [[eigendecomposition]]
+- every [[symmetric matrix]] is a [[eigendecomposition]] but if $\mathrm{rank}(A)<d$ some of its [[eigenvalue]] are zero but it still has $d$ [[linear independent]] [[eigenvector]]
+
 
 
 Tags: mathematics SS25
@@ -389,6 +393,7 @@ $$
 $$
 
 ### principal component analysis
+- represent a [[random vector]] in a lower dimensional [[latent space]] of a given [[dimensions|dimension]] such that it captures the most amount of [[variance]]
 - [[principal component analysis]] computes an **orthogonal [[projection]]** of the input data into a lower-dimensional space in order to represent it in a reduced [[latent space]].
 - The amount of information retained by the projection can be measured using the **[[explained variance]]**, which quantifies how much of the original variance is preserved.
 - let $X \in \mathbb{R}^{d}$ be zero mean [[random variable]] $X \in \mathbb{R}^{n}$ with $\Sigma=\mathbb{VAR} \left[X\right]$ with a [[eigendecomposition|spectral decomposition]]  
@@ -423,7 +428,8 @@ V^{(r)}
 \end{split}
 $$
 
-- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as  follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this means that $V = \mathrm{span}( U_1, \dots, U_r)$ is the $r$ dimensional [[subspace]] that computes the most amount of [[variance]] of the data $X$
 
 $$
 \begin{split}
@@ -439,6 +445,7 @@ $$
 $$
 P_V(X) = VV^\top X
 $$
+
 
 ### eigendecomposition
 - a [[matrix]] $A \in \mathbb{R}^{n\times n}$ is a [[eigendecomposition]] if there exists a [[inverse matrix|inverable matrix]] $B\in \mathbb{R}^{n\times n}$ and a [[diagonal matrix]] $D=diag(\lambda_1, ..., \lambda_n)\in \mathbb{R}^{n\times n}$ such that the following decomposition is possible with $\lambda_1$, ..., $\lambda_n$ being the [[eigenvalue]]
@@ -466,7 +473,7 @@ $$
 
 #### eigendecomposition of symmetric matrices
 - if $A$ is a [[symmetric matrix]] then $B$ is an [[orthogonal matrix]] because $B^T=B^{-1}$ 
-- every [[symmetric matrix]] is a [[eigendecomposition]]
+- every [[symmetric matrix]] is a [[eigendecomposition]] but if $\mathrm{rank}(A)<d$ some of its [[eigenvalue]] are zero but it still has $d$ [[linear independent]] [[eigenvector]]
 
 ### singular value decomposition
 - given a [[matrix]] $A \in \mathbb{R}^{n \times m}$ with [[rank]] $r$

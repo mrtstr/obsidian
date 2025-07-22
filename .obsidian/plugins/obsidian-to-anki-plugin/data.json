@@ -2016,7 +2016,7 @@
     "mathematics/stochastics/conditional covariance matrix.md": "5701b723e0b4c8adf7f73aece48a41c1",
     "mathematics/stochastics/linear combinations of random variables.md": "c5478082fcddd28bfc6bfcc239843d70",
     "mathematics/stochastics/kl divergence.md": "619dc08597e731a8886a647e4909bdd4",
-    "mathematics/stochastics/statistical learning/mutual information.md": "c484617480713b3bafa2cebb286a654d",
+    "mathematics/stochastics/statistical learning/mutual information.md": "a0fd69f9a6a588c947a267fec573ace4",
     "mathematics/stochastics/statistical learning/ridge regression.md": "4ccf4afa24eb083f6a9b022e26f87e62",
     "mathematics/stochastics/statistical learning/maximum aposteriori.md": "89323a1d206046c28afe194d505feba7",
     "mathematics/stochastics/statistical learning/ordinary least square estimator.md": "b2970a4748b38507eb367f2a0d2f0ee6",
@@ -2047,10 +2047,11 @@
     "mathematics/stochastics/statistical learning/multinomial logistic regresssion.md": "a7ae1e661ea701b811e77127a3eaf0b2",
     "machine learning/logit.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/softmax function.md": "a239d9466a4a60df2d50099f9b322358",
-    "machine learning/principal component analysis.md": "cb1784aa91d738e0efdeef3ff1926255",
-    "machine learning/autoencoder.md": "f17f8fcec9da8b963eaaa53463546e7c",
-    "mathematics/basics/eigendecomposition.md": "01a0e5521a30aef2dda1b6e5811e1f20",
-    "machine learning/explained variance.md": "4d26c0f3246011d38870f41f500c17a2"
+    "machine learning/principal component analysis.md": "538352a5c05e8657dc8f4d075d804e24",
+    "machine learning/autoencoder.md": "50aa70c6216b8a080b4e90b5a5e5b7c8",
+    "mathematics/basics/eigendecomposition.md": "05ca48d5bd2a711cdc5513ba479c93b5",
+    "machine learning/explained variance.md": "184a998433be63c54de2a99efe52e0d9",
+    "machine learning/power iteration.md": "ef560f23ff6fb7725f643c4f42e44b6a"
   },
   "fields_dict": {
     "Basic": [

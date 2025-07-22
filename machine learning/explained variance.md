@@ -233,13 +233,14 @@ PEV(r)
 &= \mathbb{E} \left[ \left\| X -  P_V(X)  \right\|_2^2 \right] \\
 &= \frac{TV - RV(r)}{TV} \\
 &= \frac{\sum_{i=1}^d \lambda_i  - \sum_{i=r+1}^d \lambda_i }{\sum_{i=1}^d \lambda_i } \\
-&= \frac{\sum_{i=r}^d \lambda_i   }{\sum_{i=1}^d \lambda_i } \\
+&= \frac{\sum_{i=r}^r \lambda_i   }{\sum_{i=1}^d \lambda_i } \\
 \end{split}
 $$
 
 ______________
 
 ### principal component analysis
+- represent a [[random vector]] in a lower dimensional [[latent space]] of a given [[dimensions|dimension]] such that it captures the most amount of [[variance]]
 - [[principal component analysis]] computes an **orthogonal [[projection]]** of the input data into a lower-dimensional space in order to represent it in a reduced [[latent space]].
 - The amount of information retained by the projection can be measured using the **[[explained variance]]**, which quantifies how much of the original variance is preserved.
 - let $X \in \mathbb{R}^{d}$ be zero mean [[random variable]] $X \in \mathbb{R}^{n}$ with $\Sigma=\mathbb{VAR} \left[X\right]$ with a [[eigendecomposition|spectral decomposition]]  
@@ -263,6 +264,7 @@ V_r &= \arg\min_{\|v\|=1,\; v \perp V_1, \dots, V_{r-1}} \; \mathbb{E} \left[ \l
 $$
 
 - Equivalently, the optimal $r$-dimensional [[subspace]] $V = \mathrm{span}( U_1, \dots, U_r)$ minimizes the [[projection]] error:
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
 
 $$
 \begin{split}
@@ -273,7 +275,8 @@ V^{(r)}
 \end{split}
 $$
 
-- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as  follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this means that $V = \mathrm{span}( U_1, \dots, U_r)$ is the $r$ dimensional [[subspace]] that computes the most amount of [[variance]] of the data $X$
 
 $$
 \begin{split}
@@ -289,6 +292,7 @@ $$
 $$
 P_V(X) = VV^\top X
 $$
+
 
 
 Tags: mathematics SS25
@@ -411,13 +415,14 @@ PEV(r)
 &= \mathbb{E} \left[ \left\| X -  P_V(X)  \right\|_2^2 \right] \\
 &= \frac{TV - RV(r)}{TV} \\
 &= \frac{\sum_{i=1}^d \lambda_i  - \sum_{i=r+1}^d \lambda_i }{\sum_{i=1}^d \lambda_i } \\
-&= \frac{\sum_{i=r}^d \lambda_i   }{\sum_{i=1}^d \lambda_i } \\
+&= \frac{\sum_{i=r}^r \lambda_i   }{\sum_{i=1}^d \lambda_i } \\
 \end{split}
 $$
 
 ______________
 
 ### principal component analysis
+- represent a [[random vector]] in a lower dimensional [[latent space]] of a given [[dimensions|dimension]] such that it captures the most amount of [[variance]]
 - [[principal component analysis]] computes an **orthogonal [[projection]]** of the input data into a lower-dimensional space in order to represent it in a reduced [[latent space]].
 - The amount of information retained by the projection can be measured using the **[[explained variance]]**, which quantifies how much of the original variance is preserved.
 - let $X \in \mathbb{R}^{d}$ be zero mean [[random variable]] $X \in \mathbb{R}^{n}$ with $\Sigma=\mathbb{VAR} \left[X\right]$ with a [[eigendecomposition|spectral decomposition]]  
@@ -441,6 +446,7 @@ V_r &= \arg\min_{\|v\|=1,\; v \perp V_1, \dots, V_{r-1}} \; \mathbb{E} \left[ \l
 $$
 
 - Equivalently, the optimal $r$-dimensional [[subspace]] $V = \mathrm{span}( U_1, \dots, U_r)$ minimizes the [[projection]] error:
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
 
 $$
 \begin{split}
@@ -451,7 +457,8 @@ V^{(r)}
 \end{split}
 $$
 
-- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as  follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this means that $V = \mathrm{span}( U_1, \dots, U_r)$ is the $r$ dimensional [[subspace]] that computes the most amount of [[variance]] of the data $X$
 
 $$
 \begin{split}
@@ -465,8 +472,9 @@ $$
 - with the following being the projection itself (see [[projection#projection into an orthonormal subspace]]) 
 
 $$
-P_V(X) = V^\top X
+P_V(X) = VV^\top X
 $$
+
 
 
 Tags: mathematics SS25
@@ -588,13 +596,14 @@ PEV(r)
 &= \mathbb{E} \left[ \left\| X -  P_V(X)  \right\|_2^2 \right] \\
 &= \frac{TV - RV(r)}{TV} \\
 &= \frac{\sum_{i=1}^d \lambda_i  - \sum_{i=r+1}^d \lambda_i }{\sum_{i=1}^d \lambda_i } \\
-&= \frac{\sum_{i=r}^d \lambda_i   }{\sum_{i=1}^d \lambda_i } \\
+&= \frac{\sum_{i=r}^r \lambda_i   }{\sum_{i=1}^d \lambda_i } \\
 \end{split}
 $$
 
 ______________
 
 ### principal component analysis
+- represent a [[random vector]] in a lower dimensional [[latent space]] of a given [[dimensions|dimension]] such that it captures the most amount of [[variance]]
 - [[principal component analysis]] computes an **orthogonal [[projection]]** of the input data into a lower-dimensional space in order to represent it in a reduced [[latent space]].
 - The amount of information retained by the projection can be measured using the **[[explained variance]]**, which quantifies how much of the original variance is preserved.
 - let $X \in \mathbb{R}^{d}$ be zero mean [[random variable]] $X \in \mathbb{R}^{n}$ with $\Sigma=\mathbb{VAR} \left[X\right]$ with a [[eigendecomposition|spectral decomposition]]  
@@ -618,6 +627,7 @@ V_r &= \arg\min_{\|v\|=1,\; v \perp V_1, \dots, V_{r-1}} \; \mathbb{E} \left[ \l
 $$
 
 - Equivalently, the optimal $r$-dimensional [[subspace]] $V = \mathrm{span}( U_1, \dots, U_r)$ minimizes the [[projection]] error:
+- note that $V \in \mathbb{R}^{d \times r}$ is a [[orthonormal matrix]] with $V^\top V = I_r$ but $V V^\top \neq I_d$ in general
 
 $$
 \begin{split}
@@ -628,7 +638,8 @@ V^{(r)}
 \end{split}
 $$
 
-- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this works because of the [[orthogonal|orthogonality]] $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ can be decomposed as  follows with $\mathbb{E} \left[ \left\| X \right\|_2^2 \right]$ being constant and thus doesn't matter in an optimization problem
+- this means that $V = \mathrm{span}( U_1, \dots, U_r)$ is the $r$ dimensional [[subspace]] that computes the most amount of [[variance]] of the data $X$
 
 $$
 \begin{split}
@@ -644,6 +655,7 @@ $$
 $$
 P_V(X) = VV^\top X
 $$
+
 
 
 Tags: mathematics SS25
