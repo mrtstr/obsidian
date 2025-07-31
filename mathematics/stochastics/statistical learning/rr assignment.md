@@ -197,7 +197,24 @@ $$
 
 This expression provides an interpretable closed-form for the optimal regularization parameter under idealized conditions. It highlights the dependence of $\lambda^*_{\mathrm{closed}}$ on the noise variance $\sigma^2$, data dimensionality $d$, number of samples $n$, and the norm of the true parameter vector $||\theta^*||^2$.
 
+- calculate delta MSE depending on lambda vs ols
+$$
+\begin{split}
+\mathrm{MSE}(\theta_{\lambda}) 
+&=  \lambda^2 \sum_{i=1}^d \left( \frac{\beta_i}{\lambda_i+\lambda}\right)^2 +  \frac{\sigma^2}{n} \sum_{i=1}^d  \frac{\lambda_i}{\left(\lambda_i+\lambda\right)^2}  \\
+\end{split}
+$$
 
+$$
+\begin{split}
+\mathrm{MSE}(\theta_\mathrm{OLS}) 
+&=    \frac{1}{n} \sum_{i=1}^d  \frac{\sigma^2}{\lambda_i}  \\
+\end{split}
+$$
+- explain lambda_i = amount of data variance in direction U_i and beta_i is the amount is signal in direction U_i
+- show that it depends on ratio beta^2 / sigma^2 because bias penaltiy is proportional to beta_i and the variance improvement is propotional to sigma^2 
+- in both cases lambda_i is the same since the same random seed was used but sum of beta_i demands on ||theta*||^2 which is much larger for ones
+​
 ![[Pasted image 20250615181031.png]]
 ## Simulation
 
