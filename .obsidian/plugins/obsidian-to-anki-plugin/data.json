@@ -2061,7 +2061,7 @@
     "code/rust/r reference.md": "e3e2e877988adc94954cc9e0d53b39d2",
     "code/rust/r raw pointer.md": "9b4e8bf46b56bb66009766e06599aec1",
     "code/rust/r smart pointer.md": "8dc25c6ebfe49bc82369381c7c8fbc3f",
-    "code/rust/r closure.md": "7f28ed242b89220cc81a8f49ad528632",
+    "code/rust/r closure.md": "d7596506966c8bf9ba17ab166e8147e5",
     "code/rust/r trait.md": "362ba8307457e2f2df5fca9dfd254dc7",
     "code/rust/r field.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r deref.md": "82e114956ffde7234ab1d3e462c05386",
@@ -2083,7 +2083,9 @@
     "code/rust/rust.md": "a52354bd3265e0d5a8a7e5fe5def9c32",
     "code/rust/r syntax.md": "a0e434799d4dfcaa7f81ea5c70677470",
     "code/rust/r compiler.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r compile time.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "code/rust/r compile time.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r functions as arguments.md": "1c40bfcb4564101896112cb181d047d8",
+    "code/rust/r type casting.md": "c0230feb419eb0e1b968f24ffe76079a"
   },
   "fields_dict": {
     "Basic": [
