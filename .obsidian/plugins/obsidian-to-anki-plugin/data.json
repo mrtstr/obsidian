@@ -2085,7 +2085,9 @@
     "code/rust/r compiler.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r compile time.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r functions as arguments.md": "1c40bfcb4564101896112cb181d047d8",
-    "code/rust/r type casting.md": "c0230feb419eb0e1b968f24ffe76079a"
+    "code/rust/r type casting.md": "7603ac3bcd686840c831b1cc52e793e8",
+    "code/rust/r cargo.md": "33bd36011c9a46402b350b9d541c3b88",
+    "code/rust/r build process.md": "c5b6cc9783030ee36db654cc5bfb3a80"
   },
   "fields_dict": {
     "Basic": [
