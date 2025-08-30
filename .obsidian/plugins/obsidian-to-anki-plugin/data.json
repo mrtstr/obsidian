@@ -2095,7 +2095,7 @@
     "code/rust/r vec.md": "efe35ec65ea1235e972a14277a80f2d4",
     "code/rust/r tuple.md": "e64e5d5b9b203162c44746ad52d63730",
     "code/rust/r b tree map.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r hash map.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r hash map.md": "2fc51aba277a7ff5fec5fbf9c6a9c17f",
     "code/rust/r iterators.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r global allocator.md": "e7dbf5fb5d0bf2d46a397d3fcb5ec5af"
   },
