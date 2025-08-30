@@ -55,6 +55,7 @@ START
 Basic
 functions that can take multiple data types in [[rust]]
 - concept
+- 2 ways how to specify it
 - what happens during [[r compile time]]
 - how is it used
 

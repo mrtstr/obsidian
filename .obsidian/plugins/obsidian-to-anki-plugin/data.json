@@ -2056,12 +2056,12 @@
     "code/steam process.md": "44c9daed545be614435baa5ac037742a",
     "code/rust/r optional parameter pattern.md": "0f4bbcb1cd3b323bee041d529683f6bc",
     "code/rust/r marker.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r generic type.md": "337aeb88d92b3e41bb31fc2130424210",
+    "code/rust/r generic type.md": "a10a6ddc0108e57aba2fd19f9f03ccde",
     "code/rust/r unsafe.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r reference.md": "e3e2e877988adc94954cc9e0d53b39d2",
     "code/rust/r raw pointer.md": "9b4e8bf46b56bb66009766e06599aec1",
     "code/rust/r smart pointer.md": "8dc25c6ebfe49bc82369381c7c8fbc3f",
-    "code/rust/r closure.md": "6d592049b31de4127d299b0640d1285d",
+    "code/rust/r closure.md": "d6a8bf969053f55336800b46f8436e9c",
     "code/rust/r trait.md": "362ba8307457e2f2df5fca9dfd254dc7",
     "code/rust/r field.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r deref.md": "82e114956ffde7234ab1d3e462c05386",
@@ -2088,7 +2088,12 @@
     "code/rust/r type casting.md": "7603ac3bcd686840c831b1cc52e793e8",
     "code/rust/r cargo.md": "33bd36011c9a46402b350b9d541c3b88",
     "code/rust/r build process.md": "c5b6cc9783030ee36db654cc5bfb3a80",
-    "code/rust/r design philosophy.md": "a42b24a551e6a4a04621bb9314c5707b"
+    "code/rust/r design philosophy.md": "a42b24a551e6a4a04621bb9314c5707b",
+    "code/rust/r range.md": "db4919c3b41edc26abaac11d1c9402dc",
+    "code/rust/r slicing.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r array.md": "b27a0728d08faac41e365e7f62e5fae7",
+    "code/rust/r vec.md": "0a83d0d89345fad02d4d1e2c26123d47",
+    "code/rust/r tuple.md": "e64e5d5b9b203162c44746ad52d63730"
   },
   "fields_dict": {
     "Basic": [
