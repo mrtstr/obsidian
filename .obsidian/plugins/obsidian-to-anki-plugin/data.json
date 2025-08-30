@@ -2098,7 +2098,9 @@
     "code/rust/r hash map.md": "2fc51aba277a7ff5fec5fbf9c6a9c17f",
     "code/rust/r iterators.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r global allocator.md": "e7dbf5fb5d0bf2d46a397d3fcb5ec5af",
-    "code/rust/r container.md": "30fe19591244d5ccbc7cbf1173c6d9ee"
+    "code/rust/r container.md": "30fe19591244d5ccbc7cbf1173c6d9ee",
+    "code/rust/r string.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r box.md": "c8064211396bbe99161190dd2b41c5e8"
   },
   "fields_dict": {
     "Basic": [
