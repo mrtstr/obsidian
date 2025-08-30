@@ -2092,8 +2092,12 @@
     "code/rust/r range.md": "db4919c3b41edc26abaac11d1c9402dc",
     "code/rust/r slicing.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r array.md": "b27a0728d08faac41e365e7f62e5fae7",
-    "code/rust/r vec.md": "0a83d0d89345fad02d4d1e2c26123d47",
-    "code/rust/r tuple.md": "e64e5d5b9b203162c44746ad52d63730"
+    "code/rust/r vec.md": "efe35ec65ea1235e972a14277a80f2d4",
+    "code/rust/r tuple.md": "e64e5d5b9b203162c44746ad52d63730",
+    "code/rust/r b tree map.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r hash map.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r iterators.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r global allocator.md": "e7dbf5fb5d0bf2d46a397d3fcb5ec5af"
   },
   "fields_dict": {
     "Basic": [
