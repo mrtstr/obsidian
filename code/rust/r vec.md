@@ -2,7 +2,7 @@
 - [[r smart pointer]] on the stack that points to a and contains the values with homogeneous [[r data type]]
 -  the buffer on the [[li heap]] can grow and shrink dynamically
 - can be mutable or immutable
-- supports [[r iterators]] and [[r range]]
+- supports [[r iterator]] and [[r range]]
 
 ```rust
 Vec<T> (on stack)
@@ -72,7 +72,7 @@ Back:
 - [[r smart pointer]] on the stack that points to a and contains the values with homogeneous [[r data type]]
 -  the buffer on the [[li heap]] can grow and shrink dynamically
 - can be mutable or immutable
-- supports [[r iterators]] and [[r range]]
+- supports [[r iterator]] and [[r range]]
 
 ```rust
 Vec<T> (on stack)
@@ -164,7 +164,7 @@ let v3 = [&v1[..], &v2[..]].concat(); // borrows
 - [[r smart pointer]] on the stack that points to a and contains the values with homogeneous [[r data type]]
 -  the buffer on the [[li heap]] can grow and shrink dynamically
 - can be mutable or immutable
-- supports [[r iterators]] and [[r range]]
+- supports [[r iterator]] and [[r range]]
 
 ```rust
 Vec<T> (on stack)

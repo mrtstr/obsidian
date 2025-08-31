@@ -1,13 +1,13 @@
 ### container
 - a container is any data structure that hold multiple elements with homogeneous
 - standard [[r container]] live in `std::collections`
-- share the [[r iterators]] API
+- share the [[r iterator]] API
 - can be purely on the [[li stack]] like [[r array]] or be a [[r smart pointer]] that manages the data on the [[li heap]]
 
 - [[r vec]]
 - [[r array]]
 - [[r hash map]]
-- [[r tuple]] is not a [[r container]] because it has heterogeneous [[r data type]] and does not support the [[r iterators]] API
+- [[r tuple]] is not a [[r container]] because it has heterogeneous [[r data type]] and does not support the [[r iterator]] API
 # --------------
 
 ![[r tuple#tuple]]
@@ -36,13 +36,13 @@ Back:
 ### container
 - a container is any data structure that hold multiple elements with homogeneous
 - standard [[r container]] live in `std::collections`
-- share the [[r iterators]] API
+- share the [[r iterator]] API
 - can be purely on the [[li stack]] like [[r array]] or be a [[r smart pointer]] that manages the data on the [[li heap]]
 
 - [[r vec]]
 - [[r array]]
 - [[r hash map]]
-- [[r tuple]] is not a [[r container]] because it has heterogeneous [[r data type]] and does not support the [[r iterators]] API
+- [[r tuple]] is not a [[r container]] because it has heterogeneous [[r data type]] and does not support the [[r iterator]] API
 
 Tags: code rust
 <!--ID: 1756570478752-->
@@ -84,7 +84,7 @@ Back:
 - [[r smart pointer]] on the stack that points to a and contains the values with homogeneous [[r data type]]
 -  the buffer on the [[li heap]] can grow and shrink dynamically
 - can be mutable or immutable
-- supports [[r iterators]] and [[r range]]
+- supports [[r iterator]] and [[r range]]
 
 ```rust
 Vec<T> (on stack)

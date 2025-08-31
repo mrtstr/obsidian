@@ -2090,17 +2090,19 @@
     "code/rust/r build process.md": "c5b6cc9783030ee36db654cc5bfb3a80",
     "code/rust/r design philosophy.md": "a42b24a551e6a4a04621bb9314c5707b",
     "code/rust/r range.md": "db4919c3b41edc26abaac11d1c9402dc",
-    "code/rust/r slicing.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r array.md": "b27a0728d08faac41e365e7f62e5fae7",
-    "code/rust/r vec.md": "efe35ec65ea1235e972a14277a80f2d4",
+    "code/rust/r slicing.md": "e52f3855490a01204d4d36a5f7773991",
+    "code/rust/r array.md": "e57ea4dcafb187d2c4915b7697d2ceaf",
+    "code/rust/r vec.md": "0998b36774f4b07f9058c1e33ac479e6",
     "code/rust/r tuple.md": "e64e5d5b9b203162c44746ad52d63730",
     "code/rust/r b tree map.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r hash map.md": "2fc51aba277a7ff5fec5fbf9c6a9c17f",
+    "code/rust/r hash map.md": "b354a525f190f46394c402228a8b9ce9",
     "code/rust/r iterators.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r global allocator.md": "e7dbf5fb5d0bf2d46a397d3fcb5ec5af",
-    "code/rust/r container.md": "30fe19591244d5ccbc7cbf1173c6d9ee",
-    "code/rust/r string.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r box.md": "c8064211396bbe99161190dd2b41c5e8"
+    "code/rust/r container.md": "45a67a9688b2dab71137754b48bd719c",
+    "code/rust/r string.md": "cd073e3021bd2ab7d8bd707d28112f8c",
+    "code/rust/r box.md": "c8064211396bbe99161190dd2b41c5e8",
+    "code/rust/r control flow concepts.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r iterator.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [

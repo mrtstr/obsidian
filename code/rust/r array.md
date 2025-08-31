@@ -83,11 +83,6 @@ how to declare the following [[r array]] in [[rust]] (not hard coded)
 ]
 ```
 
-syntax
-- how to define it (3 ways)
-- how to define it [[py list comprehension]] style
-- how to access values and access them dynamically
-- how to work with multidimensional [[r array]] (define it and annotate [[r data type]])
 Back: 
 
 ##### declaration from closure
