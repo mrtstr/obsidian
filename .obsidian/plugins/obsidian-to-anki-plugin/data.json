@@ -2060,7 +2060,7 @@
     "code/rust/r unsafe.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r reference.md": "e3e2e877988adc94954cc9e0d53b39d2",
     "code/rust/r raw pointer.md": "9b4e8bf46b56bb66009766e06599aec1",
-    "code/rust/r smart pointer.md": "8dc25c6ebfe49bc82369381c7c8fbc3f",
+    "code/rust/r smart pointer.md": "b0c6a4ac6cf107de580f04815370beee",
     "code/rust/r closure.md": "d6a8bf969053f55336800b46f8436e9c",
     "code/rust/r trait.md": "362ba8307457e2f2df5fca9dfd254dc7",
     "code/rust/r field.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -2106,8 +2106,9 @@
     "code/rust/r loops.md": "052cb464e8a12827ab0c6a5f5be533ca",
     "code/rust/r in else condition.md": "ee6ca9d1fd615d1ef242820d1023f939",
     "code/rust/r pattern.md": "74735711e5d22139d32b3f29ff42a6e8",
-    "code/rust/r null handling.md": "56a6e65a8273e9786bda47d196bbdd49",
-    "code/rust/r literal.md": "5d054fe1af8c843be5c7040e3d3d192b"
+    "code/rust/r null handling.md": "775d7354bc4746cc347aa15f20bc92c2",
+    "code/rust/r literal.md": "5d054fe1af8c843be5c7040e3d3d192b",
+    "code/rust/r atomic operation.md": "52368852be4fa923cd8807acbd98136e"
   },
   "fields_dict": {
     "Basic": [
