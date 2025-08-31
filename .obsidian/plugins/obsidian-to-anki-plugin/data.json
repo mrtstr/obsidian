@@ -2101,8 +2101,12 @@
     "code/rust/r container.md": "45a67a9688b2dab71137754b48bd719c",
     "code/rust/r string.md": "cd073e3021bd2ab7d8bd707d28112f8c",
     "code/rust/r box.md": "c8064211396bbe99161190dd2b41c5e8",
-    "code/rust/r control flow concepts.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r iterator.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "code/rust/r control flow concepts.md": "38f2406d2645b37f5ce1adadb1138621",
+    "code/rust/r iterator.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r loops.md": "052cb464e8a12827ab0c6a5f5be533ca",
+    "code/rust/r in else condition.md": "ee6ca9d1fd615d1ef242820d1023f939",
+    "code/rust/r pattern.md": "74735711e5d22139d32b3f29ff42a6e8",
+    "code/rust/r null handling.md": "56a6e65a8273e9786bda47d196bbdd49"
   },
   "fields_dict": {
     "Basic": [
