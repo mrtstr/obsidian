@@ -1,12 +1,10 @@
 ### null handling
 - [[rust]] does not have null values
-- null values are handled with the [[r enum]] `Option` than can be `Some` or `None`
+- null values are handled with the [[r enum]] [[r option]] than can be `Some` or `None`
 
-```rust
-enum Option<T> { Some(T), None }
-```
+![[r option#option]]
 
-- when working with `Option` [[r pattern]] matching is often used like in the following example
+- when working with [[r option]] or [[r result]] [[r pattern]] matching is often used like in the following example
 
 ```rust
 let x = Some(5);
@@ -22,6 +20,7 @@ if let Some(val) = x {
 }
 ```
 
+- [[r error and null propagation]]
 
 START
 Basic

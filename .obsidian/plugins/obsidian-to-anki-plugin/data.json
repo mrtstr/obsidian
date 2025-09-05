@@ -2106,9 +2106,15 @@
     "code/rust/r loops.md": "052cb464e8a12827ab0c6a5f5be533ca",
     "code/rust/r in else condition.md": "ee6ca9d1fd615d1ef242820d1023f939",
     "code/rust/r pattern.md": "74735711e5d22139d32b3f29ff42a6e8",
-    "code/rust/r null handling.md": "775d7354bc4746cc347aa15f20bc92c2",
+    "code/rust/r null handling.md": "01441bd6fcf68f8b5524216cdb50d7fe",
     "code/rust/r literal.md": "5d054fe1af8c843be5c7040e3d3d192b",
-    "code/rust/r atomic operation.md": "52368852be4fa923cd8807acbd98136e"
+    "code/rust/r atomic operation.md": "52368852be4fa923cd8807acbd98136e",
+    "code/rust/r crate.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r error and null propagation.md": "46450a69ea040e25667d05918c1765f9",
+    "code/rust/r option.md": "49347562ecb248243f0c4874669fcd66",
+    "code/rust/r result.md": "ac0c14a0106b0d3cd4f09f11b7702d3c",
+    "code/rust/r panic.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r error handling.md": "52dd331394ab068a33a8ca6c03f96b78"
   },
   "fields_dict": {
     "Basic": [
