@@ -2074,7 +2074,7 @@
     "code/rust/r data type.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r struct.md": "aee3f265d61290a1f6f4fd48903cbf1e",
     "code/rust/r scope.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r macro.md": "3b14c90f741d0e939ac4ce73d70c6d68",
+    "code/rust/r macro.md": "e67e5b5a20e9d2b46fdfee6134b6e00b",
     "code/rust/r pointer.md": "f401ba0513f054f7d9eeea680af65db0",
     "code/rust/r variable.md": "ce7f701e61a4b015600c75dd4f5ec985",
     "code/rust/r packaging.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -2118,10 +2118,12 @@
     "code/system C libraries.md": "f64ad6385a430ee6700a037fa9f5045a",
     "code/assembly.md": "0a0b54f39a235c93d776046e5e0d3163",
     "code/LLVM IR.md": "c124072094a17ed7885264795083f9df",
-    "code/compiler.md": "091af6b80a2d835e785e8f9c0db66698",
+    "code/compiler.md": "992d55d71e910d958b962d330e3d8568",
     "code/rust/r alloc.md": "eab3a36544a634257db9366f3eca916e",
     "code/rust/r std.md": "e88a7eae732d045b03a50c1ab8d9a4d6",
-    "code/rust/r core.md": "324dd0fe026ac2c1e249812d858336bc"
+    "code/rust/r core.md": "324dd0fe026ac2c1e249812d858336bc",
+    "code/rust/r run time.md": "20b06bd0d54f1e607089895bdfdb6bde",
+    "code/rust/r object file.md": "d185fb865662d8eafaa7631d4b999abf"
   },
   "fields_dict": {
     "Basic": [
