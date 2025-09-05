@@ -2080,7 +2080,7 @@
     "code/rust/r packaging.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r imports.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r ownership.md": "b68fb7b74d78140acc441aef98ac3c84",
-    "code/rust/rust.md": "a52354bd3265e0d5a8a7e5fe5def9c32",
+    "code/rust/rust.md": "d99c27cb011cb64042d6e032c8ebe85d",
     "code/rust/r syntax.md": "a0e434799d4dfcaa7f81ea5c70677470",
     "code/rust/r compiler.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r compile time.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -2114,7 +2114,14 @@
     "code/rust/r option.md": "49347562ecb248243f0c4874669fcd66",
     "code/rust/r result.md": "ac0c14a0106b0d3cd4f09f11b7702d3c",
     "code/rust/r panic.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r error handling.md": "52dd331394ab068a33a8ca6c03f96b78"
+    "code/rust/r error handling.md": "52dd331394ab068a33a8ca6c03f96b78",
+    "code/system C libraries.md": "f64ad6385a430ee6700a037fa9f5045a",
+    "code/assembly.md": "0a0b54f39a235c93d776046e5e0d3163",
+    "code/LLVM IR.md": "c124072094a17ed7885264795083f9df",
+    "code/compiler.md": "091af6b80a2d835e785e8f9c0db66698",
+    "code/rust/r alloc.md": "eab3a36544a634257db9366f3eca916e",
+    "code/rust/r std.md": "e88a7eae732d045b03a50c1ab8d9a4d6",
+    "code/rust/r core.md": "324dd0fe026ac2c1e249812d858336bc"
   },
   "fields_dict": {
     "Basic": [
