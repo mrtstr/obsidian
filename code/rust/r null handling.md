@@ -20,7 +20,12 @@ if let Some(val) = x {
 }
 ```
 
-- [[r error and null propagation]]
+# -------------
+
+
+![[r error and null propagation#error and null propagation]]
+
+# anki
 
 START
 Basic
@@ -50,6 +55,48 @@ match x {
 
 if let Some(val) = x {
 	println!("value = {val}")
+}
+```
+
+### error and null propagation
+- errors can be propagated back with the following pattern thru the functions that works with [[r option]] and [[r result]]
+- `std::fs::File::open("user.txt")?` is syntactic sugar for the following
+
+```rust
+let file = match std::fs::File::open("user.txt") {
+    Ok(f) => f,
+    Err(e) => return Err(e),
+};
+```
+
+- that means the following function reads a [[r string]] and returns it as a [[r result]] if everything worked and if there is an error somewhere during opening the file or reading the file it immediately returns the error 
+
+```rust
+fn read_username() -> std::io::Result<String> {
+    let mut s = String::new();
+    std::fs::File::open("user.txt")?.read_to_string(&mut s)?;
+    Ok(s)
+}
+```
+
+this is equivalent for the following
+
+```rust
+fn read_username() -> io::Result<String> {
+    // Try opening the file
+    let mut file = match File::open("user.txt") {
+        Ok(f) => f,
+        Err(e) => return Err(e),
+    };
+
+    // Prepare the buffer
+    let mut s = String::new();
+
+    // Try reading into it
+    match file.read_to_string(&mut s) {
+        Ok(_) => Ok(s),
+        Err(e) => Err(e),
+    }
 }
 ```
 

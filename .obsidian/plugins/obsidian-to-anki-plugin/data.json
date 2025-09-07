@@ -2074,7 +2074,7 @@
     "code/rust/r data type.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r struct.md": "aee3f265d61290a1f6f4fd48903cbf1e",
     "code/rust/r scope.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r macro.md": "c70aea6d31c5bfe109ad5a4560eb7253",
+    "code/rust/r macro.md": "17980f1e175e7b333f67c4b70fc6f16a",
     "code/rust/r pointer.md": "f401ba0513f054f7d9eeea680af65db0",
     "code/rust/r variable.md": "ce7f701e61a4b015600c75dd4f5ec985",
     "code/rust/r packaging.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -2106,7 +2106,7 @@
     "code/rust/r loops.md": "052cb464e8a12827ab0c6a5f5be533ca",
     "code/rust/r in else condition.md": "ee6ca9d1fd615d1ef242820d1023f939",
     "code/rust/r pattern.md": "74735711e5d22139d32b3f29ff42a6e8",
-    "code/rust/r null handling.md": "01441bd6fcf68f8b5524216cdb50d7fe",
+    "code/rust/r null handling.md": "eadd13e4c105afebdb54efa71b784af2",
     "code/rust/r literal.md": "5d054fe1af8c843be5c7040e3d3d192b",
     "code/rust/r atomic operation.md": "52368852be4fa923cd8807acbd98136e",
     "code/rust/r crate.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -2123,7 +2123,8 @@
     "code/rust/r std.md": "e88a7eae732d045b03a50c1ab8d9a4d6",
     "code/rust/r core.md": "324dd0fe026ac2c1e249812d858336bc",
     "code/rust/r run time.md": "20b06bd0d54f1e607089895bdfdb6bde",
-    "code/rust/r object file.md": "d185fb865662d8eafaa7631d4b999abf"
+    "code/rust/r object file.md": "d185fb865662d8eafaa7631d4b999abf",
+    "code/rust/r ecosystem.md": "ea58f069dd932ca21e48ed6ba111fdfa"
   },
   "fields_dict": {
     "Basic": [

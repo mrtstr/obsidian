@@ -68,7 +68,7 @@ fn main() {
 ##### macro API
 - newer api to define a `declarative macros` in function style
 
-```rust
+```
 macro add($a:expr, $b:expr) {
     $a + $b
 }
@@ -93,6 +93,9 @@ pub fn shout(input: TokenStream) -> TokenStream {
 
     // Return Rust code: println!("UPPER")
     format!("println!(\"{}\")", upper).parse().unwrap()
+    // "println!(\"HELLO\")".parse::<TokenStream>() 
+    // -> Result<TokenStream>
+    // .unwrap() -> TokenStream
 }
 ```
 
@@ -179,7 +182,7 @@ fn main() {
 ##### macro API
 - newer api to define a `declarative macros` in function style
 
-```rust
+```
 macro add($a:expr, $b:expr) {
     $a + $b
 }
@@ -204,6 +207,9 @@ pub fn shout(input: TokenStream) -> TokenStream {
 
     // Return Rust code: println!("UPPER")
     format!("println!(\"{}\")", upper).parse().unwrap()
+    // "println!(\"HELLO\")".parse::<TokenStream>() 
+    // -> Result<TokenStream>
+    // .unwrap() -> TokenStream
 }
 ```
 
@@ -238,6 +244,9 @@ pub fn shout(input: TokenStream) -> TokenStream {
 
     // Return Rust code: println!("UPPER")
     format!("println!(\"{}\")", upper).parse().unwrap()
+    // "println!(\"HELLO\")".parse::<TokenStream>() 
+    // -> Result<TokenStream>
+    // .unwrap() -> TokenStream
 }
 ```
 ### macro
@@ -310,7 +319,7 @@ fn main() {
 ##### macro API
 - newer api to define a `declarative macros` in function style
 
-```rust
+```
 macro add($a:expr, $b:expr) {
     $a + $b
 }
@@ -335,6 +344,9 @@ pub fn shout(input: TokenStream) -> TokenStream {
 
     // Return Rust code: println!("UPPER")
     format!("println!(\"{}\")", upper).parse().unwrap()
+    // "println!(\"HELLO\")".parse::<TokenStream>() 
+    // -> Result<TokenStream>
+    // .unwrap() -> TokenStream
 }
 ```
 
@@ -351,11 +363,13 @@ Basic
 
 - to which category do they belong, and why is this category best suited?
 Back: 
-```rust
+
+```
 macro add($a:expr, $b:expr) {
     $a + $b
 }
 ```
+
 
 ```rust
 // Define a macro
@@ -441,7 +455,7 @@ fn main() {
 ##### macro API
 - newer api to define a `declarative macros` in function style
 
-```rust
+```
 macro add($a:expr, $b:expr) {
     $a + $b
 }
@@ -466,6 +480,9 @@ pub fn shout(input: TokenStream) -> TokenStream {
 
     // Return Rust code: println!("UPPER")
     format!("println!(\"{}\")", upper).parse().unwrap()
+    // "println!(\"HELLO\")".parse::<TokenStream>() 
+    // -> Result<TokenStream>
+    // .unwrap() -> TokenStream
 }
 ```
 
