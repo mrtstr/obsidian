@@ -2060,7 +2060,7 @@
     "code/rust/r unsafe.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r reference.md": "e3e2e877988adc94954cc9e0d53b39d2",
     "code/rust/r raw pointer.md": "9b4e8bf46b56bb66009766e06599aec1",
-    "code/rust/r smart pointer.md": "b0c6a4ac6cf107de580f04815370beee",
+    "code/rust/r smart pointer.md": "775d9c0b0b5839673b0c129ebf801a7d",
     "code/rust/r closure.md": "d6a8bf969053f55336800b46f8436e9c",
     "code/rust/r trait.md": "362ba8307457e2f2df5fca9dfd254dc7",
     "code/rust/r field.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -2100,7 +2100,7 @@
     "code/rust/r global allocator.md": "e7dbf5fb5d0bf2d46a397d3fcb5ec5af",
     "code/rust/r container.md": "45a67a9688b2dab71137754b48bd719c",
     "code/rust/r string.md": "cd073e3021bd2ab7d8bd707d28112f8c",
-    "code/rust/r box.md": "c8064211396bbe99161190dd2b41c5e8",
+    "code/rust/r box.md": "8d10fffa4455bc061c656a0d055fb8e1",
     "code/rust/r control flow concepts.md": "38f2406d2645b37f5ce1adadb1138621",
     "code/rust/r iterator.md": "552579ee769576bc6d9b0175a46ad0ee",
     "code/rust/r loops.md": "052cb464e8a12827ab0c6a5f5be533ca",
@@ -2125,10 +2125,17 @@
     "code/rust/r run time.md": "20b06bd0d54f1e607089895bdfdb6bde",
     "code/rust/r object file.md": "d185fb865662d8eafaa7631d4b999abf",
     "code/rust/r ecosystem.md": "ea58f069dd932ca21e48ed6ba111fdfa",
-    "code/rust/r thread.md": "1cd895ebdd2e953427a62955c8e1e773",
+    "code/rust/r thread.md": "217d06e1828bbb8b8c729525c3d479ab",
     "code/rust/r rayon.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r tokio.md": "9a448c4deedbe6ddcd53ef67fc0eaca4",
-    "code/rust/r async.md": "970e63d0f6fba3089ced4f3434ce1f61"
+    "code/rust/r async.md": "970e63d0f6fba3089ced4f3434ce1f61",
+    "code/rust/r atomics.md": "2d0f6973aa79063c8d92ef3bec0e6108",
+    "code/rust/r RwLock (read–write lock).md": "32c4454db8c29d99a527628b58ada804",
+    "code/rust/r Mutex (mutual exclusion).md": "3a5909656c6e36b4e9da6e687ccdc5c5",
+    "code/rust/r Rc (reference counted).md": "28b0b78408bec18283017cb759495a72",
+    "code/rust/r Arc (atomic reference counted).md": "e6d71a8e5dc5f1002bc3a1e9482b5736",
+    "code/rust/r RefCell.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r multi thread types.md": "d6061fa5609fbb27f35c80a7a5b8be08"
   },
   "fields_dict": {
     "Basic": [
