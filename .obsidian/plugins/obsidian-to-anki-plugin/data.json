@@ -1401,7 +1401,7 @@
     "linux/li virtual memory.md": "0b3ce1fe01e0d6ccecc4754fb5b40fb6",
     "linux/li user process.md": "d41d8cd98f00b204e9800998ecf8427e",
     "linux/li top and htop.md": "bbc3f1d7716a60e6410b81c14c1f9689",
-    "linux/li thread.md": "63053d3a42a5d7bb88b588226d92e770",
+    "linux/li thread.md": "5a7ba42e267adb188150276fcec42790",
     "linux/li terminal.md": "10b71eb7f0f9600cafab7be1b1e56e26",
     "linux/li tee.md": "fb28b2488bfd44501a8738616cae96d0",
     "linux/li stdout.md": "4a9782b2306487dfc6f755710027109d",
@@ -2124,7 +2124,11 @@
     "code/rust/r core.md": "324dd0fe026ac2c1e249812d858336bc",
     "code/rust/r run time.md": "20b06bd0d54f1e607089895bdfdb6bde",
     "code/rust/r object file.md": "d185fb865662d8eafaa7631d4b999abf",
-    "code/rust/r ecosystem.md": "ea58f069dd932ca21e48ed6ba111fdfa"
+    "code/rust/r ecosystem.md": "ea58f069dd932ca21e48ed6ba111fdfa",
+    "code/rust/r thread.md": "1cd895ebdd2e953427a62955c8e1e773",
+    "code/rust/r rayon.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r tokio.md": "9a448c4deedbe6ddcd53ef67fc0eaca4",
+    "code/rust/r async.md": "970e63d0f6fba3089ced4f3434ce1f61"
   },
   "fields_dict": {
     "Basic": [

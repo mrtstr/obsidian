@@ -1,4 +1,4 @@
-## [[li thread]]
+## OS thread
 - flow of execution through the [[li process]] [[li code segment|code]]
 - can be [[li scheduling|scheduled]] for execution independently by the [[li kernel]]
 - to keep track of their execution flow they have their own
@@ -37,6 +37,7 @@ ps -efL  # print all threads
 ### [[li signal]] Handling
 -  threads ca indicate which signals they are accepting and which they are ignoring 
 - the signal can only be delivered to one thread, which is generally the first thread that is accepting that particular [[li signal]]
+# -----------
 
 ![[li state#li state state of a li thread thread (of a li process process )]]
 
