@@ -2136,7 +2136,7 @@
     "code/rust/r Arc (atomic reference counted).md": "e6d71a8e5dc5f1002bc3a1e9482b5736",
     "code/rust/r RefCell.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r multi thread types.md": "d6061fa5609fbb27f35c80a7a5b8be08",
-    "code/rust/r composition over inheritance.md": "ec2b87c151f1c65c6fe1a9190fb9f9a0",
+    "code/rust/r composition over inheritance.md": "cc4dd374668848a7b0c5012491171646",
     "code/rust/r design patterns.md": "7e8d3648479ce3c4950e60805b4d0b04"
   },
   "fields_dict": {

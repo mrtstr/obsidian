@@ -44,16 +44,33 @@ d.bark()
 ```
 
 composition design in [[rust]]:
+
 ```rust
+trait Animal { fn name(&self) -> &str; }
 trait Eater { fn eat(&self); }
 
-struct Dog;
-struct Cat;
+struct Dog { name: String }
+struct Cat { name: String }
 
-impl Eater for Dog { fn eat(&self) { println!("Dog eats kibble"); } }
-impl Eater for Cat { fn eat(&self) { println!("Cat eats fish"); } }
+impl Animal for Dog { fn name(&self) -> &str { &self.name } }
+impl Animal for Cat { fn name(&self) -> &str { &self.name } }
 
-fn feed<T: Eater>(a: T) { a.eat(); }
+// implmentent a trait for a trait
+impl<T: Animal> Eater for T {
+    fn eat(&self) { println!("{}: eats", self.name()); }
+}
+
+fn main() {
+    let d = Dog { name: "Rex".into() };
+    let c = Cat { name: "Misty".into() };
+
+    d.eat();
+    c.eat();
+
+    // trait objects also work (Eater is object-safe)
+    let zoo: Vec<&dyn Eater> = vec![&d, &c];
+    for a in zoo { a.eat(); }
+}
 ```
 
 
@@ -106,6 +123,7 @@ d.bark()    # Dog-specific
 ```
 
 composition design in [[python]]:
+
 ```python
 class Animal:
     def __init__(self, name: str):
@@ -127,16 +145,33 @@ d.bark()
 ```
 
 composition design in [[rust]]:
+
 ```rust
+trait Animal { fn name(&self) -> &str; }
 trait Eater { fn eat(&self); }
 
-struct Dog;
-struct Cat;
+struct Dog { name: String }
+struct Cat { name: String }
 
-impl Eater for Dog { fn eat(&self) { println!("Dog eats kibble"); } }
-impl Eater for Cat { fn eat(&self) { println!("Cat eats fish"); } }
+impl Animal for Dog { fn name(&self) -> &str { &self.name } }
+impl Animal for Cat { fn name(&self) -> &str { &self.name } }
 
-fn feed<T: Eater>(a: T) { a.eat(); }
+// implmentent a trait for a trait
+impl<T: Animal> Eater for T {
+    fn eat(&self) { println!("{}: eats", self.name()); }
+}
+
+fn main() {
+    let d = Dog { name: "Rex".into() };
+    let c = Cat { name: "Misty".into() };
+
+    d.eat();
+    c.eat();
+
+    // trait objects also work (Eater is object-safe)
+    let zoo: Vec<&dyn Eater> = vec![&d, &c];
+    for a in zoo { a.eat(); }
+}
 ```
 
 Tags: code rust

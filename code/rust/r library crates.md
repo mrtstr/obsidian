@@ -1,30 +1,43 @@
-## crate
+## library crates
+- way to expose compiled code to other **programs or [[r crate]]**.
+- generated during the [[compiler#code generation]] and**not executable** themselves
+- inputs to the [[compiler#linking]] process (dynamic or static) and for dynamic libs loaded at runtime
+- **ABI** = how functions/data look at the binary boundary (calling convention, name mangling, layout…).
+    
+### lib / rlib
+- Intermediate/static artifact produced by the [[r compiler]] and for the [[r compiler]]
+- for static [[compiler#linking]]
+- `*.rlib` (Rust static artifact) file
+
+### dylib / cdylib
+- library for dynamic [[compiler#linking]] can be used as interface to other languages
+-  files types depend on the operating system
+	- `.so` for [[linux]]
+	- `.dylib` for macOS 
+	- `.dll` for window
+- available in two different ABIs
+	- `dylib`: uses **Rust ABI** (unstable and rare)
+	-  `cdylib`: uses **C-ABI** = the stable, widely supported ABI used by C. Most languages (Python, Ruby, Java via JNI, etc.) can interop with it.
 
 
-### crate types
-- there are executable `bin` crates that are the final output of the [[compiler#linking]] process
-- [[r library crates]] that are created during the [[compiler#code generation]] and are intended to be used in other applications (dynamic/static, rust/non-rust)
-- [[r macro]] crates for shipping [[r macro]] (compiler plugins)
+### staticlib
+- **Static** C-ABI library (`.a`/`.lib`)
+- Final archive of object files linked **at build time** into a host program
+- **Consumer:** Non-Rust linkers (C/C++/Swift, etc.).
 
-# -----------
+# ----------
 
-![[r library crates#library crates]]
-
-
-
+![[compiler#compiler]]
 # anki
 
 START
 Basic
-- 3 different [[r crate]] types and relationship to the compilation process
+[[r library crates]]
+- general concept
+- 3 different types
+- intended consumer and how they are used during linking / runtime
 
 Back: 
-
-### crate types
-- there are executable `bin` crates that are the final output of the [[compiler#linking]] process
-- [[r library crates]] that are created during the [[compiler#code generation]] and are intended to be used in other applications (dynamic/static, rust/non-rust)
-- [[r macro]] crates for shipping [[r macro]] (compiler plugins)
-
 ## rust library crates
 - way to expose compiled code to other **programs or crates**.
 - generated during the [[compiler#code generation]] and**not executable** themselves
