@@ -2109,7 +2109,7 @@
     "code/rust/r null handling.md": "eadd13e4c105afebdb54efa71b784af2",
     "code/rust/r literal.md": "5d054fe1af8c843be5c7040e3d3d192b",
     "code/rust/r atomic operation.md": "52368852be4fa923cd8807acbd98136e",
-    "code/rust/r crate.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r crate.md": "4835e72e1e12b1eea3c09abce263bfe4",
     "code/rust/r error and null propagation.md": "46450a69ea040e25667d05918c1765f9",
     "code/rust/r option.md": "49347562ecb248243f0c4874669fcd66",
     "code/rust/r result.md": "ac0c14a0106b0d3cd4f09f11b7702d3c",
@@ -2137,7 +2137,12 @@
     "code/rust/r RefCell.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r multi thread types.md": "d6061fa5609fbb27f35c80a7a5b8be08",
     "code/rust/r composition over inheritance.md": "cc4dd374668848a7b0c5012491171646",
-    "code/rust/r design patterns.md": "7e8d3648479ce3c4950e60805b4d0b04"
+    "code/rust/r design patterns.md": "7e8d3648479ce3c4950e60805b4d0b04",
+    "code/rust/r library crates.md": "7716acb715ad9a7f456fb79146aec910",
+    "code/rust/r rust in python packages.md": "67d9cfc0668b92068f6d3ae94a458d4d",
+    "code/python/py packaging formats.md": "e64bf6bd309bde089ec8ba029098db87",
+    "code/python/py sdist.md": "ce3661d22226ac36c06b748e81d91760",
+    "code/python/py wheel.md": "9565f137301f9766b2ccda3b9c78dda1"
   },
   "fields_dict": {
     "Basic": [
