@@ -1,6 +1,7 @@
 ### reference
 - in [[rust]] a [[r reference]] is a [[r pointer]] that borrows the data (it doesn't take [[r ownership]])
-- the `&` operator reads the memory address (= [[r reference]]) from and [[r variable]]
+	→ its a non owning pointer to the [[li heap]] address 
+- the `&` operator reads the memory address (= [[r reference]]) from and [[r variable]] (the opposite operation is dereferencing with `*`)
 - a [[r reference]] is often passed to a [[r function]]
 - the following rule applies: there can be either one mutable reference or multiple immutable references per scope
 
@@ -26,7 +27,7 @@ let mut s = String::from("hello");
 }
 ```
 
-
+![[Pasted image 20250929153637.png]]
 
 # anki
 
@@ -41,7 +42,8 @@ Basic
 Back: 
 ### reference
 - in [[rust]] a [[r reference]] is a [[r pointer]] that borrows the data (it doesn't take [[r ownership]])
-- the `&` operator reads the memory address (= [[r reference]]) from and [[r variable]]
+	→ its a non owning pointer to the [[li heap]] address 
+- the `&` operator reads the memory address (= [[r reference]]) from and [[r variable]] (the opposite operation is dereferencing with `*`)
 - a [[r reference]] is often passed to a [[r function]]
 - the following rule applies: there can be either one mutable reference or multiple immutable references per scope
 
@@ -67,6 +69,8 @@ let mut s = String::from("hello");
 }
 ```
 
+![[Pasted image 20250929153716.png]]
 Tags: code rust
 <!--ID: 1756052658821-->
 END
+

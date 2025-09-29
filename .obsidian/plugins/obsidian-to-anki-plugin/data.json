@@ -329,7 +329,8 @@
     "two-vpcs-to-two-subnets-one-vpc 1.png",
     "Comparison_of_1D_histogram_and_KDE 1.png",
     "exp_dist.png",
-    "Pasted image 20250721103039.png"
+    "Pasted image 20250721103039.png",
+    "Pasted image 20250929153716.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -2056,9 +2057,9 @@
     "code/steam process.md": "44c9daed545be614435baa5ac037742a",
     "code/rust/r optional parameter pattern.md": "0f4bbcb1cd3b323bee041d529683f6bc",
     "code/rust/r marker.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r generic type.md": "a10a6ddc0108e57aba2fd19f9f03ccde",
+    "code/rust/r generic type.md": "79aeff6bf5e2830e410136b9743090f9",
     "code/rust/r unsafe.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r reference.md": "e3e2e877988adc94954cc9e0d53b39d2",
+    "code/rust/r reference.md": "3a17f7915209d976de40a120cab1eaee",
     "code/rust/r raw pointer.md": "9b4e8bf46b56bb66009766e06599aec1",
     "code/rust/r smart pointer.md": "775d9c0b0b5839673b0c129ebf801a7d",
     "code/rust/r closure.md": "d6a8bf969053f55336800b46f8436e9c",
@@ -2072,7 +2073,7 @@
     "code/rust/r constructor.md": "1660c2968b3704d651379116383e6996",
     "code/rust/r function.md": "95e7c54bac7cfb1b342d61d29cfb6a3a",
     "code/rust/r data type.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r struct.md": "aee3f265d61290a1f6f4fd48903cbf1e",
+    "code/rust/r struct.md": "d808ecc814260c6908014061e11d2517",
     "code/rust/r scope.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r macro.md": "17980f1e175e7b333f67c4b70fc6f16a",
     "code/rust/r pointer.md": "f401ba0513f054f7d9eeea680af65db0",
@@ -2084,7 +2085,7 @@
     "code/rust/r syntax.md": "a0e434799d4dfcaa7f81ea5c70677470",
     "code/rust/r compiler.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r compile time.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r functions as arguments.md": "1c40bfcb4564101896112cb181d047d8",
+    "code/rust/r functions as arguments.md": "879127f5f7ea4745daf79203c40fc79a",
     "code/rust/r type casting.md": "7603ac3bcd686840c831b1cc52e793e8",
     "code/rust/r cargo.md": "33bd36011c9a46402b350b9d541c3b88",
     "code/rust/r build process.md": "c5b6cc9783030ee36db654cc5bfb3a80",
@@ -2109,7 +2110,7 @@
     "code/rust/r null handling.md": "eadd13e4c105afebdb54efa71b784af2",
     "code/rust/r literal.md": "5d054fe1af8c843be5c7040e3d3d192b",
     "code/rust/r atomic operation.md": "52368852be4fa923cd8807acbd98136e",
-    "code/rust/r crate.md": "4835e72e1e12b1eea3c09abce263bfe4",
+    "code/rust/r crate.md": "f76cf9f2b40f88fa3ecd1f9b2fb0ecad",
     "code/rust/r error and null propagation.md": "46450a69ea040e25667d05918c1765f9",
     "code/rust/r option.md": "49347562ecb248243f0c4874669fcd66",
     "code/rust/r result.md": "ac0c14a0106b0d3cd4f09f11b7702d3c",
@@ -2138,11 +2139,12 @@
     "code/rust/r multi thread types.md": "d6061fa5609fbb27f35c80a7a5b8be08",
     "code/rust/r composition over inheritance.md": "cc4dd374668848a7b0c5012491171646",
     "code/rust/r design patterns.md": "7e8d3648479ce3c4950e60805b4d0b04",
-    "code/rust/r library crates.md": "7716acb715ad9a7f456fb79146aec910",
-    "code/rust/r rust in python packages.md": "67d9cfc0668b92068f6d3ae94a458d4d",
+    "code/rust/r library crates.md": "9b84e436b96abab01e04de638885389f",
+    "code/rust/r rust in python packages.md": "061565ef818948bdb3b9d83be052a4f9",
     "code/python/py packaging formats.md": "e64bf6bd309bde089ec8ba029098db87",
     "code/python/py sdist.md": "ce3661d22226ac36c06b748e81d91760",
-    "code/python/py wheel.md": "9565f137301f9766b2ccda3b9c78dda1"
+    "code/python/py wheel.md": "9565f137301f9766b2ccda3b9c78dda1",
+    "code/rust/r rustc.md": "086e7b3633ac91a52b0a2453f536f0e8"
   },
   "fields_dict": {
     "Basic": [

@@ -1,6 +1,6 @@
 ## generic type
 - [[r function]] that work with a [[r generic type]] can be implemented as follows
-- at [[r compile time]] the [[r compiler]] creates multiple versions of the functions for all [[r data type]] of values it is used for 
+- at [[r compile time]] the [[r rustc]] creates multiple versions of the functions for all [[r data type]] of values it is used for 
 
 ```rust
 fn identity<T>(x: T) -> T { x }
@@ -62,7 +62,7 @@ functions that can take multiple data types in [[rust]]
 Back: 
 ## generic type
 - [[r function]] that work with a [[r generic type]] can be implemented as follows
-- at [[r compile time]] the [[r compiler]] creates multiple versions of the functions for all [[r data type]] of values it is used for 
+- at [[r compile time]] the [[r rustc]] creates multiple versions of the functions for all [[r data type]] of values it is used for 
 
 ```rust
 fn identity<T>(x: T) -> T { x }
@@ -131,7 +131,7 @@ pair(j, i)
 ```
 ## generic type
 - [[r function]] that work with a [[r generic type]] can be implemented as follows
-- at [[r compile time]] the [[r compiler]] creates multiple versions of the functions for all [[r data type]] of values it is used for 
+- at [[r compile time]] the [[r rustc]] creates multiple versions of the functions for all [[r data type]] of values it is used for 
 
 ```rust
 fn identity<T>(x: T) -> T { x }
@@ -182,7 +182,7 @@ pair(j, i)
 ```
 ## generic type
 - [[r function]] that work with a [[r generic type]] can be implemented as follows
-- at [[r compile time]] the [[r compiler]] creates multiple versions of the functions for all [[r data type]] of values it is used for 
+- at [[r compile time]] the [[r rustc]] creates multiple versions of the functions for all [[r data type]] of values it is used for 
 
 ```rust
 fn identity<T>(x: T) -> T { x }
@@ -236,7 +236,7 @@ fn add_all<T: std::ops::Add<Output = T>, U: std::ops::Add<Output = U>>(x: T, y: 
 
 ## generic type
 - [[r function]] that work with a [[r generic type]] can be implemented as follows
-- at [[r compile time]] the [[r compiler]] creates multiple versions of the functions for all [[r data type]] of values it is used for 
+- at [[r compile time]] the [[r rustc]] creates multiple versions of the functions for all [[r data type]] of values it is used for 
 
 ```rust
 fn identity<T>(x: T) -> T { x }

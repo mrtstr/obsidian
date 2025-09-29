@@ -78,7 +78,7 @@ ______________________
 - **ABI** = how functions/data look at the binary boundary (calling convention, name mangling, layout…).
     
 ### lib / rlib
-- Intermediate/static artifact produced by the [[r compiler]] and for the [[r compiler]]
+- Intermediate/static artifact produced by the [[r rustc]] and for the [[r rustc]]
 - for static [[compiler#linking]]
 - `*.rlib` (Rust static artifact) file
 
