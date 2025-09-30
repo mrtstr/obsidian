@@ -1,7 +1,9 @@
-## crate
+### crate
+- a [[r crate]] is a compilation unit in [[rust]]
+- it has a single root file that can be either a `main.rs` or a `lib.rs` (depending on if it's an executable binary crate or a library crate)
+- a [[r crate]] is part of a [[r package]] and can contain multiple [[r module]]
 
-
-### crate types
+#### crate types
 - there are executable `bin` crates that are the final output of the [[compiler#linking]] process
 - [[r library crates]] that are created during the [[compiler#code generation]] and are intended to be used in other applications (dynamic/static, rust/non-rust)
 - [[r macro]] crates for shipping [[r macro]] (compiler plugins)
