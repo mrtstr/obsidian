@@ -2062,8 +2062,8 @@
     "code/rust/r reference.md": "3a17f7915209d976de40a120cab1eaee",
     "code/rust/r raw pointer.md": "9b4e8bf46b56bb66009766e06599aec1",
     "code/rust/r smart pointer.md": "775d9c0b0b5839673b0c129ebf801a7d",
-    "code/rust/r closure.md": "d6a8bf969053f55336800b46f8436e9c",
-    "code/rust/r trait.md": "362ba8307457e2f2df5fca9dfd254dc7",
+    "code/rust/r closure.md": "4217fdf003712a8605799bb39bbdc287",
+    "code/rust/r trait.md": "8d07d0d15ffb7c97c0a9e5ee91b95b6f",
     "code/rust/r field.md": "d41d8cd98f00b204e9800998ecf8427e",
     "code/rust/r deref.md": "82e114956ffde7234ab1d3e462c05386",
     "code/rust/r encapsulation.md": "a0301a913dbb32f0717c57c7be71629e",
@@ -2115,7 +2115,7 @@
     "code/rust/r option.md": "49347562ecb248243f0c4874669fcd66",
     "code/rust/r result.md": "ac0c14a0106b0d3cd4f09f11b7702d3c",
     "code/rust/r panic.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r error handling.md": "7b5cf90fd4c03d0fba863d2f156d880b",
+    "code/rust/r error handling.md": "decae635e03a028c5746c12c79ab4582",
     "code/system C libraries.md": "f64ad6385a430ee6700a037fa9f5045a",
     "code/assembly.md": "0a0b54f39a235c93d776046e5e0d3163",
     "code/LLVM IR.md": "c124072094a17ed7885264795083f9df",
@@ -2148,7 +2148,8 @@
     "code/rust/r project organization.md": "b10c658538d05427e912acb8b513568b",
     "code/rust/r workspace.md": "49b062ac24b2ea198ecd9d6677eef886",
     "code/rust/r module.md": "cbb9eca18a90b9930071baac5dfd37b8",
-    "code/rust/r package.md": "a505652f174e40b95d72f683c1a302c6"
+    "code/rust/r package.md": "a505652f174e40b95d72f683c1a302c6",
+    "code/rust/r lifetime annotations.md": "8b5fdc0d869cb69e6f5e7f22c37b3c1a"
   },
   "fields_dict": {
     "Basic": [
