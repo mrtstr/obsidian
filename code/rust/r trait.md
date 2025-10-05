@@ -71,6 +71,7 @@ fn returns_summarizable(switch: bool) -> impl Summary {
         }
     }
 }
+let: Box<dyn Summary> = Box.new(returns_summarizable(switch))
 ```
 
 #### implementing traits for traits
@@ -164,6 +165,7 @@ fn returns_summarizable(switch: bool) -> impl Summary {
         }
     }
 }
+let: Box<dyn Summary> = Box.new(returns_summarizable(switch))
 ```
 
 #### implementing traits for traits
@@ -297,7 +299,7 @@ END
 START
 Basic
 [[r trait]] in [[rust]]
-- how to define the return type of function by its traits?
+- how to define the return type of function by its traits and how to annotate it?
 - how to define a trait for another trait?
 
 Back: 
@@ -317,6 +319,7 @@ fn returns_summarizable(switch: bool) -> impl Summary {
         }
     }
 }
+let: Box<dyn Summary> = Box.new(returns_summarizable(switch))
 ```
 
 #### implementing traits for traits
@@ -402,6 +405,7 @@ fn returns_summarizable(switch: bool) -> impl Summary {
         }
     }
 }
+let: Box<dyn Summary> = Box.new(returns_summarizable(switch))
 ```
 
 #### implementing traits for traits

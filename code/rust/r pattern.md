@@ -87,6 +87,17 @@ match msg {
 }
 ```
 
+- [[r pattern]] with additional condition
+
+```rust
+let num = Some(4);
+
+match num {
+	Some(x) if x % 2 == 0 => println!("The number {x} is even"),
+	Some(x) => println!("The number {x} is odd"),
+	None => (),
+}
+```
 ### how they can be used
 
 
@@ -262,6 +273,17 @@ match msg {
 }
 ```
 
+- [[r pattern]] with additional condition
+
+```rust
+let num = Some(4);
+
+match num {
+	Some(x) if x % 2 == 0 => println!("The number {x} is even"),
+	Some(x) => println!("The number {x} is odd"),
+	None => (),
+}
+```
 ### how they can be used
 
 
@@ -706,4 +728,130 @@ match msg {
 
 Tags: code rust
 <!--ID: 1756646909285-->
+END
+
+
+
+START
+Basic
+
+write [[r pattern]] matching that get a [[r option]] with an int and prints if its odd, even or None
+
+Back: 
+
+- [[r pattern]] with additional condition
+
+```rust
+let num = Some(4);
+
+match num {
+	Some(x) if x % 2 == 0 => println!("The number {x} is even"),
+	Some(x) => println!("The number {x} is odd"),
+	None => (),
+}
+```
+
+## pattern
+- in [[rust]] a [[r pattern]] is a template that can be matched against a `value` to do one or both of the following
+	- **Check its shape** (does this value fit?)
+	- **Destructure it** (pull parts out into temp variables)
+- the pattern is the definition of something like a [[r struct]], a [[r tuple]] or a [[r enum]] with values that can contain a literal (→ check of the `value` matches it) or a free variable (→ the variable will be temporarily defined as the data in the of the `value`)
+- it can be used almost everywhere: `match`, `if let`, `while let`, `let`, `for` or for [[r generic type]]
+### types of patterns
+- check if value matches literal
+
+```rust
+match x {
+    1 => println!("one"),
+    _ => println!("anything else"), // matches everything else
+}
+```
+
+- [[r range]] match: check is value is in [[r range]]
+
+```rust
+let x = 7;
+match x {
+    1..=5 => println!("between 1 and 5"),
+    6..=10 => println!("between 6 and 10"),
+    _ => println!("other"),
+    // no condition so always true but value unsused
+}
+```
+
+- temporary variable binding: there is no condition → `n` will be equal to `x`
+
+```rust
+match x {
+    n => println!("matched {n}"), // binds x to n
+}
+```
+
+- destructing [[r tuple]]: check of the values of the [[r tuple]] match the literal and if yes defile the variables
+
+```rust
+let pair = (0, -2);
+
+match pair {
+    (0, y) => println!("x is zero, y is {y}"),
+    (x, 0) => println!("y is zero, x is {x}"),
+    _ => println!("something else"), 
+    // no condition so always true but value unsused
+}
+```
+
+- destructing [[r struct]]
+
+```rust
+struct Point { x: i32, y: i32 }
+let p = Point { x: 3, y: 7 };
+
+match p {
+    Point { x: 0, y } => println!("On Y axis at {y}"),
+    Point { x, y: 0 } => println!("On X axis at {x}"),
+    Point { x, y } => println!("({x},{y})"),
+}
+```
+
+- pattern for null handling
+```rust
+let x = Some(5);
+
+match x {
+    Some(v) if v > 3 => println!("Greater than 3"),
+    Some(v) => println!("Got {v}"),
+    None => println!("Nothing"),
+}
+```
+
+- [[r pattern]] for working with [[r enum]]
+
+```rust
+enum Message {
+    Quit,
+    Move { x: i32, y: i32 },
+}
+
+let msg = Message::Move { x: 10, y: 20 };
+
+match msg {
+    Message::Quit => println!("Quit"),
+    Message::Move { x, y } => println!("Move to {x}, {y}"),
+}
+```
+
+- [[r pattern]] with additional condition
+
+```rust
+let num = Some(4);
+
+match num {
+	Some(x) if x % 2 == 0 => println!("The number {x} is even"),
+	Some(x) => println!("The number {x} is odd"),
+	None => (),
+}
+```
+
+Tags: code rust
+<!--ID: 1759683035826-->
 END

@@ -21,7 +21,7 @@ fn longest<'a>(s1: &'a str, s2: &'a str) -> &'a str {
 }
 ```
 
-- when working with [[r struct]] that holds a reference we need the following to ensure that the stuct can't outive the [[r reference]] it holds
+- when working with [[r struct]] that holds a reference we need the following to ensure that the [[r struct]] can't outlive the [[r reference]] it holds
 
 ```rust
 struct Book<'a> {
