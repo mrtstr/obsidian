@@ -27,7 +27,7 @@ $$
   \end{split}
 $$
 
-This model is commonly used in multiclass [[classification]] tasks and serves as the final layer in many [[neural networks]].
+This model is commonly used in multiclass [[classification]] tasks and serves as the final layer in many [[mathematics/stochastics/statistical learning/models/neural networks/neural networks]].
 
 ### decision boundary's
 
@@ -266,7 +266,7 @@ $$
   \end{split}
 $$
 
-This model is commonly used in multiclass [[classification]] tasks and serves as the final layer in many [[neural networks]].
+This model is commonly used in multiclass [[classification]] tasks and serves as the final layer in many [[mathematics/stochastics/statistical learning/models/neural networks/neural networks]].
 
 
 ___________
@@ -280,7 +280,7 @@ $$
 \mathrm{SOFTMAX}(Z) = \frac{1}{\sum_{i=1}^n \exp(y_i)} \exp(X)
 \end{split}
 $$
-- used as output function in [[classification]] problems for example with [[neural networks]] and [[multinomial logistic regresssion]]
+- used as output function in [[classification]] problems for example with [[mathematics/stochastics/statistical learning/models/neural networks/neural networks]] and [[multinomial logistic regresssion]]
 
 
 
@@ -392,7 +392,7 @@ $$
   \end{split}
 $$
 
-This model is commonly used in multiclass [[classification]] tasks and serves as the final layer in many [[neural networks]].
+This model is commonly used in multiclass [[classification]] tasks and serves as the final layer in many [[mathematics/stochastics/statistical learning/models/neural networks/neural networks]].
 
 
 ___________
@@ -406,7 +406,7 @@ $$
 \mathrm{SOFTMAX}(Z) = \frac{1}{\sum_{i=1}^n \exp(y_i)} \exp(X)
 \end{split}
 $$
-- used as output function in [[classification]] problems for example with [[neural networks]] and [[multinomial logistic regresssion]]
+- used as output function in [[classification]] problems for example with [[mathematics/stochastics/statistical learning/models/neural networks/neural networks]] and [[multinomial logistic regresssion]]
 
 ### logistic regression
 - for solving binary [[classification]] problems
@@ -505,7 +505,7 @@ $$
   \end{split}
 $$
 
-This model is commonly used in multiclass [[classification]] tasks and serves as the final layer in many [[neural networks]].
+This model is commonly used in multiclass [[classification]] tasks and serves as the final layer in many [[mathematics/stochastics/statistical learning/models/neural networks/neural networks]].
 
 
 ___________
@@ -519,7 +519,7 @@ $$
 \mathrm{SOFTMAX}(Z) = \frac{1}{\sum_{i=1}^n \exp(y_i)} \exp(X)
 \end{split}
 $$
-- used as output function in [[classification]] problems for example with [[neural networks]] and [[multinomial logistic regresssion]]
+- used as output function in [[classification]] problems for example with [[mathematics/stochastics/statistical learning/models/neural networks/neural networks]] and [[multinomial logistic regresssion]]
 
 ### logistic regression
 - for solving binary [[classification]] problems

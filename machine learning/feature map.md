@@ -2,7 +2,7 @@
 - (typically **non-learnable**) function $\varphi: \mathcal{X} \to \mathbb{R}^d$ that transforms the input features into a new representation, often to make learning easier or enable linear models to capture non-linear relationships.
 Used in:
 - [[linear models]] to enable them to learn **non-linear** functions via linear methods.
-- [[neural networks]] as fixed feature extractors (e.g., embeddings, basis expansions), although modern networks often learn the feature map implicitly.
+- [[mathematics/stochastics/statistical learning/models/neural networks/neural networks]] as fixed feature extractors (e.g., embeddings, basis expansions), although modern networks often learn the feature map implicitly.
 ##### examples
 - often a learnable bias that does not depend on the input is added
 
@@ -34,7 +34,7 @@ Back:
 - (typically **non-learnable**) function $\varphi: \mathcal{X} \to \mathbb{R}^d$ that transforms the input features into a new representation, often to make learning easier or enable linear models to capture non-linear relationships.
 Used in:
 - [[linear models]] to enable them to learn **non-linear** functions via linear methods.
-- [[neural networks]] as fixed feature extractors (e.g., embeddings, basis expansions), although modern networks often learn the feature map implicitly.
+- [[mathematics/stochastics/statistical learning/models/neural networks/neural networks]] as fixed feature extractors (e.g., embeddings, basis expansions), although modern networks often learn the feature map implicitly.
 ##### examples
 - often a learnable bias that does not depend on the input is added
 

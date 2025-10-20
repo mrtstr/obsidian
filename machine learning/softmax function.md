@@ -7,7 +7,7 @@ $$
 \mathrm{SOFTMAX}(Z) = \frac{1}{\sum_{i=1}^n \exp(y_i)} \exp(X)
 \end{split}
 $$
-- used as output function in [[classification]] problems for example with [[neural networks]] and [[multinomial logistic regresssion]]
+- used as output function in [[classification]] problems for example with [[neural network]] and [[multinomial logistic regresssion]]
 
 # anki
 
@@ -26,7 +26,7 @@ $$
 \mathrm{SOFTMAX}(Z) = \frac{1}{\sum_{i=1}^n \exp(y_i)} \exp(X)
 \end{split}
 $$
-- used as output function in [[classification]] problems for example with [[neural networks]] and [[multinomial logistic regresssion]]
+- used as output function in [[classification]] problems for example with [[mathematics/stochastics/statistical learning/models/neural networks/neural networks]] and [[multinomial logistic regresssion]]
 
 Tags: mathematics SS25
 <!--ID: 1752949761743-->

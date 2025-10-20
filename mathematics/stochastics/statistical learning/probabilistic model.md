@@ -7,7 +7,7 @@
 ##### only $Y$ is random
 - $X$ is assumed to be fixed/observed then 
 - usually the [[conditional probability]] $P(Y|X)$ is modeled
-- examples: [[neural networks]] with [[softmax function]], [[logistic regession]] 
+- examples: [[mathematics/stochastics/statistical learning/models/neural networks/neural networks]] with [[softmax function]], [[logistic regession]] 
 
 ##### bayesian: $Y$ and the parameters are random
 - [[bayesian inference]]: used in the [[maximum aposteriori]] estimator where $f\left(\theta \mid \mathcal{D}\right)=f\left(\theta \mid X, Y\right)$ and $f\left(Y \mid X, \theta\right)$ are modeled
@@ -39,7 +39,7 @@ Back:
 ##### only $Y$ is random
 - $X$ is assumed to be fixed/observed then 
 - usually the [[conditional probability]] $P(Y|X)$ is modeled
-- examples: [[neural networks]] with [[softmax function]], [[logistic regession]] 
+- examples: [[mathematics/stochastics/statistical learning/models/neural networks/neural networks]] with [[softmax function]], [[logistic regession]] 
 
 ##### bayesian: $Y$ and the parameters are random
 - [[bayesian inference]]: used in the [[maximum aposteriori]] estimator where $f\left(\theta \mid \mathcal{D}\right)=f\left(\theta \mid X, Y\right)$ and $f\left(Y \mid X, \theta\right)$ are modeled
