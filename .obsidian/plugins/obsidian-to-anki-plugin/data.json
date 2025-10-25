@@ -2158,7 +2158,9 @@
     "machine learning/neural networks/nn multihead self attention layer.md": "4afc43e4d2a3f9239a36f708fe18513a",
     "machine learning/neural networks/nn feed forward network.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/neural networks/neural network.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "machine learning/neural networks/nn embeddings.md": "686824131c1fe18e28c91b0a4501d35f"
+    "machine learning/neural networks/nn embeddings.md": "686824131c1fe18e28c91b0a4501d35f",
+    "machine learning/neural networks/nn temperature.md": "ce12ff4d4d9e7c05b302cd1b1128eb1e",
+    "machine learning/neural networks/nn decoder transformers.md": "34cb9d79f26b7e6f94cb87bb8f33d464"
   },
   "fields_dict": {
     "Basic": [
