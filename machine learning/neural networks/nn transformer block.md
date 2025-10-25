@@ -1,7 +1,7 @@
 ## transformer block
 ### input
 
-- the Input $X \in \mathbb{R}^{B \times S \times D}$ represents a sequence of token embeddings/features of the length $S$ with each feature/embedding being represented in the $\mathbb{R}^{D}$
+- the Input [[nn embeddings]] $X \in \mathbb{R}^{B \times S \times D}$ represents a sequence of token embeddings/features of the length $S$ with each feature/embedding being represented in the $\mathbb{R}^{D}$
 	- **B** — **Batch size**: how many sequences processed together (ignored in the following for convenience)
 	- **S** — **Sequence length**: tokens per sequence = size of the context window
 	- **D** — **Model dimension**: Size of the representation of each token's embedding (first layer) / each features representation 
@@ -33,6 +33,7 @@ X^{(2)} = X^{(1)}  +  \mathrm{Dropout}\left(\mathrm{MLP}\left(\mathrm{LN}\left(X
 $$
 
 # --------------------
+![[nn embeddings#embeddings]]
 
 ![[nn norm layer#norm layer]]
 
@@ -54,7 +55,7 @@ Back:
 ## transformer block
 ### input
 
-- the Input $X \in \mathbb{R}^{B \times S \times D}$ represents a sequence of token embeddings/features of the length $S$ with each feature/embedding being represented in the $\mathbb{R}^{D}$
+- the Input [[nn embeddings]] $X \in \mathbb{R}^{B \times S \times D}$ represents a sequence of token embeddings/features of the length $S$ with each feature/embedding being represented in the $\mathbb{R}^{D}$
 	- **B** — **Batch size**: how many sequences processed together (ignored in the following for convenience)
 	- **S** — **Sequence length**: tokens per sequence = size of the context window
 	- **D** — **Model dimension**: Size of the representation of each token's embedding (first layer) / each features representation 
@@ -87,6 +88,19 @@ $$
 
 
 _______________
+
+## embeddings
+- learnable representation of a sequence of tokens with each token represented as a dense vector of size $D$ that contains information about its position and the token itself
+- Build the Vocabulary which is a mapping from of all possible symbols to ids and size $V$
+- with a sequence length $S$ encode all input token as one hot vector $I_E \in \{0,1\}^{S \times V}$
+- the positions are encoded with the unity matrix $I_P \in \{0,1\}^{S \times L}$ that has $1$ on the diagonal and zeros everywhere else with $L$ being the maximal sequence length
+- Train an embedding [[matrix]] $E\in \mathbb{R}^{V \times D}$ and a positional encoding [[matrix]] $P \in \mathbb{R}^{L \times D}$ to get the embeddings $X$ are then calculated as follows containing the token and positional encoding
+- an additional dimension for the batch size $B$ is added such that $X \in \mathbb{R}^{B \times S \times D}$
+
+$$
+X = I_EE + I_PP \in \mathbb{R}^{S \times D}
+$$
+
 
 ### residual block
 - skip conception layer in a [[neural network]] 

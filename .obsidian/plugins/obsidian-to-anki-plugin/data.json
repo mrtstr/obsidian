@@ -2152,12 +2152,13 @@
     "code/rust/r lifetime annotations.md": "d6383124778a8a4a12dfa4484a183b44",
     "code/rust/r diverging function.md": "4806d99d61c61619c6743b79932f8b74",
     "code/rust/r linked list example.md": "debfd849005665cbc26b00d0dfbb53dd",
-    "machine learning/neural networks/nn transformer block.md": "4930467de7837768d74f52bb9770c260",
+    "machine learning/neural networks/nn transformer block.md": "1e2e0d0014c71fcc9f578aa8d7a61161",
     "machine learning/neural networks/nn residual block.md": "2b416854ccfa1ef97aab6fff1fa7ca57",
     "machine learning/neural networks/nn norm layer.md": "644919616cac29ef623b3c7509d51063",
-    "machine learning/neural networks/nn multihead self attention layer.md": "50b98e667f833ce454846282acd5d271",
+    "machine learning/neural networks/nn multihead self attention layer.md": "4afc43e4d2a3f9239a36f708fe18513a",
     "machine learning/neural networks/nn feed forward network.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "machine learning/neural networks/neural network.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "machine learning/neural networks/neural network.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "machine learning/neural networks/nn embeddings.md": "686824131c1fe18e28c91b0a4501d35f"
   },
   "fields_dict": {
     "Basic": [
