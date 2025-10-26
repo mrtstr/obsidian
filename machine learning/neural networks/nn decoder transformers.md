@@ -4,15 +4,54 @@
 
 $$
 \begin{split}
-\theta = \arg\max \sum_{i=1}^T \log p\left(X_{(t, *)}\right| X_{(<t, *)}, \theta)
+\theta = \arg\max \sum_{i=1}^S \log p\left(x_{(t, *)}\right| x_{(<t, *)}, \theta)
 \end{split}
 $$
-- given a text as training data tokenize it as one sequence of token ids
+### training
+
+- a text as training data is tokenized to a sequence of token indices
+- based on this we build the input data  $x \in \mathrm{R}^S$ and the lables $y \in \mathrm{R}^S$ which are a shifted version of $x$ by one position
 
 ```
 x = tokens[i : i + S]         # inputs
 y = tokens[i + 1 : i + S + 1] # targets (next-token)
 ```
+
+- after the [[nn embeddings|embedding layer]] we have input data $X$ and the causal mask $M$ that should prevent that information about tokens not known at the time are used
+- the model output the [[logit function|logits]] $Z \in \mathbb{R}^{S \times V}$ and after applying the [[softmax function]] we would the $\hat Y \in \mathbb{R}^{S \times V}$ which is a [[distribution]] over the vocabulary
+
+$$
+\begin{split}
+X& \in \mathbb{R}^{S \times D} \\
+M& = 
+\left[\begin{matrix}
+0 & -\infty & -\infty & -\infty & .. \\
+0 & 0       & -\infty & -\infty & .. \\
+0 & 0       &  0      & -\infty & .. \\
+.. & .. & .. & .. & .. \\
+\end{matrix}\right]
+\in \mathbb{R}^{S \times S} \\
+\end{split}
+$$
+
+- for efficiency reasons $\hat Y$ is not calculated during the training
+- $Y \in \mathbb{R}^{S \times Z}$ is the true [[distribution]] and thus the one hot encoded token indices which is also not calculated for efficiency reasons
+- the [[risk]] that is minimized is the [[cross entropy]] between $Y$ and $\hat Y$ that can be simplified as following with $y \in \mathbb{R}^S$ being the indices of the tokens 
+
+$$
+\begin{split}
+\mathrm{CE}(Y, Z) 
+&= - \sum_{c=1}^V  Y_c \log \mathrm{softmax}(Z)_c \\
+&= -  \log  \mathrm{softmax}(Z)_y  \\
+\end{split}
+$$
+
+### inference
+- during inference, we tokenize the user input and pass it through the model to calculate the predicted distribution of the next token $Y$ and sample the next token from it
+- when sampling a [[nn temperature]] can be used to adapt the variance, or we can always use the token with the highest likelihood
+- If the user input is a sequence of length $S$ the output would also be of length $S$, but we would just need the last element and ignore the rest
+- then we pass the user input plus the first generated token in the model to generate the second token and repeat that process until the full response is generated
+- not that we don't have to recalculate the output for the whole user input because we can cache the logits for efficiency
 
 # -------------------
 
@@ -20,3 +59,260 @@ y = tokens[i + 1 : i + S + 1] # targets (next-token)
 
 
 ![[nn multihead self attention layer#multihead self attention layer]]
+
+
+# anki
+
+
+START
+Basic
+[[nn decoder transformers]]
+- concept
+- training procedure
+- inference procedure
+
+Back: 
+## decoder transformers
+- [[neural network]] for generation of content (often text) using [[nn transformer block|transformer blocks]] (e.g. GPT)
+- general concept: train the model a [[maximum likelihood estimator]] that predicts the $t+1$ token given the tokens $1, ..., t$ as input 
+
+$$
+\begin{split}
+\theta = \arg\max \sum_{i=1}^S \log p\left(x_{(t, *)}\right| X_{(<t, *)}, \theta)
+\end{split}
+$$
+### training
+
+- a text as training data is tokenized to a sequence of token indices
+- based on this we build the input data  $x \in \mathrm{R}^S$ and the lables $y \in \mathrm{R}^S$ which are a shifted version of $x$ by one position
+
+```
+x = tokens[i : i + S]         # inputs
+y = tokens[i + 1 : i + S + 1] # targets (next-token)
+```
+
+- after the [[nn embeddings|embedding layer]] we have input data $X$ and the causal mask $M$ that should prevent that information about tokens not known at the time are used
+- the model output the [[logit function|logits]] $Z \in \mathbb{R}^{S \times V}$ and after applying the [[softmax function]] we would the $\hat Y \in \mathbb{R}^{S \times V}$ which is a [[distribution]] over the vocabulary
+
+$$
+\begin{split}
+X& \in \mathbb{R}^{S \times D} \\
+M& = 
+\left[\begin{matrix}
+0 & -\infty & -\infty & -\infty & .. \\
+0 & 0       & -\infty & -\infty & .. \\
+0 & 0       &  0      & -\infty & .. \\
+.. & .. & .. & .. & .. \\
+\end{matrix}\right]
+\in \mathbb{R}^{S \times S} \\
+\end{split}
+$$
+
+- for efficiency reasons $\hat Y$ is not calculated during the training
+- $Y \in \mathbb{R}^{S \times Z}$ is the true [[distribution]] and thus the one hot encoded token indices which is also not calculated for efficiency reasons
+- the [[risk]] that is minimized is the [[cross entropy]] between $Y$ and $\hat Y$ that can be simplified as following with $y \in \mathbb{R}^S$ being the indices of the tokens 
+
+$$
+\begin{split}
+\mathrm{CE}(Y, Z) 
+&= - \sum_{c=1}^V  Y_c \log \mathrm{softmax}(Z)_c \\
+&= -  \log  \mathrm{softmax}(Z)_y  \\
+\end{split}
+$$
+
+### inference
+- during inference, we tokenize the user input and pass it through the model to calculate the predicted distribution of the next token $Y$ and sample the next token from it
+- when sampling a [[nn temperature]] can be used to adapt the variance, or we can always use the token with the highest likelihood
+- If the user input is a sequence of length $S$ the output would also be of length $S$, but we would just need the last element and ignore the rest
+- then we pass the user input plus the first generated token in the model to generate the second token and repeat that process until the full response is generated
+- not that we don't have to recalculate the output for the whole user input because we can cache the logits for efficiency
+
+_______________
+## transformer block
+### input
+
+- the Input [[nn embeddings]] $X \in \mathbb{R}^{B \times S \times D}$ represents a sequence of token embeddings/features of the length $S$ with each feature/embedding being represented in the $\mathbb{R}^{D}$
+	- **B** — **Batch size**: how many sequences processed together (ignored in the following for convenience)
+	- **S** — **Sequence length**: tokens per sequence = size of the context window
+	- **D** — **Model dimension**: Size of the representation of each token's embedding (first layer) / each features representation 
+- $X_{(i, *)}$ is the representation at the token position $i$
+	- Layer 0: token embedding
+	- Higher layers: **contextualized** representation at position $i$
+
+### architecture
+
+→ [[nn residual block]] ([[nn norm layer]] + [[nn multihead self attention layer]])
+- normalize
+- build contextualized features ("communication")
+
+$$
+\begin{split}
+X^{(1)} = X + \mathrm{Dropout}\left(\mathrm{MHA}\left(\mathrm{LN}(X)\right), \mathrm{mask}\right)
+\end{split}
+$$
+
+
+→ [[nn residual block]] ([[nn norm layer]] +[[nn feed forward network]])
+- normalize
+- after communication, each token **computes** richer features from what it just gathered—like feature mixing and pattern extraction
+
+$$
+\begin{split}
+X^{(2)} = X^{(1)}  +  \mathrm{Dropout}\left(\mathrm{MLP}\left(\mathrm{LN}\left(X^{(1)}\right)\right)\right)
+\end{split}
+$$
+
+
+
+
+## embeddings
+- learnable representation of a sequence of tokens with each token represented as a dense vector of size $D$ that contains information about its position and the token itself
+- Build the Vocabulary which is a mapping from of all possible symbols to ids and size $V$
+- with a sequence length $S$ encode all input token as one hot vector $I_E \in \{0,1\}^{S \times V}$
+- the positions are encoded with the unity matrix $I_P \in \{0,1\}^{S \times L}$ that has $1$ on the diagonal and zeros everywhere else with $L$ being the maximal sequence length
+- Train an embedding [[matrix]] $E\in \mathbb{R}^{V \times D}$ and a positional encoding [[matrix]] $P \in \mathbb{R}^{L \times D}$ to get the embeddings $X$ are then calculated as follows containing the token and positional encoding
+- an additional dimension for the batch size $B$ is added such that $X \in \mathbb{R}^{B \times S \times D}$
+
+$$
+X = I_EE + I_PP \in \mathbb{R}^{S \times D}
+$$
+
+
+### residual block
+- skip conception layer in a [[neural network]] 
+- adds a layer $F$ that can be bypassed 
+	→ adds expressiveness but reduces the vanishing gradient problem
+
+$$
+\mathrm{RL}(x) = x + \mathrm{Dropout}\left(F(x)\right)
+$$
+
+### norm layer
+- normalize the input and re-scale it with learnt parameters
+- **Role:** improves gradient flow in deep nets
+
+$$
+\mathrm{LN}(X) = W \odot \frac{X-\mu}{\sigma} + \beta
+$$
+
+### multihead self attention layer
+- the Input $X \in \mathbb{R}^{B \times S \times D}$ represents a sequence of token embeddings/features of the length $S$ with each feature/embedding being represented in the $\mathbb{R}^{D}$
+	- **B** — **Batch size**: how many sequences processed together (ignored in the following for convenience)
+	- **S** — **Sequence length**: tokens per sequence = size of the context window
+	- **D** — **Model dimension**: Size of the representation of each token's embedding (first layer) / each features representation 
+- $X_{(i, *)}$ is the representation at the token position $i$
+	- Layer 0: token embedding
+	- Higher layers: **contextualized** representation at position $i$
+- $X$ is processed by  $H$ attention heads and each of them is calculating for each input feature $X_{(i, *)}$ and output feature $O_{(i, *)}^{(h)}$ that incorporates its context
+
+#### single attention head
+- each weight [[matrix]] is a [[linear map]] to the $\mathbb{R}^{d_h}$ with $d_h$ being the hidden size of the attention head with often $D=d_h \cdot h$
+	- weight matrix of the query $W_Q^{(h)}\in \mathbb{R}^{D\times d_h}$
+	- weight matrix of the key $W_K^{(h)}\in \mathbb{R}^{D\times d_h}$
+	- weight matrix of the value $W_V^{(h)}\in \mathbb{R}^{D\times d_h}$
+
+$$
+\begin{split}
+Q^{(h)} &= XW_Q^{(h)} \in \mathbb{R}^{S \times d_h}  \\
+K^{(h)} &= XW_K^{(h)} \in \mathbb{R}^{S \times d_h}  \\
+V^{(h)} &= XW_V^{(h)} \in \mathbb{R}^{S \times d_h} \\
+\end{split}
+$$
+
+- $Q$ and $K$ are used to extract the importance of the context for each token
+- for each token $i$ the query $Q_{(i, *)}$ is representing the token itself and $K_{(j, *)}$ is representing the other tokens and their similarity is the importance that token $j$ has for the next feature of token $i$
+	- Query $q_i$: what is feature $i$ looking for
+	- Key $k_j$: what feature $j$ has to offer
+
+$$
+\begin{split}
+x_i &= X_{(i, *)}  \in \mathbb{R}^{1\times D}  \\
+q_i &= Q_{(i, *)}= x_iW_Q \in \mathbb{R}^{1 \times d_h} \\
+k_j &= K_{(j, *)}= x_jW_K \in \mathbb{R}^{1 \times d_h} \\
+\end{split}
+$$
+#### calculating similarity scores
+
+
+- the [[inner product]] between $q_i$ and $k_j$ measures the similarity of the vectors and represents the importance that feature $j$ has for feature $i$
+
+$$
+\begin{split}
+\mathrm{score}(i,j) 
+&= \frac{\left(Q K^\top\right)_{\left(i,j\right)}}{\sqrt{d_h}}   \\
+&= \frac{Q_{(i, *)} K_{(j, *)}^\top}{\sqrt{d_h}} \\
+&= \frac{ X_{(i, *)}W_Q \left(X_{(j, *)}W_K\right)^\top }{\sqrt{d_h}} \\
+&= \frac{ X_{(i, *)}M X_{(j, *)}^\top }{\sqrt{d_h}} \\
+S&= (\mathrm{score}(i,j) )_{(i\in [S],j\in [S])} \in \mathbb{R}^{S \times S}
+\end{split}
+$$
+
+#### masking normalizing the similarity scores
+
+- $A$ is a context-and-importance map between tokens with $A_{(i, j)}$ being the importance weight of token $j$ for constructing the next layer feature of $i$ 
+- a $\mathrm{mask} \in \{-\infty, 0\}^{S \times S}$ is added to allow and disallows context
+- the [[softmax function]] normalizes the score over the context such $\sum_{j=1}^S A_{(i, j)} = 1$
+
+$$
+\begin{split}
+A^{(h)} 
+&=\mathrm{SOFTMAX}\left(\frac{Q^{(h)}K^{(h)\top}}{\sqrt{d_h}} + \mathrm{mask}\right) \\
+&=\mathrm{SOFTMAX}_j\left(S_{(i, j)}+ \mathrm{mask}\right) \\
+&= \frac{\exp{(\mathrm{score}(i,j)+ \mathrm{mask}(i,j))}}{\sum_{k=1}^S \exp{(\mathrm{score}(i,k)+ \mathrm{mask}(i,k))}}
+\end{split}
+$$
+
+
+
+- the output of the [[softmax function]] can be interpreted as the [[conditional probability]] 
+$$
+\begin{split}
+P(j | i) 
+&= \frac{\exp{(\mathrm{score}(i,j))}}{\sum_{k=1}^S \exp{(\mathrm{score}(i,k))}}
+\end{split}
+$$
+
+#### creating the contextualized feature
+- $v_i$ is a transformed representation of the input token $i$
+
+$$
+\begin{split}
+v_i &= V_{(i, *)}= X_{(i, *)}W_V \in \mathbb{R}^{1 \times d_h} \\
+\end{split}
+$$
+
+- the feature of the $ith$ token $O^{(h)}_{(i, *)}$ is constructed as a sum of transformed versions of all embedding/input features $v_1,..., v_S$ weighted by the importance they have for token $i$
+
+$$
+\begin{split}
+O^{(h)} 
+&= A^{(h)}V^{(h)} \in \mathbb{R}^{S \times d_h} \\
+O^{(h)}_{(i, *)}&= \sum_{k=1}^S A_{(i, k)}^{(h)}V_{(k, *)}^{(h)}  \in \mathbb{R}^{1 \times d_h} \\
+\end{split}
+$$
+
+#### combining multiple heads
+- the weight matrix of the features of attention heads $W_O \in \mathbb{R}^{H \cdot d_h \times D}$ with often $D=H \cdot d_h$
+
+$$
+\mathrm{MHA}(X, \mathrm{mask}) = \mathrm{Concat}[O^{(1)}, ..., O^{(H)}] W_O \in \mathbb{R}^{S \times D} 
+$$
+
+
+
+### softmax function
+- the [[softmax function]] $\mathrm{SOFTMAX}: \mathrm{R}^n \to [0,1]^{n}$ turns the input into a [[probability mass function (PMF)]]
+	→ normalized positive output of the same dimensions
+
+$$
+\begin{split}
+\mathrm{SOFTMAX}(Z) 
+&= \frac{\exp{(Z_{(i,j)})}}{\sum_{k} \exp{(Z_{(i,k)})}}
+\end{split}
+$$
+
+- used as output function in [[classification]] problems, for example with [[neural network]] and [[multinomial logistic regresssion]]
+
+Tags: ml WS2526
+<!--ID: 1761492610481-->
+END
