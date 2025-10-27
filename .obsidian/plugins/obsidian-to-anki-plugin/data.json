@@ -330,7 +330,8 @@
     "Comparison_of_1D_histogram_and_KDE 1.png",
     "exp_dist.png",
     "Pasted image 20250721103039.png",
-    "Pasted image 20250929153716.png"
+    "Pasted image 20250929153716.png",
+    "llm_inference 1.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -2152,15 +2153,19 @@
     "code/rust/r lifetime annotations.md": "d6383124778a8a4a12dfa4484a183b44",
     "code/rust/r diverging function.md": "4806d99d61c61619c6743b79932f8b74",
     "code/rust/r linked list example.md": "debfd849005665cbc26b00d0dfbb53dd",
-    "machine learning/neural networks/nn transformer block.md": "1e2e0d0014c71fcc9f578aa8d7a61161",
+    "machine learning/neural networks/nn transformer block.md": "a96e5da72279845eb52ce0217191bb0f",
     "machine learning/neural networks/nn residual block.md": "2b416854ccfa1ef97aab6fff1fa7ca57",
     "machine learning/neural networks/nn norm layer.md": "644919616cac29ef623b3c7509d51063",
-    "machine learning/neural networks/nn multihead self attention layer.md": "4afc43e4d2a3f9239a36f708fe18513a",
+    "machine learning/neural networks/nn multihead self attention layer.md": "8e7802faa837fcc653b4a3c08096f2d5",
     "machine learning/neural networks/nn feed forward network.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/neural networks/neural network.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/neural networks/nn embeddings.md": "686824131c1fe18e28c91b0a4501d35f",
     "machine learning/neural networks/nn temperature.md": "ce12ff4d4d9e7c05b302cd1b1128eb1e",
-    "machine learning/neural networks/nn decoder transformers.md": "65e03653750fbfd6387dbcabc59840b6"
+    "machine learning/neural networks/nn decoder transformers.md": "eb9f0da49373b8f01e3aa01286eef19a",
+    "machine learning/neural networks/nn text training data and preprocessing.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "machine learning/neural networks/nn linear layer.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "machine learning/neural networks/nn embedding layer.md": "15d6784f892e1f0074e7057760344654",
+    "machine learning/neural networks/nn tokenization.md": "2e399896869e5571ffb7f5dc53fd0470"
   },
   "fields_dict": {
     "Basic": [

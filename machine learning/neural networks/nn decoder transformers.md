@@ -1,4 +1,5 @@
 ## decoder transformers
+### concept
 - [[neural network]] for generation of content (often text) using [[nn transformer block|transformer blocks]] (e.g. GPT)
 - general concept: train the model a [[maximum likelihood estimator]] that predicts the $t+1$ token given the tokens $1, ..., t$ as input 
 
@@ -7,17 +8,25 @@ $$
 \theta = \arg\max \sum_{i=1}^S \log p\left(x_{(t, *)}\right| x_{(<t, *)}, \theta)
 \end{split}
 $$
+
+### architecture
+0) [[nn tokenization]] → token vector $x \in \mathbb{N}^{B \times S}$
+1) [[nn embedding layer]] → dense embedding vector $X \in \mathbb{R}^{B \times S \times D}$
+2) multiple [[nn transformer block]] → internal dense representation $X_m \in \mathbb{R}^{B \times S \times D}$
+3) final [[nn norm layer]] + [[nn linear layer]] → [[logit function|logits]] $Z = \mathrm{LL}\left(\mathrm{LN}\left(X_m\right)\right) \in \mathbb{R}^{B \times S \times V}$
+	- mapping from the internal dimension $D$ to the vocabulary size $V$ 
+4) [[softmax function]] → probability distribution over the vocabulary $\hat Y = \mathrm{softmax}(Z)  \in \mathbb{R}^{B \times S \times V}$
+
 ### training
 
-- a text as training data is tokenized to a sequence of token indices
-- based on this we build the input data  $x \in \mathrm{R}^S$ and the lables $y \in \mathrm{R}^S$ which are a shifted version of $x$ by one position
+- a text as training data is tokenized (see [[nn tokenization]]) to a sequence of token indices  $x \in \mathrm{R}^S$ and the lables $y \in \mathrm{R}^S$ which are a shifted version of $x$ by one position
 
 ```
 x = tokens[i : i + S]         # inputs
 y = tokens[i + 1 : i + S + 1] # targets (next-token)
 ```
 
-- after the [[nn embeddings|embedding layer]] we have input data $X$ and the causal mask $M$ that should prevent that information about tokens not known at the time are used
+- after the [[nn embedding layer|embedding layer]] we have input data $X$ and the causal mask $M$ that should prevent that information about tokens not known at the time are used
 - the model output the [[logit function|logits]] $Z \in \mathbb{R}^{S \times V}$ and after applying the [[softmax function]] we would the $\hat Y \in \mathbb{R}^{S \times V}$ which is a [[distribution]] over the vocabulary
 
 $$
@@ -53,7 +62,12 @@ $$
 - then we pass the user input plus the first generated token in the model to generate the second token and repeat that process until the full response is generated
 - not that we don't have to recalculate the output for the whole user input because we can cache the logits for efficiency
 
+
+![[llm_inference.png]]
+
 # -------------------
+
+![[nn tokenization#tokenization]]
 
 ![[nn transformer block#transformer block]]
 
@@ -68,30 +82,40 @@ START
 Basic
 [[nn decoder transformers]]
 - concept
+- architecture (5)
 - training procedure
 - inference procedure
 
 Back: 
 ## decoder transformers
+### concept
 - [[neural network]] for generation of content (often text) using [[nn transformer block|transformer blocks]] (e.g. GPT)
 - general concept: train the model a [[maximum likelihood estimator]] that predicts the $t+1$ token given the tokens $1, ..., t$ as input 
 
 $$
 \begin{split}
-\theta = \arg\max \sum_{i=1}^S \log p\left(x_{(t, *)}\right| X_{(<t, *)}, \theta)
+\theta = \arg\max \sum_{i=1}^S \log p\left(x_{(t, *)}\right| x_{(<t, *)}, \theta)
 \end{split}
 $$
+
+### architecture
+0) [[nn tokenization]] → token vector $x \in \mathbb{N}^{B \times S}$
+1) [[nn embedding layer]] → dense embedding vector $X \in \mathbb{R}^{B \times S \times D}$
+2) multiple [[nn transformer block]] → internal dense representation $X_m \in \mathbb{R}^{B \times S \times D}$
+3) final [[nn norm layer]] + [[nn linear layer]] → [[logit function|logits]] $Z = \mathrm{LL}\left(\mathrm{LN}\left(X_m\right)\right) \in \mathbb{R}^{B \times S \times V}$
+	- mapping from the internal dimension $D$ to the vocabulary size $V$ 
+4) [[softmax function]] → probability distribution over the vocabulary $\hat Y = \mathrm{softmax}(Z)  \in \mathbb{R}^{B \times S \times V}$
+
 ### training
 
-- a text as training data is tokenized to a sequence of token indices
-- based on this we build the input data  $x \in \mathrm{R}^S$ and the lables $y \in \mathrm{R}^S$ which are a shifted version of $x$ by one position
+- a text as training data is tokenized (see [[nn tokenization]]) to a sequence of token indices  $x \in \mathrm{R}^S$ and the lables $y \in \mathrm{R}^S$ which are a shifted version of $x$ by one position
 
 ```
 x = tokens[i : i + S]         # inputs
 y = tokens[i + 1 : i + S + 1] # targets (next-token)
 ```
 
-- after the [[nn embeddings|embedding layer]] we have input data $X$ and the causal mask $M$ that should prevent that information about tokens not known at the time are used
+- after the [[nn embedding layer|embedding layer]] we have input data $X$ and the causal mask $M$ that should prevent that information about tokens not known at the time are used
 - the model output the [[logit function|logits]] $Z \in \mathbb{R}^{S \times V}$ and after applying the [[softmax function]] we would the $\hat Y \in \mathbb{R}^{S \times V}$ which is a [[distribution]] over the vocabulary
 
 $$
@@ -125,19 +149,23 @@ $$
 - when sampling a [[nn temperature]] can be used to adapt the variance, or we can always use the token with the highest likelihood
 - If the user input is a sequence of length $S$ the output would also be of length $S$, but we would just need the last element and ignore the rest
 - then we pass the user input plus the first generated token in the model to generate the second token and repeat that process until the full response is generated
-- not that we don't have to recalculate the output for the whole user input because we can cache the logits for efficiency
+- note that we don't have to recalculate the output for the whole user input because we can cache the logits for efficiency
+
+![[llm_inference 1.png]]
 
 _______________
 ## transformer block
 ### input
 
-- the Input [[nn embeddings]] $X \in \mathbb{R}^{B \times S \times D}$ represents a sequence of token embeddings/features of the length $S$ with each feature/embedding being represented in the $\mathbb{R}^{D}$
-	- **B** — **Batch size**: how many sequences processed together (ignored in the following for convenience)
-	- **S** — **Sequence length**: tokens per sequence = size of the context window
-	- **D** — **Model dimension**: Size of the representation of each token's embedding (first layer) / each features representation 
-- $X_{(i, *)}$ is the representation at the token position $i$
-	- Layer 0: token embedding
-	- Higher layers: **contextualized** representation at position $i$
+- the input $X \in \mathbb{R}^{B \times S \times D}$ is coming out of the [[nn embedding layer]] if its the first [[nn transformer block]] or the previous [[nn transformer block]]
+- it represent a sequence of token embeddings/features of the length $S$ with each feature/embedding being represented as a dense vector in the $\mathbb{R}^{D}$
+	→ $X_{(i, *)}$ is the representation at the token position $i$
+		- Layer 0: token embedding
+		- Higher layers: **contextualized** representation at position $i$ 
+- **B** — **Batch size**: how many sequences processed together (ignored in the following for convenience)
+- **S** — **Sequence length**: tokens per sequence = size of the context window
+- **D** — **Model dimension**: Size of the representation of each token's embedding (first layer) / each features representation 
+
 
 ### architecture
 
@@ -163,19 +191,40 @@ X^{(2)} = X^{(1)}  +  \mathrm{Dropout}\left(\mathrm{MLP}\left(\mathrm{LN}\left(X
 $$
 
 
+## tokenization
+- translating text to numeric data by converting text into discrete units (= **tokens**)
+- the vocabulary is a [[set]] of all possible tokens that are mapped to integer IDs with the [[cardinality]] $V$
+- note that the tokenizer is trained independently of its language model (e.g. [[nn decoder transformers]]) but the model can only be used with its own tokenizer
 
+### number of tokens vs size of tokens
+- small tokens (for example each letter) leads
+	- small vocabulary but long sequences per text
+	- no unknown words but makes it harder to lean meaning
+- large tokens (for example for each word)
+	- inflexible when dealing with new words or typos
+	- very large vocabulary but shot sequences per text length
+	- makes it easier to lean meaning
+- solution → sub-word level tokens generated by for example **Byte-Pair Encoding (BPE)**
 
-## embeddings
-- learnable representation of a sequence of tokens with each token represented as a dense vector of size $D$ that contains information about its position and the token itself
-- Build the Vocabulary which is a mapping from of all possible symbols to ids and size $V$
-- with a sequence length $S$ encode all input token as one hot vector $I_E \in \{0,1\}^{S \times V}$
+- helpful rule of thumb is that one token generally corresponds to ~4 characters of text for common English text
+### byte-pair encoding (BPE)
+- start with encoding each character as a sequence between 1 and 5 bytes
+	- for example, each latter is one byte encoded but special characters are encoded with 5 bytes
+- take the complete text and combine the most common occurring byte sequence of length 2 to one token and repeat this until the intended vocabulary size/token size is reached
+
+## embedding layer
+- learnable representation of a sequence of tokens (see [[nn tokenization]]) with each token represented as a dense vector of size $D$ that contains information about its position and the token itself
+- given a sequence of input token $x \in \mathbb{N}^S$ of length $S$ with a vocabulary size $V$
+- $x$ is encoded as a one hot vector $I_E \in \{0,1\}^{S \times V}$
 - the positions are encoded with the unity matrix $I_P \in \{0,1\}^{S \times L}$ that has $1$ on the diagonal and zeros everywhere else with $L$ being the maximal sequence length
-- Train an embedding [[matrix]] $E\in \mathbb{R}^{V \times D}$ and a positional encoding [[matrix]] $P \in \mathbb{R}^{L \times D}$ to get the embeddings $X$ are then calculated as follows containing the token and positional encoding
-- an additional dimension for the batch size $B$ is added such that $X \in \mathbb{R}^{B \times S \times D}$
+- the parameters of the embedding [[matrix]] $E\in \mathbb{R}^{V \times D}$ and a positional encoding [[matrix]] $P \in \mathbb{R}^{L \times D}$ are trained during the model training
+- the embeddings $X$ are then calculated as follows containing the token and positional encoding
 
 $$
 X = I_EE + I_PP \in \mathbb{R}^{S \times D}
 $$
+
+- an additional dimension for the batch size $B$ is added such that $X \in \mathbb{R}^{B \times S \times D}$
 
 
 ### residual block
