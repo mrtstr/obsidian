@@ -2162,10 +2162,11 @@
     "machine learning/neural networks/nn embeddings.md": "686824131c1fe18e28c91b0a4501d35f",
     "machine learning/neural networks/nn temperature.md": "ce12ff4d4d9e7c05b302cd1b1128eb1e",
     "machine learning/neural networks/nn decoder transformers.md": "eb9f0da49373b8f01e3aa01286eef19a",
-    "machine learning/neural networks/nn text training data and preprocessing.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "machine learning/neural networks/nn text training data and preprocessing.md": "b74b4d1a56312013920bf3b826e130c2",
     "machine learning/neural networks/nn linear layer.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/neural networks/nn embedding layer.md": "15d6784f892e1f0074e7057760344654",
-    "machine learning/neural networks/nn tokenization.md": "2e399896869e5571ffb7f5dc53fd0470"
+    "machine learning/neural networks/nn tokenization.md": "2e399896869e5571ffb7f5dc53fd0470",
+    "machine learning/neural networks/LLM.md": "6f5d0fb88aee3952dee50bd90d0deb45"
   },
   "fields_dict": {
     "Basic": [
