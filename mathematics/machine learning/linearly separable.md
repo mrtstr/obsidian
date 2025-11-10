@@ -72,7 +72,7 @@ $$
 ![[convex hull#convex hull]]
 
 
-
+# anki
 START
 Basic
 [[linearly separable]]

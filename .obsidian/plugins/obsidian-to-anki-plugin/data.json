@@ -2183,7 +2183,7 @@
     "mathematics/machine learning/neural networks/nn decoder transformers.md": "13d5eb31e241eb9e12800ddd05055089",
     "mathematics/machine learning/neural networks/nn embedding layer.md": "b169e05ae1cd8f9cf4397988c90be1d4",
     "mathematics/machine learning/neural networks/nn feed forward network.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/machine learning/neural networks/neural network.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/machine learning/neural networks/neural network.md": "90a30f3438f56ecd9aa62705f4a782cb",
     "mathematics/machine learning/softmax function.md": "c3ada696674ac6604ca826fc39e6e951",
     "mathematics/machine learning/self attention.md": "84cb7184040e1bef1ee4bddceef1bb45",
     "mathematics/machine learning/regularization.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -2192,7 +2192,7 @@
     "mathematics/machine learning/overfitting.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/machine learning/logit.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/machine learning/log likelihood.md": "ead65dcc2bfbcba9eb414a161f55e951",
-    "mathematics/machine learning/linearly separable.md": "981952f72b7585e9284684304f34e02d",
+    "mathematics/machine learning/linearly separable.md": "f42459bdbef9522c3af1e82bf3c198ed",
     "mathematics/machine learning/linear layer.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/machine learning/latent variable.md": "55c618e6f219efddaa01868f3c0a0fcd",
     "mathematics/machine learning/latent space.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -2217,8 +2217,10 @@
     "mathematics/stochastics/information theory/entropy.md": "2794a9ef3e2029255e310d0be4f44aed",
     "mathematics/stochastics/information theory/information theory.md": "3390cf19d88be96cc7e8b7879c451803",
     "mathematics/basics/convex hull.md": "90fc7fbddae9e4c12c3c7632fb5a5983",
-    "mathematics/machine learning/neural networks/nn encoder decoder transformers.md": "220b9286df2ecf5eb83a6ca670bc7193",
-    "mathematics/machine learning/neural networks/nn sinusoidal positional encoding.md": "10978a800d82b2dfb82e502d2d0bd3ab"
+    "mathematics/machine learning/neural networks/nn encoder decoder transformers.md": "575f3d283a686bd5c82260326c929054",
+    "mathematics/machine learning/neural networks/nn sinusoidal positional encoding.md": "10978a800d82b2dfb82e502d2d0bd3ab",
+    "mathematics/machine learning/neural networks/nn activation function.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/machine learning/neural networks/nn multilayer perceptron.md": "db4fb723bff10d3cef49c60fe46a6f1a"
   },
   "fields_dict": {
     "Basic": [
