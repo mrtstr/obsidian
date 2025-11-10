@@ -52,7 +52,7 @@ Back:
 
 1) **non-negativity and certainty**: $I(A) \geq 0$ with $I(A) = 0$ if and only if $\mathbb{P}(A) = 1$
 2) **monotonicity**:  $\mathbb{P}(A) \geq \mathbb{P}(B) \Leftrightarrow I(A) \leq I(B)$
-3) **additivity for independent events**if $A$ and $B$ are [[stochastic independent]] then $I(A \cup B) = I(A) + I(B)$
+3) **additivity for independent events**if $A$ and $B$ are [[stochastic independent]] then $I(A \cap B) = I(A) + I(B)$
 
 - only the following function satisfies all 3 conditions
 
