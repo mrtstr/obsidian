@@ -217,14 +217,34 @@ $$
 - given a sequence of input token $x \in \mathbb{N}^S$ of length $S$ with a vocabulary size $V$
 - $x$ is encoded as a one hot vector $I_E \in \{0,1\}^{S \times V}$
 - the positions are encoded with the unity matrix $I_P \in \{0,1\}^{S \times L}$ that has $1$ on the diagonal and zeros everywhere else with $L$ being the maximal sequence length
-- the parameters of the embedding [[matrix]] $E\in \mathbb{R}^{V \times D}$ and a positional encoding [[matrix]] $P \in \mathbb{R}^{L \times D}$ are trained during the model training
-- the embeddings $X$ are then calculated as follows containing the token and positional encoding
+- the parameters of the embedding [[matrix]] $E\in \mathbb{R}^{V \times D}$ trained during the model training
+- the embeddings $X$ are then calculated as follows containing the token embeddings and positional encoding embeddings $PE$
 
 $$
-X = I_EE + I_PP \in \mathbb{R}^{S \times D}
+X = I_EE + PE \in \mathbb{R}^{S \times D}
 $$
 
 - an additional dimension for the batch size $B$ is added such that $X \in \mathbb{R}^{B \times S \times D}$
+
+### positional encoding
+- positional encoding contain the information on which position in the sequence a certain token is
+- there are different methods for calculating the positional encoding, one of them is the [[nn sinusoidal positional encoding]]
+- the positional encoding changes the direction of the embedding vectors but doesn't change the semantic meaning because the magnitude is much smaller
+
+#### sinusoidal positional encoding
+- encodes positional information $PE \in \mathbb{R}^{S \times d}$ in a dense vector
+- $p \in \{1, ..., S\}$ is the index in the input while $t \in \{1, ..., d\}$ is the position of the dense vector
+- the position in the output vector $j$ defines a frequency $\frac{1}{10000}^{\frac{j}{d}}$ and then each position rotates in that frequency
+
+$$
+PE_{t, j} = \begin{cases}
+\sin\left(p \cdot\frac{1}{10000}^{\frac{j}{d}}\right), &if \ j \ is \ even \\
+\cos\left(p \cdot\frac{1}{10000}^{\frac{j-1}{d}}\right), &if \ j \ is \ odd \\
+\end{cases}
+$$
+
+- $PE$ is added to the token embeddings in the [[nn embedding layer]]
+
 
 
 ### residual block

@@ -331,7 +331,8 @@
     "exp_dist.png",
     "Pasted image 20250721103039.png",
     "Pasted image 20250929153716.png",
-    "llm_inference 1.png"
+    "llm_inference 1.png",
+    "Pasted image 20251110135535.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -2170,17 +2171,17 @@
     "machine learning/neural networks/nn seq2seq.md": "1791b02b1d3652c710332e591f8effc8",
     "mathematics/machine learning/decision boundary.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/machine learning/neural networks/LLM.md": "6f5d0fb88aee3952dee50bd90d0deb45",
-    "mathematics/machine learning/neural networks/nn transformer block.md": "a96e5da72279845eb52ce0217191bb0f",
+    "mathematics/machine learning/neural networks/nn transformer block.md": "e4e51496b10597b567be545ea9fb23b9",
     "mathematics/machine learning/neural networks/nn text training data and preprocessing.md": "b74b4d1a56312013920bf3b826e130c2",
     "mathematics/machine learning/neural networks/nn tokenization.md": "2e399896869e5571ffb7f5dc53fd0470",
     "mathematics/machine learning/neural networks/nn seq2seq.md": "1791b02b1d3652c710332e591f8effc8",
     "mathematics/machine learning/neural networks/nn linear layer.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/machine learning/neural networks/nn temperature.md": "ce12ff4d4d9e7c05b302cd1b1128eb1e",
     "mathematics/machine learning/neural networks/nn residual block.md": "2b416854ccfa1ef97aab6fff1fa7ca57",
-    "mathematics/machine learning/neural networks/nn multihead self attention layer.md": "8e7802faa837fcc653b4a3c08096f2d5",
+    "mathematics/machine learning/neural networks/nn multihead self attention layer.md": "c698fbcfe73fe01ef078afbcdedada4f",
     "mathematics/machine learning/neural networks/nn norm layer.md": "644919616cac29ef623b3c7509d51063",
-    "mathematics/machine learning/neural networks/nn decoder transformers.md": "eb9f0da49373b8f01e3aa01286eef19a",
-    "mathematics/machine learning/neural networks/nn embedding layer.md": "3c476c109bb67d835fe7ebba0aa63ea2",
+    "mathematics/machine learning/neural networks/nn decoder transformers.md": "13d5eb31e241eb9e12800ddd05055089",
+    "mathematics/machine learning/neural networks/nn embedding layer.md": "b169e05ae1cd8f9cf4397988c90be1d4",
     "mathematics/machine learning/neural networks/nn feed forward network.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/machine learning/neural networks/neural network.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/machine learning/softmax function.md": "c3ada696674ac6604ca826fc39e6e951",
@@ -2215,7 +2216,9 @@
     "mathematics/stochastics/information theory/cross entropy.md": "ce6ef98f941387081a94fa03a68c150d",
     "mathematics/stochastics/information theory/entropy.md": "2794a9ef3e2029255e310d0be4f44aed",
     "mathematics/stochastics/information theory/information theory.md": "3390cf19d88be96cc7e8b7879c451803",
-    "mathematics/basics/convex hull.md": "90fc7fbddae9e4c12c3c7632fb5a5983"
+    "mathematics/basics/convex hull.md": "90fc7fbddae9e4c12c3c7632fb5a5983",
+    "mathematics/machine learning/neural networks/nn encoder decoder transformers.md": "220b9286df2ecf5eb83a6ca670bc7193",
+    "mathematics/machine learning/neural networks/nn sinusoidal positional encoding.md": "10978a800d82b2dfb82e502d2d0bd3ab"
   },
   "fields_dict": {
     "Basic": [
