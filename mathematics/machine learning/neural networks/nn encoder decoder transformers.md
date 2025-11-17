@@ -1,7 +1,7 @@
 ## encoder decoder transformers
 - A model with an **encoder** stack and a **decoder** stack.
 - both have the same [[nn transformer block]] based architecture
-- They share the same _ingredients_ ([[nn transformer block]] = [[nn multihead self attention layer]], MLP, [[nn norm layer]], [[nn residual block]]), **but** the **decoder block** has (a) **causal** self-attention and (b) an extra **cross-attention** sublayer to read the encoder’s outputs. The **encoder** uses **bidirectional** self-attention (no causal mask).
+- They share the same _ingredients_ ([[nn transformer block]] = [[nn self attention layer]], MLP, [[nn norm layer]], [[nn residual block]]), **but** the **decoder block** has (a) **causal** self-attention and (b) an extra **cross-attention** sublayer to read the encoder’s outputs. The **encoder** uses **bidirectional** self-attention (no causal mask).
 ##### encoder
 - Transformer that maps an input sequence to **contextual, bidirectional** embeddings
 - Used for understanding tasks (classification, retrieval) or as the **memory** that a [[nn decoder transformers]] **cross-attends** to
@@ -34,7 +34,7 @@ Back:
 ## encoder decoder transformers
 - A model with an **encoder** stack and a **decoder** stack.
 - both have the same [[nn transformer block]] based architecture
-- They share the same _ingredients_ ([[nn transformer block]] = [[nn multihead self attention layer]], MLP, [[nn norm layer]], [[nn residual block]]), **but** the **decoder block** has (a) **causal** self-attention and (b) an extra **cross-attention** sublayer to read the encoder’s outputs. The **encoder** uses **bidirectional** self-attention (no causal mask).
+- They share the same _ingredients_ ([[nn transformer block]] = [[nn self attention layer]], MLP, [[nn norm layer]], [[nn residual block]]), **but** the **decoder block** has (a) **causal** self-attention and (b) an extra **cross-attention** sublayer to read the encoder’s outputs. The **encoder** uses **bidirectional** self-attention (no causal mask).
 ##### encoder
 - Transformer that maps an input sequence to **contextual, bidirectional** embeddings
 - Used for understanding tasks (classification, retrieval) or as the **memory** that a [[nn decoder transformers]] **cross-attends** to
@@ -66,7 +66,7 @@ _________
 
 ### architecture
 
-→ [[nn residual block]] ([[nn norm layer]] + [[nn multihead self attention layer]])
+→ [[nn residual block]] ([[nn norm layer]] + [[nn self attention layer]])
 - normalize
 - build contextualized features ("communication")
 
@@ -107,6 +107,11 @@ $$
 	- mapping from the internal dimension $D$ to the vocabulary size $V$ 
 4) [[softmax function]] → probability distribution over the vocabulary $\hat Y = \mathrm{softmax}(Z)  \in \mathbb{R}^{B \times S \times V}$
 
+#### weight sharing
+- for the output linear transformation mapping back to $\mathbb{R}^{B \times S \times D} \to \mathbb{R}^{B \times S \times V}$, there are two options 
+	- reuse the [[nn embedding layer|embedding matrix]]
+	- training a separate matrix
+- reusing the [[nn embedding layer|embedding matrix]] **reduces parameters**, **improves generalization** and **encourages symmetry** between encoding and decoding but reduces flexibility between input and output space
 ### training
 
 - a text as training data is tokenized (see [[nn tokenization]]) to a sequence of token indices  $x \in \mathrm{R}^S$ and the lables $y \in \mathrm{R}^S$ which are a shifted version of $x$ by one position

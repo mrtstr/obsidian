@@ -13,7 +13,7 @@
 
 ### architecture
 
-→ [[nn residual block]] ([[nn norm layer]] + [[nn multihead self attention layer]])
+→ [[nn residual block]] ([[nn norm layer]] + [[nn self attention layer]])
 - normalize
 - build contextualized features ("communication")
 
@@ -41,7 +41,7 @@ $$
 
 ![[nn residual block#residual block]]
 
-![[nn multihead self attention layer#multihead self attention layer]]
+![[nn self attention layer#multihead self attention layer]]
 
 
 # anki
@@ -69,7 +69,7 @@ Back:
 
 ### architecture
 
-→ [[nn residual block]] ([[nn norm layer]] + [[nn multihead self attention layer]])
+→ [[nn residual block]] ([[nn norm layer]] + [[nn self attention layer]])
 - normalize
 - build contextualized features ("communication")
 

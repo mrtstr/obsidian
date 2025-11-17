@@ -1,3 +1,4 @@
+## self attention layer
 ### multihead self attention layer
 - the Input [[nn embedding layer]] $X \in \mathbb{R}^{B \times S \times D}$ represents a sequence of token embeddings/features of the length $S$ with each feature/embedding being represented in the $\mathbb{R}^{D}$
 	- **B** — **Batch size**: how many sequences processed together (ignored in the following for convenience)
@@ -101,6 +102,8 @@ $$
 \mathrm{MHA}(X, \mathrm{mask}) = \mathrm{Concat}[O^{(1)}, ..., O^{(H)}] W_O \in \mathbb{R}^{S \times D} 
 $$
 
+### multi query attention layer
+
 # -------------------
 
 ![[nn embedding layer#embedding layer]]
@@ -117,7 +120,7 @@ $$
 
 START
 Basic
-[[nn multihead self attention layer]]
+[[nn self attention layer]]
 - concept
 - interpretation
 - important weight matrices with dimensions and purpose (4)
