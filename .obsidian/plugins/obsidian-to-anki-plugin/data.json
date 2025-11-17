@@ -2224,11 +2224,12 @@
     "mathematics/machine learning/neural networks/nn multilayer perceptron.md": "db4fb723bff10d3cef49c60fe46a6f1a",
     "mathematics/machine learning/neural networks/nn universal approximation theorem.md": "10ad4b68b5d956581227e0b4897768fd",
     "mathematics/machine learning/neural networks/nn softsign function.md": "a0e0a9f8b40d2d912c255c235768b703",
-    "mathematics/machine learning/neural networks/nn rectified linear unit.md": "531e5448bcb9568e7a43ded9b44af563",
+    "mathematics/machine learning/neural networks/nn rectified linear unit.md": "db4ae9375bf8065984c9268dfc578041",
     "mathematics/machine learning/neural networks/nn hyperbolic tangent.md": "0e40400c273320ef64c4e9d4502ae7f4",
-    "mathematics/machine learning/neural networks/nn self attention layer.md": "54376c744b9cff7617d2720aca544241",
+    "mathematics/machine learning/neural networks/nn self attention layer.md": "1c1f962242cac31559c9032a74391238",
     "mathematics/machine learning/neural networks/nn rotary position embeddings.md": "fff47ac4ceeb015fcc1391ad9bc1335d",
-    "mathematics/machine learning/neural networks/nn RMSNorm Layer.md": "ca6b0c9934f1f0a6683f268a73f3ba14"
+    "mathematics/machine learning/neural networks/nn RMSNorm Layer.md": "ca6b0c9934f1f0a6683f268a73f3ba14",
+    "mathematics/machine learning/nn decoding and sampling.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [
