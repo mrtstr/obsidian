@@ -333,7 +333,10 @@
     "Pasted image 20250929153716.png",
     "llm_inference 1.png",
     "Pasted image 20251110135535.png",
-    "Pasted image 20251117145923.png"
+    "Pasted image 20251117145923.png",
+    "Pasted image 20251124145547.png",
+    "Pasted image 20251124143848.png",
+    "Pasted image 20251124143900.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -2181,7 +2184,7 @@
     "mathematics/machine learning/neural networks/nn residual block.md": "23a7cd4d7824a7409178fe2a6bc67de8",
     "mathematics/machine learning/neural networks/nn multihead self attention layer.md": "c698fbcfe73fe01ef078afbcdedada4f",
     "mathematics/machine learning/neural networks/nn norm layer.md": "644919616cac29ef623b3c7509d51063",
-    "mathematics/machine learning/neural networks/nn decoder transformers.md": "956cd39eb0b48674bfac3a262ba8573e",
+    "mathematics/machine learning/neural networks/nn decoder transformers.md": "63a3fb6701a0ef9f9902f464d3f9ffeb",
     "mathematics/machine learning/neural networks/nn embedding layer.md": "b169e05ae1cd8f9cf4397988c90be1d4",
     "mathematics/machine learning/neural networks/nn feed forward network.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/machine learning/neural networks/neural network.md": "90a30f3438f56ecd9aa62705f4a782cb",
@@ -2235,7 +2238,10 @@
     "code/rust/r oo patterns.md": "6d73000f5502e216c09d9c4a95c1c7a3",
     "code/rust/r ndarray.md": "040e8cf5e97e97a7d4444b9f4e409074",
     "code/rust/r object safe traits.md": "b1e8472bf28bf722dc105b7ce8d2fa7b",
-    "code/rust/r static dispatch.md": "2183c33c51a5ba39bddc9060f92f65b9"
+    "code/rust/r static dispatch.md": "2183c33c51a5ba39bddc9060f92f65b9",
+    "mathematics/machine learning/neural networks/nn LLM training.md": "86aeb67532f7c5e09c96ece7a6fddf22",
+    "mathematics/machine learning/neural networks/nn adam optimizer.md": "9bb3d52b2aae9bce4593ab8d7da6b901",
+    "mathematics/machine learning/neural networks/nn learning rate scheduling.md": "2671ad3af44fa82605238856a141c995"
   },
   "fields_dict": {
     "Basic": [

@@ -60,6 +60,7 @@ $$
 \end{split}
 $$
 
+![[Pasted image 20251124143807.png]]
 ### inference
 - during inference, we tokenize the user input and pass it through the model to calculate the predicted distribution of the next token $Y$ and sample the next token from it
 - when sampling a [[nn temperature]] can be used to adapt the variance, or we can always use the token with the highest likelihood
@@ -155,6 +156,7 @@ $$
 \end{split}
 $$
 
+![[Pasted image 20251124143848.png]]
 ### inference
 - during inference, we tokenize the user input and pass it through the model to calculate the predicted distribution of the next token $Y$ and sample the next token from it
 - when sampling a [[nn temperature]] can be used to adapt the variance, or we can always use the token with the highest likelihood
@@ -467,7 +469,7 @@ $$
 \end{split}
 $$
 
-
+![[Pasted image 20251124143900.png]]
 
 _______________
 ## transformer block
@@ -701,3 +703,4 @@ $$
 Tags: ml WS2526
 <!--ID: 1763387136535-->
 END
+
