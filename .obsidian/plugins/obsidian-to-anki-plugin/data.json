@@ -336,7 +336,15 @@
     "Pasted image 20251117145923.png",
     "Pasted image 20251124145547.png",
     "Pasted image 20251124143848.png",
-    "Pasted image 20251124143900.png"
+    "Pasted image 20251124143900.png",
+    "Pasted image 20251124170538.png",
+    "Pasted image 20251124170315.png",
+    "Pasted image 20251124170447.png",
+    "Pasted image 20251124170417.png",
+    "Pasted image 20251124170528.png",
+    "Pasted image 20251124170322.png",
+    "Pasted image 20251124170459.png",
+    "Pasted image 20251124170353.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -2239,7 +2247,7 @@
     "code/rust/r ndarray.md": "040e8cf5e97e97a7d4444b9f4e409074",
     "code/rust/r object safe traits.md": "b1e8472bf28bf722dc105b7ce8d2fa7b",
     "code/rust/r static dispatch.md": "2183c33c51a5ba39bddc9060f92f65b9",
-    "mathematics/machine learning/neural networks/nn LLM training.md": "86aeb67532f7c5e09c96ece7a6fddf22",
+    "mathematics/machine learning/neural networks/nn LLM training.md": "b0bd3e23ce775175a0baf333a0e1f878",
     "mathematics/machine learning/neural networks/nn adam optimizer.md": "9bb3d52b2aae9bce4593ab8d7da6b901",
     "mathematics/machine learning/neural networks/nn learning rate scheduling.md": "2671ad3af44fa82605238856a141c995"
   },
