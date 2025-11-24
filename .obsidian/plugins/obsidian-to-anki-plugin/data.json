@@ -2060,7 +2060,7 @@
     "code/steam process.md": "44c9daed545be614435baa5ac037742a",
     "code/rust/r optional parameter pattern.md": "0f4bbcb1cd3b323bee041d529683f6bc",
     "code/rust/r marker.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r generic type.md": "79aeff6bf5e2830e410136b9743090f9",
+    "code/rust/r generic type.md": "df48c66740ba1b6a3df4201109a0a844",
     "code/rust/r unsafe.md": "d44eec485f5cfe7fdaa2609a4858c662",
     "code/rust/r reference.md": "3a17f7915209d976de40a120cab1eaee",
     "code/rust/r raw pointer.md": "9b4e8bf46b56bb66009766e06599aec1",
@@ -2230,10 +2230,12 @@
     "mathematics/machine learning/neural networks/nn rotary position embeddings.md": "fff47ac4ceeb015fcc1391ad9bc1335d",
     "mathematics/machine learning/neural networks/nn RMSNorm Layer.md": "ca6b0c9934f1f0a6683f268a73f3ba14",
     "mathematics/machine learning/nn decoding and sampling.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "code/rust/r dynamic dispatch.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r dynamic dispatch.md": "f976fae2d10d98067310e3c69d853581",
     "code/rust/r dynamic collections.md": "f62a27c87d5cea052c317d0dfd362dd6",
     "code/rust/r oo patterns.md": "a5c9564dc1e670a4ed8afac7c3fcaa0e",
-    "code/rust/r ndarray.md": "040e8cf5e97e97a7d4444b9f4e409074"
+    "code/rust/r ndarray.md": "040e8cf5e97e97a7d4444b9f4e409074",
+    "code/rust/r object safe traits.md": "b1e8472bf28bf722dc105b7ce8d2fa7b",
+    "code/rust/r static dispatch.md": "2183c33c51a5ba39bddc9060f92f65b9"
   },
   "fields_dict": {
     "Basic": [
