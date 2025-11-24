@@ -2229,7 +2229,11 @@
     "mathematics/machine learning/neural networks/nn self attention layer.md": "1c1f962242cac31559c9032a74391238",
     "mathematics/machine learning/neural networks/nn rotary position embeddings.md": "fff47ac4ceeb015fcc1391ad9bc1335d",
     "mathematics/machine learning/neural networks/nn RMSNorm Layer.md": "ca6b0c9934f1f0a6683f268a73f3ba14",
-    "mathematics/machine learning/nn decoding and sampling.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "mathematics/machine learning/nn decoding and sampling.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r dynamic dispatch.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "code/rust/r dynamic collections.md": "f62a27c87d5cea052c317d0dfd362dd6",
+    "code/rust/r oo patterns.md": "a5c9564dc1e670a4ed8afac7c3fcaa0e",
+    "code/rust/r ndarray.md": "040e8cf5e97e97a7d4444b9f4e409074"
   },
   "fields_dict": {
     "Basic": [
