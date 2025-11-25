@@ -1,5 +1,5 @@
 ### dynamic dispatch
-- implement something for all [[r struct]] and [[r enum]] that implement a certain [[r trait]]
+- implement something for a [[r generic type]] that implement a certain [[r trait]]
 - decided at [[r run time]] and not at [[r compile time]] like [[r static dispatch]] 
 	→ slightly slower but smaller binary's
 - only works with [[r object safe traits]]
@@ -36,7 +36,7 @@ Basic
 
 Back: 
 ### dynamic dispatch
-- implement something for all [[r struct]] and [[r enum]] that implement a certain [[r trait]]
+- implement something for a [[r generic type]] that implement a certain [[r trait]]
 - decided at [[r run time]] and not at [[r compile time]] like [[r static dispatch]] 
 	→ slightly slower but smaller binary's
 - only works with [[r object safe traits]]

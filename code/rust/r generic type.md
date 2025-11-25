@@ -99,7 +99,7 @@ The line `feed_animal(animal)` inside the loop tries to infer `T` from the argum
 - `feed_animal` takes `&T`, so the compiler unifies `&T` with `&dyn Eater` → `T = dyn Eater`.
 But:
 - Generic type params are **`Sized` by default** (`T: Eater` is really `T: Eater + Sized`).
-- `dyn Eater` is **unsized**, so `T = dyn Eater` violates the implicit `Sized` bound.
+- `dyn Eater` is **unsized**, so `T = dyn Eater` violates the implicit `Sized` bound (see [[r object safe traits]])
 
 ![[r dynamic dispatch#dynamic dispatch]]
 
@@ -219,7 +219,7 @@ The line `feed_animal(animal)` inside the loop tries to infer `T` from the argum
 - `feed_animal` takes `&T`, so the compiler unifies `&T` with `&dyn Eater` → `T = dyn Eater`.
 But:
 - Generic type params are **`Sized` by default** (`T: Eater` is really `T: Eater + Sized`).
-- `dyn Eater` is **unsized**, so `T = dyn Eater` violates the implicit `Sized` bound.
+- `dyn Eater` is **unsized**, so `T = dyn Eater` violates the implicit `Sized` bound (see [[r object safe traits]])
 ### dynamic dispatch
 - implement something for all [[r struct]] and [[r enum]] that implement a certain [[r trait]]
 - decided at [[r run time]] and not at [[r compile time]] like [[r static dispatch]] 
@@ -278,11 +278,10 @@ Tags: code rust
 END
 
 
-# anki
 
 START
 Basic
-- does the following code work and if not how to do it instead?
+- does the following code work? If not, why and how to do it instead?
 
 ```rust
 fn feed_animal<T: Eater>(animal: &T) {
@@ -338,7 +337,7 @@ The line `feed_animal(animal)` inside the loop tries to infer `T` from the argum
 - `feed_animal` takes `&T`, so the compiler unifies `&T` with `&dyn Eater` → `T = dyn Eater`.
 But:
 - Generic type params are **`Sized` by default** (`T: Eater` is really `T: Eater + Sized`).
-- `dyn Eater` is **unsized**, so `T = dyn Eater` violates the implicit `Sized` bound.
+- `dyn Eater` is **unsized**, so `T = dyn Eater` violates the implicit `Sized` bound (see [[r object safe traits]])
 ## generic type
 
 - [[r static dispatch]]: 
@@ -386,6 +385,106 @@ struct AppDyn {
     widget: Box<dyn Draw>,
 }
 
+```
+
+### dynamic dispatch
+- implement something for all [[r struct]] and [[r enum]] that implement a certain [[r trait]]
+- decided at [[r run time]] and not at [[r compile time]] like [[r static dispatch]] 
+	→ slightly slower but smaller binary's
+- only works with [[r object safe traits]]
+#### syntax example
+
+```rust
+trait Draw {
+    fn draw(&self);
+}
+
+fn render_dyn(x: &dyn Draw) {  // dynamic dispatch
+    x.draw();                  // uses a vtable at runtime
+}
+
+
+struct AppDyn {
+    widget: Box<dyn Draw>,
+}
+```
+
+## static dispatch
+- [[r function]] that work with a [[r generic type]] can be implemented as follows
+- at [[r compile time]] the [[r rustc]] creates multiple versions of the functions for all [[r data type]] of values it is used for 
+
+```rust
+fn identity<T>(x: T) -> T { x }
+
+let a = identity(10);                // T = i32
+let b = identity(String::from("x")); // T = String
+```
+
+#### constraints
+- it's possible to define contains, like in this example the [[r data type]] has to implement the [[r trait]] `XYZ` or otherwise it won't compile
+
+```rust
+fn identity<T: XYZ>(x: T) -> T {
+    x // valid only for types that implement XYZ
+}
+```
+
+- the constraints can be made explicit like in the following equivalent example
+
+```rust
+fn identity<T>(x: T) -> T
+where
+    T: XYZ,
+{
+    x
+}
+```
+
+Tags: code rust
+<!--ID: 1763982709987-->
+END
+
+
+# anki
+
+START
+Basic
+- does this work?
+
+```rust
+struct App<T: Draw> {
+    widget: T,
+}
+
+
+struct AppDyn {
+    widget: dyn Draw,
+}
+
+```
+
+Back: 
+
+
+## generic type
+
+
+```rust
+// Static via generics
+struct App<T: Draw> {
+    widget: T,
+}
+
+// Dynamic via trait object
+// doent work because the size of draw is not known at compile time
+struct AppDyn {
+    widget: dyn Draw,
+}
+
+// needs a pointer
+struct AppDyn {
+    widget: Box<dyn Draw>,
+}
 ```
 
 
@@ -444,5 +543,5 @@ where
 ```
 
 Tags: code rust
-<!--ID: 1763982709987-->
+<!--ID: 1764080803404-->
 END

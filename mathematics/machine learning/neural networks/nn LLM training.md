@@ -58,6 +58,7 @@ $$
 - then using PP and TP each GPU keeps its optimizer states and past gradients
 - ZeRO removes that redundancy and frees up memory for larger model
 - trade off: more communication between the GPUs required
+- optimizer states take a big share of the overall memory
 ### precision formats
 - value in the model (weights, activation, gradients, optimizer states) is stored in a specific numeric format
 - Lower precision → less memory → larger batch sizes & longer context windows
@@ -345,6 +346,7 @@ Back:
 - then using PP and TP each GPU keeps its optimizer states and past gradients
 - ZeRO removes that redundancy and frees up memory for larger model
 - trade off: more communication between the GPUs required
+- optimizer states take a big share of the overall memory
 
 ______
 
@@ -590,6 +592,7 @@ $$
 - then using PP and TP each GPU keeps its optimizer states and past gradients
 - ZeRO removes that redundancy and frees up memory for larger model
 - trade off: more communication between the GPUs required
+- optimizer states take a big share of the overall memory
 ### precision formats
 - value in the model (weights, activation, gradients, optimizer states) is stored in a specific numeric format
 - Lower precision → less memory → larger batch sizes & longer context windows
