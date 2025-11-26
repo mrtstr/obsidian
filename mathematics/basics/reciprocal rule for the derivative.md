@@ -1,5 +1,5 @@
 
-![[chain rule of derivative#composition chain rule for derivative]]
+![[chain rule#composition chain rule for derivative]]
 
 ![[power rule for derivative#elementary power rulelinearity of the derivative]]
 

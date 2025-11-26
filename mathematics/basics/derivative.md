@@ -2,12 +2,14 @@
 - let $(X, ||\cdot||_X)$ and $(Y, ||\cdot||_Y)$ be [[banach space|banach spaces]] and let $f: X\to Y$ a [[function]]
 - the [[derivative]] operator $Df: X \to L(X,Y)$ is a [[function]] that maps elements of $X$ to a [[bounded linear map]] $Df(x)[h]: X \to Y$
 - the [[bounded linear map]] $Df(x)[h]: X \to Y$ is the [[derivative]] of $f$ in point $x \in X$ and can be interpreted as a linear approximation of $f$ in point $x$
-- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$
+- in the case of $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$ the [[derivative]] $Df(x)[h] = Ah$ can be expressed as a [[matrix]] $A \in \mathbb{R}^{n \times m}$ which is called the [[jacobian]] $J_f(x)$
+
 $$
 \lim_{||h||_X \to 0} \frac{||f(x+h) - f(x) - Df(x)[h]||_Y}{||h||_X} = 0
 $$
 
-- this eqivalent definition is often easier to work with:
+- this equivalent definition is often easier to work with:
+
 $$
 f(x + h) = f(x) + Df(x)[h] + \varphi(h) \quad \text{with} \quad \lim_{h \to 0} \frac{||\varphi(h)||_Y}{||h||_X} = 0
 $$
@@ -304,7 +306,7 @@ $$
 
 ![[product rule of derivative#multiplication product rule for derivative]]
 
-![[chain rule of derivative#composition chain rule for derivative]]
+![[chain rule#composition chain rule for derivative]]
 
 ![[inverse rule of derivative#inverse function inverse rule for derivative]]
 
@@ -385,7 +387,7 @@ f(x+h) \left(g(x+h) - g(x)\right) + g(x) \left(f(x+h) - g(x)\right)
 \end{split}
 $$
 
-### [[chain rule of derivative]]
+### [[chain rule]]
 
 $$
 \frac{df\left(g(x)\right)}{dx} = \frac{df\left(g(x)\right)}{dg(x)} \cdot \frac{dg(x)}{dx} 

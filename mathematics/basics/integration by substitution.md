@@ -6,7 +6,7 @@ $$
 
 TODO add example
 ### integration by substitution
-- the [[integration by substitution]] rule for the [[integral]] is the equivalent of the [[chain rule of derivative]]
+- the [[integration by substitution]] rule for the [[integral]] is the equivalent of the [[chain rule]]
 - used to calculate the [[integral]] of [[function]] that is a [[composition]] of two [[function|functions]]
 #### definit integral
 $$
@@ -23,7 +23,7 @@ $$
 F(x) &= \int_{a}^{x} f(t) dt \Leftrightarrow f(x) = \frac{dF(x)}{dx} \\
 \end{split}
 $$
-We know the following from the [[chain rule of derivative]]
+We know the following from the [[chain rule]]
 
 $$
 \begin{split}
@@ -60,7 +60,7 @@ $$
 F(x) &= \int_{a}^{x} f(t) dt \Leftrightarrow f(x) = \frac{dF(x)}{dx} \\
 \end{split}
 $$
-We know the following from the [[chain rule of derivative]]
+We know the following from the [[chain rule]]
 
 $$
 \begin{split}
@@ -131,7 +131,7 @@ $$
 
 ![[integral#definit integral]]
 
-![[chain rule of derivative#composition chain rule for derivative]]
+![[chain rule#composition chain rule for derivative]]
 
 
 # anki
@@ -142,7 +142,7 @@ Basic
 - theorem (definit)
 - proof (definit)
 Back: 
-- the [[integration by substitution]] rule for the [[integral]] is the equivalent of the [[chain rule of derivative]]
+- the [[integration by substitution]] rule for the [[integral]] is the equivalent of the [[chain rule]]
 - used to calculate the [[integral]] of [[function]] that is a [[composition]] of two [[function|functions]]
 
 ### theorem
@@ -184,7 +184,7 @@ $$
 F(x) &= \int_{a}^{x} f(t) dt \Leftrightarrow f(x) = \frac{dF(x)}{dx} \\
 \end{split}
 $$
-We know the folowing from the [[chain rule of derivative]]
+We know the folowing from the [[chain rule]]
 $$
 \begin{split}
 \frac{dF\left(g(x)\right)}{dx} 
@@ -217,7 +217,7 @@ Basic
 - theorem (infinit)
 - proof (infinit)
 Back: 
-- the [[integration by substitution]] rule for the [[integral]] is the equivalent of the [[chain rule of derivative]]
+- the [[integration by substitution]] rule for the [[integral]] is the equivalent of the [[chain rule]]
 - used to calculate the [[integral]] of [[function]] that is a [[composition]] of two [[function|functions]]
 
 ### theorem
@@ -258,7 +258,7 @@ $$
 F(x) &= \int_{a}^{x} f(t) dt \Leftrightarrow f(x) = \frac{dF(x)}{dx} \\
 \end{split}
 $$
-We know the folowing from the [[chain rule of derivative]]
+We know the folowing from the [[chain rule]]
 $$
 \begin{split}
 \frac{dF\left(g(x)\right)}{dx} 

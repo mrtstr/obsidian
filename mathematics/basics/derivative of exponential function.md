@@ -12,9 +12,9 @@ $$
 $$
 
 ## proof for [[derivative of exponential function]]
-- the [[derivative of exponential function]] can be calculated by first applying the [[chain rule of derivative]] and using the [[limit]] identity of the [[natural logarithm]]
+- the [[derivative of exponential function]] can be calculated by first applying the [[chain rule]] and using the [[limit]] identity of the [[natural logarithm]]
 
-![[chain rule of derivative#composition chain rule for derivative]]
+![[chain rule#composition chain rule for derivative]]
 
 ![[natural logarithm#limit identity of natural logarithm]]
 
@@ -50,7 +50,7 @@ $$
 $$
 
 ## requierments
-- the [[derivative of exponential function]] can be calculated by first applying the [[chain rule of derivative]] and using the [[limit]] identity of the [[natural logarithm]]
+- the [[derivative of exponential function]] can be calculated by first applying the [[chain rule]] and using the [[limit]] identity of the [[natural logarithm]]
 #### definition derivative
 $$
 \frac{df(x)}{dx} = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}

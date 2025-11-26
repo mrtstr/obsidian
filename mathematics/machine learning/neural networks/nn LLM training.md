@@ -19,7 +19,7 @@ $$
 	- the number of layers $L$
 	- the batch size $B$
 	- the number of heads $H$
-	- the sequence length $S$ in the [[nn multilayer perceptron]]
+	- the sequence length $S$ in the [[neural network]]
 - but quadratic with the model dimension $d_\mathrm{model}$ and in the [[nn self attention layer]] also with the sequence length $S$
 
 ### hardware for LLM training
@@ -117,7 +117,7 @@ $$
 	- the number of layers $L$
 	- the batch size $B$
 	- the number of heads $H$
-	- the sequence length $S$ in the [[nn multilayer perceptron]]
+	- the sequence length $S$ in the [[neural network]]
 - but quadratic with the model dimension $d_\mathrm{model}$ and in the [[nn self attention layer]] also with the sequence length $S$
 
 ####  batch size
@@ -553,7 +553,7 @@ $$
 	- the number of layers $L$
 	- the batch size $B$
 	- the number of heads $H$
-	- the sequence length $S$ in the [[nn multilayer perceptron]]
+	- the sequence length $S$ in the [[neural network]]
 - but quadratic with the model dimension $d_\mathrm{model}$ and in the [[nn self attention layer]] also with the sequence length $S$
 
 ### hardware for LLM training

@@ -28,7 +28,7 @@ n+1: \\
 &= \left(n + 1\right) x^{\left(n + 1\right) - 1}  \\
 \end{split}
 $$
-### proof for [[exponential|exponent]] $\frac{1}{n}$ using the [[chain rule of derivative]]
+### proof for [[exponential|exponent]] $\frac{1}{n}$ using the [[chain rule]]
 $$
 \begin{split}
 f(x) &= x^{\frac{1}{n}} = y \\
@@ -46,7 +46,7 @@ f^{-1}\left(y\right) &= y^{n} = x \\
 \end{split}
 $$
 
-### proof for [[exponential|exponents]] from the [[rational numbers]] $q = \frac{n}{m}$ using the [[chain rule of derivative|chain rule]]
+### proof for [[exponential|exponents]] from the [[rational numbers]] $q = \frac{n}{m}$ using the [[chain rule|chain rule]]
 $$
 \begin{split}
 \frac{dx^{\frac{n}{m}}}{dx} 
@@ -134,7 +134,7 @@ n+1: \\
 \end{split}
 $$
 
-#### proof for [[exponential|exponent]] $\frac{1}{n}$ using the [[chain rule of derivative]]
+#### proof for [[exponential|exponent]] $\frac{1}{n}$ using the [[chain rule]]
 $$
 \begin{split}
 f(x) &= x^{\frac{1}{n}} = y \\
@@ -152,7 +152,7 @@ f^{-1}\left(y\right) &= y^{n} = x \\
 \end{split}
 $$
 
-#### proof for [[exponential|exponents]] from the [[rational numbers]] $q = \frac{n}{m}$ using the [[chain rule of derivative|chain rule]]
+#### proof for [[exponential|exponents]] from the [[rational numbers]] $q = \frac{n}{m}$ using the [[chain rule|chain rule]]
 $$
 \begin{split}
 \frac{dx^{\frac{n}{m}}}{dx} 

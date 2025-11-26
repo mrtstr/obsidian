@@ -1,9 +1,9 @@
 ### universal approximation theorem
 - fundamental theorem that justifies why [[neural network]] are so powerful
-- for every continuous function $f$ there exists a [[nn multilayer perceptron]] with a single layer and a non-linear [[nn activation function]] that can approximate $f$ with an arbitrary precision with enough parameters
+- for every continuous function $f$ there exists a [[neural network]] with a single layer and a non-linear [[nn activation function]] that can approximate $f$ with an arbitrary precision with enough parameters
 
 
-![[nn multilayer perceptron#multilayer perceptron]]
+![[neural network#multilayer perceptron]]
 
 
 # anki
@@ -14,7 +14,7 @@ Basic
 Back: 
 ### universal approximation theorem
 - fundamental theorem that justifies why [[neural network]] are so powerful
-- for every continuous function $f$ there exists a [[nn multilayer perceptron]] with a single layer and a non-linear [[nn activation function]] that can approximate $f$ with an arbitrary precision with enough parameters
+- for every continuous function $f$ there exists a [[neural network]] with a single layer and a non-linear [[nn activation function]] that can approximate $f$ with an arbitrary precision with enough parameters
 
 ## multilayer perceptron
 - let $L$ be the number of layers of the [[neural network]] 
