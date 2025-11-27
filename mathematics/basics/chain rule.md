@@ -73,8 +73,7 @@ $$
 $$
 \begin{split}
 D f\left(g(x)\right) 
-&= \left. Df\left(u\right) \right |_{u=g(x)} Dg(x) \\
-&= Df\left(g(x)\right)  Dg(x) \\
+&= \underbrace{\left. Df\left(u\right) \right |_{u=g(x)}}_{\in \mathbb{R}^{1\times m}}\underbrace{ Dg(x)}_{\in \mathbb{R}^{m\times n}} \in \mathbb{R}^{1 \times n} \\
 \end{split}
 $$
 
@@ -96,6 +95,7 @@ Basic
 [[chain rule]] for the multi variable case
 - theorem
 - intuition
+- dimensions
 Back: 
 ## chain rule
 ### multi variable case
@@ -163,12 +163,9 @@ $$
 $$
 \begin{split}
 D f\left(g(x)\right) 
-&= \left. Df\left(u\right) \right |_{u=g(x)} Dg(x) \\
-&= Df\left(g(x)\right)  Dg(x) \\
+&= \underbrace{\left. Df\left(u\right) \right |_{u=g(x)}}_{\in \mathbb{R}^{1\times m}}\underbrace{ Dg(x)}_{\in \mathbb{R}^{m\times n}} \in \mathbb{R}^{1 \times n} \\
 \end{split}
 $$
-
-
 
 ___________
 
@@ -214,14 +211,18 @@ END
 START
 Basic
 proof for the following
+- $x \in \mathbb{R}^{n}$ 
+- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+- $f: \mathbb{R}^m \to \mathbb{R}$ 
 
 $$
 \begin{split}
-\frac{\partial f\left(g(x)\right)}{\partial x} 
-&= Df\left(g(x)\right) Dg(x) \\
+D f\left(g(x)\right) 
+&= \left. Df\left(u\right) \right |_{u=g(x)} Dg(x) \\
 \end{split}
 $$
 
+- how are the dimensions?
 
 Back: 
 ## chain rule
@@ -290,11 +291,9 @@ $$
 $$
 \begin{split}
 D f\left(g(x)\right) 
-&= \left. Df\left(u\right) \right |_{u=g(x)} Dg(x) \\
-&= Df\left(g(x)\right)  Dg(x) \\
+&= \underbrace{\left. Df\left(u\right) \right |_{u=g(x)}}_{\in \mathbb{R}^{1\times m}}\underbrace{ Dg(x)}_{\in \mathbb{R}^{m\times n}} \in \mathbb{R}^{1 \times n} \\
 \end{split}
 $$
-
 
 ___________
 
