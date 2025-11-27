@@ -1,5 +1,5 @@
 ## LLM training
-####  batch size
+###  batch size
 - LLMs require a very large batch size (millions of tokens per step)
 	- small batch site → noisy gradient, unstable training
 	- Large batch → smoother gradient, faster convergence
@@ -54,7 +54,7 @@ $$
 
 ![[Pasted image 20251124170353.png]]
 
-#### ZeRO (Zero Redundancy Optimizer)
+### ZeRO (Zero Redundancy Optimizer)
 - then using PP and TP each GPU keeps its optimizer states and past gradients
 - ZeRO removes that redundancy and frees up memory for larger model
 - trade off: more communication between the GPUs required
@@ -63,6 +63,9 @@ $$
 - value in the model (weights, activation, gradients, optimizer states) is stored in a specific numeric format
 - Lower precision → less memory → larger batch sizes & longer context windows
 - currently used format `BF16` which has 16 bits but the same range as `f32` but with lower precision
+
+
+
 # ------------
 
 ![[nn decoder transformers#decoder transformers]]
