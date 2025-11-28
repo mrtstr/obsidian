@@ -92,7 +92,6 @@ $$
  &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \frac{\partial \left(\sum_i b_{j}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \delta^{(k)}_j \\
-  &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
   \Rightarrow \nabla_ {b^{(k)}} l 
   &=\delta^{(k)\top} \in \mathbb{R}^{n_{k}}
 \end{split}
@@ -251,7 +250,6 @@ $$
  &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \frac{\partial \left(\sum_i b_{j}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \delta^{(k)}_j \\
-  &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
   \Rightarrow \nabla_ {b^{(k)}} l 
   &=\delta^{(k)\top} \in \mathbb{R}^{n_{k}}
 \end{split}
@@ -353,7 +351,6 @@ $$
  &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \frac{\partial \left(\sum_i b_{j}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \delta^{(k)}_j \\
-  &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
   \Rightarrow \nabla_ {b^{(k)}} l 
   &=\delta^{(k)\top} \in \mathbb{R}^{n_{k}}
 \end{split}
@@ -788,7 +785,6 @@ $$
  &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \frac{\partial \left(\sum_i b_{j}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \delta^{(k)}_j \\
-  &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
   \Rightarrow \nabla_ {b^{(k)}} l 
   &=\delta^{(k)\top} \in \mathbb{R}^{n_{k}}
 \end{split}
@@ -1112,7 +1108,6 @@ $$
  &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \frac{\partial \left(\sum_i b_{j}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \delta^{(k)}_j \\
-  &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
   \Rightarrow \nabla_ {b^{(k)}} l 
   &=\delta^{(k)\top} \in \mathbb{R}^{n_{k}}
 \end{split}
@@ -1461,7 +1456,6 @@ $$
  &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \frac{\partial \left(\sum_i b_{j}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \delta^{(k)}_j \\
-  &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
   \Rightarrow \nabla_ {b^{(k)}} l 
   &=\delta^{(k)\top} \in \mathbb{R}^{n_{k}}
 \end{split}
