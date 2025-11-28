@@ -16,24 +16,36 @@ $$
 
 
 ### multi variable case
-let 
-- $x \in \mathbb{R}^{n}$ 
-- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+#### single dimension case
+- $x \in \mathbb{R}$ 
+- $g: \mathbb{R} \to \mathbb{R}^m$ 
 - $f: \mathbb{R}^m \to \mathbb{R}$ 
 
 $$
 \begin{split}
-\frac{\partial f\left(g(x)\right)}{\partial x_i} 
-&= \lim_{h \to 0} \frac{ f\left(g(x + e_i h)\right) - f\left(g(x )\right) }{h}  \\
-&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x_i} \\
-&= Df\left(g(x)\right) Dg(x)_{(: i)} \in \mathbb{R} \\
 \frac{\partial f\left(g(x)\right)}{\partial x} 
-&= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{1 \times n} \\
+&= \lim_{h \to 0} \frac{ f\left(g(x + e h)\right) - f\left(g(x )\right) }{h}  \\
+&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x} \\
 \end{split}
 $$
 
-- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{1\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
+
+#### general case
+let 
+- $x \in \mathbb{R}^{n}$ 
+- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+- $f: \mathbb{R}^m \to \mathbb{R}^k$ 
+
+
+$$
+\begin{split}
+\frac{\partial f\left(g(x)\right)}{\partial x} 
+&= D{g \circ f}(x) \\
+&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+\end{split}
+$$
+
+- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{k\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
 
 #### dimensions
 - let $F = f\left(g(x)\right)$
@@ -107,30 +119,68 @@ $$
 START
 Basic
 [[chain rule]] for the multi variable case
-- theorem
+- theorem for the following cases with $f\left(g(x)\right)$
 - intuition
 - dimensions
-Back: 
-## chain rule
-### multi variable case
-let 
+
+- $x \in \mathbb{R}$ 
+- $g: \mathbb{R} \to \mathbb{R}^m$ 
+- $f: \mathbb{R}^m \to \mathbb{R}$ 
+
 - $x \in \mathbb{R}^{n}$ 
 - $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+- $f: \mathbb{R}^m \to \mathbb{R}^k$ 
+
+
+Back: 
+## chain rule
+### single variable case
+- [[derivative]] of the [[composition]] of two [[function|functions]]
+
+$$
+\frac{df\left(g(x)\right)}{dx} = \frac{df\left(g(x)\right)}{dg(x)} \cdot \frac{dg(x)}{dx} 
+$$
+
+#### intuition chain rule
+- the rate of change of $f$ to $x$ is equal to the rate of change of $f$ to $g$ times the rate of change of $g$ to $x$
+- if a car is $5$ times faster than a bike and a bike is 4 times faster than a wakling person than the car is $20 = 4 	\times 5$ faster than a waling person
+
+$$
+\frac{\Delta \text{car distance}}{\Delta \text{time}} = \frac{\Delta \text{car distance}}{\Delta \text{bike distance}} \times \frac{\Delta \text{bike distance}}{\Delta \text{time}}
+$$
+
+
+### multi variable case
+#### single dimension case
+- $x \in \mathbb{R}$ 
+- $g: \mathbb{R} \to \mathbb{R}^m$ 
 - $f: \mathbb{R}^m \to \mathbb{R}$ 
 
 $$
 \begin{split}
-\frac{\partial f\left(g(x)\right)}{\partial x_i} 
-&= \lim_{h \to 0} \frac{ f\left(g(x + e_i h)\right) - f\left(g(x )\right) }{h}  \\
-&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x_i} \\
-&= Df\left(g(x)\right) Dg(x)_{(: i)} \in \mathbb{R} \\
 \frac{\partial f\left(g(x)\right)}{\partial x} 
-&= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{1 \times n} \\
+&= \lim_{h \to 0} \frac{ f\left(g(x + e h)\right) - f\left(g(x )\right) }{h}  \\
+&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x} \\
 \end{split}
 $$
 
-- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{1\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
+
+#### general case
+let 
+- $x \in \mathbb{R}^{n}$ 
+- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+- $f: \mathbb{R}^m \to \mathbb{R}^k$ 
+
+
+$$
+\begin{split}
+\frac{\partial f\left(g(x)\right)}{\partial x} 
+&= D{g \circ f}(x) \\
+&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+\end{split}
+$$
+
+- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{k\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
 
 #### dimensions
 - let $F = f\left(g(x)\right)$
@@ -139,21 +189,13 @@ $$
 $$
 \begin{split}
 DF(x) = 
-\underbrace{Df(u)}_{\mathbb{R}^{\mathrm{dim}(f) \times \mathrm{dim}(g)}} 
+\underbrace{\left.Df(u)\right|_{u=g(x)}}_{
+\mathbb{R}^{\mathrm{dim}(f) \times \mathrm{dim}(g)}} 
 \quad
 \underbrace{Dg(x)}_{\mathbb{R}^{\mathrm{dim}(g) \times \mathrm{dim}(x)}} 
 \in \mathbb{R}^{\mathrm{dim}(F) \times \mathrm{dim}(x)} \\
-
 \end{split}
 $$
-
-#### intuition
-- if the ith dimension of $x$ changes by a delta, this can lead to a change of all dimensions of $g(x)$ and each change of a $g(x)_j$ can lead to a change of $f\left(g(x)\right)$ 
-- by summing up the effects we have the [[partial derivative]]
-
-$$
-\lim_{h \to 0} \sum_{j=1}^m  \frac{ g(x+e_ih)_j -  g(x)_j}{h}  \cdot \frac{ f\left(g(x) + e_j h\right)-f\left(g(x)\right)}{h}   $$
-
 #### proof
 
 - $g$ and $f$ are [[differentiable]] so that the following exists
@@ -195,6 +237,13 @@ D f\left(g(x)\right)
 &= \underbrace{\left. Df\left(u\right) \right |_{u=g(x)}}_{\in \mathbb{R}^{1\times m}}\underbrace{ Dg(x)}_{\in \mathbb{R}^{m\times n}} \in \mathbb{R}^{1 \times n} \\
 \end{split}
 $$
+
+#### intuition
+- if the ith dimension of $x$ changes by a delta, this can lead to a change of all dimensions of $g(x)$ and each change of a $g(x)_j$ can lead to a change of $f\left(g(x)\right)$ 
+- by summing up the effects we have the [[partial derivative]]
+
+$$
+\lim_{h \to 0} \sum_{j=1}^m  \frac{ g(x+e_ih)_j -  g(x)_j}{h}  \cdot \frac{ f\left(g(x) + e_j h\right)-f\left(g(x)\right)}{h}   $$
 
 ___________
 
@@ -242,7 +291,7 @@ Basic
 proof for the following
 - $x \in \mathbb{R}^{n}$ 
 - $g: \mathbb{R}^n \to \mathbb{R}^m$ 
-- $f: \mathbb{R}^m \to \mathbb{R}$ 
+- $f: \mathbb{R}^m \to \mathbb{R}^k$ 
 
 $$
 \begin{split}
@@ -254,26 +303,24 @@ $$
 - how are the dimensions?
 
 Back: 
-## chain rule
-### multi variable case
+
+
+#### general case
 let 
 - $x \in \mathbb{R}^{n}$ 
 - $g: \mathbb{R}^n \to \mathbb{R}^m$ 
-- $f: \mathbb{R}^m \to \mathbb{R}$ 
+- $f: \mathbb{R}^m \to \mathbb{R}^k$ 
+
 
 $$
 \begin{split}
-\frac{\partial f\left(g(x)\right)}{\partial x_i} 
-&= \lim_{h \to 0} \frac{ f\left(g(x + e_i h)\right) - f\left(g(x )\right) }{h}  \\
-&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x_i} \\
-&= Df\left(g(x)\right) Dg(x)_{(: i)} \in \mathbb{R} \\
 \frac{\partial f\left(g(x)\right)}{\partial x} 
 &= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{1 \times n} \\
+&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
 \end{split}
 $$
 
-- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{1\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
+- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{k\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
 
 #### dimensions
 - let $F = f\left(g(x)\right)$
@@ -282,21 +329,13 @@ $$
 $$
 \begin{split}
 DF(x) = 
-\underbrace{Df(u)}_{\mathbb{R}^{\mathrm{dim}(f) \times \mathrm{dim}(g)}} 
+\underbrace{\left.Df(u)\right|_{u=g(x)}}_{
+\mathbb{R}^{\mathrm{dim}(f) \times \mathrm{dim}(g)}} 
 \quad
 \underbrace{Dg(x)}_{\mathbb{R}^{\mathrm{dim}(g) \times \mathrm{dim}(x)}} 
 \in \mathbb{R}^{\mathrm{dim}(F) \times \mathrm{dim}(x)} \\
-
 \end{split}
 $$
-
-#### intuition
-- if the ith dimension of $x$ changes by a delta, this can lead to a change of all dimensions of $g(x)$ and each change of a $g(x)_j$ can lead to a change of $f\left(g(x)\right)$ 
-- by summing up the effects we have the [[partial derivative]]
-
-$$
-\lim_{h \to 0} \sum_{j=1}^m  \frac{ g(x+e_ih)_j -  g(x)_j}{h}  \cdot \frac{ f\left(g(x) + e_j h\right)-f\left(g(x)\right)}{h}   $$
-
 #### proof
 
 - $g$ and $f$ are [[differentiable]] so that the following exists
@@ -338,6 +377,120 @@ D f\left(g(x)\right)
 &= \underbrace{\left. Df\left(u\right) \right |_{u=g(x)}}_{\in \mathbb{R}^{1\times m}}\underbrace{ Dg(x)}_{\in \mathbb{R}^{m\times n}} \in \mathbb{R}^{1 \times n} \\
 \end{split}
 $$
+
+
+## chain rule
+### single variable case
+- [[derivative]] of the [[composition]] of two [[function|functions]]
+
+$$
+\frac{df\left(g(x)\right)}{dx} = \frac{df\left(g(x)\right)}{dg(x)} \cdot \frac{dg(x)}{dx} 
+$$
+
+#### intuition chain rule
+- the rate of change of $f$ to $x$ is equal to the rate of change of $f$ to $g$ times the rate of change of $g$ to $x$
+- if a car is $5$ times faster than a bike and a bike is 4 times faster than a wakling person than the car is $20 = 4 	\times 5$ faster than a waling person
+
+$$
+\frac{\Delta \text{car distance}}{\Delta \text{time}} = \frac{\Delta \text{car distance}}{\Delta \text{bike distance}} \times \frac{\Delta \text{bike distance}}{\Delta \text{time}}
+$$
+
+
+### multi variable case
+#### single dimension case
+- $x \in \mathbb{R}$ 
+- $g: \mathbb{R} \to \mathbb{R}^m$ 
+- $f: \mathbb{R}^m \to \mathbb{R}$ 
+
+$$
+\begin{split}
+\frac{\partial f\left(g(x)\right)}{\partial x} 
+&= \lim_{h \to 0} \frac{ f\left(g(x + e h)\right) - f\left(g(x )\right) }{h}  \\
+&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x} \\
+\end{split}
+$$
+
+
+#### general case
+let 
+- $x \in \mathbb{R}^{n}$ 
+- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+- $f: \mathbb{R}^m \to \mathbb{R}^k$ 
+
+
+$$
+\begin{split}
+\frac{\partial f\left(g(x)\right)}{\partial x} 
+&= D{g \circ f}(x) \\
+&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+\end{split}
+$$
+
+- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{k\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
+
+#### dimensions
+- let $F = f\left(g(x)\right)$
+- the rule for the decomposing the [[derivative]] with the [[chain rule]] is outer times inner and the dimensions are as follows
+
+$$
+\begin{split}
+DF(x) = 
+\underbrace{\left.Df(u)\right|_{u=g(x)}}_{
+\mathbb{R}^{\mathrm{dim}(f) \times \mathrm{dim}(g)}} 
+\quad
+\underbrace{Dg(x)}_{\mathbb{R}^{\mathrm{dim}(g) \times \mathrm{dim}(x)}} 
+\in \mathbb{R}^{\mathrm{dim}(F) \times \mathrm{dim}(x)} \\
+\end{split}
+$$
+#### proof
+
+- $g$ and $f$ are [[differentiable]] so that the following exists
+
+$$
+\begin{split}
+g(x+h) 
+=& g(x) + Dg(x)h + \varphi_g(h), \quad &\frac{||\varphi_g(h)||}{||h||} \to_{h \to 0} 0 \\
+f\left(u+v(h)\right) =& f(u) + Df(u)v(h) + \varphi_f\left(v(h)\right) , \qquad &\frac{||\varphi_f(v)||}{||v||} \to_{v \to 0} 0  \\
+\end{split}
+$$
+- now define
+
+$$
+\begin{split}
+u :=& g(x)  \\
+v(h) :=& Dg(x)h + \varphi_g(h)  \\
+g(x+h) =& u + v(h)
+\end{split}
+$$
+- now insert
+
+$$
+\begin{split}
+f(g(x+h))
+&= f(u + v(h)) \\
+&= f(u) + Df(u)[v(h)] + \varphi_f(v(h)) \\
+&= f(u) + Df(u)[Dg(x)[h] + \varphi_g(h)] + \varphi_f(v(h)) \\
+&= f(u) + Df(u) Dg(x)[h] + \underbrace{ Df(u)\varphi_g(h) + \varphi_f(v(h))}_{r(h)} \\
+r(h) &= Df(u)\varphi_g(h) + \varphi_f(v(h)), \quad  \frac{||r(h)||}{||h||} \to_{h \to 0} 0
+\end{split}
+$$
+
+- it follows that
+
+$$
+\begin{split}
+D f\left(g(x)\right) 
+&= \underbrace{\left. Df\left(u\right) \right |_{u=g(x)}}_{\in \mathbb{R}^{1\times m}}\underbrace{ Dg(x)}_{\in \mathbb{R}^{m\times n}} \in \mathbb{R}^{1 \times n} \\
+\end{split}
+$$
+
+#### intuition
+- if the ith dimension of $x$ changes by a delta, this can lead to a change of all dimensions of $g(x)$ and each change of a $g(x)_j$ can lead to a change of $f\left(g(x)\right)$ 
+- by summing up the effects we have the [[partial derivative]]
+
+$$
+\lim_{h \to 0} \sum_{j=1}^m  \frac{ g(x+e_ih)_j -  g(x)_j}{h}  \cdot \frac{ f\left(g(x) + e_j h\right)-f\left(g(x)\right)}{h}   $$
+
 
 ___________
 
@@ -417,10 +570,53 @@ Basic
 
 Back: 
 ## chain rule
+### single variable case
+- [[derivative]] of the [[composition]] of two [[function|functions]]
 
-#### dimensions
-- let $F = f\left(g(x)\right)$
-- the rule for the decomposing the [[derivative]] with the [[chain rule]] is outer times inner and the dimensions are as follows
+$$
+\frac{df\left(g(x)\right)}{dx} = \frac{df\left(g(x)\right)}{dg(x)} \cdot \frac{dg(x)}{dx} 
+$$
+
+#### intuition chain rule
+- the rate of change of $f$ to $x$ is equal to the rate of change of $f$ to $g$ times the rate of change of $g$ to $x$
+- if a car is $5$ times faster than a bike and a bike is 4 times faster than a wakling person than the car is $20 = 4 	\times 5$ faster than a waling person
+
+$$
+\frac{\Delta \text{car distance}}{\Delta \text{time}} = \frac{\Delta \text{car distance}}{\Delta \text{bike distance}} \times \frac{\Delta \text{bike distance}}{\Delta \text{time}}
+$$
+
+
+### multi variable case
+#### single dimension case
+- $x \in \mathbb{R}$ 
+- $g: \mathbb{R} \to \mathbb{R}^m$ 
+- $f: \mathbb{R}^m \to \mathbb{R}$ 
+
+$$
+\begin{split}
+\frac{\partial f\left(g(x)\right)}{\partial x} 
+&= \lim_{h \to 0} \frac{ f\left(g(x + e h)\right) - f\left(g(x )\right) }{h}  \\
+&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x} \\
+\end{split}
+$$
+
+
+#### general case
+let 
+- $x \in \mathbb{R}^{n}$ 
+- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+- $f: \mathbb{R}^m \to \mathbb{R}^k$ 
+
+
+$$
+\begin{split}
+\frac{\partial f\left(g(x)\right)}{\partial x} 
+&= D{g \circ f}(x) \\
+&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+\end{split}
+$$
+
+- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{k\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
 
 #### dimensions
 - let $F = f\left(g(x)\right)$
@@ -436,37 +632,6 @@ DF(x) =
 \in \mathbb{R}^{\mathrm{dim}(F) \times \mathrm{dim}(x)} \\
 \end{split}
 $$
-
-
-
-### multi variable case
-let 
-- $x \in \mathbb{R}^{n}$ 
-- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
-- $f: \mathbb{R}^m \to \mathbb{R}$ 
-
-$$
-\begin{split}
-\frac{\partial f\left(g(x)\right)}{\partial x_i} 
-&= \lim_{h \to 0} \frac{ f\left(g(x + e_i h)\right) - f\left(g(x )\right) }{h}  \\
-&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x_i} \\
-&= Df\left(g(x)\right) Dg(x)_{(: i)} \in \mathbb{R} \\
-\frac{\partial f\left(g(x)\right)}{\partial x} 
-&= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{1 \times n} \\
-\end{split}
-$$
-
-- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{1\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
-
-
-#### intuition
-- if the ith dimension of $x$ changes by a delta, this can lead to a change of all dimensions of $g(x)$ and each change of a $g(x)_j$ can lead to a change of $f\left(g(x)\right)$ 
-- by summing up the effects we have the [[partial derivative]]
-
-$$
-\lim_{h \to 0} \sum_{j=1}^m  \frac{ g(x+e_ih)_j -  g(x)_j}{h}  \cdot \frac{ f\left(g(x) + e_j h\right)-f\left(g(x)\right)}{h}   $$
-
 #### proof
 
 - $g$ and $f$ are [[differentiable]] so that the following exists
@@ -508,6 +673,14 @@ D f\left(g(x)\right)
 &= \underbrace{\left. Df\left(u\right) \right |_{u=g(x)}}_{\in \mathbb{R}^{1\times m}}\underbrace{ Dg(x)}_{\in \mathbb{R}^{m\times n}} \in \mathbb{R}^{1 \times n} \\
 \end{split}
 $$
+
+#### intuition
+- if the ith dimension of $x$ changes by a delta, this can lead to a change of all dimensions of $g(x)$ and each change of a $g(x)_j$ can lead to a change of $f\left(g(x)\right)$ 
+- by summing up the effects we have the [[partial derivative]]
+
+$$
+\lim_{h \to 0} \sum_{j=1}^m  \frac{ g(x+e_ih)_j -  g(x)_j}{h}  \cdot \frac{ f\left(g(x) + e_j h\right)-f\left(g(x)\right)}{h}   $$
+
 
 ___________
 

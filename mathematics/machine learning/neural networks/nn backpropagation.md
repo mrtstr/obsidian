@@ -155,51 +155,43 @@ $$
 $$
 
 - this can be decomposed to the outer [[derivative]] of the [[loss function]] with respect to the activation of the $k$ layer $\mathrm{a}^{(k)}$ and the [[derivative]] of the [[nn activation function]] $g^{(k)}$
+- in the last layer $L$ we have the following [[derivative]]
 
 $$
 \begin{split}
 \delta^{(k)}
 &= 
-\underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}}_{\mathbb{R}^{1\times n_k}} 
-\underbrace{\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}}_{\mathbb{R}^{n_k\times n_k}} \in \mathbb{R}^{1\times n_k}  \\
-
-&= 
-\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}
-Dg^{(k)}\left( \mathrm{z}^{(k)}\right) \\
-
-\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
-&=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(k)}\left( \mathrm{z}^{(k)}\right)\\
-\end{split}
-$$
-
-- in the last layer $L$ we have the following [[derivative]]
-
-$$
-\begin{split}
-\delta^{(L)}
-&= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
-\underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+\underbrace{\frac{\partial \mathrm{a}^{(L)}}{\partial \mathrm{z}^{(L)}}}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+&= 
+\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}
+Dg^{(L)}\left( \mathrm{z}^{(L)}\right) \\
+
+\frac{\partial \mathrm{a}^{(L)}}{\partial \mathrm{z}^{(L)}}
+&=\frac{\partial g^{(L)}\left( \mathrm{z}^{(L)}\right)}{\partial \mathrm{z}^{(L)}} =Dg^{(L)}\left( \mathrm{z}^{(L)}\right)\\
 \end{split}
 $$
+
+
 
 - in all following layers $k$ we can express the [[derivative]] depending on the [[derivative]] of the previous layer $\delta^{(k)\top}$
 
 $$
 \begin{split}
 \delta^{(k)}
-&= \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{a}^{(k)}}Dg\left( \mathrm{z}^{(k)}\right) \\
 &= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{z}^{(k+1)}}}_{\mathbb{R}^{1\times n_{k+1}}}
 \underbrace{
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 }_{\mathbb{R}^{n_{k+1}\times n_{k}}}
 \underbrace{
-Dg\left( \mathrm{z}^{(k)}\right)
+\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
 }_{\mathbb{R}^{n_{k}\times n_{k}}}\\
 &= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 &= \frac{\partial W^{(k+1)}\mathrm{a}^{(k)} + b^{(k+1)}}{\partial \mathrm{a}^{(k)}} \\
+\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
+&=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(L)}\left( \mathrm{z}^{(k)}\right)\\
 \end{split}
 $$
 
@@ -424,54 +416,45 @@ $$
 $$
 
 - this can be decomposed to the outer [[derivative]] of the [[loss function]] with respect to the activation of the $k$ layer $\mathrm{a}^{(k)}$ and the [[derivative]] of the [[nn activation function]] $g^{(k)}$
+- in the last layer $L$ we have the following [[derivative]]
 
 $$
 \begin{split}
 \delta^{(k)}
 &= 
-\underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}}_{\mathbb{R}^{1\times n_k}} 
-\underbrace{\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}}_{\mathbb{R}^{n_k\times n_k}} \in \mathbb{R}^{1\times n_k}  \\
-
-&= 
-\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}
-Dg^{(k)}\left( \mathrm{z}^{(k)}\right) \\
-
-\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
-&=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(k)}\left( \mathrm{z}^{(k)}\right)\\
-\end{split}
-$$
-
-- in the last layer $L$ we have the following [[derivative]]
-
-$$
-\begin{split}
-\delta^{(L)}
-&= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
-\underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+\underbrace{\frac{\partial \mathrm{a}^{(L)}}{\partial \mathrm{z}^{(L)}}}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+&= 
+\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}
+Dg^{(L)}\left( \mathrm{z}^{(L)}\right) \\
+
+\frac{\partial \mathrm{a}^{(L)}}{\partial \mathrm{z}^{(L)}}
+&=\frac{\partial g^{(L)}\left( \mathrm{z}^{(L)}\right)}{\partial \mathrm{z}^{(L)}} =Dg^{(L)}\left( \mathrm{z}^{(L)}\right)\\
 \end{split}
 $$
+
+
 
 - in all following layers $k$ we can express the [[derivative]] depending on the [[derivative]] of the previous layer $\delta^{(k)\top}$
 
 $$
 \begin{split}
 \delta^{(k)}
-&= \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{a}^{(k)}}Dg\left( \mathrm{z}^{(k)}\right) \\
 &= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{z}^{(k+1)}}}_{\mathbb{R}^{1\times n_{k+1}}}
 \underbrace{
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 }_{\mathbb{R}^{n_{k+1}\times n_{k}}}
 \underbrace{
-Dg\left( \mathrm{z}^{(k)}\right)
+\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
 }_{\mathbb{R}^{n_{k}\times n_{k}}}\\
 &= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 &= \frac{\partial W^{(k+1)}\mathrm{a}^{(k)} + b^{(k+1)}}{\partial \mathrm{a}^{(k)}} \\
+\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
+&=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(L)}\left( \mathrm{z}^{(k)}\right)\\
 \end{split}
 $$
-
 
 _____________
 
@@ -520,24 +503,37 @@ $$
 
 
 ### multi variable case
-let 
-- $x \in \mathbb{R}^{n}$ 
-- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+#### single dimension case
+- $x \in \mathbb{R}$ 
+- $g: \mathbb{R} \to \mathbb{R}^m$ 
 - $f: \mathbb{R}^m \to \mathbb{R}$ 
 
 $$
 \begin{split}
-\frac{\partial f\left(g(x)\right)}{\partial x_i} 
-&= \lim_{h \to 0} \frac{ f\left(g(x + e_i h)\right) - f\left(g(x )\right) }{h}  \\
-&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x_i} \\
-&= Df\left(g(x)\right) Dg(x)_{(: i)} \in \mathbb{R} \\
 \frac{\partial f\left(g(x)\right)}{\partial x} 
-&= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{1 \times n} \\
+&= \lim_{h \to 0} \frac{ f\left(g(x + e h)\right) - f\left(g(x )\right) }{h}  \\
+&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x} \\
 \end{split}
 $$
 
-- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{1\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
+
+#### general case
+let 
+- $x \in \mathbb{R}^{n}$ 
+- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+- $f: \mathbb{R}^m \to \mathbb{R}^k$ 
+
+
+$$
+\begin{split}
+\frac{\partial f\left(g(x)\right)}{\partial x} 
+&= D{g \circ f}(x) \\
+&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+\end{split}
+$$
+
+- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{k\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
+
 #### dimensions
 - let $F = f\left(g(x)\right)$
 - the rule for the decomposing the [[derivative]] with the [[chain rule]] is outer times inner and the dimensions are as follows
@@ -552,7 +548,6 @@ DF(x) =
 \in \mathbb{R}^{\mathrm{dim}(F) \times \mathrm{dim}(x)} \\
 \end{split}
 $$
-
 #### proof
 
 - $g$ and $f$ are [[differentiable]] so that the following exists
@@ -659,54 +654,45 @@ $$
 $$
 
 - this can be decomposed to the outer [[derivative]] of the [[loss function]] with respect to the activation of the $k$ layer $\mathrm{a}^{(k)}$ and the [[derivative]] of the [[nn activation function]] $g^{(k)}$
+- in the last layer $L$ we have the following [[derivative]]
 
 $$
 \begin{split}
 \delta^{(k)}
 &= 
-\underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}}_{\mathbb{R}^{1\times n_k}} 
-\underbrace{\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}}_{\mathbb{R}^{n_k\times n_k}} \in \mathbb{R}^{1\times n_k}  \\
-
-&= 
-\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}
-Dg^{(k)}\left( \mathrm{z}^{(k)}\right) \\
-
-\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
-&=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(k)}\left( \mathrm{z}^{(k)}\right)\\
-\end{split}
-$$
-
-- in the last layer $L$ we have the following [[derivative]]
-
-$$
-\begin{split}
-\delta^{(L)}
-&= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
-\underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+\underbrace{\frac{\partial \mathrm{a}^{(L)}}{\partial \mathrm{z}^{(L)}}}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+&= 
+\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}
+Dg^{(L)}\left( \mathrm{z}^{(L)}\right) \\
+
+\frac{\partial \mathrm{a}^{(L)}}{\partial \mathrm{z}^{(L)}}
+&=\frac{\partial g^{(L)}\left( \mathrm{z}^{(L)}\right)}{\partial \mathrm{z}^{(L)}} =Dg^{(L)}\left( \mathrm{z}^{(L)}\right)\\
 \end{split}
 $$
+
+
 
 - in all following layers $k$ we can express the [[derivative]] depending on the [[derivative]] of the previous layer $\delta^{(k)\top}$
 
 $$
 \begin{split}
 \delta^{(k)}
-&= \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{a}^{(k)}}Dg\left( \mathrm{z}^{(k)}\right) \\
 &= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{z}^{(k+1)}}}_{\mathbb{R}^{1\times n_{k+1}}}
 \underbrace{
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 }_{\mathbb{R}^{n_{k+1}\times n_{k}}}
 \underbrace{
-Dg\left( \mathrm{z}^{(k)}\right)
+\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
 }_{\mathbb{R}^{n_{k}\times n_{k}}}\\
 &= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 &= \frac{\partial W^{(k+1)}\mathrm{a}^{(k)} + b^{(k+1)}}{\partial \mathrm{a}^{(k)}} \\
+\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
+&=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(L)}\left( \mathrm{z}^{(k)}\right)\\
 \end{split}
 $$
-
 
 ## backpropagation
 - let $f_\theta$ be [[neural network]] with $L$ layers and element wise [[nn activation function]] $g^{(i)}$ and let $l$ be a [[loss function]]
@@ -865,56 +851,47 @@ $$
 $$
 
 - this can be decomposed to the outer [[derivative]] of the [[loss function]] with respect to the activation of the $k$ layer $\mathrm{a}^{(k)}$ and the [[derivative]] of the [[nn activation function]] $g^{(k)}$
+- in the last layer $L$ we have the following [[derivative]]
 
 $$
 \begin{split}
 \delta^{(k)}
 &= 
-\underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}}_{\mathbb{R}^{1\times n_k}} 
-\underbrace{\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}}_{\mathbb{R}^{n_k\times n_k}} \in \mathbb{R}^{1\times n_k}  \\
-
-&= 
-\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}
-Dg^{(k)}\left( \mathrm{z}^{(k)}\right) \\
-
-\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
-&=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(k)}\left( \mathrm{z}^{(k)}\right)\\
-\end{split}
-$$
-
-- in the last layer $L$ we have the following [[derivative]]
-
-$$
-\begin{split}
-\delta^{(L)}
-&= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
-\underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+\underbrace{\frac{\partial \mathrm{a}^{(L)}}{\partial \mathrm{z}^{(L)}}}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+&= 
+\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}
+Dg^{(L)}\left( \mathrm{z}^{(L)}\right) \\
+
+\frac{\partial \mathrm{a}^{(L)}}{\partial \mathrm{z}^{(L)}}
+&=\frac{\partial g^{(L)}\left( \mathrm{z}^{(L)}\right)}{\partial \mathrm{z}^{(L)}} =Dg^{(L)}\left( \mathrm{z}^{(L)}\right)\\
 \end{split}
 $$
+
+
 
 - in all following layers $k$ we can express the [[derivative]] depending on the [[derivative]] of the previous layer $\delta^{(k)\top}$
 
 $$
 \begin{split}
 \delta^{(k)}
-&= \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{a}^{(k)}}Dg\left( \mathrm{z}^{(k)}\right) \\
 &= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{z}^{(k+1)}}}_{\mathbb{R}^{1\times n_{k+1}}}
 \underbrace{
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 }_{\mathbb{R}^{n_{k+1}\times n_{k}}}
 \underbrace{
-Dg\left( \mathrm{z}^{(k)}\right)
+\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
 }_{\mathbb{R}^{n_{k}\times n_{k}}}\\
 &= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 &= \frac{\partial W^{(k+1)}\mathrm{a}^{(k)} + b^{(k+1)}}{\partial \mathrm{a}^{(k)}} \\
+\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
+&=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(L)}\left( \mathrm{z}^{(k)}\right)\\
 \end{split}
 $$
 
 _____________
-
 
 ## chain rule
 ### single variable case
@@ -934,24 +911,37 @@ $$
 
 
 ### multi variable case
-let 
-- $x \in \mathbb{R}^{n}$ 
-- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+#### single dimension case
+- $x \in \mathbb{R}$ 
+- $g: \mathbb{R} \to \mathbb{R}^m$ 
 - $f: \mathbb{R}^m \to \mathbb{R}$ 
 
 $$
 \begin{split}
-\frac{\partial f\left(g(x)\right)}{\partial x_i} 
-&= \lim_{h \to 0} \frac{ f\left(g(x + e_i h)\right) - f\left(g(x )\right) }{h}  \\
-&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x_i} \\
-&= Df\left(g(x)\right) Dg(x)_{(: i)} \in \mathbb{R} \\
 \frac{\partial f\left(g(x)\right)}{\partial x} 
-&= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{1 \times n} \\
+&= \lim_{h \to 0} \frac{ f\left(g(x + e h)\right) - f\left(g(x )\right) }{h}  \\
+&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x} \\
 \end{split}
 $$
 
-- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{1\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
+
+#### general case
+let 
+- $x \in \mathbb{R}^{n}$ 
+- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+- $f: \mathbb{R}^m \to \mathbb{R}^k$ 
+
+
+$$
+\begin{split}
+\frac{\partial f\left(g(x)\right)}{\partial x} 
+&= D{g \circ f}(x) \\
+&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+\end{split}
+$$
+
+- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{k\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
+
 #### dimensions
 - let $F = f\left(g(x)\right)$
 - the rule for the decomposing the [[derivative]] with the [[chain rule]] is outer times inner and the dimensions are as follows
@@ -966,7 +956,6 @@ DF(x) =
 \in \mathbb{R}^{\mathrm{dim}(F) \times \mathrm{dim}(x)} \\
 \end{split}
 $$
-
 #### proof
 
 - $g$ and $f$ are [[differentiable]] so that the following exists
@@ -1186,51 +1175,43 @@ $$
 $$
 
 - this can be decomposed to the outer [[derivative]] of the [[loss function]] with respect to the activation of the $k$ layer $\mathrm{a}^{(k)}$ and the [[derivative]] of the [[nn activation function]] $g^{(k)}$
+- in the last layer $L$ we have the following [[derivative]]
 
 $$
 \begin{split}
 \delta^{(k)}
 &= 
-\underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}}_{\mathbb{R}^{1\times n_k}} 
-\underbrace{\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}}_{\mathbb{R}^{n_k\times n_k}} \in \mathbb{R}^{1\times n_k}  \\
-
-&= 
-\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}
-Dg^{(k)}\left( \mathrm{z}^{(k)}\right) \\
-
-\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
-&=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(k)}\left( \mathrm{z}^{(k)}\right)\\
-\end{split}
-$$
-
-- in the last layer $L$ we have the following [[derivative]]
-
-$$
-\begin{split}
-\delta^{(L)}
-&= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
-\underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+\underbrace{\frac{\partial \mathrm{a}^{(L)}}{\partial \mathrm{z}^{(L)}}}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+&= 
+\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}
+Dg^{(L)}\left( \mathrm{z}^{(L)}\right) \\
+
+\frac{\partial \mathrm{a}^{(L)}}{\partial \mathrm{z}^{(L)}}
+&=\frac{\partial g^{(L)}\left( \mathrm{z}^{(L)}\right)}{\partial \mathrm{z}^{(L)}} =Dg^{(L)}\left( \mathrm{z}^{(L)}\right)\\
 \end{split}
 $$
+
+
 
 - in all following layers $k$ we can express the [[derivative]] depending on the [[derivative]] of the previous layer $\delta^{(k)\top}$
 
 $$
 \begin{split}
 \delta^{(k)}
-&= \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{a}^{(k)}}Dg\left( \mathrm{z}^{(k)}\right) \\
 &= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{z}^{(k+1)}}}_{\mathbb{R}^{1\times n_{k+1}}}
 \underbrace{
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 }_{\mathbb{R}^{n_{k+1}\times n_{k}}}
 \underbrace{
-Dg\left( \mathrm{z}^{(k)}\right)
+\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
 }_{\mathbb{R}^{n_{k}\times n_{k}}}\\
 &= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 &= \frac{\partial W^{(k+1)}\mathrm{a}^{(k)} + b^{(k+1)}}{\partial \mathrm{a}^{(k)}} \\
+\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
+&=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(L)}\left( \mathrm{z}^{(k)}\right)\\
 \end{split}
 $$
 
@@ -1262,7 +1243,6 @@ $$
 
 _____________
 
-
 ## chain rule
 ### single variable case
 - [[derivative]] of the [[composition]] of two [[function|functions]]
@@ -1281,24 +1261,37 @@ $$
 
 
 ### multi variable case
-let 
-- $x \in \mathbb{R}^{n}$ 
-- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+#### single dimension case
+- $x \in \mathbb{R}$ 
+- $g: \mathbb{R} \to \mathbb{R}^m$ 
 - $f: \mathbb{R}^m \to \mathbb{R}$ 
 
 $$
 \begin{split}
-\frac{\partial f\left(g(x)\right)}{\partial x_i} 
-&= \lim_{h \to 0} \frac{ f\left(g(x + e_i h)\right) - f\left(g(x )\right) }{h}  \\
-&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x_i} \\
-&= Df\left(g(x)\right) Dg(x)_{(: i)} \in \mathbb{R} \\
 \frac{\partial f\left(g(x)\right)}{\partial x} 
-&= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{1 \times n} \\
+&= \lim_{h \to 0} \frac{ f\left(g(x + e h)\right) - f\left(g(x )\right) }{h}  \\
+&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x} \\
 \end{split}
 $$
 
-- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{1\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
+
+#### general case
+let 
+- $x \in \mathbb{R}^{n}$ 
+- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+- $f: \mathbb{R}^m \to \mathbb{R}^k$ 
+
+
+$$
+\begin{split}
+\frac{\partial f\left(g(x)\right)}{\partial x} 
+&= D{g \circ f}(x) \\
+&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+\end{split}
+$$
+
+- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{k\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
+
 #### dimensions
 - let $F = f\left(g(x)\right)$
 - the rule for the decomposing the [[derivative]] with the [[chain rule]] is outer times inner and the dimensions are as follows
@@ -1313,7 +1306,6 @@ DF(x) =
 \in \mathbb{R}^{\mathrm{dim}(F) \times \mathrm{dim}(x)} \\
 \end{split}
 $$
-
 #### proof
 
 - $g$ and $f$ are [[differentiable]] so that the following exists
@@ -1532,51 +1524,43 @@ $$
 $$
 
 - this can be decomposed to the outer [[derivative]] of the [[loss function]] with respect to the activation of the $k$ layer $\mathrm{a}^{(k)}$ and the [[derivative]] of the [[nn activation function]] $g^{(k)}$
+- in the last layer $L$ we have the following [[derivative]]
 
 $$
 \begin{split}
 \delta^{(k)}
 &= 
-\underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}}_{\mathbb{R}^{1\times n_k}} 
-\underbrace{\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}}_{\mathbb{R}^{n_k\times n_k}} \in \mathbb{R}^{1\times n_k}  \\
-
-&= 
-\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}
-Dg^{(k)}\left( \mathrm{z}^{(k)}\right) \\
-
-\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
-&=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(k)}\left( \mathrm{z}^{(k)}\right)\\
-\end{split}
-$$
-
-- in the last layer $L$ we have the following [[derivative]]
-
-$$
-\begin{split}
-\delta^{(L)}
-&= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
-\underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+\underbrace{\frac{\partial \mathrm{a}^{(L)}}{\partial \mathrm{z}^{(L)}}}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+&= 
+\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}
+Dg^{(L)}\left( \mathrm{z}^{(L)}\right) \\
+
+\frac{\partial \mathrm{a}^{(L)}}{\partial \mathrm{z}^{(L)}}
+&=\frac{\partial g^{(L)}\left( \mathrm{z}^{(L)}\right)}{\partial \mathrm{z}^{(L)}} =Dg^{(L)}\left( \mathrm{z}^{(L)}\right)\\
 \end{split}
 $$
+
+
 
 - in all following layers $k$ we can express the [[derivative]] depending on the [[derivative]] of the previous layer $\delta^{(k)\top}$
 
 $$
 \begin{split}
 \delta^{(k)}
-&= \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{a}^{(k)}}Dg\left( \mathrm{z}^{(k)}\right) \\
 &= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{z}^{(k+1)}}}_{\mathbb{R}^{1\times n_{k+1}}}
 \underbrace{
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 }_{\mathbb{R}^{n_{k+1}\times n_{k}}}
 \underbrace{
-Dg\left( \mathrm{z}^{(k)}\right)
+\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
 }_{\mathbb{R}^{n_{k}\times n_{k}}}\\
 &= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 &= \frac{\partial W^{(k+1)}\mathrm{a}^{(k)} + b^{(k+1)}}{\partial \mathrm{a}^{(k)}} \\
+\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
+&=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(L)}\left( \mathrm{z}^{(k)}\right)\\
 \end{split}
 $$
 
