@@ -2195,7 +2195,7 @@
     "mathematics/machine learning/neural networks/nn decoder transformers.md": "63a3fb6701a0ef9f9902f464d3f9ffeb",
     "mathematics/machine learning/neural networks/nn embedding layer.md": "b169e05ae1cd8f9cf4397988c90be1d4",
     "mathematics/machine learning/neural networks/nn feed forward network.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/machine learning/neural networks/neural network.md": "ac8ca997a8d0fcc11831dd2b23b4c78b",
+    "mathematics/machine learning/neural networks/neural network.md": "b39d7aa684a471d3972253a4712f912f",
     "mathematics/machine learning/softmax function.md": "c3ada696674ac6604ca826fc39e6e951",
     "mathematics/machine learning/self attention.md": "84cb7184040e1bef1ee4bddceef1bb45",
     "mathematics/machine learning/regularization.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -2251,7 +2251,7 @@
     "mathematics/machine learning/neural networks/nn adam optimizer.md": "9bb3d52b2aae9bce4593ab8d7da6b901",
     "mathematics/machine learning/neural networks/nn learning rate scheduling.md": "2671ad3af44fa82605238856a141c995",
     "mathematics/machine learning/neural networks/nn in context learning.md": "8c5f4aa3521b35fda7e510ee61822996",
-    "mathematics/machine learning/neural networks/nn backpropagation.md": "a5bd45075849be4784f1242b693a1c0e",
+    "mathematics/machine learning/neural networks/nn backpropagation.md": "d7899de73ef5e64c299cfb3288e3f9e5",
     "mathematics/basics/chain rule.md": "6d2688437f54be720d7cd32e8f697423",
     "mathematics/basics/elementwise product.md": "4a1fec3fb74458eb35897e1ebe746dff"
   },

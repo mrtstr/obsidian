@@ -29,13 +29,9 @@ $$
 &= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
 \underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
-\nabla_ {W^{(L)}} l &= \underbrace {a^{(L-1)}}_{\mathbb{R}^{n_{L-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \\
-&= a^{(L-1)}\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)  \\
+\nabla_ {W^{(L)}} l &= \left( \underbrace {a^{(L-1)}}_{\mathbb{R}^{n_{L-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \right)^\top \in \mathbb{R}^{n_L \times n_{L-1}} \\
  \nabla_ {b^{(L)}} l 
-&= \underbrace{\delta^{(L)\top}}_{\mathbb{R}^{n_{L}}} \\
-&= \left(\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)\right)^\top \\
+&= \delta^{(L)\top} \in \mathbb{R}^{n_{L}} \\
 \end{split}
 $$
 
@@ -44,23 +40,20 @@ $$
 $$
 \begin{split}
 \delta^{(k)}
-&= \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{a}^{(k)}}Dg\left( \mathrm{z}^{(k)}\right) \\
 &= 
-\underbrace{\frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{z}^{(k+1)}}}_{\mathbb{R}^{1\times n_{k+1}}}
+\underbrace{\delta^{(k+1)\top}}_{\mathbb{R}^{1\times n_{k+1}}}
 \underbrace{
-\frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
+W^{(k+1)}
 }_{\mathbb{R}^{n_{k+1}\times n_{k}}}
 \underbrace{
 Dg\left( \mathrm{z}^{(k)}\right)
-}_{\mathbb{R}^{n_{k}\times n_{k}}}\\
-&= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
-
-  \Rightarrow \nabla_ {W^{(k)}} l &= \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \\
-  &= a^{(k-1)}\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
-\Rightarrow \nabla_ {b^{(k)}} l &= \underbrace{\delta^{(k)\top}}_{\mathbb{R}^{n_{k}}} \\
-&= \left(\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right)\right)^\top \\
+}_{\mathbb{R}^{n_{k}\times n_{k}}}  \in \mathbb{R}^{1\times n_{k}}\\
+\nabla_ {W^{(k)}} l &= \left( \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \right)^\top \in \mathbb{R}^{n_k \times n_{k-1}} \\
+ \nabla_ {b^{(k)}} l 
+&= \delta^{(k)\top} \in \mathbb{R}^{n_{k}} \\
 \end{split}
 $$
+
 
 4) return $\nabla_\theta l=\left(\nabla_W^{(1)}, \nabla_b^{(1)}, ..., \nabla_W^{(L)}, \nabla_b^{(L)}\right)$ 
 ### element wise solution for the gradient
@@ -86,7 +79,7 @@ $$
  &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial W_{ji}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \frac{\partial \left(\sum_i W_{ji}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)}{\partial W_{ji}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
-  \Rightarrow \nabla_ {W^{(k)}} l &= \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}}
+  \Rightarrow \nabla_ {W^{(k)}} l &= \left( \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \right)^\top
 \end{split}
 $$
 - the same approach can be used for the bias term $b_{j}^{(k)}$ 
@@ -101,7 +94,7 @@ $$
  &= \delta^{(k)}_j \\
   &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
   \Rightarrow \nabla_ {b^{(k)}} l 
-  &=\underbrace{\delta^{(k)\top}}_{\mathbb{R}^{n_{k}}}
+  &=\delta^{(k)\top} \in \mathbb{R}^{n_{k}}
 \end{split}
 $$
 
@@ -141,6 +134,17 @@ $$
 
 
 ### vector solution for the gradient
+- for the parameters we have the following
+
+$$
+\begin{split}
+\nabla_ {W^{(k)}} l &= \left(\underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \right)^\top \\
+  &= \left( a^{(k-1)}\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \right)^\top \\
+\nabla_ {b^{(k)}} l &= \delta^{(k)\top}\in \mathbb{R}^{n_{k}} \\
+&= \left(\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right)\right)^\top \\
+\end{split}
+$$
+
 - we have the following [[derivative]] of the [[loss function]] with respect to the output of the layer $k$
 
 $$
@@ -176,13 +180,6 @@ $$
 &= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
 \underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
-\Rightarrow \nabla_ {W^{(L)}} l &= \underbrace {a^{(L-1)}}_{\mathbb{R}^{n_{L-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \\
-&= a^{(L-1)}\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)  \\
-\Rightarrow \nabla_ {b^{(L)}} l 
-&= \underbrace{\delta^{(L)\top}}_{\mathbb{R}^{n_{L}}} \\
-&= \left(\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)\right)^\top \\
 \end{split}
 $$
 
@@ -203,11 +200,6 @@ Dg\left( \mathrm{z}^{(k)}\right)
 &= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 &= \frac{\partial W^{(k+1)}\mathrm{a}^{(k)} + b^{(k+1)}}{\partial \mathrm{a}^{(k)}} \\
-&= W^{(k+1)} \\
-  \Rightarrow \nabla_ {W^{(k)}} l &= \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \\
-  &= a^{(k-1)}\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
-\Rightarrow \nabla_ {b^{(k)}} l &= \underbrace{\delta^{(k)\top}}_{\mathbb{R}^{n_{k}}} \\
-&= \left(\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right)\right)^\top \\
 \end{split}
 $$
 
@@ -231,29 +223,19 @@ $$
 $$
 
 Back: 
-## backpropagation
-- let $f_\theta$ be [[neural network]] with $L$ layers and element wise [[nn activation function]] $g^{(i)}$ and let $l$ be a [[loss function]]
-- the goal is to solve the following [[unconstraint optimization problem]] with [[gradient descent]]
 
-$$
-\hat\theta = \arg\min_{\theta} \frac{1}{m} \sum_{i=1}^m l\left(y^{(i)}, f_\theta \left(x^{(i)}\right)\right)
-$$
-- in the following we will just work with a single $(x, y)$ tuple but since the [[derivative]] is linear this can easily be extended to a sum
-
-### element wise solution
 - let $\delta^{(k)}_j$ be the [[partial derivative]] of the loss function with respect to the $j \in \left\{1, ..., n^{(k)}\right\}$ element of the output of the $k \in \left\{1, ..., L\right\}$ layer
 
 $$
 \begin{split}
 \delta^{(k)}_j 
 &= \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{z}^{(k)}_j} \\
-&= \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial {\left(W^{(i)} \mathrm{a}^{(i-1)} + b^{(i)}\right)}_j} \\
+&= \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial {\left(W^{(k)} \mathrm{a}^{(i-1)} + b^{(k)}\right)}_j} \\
 &= \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial {\left(\sum_j\sum_i W_{ji} a^{k-1}_i + b^k\right)}_j} \\
 &= \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \left(\sum_i W_{ji}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)} \\
 \end{split}
 $$
 
-- based on $\delta^{(k)}_j$ we can calculate the [[partial derivative]] of the loss after an arbitrary parameter of the weight matrix of an arbitrary layer $W_{ji}^{(k)}$ and bias term $b_{j}^{(k)}$ by applying the [[chain rule]] (depending on the activation of the previous layer $a^{(k-1)}$)
 - based on $\delta^{(k)}_j$ we can calculate the [[partial derivative]] of the loss after an arbitrary parameter of the weight matrix of an arbitrary layer $W_{ji}^{(k)}$ by applying the [[chain rule]] (depending on the activation of the previous layer $a^{(k-1)}$)
 
 $$
@@ -264,10 +246,9 @@ $$
  &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial W_{ji}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \frac{\partial \left(\sum_i W_{ji}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)}{\partial W_{ji}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
-  \Rightarrow \nabla_ {W^{(k)}} l &= \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}}
+  \Rightarrow \nabla_ {W^{(k)}} l &= \left( \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \right)^\top
 \end{split}
 $$
-
 - the same approach can be used for the bias term $b_{j}^{(k)}$ 
 
 $$
@@ -280,11 +261,159 @@ $$
  &= \delta^{(k)}_j \\
   &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
   \Rightarrow \nabla_ {b^{(k)}} l 
-  &=\underbrace{\delta^{(k)\top}}_{\mathbb{R}^{n_{k}}}
+  &=\delta^{(k)\top} \in \mathbb{R}^{n_{k}}
 \end{split}
 $$
 
-### vector solution
+
+
+## backpropagation
+- let $f_\theta$ be [[neural network]] with $L$ layers and element wise [[nn activation function]] $g^{(i)}$ and let $l$ be a [[loss function]]
+- the goal is to solve the following [[unconstraint optimization problem]] with [[gradient descent]]
+
+$$
+\hat\theta = \arg\min_{\theta} \frac{1}{m} \sum_{i=1}^m l\left(y^{(i)}, f_\theta \left(x^{(i)}\right)\right)
+$$
+- in the following we will just work with a single $(x, y)$ tuple but since the [[derivative]] is linear this can easily be extended to a sum
+
+
+### algorithm
+0) $\mathrm{a}^{(0)}=x$
+1) forward pass: for $i \in 1, ..., L$
+
+$$
+\begin{split}
+\mathrm{z}^{(i)} &= W^{(i)} \mathrm{a}^{(i-1)} + b^{(i)} \\
+\mathrm{a}^{(i)} 
+&= g^{(i)}\left(\mathrm{z}^{(i)}\right)  \\
+&= g^{(i)}\left(W^{(i)} \mathrm{a}^{(i-1)} + b^{(i)}\right)  \\
+\end{split}
+$$
+
+2) calculate
+
+$$
+\begin{split}
+\delta^{(L)}
+&= 
+\underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
+\underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+\nabla_ {W^{(L)}} l &= \left( \underbrace {a^{(L-1)}}_{\mathbb{R}^{n_{L-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \right)^\top \in \mathbb{R}^{n_L \times n_{L-1}} \\
+ \nabla_ {b^{(L)}} l 
+&= \delta^{(L)\top} \in \mathbb{R}^{n_{L}} \\
+\end{split}
+$$
+
+3) backwards pass for $k \in L-1, ..., 1$
+
+$$
+\begin{split}
+\delta^{(k)}
+&= 
+\underbrace{\delta^{(k+1)\top}}_{\mathbb{R}^{1\times n_{k+1}}}
+\underbrace{
+W^{(k+1)}
+}_{\mathbb{R}^{n_{k+1}\times n_{k}}}
+\underbrace{
+Dg\left( \mathrm{z}^{(k)}\right)
+}_{\mathbb{R}^{n_{k}\times n_{k}}}  \in \mathbb{R}^{1\times n_{k}}\\
+\nabla_ {W^{(k)}} l &= \left( \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \right)^\top \in \mathbb{R}^{n_k \times n_{k-1}} \\
+ \nabla_ {b^{(k)}} l 
+&= \delta^{(k)\top} \in \mathbb{R}^{n_{k}} \\
+\end{split}
+$$
+
+
+4) return $\nabla_\theta l=\left(\nabla_W^{(1)}, \nabla_b^{(1)}, ..., \nabla_W^{(L)}, \nabla_b^{(L)}\right)$ 
+### element wise solution for the gradient
+- let $\delta^{(k)}_j$ be the [[partial derivative]] of the loss function with respect to the $j \in \left\{1, ..., n^{(k)}\right\}$ element of the output of the $k \in \left\{1, ..., L\right\}$ layer
+
+$$
+\begin{split}
+\delta^{(k)}_j 
+&= \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{z}^{(k)}_j} \\
+&= \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial {\left(W^{(k)} \mathrm{a}^{(i-1)} + b^{(k)}\right)}_j} \\
+&= \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial {\left(\sum_j\sum_i W_{ji} a^{k-1}_i + b^k\right)}_j} \\
+&= \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \left(\sum_i W_{ji}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)} \\
+\end{split}
+$$
+
+- based on $\delta^{(k)}_j$ we can calculate the [[partial derivative]] of the loss after an arbitrary parameter of the weight matrix of an arbitrary layer $W_{ji}^{(k)}$ by applying the [[chain rule]] (depending on the activation of the previous layer $a^{(k-1)}$)
+
+$$
+\begin{split}
+ \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial W_{ji}^{(k)}} 
+  &= \frac{\partial \mathcal{l}\left(y, f_\theta \left(\mathrm{z}^{(k)}_j\left(W_{ji}^{(k)}\right)\right)\right)}{\partial W_{ji}^{(k)}} \\
+ &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial W_{ji}^{(k)}}  \cdot \frac{\partial  \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{z}^{(k)}_j} \\
+ &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial W_{ji}^{(k)}}  \cdot \delta^{(k)}_j \\
+ &= \frac{\partial \left(\sum_i W_{ji}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)}{\partial W_{ji}^{(k)}}  \cdot \delta^{(k)}_j \\
+ &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
+  \Rightarrow \nabla_ {W^{(k)}} l &= \left( \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \right)^\top
+\end{split}
+$$
+- the same approach can be used for the bias term $b_{j}^{(k)}$ 
+
+$$
+\begin{split}
+ \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial b_{j}^{(k)}} 
+  &= \frac{\partial \mathcal{l}\left(y, f_\theta \left(\mathrm{z}^{(k)}_j\left(b_{j}^{(k)}\right)\right)\right)}{\partial b_{j}^{(k)}} \\
+ &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial b_{j}^{(k)}}  \cdot \frac{\partial  \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{z}^{(k)}_j} \\
+ &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
+ &= \frac{\partial \left(\sum_i b_{j}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)}{\partial b_{j}^{(k)}}  \cdot \delta^{(k)}_j \\
+ &= \delta^{(k)}_j \\
+  &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
+  \Rightarrow \nabla_ {b^{(k)}} l 
+  &=\delta^{(k)\top} \in \mathbb{R}^{n_{k}}
+\end{split}
+$$
+
+- the [[derivative]] of the loss with respect to the $j$ element of the output of a layer $\delta^{(l)}_j$ can be expressed as a product of the derivative of its [[nn activation function]] multiplied by a weighted sum of the $\delta^{(l-1)}$ of the previous layer
+
+$$
+\begin{split}
+\delta^{(L)}_j 
+&= \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{z}^{(L)}_j} \\
+&= \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{z}^{(L)}_j} \\
+&= \frac{\partial \mathcal{l}\left(y, g\left(\mathrm{z}^{(L)}\right)\right)}{\partial \mathrm{z}^{(L)}_j} \\
+&= \sum_i  \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{a}_i^{(L)}} \cdot \frac{\partial g\left(\mathrm{z}^{(L)}\right)_i}{\partial \mathrm{z}^{(L)}_j}  \\
+&= \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{a}_j^{(L)}} \cdot \frac{\partial g\left(\mathrm{z}_j^{(L)}\right)}{\partial \mathrm{z}^{(L)}_j}  \\
+&= \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{a}_j^{(L)}} \cdot g'\left(\mathrm{z}_j^{(L)}\right)  \\
+\end{split}
+$$
+
+$$
+\begin{split}
+\delta^{(l-1)}_j 
+&= \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{z}^{(l-1)}_j} \\
+&= \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(l)}\right)}{\partial \mathrm{z}^{(l-1)}_j} \\
+&= \frac{\partial \mathcal{l}\left(y, g\left(\mathrm{z}^{(l)}\right)\right)}{\partial \mathrm{z}^{(l-1)}_j} \\
+&= \sum_i \frac{\partial \mathcal{l}\left(y, g\left(\mathrm{z}^{(l)}\right)\right)}{\partial \mathrm{z}^{(l)}_i} \frac{\partial \mathrm{z}^{(l)}_i}{\partial \mathrm{z}^{(l-1)}_j} \\
+&= \sum_i \delta^{(l)}_i  \frac{\partial \mathrm{z}^{(l)}_i}{\partial \mathrm{z}^{(l-1)}_j} \\
+&= \sum_i \delta^{(l)}_i  \frac{\partial \left(W^{(l)}g\left(\mathrm{z}^{(l-1)}\right) + b^{(l)}\right)_i}{\partial \mathrm{z}^{(l-1)}_j} \\
+&= \sum_i \delta^{(l)}_i  
+  \frac{\partial \left(\sum_c W^{(l)}_{i c}\, g\left(z^{(l-1)}_c\right) + b^{(l)}_i\right)}
+       {\partial z^{(l-1)}_j} \\
+&= \sum_i \delta^{(l)}_i  
+  \frac{\partial \left( W^{(l)}_{i j}\, g\left(z^{(l-1)}_j\right)\right)}
+       {\partial z^{(l-1)}_j} \\
+&=  g'\!\left(z^{(l-1)}_j\right) \sum_i \delta^{(l)}_i  
+  W^{(l)}_{i j} \,
+\end{split}
+$$
+
+
+### vector solution for the gradient
+- for the parameters we have the following
+
+$$
+\begin{split}
+\nabla_ {W^{(k)}} l &= \left(\underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \right)^\top \\
+  &= \left( a^{(k-1)}\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \right)^\top \\
+\nabla_ {b^{(k)}} l &= \delta^{(k)\top}\in \mathbb{R}^{n_{k}} \\
+&= \left(\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right)\right)^\top \\
+\end{split}
+$$
+
 - we have the following [[derivative]] of the [[loss function]] with respect to the output of the layer $k$
 
 $$
@@ -320,13 +449,6 @@ $$
 &= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
 \underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
-\Rightarrow \nabla_ {W^{(L)}} l &= \underbrace {a^{(L-1)}}_{\mathbb{R}^{n_{L-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \\
-&= a^{(L-1)}\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)  \\
-\Rightarrow \nabla_ {b^{(L)}} l 
-&= \underbrace{\delta^{(L)\top}}_{\mathbb{R}^{n_{L}}} \\
-&= \left(\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)\right)^\top \\
 \end{split}
 $$
 
@@ -347,11 +469,6 @@ Dg\left( \mathrm{z}^{(k)}\right)
 &= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 &= \frac{\partial W^{(k+1)}\mathrm{a}^{(k)} + b^{(k+1)}}{\partial \mathrm{a}^{(k)}} \\
-&= W^{(k+1)} \\
-  \Rightarrow \nabla_ {W^{(k)}} l &= \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \\
-  &= a^{(k-1)}\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
-\Rightarrow \nabla_ {b^{(k)}} l &= \underbrace{\delta^{(k)\top}}_{\mathbb{R}^{n_{k}}} \\
-&= \left(\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right)\right)^\top \\
 \end{split}
 $$
 
@@ -361,7 +478,7 @@ _____________
 
 ## neural network
 - let $L$ be the number of layers of the [[neural network]] 
-- each layer $i$ transforms its input with [[linear map]] defined by a weight matrix $W^{(i)}$ and a bias $b^{(i)}$ and a (potentially non-linear) [[nn activation function]] $g^{(i)}$
+- each layer $i$ transforms its input with [[linear map]] defined by a weight matrix $W^{(i)}\in \mathbb{R}^{n_i \times n_{i-1}}$ and a bias $b^{(i)}\in \mathbb{R}^{n_i}$ and a (potentially non-linear) [[nn activation function]] $g^{(i)}: \mathbb{R}^{n_i} \to  \mathbb{R}^{n_i}$
 - the output of each layer is called the activation vector $\mathrm{a}^{(i)}$ with the first being the input of the model $\mathrm{a}^{(0)}=x \in \mathbb{R}^{n_0}$ 
 
 $$
@@ -506,7 +623,7 @@ $$
 
 ## neural network
 - let $L$ be the number of layers of the [[neural network]] 
-- each layer $i$ transforms its input with [[linear map]] defined by a weight matrix $W^{(i)}$ and a bias $b^{(i)}$ and a (potentially non-linear) [[nn activation function]] $g^{(i)}$
+- each layer $i$ transforms its input with [[linear map]] defined by a weight matrix $W^{(i)}\in \mathbb{R}^{n_i \times n_{i-1}}$ and a bias $b^{(i)}\in \mathbb{R}^{n_i}$ and a (potentially non-linear) [[nn activation function]] $g^{(i)}: \mathbb{R}^{n_i} \to  \mathbb{R}^{n_i}$
 - the output of each layer is called the activation vector $\mathrm{a}^{(i)}$ with the first being the input of the model $\mathrm{a}^{(0)}=x \in \mathbb{R}^{n_0}$ 
 
 $$
@@ -531,6 +648,66 @@ $$
 
 
 Back: 
+
+- we have the following [[derivative]] of the [[loss function]] with respect to the output of the layer $k$
+
+$$
+\begin{split}
+\delta^{(k)}
+&= \frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{z}^{(k)}}\in \mathbb{R}^{1\times n_k} \\
+\end{split}
+$$
+
+- this can be decomposed to the outer [[derivative]] of the [[loss function]] with respect to the activation of the $k$ layer $\mathrm{a}^{(k)}$ and the [[derivative]] of the [[nn activation function]] $g^{(k)}$
+
+$$
+\begin{split}
+\delta^{(k)}
+&= 
+\underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}}_{\mathbb{R}^{1\times n_k}} 
+\underbrace{\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}}_{\mathbb{R}^{n_k\times n_k}} \in \mathbb{R}^{1\times n_k}  \\
+
+&= 
+\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(k)}}
+Dg^{(k)}\left( \mathrm{z}^{(k)}\right) \\
+
+\frac{\partial \mathrm{a}^{(k)}}{\partial \mathrm{z}^{(k)}}
+&=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(k)}\left( \mathrm{z}^{(k)}\right)\\
+\end{split}
+$$
+
+- in the last layer $L$ we have the following [[derivative]]
+
+$$
+\begin{split}
+\delta^{(L)}
+&= 
+\underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
+\underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+\end{split}
+$$
+
+- in all following layers $k$ we can express the [[derivative]] depending on the [[derivative]] of the previous layer $\delta^{(k)\top}$
+
+$$
+\begin{split}
+\delta^{(k)}
+&= \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{a}^{(k)}}Dg\left( \mathrm{z}^{(k)}\right) \\
+&= 
+\underbrace{\frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{z}^{(k+1)}}}_{\mathbb{R}^{1\times n_{k+1}}}
+\underbrace{
+\frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
+}_{\mathbb{R}^{n_{k+1}\times n_{k}}}
+\underbrace{
+Dg\left( \mathrm{z}^{(k)}\right)
+}_{\mathbb{R}^{n_{k}\times n_{k}}}\\
+&= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
+\frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
+&= \frac{\partial W^{(k+1)}\mathrm{a}^{(k)} + b^{(k+1)}}{\partial \mathrm{a}^{(k)}} \\
+\end{split}
+$$
+
+
 ## backpropagation
 - let $f_\theta$ be [[neural network]] with $L$ layers and element wise [[nn activation function]] $g^{(i)}$ and let $l$ be a [[loss function]]
 - the goal is to solve the following [[unconstraint optimization problem]] with [[gradient descent]]
@@ -540,7 +717,56 @@ $$
 $$
 - in the following we will just work with a single $(x, y)$ tuple but since the [[derivative]] is linear this can easily be extended to a sum
 
-### element wise solution
+
+### algorithm
+0) $\mathrm{a}^{(0)}=x$
+1) forward pass: for $i \in 1, ..., L$
+
+$$
+\begin{split}
+\mathrm{z}^{(i)} &= W^{(i)} \mathrm{a}^{(i-1)} + b^{(i)} \\
+\mathrm{a}^{(i)} 
+&= g^{(i)}\left(\mathrm{z}^{(i)}\right)  \\
+&= g^{(i)}\left(W^{(i)} \mathrm{a}^{(i-1)} + b^{(i)}\right)  \\
+\end{split}
+$$
+
+2) calculate
+
+$$
+\begin{split}
+\delta^{(L)}
+&= 
+\underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
+\underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+\nabla_ {W^{(L)}} l &= \left( \underbrace {a^{(L-1)}}_{\mathbb{R}^{n_{L-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \right)^\top \in \mathbb{R}^{n_L \times n_{L-1}} \\
+ \nabla_ {b^{(L)}} l 
+&= \delta^{(L)\top} \in \mathbb{R}^{n_{L}} \\
+\end{split}
+$$
+
+3) backwards pass for $k \in L-1, ..., 1$
+
+$$
+\begin{split}
+\delta^{(k)}
+&= 
+\underbrace{\delta^{(k+1)\top}}_{\mathbb{R}^{1\times n_{k+1}}}
+\underbrace{
+W^{(k+1)}
+}_{\mathbb{R}^{n_{k+1}\times n_{k}}}
+\underbrace{
+Dg\left( \mathrm{z}^{(k)}\right)
+}_{\mathbb{R}^{n_{k}\times n_{k}}}  \in \mathbb{R}^{1\times n_{k}}\\
+\nabla_ {W^{(k)}} l &= \left( \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \right)^\top \in \mathbb{R}^{n_k \times n_{k-1}} \\
+ \nabla_ {b^{(k)}} l 
+&= \delta^{(k)\top} \in \mathbb{R}^{n_{k}} \\
+\end{split}
+$$
+
+
+4) return $\nabla_\theta l=\left(\nabla_W^{(1)}, \nabla_b^{(1)}, ..., \nabla_W^{(L)}, \nabla_b^{(L)}\right)$ 
+### element wise solution for the gradient
 - let $\delta^{(k)}_j$ be the [[partial derivative]] of the loss function with respect to the $j \in \left\{1, ..., n^{(k)}\right\}$ element of the output of the $k \in \left\{1, ..., L\right\}$ layer
 
 $$
@@ -554,7 +780,6 @@ $$
 $$
 
 - based on $\delta^{(k)}_j$ we can calculate the [[partial derivative]] of the loss after an arbitrary parameter of the weight matrix of an arbitrary layer $W_{ji}^{(k)}$ by applying the [[chain rule]] (depending on the activation of the previous layer $a^{(k-1)}$)
-- based on $\delta^{(k)}_j$ we can calculate the [[partial derivative]] of the loss after an arbitrary parameter of the weight matrix of an arbitrary layer $W_{ji}^{(k)}$ by applying the [[chain rule]] (depending on the activation of the previous layer $a^{(k-1)}$)
 
 $$
 \begin{split}
@@ -564,10 +789,9 @@ $$
  &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial W_{ji}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \frac{\partial \left(\sum_i W_{ji}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)}{\partial W_{ji}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
-  \Rightarrow \nabla_ {W^{(k)}} l &= \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}}
+  \Rightarrow \nabla_ {W^{(k)}} l &= \left( \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \right)^\top
 \end{split}
 $$
-
 - the same approach can be used for the bias term $b_{j}^{(k)}$ 
 
 $$
@@ -580,7 +804,7 @@ $$
  &= \delta^{(k)}_j \\
   &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
   \Rightarrow \nabla_ {b^{(k)}} l 
-  &=\underbrace{\delta^{(k)\top}}_{\mathbb{R}^{n_{k}}}
+  &=\delta^{(k)\top} \in \mathbb{R}^{n_{k}}
 \end{split}
 $$
 
@@ -619,7 +843,18 @@ $$
 $$
 
 
-### vector solution
+### vector solution for the gradient
+- for the parameters we have the following
+
+$$
+\begin{split}
+\nabla_ {W^{(k)}} l &= \left(\underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \right)^\top \\
+  &= \left( a^{(k-1)}\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \right)^\top \\
+\nabla_ {b^{(k)}} l &= \delta^{(k)\top}\in \mathbb{R}^{n_{k}} \\
+&= \left(\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right)\right)^\top \\
+\end{split}
+$$
+
 - we have the following [[derivative]] of the [[loss function]] with respect to the output of the layer $k$
 
 $$
@@ -655,13 +890,6 @@ $$
 &= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
 \underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
-\Rightarrow \nabla_ {W^{(L)}} l &= \underbrace {a^{(L-1)}}_{\mathbb{R}^{n_{L-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \\
-&= a^{(L-1)}\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)  \\
-\Rightarrow \nabla_ {b^{(L)}} l 
-&= \underbrace{\delta^{(L)\top}}_{\mathbb{R}^{n_{L}}} \\
-&= \left(\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)\right)^\top \\
 \end{split}
 $$
 
@@ -682,11 +910,6 @@ Dg\left( \mathrm{z}^{(k)}\right)
 &= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 &= \frac{\partial W^{(k+1)}\mathrm{a}^{(k)} + b^{(k+1)}}{\partial \mathrm{a}^{(k)}} \\
-&= W^{(k+1)} \\
-  \Rightarrow \nabla_ {W^{(k)}} l &= \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \\
-  &= a^{(k-1)}\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
-\Rightarrow \nabla_ {b^{(k)}} l &= \underbrace{\delta^{(k)\top}}_{\mathbb{R}^{n_{k}}} \\
-&= \left(\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right)\right)^\top \\
 \end{split}
 $$
 
@@ -815,7 +1038,56 @@ $$
 $$
 - in the following we will just work with a single $(x, y)$ tuple but since the [[derivative]] is linear this can easily be extended to a sum
 
-### element wise solution
+
+### algorithm
+0) $\mathrm{a}^{(0)}=x$
+1) forward pass: for $i \in 1, ..., L$
+
+$$
+\begin{split}
+\mathrm{z}^{(i)} &= W^{(i)} \mathrm{a}^{(i-1)} + b^{(i)} \\
+\mathrm{a}^{(i)} 
+&= g^{(i)}\left(\mathrm{z}^{(i)}\right)  \\
+&= g^{(i)}\left(W^{(i)} \mathrm{a}^{(i-1)} + b^{(i)}\right)  \\
+\end{split}
+$$
+
+2) calculate
+
+$$
+\begin{split}
+\delta^{(L)}
+&= 
+\underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
+\underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
+\nabla_ {W^{(L)}} l &= \left( \underbrace {a^{(L-1)}}_{\mathbb{R}^{n_{L-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \right)^\top \in \mathbb{R}^{n_L \times n_{L-1}} \\
+ \nabla_ {b^{(L)}} l 
+&= \delta^{(L)\top} \in \mathbb{R}^{n_{L}} \\
+\end{split}
+$$
+
+3) backwards pass for $k \in L-1, ..., 1$
+
+$$
+\begin{split}
+\delta^{(k)}
+&= 
+\underbrace{\delta^{(k+1)\top}}_{\mathbb{R}^{1\times n_{k+1}}}
+\underbrace{
+W^{(k+1)}
+}_{\mathbb{R}^{n_{k+1}\times n_{k}}}
+\underbrace{
+Dg\left( \mathrm{z}^{(k)}\right)
+}_{\mathbb{R}^{n_{k}\times n_{k}}}  \in \mathbb{R}^{1\times n_{k}}\\
+\nabla_ {W^{(k)}} l &= \left( \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \right)^\top \in \mathbb{R}^{n_k \times n_{k-1}} \\
+ \nabla_ {b^{(k)}} l 
+&= \delta^{(k)\top} \in \mathbb{R}^{n_{k}} \\
+\end{split}
+$$
+
+
+4) return $\nabla_\theta l=\left(\nabla_W^{(1)}, \nabla_b^{(1)}, ..., \nabla_W^{(L)}, \nabla_b^{(L)}\right)$ 
+### element wise solution for the gradient
 - let $\delta^{(k)}_j$ be the [[partial derivative]] of the loss function with respect to the $j \in \left\{1, ..., n^{(k)}\right\}$ element of the output of the $k \in \left\{1, ..., L\right\}$ layer
 
 $$
@@ -829,7 +1101,6 @@ $$
 $$
 
 - based on $\delta^{(k)}_j$ we can calculate the [[partial derivative]] of the loss after an arbitrary parameter of the weight matrix of an arbitrary layer $W_{ji}^{(k)}$ by applying the [[chain rule]] (depending on the activation of the previous layer $a^{(k-1)}$)
-- based on $\delta^{(k)}_j$ we can calculate the [[partial derivative]] of the loss after an arbitrary parameter of the weight matrix of an arbitrary layer $W_{ji}^{(k)}$ by applying the [[chain rule]] (depending on the activation of the previous layer $a^{(k-1)}$)
 
 $$
 \begin{split}
@@ -839,10 +1110,9 @@ $$
  &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial W_{ji}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \frac{\partial \left(\sum_i W_{ji}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)}{\partial W_{ji}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
-  \Rightarrow \nabla_ {W^{(k)}} l &= \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}}
+  \Rightarrow \nabla_ {W^{(k)}} l &= \left( \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \right)^\top
 \end{split}
 $$
-
 - the same approach can be used for the bias term $b_{j}^{(k)}$ 
 
 $$
@@ -855,7 +1125,7 @@ $$
  &= \delta^{(k)}_j \\
   &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
   \Rightarrow \nabla_ {b^{(k)}} l 
-  &=\underbrace{\delta^{(k)\top}}_{\mathbb{R}^{n_{k}}}
+  &=\delta^{(k)\top} \in \mathbb{R}^{n_{k}}
 \end{split}
 $$
 
@@ -894,7 +1164,18 @@ $$
 $$
 
 
-### vector solution
+### vector solution for the gradient
+- for the parameters we have the following
+
+$$
+\begin{split}
+\nabla_ {W^{(k)}} l &= \left(\underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \right)^\top \\
+  &= \left( a^{(k-1)}\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \right)^\top \\
+\nabla_ {b^{(k)}} l &= \delta^{(k)\top}\in \mathbb{R}^{n_{k}} \\
+&= \left(\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right)\right)^\top \\
+\end{split}
+$$
+
 - we have the following [[derivative]] of the [[loss function]] with respect to the output of the layer $k$
 
 $$
@@ -930,13 +1211,6 @@ $$
 &= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
 \underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
-\Rightarrow \nabla_ {W^{(L)}} l &= \underbrace {a^{(L-1)}}_{\mathbb{R}^{n_{L-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \\
-&= a^{(L-1)}\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)  \\
-\Rightarrow \nabla_ {b^{(L)}} l 
-&= \underbrace{\delta^{(L)\top}}_{\mathbb{R}^{n_{L}}} \\
-&= \left(\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)\right)^\top \\
 \end{split}
 $$
 
@@ -957,17 +1231,12 @@ Dg\left( \mathrm{z}^{(k)}\right)
 &= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 &= \frac{\partial W^{(k+1)}\mathrm{a}^{(k)} + b^{(k+1)}}{\partial \mathrm{a}^{(k)}} \\
-&= W^{(k+1)} \\
-  \Rightarrow \nabla_ {W^{(k)}} l &= \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \\
-  &= a^{(k-1)}\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
-\Rightarrow \nabla_ {b^{(k)}} l &= \underbrace{\delta^{(k)\top}}_{\mathbb{R}^{n_{k}}} \\
-&= \left(\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right)\right)^\top \\
 \end{split}
 $$
 
 ## neural network
 - let $L$ be the number of layers of the [[neural network]] 
-- each layer $i$ transforms its input with [[linear map]] defined by a weight matrix $W^{(i)}$ and a bias $b^{(i)}$ and a (potentially non-linear) [[nn activation function]] $g^{(i)}$
+- each layer $i$ transforms its input with [[linear map]] defined by a weight matrix $W^{(i)}\in \mathbb{R}^{n_i \times n_{i-1}}$ and a bias $b^{(i)}\in \mathbb{R}^{n_i}$ and a (potentially non-linear) [[nn activation function]] $g^{(i)}: \mathbb{R}^{n_i} \to  \mathbb{R}^{n_i}$
 - the output of each layer is called the activation vector $\mathrm{a}^{(i)}$ with the first being the input of the model $\mathrm{a}^{(0)}=x \in \mathbb{R}^{n_0}$ 
 
 $$
@@ -1137,13 +1406,9 @@ $$
 &= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
 \underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
-\nabla_ {W^{(L)}} l &= \underbrace {a^{(L-1)}}_{\mathbb{R}^{n_{L-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \\
-&= a^{(L-1)}\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)  \\
+\nabla_ {W^{(L)}} l &= \left( \underbrace {a^{(L-1)}}_{\mathbb{R}^{n_{L-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \right)^\top \in \mathbb{R}^{n_L \times n_{L-1}} \\
  \nabla_ {b^{(L)}} l 
-&= \underbrace{\delta^{(L)\top}}_{\mathbb{R}^{n_{L}}} \\
-&= \left(\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)\right)^\top \\
+&= \delta^{(L)\top} \in \mathbb{R}^{n_{L}} \\
 \end{split}
 $$
 
@@ -1152,26 +1417,22 @@ $$
 $$
 \begin{split}
 \delta^{(k)}
-&= \frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{a}^{(k)}}Dg\left( \mathrm{z}^{(k)}\right) \\
 &= 
-\underbrace{\frac{\partial \mathcal{l}\left(y, \mathrm{a}^{(L)}\right)}{\partial \mathrm{z}^{(k+1)}}}_{\mathbb{R}^{1\times n_{k+1}}}
+\underbrace{\delta^{(k+1)\top}}_{\mathbb{R}^{1\times n_{k+1}}}
 \underbrace{
-\frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
+W^{(k+1)}
 }_{\mathbb{R}^{n_{k+1}\times n_{k}}}
 \underbrace{
 Dg\left( \mathrm{z}^{(k)}\right)
-}_{\mathbb{R}^{n_{k}\times n_{k}}}\\
-&= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
-
-  \Rightarrow \nabla_ {W^{(k)}} l &= \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \\
-  &= a^{(k-1)}\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
-\Rightarrow \nabla_ {b^{(k)}} l &= \underbrace{\delta^{(k)\top}}_{\mathbb{R}^{n_{k}}} \\
-&= \left(\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right)\right)^\top \\
+}_{\mathbb{R}^{n_{k}\times n_{k}}}  \in \mathbb{R}^{1\times n_{k}}\\
+\nabla_ {W^{(k)}} l &= \left( \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \right)^\top \in \mathbb{R}^{n_k \times n_{k-1}} \\
+ \nabla_ {b^{(k)}} l 
+&= \delta^{(k)\top} \in \mathbb{R}^{n_{k}} \\
 \end{split}
 $$
 
-4) return $\nabla_\theta l=\left(\nabla_W^{(1)}, \nabla_b^{(1)}, ..., \nabla_W^{(L)}, \nabla_b^{(L)}\right)$ 
 
+4) return $\nabla_\theta l=\left(\nabla_W^{(1)}, \nabla_b^{(1)}, ..., \nabla_W^{(L)}, \nabla_b^{(L)}\right)$ 
 ### element wise solution for the gradient
 - let $\delta^{(k)}_j$ be the [[partial derivative]] of the loss function with respect to the $j \in \left\{1, ..., n^{(k)}\right\}$ element of the output of the $k \in \left\{1, ..., L\right\}$ layer
 
@@ -1195,7 +1456,7 @@ $$
  &= \frac{ \partial \mathrm{z}^{(k)}_j}{\partial W_{ji}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= \frac{\partial \left(\sum_i W_{ji}^{(k)} a^{(k-1)}_i + b^{(k)}_j\right)}{\partial W_{ji}^{(k)}}  \cdot \delta^{(k)}_j \\
  &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
-  \Rightarrow \nabla_ {W^{(k)}} l &= \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}}
+  \Rightarrow \nabla_ {W^{(k)}} l &= \left( \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \right)^\top
 \end{split}
 $$
 - the same approach can be used for the bias term $b_{j}^{(k)}$ 
@@ -1210,7 +1471,7 @@ $$
  &= \delta^{(k)}_j \\
   &= a^{(k-1)}_i \cdot \delta^{(k)}_j \\
   \Rightarrow \nabla_ {b^{(k)}} l 
-  &=\underbrace{\delta^{(k)\top}}_{\mathbb{R}^{n_{k}}}
+  &=\delta^{(k)\top} \in \mathbb{R}^{n_{k}}
 \end{split}
 $$
 
@@ -1250,6 +1511,17 @@ $$
 
 
 ### vector solution for the gradient
+- for the parameters we have the following
+
+$$
+\begin{split}
+\nabla_ {W^{(k)}} l &= \left(\underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \right)^\top \\
+  &= \left( a^{(k-1)}\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \right)^\top \\
+\nabla_ {b^{(k)}} l &= \delta^{(k)\top}\in \mathbb{R}^{n_{k}} \\
+&= \left(\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right)\right)^\top \\
+\end{split}
+$$
+
 - we have the following [[derivative]] of the [[loss function]] with respect to the output of the layer $k$
 
 $$
@@ -1285,13 +1557,6 @@ $$
 &= 
 \underbrace{\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}}}_{\mathbb{R}^{1\times n_L}} 
 \underbrace{Dg^{(L)}\left( \mathrm{z}^{(L)}\right)}_{\mathbb{R}^{n_L\times n_L}} \in \mathbb{R}^{1\times n_L}  \\
-\Rightarrow \nabla_ {W^{(L)}} l &= \underbrace {a^{(L-1)}}_{\mathbb{R}^{n_{L-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{L}}} \\
-&= a^{(L-1)}\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)  \\
-\Rightarrow \nabla_ {b^{(L)}} l 
-&= \underbrace{\delta^{(L)\top}}_{\mathbb{R}^{n_{L}}} \\
-&= \left(\frac{\partial \mathcal{l}\left(y, f_\theta \left(x\right)\right)}{\partial \mathrm{a}^{(L)}} 
-Dg^{(L)}\left( \mathrm{z}^{(L)}\right)\right)^\top \\
 \end{split}
 $$
 
@@ -1312,17 +1577,12 @@ Dg\left( \mathrm{z}^{(k)}\right)
 &= \delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
 \frac{\partial \mathrm{z}^{(k+1)}}{\partial \mathrm{a}^{(k)}}
 &= \frac{\partial W^{(k+1)}\mathrm{a}^{(k)} + b^{(k+1)}}{\partial \mathrm{a}^{(k)}} \\
-&= W^{(k+1)} \\
-  \Rightarrow \nabla_ {W^{(k)}} l &= \underbrace {a^{(k-1)}}_{\mathbb{R}^{n_{k-1} \times 1}} \quad\underbrace{\delta^{(k)}}_{\mathbb{R}^{1 \times n_{k}}} \\
-  &= a^{(k-1)}\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right) \\
-\Rightarrow \nabla_ {b^{(k)}} l &= \underbrace{\delta^{(k)\top}}_{\mathbb{R}^{n_{k}}} \\
-&= \left(\delta^{(k+1)\top}W^{(k+1)}Dg\left( \mathrm{z}^{(k)}\right)\right)^\top \\
 \end{split}
 $$
 
 ## neural network
 - let $L$ be the number of layers of the [[neural network]] 
-- each layer $i$ transforms its input with [[linear map]] defined by a weight matrix $W^{(i)}$ and a bias $b^{(i)}$ and a (potentially non-linear) [[nn activation function]] $g^{(i)}$
+- each layer $i$ transforms its input with [[linear map]] defined by a weight matrix $W^{(i)}\in \mathbb{R}^{n_i \times n_{i-1}}$ and a bias $b^{(i)}\in \mathbb{R}^{n_i}$ and a (potentially non-linear) [[nn activation function]] $g^{(i)}: \mathbb{R}^{n_i} \to  \mathbb{R}^{n_i}$
 - the output of each layer is called the activation vector $\mathrm{a}^{(i)}$ with the first being the input of the model $\mathrm{a}^{(0)}=x \in \mathbb{R}^{n_0}$ 
 
 $$
