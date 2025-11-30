@@ -193,6 +193,14 @@ $$
 &=\frac{\partial g^{(k)}\left( \mathrm{z}^{(k)}\right)}{\partial \mathrm{z}^{(k)}} =Dg^{(L)}\left( \mathrm{z}^{(k)}\right)\\
 \end{split}
 $$
+### loss functions
+
+
+
+
+![[sigmoid function#derivative of the sigmoid function]]
+
+
 
 # ------------
 
@@ -525,7 +533,7 @@ $$
 \begin{split}
 \frac{\partial f\left(g(x)\right)}{\partial x} 
 &= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+&= \left.Df\left(u\right)\right|_{u=g(x)} Dg(x) \in \mathbb{R}^{k \times n} \\
 \end{split}
 $$
 
@@ -932,7 +940,7 @@ $$
 \begin{split}
 \frac{\partial f\left(g(x)\right)}{\partial x} 
 &= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+&= \left.Df\left(u\right)\right|_{u=g(x)} Dg(x) \in \mathbb{R}^{k \times n} \\
 \end{split}
 $$
 
@@ -1281,7 +1289,7 @@ $$
 \begin{split}
 \frac{\partial f\left(g(x)\right)}{\partial x} 
 &= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+&= \left.Df\left(u\right)\right|_{u=g(x)} Dg(x) \in \mathbb{R}^{k \times n} \\
 \end{split}
 $$
 
@@ -1605,24 +1613,37 @@ $$
 
 
 ### multi variable case
-let 
-- $x \in \mathbb{R}^{n}$ 
-- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+#### single dimension case
+- $x \in \mathbb{R}$ 
+- $g: \mathbb{R} \to \mathbb{R}^m$ 
 - $f: \mathbb{R}^m \to \mathbb{R}$ 
 
 $$
 \begin{split}
-\frac{\partial f\left(g(x)\right)}{\partial x_i} 
-&= \lim_{h \to 0} \frac{ f\left(g(x + e_i h)\right) - f\left(g(x )\right) }{h}  \\
-&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x_i} \\
-&= Df\left(g(x)\right) Dg(x)_{(: i)} \in \mathbb{R} \\
 \frac{\partial f\left(g(x)\right)}{\partial x} 
-&= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{1 \times n} \\
+&= \lim_{h \to 0} \frac{ f\left(g(x + e h)\right) - f\left(g(x )\right) }{h}  \\
+&= \sum_{j=1}^m   \frac{\partial f\left(g(x)\right)}{\partial g(x)_j} \frac{\partial g(x)_j}{\partial x} \\
 \end{split}
 $$
 
-- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{1\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
+
+#### general case
+let 
+- $x \in \mathbb{R}^{n}$ 
+- $g: \mathbb{R}^n \to \mathbb{R}^m$ 
+- $f: \mathbb{R}^m \to \mathbb{R}^k$ 
+
+
+$$
+\begin{split}
+\frac{\partial f\left(g(x)\right)}{\partial x} 
+&= D{g \circ f}(x) \\
+&= \left.Df\left(u\right)\right|_{u=g(x)} Dg(x) \in \mathbb{R}^{k \times n} \\
+\end{split}
+$$
+
+- with the [[jacobian]] $Df\left(g(x)\right) \in \mathbb{R}^{k\times m}$ and $Dg(x) \in \mathbb{R}^{m \times n}$ 
+
 #### dimensions
 - let $F = f\left(g(x)\right)$
 - the rule for the decomposing the [[derivative]] with the [[chain rule]] is outer times inner and the dimensions are as follows
@@ -1637,7 +1658,6 @@ DF(x) =
 \in \mathbb{R}^{\mathrm{dim}(F) \times \mathrm{dim}(x)} \\
 \end{split}
 $$
-
 #### proof
 
 - $g$ and $f$ are [[differentiable]] so that the following exists

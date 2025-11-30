@@ -1,6 +1,6 @@
 ## generic type
 
-- [[r static dispatch]]: 
+- [[r static dispatch]] (2 versions): 
 	- functions replicated at [[r compile time]]
 	- larger binary s but faster at runtime
 	- makes sense when the function is not used for too many different types
@@ -35,8 +35,13 @@ fn render<T: Draw>(widget: T) {
     widget.draw();
 }
 
-// dynamic dispatch
+// Static dispatch
 fn render2(widget: impl Draw) {
+    widget.draw();
+}
+
+// dynamic dispatch (works only with object safe traits)
+fn render2(widget: dyn Draw) {
     widget.draw();
 }
 ```
@@ -155,8 +160,13 @@ fn render<T: Draw>(widget: T) {
     widget.draw();
 }
 
-// dynamic dispatch
+// Static dispatch
 fn render2(widget: impl Draw) {
+    widget.draw();
+}
+
+// dynamic dispatch (works only with object safe traits)
+fn render2(widget: dyn Draw) {
     widget.draw();
 }
 ```

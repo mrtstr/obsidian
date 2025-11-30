@@ -41,7 +41,7 @@ $$
 \begin{split}
 \frac{\partial f\left(g(x)\right)}{\partial x} 
 &= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+&= \left.Df\left(u\right)\right|_{u=g(x)} Dg(x) \in \mathbb{R}^{k \times n} \\
 \end{split}
 $$
 
@@ -176,7 +176,7 @@ $$
 \begin{split}
 \frac{\partial f\left(g(x)\right)}{\partial x} 
 &= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+&= \left.Df\left(u\right)\right|_{u=g(x)} Dg(x) \in \mathbb{R}^{k \times n} \\
 \end{split}
 $$
 
@@ -422,7 +422,7 @@ $$
 \begin{split}
 \frac{\partial f\left(g(x)\right)}{\partial x} 
 &= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+&= \left.Df\left(u\right)\right|_{u=g(x)} Dg(x) \in \mathbb{R}^{k \times n} \\
 \end{split}
 $$
 
@@ -612,7 +612,7 @@ $$
 \begin{split}
 \frac{\partial f\left(g(x)\right)}{\partial x} 
 &= D{g \circ f}(x) \\
-&= Df\left(g(x)\right) Dg(x) \in \mathbb{R}^{k \times n} \\
+&= \left.Df\left(u\right)\right|_{u=g(x)} Dg(x) \in \mathbb{R}^{k \times n} \\
 \end{split}
 $$
 
