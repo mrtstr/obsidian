@@ -25,6 +25,16 @@ $$
 \end{split}
 $$
 
+### derivative of the hyperbolic tangent
+
+$$
+\begin{split}
+\frac{d}{dz}\tanh(z) 
+&= \frac{d}{dz} \frac{e^z - e^{-z}}{e^z + e^{-z}} \\
+&= \frac{e^z + e^{-z}}{e^z + e^{-z}} - \frac{e^z - e^{-z}}{(e^z + e^{-z})^2} (e^z - e^{-z}) \\
+&= 1 - \tanh(z)^2 \\
+\end{split}
+$$
 
 # ------------
 
@@ -37,6 +47,7 @@ Basic
 [[nn hyperbolic tangent]]
 - definition
 - relationship to [[sigmoid function]] with proof
+- derivative without proof
 Back: 
 
 ### hyperbolic tangent
@@ -63,6 +74,17 @@ $$
 &= \frac{2}{1+e^{-2z}}-1 \\
 &= \frac{1-e^{-2z}}{1+e^{-2z}} \\
 &= \frac{e^{z}-e^{-z}}{e^{z}+e^{-z}} \\
+\end{split}
+$$
+
+### derivative of the hyperbolic tangent
+
+$$
+\begin{split}
+\frac{d}{dz}\tanh(z) 
+&= \frac{d}{dz} \frac{e^z - e^{-z}}{e^z + e^{-z}} \\
+&= \frac{e^z + e^{-z}}{e^z + e^{-z}} - \frac{e^z - e^{-z}}{(e^z + e^{-z})^2} (e^z - e^{-z}) \\
+&= 1 - \tanh(z)^2 \\
 \end{split}
 $$
 
@@ -135,4 +157,54 @@ $$
 $$
 Tags: mathematics basics WS2526
 <!--ID: 1763312447271-->
+END
+
+
+START
+Basic
+[[derivative]] of the [[nn hyperbolic tangent]] with calculation
+
+Back: 
+### derivative of the hyperbolic tangent
+
+$$
+\begin{split}
+\frac{d}{dz}\tanh(z) 
+&= \frac{d}{dz} \frac{e^z - e^{-z}}{e^z + e^{-z}} \\
+&= \frac{e^z + e^{-z}}{e^z + e^{-z}} - \frac{e^z - e^{-z}}{(e^z + e^{-z})^2} (e^z - e^{-z}) \\
+&= 1 - \tanh(z)^2 \\
+\end{split}
+$$
+
+### hyperbolic tangent
+- the [[nn hyperbolic tangent]] can be used as [[nn activation function]] for [[neural network]] and is defined a $\tanh: \mathbb{R} \to (-1, 1)$
+
+$$
+\tanh(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}
+$$
+
+- the [[nn hyperbolic tangent]] is a scaled and shifted version of the [[sigmoid function]] in a way that it's zero centered and is mapping to $(-1, 1)$
+
+$$
+\begin{split}
+\tanh(z) &= 2\sigma(2z)-1 \\
+\sigma(z) &= \frac{1+\tanh\left(\frac{z}{2}\right)}{2} \\
+\end{split}
+$$
+
+
+$$
+\begin{split}
+\tanh(z) 
+&= 2\sigma(2z)-1 \\
+&= \frac{2}{1+e^{-2z}}-1 \\
+&= \frac{1-e^{-2z}}{1+e^{-2z}} \\
+&= \frac{e^{z}-e^{-z}}{e^{z}+e^{-z}} \\
+\end{split}
+$$
+
+
+
+Tags: mathematics basics WS2526
+<!--ID: 1764519362367-->
 END
