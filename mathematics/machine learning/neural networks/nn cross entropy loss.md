@@ -123,13 +123,13 @@ $$
 \begin{split}
 \frac{\partial \ell(y, \hat y(z)) }{\partial z_j} 
 &= \sum_i \frac{\partial \ell\left(y, \hat y\right) }{\partial \hat y_i} \frac{\partial \mathrm{SOFTMAX}(z)_i }{\partial z_j}  \\
-&= \sum_i -  \frac{y_i}{\hat y_i} \hat y_j (\mathrm{I} \left[i=j\right]- \hat y_j)  \\
+&= \sum_i -  \frac{y_i}{\hat y_i} \hat y_j (\mathrm{I} \left[i=j\right]- \hat y_i)  \\
 &= \sum_i   \frac{y_i \hat y_j \hat y_j - y_i \hat y_j \mathrm{I} \left[i=j\right]}{\hat y_i}   \\
 &= \sum_i   \frac{y_i \hat y_j \hat y_j}{\hat y_i} - \sum_i   \frac{y_i \hat y_j \mathrm{I} \left[i=j\right]}{\hat y_i}   \\
-&= \hat y_j - y_i  \\
+&= \hat y_j - y_j  \\
 \frac{\partial \mathrm{SOFTMAX}(z)_i }{\partial z_j}
 &= \mathrm{SOFTMAX}(Z)_j \cdot \mathrm{I} \left[i=j\right]-\mathrm{SOFTMAX}(Z)_j\mathrm{SOFTMAX}(Z)_i\\
-&=  \hat y_j (\mathrm{I} \left[i=j\right]- \hat y_j)  \\
+&=  \hat y_j (\mathrm{I} \left[i=j\right]- \hat y_i)  \\
 \frac{\partial \ell\left(y, \hat y\right) }{\partial \hat y_i} 
 &= -  \sum_i \frac{\partial  }{\partial \hat y_i}  y_i \log(\hat y_i) \\
 &= -  \frac{y_i}{\hat y_i}   \\
@@ -413,13 +413,13 @@ $$
 \begin{split}
 \frac{\partial \ell(y, \hat y(z)) }{\partial z_j} 
 &= \sum_i \frac{\partial \ell\left(y, \hat y\right) }{\partial \hat y_i} \frac{\partial \mathrm{SOFTMAX}(z)_i }{\partial z_j}  \\
-&= \sum_i -  \frac{y_i}{\hat y_i} \hat y_j (\mathrm{I} \left[i=j\right]- \hat y_j)  \\
+&= \sum_i -  \frac{y_i}{\hat y_i} \hat y_j (\mathrm{I} \left[i=j\right]- \hat y_i)  \\
 &= \sum_i   \frac{y_i \hat y_j \hat y_j - y_i \hat y_j \mathrm{I} \left[i=j\right]}{\hat y_i}   \\
 &= \sum_i   \frac{y_i \hat y_j \hat y_j}{\hat y_i} - \sum_i   \frac{y_i \hat y_j \mathrm{I} \left[i=j\right]}{\hat y_i}   \\
-&= \hat y_j - y_i  \\
+&= \hat y_j - y_j  \\
 \frac{\partial \mathrm{SOFTMAX}(z)_i }{\partial z_j}
 &= \mathrm{SOFTMAX}(Z)_j \cdot \mathrm{I} \left[i=j\right]-\mathrm{SOFTMAX}(Z)_j\mathrm{SOFTMAX}(Z)_i\\
-&=  \hat y_j (\mathrm{I} \left[i=j\right]- \hat y_j)  \\
+&=  \hat y_j (\mathrm{I} \left[i=j\right]- \hat y_i)  \\
 \frac{\partial \ell\left(y, \hat y\right) }{\partial \hat y_i} 
 &= -  \sum_i \frac{\partial  }{\partial \hat y_i}  y_i \log(\hat y_i) \\
 &= -  \frac{y_i}{\hat y_i}   \\
@@ -592,13 +592,13 @@ $$
 \begin{split}
 \frac{\partial \ell(y, \hat y(z)) }{\partial z_j} 
 &= \sum_i \frac{\partial \ell\left(y, \hat y\right) }{\partial \hat y_i} \frac{\partial \mathrm{SOFTMAX}(z)_i }{\partial z_j}  \\
-&= \sum_i -  \frac{y_i}{\hat y_i} \hat y_j (\mathrm{I} \left[i=j\right]- \hat y_j)  \\
+&= \sum_i -  \frac{y_i}{\hat y_i} \hat y_j (\mathrm{I} \left[i=j\right]- \hat y_i)  \\
 &= \sum_i   \frac{y_i \hat y_j \hat y_j - y_i \hat y_j \mathrm{I} \left[i=j\right]}{\hat y_i}   \\
 &= \sum_i   \frac{y_i \hat y_j \hat y_j}{\hat y_i} - \sum_i   \frac{y_i \hat y_j \mathrm{I} \left[i=j\right]}{\hat y_i}   \\
-&= \hat y_j - y_i  \\
+&= \hat y_j - y_j  \\
 \frac{\partial \mathrm{SOFTMAX}(z)_i }{\partial z_j}
 &= \mathrm{SOFTMAX}(Z)_j \cdot \mathrm{I} \left[i=j\right]-\mathrm{SOFTMAX}(Z)_j\mathrm{SOFTMAX}(Z)_i\\
-&=  \hat y_j (\mathrm{I} \left[i=j\right]- \hat y_j)  \\
+&=  \hat y_j (\mathrm{I} \left[i=j\right]- \hat y_i)  \\
 \frac{\partial \ell\left(y, \hat y\right) }{\partial \hat y_i} 
 &= -  \sum_i \frac{\partial  }{\partial \hat y_i}  y_i \log(\hat y_i) \\
 &= -  \frac{y_i}{\hat y_i}   \\
