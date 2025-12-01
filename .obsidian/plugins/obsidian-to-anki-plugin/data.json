@@ -2250,11 +2250,12 @@
     "mathematics/machine learning/neural networks/nn LLM training.md": "21f924084526ce7a43dbe591b3de38fb",
     "mathematics/machine learning/neural networks/nn adam optimizer.md": "9bb3d52b2aae9bce4593ab8d7da6b901",
     "mathematics/machine learning/neural networks/nn learning rate scheduling.md": "2671ad3af44fa82605238856a141c995",
-    "mathematics/machine learning/neural networks/nn in context learning.md": "8c5f4aa3521b35fda7e510ee61822996",
+    "mathematics/machine learning/neural networks/nn in context learning.md": "57b10686c08b2a59c0b0fd9fccae222d",
     "mathematics/machine learning/neural networks/nn backpropagation.md": "245fa7e25e4d4ded3c4c3cadcf99c2d8",
     "mathematics/basics/chain rule.md": "a5659bb43fe66463b7b4e28bbfd24509",
     "mathematics/basics/elementwise product.md": "4a1fec3fb74458eb35897e1ebe746dff",
-    "mathematics/machine learning/neural networks/nn cross entropy loss.md": "6761d5fdcd5de06db7be105387ab1e83"
+    "mathematics/machine learning/neural networks/nn cross entropy loss.md": "6761d5fdcd5de06db7be105387ab1e83",
+    "mathematics/machine learning/neural networks/nn LLM training phases.md": "cd22dc919483288517b7d76e8d0f96d1"
   },
   "fields_dict": {
     "Basic": [
