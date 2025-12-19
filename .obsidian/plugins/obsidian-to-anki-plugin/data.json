@@ -2256,7 +2256,8 @@
     "mathematics/basics/elementwise product.md": "4a1fec3fb74458eb35897e1ebe746dff",
     "mathematics/machine learning/neural networks/nn cross entropy loss.md": "6761d5fdcd5de06db7be105387ab1e83",
     "mathematics/machine learning/neural networks/nn LLM training phases.md": "cd22dc919483288517b7d76e8d0f96d1",
-    "mathematics/machine learning/neural networks/nn LLM scaling laws.md": "425c7155f3939df6d9c062a65b38da72"
+    "mathematics/machine learning/neural networks/nn LLM scaling laws.md": "425c7155f3939df6d9c062a65b38da72",
+    "mathematics/machine learning/neural networks/nn optimization algorithms.md": "fc98681eb18fb2fada0d48ce38dd3693"
   },
   "fields_dict": {
     "Basic": [
