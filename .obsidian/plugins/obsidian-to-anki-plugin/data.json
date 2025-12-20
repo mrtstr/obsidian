@@ -2059,7 +2059,7 @@
     "mathematics/stochastics/statistical learning/logit function.md": "c3330f05223ff33f81f0917caf446088",
     "mathematics/stochastics/statistical learning/sigmoid function.md": "1fe842b382cfccff1522bedf85b9b0ce",
     "mathematics/stochastics/statistical learning/logistic regression.md": "387d9c4871d021d88ce249e2e87af36e",
-    "mathematics/stochastics/statistical learning/multinomial logistic regresssion.md": "a952cd54d912b753d1f917d0ccc5f904",
+    "mathematics/stochastics/statistical learning/multinomial logistic regresssion.md": "221c29fb8645a7d8c3af0759af9b1b36",
     "machine learning/logit.md": "d41d8cd98f00b204e9800998ecf8427e",
     "machine learning/softmax function.md": "c3ada696674ac6604ca826fc39e6e951",
     "machine learning/principal component analysis.md": "2264d29ad629813f48fb67c3f155d3c0",
@@ -2257,7 +2257,9 @@
     "mathematics/machine learning/neural networks/nn cross entropy loss.md": "6761d5fdcd5de06db7be105387ab1e83",
     "mathematics/machine learning/neural networks/nn LLM training phases.md": "cd22dc919483288517b7d76e8d0f96d1",
     "mathematics/machine learning/neural networks/nn LLM scaling laws.md": "425c7155f3939df6d9c062a65b38da72",
-    "mathematics/machine learning/neural networks/nn optimization algorithms.md": "fc98681eb18fb2fada0d48ce38dd3693"
+    "mathematics/machine learning/neural networks/nn optimization algorithms.md": "fc98681eb18fb2fada0d48ce38dd3693",
+    "mathematics/machine learning/neural networks/nn bias complexity tradeoff.md": "3711d7d6433aece750d1435de002f45e",
+    "mathematics/machine learning/neural networks/nn regularization.md": "380913234d282fd6caccec204aa45d44"
   },
   "fields_dict": {
     "Basic": [

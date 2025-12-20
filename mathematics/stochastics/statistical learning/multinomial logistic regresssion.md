@@ -27,7 +27,7 @@ $$
   \end{split}
 $$
 
-This model is commonly used in multiclass [[classification]] tasks and serves as the final layer in many [[mathematics/stochastics/statistical learning/models/neural networks/neural networks]].
+This model is commonly used in multiclass [[classification]] tasks and serves as the final layer in many [[neural network]]
 
 ### decision boundary's
 
