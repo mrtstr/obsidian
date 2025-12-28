@@ -5,6 +5,14 @@
 - classic approach: start with a simple model and increase complexity until the performance doesn't improve
 - modern approach: distinguish between the **representational capacity** and the **effective capacity** → focus on the effective capacity by adapting the learning algorithm ([[regularization]])
 
+- when the **representational capacity** is much larger than the amount of training data available regularization can force the training algorithm to find models with lower **effective capacity** within the [[hypothesis space]]
+	→ for example for a good estimation we need about one sample per parameter but if we have a large [[neural network]] with not much training data we can penalize the parameters size with a penalty term $\Omega(\theta)$ such that the number of effective (non-zero) parameters is smaller
+
+$$
+\begin{split}
+\theta_\gamma \in \underbrace{\arg\min \mathcal{R}(\theta) + \gamma \Omega(\theta)}_{\mathcal{R}_\gamma(\theta)}
+\end{split}
+$$
 #### representational capacity
 - overall size of the [[hypothesis space]] $\mathcal{H}$ → variety of functions the model architecture is mathematically capable of approximating
 - theoretical upper limit or the models power
@@ -14,16 +22,7 @@
 - is a subset of the representational capacity
 - depends on $\mathcal{H}$, the learning algorithm and the data
 
-### penalty methods
-  - we introduce a penalty term $\Omega(\theta)$ with a weight factor $\gamma$ and optimize the following problem instead of just the [[risk]]
 
-$$
-\begin{split}
-\theta_\gamma \in \underbrace{\arg\min \mathcal{R}(\theta) + \gamma \Omega(\theta)}_{\mathcal{R}_\gamma(\theta)}
-\end{split}
-$$
-
-- for example [[nn l2 regularization]]
 # ------------------
 
 ![[nn bias complexity tradeoff#bias complexity tradeoff]]
@@ -34,7 +33,7 @@ $$
 START
 Basic
 two approaches of for preventing over fitting
-- plus one example
+- plus one example: when it is needed and how to do it
 Back: 
 ## regularization
 - during training of a [[neural network]] we are minimizing the training [[risk]] but at the same time we also want the training error ([[risk]] on the training set) to be not too much different from the true [[risk]] (based on the true [[data distribution]])
@@ -43,6 +42,14 @@ Back:
 - classic approach: start with a simple model and increase complexity until the performance doesn't improve
 - modern approach: distinguish between the **representational capacity** and the **effective capacity** → focus on the effective capacity by adapting the learning algorithm ([[regularization]])
 
+- when the **representational capacity** is much larger than the amount of training data available regularization can force the training algorithm to find models with lower **effective capacity** within the [[hypothesis space]]
+	→ for example for a good estimation we need about one sample per parameter but if we have a large [[neural network]] with not much training data we can penalize the parameters size with a penalty term $\Omega(\theta)$ such that the number of effective (non-zero) parameters is smaller
+
+$$
+\begin{split}
+\theta_\gamma \in \underbrace{\arg\min \mathcal{R}(\theta) + \gamma \Omega(\theta)}_{\mathcal{R}_\gamma(\theta)}
+\end{split}
+$$
 #### representational capacity
 - overall size of the [[hypothesis space]] $\mathcal{H}$ → variety of functions the model architecture is mathematically capable of approximating
 - theoretical upper limit or the models power
@@ -51,17 +58,6 @@ Back:
 - range of functions that the learning algorithm actually can find
 - is a subset of the representational capacity
 - depends on $\mathcal{H}$, the learning algorithm and the data
-
-### penalty methods
-  - we introduce a penalty term $\Omega(\theta)$ with a weight factor $\gamma$ and optimize the following problem instead of just the [[risk]]
-
-$$
-\begin{split}
-\theta_\gamma \in \underbrace{\arg\min \mathcal{R}(\theta) + \gamma \Omega(\theta)}_{\mathcal{R}_\gamma(\theta)}
-\end{split}
-$$
-
-- for example [[nn l2 regularization]]
 _________________
 
 ## bias complexity tradeoff
@@ -123,21 +119,6 @@ $$
 - it is dependent on the **training data set**, the **model architecture** and the **leaning algorithm**
 - for example can be caused by over fitting or limited data
 - can be reduced by [[regularization]] and more training data
-
-
-### bias complexity tradeoff with MSE loss
-
-$$
-\begin{split}
-\ell(y, f_\mathcal{S}(x))
-&= \left(y - f_\mathcal{S}(x)\right)^2 \\
-&= \left(\left(y - f_\mathcal{D}(x)\right) + \left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right) \right)^2 \\
-&= \left(y - f_\mathcal{D}(x)\right)^2 + \left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right)^2 \\&+ 2\left(y - f_\mathcal{D}(x)\right)\left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right) \\
-\mathcal{R}_\mathcal{D}(f_\mathcal{S}) 
-&= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\ell(y, f_\mathcal{S}(x))\right] \\
-&= \underbrace {\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(y - f_\mathcal{D}(x)\right)^2\right]}_{\epsilon_\mathrm{app}} + \underbrace {\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right)^2\right]}_{\epsilon_\mathrm{est}}
-\end{split}
-$$
 
 
 
@@ -156,8 +137,16 @@ Back:
 - [[regularization]] methods reduce the discrepancy between the error on the training dataset and the true error 
 
 - classic approach: start with a simple model and increase complexity until the performance doesn't improve
-- modern approach: distinguish between the **representational capacity** and the **effective capacity** → focus on the effective capacity by adapting the learning algorithm (for example with regularization methods)
+- modern approach: distinguish between the **representational capacity** and the **effective capacity** → focus on the effective capacity by adapting the learning algorithm ([[regularization]])
 
+- when the **representational capacity** is much larger than the amount of training data available regularization can force the training algorithm to find models with lower **effective capacity** within the [[hypothesis space]]
+	→ for example for a good estimation we need about one sample per parameter but if we have a large [[neural network]] with not much training data we can penalize the parameters size with a penalty term $\Omega(\theta)$ such that the number of effective (non-zero) parameters is smaller
+
+$$
+\begin{split}
+\theta_\gamma \in \underbrace{\arg\min \mathcal{R}(\theta) + \gamma \Omega(\theta)}_{\mathcal{R}_\gamma(\theta)}
+\end{split}
+$$
 #### representational capacity
 - overall size of the [[hypothesis space]] $\mathcal{H}$ → variety of functions the model architecture is mathematically capable of approximating
 - theoretical upper limit or the models power
@@ -166,18 +155,6 @@ Back:
 - range of functions that the learning algorithm actually can find
 - is a subset of the representational capacity
 - depends on $\mathcal{H}$, the learning algorithm and the data
-
-### penalty methods
-  - we introduce a penalty term $\Omega(\theta)$ with a weight factor $\gamma$ and optimize the following problem instead of just the [[risk]]
-
-$$
-\begin{split}
-\theta_\gamma \in \underbrace{\arg\min \mathcal{R}(\theta) + \gamma \Omega(\theta)}_{\mathcal{R}_\gamma(\theta)}
-\end{split}
-$$
-
-- for example [[nn l2 regularization]]
-
 _________________
 
 ## bias complexity tradeoff
@@ -240,20 +217,6 @@ $$
 - for example can be caused by over fitting or limited data
 - can be reduced by [[regularization]] and more training data
 
-
-### bias complexity tradeoff with MSE loss
-
-$$
-\begin{split}
-\ell(y, f_\mathcal{S}(x))
-&= \left(y - f_\mathcal{S}(x)\right)^2 \\
-&= \left(\left(y - f_\mathcal{D}(x)\right) + \left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right) \right)^2 \\
-&= \left(y - f_\mathcal{D}(x)\right)^2 + \left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right)^2 \\&+ 2\left(y - f_\mathcal{D}(x)\right)\left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right) \\
-\mathcal{R}_\mathcal{D}(f_\mathcal{S}) 
-&= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\ell(y, f_\mathcal{S}(x))\right] \\
-&= \underbrace {\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(y - f_\mathcal{D}(x)\right)^2\right]}_{\epsilon_\mathrm{app}} + \underbrace {\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right)^2\right]}_{\epsilon_\mathrm{est}}
-\end{split}
-$$
 
 
 
