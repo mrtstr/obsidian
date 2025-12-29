@@ -1153,7 +1153,7 @@
     "mathematics/basics/sine.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/cosine.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/limit.md": "e2a1ec459fa1e13b792ff5c11de57c38",
-    "mathematics/basics/geometric series.md": "68da6dc084a51ddb094688373df99aa6",
+    "mathematics/basics/geometric series.md": "2e40ba0ee28f63260c602c9adad4cd48",
     "mathematics/basics/series.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/basics/natural logarithm.md": "34d93c9e060d86d49f14ed7861b30266",
     "gym/gym plan2.md": "82a4095fd780da6651e9f4ee60e724ae",
@@ -2260,9 +2260,12 @@
     "mathematics/machine learning/neural networks/nn optimization algorithms.md": "fc98681eb18fb2fada0d48ce38dd3693",
     "mathematics/machine learning/neural networks/nn bias complexity tradeoff.md": "a6638a106640c4a9baebf9056b058b68",
     "mathematics/machine learning/neural networks/nn regularization.md": "380913234d282fd6caccec204aa45d44",
-    "mathematics/machine learning/neural networks/nn l2 regularization.md": "0add562d9c669bd59497a3312d8cbd85",
+    "mathematics/machine learning/neural networks/nn l2 regularization.md": "f22efff60cec46f3da022a0abee1a7bf",
     "mathematics/machine learning/neural networks/regularization.md": "3f925f73ee084566b84a569e71b8ece6",
-    "mathematics/machine learning/bayes optimal predictor.md": "0c0cfbb930a9e62e30fd96e04e7fe6c5"
+    "mathematics/machine learning/bayes optimal predictor.md": "0c0cfbb930a9e62e30fd96e04e7fe6c5",
+    "mathematics/machine learning/neural networks/nn quadratic loss model.md": "d00412ea19add17dd567d515ef224b3a",
+    "mathematics/machine learning/neural networks/nn early stopping.md": "212729998dc51398405f42b490399193",
+    "mathematics/machine learning/neural networks/nn l1 regularization.md": "2478f31f99850da8a3b0be2b1d411d1b"
   },
   "fields_dict": {
     "Basic": [

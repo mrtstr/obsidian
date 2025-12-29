@@ -50,17 +50,9 @@ $$
 \end{split}
 $$
 
+- to simplify the calculation we are using the following [[nn quadratic loss model]] for the risk
 
-- we have the following [[taylor series|taylor approximation]] of the [[risk]] function in the neighborhood of $\widehat{\mathcal{w}}$ 
-
-
-$$
-\begin{split}
-\widehat{\mathcal{R}}(\mathcal{w}) 
-&= \widehat{\mathcal{R}}(\widehat{\mathcal{w}}) + \overbrace{\nabla_\mathcal{w} \widehat{\mathcal{R}}(\mathcal{w} - \widehat{\mathcal{w}})}^\text{vanishes near the minimum} + \frac{1}{2} (\mathcal{w} - \widehat{\mathcal{w}})^\top H (\mathcal{w} - \widehat{\mathcal{w}}) \\
-H &= \nabla^2_\mathcal{w} \widehat{\mathcal{R}}(\widehat{\mathcal{w}}) \\
-\end{split}
-$$
+![[nn quadratic loss model#quadratic loss model]]
 
 - we have the following approximation of the regularized [[risk]] 
 
@@ -107,8 +99,6 @@ $$
 &= \sum_{i=1}^p  Q_{(*, i)}\underbrace{\left(Q_{(*, i)}^\top \widehat{\mathcal{w}} \right)}_{\text{eigenspace projection}} 
 \end{split}
 $$
-
-
 # ----------------
 
 ![[frobenius norm#frobenius norm]]
