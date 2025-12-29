@@ -70,7 +70,7 @@ $$
 &= \left(y - f_\mathcal{D}(x)\right)^2 + \left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right)^2 \\&+ 2\left(y - f_\mathcal{D}(x)\right)\left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right) \\
 \mathcal{R}_\mathcal{D}(f_\mathcal{S}) 
 &= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\ell(y, f_\mathcal{S}(x))\right] \\
-&= \underbrace {\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(y - f_\mathcal{D}(x)\right)^2\right]}_{\epsilon_\mathrm{app}} + \underbrace {\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right)^2\right]}_{\epsilon_\mathrm{est}}
+&= \underbrace {\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(y - f_\mathcal{D}(x)\right)^2\right]}_{\epsilon_\mathrm{app}} + \underbrace {\mathbb{E}_{x \sim \mathcal{D}}\left[\left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right)^2\right]}_{\epsilon_\mathrm{est}}
 \end{split}
 $$
 
@@ -79,11 +79,11 @@ $$
 $$
 \begin{split}
 \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\epsilon_\mathrm{est}\right]
-&= \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) -f_\mathcal{D}(x) \right)^2\right]\right] \\
-&= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) - \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] + \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] -f_\mathcal{D}(x) \right)^2 \right]\right] \\
-&= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) - \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] \right)^2 \right]\right] \\
-&\quad+  \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] -f_\mathcal{D}(x) \right)^2 \right]\right]  \\
-&= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{VAR}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]\right] + \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathrm{Bias}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]^2\right]  \\
+&= \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\mathbb{E}_{x \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) -f_\mathcal{D}(x) \right)^2\right]\right] \\
+&= \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) - \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] + \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] -f_\mathcal{D}(x) \right)^2 \right]\right] \\
+&= \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) - \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] \right)^2 \right]\right] \\
+&\quad+  \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] -f_\mathcal{D}(x) \right)^2 \right]\right]  \\
+&= \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{VAR}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]\right] + \mathbb{E}_{x \sim \mathcal{D}}\left[\mathrm{Bias}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]^2\right]  \\
 \end{split}
 $$
 
@@ -92,7 +92,7 @@ $$
 $$
 \begin{split}
 \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\mathcal{R}_\mathcal{D}(f_\mathcal{S})\right]
-&= \epsilon_\mathrm{app} + \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{VAR}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]\right] + \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathrm{Bias}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]^2\right]  \\
+&= \epsilon_\mathrm{app} + \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{VAR}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]\right] + \mathbb{E}_{x \sim \mathcal{D}}\left[\mathrm{Bias}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]^2\right]  \\
 \end{split}
 $$
 #### interpretation
@@ -126,7 +126,7 @@ $$
 &= \left(y - f_\mathcal{D}(x)\right)^2 + \left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right)^2 \\&+ 2\left(y - f_\mathcal{D}(x)\right)\left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right) \\
 \mathcal{R}_\mathcal{D}(f_\mathcal{S}) 
 &= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\ell(y, f_\mathcal{S}(x))\right] \\
-&= \underbrace {\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(y - f_\mathcal{D}(x)\right)^2\right]}_{\epsilon_\mathrm{app}} + \underbrace {\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right)^2\right]}_{\epsilon_\mathrm{est}}
+&= \underbrace {\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(y - f_\mathcal{D}(x)\right)^2\right]}_{\epsilon_\mathrm{app}} + \underbrace {\mathbb{E}_{x \sim \mathcal{D}}\left[\left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right)^2\right]}_{\epsilon_\mathrm{est}}
 \end{split}
 $$
 
@@ -135,11 +135,11 @@ $$
 $$
 \begin{split}
 \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\epsilon_\mathrm{est}\right]
-&= \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) -f_\mathcal{D}(x) \right)^2\right]\right] \\
-&= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) - \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] + \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] -f_\mathcal{D}(x) \right)^2 \right]\right] \\
-&= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) - \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] \right)^2 \right]\right] \\
-&\quad+  \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] -f_\mathcal{D}(x) \right)^2 \right]\right]  \\
-&= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{VAR}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]\right] + \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathrm{Bias}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]^2\right]  \\
+&= \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\mathbb{E}_{x \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) -f_\mathcal{D}(x) \right)^2\right]\right] \\
+&= \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) - \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] + \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] -f_\mathcal{D}(x) \right)^2 \right]\right] \\
+&= \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) - \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] \right)^2 \right]\right] \\
+&\quad+  \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] -f_\mathcal{D}(x) \right)^2 \right]\right]  \\
+&= \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{VAR}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]\right] + \mathbb{E}_{x \sim \mathcal{D}}\left[\mathrm{Bias}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]^2\right]  \\
 \end{split}
 $$
 
@@ -148,7 +148,7 @@ $$
 $$
 \begin{split}
 \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\mathcal{R}_\mathcal{D}(f_\mathcal{S})\right]
-&= \epsilon_\mathrm{app} + \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{VAR}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]\right] + \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathrm{Bias}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]^2\right]  \\
+&= \epsilon_\mathrm{app} + \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{VAR}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]\right] + \mathbb{E}_{x \sim \mathcal{D}}\left[\mathrm{Bias}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]^2\right]  \\
 \end{split}
 $$
 #### interpretation
@@ -245,7 +245,7 @@ $$
 &= \left(y - f_\mathcal{D}(x)\right)^2 + \left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right)^2 \\&+ 2\left(y - f_\mathcal{D}(x)\right)\left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right) \\
 \mathcal{R}_\mathcal{D}(f_\mathcal{S}) 
 &= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\ell(y, f_\mathcal{S}(x))\right] \\
-&= \underbrace {\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(y - f_\mathcal{D}(x)\right)^2\right]}_{\epsilon_\mathrm{app}} + \underbrace {\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right)^2\right]}_{\epsilon_\mathrm{est}}
+&= \underbrace {\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(y - f_\mathcal{D}(x)\right)^2\right]}_{\epsilon_\mathrm{app}} + \underbrace {\mathbb{E}_{x \sim \mathcal{D}}\left[\left(f_\mathcal{D}(x) - f_\mathcal{S}(x) \right)^2\right]}_{\epsilon_\mathrm{est}}
 \end{split}
 $$
 
@@ -254,11 +254,11 @@ $$
 $$
 \begin{split}
 \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\epsilon_\mathrm{est}\right]
-&= \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) -f_\mathcal{D}(x) \right)^2\right]\right] \\
-&= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) - \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] + \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] -f_\mathcal{D}(x) \right)^2 \right]\right] \\
-&= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) - \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] \right)^2 \right]\right] \\
-&\quad+  \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] -f_\mathcal{D}(x) \right)^2 \right]\right]  \\
-&= \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{VAR}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]\right] + \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathrm{Bias}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]^2\right]  \\
+&= \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\mathbb{E}_{x \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) -f_\mathcal{D}(x) \right)^2\right]\right] \\
+&= \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) - \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] + \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] -f_\mathcal{D}(x) \right)^2 \right]\right] \\
+&= \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(f_\mathcal{S}(x) - \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] \right)^2 \right]\right] \\
+&\quad+  \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\left(\mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x)\right] -f_\mathcal{D}(x) \right)^2 \right]\right]  \\
+&= \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{VAR}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]\right] + \mathbb{E}_{x \sim \mathcal{D}}\left[\mathrm{Bias}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]^2\right]  \\
 \end{split}
 $$
 
@@ -267,9 +267,10 @@ $$
 $$
 \begin{split}
 \mathbb{E}_{\mathcal{S} \sim \mathcal{D}}\left[\mathcal{R}_\mathcal{D}(f_\mathcal{S})\right]
-&= \epsilon_\mathrm{app} + \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathbb{VAR}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]\right] + \mathbb{E}_{(x, y) \sim \mathcal{D}}\left[\mathrm{Bias}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]^2\right]  \\
+&= \epsilon_\mathrm{app} + \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{VAR}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]\right] + \mathbb{E}_{x \sim \mathcal{D}}\left[\mathrm{Bias}_{\mathcal{S} \sim \mathcal{D}}\left[f_\mathcal{S}(x) \right]^2\right]  \\
 \end{split}
 $$
+
 #### interpretation
 this means the [[mean square error]] consists of 4 components
 - the **approximation error**: which contains the 
