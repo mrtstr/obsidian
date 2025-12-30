@@ -217,25 +217,18 @@ END
 
 START
 Basic
-given the update rule of the [[nn quadratic loss model]]
+given the update rule of the [[nn quadratic loss model]] and the optimizer of the [[nn l2 regularization|l2 regularized optimizer]] $\mathcal{w}_\gamma$
 - show that [[nn early stopping]] has a similar effect to [[nn l2 regularization]] when stopping in period $t \approx \frac{1}{\gamma \alpha}$
 
-### update rule of the quadratic loss model
-- update rule of the [[nn quadratic loss model]]
 
 $$
 \begin{split}
-\mathcal{w}^{(t)} 
-&= \mathcal{w}^{(t-1)}  - \alpha \nabla\mathcal{R}\left(\mathcal{w}^{(t-1)} \right) \\
-&= \mathcal{w}^{(t-1)}  - \alpha H\left(\mathcal{w}^{(t-1)} -\widehat{\mathcal{w}}\right) \\
-&= QQ^\top\mathcal{w}^{(t-1)}  - \alpha Q\Lambda Q^\top  \left(\mathcal{w}^{(t-1)} -\widehat{\mathcal{w}}\right) \\
-Q^\top\mathcal{w}^{(t)}  
-&= Q^\top\mathcal{w}^{(t-1)}  - \alpha \Lambda Q^\top  \left(\mathcal{w}^{(t-1)} -\widehat{\mathcal{w}}\right) \\
-&= Q^\top\mathcal{w}^{(t-1)}  - \alpha \Lambda Q^\top  \mathcal{w}^{(t-1)} +\alpha \Lambda Q^\top\widehat{\mathcal{w}} \\
-&=  \left(I -\alpha \Lambda\right) Q^\top  \mathcal{w}^{(t-1)} +\alpha \Lambda Q^\top\widehat{\mathcal{w}} \\
-Q^\top\left(\mathcal{w}^{(t)} -\widehat{\mathcal{w}}\right) 
-&=  \left(I -\alpha \Lambda\right) Q^\top  \mathcal{w}^{(t-1)} +\alpha \Lambda Q^\top\widehat{\mathcal{w}} - Q^\top\widehat{\mathcal{w}}  \\
-&=  \left(I -\alpha \Lambda\right) Q^\top  \left(\mathcal{w}^{(t-1)} -\widehat{\mathcal{w}}\right)   \\
+Q^\top \mathcal{w}^{(t)} 
+&= \left( I - \left(I -\alpha \Lambda\right)^t \right)  Q^\top\widehat{\mathcal{w}}   \\ 
+Q_{(:,i)}^\top \mathcal{w}^{(t)} 
+&= \underbrace{\left( 1 - \underbrace{\left(1 -\alpha \lambda_i\right)^t}_{\to_{t\to \infty} 0} \right)}_{\to_{t\to \infty}1}  Q_{(:,i)}^\top\widehat{\mathcal{w}}   \\ 
+\mathcal{w}_\gamma 
+&= Q(\Lambda +I\gamma)^{-1}\Lambda Q^\top\widehat{\mathcal{w}} \\
 \end{split}
 $$
 

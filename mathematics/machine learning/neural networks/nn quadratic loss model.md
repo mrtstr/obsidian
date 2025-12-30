@@ -16,7 +16,6 @@ $$
 \nabla\widehat{\mathcal{R}}(\mathcal{w}) 
 &=  H (\mathcal{w} - \widehat{\mathcal{w}}) \\
 &=  Q\Lambda Q^\top (\mathcal{w} - \widehat{\mathcal{w}}) \\
-
 \end{split}
 $$
 
@@ -129,6 +128,19 @@ START
 Basic
 update rule of the [[nn quadratic loss model]]
 Back: 
+
+
+$$
+\begin{split}
+\mathcal{w}^{(t)} 
+&= \mathcal{w}^{(t-1)}  - \alpha \nabla\mathcal{R}\left(\mathcal{w}^{(t-1)} \right) \\
+&= \mathcal{w}^{(t-1)}  - \alpha H\left(\mathcal{w}^{(t-1)} -\widehat{\mathcal{w}}\right) \\
+&= QQ^\top\mathcal{w}^{(t-1)}  - \alpha Q\Lambda Q^\top  \left(\mathcal{w}^{(t-1)} -\widehat{\mathcal{w}}\right) \\
+\end{split}
+$$
+
+__________
+
 ### quadratic loss model
 - using the [[taylor series|taylor approximation]] of the [[risk]] function in the neighborhood of $\widehat{\mathcal{w}}$ we have the following quadratic model that is valid near $\widehat{\mathcal{w}}$
 
@@ -231,7 +243,7 @@ END
 
 START
 Basic
-[[nn quadratic loss model]]
+update rule of the[[nn quadratic loss model]]
 - proof that when projected in the eigenspace the difference to the optimum is decreasing by a factor of $\left(1 -\alpha \lambda_i\right)$ in every step in the direction of the [[eigenvector]] of the [[eigenvalue]] $\lambda_i$
 Back: 
 ### quadratic loss model
