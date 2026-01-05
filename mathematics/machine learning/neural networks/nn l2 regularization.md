@@ -320,7 +320,7 @@ END
 
 START
 Basic
-by which factor is the [[nn l2 regularization]] damping the weights? (with proof?)
+by which factor is the [[nn l2 regularization]] damping the weights in each [[gradient descent]] update? (with proof?)
 Back: 
 ## l2 regularization
 - given a [[neural network]] with the parameters $\theta$
