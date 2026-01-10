@@ -346,7 +346,9 @@
     "Pasted image 20251124170459.png",
     "Pasted image 20251124170353.png",
     "Pasted image 20260105103419.png",
-    "Pasted image 20260105103423.png"
+    "Pasted image 20260105103423.png",
+    "Pasted image 20260110170002.png",
+    "Pasted image 20260110172324.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -2270,9 +2272,12 @@
     "mathematics/machine learning/neural networks/nn l1 regularization.md": "0972c81766dd23c6c11d80bc2da3fcc4",
     "mathematics/machine learning/neural networks/nn Sentence-BERT.md": "fd39ab3fb633f01e41d8cb3717e399ac",
     "mathematics/machine learning/neural networks/nn pretraining.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/machine learning/neural networks/nn retrieval augmented generation.md": "91e6f9b3fcccd204a63a79024342b25c",
+    "mathematics/machine learning/neural networks/nn retrieval augmented generation.md": "9daf3e34ed4ddd4d3d35bff8170114bc",
     "ethics/lecture protocol clean.md": "ada302718ff5462487862d6bbd08ac89",
-    "ethics/lecture ethics 1.md": "f94461bf9c3c8310ac8043969fa86fd0"
+    "ethics/lecture ethics 1.md": "f94461bf9c3c8310ac8043969fa86fd0",
+    "mathematics/machine learning/neural networks/nn sentence BERT.md": "e2c4d1949fc8f75f8845fd4474e86b51",
+    "mathematics/machine learning/neural networks/nn perference training.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "mathematics/machine learning/neural networks/nn supervised fine tuning.md": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "fields_dict": {
     "Basic": [
