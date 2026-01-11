@@ -80,6 +80,10 @@ large chunks
 - use an [[LLM]] to generate a short context description and add it to the chunk
 → Chunks become self-contained, and the embeddings encode the local and global meaning
 
+### quality metrics
+#### retrieval recall
+- fraction of relevant chunks that appear in the retrieved results → if there are 100 relevant documents in the data but only 50 appear in the top results the recall is 0.5
+- maximum depends on the quality of the embeddings
 # anki
 
 START
