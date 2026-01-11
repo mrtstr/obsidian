@@ -65,6 +65,16 @@ $$
 	4) chunks as semantic units
 - good chunking is very important for the downstream process
 
+##### chunk size trade off
+- good compromise: 200-500 tokens
+small chunks
+- higher recall
+- more precises context matching
+- loss of context and coherence
+large chunks
+- lower recall
+- risk of irrelevant information
+- better semantic coherence
 ##### contextual retrieval
 - general idea: **enrich each chunk with context**
 - use an [[LLM]] to generate a short context description and add it to the chunk
@@ -247,7 +257,7 @@ Basic
 - chunking strategies (4)
 - how to improve the chunks?
 - what is **contextual retrieval**?
-
+- chunk size trade off
 Back: 
 
 ### chunking
@@ -260,6 +270,16 @@ Back:
 	4) chunks as semantic units
 - good chunking is very important for the downstream process
 
+##### chunk size trade off
+- good compromise: 200-500 tokens
+small chunks
+- higher recall
+- more precises context matching
+- loss of context and coherence
+large chunks
+- lower recall
+- risk of irrelevant information
+- better semantic coherence
 ##### contextual retrieval
 - general idea: **enrich each chunk with context**
 - use an [[LLM]] to generate a short context description and add it to the chunk
@@ -301,4 +321,85 @@ ____________
 	- generate response based in user query and additional information
 Tags: ml WS2526
 <!--ID: 1768063868950-->
+END
+
+
+START
+Basic
+[[nn retrieval augmented generation#chunking]]
+- pros and cons of large and small chunks
+- what is often a good compromise?
+
+Back: 
+##### chunk size trade off
+- good compromise: 200-500 tokens
+small chunks
+- higher recall
+- more precises context matching
+- loss of context and coherence
+large chunks
+- lower recall
+- risk of irrelevant information
+- better semantic coherence
+### chunking
+- process of converting documents in multiple pieces → defines the **atomic unit of knowledge** in RAG
+- overlapping helps to preserve the context and increases storage and compute cost
+- chunking strategies
+	1) sentence based chunking
+	2) semantic chunking
+	3) section aware chunking (headings, paragraphs)
+	4) chunks as semantic units
+- good chunking is very important for the downstream process
+
+##### chunk size trade off
+- good compromise: 200-500 tokens
+small chunks
+- higher recall
+- more precises context matching
+- loss of context and coherence
+large chunks
+- lower recall
+- risk of irrelevant information
+- better semantic coherence
+##### contextual retrieval
+- general idea: **enrich each chunk with context**
+- use an [[LLM]] to generate a short context description and add it to the chunk
+→ Chunks become self-contained, and the embeddings encode the local and global meaning
+
+
+
+## retrieval augmented generation
+- the [[LLM]] contains knowledge in its weights that has the following limitations
+	1) **static**: cannot update after [[nn pretraining]]
+	2) **opaque**: impossible to inspect what the model “knows”
+	3) **incomplete**: [[nn pretraining]] data is finite and often outdated
+	4) **hallucination-prone**: model produces confident but incorrect answers
+- the [[nn retrieval augmented generation]] process overcomes the limitations by retrieving additional information and adding it to the context of the [[LLM]]
+
+### general approach
+- vector database that constrains text chunks as tuples (**chunk enbedding**, **chunk**)
+- when a user sends a prompt the prompt is mapped in the same embedding space of the chunks and similar chunks are searched in the vector database
+- the best matches are then **ranked**, and the best ones are **assembled** and **added to the context window**
+
+![[Pasted image 20260105103423.png]]
+
+1. Document Preparation (Offline)
+	- gather raw documents
+	- chunk them
+	- compute embeddings of chunks
+	- insert them in a vector database
+2. Query Embedding (Online)
+	- embed user query
+3. Retrieval
+	- search similar vectors in store
+	- retrieve top-k candidates
+4. Reranking (Optional)
+	- reorder candidates using stronger but more expensive models → improve precision before generation
+5. Context Assembly
+	- select, truncate and order chunks
+	- fit them in the models context window
+6. Generation
+	- generate response based in user query and additional information
+Tags: ml WS2526
+<!--ID: 1768123447451-->
 END
