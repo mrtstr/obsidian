@@ -349,7 +349,8 @@
     "Pasted image 20260105103423.png",
     "Pasted image 20260110170002.png",
     "Pasted image 20260110172324.png",
-    "Pasted image 20260111191931.png"
+    "Pasted image 20260111191931.png",
+    "Pasted image 20260111190859.png"
   ],
   "File Hashes": {
     "test folder/anki template.md": "aeaf330878a651645846a6b7e76ce3a8",
@@ -2273,13 +2274,19 @@
     "mathematics/machine learning/neural networks/nn l1 regularization.md": "0972c81766dd23c6c11d80bc2da3fcc4",
     "mathematics/machine learning/neural networks/nn Sentence-BERT.md": "fd39ab3fb633f01e41d8cb3717e399ac",
     "mathematics/machine learning/neural networks/nn pretraining.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/machine learning/neural networks/nn retrieval augmented generation.md": "c9dd9450e53604b6c066345bbab6d7e1",
+    "mathematics/machine learning/neural networks/nn retrieval augmented generation.md": "0c8eef145395749eb79e97025f0d2965",
     "ethics/lecture protocol clean.md": "ada302718ff5462487862d6bbd08ac89",
-    "ethics/lecture ethics 1.md": "f94461bf9c3c8310ac8043969fa86fd0",
+    "ethics/lecture ethics 1.md": "e6a2444272186f9d25c8d3f77f312871",
     "mathematics/machine learning/neural networks/nn sentence BERT.md": "e2c4d1949fc8f75f8845fd4474e86b51",
     "mathematics/machine learning/neural networks/nn perference training.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/machine learning/neural networks/nn supervised fine tuning.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/machine learning/neural networks/nn vector stores.md": "8de9d3578c0ef266266cb0aa871c3d89"
+    "mathematics/machine learning/neural networks/nn vector stores.md": "b17ab761d0938879ccb9c1222a06f047",
+    "mathematics/machine learning/neural networks/BM25.md": "e6015370a1b77712b558a7f99ce8a736",
+    "mathematics/machine learning/neural networks/nn ANN search.md": "f980109da4ceb9a3387b92077bf92531",
+    "ethics/ethics slides summary.md": "db4e1ed528133e7e5c0532346ea2a712",
+    "ethics/lecture ethics 2.md": "b9de7869d9cd2b07a8788375941f5c5a",
+    "mathematics/stochastics/expected sales.md": "a5a149c1176f8f5ba7c115412cffd02b",
+    "ethics/Normative ethics dentology (Kant).md": "b83b03df82a1af2fdf1326d09deb39e0"
   },
   "fields_dict": {
     "Basic": [
