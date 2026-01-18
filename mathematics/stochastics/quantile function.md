@@ -7,7 +7,7 @@ $$Q_X(q) = \inf\left\{x \mid q \leq F_X(x)\right\}$$
 - $Q_X(q)$ is the inverse of the [[cumulative distribution function (CDF)]]
 $$Q_X(q)=F_X^{-1}(q)\quad with \: q = F_X(x)=P(X \leq x)$$
 ## estimation
-- can be [[statistical predictor|estimated]] using [[quantile regression]]
+- can be [[statistical predictor|estimated]] using [[mathematics/stochastics/statistical learning/quantile regression]]
 - taking the $q$ smallest value of a [[statistical sample|sample]] $\widehat{Q}_X(q)=\inf\left\{x \mid \frac{1}{n} \sum\limits_{i=1}^n\mathbb{I}[x_i \leq x] \geq q\right\}$
 
 
@@ -33,7 +33,7 @@ Basic
 quantile function
 - how to estimate it
 Back: 
-- can be [[statistical predictor|estimated]] using [[quantile regression]]
+- can be [[statistical predictor|estimated]] using [[mathematics/stochastics/statistical learning/quantile regression]]
 - taking the $q$ smallest value of a [[statistical sample|sample]] $\widehat{Q}_X(q)=\inf\left\{x \mid \frac{1}{n} \sum\limits_{i=1}^n\mathbb{I}[x_i \leq x] \geq q\right\}$
 Tags: mathematics statistics
 <!--ID: 1664619948153-->

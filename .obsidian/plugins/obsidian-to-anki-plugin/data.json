@@ -421,7 +421,7 @@
     "mathematics/stochastics/random variable.md": "02d3ce238ba494b97274fe8790108614",
     "mathematics/stochastics/random process.md": "8f240cb289fef8566f6609f45720df08",
     "mathematics/stochastics/random experiment.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "mathematics/stochastics/quantile function.md": "727b7ef1fc3cb2dce6d96cde238a56d0",
+    "mathematics/stochastics/quantile function.md": "7a0d9c215702bf9c61928bdfd2f84206",
     "mathematics/stochastics/probability.md": "8abed901ab117fdec4ba50b495597853",
     "mathematics/stochastics/probability vector.md": "5904e7adf1874fda637fa4cd8658575d",
     "mathematics/stochastics/probability space.md": "b4bc8d0ab96ad3466f1ad15506480ce4",
@@ -2285,8 +2285,9 @@
     "mathematics/machine learning/neural networks/nn ANN search.md": "f980109da4ceb9a3387b92077bf92531",
     "ethics/ethics slides summary.md": "db4e1ed528133e7e5c0532346ea2a712",
     "ethics/lecture ethics 2.md": "b9de7869d9cd2b07a8788375941f5c5a",
-    "mathematics/stochastics/expected sales.md": "a5a149c1176f8f5ba7c115412cffd02b",
-    "ethics/Normative ethics dentology (Kant).md": "b83b03df82a1af2fdf1326d09deb39e0"
+    "mathematics/stochastics/expected sales.md": "3863ad81b37a3f75e84d50e660925900",
+    "ethics/Normative ethics dentology (Kant).md": "b83b03df82a1af2fdf1326d09deb39e0",
+    "mathematics/stochastics/quantile regression.md": "746db381aad57ba6029ee203e0ee4281"
   },
   "fields_dict": {
     "Basic": [

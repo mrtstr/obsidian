@@ -1,4 +1,6 @@
 ### expected sales
+- stock $s$ is constant
+- the demand $d$ is a [[random variable]] with the [[probability density function (PDF)]] $f(d)$ and the [[cumulative distribution function (CDF)]] $F(d)$
 
 $$
 \begin{split}
@@ -25,30 +27,30 @@ $$
 $$
 \begin{split}
 \frac{\partial}{\partial s}\mathrm{E}[\min\{s, D\}] 
-&= \frac{\partial}{\partial s}\int_0^s \left(1-F(d)\right) dd \\
-&= \int_0^s \frac{\partial}{\partial s}\left(1-F(d)\right) dd \\
-&= \int_0^s \frac{\partial}{\partial s}1-\frac{\partial}{\partial s}F(d) dd \\
-&= \int_0^s -\frac{\partial}{\partial s}F(d) dd \\
-&= -F(s) + F(0) \\
 &= 1-F(s) \\
 \end{split}
 $$
 
+#### optimality for problems with diminishing marginal returns
+- given multiple warehouses/products and a total inventory target, the optimality condition is that the **marginal gains ([[gradient]]) are equal**. (in a problem with diminishing marginal returns)
+
 $$
 \begin{split}
-F_i(s_i) &= F_j(s_j) :=x \\
-s_i &= F_i^{-1}(x)
+1-F_i(s_i) &= 1-F_j(s_j) :=\lambda \\
+s_i &= F_i^{-1}(\lambda)
 \end{split}
 $$
+
+- if we are maximizing the profit we have the following condition with the profit contribution $p_i$ of the warehouse / product combination $i$
 
 $$
 \begin{split}
 (1-F_i(s_i))*p_i &= (1-F_j(s_j))*p_j :=\lambda \\
-s_i &= F_i^{-1}\left( 1-\frac{\lambda}{p}\right) \\
+s_i &= F_i^{-1}\left( 1-\frac{\lambda}{p_i}\right) \\
 \end{split}
 $$
 
-
+- both problems have just a single variable and are monotone → can be solved with bisection efficiently
 
 
 
@@ -95,15 +97,9 @@ $$
 $$
 \begin{split}
 \frac{\partial}{\partial s}\mathrm{E}[\min\{s, D\}] 
-&= \frac{\partial}{\partial s}\int_0^s \left(1-F(d)\right) dd \\
-&= \int_0^s \frac{\partial}{\partial s}\left(1-F(d)\right) dd \\
-&= \int_0^s \frac{\partial}{\partial s}1-\frac{\partial}{\partial s}F(d) dd \\
-&= \int_0^s -\frac{\partial}{\partial s}F(d) dd \\
-&= -F(s) + F(0) \\
 &= 1-F(s) \\
 \end{split}
 $$
-
 
 Tags: mathematics WS2526
 <!--ID: 1768678971884-->
