@@ -243,8 +243,70 @@ Ideal Rank 1 (rel=2):Ideal Rank 2 (rel=2):Ideal Rank 3 (rel=1):Ideal R
 
 NDCG5​​=IDCG5​DCG5​​=5.8244.661​≈0.800​
 
+### advanced RAG architectures
+#### corrective RAG
+- system **treats retrieval failures are recoverable errors**
+- **detect low quality retrieval** and insufficient context and re retrieve impotent data and **reruns retrieval with adapted query**
+- detection methods
+	- rule based
+	- using LLMs
+	- low similarity in the chunk embedding space
 
+#### Self RAG
 # anki
+
+START
+Basic
+[[nn retrieval augmented generation#corrective RAG]]
+- concept
+- detection methods (3)
+Back: 
+### advanced RAG architectures
+#### corrective RAG
+- system **treats retrieval failures are recoverable errors**
+- **detect low quality retrieval** and insufficient context and re retrieve impotent data and **reruns retrieval with adapted query**
+- detection methods
+	- rule based
+	- using LLMs
+	- low similarity in the chunk embedding space
+
+_____________
+
+## retrieval augmented generation
+- the [[LLM]] contains knowledge in its weights that has the following limitations
+	1) **static**: cannot update after [[nn pretraining]]
+	2) **opaque**: impossible to inspect what the model “knows”
+	3) **incomplete**: [[nn pretraining]] data is finite and often outdated
+	4) **hallucination-prone**: model produces confident but incorrect answers
+- the [[nn retrieval augmented generation]] process overcomes the limitations by retrieving additional information and adding it to the context of the [[LLM]]
+
+### general approach
+- vector database that constrains text chunks as tuples (**chunk enbedding**, **chunk**)
+- when a user sends a prompt the prompt is mapped in the same embedding space of the chunks and similar chunks are searched in the vector database
+- the best matches are then **ranked**, and the best ones are **assembled** and **added to the context window**
+
+![[Pasted image 20260105103419.png]]
+
+1. Document Preparation (Offline)
+	- gather raw documents
+	- chunk them
+	- compute embeddings of chunks
+	- insert them in a vector database
+2. Query Embedding (Online)
+	- embed user query
+3. Retrieval
+	- search similar vectors in store
+	- retrieve top-k candidates
+4. Reranking (Optional)
+	- reorder candidates using stronger but more expensive models → improve precision before generation
+5. Context Assembly
+	- select, truncate and order chunks
+	- fit them in the models context window
+6. Generation
+	- generate response based in user query and additional information
+Tags: mathematics ml WS2526
+<!--ID: 1768759074578-->
+END
 
 START
 Basic
