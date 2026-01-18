@@ -166,12 +166,684 @@ $$
 
 ### evaluation
 - if the final result fails it can be caused by one step in the process failing → end to end metrics are not sufficient
-	- **retrieval**: the right information was not found
+	- **retrieval**: the right information was not found → **evidence availability**
 	- **re-ranking**: the right information was ranked too low
-	- **generation**: the information was in the context window but was ignored
+	- **generation**: the information was in the context window but was ignored → **evidence usage**
+
+#### Retrieval-Augmented Generation Assessment (RAGAS)
+- approach: automated end to end assessment for the rag system
+- method: **use LLM to judge the relationship between query, context and answer**
+- metrics: 
+	- **Context Recall** - whether required information is present
+	- **Context Precision** - proportion of relevant context
+	- **Faithfulness** - whether claims are supported by context
+	- **Answer Relevance** - whether the answer addresses the query
+#### generation evaluation
+- paradigm shift: before we asked **Does the model knows the answer?** now we ask **Are all claims supported by evidence in the context?**
+	→ we focus on **evidence usage** instead of **parametric knowledge** 
+
 #### retrieval evaluation
 - evaluated using prepared query's and documents with relevance labels (mostly binary)
+
+- recall: metric for the coverage of available information
+
+$$
+\mathrm{Recall}_k = \frac{|\{\text{relevant chunks in top k}\}|}{|\{\text{relevant chunks}\}|}
+$$
+
+- precision: how many of the retrieved documents is relevant (measures noise in the top k)
+
+$$
+\mathrm{Precission}_k = \frac{|\{\text{relevant chunks in top k}\}|}{k}
+$$
+
+#### ranking evaluation
+- **Normalized Discounted Cumulative Gain (NDCG)** measures the ranking quality plus the retrieval quality
+- criteria: **relevance** (are the most relevant documents retrieved) and **ranking** (is the ranking correct)
+- $\mathrm{rel}_i$ is the relevance grade of the chunk at rank $i$
+
+$$
+\mathrm{DCG}_k = \sum_{i=1}^k \frac{2^{\mathrm{rel}_i}-1}{\log_2(i+1)}
+$$
+
+- to make it comparable across query's we need to normalize it with the ideal score $\mathrm{IDCG}_k$
+
+$$
+\mathrm{NDCG}_k = \frac{\mathrm{DCG}_k}{\mathrm{IDCG}_k}
+$$
+
+#### example
+
+![[Pasted image 20260118171123.png]]
+
+- **Retrieved (k=5):**
+    - Rank 1: rel=2 (Relevant)
+    - Rank 2: rel=0 (Not Relevant)
+    - Rank 3: rel=1 (Relevant)
+    - Rank 4: rel=0 (Not Relevant)
+    - Rank 5: rel=2 (Relevant)
+- **Not Retrieved:**
+    - Rank 6: rel=1 (Relevant)
+        
+##### Recall@5
+Recall measures how many of the _total_ relevant items were found in the top k.
+Recall5​​=∣{total relevant chunks}∣∣{relevant chunks in top 5}∣​=43​=0.75​
+##### Precision@5
+Precision measures how many of the retrieved items are actually relevant.
+Precision5​​=k∣{relevant chunks in top 5}∣​=53​=0.60​
+#### NDCG
+######  DCG@5
+First, we calculate the Discounted Cumulative Gain for the actual results using the formula: DCGk​=∑i=1k​log2​(i+1)2reli​−1​
+Rank 1 (rel=2):Rank 2 (rel=0):Rank 3 (rel=1):Rank 4 (rel=0):Rank 5 (rel=2):DCG5​​log2​(1+1)22−1​=13​=3.000log2​(2+1)20−1​=0log2​(3+1)21−1​=21​=0.500log2​(4+1)20−1​=0log2​(5+1)22−1​=2.5853​≈1.161=3.000+0+0.500+0+1.161=4.661​​
+#### IDCG@5 (Ideal DCG)
+To find the Ideal DCG, we reorder all available relevant chunks (including the one at rank 6) by relevance score in descending order: **{2, 2, 1, 1}**. Since k=5, the 5th slot in the ideal scenario is 0.
+**Ideal Order:** 2, 2, 1, 1, 0
+Ideal Rank 1 (rel=2):Ideal Rank 2 (rel=2):Ideal Rank 3 (rel=1):Ideal Rank 4 (rel=1):Ideal Rank 5 (rel=0):IDCG5​​log2​(2)3​=3.000log2​(3)3​≈1.893log2​(4)1​=0.500log2​(5)1​≈0.4310=3.000+1.893+0.500+0.431+0=5.824​​
+####  NDCG@5
+
+NDCG5​​=IDCG5​DCG5​​=5.8244.661​≈0.800​
+
+
 # anki
+
+START
+Basic
+[[nn retrieval augmented generation#evaluation]]
+- summary for rag evaluation
+- different approaches with concept (4)
+- relevant metrics (3)
+
+Back: 
+### evaluation
+- if the final result fails it can be caused by one step in the process failing → end to end metrics are not sufficient
+	- **retrieval**: the right information was not found → **evidence availability**
+	- **re-ranking**: the right information was ranked too low
+	- **generation**: the information was in the context window but was ignored → **evidence usage**
+
+#### Retrieval-Augmented Generation Assessment (RAGAS)
+- approach: automated end to end assessment for the rag system
+- method: **use LLM to judge the relationship between query, context and answer**
+- metrics: 
+	- **Context Recall** - whether required information is present
+	- **Context Precision** - proportion of relevant context
+	- **Faithfulness** - whether claims are supported by context
+	- **Answer Relevance** - whether the answer addresses the query
+#### generation evaluation
+- paradigm shift: before we asked **Does the model knows the answer?** now we ask **Are all claims supported by evidence in the context?**
+	→ we focus on **evidence usage** instead of **parametric knowledge** 
+
+#### retrieval evaluation
+- evaluated using prepared query's and documents with relevance labels (mostly binary)
+
+- recall: metric for the coverage of available information
+
+$$
+\mathrm{Recall}_k = \frac{|\{\text{relevant chunks in top k}\}|}{|\{\text{relevant chunks}\}|}
+$$
+
+- precision: how many of the retrieved documents is relevant (measures noise in the top k)
+
+$$
+\mathrm{Precission}_k = \frac{|\{\text{relevant chunks in top k}\}|}{k}
+$$
+
+#### ranking evaluation
+- **Normalized Discounted Cumulative Gain (NDCG)** measures the ranking quality plus the retrieval quality
+- criteria: **relevance** (are the most relevant documents retrieved) and **ranking** (is the ranking correct)
+- $\mathrm{rel}_i$ is the relevance grade of the chunk at rank $i$
+
+$$
+\mathrm{DCG}_k = \sum_{i=1}^k \frac{2^{\mathrm{rel}_i}-1}{\log_2(i+1)}
+$$
+
+- to make it comparable across query's we need to normalize it with the ideal score $\mathrm{IDCG}_k$
+
+$$
+\mathrm{NDCG}_k = \frac{\mathrm{DCG}_k}{\mathrm{IDCG}_k}
+$$
+
+#### example
+
+![[Pasted image 20260118171123.png]]
+
+- **Retrieved (k=5):**
+    - Rank 1: rel=2 (Relevant)
+    - Rank 2: rel=0 (Not Relevant)
+    - Rank 3: rel=1 (Relevant)
+    - Rank 4: rel=0 (Not Relevant)
+    - Rank 5: rel=2 (Relevant)
+- **Not Retrieved:**
+    - Rank 6: rel=1 (Relevant)
+        
+##### Recall@5
+Recall measures how many of the _total_ relevant items were found in the top k.
+Recall5​​=∣{total relevant chunks}∣∣{relevant chunks in top 5}∣​=43​=0.75​
+##### Precision@5
+Precision measures how many of the retrieved items are actually relevant.
+Precision5​​=k∣{relevant chunks in top 5}∣​=53​=0.60​
+#### NDCG
+######  DCG@5
+First, we calculate the Discounted Cumulative Gain for the actual results using the formula: DCGk​=∑i=1k​log2​(i+1)2reli​−1​
+Rank 1 (rel=2):Rank 2 (rel=0):Rank 3 (rel=1):Rank 4 (rel=0):Rank 5 (rel=2):DCG5​​log2​(1+1)22−1​=13​=3.000log2​(2+1)20−1​=0log2​(3+1)21−1​=21​=0.500log2​(4+1)20−1​=0log2​(5+1)22−1​=2.5853​≈1.161=3.000+0+0.500+0+1.161=4.661​​
+#### IDCG@5 (Ideal DCG)
+To find the Ideal DCG, we reorder all available relevant chunks (including the one at rank 6) by relevance score in descending order: **{2, 2, 1, 1}**. Since k=5, the 5th slot in the ideal scenario is 0.
+**Ideal Order:** 2, 2, 1, 1, 0
+Ideal Rank 1 (rel=2):Ideal Rank 2 (rel=2):Ideal Rank 3 (rel=1):Ideal Rank 4 (rel=1):Ideal Rank 5 (rel=0):IDCG5​​log2​(2)3​=3.000log2​(3)3​≈1.893log2​(4)1​=0.500log2​(5)1​≈0.4310=3.000+1.893+0.500+0.431+0=5.824​​
+####  NDCG@5
+
+NDCG5​​=IDCG5​DCG5​​=5.8244.661​≈0.800​
+
+
+
+_____________
+
+## retrieval augmented generation
+- the [[LLM]] contains knowledge in its weights that has the following limitations
+	1) **static**: cannot update after [[nn pretraining]]
+	2) **opaque**: impossible to inspect what the model “knows”
+	3) **incomplete**: [[nn pretraining]] data is finite and often outdated
+	4) **hallucination-prone**: model produces confident but incorrect answers
+- the [[nn retrieval augmented generation]] process overcomes the limitations by retrieving additional information and adding it to the context of the [[LLM]]
+
+### general approach
+- vector database that constrains text chunks as tuples (**chunk enbedding**, **chunk**)
+- when a user sends a prompt the prompt is mapped in the same embedding space of the chunks and similar chunks are searched in the vector database
+- the best matches are then **ranked**, and the best ones are **assembled** and **added to the context window**
+
+![[Pasted image 20260105103419.png]]
+
+1. Document Preparation (Offline)
+	- gather raw documents
+	- chunk them
+	- compute embeddings of chunks
+	- insert them in a vector database
+2. Query Embedding (Online)
+	- embed user query
+3. Retrieval
+	- search similar vectors in store
+	- retrieve top-k candidates
+4. Reranking (Optional)
+	- reorder candidates using stronger but more expensive models → improve precision before generation
+5. Context Assembly
+	- select, truncate and order chunks
+	- fit them in the models context window
+6. Generation
+	- generate response based in user query and additional information
+Tags: mathematics ml WS2526
+<!--ID: 1768754024894-->
+END
+
+
+START
+Basic
+[[nn retrieval augmented generation#evaluation]] Retrieval-Augmented Generation Assessment
+- general process
+- core metrics
+
+Back: 
+
+#### Retrieval-Augmented Generation Assessment (RAGAS)
+- approach: automated end to end assessment for the rag system
+- method: **use LLM to judge the relationship between query, context and answer**
+- metrics: 
+	- **Context Recall** - whether required information is present
+	- **Context Precision** - proportion of relevant context
+	- **Faithfulness** - whether claims are supported by context
+	- **Answer Relevance** - whether the answer addresses the query
+#### generation evaluation
+- paradigm shift: before we asked **Does the model knows the answer?** now we ask **Are all claims supported by evidence in the context?**
+	→ we focus on **evidence usage** instead of **parametric knowledge** 
+### evaluation
+- if the final result fails it can be caused by one step in the process failing → end to end metrics are not sufficient
+	- **retrieval**: the right information was not found → **evidence availability**
+	- **re-ranking**: the right information was ranked too low
+	- **generation**: the information was in the context window but was ignored → **evidence usage**
+
+#### Retrieval-Augmented Generation Assessment (RAGAS)
+- approach: automated end to end assessment for the rag system
+- method: **use LLM to judge the relationship between query, context and answer**
+- metrics: 
+	- **Context Recall** - whether required information is present
+	- **Context Precision** - proportion of relevant context
+	- **Faithfulness** - whether claims are supported by context
+	- **Answer Relevance** - whether the answer addresses the query
+#### generation evaluation
+- paradigm shift: before we asked **Does the model knows the answer?** now we ask **Are all claims supported by evidence in the context?**
+	→ we focus on **evidence usage** instead of **parametric knowledge** 
+
+#### retrieval evaluation
+- evaluated using prepared query's and documents with relevance labels (mostly binary)
+
+- recall: metric for the coverage of available information
+
+$$
+\mathrm{Recall}_k = \frac{|\{\text{relevant chunks in top k}\}|}{|\{\text{relevant chunks}\}|}
+$$
+
+- precision: how many of the retrieved documents is relevant (measures noise in the top k)
+
+$$
+\mathrm{Precission}_k = \frac{|\{\text{relevant chunks in top k}\}|}{k}
+$$
+
+#### ranking evaluation
+- **Normalized Discounted Cumulative Gain (NDCG)** measures the ranking quality plus the retrieval quality
+- criteria: **relevance** (are the most relevant documents retrieved) and **ranking** (is the ranking correct)
+- $\mathrm{rel}_i$ is the relevance grade of the chunk at rank $i$
+
+$$
+\mathrm{DCG}_k = \sum_{i=1}^k \frac{2^{\mathrm{rel}_i}-1}{\log_2(i+1)}
+$$
+
+- to make it comparable across query's we need to normalize it with the ideal score $\mathrm{IDCG}_k$
+
+$$
+\mathrm{NDCG}_k = \frac{\mathrm{DCG}_k}{\mathrm{IDCG}_k}
+$$
+
+#### example
+
+![[Pasted image 20260118171123.png]]
+
+- **Retrieved (k=5):**
+    - Rank 1: rel=2 (Relevant)
+    - Rank 2: rel=0 (Not Relevant)
+    - Rank 3: rel=1 (Relevant)
+    - Rank 4: rel=0 (Not Relevant)
+    - Rank 5: rel=2 (Relevant)
+- **Not Retrieved:**
+    - Rank 6: rel=1 (Relevant)
+        
+##### Recall@5
+Recall measures how many of the _total_ relevant items were found in the top k.
+Recall5​​=∣{total relevant chunks}∣∣{relevant chunks in top 5}∣​=43​=0.75​
+##### Precision@5
+Precision measures how many of the retrieved items are actually relevant.
+Precision5​​=k∣{relevant chunks in top 5}∣​=53​=0.60​
+#### NDCG
+######  DCG@5
+First, we calculate the Discounted Cumulative Gain for the actual results using the formula: DCGk​=∑i=1k​log2​(i+1)2reli​−1​
+Rank 1 (rel=2):Rank 2 (rel=0):Rank 3 (rel=1):Rank 4 (rel=0):Rank 5 (rel=2):DCG5​​log2​(1+1)22−1​=13​=3.000log2​(2+1)20−1​=0log2​(3+1)21−1​=21​=0.500log2​(4+1)20−1​=0log2​(5+1)22−1​=2.5853​≈1.161=3.000+0+0.500+0+1.161=4.661​​
+#### IDCG@5 (Ideal DCG)
+To find the Ideal DCG, we reorder all available relevant chunks (including the one at rank 6) by relevance score in descending order: **{2, 2, 1, 1}**. Since k=5, the 5th slot in the ideal scenario is 0.
+**Ideal Order:** 2, 2, 1, 1, 0
+Ideal Rank 1 (rel=2):Ideal Rank 2 (rel=2):Ideal Rank 3 (rel=1):Ideal Rank 4 (rel=1):Ideal Rank 5 (rel=0):IDCG5​​log2​(2)3​=3.000log2​(3)3​≈1.893log2​(4)1​=0.500log2​(5)1​≈0.4310=3.000+1.893+0.500+0.431+0=5.824​​
+####  NDCG@5
+
+NDCG5​​=IDCG5​DCG5​​=5.8244.661​≈0.800​
+
+
+
+_____________
+
+## retrieval augmented generation
+- the [[LLM]] contains knowledge in its weights that has the following limitations
+	1) **static**: cannot update after [[nn pretraining]]
+	2) **opaque**: impossible to inspect what the model “knows”
+	3) **incomplete**: [[nn pretraining]] data is finite and often outdated
+	4) **hallucination-prone**: model produces confident but incorrect answers
+- the [[nn retrieval augmented generation]] process overcomes the limitations by retrieving additional information and adding it to the context of the [[LLM]]
+
+### general approach
+- vector database that constrains text chunks as tuples (**chunk enbedding**, **chunk**)
+- when a user sends a prompt the prompt is mapped in the same embedding space of the chunks and similar chunks are searched in the vector database
+- the best matches are then **ranked**, and the best ones are **assembled** and **added to the context window**
+
+![[Pasted image 20260105103419.png]]
+
+1. Document Preparation (Offline)
+	- gather raw documents
+	- chunk them
+	- compute embeddings of chunks
+	- insert them in a vector database
+2. Query Embedding (Online)
+	- embed user query
+3. Retrieval
+	- search similar vectors in store
+	- retrieve top-k candidates
+4. Reranking (Optional)
+	- reorder candidates using stronger but more expensive models → improve precision before generation
+5. Context Assembly
+	- select, truncate and order chunks
+	- fit them in the models context window
+6. Generation
+	- generate response based in user query and additional information
+Tags: mathematics ml WS2526
+<!--ID: 1768754024898-->
+END
+
+
+START
+Basic
+[[nn retrieval augmented generation#evaluation]]
+- two metrics for the retrieval process 
+- what are they answering?
+- calculate them for the following example
+
+#### example
+
+![[Pasted image 20260118171123.png]]
+
+- **Retrieved (k=5):**
+    - Rank 1: rel=2 (Relevant)
+    - Rank 2: rel=0 (Not Relevant)
+    - Rank 3: rel=1 (Relevant)
+    - Rank 4: rel=0 (Not Relevant)
+    - Rank 5: rel=2 (Relevant)
+- **Not Retrieved:**
+    - Rank 6: rel=1 (Relevant)
+    
+
+Back: 
+#### retrieval evaluation
+- evaluated using prepared query's and documents with relevance labels (mostly binary)
+
+- recall: metric for the coverage of available information
+
+$$
+\mathrm{Recall}_k = \frac{|\{\text{relevant chunks in top k}\}|}{|\{\text{relevant chunks}\}|}
+$$
+
+- precision: how many of the retrieved documents is relevant (measures noise in the top k)
+
+$$
+\mathrm{Precission}_k = \frac{|\{\text{relevant chunks in top k}\}|}{k}
+$$
+
+##### Recall@5
+Recall measures how many of the _total_ relevant items were found in the top k.
+Recall5​​=∣{total relevant chunks}∣∣{relevant chunks in top 5}∣​=43​=0.75​
+##### Precision@5
+Precision measures how many of the retrieved items are actually relevant.
+Precision5​​=k∣{relevant chunks in top 5}∣​=53​=0.60​
+
+### evaluation
+- if the final result fails it can be caused by one step in the process failing → end to end metrics are not sufficient
+	- **retrieval**: the right information was not found → **evidence availability**
+	- **re-ranking**: the right information was ranked too low
+	- **generation**: the information was in the context window but was ignored → **evidence usage**
+
+#### Retrieval-Augmented Generation Assessment (RAGAS)
+- approach: automated end to end assessment for the rag system
+- method: **use LLM to judge the relationship between query, context and answer**
+- metrics: 
+	- **Context Recall** - whether required information is present
+	- **Context Precision** - proportion of relevant context
+	- **Faithfulness** - whether claims are supported by context
+	- **Answer Relevance** - whether the answer addresses the query
+#### generation evaluation
+- paradigm shift: before we asked **Does the model knows the answer?** now we ask **Are all claims supported by evidence in the context?**
+	→ we focus on **evidence usage** instead of **parametric knowledge** 
+
+#### retrieval evaluation
+- evaluated using prepared query's and documents with relevance labels (mostly binary)
+
+- recall: metric for the coverage of available information
+
+$$
+\mathrm{Recall}_k = \frac{|\{\text{relevant chunks in top k}\}|}{|\{\text{relevant chunks}\}|}
+$$
+
+- precision: how many of the retrieved documents is relevant (measures noise in the top k)
+
+$$
+\mathrm{Precission}_k = \frac{|\{\text{relevant chunks in top k}\}|}{k}
+$$
+
+#### ranking evaluation
+- **Normalized Discounted Cumulative Gain (NDCG)** measures the ranking quality plus the retrieval quality
+- criteria: **relevance** (are the most relevant documents retrieved) and **ranking** (is the ranking correct)
+- $\mathrm{rel}_i$ is the relevance grade of the chunk at rank $i$
+
+$$
+\mathrm{DCG}_k = \sum_{i=1}^k \frac{2^{\mathrm{rel}_i}-1}{\log_2(i+1)}
+$$
+
+- to make it comparable across query's we need to normalize it with the ideal score $\mathrm{IDCG}_k$
+
+$$
+\mathrm{NDCG}_k = \frac{\mathrm{DCG}_k}{\mathrm{IDCG}_k}
+$$
+
+#### example
+
+![[Pasted image 20260118171123.png]]
+
+- **Retrieved (k=5):**
+    - Rank 1: rel=2 (Relevant)
+    - Rank 2: rel=0 (Not Relevant)
+    - Rank 3: rel=1 (Relevant)
+    - Rank 4: rel=0 (Not Relevant)
+    - Rank 5: rel=2 (Relevant)
+- **Not Retrieved:**
+    - Rank 6: rel=1 (Relevant)
+        
+##### Recall@5
+Recall measures how many of the _total_ relevant items were found in the top k.
+Recall5​​=∣{total relevant chunks}∣∣{relevant chunks in top 5}∣​=43​=0.75​
+##### Precision@5
+Precision measures how many of the retrieved items are actually relevant.
+Precision5​​=k∣{relevant chunks in top 5}∣​=53​=0.60​
+#### NDCG
+######  DCG@5
+First, we calculate the Discounted Cumulative Gain for the actual results using the formula: DCGk​=∑i=1k​log2​(i+1)2reli​−1​
+Rank 1 (rel=2):Rank 2 (rel=0):Rank 3 (rel=1):Rank 4 (rel=0):Rank 5 (rel=2):DCG5​​log2​(1+1)22−1​=13​=3.000log2​(2+1)20−1​=0log2​(3+1)21−1​=21​=0.500log2​(4+1)20−1​=0log2​(5+1)22−1​=2.5853​≈1.161=3.000+0+0.500+0+1.161=4.661​​
+#### IDCG@5 (Ideal DCG)
+To find the Ideal DCG, we reorder all available relevant chunks (including the one at rank 6) by relevance score in descending order: **{2, 2, 1, 1}**. Since k=5, the 5th slot in the ideal scenario is 0.
+**Ideal Order:** 2, 2, 1, 1, 0
+Ideal Rank 1 (rel=2):Ideal Rank 2 (rel=2):Ideal Rank 3 (rel=1):Ideal Rank 4 (rel=1):Ideal Rank 5 (rel=0):IDCG5​​log2​(2)3​=3.000log2​(3)3​≈1.893log2​(4)1​=0.500log2​(5)1​≈0.4310=3.000+1.893+0.500+0.431+0=5.824​​
+####  NDCG@5
+
+NDCG5​​=IDCG5​DCG5​​=5.8244.661​≈0.800​
+
+
+
+_____________
+
+## retrieval augmented generation
+- the [[LLM]] contains knowledge in its weights that has the following limitations
+	1) **static**: cannot update after [[nn pretraining]]
+	2) **opaque**: impossible to inspect what the model “knows”
+	3) **incomplete**: [[nn pretraining]] data is finite and often outdated
+	4) **hallucination-prone**: model produces confident but incorrect answers
+- the [[nn retrieval augmented generation]] process overcomes the limitations by retrieving additional information and adding it to the context of the [[LLM]]
+
+### general approach
+- vector database that constrains text chunks as tuples (**chunk enbedding**, **chunk**)
+- when a user sends a prompt the prompt is mapped in the same embedding space of the chunks and similar chunks are searched in the vector database
+- the best matches are then **ranked**, and the best ones are **assembled** and **added to the context window**
+
+![[Pasted image 20260105103419.png]]
+
+1. Document Preparation (Offline)
+	- gather raw documents
+	- chunk them
+	- compute embeddings of chunks
+	- insert them in a vector database
+2. Query Embedding (Online)
+	- embed user query
+3. Retrieval
+	- search similar vectors in store
+	- retrieve top-k candidates
+4. Reranking (Optional)
+	- reorder candidates using stronger but more expensive models → improve precision before generation
+5. Context Assembly
+	- select, truncate and order chunks
+	- fit them in the models context window
+6. Generation
+	- generate response based in user query and additional information
+Tags: mathematics ml WS2526
+<!--ID: 1768754024901-->
+END
+
+
+START
+Basic
+[[nn retrieval augmented generation#evaluation]]
+- one metrics for ranking (+ retrieval)
+- what are they answering?
+- calculate it for the following example
+
+#### example
+
+![[Pasted image 20260118171123.png]]
+
+- **Retrieved (k=5):**
+    - Rank 1: rel=2 (Relevant)
+    - Rank 2: rel=0 (Not Relevant)
+    - Rank 3: rel=1 (Relevant)
+    - Rank 4: rel=0 (Not Relevant)
+    - Rank 5: rel=2 (Relevant)
+- **Not Retrieved:**
+    - Rank 6: rel=1 (Relevant)
+    
+
+Back: 
+#### ranking evaluation
+- **Normalized Discounted Cumulative Gain (NDCG)** measures the ranking quality plus the retrieval quality
+- criteria: **relevance** (are the most relevant documents retrieved) and **ranking** (is the ranking correct)
+- $\mathrm{rel}_i$ is the relevance grade of the chunk at rank $i$
+
+$$
+\mathrm{DCG}_k = \sum_{i=1}^k \frac{2^{\mathrm{rel}_i}-1}{\log_2(i+1)}
+$$
+
+- to make it comparable across query's we need to normalize it with the ideal score $\mathrm{IDCG}_k$
+
+$$
+\mathrm{NDCG}_k = \frac{\mathrm{DCG}_k}{\mathrm{IDCG}_k}
+$$
+
+#### NDCG
+######  DCG@5
+First, we calculate the Discounted Cumulative Gain for the actual results using the formula: DCGk​=∑i=1k​log2​(i+1)2reli​−1​
+Rank 1 (rel=2):Rank 2 (rel=0):Rank 3 (rel=1):Rank 4 (rel=0):Rank 5 (rel=2):DCG5​​log2​(1+1)22−1​=13​=3.000log2​(2+1)20−1​=0log2​(3+1)21−1​=21​=0.500log2​(4+1)20−1​=0log2​(5+1)22−1​=2.5853​≈1.161=3.000+0+0.500+0+1.161=4.661​​
+#### IDCG@5 (Ideal DCG)
+To find the Ideal DCG, we reorder all available relevant chunks (including the one at rank 6) by relevance score in descending order: **{2, 2, 1, 1}**. Since k=5, the 5th slot in the ideal scenario is 0.
+**Ideal Order:** 2, 2, 1, 1, 0
+Ideal Rank 1 (rel=2):Ideal Rank 2 (rel=2):Ideal Rank 3 (rel=1):Ideal Rank 4 (rel=1):Ideal Rank 5 (rel=0):IDCG5​​log2​(2)3​=3.000log2​(3)3​≈1.893log2​(4)1​=0.500log2​(5)1​≈0.4310=3.000+1.893+0.500+0.431+0=5.824​​
+####  NDCG@5
+
+NDCG5​​=IDCG5​DCG5​​=5.8244.661​≈0.800​
+
+### evaluation
+- if the final result fails it can be caused by one step in the process failing → end to end metrics are not sufficient
+	- **retrieval**: the right information was not found → **evidence availability**
+	- **re-ranking**: the right information was ranked too low
+	- **generation**: the information was in the context window but was ignored → **evidence usage**
+
+#### Retrieval-Augmented Generation Assessment (RAGAS)
+- approach: automated end to end assessment for the rag system
+- method: **use LLM to judge the relationship between query, context and answer**
+- metrics: 
+	- **Context Recall** - whether required information is present
+	- **Context Precision** - proportion of relevant context
+	- **Faithfulness** - whether claims are supported by context
+	- **Answer Relevance** - whether the answer addresses the query
+#### generation evaluation
+- paradigm shift: before we asked **Does the model knows the answer?** now we ask **Are all claims supported by evidence in the context?**
+	→ we focus on **evidence usage** instead of **parametric knowledge** 
+
+#### retrieval evaluation
+- evaluated using prepared query's and documents with relevance labels (mostly binary)
+
+- recall: metric for the coverage of available information
+
+$$
+\mathrm{Recall}_k = \frac{|\{\text{relevant chunks in top k}\}|}{|\{\text{relevant chunks}\}|}
+$$
+
+- precision: how many of the retrieved documents is relevant (measures noise in the top k)
+
+$$
+\mathrm{Precission}_k = \frac{|\{\text{relevant chunks in top k}\}|}{k}
+$$
+
+#### ranking evaluation
+- **Normalized Discounted Cumulative Gain (NDCG)** measures the ranking quality plus the retrieval quality
+- criteria: **relevance** (are the most relevant documents retrieved) and **ranking** (is the ranking correct)
+- $\mathrm{rel}_i$ is the relevance grade of the chunk at rank $i$
+
+$$
+\mathrm{DCG}_k = \sum_{i=1}^k \frac{2^{\mathrm{rel}_i}-1}{\log_2(i+1)}
+$$
+
+- to make it comparable across query's we need to normalize it with the ideal score $\mathrm{IDCG}_k$
+
+$$
+\mathrm{NDCG}_k = \frac{\mathrm{DCG}_k}{\mathrm{IDCG}_k}
+$$
+
+#### example
+
+![[Pasted image 20260118171123.png]]
+
+- **Retrieved (k=5):**
+    - Rank 1: rel=2 (Relevant)
+    - Rank 2: rel=0 (Not Relevant)
+    - Rank 3: rel=1 (Relevant)
+    - Rank 4: rel=0 (Not Relevant)
+    - Rank 5: rel=2 (Relevant)
+- **Not Retrieved:**
+    - Rank 6: rel=1 (Relevant)
+        
+##### Recall@5
+Recall measures how many of the _total_ relevant items were found in the top k.
+Recall5​​=∣{total relevant chunks}∣∣{relevant chunks in top 5}∣​=43​=0.75​
+##### Precision@5
+Precision measures how many of the retrieved items are actually relevant.
+Precision5​​=k∣{relevant chunks in top 5}∣​=53​=0.60​
+#### NDCG
+######  DCG@5
+First, we calculate the Discounted Cumulative Gain for the actual results using the formula: DCGk​=∑i=1k​log2​(i+1)2reli​−1​
+Rank 1 (rel=2):Rank 2 (rel=0):Rank 3 (rel=1):Rank 4 (rel=0):Rank 5 (rel=2):DCG5​​log2​(1+1)22−1​=13​=3.000log2​(2+1)20−1​=0log2​(3+1)21−1​=21​=0.500log2​(4+1)20−1​=0log2​(5+1)22−1​=2.5853​≈1.161=3.000+0+0.500+0+1.161=4.661​​
+#### IDCG@5 (Ideal DCG)
+To find the Ideal DCG, we reorder all available relevant chunks (including the one at rank 6) by relevance score in descending order: **{2, 2, 1, 1}**. Since k=5, the 5th slot in the ideal scenario is 0.
+**Ideal Order:** 2, 2, 1, 1, 0
+Ideal Rank 1 (rel=2):Ideal Rank 2 (rel=2):Ideal Rank 3 (rel=1):Ideal Rank 4 (rel=1):Ideal Rank 5 (rel=0):IDCG5​​log2​(2)3​=3.000log2​(3)3​≈1.893log2​(4)1​=0.500log2​(5)1​≈0.4310=3.000+1.893+0.500+0.431+0=5.824​​
+####  NDCG@5
+
+NDCG5​​=IDCG5​DCG5​​=5.8244.661​≈0.800​
+
+
+
+_____________
+
+## retrieval augmented generation
+- the [[LLM]] contains knowledge in its weights that has the following limitations
+	1) **static**: cannot update after [[nn pretraining]]
+	2) **opaque**: impossible to inspect what the model “knows”
+	3) **incomplete**: [[nn pretraining]] data is finite and often outdated
+	4) **hallucination-prone**: model produces confident but incorrect answers
+- the [[nn retrieval augmented generation]] process overcomes the limitations by retrieving additional information and adding it to the context of the [[LLM]]
+
+### general approach
+- vector database that constrains text chunks as tuples (**chunk enbedding**, **chunk**)
+- when a user sends a prompt the prompt is mapped in the same embedding space of the chunks and similar chunks are searched in the vector database
+- the best matches are then **ranked**, and the best ones are **assembled** and **added to the context window**
+
+![[Pasted image 20260105103419.png]]
+
+1. Document Preparation (Offline)
+	- gather raw documents
+	- chunk them
+	- compute embeddings of chunks
+	- insert them in a vector database
+2. Query Embedding (Online)
+	- embed user query
+3. Retrieval
+	- search similar vectors in store
+	- retrieve top-k candidates
+4. Reranking (Optional)
+	- reorder candidates using stronger but more expensive models → improve precision before generation
+5. Context Assembly
+	- select, truncate and order chunks
+	- fit them in the models context window
+6. Generation
+	- generate response based in user query and additional information
+Tags: mathematics ml WS2526
+<!--ID: 1768754024904-->
+END
 
 START
 Basic
