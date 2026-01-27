@@ -2276,8 +2276,8 @@
     "mathematics/machine learning/neural networks/nn Sentence-BERT.md": "fd39ab3fb633f01e41d8cb3717e399ac",
     "mathematics/machine learning/neural networks/nn pretraining.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/machine learning/neural networks/nn retrieval augmented generation.md": "7cb38ed633967c6e61ae4f497dfe4e8f",
-    "ethics/lecture protocol clean.md": "ada302718ff5462487862d6bbd08ac89",
-    "ethics/lecture ethics 1.md": "e6a2444272186f9d25c8d3f77f312871",
+    "ethics/lecture protocol clean.md": "c694cec5ce68d6530eb6072636ff6350",
+    "ethics/lecture ethics 1.md": "697d82088b29cd8103b768b84a2d243b",
     "mathematics/machine learning/neural networks/nn sentence BERT.md": "e2c4d1949fc8f75f8845fd4474e86b51",
     "mathematics/machine learning/neural networks/nn perference training.md": "d41d8cd98f00b204e9800998ecf8427e",
     "mathematics/machine learning/neural networks/nn supervised fine tuning.md": "d41d8cd98f00b204e9800998ecf8427e",
@@ -2290,7 +2290,9 @@
     "ethics/Normative ethics dentology (Kant).md": "b83b03df82a1af2fdf1326d09deb39e0",
     "mathematics/stochastics/quantile regression.md": "746db381aad57ba6029ee203e0ee4281",
     "mathematics/stochastics/optimizing expected sales.md": "e5c3ca513319703b68cd906c1183263e",
-    "mathematics/machine learning/neural networks/nn optimization techniques.md": "c43a91b9b8ceb0837d459f656eafefe3"
+    "mathematics/machine learning/neural networks/nn optimization techniques.md": "c43a91b9b8ceb0837d459f656eafefe3",
+    "ethics/Untitled.md": "8b109af056a89c4762f15fe7c2882b3d",
+    "mathematics/machine learning/neural networks/nn first order optimization techniques.md": "86a95146e95629e68e2d85802d6a369a"
   },
   "fields_dict": {
     "Basic": [
