@@ -1,8 +1,0 @@
-- [[statistical predictor]]
-- can be used for [[regression]] problems [[regression tree]]
-- can be used for [[mathematics/stochastics/statistical learning/classification]] problems: [[classification tree]]
-- base model for different kinds of [[ensemble methods]]
-	- [[bagging]] → [[random forrest]]
-	- [[boosting]] → [[boosted trees]]
-	- [[gradient boosting]] → [[gradient boosted trees]]
-- good for structured (e.g. tabular data)

@@ -1,0 +1,183 @@
+### rotary position embeddings
+- method that makes [[transformer block|transformer models]] position aware by including positional information in the attention mechanism of the [[self attention layer]]
+- replaces the positional encoding component of the input embeddings with for example [[sinusoidal positional encoding]] 
+- the vectors are rotated proportionally to their position during the calculation of the attention score between the query and the key
+
+$$
+\begin{split}
+\mathrm{score}(i,j) 
+&= \frac{R\left(t\right)Q_{(t, *)} \left(R (j)  K_{(j, *)}^\top\right) }{\sqrt{d_h}} \\
+\end{split}
+$$
+
+- encodes **relative positional differences** between tokens
+
+$$
+R(t)^\top R(j) = R(t-j)
+$$
+
+- better suited for large context windows
+- generalizes better for unseen sequence lengths than [[sinusoidal positional encoding]]
+- more memory efficient because no positional embeddings need to be stored
+
+# ------------
+
+
+![[self attention layer#multihead self attention layer]]
+
+![[sinusoidal positional encoding#sinusoidal positional encoding]]
+
+
+# anki
+
+START
+Basic
+how is positional information in modern [[transformer block|transformer models]] preserved?
+- plus advantages over previous methods (3)
+
+Back: 
+### rotary position embeddings
+- method that makes [[transformer block|transformer models]] position aware by including positional information in the attention mechanism of the [[self attention layer]]
+- replaces the positional encoding component of the input embeddings with for example [[sinusoidal positional encoding]] 
+- the vectors are rotated proportionally to their position during the calculation of the attention score between the query and the key
+
+$$
+\begin{split}
+\mathrm{score}(i,j) 
+&= \frac{R\left(t\right)Q_{(t, *)} \left(R (j)  K_{(j, *)}^\top\right) }{\sqrt{d_h}} \\
+\end{split}
+$$
+
+- encodes **relative positional differences** between tokens
+
+$$
+R(t)^\top R(j) = R(t-j)
+$$
+
+- better suited for large context windows
+- generalizes better for unseen sequence lengths than [[sinusoidal positional encoding]]
+- more memory efficient because no positional embeddings need to be stored
+
+
+________________
+#### sinusoidal positional encoding
+- encodes positional information $PE \in \mathbb{R}^{S \times d}$ in a dense vector
+- $p \in \{1, ..., S\}$ is the index in the input while $t \in \{1, ..., d\}$ is the position of the dense vector
+- the position in the output vector $j$ defines a frequency $\frac{1}{10000}^{\frac{j}{d}}$ and then each position rotates in that frequency
+
+$$
+PE_{t, j} = \begin{cases}
+\sin\left(p \cdot\frac{1}{10000}^{\frac{j}{d}}\right), &if \ j \ is \ even \\
+\cos\left(p \cdot\frac{1}{10000}^{\frac{j-1}{d}}\right), &if \ j \ is \ odd \\
+\end{cases}
+$$
+
+- $PE$ is added to the token embeddings in the [[embedding layer]]
+
+
+### multihead self attention layer
+- the Input [[embedding layer]] $X \in \mathbb{R}^{B \times S \times D}$ represents a sequence of token embeddings/features of the length $S$ with each feature/embedding being represented in the $\mathbb{R}^{D}$
+	- **B** — **Batch size**: how many sequences processed together (ignored in the following for convenience)
+	- **S** — **Sequence length**: tokens per sequence = size of the context window
+	- **D** — **Model dimension**: Size of the representation of each token's embedding (first layer) / each features representation 
+- $X_{(i, *)}$ is the representation at the token position $i$
+	- Layer 0: token embedding
+	- Higher layers: **contextualized** representation at position $i$
+- $X$ is processed by  $H$ attention heads and each of them is calculating for each input feature $X_{(i, *)}$ and output feature $O_{(i, *)}^{(h)}$ that incorporates its context
+
+#### single attention head
+- each weight [[matrix]] is a [[linear map]] to the $\mathbb{R}^{d_h}$ with $d_h$ being the hidden size of the attention head with often $D=d_h \cdot h$
+	- weight matrix of the query $W_Q^{(h)}\in \mathbb{R}^{D\times d_h}$
+	- weight matrix of the key $W_K^{(h)}\in \mathbb{R}^{D\times d_h}$
+	- weight matrix of the value $W_V^{(h)}\in \mathbb{R}^{D\times d_h}$
+
+$$
+\begin{split}
+Q^{(h)} &= XW_Q^{(h)} \in \mathbb{R}^{S \times d_h}  \\
+K^{(h)} &= XW_K^{(h)} \in \mathbb{R}^{S \times d_h}  \\
+V^{(h)} &= XW_V^{(h)} \in \mathbb{R}^{S \times d_h} \\
+\end{split}
+$$
+
+- $Q$ and $K$ are used to extract the importance of the context for each token
+- for each token $i$ the query $Q_{(i, *)}$ is representing the token itself and $K_{(j, *)}$ is representing the other tokens and their similarity is the importance that token $j$ has for the next feature of token $i$
+	- Query $q_i$: what is feature $i$ looking for
+	- Key $k_j$: what feature $j$ has to offer
+
+$$
+\begin{split}
+x_i &= X_{(i, *)}  \in \mathbb{R}^{1\times D}  \\
+q_i &= Q_{(i, *)}= x_iW_Q \in \mathbb{R}^{1 \times d_h} \\
+k_j &= K_{(j, *)}= x_jW_K \in \mathbb{R}^{1 \times d_h} \\
+\end{split}
+$$
+#### calculating similarity scores
+
+
+- the [[inner product]] between $q_i$ and $k_j$ measures the similarity of the vectors and represents the importance that feature $j$ has for feature $i$
+
+$$
+\begin{split}
+\mathrm{score}(i,j) 
+&= \frac{\left(Q K^\top\right)_{\left(i,j\right)}}{\sqrt{d_h}}   \\
+&= \frac{Q_{(i, *)} K_{(j, *)}^\top}{\sqrt{d_h}} \\
+&= \frac{ X_{(i, *)}W_Q \left(X_{(j, *)}W_K\right)^\top }{\sqrt{d_h}} \\
+&= \frac{ X_{(i, *)}M X_{(j, *)}^\top }{\sqrt{d_h}} \\
+S&= (\mathrm{score}(i,j) )_{(i\in [S],j\in [S])} \in \mathbb{R}^{S \times S}
+\end{split}
+$$
+
+#### masking normalizing the similarity scores
+
+- $A$ is a context-and-importance map between tokens with $A_{(i, j)}$ being the importance weight of token $j$ for constructing the next layer feature of $i$ 
+- a $\mathrm{mask} \in \{-\infty, 0\}^{S \times S}$ is added to allow and disallows context
+- the [[softmax function]] normalizes the score over the context such $\sum_{j=1}^S A_{(i, j)} = 1$
+
+$$
+\begin{split}
+A^{(h)} 
+&=\mathrm{SOFTMAX}\left(\frac{Q^{(h)}K^{(h)\top}}{\sqrt{d_h}} + \mathrm{mask}\right) \\
+&=\mathrm{SOFTMAX}_j\left(S_{(i, j)}+ \mathrm{mask}\right) \\
+&= \frac{\exp{(\mathrm{score}(i,j)+ \mathrm{mask}(i,j))}}{\sum_{k=1}^S \exp{(\mathrm{score}(i,k)+ \mathrm{mask}(i,k))}}
+\end{split}
+$$
+
+
+
+- the output of the [[softmax function]] can be interpreted as the [[conditional probability]] 
+$$
+\begin{split}
+P(j | i) 
+&= \frac{\exp{(\mathrm{score}(i,j))}}{\sum_{k=1}^S \exp{(\mathrm{score}(i,k))}}
+\end{split}
+$$
+
+#### creating the contextualized feature
+- $v_i$ is a transformed representation of the input token $i$
+
+$$
+\begin{split}
+v_i &= V_{(i, *)}= X_{(i, *)}W_V \in \mathbb{R}^{1 \times d_h} \\
+\end{split}
+$$
+
+- the feature of the $ith$ token $O^{(h)}_{(i, *)}$ is constructed as a sum of transformed versions of all embedding/input features $v_1,..., v_S$ weighted by the importance they have for token $i$
+
+$$
+\begin{split}
+O^{(h)} 
+&= A^{(h)}V^{(h)} \in \mathbb{R}^{S \times d_h} \\
+O^{(h)}_{(i, *)}&= \sum_{k=1}^S A_{(i, k)}^{(h)}V_{(k, *)}^{(h)}  \in \mathbb{R}^{1 \times d_h} \\
+\end{split}
+$$
+
+#### combining multiple heads
+- the weight matrix of the features of attention heads $W_O \in \mathbb{R}^{H \cdot d_h \times D}$ with often $D=H \cdot d_h$
+
+$$
+\mathrm{MHA}(X, \mathrm{mask}) = \mathrm{Concat}[O^{(1)}, ..., O^{(H)}] W_O \in \mathbb{R}^{S \times D} 
+$$
+
+Tags: mathematics ml WS2526
+<!--ID: 1763387136523-->
+END
