@@ -268,8 +268,138 @@ NDCG5​​=IDCG5​DCG5​​=5.8244.661​≈0.800​
 - RAG usage paradigm
 - instead of filling the context with chunks use large context windows to feed whole documents and let the [[LLM]] search for answers
 - skip the retrieval, searching and ranking → shifts complexity from retrieval to attention
+
+### performance considerations
+- the cost/speed of the RAG steps is very asymmetrical distribution
+	- **embedding** computation takes **milliseconds**
+	- **vector search** takes **milliseconds**
+	- **ranking** takes **tens of milliseconds**
+	- **response generation**: takes **significant time**
+- to reduce the cost and latency we have to reduce the size of the context window
+- performance optimization on the other steps won’t change the overall latency significant
+- since context size is expensive: focus on context quality over quantity
+
+
+### updates
+- the rag needs to be updates regularly
+	- add new documents
+	- recompute embedding for changed documents
+	- update the ANN structure
+- can be done incremental (fast) or with a full re-indexing (consistent)
+
+##### hybrid update strategy
+1. **Static Index (The Big One):** Contains 99% of data (historical). Updated via full re-indexing occasionally.
+2. **Dynamic/Delta Index (The Fast One):** A small, in-memory index for _new_ documents added in the last hour/day.
+3. **Search:** You query _both_ indexes and merge the results.
 # anki
 
+START
+Basic
+my RAG performs bad with questions about recent topics but i don't want downtime for index updates. What can i do?
+Back: 
+- use for frequent updates with **hybrid update strategy** with the **background refresh strategy** (calculate the new index in the background and replace the old one from the prod system when finished)
+### updates
+- the rag needs to be updates regularly
+	- add new documents
+	- recompute embedding for changed documents
+	- update the ANN structure
+- can be done incremental (fast) or with a full re-indexing (consistent)
+
+##### hybrid update strategy
+1. **Static Index (The Big One):** Contains 99% of data (historical). Updated via full re-indexing occasionally.
+2. **Dynamic/Delta Index (The Fast One):** A small, in-memory index for _new_ documents added in the last hour/day.
+3. **Search:** You query _both_ indexes and merge the results.
+
+_____________
+
+## retrieval augmented generation
+- the [[LLM]] contains knowledge in its weights that has the following limitations
+	1) **static**: cannot update after [[pretraining]]
+	2) **opaque**: impossible to inspect what the model “knows”
+	3) **incomplete**: [[pretraining]] data is finite and often outdated
+	4) **hallucination-prone**: model produces confident but incorrect answers
+- the [[retrieval augmented generation]] process overcomes the limitations by retrieving additional information and adding it to the context of the [[LLM]]
+
+### general approach
+- vector database that constrains text chunks as tuples (**chunk enbedding**, **chunk**)
+- when a user sends a prompt the prompt is mapped in the same embedding space of the chunks and similar chunks are searched in the vector database
+- the best matches are then **ranked**, and the best ones are **assembled** and **added to the context window**
+
+![[Pasted image 20260105103419.png]]
+
+1. Document Preparation (Offline)
+	- gather raw documents
+	- chunk them
+	- compute embeddings of chunks
+	- insert them in a vector database
+2. Query Embedding (Online)
+	- embed user query
+3. Retrieval
+	- search similar vectors in store
+	- retrieve top-k candidates
+4. Reranking (Optional)
+	- reorder candidates using stronger but more expensive models → improve precision before generation
+5. Context Assembly
+	- select, truncate and order chunks
+	- fit them in the models context window
+6. Generation
+	- generate response based in user query and additional information
+Tags: mathematics ml WS2526
+<!--ID: 1769697801097-->
+END
+
+
+START
+Basic
+Strategies for low latency and cost-effective RAG systems with justification
+Back: 
+#### performance considerations
+- the cost/speed of the RAG steps is very asymmetrical distribution
+	- **embedding** computation takes **milliseconds**
+	- **vector search** takes **milliseconds**
+	- **ranking** takes **tens of milliseconds**
+	- **response generation**: takes **significant time**
+- to reduce the cost and latency we have to reduce the size of the context window
+- performance optimization on the other steps won’t change the overall latency significant
+- since context size is expensive: focus on context quality over quantity
+
+_____________
+
+## retrieval augmented generation
+- the [[LLM]] contains knowledge in its weights that has the following limitations
+	1) **static**: cannot update after [[pretraining]]
+	2) **opaque**: impossible to inspect what the model “knows”
+	3) **incomplete**: [[pretraining]] data is finite and often outdated
+	4) **hallucination-prone**: model produces confident but incorrect answers
+- the [[retrieval augmented generation]] process overcomes the limitations by retrieving additional information and adding it to the context of the [[LLM]]
+
+### general approach
+- vector database that constrains text chunks as tuples (**chunk enbedding**, **chunk**)
+- when a user sends a prompt the prompt is mapped in the same embedding space of the chunks and similar chunks are searched in the vector database
+- the best matches are then **ranked**, and the best ones are **assembled** and **added to the context window**
+
+![[Pasted image 20260105103419.png]]
+
+1. Document Preparation (Offline)
+	- gather raw documents
+	- chunk them
+	- compute embeddings of chunks
+	- insert them in a vector database
+2. Query Embedding (Online)
+	- embed user query
+3. Retrieval
+	- search similar vectors in store
+	- retrieve top-k candidates
+4. Reranking (Optional)
+	- reorder candidates using stronger but more expensive models → improve precision before generation
+5. Context Assembly
+	- select, truncate and order chunks
+	- fit them in the models context window
+6. Generation
+	- generate response based in user query and additional information
+Tags: mathematics ml WS2526
+<!--ID: 1769697801101-->
+END
 
 
 START
@@ -277,12 +407,15 @@ Basic
 what can I do to deal with the following problems
 - my RAG hallucinates at complex questions
 - high requirement for correctness
+- the latency is too high
 Back: 
 - my RAG hallucinates with complex questions 
 	→ **query decomposition**: make sure the complete information need is covered
 	→ **corrective RAG**: run re-retrievals if information need not covered
 - high requirement for correctness
 	→ **corrective RAG** and **Self RAG**
+- the latency is too high
+	→ reduce context window / token budget and focus on quality context
 #### query decomposition
 - in a standard [[retrieval augmented generation]] we assume that the entire necessary information can be retrieved in one query, but this is not always possible
 - solution: **Multi-Step Query**: use a **simple rule based logic** or the **[[LLM]] itself** to decompose the problem into multiple sub problems to fetch all necessary information
@@ -310,7 +443,15 @@ $$
 - **Support (`IsSup`):** "Is the sentence I just wrote supported by the evidence?"
 - **Utility (`IsUse`):** "Is this answer actually helpful to the user?"
 
-
+#### performance considerations
+- the cost/speed of the RAG steps is very asymmetrical distribution
+	- **embedding** computation takes **milliseconds**
+	- **vector search** takes **milliseconds**
+	- **ranking** takes **tens of milliseconds**
+	- **response generation**: takes **significant time**
+- to reduce the cost and latency we have to reduce the size of the context window
+- performance optimization on the other steps won’t change the overall latency significant
+- since context size is expensive: focus on context quality over quantity
 
 _____________
 
