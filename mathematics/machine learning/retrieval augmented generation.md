@@ -246,14 +246,225 @@ NDCG5​​=IDCG5​DCG5​​=5.8244.661​≈0.800​
 ### advanced RAG architectures
 #### corrective RAG
 - system **treats retrieval failures are recoverable errors**
-- **detect low quality retrieval** and insufficient context and re retrieve impotent data and **reruns retrieval with adapted query**
+- **detect low quality retrieval** and insufficient context and re retrieve importent data and **reruns retrieval with adapted query**
 - detection methods
 	- rule based
 	- using LLMs
 	- low similarity in the chunk embedding space
 
 #### Self RAG
+- RAG that self **reflects** (talks to itself) to **verify and correct itself** during the **retrieval and generation process**
+- uses special tokens to question itself at any step
+- decides to continue or to trigger additional retrieval
+- requires specialized training
+##### example
+- **Retrieve:** "Do I need external information for this query?"
+- **Relevance (`IsRel`):** "Is this retrieved chunk actually relevant?"
+- **Support (`IsSup`):** "Is the sentence I just wrote supported by the evidence?"
+- **Utility (`IsUse`):** "Is this answer actually helpful to the user?"
+
+
+#### long context RAG
+- RAG usage paradigm
+- instead of filling the context with chunks use large context windows to feed whole documents and let the [[LLM]] search for answers
+- skip the retrieval, searching and ranking → shifts complexity from retrieval to attention
 # anki
+
+
+
+START
+Basic
+what can I do to deal with the following problems
+- my RAG hallucinates at complex questions
+- high requirement for correctness
+Back: 
+- my RAG hallucinates with complex questions 
+	→ **query decomposition**: make sure the complete information need is covered
+	→ **corrective RAG**: run re-retrievals if information need not covered
+- high requirement for correctness
+	→ **corrective RAG** and **Self RAG**
+#### query decomposition
+- in a standard [[retrieval augmented generation]] we assume that the entire necessary information can be retrieved in one query, but this is not always possible
+- solution: **Multi-Step Query**: use a **simple rule based logic** or the **[[LLM]] itself** to decompose the problem into multiple sub problems to fetch all necessary information
+
+$$
+z = \mathrm{RAG}(x) \Rightarrow z_1 = \mathrm{RAG}(x_1), \quad z_2 = \mathrm{RAG}(x_2)
+$$
+
+#### corrective RAG
+- system **treats retrieval failures are recoverable errors**
+- **detect low quality retrieval** and insufficient context and re retrieve importent data and **reruns retrieval with adapted query**
+- detection methods
+	- rule based
+	- using LLMs
+	- low similarity in the chunk embedding space
+
+#### Self RAG
+- RAG that self **reflects** (talks to itself) to **verify and correct itself** during the **retrieval and generation process**
+- uses special tokens to question itself at any step
+- decides to continue or to trigger additional retrieval
+- requires specialized training
+##### example
+- **Retrieve:** "Do I need external information for this query?"
+- **Relevance (`IsRel`):** "Is this retrieved chunk actually relevant?"
+- **Support (`IsSup`):** "Is the sentence I just wrote supported by the evidence?"
+- **Utility (`IsUse`):** "Is this answer actually helpful to the user?"
+
+
+
+_____________
+
+## retrieval augmented generation
+- the [[LLM]] contains knowledge in its weights that has the following limitations
+	1) **static**: cannot update after [[pretraining]]
+	2) **opaque**: impossible to inspect what the model “knows”
+	3) **incomplete**: [[pretraining]] data is finite and often outdated
+	4) **hallucination-prone**: model produces confident but incorrect answers
+- the [[retrieval augmented generation]] process overcomes the limitations by retrieving additional information and adding it to the context of the [[LLM]]
+
+### general approach
+- vector database that constrains text chunks as tuples (**chunk enbedding**, **chunk**)
+- when a user sends a prompt the prompt is mapped in the same embedding space of the chunks and similar chunks are searched in the vector database
+- the best matches are then **ranked**, and the best ones are **assembled** and **added to the context window**
+
+![[Pasted image 20260105103419.png]]
+
+1. Document Preparation (Offline)
+	- gather raw documents
+	- chunk them
+	- compute embeddings of chunks
+	- insert them in a vector database
+2. Query Embedding (Online)
+	- embed user query
+3. Retrieval
+	- search similar vectors in store
+	- retrieve top-k candidates
+4. Reranking (Optional)
+	- reorder candidates using stronger but more expensive models → improve precision before generation
+5. Context Assembly
+	- select, truncate and order chunks
+	- fit them in the models context window
+6. Generation
+	- generate response based in user query and additional information
+Tags: mathematics ml WS2526
+<!--ID: 1769695585750-->
+END
+
+START
+Basic
+long context RAG
+Back: 
+
+#### long context RAG
+- RAG usage paradigm
+- instead of filling the context with chunks use large context windows to feed whole documents and let the [[LLM]] search for answers
+- skip the retrieval, searching and ranking → shifts complexity from retrieval to attention
+
+_____________
+
+## retrieval augmented generation
+- the [[LLM]] contains knowledge in its weights that has the following limitations
+	1) **static**: cannot update after [[pretraining]]
+	2) **opaque**: impossible to inspect what the model “knows”
+	3) **incomplete**: [[pretraining]] data is finite and often outdated
+	4) **hallucination-prone**: model produces confident but incorrect answers
+- the [[retrieval augmented generation]] process overcomes the limitations by retrieving additional information and adding it to the context of the [[LLM]]
+
+### general approach
+- vector database that constrains text chunks as tuples (**chunk enbedding**, **chunk**)
+- when a user sends a prompt the prompt is mapped in the same embedding space of the chunks and similar chunks are searched in the vector database
+- the best matches are then **ranked**, and the best ones are **assembled** and **added to the context window**
+
+![[Pasted image 20260105103419.png]]
+
+1. Document Preparation (Offline)
+	- gather raw documents
+	- chunk them
+	- compute embeddings of chunks
+	- insert them in a vector database
+2. Query Embedding (Online)
+	- embed user query
+3. Retrieval
+	- search similar vectors in store
+	- retrieve top-k candidates
+4. Reranking (Optional)
+	- reorder candidates using stronger but more expensive models → improve precision before generation
+5. Context Assembly
+	- select, truncate and order chunks
+	- fit them in the models context window
+6. Generation
+	- generate response based in user query and additional information
+Tags: mathematics ml WS2526
+<!--ID: 1769695585753-->
+END
+
+
+START
+Basic
+[[retrieval augmented generation#corrective RAG]]
+- self RAG
+- difference to corrective RAG
+Back: 
+### advanced RAG architectures
+
+#### Self RAG
+- RAG that self **reflects** (talks to itself) to **verify and correct itself** during the **retrieval and generation process**
+- uses special tokens to question itself at any step
+- decides to continue or to trigger additional retrieval
+- requires specialized training
+##### example
+- **Retrieve:** "Do I need external information for this query?"
+- **Relevance (`IsRel`):** "Is this retrieved chunk actually relevant?"
+- **Support (`IsSup`):** "Is the sentence I just wrote supported by the evidence?"
+- **Utility (`IsUse`):** "Is this answer actually helpful to the user?"
+
+
+#### corrective RAG
+- system **treats retrieval failures are recoverable errors**
+- **detect low quality retrieval** and insufficient context and re retrieve impotent data and **reruns retrieval with adapted query**
+- detection methods
+	- rule based
+	- using LLMs
+	- low similarity in the chunk embedding space
+
+_____________
+
+## retrieval augmented generation
+- the [[LLM]] contains knowledge in its weights that has the following limitations
+	1) **static**: cannot update after [[pretraining]]
+	2) **opaque**: impossible to inspect what the model “knows”
+	3) **incomplete**: [[pretraining]] data is finite and often outdated
+	4) **hallucination-prone**: model produces confident but incorrect answers
+- the [[retrieval augmented generation]] process overcomes the limitations by retrieving additional information and adding it to the context of the [[LLM]]
+
+### general approach
+- vector database that constrains text chunks as tuples (**chunk enbedding**, **chunk**)
+- when a user sends a prompt the prompt is mapped in the same embedding space of the chunks and similar chunks are searched in the vector database
+- the best matches are then **ranked**, and the best ones are **assembled** and **added to the context window**
+
+![[Pasted image 20260105103419.png]]
+
+1. Document Preparation (Offline)
+	- gather raw documents
+	- chunk them
+	- compute embeddings of chunks
+	- insert them in a vector database
+2. Query Embedding (Online)
+	- embed user query
+3. Retrieval
+	- search similar vectors in store
+	- retrieve top-k candidates
+4. Reranking (Optional)
+	- reorder candidates using stronger but more expensive models → improve precision before generation
+5. Context Assembly
+	- select, truncate and order chunks
+	- fit them in the models context window
+6. Generation
+	- generate response based in user query and additional information
+Tags: mathematics ml WS2526
+<!--ID: 1769695585757-->
+END
+
 
 START
 Basic
