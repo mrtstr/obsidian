@@ -2481,7 +2481,9 @@
     "mathematics/basics/error propagation.md": "2f4e582c8843c5f877d4ca5e60ed7138",
     "mathematics/basics/error anlysis.md": "149f1f07a463b72c421b139e28a9ff94",
     "mathematics/basics/condition of a matrix.md": "d7698b8599b561a80421e49bbc22a621",
-    "mathematics/basics/condition.md": "033ff51140ed5060aedd6cfd165a793f"
+    "mathematics/basics/condition.md": "033ff51140ed5060aedd6cfd165a793f",
+    "mathematics/machine learning/AI agents.md": "76db1f05d5cf4c19c7294e425a4c4e4e",
+    "mathematics/machine learning/AI workflow.md": "3f7733c47ca6a7eb2e3f4ece937820d2"
   },
   "fields_dict": {
     "Basic": [
