@@ -8,9 +8,13 @@
 
 START
 Basic
-what differentiates an [[AI workflow]] from an [[AI agents]]?
+what differentiates an [[AI workflow]] from an [[AI agents]]? (4)
 
 Back: 
+• **Iterative**: execution repeats until termination
+• **Stateful**: decisions depend on history
+• **Adaptive**: behavior changes based on outcomes
+• **Non-deterministic**: execution path not fixed in advance
 ### AI workflow
 - static, predefined sequence of steps involving [[LLM]]
 - can have decisions but not loops controlled by the system
