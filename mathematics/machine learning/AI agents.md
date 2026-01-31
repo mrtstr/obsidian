@@ -4,7 +4,7 @@
 	- a state, actions, feedback
 	- goal directed multi-step behavior
 - an [[AI agents]] is a **dynamic control system** that **interacts** with its **environment** with **actions** and **observes** it
-### components
+#### components
 • **[[LLM]]**: decision and action proposals
 • **Control Plane**: loop, policies, budgets
 • **State**: context and memory
@@ -86,6 +86,20 @@
 - **tool thrashing**: excessive/redundant tool calls
 - **premature stopping** does to overaggressive budget constraints
 - **compounding errors**: small early errors propagate across steps
+
+### components
+#### Control Plane
+- drives the loop → decides when to call an [[LLM]] and when to stop
+- assembles the state
+- executes actions like tool usage
+- enforces polices like budgets
+- record traces and metrics for debugging
+
+![[Pasted image 20260131091215.png]]
+
+#### Observation
+- **not all observations should become state** → blindly appending observations is a common source of **compounding errors**
+- 
 # anki
 
 START
